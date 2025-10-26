@@ -74,12 +74,12 @@ These materials can serve as:
 2. **Generate questions** based on the content
 3. **Format cards** according to the specification above
 4. **Save cards** to the `cards/` directory
-5. **Update progress** in `CARD_PROGRESS.md`
+5. **Update progress** in `card_progress.md`
 6. **Import to Anki** using the Multiple Choice Question plugin
 
 ## Progress Tracking
 
-See `CARD_PROGRESS.md` for detailed tracking of which data sources have been converted to cards.
+See `card_progress.md` for detailed tracking of which data sources have been converted to cards.
 
 ## Notes
 
