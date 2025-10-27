@@ -14,6 +14,7 @@ This folder contains the workflow and helper script for generating Anki decks fr
 - Validate `output.txt` formatting (headers and card rows).
 - Split into per-subchapter decks: `poetry run python card_creator/orientation_guide/split_cards.py`.
 - Verify generated files in `cards/orientation_guide/` and spot-check formatting.
+- Update `card_creator/card_progress.md` (mark completed subchapters and adjust summary stats).
 
 ## Required format in output.txt
 
@@ -36,3 +37,8 @@ This folder contains the workflow and helper script for generating Anki decks fr
 - Commit `card_creator/orientation_guide/output.txt` and the generated files under `cards/orientation_guide/`.
 - Each card must have exactly one correct answer flag (e.g., `0 1 0 0`).
 - Keep language Swedish and questions challenging and precise.
+
+## Post-split Checklist (AI)
+- Regenerate decks and verify format (double pipes, single correct flag, end with `|2`).
+- Update `card_creator/card_progress.md` with newly completed subchapters and stats.
+- Commit changes to `output.txt`, `cards/orientation_guide/*.txt`, and progress file.
