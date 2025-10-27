@@ -19,9 +19,11 @@ InfoFinland is a multilingual website providing reliable information for people 
 
 ## Setup
 
-1. Install Python dependencies:
+Use Poetry for dependency management:
+
 ```bash
-pip install -r requirements.txt
+# First-time setup
+poetry install
 ```
 
 ## Usage
@@ -29,7 +31,7 @@ pip install -r requirements.txt
 Run the crawler to download all Swedish content from InfoFinland:
 
 ```bash
-python crawler.py
+poetry run python data/infofinland/crawler.py -o data/infofinland/content
 ```
 
 ### Options
@@ -42,13 +44,13 @@ python crawler.py
 
 ```bash
 # Download to a custom directory
-python crawler.py --output my_content
+poetry run python data/infofinland/crawler.py --output my_content
 
 # Increase delay to 2 seconds between requests
-python crawler.py --delay 2.0
+poetry run python data/infofinland/crawler.py --delay 2.0
 
 # Start from a specific page
-python crawler.py --start-url https://www.infofinland.fi/sv/arbete-och-entreprenorskap
+poetry run python data/infofinland/crawler.py --start-url https://www.infofinland.fi/sv/arbete-och-entreprenorskap
 ```
 
 ## Output
