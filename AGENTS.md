@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 - `card_creator/` holds tooling and prompts for flashcard creation; keep scripts alongside their domain (e.g., `orientation_guide/` for textbook-derived workflows) and document progress in `card_creator/card_progress.md`.
-- `card_creator/orientation_guide/split_cards.py` converts the aggregated `output.txt` into per-subchapter decks under `cards/orientation_guide/`; treat `output.txt` as scratch space that should not be committed.
+- `card_creator/orientation_guide/split_cards.py` converts the aggregated `output.txt` into per-subchapter decks under `cards/orientation_guide/`. The `output.txt` file is committed and serves as the source-of-truth for card generation.
 - `cards/` stores ready-to-import Anki decks grouped by source (`articles/`, `infofinland/`, `orientation_guide/`); match filenames to chapter numbers plus a slug (e.g., `1.2_rights_and_obligations.txt`).
 - `data/` archives the raw material consumed by agents; keep crawled InfoFinland HTML within `data/infofinland/content/` and PDFs or source bundles in the language-specific subdirectories.
 

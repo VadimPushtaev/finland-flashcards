@@ -2,19 +2,18 @@
 
 This folder contains the workflow and helper script for generating Anki decks from the main orientation guide textbook (`data/orientation_guide.pdf`).
 
-## Steps
+## Workflow
 
-1) Generate ChatGPT output
-- Use `chatgpt_card_generation_prompt.md` with the relevant chapter text.
-- Ensure output is in Swedish and formatted as specified below.
+**For User**
+- Copy the prompt from `card_creator/orientation_guide/chatgpt_card_generation_prompt.md` into ChatGPT and provide the relevant chapter text.
+- Ensure ChatGPT’s output is in Swedish and follows the required format below.
+- Paste the full ChatGPT result into `card_creator/orientation_guide/output.txt` and commit it.
+- Then ask the project AI to continue with the AI steps below.
 
-2) Save output
-- Paste the full ChatGPT result into `card_creator/orientation_guide/output.txt`.
-- Note: `output.txt` is scratch. Do not commit it.
-
-3) Split into decks
-- Run: `poetry run python card_creator/orientation_guide/split_cards.py`
-- Resulting files appear in `cards/orientation_guide/` (one per subchapter).
+**For AI**
+- Validate `output.txt` formatting (headers and card rows).
+- Split into per-subchapter decks: `poetry run python card_creator/orientation_guide/split_cards.py`.
+- Verify generated files in `cards/orientation_guide/` and spot-check formatting.
 
 ## Required format in output.txt
 
@@ -34,6 +33,6 @@ This folder contains the workflow and helper script for generating Anki decks fr
 
 ## Notes
 
-- Commit the generated files under `cards/orientation_guide/` but do not commit `output.txt`.
+- Commit `card_creator/orientation_guide/output.txt` and the generated files under `cards/orientation_guide/`.
 - Each card must have exactly one correct answer flag (e.g., `0 1 0 0`).
 - Keep language Swedish and questions challenging and precise.
