@@ -43,6 +43,11 @@ Poetry-managed deps: `requests`, `beautifulsoup4`. No separate requirements.txt 
 - Bundle related changes per commit (crawler tweaks vs. card updates) and mention affected directories in the body when clarification helps reviewers.
 - Pull requests should outline the data sources touched, highlight any manual curation, and include screenshots or sample card excerpts when UX changes are introduced.
 
+### Agent Commit Policy (IMPORTANT)
+- Do not commit or push changes without explicit user confirmation.
+- Before committing, summarize staged changes, propose a commit message, and wait for approval.
+- Apply patches and run validations freely, but pause at the commit/push step until the user confirms.
+
 ## Data & Content Management
 - Record newly processed sections in `card_progress.md` so collaborators avoid duplicating effort.
 - Preserve original source archives in `data/` and note provenance; never overwrite raw PDFs—add dated versions if updates are required.
