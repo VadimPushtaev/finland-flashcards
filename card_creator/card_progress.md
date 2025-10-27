@@ -4,83 +4,83 @@ This document tracks which data sources have been converted into flashcards.
 
 ## 1. Main Textbook (PRIMARY SOURCE)
 
-**Source:** `data/Suomi-Yhteiskuntaorientaation-oppikirja-Final-17.12.2018-Ruotsi.pdf`
+**Source:** `data/orientation_guide.pdf`
 
 This is the main source material. Create a **separate card file for each subchapter**.
 
-**Target location:** `cards/pdf/`
+**Target location:** `cards/orientation_guide/`
 
 ### Chapter 1 — Finland och den finska kulturen
 
-- [x] Finlands geografi och klimat → `cards/pdf/1.1_finlands_geografi_och_klimat.txt`
-- [x] Finlands befolkning → `cards/pdf/1.2_finlands_befolkning.txt`
-- [x] Hurudana är finländarna? → `cards/pdf/1.3_hurudana_ar_finlandarna.txt`
-- [x] Huvuddragen i Finlands historia → `cards/pdf/1.4_huvuddragen_i_finlands_historia.txt`
-- [x] Finländsk kultur: kalender, fester och traditioner → `cards/pdf/1.5_finlandsk_kultur_kalender_fester_och_traditioner.txt`
+- [x] Finlands geografi och klimat → `cards/orientation_guide/1.1_finlands_geografi_och_klimat.txt`
+- [x] Finlands befolkning → `cards/orientation_guide/1.2_finlands_befolkning.txt`
+- [x] Hurudana är finländarna? → `cards/orientation_guide/1.3_hurudana_ar_finlandarna.txt`
+- [x] Huvuddragen i Finlands historia → `cards/orientation_guide/1.4_huvuddragen_i_finlands_historia.txt`
+- [x] Finländsk kultur: kalender, fester och traditioner → `cards/orientation_guide/1.5_finlandsk_kultur_kalender_fester_och_traditioner.txt`
 
 ### Chapter 2 — Det finländska samhället
 
-- [ ] Det finländska samhällets olika sektorer → `cards/pdf/ch2_society_sectors.txt`
-- [ ] Välfärdsstatens utveckling i Finland → `cards/pdf/ch2_welfare_state.txt`
-- [ ] Finlands förvaltning → `cards/pdf/ch2_administration.txt`
-- [ ] Finlands näringsliv och ekonomiska system → `cards/pdf/ch2_economy.txt`
+- [ ] Det finländska samhällets olika sektorer → `cards/orientation_guide/ch2_society_sectors.txt`
+- [ ] Välfärdsstatens utveckling i Finland → `cards/orientation_guide/ch2_welfare_state.txt`
+- [ ] Finlands förvaltning → `cards/orientation_guide/ch2_administration.txt`
+- [ ] Finlands näringsliv och ekonomiska system → `cards/orientation_guide/ch2_economy.txt`
 
 ### Chapter 3 — Att flytta till och bo i Finland
 
-- [ ] Uppehållstillstånd och finskt medborgarskap → `cards/pdf/ch3_permits_citizenship.txt`
-- [ ] Praktiska saker som är bra att känna till → `cards/pdf/ch3_practical_matters.txt`
-- [ ] Grundläggande fakta om boende → `cards/pdf/ch3_housing.txt`
-- [ ] Integration i det nya hemlandet → `cards/pdf/ch3_integration.txt`
+- [ ] Uppehållstillstånd och finskt medborgarskap → `cards/orientation_guide/ch3_permits_citizenship.txt`
+- [ ] Praktiska saker som är bra att känna till → `cards/orientation_guide/ch3_practical_matters.txt`
+- [ ] Grundläggande fakta om boende → `cards/orientation_guide/ch3_housing.txt`
+- [ ] Integration i det nya hemlandet → `cards/orientation_guide/ch3_integration.txt`
 
 ### Chapter 4 — Familjeliv och barn
 
-- [ ] Finländska familjer förr och nu → `cards/pdf/ch4_families_history.txt`
-- [ ] Äktenskap och samboende → `cards/pdf/ch4_marriage_cohabitation.txt`
-- [ ] Många slag av familjer → `cards/pdf/ch4_family_types.txt`
-- [ ] Barnets omvårdnad och tjänster för barnfamiljer → `cards/pdf/ch4_childcare_services.txt`
-- [ ] Stöd för familjer i problemsituationer → `cards/pdf/ch4_family_support.txt`
-- [ ] Andra hälsovårds- och socialtjänster → `cards/pdf/ch4_health_social_services.txt`
-- [ ] När familjen flyttar till Finland → `cards/pdf/ch4_family_moving.txt`
+- [ ] Finländska familjer förr och nu → `cards/orientation_guide/ch4_families_history.txt`
+- [ ] Äktenskap och samboende → `cards/orientation_guide/ch4_marriage_cohabitation.txt`
+- [ ] Många slag av familjer → `cards/orientation_guide/ch4_family_types.txt`
+- [ ] Barnets omvårdnad och tjänster för barnfamiljer → `cards/orientation_guide/ch4_childcare_services.txt`
+- [ ] Stöd för familjer i problemsituationer → `cards/orientation_guide/ch4_family_support.txt`
+- [ ] Andra hälsovårds- och socialtjänster → `cards/orientation_guide/ch4_health_social_services.txt`
+- [ ] När familjen flyttar till Finland → `cards/orientation_guide/ch4_family_moving.txt`
 
 ### Chapter 5 — Utbildning
 
-- [ ] Det finländska utbildningssystemets utveckling → `cards/pdf/ch5_education_history.txt`
-- [ ] Det finländska utbildningssystemet i dag → `cards/pdf/ch5_education_system.txt`
-- [ ] Finansieringen av studier → `cards/pdf/ch5_study_financing.txt`
+- [ ] Det finländska utbildningssystemets utveckling → `cards/orientation_guide/ch5_education_history.txt`
+- [ ] Det finländska utbildningssystemet i dag → `cards/orientation_guide/ch5_education_system.txt`
+- [ ] Finansieringen av studier → `cards/orientation_guide/ch5_study_financing.txt`
 
 ### Chapter 6 — Arbete och försörjning i Finland
 
-- [ ] Arbetsmarknaden → `cards/pdf/ch6_labor_market.txt`
-- [ ] Att hitta arbete → `cards/pdf/ch6_finding_work.txt`
-- [ ] Lön och beskattning → `cards/pdf/ch6_salary_taxation.txt`
-- [ ] Arbetslöshet → `cards/pdf/ch6_unemployment.txt`
-- [ ] Företagande och yrkesutövande → `cards/pdf/ch6_entrepreneurship.txt`
+- [ ] Arbetsmarknaden → `cards/orientation_guide/ch6_labor_market.txt`
+- [ ] Att hitta arbete → `cards/orientation_guide/ch6_finding_work.txt`
+- [ ] Lön och beskattning → `cards/orientation_guide/ch6_salary_taxation.txt`
+- [ ] Arbetslöshet → `cards/orientation_guide/ch6_unemployment.txt`
+- [ ] Företagande och yrkesutövande → `cards/orientation_guide/ch6_entrepreneurship.txt`
 
 ### Chapter 7 — Hälsa och åldrande i Finland
 
-- [ ] Hälsa och sjukdom → `cards/pdf/ch7_health_illness.txt`
-- [ ] Hälsovårdstjänster i Finland → `cards/pdf/ch7_healthcare_services.txt`
-- [ ] Äldre människors hälsa och välbefinnande → `cards/pdf/ch7_elderly_health.txt`
-- [ ] Olika pensioner → `cards/pdf/ch7_pensions.txt`
-- [ ] Vårdtjänster för äldre → `cards/pdf/ch7_elderly_care.txt`
-- [ ] Död och begravning → `cards/pdf/ch7_death_funeral.txt`
-- [ ] Arv → `cards/pdf/ch7_inheritance.txt`
+- [ ] Hälsa och sjukdom → `cards/orientation_guide/ch7_health_illness.txt`
+- [ ] Hälsovårdstjänster i Finland → `cards/orientation_guide/ch7_healthcare_services.txt`
+- [ ] Äldre människors hälsa och välbefinnande → `cards/orientation_guide/ch7_elderly_health.txt`
+- [ ] Olika pensioner → `cards/orientation_guide/ch7_pensions.txt`
+- [ ] Vårdtjänster för äldre → `cards/orientation_guide/ch7_elderly_care.txt`
+- [ ] Död och begravning → `cards/orientation_guide/ch7_death_funeral.txt`
+- [ ] Arv → `cards/orientation_guide/ch7_inheritance.txt`
 
 ### Chapter 8 — Lagar och rättskipande verksamhet i Finland
 
-- [ ] Finlands rättssystem → `cards/pdf/ch8_legal_system.txt`
-- [ ] Ett jämlikt och jämställt samhälle → `cards/pdf/ch8_equality.txt`
-- [ ] Individens rättigheter och skyldigheter → `cards/pdf/ch8_rights_duties.txt`
-- [ ] Brott → `cards/pdf/ch8_crimes.txt`
-- [ ] Rättsprocessen och rättshjälp → `cards/pdf/ch8_legal_process.txt`
+- [ ] Finlands rättssystem → `cards/orientation_guide/ch8_legal_system.txt`
+- [ ] Ett jämlikt och jämställt samhälle → `cards/orientation_guide/ch8_equality.txt`
+- [ ] Individens rättigheter och skyldigheter → `cards/orientation_guide/ch8_rights_duties.txt`
+- [ ] Brott → `cards/orientation_guide/ch8_crimes.txt`
+- [ ] Rättsprocessen och rättshjälp → `cards/orientation_guide/ch8_legal_process.txt`
 
 ### Chapter 9 — Politik och påverkande i Finland
 
-- [ ] Vad är demokrati? → `cards/pdf/ch9_democracy.txt`
-- [ ] Demokratins utveckling i Finland → `cards/pdf/ch9_democracy_history.txt`
-- [ ] Val i Finland → `cards/pdf/ch9_elections.txt`
-- [ ] Finlands politiska partier → `cards/pdf/ch9_political_parties.txt`
-- [ ] Medborgarpåverkan → `cards/pdf/ch9_civic_engagement.txt`
+- [ ] Vad är demokrati? → `cards/orientation_guide/ch9_democracy.txt`
+- [ ] Demokratins utveckling i Finland → `cards/orientation_guide/ch9_democracy_history.txt`
+- [ ] Val i Finland → `cards/orientation_guide/ch9_elections.txt`
+- [ ] Finlands politiska partier → `cards/orientation_guide/ch9_political_parties.txt`
+- [ ] Medborgarpåverkan → `cards/orientation_guide/ch9_civic_engagement.txt`
 
 **Total:** 9 chapters, 45 subchapters
 
@@ -226,9 +226,9 @@ Create one card file for each article.
 ### PDF Card Generation Workflow
 
 **Created files:**
-- `card_creator/pdf/chatgpt_card_generation_prompt.md` - Prompt template for ChatGPT to generate flashcards from PDF content
-- `card_creator/pdf/split_cards.py` - Python script to split ChatGPT's output into individual card files
-- `card_creator/pdf/output.txt` - Example of ChatGPT output before splitting
+- `card_creator/orientation_guide/chatgpt_card_generation_prompt.md` - Prompt template for ChatGPT to generate flashcards from PDF content
+- `card_creator/orientation_guide/split_cards.py` - Python script to split ChatGPT's output into individual card files
+- `card_creator/orientation_guide/output.txt` - Example of ChatGPT output before splitting
 
 **Workflow:**
 1. Extract text content from PDF subchapter
@@ -236,4 +236,3 @@ Create one card file for each article.
 3. Save ChatGPT's output to a text file
 4. Run `split_cards.py` to automatically split the output into individual card files
 5. Review and refine the generated cards as needed
-
