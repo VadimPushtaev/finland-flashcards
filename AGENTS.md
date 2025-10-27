@@ -1,14 +1,14 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `card_creator/` holds tooling and prompts for flashcard creation; keep scripts alongside their domain (e.g., `pdf/` for PDF-derived workflows) and document progress in `card_creator/card_progress.md`.
-- `card_creator/pdf/split_cards.py` converts the aggregated `output.txt` into per-subchapter decks under `cards/pdf/`; treat `output.txt` as scratch space that should not be committed.
-- `cards/` stores ready-to-import Anki decks grouped by source (`articles/`, `infofinland/`, `pdf/`); match filenames to chapter numbers plus a slug (e.g., `1.2_rights_and_obligations.txt`).
+- `card_creator/` holds tooling and prompts for flashcard creation; keep scripts alongside their domain (e.g., `orientation_guide/` for textbook-derived workflows) and document progress in `card_creator/card_progress.md`.
+- `card_creator/orientation_guide/split_cards.py` converts the aggregated `output.txt` into per-subchapter decks under `cards/orientation_guide/`; treat `output.txt` as scratch space that should not be committed.
+- `cards/` stores ready-to-import Anki decks grouped by source (`articles/`, `infofinland/`, `orientation_guide/`); match filenames to chapter numbers plus a slug (e.g., `1.2_rights_and_obligations.txt`).
 - `data/` archives the raw material consumed by agents; keep crawled InfoFinland HTML within `data/infofinland/content/` and PDFs or source bundles in the language-specific subdirectories.
 
 ## Build, Test, and Development Commands
 ```bash
-python3 card_creator/pdf/split_cards.py       # Split the latest PDF-derived cards into chapter files
+python3 card_creator/orientation_guide/split_cards.py       # Split the latest orientation guide-derived cards into chapter files
 python3 data/infofinland/crawler.py -o data/infofinland/content  # Refresh Swedish InfoFinland articles
 python3 -m compileall card_creator data/infofinland              # Smoke-check Python syntax before committing
 ```
@@ -21,7 +21,7 @@ Install Python deps (`requests`, `beautifulsoup4`) in your virtualenv before run
 - Place ad-hoc notebooks or prompts under a clearly named subfolder (e.g., `card_creator/research/`) to avoid polluting production paths.
 
 ## Testing Guidelines
-- Verify regenerated decks by spot-checking formatting (`head cards/pdf/*.txt`) and ensuring every line contains a double pipe separator.
+- Verify regenerated decks by spot-checking formatting (`head cards/orientation_guide/*.txt`) and ensuring every line contains a double pipe separator.
 - After running the crawler, confirm `data/infofinland/content/crawl_stats.txt` reflects the new page count and manually review a sample HTML file.
 - When editing generators, re-run `split_cards.py` and diff the produced files to detect unintended reorderings before pushing.
 

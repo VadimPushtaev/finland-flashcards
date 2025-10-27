@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Script to split flashcard output into separate files by subchapter.
-Reads output.txt and creates individual card files in cards/pdf/ directory.
+Reads output.txt and creates individual card files in cards/orientation_guide/ directory.
 """
 
 import os
@@ -25,7 +25,7 @@ def clean_filename(text):
     text = re.sub(r'\s+', '_', text.strip())
     return text.lower()
 
-def split_flashcards(input_file='output.txt', output_dir='../../cards/pdf'):
+def split_flashcards(input_file='output.txt', output_dir='../../cards/orientation_guide'):
     """Split flashcards from input file into separate files by subchapter."""
     
     # Create output directory if it doesn't exist
