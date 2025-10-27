@@ -7,12 +7,25 @@
 - `data/` archives the raw material consumed by agents; keep crawled InfoFinland HTML within `data/infofinland/content/` and PDFs or source bundles in the language-specific subdirectories.
 
 ## Build, Test, and Development Commands
+Use Poetry for dependency management and to run scripts.
 ```bash
-python3 card_creator/orientation_guide/split_cards.py       # Split the latest orientation guide-derived cards into chapter files
-python3 data/infofinland/crawler.py -o data/infofinland/content  # Refresh Swedish InfoFinland articles
-python3 -m compileall card_creator data/infofinland              # Smoke-check Python syntax before committing
+# First-time setup
+poetry install
+
+# Split the latest orientation guide-derived cards into chapter files
+poetry run python card_creator/orientation_guide/split_cards.py
+
+# Refresh Swedish InfoFinland articles
+poetry run python data/infofinland/crawler.py -o data/infofinland/content
+
+# Smoke-check Python syntax before committing
+poetry run python -m compileall card_creator data/infofinland
+
+# (optional) Install and run pre-commit hooks locally
+poetry run pre-commit install
+poetry run pre-commit run --all-files
 ```
-Install Python deps (`requests`, `beautifulsoup4`) in your virtualenv before running crawlers.
+Poetry-managed deps: `requests`, `beautifulsoup4`. No separate requirements.txt is used.
 
 ## Coding Style & Naming Conventions
 - Python uses 4-space indentation, docstrings for modules/classes, and `snake_case` for functions, variables, and filenames.
