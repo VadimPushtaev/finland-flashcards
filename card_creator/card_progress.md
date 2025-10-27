@@ -27,10 +27,10 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 3 — Att flytta till och bo i Finland
 
-- [ ] Uppehållstillstånd och finskt medborgarskap → `cards/orientation_guide/ch3_permits_citizenship.txt`
-- [ ] Praktiska saker som är bra att känna till → `cards/orientation_guide/ch3_practical_matters.txt`
-- [ ] Grundläggande fakta om boende → `cards/orientation_guide/ch3_housing.txt`
-- [ ] Integration i det nya hemlandet → `cards/orientation_guide/ch3_integration.txt`
+- [x] Uppehållstillstånd och finskt medborgarskap → `cards/orientation_guide/3.1_uppehallstillstand_och_finskt_medborgarskap.txt`
+- [x] Praktiska saker som är bra att känna till → `cards/orientation_guide/3.2_praktiska_saker_som_ar_bra_att_kanna_till.txt`
+- [x] Grundläggande fakta om boende → `cards/orientation_guide/3.3_grundlaggande_fakta_om_boende.txt`
+- [x] Integration i det nya hemlandet → `cards/orientation_guide/3.4_integration_i_det_nya_hemlandet.txt`
 
 ### Chapter 4 — Familjeliv och barn
 
@@ -201,14 +201,14 @@ Create one card file for each article.
 
 ### Total Progress
 
-- **Main Textbook:** 5/45 subchapters (11.1%)
+- **Main Textbook:** 13/45 subchapters (28.9%)
 - **Danish Exams:** 0/11 exam sets (~0/440 cards)
 - **InfoFinland:** 0/15 categories
 - **Articles:** 0/3 articles
 
-### Overall Completion: 6.8%
+### Overall Completion: 17.6%
 
-**Grand Total: 5/74 content sections completed**
+**Grand Total: 13/74 content sections completed**
 
 ---
 
