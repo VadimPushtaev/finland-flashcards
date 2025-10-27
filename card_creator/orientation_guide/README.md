@@ -13,7 +13,7 @@ This folder contains the workflow and helper script for generating Anki decks fr
 - Note: `output.txt` is scratch. Do not commit it.
 
 3) Split into decks
-- Run: `python3 card_creator/orientation_guide/split_cards.py`
+- Run: `poetry run python card_creator/orientation_guide/split_cards.py`
 - Resulting files appear in `cards/orientation_guide/` (one per subchapter).
 
 ## Required format in output.txt
@@ -37,4 +37,3 @@ This folder contains the workflow and helper script for generating Anki decks fr
 - Commit the generated files under `cards/orientation_guide/` but do not commit `output.txt`.
 - Each card must have exactly one correct answer flag (e.g., `0 1 0 0`).
 - Keep language Swedish and questions challenging and precise.
-

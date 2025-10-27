@@ -126,31 +126,31 @@ Define categories based on InfoFinland structure, then create one card file for 
 
 - [ ] **Education System** (`education/`)
   - File: `cards/infofinland/education.txt`
-  
+
 - [ ] **Family & Children** (`family/`)
   - File: `cards/infofinland/family.txt`
-  
+
 - [ ] **Finnish & Swedish Language** (`finnish-and-swedish/`)
   - File: `cards/infofinland/languages.txt`
-  
+
 - [ ] **Health & Healthcare** (`health/`)
   - File: `cards/infofinland/health.txt`
-  
+
 - [ ] **Housing** (`housing/`)
   - File: `cards/infofinland/housing.txt`
-  
+
 - [ ] **Information About Finland** (`information-about-finland/`)
   - File: `cards/infofinland/finland_info.txt`
-  
+
 - [ ] **Leisure & Culture** (`leisure/`)
   - File: `cards/infofinland/leisure.txt`
-  
+
 - [ ] **Moving to Finland** (`moving-to-finland/`)
   - File: `cards/infofinland/moving.txt`
-  
+
 - [ ] **Settling in Finland** (`settling-in-finland/`)
   - File: `cards/infofinland/settling.txt`
-  
+
 - [ ] **Work & Enterprise** (`work-and-enterprise/`)
   - File: `cards/infofinland/work.txt`
 
@@ -158,16 +158,16 @@ Define categories based on InfoFinland structure, then create one card file for 
 
 - [ ] **Helsinki** (`helsinki/`)
   - File: `cards/infofinland/helsinki.txt`
-  
+
 - [ ] **Espoo** (`espoo/`)
   - File: `cards/infofinland/espoo.txt`
-  
+
 - [ ] **Vantaa** (`vantaa/`)
   - File: `cards/infofinland/vantaa.txt`
-  
+
 - [ ] **Kauniainen** (`kauniainen/`)
   - File: `cards/infofinland/kauniainen.txt`
-  
+
 - [ ] **Vaasa** (`vaasa/`)
   - File: `cards/infofinland/vaasa.txt`
 
@@ -183,14 +183,14 @@ Create one card file for each article.
 
 ### Article Files
 
-- [ ] **Fattigdomens historia i Finland** 
+- [ ] **Fattigdomens historia i Finland**
   - Source: `Fattigdomens historia i Finland.pdf`
   - File: `cards/articles/poverty_history_finland.txt`
-  
+
 - [ ] **Miraklet i Norden**
   - Source: `Miraklet i Norden.odt`
   - File: `cards/articles/nordic_miracle.txt`
-  
+
 - [ ] **Samhället vi lever i** (Poverty History & Welfare Society)
   - Source: `Samhället vi lever i Fattigdomens historia och välfärdssamhällets framväxt och ord och frågor TILL FILMEN.docx`
   - File: `cards/articles/welfare_society.txt`

@@ -83,7 +83,7 @@ Från vilket land blev Finland självständigt?|Historia|2|Sverige|Ryssland|Danm
 
 Please generate the flashcards now from the specified chapter of the attached PDF, organized by subchapters as shown above.
 
-**REMEMBER: 
+**REMEMBER:
 - Write everything in SWEDISH (Svenska) - questions, answers, and all content must be in Swedish!
 - Create as MANY cards as possible - convert every fact, detail, date, and concept into a question. Abundance is key!**
 
