@@ -34,13 +34,13 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 4 — Familjeliv och barn
 
-- [ ] Finländska familjer förr och nu → `cards/orientation_guide/ch4_families_history.txt`
-- [ ] Äktenskap och samboende → `cards/orientation_guide/ch4_marriage_cohabitation.txt`
-- [ ] Många slag av familjer → `cards/orientation_guide/ch4_family_types.txt`
-- [ ] Barnets omvårdnad och tjänster för barnfamiljer → `cards/orientation_guide/ch4_childcare_services.txt`
-- [ ] Stöd för familjer i problemsituationer → `cards/orientation_guide/ch4_family_support.txt`
-- [ ] Andra hälsovårds- och socialtjänster → `cards/orientation_guide/ch4_health_social_services.txt`
-- [ ] När familjen flyttar till Finland → `cards/orientation_guide/ch4_family_moving.txt`
+- [x] Finländska familjer förr och nu → `cards/orientation_guide/4.1_finlandska_familjer_forr_och_nu.txt`
+- [x] Äktenskap och samboende → `cards/orientation_guide/4.2_aktenskap_och_samboende.txt`
+- [x] Många slag av familjer → `cards/orientation_guide/4.3_manga_slag_av_familjer.txt`
+- [x] Barnets omvårdnad och tjänster för barnfamiljer → `cards/orientation_guide/4.4_barnets_omvardnad_och_tjanster_for_barnfamiljer.txt`
+- [x] Stöd för familjer i problemsituationer → `cards/orientation_guide/4.5_stod_for_familjer_i_problemsituationer.txt`
+- [x] Andra hälsovårds- och socialtjänster → `cards/orientation_guide/4.6_andra_halsovards-_och_socialtjanster.txt`
+- [x] När familjen flyttar till Finland → `cards/orientation_guide/4.7_nar_familjen_flyttar_till_finland.txt`
 
 ### Chapter 5 — Utbildning
 
@@ -201,14 +201,14 @@ Create one card file for each article.
 
 ### Total Progress
 
-- **Main Textbook:** 13/45 subchapters (28.9%)
+- **Main Textbook:** 20/45 subchapters (44.4%)
 - **Danish Exams:** 0/11 exam sets (~0/440 cards)
 - **InfoFinland:** 0/15 categories
 - **Articles:** 0/3 articles
 
-### Overall Completion: 17.6%
+### Overall Completion: 27.0%
 
-**Grand Total: 13/74 content sections completed**
+**Grand Total: 20/74 content sections completed**
 
 ---
 
