@@ -20,10 +20,10 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 2 — Det finländska samhället
 
-- [ ] Det finländska samhällets olika sektorer → `cards/orientation_guide/ch2_society_sectors.txt`
-- [ ] Välfärdsstatens utveckling i Finland → `cards/orientation_guide/ch2_welfare_state.txt`
-- [ ] Finlands förvaltning → `cards/orientation_guide/ch2_administration.txt`
-- [ ] Finlands näringsliv och ekonomiska system → `cards/orientation_guide/ch2_economy.txt`
+ - [x] Det finländska samhällets olika sektorer → `cards/orientation_guide/2.1_det_finlandska_samhallets_olika_sektorer.txt`
+ - [x] Välfärdsstatens utveckling i Finland → `cards/orientation_guide/2.2_valfardssamhallets_utveckling_i_finland.txt`
+ - [x] Finlands förvaltning → `cards/orientation_guide/2.3_finlands_forvaltning.txt`
+ - [x] Finlands näringsliv och ekonomiska system → `cards/orientation_guide/2.4_finlands_naringsliv_och_ekonomiska_system.txt`
 
 ### Chapter 3 — Att flytta till och bo i Finland
 
