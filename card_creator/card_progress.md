@@ -228,13 +228,15 @@ Create one card file for each article.
 **Created files:**
 - `card_creator/orientation_guide/chatgpt_card_generation_prompt.md` - Prompt template for ChatGPT to generate flashcards from the textbook
 - `card_creator/orientation_guide/split_cards.py` - Python script to split ChatGPT's output into individual card files
-- `card_creator/orientation_guide/output.txt` - Scratch file to paste ChatGPT output (do NOT commit)
+- `card_creator/orientation_guide/output.txt` - Paste ChatGPT output here (commit this file)
 - `card_creator/orientation_guide/README.md` - Step-by-step usage instructions
 
-**Workflow:**
-1. Extract text for the desired subchapter(s) from `data/orientation_guide.pdf`
-2. Generate Swedish MCQ cards using `chatgpt_card_generation_prompt.md`
-3. Paste the full result into `card_creator/orientation_guide/output.txt`
-4. Split into per-subchapter files: `python3 card_creator/orientation_guide/split_cards.py`
-5. Review `cards/orientation_guide/*.txt` (formatting, double pipes, one correct flag)
-6. Commit only the updated files under `cards/orientation_guide/`
+**Workflow (User vs AI):**
+- User:
+  1. Extract text for the desired subchapter(s) from `data/orientation_guide.pdf`.
+  2. Use `chatgpt_card_generation_prompt.md` with ChatGPT to generate Swedish MCQ cards.
+  3. Paste the full result into `card_creator/orientation_guide/output.txt` and commit it.
+- AI:
+  4. Split into per-subchapter files: `poetry run python card_creator/orientation_guide/split_cards.py`.
+  5. Review `cards/orientation_guide/*.txt` (formatting, double pipes, one correct flag).
+  6. Commit the updated files under `cards/orientation_guide/`.
