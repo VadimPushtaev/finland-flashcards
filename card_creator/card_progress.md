@@ -44,9 +44,9 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 5 — Utbildning
 
-- [ ] Det finländska utbildningssystemets utveckling → `cards/orientation_guide/ch5_education_history.txt`
-- [ ] Det finländska utbildningssystemet i dag → `cards/orientation_guide/ch5_education_system.txt`
-- [ ] Finansieringen av studier → `cards/orientation_guide/ch5_study_financing.txt`
+ - [x] Det finländska utbildningssystemets utveckling → `cards/orientation_guide/5.1_det_finlandska_utbildningssystemets_utveckling.txt`
+ - [x] Det finländska utbildningssystemet i dag → `cards/orientation_guide/5.2_det_finlandska_utbildningssystemet_i_dag.txt`
+ - [x] Finansieringen av studier → `cards/orientation_guide/5.3_finansieringen_av_studier.txt`
 
 ### Chapter 6 — Arbete och försörjning i Finland
 
