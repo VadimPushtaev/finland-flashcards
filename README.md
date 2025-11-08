@@ -34,6 +34,7 @@ See also:
   - `Question|Category|2|Opt1|Opt2|Opt3|Opt4||0 1 0 0|2`
 - Targeted for the Anki “Multiple Choice Question” add‑on (ID 1566095810).
 - Keep language and content per source (e.g., Swedish for InfoFinland and Orientation Guide).
+ - Standalone questions: Do not reference the source. Avoid phrases like “enligt kapitlet”, “enligt texten”, “enligt artikeln”, or “i kapitlet/texten” (and English equivalents). Allowed: references to law or named institutions/authorities (e.g., “enligt lag”, “enligt Statistikcentralen/FPA/Migri”).
 
 ## Typical Workflows
 
