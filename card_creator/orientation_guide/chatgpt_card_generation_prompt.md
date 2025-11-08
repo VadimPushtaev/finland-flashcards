@@ -47,6 +47,20 @@ Vem skrev "Romeo och Julia"?|Litteratur|2|Charles Dickens|William Shakespeare|Le
 6. **Factual accuracy**: Base all questions on the actual content from the PDF
 7. **Plausible distractors**: Wrong answers should be plausible but clearly incorrect
 8. **Simple language**: Use clear, direct Swedish language
+9. **Standalone questions (no source references)**: Do NOT include phrases like “enligt kapitlet”, “enligt texten”, “enligt artikeln”, or “i kapitlet/texten”. Questions must make sense independently of any article or chapter.
+   - Allowed exceptions: references to law or named institutions/authorities (e.g., “enligt lag”, “enligt Statistikcentralen/FPA/Migri”).
+
+### DO / DON’T examples (Swedish)
+
+DON’T:
+- Vad blev den övergripande trenden för arbeten i Finland enligt kapitlet?
+- När upphör läroplikten enligt kapitlet?
+- Vilket mål med utbildningen blev viktigare i början av 1900‑talet enligt texten?
+
+DO:
+- Vad blev den övergripande trenden för arbeten i Finland under 1900‑talet?
+- När upphör läroplikten i Finland?
+- Vilket utbildningsmål blev viktigare i början av 1900‑talet?
 
 ## Output Instructions
 
@@ -61,6 +75,7 @@ Vem skrev "Romeo och Julia"?|Litteratur|2|Charles Dickens|William Shakespeare|Le
 9. After each subchapter heading, output ONLY the flashcard lines (no explanations or additional text)
 10. Each flashcard line should be complete and properly formatted
 11. Use appropriate categories based on the content (e.g., History, Politics, Geography, Culture, Economy, Education, Society, Law, etc.)
+12. Do not mention the source (chapter/text/article) anywhere in questions or options.
 
 ## Example Output Format (in Swedish):
 
