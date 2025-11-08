@@ -1,0 +1,34 @@
+name: Check ALL.txt up to date
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Rebuild combined deck
+        run: |
+          python card_creator/combine_all_cards.py
+
+      - name: Verify ALL.txt is unchanged
+        run: |
+          if git diff --quiet -- cards/ALL.txt; then
+            echo "cards/ALL.txt is up to date."
+          else
+            echo "cards/ALL.txt is stale. Please run 'make' (or python card_creator/combine_all_cards.py) and commit the result." >&2
+            git --no-pager diff --unified=0 -- cards/ALL.txt || true
+            exit 1
+          fi
+
