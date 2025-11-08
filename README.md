@@ -11,6 +11,8 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `poetry run python card_creator/orientation_guide/split_cards.py`
 - Crawl Swedish InfoFinland content:
   - `poetry run python data/infofinland/crawler.py -o data/infofinland/content`
+- Combine all decks into a single import file:
+  - `make` (creates `cards/ALL.txt`)
 
 ## Repository Structure
 
@@ -67,4 +69,3 @@ Agent policy: Do not commit or push without explicit confirmation. Summarize sta
 ## License
 
 MIT License. See `LICENSE`.
-
