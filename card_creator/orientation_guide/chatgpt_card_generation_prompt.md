@@ -8,7 +8,7 @@ Use this prompt when uploading a PDF file to ChatGPT to generate flashcards.
 
 I need you to create Anki flashcards from the chapter specified above in the attached PDF file. The flashcards are for the **Anki Multiple Choice Question plugin** and must follow this exact format.
 
-**🚨 CRITICAL: ALL flashcards must be written in SWEDISH ONLY. Questions and all answer options must be in Swedish. 🚨**
+**🚨 CRITICAL: ALL flashcards must be written in SWEDISH ONLY. Questions and all answer options must be in Swedish. Instructions below are in English for clarity. 🚨**
 
 ## Card Format
 
@@ -39,16 +39,33 @@ Vem skrev "Romeo och Julia"?|Litteratur|2|Charles Dickens|William Shakespeare|Le
 ## Requirements
 
 **CRITICAL REQUIREMENTS:**
-1. **SWEDISH LANGUAGE ONLY**: ALL questions and answer options MUST be written in Swedish (Svenska). This is mandatory.
-2. **Single correct answer only**: Exactly one correct answer per question (one `1` in CorrectAnswerFlags)
-3. **Exactly four options**: Each question must have exactly 4 answer choices
-4. **Clear and unambiguous**: Questions should be straightforward and not confusing
-5. **Challenging difficulty**: All questions must be challenging and test deep knowledge and understanding (not basic facts)
-6. **Factual accuracy**: Base all questions on the actual content from the PDF
-7. **Plausible distractors**: Wrong answers should be plausible but clearly incorrect
-8. **Simple language**: Use clear, direct Swedish language
-9. **Standalone questions (no source references)**: Do NOT include phrases like “enligt kapitlet”, “enligt texten”, “enligt artikeln”, or “i kapitlet/texten”. Questions must make sense independently of any article or chapter.
-   - Allowed exceptions: references to law or named institutions/authorities (e.g., “enligt lag”, “enligt Statistikcentralen/FPA/Migri”).
+1. SWEDISH LANGUAGE ONLY: ALL questions and answer options must be written in Swedish. This is mandatory.
+2. Single correct answer only: Exactly one correct answer per question (one `1` in CorrectAnswerFlags).
+3. Exactly four options: Each question must have exactly 4 answer choices.
+4. Clear and unambiguous: Questions should be straightforward and not confusing.
+5. Challenging difficulty: Questions should test understanding, not just trivial facts.
+6. Factual accuracy: Base every question strictly on the chapter’s content.
+7. Plausible distractors: Wrong answers should be plausible but clearly incorrect.
+8. Simple language: Use clear, direct Swedish.
+9. Standalone questions (no source references): We are creating cards using the textbook, not for the textbook. Users don’t see the chapter. Never reference the source.
+   - Forbidden in the question stem: Swedish phrases like “enligt …”, “enligt kapitlet/texten/beskrivningen/uppgifterna/informationen”, and any “i texten/kapitlet/avsnittet/materialet/pdf:en”, “som beskrivs/nämns ovan”, “baserat på texten”.
+   - Write questions generically instead (e.g., “Vad …?”, “Vilken …?”, “När …?”) with no source marker.
+   - Allowed exceptions: explicit references to a named law, regulation, or authority (e.g., “enligt arbetstidslagen”, “enligt FPA/Migri/Statistikcentralen”). Avoid vague attributions like “enligt experter/uppgifter”.
+
+### Rewrite rules for source‑free questions (important)
+- Replace any “enligt …/i texten …” phrasing with a neutral, general question.
+- If the fact is time‑qualified in the chapter (e.g., “i dag”, “numera”), keep the time cue in the question (“Vilken sektor sysselsätter flest i Finland i dag?”).
+- If the chapter cites a specific law or authority, include it explicitly (“Vad avses med övertid enligt arbetstidslagen?”).
+
+DON’T (source‑bound; Swedish examples):
+- Vilken sektor sysselsätter flest i Finland enligt uppgifterna?
+- Vad gäller för övertid enligt beskrivningen?
+- Hur lång bör ett cv vara enligt texten?
+
+DO (standalone; Swedish examples):
+- Vilken sektor sysselsätter flest i Finland i dag?
+- Vad avses med övertid enligt arbetstidslagen?
+- Hur lång bör ett cv vara?
 
 ### DO / DON’T examples (Swedish)
 
@@ -76,6 +93,7 @@ DO:
 10. Each flashcard line should be complete and properly formatted
 11. Use appropriate categories based on the content (e.g., History, Politics, Geography, Culture, Economy, Education, Society, Law, etc.)
 12. Do not mention the source (chapter/text/article) anywhere in questions or options.
+13. Final quality check: Ensure the output contains none of these Swedish substrings in questions: “enligt”, “i texten”, “i kapitlet”, “i avsnittet”, “i materialet”, “i pdf:en”, “beskrivningen”, “uppgifterna”, “informationen”. If any occur, rewrite the question to be fully standalone.
 
 ## Example Output Format (in Swedish):
 
@@ -101,4 +119,3 @@ Please generate the flashcards now from the specified chapter of the attached PD
 **REMEMBER:
 - Write everything in SWEDISH (Svenska) - questions, answers, and all content must be in Swedish!
 - Create as MANY cards as possible - convert every fact, detail, date, and concept into a question. Abundance is key!**
-

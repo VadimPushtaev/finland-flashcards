@@ -50,11 +50,11 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 6 — Arbete och försörjning i Finland
 
-- [ ] Arbetsmarknaden → `cards/orientation_guide/ch6_labor_market.txt`
-- [ ] Att hitta arbete → `cards/orientation_guide/ch6_finding_work.txt`
-- [ ] Lön och beskattning → `cards/orientation_guide/ch6_salary_taxation.txt`
-- [ ] Arbetslöshet → `cards/orientation_guide/ch6_unemployment.txt`
-- [ ] Företagande och yrkesutövande → `cards/orientation_guide/ch6_entrepreneurship.txt`
+ - [x] Arbetsmarknaden → `cards/orientation_guide/6.1_arbetsmarknaden.txt`
+ - [x] Att hitta arbete → `cards/orientation_guide/6.2_att_hitta_arbete.txt`
+ - [x] Lön och beskattning → `cards/orientation_guide/6.3_lon_och_beskattning.txt`
+ - [x] Arbetslöshet → `cards/orientation_guide/6.4_arbetsloshet.txt`
+ - [x] Företagande och yrkesutövande → `cards/orientation_guide/6.5_foretagande_och_yrkesutovande.txt`
 
 ### Chapter 7 — Hälsa och åldrande i Finland
 
