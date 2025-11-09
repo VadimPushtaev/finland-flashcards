@@ -76,11 +76,11 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 9 — Politik och påverkande i Finland
 
-- [ ] Vad är demokrati? → `cards/orientation_guide/ch9_democracy.txt`
-- [ ] Demokratins utveckling i Finland → `cards/orientation_guide/ch9_democracy_history.txt`
-- [ ] Val i Finland → `cards/orientation_guide/ch9_elections.txt`
-- [ ] Finlands politiska partier → `cards/orientation_guide/ch9_political_parties.txt`
-- [ ] Medborgarpåverkan → `cards/orientation_guide/ch9_civic_engagement.txt`
+- [x] Vad är demokrati? → `cards/orientation_guide/9.1_vad_ar_demokrati.txt`
+- [x] Demokratins utveckling i Finland → `cards/orientation_guide/9.2_demokratins_utveckling_i_finland.txt`
+- [x] Val i Finland → `cards/orientation_guide/9.3_val_i_finland.txt`
+- [x] Finlands politiska partier → `cards/orientation_guide/9.4_finlands_politiska_partier.txt`
+- [x] Medborgarpåverkan → `cards/orientation_guide/9.5_medborgarpaverkan.txt`
 
 **Total:** 9 chapters, 45 subchapters
 
