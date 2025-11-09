@@ -58,13 +58,13 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 7 — Hälsa och åldrande i Finland
 
-- [ ] Hälsa och sjukdom → `cards/orientation_guide/ch7_health_illness.txt`
-- [ ] Hälsovårdstjänster i Finland → `cards/orientation_guide/ch7_healthcare_services.txt`
-- [ ] Äldre människors hälsa och välbefinnande → `cards/orientation_guide/ch7_elderly_health.txt`
-- [ ] Olika pensioner → `cards/orientation_guide/ch7_pensions.txt`
-- [ ] Vårdtjänster för äldre → `cards/orientation_guide/ch7_elderly_care.txt`
-- [ ] Död och begravning → `cards/orientation_guide/ch7_death_funeral.txt`
-- [ ] Arv → `cards/orientation_guide/ch7_inheritance.txt`
+ - [x] Hälsa och sjukdom → `cards/orientation_guide/7.1_halsa_och_sjukdom.txt`
+ - [x] Hälsovårdstjänster i Finland → `cards/orientation_guide/7.2_halsovardstjanster_i_finland.txt`
+ - [x] Äldre människors hälsa och välbefinnande → `cards/orientation_guide/7.3_aldre_manniskors_halsa_och_valbefinnande.txt`
+ - [x] Olika pensioner → `cards/orientation_guide/7.4_olika_pensioner.txt`
+ - [x] Vårdtjänster för äldre → `cards/orientation_guide/7.5_vardtjanster_for_aldre.txt`
+ - [x] Död och begravning → `cards/orientation_guide/7.6_dod_och_begravning.txt`
+ - [x] Arv → `cards/orientation_guide/7.7_arv.txt`
 
 ### Chapter 8 — Lagar och rättskipande verksamhet i Finland
 
