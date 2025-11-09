@@ -21,6 +21,9 @@ poetry run python data/infofinland/crawler.py -o data/infofinland/content
 # Smoke-check Python syntax before committing
 poetry run python -m compileall card_creator data/infofinland
 
+# IMPORTANT: Rebuild combined deck before committing (required by CI)
+make  # creates/updates cards/ALL.txt
+
 # (optional) Install and run pre-commit hooks locally
 poetry run pre-commit install
 poetry run pre-commit run --all-files
@@ -43,10 +46,13 @@ Poetry-managed deps: `requests`, `beautifulsoup4`. No separate requirements.txt 
 - Bundle related changes per commit (crawler tweaks vs. card updates) and mention affected directories in the body when clarification helps reviewers.
 - Pull requests should outline the data sources touched, highlight any manual curation, and include screenshots or sample card excerpts when UX changes are introduced.
 
+Before committing: always run `make` (or `python card_creator/combine_all_cards.py`) and include any change to `cards/ALL.txt` in the commit. The GitHub "Check ALL.txt up to date" workflow fails if `ALL.txt` is stale.
+
 ### Agent Commit Policy (IMPORTANT)
 - Do not commit or push changes without explicit user confirmation.
 - Before committing, summarize staged changes, propose a commit message, and wait for approval.
 - Apply patches and run validations freely, but pause at the commit/push step until the user confirms.
+ - Always run `make` to refresh `cards/ALL.txt` and stage it if modified before requesting commit approval.
 
 ## Data & Content Management
 - Record newly processed sections in `card_progress.md` so collaborators avoid duplicating effort.
