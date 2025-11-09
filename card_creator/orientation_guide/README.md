@@ -28,6 +28,7 @@ This folder contains the workflow and helper script for generating Anki decks fr
 
 - Inspect headers: `rg -n "^# Subchapter" card_creator/orientation_guide/output.txt`
 - Preview: `head -n 40 card_creator/orientation_guide/output.txt`
+- Lint for source-bound phrasing: `rg -n "enligt|i texten|i kapitlet|i avsnittet|beskrivningen|uppgifterna|informationen" card_creator/orientation_guide/output.txt`
 - After splitting:
   - `ls -1 cards/orientation_guide`
   - `head cards/orientation_guide/*.txt`
@@ -37,6 +38,7 @@ This folder contains the workflow and helper script for generating Anki decks fr
 - Commit `card_creator/orientation_guide/output.txt` and the generated files under `cards/orientation_guide/`.
 - Each card must have exactly one correct answer flag (e.g., `0 1 0 0`).
 - Keep language Swedish and questions challenging and precise.
+- Questions must be standalone. Avoid any phrasing like ”enligt … / i texten / i kapitlet / i avsnittet / beskrivningen / uppgifterna / informationen”. Only explicit legal attributions (e.g., ”enligt arbetstidslagen”) are allowed.
 
 ## Post-split Checklist (AI)
 - Regenerate decks and verify format (double pipes, single correct flag, end with `|2`).
