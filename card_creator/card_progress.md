@@ -68,11 +68,11 @@ This is the main source material. Create a **separate card file for each subchap
 
 ### Chapter 8 — Lagar och rättskipande verksamhet i Finland
 
-- [ ] Finlands rättssystem → `cards/orientation_guide/ch8_legal_system.txt`
-- [ ] Ett jämlikt och jämställt samhälle → `cards/orientation_guide/ch8_equality.txt`
-- [ ] Individens rättigheter och skyldigheter → `cards/orientation_guide/ch8_rights_duties.txt`
-- [ ] Brott → `cards/orientation_guide/ch8_crimes.txt`
-- [ ] Rättsprocessen och rättshjälp → `cards/orientation_guide/ch8_legal_process.txt`
+ - [x] Finlands rättssystem → `cards/orientation_guide/8.1_finlands_rattssystem.txt`
+ - [x] Ett jämlikt och jämställt samhälle → `cards/orientation_guide/8.2_ett_jamlikt_och_jamstallt_samhalle.txt`
+ - [x] Individens rättigheter och skyldigheter → `cards/orientation_guide/8.3_individens_rattigheter_och_skyldigheter_i_finland.txt`
+ - [x] Brott → `cards/orientation_guide/8.4_brott.txt`
+ - [x] Rättsprocessen och rättshjälp → `cards/orientation_guide/8.5_rattsprocessen_och_rattshjalp.txt`
 
 ### Chapter 9 — Politik och påverkande i Finland
 
