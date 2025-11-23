@@ -92,6 +92,8 @@ This is the main source material. Create a **separate card file for each subchap
 
 Create one-to-one translations of each Danish citizenship exam, but **localized for Finland** (adapt Danish-specific content to Finnish context).
 
+**Raw dump:** `card_creator/danish/all_cards.txt` contains the verbatim multiple-choice lines copied from the combined exam PDFs (`data/danish/all_questions.pdf` + `data/danish/all_answers.pdf`), with no translation or rewriting.
+
 **Target location:** `cards/danish_adapted/`
 
 ### Exam Sets
