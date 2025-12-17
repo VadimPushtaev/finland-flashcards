@@ -20,10 +20,13 @@ installed deps:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
+import tempfile
+import zipfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
+from typing import Iterable, List, Optional, Sequence, Tuple
 
 
 @dataclass(frozen=True)
@@ -122,6 +125,64 @@ def build_questions(rows: Sequence[ParsedRow], *, time_limit: int):
     return questions
 
 
+_ZIP_DT = (1980, 1, 1, 0, 0, 0)
+
+
+def _normalize_core_xml(xml_text: str) -> str:
+    created_match = re.search(
+        r"<dcterms:created[^>]*>([^<]+)</dcterms:created>",
+        xml_text,
+    )
+    created = created_match.group(1) if created_match else "2000-01-01T00:00:00Z"
+    xml_text = re.sub(
+        r"(<dcterms:modified[^>]*>)([^<]*)(</dcterms:modified>)",
+        rf"\1{created}\3",
+        xml_text,
+    )
+    return xml_text
+
+
+def normalize_xlsx(path: Path) -> None:
+    """
+    Make XLSX output deterministic across runs.
+
+    OpenPyXL writes ZIP entry timestamps based on current time and also updates
+    `docProps/core.xml`'s `dcterms:modified` field. Both cause noisy diffs.
+
+    This function rewrites the XLSX file in place:
+    - sets all ZIP entry timestamps to a fixed value
+    - normalizes `dcterms:modified` to match `dcterms:created`
+    """
+    with zipfile.ZipFile(path, "r") as src:
+        entries = sorted(src.infolist(), key=lambda i: i.filename)
+        with tempfile.NamedTemporaryFile(
+            dir=str(path.parent),
+            delete=False,
+            prefix=path.name + ".",
+            suffix=".tmp",
+        ) as tmp_f:
+            tmp_path = Path(tmp_f.name)
+
+        try:
+            with zipfile.ZipFile(tmp_path, "w", compression=zipfile.ZIP_STORED) as dst:
+                for info in entries:
+                    data = src.read(info.filename)
+                    if info.filename == "docProps/core.xml":
+                        text = data.decode("utf-8")
+                        data = _normalize_core_xml(text).encode("utf-8")
+
+                    zi = zipfile.ZipInfo(filename=info.filename, date_time=_ZIP_DT)
+                    zi.compress_type = zipfile.ZIP_STORED
+                    zi.external_attr = info.external_attr
+                    zi.create_system = 0
+                    dst.writestr(zi, data)
+        except Exception:
+            tmp_path.unlink(missing_ok=True)
+            raise
+
+    tmp_path.replace(path)
+
+
 def export_deck(
     *,
     cards_path: Path,
@@ -144,6 +205,7 @@ def export_deck(
 
     questions = build_questions(rows, time_limit=time_limit)
     generate_quiz_xlsx(questions=questions, output_path=xlsx_out)
+    normalize_xlsx(xlsx_out)
     return xlsx_out
 
 
