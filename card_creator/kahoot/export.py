@@ -20,7 +20,6 @@ installed deps:
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 import tempfile
 import zipfile
@@ -129,17 +128,23 @@ _ZIP_DT = (1980, 1, 1, 0, 0, 0)
 
 
 def _normalize_core_xml(xml_text: str) -> str:
-    created_match = re.search(
-        r"<dcterms:created[^>]*>([^<]+)</dcterms:created>",
-        xml_text,
-    )
-    created = created_match.group(1) if created_match else "2000-01-01T00:00:00Z"
-    xml_text = re.sub(
-        r"(<dcterms:modified[^>]*>)([^<]*)(</dcterms:modified>)",
-        rf"\1{created}\3",
-        xml_text,
-    )
-    return xml_text
+    import xml.etree.ElementTree as ET
+
+    try:
+        root = ET.fromstring(xml_text)
+    except ET.ParseError:
+        return xml_text
+
+    ns = {"dcterms": "http://purl.org/dc/terms/"}
+    created_el = root.find(".//dcterms:created", ns)
+    modified_el = root.find(".//dcterms:modified", ns)
+    if created_el is None or modified_el is None:
+        return xml_text
+
+    if created_el.text:
+        modified_el.text = created_el.text
+
+    return ET.tostring(root, encoding="utf-8", xml_declaration=False).decode("utf-8")
 
 
 def normalize_xlsx(path: Path) -> None:
