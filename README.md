@@ -5,6 +5,9 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 ## Quick Start
 
 - Requires Python 3.9–3.12 and Poetry.
+- After cloning, fetch submodules:
+  - `git submodule update --init --recursive`
+  - If GitHub SSH is not configured, use HTTPS for submodules: `git config --global url."https://github.com/".insteadOf "git@github.com:"`
 - Install deps:
   - `poetry install`
 - Generate Orientation Guide decks (from committed output):
@@ -13,6 +16,8 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `poetry run python data/infofinland/crawler.py -o data/infofinland/content`
 - Combine all decks into a single import file:
   - `make` (creates `cards/ALL.txt`)
+- Export decks as Kahoot quizzes (XLSX):
+  - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`)
 
 ## Repository Structure
 
@@ -22,6 +27,8 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 - `cards/` — Ready‑to‑import Anki decks grouped by source (`articles/`, `infofinland/`, `orientation_guide/`)
 - `data/` — Raw source material and crawled content
   - `infofinland/` — Crawler and downloaded HTML under `content/`
+- `third/` — External tooling vendored as git submodules (e.g., `kahoot-generator/`)
+- `kahoot/` — Generated Kahoot exports (XLSX; committed)
 
 See also:
 - `card_creator/README.md` — Card format and creation workflow

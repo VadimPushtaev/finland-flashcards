@@ -13,6 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Init submodules
+        run: |
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
+          git submodule update --init --recursive
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,4 +36,3 @@ jobs:
             git --no-pager diff --unified=0 -- cards/ALL.txt || true
             exit 1
           fi
-
