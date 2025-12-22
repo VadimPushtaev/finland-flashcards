@@ -1,0 +1,68 @@
+You are Codex CLI running inside this repo.
+
+Task: update the `news/` folder (news monitoring for the upcoming Finnish citizenship test "kansalaisuuskoe" / "medborgarskapsprov").
+
+Goal
+- If there is new official information since the repo's current `news/*` state, update the necessary files under `news/` to reflect it.
+- If there is nothing new, do not change the repo.
+- In all cases, finish by writing a short user-facing answer: what's new (with sources) or that there are no news.
+
+Scope / constraints
+- Only modify files under `news/`.
+- Do not edit flashcard-related folders (`cards/`, `card_creator/`, `data/`, etc.).
+- Do not commit or push. If the user later asks to commit, summarize changes and propose a commit message first.
+- Avoid speculation: only add facts that are directly supported by an official source.
+- Network access may require approval; request it before fetching remote URLs.
+
+Inputs (treat as source of truth for what to monitor)
+- `news/links.md` - list of sources to check (start here).
+- `news/files.md` - inventory of locally saved snapshots/archives (update when adding files).
+- `news/all-we-know.md` - the current consolidated summary (update when new facts emerge).
+
+What counts as "news"
+- New/updated official documents (Interior Ministry pages/press releases; hankeikkuna/lausuntopalvelu consultation documents; Eduskunta proposal pages; Finlex acts/decrees).
+- Confirmed changes in status/timeline (e.g., consultation dates, "submitted to Parliament", entry-into-force date changes).
+- Newly published official guidance/materials tied to the test (e.g., learning materials availability/updates) if explicitly relevant.
+
+Update workflow
+1) Establish baseline
+   - Read `news/all-we-know.md`, `news/links.md`, `news/files.md`.
+   - Note the "Last updated" date in `news/all-we-know.md`.
+
+2) Check sources for updates (prefer official discovery pages)
+   - Open each link in `news/links.md` and check for new content.
+   - Also use the Interior Ministry project pages and the Phase 3 hankeikkuna project page as the primary places where new links/documents appear.
+
+3) Update local snapshots / archives under `news/files/` (only when something changed)
+   - For HTML pages:
+     - Fetch the current HTML.
+     - Compare with the newest existing snapshot for that page (by diff and/or SHA256).
+     - If unchanged: do not add a file.
+     - If changed: add a new snapshot file under `news/files/` without overwriting prior files.
+       - Follow existing filename conventions already in `news/files/` (date + source + short slug + language).
+   - For PDFs (hankeikkuna API / government publication PDFs / other official PDFs):
+     - Download only new documents (or new versions) that are relevant.
+     - Store them under `news/files/` without overwriting existing files (new filename if a new version).
+
+4) Maintain `news/files.md`
+   - When you add any file under `news/files/`, add a new row in the appropriate table in `news/files.md`:
+     - file path, short description, source URL, SHA256.
+   - Compute SHA256 locally for every added file and ensure it matches what you write.
+   - Update the "Download date" line when you add new files.
+
+5) Maintain `news/links.md`
+   - Add new authoritative links when you discover them (prefer FI/SV/EN variants when available).
+   - Keep the list simple and dated when relevant.
+
+6) Maintain `news/all-we-know.md`
+   - Incorporate newly confirmed facts and adjust affected sections (status/timeline, format, fees, etc.).
+   - Keep the existing structure and the "confirmed vs draft" tone.
+   - Update "Last updated:" only if you actually changed the content.
+
+7) Final response (this is part of your assistant message, not a repo file)
+   - If you made changes:
+     - Summarize the actual news in 3-8 bullets, each grounded in an official source (include links).
+     - List which `news/` files were updated/added.
+   - If you made no changes:
+     - Say there are no news.
+     - State the check date and the sources you checked (at least by referencing `news/links.md` categories).
