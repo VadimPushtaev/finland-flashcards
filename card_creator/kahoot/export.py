@@ -3,8 +3,15 @@
 Export Anki-style MCQ decks from `cards/` into Kahoot-compatible XLSX files.
 
 This script mirrors the directory structure from `cards/` into `kahoot/`.
-For every `cards/**/*.txt` file, it generates:
-- `kahoot/**/*.xlsx`  (Kahoot import template filled with questions)
+For every `cards/**/*.txt` file, it generates one or more Kahoot XLSX files
+under `kahoot/`:
+- If the deck has <= 30 questions: `kahoot/**/deck.xlsx`
+- If the deck has > 30 questions: `kahoot/**/deck__0001.xlsx`,
+  `kahoot/**/deck__0002.xlsx`, ...
+
+Chunking rule (to avoid tiny tail files):
+- Files are split into 20-question chunks until the remainder is <= 30; the
+  last chunk may therefore contain 21-30 questions.
 
 The conversion expects the repository's pipe-delimited Anki MCQ row format:
     Question|Category|2|Opt1|Opt2|Opt3|Opt4||0 1 0 0|2
@@ -20,6 +27,7 @@ installed deps:
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 import tempfile
 import zipfile
@@ -187,6 +195,81 @@ def normalize_xlsx(path: Path) -> None:
 
     tmp_path.replace(path)
 
+def _chunk_ranges(total: int) -> List[Tuple[int, int]]:
+    """
+    Split `total` questions into ranges.
+
+    Rules:
+    - If total <= 30: one chunk (0..total).
+    - Otherwise: emit 20-question chunks until the remainder is <= 30.
+      This means the last chunk may be 21-30 questions.
+    """
+    if total <= 0:
+        return []
+    if total <= 30:
+        return [(0, total)]
+
+    ranges: List[Tuple[int, int]] = []
+    start = 0
+    remaining = total
+    while remaining > 30:
+        end = start + 20
+        ranges.append((start, end))
+        start = end
+        remaining = total - start
+
+    ranges.append((start, total))
+    return ranges
+
+
+_SUFFIX_RE = re.compile(r"__\d{4}$")
+
+
+def _split_output_paths(base_xlsx_out: Path, *, question_count: int) -> List[Path]:
+    ranges = _chunk_ranges(question_count)
+    if len(ranges) <= 1:
+        return [base_xlsx_out]
+    return [
+        base_xlsx_out.with_name(f"{base_xlsx_out.stem}__{i:04d}{base_xlsx_out.suffix}")
+        for i in range(1, len(ranges) + 1)
+    ]
+
+
+def _cleanup_stale_outputs(base_xlsx_out: Path, desired: Sequence[Path]) -> None:
+    """
+    Remove stale XLSX files from previous runs for the same deck.
+
+    - If we now produce a single file (no suffix), delete any `__0001`-style files.
+    - If we now produce split files, delete the unsuffixed base file.
+    - Always delete split files that are no longer needed (e.g., old higher indices).
+    """
+    desired_set = {p.resolve() for p in desired}
+    parent = base_xlsx_out.parent
+
+    existing_split = []
+    for p in parent.glob(f"{base_xlsx_out.stem}__*.xlsx"):
+        # Keep only the exact suffix form we generate: <stem>__0001.xlsx
+        if p.suffix != base_xlsx_out.suffix:
+            continue
+        stem = p.stem
+        if not stem.startswith(base_xlsx_out.stem + "__"):
+            continue
+        suffix_part = stem[len(base_xlsx_out.stem) :]
+        if _SUFFIX_RE.fullmatch(suffix_part):
+            existing_split.append(p)
+
+    if len(desired) == 1:
+        # Keep/overwrite base_xlsx_out; remove any split outputs.
+        for p in existing_split:
+            p.unlink(missing_ok=True)
+        return
+
+    # Split outputs: remove the base file if present.
+    base_xlsx_out.unlink(missing_ok=True)
+    for p in existing_split:
+        if p.resolve() not in desired_set:
+            p.unlink(missing_ok=True)
+
 
 def export_deck(
     *,
@@ -194,9 +277,9 @@ def export_deck(
     out_root: Path,
     repo_root: Path,
     time_limit: int,
-) -> Path:
+) -> List[Path]:
     relative = cards_path.relative_to(repo_root / "cards")
-    xlsx_out = out_root / relative.with_suffix(".xlsx")
+    base_xlsx_out = out_root / relative.with_suffix(".xlsx")
 
     rows: List[ParsedRow] = []
     with cards_path.open("r", encoding="utf-8") as f:
@@ -206,12 +289,24 @@ def export_deck(
                 continue
             rows.append(parse_anki_mcq_line(line, source=cards_path, line_num=idx))
 
+    if not rows:
+        return []
+
     from kahoot_generator import generate_quiz_xlsx
 
-    questions = build_questions(rows, time_limit=time_limit)
-    generate_quiz_xlsx(questions=questions, output_path=xlsx_out)
-    normalize_xlsx(xlsx_out)
-    return xlsx_out
+    xlsx_out_paths = _split_output_paths(base_xlsx_out, question_count=len(rows))
+    _cleanup_stale_outputs(base_xlsx_out, xlsx_out_paths)
+
+    ranges = _chunk_ranges(len(rows))
+    if len(ranges) != len(xlsx_out_paths):
+        raise RuntimeError("internal error: chunk range count does not match output path count")
+
+    for (start, end), out_path in zip(ranges, xlsx_out_paths):
+        questions = build_questions(rows[start:end], time_limit=time_limit)
+        generate_quiz_xlsx(questions=questions, output_path=out_path)
+        normalize_xlsx(out_path)
+
+    return xlsx_out_paths
 
 
 def list_card_decks(cards_dir: Path) -> List[Path]:
@@ -243,7 +338,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--skip-all",
         action="store_true",
-        help="Skip exporting cards/ALL.txt.",
+        help="Skip exporting cards/ALL.txt (default behavior).",
+    )
+    parser.add_argument(
+        "--include-all",
+        action="store_true",
+        help="Include cards/ALL.txt in Kahoot exports.",
     )
     return parser
 
@@ -266,20 +366,40 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    exported = 0
+    exported_decks = 0
+    exported_files = 0
+    skipped_decks = 0
+    skip_all = args.skip_all or not args.include_all
     for deck_path in decks:
-        if args.skip_all and deck_path.resolve() == (cards_dir / "ALL.txt").resolve():
+        if skip_all and deck_path.resolve() == (cards_dir / "ALL.txt").resolve():
             continue
-        xlsx_path = export_deck(
+        xlsx_paths = export_deck(
             cards_path=deck_path,
             out_root=out_dir,
             repo_root=repo_root,
             time_limit=args.time_limit,
         )
-        exported += 1
-        print(f"[OK] {deck_path.relative_to(repo_root)} -> {xlsx_path.relative_to(repo_root)}")
+        if not xlsx_paths:
+            skipped_decks += 1
+            print(f"[WARN] {deck_path.relative_to(repo_root)} -> no questions; skipped")
+            continue
+        exported_decks += 1
+        exported_files += len(xlsx_paths)
 
-    print(f"[OK] Exported {exported} deck(s) to: {out_dir.relative_to(repo_root)}")
+        deck_rel = deck_path.relative_to(repo_root)
+        if len(xlsx_paths) == 1:
+            print(f"[OK] {deck_rel} -> {xlsx_paths[0].relative_to(repo_root)}")
+        else:
+            first = xlsx_paths[0].relative_to(repo_root)
+            last = xlsx_paths[-1].relative_to(repo_root)
+            print(f"[OK] {deck_rel} -> {first} ... {last} ({len(xlsx_paths)} files)")
+
+    print(
+        f"[OK] Exported {exported_decks} deck(s) ({exported_files} file(s)) "
+        f"to: {out_dir.relative_to(repo_root)}"
+    )
+    if skipped_decks:
+        print(f"[WARN] Skipped {skipped_decks} deck(s) with no questions")
     return 0
 
 
