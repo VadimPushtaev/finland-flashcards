@@ -208,6 +208,17 @@ Field definitions:
 - Plausible distractors: wrong answers should be realistic but clearly incorrect.
 - Simple language: clear, direct Swedish without unnecessary complexity.
 
+### Length limits (Kahoot import)
+
+Kahoot enforces strict length limits, but the exact limits can vary by template
+and import path. To stay safe, keep text short:
+
+- Target answer length: <= 70 characters per option.
+- Target question length: <= 120 characters.
+
+If an option is a long definition, shorten it to a compact phrasing that
+preserves the core meaning.
+
 ### Standalone question rules (no source references)
 
 Questions must be standalone. Users do not see the chapter or source.
