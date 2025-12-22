@@ -14,6 +14,8 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `poetry run python card_creator/orientation_guide/split_cards.py`
 - Crawl Swedish InfoFinland content:
   - `poetry run python data/infofinland/crawler.py -o data/infofinland/content`
+- Crawl English Yhteiskuntaorientaatio learning materials:
+  - `poetry run python data/orientation/crawler.py -l en -o data/orientation/en`
 - Combine all decks into a single import file:
   - `make` (creates `cards/ALL.txt`)
 - Export decks as Kahoot quizzes (XLSX):
@@ -27,6 +29,7 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 - `cards/` — Ready‑to‑import Anki decks grouped by source (`articles/`, `infofinland/`, `orientation_guide/`)
 - `data/` — Raw source material and crawled content
   - `infofinland/` — Crawler and downloaded HTML under `content/`
+  - `orientation/` — Crawler and downloaded HTML under language subfolders
 - `third/` — External tooling vendored as git submodules (e.g., `kahoot-generator/`)
 - `kahoot/` — Generated Kahoot exports (XLSX; committed)
 
@@ -34,6 +37,7 @@ See also:
 - `card_creator/README.md` — Card format and creation workflow
 - `card_creator/orientation_guide/README.md` — Orientation Guide workflow details
 - `data/infofinland/README.md` — Crawler usage and options
+- `data/orientation/README.md` — Crawler usage and options
 
 ## Card Format (MCQ)
 
@@ -56,9 +60,14 @@ InfoFinland (crawler‑derived):
 - Confirm `data/infofinland/content/crawl_stats.txt` reflects the new page count.
 - Manually review a few saved HTML files for correctness.
 
+Yhteiskuntaorientaatio (crawler‑derived):
+- Refresh content: `poetry run python data/orientation/crawler.py -l en -o data/orientation/en`
+- Confirm `data/orientation/en/crawl_stats.txt` reflects the new page count.
+- Manually review a few saved HTML files for correctness.
+
 ## Development
 
-- Smoke‑check Python syntax: `poetry run python -m compileall card_creator data/infofinland`
+- Smoke‑check Python syntax: `poetry run python -m compileall card_creator data/infofinland data/orientation`
 - Optional pre‑commit hooks:
   - `poetry run pre-commit install`
   - `poetry run pre-commit run --all-files`
