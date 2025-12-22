@@ -199,18 +199,34 @@ Create one card file for each article.
 
 ---
 
+## 5. Orientation Website (Scraped)
+
+**Source:** `data/orientation/` (yhteiskuntaorientaatio.fi crawl)
+
+Create cards based on the scraped website materials, organized by topic/category
+(see `card_creator/orientation/GUIDE.md`).
+
+**Target location:** `cards/orientation/`
+
+### Topics
+
+- [x] **Finnish history** → `cards/orientation/history/9_finnish_history.txt`
+
+---
+
 ## Summary Statistics
 
 ### Total Progress
 
-- **Main Textbook:** 20/45 subchapters (44.4%)
+- **Main Textbook:** 45/45 subchapters (100%)
 - **Danish Exams:** 0/11 exam sets (~0/440 cards)
 - **InfoFinland:** 0/15 categories
 - **Articles:** 0/3 articles
+- **Orientation Website:** 1/9 topics (11.1%)
 
-### Overall Completion: 27.0%
+### Overall Completion: 55.4%
 
-**Grand Total: 20/74 content sections completed**
+**Grand Total: 46/83 content sections completed**
 
 ---
 

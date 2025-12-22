@@ -19,7 +19,7 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 - Combine all decks into a single import file:
   - `make` (creates `cards/ALL.txt`)
 - Export decks as Kahoot quizzes (XLSX):
-  - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`)
+  - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`; large decks are split into `__0001` chunks)
 
 ## Repository Structure
 
