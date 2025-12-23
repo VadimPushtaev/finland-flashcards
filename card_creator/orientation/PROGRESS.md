@@ -78,6 +78,6 @@ Rules:
 | \|   \|-- Residence permits and citizenship |  |  |
 | \|   \|-- If a loved one dies in Finland |  |  |
 | \|-- Finnish history |  |  |
-| \|   \|-- Main periods of Finnish history 1: Finland as a part of Sweden and Russia |  |  |
+| \|   \|-- Main periods of Finnish history 1: Finland as a part of Sweden and Russia | 84 |  |
 | \|   \|-- Main periods of Finnish history 2: Independent Finland |  |  |
 | \|   \|-- Supporting newcomers through civic orientation and future skills |  |  |
