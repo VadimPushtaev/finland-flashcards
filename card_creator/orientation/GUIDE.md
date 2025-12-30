@@ -83,8 +83,104 @@ Field definitions:
 - Clear and unambiguous: avoid tricky phrasing or multiple interpretations.
 - Challenging difficulty: test understanding, not only trivial recall.
 - Factual accuracy: every question must be supported by the source material.
-- Plausible distractors: wrong answers should be realistic but clearly incorrect.
+- High-quality distractors: wrong answers must be realistic and non-obvious
+  (see "Distractor design" below).
 - Simple language: clear, direct Swedish without unnecessary complexity.
+
+### Distractor design (wrong answers must be plausible)
+
+Bad wrong answers make the right answer "pop out" even if the learner doesn't
+know the material. Avoid childish, absurd, or obviously off-topic distractors
+that can be eliminated without knowing the content.
+
+Goal: a learner who is unsure should have to think. A learner who knows the
+material should still be confident which one is correct.
+
+#### Rules of thumb
+
+- Same "kind" of answer: all four options must belong to the same semantic
+  category (all are institutions, all are time periods, all are policies, all
+  are places, etc.).
+- Same specificity: match the granularity of the correct answer. Don't mix
+  a precise option ("järnvägar") with a vague one ("samhället förbättrades").
+- Same grammar: keep options parallel (same part of speech, number, and form).
+- Similar length: avoid one option being much longer/shorter or unusually
+  detailed, which makes it feel "more correct".
+- Avoid "test-taking hacks": no "alla ovanstående", "inget av ovanstående", or
+  options that are just negations ("inte ...") unless every option follows the
+  same pattern.
+- No jokes, memes, or profanity: distractors must read like serious exam
+  answers.
+- No "obvious absurdity": avoid options that are clearly impossible or
+  unrelated to the topic unless the question explicitly tests that (rare).
+- No anachronisms: for historical questions, avoid technology, institutions,
+  or terms that did not exist in that era.
+- No "tell-tale" markers: avoid "alltid", "aldrig", "bara", "helt", "ingen",
+  "alla", or exaggerated wording unless the source itself is absolute.
+- Avoid overlapping answers: distractors must be clearly wrong; don't include
+  two options that could both be defended as correct.
+
+#### Ways to generate good distractors
+
+Pick distractors that are "near misses" (close enough to be tempting) while
+still wrong for this question.
+
+- Same topic, wrong detail:
+  - correct: "Riksdagen"
+  - distractors (examples; verify against the source): "Regeringen",
+    "Presidenten", "Högsta domstolen"
+- Swap within a known set (but keep only one correct):
+  - if the correct answer is one branch of government, use other branches,
+    not random objects.
+- Numbers/dates:
+  - use close-by numbers (e.g., 18/20/21 instead of 1/100/1000) and keep the
+    same units (years, %, euros).
+- Terms that learners confuse:
+  - use common misconceptions or similar-looking concepts (e.g., "kommun" vs
+    "landskap", "riksdag" vs "regering") as distractors.
+- True statements, wrong for the question:
+  - a distractor can be factually true in general, but not the answer to this
+    specific question (e.g., true for another era, another authority, another
+    definition).
+
+#### Distractor patterns by question type
+
+- Definitions ("Vad betyder X?"):
+  - use nearby concepts and common confusions (X vs Y), not unrelated words.
+- Responsibility ("Vem ansvarar för ...?"):
+  - use other realistic authorities at the same level (kommun vs statlig
+    myndighet vs region/landskap), but ensure only one fits the described duty.
+- Time/era ("När hände ...?"):
+  - use nearby years/decades and keep the same format (e.g., four-digit years).
+- Process/requirements ("Vilket krav gäller ...?"):
+  - use realistic-sounding requirements that are wrong by one key condition
+    (wrong age, wrong duration, wrong document).
+
+#### Quick sanity checks for distractors
+
+Before accepting a card, ask:
+- Would someone who hasn't read the page be able to eliminate 2-3 options just
+  because they are silly or unrelated?
+- Do the wrong options look like something that could plausibly appear in the
+  same textbook/lesson?
+- Are the options comparable (same style, length, and specificity)?
+- Is there exactly one best answer given the source wording?
+
+#### Micro-example (structure, not content)
+
+DON'T (one plausible + three nonsense):
+- [Question]
+  - [Correct option]
+  - [Unrelated object]
+  - [Impossible event]
+  - [Joke/meme]
+
+DO (all four options plausible; only one correct):
+- [Question]
+  - [Correct option]
+  - [Plausible near-miss #1]
+  - [Plausible near-miss #2]
+  - [Plausible near-miss #3]
 
 ### Length limits (Kahoot import)
 
@@ -165,4 +261,5 @@ Hur manga platser finns det i Finlands riksdag?|Finland's system of governance|2
 
 - Ensure no forbidden substrings appear in question stems.
 - Confirm four options per card and exactly one correct flag.
+- Ensure distractors are plausible (same category, no absurd outliers).
 - Verify double-pipe separator `||` and trailing `|2` are present.
