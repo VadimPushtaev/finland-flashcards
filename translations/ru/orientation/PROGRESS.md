@@ -81,5 +81,5 @@ Rules:
 | \|   \|-- If a loved one dies in Finland |  |  |  |
 | \|-- Finnish history |  |  |  |
 | \|   \|-- Main periods of Finnish history 1: Finland as a part of Sweden and Russia | yes |  |  |
-| \|   \|-- Main periods of Finnish history 2: Independent Finland |  |  |  |
+| \|   \|-- Main periods of Finnish history 2: Independent Finland | yes |  |  |
 | \|   \|-- Supporting newcomers through civic orientation and future skills |  |  |  |
