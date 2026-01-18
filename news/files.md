@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-01-12 (unless noted otherwise in filename).
+Download date: 2026-01-18 (unless noted otherwise in filename).
 
 ## HTML snapshots (Interior Ministry pages)
 
@@ -19,6 +19,8 @@ Download date: 2026-01-12 (unless noted otherwise in filename).
 | `news/files/snapshot_2025-12-22_intermin_project_citizenship_act_reform_en.html` | Project overview snapshot (EN) | https://intermin.fi/en/projects/reform-of-the-citizenship-act | `ca5eee0307e6896e49a24217a33dfe53fec26a38f4ed90bf4441b384e83cc885` |
 | `news/files/snapshot_2026-01-12_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `fe4328fe0bf26cae8b1a4be6f7d4f6bcf8cca5c7d88ed101aedd884579e0125d` |
 | `news/files/snapshot_2026-01-12_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `0308881883116b8873688c074fd995a793d9bac35c5b04b5d542b8075de205ba` |
+| `news/files/snapshot_2026-01-18_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `3a4abc3f1ca416b11e357b55694a65228365212241741665f361efbce2071207` |
+| `news/files/snapshot_2026-01-18_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `6630b7f34d147378f8ab767543c2e50d3d3975f75c3fe1287bcf6b6cd4113de7` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
@@ -35,6 +37,7 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 | `news/files/hankeikkuna_kirje_20250528122939_4ffc8e00.pdf` | FI: project term extension (“Hankkeen toimikauden jatkaminen”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/4ffc8e00-e42f-4f86-b656-678dc498355a/KIRJE_20250528122939.PDF | `44c7fcd3848a342b029213856382a134445dc6fe8379e18438881b98bc83d444` |
 | `news/files/hankeikkuna_asettamispaatos_20231016070844_e66dd086.pdf` | FI: appointment decision (“Asettamispäätös…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e66dd086-6fef-421c-b1c8-10cc4d7bcf53/ASETTAMISPAATOS_20231016070844.PDF | `1f46a000fc4d09668d3d89f05c9d288492649d048ec6004bfdb912f6caccab64` |
 | `news/files/hankeikkuna_asettamispaatos_20231129110128_d3645e65.pdf` | FI: working-group appointment (“Työryhmän asettaminen…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d3645e65-367e-408a-b895-084517e18f35/ASETTAMISPAATOS_20231129110128.PDF | `7464c08f225d19098727bcf6f20238b8a926d1f7fa7e2c7f240a8ada8b45d5cf` |
+| `news/files/hankeikkuna_lausunto_20260118045714_2fd79ece.pdf` | FI: consultation statement (“Lausunto”) — Poliisihallitus | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF | `3ebf4d0e1127e6d2c2ac67091f0f6a6cc57b1bd9c3d2104b337ad07b98a92e3b` |
 
 ## PDFs (working-group report)
 

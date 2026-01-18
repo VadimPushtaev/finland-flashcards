@@ -26,6 +26,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation (lausuntopalvelu.fi, FI): https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 
 - Draft HE + consultation PDFs (hankeikkuna API, FI/SV): see `news/files.md`
+- Consultation statements (hankeikkuna API; example: Poliisihallitus, 2026-01-18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
 
 ## Working-group report (publication)
 
