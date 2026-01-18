@@ -23,6 +23,7 @@ What counts as "news"
 - New/updated official documents (Interior Ministry pages/press releases; hankeikkuna/lausuntopalvelu consultation documents; Eduskunta proposal pages; Finlex acts/decrees).
 - Confirmed changes in status/timeline (e.g., consultation dates, "submitted to Parliament", entry-into-force date changes).
 - Newly published official guidance/materials tied to the test (e.g., learning materials availability/updates) if explicitly relevant.
+- Any newly published or newly linked related files discovered while checking the sources (including, but not limited to: consultation statements/comments and attachments, compiled summaries, and official replies/responses).
 
 Update workflow
 1) Establish baseline
@@ -32,6 +33,7 @@ Update workflow
 2) Check sources for updates (prefer official discovery pages)
    - Open each link in `news/links.md` and check for new content.
    - Also use the Interior Ministry project pages and the Phase 3 hankeikkuna project page as the primary places where new links/documents appear.
+   - During discovery, follow newly surfaced related links/files (including consultation comments/statements and official responses) and treat them as in-scope sources.
 
 3) Update local snapshots / archives under `news/files/` (only when something changed)
    - For HTML pages:
@@ -42,6 +44,9 @@ Update workflow
        - Follow existing filename conventions already in `news/files/` (date + source + short slug + language).
    - For PDFs (hankeikkuna API / government publication PDFs / other official PDFs):
      - Download only new documents (or new versions) that are relevant.
+     - Store them under `news/files/` without overwriting existing files (new filename if a new version).
+   - For other related downloads (e.g., consultation statement PDFs/attachments or official response documents):
+     - Download any newly discovered relevant files linked from the monitored pages.
      - Store them under `news/files/` without overwriting existing files (new filename if a new version).
 
 4) Maintain `news/files.md`
