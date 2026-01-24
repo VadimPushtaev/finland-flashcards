@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-01-23.
+Last updated: 2026-01-24.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 
@@ -14,7 +14,7 @@ Primary sources:
 - The draft introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the draft keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-01-20)
+## Status and timeline (as of 2026-01-24)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
@@ -26,7 +26,7 @@ Primary sources:
   - Suomen Paluumuuttajayhdistys ry (Finnish Returnees Association, registered association) (2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF — argues the test is unfair without official study materials or question banks; notes other countries provide official preparation materials.
   - Helsingin hallinto-oikeus (Helsinki Administrative Court) (2026-01-22): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF — limits comments to legal interpretation and court impacts; notes the existing language requirement already supports integration and says the test requirement is clear.
 - The Phase 3 project page (SM056:00/2023) lists an estimated presentation week of 5/2026 for the Government proposal; no exact submission date to Parliament is published yet.
-- The draft states the proposal is tied to the first supplementary budget for 2026 and that the proposed laws are intended to enter into force at the beginning of 2027.
+- The draft states the proposal is tied to the supplementary budget for 2026 and that the proposed laws are intended to enter into force at the beginning of 2027.
 
 ## Who is affected (draft)
 
