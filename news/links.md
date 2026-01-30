@@ -29,6 +29,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statements (hankeikkuna API; example: Poliisihallitus, 2026-01-18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
 - Consultation statements (hankeikkuna API; example: Suomen Paluumuuttajayhdistys ry, 2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
 - Consultation statements (hankeikkuna API; example: Helsingin hallinto-oikeus, 2026-01-22): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF
+- Consultation statements (hankeikkuna API; example: Valtiovarainministeriö, 2026-01-26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF
 
 ## Working-group report (publication)
 
