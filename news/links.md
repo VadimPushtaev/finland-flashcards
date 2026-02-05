@@ -26,10 +26,22 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation (lausuntopalvelu.fi, FI): https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 
 - Draft HE + consultation PDFs (hankeikkuna API, FI/SV): see `news/files.md`
-- Consultation statements (hankeikkuna API; example: Poliisihallitus, 2026-01-18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
-- Consultation statements (hankeikkuna API; example: Suomen Paluumuuttajayhdistys ry, 2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
-- Consultation statements (hankeikkuna API; example: Helsingin hallinto-oikeus, 2026-01-22): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF
-- Consultation statements (hankeikkuna API; example: Valtiovarainministeriö, 2026-01-26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF
+- Consultation statement — Poliisihallitus (2026-01-18 04:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:58): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF
+- Consultation statement — Helsingin hallinto-oikeus (2026-01-22 19:56): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF
+- Consultation statement — Valtiovarainministeriö (2026-01-30 06:31): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF
+- Consultation statement — Suomen asianajajat (2026-02-02 20:05): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b7842760-1d79-43f0-b4aa-6433688e937a/LAUSUNTO_20260202200548.PDF
+- Consultation statement — Työllisyys-, kehittämis- ja hallintokeskus KEHA (2026-02-03 18:52): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/036ecf8d-409c-4cfc-82ff-1e5fb5379886/LAUSUNTO_20260203185219.PDF
+- Consultation statement — Uudenmaan elinvoimakeskus (2026-02-03 18:54): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/3d31fcda-9042-4d39-a313-092ded2cb0af/LAUSUNTO_20260203185425.PDF
+- Consultation statement — Turun kaupunki (2026-02-04 14:24): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/649ef77a-32d1-410a-86f2-baca3cbf040c/LAUSUNTO_20260204142445.PDF
+- Consultation statement — Vantaan kaupunki (2026-02-04 19:04): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/100031d7-e1d0-46ba-8e5d-d05b022c634e/LAUSUNTO_20260204190448.PDF
+- Consultation statement — Turun yliopisto (2026-02-04 19:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/c2c8ed26-7781-4b33-8ec0-169787e79397/LAUSUNTO_20260204190651.PDF
+- Consultation statement — Familia ry (2026-02-04 19:08): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/461815cc-63ab-4d50-b7bf-5446bf58a107/LAUSUNTO_20260204190856.PDF
+- Consultation statement — Tietosuojavaltuutetun toimisto (2026-02-04 19:11): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/adac98e5-8671-49bb-b0e9-1ddb082e414b/LAUSUNTO_20260204191105.PDF
+- Consultation statement — Turun kaupunki (2026-02-04 19:13): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/20a4fa7f-b4f0-481a-9014-7fc8e23277fb/LAUSUNTO_20260204191308.PDF
+- Consultation statement — Helsingin yliopisto (2026-02-04 19:15): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d62d6198-aed8-4b54-adad-77143adea783/LAUSUNTO_20260204191512.PDF
 
 ## Working-group report (publication)
 
