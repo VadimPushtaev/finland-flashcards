@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-02-05.
+Last updated: 2026-02-07.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 
@@ -22,6 +22,8 @@ Primary sources:
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal is dated 2025-12-19 and is on consultation 2025-12-19 – 2026-02-06.
 - Consultation statements are being published on the Phase 3 project page, for example (with short notes from the statements):
+  - Työ- ja elinkeinoministeriö (2026-02-06 10:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/43694401-f383-42d3-8ed1-6bd5af69c823/LAUSUNTO_20260206100640.PDF — statement published.
+  - Suomen Paluumuuttajayhdistys ry (laajennettu lausunto, 2026-02-06 07:31): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9bd8f377-6cd4-46fb-a9b1-bc0c9ef2a50f/LAUSUNTO_20260206073154.PDF — statement published.
   - Turun kaupunki (2026-02-04 14:24): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/649ef77a-32d1-410a-86f2-baca3cbf040c/LAUSUNTO_20260204142445.PDF — statement published.
   - Vantaan kaupunki (2026-02-04 19:04): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/100031d7-e1d0-46ba-8e5d-d05b022c634e/LAUSUNTO_20260204190448.PDF — statement published.
   - Turun yliopisto (2026-02-04 19:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/c2c8ed26-7781-4b33-8ec0-169787e79397/LAUSUNTO_20260204190651.PDF — statement published.
@@ -29,6 +31,11 @@ Primary sources:
   - Tietosuojavaltuutetun toimisto (2026-02-04 19:11): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/adac98e5-8671-49bb-b0e9-1ddb082e414b/LAUSUNTO_20260204191105.PDF — statement published.
   - Turun kaupunki (2026-02-04 19:13): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/20a4fa7f-b4f0-481a-9014-7fc8e23277fb/LAUSUNTO_20260204191308.PDF — statement published.
   - Helsingin yliopisto (2026-02-04 19:15): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d62d6198-aed8-4b54-adad-77143adea783/LAUSUNTO_20260204191512.PDF — statement published.
+  - Näkövammaisten liitto ry (2026-02-05 19:10): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/6cdfeacf-039e-4c73-950d-0f8a24532288/LAUSUNTO_20260205191019.PDF — statement published.
+  - Opetushallitus (2026-02-05 19:14): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1c8954d0-377c-46c6-b089-f459e78c3456/LAUSUNTO_20260205191457.PDF — statement published.
+  - Pakolaisneuvonta ry (2026-02-05 19:17): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/55a75202-f7f0-47de-9185-2c9b1bfdb9ce/LAUSUNTO_20260205191703.PDF — statement published.
+  - Jyväskylän yliopisto (2026-02-05 19:24): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/732c78ca-0fb7-47f0-a117-90cceef8486a/LAUSUNTO_20260205192402.PDF — statement published.
+  - Keskuskauppakamari ry (2026-02-05 19:26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/45a6d5bf-83cb-42b0-8989-8df444712805/LAUSUNTO_20260205192608.PDF — statement published.
   - Työllisyys-, kehittämis- ja hallintokeskus KEHA (2026-02-03): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/036ecf8d-409c-4cfc-82ff-1e5fb5379886/LAUSUNTO_20260203185219.PDF — notes the current society-orientation learning material is aimed at trainers and would need content/pedagogical updates and a clearer legal basis to serve as test prep; prefers improving the existing material rather than building a separate one.
   - Uudenmaan elinvoimakeskus (2026-02-03): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/3d31fcda-9042-4d39-a313-092ded2cb0af/LAUSUNTO_20260203185425.PDF — raises concerns that the test may not increase inclusion and could increase stress; stresses adequate resourcing and broad, accessible learning materials.
   - Sosiaali- ja terveysministeriö (2026-02-03): project page lists “ei lausuttavaa” (no comments); no PDF posted — https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
