@@ -49,6 +49,24 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Keskuskauppakamari ry (2026-02-05 19:26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/45a6d5bf-83cb-42b0-8989-8df444712805/LAUSUNTO_20260205192608.PDF
 - Consultation statement — Suomen Paluumuuttajayhdistys ry (laajennettu lausunto, 2026-02-06 07:31): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9bd8f377-6cd4-46fb-a9b1-bc0c9ef2a50f/LAUSUNTO_20260206073154.PDF
 - Consultation statement — Työ- ja elinkeinoministeriö (2026-02-06 10:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/43694401-f383-42d3-8ed1-6bd5af69c823/LAUSUNTO_20260206100640.PDF
+- Consultation statement — UNHCR Northern Europe (2026-02-08 08:03): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/f5ea82b1-6203-435c-bd61-dc623162ca3b/LAUSUNTO_20260208080318.PDF
+- Consultation statement — Kirkkohallitus (2026-02-08 08:08): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/750d8376-1e16-4f00-bc1f-7f2c8a392616/LAUSUNTO_20260208080800.PDF
+- Consultation statement — Espoon kaupunki (2026-02-08 08:10): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/026f32a5-bc4d-4433-8281-3a199510b0d1/LAUSUNTO_20260208081005.PDF
+- Consultation statement — Jyväskylän yliopisto / Koulutuksen tutkimuslaitos (2026-02-08 08:12): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/6770c96a-7f19-40be-beb9-cf048dcb970d/LAUSUNTO_20260208081214.PDF
+- Consultation statement — Yhdenvertaisuusvaltuutettu (2026-02-08 08:14): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d9fb13df-b84b-4ad8-a693-7812813421a4/LAUSUNTO_20260208081422.PDF
+- Consultation statement — Kuurojen Liitto ry (2026-02-08 08:16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2a883c3d-3bc4-4c7e-8213-0b4c8aa8867e/LAUSUNTO_20260208081628.PDF
+- Consultation statement — Tuomioistuinvirasto (2026-02-08 08:18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5c70c6e0-bcf2-4441-b020-4968b7a5ff8a/LAUSUNTO_20260208081834.PDF
+- Consultation statement — Moniheli ry (2026-02-08 08:20): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5b56c3eb-3610-4b70-8506-0ac5d4451eae/LAUSUNTO_20260208082040.PDF
+- Consultation statement — OKV Oikeuskanslerinvirasto (2026-02-08 08:27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/ed6fdd2f-b429-448e-a0ea-a273f2809a98/LAUSUNTO_20260208082740.PDF
+- Consultation statement — Maahanmuuttovirasto (2026-02-08 08:34): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b859b180-a3d6-4d50-81a0-0233513d452a/LAUSUNTO_20260208083440.PDF
+- Consultation statement — Ammattikorkeakoulujen rehtorineuvosto Arene ry (2026-02-08 08:41): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9f94f55a-e9bf-411a-b4ab-e24b4d434a9b/LAUSUNTO_20260208084142.PDF
+- Consultation statement — Helsingin kaupunki (2026-02-08 08:43): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/50d96f7f-293d-4b21-af05-58f323224c45/LAUSUNTO_20260208084347.PDF
+- Consultation statement — Elinkeinoelämän keskusliitto EK (2026-02-08 08:53): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1600a907-b8d9-4843-826b-45af07ce4c2a/LAUSUNTO_20260208085329.PDF
+- Consultation statement — Vammaisfoorumi ry (2026-02-08 08:55): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/3ebb806b-0a1b-4650-99c2-76f58a33596b/LAUSUNTO_20260208085536.PDF
+- Consultation statement — Oikeusministeriö (2026-02-09 10:05): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/7cd65dc2-093a-4dac-ab70-71b641361d85/LAUSUNTO_20260209100527.PDF
+- Consultation statement — Eduskunnan oikeusasiamies (2026-02-09 10:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/c4fbb325-ab3b-493a-ae64-c99fc609412c/LAUSUNTO_20260209100654.PDF
+- Consultation statement — Lapsiasiavaltuutettu (2026-02-09 10:07): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d2826d9a-0507-4085-a5c3-f8843c04d877/LAUSUNTO_20260209100753.PDF
+- Consultation statement — Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF
 
 ## Working-group report (publication)
 
