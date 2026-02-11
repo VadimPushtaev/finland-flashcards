@@ -64,6 +64,9 @@ Update workflow
 6) Maintain `news/all-we-know.md`
    - Incorporate newly confirmed facts and adjust affected sections (status/timeline, format, fees, etc.).
    - Keep the existing structure and the "confirmed vs draft" tone.
+   - `news/all-we-know.md` must be idempotent: a consolidated snapshot of current knowledge, not a history of runs.
+   - Keep a cumulative, deduplicated list of all consultation statements discovered so far (stable ordering, e.g., reverse-chronological).
+   - Do not duplicate consultation entries across runs; only append truly new statements.
    - Update "Last updated:" only if you actually changed the content.
 
 7) Final response (this is part of your assistant message, not a repo file)

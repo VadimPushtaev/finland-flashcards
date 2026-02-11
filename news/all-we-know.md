@@ -3,6 +3,7 @@
 Last updated: 2026-02-11.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
+It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
 
 Primary sources:
 - `news/links.md`
@@ -21,7 +22,7 @@ Primary sources:
   - Phase 2 (other conditions + loss of citizenship): Government proposal given to Parliament 2025-03-27; changes confirmed 2025-10-24, in force since 2025-12-17.
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal is dated 2025-12-19 and is on consultation 2025-12-19 – 2026-02-06.
-- Consultation statements are being published on the Phase 3 project page, for example (with short notes from the statements):
+- Consultation statements published on the Phase 3 project page (cumulative list; deduplicated; stable order, with short notes where useful):
   - Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF — statement published.
   - Lapsiasiavaltuutettu (2026-02-09 10:07): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d2826d9a-0507-4085-a5c3-f8843c04d877/LAUSUNTO_20260209100753.PDF — statement published.
   - Eduskunnan oikeusasiamies (2026-02-09 10:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/c4fbb325-ab3b-493a-ae64-c99fc609412c/LAUSUNTO_20260209100654.PDF — statement published.
