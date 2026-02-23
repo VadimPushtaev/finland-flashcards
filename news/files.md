@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-02-11 (unless noted otherwise in filename).
+Download date: 2026-02-23 (unless noted otherwise in filename).
 
 ## HTML snapshots (Interior Ministry pages)
 
@@ -112,6 +112,9 @@ Download date: 2026-02-11 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-02-07_intermin_project_citizenship_act_reform_sv.html` | Project overview snapshot (SV) | https://intermin.fi/sv/projekt/revidering-av-medborgarskapslagen | `478e077675f503e564d3c61c5eb62a07bd50e9e03559540c1d1794310ff52427` |
 | `news/files/snapshot_2026-02-07_intermin_project_citizenship_act_reform_en.html` | Project overview snapshot (EN) | https://intermin.fi/en/projects/reform-of-the-citizenship-act | `c799df3bdc2a0b22474d68783b51352c160664f51d2b6a31c6261826542decfe` |
 
+| `news/files/snapshot_2026-02-23_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-02-23 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `c0d466528577adb67b9aae0604be9730a547b0bba34dd39b24052ec4a8169225` |
+| `news/files/snapshot_2026-02-23_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-02-23 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `9a97a22e6019a2463c089b6568017c31b71707981cde851ffd76495b067eddac` |
+
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
 All retrieved from the Phase 3 project page `SM056:00/2023`:
@@ -176,6 +179,8 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 | `news/files/hankeikkuna_lausunto_20260209100654_c4fbb325.pdf` | FI: consultation statement (“Lausunto”) — Eduskunnan oikeusasiamies (2026-02-09 10:06) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/c4fbb325-ab3b-493a-ae64-c99fc609412c/LAUSUNTO_20260209100654.PDF | `1e6da089d3486225337410078a7268073a0b811e91ce535eb6994722d22be41f` |
 | `news/files/hankeikkuna_lausunto_20260209100753_d2826d9a.pdf` | FI: consultation statement (“Lausunto”) — Lapsiasiavaltuutettu (2026-02-09 10:07) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d2826d9a-0507-4085-a5c3-f8843c04d877/LAUSUNTO_20260209100753.PDF | `8789fb94522063f619b0af436b48b327407760c452b315677b3785cf0914ace0` |
 | `news/files/hankeikkuna_lausunto_20260209100909_87452f6c.pdf` | FI: consultation statement (“Lausunto”) — Ålands landskapsregering (2026-02-09 10:09) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF | `95aee2e33e8056b702723d5945ac856a441eff59a90e25e2dca7fcbd24898ad3` |
+
+| `news/files/hankeikkuna_lausunto_20260211073023_1960abcf.pdf` | FI: consultation statement ("Lausunto") — Suomi-Seura ry (2026-02-11 07:30) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF | `6744fa1beaadb0e2f68c8c4379d93d7e6f59f386b4cd313da6ca5b964c1a1e9b` |
 
 ## PDFs (working-group report)
 
