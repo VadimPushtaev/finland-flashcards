@@ -1,13 +1,15 @@
 # Orientation Learning Materials (Page-Based Cards)
 
 This guide defines the page-based workflow for the civic orientation website
-crawl under `data/orientation/en/`. We generate one file of questions per page
+crawl under `data/orientation/sv/` (with `data/orientation/en/` as optional
+reference). We generate one file of questions per page
 in the Learning materials tree. See `card_creator/orientation/PROGRESS.md` for
 the full list and progress tracking.
 
 Sources:
 - Orientation crawl overview: `data/orientation/README.md`
-- Learning materials index: `data/orientation/en/learning-materials.html`
+- Swedish learning materials index: `data/orientation/sv/laromedel.html`
+- English reference index: `data/orientation/en/learning-materials.html`
 - Progress tracking: `card_creator/orientation/PROGRESS.md`
 
 ## Orientation vs orientation_guide (important)
@@ -25,13 +27,16 @@ with `cards/orientation_guide/`.
 
 ## Scope and source rules
 
-- Use the English learning materials under `data/orientation/en/learning-materials/`
+- Use the Swedish learning materials under `data/orientation/sv/laromedel/`
   as the primary question sources.
-- Use `data/orientation/en/yhteiskuntaorientaation-oppimateriaali/` as
-  section-level overviews to frame question coverage.
+- If needed for disambiguation, compare with the matching English page under
+  `data/orientation/en/learning-materials/`, but keep Swedish source wording
+  and terminology as authoritative in questions/options.
+- Use `data/orientation/sv/handbok-for-utbildare/laromedlet-i-samhallsorientering/`
+  as section-level overviews to frame question coverage.
 - Avoid trainer guides and site meta pages (e.g.,
-  `data/orientation/en/kouluttajan-opas.html`,
-  `data/orientation/en/about-the-site/`) as direct question sources.
+  `data/orientation/sv/handbok-for-utbildare.html`,
+  `data/orientation/sv/om-webbplatsen.html`) as direct question sources.
 
 ## Page-based output (required)
 
@@ -51,10 +56,10 @@ with `cards/orientation_guide/`.
 - For the section landing page itself, use `<section>.txt`.
 
 Examples:
-- `data/orientation/en/learning-materials/integration.html` ->
+- `data/orientation/sv/laromedel/integration.html` ->
   `cards/orientation/integration/integration.txt`
-- `data/orientation/en/learning-materials/integration/what-does-integration-mean.html` ->
-  `cards/orientation/integration/what-does-integration-mean.txt`
+- `data/orientation/sv/laromedel/integration/vad-betyder-integration.html` ->
+  `cards/orientation/integration/vad-betyder-integration.txt`
 
 ## Question creation rules
 
