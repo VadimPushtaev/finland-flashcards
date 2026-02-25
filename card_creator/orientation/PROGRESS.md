@@ -18,7 +18,7 @@ Rules:
 | \|   \|-- Weather and seasons in Finland |  |  |
 | \|   \|-- Key characteristics of Finnish society |  |  |
 | \|-- People and culture |  |  |
-| \|   \|-- The Finnish population |  |  |
+| \|   \|-- The Finnish population | 128 |  |
 | \|   \|-- Religion, religiosity and being non-religious |  |  |
 | \|   \|-- Values of Finnish society |  |  |
 | \|   \|-- Culture and social norms |  |  |
