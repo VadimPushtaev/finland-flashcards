@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-02-26.
+Last updated: 2026-02-27.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -15,7 +15,7 @@ Primary sources:
 - The draft introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the draft keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-02-26)
+## Status and timeline (as of 2026-02-27)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
@@ -23,6 +23,7 @@ Primary sources:
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal is dated 2025-12-19 and is on consultation 2025-12-19 – 2026-02-06.
 - Consultation statements published on the Phase 3 project page (cumulative list; deduplicated; stable order, with short notes where useful):
+  - Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF — statement published.
   - Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF — statement published.
   - Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF — statement published.
   - Lapsiasiavaltuutettu (2026-02-09 10:07): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d2826d9a-0507-4085-a5c3-f8843c04d877/LAUSUNTO_20260209100753.PDF — statement published.
@@ -62,7 +63,7 @@ Primary sources:
   - Suomen asianajajat (Finnish Bar Association) (2026-02-02): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b7842760-1d79-43f0-b4aa-6433688e937a/LAUSUNTO_20260202200548.PDF — says the new requirement adds complexity and costs and questions its benefits; suggests higher-education and vocational degrees completed in Finnish/Swedish should be accepted as alternatives.
   - Korkein hallinto-oikeus (Supreme Administrative Court) (2026-01-27): project page lists an “ilmoitus, ettei lausuttavaa” (notice of no comments); no PDF posted — https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
   - Poliisihallitus (National Police Board) (2026-01-18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF — supports adding the society-knowledge requirement; supports meeting it via the citizenship test and accepting matriculation or vocational education as proof.
-  - Suomen Paluumuuttajayhdistys ry (Finnish Returnees Association, registered association) (2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF — argues the test is unfair without official study materials or question banks; notes other countries provide official preparation materials. The `.../d93cc0c4...` URL returns HTTP 404 as of 2026-02-26, but the archived file is retained locally in `news/files/`.
+  - Suomen Paluumuuttajayhdistys ry (Finnish Returnees Association, registered association) (2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF — argues the test is unfair without official study materials or question banks; notes other countries provide official preparation materials. All three source URLs above return HTTP 404 as of 2026-02-27, but archived files are retained locally in `news/files/`.
   - Helsingin hallinto-oikeus (Helsinki Administrative Court) (2026-01-22): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF — limits comments to legal interpretation and court impacts; notes the existing language requirement already supports integration and says the test requirement is clear.
   - Valtiovarainministeriö (Ministry of Finance) (2026-01-26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF — statement published.
 - The Phase 3 project page (SM056:00/2023) notes the project was added to the spring 2026 session plan on 2026-01-27 and now lists an estimated presentation week of 14/2026 for the Government proposal; no exact submission date to Parliament is published yet.

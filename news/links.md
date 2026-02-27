@@ -27,9 +27,9 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Draft HE + consultation PDFs (hankeikkuna API, FI/SV): see `news/files.md`
 - Consultation statement — Poliisihallitus (2026-01-18 04:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
-- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
-- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56; URL returns HTTP 404 as of 2026-02-26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF
-- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:58): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09; URL returns HTTP 404 as of 2026-02-27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56; URL returns HTTP 404 as of 2026-02-27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF
+- Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:58; URL returns HTTP 404 as of 2026-02-27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF
 - Consultation statement — Helsingin hallinto-oikeus (2026-01-22 19:56): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF
 - Consultation statement — Valtiovarainministeriö (2026-01-30 06:31): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF
 - Consultation statement — Suomen asianajajat (2026-02-02 20:05): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b7842760-1d79-43f0-b4aa-6433688e937a/LAUSUNTO_20260202200548.PDF
@@ -68,6 +68,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Lapsiasiavaltuutettu (2026-02-09 10:07): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d2826d9a-0507-4085-a5c3-f8843c04d877/LAUSUNTO_20260209100753.PDF
 - Consultation statement — Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF
 - Consultation statement — Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF
+- Consultation statement — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF
 
 ## Working-group report (publication)
 
