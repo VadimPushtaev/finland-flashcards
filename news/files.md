@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-02-23 (unless noted otherwise in filename).
+Download date: 2026-02-27 (unless noted otherwise in filename).
 
 ## HTML snapshots (Interior Ministry pages)
 
@@ -114,6 +114,8 @@ Download date: 2026-02-23 (unless noted otherwise in filename).
 
 | `news/files/snapshot_2026-02-23_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-02-23 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `c0d466528577adb67b9aae0604be9730a547b0bba34dd39b24052ec4a8169225` |
 | `news/files/snapshot_2026-02-23_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-02-23 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `9a97a22e6019a2463c089b6568017c31b71707981cde851ffd76495b067eddac` |
+| `news/files/snapshot_2026-02-27_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-02-27 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `ab7ad043fd901680eb75dc56cfe94ec5379008404c8387e6c12384c0eacaff28` |
+| `news/files/snapshot_2026-02-27_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-02-27 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `a53639965e7a6e3d77bfd1ef3eeb4ed719621aa9f9396e9db53fac9935d1a07b` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
@@ -131,9 +133,9 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 | `news/files/hankeikkuna_asettamispaatos_20231016070844_e66dd086.pdf` | FI: appointment decision (“Asettamispäätös…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e66dd086-6fef-421c-b1c8-10cc4d7bcf53/ASETTAMISPAATOS_20231016070844.PDF | `1f46a000fc4d09668d3d89f05c9d288492649d048ec6004bfdb912f6caccab64` |
 | `news/files/hankeikkuna_asettamispaatos_20231129110128_d3645e65.pdf` | FI: working-group appointment (“Työryhmän asettaminen…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d3645e65-367e-408a-b895-084517e18f35/ASETTAMISPAATOS_20231129110128.PDF | `7464c08f225d19098727bcf6f20238b8a926d1f7fa7e2c7f240a8ada8b45d5cf` |
 | `news/files/hankeikkuna_lausunto_20260118045714_2fd79ece.pdf` | FI: consultation statement (“Lausunto”) — Poliisihallitus | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF | `3ebf4d0e1127e6d2c2ac67091f0f6a6cc57b1bd9c3d2104b337ad07b98a92e3b` |
-| `news/files/hankeikkuna_lausunto_20260119090915_0a515a86.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF | `f578488d8937df8973c1a6138c0db1f06ec0360a54ac8273e65d42e9bf63e4d2` |
-| `news/files/hankeikkuna_lausunto_20260119185643_d93cc0c4.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56; source URL returns HTTP 404 as of 2026-02-26) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF | `8c06252feee3a58b9fa25995c4b400299c27c389ce995ae1ad0a3eaa8766483a` |
-| `news/files/hankeikkuna_lausunto_20260119185855_5634f0d8.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:58) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF | `706ee2962af5940ac72cfe2fbdcab5c13c5eacf382c1259bf259a6085b7d3c78` |
+| `news/files/hankeikkuna_lausunto_20260119090915_0a515a86.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09; source URL returns HTTP 404 as of 2026-02-27) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF | `f578488d8937df8973c1a6138c0db1f06ec0360a54ac8273e65d42e9bf63e4d2` |
+| `news/files/hankeikkuna_lausunto_20260119185643_d93cc0c4.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56; source URL returns HTTP 404 as of 2026-02-27) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF | `8c06252feee3a58b9fa25995c4b400299c27c389ce995ae1ad0a3eaa8766483a` |
+| `news/files/hankeikkuna_lausunto_20260119185855_5634f0d8.pdf` | FI: consultation statement (“Lausunto”) — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:58; source URL returns HTTP 404 as of 2026-02-27) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF | `706ee2962af5940ac72cfe2fbdcab5c13c5eacf382c1259bf259a6085b7d3c78` |
 | `news/files/hankeikkuna_lausunto_20260122195648_141228d2.pdf` | FI: consultation statement (“Lausunto”) — Helsingin hallinto-oikeus (2026-01-22 19:56) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF | `a91dac9aa3450d54092d062c5769d07463599dad8ec91417cf3374855c38ea9d` |
 | `news/files/hankeikkuna_lausunto_20260130063143_caa17c96.pdf` | FI: consultation statement (“Lausunto”) — Valtiovarainministeriö (2026-01-30 06:31) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF | `4b67b1b334456b6d89d1a1d89af7201be00b1fff2f3e2c18edf13d0d864d8bed` |
 | `news/files/hankeikkuna_lausunto_20260202200548_b7842760.pdf` | FI: consultation statement (“Lausunto”) — Suomen asianajajat (2026-02-02 20:05) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b7842760-1d79-43f0-b4aa-6433688e937a/LAUSUNTO_20260202200548.PDF | `c33bfa3ef5c99ccbe6c7c959d227543972dd54646cd265174436770a28c4ee0f` |
@@ -181,6 +183,7 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 | `news/files/hankeikkuna_lausunto_20260209100909_87452f6c.pdf` | FI: consultation statement (“Lausunto”) — Ålands landskapsregering (2026-02-09 10:09) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF | `95aee2e33e8056b702723d5945ac856a441eff59a90e25e2dca7fcbd24898ad3` |
 
 | `news/files/hankeikkuna_lausunto_20260211073023_1960abcf.pdf` | FI: consultation statement ("Lausunto") — Suomi-Seura ry (2026-02-11 07:30) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF | `6744fa1beaadb0e2f68c8c4379d93d7e6f59f386b4cd313da6ca5b964c1a1e9b` |
+| `news/files/hankeikkuna_lausunto_20260226094001_e9d72be9.pdf` | FI: consultation statement ("Lausunto") — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF | `212c3330f6acf8fcccfb6297b1606e0905abb71a2160ccf1599cb1ffeb4f773c` |
 
 ## PDFs (working-group report)
 
