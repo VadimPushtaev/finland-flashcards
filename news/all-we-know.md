@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-02-27.
+Last updated: 2026-03-07.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -21,7 +21,7 @@ Primary sources:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
   - Phase 2 (other conditions + loss of citizenship): Government proposal given to Parliament 2025-03-27; changes confirmed 2025-10-24, in force since 2025-12-17.
   - Phase 3: citizenship test and society knowledge requirement.
-- The Phase 3 draft Government proposal is dated 2025-12-19 and is on consultation 2025-12-19 – 2026-02-06.
+- The Phase 3 draft Government proposal is dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
 - Consultation statements published on the Phase 3 project page (cumulative list; deduplicated; stable order, with short notes where useful):
   - Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF — statement published.
   - Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF — statement published.
