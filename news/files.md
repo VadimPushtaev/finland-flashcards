@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-03-07 (unless noted otherwise in filename).
+Download date: 2026-03-12 (unless noted otherwise in filename).
 
 ## HTML snapshots (Interior Ministry pages)
 
@@ -118,6 +118,8 @@ Download date: 2026-03-07 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-02-27_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-02-27 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `a53639965e7a6e3d77bfd1ef3eeb4ed719621aa9f9396e9db53fac9935d1a07b` |
 | `news/files/snapshot_2026-03-07_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-03-07 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `e9e0cef8b4906e64bd0c4b270e2bb3d44a73198894197e4e460714ebd9ceb15f` |
 | `news/files/snapshot_2026-03-07_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-07 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `91c245f76ed0f4edeabb9e0be3b578383fc1d5a1d0ac0b5e87f3d9e56229bc1c` |
+| `news/files/snapshot_2026-03-12_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-03-12 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `04bc3f355d35a23b28d700da7395485dbc8fd65fddf6935c205fc1ec466f75a9` |
+| `news/files/snapshot_2026-03-12_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-12 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `3fedd439fe073ad0f2b1833b58f7e04bc0ed11311fe732319143f1008a314c6a` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
@@ -186,6 +188,7 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 
 | `news/files/hankeikkuna_lausunto_20260211073023_1960abcf.pdf` | FI: consultation statement ("Lausunto") — Suomi-Seura ry (2026-02-11 07:30) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF | `6744fa1beaadb0e2f68c8c4379d93d7e6f59f386b4cd313da6ca5b964c1a1e9b` |
 | `news/files/hankeikkuna_lausunto_20260226094001_e9d72be9.pdf` | FI: consultation statement ("Lausunto") — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF | `212c3330f6acf8fcccfb6297b1606e0905abb71a2160ccf1599cb1ffeb4f773c` |
+| `news/files/hankeikkuna_lausunto_20260311075731_2194fc74.pdf` | FI: consultation statement ("Lausunto") — Ylioppilastutkintolautakunta YTL (2026-03-11 07:57) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF | `af7f3f1b9b585a745c961438e59886c2ba0492f581fc3339a0bedb7ab286bd7c` |
 
 ## PDFs (working-group report)
 
