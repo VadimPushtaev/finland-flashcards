@@ -69,6 +69,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF
 - Consultation statement — Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF
 - Consultation statement — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF
+- Consultation statement — Ylioppilastutkintolautakunta YTL (2026-03-11 07:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF
 
 ## Working-group report (publication)
 

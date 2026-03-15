@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-03-07.
+Last updated: 2026-03-12.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -15,7 +15,7 @@ Primary sources:
 - The draft introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the draft keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-02-27)
+## Status and timeline (as of 2026-03-12)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
@@ -23,6 +23,7 @@ Primary sources:
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal is dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
 - Consultation statements published on the Phase 3 project page (cumulative list; deduplicated; stable order, with short notes where useful):
+  - Ylioppilastutkintolautakunta YTL (2026-03-11 07:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF — statement published.
   - Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF — statement published.
   - Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF — statement published.
   - Ålands landskapsregering (2026-02-09 10:09): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/87452f6c-e3b4-4a5c-a64a-bcb6a331ab95/LAUSUNTO_20260209100909.PDF — statement published.
