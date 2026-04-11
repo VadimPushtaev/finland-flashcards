@@ -24,6 +24,8 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Phase 3 project page (SV, SM056:00/2023): https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023
 
 - Consultation (lausuntopalvelu.fi, FI): https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation attachment download (lausuntopalvelu, FI draft HE PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
+- Consultation attachment download (lausuntopalvelu, SV draft main content + draft provisions PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
 
 - Draft HE + consultation PDFs (hankeikkuna API, FI/SV): see `news/files.md`
 - Consultation statement — Poliisihallitus (2026-01-18 04:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
@@ -97,3 +99,6 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Phase 2 act (929/2025, FI): https://www.finlex.fi/fi/laki/alkup/2025/20250929
 - Phase 2 act (929/2025, SV): https://www.finlex.fi/sv/laki/alkup/2025/20250929
+
+- Pending Government proposals — Ministry of the Interior (Finlex, FI): https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio
+- Pending Government proposals — Ministry of the Interior (Finlex, SV): https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet

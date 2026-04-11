@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-03-12 (unless noted otherwise in filename).
+Download date: 2026-04-11 (unless noted otherwise in filename).
 
 ## HTML snapshots (Interior Ministry pages)
 
@@ -120,6 +120,10 @@ Download date: 2026-03-12 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-03-07_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-07 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `91c245f76ed0f4edeabb9e0be3b578383fc1d5a1d0ac0b5e87f3d9e56229bc1c` |
 | `news/files/snapshot_2026-03-12_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-03-12 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `04bc3f355d35a23b28d700da7395485dbc8fd65fddf6935c205fc1ec466f75a9` |
 | `news/files/snapshot_2026-03-12_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-12 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `3fedd439fe073ad0f2b1833b58f7e04bc0ed11311fe732319143f1008a314c6a` |
+| `news/files/snapshot_2026-03-26_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-03-26 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `e2e25f2c071be8c4130652ed8f94141bdb820cced6514cf144295ef16289f2b3` |
+| `news/files/snapshot_2026-03-26_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-26 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `90ea0e8318cd17c41146b43ce0f8b37fc35a4d656ef7cab4d1a3e8a450775a65` |
+| `news/files/snapshot_2026-04-11_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-04-11 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `633deb0e1ab1c5b5f0d6e924db8e9fdcf02bc09565402d0f67961717edcb7a3b` |
+| `news/files/snapshot_2026-04-11_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-04-11 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `fcb07b57afb709235c25d6f8d663896be3ae0f9fbd987257b76b3104721d8d37` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
