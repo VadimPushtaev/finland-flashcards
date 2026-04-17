@@ -2,9 +2,9 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-04-11 (unless noted otherwise in filename).
+Download date: 2026-04-17 (unless noted otherwise in filename).
 
-## HTML snapshots (Interior Ministry pages)
+## HTML snapshots (official pages)
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
@@ -124,6 +124,29 @@ Download date: 2026-04-11 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-03-26_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-03-26 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `90ea0e8318cd17c41146b43ce0f8b37fc35a4d656ef7cab4d1a3e8a450775a65` |
 | `news/files/snapshot_2026-04-11_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-04-11 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `633deb0e1ab1c5b5f0d6e924db8e9fdcf02bc09565402d0f67961717edcb7a3b` |
 | `news/files/snapshot_2026-04-11_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-04-11 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `fcb07b57afb709235c25d6f8d663896be3ae0f9fbd987257b76b3104721d8d37` |
+| `news/files/snapshot_2026-04-16_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-04-16 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `ed47d20e5b5c64e9b2ed3384130926ac4a8eca0eaf45734c1e32d7eae3189acc` |
+| `news/files/snapshot_2026-04-16_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-04-16 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `ced82dbe4fe493cea5e0a82e756b31b7367256d77c2637115f32376d2a11d182` |
+| `news/files/snapshot_2026-04-16_lausuntopalvelu_phase3_responses_fi.html` | Lausuntopalvelu published responses report for Phase 3 consultation (FI, 36 respondents) — snapshot 2026-04-16 | https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e | `34fe91505f69e33eabb1f85b5c7f6146f904f29db9a8d4bf177b47b2113241c2` |
+| `news/files/2026-04-16_intermin_press_release_government_proposes_citizenship_test_fi.html` | Press release: Government proposes to introduce citizenship test (FI, 2026-04-16) | https://intermin.fi/-/hallitus-esittaa-kansalaisuuskokeen-kayttoonottoa | `de1df081cb7c2227326e0b93855d0d025dce39f19772eb8e18b4ca9f2f8f887c` |
+| `news/files/2026-04-16_intermin_press_release_government_proposes_citizenship_test_sv.html` | Press release: Government proposes to introduce citizenship test (SV, 2026-04-16) | https://intermin.fi/sv/-/regeringen-foreslar-inforande-av-ett-medborgarskapsprov | `a8abb4f6071105e333ea1815a208427f74ab4fff2fdc6b7081549e13fce570e9` |
+| `news/files/2026-04-16_intermin_press_release_government_proposes_citizenship_test_en.html` | Press release: Government proposes to introduce citizenship test (EN, 2026-04-16) | https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test | `cd00b9f1aec38708e99f62e47b586d5768e227fde972250a33cad1cafcacf5d3` |
+| `news/files/snapshot_2026-04-17_intermin_project_citizenship_act_reform_fi.html` | Project overview snapshot (FI) — snapshot 2026-04-17 | https://intermin.fi/hankkeet/kansalaisuuslain-uudistaminen | `effbe4dbe73347e4428e73b05fdcdc335c5cbf49eaf137c042074116dd093535` |
+| `news/files/snapshot_2026-04-17_intermin_project_citizenship_act_reform_sv.html` | Project overview snapshot (SV) — snapshot 2026-04-17 | https://intermin.fi/sv/projekt/revidering-av-medborgarskapslagen | `79e69f153ca7a66aab1d5502cdc212ab83c291bbec6b1a8911f5ed70ca664392` |
+| `news/files/snapshot_2026-04-17_intermin_project_citizenship_act_reform_en.html` | Project overview snapshot (EN) — snapshot 2026-04-17 | https://intermin.fi/en/projects/reform-of-the-citizenship-act | `0446ddd491058b184c5ec73414d394c8c979d6c3c6af32ecb137a1ce9a586110` |
+| `news/files/snapshot_2026-04-17_intermin_project_phase3_sm056_00_2023_fi.html` | Phase 3 project page snapshot (FI, SM056:00/2023) — snapshot 2026-04-17 | https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023 | `9c35d92f43c1c81836287f3c7cba22d47b435fbec134c4cbedbd9a0e1704650d` |
+| `news/files/snapshot_2026-04-17_intermin_project_phase3_sm056_00_2023_sv.html` | Phase 3 project page snapshot (SV, SM056:00/2023) — snapshot 2026-04-17 | https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023 | `b9248671eb8f158ee9b21b38e89a6513c8a00fcc63838d20643c0b7015952fa7` |
+| `news/files/snapshot_2026-04-17_intermin_citizenship_act_reform_faq_fi.html` | Citizenship Act reform FAQ snapshot (FI) — snapshot 2026-04-17 | https://intermin.fi/hankkeet/kansalaisuuslain-uudistaminen/ukk | `3a8e6422a57c36b341884340d00ecac026b4058d63d1c6ee5fd0e2dea46d2170` |
+| `news/files/snapshot_2026-04-17_intermin_citizenship_act_reform_faq_sv.html` | Citizenship Act reform FAQ snapshot (SV) — snapshot 2026-04-17 | https://intermin.fi/sv/projekt/revidering-av-medborgarskapslagen/fragor-och-svar | `cd8fe019c375169cdd7b886b7aa16ba5d863573fcb1cddd95368d4634e44c4f5` |
+| `news/files/snapshot_2026-04-17_intermin_citizenship_act_reform_faq_en.html` | Citizenship Act reform FAQ snapshot (EN) — snapshot 2026-04-17 | https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq | `979a5577c05ee2a916314c866f4194552cec3cbaf0281bde3d4587c756753660` |
+| `news/files/snapshot_2026-04-17_valtioneuvosto_decision_sm_2026_22_fi.html` | Valtioneuvosto decision page snapshot for HE 54/2026 / SM/2026/22 (FI) — snapshot 2026-04-17 | https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035 | `95cd01ae26cf231fd5b8e6802ce317beb6fba8ec80c38fdbd1b34aa7b5910b6c` |
+| `news/files/snapshot_2026-04-17_valtioneuvosto_session_2026_04_16_vn_24_fi.html` | Valtioneuvosto session page snapshot (FI, VN 24/2026, 2026-04-16) — snapshot 2026-04-17 | https://valtioneuvosto.fi/paatokset/istunto?sessionId=377 | `86f55b2affa3518c10f248bf87e2af2b13b2d724faabcb0f6a613b848a4c5be2` |
+
+## PDFs (Phase 3 submitted Government proposal via valtioneuvosto)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/valtioneuvosto_he_54_2026_kansalaisuuslain_muuttamisesta_fi.pdf` | FI: submitted Government proposal HE 54/2026 vp (“Hallituksen esitys eduskunnalle laiksi kansalaisuuslain muuttamisesta ja siihen liittyviksi laeiksi”) | https://valtioneuvosto.fi/delegate/file/227878 | `c34819098a6364faf8de7821c7d2d593258591de42891037cec44ff095577616` |
+| `news/files/valtioneuvosto_rp_54_2026_medborgarskapslagen_sv.pdf` | SV: submitted Government proposal RP 54/2026 rd (“Regeringens proposition till riksdagen med förslag till lag om ändring av medborgarskapslagen och till lagar som har samband med den”) | https://valtioneuvosto.fi/delegate/file/227877 | `d54e40381c4f309f4258b7a2bd6397e2925c638fa3ed0afd25000307c4c8674c` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 
@@ -137,6 +160,7 @@ All retrieved from the Phase 3 project page `SM056:00/2023`:
 | `news/files/hankeikkuna_lausuntopyynto_20251219155050_348eb0b0.pdf` | FI: draft Government proposal (“luonnos HE…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/348eb0b0-fe35-4f75-b1df-7e117def5377/LAUSUNTOPYYNTO_20251219155050.PDF | `3846b929410d0605103f9b2c7ab38b7ed131acbbb33e3df027c8664f7bfe7dab` |
 | `news/files/hankeikkuna_lausuntopyynto_20251219155050_a34181da.pdf` | SV: consultation request (“Begäran om utlåtande…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/a34181da-d255-4a97-b7c1-92d68aa1213c/LAUSUNTOPYYNTO_20251219155050.PDF | `7ec1782807c517d6448b10ea3688631c99ef62b3c74d8dfb76788772028f3e74` |
 | `news/files/hankeikkuna_lausuntopyynto_20251219155050_f004eb9f.pdf` | SV: draft main content + draft provisions (“Utkast medborgarskapslag…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/f004eb9f-08eb-4837-9114-1a50d479a76f/LAUSUNTOPYYNTO_20251219155050.PDF | `8502816ffb05e0c2ea22ac9e5f2736b7ae37627dd7457f9e2c42d500ef50fca1` |
+| `news/files/hankeikkuna_yhteenveto_20260416070851_8e6258d7.pdf` | FI: consultation summary (“Lausuntoyhteenveto; kansalaisuuskoetta koskevan hallituksen esityksen luonnos”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF | `f9e75656a3796d91b71ee0fe85dbdd6df05e8c9d7f0f1617034d3724d37ba931` |
 | `news/files/hankeikkuna_kirje_20250528122939_4ffc8e00.pdf` | FI: project term extension (“Hankkeen toimikauden jatkaminen”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/4ffc8e00-e42f-4f86-b656-678dc498355a/KIRJE_20250528122939.PDF | `44c7fcd3848a342b029213856382a134445dc6fe8379e18438881b98bc83d444` |
 | `news/files/hankeikkuna_asettamispaatos_20231016070844_e66dd086.pdf` | FI: appointment decision (“Asettamispäätös…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e66dd086-6fef-421c-b1c8-10cc4d7bcf53/ASETTAMISPAATOS_20231016070844.PDF | `1f46a000fc4d09668d3d89f05c9d288492649d048ec6004bfdb912f6caccab64` |
 | `news/files/hankeikkuna_asettamispaatos_20231129110128_d3645e65.pdf` | FI: working-group appointment (“Työryhmän asettaminen…”) | https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d3645e65-367e-408a-b895-084517e18f35/ASETTAMISPAATOS_20231129110128.PDF | `7464c08f225d19098727bcf6f20238b8a926d1f7fa7e2c7f240a8ada8b45d5cf` |
