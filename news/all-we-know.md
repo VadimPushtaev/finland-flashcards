@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-04-11.
+Last updated: 2026-04-17.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -12,17 +12,23 @@ Primary sources:
 ## What it is (high-level)
 
 - Finland is preparing a new citizenship test (“kansalaisuuskoe” / “medborgarskapsprov”) as part of the broader Citizenship Act reform.
-- The draft introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
-- The new society-knowledge requirement is explicitly separate from the existing language requirement; the draft keeps the language requirement in place and adds society knowledge on top.
+- The Government proposal introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
+- The new society-knowledge requirement is explicitly separate from the existing language requirement; the proposal keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-04-11)
+## Status and timeline (as of 2026-04-17)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
   - Phase 2 (other conditions + loss of citizenship): Government proposal given to Parliament 2025-03-27; changes confirmed 2025-10-24, in force since 2025-12-17.
   - Phase 3: citizenship test and society knowledge requirement.
-- The Phase 3 draft Government proposal is dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
-- Consultation statements published on the Phase 3 project page (cumulative list; deduplicated; stable order, with short notes where useful):
+- The Phase 3 draft Government proposal was dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
+- The Government submitted the Phase 3 proposal to Parliament on 2026-04-16. The proposal is `HE 54/2026 vp` / `SM/2026/22`: https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
+- The Interior Ministry press release confirms that the Government submitted the proposal to Parliament on 2026-04-16, and says the amendments would enter into force at the beginning of 2027, after which the citizenship test would also be introduced: https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
+- The Phase 3 project page now marks the stage as `Annettu eduskunnalle` on 2026-04-16 and links Parliament handling information for `HE 54/2026`: https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
+- The project page still says the proposal relates to the 2026 supplementary budget proposal `LTAE2` and is intended to be handled together with it.
+- Consultation statements/comments discovered from the Phase 3 project page and Lausuntopalvelu (cumulative list; deduplicated; stable order, with short notes where useful):
+  - Interior Ministry consultation summary / `Lausuntoyhteenveto` (2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF — published summary of consultation feedback; it notes divided views on the new requirement/test, support for Migri as administrator, concerns about the tight rollout schedule, the importance of free/public/accessible learning material, sufficient test availability, special arrangements, and suggestions to accept higher education and vocational education as alternative proof.
+  - Lausuntopalvelu published responses report (36 online respondent statements, updated 2026-01-12 – 2026-02-06): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e — official report page; many entries overlap with the hankeikkuna PDF list below, while the distinct online-only response records below do not have separate hankeikkuna PDF links found in this run.
   - Ylioppilastutkintolautakunta YTL (2026-03-11 07:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF — statement published.
   - Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF — statement published.
   - Suomi-Seura ry (2026-02-11 07:30): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/1960abcf-e213-4b21-9c33-9b9a584f649d/LAUSUNTO_20260211073023.PDF — statement published.
@@ -45,6 +51,7 @@ Primary sources:
   - Kirkkohallitus (2026-02-08 08:08): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/750d8376-1e16-4f00-bc1f-7f2c8a392616/LAUSUNTO_20260208080800.PDF — statement published.
   - UNHCR Northern Europe (2026-02-08 08:03): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/f5ea82b1-6203-435c-bd61-dc623162ca3b/LAUSUNTO_20260208080318.PDF — statement published.
   - Työ- ja elinkeinoministeriö (2026-02-06 10:06): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/43694401-f383-42d3-8ed1-6bd5af69c823/LAUSUNTO_20260206100640.PDF — statement published.
+  - Opetus- ja kulttuuriministeriö, Piiroinen Kaisu (updated 2026-02-06): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e — Lausuntopalvelu online response; no separate hankeikkuna PDF link found in this run.
   - Suomen Paluumuuttajayhdistys ry (laajennettu lausunto, 2026-02-06 07:31): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9bd8f377-6cd4-46fb-a9b1-bc0c9ef2a50f/LAUSUNTO_20260206073154.PDF — statement published.
   - Turun kaupunki (2026-02-04 14:24): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/649ef77a-32d1-410a-86f2-baca3cbf040c/LAUSUNTO_20260204142445.PDF — statement published.
   - Vantaan kaupunki (2026-02-04 19:04): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/100031d7-e1d0-46ba-8e5d-d05b022c634e/LAUSUNTO_20260204190448.PDF — statement published.
@@ -64,76 +71,73 @@ Primary sources:
   - Suomen asianajajat (Finnish Bar Association) (2026-02-02): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b7842760-1d79-43f0-b4aa-6433688e937a/LAUSUNTO_20260202200548.PDF — says the new requirement adds complexity and costs and questions its benefits; suggests higher-education and vocational degrees completed in Finnish/Swedish should be accepted as alternatives.
   - Korkein hallinto-oikeus (Supreme Administrative Court) (2026-01-27): project page lists an “ilmoitus, ettei lausuttavaa” (notice of no comments); no PDF posted — https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
   - Poliisihallitus (National Police Board) (2026-01-18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF — supports adding the society-knowledge requirement; supports meeting it via the citizenship test and accepting matriculation or vocational education as proof.
+  - Mozaffari Bahar (updated 2026-01-12): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e — Lausuntopalvelu online response; no separate hankeikkuna PDF link found in this run.
   - Suomen Paluumuuttajayhdistys ry (Finnish Returnees Association, registered association) (2026-01-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5634f0d8-7a58-4c9f-9bad-4a15993b6ffc/LAUSUNTO_20260119185855.PDF — argues the test is unfair without official study materials or question banks; notes other countries provide official preparation materials. All three source URLs above return HTTP 404 as of 2026-02-27, but archived files are retained locally in `news/files/`.
   - Helsingin hallinto-oikeus (Helsinki Administrative Court) (2026-01-22): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/141228d2-4575-4214-b14a-27503ef61fdd/LAUSUNTO_20260122195648.PDF — limits comments to legal interpretation and court impacts; notes the existing language requirement already supports integration and says the test requirement is clear.
   - Valtiovarainministeriö (Ministry of Finance) (2026-01-26): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/caa17c96-70ad-4e73-bead-e043525ba79e/LAUSUNTO_20260130063143.PDF — statement published.
-- The Phase 3 project page (SM056:00/2023) notes the project was added to the spring 2026 session plan on 2026-01-27.
-- As of 2026-04-11, the same project page now shows a dated `Valtioneuvoston päätöksenteko` event for 2026-04-16: `Raha-asiainvaliokunta ja valtioneuvoston yleisistunto` / `Muu` / `Hallituksen esityksen antaminen eduskunnalle.`
-- This is a more specific timeline signal than the earlier estimated presentation week 16/2026. The project page still does not publish an HE/RP number.
-- The same project page says the proposal is tied to the second supplementary budget proposal for 2026 (LTAE2) and is to be given to Parliament urgently so Parliament can respond before the parliamentary recess.
-- The draft states the proposed laws are intended to enter into force at the beginning of 2027.
 
-## Who is affected (draft)
+## Who is affected (Government proposal)
 
-The draft society-knowledge requirement:
+The proposed society-knowledge requirement:
 - Applies to adult applicants by default.
 - Does *not* apply to applicants under 18.
 - Does *not* apply to applicants who have turned 65.
 - Can be waived (poikkeaminen) in certain cases, including significant long-term medical reasons (health/disability) and other “very weighty reasons” described below.
 
-## How to satisfy the requirement (draft)
+## How to satisfy the requirement (Government proposal)
 
-The draft describes several ways to meet (or avoid) the society-knowledge requirement:
+The Government proposal describes several ways to meet (or avoid) the society-knowledge requirement:
 
 - Default: pass the citizenship test (“kansalaisuuskoe”) *before* submitting the citizenship application.
-- Alternative proof (explicit): pass a Finnish- or Swedish-language matriculation examination (“suomen- tai ruotsinkielinen ylioppilastutkinto”).
-- Waiver via “very weighty reason” (explicitly mentioned): completed higher education degree in Finnish or Swedish (“korkeakoulututkinto … suomen tai ruotsin kielellä”).
-  - A degree completed in another language would *not* qualify for this waiver.
+- Alternative proof (explicit): a Finnish- or Swedish-language matriculation examination (“suomen- tai ruotsinkielinen ylioppilastutkinto”) completed in Finland.
+- Alternative proof (explicit in the submitted HE): a Finnish- or Swedish-language higher education degree completed in Finland, meaning a university or university of applied sciences degree.
+  - The proposal says a degree completed in English would *not* qualify; the key question is whether the degree was completed in a national-language programme whose degree language is Finnish or Swedish.
+  - This is a change from the earlier draft wording, where a higher education degree in Finnish/Swedish was framed as a possible waiver based on a very weighty reason.
 
-## Content / syllabus (draft)
+## Content / syllabus (Government proposal)
 
 What the test covers:
 - Basic/foundational knowledge about:
   - how Finnish society functions,
   - key societal principles,
   - individual rights and obligations.
-- The draft states it is not meant to test tiny details, but rather essential knowledge reasonable to expect from a future citizen.
+- The proposal states it is not meant to test tiny details, but rather essential knowledge reasonable to expect from a future citizen.
 
 What the questions are based on:
-- The draft anchors the test in the nationwide learning material used in municipalities’ “yhteiskuntaorientaatio” (society orientation).
-- The learning material is intended to be publicly available for self-study and exam preparation.
-- The draft notes the learning material:
+- The proposal anchors the test in citizenship-test learning material prepared on the basis of the nationwide learning material used in municipalities’ “yhteiskuntaorientaatio” (society orientation), matching its content and scope.
+- The proposal says the citizenship-test learning material must be generally available for test preparation: public, free of charge, and accessible.
+- The proposal notes the underlying society-orientation learning material:
   - is part of the municipality’s duties under the Integration Act (Kotoutumisen edistämisestä annettu laki),
   - is maintained by the Centre for Economic Development, Transport and the Environment / KEHA-centre (“työllisyys-, kehittämis- ja hallintokeskus”),
   - has its content regulated in more detail by a Government Decree (Valtioneuvoston asetus 576/2024).
 
-What the learning material includes (examples listed in the draft and press releases):
+What the learning material includes (examples listed in the proposal and press releases):
 - values and norms in Finnish society,
 - key legislation,
 - fundamental and human rights,
 - equality and gender equality,
 - Finnish culture, history (and the press release also mentions culture explicitly).
 
-## Format and language (draft)
+## Format and language (Government proposal)
 
 Format:
-- The draft describes an electronic (digital) test taken in a supervised test session.
+- The proposal describes a primarily electronic (digital) test taken in a supervised test session.
 - Question types:
   - multiple-choice questions with multiple options,
-  - “statement questions” with two options (the draft does not present this as a free-form written exam).
-- Passing requires selecting a sufficient number of correct answers; the draft does not fix the exact threshold in the text (it implies it will be specified elsewhere).
-- The draft describes a secured environment (e.g., limiting access to other web pages/materials during the test).
-- Results are delivered electronically (the draft references the Act on Electronic Services and Communication in the Public Sector, 13/2003).
+  - “statement questions” with two options (the proposal does not present this as a free-form written exam).
+- Passing requires selecting a sufficient number of correct answers; the proposal does not fix the exact threshold in the text (it implies it will be specified elsewhere).
+- The proposal describes a secured environment (e.g., limiting access to other web pages/materials during the test).
+- Results are delivered electronically (the proposal references the Act on Electronic Services and Communication in the Public Sector, 13/2003).
 
 Languages:
 - The test can be taken in Finnish or Swedish.
 - The language level of the test is intended to match the language-skill requirement for citizenship:
   - “tyydyttävä” Finnish/Swedish,
   - CEFR level B1.
-- The draft requires the question sets to be equivalent in content in Finnish and Swedish.
+- The proposal requires the question sets to be equivalent in content in Finnish and Swedish.
 - Deaf applicants using sign language may use special arrangements (see below).
 
-## Administration and implementation (draft)
+## Administration and implementation (Government proposal)
 
 Who runs the system:
 - Migri (Maahanmuuttovirasto) would have overall responsibility:
@@ -143,31 +147,31 @@ Who runs the system:
   - decisions on special arrangements, sanctions for cheating, and certain refunds.
 
 Who creates the questions:
-- Migri would contract a university to create and maintain the question bank (including developing new questions and keeping them consistent with updates to the learning material).
+- Migri would contract a university or another university-level actor to create and maintain the question bank and learning material (including developing new questions and keeping them consistent with updates to the learning material).
 - A new test would be compiled for each test session from the question bank (to reduce predictability/reuse).
 
 Who organises test sessions:
 - Migri would contract test-session organisers (a network can be used).
 - Organisers must have suitable premises, equipment, and staff for supervision.
-- The draft emphasises:
+- The proposal emphasises:
   - regional availability (multiple locations),
   - sufficient frequency (multiple times per year),
   - reasonable travel requirements for applicants,
   - ability to handle demand spikes.
 
-## Retakes, frequency, and availability (draft)
+## Retakes, frequency, and availability (Government proposal)
 
-- The draft expects the test to be offered several times per year.
+- The proposal expects the test to be offered several times per year.
 - Applicants who fail should be able to retake the test after a reasonable time.
 - The system should avoid long sign-up delays and handle temporary congestion.
 
-## Fees and refunds (draft)
+## Fees and refunds (Government proposal)
 
 Exam fee (“koemaksu”):
 - Paid at the time of registering for the test.
 - Collected by Migri.
 - Must follow the cost-recovery principle (Valtion maksuperustelaki 150/1992); the fee amount would be set by a Ministry of the Interior decree on Migri’s fees.
-- The draft references significant upfront implementation costs (incl. an initial investment estimate) and intends to cover ongoing costs with fees on a cost-price basis.
+- The proposal references significant upfront implementation costs (incl. an initial investment estimate) and intends to cover ongoing costs with fees on a cost-price basis.
 
 Refund (explicit conditions):
 - Refund is available if the participant is unable to attend due to their own illness.
@@ -175,12 +179,12 @@ Refund (explicit conditions):
 - The refund request must be filed to Migri within 14 days of the session and must include a doctor’s certificate.
 
 Rectification request processing fee:
-- The draft introduces a fee for processing a rectification request related to the test result.
+- The proposal introduces a fee for processing a rectification request related to the test result.
 - The amount would be set by the same fee decree.
 - The fee must be paid within 30 days or the request may be left unexamined.
 - The fee is refunded if Migri changes its decision and the result becomes “passed”.
 
-## Special arrangements (draft)
+## Special arrangements (Government proposal)
 
 - Special arrangements can be requested due to:
   - illness,
@@ -196,7 +200,7 @@ Rectification request processing fee:
 - Requests are made during registration and must include supporting documentation (e.g., doctor’s certificate or expert statement).
 - Migri decides on special arrangements; organisers implement them.
 
-## Misconduct and sanctions (draft)
+## Misconduct and sanctions (Government proposal)
 
 Disruptive behaviour:
 - If an applicant disrupts the session and does not stop after being told to, their attempt can be marked as failed.
@@ -207,9 +211,9 @@ Cheating / attempted cheating / assisting cheating (“vilpillinen menettely”)
 - Ban can be 24 months for repeated or especially serious cases (example given: a different person takes the test for the registered applicant).
 - Migri investigates, hears the applicant, decides sanctions, and can enforce a temporary ban in the registration system.
 
-## Appeals / legal remedies (draft)
+## Appeals / legal remedies (Government proposal)
 
-Draft splits remedies by type of decision:
+The proposal splits remedies by type of decision:
 - Failed test result:
   - rectification request (“oikaisuvaatimus”) to Migri,
   - Migri’s rectification decision would not be appealable to the administrative court.
@@ -218,16 +222,16 @@ Draft splits remedies by type of decision:
 
 ## What is still unknown / not yet fixed
 
-Even the draft does not specify everything. Important open items include:
-- Exact passing threshold (only “sufficient number of correct answers” is described in the draft text).
+Even the Government proposal does not specify everything. Important open items include:
+- Exact passing threshold (only “sufficient number of correct answers” is described in the proposal text).
 - Exact number of questions, time limit, and scoring rules (if they will be in decrees or Migri guidance).
 - Exact fee amounts (explicitly delegated to annual Ministry decree).
 - Exact rollout details (locations, first test date, IT platform) beyond “beginning of 2027” as the stated target for entry into force.
-- What practice materials Migri will publish (the draft mentions example questions + answers on Migri’s website as an intention).
+- Exact publication timing, format, and final contents of the citizenship-test learning material and any practice/example questions.
 
 ## Where to monitor updates
 
 - Interior Ministry: project pages and press releases (FI/SV/EN).
 - Hankeikkuna project page and documents for Phase 3: project code `SM056:00/2023`.
-- Parliament (Eduskunta): once submitted, the Government proposal will get an HE/RP number for 2026 and a handling timetable.
-- Consultation: Lausuntopalvelu entry for the draft Government proposal (some documents are also mirrored on hankeikkuna).
+- Parliament (Eduskunta): `HE 54/2026` handling timetable and committee materials.
+- Consultation: Lausuntopalvelu entry, hankeikkuna documents, and the Interior Ministry consultation summary.

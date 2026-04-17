@@ -7,8 +7,15 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Reform of the Citizenship Act (project overview, FI): https://intermin.fi/hankkeet/kansalaisuuslain-uudistaminen
 - Reform of the Citizenship Act (project overview, SV): https://intermin.fi/sv/projekt/revidering-av-medborgarskapslagen
 - Reform of the Citizenship Act (project overview, EN): https://intermin.fi/en/projects/reform-of-the-citizenship-act
+- Reform of the Citizenship Act FAQ (FI): https://intermin.fi/hankkeet/kansalaisuuslain-uudistaminen/ukk
+- Reform of the Citizenship Act FAQ (SV): https://intermin.fi/sv/projekt/revidering-av-medborgarskapslagen/fragor-och-svar
+- Reform of the Citizenship Act FAQ (EN): https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq
 
 ## Official press releases
+
+- Government proposes to introduce citizenship test (FI, 2026-04-16): https://intermin.fi/-/hallitus-esittaa-kansalaisuuskokeen-kayttoonottoa
+- Government proposes to introduce citizenship test (SV, 2026-04-16): https://intermin.fi/sv/-/regeringen-foreslar-inforande-av-ett-medborgarskapsprov
+- Government proposes to introduce citizenship test (EN, 2026-04-16): https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
 
 - Citizenship test press release (FI, 2025-12-22): https://intermin.fi/-/kansalaisuuskokeella-tullaan-mittaamaan-tietoja-suomalaisen-yhteiskunnan-toiminnasta-ja-perusperiaatteista
 - Citizenship test press release (SV, 2025-12-22): https://intermin.fi/sv/-/medborgarskapsprov-infors-for-att-mata-kunskaper-om-det-finlandska-samhallets-funktion-och-grundprinciper
@@ -23,7 +30,17 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Phase 3 project page (FI, SM056:00/2023): https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
 - Phase 3 project page (SV, SM056:00/2023): https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023
 
+- Valtioneuvosto decision page for submitted proposal (FI, HE 54/2026 vp / SM/2026/22, 2026-04-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
+- Valtioneuvosto session page (FI, VN 24/2026, 2026-04-16): https://valtioneuvosto.fi/paatokset/istunto?sessionId=377
+- Parliament handling page for Phase 3 proposal (HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Submitted Government proposal PDF (FI, HE 54/2026 vp): https://valtioneuvosto.fi/delegate/file/227878
+- Submitted Government proposal PDF (SV, RP 54/2026 rd): https://valtioneuvosto.fi/delegate/file/227877
+- Consultation summary PDF (hankeikkuna, FI, 2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF
+
 - Consultation (lausuntopalvelu.fi, FI): https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation (lausuntopalvelu.fi, SV): https://www.lausuntopalvelu.fi/SV/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation published responses report (lausuntopalvelu, FI, 36 respondents): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation published responses report (lausuntopalvelu, SV, 36 respondents): https://www.lausuntopalvelu.fi/SV/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 - Consultation attachment download (lausuntopalvelu, FI draft HE PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
 - Consultation attachment download (lausuntopalvelu, SV draft main content + draft provisions PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
 
