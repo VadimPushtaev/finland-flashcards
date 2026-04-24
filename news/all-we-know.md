@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-04-17.
+Last updated: 2026-04-23.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -15,7 +15,7 @@ Primary sources:
 - The Government proposal introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the proposal keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-04-17)
+## Status and timeline (as of 2026-04-23)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
@@ -25,6 +25,9 @@ Primary sources:
 - The Government submitted the Phase 3 proposal to Parliament on 2026-04-16. The proposal is `HE 54/2026 vp` / `SM/2026/22`: https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - The Interior Ministry press release confirms that the Government submitted the proposal to Parliament on 2026-04-16, and says the amendments would enter into force at the beginning of 2027, after which the citizenship test would also be introduced: https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
 - The Phase 3 project page now marks the stage as `Annettu eduskunnalle` on 2026-04-16 and links Parliament handling information for `HE 54/2026`: https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
+- The Parliament handling page for `HE 54/2026` was republished on 2026-04-20 and still shows the latest handling stage as `Ilmoitettu täysistunnossa` / `Meddelat i plenum`, with the plenary notification dated 2026-04-17. The republished page also adds official subject keywords such as citizenship, integration, social studies, the matriculation examination, higher education degrees, learning material, fundamental rights, human rights, non-discrimination, and equality: https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Eduskunta has a law-project information package for "Kansalaisuuskoe osaksi kansalaisuuslakia"; it states that `HE 54/2026` was given to Parliament on 2026-04-16 and that the amendments are intended to enter into force from the beginning of 2027: https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
+- Finlex now lists `54/2026` on the Interior Ministry pending Government proposals pages, whose latest material update is 2026-04-22; Finlex proposal pages are available for the same submitted proposal in FI/SV and via the EN navigation: https://www.finlex.fi/fi/hallituksen-esitykset/2026/54, https://www.finlex.fi/sv/regeringspropositioner/2026/54, https://www.finlex.fi/en/government-proposals/2026/54
 - The project page still says the proposal relates to the 2026 supplementary budget proposal `LTAE2` and is intended to be handled together with it.
 - Consultation statements/comments discovered from the Phase 3 project page and Lausuntopalvelu (cumulative list; deduplicated; stable order, with short notes where useful):
   - Interior Ministry consultation summary / `Lausuntoyhteenveto` (2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF — published summary of consultation feedback; it notes divided views on the new requirement/test, support for Migri as administrator, concerns about the tight rollout schedule, the importance of free/public/accessible learning material, sufficient test availability, special arrangements, and suggestions to accept higher education and vocational education as alternative proof.
@@ -234,4 +237,6 @@ Even the Government proposal does not specify everything. Important open items i
 - Interior Ministry: project pages and press releases (FI/SV/EN).
 - Hankeikkuna project page and documents for Phase 3: project code `SM056:00/2023`.
 - Parliament (Eduskunta): `HE 54/2026` handling timetable and committee materials.
+- Eduskunta law-project information package: https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
+- Finlex: pending Government proposals and eventual acts/decrees.
 - Consultation: Lausuntopalvelu entry, hankeikkuna documents, and the Interior Ministry consultation summary.

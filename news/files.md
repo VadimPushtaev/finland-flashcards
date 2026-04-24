@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-04-17 (unless noted otherwise in filename).
+Download date: 2026-04-23 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
@@ -140,6 +140,15 @@ Download date: 2026-04-17 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-04-17_intermin_citizenship_act_reform_faq_en.html` | Citizenship Act reform FAQ snapshot (EN) — snapshot 2026-04-17 | https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq | `979a5577c05ee2a916314c866f4194552cec3cbaf0281bde3d4587c756753660` |
 | `news/files/snapshot_2026-04-17_valtioneuvosto_decision_sm_2026_22_fi.html` | Valtioneuvosto decision page snapshot for HE 54/2026 / SM/2026/22 (FI) — snapshot 2026-04-17 | https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035 | `95cd01ae26cf231fd5b8e6802ce317beb6fba8ec80c38fdbd1b34aa7b5910b6c` |
 | `news/files/snapshot_2026-04-17_valtioneuvosto_session_2026_04_16_vn_24_fi.html` | Valtioneuvosto session page snapshot (FI, VN 24/2026, 2026-04-16) — snapshot 2026-04-17 | https://valtioneuvosto.fi/paatokset/istunto?sessionId=377 | `86f55b2affa3518c10f248bf87e2af2b13b2d724faabcb0f6a613b848a4c5be2` |
+| `news/files/snapshot_2026-04-18_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded) — snapshot 2026-04-18 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `45676251b359303f5607592546eecbd4932dda4e9145e4f5886fbc9491d61927` |
+| `news/files/snapshot_2026-04-21_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded; page republished 2026-04-20) — snapshot 2026-04-21 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `e75d104b354e4240225ce09295666fa3d025453629e2ef73e5d2c5a110cf544b` |
+| `news/files/snapshot_2026-04-18_eduskunta_kansalaisuuskoe_tietopaketti_fi.html` | Eduskunta law-project information package snapshot (FI, "Kansalaisuuskoe osaksi kansalaisuuslakia") — snapshot 2026-04-18 | https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia | `df6854d79c26e30af0748cf4888026f860ff5866780a8a4e81577f630016c30a` |
+| `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_fi.html` | Finlex pending Government proposals page for the Ministry of the Interior (FI; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio | `193d14720ac1cfea4e9cfe44e28484c9a0e9694994b4afa825cba1f4febbb84d` |
+| `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_sv.html` | Finlex pending Government proposals page for the Ministry of the Interior (SV; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet | `ca91111064e8c0c246b83df41e3523263253bcb02ad8bf15547517fae427bc72` |
+| `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_en.html` | Finlex pending Government proposals page for the Ministry of the Interior (EN; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/en/government-proposals/pending/sisaministerio | `2e149e199fcea94c28601edefbf59bb6be4fa8b729af86e14e24d96dcbaad722` |
+| `news/files/snapshot_2026-04-23_finlex_he_54_2026_fi.html` | Finlex Government proposal page for HE 54/2026 (FI) — snapshot 2026-04-23 | https://www.finlex.fi/fi/hallituksen-esitykset/2026/54 | `77a90b539a509c7e513f39f13578fd3a78b9fd07e547b42aa04713cda680501d` |
+| `news/files/snapshot_2026-04-23_finlex_rp_54_2026_sv.html` | Finlex Government proposal page for RP 54/2026 (SV) — snapshot 2026-04-23 | https://www.finlex.fi/sv/regeringspropositioner/2026/54 | `ecf09e7bb8afa36c84b30c536e0072f95224e7c6645deacd452fcc038bf4f469` |
+| `news/files/snapshot_2026-04-23_finlex_gp_54_2026_en.html` | Finlex Government proposal page for GP 54/2026 (EN navigation) — snapshot 2026-04-23 | https://www.finlex.fi/en/government-proposals/2026/54 | `2e38726c3912dfe3263f9a1ea70aeb0a8c3798684abe564d5f8f947916e95cea` |
 
 ## PDFs (Phase 3 submitted Government proposal via valtioneuvosto)
 
