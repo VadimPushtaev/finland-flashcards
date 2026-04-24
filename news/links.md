@@ -33,6 +33,10 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Valtioneuvosto decision page for submitted proposal (FI, HE 54/2026 vp / SM/2026/22, 2026-04-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - Valtioneuvosto session page (FI, VN 24/2026, 2026-04-16): https://valtioneuvosto.fi/paatokset/istunto?sessionId=377
 - Parliament handling page for Phase 3 proposal (HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Parliament law-project information package (FI, "Kansalaisuuskoe osaksi kansalaisuuslakia"): https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
+- Finlex Government proposal page (FI, HE 54/2026): https://www.finlex.fi/fi/hallituksen-esitykset/2026/54
+- Finlex Government proposal page (SV, RP 54/2026): https://www.finlex.fi/sv/regeringspropositioner/2026/54
+- Finlex Government proposal page (EN navigation, GP 54/2026): https://www.finlex.fi/en/government-proposals/2026/54
 - Submitted Government proposal PDF (FI, HE 54/2026 vp): https://valtioneuvosto.fi/delegate/file/227878
 - Submitted Government proposal PDF (SV, RP 54/2026 rd): https://valtioneuvosto.fi/delegate/file/227877
 - Consultation summary PDF (hankeikkuna, FI, 2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF
@@ -119,3 +123,4 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Pending Government proposals — Ministry of the Interior (Finlex, FI): https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio
 - Pending Government proposals — Ministry of the Interior (Finlex, SV): https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet
+- Pending Government proposals — Ministry of the Interior (Finlex, EN): https://www.finlex.fi/en/government-proposals/pending/sisaministerio
