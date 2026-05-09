@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-04-23.
+Last updated: 2026-05-07.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -15,19 +15,21 @@ Primary sources:
 - The Government proposal introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the proposal keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-04-23)
+## Status and timeline (as of 2026-05-07)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
   - Phase 2 (other conditions + loss of citizenship): Government proposal given to Parliament 2025-03-27; changes confirmed 2025-10-24, in force since 2025-12-17.
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal was dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
+- The Legislation Assessment Council (`Lainsäädännön arviointineuvosto`) issued an opinion on the draft proposal on 2026-03-26. It found the draft impact assessment mostly successful and said the draft gave a clear overall picture, but recommended more precise descriptions of assumptions and uncertainties and a more concrete assessment of practical effects on applicants before submitting the Government proposal: https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan, https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
 - The Government submitted the Phase 3 proposal to Parliament on 2026-04-16. The proposal is `HE 54/2026 vp` / `SM/2026/22`: https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - The Interior Ministry press release confirms that the Government submitted the proposal to Parliament on 2026-04-16, and says the amendments would enter into force at the beginning of 2027, after which the citizenship test would also be introduced: https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
 - The Phase 3 project page now marks the stage as `Annettu eduskunnalle` on 2026-04-16 and links Parliament handling information for `HE 54/2026`: https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
-- The Parliament handling page for `HE 54/2026` was republished on 2026-04-20 and still shows the latest handling stage as `Ilmoitettu täysistunnossa` / `Meddelat i plenum`, with the plenary notification dated 2026-04-17. The republished page also adds official subject keywords such as citizenship, integration, social studies, the matriculation examination, higher education degrees, learning material, fundamental rights, human rights, non-discrimination, and equality: https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Parliament handling has advanced. Eduskunta held the referral debate (`Lähetekeskustelu`) on 2026-04-23 and sent the matter to the Administrative Committee (`Hallintovaliokunta`) for a report; on 2026-04-24 the matter arrived in that committee. As of 2026-05-07, the latest general handling stage remains `Asian ilmoittaminen` / `Meddelande om ärende`; the handling page's latest publication timestamp is 2026-05-04, and the HE/RP proposal document pages also show latest publication timestamps on 2026-05-04: https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026, https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564, https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20566
+- The plenary protocol item for 2026-04-23 is available as `PTK 41/2026 vp` / `PR 41/2026 rd`; the FI protocol item records that discussion ended and the matter was sent to the Administrative Committee. As of 2026-05-07, the FI/SV protocol item pages also show latest publication timestamps on 2026-05-04. Eduskunta provides PDF print versions for the same item in FI/SV: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22863, https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22864, https://www.eduskunta.fi/pdf/PTK+41/2026+5, https://www.eduskunta.fi/pdf/PR+41/2026+5
 - Eduskunta has a law-project information package for "Kansalaisuuskoe osaksi kansalaisuuslakia"; it states that `HE 54/2026` was given to Parliament on 2026-04-16 and that the amendments are intended to enter into force from the beginning of 2027: https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
-- Finlex now lists `54/2026` on the Interior Ministry pending Government proposals pages, whose latest material update is 2026-04-22; Finlex proposal pages are available for the same submitted proposal in FI/SV and via the EN navigation: https://www.finlex.fi/fi/hallituksen-esitykset/2026/54, https://www.finlex.fi/sv/regeringspropositioner/2026/54, https://www.finlex.fi/en/government-proposals/2026/54
+- Finlex lists `54/2026` on the Interior Ministry pending Government proposals pages, whose latest material update is 2026-04-29; Finlex proposal pages are available for the same submitted proposal in FI/SV and via the EN navigation: https://www.finlex.fi/fi/hallituksen-esitykset/2026/54, https://www.finlex.fi/sv/regeringspropositioner/2026/54, https://www.finlex.fi/en/government-proposals/2026/54
 - The project page still says the proposal relates to the 2026 supplementary budget proposal `LTAE2` and is intended to be handled together with it.
 - Consultation statements/comments discovered from the Phase 3 project page and Lausuntopalvelu (cumulative list; deduplicated; stable order, with short notes where useful):
   - Interior Ministry consultation summary / `Lausuntoyhteenveto` (2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF — published summary of consultation feedback; it notes divided views on the new requirement/test, support for Migri as administrator, concerns about the tight rollout schedule, the importance of free/public/accessible learning material, sufficient test availability, special arrangements, and suggestions to accept higher education and vocational education as alternative proof.
@@ -44,7 +46,7 @@ Primary sources:
   - Helsingin kaupunki (2026-02-08 08:43): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/50d96f7f-293d-4b21-af05-58f323224c45/LAUSUNTO_20260208084347.PDF — statement published.
   - Ammattikorkeakoulujen rehtorineuvosto Arene ry (2026-02-08 08:41): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9f94f55a-e9bf-411a-b4ab-e24b4d434a9b/LAUSUNTO_20260208084142.PDF — statement published.
   - Maahanmuuttovirasto (2026-02-08 08:34): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b859b180-a3d6-4d50-81a0-0233513d452a/LAUSUNTO_20260208083440.PDF — statement published.
-  - OKV Oikeuskanslerinvirasto (2026-02-08 08:27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/ed6fdd2f-b429-448e-a0ea-a273f2809a98/LAUSUNTO_20260208082740.PDF — statement published.
+  - OKV Oikeuskanslerinvirasto / Valtioneuvoston oikeuskansleri (statement dated 2026-02-06; hankeikkuna listed 2026-02-08 08:27): https://www.finlex.fi/fi/viranomaiset/oikeuskansleri/2026/21, https://www.finlex.fi/api/media/chancellor-of-justice-decision/911682/media/julkaistu_lausunto_kansalaisuuskoe_kansalaistamisen_edellytyksena_OKV_3208_21_2025.pdf?timestamp=2026-02-09T07%3A17%3A59.000Z, https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/ed6fdd2f-b429-448e-a0ea-a273f2809a98/LAUSUNTO_20260208082740.PDF — statement published; the Finlex PDF is a distinct official publication file from the hankeikkuna PDF.
   - Moniheli ry (2026-02-08 08:20): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5b56c3eb-3610-4b70-8506-0ac5d4451eae/LAUSUNTO_20260208082040.PDF — statement published.
   - Tuomioistuinvirasto (2026-02-08 08:18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5c70c6e0-bcf2-4441-b020-4968b7a5ff8a/LAUSUNTO_20260208081834.PDF — statement published.
   - Kuurojen Liitto ry (2026-02-08 08:16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2a883c3d-3bc4-4c7e-8213-0b4c8aa8867e/LAUSUNTO_20260208081628.PDF — statement published.
@@ -128,7 +130,7 @@ Format:
 - Question types:
   - multiple-choice questions with multiple options,
   - “statement questions” with two options (the proposal does not present this as a free-form written exam).
-- Passing requires selecting a sufficient number of correct answers; the proposal does not fix the exact threshold in the text (it implies it will be specified elsewhere).
+- The submitted proposal includes a draft Government Decree annex on the citizenship test. In that draft decree, the test would include at least 20 and at most 40 questions, and passing would require at least 70% correct answers. This is draft decree text attached to the proposal, not an enacted final decree: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564, https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20566
 - The proposal describes a secured environment (e.g., limiting access to other web pages/materials during the test).
 - Results are delivered electronically (the proposal references the Act on Electronic Services and Communication in the Public Sector, 13/2003).
 
@@ -226,8 +228,8 @@ The proposal splits remedies by type of decision:
 ## What is still unknown / not yet fixed
 
 Even the Government proposal does not specify everything. Important open items include:
-- Exact passing threshold (only “sufficient number of correct answers” is described in the proposal text).
-- Exact number of questions, time limit, and scoring rules (if they will be in decrees or Migri guidance).
+- Final enacted number-of-questions and passing-threshold rules (the submitted proposal's draft decree says 20-40 questions and 70% correct, but the decree is not yet enacted).
+- Exact time limit and detailed scoring/session rules, unless fixed in the final decree or Migri guidance.
 - Exact fee amounts (explicitly delegated to annual Ministry decree).
 - Exact rollout details (locations, first test date, IT platform) beyond “beginning of 2027” as the stated target for entry into force.
 - Exact publication timing, format, and final contents of the citizenship-test learning material and any practice/example questions.
@@ -235,6 +237,7 @@ Even the Government proposal does not specify everything. Important open items i
 ## Where to monitor updates
 
 - Interior Ministry: project pages and press releases (FI/SV/EN).
+- Valtioneuvosto / Legislation Assessment Council: impact-assessment statements and related press releases.
 - Hankeikkuna project page and documents for Phase 3: project code `SM056:00/2023`.
 - Parliament (Eduskunta): `HE 54/2026` handling timetable and committee materials.
 - Eduskunta law-project information package: https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia

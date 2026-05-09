@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-04-23 (unless noted otherwise in filename).
+Download date: 2026-05-07 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
@@ -142,13 +142,28 @@ Download date: 2026-04-23 (unless noted otherwise in filename).
 | `news/files/snapshot_2026-04-17_valtioneuvosto_session_2026_04_16_vn_24_fi.html` | Valtioneuvosto session page snapshot (FI, VN 24/2026, 2026-04-16) — snapshot 2026-04-17 | https://valtioneuvosto.fi/paatokset/istunto?sessionId=377 | `86f55b2affa3518c10f248bf87e2af2b13b2d724faabcb0f6a613b848a4c5be2` |
 | `news/files/snapshot_2026-04-18_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded) — snapshot 2026-04-18 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `45676251b359303f5607592546eecbd4932dda4e9145e4f5886fbc9491d61927` |
 | `news/files/snapshot_2026-04-21_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded; page republished 2026-04-20) — snapshot 2026-04-21 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `e75d104b354e4240225ce09295666fa3d025453629e2ef73e5d2c5a110cf544b` |
+| `news/files/snapshot_2026-04-25_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded; referral debate and Administrative Committee arrival added) — snapshot 2026-04-25 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `499c826d9561cc12033bd004751a4d71a226b236395fa7888a87edb3eaeba907` |
+| `news/files/snapshot_2026-04-25_eduskunta_ptk_41_2026_ak_22863_fi.html` | Parliament protocol item snapshot (FI, PTK 41/2026 vp / EDK-2026-AK-22863; referral debate on HE 54/2026, 2026-04-23) — snapshot 2026-04-25 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22863 | `9a56b61755235a7f56a0c665ae7f0c555d62053a43f2680d0070aacd1bcb1aeb` |
+| `news/files/snapshot_2026-04-25_eduskunta_pr_41_2026_ak_22864_sv.html` | Parliament protocol item snapshot (SV, PR 41/2026 rd / EDK-2026-AK-22864; referral debate on RP 54/2026, 2026-04-23) — snapshot 2026-04-25 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22864 | `245d829ed31e516473af466723cd00f330b4746d11db2fc5a547aa5967d12531` |
+| `news/files/snapshot_2026-04-28_eduskunta_ptk_41_2026_ak_22863_fi.html` | Parliament protocol item snapshot (FI, PTK 41/2026 vp / EDK-2026-AK-22863; PDF print link now surfaced) — snapshot 2026-04-28 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22863 | `7cc2e913af2c3afd9be315df0bb3d0c369674934a9951688f1e2abac6bd69094` |
+| `news/files/snapshot_2026-04-28_eduskunta_pr_41_2026_ak_22864_sv.html` | Parliament protocol item snapshot (SV, PR 41/2026 rd / EDK-2026-AK-22864; PDF print link now surfaced) — snapshot 2026-04-28 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22864 | `a422c764e8d319f2af80cf772c1ec1a911ebf7bf50022a4deb5b2cc8665c513d` |
+| `news/files/snapshot_2026-05-05_eduskunta_he_54_2026_fi.html` | Parliament handling page snapshot for HE 54/2026 / RP 54/2026 (FI/SV data embedded; document latest publication timestamps updated to 2026-05-04) — snapshot 2026-05-05 | https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026 | `7c8262e4624bc1f9baf4edb4bc4ef9e2c818d5150c306c5868bcb6af20a81978` |
+| `news/files/snapshot_2026-05-05_eduskunta_he_54_2026_ak_20564_fi.html` | Parliament submitted proposal document snapshot (FI, HE 54/2026 vp / EDK-2026-AK-20564; includes draft decree annex with 20-40 questions and 70% threshold) — snapshot 2026-05-05 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564 | `17c22105903ce0941ffea7645d1116dc4a2acd9e4ecd1c3fe1978ad6d8019d09` |
+| `news/files/snapshot_2026-05-05_eduskunta_rp_54_2026_ak_20566_sv.html` | Parliament submitted proposal document snapshot (SV, RP 54/2026 rd / EDK-2026-AK-20566; includes draft decree annex with 20-40 questions and 70% threshold) — snapshot 2026-05-05 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20566 | `f977283a624586947cb9fe82831af78242a769646e2fe4a60ac016a021cabfea` |
+| `news/files/snapshot_2026-05-05_eduskunta_ptk_41_2026_ak_22863_fi.html` | Parliament protocol item snapshot (FI, PTK 41/2026 vp / EDK-2026-AK-22863; latest publication timestamp updated to 2026-05-04) — snapshot 2026-05-05 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22863 | `fb800edd37579499d7a73fbd60e9e58740dd56e1dd5bfa24192d429120135df7` |
+| `news/files/snapshot_2026-05-05_eduskunta_pr_41_2026_ak_22864_sv.html` | Parliament protocol item snapshot (SV, PR 41/2026 rd / EDK-2026-AK-22864; latest publication timestamp updated to 2026-05-04) — snapshot 2026-05-05 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22864 | `1275adea7d809edbaae97914bf2967aed910d8b0096a02427cdd96d7e0970b09` |
 | `news/files/snapshot_2026-04-18_eduskunta_kansalaisuuskoe_tietopaketti_fi.html` | Eduskunta law-project information package snapshot (FI, "Kansalaisuuskoe osaksi kansalaisuuslakia") — snapshot 2026-04-18 | https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia | `df6854d79c26e30af0748cf4888026f860ff5866780a8a4e81577f630016c30a` |
 | `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_fi.html` | Finlex pending Government proposals page for the Ministry of the Interior (FI; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio | `193d14720ac1cfea4e9cfe44e28484c9a0e9694994b4afa825cba1f4febbb84d` |
 | `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_sv.html` | Finlex pending Government proposals page for the Ministry of the Interior (SV; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet | `ca91111064e8c0c246b83df41e3523263253bcb02ad8bf15547517fae427bc72` |
 | `news/files/snapshot_2026-04-23_finlex_pending_government_proposals_intermin_en.html` | Finlex pending Government proposals page for the Ministry of the Interior (EN; latest material update 2026-04-22) — snapshot 2026-04-23 | https://www.finlex.fi/en/government-proposals/pending/sisaministerio | `2e149e199fcea94c28601edefbf59bb6be4fa8b729af86e14e24d96dcbaad722` |
+| `news/files/snapshot_2026-05-01_finlex_pending_government_proposals_intermin_fi.html` | Finlex pending Government proposals page for the Ministry of the Interior (FI; latest material update 2026-04-29) — snapshot 2026-05-01 | https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio | `c7b4cfb8e71d169dfd649d4b4a5fec2b501233d91e2b995c0f17df56c4988106` |
+| `news/files/snapshot_2026-05-01_finlex_pending_government_proposals_intermin_sv.html` | Finlex pending Government proposals page for the Ministry of the Interior (SV; latest material update 2026-04-29) — snapshot 2026-05-01 | https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet | `7a33ef00a64cb6d1cb17d1564089442e05e128fc71753518dfc200aca5fec273` |
+| `news/files/snapshot_2026-05-01_finlex_pending_government_proposals_intermin_en.html` | Finlex pending Government proposals page for the Ministry of the Interior (EN; latest material update 2026-04-29) — snapshot 2026-05-01 | https://www.finlex.fi/en/government-proposals/pending/sisaministerio | `fcd0b9754cd1fa20736ae04eb7e9311f3d87dfee9829caff1a88351df7077dee` |
 | `news/files/snapshot_2026-04-23_finlex_he_54_2026_fi.html` | Finlex Government proposal page for HE 54/2026 (FI) — snapshot 2026-04-23 | https://www.finlex.fi/fi/hallituksen-esitykset/2026/54 | `77a90b539a509c7e513f39f13578fd3a78b9fd07e547b42aa04713cda680501d` |
 | `news/files/snapshot_2026-04-23_finlex_rp_54_2026_sv.html` | Finlex Government proposal page for RP 54/2026 (SV) — snapshot 2026-04-23 | https://www.finlex.fi/sv/regeringspropositioner/2026/54 | `ecf09e7bb8afa36c84b30c536e0072f95224e7c6645deacd452fcc038bf4f469` |
 | `news/files/snapshot_2026-04-23_finlex_gp_54_2026_en.html` | Finlex Government proposal page for GP 54/2026 (EN navigation) — snapshot 2026-04-23 | https://www.finlex.fi/en/government-proposals/2026/54 | `2e38726c3912dfe3263f9a1ea70aeb0a8c3798684abe564d5f8f947916e95cea` |
+| `news/files/snapshot_2026-05-07_finlex_okv_kansalaisuuskoe_2026_21_fi.html` | Finlex / Valtioneuvoston oikeuskansleri publication page for consultation statement on citizenship test (“Kansalaisuuskoe kansalaistamisen edellytyksenä”, 2026-02-06) — snapshot 2026-05-07 | https://www.finlex.fi/fi/viranomaiset/oikeuskansleri/2026/21 | `59c78aaf57f4bb0fc1d5141e4fe69091928e7f78f84f205882932ae0e8ab16fe` |
+| `news/files/snapshot_2026-05-01_valtioneuvosto_press_release_impact_assessment_citizenship_test_fi.html` | Valtioneuvosto / Legislation Assessment Council press release on the citizenship-test draft impact assessment (FI, 2026-03-26) — snapshot 2026-05-01 | https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan | `521aa23ab3b2aaf988b0550e4adc964e5d293f140c00fc1841d7fa866df4a27a` |
 
 ## PDFs (Phase 3 submitted Government proposal via valtioneuvosto)
 
@@ -156,6 +171,32 @@ Download date: 2026-04-23 (unless noted otherwise in filename).
 | --- | --- | --- | --- |
 | `news/files/valtioneuvosto_he_54_2026_kansalaisuuslain_muuttamisesta_fi.pdf` | FI: submitted Government proposal HE 54/2026 vp (“Hallituksen esitys eduskunnalle laiksi kansalaisuuslain muuttamisesta ja siihen liittyviksi laeiksi”) | https://valtioneuvosto.fi/delegate/file/227878 | `c34819098a6364faf8de7821c7d2d593258591de42891037cec44ff095577616` |
 | `news/files/valtioneuvosto_rp_54_2026_medborgarskapslagen_sv.pdf` | SV: submitted Government proposal RP 54/2026 rd (“Regeringens proposition till riksdagen med förslag till lag om ändring av medborgarskapslagen och till lagar som har samband med den”) | https://valtioneuvosto.fi/delegate/file/227877 | `d54e40381c4f309f4258b7a2bd6397e2925c638fa3ed0afd25000307c4c8674c` |
+
+## PDFs (Phase 3 submitted Government proposal via Finlex)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/finlex_he_54_2026_kansalaisuuslain_muuttamisesta_fi.pdf` | FI: Finlex generated PDF for submitted Government proposal HE 54/2026 (“Hallituksen esitys eduskunnalle laiksi kansalaisuuslain muuttamisesta ja siihen liittyviksi laeiksi”) | https://www.finlex.fi/api/media/government-proposal/920197/mainPdf/main.pdf?timestamp=2026-04-22T12%3A06%3A43.027Z | `5e2bcc4380d8b9d65648fb2a7ae11ca86e1476ad4794d40766de1a7f080d0623` |
+| `news/files/finlex_rp_54_2026_medborgarskapslagen_sv.pdf` | SV: Finlex generated PDF for submitted Government proposal RP 54/2026 (“Regeringens proposition till riksdagen med förslag till lag om ändring av medborgarskapslagen och till lagar som har samband med den”) | https://www.finlex.fi/api/media/government-proposal/920198/mainPdf/main.pdf?timestamp=2026-04-22T12%3A06%3A43.027Z | `d3ee5b443bd256a84f4e9db758e157770d75a7a6602446c3c35a3ed17f8d7c58` |
+
+## PDFs (Eduskunta referral debate protocol)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/eduskunta_ptk_41_2026_5_fi.pdf` | FI: Parliament protocol item print/PDF version, PTK 41/2026 vp item 5 (referral debate on HE 54/2026, 2026-04-23) | https://www.eduskunta.fi/pdf/PTK+41/2026+5 | `f18d1bf1da62465ef70ee627c6b38a9bd7211d822e8d6d03c276ba646ac00f07` |
+| `news/files/eduskunta_pr_41_2026_5_sv.pdf` | SV: Parliament protocol item print/PDF version, PR 41/2026 rd item 5 (referral debate on RP 54/2026, 2026-04-23) | https://www.eduskunta.fi/pdf/PR+41/2026+5 | `b6db8990098e927deebcdda4b73b09a28aa25e340204d200f767994ec5f38c81` |
+
+## PDFs (Lainsäädännön arviointineuvosto)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/valtioneuvosto_arviointineuvoston_lausunto_kansalaisuuskokeesta_20260326.pdf` | FI: Legislation Assessment Council opinion on the draft Government proposal for the citizenship test (2026-03-26) | https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950 | `dcfcbcf711db88da1be096e9d4840cdc31c18981a288f79fcc86966906cf6816` |
+
+## PDFs (Valtioneuvoston oikeuskansleri via Finlex)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/finlex_okv_lausunto_kansalaisuuskoe_20260206.pdf` | FI: Chancellor of Justice consultation statement (“Kansalaisuuskoe kansalaistamisen edellytyksenä”, OKV/3208/21/2025, dated 2026-02-06) published via Finlex | https://www.finlex.fi/api/media/chancellor-of-justice-decision/911682/media/julkaistu_lausunto_kansalaisuuskoe_kansalaistamisen_edellytyksena_OKV_3208_21_2025.pdf?timestamp=2026-02-09T07%3A17%3A59.000Z | `4ec7811adeb40366264cf9cac215c5181af13d80402d8375c7a55424f9bddb9a` |
 
 ## PDFs (Phase 3 consultation docs via hankeikkuna)
 

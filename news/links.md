@@ -17,6 +17,9 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Government proposes to introduce citizenship test (SV, 2026-04-16): https://intermin.fi/sv/-/regeringen-foreslar-inforande-av-ett-medborgarskapsprov
 - Government proposes to introduce citizenship test (EN, 2026-04-16): https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
 
+- Citizenship-test draft impact assessment press release (FI, Legislation Assessment Council, 2026-03-26): https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan
+- Legislation Assessment Council opinion PDF on the citizenship-test draft (FI, 2026-03-26): https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
+
 - Citizenship test press release (FI, 2025-12-22): https://intermin.fi/-/kansalaisuuskokeella-tullaan-mittaamaan-tietoja-suomalaisen-yhteiskunnan-toiminnasta-ja-perusperiaatteista
 - Citizenship test press release (SV, 2025-12-22): https://intermin.fi/sv/-/medborgarskapsprov-infors-for-att-mata-kunskaper-om-det-finlandska-samhallets-funktion-och-grundprinciper
 - Citizenship test press release (EN, 2025-12-22): https://intermin.fi/en/-/citizenship-test-to-assess-knowledge-of-finnish-society-and-its-key-principles
@@ -33,10 +36,22 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Valtioneuvosto decision page for submitted proposal (FI, HE 54/2026 vp / SM/2026/22, 2026-04-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - Valtioneuvosto session page (FI, VN 24/2026, 2026-04-16): https://valtioneuvosto.fi/paatokset/istunto?sessionId=377
 - Parliament handling page for Phase 3 proposal (HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Parliament submitted proposal document (FI, HE 54/2026 vp / EDK-2026-AK-20564; latest publication 2026-05-04): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564
+- Parliament submitted proposal document (SV, RP 54/2026 rd / EDK-2026-AK-20566; latest publication 2026-05-04): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20566
+- Eduskunta submitted proposal print/PDF (FI, HE 54/2026 vp; same SHA256 as Valtioneuvosto PDF): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564/pdf
+- Eduskunta submitted proposal print/PDF (SV, RP 54/2026 rd; same SHA256 as Valtioneuvosto PDF): https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-20566/pdf
+- Parliament protocol item for referral debate (FI, PTK 41/2026 vp / EDK-2026-AK-22863, 2026-04-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22863
+- Parliament protocol item for referral debate (SV, PR 41/2026 rd / EDK-2026-AK-22864, 2026-04-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-22864
+- Parliament protocol item print/PDF version (FI, PTK 41/2026 vp, item 5): https://www.eduskunta.fi/pdf/PTK+41/2026+5
+- Parliament protocol item print/PDF version (SV, PR 41/2026 rd, item 5): https://www.eduskunta.fi/pdf/PR+41/2026+5
+- Parliament protocol item alternate document route (FI, PTK 41/2026 vp, item 5): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+41/2026+5
+- Parliament protocol item alternate document route (SV, PR 41/2026 rd, item 5): https://www.eduskunta.fi/riksdagshandlingar/PR+41/2026+5
 - Parliament law-project information package (FI, "Kansalaisuuskoe osaksi kansalaisuuslakia"): https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
 - Finlex Government proposal page (FI, HE 54/2026): https://www.finlex.fi/fi/hallituksen-esitykset/2026/54
 - Finlex Government proposal page (SV, RP 54/2026): https://www.finlex.fi/sv/regeringspropositioner/2026/54
 - Finlex Government proposal page (EN navigation, GP 54/2026): https://www.finlex.fi/en/government-proposals/2026/54
+- Finlex generated Government proposal PDF (FI, HE 54/2026): https://www.finlex.fi/api/media/government-proposal/920197/mainPdf/main.pdf?timestamp=2026-04-22T12%3A06%3A43.027Z
+- Finlex generated Government proposal PDF (SV, RP 54/2026): https://www.finlex.fi/api/media/government-proposal/920198/mainPdf/main.pdf?timestamp=2026-04-22T12%3A06%3A43.027Z
 - Submitted Government proposal PDF (FI, HE 54/2026 vp): https://valtioneuvosto.fi/delegate/file/227878
 - Submitted Government proposal PDF (SV, RP 54/2026 rd): https://valtioneuvosto.fi/delegate/file/227877
 - Consultation summary PDF (hankeikkuna, FI, 2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF
@@ -48,7 +63,13 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation attachment download (lausuntopalvelu, FI draft HE PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
 - Consultation attachment download (lausuntopalvelu, SV draft main content + draft provisions PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
 
-- Draft HE + consultation PDFs (hankeikkuna API, FI/SV): see `news/files.md`
+- Consultation request PDF (hankeikkuna API, FI, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/bae44b7c-83b7-4fa4-8f8f-ac00b18ed76d/LAUSUNTOPYYNTO_20251219155050.PDF
+- Draft HE PDF (hankeikkuna API, FI, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/348eb0b0-fe35-4f75-b1df-7e117def5377/LAUSUNTOPYYNTO_20251219155050.PDF
+- Consultation request PDF (hankeikkuna API, SV, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/a34181da-d255-4a97-b7c1-92d68aa1213c/LAUSUNTOPYYNTO_20251219155050.PDF
+- Draft main content and provisions PDF (hankeikkuna API, SV, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/f004eb9f-08eb-4837-9114-1a50d479a76f/LAUSUNTOPYYNTO_20251219155050.PDF
+- Project extension letter (hankeikkuna API, 2025-05-28): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/4ffc8e00-e42f-4f86-b656-678dc498355a/KIRJE_20250528122939.PDF
+- Phase 3 project appointment decision (hankeikkuna API, 2023-10-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e66dd086-6fef-421c-b1c8-10cc4d7bcf53/ASETTAMISPAATOS_20231016070844.PDF
+- Citizenship-test working-group appointment decision (hankeikkuna API, 2023-11-29): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d3645e65-367e-408a-b895-084517e18f35/ASETTAMISPAATOS_20231129110128.PDF
 - Consultation statement — Poliisihallitus (2026-01-18 04:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2fd79ece-49fd-4560-8fd8-d1ac95b41427/LAUSUNTO_20260118045714.PDF
 - Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 09:09; URL returns HTTP 404 as of 2026-02-27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/0a515a86-4f41-4a9c-a3e9-94725fd897ca/LAUSUNTO_20260119090915.PDF
 - Consultation statement — Suomen Paluumuuttajayhdistys ry (2026-01-19 18:56; URL returns HTTP 404 as of 2026-02-27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/d93cc0c4-a90c-4274-8ee9-23f3d9819313/LAUSUNTO_20260119185643.PDF
@@ -81,6 +102,8 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Tuomioistuinvirasto (2026-02-08 08:18): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5c70c6e0-bcf2-4441-b020-4968b7a5ff8a/LAUSUNTO_20260208081834.PDF
 - Consultation statement — Moniheli ry (2026-02-08 08:20): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/5b56c3eb-3610-4b70-8506-0ac5d4451eae/LAUSUNTO_20260208082040.PDF
 - Consultation statement — OKV Oikeuskanslerinvirasto (2026-02-08 08:27): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/ed6fdd2f-b429-448e-a0ea-a273f2809a98/LAUSUNTO_20260208082740.PDF
+- Consultation statement — Valtioneuvoston oikeuskansleri / Finlex landing page (statement dated 2026-02-06): https://www.finlex.fi/fi/viranomaiset/oikeuskansleri/2026/21
+- Consultation statement — Valtioneuvoston oikeuskansleri / Finlex PDF (statement dated 2026-02-06): https://www.finlex.fi/api/media/chancellor-of-justice-decision/911682/media/julkaistu_lausunto_kansalaisuuskoe_kansalaistamisen_edellytyksena_OKV_3208_21_2025.pdf?timestamp=2026-02-09T07%3A17%3A59.000Z
 - Consultation statement — Maahanmuuttovirasto (2026-02-08 08:34): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/b859b180-a3d6-4d50-81a0-0233513d452a/LAUSUNTO_20260208083440.PDF
 - Consultation statement — Ammattikorkeakoulujen rehtorineuvosto Arene ry (2026-02-08 08:41): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/9f94f55a-e9bf-411a-b4ab-e24b4d434a9b/LAUSUNTO_20260208084142.PDF
 - Consultation statement — Helsingin kaupunki (2026-02-08 08:43): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/50d96f7f-293d-4b21-af05-58f323224c45/LAUSUNTO_20260208084347.PDF
