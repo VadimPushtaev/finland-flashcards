@@ -132,11 +132,11 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Citizenship Act (Kansalaisuuslaki 359/2003, FI): https://www.finlex.fi/fi/laki/ajantasa/2003/20030359
 - Citizenship Act (Medborgarskapslag 359/2003, SV): https://www.finlex.fi/sv/laki/ajantasa/2003/20030359
 
-- Phase 1 Government proposal (HE 27/2024, FI): https://www.eduskunta.fi/FI/vaski/HallituksenEsitys/Sivut/HE_27+2024.aspx
-- Phase 1 Government proposal (RP 27/2024, SV): https://www.eduskunta.fi/SV/vaski/HallituksenEsitys/Sidor/RP_27+2024.aspx
+- Phase 1 Government proposal handling page (HE 27/2024, FI): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/HE%2027%2F2024%20vp
+- Phase 1 Government proposal handling page (RP 27/2024, SV): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/RP%2027%2F2024%20rd
 
-- Phase 2 Government proposal (HE 19/2025, FI): https://www.eduskunta.fi/FI/vaski/HallituksenEsitys/Sivut/HE_19+2025.aspx
-- Phase 2 Government proposal (RP 19/2025, SV): https://www.eduskunta.fi/SV/vaski/HallituksenEsitys/Sidor/RP_19+2025.aspx
+- Phase 2 Government proposal handling page (HE 19/2025, FI): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/HE%2019%2F2025%20vp
+- Phase 2 Government proposal handling page (RP 19/2025, SV): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/RP%2019%2F2025%20rd
 
 - Phase 1 act (474/2024, FI): https://www.finlex.fi/fi/laki/alkup/2024/20240474
 - Phase 1 act (474/2024, SV): https://www.finlex.fi/sv/laki/alkup/2024/20240474
