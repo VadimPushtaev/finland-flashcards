@@ -12,7 +12,7 @@ from contextlib import ExitStack
 from pathlib import Path
 from typing import Optional
 
-ALARMER_URL = "https://alarmerbot.ru/?key={key}&message="
+ALARMER_URL = "https://alarmerbot.getmy.dev/?key={key}&message="
 ALARMER_KEY_ENV = "ALARMER_KEY"
 
 

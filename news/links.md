@@ -13,6 +13,21 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 ## Official press releases
 
+- Supplementary budget allocates funding for citizenship test (FI, 2026-06-03): https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen
+- Supplementary budget allocates funding for citizenship test (SV, 2026-06-03): https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen?languageId=sv_SE
+- Supplementary budget allocates funding for citizenship test (EN, 2026-06-03): https://valtioneuvosto.fi/en/-/1410869/supplementary-budget-allocates-funding-for-drone-defence-removals-from-the-country-and-citizenship-test
+
+- Citizenship test to be introduced in early 2027 (FI, 2026-06-16): https://valtioneuvosto.fi/-/1410869/kansalaisuuskoe-otetaan-kayttoon-vuoden-2027-alussa
+- Citizenship test to be introduced in early 2027 (SV, 2026-06-16): https://valtioneuvosto.fi/sv/-/1410869/medborgarskapsprov-infors-i-borjan-av-2027
+- Citizenship test to be introduced in early 2027 (EN, 2026-06-16): https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027
+- Citizenship test to be introduced in early 2027 (Interior Ministry direct FI, 2026-06-16): https://intermin.fi/-/kansalaisuuskoe-otetaan-kayttoon-vuoden-2027-alussa
+- Citizenship test to be introduced in early 2027 (Interior Ministry direct SV, 2026-06-16): https://intermin.fi/sv/-/medborgarskapsprov-infors-i-borjan-av-2027
+- Citizenship test to be introduced in early 2027 (Interior Ministry direct EN, 2026-06-16): https://intermin.fi/en/-/citizenship-test-to-be-introduced-in-early-2027
+
+- Migri customer bulletin: Citizenship Act changes on 2027-01-01 and citizenship test introduced (FI, 2026-06-17): https://migri.fi/-/kansalaisuuslaki-muuttuu-1.1.2027-suomessa-otetaan-kayttoon-kansalaisuuskoe
+- Migri customer bulletin: Citizenship Act changes on 2027-01-01 and citizenship test introduced (SV, 2026-06-17): https://migri.fi/-/kansalaisuuslaki-muuttuu-1.1.2027-suomessa-otetaan-kayttoon-kansalaisuuskoe?languageId=sv_SE
+- Migri customer bulletin: Citizenship Act changes on 2027-01-01 and citizenship test introduced (EN, 2026-06-17): https://migri.fi/-/kansalaisuuslaki-muuttuu-1.1.2027-suomessa-otetaan-kayttoon-kansalaisuuskoe?languageId=en_US
+
 - Government proposes to introduce citizenship test (FI, 2026-04-16): https://intermin.fi/-/hallitus-esittaa-kansalaisuuskokeen-kayttoonottoa
 - Government proposes to introduce citizenship test (SV, 2026-04-16): https://intermin.fi/sv/-/regeringen-foreslar-inforande-av-ett-medborgarskapsprov
 - Government proposes to introduce citizenship test (EN, 2026-04-16): https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
@@ -35,7 +50,35 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Valtioneuvosto decision page for submitted proposal (FI, HE 54/2026 vp / SM/2026/22, 2026-04-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - Valtioneuvosto session page (FI, VN 24/2026, 2026-04-16): https://valtioneuvosto.fi/paatokset/istunto?sessionId=377
-- Parliament handling page for Phase 3 proposal (HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Valtioneuvosto decision page for Parliament response / law-confirmation proposal (FI, EV 86/2026 vp / SM/2026/48, 2026-06-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6640
+- Valtioneuvosto President decision page for confirmed laws (FI, EV 86/2026 vp / SM/2026/48, 2026-06-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6641
+- Valtioneuvosto general-session page (FI, VN 42/2026, 2026-06-16; decision list published): https://valtioneuvosto.fi/paatokset/istunto?sessionId=403
+- Valtioneuvosto general-session agenda page (FI, 2026-06-16; HE 54/2026 / EV 86/2026 listed): https://valtioneuvosto.fi/paatokset/asialista?sessionId=403
+- President of the Republic presentation page (FI, TP 43/2026, 2026-06-16; decision list published): https://valtioneuvosto.fi/paatokset/istunto?sessionId=404
+- President of the Republic presentation agenda page (FI, 2026-06-16; HE 54/2026 / EV 86/2026 listed): https://valtioneuvosto.fi/paatokset/asialista?sessionId=404
+- Valtioneuvosto decision attachment PDF (FI, confirmed law text: Citizenship Act amendment, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237180
+- Valtioneuvosto decision attachment PDF (SV, confirmed law text: Citizenship Act amendment, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237181
+- Valtioneuvosto decision attachment PDF (FI, confirmed law text: amendment to the Act on the Finnish Immigration Service, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237182
+- Valtioneuvosto decision attachment PDF (SV, confirmed law text: amendment to the Act on the Finnish Immigration Service, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237183
+- Valtioneuvosto decision attachment PDF (FI, confirmed law text: amendment to the Immigration Administration personal-data law, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237184
+- Valtioneuvosto decision attachment PDF (SV, confirmed law text: amendment to the Immigration Administration personal-data law, 2026-06-16): https://valtioneuvosto.fi/delegate/file/237185
+- Valtioneuvosto President decision attachment PDF (FI, confirmed law text: Citizenship Act amendment, 2026-06-16; same SHA256 as file 237180): https://valtioneuvosto.fi/delegate/file/237640
+- Valtioneuvosto President decision attachment PDF (SV, confirmed law text: Citizenship Act amendment, 2026-06-16; same SHA256 as file 237181): https://valtioneuvosto.fi/delegate/file/237641
+- Valtioneuvosto President decision attachment PDF (FI, confirmed law text: amendment to the Act on the Finnish Immigration Service, 2026-06-16; same SHA256 as file 237182): https://valtioneuvosto.fi/delegate/file/237642
+- Valtioneuvosto President decision attachment PDF (SV, confirmed law text: amendment to the Act on the Finnish Immigration Service, 2026-06-16; same SHA256 as file 237183): https://valtioneuvosto.fi/delegate/file/237643
+- Valtioneuvosto President decision attachment PDF (FI, confirmed law text: amendment to the Immigration Administration personal-data law, 2026-06-16; same SHA256 as file 237184): https://valtioneuvosto.fi/delegate/file/237644
+- Valtioneuvosto President decision attachment PDF (SV, confirmed law text: amendment to the Immigration Administration personal-data law, 2026-06-16; same SHA256 as file 237185): https://valtioneuvosto.fi/delegate/file/237645
+- Finlex final act 552/2026 (FI, Act amending the Citizenship Act): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/552
+- Finlex final act 552/2026 (SV, Act amending the Citizenship Act): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/552
+- Finlex final act 552/2026 PDF: https://www.finlex.fi/api/media/statute/1072010/mainPdf/main.pdf
+- Finlex final act 553/2026 (FI, Act amending section 2 of the Act on the Finnish Immigration Service): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/553
+- Finlex final act 553/2026 (SV, Act amending section 2 of the Act on the Finnish Immigration Service): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/553
+- Finlex final act 553/2026 PDF: https://www.finlex.fi/api/media/statute/1072017/mainPdf/main.pdf
+- Finlex final act 554/2026 (FI, Act amending section 1 of the immigration-administration personal-data law): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/554
+- Finlex final act 554/2026 (SV, Act amending section 1 of the immigration-administration personal-data law): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/554
+- Finlex final act 554/2026 PDF: https://www.finlex.fi/api/media/statute/1072011/mainPdf/main.pdf
+- Parliament handling page for Phase 3 proposal (FI, HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
+- Parliament handling page for Phase 3 proposal (SV, RP 54/2026): https://www.eduskunta.fi/riksdagsarenden/RP+54/2026
 - Parliament submitted proposal document (FI, HE 54/2026 vp / EDK-2026-AK-20564; latest publication 2026-05-04): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564
 - Parliament submitted proposal document (SV, RP 54/2026 rd / EDK-2026-AK-20566; latest publication 2026-05-04): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20566
 - Eduskunta submitted proposal print/PDF (FI, HE 54/2026 vp; same SHA256 as Valtioneuvosto PDF): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-20564/pdf
@@ -47,6 +90,55 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Parliament protocol item alternate document route (FI, PTK 41/2026 vp, item 5): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+41/2026+5
 - Parliament protocol item alternate document route (SV, PR 41/2026 rd, item 5): https://www.eduskunta.fi/riksdagshandlingar/PR+41/2026+5
 - Parliament law-project information package (FI, "Kansalaisuuskoe osaksi kansalaisuuslakia"): https://www.eduskunta.fi/lakihankkeiden-tietopaketit/kansalaisuuskoe-osaksi-kansalaisuuslakia
+- Parliament Administrative Committee report (FI, HaVM 10/2026 vp / EDK-2026-AK-31504, 2026-05-27): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31504
+- Parliament Administrative Committee report (SV, FvUB 10/2026 rd / EDK-2026-AK-31505, 2026-05-27): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31505
+- Parliament Administrative Committee report PDF (FI, HaVM 10/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31504/pdf
+- Parliament Administrative Committee report PDF (SV, FvUB 10/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31505/pdf
+- Parliament protocol item for committee-report tabling (FI, PTK 58/2026 vp / EDK-2026-AK-32322, 2026-05-29): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-32322
+- Parliament protocol item for committee-report tabling (SV, PR 58/2026 rd / EDK-2026-AK-32323, 2026-05-29): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-32323
+- Parliament protocol item print/PDF version (FI, PTK 58/2026 vp, item 10): https://www.eduskunta.fi/pdf/PTK+58/2026+10
+- Parliament protocol item print/PDF version (SV, PR 58/2026 rd, item 10): https://www.eduskunta.fi/pdf/PR+58/2026+10
+- Parliament protocol item alternate document route (FI, PTK 58/2026 vp, item 10): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+58/2026+10
+- Parliament protocol item alternate document route (SV, PR 58/2026 rd, item 10): https://www.eduskunta.fi/riksdagshandlingar/PR+58/2026+10
+- Parliament protocol item for first reading (FI, PTK 59/2026 vp / EDK-2026-AK-33269, item 10, 2026-06-02): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33269
+- Parliament protocol item for first reading (SV, PR 59/2026 rd / EDK-2026-AK-33270, item 10, 2026-06-02): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33270
+- Parliament protocol item print/PDF version (FI, PTK 59/2026 vp, item 10): https://www.eduskunta.fi/pdf/PTK+59/2026+10
+- Parliament protocol item print/PDF version (SV, PR 59/2026 rd, item 10): https://www.eduskunta.fi/pdf/PR+59/2026+10
+- Parliament protocol item alternate document route (FI, PTK 59/2026 vp, item 10): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+59/2026+10
+- Parliament protocol item alternate document route (SV, PR 59/2026 rd, item 10): https://www.eduskunta.fi/riksdagshandlingar/PR+59/2026+10
+- Parliament protocol item for second reading (FI, PTK 62/2026 vp / EDK-2026-AK-34653, item 9, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34653
+- Parliament protocol item for second reading (SV, PR 62/2026 rd / EDK-2026-AK-34657, item 9, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34657
+- Parliament protocol item print/PDF version (FI, PTK 62/2026 vp, item 9): https://www.eduskunta.fi/pdf/PTK+62/2026+9
+- Parliament protocol item print/PDF version (SV, PR 62/2026 rd, item 9): https://www.eduskunta.fi/pdf/PR+62/2026+9
+- Parliament protocol item alternate document route (FI, PTK 62/2026 vp, item 9): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+62/2026+9
+- Parliament protocol item alternate document route (SV, PR 62/2026 rd, item 9): https://www.eduskunta.fi/riksdagshandlingar/PR+62/2026+9
+- Parliament protocol item for continued second reading / final vote (FI, PTK 63/2026 vp / EDK-2026-AK-35075, item 4, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35075
+- Parliament protocol item for continued second reading / final vote (SV, PR 63/2026 rd / EDK-2026-AK-35082, item 4, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35082
+- Parliament protocol item print/PDF version (FI, PTK 63/2026 vp, item 4): https://www.eduskunta.fi/pdf/PTK+63/2026+4
+- Parliament protocol item print/PDF version (SV, PR 63/2026 rd, item 4): https://www.eduskunta.fi/pdf/PR+63/2026+4
+- Parliament protocol item alternate document route (FI, PTK 63/2026 vp, item 4): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+63/2026+4
+- Parliament protocol item alternate document route (SV, PR 63/2026 rd, item 4): https://www.eduskunta.fi/riksdagshandlingar/PR+63/2026+4
+- Parliament response (FI, EV 86/2026 vp / EDK-2026-AK-31560, latest publication 2026-06-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31560
+- Parliament response PDF (FI, EV 86/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31560/pdf
+- Parliament response (SV, RSv 86/2026 rd / EDK-2026-AK-31561, latest publication 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31561
+- Parliament response PDF (SV, RSv 86/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-31561/pdf
+- Parliament Administrative Committee expert statement — UNIFI ry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-25954/pdf
+- Parliament Administrative Committee expert statement — Uudenmaan elinvoimakeskus (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26203/pdf
+- Parliament Administrative Committee expert statement — Roope Jokinen, Interior Ministry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26793/pdf
+- Parliament Administrative Committee expert-statement attachment — Roope Jokinen, Interior Ministry presentation (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26794/pdf
+- Parliament Administrative Committee expert statement — Kaisu Piiroinen, Ministry of Education and Culture (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26796/pdf
+- Parliament Administrative Committee expert statement — Hanna-Maria Hyttinen, Ministry of Economic Affairs and Employment (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26797/pdf
+- Parliament Administrative Committee expert statement — Marika Suutala, Migri (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26798/pdf
+- Parliament Administrative Committee expert statement — Marjo Tyynelä, National Police Board (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26799/pdf
+- Parliament Administrative Committee expert statement — Julie Breton, Moniheli ry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26800/pdf
+- Parliament Administrative Committee expert-statement attachment — Julie Breton, Moniheli ry presentation (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26801/pdf
+- Parliament Administrative Committee expert statement — Helsinki Administrative Court (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26802/pdf
+- Parliament Administrative Committee expert statement — Arene ry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26803/pdf
+- Parliament Administrative Committee expert statement — Familia ry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26805/pdf
+- Parliament Administrative Committee expert statement — Vammaisfoorumi ry (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26806/pdf
+- Parliament Administrative Committee expert statement — Ministry of Justice (HaV 2026-05-11): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-26829/pdf
+- Parliament Administrative Committee expert statement — Roope Jokinen, Interior Ministry (HaV 2026-05-19): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-28587/pdf
+- Parliament Administrative Committee expert-statement attachment — Roope Jokinen, Interior Ministry presentation (HaV 2026-05-19): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-28588/pdf
 - Finlex Government proposal page (FI, HE 54/2026): https://www.finlex.fi/fi/hallituksen-esitykset/2026/54
 - Finlex Government proposal page (SV, RP 54/2026): https://www.finlex.fi/sv/regeringspropositioner/2026/54
 - Finlex Government proposal page (EN navigation, GP 54/2026): https://www.finlex.fi/en/government-proposals/2026/54
@@ -54,6 +146,40 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Finlex generated Government proposal PDF (SV, RP 54/2026): https://www.finlex.fi/api/media/government-proposal/920198/mainPdf/main.pdf?timestamp=2026-04-22T12%3A06%3A43.027Z
 - Submitted Government proposal PDF (FI, HE 54/2026 vp): https://valtioneuvosto.fi/delegate/file/227878
 - Submitted Government proposal PDF (SV, RP 54/2026 rd): https://valtioneuvosto.fi/delegate/file/227877
+
+- Parliament handling page for second supplementary budget proposal (FI, HE 102/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+102/2026
+- Parliament handling page for second supplementary budget proposal (SV, RP 102/2026): https://www.eduskunta.fi/riksdagsarenden/RP+102/2026
+- Parliament submitted second supplementary budget document (FI, HE 102/2026 vp / EDK-2026-AK-33173; 2026-06-03): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33173
+- Parliament submitted second supplementary budget document (SV, RP 102/2026 rd / EDK-2026-AK-33174; 2026-06-03): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33174
+- Eduskunta submitted second supplementary budget print/PDF (FI, HE 102/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33173/pdf
+- Eduskunta submitted second supplementary budget print/PDF (SV, RP 102/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33174/pdf
+- Parliament protocol item for second supplementary budget referral debate (FI, PTK 62/2026 vp / EDK-2026-AK-34591, item 5, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34591
+- Parliament protocol item for second supplementary budget referral debate (SV, PR 62/2026 rd / EDK-2026-AK-34599, item 5, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34599
+- Parliament protocol item print/PDF version for second supplementary budget referral debate (FI, PTK 62/2026 vp, item 5): https://www.eduskunta.fi/pdf/PTK+62/2026+5
+- Parliament protocol item print/PDF version for second supplementary budget referral debate (SV, PR 62/2026 rd, item 5): https://www.eduskunta.fi/pdf/PR+62/2026+5
+- Parliament protocol item alternate document route for second supplementary budget referral debate (FI, PTK 62/2026 vp, item 5): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+62/2026+5
+- Parliament protocol item alternate document route for second supplementary budget referral debate (SV, PR 62/2026 rd, item 5): https://www.eduskunta.fi/riksdagshandlingar/PR+62/2026+5
+- Parliament protocol item for continued second supplementary budget referral debate (FI, PTK 63/2026 vp / EDK-2026-AK-35241, item 17, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35241
+- Parliament protocol item for continued second supplementary budget referral debate (SV, PR 63/2026 rd / EDK-2026-AK-35281, item 17, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35281
+- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (FI, PTK 63/2026 vp, item 17): https://www.eduskunta.fi/pdf/PTK+63/2026+17
+- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17): https://www.eduskunta.fi/pdf/PR+63/2026+17
+- Parliament protocol item alternate document route for continued second supplementary budget referral debate (FI, PTK 63/2026 vp, item 17): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+63/2026+17
+- Parliament protocol item alternate document route for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17): https://www.eduskunta.fi/riksdagshandlingar/PR+63/2026+17
+- Parliament Finance Committee report for second supplementary budget (FI, VaVM 19/2026 vp / EDK-2026-AK-37016, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016
+- Parliament Finance Committee report for second supplementary budget PDF (FI, VaVM 19/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016/pdf
+- Parliament Finance Committee report for second supplementary budget (SV, FiUB 19/2026 rd / EDK-2026-AK-37017, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37017
+- Parliament Finance Committee report for second supplementary budget PDF (SV, FiUB 19/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37017/pdf
+- Parliament letter for second supplementary budget (FI, EK 30/2026 vp / EDK-2026-AK-37018, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37018
+- Parliament letter for second supplementary budget PDF (FI, EK 30/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37018/pdf
+- Parliament letter for second supplementary budget (SV, RSk 30/2026 rd / EDK-2026-AK-37019, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37019
+- Parliament letter for second supplementary budget PDF (SV, RSk 30/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37019/pdf
+- Finlex second supplementary budget proposal page (FI, HE 102/2026): https://www.finlex.fi/fi/hallituksen-esitykset/2026/102
+- Finlex second supplementary budget proposal page (SV, RP 102/2026): https://www.finlex.fi/sv/regeringspropositioner/2026/102
+- Finlex second supplementary budget proposal page (EN navigation, GP 102/2026): https://www.finlex.fi/en/government-proposals/2026/102
+- Finlex generated second supplementary budget proposal PDF (FI, HE 102/2026): https://www.finlex.fi/api/media/government-proposal/1070564/mainPdf/main.pdf?timestamp=2026-06-04T06%3A36%3A51.000Z
+- Finlex generated second supplementary budget proposal PDF (SV, RP 102/2026): https://www.finlex.fi/api/media/government-proposal/1070565/mainPdf/main.pdf?timestamp=2026-06-04T06%3A36%3A51.000Z
+- Finlex generated second supplementary budget proposal PDF (FI, HE 102/2026; current link 2026-06-10, same SHA256 as 2026-06-04 archived PDF): https://www.finlex.fi/api/media/government-proposal/1070883/mainPdf/main.pdf?timestamp=2026-06-10T05%3A08%3A02.000Z
+- Finlex generated second supplementary budget proposal PDF (SV, RP 102/2026; current link 2026-06-10, same SHA256 as 2026-06-04 archived PDF): https://www.finlex.fi/api/media/government-proposal/1070884/mainPdf/main.pdf?timestamp=2026-06-10T05%3A08%3A02.000Z
 - Consultation summary PDF (hankeikkuna, FI, 2026-04-16): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/8e6258d7-fee2-4302-b74e-986f93c64a13/YHTEENVETO_20260416070851.PDF
 
 - Consultation (lausuntopalvelu.fi, FI): https://www.lausuntopalvelu.fi/FI/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
