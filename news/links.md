@@ -70,12 +70,15 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Valtioneuvosto President decision attachment PDF (SV, confirmed law text: amendment to the Immigration Administration personal-data law, 2026-06-16; same SHA256 as file 237185): https://valtioneuvosto.fi/delegate/file/237645
 - Finlex final act 552/2026 (FI, Act amending the Citizenship Act): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/552
 - Finlex final act 552/2026 (SV, Act amending the Citizenship Act): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/552
+- Finlex final act 552/2026 (FI, legacy `/fi/laki/alkup/` route newly linked from Phase 3 project page on 2026-06-27; redirects to statute collection page): https://www.finlex.fi/fi/laki/alkup/2026/20260552
 - Finlex final act 552/2026 PDF: https://www.finlex.fi/api/media/statute/1072010/mainPdf/main.pdf
 - Finlex final act 553/2026 (FI, Act amending section 2 of the Act on the Finnish Immigration Service): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/553
 - Finlex final act 553/2026 (SV, Act amending section 2 of the Act on the Finnish Immigration Service): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/553
+- Finlex final act 553/2026 (FI, legacy `/fi/laki/alkup/` route newly linked from Phase 3 project page on 2026-06-27; redirects to statute collection page): https://www.finlex.fi/fi/laki/alkup/2026/20260553
 - Finlex final act 553/2026 PDF: https://www.finlex.fi/api/media/statute/1072017/mainPdf/main.pdf
 - Finlex final act 554/2026 (FI, Act amending section 1 of the immigration-administration personal-data law): https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/554
 - Finlex final act 554/2026 (SV, Act amending section 1 of the immigration-administration personal-data law): https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2026/554
+- Finlex final act 554/2026 (FI, legacy `/fi/laki/alkup/` route newly linked from Phase 3 project page on 2026-06-27; redirects to statute collection page): https://www.finlex.fi/fi/laki/alkup/2026/20260554
 - Finlex final act 554/2026 PDF: https://www.finlex.fi/api/media/statute/1072011/mainPdf/main.pdf
 - Parliament handling page for Phase 3 proposal (FI, HE 54/2026): https://www.eduskunta.fi/valtiopaivaasiat/HE+54/2026
 - Parliament handling page for Phase 3 proposal (SV, RP 54/2026): https://www.eduskunta.fi/riksdagsarenden/RP+54/2026
