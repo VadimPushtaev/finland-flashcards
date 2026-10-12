@@ -9,3 +9,4 @@ Generated chapter text; see [collection metadata](../../../data/homebrew/README.
 - [05. Grundläggande rättigheter, jämlikhet och skyldigheter](../PILOT.sv.md)
 - [06. Lagar, rättsväsende och rättsskydd](06/READING.sv.md)
 - [07. Arbete, näringsliv och beskattning](07/READING.sv.md)
+- [08. Utbildning och lärande](08/READING.sv.md)
