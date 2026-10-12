@@ -1,7 +1,7 @@
 # Homebrew working area
 
-Start with [PILOT_REVIEW.md](PILOT_REVIEW.md), the pending second checkpoint, and
-[PILOT.sv.md](PILOT.sv.md) for the Swedish reading copy. The agreed
+Both review checkpoints are approved. Start with the [chapter index](chapters/README.md)
+and [progress](PROGRESS.md) for the current collection. The agreed
 [plan](PLAN.md) governs the work; [PROGRESS.md](PROGRESS.md) records its state.
 
 - [LEGAL_SCOPE.md](LEGAL_SCOPE.md): local law and official guidance, with exact

@@ -128,61 +128,9 @@ def verify_provenance(units, provenance, sources, root=ROOT):
 
 
 def main():
-    """Validate the pilot and its review/attribution packaging."""
-    manifest = read_yaml(DEST / "manifest.yaml")
-    assert manifest["status"] == "pilot_pending_review"
-    assert manifest["chapters"] == [{"id": "hb-c05", "order": 5, "path": CHAPTER_FILE}]
-    for value in manifest["metadata"].values():
-        for path in value if isinstance(value, list) else [value]:
-            resolved = (DEST / path).resolve()
-            assert resolved.is_relative_to(DEST.resolve()) and resolved.is_file()
-    chapter = read_yaml(DEST / CHAPTER_FILE)
-    units, assets, ids = validate_chapter(chapter)
-    assert not assets, "Pilot has no essential local visual; asset provenance needed before adding one"
-    provenance = read_yaml(DEST / "metadata/05_provenance.yaml")
-    assert provenance["chapter_id"] == chapter["id"]
-    sources = read_yaml(DEST / "metadata/sources.yaml")
-    verify_provenance(units, provenance, sources)
-    registry = read_yaml(WORK / "pilot_sentences.yaml")["units"]
-    assert set(registry) == set(units)
-    for identity, unit in units.items():
-        assert registry[identity]["text_sha256"] == hashlib.sha256(unit["text"].encode("utf-8")).hexdigest()
-        assert registry[identity]["sentences"] == unit["sentences"]
-    assert (WORK / "PILOT.sv.md").read_text(encoding="utf-8") == render(chapter)
-    attribution = read_yaml(DEST / "metadata/attribution.yaml")["sources"]
-    assert {s["source_group"] for s in sources["sources"]} <= set(attribution)
-    for record in attribution.values():
-        notice = ROOT / record["local_notice"]
-        assert notice.is_file()
-        assert hashlib.sha256(notice.read_bytes()).hexdigest() == record["local_notice_sha256"]
-    for source in sources["sources"]:
-        assert source["attribution_record"] == source["source_group"]
-    review = read_yaml(DEST / "metadata/05_editorial_review.yaml")
-    coverage = read_yaml(WORK / "coverage.yaml")
-    expected = {s["id"] for s in coverage["sources"] if "hb-c05" in s["chapters"]}
-    assert expected <= {s["id"] for s in review["source_audit"]}
-    audited_units = set()
-    for row in review["source_audit"]:
-        assert row["decision"] and row["reason"]
-        for identity in row["selected_unit_ids"]:
-            assert identity in units and provenance["units"][identity]["source_path"] == row["path"]
-            audited_units.add(identity)
-    assert audited_units == set(units), "Source audit must account for every selected passage"
-    documents = load_sources()
-    for path, decisions in review["primary_block_audit"].items():
-        block_ids = [d["source_block"] for d in decisions]
-        assert len(block_ids) == len(set(block_ids))
-        assert set(block_ids) == {b["id"] for b in documents[path]["blocks"]}
-        assert all(d["decision"] and d["reason"] for d in decisions)
-    outline = read_yaml(WORK / "outline.yaml")
-    topics = next(c["topics"] for c in outline["chapters"] if c["id"] == "hb-c05")
-    assert set(topics) == set(review["topic_coverage"])
-    for destinations in review["topic_coverage"].values():
-        assert destinations and set(destinations) <= ids
-    for gap in review["gaps"]:
-        assert gap["reason"] and gap["source_refs"]
-    print(f"PASS: {len(units)} verbatim text units, {sum(len(u['sentences']) for u in units.values())} sentence ranges, "
-          f"{len(sources['sources'])} original source files; schema, provenance, attribution and topic audit")
+    """Compatibility entry point for validating all currently built chapters."""
+    from validate_collection import main as collection_main
+    collection_main()
 
 
 if __name__ == "__main__":

@@ -86,3 +86,15 @@ Every source has a fingerprint and an attribution-group reference in
 reuse notices and change statements. `05_editorial_review.yaml` records topic
 coverage, source/block decisions, locally resolved conflicts, gaps, visuals and
 snapshot-sensitive claims. These records do not appear in learner text.
+
+## Completing the collection
+
+`build_collection.py --chapter NN` builds one chapter and refreshes the manifest
+without overwriting other chapters. The pilot entry point delegates to it.
+New chapters keep their selection, sentence registry and audit in
+`wip/homebrew/chapters/NN/`. Their committed IDs use the same allocation policy.
+`validate_collection.py` checks all built chapters, or `--chapter NN` checks a
+single chapter plus collection links. Source-level topic gaps must be explicit.
+The manifest is `in_progress` until all twelve chapter files exist, then
+`complete_archived_edition`; this status describes composition, not verified
+current law or guaranteed exam coverage.

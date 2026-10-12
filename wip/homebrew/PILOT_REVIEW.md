@@ -1,6 +1,9 @@
 # Checkpoint 2: Swedish rights-and-duties pilot
 
-**Ready for review.** Checkpoint 1 was approved by the instruction “do it, make a
+**Approved.** The user approved the pilot and autonomous completion of all other
+chapters, including separate commits. The notes below are the historical review record.
+
+**Original checkpoint presentation:** Checkpoint 1 was approved by the instruction “do it, make a
 commit (I approve)”. This stage implements the pilot only. Review its organization,
 amount of context and content interface before production of the other chapters.
 

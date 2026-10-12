@@ -1,7 +1,8 @@
 # Samhällskunskap inför medborgarskapsprovet
 
-Swedish source-based study anthology. The current edition contains chapter 05
-as a pilot awaiting review, not the complete twelve-chapter collection.
+Swedish source-based study anthology. The pilot is approved; the remaining
+chapters are being composed and committed separately. See the manifest and
+[reading index](../../wip/homebrew/chapters/README.md) for completed chapters.
 
 - [Manifest](manifest.yaml): collection identity, chapter order and metadata paths.
 - [Swedish pilot](sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml).
@@ -26,10 +27,13 @@ Rebuild and validate with Poetry from the repository root:
 
 ```bash
 poetry run python wip/homebrew/tools/extract_sources.py  # if intermediates are absent
-poetry run python wip/homebrew/tools/build_pilot.py
-poetry run python wip/homebrew/tools/validate_pilot.py
+poetry run python wip/homebrew/tools/build_collection.py --chapter 01
+poetry run python wip/homebrew/tools/validate_collection.py
 poetry run python -m unittest discover -s wip/homebrew/tools -p 'test_*.py' -v
 ```
 
-The editorial inputs are `wip/homebrew/pilot_selection.yaml` and
-`wip/homebrew/pilot_sentences.yaml`. Do not hand-edit generated chapter text.
+Editorial inputs for each new chapter are under `wip/homebrew/chapters/NN/`:
+`selection.yaml`, `sentences.yaml` and `audit.yaml`. The pilot keeps its original
+`pilot_selection.yaml` and `pilot_sentences.yaml` paths. Do not hand-edit
+generated chapter text. To allocate sentences for a new reviewed selection, use
+`--initialize-sentences`, then inspect its boundaries before committing.
