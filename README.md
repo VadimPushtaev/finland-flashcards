@@ -21,6 +21,19 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 - Export decks as Kahoot quizzes (XLSX):
   - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`; large decks are split into `__0001` chunks)
 
+## Homebrew study website
+
+Read the twelve Swedish Homebrew chapters in a local study website with search,
+bookmarks and saved reading progress:
+
+```bash
+docker compose up --build -d
+```
+
+Open **http://localhost:18743**. The site uses Python/FastAPI with Poetry,
+Node.js/React and Bootstrap. See [study/README.md](study/README.md) for
+development, testing and port configuration.
+
 ## Repository Structure
 
 - `card_creator/` — Tools, prompts, and progress for flashcard creation

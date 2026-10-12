@@ -1,0 +1,1 @@
+"""Homebrew study application."""
