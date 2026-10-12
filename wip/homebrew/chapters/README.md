@@ -10,3 +10,4 @@ Generated chapter text; see [collection metadata](../../../data/homebrew/README.
 - [06. Lagar, rättsväsende och rättsskydd](06/READING.sv.md)
 - [07. Arbete, näringsliv och beskattning](07/READING.sv.md)
 - [08. Utbildning och lärande](08/READING.sv.md)
+- [09. Familj, barn och relationer](09/READING.sv.md)

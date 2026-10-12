@@ -3,11 +3,12 @@ chapter_id: hb-c05
 status: approved_checkpoint_2
 snapshot_policy: Only existing repository snapshots; not a verification of current law. Dates visible
   on an HTML page may refer to events, not updates. Source SHA-256 values identify the edition.
-outline_approval: 'User: do it, make a commit (I approve). Approval covers checkpoint 1 and committing
-  the pilot; checkpoint 2 remains pending.'
-editorial_policy: Whole paragraphs/list items preferred. Two complete sentences and one two-clause list
-  item are filtered from longer source blocks; PDF line whitespace normalized. No substantive wording
-  changed and no factual prose written from memory. New section headings are editorial.
+outline_approval: 'Checkpoint1 and pilot commit were approved with: do it, make a commit (I approve).
+  The later user instruction approves the pilot and all remaining chapters with a separate commit for
+  each; checkpoint2 is approved and autonomous execution is authorized.'
+editorial_policy: Whole paragraphs/list items preferred. Explicit contiguous sentence or clause filtering
+  is recorded in pilot_selection.yaml and the resolutions below; PDF line whitespace normalized. No substantive
+  wording changed and no factual prose written from memory. New section headings are editorial.
 topic_coverage:
   Grundläggande och mänskliga rättigheter:
   - hb-c05-grundlag
@@ -413,7 +414,9 @@ source_audit:
   - hb-c05-u0130
   reason: 'Pilot omission review found useful context in a source assigned to another chapter: human-rights
     principles, child-convention principles, the schooling endpoint or the Aland language qualification.
-    Keep the selected full passages; the original chapter assignment remains valid.'
+    Keep the selected full passages; the original chapter assignment remains valid. Collection review
+    removes the first sentence of b0015 only: unsupported maximum of two guardians; the remaining paragraph
+    is retained, with fuller guardian wording in09.'
   remaining_destinations:
   - hb-c09
 - id: supplement:skolgang-och-studier-i-finland
@@ -838,6 +841,28 @@ resolutions:
   - sexual-health-and-contraception:b0019-b0020
   decision: Keep the complete preceding prescription paragraph so the minor-consent passage does not refer
     to a missing receptet. Accept the small amount of practical text to preserve context.
+- topic: 'Guardian count: alignment with chapter09'
+  source_refs:
+  - barnomsorg-och-barnuppfostran-i-finland:b0015
+  - when-a-child-is-born-in-finland:b0090
+  decision: Retain hb-c05-u0121 from source offset61 through504. Omit only the opening sentence claiming
+    one or two guardians. Chapter09 retains the InfoFinland at-least-one guardian explanation; all six
+    remaining pilot sentences preserve rights, responsibilities and child participation.
+  sentence_migration:
+    unit_id: hb-c05-u0121
+    retired_sentence_ids:
+    - hb-c05-u0121-s001
+    preserved_sentence_ids:
+    - hb-c05-u0121-s002
+    - hb-c05-u0121-s003
+    - hb-c05-u0121-s004
+    - hb-c05-u0121-s005
+    - hb-c05-u0121-s006
+    - hb-c05-u0121-s007
+    offset_adjustment: -61
+    new_text_sha256: e2fecd0d3cb16e32b94b5df6c856bf22a70189eeec511b714a0886091aef966b
+    reason: Explicit editorial correction after collection-wide review; do not reuse retired sentence
+      ID.
 gaps:
 - topic: Extradition qualifications
   source_refs:
