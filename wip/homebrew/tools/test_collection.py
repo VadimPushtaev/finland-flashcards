@@ -27,6 +27,10 @@ class CollectionTests(unittest.TestCase):
             self.assertEqual([e['id'] for e in manifest['chapters']], ['hb-c01', 'hb-c05'])
             self.assertEqual(manifest['status'], 'in_progress')
             self.assertEqual(len(read_yaml(dest / 'metadata/sources.yaml')['sources']), 1)
+            with patch.object(build_collection, 'DEST', dest), patch.object(build_collection, 'WORK', work):
+                build_collection.refresh_index(documents, numbers=['05'])
+            self.assertEqual([e['id'] for e in read_yaml(dest / 'manifest.yaml')['chapters']], ['hb-c05'])
+            self.assertTrue((dest / build_collection.chapter_path('01')).exists())
 
     def test_every_built_chapter_reproduces_its_committed_text(self):
         manifest = read_yaml(build_collection.DEST / 'manifest.yaml')
