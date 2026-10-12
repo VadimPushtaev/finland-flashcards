@@ -8,6 +8,8 @@ Start with the [reading index](../../wip/homebrew/chapters/README.md).
 - [Swedish pilot](sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml).
 - [Readable review copy](../../wip/homebrew/PILOT.sv.md).
 - [Content schema](SCHEMA.md).
+- [Russian translation workflow](../../translation/homebrew/README.md) and
+  [translation schema](TRANSLATION_SCHEMA.md).
 - [Source fingerprints](metadata/sources.yaml), [passage provenance](metadata/05_provenance.yaml)
   and [attribution](metadata/attribution.yaml).
 - [Editorial decisions, remaining gaps and snapshot limitations](metadata/05_editorial_review.yaml).
