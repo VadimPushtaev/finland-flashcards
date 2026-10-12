@@ -2,6 +2,11 @@
 
 This document tracks which data sources have been converted into flashcards.
 
+Homebrew preparation material: chapter 05 (rights, equality and duties) has been
+curated as a Swedish reading pilot in `data/homebrew/`, pending review. No
+Homebrew flashcards have been generated. Track its source selections and next
+steps in [`wip/homebrew/PROGRESS.md`](../wip/homebrew/PROGRESS.md).
+
 ## 1. Main Textbook (PRIMARY SOURCE)
 
 **Source:** `data/orientation_guide.pdf`

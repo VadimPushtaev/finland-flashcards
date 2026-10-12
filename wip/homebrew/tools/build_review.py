@@ -193,10 +193,13 @@ def main() -> None:
         files.append(dict(fingerprint(ROOT / filename), role="metadata_or_discovery_only"))
     dump_yaml(WORK / "source_inventory.yaml", {"schema_version": 1, "policy": "Repository snapshots only; visible dates may describe events, not publication. File hashes define the snapshot.", "files": files})
     counts = dict(Counter(row["decision"] for row in dispositions))
-    dump_yaml(WORK / "coverage.yaml", {"schema_version": 1, "status": "proposed_for_checkpoint_1", "counts": counts,
+    approved = outline["status"] == "approved_checkpoint_1"
+    dump_yaml(WORK / "coverage.yaml", {"schema_version": 1, "status": outline["status"], "counts": counts,
               "decision_meaning": "include retains substantive topic coverage, subject to common omissions; partial identifies substantive cuts; duplicate routes to other passages; gap is unavailable source content. Exact passage selection is not yet approved or complete.",
               "common_omissions": rules["common_omissions"], "common_retention": rules["common_retention"], "sources": dispositions})
-    lines = ["# Source coverage and exclusion map", "", "Proposed for checkpoint 1. Exact passage choices and duplicate resolution follow outline review.", "", "See `coverage.yaml` for source headings, safeguards and PDF locators, and `selection_rules.yaml` for common rules.", ""]
+    stage = ("Source-level map approved at checkpoint 1. Pilot passage decisions are in `data/homebrew/metadata/05_editorial_review.yaml`; other chapters remain pending."
+             if approved else "Proposed for checkpoint 1. Exact passage choices and duplicate resolution follow outline review.")
+    lines = ["# Source coverage and exclusion map", "", stage, "", "See `coverage.yaml` for source headings, safeguards and PDF locators, and `selection_rules.yaml` for common rules.", ""]
     for group in ["orientation", "infofinland", "textbook"]:
         lines.extend([f"## {group}", "", "| Source unit | Decision | Destination | Keep / omit |", "| --- | --- | --- | --- |"])
         for row in dispositions:
