@@ -25,6 +25,9 @@ class SentenceTests(unittest.TestCase):
         self.assertEqual([text[a:b] for a, b in sentence_ranges(text)], [
             'Åsa möter A. Lind kl. 12.30 den 12.10.2026.',
             'Hon nämner t.ex. Åland.', '”Ja!”', 'Nästa rad'])
+        text = 'Flerfaldigt, d.v.s. flera medborgarskap. Nästa mening.'
+        self.assertEqual([text[a:b] for a, b in sentence_ranges(text)], [
+            'Flerfaldigt, d.v.s. flera medborgarskap.', 'Nästa mening.'])
 
     def test_unicode_and_multiline_offsets(self):
         text = 'Åland är en ö.\n\nNästa mening 😀.'

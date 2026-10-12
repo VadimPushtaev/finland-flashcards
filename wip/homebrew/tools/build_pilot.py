@@ -41,7 +41,7 @@ def sentence_ranges(text):
     segment. This is deliberately not a claim of general linguistic parsing.
     """
     protected = set()
-    abbreviations = r"\b(?:t\.\s*ex\.|bl\.\s*a\.|dvs\.|s\.\s*k\.|m\.\s*fl\.|m\.\s*m\.|fr\.\s*o\.\s*m\.|t\.\s*o\.\s*m\.|ca\.|kl\.|nr\.)"
+    abbreviations = r"\b(?:t\.\s*ex\.|bl\.\s*a\.|dvs\.|d\.\s*v\.\s*s\.|s\.\s*k\.|m\.\s*fl\.|m\.\s*m\.|fr\.\s*o\.\s*m\.|t\.\s*o\.\s*m\.|ca\.|kl\.|nr\.)"
     for match in re.finditer(abbreviations, text, re.I):
         protected.update(range(match.start(), match.end()))
     ranges = []
