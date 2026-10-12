@@ -13,14 +13,14 @@ with a separate commit per chapter. Both review checkpoints are complete. No pus
 | hb-c04 | Demokrati, förvaltning och påverkan | Composed and validated |
 | hb-c05 | Grundläggande rättigheter, jämlikhet och skyldigheter | Composed and validated |
 | hb-c06 | Lagar, rättsväsende och rättsskydd | Composed and validated |
-| hb-c07 | Arbete, näringsliv och beskattning | Source review / composition in progress |
+| hb-c07 | Arbete, näringsliv och beskattning | Composed and validated |
 | hb-c08 | Utbildning och lärande | Source review / composition in progress |
 | hb-c09 | Familj, barn och relationer | Source review / composition in progress |
 | hb-c10 | Hälsa, social trygghet och åldrande | Source review / composition in progress |
 | hb-c11 | Boende, vardag och miljö | Source review / composition in progress |
 | hb-c12 | Integration, uppehåll och medborgarskap | Source review / composition in progress |
 
-6 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
+7 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
 
 ## Validation and remaining work
 
@@ -28,5 +28,4 @@ Every chapter has frozen source selections, stable sentence IDs, exact passage p
 attribution and source/topic review. Original archives and existing flashcards are preserved.
 Rules and figures describe the archived sources, not a verification of current law.
 
-After all chapters are composed, complete the collection-wide omission, overlap, source and
-sentence-boundary checks; record unresolved source gaps in the final report.
+After all chapters are composed, complete the collection-wide omission, overlap, source and sentence-boundary checks; record unresolved source gaps in the final report.
