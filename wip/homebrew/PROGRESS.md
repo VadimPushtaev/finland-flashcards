@@ -18,9 +18,9 @@ with a separate commit per chapter. Both review checkpoints are complete. No pus
 | hb-c09 | Familj, barn och relationer | Composed and validated |
 | hb-c10 | Hälsa, social trygghet och åldrande | Composed and validated |
 | hb-c11 | Boende, vardag och miljö | Source review / composition in progress |
-| hb-c12 | Integration, uppehåll och medborgarskap | Source review / composition in progress |
+| hb-c12 | Integration, uppehåll och medborgarskap | Composed and validated |
 
-10 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
+11 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
 
 ## Validation and remaining work
 
