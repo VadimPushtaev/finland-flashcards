@@ -11,8 +11,8 @@ units. JavaScript consumers must convert to code points before slicing.
 `manifest.yaml` has `schema_version`, `id`, `language`, `title`, `status`,
 `chapters` and `metadata`. Chapter entries contain stable `id`, numeric `order`
 and collection-relative `path`. Metadata paths also resolve relative to the
-collection. Only existing chapter files are listed: the pilot's order is 5,
-even while chapters 1–4 and 6–12 are absent.
+collection. Only built chapter files are listed. The completed edition lists
+chapters 1–12; the pilot retains order 5 and its original IDs.
 
 A chapter has `schema_version: 1`, `id`, `language: sv`, `title` and an ordered
 `sections` array. Each section has `id`, `title` and an ordered `blocks` array.
@@ -68,7 +68,8 @@ translations are deferred.
 
 ## Provenance and editorial metadata
 
-Each substantive text unit has exactly one record in `05_provenance.yaml`:
+Each substantive text unit has exactly one record in its chapter's
+`NN_provenance.yaml`:
 original repository path and SHA-256, source block and original-DOM CSS selector
 or PDF/printed page, source character range, exact extracted passage,
 normalization, repairs and selection reason. HTML ranges index the
@@ -78,12 +79,14 @@ source ranges are separate from learner sentence ranges.
 The pilot permits only whitespace normalization, with an empty word-repair log.
 Two selections retain a complete sentence from a longer source block. A third
 keeps the entry/non-expulsion clauses of a list item while excluding its separate
-extradition clause. Other units retain complete paragraphs/list items. Source typos are preserved and
-listed in editorial metadata. Substantive factual rewriting is not supported.
+extradition clause. The final review also removes the guardian paragraph's first
+sentence and records its retired sentence ID. Other pilot units retain complete
+paragraphs/list items. Source typos are preserved or explicitly filtered and
+recorded in editorial metadata. Substantive factual rewriting is not supported.
 
 Every source has a fingerprint and an attribution-group reference in
 `metadata/sources.yaml`. `metadata/attribution.yaml` keeps credits, source links,
-reuse notices and change statements. `05_editorial_review.yaml` records topic
+reuse notices and change statements. Each `NN_editorial_review.yaml` records topic
 coverage, source/block decisions, locally resolved conflicts, gaps, visuals and
 snapshot-sensitive claims. These records do not appear in learner text.
 

@@ -12,4 +12,5 @@ Generated chapter text; see [collection metadata](../../../data/homebrew/README.
 - [08. Utbildning och lärande](08/READING.sv.md)
 - [09. Familj, barn och relationer](09/READING.sv.md)
 - [10. Hälsa, social trygghet och åldrande](10/READING.sv.md)
+- [11. Boende, vardag och miljö](11/READING.sv.md)
 - [12. Integration, uppehåll och medborgarskap](12/READING.sv.md)

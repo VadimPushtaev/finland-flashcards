@@ -17,10 +17,10 @@ with a separate commit per chapter. Both review checkpoints are complete. No pus
 | hb-c08 | Utbildning och lärande | Composed and validated |
 | hb-c09 | Familj, barn och relationer | Composed and validated |
 | hb-c10 | Hälsa, social trygghet och åldrande | Composed and validated |
-| hb-c11 | Boende, vardag och miljö | Source review / composition in progress |
+| hb-c11 | Boende, vardag och miljö | Composed and validated |
 | hb-c12 | Integration, uppehåll och medborgarskap | Composed and validated |
 
-11 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
+12 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
 
 ## Validation and remaining work
 
@@ -28,4 +28,6 @@ Every chapter has frozen source selections, stable sentence IDs, exact passage p
 attribution and source/topic review. Original archives and existing flashcards are preserved.
 Rules and figures describe the archived sources, not a verification of current law.
 
-After all chapters are composed, complete the collection-wide omission, overlap, source and sentence-boundary checks; record unresolved source gaps in the final report.
+Collection-wide omission, overlap, source and sentence-boundary review is complete. See [final review](FINAL_REVIEW.md) and [validation](VALIDATION.md).
+
+Translations and flashcard generation remain outside this completed Swedish edition.

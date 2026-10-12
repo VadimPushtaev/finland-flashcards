@@ -16,8 +16,10 @@ and [progress](PROGRESS.md) for the current collection. The agreed
   used in the review.
 - [ISSUES.md](ISSUES.md): conflicts, missing content and source-reuse records.
 - [VALIDATION.md](VALIDATION.md): checks completed for this review stage.
+- [FINAL_REVIEW.md](FINAL_REVIEW.md): completed collection counts, scope coverage,
+  overlap review and remaining source gaps.
 
-Checkpoint 1 is approved. The standalone Swedish pilot is in `data/homebrew/`.
+All twelve Swedish chapters are in `data/homebrew/`.
 The original [REVIEW.md](REVIEW.md) remains the record of the approved proposal.
 `pilot_selection.yaml` records exact selections and stable text-unit IDs;
 `pilot_sentences.yaml` freezes sentence IDs and ranges. See the collection's
@@ -61,6 +63,7 @@ source unit; `duplicate` routes index-level material to detailed articles;
 
 Checkpoint 1 approved the source-level dispositions. The pilot's exact selections
 and omission audit are in `data/homebrew/metadata/05_editorial_review.yaml`;
-the broad map is not a claim that other chapters' passage selection is complete.
+each other chapter now has its own complete selection and omission audit under
+`chapters/NN/` and `data/homebrew/metadata/NN_editorial_review.yaml`.
 `validate_review.py` checks the inventory and broad map; `validate_pilot.py` checks
 the learner content and re-reads original bytes for passage and sentence fidelity.
