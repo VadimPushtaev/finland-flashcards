@@ -1,0 +1,14 @@
+services:
+  study:
+    build:
+      context: .
+      dockerfile: study/Dockerfile
+    ports:
+      - "127.0.0.1:${STUDY_PORT:-18743}:8000"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
+      interval: 30s
+      timeout: 6s
+      start_period: 20s
+      retries: 3
