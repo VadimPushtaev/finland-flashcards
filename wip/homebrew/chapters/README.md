@@ -7,3 +7,4 @@ Generated chapter text; see [collection metadata](../../../data/homebrew/README.
 - [03. Kultur, värderingar och traditioner](03/READING.sv.md)
 - [04. Demokrati, förvaltning och påverkan](04/READING.sv.md)
 - [05. Grundläggande rättigheter, jämlikhet och skyldigheter](../PILOT.sv.md)
+- [06. Lagar, rättsväsende och rättsskydd](06/READING.sv.md)
