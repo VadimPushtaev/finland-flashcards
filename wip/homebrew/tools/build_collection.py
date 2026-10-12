@@ -26,11 +26,13 @@ def inputs(number):
     return directory / 'selection.yaml', directory / 'sentences.yaml', directory / 'READING.sv.md'
 
 
-def refresh_index(documents=None):
+def refresh_index(documents=None, numbers=None):
     """Index only chapter outputs already built; ignore drafts in agent work areas."""
     documents = documents or load_sources()
     entries, provenance_paths, audits, used = [], [], [], set()
     for number in SLUGS:
+        if numbers is not None and number not in numbers:
+            continue
         path = chapter_path(number)
         if not (DEST / path).exists():
             continue
@@ -99,9 +101,10 @@ def main():
     parser.add_argument('--chapter', default='05', choices=list(SLUGS))
     parser.add_argument('--initialize-sentences', action='store_true')
     parser.add_argument('--refresh-index', action='store_true')
+    parser.add_argument('--index-chapters', help='Comma-separated built chapters to publish in this index')
     args = parser.parse_args()
     if args.refresh_index:
-        refresh_index()
+        refresh_index(numbers=args.index_chapters.split(',') if args.index_chapters else None)
     else:
         build_one(args.chapter, args.initialize_sentences)
 
