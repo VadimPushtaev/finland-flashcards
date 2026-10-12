@@ -160,43 +160,9 @@ def render(chapter):
 
 
 def main():
-    """Rebuild the pilot, provenance, manifest and source fingerprints."""
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--initialize-sentences", action="store_true")
-    args = parser.parse_args()
-    selection = read_yaml(WORK / "pilot_selection.yaml")
-    path = WORK / "pilot_sentences.yaml"
-    registry = read_yaml(path) if path.exists() else {"schema_version": 1, "units": {}}
-    documents = load_sources()
-    selected_paths = {b["source_path"] for s in selection["sections"] for block in s["blocks"]
-                      for b in (block["items"] if block["kind"] == "list" else [block])}
-    for source_path in selected_paths:
-        assert hashlib.sha256((ROOT / source_path).read_bytes()).hexdigest() == documents[source_path]["sha256"]
-    chapter, provenance = build(selection, registry, documents, args.initialize_sentences)
-    if args.initialize_sentences:
-        dump_yaml(path, registry)
-    dump_yaml(DEST / CHAPTER_FILE, chapter)
-    dump_yaml(DEST / "metadata/05_provenance.yaml", provenance)
-    records = []
-    for source_path in sorted(selected_paths):
-        doc = documents[source_path]
-        record = {k: doc[k] for k in ["path", "sha256", "bytes", "extraction"]}
-        record["source_group"] = "textbook" if source_path.endswith(".pdf") else ("infofinland" if "/infofinland/" in source_path else "orientation")
-        record["attribution_record"] = record["source_group"]
-        for key in ["title", "source_url", "visible_dates", "pdf_metadata"]:
-            if key in doc:
-                record[key] = doc[key]
-        records.append(record)
-    dump_yaml(DEST / "metadata/sources.yaml", {"schema_version": 1, "sources": records})
-    dump_yaml(DEST / "manifest.yaml", {
-        "schema_version": 1, "id": "homebrew", "language": "sv",
-        "title": "Samhällskunskap inför medborgarskapsprovet", "status": "pilot_pending_review",
-        "chapters": [{"id": chapter["id"], "order": 5, "path": CHAPTER_FILE}],
-        "metadata": {"sources": "metadata/sources.yaml", "attribution": "metadata/attribution.yaml",
-                     "provenance": ["metadata/05_provenance.yaml"],
-                     "editorial_review": "metadata/05_editorial_review.yaml"}})
-    (WORK / "PILOT.sv.md").write_text(render(chapter), encoding="utf-8")
-    print(f"Built {len(chapter['sections'])} sections, {len(provenance['units'])} sourced text units")
+    """Compatibility entry point; refresh the collection without losing chapters."""
+    from build_collection import main as collection_main
+    collection_main()
 
 
 if __name__ == "__main__":

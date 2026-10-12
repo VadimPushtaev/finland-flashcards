@@ -2,8 +2,11 @@ schema_version: 1
 id: homebrew
 language: sv
 title: Samhällskunskap inför medborgarskapsprovet
-status: pilot_pending_review
+status: in_progress
 chapters:
+- id: hb-c01
+  order: 1
+  path: sv/chapters/01_finland_befolkningen_och_spraken.yaml
 - id: hb-c05
   order: 5
   path: sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
@@ -11,5 +14,8 @@ metadata:
   sources: metadata/sources.yaml
   attribution: metadata/attribution.yaml
   provenance:
+  - metadata/01_provenance.yaml
   - metadata/05_provenance.yaml
-  editorial_review: metadata/05_editorial_review.yaml
+  editorial_reviews:
+  - metadata/01_editorial_review.yaml
+  - metadata/05_editorial_review.yaml
