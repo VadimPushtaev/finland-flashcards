@@ -1,6 +1,7 @@
 # Homebrew working area
 
-Start with [REVIEW.md](REVIEW.md), the first review checkpoint. The agreed
+Start with [PILOT_REVIEW.md](PILOT_REVIEW.md), the pending second checkpoint, and
+[PILOT.sv.md](PILOT.sv.md) for the Swedish reading copy. The agreed
 [plan](PLAN.md) governs the work; [PROGRESS.md](PROGRESS.md) records its state.
 
 - [LEGAL_SCOPE.md](LEGAL_SCOPE.md): local law and official guidance, with exact
@@ -16,8 +17,11 @@ Start with [REVIEW.md](REVIEW.md), the first review checkpoint. The agreed
 - [ISSUES.md](ISSUES.md): conflicts, missing content and source-reuse records.
 - [VALIDATION.md](VALIDATION.md): checks completed for this review stage.
 
-No learner chapters are authored before checkpoint 1. The eventual standalone
-Swedish material belongs in `data/homebrew/`, not in this working area.
+Checkpoint 1 is approved. The standalone Swedish pilot is in `data/homebrew/`.
+The original [REVIEW.md](REVIEW.md) remains the record of the approved proposal.
+`pilot_selection.yaml` records exact selections and stable text-unit IDs;
+`pilot_sentences.yaml` freezes sentence IDs and ranges. See the collection's
+[schema](../../data/homebrew/SCHEMA.md) for editing and regeneration rules.
 
 ## Reproduce the review artifacts
 
@@ -28,6 +32,8 @@ poetry install --no-root
 poetry run python wip/homebrew/tools/extract_sources.py
 poetry run python wip/homebrew/tools/build_review.py
 poetry run python wip/homebrew/tools/validate_review.py
+poetry run python wip/homebrew/tools/build_pilot.py
+poetry run python wip/homebrew/tools/validate_pilot.py
 poetry run python -m unittest discover -s wip/homebrew/tools -p 'test_*.py' -v
 ```
 
@@ -38,7 +44,7 @@ versions are managed in the repository's Poetry files.
 `extracted/` is ignored by Git because it duplicates about 9 MB of source text.
 It is regenerated deterministically and retains source paths/hashes, HTML block
 locators and PDF page boundaries. Its block IDs locate fixed source snapshots;
-they are not the stable learner-content IDs to be introduced in the pilot.
+they are not the stable learner-content IDs allocated in the pilot.
 
 On this sandboxed machine, Poetry's default cache was not writable. The commands
 were run with `POETRY_CACHE_DIR=/private/tmp/homebrew-poetry-cache`,
@@ -53,7 +59,8 @@ were run with `POETRY_CACHE_DIR=/private/tmp/homebrew-poetry-cache`,
 source unit; `duplicate` routes index-level material to detailed articles;
 `gap` identifies missing source content that remains relevant.
 
-Every disposition remains proposed until checkpoint 1 is reviewed. Exact
-paragraph selection, deduplication, repair logs and learner YAML/sentence-range
-validation are deliberately later stages. The current validator checks source
-fingerprints, extraction fidelity and coverage-map completeness.
+Checkpoint 1 approved the source-level dispositions. The pilot's exact selections
+and omission audit are in `data/homebrew/metadata/05_editorial_review.yaml`;
+the broad map is not a claim that other chapters' passage selection is complete.
+`validate_review.py` checks the inventory and broad map; `validate_pilot.py` checks
+the learner content and re-reads original bytes for passage and sentence fidelity.

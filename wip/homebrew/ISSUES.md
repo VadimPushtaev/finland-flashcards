@@ -13,7 +13,7 @@ These notes are editorial metadata; none belongs in the reading chapters.
 | Website images are not stored locally | No PNG/JPEG/SVG/WebP/GIF assets are present under the two website archive directories. HTML references remote/relative image resources. | Do not fetch them. Assess essential PDF visuals after outline approval. Record any essential uncaptured information as a gap. |
 | PDF extraction preserves layout artifacts | Pages retain headers/footers, line breaks and some broken words. The TOC page windows deliberately overlap where headings share a page. | Do not quote a whole candidate page window blindly. Isolate the correct heading, verify reading order against the PDF, and log any extraction repairs. |
 | Swedish Finlex HTML needs JavaScript hydration | Static extraction of the archived act 552/2026 yields only a title/shell. | Use the Swedish government decision attachment and the published Finnish final act for the legal scope review. Do not call the shell an absent law. |
-| Exact passage selection is still pending | The chapter map records source-unit eligibility, not final excerpts or final sentence IDs. | Review the outline first, then select and validate passages during the pilot and chapter work. No fabricated sentence/provenance records are created at this stage. |
+| Exact passage selection is partial | Chapter 05 now has exact excerpts, stable sentence IDs and a source/block audit. The other chapters still have source-unit eligibility only. | Review the pilot at checkpoint 2, then continue composition. See `data/homebrew/metadata/05_editorial_review.yaml` for its locally resolved conflicts, extradition gap and source-era limitations. |
 
 ## Attribution and reuse records
 

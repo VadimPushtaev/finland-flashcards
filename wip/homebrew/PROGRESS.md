@@ -2,9 +2,10 @@
 
 ## Current stage
 
-**Awaiting checkpoint 1 review** of [REVIEW.md](REVIEW.md). Source inventory,
-extraction, legal scope analysis and the source-unit coverage proposal are ready.
-No study chapters have been composed. Exact paragraph choices remain a later step.
+**Awaiting checkpoint 2 review** of [PILOT_REVIEW.md](PILOT_REVIEW.md).
+Checkpoint 1 was approved by the user's instruction “do it, make a commit
+(I approve)”. The Swedish chapter 05 pilot and its separate metadata now exist
+under `data/homebrew/`; the remaining eleven chapters have not been composed.
 
 - [x] Save the agreed plan.
 - [x] Extract and inventory the three local content sources.
@@ -12,8 +13,8 @@ No study chapters have been composed. Exact paragraph choices remain a later ste
 - [x] Assign proposed source-unit dispositions to all substantive chapters/articles.
 - [x] Propose the Swedish chapter outline and exclusions.
 - [x] Validate the inventory and extraction.
-- [ ] **Checkpoint 1: user review of outline and coverage/exclusions.**
-- [ ] Produce the rights-and-obligations pilot and finalize the content schema.
+- [x] **Checkpoint 1: user review of outline and coverage/exclusions.**
+- [x] Produce the rights-and-obligations pilot and finalize the content schema.
 - [ ] **Checkpoint 2: user review of pilot.**
 - [ ] Complete remaining chapters.
 - [ ] Validate provenance, content structures and omission review.
@@ -35,6 +36,11 @@ first pending checkpoint, and resume its dependent work after the user's review.
 
 ## Next action
 
-Review the outline and filtering boundaries in `REVIEW.md`. After that review,
-compose chapter 05 (rights, equality and duties) as the YAML pilot, with separate
-provenance and sentence offsets, and present it for checkpoint 2.
+Review [PILOT_REVIEW.md](PILOT_REVIEW.md) and the [Swedish reading copy](PILOT.sv.md).
+The pilot has 15 sections, 194 text units and 470 frozen sentence ranges. All text
+is traceable to 18 original files. Chapter 05's 18 planned source units plus four
+supplementary units were audited; extradition qualifications remain an explicit
+gap. Source-era limitations and unchanged source typos are recorded separately.
+
+After checkpoint 2 approval, apply requested changes and continue chapter by
+chapter. Committing the pilot is authorized; it does not approve checkpoint 2.

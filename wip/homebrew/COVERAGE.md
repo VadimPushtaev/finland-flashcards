@@ -1,6 +1,6 @@
 # Source coverage and exclusion map
 
-Proposed for checkpoint 1. Exact passage choices and duplicate resolution follow outline review.
+Source-level map approved at checkpoint 1. Pilot passage decisions are in `data/homebrew/metadata/05_editorial_review.yaml`; other chapters remain pending.
 
 See `coverage.yaml` for source headings, safeguards and PDF locators, and `selection_rules.yaml` for common rules.
 

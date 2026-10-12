@@ -1,5 +1,9 @@
 # Checkpoint 1: proposed Homebrew outline and selection
 
+**Approved:** the user authorized the pilot with “do it, make a commit (I approve)”.
+The proposal below is retained as the review record. Current work is at
+[checkpoint 2](PILOT_REVIEW.md).
+
 **Decision requested:** review the 12-chapter outline and the inclusion/exclusion
 boundaries below before the rights-and-obligations pilot is composed. This is
 the first review checkpoint agreed in [PLAN.md](PLAN.md).
