@@ -213,7 +213,7 @@ När arbetsgivaren fattar beslut om vem som ska anställas får beslutet inte p�
 
 ## Barns rättigheter
 
-Alla barn under 18 år har också en eller två vårdnadshavare. Vårdnadshavarna är i allmänhet barnets föräldrar. Ibland kan vårdnadshavaren vara någon annan. Vårdnadshavaren beslutar om barnets omsorg, uppfostran, boendeort och andra viktiga frågor. Enligt finsk lag måste man ändå lyssna på barnets önskemål i frågor som rör hen. Barnet ska ha en trygg livsmiljö och positiva och nära relationer till andra människor. Vårdnadshavaren är skyldig att se till barnets välbefinnande och harmoniska utveckling.
+Vårdnadshavarna är i allmänhet barnets föräldrar. Ibland kan vårdnadshavaren vara någon annan. Vårdnadshavaren beslutar om barnets omsorg, uppfostran, boendeort och andra viktiga frågor. Enligt finsk lag måste man ändå lyssna på barnets önskemål i frågor som rör hen. Barnet ska ha en trygg livsmiljö och positiva och nära relationer till andra människor. Vårdnadshavaren är skyldig att se till barnets välbefinnande och harmoniska utveckling.
 
 Förenta nationernas (FN:s) barnkonvention är ett internationellt avtal där länderna tillsammans har kommit överens om alla rättigheter som gäller barn. Nästan alla världens länder har förbundit sig att följa avtalet, också Finland.
 
