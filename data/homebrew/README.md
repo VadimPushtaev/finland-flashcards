@@ -1,8 +1,8 @@
 # Samhällskunskap inför medborgarskapsprovet
 
-Swedish source-based study anthology. The pilot is approved; the remaining
-chapters are being composed and committed separately. See the manifest and
-[reading index](../../wip/homebrew/chapters/README.md) for completed chapters.
+Completed Swedish source-based study anthology: twelve chapters composed from
+the archived orientation website, orientation textbook and InfoFinland pages.
+Start with the [reading index](../../wip/homebrew/chapters/README.md).
 
 - [Manifest](manifest.yaml): collection identity, chapter order and metadata paths.
 - [Swedish pilot](sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml).
@@ -13,6 +13,8 @@ chapters are being composed and committed separately. See the manifest and
 - [Editorial decisions, remaining gaps and snapshot limitations](metadata/05_editorial_review.yaml).
 - [Checkpoint 2 review](../../wip/homebrew/PILOT_REVIEW.md) and
   [work progress](../../wip/homebrew/PROGRESS.md).
+- [Whole-collection review and remaining source gaps](../../wip/homebrew/FINAL_REVIEW.md).
+- [Validation results](../../wip/homebrew/VALIDATION.md).
 
 Only archived repository material is used. This edition preserves the sources'
 wording and source-era statements; it does not certify that every statement is
@@ -32,7 +34,7 @@ poetry run python wip/homebrew/tools/validate_collection.py
 poetry run python -m unittest discover -s wip/homebrew/tools -p 'test_*.py' -v
 ```
 
-Editorial inputs for each new chapter are under `wip/homebrew/chapters/NN/`:
+Editorial inputs for each chapter are under `wip/homebrew/chapters/NN/`:
 `selection.yaml`, `sentences.yaml` and `audit.yaml`. The pilot keeps its original
 `pilot_selection.yaml` and `pilot_sentences.yaml` paths. Do not hand-edit
 generated chapter text. To allocate sentences for a new reviewed selection, use

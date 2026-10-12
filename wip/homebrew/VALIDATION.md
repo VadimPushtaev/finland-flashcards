@@ -1,6 +1,48 @@
 # Homebrew validation
 
-## Pilot validation (checkpoint 2)
+## Completed Swedish collection
+
+Executed locally on 2026-10-12 with Poetry and Python 3.9.6. All twelve chapters
+are complete: 187 sections, 2,597 sourced text units and 7,150 sentence ranges.
+The [final review](FINAL_REVIEW.md) gives chapter counts and remaining source gaps.
+
+| Check | Result |
+| --- | --- |
+| Original source inventory | PASS: 349 frozen files, 16,368 HTML blocks, 394 coverage units and 135 textbook pages. |
+| Exact passage fidelity | PASS: original HTML selectors/PDF ranges and hashes re-read for every selected unit. |
+| Structure and identity | PASS: all chapter schemas, global IDs, complete sentence ranges, registries and generated reading copies. |
+| Source/topic audits | PASS: every mapped source unit accounted for; all outline topics have destinations or explicit gaps. |
+| Manifest and attribution | PASS: local references, source union, attribution records and archived notice hashes. |
+| Regression tests | PASS: all 16 tests; collection rebuild tests repeated after the final elder-care addition. |
+| Python syntax | PASS: Homebrew tools, card_creator, InfoFinland and orientation scripts compile. |
+| Existing flashcards | PASS: combined deck rebuilt before each commit; cards/ALL.txt remains unchanged. |
+| Whitespace | PASS: git diff --check. |
+
+The full collection validator passed after the family review. The final addition
+of one elder-care paragraph was then separately source-validated (chapter 10:
+265 units, 685 sentence ranges); the completed collection totals above include it.
+That paragraph uses an explicit source-range cut to remove only a stray leading
+`J` from `JOm`, with the cleanup recorded in its selection and editorial audit.
+
+Independent editorial reviews restored benefit and parenthood qualifications,
+resolved cross-chapter sick-pay wording, corrected a misleading violence typo by
+selecting another literal definition, and removed an unsupported guardian cap.
+The pilot correction preserves surviving sentence IDs and records the retired ID.
+Two unpublished abbreviation boundaries were corrected. Duplicate diagnostics
+identified nine exact cross-chapter repetitions of at least twelve words; these
+provide local context. Full electoral eligibility lists intentionally repeat in
+the municipal and welfare-election sections.
+
+Rendered textbook pages 6, 22, 65, 78 and 124 were visually checked, supplementing
+the pilot checks on pages 114 and 115. Selected passages do not depend on an
+unavailable visual. No external study material or image assets were fetched.
+Current legal accuracy and an eventual official question bank are not certified;
+the source-specific gaps and snapshot limitations remain in the metadata.
+
+The syntax check used `PYTHONPYCACHEPREFIX=/private/tmp/homebrew-pycache` because
+the platform's default bytecode-cache location is outside the writable sandbox.
+
+## Pilot validation (checkpoint 2, historical record)
 
 Executed with Poetry and Python 3.9.6. The pilot consists of 15 sections,
 194 text units, 470 sentence ranges and 18 source files. Checks:
@@ -26,7 +68,9 @@ Limits: source fidelity does not prove legal accuracy or currency. One
 extradition gap, source typos and source-era authority/service claims are
 recorded in the pilot metadata. Table/image shape tests use fixtures; actual
 table/image extraction and asset provenance remain work for later chapters.
-Checkpoint 2 is pending; the remaining eleven chapters are not validated content.
+At that checkpoint, review was pending and the remaining eleven chapters were
+not yet validated. The user subsequently approved the pilot and completion;
+the current collection results are recorded above.
 
 ## Checkpoint 1 validation (historical record)
 
