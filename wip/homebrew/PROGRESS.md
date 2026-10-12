@@ -12,7 +12,7 @@ with a separate commit per chapter. Both review checkpoints are complete. No pus
 | hb-c03 | Kultur, värderingar och traditioner | Composed and validated |
 | hb-c04 | Demokrati, förvaltning och påverkan | Composed and validated |
 | hb-c05 | Grundläggande rättigheter, jämlikhet och skyldigheter | Composed and validated |
-| hb-c06 | Lagar, rättsväsende och rättsskydd | Source review / composition in progress |
+| hb-c06 | Lagar, rättsväsende och rättsskydd | Composed and validated |
 | hb-c07 | Arbete, näringsliv och beskattning | Source review / composition in progress |
 | hb-c08 | Utbildning och lärande | Source review / composition in progress |
 | hb-c09 | Familj, barn och relationer | Source review / composition in progress |
@@ -20,7 +20,7 @@ with a separate commit per chapter. Both review checkpoints are complete. No pus
 | hb-c11 | Boende, vardag och miljö | Source review / composition in progress |
 | hb-c12 | Integration, uppehåll och medborgarskap | Source review / composition in progress |
 
-5 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
+6 of 12 chapters composed. Reading copies: [chapter index](chapters/README.md).
 
 ## Validation and remaining work
 
