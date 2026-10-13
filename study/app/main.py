@@ -10,6 +10,8 @@ from fastapi.staticfiles import StaticFiles
 import yaml
 
 from app.translations import reviewed_records
+from app.database import database
+from app.auth import install_routes
 
 DATA_DIR = Path(os.environ.get("HOMEBREW_DATA_DIR", Path(__file__).resolve().parents[2] / "data/homebrew"))
 STATIC_DIR = Path(os.environ.get("HOMEBREW_STATIC_DIR", Path(__file__).resolve().parents[1] / "frontend/dist"))
@@ -50,6 +52,8 @@ def library():
 def health():
     """Check that the collection can be loaded, not merely that Python runs."""
     _, chapters, _ = library()
+    with database() as db:
+        db.execute('SELECT 1 FROM users LIMIT 1').fetchone()
     return {"status": "ok", "chapters": len(chapters)}
 
 
@@ -135,6 +139,8 @@ def chapter_sources(chapter_id: str):
                        "page": u.get("printed_page"), "heading": u.get("heading")}
             for identity, u in provenance.items()}
 
+
+install_routes(app, get_chapter, get_passage)
 
 if (STATIC_DIR / "assets").is_dir():
     app.mount("/assets", StaticFiles(directory=STATIC_DIR / "assets"), name="assets")

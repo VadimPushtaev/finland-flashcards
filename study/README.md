@@ -58,7 +58,7 @@ curl --fail http://fi.pushtaev.ru:18743/api/health
 
 The service restarts automatically after a reboot. Content and reviewed
 translations are baked into the image, so updates require a rebuild. Reading
-progress stays in each browser and is specific to the public URL.
+progress, bookmarks and preferences live in SQLite in the persistent Docker volume.
 
 ## Study features
 
@@ -69,15 +69,102 @@ progress stays in each browser and is specific to the public URL.
 - Font choice, text size and dark mode; responsive desktop/mobile layouts.
 - Optional source locations plus original credits and reuse terms.
 
-Progress and bookmarks live in browser local storage, using the collection's
-stable IDs. They persist through container rebuilds but are specific to the
-browser and origin/port. Clearing browser storage removes them. No account or
-database is required. Study data is not sent to a third-party service.
+Reading, search and translations are public. Saving a bookmark, marking a section
+as read, or changing font, text size or theme prompts guests to log in. Login
+completes the requested change; cancelling leaves it unapplied. Account state
+follows the user across browsers. Old browser-local saves are discarded without
+importing them. No third-party account service is used.
+
+## Accounts and persistent storage
+
+Run account commands on the Docker host. Passwords are prompted twice without
+being echoed or included in command arguments:
+
+```bash
+docker compose exec study python -m app.admin create-user vadim
+docker compose exec study python -m app.admin reset-password vadim
+```
+
+Usernames are case-insensitive, contain 1–64 characters and cannot contain spaces.
+Passwords contain 8–1024 characters and are stored as Argon2 hashes. There is no
+registration or password-change web endpoint. Resetting a password revokes every
+session for that account; existing study state remains intact.
+
+Login has no server-side expiry. The HttpOnly, SameSite cookie lasts one year and
+is renewed on authenticated requests. Browser cookie deletion or browser-imposed
+retention limits require login again; logout and host password resets revoke
+sessions. Login attempts are limited to ten per client address per five minutes.
+
+SQLite lives at `/var/lib/homebrew-study/study.sqlite3` in the named Docker volume
+**finland-flashcards-study-data**. Accounts, hashed sessions and saved state survive
+restarts, image rebuilds, container replacement, and ordinary `docker compose down`
+followed by `up`. Keep this volume when changing deployments. **`docker compose down -v` deletes the volume and its data.** Schema initialization preserves existing data
+and refuses unsupported database versions. Health checks verify database access.
+
+For the later nginx HTTPS deployment, set these in the host `.env`:
+
+```dotenv
+STUDY_SECURE_COOKIES=true
+STUDY_PUBLIC_ORIGIN=https://fi.pushtaev.ru
+# Use the actual nginx peer address/network trusted to supply forwarded headers.
+STUDY_PROXY_IPS=127.0.0.1
+```
+
+Keep the application port private behind nginx. `STUDY_PUBLIC_ORIGIN` must exactly
+match the browser's origin, including a nonstandard port when used. When unset,
+origin checks use the request origin seen by the app. Local HTTP uses
+`STUDY_SECURE_COOKIES=false`. nginx installation is managed separately.
+
+### Backup and restore
+
+Use SQLite's backup API, which includes committed WAL data; do not copy only the
+live database file. Choose a new backup filename each time:
+
+```bash
+docker compose exec -T study python -m app.admin backup-db /tmp/study-backup.sqlite3
+docker compose cp study:/tmp/study-backup.sqlite3 ./study-backup.sqlite3
+chmod 600 study-backup.sqlite3
+docker compose exec -T study rm /tmp/study-backup.sqlite3
+```
+
+Backups contain private account information and should be stored outside Git.
+To restore a trusted backup, stop the service, mount the backup read-only and use
+SQLite's backup API to replace the database contents in the same persistent volume:
+
+```bash
+docker compose stop study
+docker compose run --rm --no-deps --user root -T \
+  -v "$PWD/study-backup.sqlite3:/tmp/restore.sqlite3:ro" study python - <<'PYRESTORE'
+from contextlib import closing
+import os
+from pathlib import Path
+import sqlite3
+
+target = Path(os.environ["STUDY_DATABASE_PATH"])
+with closing(sqlite3.connect("file:/tmp/restore.sqlite3?mode=ro", uri=True)) as source:
+    assert source.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
+    assert source.execute("PRAGMA user_version").fetchone()[0] == 1
+    with closing(sqlite3.connect(target)) as destination:
+        source.backup(destination)
+# Keep the volume writable by the service's non-root user.
+owner = target.parent.stat()
+for file in (target, Path(str(target) + "-wal"), Path(str(target) + "-shm")):
+    if file.exists():
+        os.chown(file, owner.st_uid, owner.st_gid)
+        os.chmod(file, 0o600)
+PYRESTORE
+docker compose up -d
+```
+
+Restore replaces account state with the backup snapshot; make a fresh backup first
+if existing state needs to be retained.
 
 ## Local development
 
 Requires Python 3.12–3.14, Poetry and Node.js 22.12+ (or 24 LTS).
-The root project's older Python environment is unaffected.
+The root project's older Python environment is unaffected. Local development uses
+`study/state/study.sqlite3` (ignored by Git), or `STUDY_DATABASE_PATH` when set.
+Create local development accounts with `poetry run python -m app.admin create-user NAME`.
 
 ```bash
 cd study
@@ -108,10 +195,13 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Browser tests expect the Compose app to be running on port 18743. Override
-`STUDY_URL` to test another deployment. Tests cover exact source fidelity,
-Swedish search/pagination, bookmarks, completion/resume, persisted preferences
-and mobile navigation. Production does not include browser-test tools.
+Browser tests start their own server on port 18745 with a disposable SQLite database
+and isolated test accounts; they never modify the Compose volume. Build the frontend
+before running them. `STUDY_URL` can override the server for public reading tests,
+but account tests require the isolated local server. Tests cover source fidelity,
+search, bookmarks, completion/resume, account isolation, login/cancel/revocation,
+failed saves, persisted preferences and mobile navigation. Production does not
+include browser-test tools.
 
 The browser suite covers 320, 375, 390 and 430 pixel phone widths, an 844×390
 landscape phone, a 768 pixel tablet and a desktop. It checks the overview,

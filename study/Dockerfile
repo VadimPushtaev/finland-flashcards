@@ -18,7 +18,9 @@ RUN poetry install --only main --no-root --no-interaction
 COPY study/app/ ./app/
 COPY data/homebrew/ /data/homebrew/
 COPY --from=frontend /frontend/dist/ ./static/
-RUN useradd --create-home --uid 10001 reader
+RUN useradd --create-home --uid 10001 reader \
+    && mkdir -p /var/lib/homebrew-study \
+    && chown reader:reader /var/lib/homebrew-study
 USER reader
 EXPOSE 8000
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

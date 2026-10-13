@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
+import { useAccount, type Progress } from './Account';
 import { TranslationPanel, TranslationText, type Selection, type TranslationData } from './Translation';
 
 type Unit = { id: string; text: string; sentences?: { id: string; start: number; end: number }[] };
@@ -10,24 +11,10 @@ type Library = { title: string; language: string; chapters: Summary[] };
 type Passage = { chapter_id: string; chapter_title: string; section_id: string; section_title: string; unit_id: string; text: string; order: number };
 type Source = { title: string; url?: string; group: string; page?: number; heading?: string };
 type Attribution = { title: string; credit: string; url?: string; license: string; license_url?: string; changes: string };
-type Progress = { completed: string[]; bookmarks: string[]; last: { chapter: string; section: string } | null; size: number; serif: boolean; dark: boolean };
 type Route = { page: string; chapter?: string; section?: string; unit?: string; query?: string };
-const KEY = 'homebrew-study-v1';
-const defaultProgress: Progress = { completed: [], bookmarks: [], last: null, size: 20, serif: true, dark: false };
 const themes = ['Land & språk', 'Historia', 'Kultur & traditioner', 'Demokrati', 'Rättigheter', 'Lag & rätt', 'Arbetsliv', 'Utbildning', 'Familj & barn', 'Hälsa & trygghet', 'Vardag & miljö', 'Integration'];
 const icons = ['globe-europe-africa', 'hourglass-split', 'flower1', 'bank', 'shield-check', 'briefcase', 'building', 'mortarboard', 'people', 'heart-pulse', 'house', 'signpost-split'];
 
-function readProgress(): Progress {
-  try {
-    const data = JSON.parse(localStorage.getItem(KEY) || 'null');
-    if (!data || typeof data !== 'object') return defaultProgress;
-    return { completed: Array.isArray(data.completed) ? data.completed.filter((x: unknown) => typeof x === 'string') : [],
-      bookmarks: Array.isArray(data.bookmarks) ? data.bookmarks.filter((x: unknown) => typeof x === 'string') : [],
-      last: typeof data.last?.chapter === 'string' && typeof data.last?.section === 'string' ? data.last : null,
-      size: [18, 20, 22, 24].includes(data.size) ? data.size : 20,
-      serif: data.serif !== false, dark: data.dark === true };
-  } catch { return defaultProgress; }
-}
 function parseRoute(): Route {
   const parts = location.hash.replace(/^#\/?/, '').split('/').map(p => { try { return decodeURIComponent(p); } catch { return p; } });
   return { page: parts[0] || 'home', chapter: parts[1], section: parts[2], unit: parts[3], query: parts[0] === 'search' ? parts[1] || '' : '' };
@@ -57,10 +44,10 @@ export default function App() {
   const [library, setLibrary] = useState<Library | null>(null);
   const [error, setError] = useState('');
   const [route, setRoute] = useState(parseRoute);
-  const [progress, setProgress] = useState(readProgress);
+  const account = useAccount();
+  const { progress, changeProgress, toggleCompleted, toggleBookmark } = account;
   const [menu, setMenu] = useState(false);
   const [query, setQuery] = useState('');
-  const [storageError, setStorageError] = useState(false);
   const sidebarRef = useRef<HTMLElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   useEffect(() => { const controller = new AbortController(); api<Library>('/api/library', controller.signal).then(setLibrary).catch(e => { if (e.name !== 'AbortError') setError(e.message); }); return () => controller.abort(); }, []);
@@ -81,11 +68,13 @@ export default function App() {
     document.addEventListener('keydown', keydown);
     return () => { document.removeEventListener('keydown', keydown); menuButtonRef.current?.focus(); };
   }, [menu]);
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(progress)); setStorageError(false); } catch { setStorageError(true); } document.documentElement.setAttribute('data-bs-theme', progress.dark ? 'dark' : 'light'); }, [progress]);
   useEffect(() => { document.title = `${route.page === 'chapter' ? library?.chapters.find(c => c.id === route.chapter)?.title || 'Läs' : 'Samhällskunskap'} · Homebrew`; }, [route, library]);
-  const changeProgress = (patch: Partial<Progress>) => setProgress(p => ({ ...p, ...patch }));
-  const toggleCompleted = (id: string) => setProgress(p => ({ ...p, completed: p.completed.includes(id) ? p.completed.filter(s => s !== id) : [...p.completed, id] }));
-  const toggleBookmark = (id: string) => setProgress(p => ({ ...p, bookmarks: p.bookmarks.includes(id) ? p.bookmarks.filter(s => s !== id) : [...p.bookmarks, id] }));
+  useEffect(() => {
+    if (!account.ready || route.page !== 'chapter' || !library) return;
+    const chapter = library.chapters.find(c => c.id === route.chapter);
+    const section = chapter?.sections.find(s => s.id === route.section) || chapter?.sections[0];
+    if (chapter && section) changeProgress({ last: { chapter: chapter.id, section: section.id } });
+  }, [account.ready, account.username, route.page, route.chapter, route.section, library, changeProgress]);
   const allSections = library?.chapters.flatMap(c => c.sections) || [];
   const completed = allSections.filter(s => progress.completed.includes(s.id)).length;
   const overall = allSections.length ? Math.round(completed / allSections.length * 100) : 0;
@@ -116,11 +105,11 @@ export default function App() {
         <form className="search-form" role="search" onSubmit={event => { event.preventDefault(); if (query.trim().length >= 2) location.hash = `/search/${encodeURIComponent(query.trim())}`; }}>
           <Icon name="search" /><input className="form-control" type="search" aria-label="Sök i materialet" placeholder="Sök i alla kapitel…" value={query} minLength={2} maxLength={120} onChange={event => setQuery(event.target.value)} /><button className="search-submit" type="submit" aria-label="Sök"><Icon name="arrow-return-left" /></button>
         </form>
-        <div className="topbar-tools"><span className="language-label"><span className="finland-flag" /> Svenska</span><button className="btn icon-button" aria-label={progress.dark ? 'Aktivera ljust tema' : 'Aktivera mörkt tema'} onClick={() => changeProgress({ dark: !progress.dark })}><Icon name={progress.dark ? 'sun' : 'moon'} /></button></div>
+        <div className="topbar-tools"><div className="account-controls">{account.username ? <><span className="account-name">{account.username}</span><button className="btn btn-sm" onClick={() => void account.logout()}>Logga ut</button></> : <button className="btn btn-sm" onClick={account.openLogin} disabled={!account.ready}>Logga in</button>}</div><span className="language-label"><span className="finland-flag" /> Svenska</span><button className="btn icon-button" aria-label={progress.dark ? 'Aktivera ljust tema' : 'Aktivera mörkt tema'} onClick={() => changeProgress({ dark: !progress.dark })}><Icon name={progress.dark ? 'sun' : 'moon'} /></button></div>
       </header>
       <main id="main-content" tabIndex={-1}>
-        {storageError && <div className="alert alert-warning m-3">Webbläsaren kan inte spara dina framsteg. Tillåt lokal lagring för att behålla dem.</div>}
-        {error ? <div className="page"><ErrorMessage message={error} /></div> : !library ? <Loading /> : route.page === 'chapter' ?
+        {account.saveError && <div className="alert alert-warning m-3" role="alert">{account.saveError}</div>}
+        {error ? <div className="page"><ErrorMessage message={error} /></div> : !library || !account.ready ? <Loading /> : route.page === 'chapter' ?
           <Reader key={route.chapter} library={library} route={route} progress={progress} changeProgress={changeProgress} toggleCompleted={toggleCompleted} toggleBookmark={toggleBookmark} /> :
           route.page === 'search' ? <Search key={route.query} query={route.query || ''} /> : route.page === 'saved' ? <Saved ids={progress.bookmarks} toggleBookmark={toggleBookmark} /> : route.page === 'about' ? <About /> :
           <div className="page overview">
@@ -129,7 +118,7 @@ export default function App() {
               <div><h1>Lär känna Finland.<br /><span>Ett kapitel i taget.</span></h1><p>Samhällskunskap inför medborgarskapsprovet.<br />Läs i din takt, spara det viktiga och följ dina framsteg.</p><a href={resume ? openChapter(resume) : '#/'} className="btn btn-primary hero-button"><Icon name="book" /> {progress.last ? 'Fortsätt läsa' : 'Börja läsa'} <Icon name="arrow-right" /></a><div className="hero-meta"><span><Icon name="collection" />12 kapitel</span><span><Icon name="translate" />På svenska</span><span><Icon name="check2-circle" />Din egen takt</span></div></div>
               <div className="book-illustration" aria-hidden="true"><div className="book-orbit orbit-one" /><div className="book-orbit orbit-two" /><div className="decor-star">✦</div><div className="illustrated-book"><span className="book-spine" /><div className="book-cover"><span className="finland-flag" /><small>HEMBYGGT LÄRMATERIAL</small><strong>Finland &<br />samhället</strong><span className="book-cover-line" /><span>En väg till förståelse.</span><Icon name="flower1" /></div></div><div className="book-caption"><Icon name="bookmark-check" /> Kunskap att bygga vidare på</div></div>
             </section>
-            <section className="progress-summary"><span className="summary-icon"><Icon name="compass" /></span><div><strong>{completed ? 'Du är på väg. Fortsätt där du slutade.' : 'Din studieresa börjar här.'}</strong><span>{completed} av {allSections.length} avsnitt lästa · Dina framsteg sparas i den här webbläsaren.</span></div><div className="summary-meter"><strong>{overall}%</strong><Meter value={overall} /></div></section>
+            <section className="progress-summary"><span className="summary-icon"><Icon name="compass" /></span><div><strong>{completed ? 'Du är på väg. Fortsätt där du slutade.' : 'Din studieresa börjar här.'}</strong><span>{completed} av {allSections.length} avsnitt lästa · {account.username ? 'Dina framsteg sparas på ditt konto.' : 'Logga in för att spara dina framsteg.'}</span></div><div className="summary-meter"><strong>{overall}%</strong><Meter value={overall} /></div></section>
             <div className="section-heading"><div><h2>Utforska kapitlen</h2><p>Från Finlands historia till livet i vardagen.</p></div><span className="badge rounded-pill chapter-total">12 kapitel</span></div>
             <div className="row g-3 chapter-grid">{library.chapters.map(c => {
               const done = c.sections.filter(s => progress.completed.includes(s.id)).length;
@@ -140,6 +129,7 @@ export default function App() {
           </div>}
       </main>
     </div>
+    {account.dialog}
   </div>;
 }
 
@@ -175,7 +165,6 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
     document.addEventListener('keydown', listener);
     return () => document.removeEventListener('keydown', listener);
   }, [selection]);
-  useEffect(() => { if (chapter && section) changeProgress({ last: { chapter: chapter.id, section: section.id } }); }, [chapter?.id, section?.id]);
   useEffect(() => { if (route.unit && chapter && section) { const timer = window.setTimeout(() => document.getElementById(route.unit!)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100); return () => clearTimeout(timer); } }, [route.unit, chapter, section]);
   if (error) return <div className="page"><ErrorMessage message={error} /></div>;
   if (!chapter || !section) return <Loading />;
@@ -252,11 +241,11 @@ function Saved({ ids, toggleBookmark }: { ids: string[]; toggleBookmark: (id: st
   const [loading, setLoading] = useState(true);
   const [missing, setMissing] = useState<string[]>([]);
   useEffect(() => { const controller = new AbortController(); setLoading(true); Promise.all(ids.map(async id => { try { return await api<Passage>(`/api/passages/${id}`, controller.signal); } catch { return id; } })).then(values => { if (!controller.signal.aborted) { setPassages(values.filter((v): v is Passage => typeof v !== 'string')); setMissing(values.filter((v): v is string => typeof v === 'string')); setLoading(false); } }); return () => controller.abort(); }, [ids]);
-  return <div className="page results-page"><div className="eyebrow">DIN EGEN SAMLING</div><h1>Sparade texter</h1><p className="page-intro">Det du vill återvända till. Dina bokmärken finns i den här webbläsaren.</p>{loading ? <Loading /> : ids.length ? <><div className="result-list">{passages.map(p => <PassageCard key={p.unit_id} passage={p} remove={() => toggleBookmark(p.unit_id)} />)}</div>{missing.map(id => <div className="alert alert-warning" key={id}>Textstycket kunde inte hämtas. <button className="btn btn-sm btn-outline-secondary" onClick={() => toggleBookmark(id)}>Ta bort bokmärket</button></div>)}</> : <div className="empty-state"><Icon name="bookmark-plus" /><h2>En plats för det viktiga</h2><p>Tryck på bokmärket bredvid ett textstycke när du läser.<br />Då hittar du det här.</p><a href="#/" className="btn btn-primary">Utforska kapitlen <Icon name="arrow-right" /></a></div>}</div>;
+  return <div className="page results-page"><div className="eyebrow">DIN EGEN SAMLING</div><h1>Sparade texter</h1><p className="page-intro">Det du vill återvända till. Dina bokmärken sparas på ditt konto.</p>{loading ? <Loading /> : ids.length ? <><div className="result-list">{passages.map(p => <PassageCard key={p.unit_id} passage={p} remove={() => toggleBookmark(p.unit_id)} />)}</div>{missing.map(id => <div className="alert alert-warning" key={id}>Textstycket kunde inte hämtas. <button className="btn btn-sm btn-outline-secondary" onClick={() => toggleBookmark(id)}>Ta bort bokmärket</button></div>)}</> : <div className="empty-state"><Icon name="bookmark-plus" /><h2>En plats för det viktiga</h2><p>Tryck på bokmärket bredvid ett textstycke när du läser.<br />Då hittar du det här.</p><a href="#/" className="btn btn-primary">Utforska kapitlen <Icon name="arrow-right" /></a></div>}</div>;
 }
 function About() {
   const [sources, setSources] = useState<Record<string, Attribution> | null>(null);
   const [error, setError] = useState('');
   useEffect(() => { const controller = new AbortController(); api<Record<string, Attribution>>('/api/sources', controller.signal).then(setSources).catch(e => { if (e.name !== 'AbortError') setError(e.message); }); return () => controller.abort(); }, []);
-  return <div className="page about-page"><div className="eyebrow">OM HOMEBREW</div><h1>Kunskap med en källa.</h1><p className="page-intro">Samhällskunskap inför medborgarskapsprovet är en samling av utvalda texter från tre befintliga läromaterial.</p><div className="about-intro"><h2>Så använder du materialet</h2><p>Läs kapitlen i valfri ordning. Markera avsnitt som lästa och spara stycken du vill gå tillbaka till. Dina framsteg, bokmärken och läsinställningar sparas på den här enheten och i den här webbläsaren.</p><p>Samlingen återger arkiverade källor. Lagar, belopp och myndighetsuppgifter kan ha ändrats. Materialet är ett fristående studiestöd och ingen officiell frågebank.</p></div><h2 className="mb-4">Källor och upphov</h2>{error ? <ErrorMessage message={error} /> : !sources ? <Loading /> : Object.entries(sources).map(([key, source]) => <section className="attribution-card card" key={key}><div className="card-body"><div className="eyebrow">{key === 'orientation' ? 'SAMHÄLLSORIENTERING PÅ WEBBEN' : key === 'textbook' ? 'LÄROBOK' : 'INFORMATION OM FINLAND'}</div><h3>{source.title}</h3><p>{source.credit}</p>{source.url && <a href={source.url} target="_blank" rel="noreferrer">Besök originalkällan <Icon name="box-arrow-up-right" /></a>}<details><summary>Originalets användningsvillkor</summary><p>{source.license}</p>{source.license_url && <a href={source.license_url} target="_blank" rel="noreferrer">{source.license_url}</a>}<p className="mt-2">{source.changes}</p></details></div></section>)}</div>;
+  return <div className="page about-page"><div className="eyebrow">OM HOMEBREW</div><h1>Kunskap med en källa.</h1><p className="page-intro">Samhällskunskap inför medborgarskapsprovet är en samling av utvalda texter från tre befintliga läromaterial.</p><div className="about-intro"><h2>Så använder du materialet</h2><p>Läs kapitlen i valfri ordning. Markera avsnitt som lästa och spara stycken du vill gå tillbaka till. Logga in för att spara dina framsteg, bokmärken och läsinställningar på ditt konto och använda dem på flera enheter.</p><p>Samlingen återger arkiverade källor. Lagar, belopp och myndighetsuppgifter kan ha ändrats. Materialet är ett fristående studiestöd och ingen officiell frågebank.</p></div><h2 className="mb-4">Källor och upphov</h2>{error ? <ErrorMessage message={error} /> : !sources ? <Loading /> : Object.entries(sources).map(([key, source]) => <section className="attribution-card card" key={key}><div className="card-body"><div className="eyebrow">{key === 'orientation' ? 'SAMHÄLLSORIENTERING PÅ WEBBEN' : key === 'textbook' ? 'LÄROBOK' : 'INFORMATION OM FINLAND'}</div><h3>{source.title}</h3><p>{source.credit}</p>{source.url && <a href={source.url} target="_blank" rel="noreferrer">Besök originalkällan <Icon name="box-arrow-up-right" /></a>}<details><summary>Originalets användningsvillkor</summary><p>{source.license}</p>{source.license_url && <a href={source.license_url} target="_blank" rel="noreferrer">{source.license_url}</a>}<p className="mt-2">{source.changes}</p></details></div></section>)}</div>;
 }

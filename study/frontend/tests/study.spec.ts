@@ -1,6 +1,7 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './account.fixture';
 
-test('read, save, complete and resume a section across reloads', async ({ page }, testInfo) => {
+test('read, save, complete and resume a section across reloads', async ({ page, context, account }, testInfo) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token, url: 'http://127.0.0.1:18745' }]);
   await page.goto('/');
   await expect(page.getByRole('heading', { name: 'Lär känna Finland. Ett kapitel i taget.' })).toBeVisible();
   await expect(page.locator('.chapter-card')).toHaveCount(12);
@@ -16,6 +17,7 @@ test('read, save, complete and resume a section across reloads', async ({ page }
     await bookmark.click();
   }
   await page.getByRole('button', { name: 'Markera som läst', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Markera som oläst' })).toBeVisible();
   await page.reload();
   await expect(page.getByRole('button', { name: 'Markera som oläst' })).toBeVisible();
   await expect(page.locator('#hb-c01-u0001').getByRole('button', { name: 'Ta bort bokmärke' })).toHaveAttribute('aria-pressed', 'true');
@@ -37,11 +39,13 @@ test('search Swedish text and navigate to a matching original passage', async ({
   await expect(page.locator('.target-unit')).toContainText(/rösträtt/i);
 });
 
-test('reading preferences persist and layout fits the screen', async ({ page }) => {
+test('reading preferences persist and layout fits the screen', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token, url: 'http://127.0.0.1:18745' }]);
   await page.goto('/#/chapter/hb-c01/hb-c01-lage');
   await expect(page.locator('.reader-text')).toBeVisible();
   await page.getByRole('button', { name: 'Öka textstorleken' }).click();
   await page.getByRole('button', { name: 'Aktivera mörkt tema' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-bs-theme', 'dark');
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-bs-theme', 'dark');
   await expect(page.locator('.reader-text')).toHaveCSS('font-size', '22px');
@@ -60,7 +64,8 @@ test('mobile navigation and section selection work', async ({ page }, testInfo) 
   await expect(page.getByRole('heading', { name: 'Svenskt styre, reformation och upplysning' })).toBeVisible();
 });
 
-test('overview, search, bookmarks and expanded sources fit the viewport', async ({ page }) => {
+test('overview, search, bookmarks and expanded sources fit the viewport', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token, url: 'http://127.0.0.1:18745' }]);
   const assertFits = async () => {
     const size = await page.evaluate(() => ({ width: window.innerWidth, content: document.documentElement.scrollWidth }));
     expect(size.content, `content width ${size.content} exceeds viewport ${size.width}`).toBeLessThanOrEqual(size.width);
@@ -81,7 +86,9 @@ test('overview, search, bookmarks and expanded sources fit the viewport', async 
   await page.goto('/#/chapter/hb-c12');
   await expect(page.locator('.reader-text')).toBeVisible();
   await page.getByRole('button', { name: 'Öka textstorleken' }).click();
+  await expect(page.locator('.reader-text')).toHaveCSS('font-size', '22px');
   await page.getByRole('button', { name: 'Öka textstorleken' }).click();
+  await expect(page.locator('.reader-text')).toHaveCSS('font-size', '24px');
   await page.locator('.source-details summary').click();
   await expect(page.locator('.source-details li').first()).not.toContainText('Källorna hämtas');
   await assertFits();
