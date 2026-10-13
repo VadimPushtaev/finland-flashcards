@@ -1,0 +1,52 @@
+schema_version: 1
+source_id: hb-c01-arstider
+result_sha256: c7d8182d9126df1dcde59005b92c521c8706f4d5020308eee209b2d0e32c65bc
+glossary_sha256: 326ceab5bfe80ff730afbbdc4e07ace407950282f82467d309dcb4959aee1324
+status: complete
+review_mode: independent
+reviewer: /root/translate_regions
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c01-u0032-s008
+  blocking: true
+  resolved: true
+  note: User-authorised source segmentation migration retired hb-c01-u0032-s002 and introduced hb-c01-u0032-s008
+    and hb-c01-u0032-s009. Independently verified each new Swedish and Russian record contains one sentence,
+    all Swedish paragraph text and Russian wording remain unchanged, vocabulary offsets relocate exactly,
+    and all unaffected source and translation records are identical. Original blocking alignment issue
+    resolved.
+- source_id: hb-c01-u0034-s007
+  blocking: true
+  resolved: true
+  note: User-authorised source segmentation migration retired hb-c01-u0034-s003 and introduced hb-c01-u0034-s007
+    and hb-c01-u0034-s008. Independently verified each new Swedish and Russian record contains one sentence,
+    all Swedish paragraph text and Russian wording remain unchanged, vocabulary offsets relocate exactly,
+    and all unaffected source and translation records are identical. Original blocking alignment issue
+    resolved.
+- source_id: hb-c01-u0031-s004
+  blocking: false
+  resolved: true
+  note: Independent reviewer requested explicit negation annotations for consistency with other chapter
+    sections; added each standalone inte occurrence.
+- source_id: hb-c01-u0030-s005
+  blocking: false
+  resolved: true
+  note: Independent reviewer corrected dictionary wording for regna to idiomatic идти (о дожде).
+- source_id: hb-c01-arstider
+  blocking: false
+  resolved: true
+  note: Independent review normalised quantifying många/fler/flest annotations to DET with general meaning
+    много; многие; substantival många remains PRON.
+references:
+- location: data/infofinland/content/information-about-finland/finnish-climate.html
+  purpose: Read archived full article and selected passage provenance to resolve contextual meaning; no
+    factual updating.
+- location: data/orientation/sv/laromedel/integration/vader-och-arstider-i-finland.html
+  purpose: Read archived full article and selected passage provenance to resolve contextual meaning; no
+    factual updating.

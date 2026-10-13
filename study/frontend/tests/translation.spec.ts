@@ -48,6 +48,10 @@ test('function words retain sentence support and keyboard selection works', asyn
 });
 
 test('section navigation clears selection and unavailable sections remain readable', async ({ page }) => {
+  // Keep the unavailable-state check independent of translation progress.
+  await page.route('**/sections/hb-c01-regioner/translation', route => route.fulfill({
+    json: { available: false, language: 'ru', records: {} },
+  }));
   await page.goto(first);
   await page.locator(wordSelector).first().click();
   await page.locator('.reader-contents summary').click();

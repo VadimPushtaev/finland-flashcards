@@ -6,6 +6,11 @@ Executed locally on 2026-10-12 with Poetry and Python 3.9.6. All twelve chapters
 are complete: 187 sections, 2,597 sourced text units and 7,150 sentence ranges.
 The [final review](FINAL_REVIEW.md) gives chapter counts and remaining source gaps.
 
+On 2026-10-13, two combined climate sentence records were split with user approval.
+Chapter 1 source validation passed with 59 unchanged text units and 213 sentence
+ranges; the collection now contains 7,152 sentence ranges. The original wording
+and all unaffected sentence IDs were preserved.
+
 | Check | Result |
 | --- | --- |
 | Original source inventory | PASS: 349 frozen files, 16,368 HTML blocks, 394 coverage units and 135 textbook pages. |
