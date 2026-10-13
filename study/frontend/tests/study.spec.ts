@@ -55,6 +55,7 @@ test('mobile navigation and section selection work', async ({ page }, testInfo) 
   if (await menu.isVisible()) await menu.tap();
   await page.getByRole('navigation', { name: 'Kapitel', exact: true }).getByRole('link', { name: /Historia/ }).click();
   await expect(page.locator('.sidebar')).not.toHaveClass(/is-open/);
+  await page.locator('.reader-contents summary').click();
   await page.getByRole('combobox', { name: 'Välj avsnitt' }).selectOption('hb-c02-sverige');
   await expect(page.getByRole('heading', { name: 'Svenskt styre, reformation och upplysning' })).toBeVisible();
 });

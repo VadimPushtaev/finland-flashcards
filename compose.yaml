@@ -4,7 +4,7 @@ services:
       context: .
       dockerfile: study/Dockerfile
     ports:
-      - "127.0.0.1:${STUDY_PORT:-18743}:8000"
+      - "${STUDY_BIND:-127.0.0.1}:${STUDY_PORT:-18743}:8000"
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
