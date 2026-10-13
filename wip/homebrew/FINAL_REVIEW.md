@@ -8,7 +8,7 @@ The archived law defines the scope; it is not used to invent replacement teachin
 
 | Chapter | Sections | Sourced text units | Sentence ranges | Words | Source files |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| [01](chapters/01/READING.sv.md) | 8 | 59 | 211 | 2641 | 7 |
+| [01](chapters/01/READING.sv.md) | 8 | 59 | 213 | 2641 | 7 |
 | [02](chapters/02/READING.sv.md) | 13 | 91 | 321 | 4341 | 4 |
 | [03](chapters/03/READING.sv.md) | 21 | 155 | 520 | 6935 | 11 |
 | [04](chapters/04/READING.sv.md) | 15 | 238 | 753 | 9939 | 12 |
@@ -20,9 +20,11 @@ The archived law defines the scope; it is not used to invent replacement teachin
 | [10](chapters/10/READING.sv.md) | 13 | 265 | 685 | 9100 | 23 |
 | [11](chapters/11/READING.sv.md) | 19 | 323 | 766 | 9429 | 28 |
 | [12](chapters/12/READING.sv.md) | 20 | 261 | 603 | 9180 | 32 |
-| Total | 187 | 2597 | 7150 | 96533 | — |
+| Total | 187 | 2597 | 7152 | 96533 | — |
 
 Counts include paragraphs and individual list items; words are whitespace-delimited.
+Chapter 1 includes the user-approved split of two combined climate sentence records
+on 2026-10-13; Swedish wording and word counts are unchanged.
 
 ## Archived legal scope
 

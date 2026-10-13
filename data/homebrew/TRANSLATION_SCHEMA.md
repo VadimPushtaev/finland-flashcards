@@ -1,8 +1,9 @@
 # Russian translation schema, version 1
 
 The permanent workflow is [translation/homebrew](../../translation/homebrew/README.md).
-Swedish schema version 1 remains unchanged. Russian output is an additive layer;
-no UI or API consumes it yet. YAML is UTF-8, with English keys and Russian meanings.
+Swedish schema version 1 remains unchanged. Russian output is an additive layer
+consumed by the study reader after review and fingerprint validation. YAML is
+UTF-8, with English keys and Russian meanings.
 Unknown fields in result, vocabulary, glossary, and review records are rejected.
 
 ## Files and identity

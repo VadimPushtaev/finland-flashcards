@@ -33,10 +33,29 @@ class StudyApiTests(unittest.TestCase):
             for word in record['vocabulary']:
                 for span in word['spans']:
                     self.assertEqual(record['sv'][span['start']:span['end']], span['text'])
-        missing = self.client.get('/api/chapters/hb-c01/sections/hb-c01-regioner/translation').json()
+        def missing_translation(path):
+            if path.parent.name == 'sections' and path.name == 'hb-c01-regioner.yaml':
+                raise FileNotFoundError(path)
+            return read_yaml(path)
+        with patch('app.main.read_yaml', side_effect=missing_translation):
+            missing = self.client.get('/api/chapters/hb-c01/sections/hb-c01-regioner/translation').json()
         self.assertFalse(missing['available'])
         self.assertEqual(missing['records'], {})
         self.assertEqual(self.client.get('/api/chapters/hb-c01/sections/hb-c02-forhistoria/translation').status_code, 404)
+
+    def test_chapter_one_translation_status_and_sentence_coverage(self):
+        chapter = self.client.get('/api/chapters/hb-c01').json()
+        for section in chapter['sections']:
+            with self.subTest(section=section['id']):
+                review = read_yaml(DATA_DIR / 'ru/reviews' / f"{section['id']}.yaml")
+                result = self.client.get(f"/api/chapters/hb-c01/sections/{section['id']}/translation").json()
+                self.assertEqual(result['available'], review['status'] == 'complete')
+                if result['available']:
+                    expected = {chapter['id'], section['id']}
+                    for block in section['blocks']:
+                        for unit in block.get('items', [block]):
+                            expected.update(sentence['id'] for sentence in unit['sentences'])
+                    self.assertEqual(set(result['records']), expected)
 
     def test_draft_or_changed_translation_is_not_published(self):
         for change in ('draft', 'text', 'source', 'glossary'):

@@ -131,9 +131,10 @@ translation beside the reader; portrait phones place it below. Both panes scroll
 independently, and closing the translation restores the full reading area.
 Keyboard users can select words with Enter/Space and close with Escape.
 
-Only reviewed translations are displayed. Currently the first section and its
-chapter heading are available; other sections remain readable in Swedish with an
-availability message. The API at
+Only reviewed translations are displayed. Chapter 1 has Russian data for all eight
+sections and its chapter heading. All eight sections are complete.
+Draft and untranslated sections remain readable in Swedish with an availability
+message. The API at
 `/api/chapters/{chapter_id}/sections/{section_id}/translation` verifies source,
 result and used-glossary fingerprints before returning records, including exact
 Swedish sentence text and Unicode code-point vocabulary spans. Missing, draft or
