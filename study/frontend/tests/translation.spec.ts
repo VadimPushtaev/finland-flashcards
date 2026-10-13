@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './account.fixture';
 
 const first = '/#/chapter/hb-c01/hb-c01-lage';
 const wordSelector = '#hb-c01-u0001 button.translation-word';
@@ -65,10 +65,13 @@ test('section navigation clears selection and unavailable sections remain readab
   await expect(page.locator('.reader-chapter-title')).toHaveText('Integration, uppehåll och medborgarskap');
 });
 
-test('translation survives large text, dark theme, and orientation changes', async ({ page }) => {
+test('translation survives large text, dark theme, and orientation changes', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token, url: 'http://127.0.0.1:18745' }]);
   await page.goto(first);
   await page.getByRole('button', { name: 'Öka textstorleken' }).click();
+  await expect(page.locator('.reader-text')).toHaveCSS('font-size', '22px');
   await page.getByRole('button', { name: 'Öka textstorleken' }).click();
+  await expect(page.locator('.reader-text')).toHaveCSS('font-size', '24px');
   await page.getByRole('button', { name: 'Aktivera mörkt tema' }).click();
   await page.locator(wordSelector).filter({ hasText: /^naturförhållandena$/ }).click();
   await expect(page.locator('.word-meaning h2')).toHaveText('naturförhållande');

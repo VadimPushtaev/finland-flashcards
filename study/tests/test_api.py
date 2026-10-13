@@ -1,5 +1,7 @@
 """Exercise real anthology fidelity, search and API/static routing."""
 import unittest
+import os
+import tempfile
 from unittest.mock import patch
 from copy import deepcopy
 
@@ -12,7 +14,16 @@ class StudyApiTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        cls.temp = tempfile.TemporaryDirectory()
+        cls.env = patch.dict(os.environ, {'STUDY_DATABASE_PATH': cls.temp.name + '/study.sqlite3'})
+        cls.env.start()
         cls.client = TestClient(app)
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.client.close()
+        cls.env.stop()
+        cls.temp.cleanup()
 
     def test_all_chapters_keep_exact_original_sections(self):
         manifest = read_yaml(DATA_DIR / "manifest.yaml")

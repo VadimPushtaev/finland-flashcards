@@ -6,9 +6,20 @@ services:
     ports:
       - "${STUDY_BIND:-127.0.0.1}:${STUDY_PORT:-18743}:8000"
     restart: unless-stopped
+    environment:
+      STUDY_DATABASE_PATH: /var/lib/homebrew-study/study.sqlite3
+      STUDY_SECURE_COOKIES: ${STUDY_SECURE_COOKIES:-false}
+      STUDY_PUBLIC_ORIGIN: ${STUDY_PUBLIC_ORIGIN:-}
+      FORWARDED_ALLOW_IPS: ${STUDY_PROXY_IPS:-127.0.0.1}
+    volumes:
+      - study_data:/var/lib/homebrew-study
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5)"]
       interval: 30s
       timeout: 6s
       start_period: 20s
       retries: 3
+
+volumes:
+  study_data:
+    name: finland-flashcards-study-data
