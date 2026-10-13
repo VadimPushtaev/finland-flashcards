@@ -9,6 +9,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import yaml
 
+from app.translations import reviewed_records
+
 DATA_DIR = Path(os.environ.get("HOMEBREW_DATA_DIR", Path(__file__).resolve().parents[2] / "data/homebrew"))
 STATIC_DIR = Path(os.environ.get("HOMEBREW_STATIC_DIR", Path(__file__).resolve().parents[1] / "frontend/dist"))
 app = FastAPI(title="Homebrew study", docs_url=None, redoc_url=None)
@@ -68,6 +70,30 @@ def get_chapter(chapter_id: str):
     if chapter_id not in chapters:
         raise HTTPException(404, "Kapitlet finns inte.")
     return chapters[chapter_id]
+
+
+@app.get("/api/chapters/{chapter_id}/sections/{section_id}/translation")
+def section_translation(chapter_id: str, section_id: str):
+    """Return current reviewed Russian data, or an explicit unavailable state."""
+    chapter = get_chapter(chapter_id)
+    section = next((s for s in chapter["sections"] if s["id"] == section_id), None)
+    if section is None:
+        raise HTTPException(404, "Avsnittet finns inte.")
+    unavailable = {"available": False, "language": "ru", "records": {}}
+    source = {section["id"]: section["title"]}
+    for unit in units(section):
+        for sentence in unit["sentences"]:
+            source[sentence["id"]] = unit["text"][sentence["start"]:sentence["end"]]
+    base = DATA_DIR / "ru"
+    try:
+        terms = {entry["id"]: entry for entry in read_yaml(base / "glossary.yaml")["entries"]}
+        records = reviewed_records(base, section_id, "sections", source, terms, read_yaml)
+        heading = reviewed_records(base, chapter_id, "headings", {chapter_id: chapter["title"]}, terms, read_yaml)
+    except (OSError, ValueError, KeyError, TypeError, yaml.YAMLError):
+        return unavailable
+    if records is None or heading is None:
+        return unavailable
+    return {"available": True, "language": "ru", "records": {**heading, **records}}
 
 
 @app.get("/api/search")

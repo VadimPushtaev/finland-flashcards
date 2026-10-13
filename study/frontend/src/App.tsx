@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
+import { TranslationPanel, TranslationText, type Selection, type TranslationData } from './Translation';
 
-type Unit = { id: string; text: string };
+type Unit = { id: string; text: string; sentences?: { id: string; start: number; end: number }[] };
 type Block = Unit & { type: 'paragraph' | 'list'; ordered?: boolean; items?: Unit[] };
 type Section = { id: string; title: string; blocks: Block[] };
 type Chapter = { id: string; order: number; title: string; minutes: number; word_count: number; sections: Section[] };
@@ -91,7 +92,7 @@ export default function App() {
   const openChapter = (chapter: Summary) => chapterLink(chapter.id, progress.last?.chapter === chapter.id && chapter.sections.some(s => s.id === progress.last?.section) ? progress.last.section : chapter.sections.find(s => !progress.completed.includes(s.id))?.id || chapter.sections[0].id);
   const resume = library?.chapters.find(c => c.id === progress.last?.chapter) || library?.chapters[0];
 
-  return <div className="app-shell">
+  return <div className={`app-shell ${route.page === 'chapter' ? 'reader-mode' : ''}`}>
     <a className="skip-link" href="#main-content" onClick={e => { e.preventDefault(); document.getElementById('main-content')?.focus(); }}>Till innehållet</a>
     {menu && <button className="sidebar-backdrop" aria-label="Stäng menyn" onClick={() => setMenu(false)} />}
     <aside ref={sidebarRef} className={`sidebar ${menu ? 'is-open' : ''}`} aria-label="Huvudmeny" onClick={e => { if ((e.target as HTMLElement).closest('a')) setMenu(false); }}>
@@ -147,9 +148,33 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
   const [error, setError] = useState('');
   const [sources, setSources] = useState<Record<string, Source>>({});
   const sourceAttempted = useRef(false);
+  const [translations, setTranslations] = useState<{ section: string; data: TranslationData } | null>(null);
+  const [translationError, setTranslationError] = useState(false);
+  const [translationAttempt, setTranslationAttempt] = useState(0);
+  const [selection, setSelection] = useState<Selection | null>(null);
+  const selectedButton = useRef<HTMLButtonElement | null>(null);
+  const textPane = useRef<HTMLElement>(null);
   useEffect(() => { const controller = new AbortController(); api<Chapter>(`/api/chapters/${route.chapter}`, controller.signal).then(setChapter).catch(e => { if (e.name !== 'AbortError') setError(e.message); }); return () => controller.abort(); }, [route.chapter]);
   const section = chapter?.sections.find(s => s.id === route.section) || chapter?.sections[0];
   const sectionIndex = chapter?.sections.findIndex(s => s.id === section?.id) ?? 0;
+  useEffect(() => {
+    setSelection(null); setTranslations(null); setTranslationError(false);
+    selectedButton.current = null;
+    textPane.current?.scrollTo(0, 0);
+    if (!chapter || !section) return;
+    const controller = new AbortController();
+    api<TranslationData>(`/api/chapters/${chapter.id}/sections/${section.id}/translation`, controller.signal)
+      .then(data => setTranslations({ section: section.id, data }))
+      .catch(e => { if (e.name !== 'AbortError') setTranslationError(true); });
+    return () => controller.abort();
+  }, [chapter?.id, section?.id, translationAttempt]);
+  const closeTranslation = () => { setSelection(null); requestAnimationFrame(() => selectedButton.current?.focus({ preventScroll: true })); };
+  useEffect(() => {
+    if (!selection) return;
+    const listener = (event: KeyboardEvent) => { if (event.key === 'Escape') closeTranslation(); };
+    document.addEventListener('keydown', listener);
+    return () => document.removeEventListener('keydown', listener);
+  }, [selection]);
   useEffect(() => { if (chapter && section) changeProgress({ last: { chapter: chapter.id, section: section.id } }); }, [chapter?.id, section?.id]);
   useEffect(() => { if (route.unit && chapter && section) { const timer = window.setTimeout(() => document.getElementById(route.unit!)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100); return () => clearTimeout(timer); } }, [route.unit, chapter, section]);
   if (error) return <div className="page"><ErrorMessage message={error} /></div>;
@@ -159,21 +184,53 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
   const nextChapter = library.chapters.find(c => c.order === chapter.order + 1);
   const done = progress.completed.includes(section.id);
   const sectionUnits = section.blocks.flatMap(b => b.items || [b]);
-  const complete = chapter.sections.filter(s => progress.completed.includes(s.id)).length;
-  const renderUnit = (unit: Unit) => <div className={`reader-unit ${route.unit === unit.id ? 'target-unit' : ''}`} id={unit.id} key={unit.id}><span>{unit.text}</span><button className={`unit-bookmark btn icon-button ${progress.bookmarks.includes(unit.id) ? 'is-saved' : ''}`} aria-label={progress.bookmarks.includes(unit.id) ? 'Ta bort bokmärke' : 'Spara textstycke'} aria-pressed={progress.bookmarks.includes(unit.id)} onClick={() => toggleBookmark(unit.id)}><Icon name={progress.bookmarks.includes(unit.id) ? 'bookmark-fill' : 'bookmark-plus'} /></button></div>;
+  const translation = translations?.section === section.id ? translations.data : null;
+  const chooseWord = (value: Selection, button: HTMLButtonElement) => {
+    selectedButton.current = button;
+    setSelection(value);
+    requestAnimationFrame(() => {
+      if (!selection && window.matchMedia('(max-width: 700px) and (orientation: portrait)').matches) {
+        button.closest('[data-sentence-id]')?.scrollIntoView({ block: 'start', inline: 'nearest' });
+      }
+      button.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      document.querySelector('.translation-panel')?.scrollTo(0, 0);
+    });
+  };
+  const translatedText = (id: string, text: string) => <TranslationText text={text} record={translation?.records[id]} selection={selection} onSelect={chooseWord} />;
+  const unitText = (unit: Unit) => {
+    if (!translation?.available || !unit.sentences) return unit.text;
+    const chars = Array.from(unit.text);
+    let end = 0;
+    const result = unit.sentences.map(sentence => {
+      const before = chars.slice(end, sentence.start).join('');
+      end = sentence.end;
+      return <Fragment key={sentence.id}>{before}{translatedText(sentence.id, chars.slice(sentence.start, sentence.end).join(''))}</Fragment>;
+    });
+    return <>{result}{chars.slice(end).join('')}</>;
+  };
+  const renderUnit = (unit: Unit) => <div className={`reader-unit ${route.unit === unit.id ? 'target-unit' : ''}`} id={unit.id} key={unit.id}><span>{unitText(unit)}</span><button className={`unit-bookmark btn icon-button ${progress.bookmarks.includes(unit.id) ? 'is-saved' : ''}`} aria-label={progress.bookmarks.includes(unit.id) ? 'Ta bort bokmärke' : 'Spara textstycke'} aria-pressed={progress.bookmarks.includes(unit.id)} onClick={() => toggleBookmark(unit.id)}><Icon name={progress.bookmarks.includes(unit.id) ? 'bookmark-fill' : 'bookmark-plus'} /></button></div>;
   return <div className="reader-page">
-    <div className="reader-breadcrumb"><a href="#/">Alla kapitel</a><Icon name="chevron-right" /><span>Kapitel {String(chapter.order).padStart(2, '0')}</span></div>
-    <div className="reader-layout">
-      <article className="reading-column">
-        <div className="reader-chapter-title">{chapter.title}</div><div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-4"><span className="eyebrow">AVSNITT {sectionIndex + 1} AV {chapter.sections.length}</span><div className="reading-tools" role="group" aria-label="Läsinställningar"><button className="btn" onClick={() => changeProgress({ serif: !progress.serif })} aria-label="Byt typsnitt" aria-pressed={progress.serif}>Aa</button><button className="btn" onClick={() => changeProgress({ size: Math.max(18, progress.size - 2) })} disabled={progress.size === 18} aria-label="Minska textstorleken">A−</button><button className="btn" onClick={() => changeProgress({ size: Math.min(24, progress.size + 2) })} disabled={progress.size === 24} aria-label="Öka textstorleken">A+</button></div></div>
-        <h1>{section.title}</h1><p className="reading-time"><Icon name="clock" /> {Math.max(1, Math.ceil(sectionUnits.reduce((n, u) => n + u.text.split(/\s+/).length, 0) / 200))} min läsning <span>·</span> {done ? <><Icon name="check-circle" /> Läst</> : 'Spara viktiga stycken med bokmärket.'}</p>
-        <select className="form-select mobile-toc" aria-label="Välj avsnitt" value={section.id} onChange={e => { location.hash = chapterLink(chapter.id, e.target.value); }}>{chapter.sections.map((s, i) => <option key={s.id} value={s.id}>{i + 1}. {s.title}</option>)}</select>
+    <div className="reader-toolbar">
+      <details className="reader-contents"><summary><Icon name="list-ol" /> Innehåll <span>{chapter.order} · {sectionIndex + 1}/{chapter.sections.length}</span></summary>
+        <div className="reader-selectors">
+          <label>Kapitel<select className="form-select" aria-label="Välj kapitel" value={chapter.id} onChange={e => { location.hash = chapterLink(e.target.value); }}>{library.chapters.map(c => <option key={c.id} value={c.id}>{c.order}. {c.title}</option>)}</select></label>
+          <label>Avsnitt<select className="form-select" aria-label="Välj avsnitt" value={section.id} onChange={e => { location.hash = chapterLink(chapter.id, e.target.value); e.currentTarget.closest('details')?.removeAttribute('open'); }}>{chapter.sections.map((s, i) => <option key={s.id} value={s.id}>{i + 1}. {s.title}</option>)}</select></label>
+        </div>
+      </details>
+      <div className="reading-tools" role="group" aria-label="Läsinställningar"><button className="btn" onClick={() => changeProgress({ serif: !progress.serif })} aria-label="Byt typsnitt" aria-pressed={progress.serif}>Aa</button><button className="btn" onClick={() => changeProgress({ size: Math.max(18, progress.size - 2) })} disabled={progress.size === 18} aria-label="Minska textstorleken">A−</button><button className="btn" onClick={() => changeProgress({ size: Math.min(24, progress.size + 2) })} disabled={progress.size === 24} aria-label="Öka textstorleken">A+</button></div>
+    </div>
+    <div className={`reader-layout ${selection ? 'has-translation' : ''}`}>
+      <article className="reading-column" ref={textPane} aria-label="Svensk lästext" tabIndex={0}>
+        <div className="reader-chapter-title">{translatedText(chapter.id, chapter.title)}</div>
+        <h1>{translatedText(section.id, section.title)}</h1>
+        <p className="reading-time"><Icon name="clock" /> {Math.max(1, Math.ceil(sectionUnits.reduce((n, u) => n + u.text.split(/\s+/).length, 0) / 200))} min <span>·</span>{done ? 'Läst' : `Avsnitt ${sectionIndex + 1} av ${chapter.sections.length}`}</p>
+        <div className="translation-hint" role="status">{translationError ? <>Översättningen kunde inte hämtas. <button className="btn btn-sm btn-outline-primary" onClick={() => setTranslationAttempt(n => n + 1)}>Försök igen</button></> : !translation ? 'Hämtar språkstöd…' : translation.available ? <><Icon name="translate" /> Tryck på ett ord för rysk förklaring och mening.</> : 'Rysk översättning finns inte för det här avsnittet ännu.'}</div>
         <div className={`reader-text ${progress.serif ? 'serif' : ''}`} style={{ fontSize: progress.size }}>{section.blocks.map(block => block.type === 'paragraph' ? renderUnit(block) : block.ordered ? <ol key={block.id}>{block.items?.map(unit => <li key={unit.id}>{renderUnit(unit)}</li>)}</ol> : <ul key={block.id}>{block.items?.map(unit => <li key={unit.id}>{renderUnit(unit)}</li>)}</ul>)}</div>
         <div className="section-completion"><div><Icon name={done ? 'check-circle-fill' : 'check2-circle'} /><span>{done ? 'Det här avsnittet är läst.' : 'Klar med det här avsnittet?'}</span></div><button className={`btn ${done ? 'btn-outline-primary' : 'btn-primary'}`} aria-pressed={done} onClick={() => toggleCompleted(section.id)}>{done ? 'Markera som oläst' : 'Markera som läst'}</button></div>
         <div className="reading-navigation">{previous ? <a href={chapterLink(chapter.id, previous.id)}><Icon name="arrow-left" /><span><small>Föregående</small>{previous.title}</span></a> : <a href="#/"><Icon name="arrow-left" />Alla kapitel</a>}{next ? <a href={chapterLink(chapter.id, next.id)} className="next"><span><small>Nästa avsnitt</small>{next.title}</span><Icon name="arrow-right" /></a> : nextChapter ? <a href={chapterLink(nextChapter.id)} className="next"><span><small>Nästa kapitel</small>{nextChapter.title}</span><Icon name="arrow-right" /></a> : <a href="#/" className="next">Till översikten<Icon name="arrow-right" /></a>}</div>
         <details className="source-details" onToggle={e => { if (e.currentTarget.open && !sourceAttempted.current) { sourceAttempted.current = true; api<Record<string, Source>>(`/api/chapters/${chapter.id}/sources`).then(setSources).catch(() => { sourceAttempted.current = false; }); } }}><summary>Källor till avsnittet</summary><ul>{Object.keys(sources).length ? Array.from(new Map(sectionUnits.filter(u => sources[u.id]).map(u => { const s = sources[u.id]; return [JSON.stringify(s), s]; })).values()).map((s, i) => <li key={i}>{s.url ? <a href={s.url} target="_blank" rel="noreferrer">{s.title} <Icon name="box-arrow-up-right" /></a> : s.title}{s.page && ` · sida ${s.page}`}{s.heading && <small>{s.heading}</small>}</li>) : <li>Källorna hämtas. Stäng och öppna igen om hämtningen misslyckas.</li>}</ul><a href="#/about">Upphov och användningsvillkor</a></details>
       </article>
-      <aside className="toc" aria-label="Avsnitt i kapitlet"><div className="eyebrow">I DET HÄR KAPITLET</div><div className="toc-progress"><span>{complete} av {chapter.sections.length} lästa</span><Meter value={Math.round(complete / chapter.sections.length * 100)} /></div><nav>{chapter.sections.map((s, i) => <a key={s.id} className={section.id === s.id ? 'active' : ''} href={chapterLink(chapter.id, s.id)} aria-current={section.id === s.id ? 'page' : undefined}><span className="toc-index">{progress.completed.includes(s.id) ? <Icon name="check2" /> : String(i + 1).padStart(2, '0')}</span><span>{s.title}</span></a>)}</nav><div className="toc-note"><Icon name="bookmark" /><span>För musen över ett stycke för att spara det till senare.</span></div></aside>
+      {selection && <TranslationPanel selection={selection} onClose={closeTranslation} />}
     </div>
   </div>;
 }
