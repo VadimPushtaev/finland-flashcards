@@ -210,7 +210,7 @@ the chapter menu on short screens.
 
 ## Russian reading support
 
-Open the first section, **Finland i Norden**, and select a Swedish word to see its
+Open any reviewed section in chapters 1–6 and select a Swedish word to see its
 contextual Russian meaning and the full sentence translation. The dictionary
 entry and Swedish original are expandable in the same panel. Selecting a function
 word without a vocabulary record still shows the sentence translation.
@@ -221,8 +221,8 @@ translation beside the reader; portrait phones place it below. Both panes scroll
 independently, and closing the translation restores the full reading area.
 Keyboard users can select words with Enter/Space and close with Escape.
 
-Only reviewed translations are displayed. Chapter 1 has Russian data for all eight
-sections and its chapter heading. All eight sections are complete.
+Only reviewed translations are displayed. The Russian translation scope covers
+chapters 1–6: 86 sections and their chapter headings. Chapters 7–12 are deferred.
 Draft and untranslated sections remain readable in Swedish with an availability
 message. The API at
 `/api/chapters/{chapter_id}/sections/{section_id}/translation` verifies source,
