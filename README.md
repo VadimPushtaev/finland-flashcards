@@ -36,6 +36,9 @@ development, testing and port configuration.
 
 ## Repository Structure
 
+The [Homebrew Video Studio](studio/README.md) contains directing principles,
+production plans, episode tracking, and templates for Swedish/Russian videos.
+
 - `card_creator/` — Tools, prompts, and progress for flashcard creation
   - `orientation_guide/` — ChatGPT prompt, `output.txt` source, and `split_cards.py`
   - `card_progress.md` — Progress log; update after generating decks
