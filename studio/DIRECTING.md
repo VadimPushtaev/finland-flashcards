@@ -1,5 +1,11 @@
 # Directing guide
 
+This is the single shared directing document for all videos in the series.
+Each episode follows these principles. Record all video-specific decisions in
+that episode's script, including visual treatments, narration settings, music
+choices, timing, and any proposed exception to the shared direction. Update this
+guide only when a decision applies to the series as a whole.
+
 ## Tone and composition
 
 A calm documentary for Russian-speaking learners reading and listening to Swedish.
@@ -9,7 +15,34 @@ text panel, with Swedish above Russian, and reserve a separate area for imagery.
 Keep both languages readable at ordinary laptop viewing size; inspect a phone
 preview before accepting the layout. Choose fonts with Swedish and Cyrillic coverage.
 
-The exact font, palette, and layout measurements are a future layout-review task.
+Give each chapter a distinct color palette, used consistently across all of its
+subchapter videos. Carry the chapter color through accents, highlights, progress
+indicators and panel tints while preserving readable contrast in both languages.
+Keep titles visible so color is not the only way to identify a chapter. Record
+chapter palette assignments here when selected; episode scripts use that palette.
+
+Choose a new, distinct decorative background photograph for every subchapter,
+related to its topic. Do not reuse another subchapter's background by merely
+changing its crop or tint. Record the chosen image in the episode script and its
+source, reuse terms and credits in the asset register. Keep that background
+continuous within the subchapter video, using the motion principles below.
+
+Keep a decorative, topic-related photograph across the full frame throughout the video.
+Darken and subtly soften it behind a stable, high-contrast text panel. Reserve the
+separate foreground area for useful maps, people, places, flags or factual highlights.
+When no useful illustration is needed, leave that area open to the background;
+do not move the text or fill the space with another decorative image.
+
+Animate the background with a clearly perceptible but slow, continuous pan and zoom
+using the full episode timeline. Judge visibility over ordinary 5–10 second viewing
+intervals, not only by comparing the first and last frames. Avoid long easing ramps
+that make the opening appear static. For an approximately two-minute episode, start
+with roughly 12–15% total zoom plus a gentle diagonal pan; record exact values in
+the script and adjust after viewing. Motion must not reset at sentence boundaries or jump by integer
+pixels. Keep foreground maps and illustrations steady so the background remains
+subordinate. Episode scripts specify the photograph and precise treatment.
+
+Record exact fonts, palette and layout measurements in the episode script.
 Start with about 5% safe margins. Avoid placing faces, flags, or essential map labels
 behind the text panel. Foreground illustrations are optional, not mandatory per sentence.
 
@@ -20,11 +53,13 @@ paraphrasing or added spoken transitions. Show the matching reviewed Russian tex
 Use the section heading as an unspoken bilingual title card; body text is narrated.
 Do not narrate vocabulary metadata, production notes, or credits.
 
-The preferred voice is female, gentle, and Finland Swedish, running locally.
+Use a female, gentle Sweden Swedish voice, running locally. Follow the shared
+[TTS selection and production instructions](TTS.md); use [ASSETS.md](ASSETS.md)
+for the reproducible asset workflow.
 Audition real Swedish passages, Finnish place names, abbreviations, numbers,
 dates, and longer sentences. Record engine, model, voice, license, settings,
-hardware, and listening results before adopting a voice. If no suitable local
-Finland Swedish voice is found, record a proposed Sweden Swedish fallback for review.
+hardware, and listening results before adopting a voice. Choose a clear, natural
+delivery; Sweden Swedish is the agreed accent, not a fallback requiring separate approval.
 
 Begin auditions at approximately 120–140 words per minute, allowing roughly one
 second between sentences and a longer pause at topic boundaries. These are
@@ -39,6 +74,11 @@ from exact source text, preserving the spoken meaning of names and numbers.
 
 ## Music and imagery
 
+Choose a distinct music track for each subchapter; do not reuse another
+subchapter’s track simply by changing the excerpt or mix level. Keep one cohesive
+track throughout each video and record its selection in the episode script, with
+source, license and credits in the asset register.
+
 Gentle instrumental music accompanies the lesson throughout, including pauses.
 Avoid vocals, strong beats, and sudden changes. Keep it clearly below speech,
 reduce it further during narration, and fade it in and out softly. Check the mix
@@ -50,8 +90,8 @@ simple maps, or event illustrations where they clarify the source. Record identi
 place, or event verification in the asset register. Label illustrative recreations
 so they cannot be confused with historical photographs.
 
-Change imagery at topic boundaries rather than on every sentence. Use slow movement
-on one visual layer at a time. Names and dates may receive occasional emphasis,
+Change useful foreground imagery at topic boundaries or when the explanation requires it.
+Keep decorative background motion continuous across these changes; animate only that layer. Names and dates may receive occasional emphasis,
 but labels must repeat source information. A subtle section-progress indicator
 can help orientation. Do not add new factual claims, quizzes, or extra narration.
 

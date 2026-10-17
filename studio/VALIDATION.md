@@ -1,24 +1,21 @@
 # Studio validation — 2026-10-17
 
-The documentation-only studio was checked against the current local Homebrew
-manifest and translation files using Poetry with the repository's locked runtime
-dependencies in a temporary Python 3.9 environment. No dependencies were added.
+The first video is complete and accepted by the user. Its [review record](episodes/hb-c01-lage/review.md)
+distinguishes user acceptance from automated checks.
 
-- Inventory matches all 187 section IDs exactly once and in manifest/section order.
-- All source paths resolve; all production states are `unstarted` with no episode path.
-- 86 sections have Russian translations and complete section/chapter-heading reviews;
-  the other 101 await translation. Available source fingerprints and review result
-  hashes match, all review checks are true, and no unresolved blocking issue is recorded.
-- All studio YAML parses successfully.
-- The two example sentences match exact Swedish source slices and Russian records;
-  referenced asset IDs resolve and audio timing remains unset.
-- Studio documentation links resolve and `git diff --check` passes.
+- 16 script/source tests and 10 asset/render tests pass.
+- The script preserves all 14 source sentences and reviewed Russian translations.
+- Asset file hashes, narration coverage, duration and headroom checks pass.
+- Production downloads match the pinned manifest.
+- The final MP4 decodes completely: 3,401 frames, 141.708 seconds, 1080p/24 fps,
+  stereo 48 kHz audio, no clipping, and continuous background motion across cards.
+- Final relocation preserves the export checksum. Verification writes no temporary
+  images into the deliverables folder.
 
-These checks validate records and documentation, not voice quality, visual layout,
-music balance, media rights, or rendered output. Those require the future production
-samples and episode reviews described in the workflow. No video has been produced.
+The initial inventory was checked against all 187 Homebrew sections in source order:
+86 have reviewed translations and 101 await translation. The first episode is now
+`complete`; other episodes remain `unstarted`.
 
-To repeat the content checks, parse the manifest and inventory, compare their ordered
-section IDs, inspect the referenced source/translation files, and apply the fingerprint
-algorithms in the linked Homebrew translation schema. Compare example strings directly
-to source sentence slices and Russian records by ID. Recheck links after editing docs.
+Repeat the focused checks using [SCRIPTING.md](SCRIPTING.md), [ASSETS.md](ASSETS.md)
+and [RENDERING.md](RENDERING.md). Automated checks do not certify accent, naturalness
+or pronunciation; those belong to complete-video review.

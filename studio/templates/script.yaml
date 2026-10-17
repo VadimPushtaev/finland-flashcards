@@ -1,16 +1,36 @@
 schema_version: 1
 section_id: <existing-section-id>
+chapter_id: <existing-chapter-id>
+title_sv: <exact-section-heading>
+title_ru: <reviewed-heading-translation>
+source_path: <repository-relative-chapter-path>
+translation_path: <repository-relative-translation-path>
 example_only: false
 source_section_sha256: null
 translation_file_sha256: null
+# Follow studio/DIRECTING.md. Record all episode-wide decisions here, including
+# visual treatment, voice settings, music, and proposed exceptions for review.
+# Sentence-specific decisions belong in the corresponding sentence record below.
+episode_decisions: []
+# Decision records: {id, decision, status: proposed|deferred|approved,
+# resolve_during: script|assets|render}. Proposed is not user approval.
+scenes: []
+# Scene records: {id, description}; an editorial grouping of consecutive sentences.
+asset_requests: []
+# Requests: {id, kind: background|foreground|music|narration, description, fallback}.
+# Creative choices live here. Acquired files and credits go in assets.yaml later.
 sentences:
   - sentence_id: <existing-sentence-id>
     sv: <exact-source-sentence>
     ru: <matching-reviewed-translation>
+    scene_id: null
     visual_cue: <background-and-optional-foreground-treatment>
     asset_ids: []
     text_highlights: []
     pronunciation_notes: []
+    speech_override: null
+# Optional speech_override: {text, reason, review_status: pending|approved}.
+# It never replaces the exact displayed sv text; approval requires listening.
     pause_after_seconds: null
     audio_path: null
     start_seconds: null

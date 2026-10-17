@@ -2,9 +2,12 @@
 
 Production workspace for one calm, bilingual video per Homebrew subchapter.
 Swedish narration reads the source verbatim; Swedish and Russian sentences
-appear together. This initial studio contains plans and templates, not a renderer.
+appear together. The studio contains shared direction, episode scripts, asset tools, and a local renderer.
 
 Start with [directing](DIRECTING.md), then follow the [workflow](WORKFLOW.md).
+The directing guide is shared by every video; all video-specific decisions belong
+in the episode's script. Briefs, asset registers, and review records support the
+script with status, provenance, and validation evidence.
 The [decision log](DECISIONS.md) separates agreed direction from audition defaults
 and future technical choices. The [episode inventory](episodes.yaml) lists every
 section in source order, with translation readiness separate from production status.
@@ -12,18 +15,21 @@ section in source order, with translation readiness separate from production sta
 ## Preparing an episode
 
 1. Select an inventory entry with ready translations.
-2. Copy the [brief](templates/brief.yaml), [script](templates/script.yaml),
-   [asset register](templates/assets.yaml), and [review checklist](templates/review.md)
-   into `episodes/<section-id>/` when production begins.
-3. Populate the script from the source sentence IDs and reviewed translations.
-   See the [worked example](examples/README.md) for an explicitly partial illustration.
+2. Follow [Writing an episode script](SCRIPTING.md) to initialize the episode from
+   exact source sentences and reviewed translations using the root Poetry tools.
+3. Edit `script.yaml` and generate `SCRIPT.md` for review. The first complete
+   accepted episode script is [Finland i Norden](episodes/hb-c01-lage/SCRIPT.md).
 4. Follow the four workflow stages and update the inventory after each milestone.
 
-YAML records are editable planning interfaces, versioned as `schema_version: 1`;
-they are not yet an executable renderer API. Paths inside YAML are repository-root
-relative. Null values mean unset, never approved or completed. Template angle-bracket
-values are placeholders. Keep generated audio, downloaded images, and rendered video
-outside Git until a media storage policy is chosen.
+YAML records are editable production interfaces, versioned as `schema_version: 1`.
+Paths inside YAML are repository-root relative. Null values mean unset.
+
+Finished videos and their credits live in [`videos/homebrew/`](../videos/homebrew/),
+outside the studio. Keep one canonical `<section-id>.mp4` per accepted episode.
+Commit approved narration WAVs, scripts, manifests, tools, tests and production
+records. Downloaded media/models, generated maps and temporary render files stay
+ignored; pinned download manifests and tools restore them. Remove superseded
+exports and audition audio after acceptance, retaining comparison evidence.
 
 ## Source of truth
 
@@ -33,6 +39,13 @@ Use the [Homebrew manifest](../data/homebrew/manifest.yaml),
 Preserve source IDs, wording, order, provenance, and attribution. Production notes
 belong here; do not edit the anthology to accommodate a visual or TTS limitation.
 
-The initial inventory has 187 episodes: 86 with reviewed Russian translations
-(chapters 1–6), and 101 awaiting translation (chapters 7–12). None has entered
-production. See [validation](VALIDATION.md) for the snapshot checks.
+The inventory contains 187 episodes: 86 have reviewed Russian translations
+(chapters 1–6), and 101 await translation (chapters 7–12). The first video,
+[Finland i Norden](../videos/homebrew/hb-c01-lage.mp4), is complete and accepted.
+See its [review record](episodes/hb-c01-lage/review.md) for validation evidence.
+
+Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
+comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for
+media tools; keep the root environment for script/source validation.
+
+Rendering and full-video review: [RENDERING.md](RENDERING.md).
