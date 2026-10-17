@@ -33,6 +33,15 @@ separate foreground area for useful maps, people, places, flags or factual highl
 When no useful illustration is needed, leave that area open to the background;
 do not move the text or fill the space with another decorative image.
 
+Show a caption beneath the foreground area only when it describes a foreground
+image or map actually visible in that scene. When there is no foreground visual,
+omit its caption as well; never leave a name, date or other label floating beneath
+an empty image slot. Keep important words highlighted within the main bilingual
+text panel independently of whether an illustration is shown. If a source-based
+text graphic is useful, design it as a complete foreground graphic rather than
+using an orphaned image caption. Omit redundant captions when a foreground graphic
+already contains its own labels.
+
 Animate the background with a clearly perceptible but slow, continuous pan and zoom
 using the full episode timeline. Judge visibility over ordinary 5–10 second viewing
 intervals, not only by comparing the first and last frames. Avoid long easing ramps
