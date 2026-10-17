@@ -1,5 +1,10 @@
 # Worked example — partial, not a production episode
 
+For new episodes, use the current [script-authoring workflow](../SCRIPTING.md)
+and the complete [Finland i Norden script](../episodes/hb-c01-lage/SCRIPT.md).
+The files here retain the minimal illustration from the initial studio setup;
+they are not accepted by the production-script validator.
+
 [script.yaml](script.yaml) contains only the first two sentences of
 `hb-c01-lage` (Finland i Norden), copied exactly from the Swedish source and
 matched to the existing reviewed Russian translations by sentence ID.

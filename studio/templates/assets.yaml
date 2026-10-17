@@ -3,18 +3,27 @@ section_id: <existing-section-id>
 assets:
   - asset_id: <episode-local-asset-id>
     kind: background
-    intended_use: <sentence-ids-or-whole-episode>
     status: requested
     file_path: null
+    files: []
+    review_status: pending
     source_url: null
     creation_method: null
     creator: null
     reuse_terms: null
     required_credits: null
     relevance_verification: null
-    fallback_treatment: <related-background-or-source-based-text-graphic>
+# asset_id must match an asset_requests ID in script.yaml.
+# Intended use, creative choices, and fallbacks live in the script; this register
+# records acquired files and supporting provenance without duplicating decisions.
 # kind: background, foreground, music, or narration.
 # status: requested, ready, or replaced_by_fallback.
 # Explicitly record "No credit required under ..." rather than leaving credits
 # null for ready assets. Record engine/model/voice/settings for generated narration
 # in creation_method. Null source_url is valid for locally created assets.
+
+# Ready files: [{path: studio/media/..., sha256: ..., bytes: ...}].
+# Narration adds sentence_id, tts_input, sample_rate, seconds and peak per file.
+# Keep files in script sentence order; tts_input must equal the current speech
+# override or exact Swedish source. A ready file is present and verified, not
+# automatically approved by listening. Record listening_pending until reviewed.

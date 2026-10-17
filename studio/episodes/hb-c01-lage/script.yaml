@@ -1,0 +1,451 @@
+schema_version: 1
+section_id: hb-c01-lage
+chapter_id: hb-c01
+title_sv: Finland i Norden
+title_ru: Финляндия в регионе Северных стран
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-lage.yaml
+example_only: false
+source_section_sha256: 1bd0782bc0deb460a81a7b54c4b6a17d5a75462981abbbdf07af3a50c195d246
+translation_file_sha256: a375629fa7b9bb96951d1cce25de8a23025cebd0d3f7097a001b5a5c9096b237
+episode_decisions:
+- id: opening
+  decision: Show the exact bilingual heading for 3 seconds over the same full-frame forest background
+    used throughout the video. Begin continuous background motion immediately; no narration on title.
+  status: approved
+  resolve_during: script
+- id: story_structure
+  decision: Move from landscape and shape to the Nordic region, then neighboring countries, two factual
+    highlights, and finally Lake Saimaa. Keep every source sentence in its original order; add no spoken
+    introduction, transition, or summary.
+  status: approved
+  resolve_during: script
+- id: text_and_layout
+  decision: 'Follow the shared directing guide: Swedish above Russian on a stable readable panel, imagery
+    in a separate area. Show each complete sentence pair together with automatic line wrapping. No sentence
+    segmentation is planned for this short episode; if fitting fails during layout review, record exact
+    bilingual display segments here.'
+  status: approved
+  resolve_during: script
+- id: pace
+  decision: Start narration trials at 120–140 words per minute. Show each pair about 0.25 seconds before
+    its speech; use the planned pauses below, with longer holds at topic boundaries. Measure actual audio
+    later; do not infer final duration from word count or shorten text to fit.
+  status: approved
+  resolve_during: script
+- id: visual_motion
+  decision: 'Use the Kuivaketvele forest/lake photo throughout. Make its motion perceptible within 5–10
+    seconds: continuous diagonal pan from normalized crop position (0.15, 0.15) to (0.85, 0.85), with
+    zoom 1.06 to 1.219 (15% relative increase) across the full episode. Use linear progress and fractional
+    bicubic sampling so motion starts immediately without sentence resets. Keep foreground images and
+    text fixed.'
+  status: approved
+  resolve_during: script
+- id: voice_selection
+  decision: Use the shared Supertonic 3 F1 female voice with Swedish language sv, 32 synthesis steps,
+    speed 0.95, seed 42 and 44.1 kHz mono PCM WAV. Select one clip per source sentence. The user accepted this voice in the complete video. Local transcript diagnostics
+    remain available for future pronunciation review.
+  status: approved
+  resolve_during: assets
+- id: music_selection
+  decision: Keep Light Thought var 1 by Kevin MacLeod for this first subchapter, under CC BY 4.0; reserve
+    a different track for every other subchapter. Raise music alone by 2 dB relative to v3, a small single-step
+    increase requested after review. Retain narration level, music ducking, fades and timing. Record the
+    official filename and differing embedded ID3 title in assets.yaml.
+  status: approved
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Use generated Natural Earth 5.1.2 maps: nordic_map for sentences 4–5; neighbors_all for sentence
+    6, then neighbors_russia, neighbors_norway, neighbors_sweden and neighbors_estonia for the matching
+    sentences. Reuse neighbors_estonia for the no-land-border sentence. Use finland_outline for shape
+    and numerical facts. No flags or portraits.'
+  status: approved
+  resolve_during: script
+- id: closing
+  decision: Hold the steady Saimaa foreground photo through the last sentence and pause, then show two
+    15-second credit cards over the continuing forest background with a dark translucent backing. Include
+    full CREDITS.md alongside the video.
+  status: approved
+  resolve_during: script
+- id: exceptions
+  decision: No exceptions to the shared directing guide are proposed. Missing illustrations change the
+    visual treatment only; retain all Swedish and Russian text.
+  status: approved
+  resolve_during: script
+- id: render_layout
+  decision: 'Keep the 1920×1080 24 fps bilingual split layout and typography. Add a stable translucent
+    evergreen backing behind the text. Leave the useful-image area open for the first two sentences; show
+    maps thereafter and the verified Saimaa photograph at the end. Background is always visible, darkened
+    42%, blurred 2.5 px, and continuously zoomed from 1.06 to 1.219 (15% relative increase), with a visible
+    diagonal pan from crop position (0.15, 0.15) to (0.85, 0.85), across the complete timeline using linear
+    progress and fractional sampling. All foreground images remain still. Narration, pauses, music and
+    credit durations remain as in the first render. Music-only revision: +2 dB relative to v3; preserve
+    the rendered visuals and narration.'
+  status: approved
+  resolve_during: render
+scenes:
+- id: landscape
+  description: 'Sentences 1–3: establish forests and lakes, then show Finland’s north–south shape.'
+- id: nordic_region
+  description: 'Sentences 4–5: locate Finland within the Nordic region and show the other named countries.'
+- id: neighbors
+  description: 'Sentences 6–11: keep a stable closer map while emphasizing each neighboring country and
+    the sea gap to Estonia.'
+- id: key_facts
+  description: 'Sentences 12–13: use the Finland outline as a quiet setting for the exact time-zone and
+    area labels.'
+- id: saimaa
+  description: 'Sentence 14: finish on a verified view of Lake Saimaa with the Swedish name Saimen.'
+asset_requests:
+- id: forest_lake
+  kind: background
+  description: Verified Finnish forest/lake photograph used as a continuous decorative full-frame background
+    throughout the episode, softly blurred and darkened beneath stable text and useful foreground imagery.
+  fallback: Use another verified Finnish forest/lake image; if no suitable photo is available, use an
+    explicitly illustrative landscape without naming a real location.
+- id: finland_outline
+  kind: foreground
+  description: Accurate north-up Finland outline for the north–south shape, time-zone, and area scenes.
+    Use reusable geographic data and maintain recognizable proportions.
+  fallback: Use a sourced map of Finland. For numerical facts alone, retain the exact text highlight on
+    a quiet background if the outline cannot be obtained.
+- id: nordic_map
+  kind: foreground
+  description: Accurate north-up map showing Finland, Sweden, Norway, Denmark, and Iceland. Include Iceland
+    visibly; use an explicitly marked inset if needed. Swedish labels come from the source sentences.
+  fallback: Create a simple map from reusable geographic data. If unavailable, use a clean text arrangement
+    of the named countries without implying geographic positions.
+- id: neighbors_map
+  kind: foreground
+  description: Accurate closer map with Finland, Russia, Norway, Sweden, Estonia, and the Gulf of Finland.
+    Keep the Finland–Estonia water gap visible; provide variants that emphasize one named country at a
+    time.
+  fallback: Use an attributed existing regional map with readable labels. If neither is available, use
+    exact country-name text cards; never invent borders or a land connection to Estonia.
+- id: saimaa_view
+  kind: background
+  description: A photograph verified as Lake Saimaa, with creator, source, and reuse terms. Label it with
+    the Swedish name Saimen.
+  fallback: Use an accurately located map of Lake Saimaa. If neither photo nor map is available, show
+    only the source name on a neutral background; never label a generic lake as Saimaa.
+- id: music_bed
+  kind: music
+  description: One gentle instrumental bed for the whole episode, with suitable reuse terms or an original
+    score. Exact selection follows the script’s music decision.
+  fallback: Create or choose another suitable instrumental bed; do not silently remove the required music.
+- id: narration
+  kind: narration
+  description: Fourteen separately identified local Swedish TTS clips, using one selected female voice
+    and checked speech-only expansions.
+  fallback: If a candidate voice is unsuitable, audition another local female Sweden Swedish voice; keep
+    the selection pending rather than using remote synthesis.
+sentences:
+- sentence_id: hb-c01-u0001-s001
+  sv: Finland är ett land i norra Europa där största delen av ytan täcks av skogar och sjöar.
+  ru: Финляндия — страна на севере Европы, большую часть территории которой занимают леса и озёра.
+  scene_id: landscape
+  visual_cue: Leave the useful-image area open to the full-frame forest/lake background. Keep the bilingual
+    text panel fixed; background motion continues across sentence boundaries.
+  asset_ids:
+  - forest_lake
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.400204
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0001-s002
+  sv: Finland är ganska stort till ytan, men glest befolkat.
+  ru: Финляндия довольно велика по площади, но малонаселена.
+  scene_id: landscape
+  visual_cue: Leave the useful-image area open to the full-frame forest/lake background. Keep the bilingual
+    text panel fixed; background motion continues across sentence boundaries.
+  asset_ids:
+  - forest_lake
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0001-s002.wav
+  start_seconds: 12.958333
+  end_seconds: 17.904184
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0001-s003
+  sv: Finland är också långt i nord-sydlig riktning, vilket innebär att naturförhållandena varierar mycket
+    i olika delar av landet.
+  ru: Финляндия также имеет большую протяжённость с севера на юг, а это означает, что природные условия
+    в разных частях страны сильно различаются.
+  scene_id: landscape
+  visual_cue: Show a north-up Finland outline and trace its north–south extent gently. Do not add climate
+    zones or invented distances.
+  asset_ids:
+  - finland_outline
+  text_highlights:
+  - nord-sydlig
+  pronunciation_notes:
+  - Check nord-sydlig and naturförhållandena in the chosen voice.
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0001-s003.wav
+  start_seconds: 19.458333
+  end_seconds: 30.534252
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/finland_outline.png
+- sentence_id: hb-c01-u0002-s001
+  sv: Finland ligger i Nordeuropa och hör till Norden.
+  ru: Финляндия расположена в Северной Европе и относится к Северным странам.
+  scene_id: nordic_region
+  visual_cue: Show the Nordic map and emphasize Finland; keep enough regional context to locate it.
+  asset_ids:
+  - nordic_map
+  text_highlights:
+  - Finland
+  - Norden
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0002-s001.wav
+  start_seconds: 32.791667
+  end_seconds: 37.389218
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/nordic_map.png
+- sentence_id: hb-c01-u0002-s002
+  sv: De övriga nordiska länderna är Sverige, Norge, Danmark och Island.
+  ru: Остальные Северные страны — Швеция, Норвегия, Дания и Исландия.
+  scene_id: nordic_region
+  visual_cue: Keep the same map and highlight Sweden, Norway, Denmark, and Iceland together; all four
+    labels remain visible for the sentence.
+  asset_ids:
+  - nordic_map
+  text_highlights:
+  - Sverige
+  - Norge
+  - Danmark
+  - Island
+  pronunciation_notes:
+  - Check the Swedish country names; do not substitute English or Finnish names.
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0002-s002.wav
+  start_seconds: 38.958333
+  end_seconds: 45.158061
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/nordic_map.png
+- sentence_id: hb-c01-u0003-s001
+  sv: Finlands grannländer är Ryssland, Norge, Sverige och Estland.
+  ru: Соседние с Финляндией страны — Россия, Норвегия, Швеция и Эстония.
+  scene_id: neighbors
+  visual_cue: Move to the closer map showing all four neighboring countries; Estonia appears across water,
+    not joined by land.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Ryssland
+  - Norge
+  - Sverige
+  - Estland
+  pronunciation_notes:
+  - Check the Swedish country names; do not substitute English or Finnish names.
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s001.wav
+  start_seconds: 47.416667
+  end_seconds: 53.198435
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_all.png
+- sentence_id: hb-c01-u0003-s002
+  sv: Finland har en lång gemensam landgräns med Ryssland i öster.
+  ru: На востоке у Финляндии протяжённая общая сухопутная граница с Россией.
+  scene_id: neighbors
+  visual_cue: Emphasize Russia east of Finland and their land boundary, using verified map geometry.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Ryssland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s002.wav
+  start_seconds: 54.75
+  end_seconds: 60.253129
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_russia.png
+- sentence_id: hb-c01-u0003-s003
+  sv: I norr delar Finland gräns med Norge.
+  ru: На севере у Финляндии общая граница с Норвегией.
+  scene_id: neighbors
+  visual_cue: Emphasize Norway and the northern land boundary. Keep the map in the same orientation.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Norge
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s003.wav
+  start_seconds: 61.833333
+  end_seconds: 65.316327
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_norway.png
+- sentence_id: hb-c01-u0003-s004
+  sv: I väster har Finland en gemensam land- och sjögräns med Sverige.
+  ru: На западе у Финляндии общая сухопутная и морская граница со Швецией.
+  scene_id: neighbors
+  visual_cue: Emphasize Sweden to the west, with both land and sea context. Do not draw an invented maritime
+    boundary.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Sverige
+  pronunciation_notes:
+  - Check the suspended compound land- och sjögräns; the written form stays unchanged.
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s004.wav
+  start_seconds: 66.875
+  end_seconds: 72.796088
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_sweden.png
+- sentence_id: hb-c01-u0003-s005
+  sv: I söder på andra sidan Finska viken ligger Estland.
+  ru: На юге, по другую сторону Финского залива, расположена Эстония.
+  scene_id: neighbors
+  visual_cue: Emphasize Estonia south across the Gulf of Finland. Label the gulf with its Swedish source
+    name.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Finska viken
+  - Estland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s005.wav
+  start_seconds: 74.375
+  end_seconds: 79.111871
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_estonia.png
+- sentence_id: hb-c01-u0003-s006
+  sv: Finland har ingen gemensam landgräns med Estland.
+  ru: У Финляндии нет общей сухопутной границы с Эстонией.
+  scene_id: neighbors
+  visual_cue: Keep the water gap between Finland and Estonia prominent. Avoid any connecting line that
+    could suggest a land border.
+  asset_ids:
+  - neighbors_map
+  text_highlights:
+  - Estland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0003-s006.wav
+  start_seconds: 80.666667
+  end_seconds: 85.124898
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/neighbors_estonia.png
+- sentence_id: hb-c01-u0004-s001
+  sv: Finlands tidszon är den östeuropeiska tiden EET (GMT +2).
+  ru: Часовой пояс Финляндии — восточноевропейское время EET (GMT +2).
+  scene_id: key_facts
+  visual_cue: Use the Finland outline with the exact source label EET (GMT +2). Do not add a live clock
+    or imply that the archived label is the current seasonal UTC offset.
+  asset_ids:
+  - finland_outline
+  text_highlights:
+  - EET
+  - GMT +2
+  pronunciation_notes:
+  - 'Audition the spaced letters: some engines need phoneme instructions instead. The displayed source
+    retains EET (GMT +2).'
+  speech_override:
+    text: Finlands tidszon är den östeuropeiska tiden. E, E, T. G, M, T plus två.
+    reason: Spell abbreviations with Swedish letter names and pronounce the plus sign and digit. Added
+      punctuation separates letters after the first audition flagged merged/missing abbreviation letters.
+      Displayed text remains unchanged; listening review required.
+    review_status: approved
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0004-s001.wav
+  start_seconds: 87.375
+  end_seconds: 95.176905
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/finland_outline.png
+- sentence_id: hb-c01-u0006-s001
+  sv: Finlands areal är 338 432 km².
+  ru: Площадь Финляндии составляет 338 432 км².
+  scene_id: key_facts
+  visual_cue: Retain the outline and show the exact area figure prominently, including the square-kilometre
+    unit.
+  asset_ids:
+  - finland_outline
+  text_highlights:
+  - 338 432 km²
+  pronunciation_notes:
+  - Check the full number and kvadratkilometer by listening before approving the override.
+  speech_override:
+    text: Finlands areal är trehundratrettioåtta tusen fyrahundratrettiotvå kvadratkilometer.
+    reason: Read the source figure 338 432 and its km² unit aloud; this is pronunciation expansion, not
+      a new factual statement.
+    review_status: approved
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0006-s001.wav
+  start_seconds: 96.75
+  end_seconds: 104.342925
+  display_segments: []
+  render_image: studio/media/hb-c01-lage/maps/finland_outline.png
+- sentence_id: hb-c01-u0007-s001
+  sv: Den största sjön heter Saimen.
+  ru: Самое большое озеро называется Сайма.
+  scene_id: saimaa
+  visual_cue: Show the verified Saimaa photograph steadily in the useful-image area, labeled Saimen, over
+    the continuous decorative forest background. Hold through the final pause.
+  asset_ids:
+  - saimaa_view
+  text_highlights:
+  - Saimen
+  pronunciation_notes:
+  - Check Saimen, the Swedish name used in the source; do not replace the narration with Saimaa.
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-lage/narration/hb-c01-u0007-s001.wav
+  start_seconds: 106.625
+  end_seconds: 109.690034
+  display_segments: []
+  render_image: studio/media/sources/saimaa.jpg
+render:
+  music_path: studio/media/sources/music.mp3
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands läge och olika områden
+    - Finlands Flyktinghjälp · Utbildningsstyrelsen · UF-centret
+    - InfoFinland.fi — Grundläggande information om Finland
+    - 'InfoFinland: Creative Commons Attribution 4.0 (CC BY 4.0)'
+    - Svensk originaltext med rysk översättning. Urval och formgivning för denna video. Fullständiga källhänvisningar
+      medföljer videon.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - View from Kuivaketvele — PtG · CC BY-SA 4.0
+    - Lake Saimaa morning — Ananta Bhadra Lamichhane · CC BY 2.0
+    - Fotografier via Wikimedia Commons. Beskärning och långsam kamerarörelse tillagda.
+    - 'Kartdata: Natural Earth 5.1.2 · Public domain'
+    - Light Thought var 1 — Kevin MacLeod (incompetech.com) · CC BY 4.0. Utdrag, toningar och volymanpassning.
+    - 'Svensk berättarröst: Supertonic 3 · F1'
+  background_image: studio/media/sources/forest_lake.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    motion: continuous full-episode linear diagonal pan and 15% relative zoom; fractional bicubic sampling,
+      no easing ramp or sentence resets
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+  music_gain_adjustment_db: 2.0
