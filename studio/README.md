@@ -25,8 +25,11 @@ YAML records are editable production interfaces, versioned as `schema_version: 1
 Paths inside YAML are repository-root relative. Null values mean unset.
 
 Finished videos and their credits live in [`videos/homebrew/`](../videos/homebrew/),
-outside the studio. Keep one canonical `<section-id>.mp4` per accepted episode.
-Commit approved narration WAVs, scripts, manifests, tools, tests and production
+outside the studio. Keep one canonical `hb-c<chapter>-<subchapter>-<slug>.mp4` per accepted episode.
+Use two digits for chapter and subchapter numbers, for example
+`hb-c01-03-natur.mp4`. Subchapter order comes from `episodes.yaml`; internal
+episode directories and source IDs keep their stable original names.
+Commit selected narration WAVs, scripts, manifests, tools, tests and production
 records. Downloaded media/models, generated maps and temporary render files stay
 ignored; pinned download manifests and tools restore them. Remove superseded
 exports and audition audio after acceptance, retaining comparison evidence.
@@ -41,8 +44,10 @@ belong here; do not edit the anthology to accommodate a visual or TTS limitation
 
 The inventory contains 187 episodes: 86 have reviewed Russian translations
 (chapters 1–6), and 101 await translation (chapters 7–12). The first video,
-[Finland i Norden](../videos/homebrew/hb-c01-lage.mp4), is complete and accepted.
-See its [review record](episodes/hb-c01-lage/review.md) for validation evidence.
+[Finland i Norden](../videos/homebrew/hb-c01-01-lage.mp4), is complete and accepted.
+All eight Chapter 1 videos are now rendered; the seven new exports are ready for
+whole-video user review. See the [video index](../videos/homebrew/README.md) and
+[chapter audit](hb-c01-audit.json) for coverage and verification evidence.
 
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for

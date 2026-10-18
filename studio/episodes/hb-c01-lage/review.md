@@ -4,8 +4,8 @@ Status: complete. The user accepted the complete video on 2026-10-17 and request
 cleanup and a single commit. Acceptance covers the final audiovisual result;
 no separate listening approval stage was introduced.
 
-- [Canonical video](../../../videos/homebrew/hb-c01-lage.mp4)
-- [Accompanying credits](../../../videos/homebrew/hb-c01-lage.CREDITS.md)
+- [Canonical video](../../../videos/homebrew/hb-c01-01-lage.mp4)
+- [Accompanying credits](../../../videos/homebrew/hb-c01-01-lage.CREDITS.md)
 - [Export settings, checksum and timeline](render.json)
 - [Full decode verification](render-check.json)
 

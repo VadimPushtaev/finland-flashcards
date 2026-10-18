@@ -1,0 +1,438 @@
+schema_version: 1
+section_id: hb-c01-befolkning
+chapter_id: hb-c01
+title_sv: Befolkning och urbanisering
+title_ru: Население и урбанизация
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-befolkning.yaml
+example_only: false
+source_section_sha256: d5059d6e6e9c876bf21dd0ed2541e41f671174ff2d5bca509988422cd3f1ea84
+translation_file_sha256: 618c21a1f6df7bbac1ff7bc4adb58a9aaf5551907fcb3daf3fe058c4a069f3dd
+episode_decisions:
+- id: opening
+  decision: Show exact bilingual source heading unspoken for 3 seconds over the continuous topic photograph.
+  status: proposed
+  resolve_during: script
+- id: structure
+  decision: Keep all source sentences and fragments once, in source order. Group by original passage.
+    Add no narration, invented data, quiz or summary.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: '1920×1080 at 24 fps. Chapter 1 palette: evergreen panel #102e2b, Swedish #f6f1e6, Russian
+    #bdd3c9, highlights #e7bc70, separators #35534b. Stable right panel spans (890,165) to (1860,980),
+    evergreen alpha 225; text starts x 930 with 900 px wrapping width. Useful foreground slot is 760×720
+    px at (90,180), images steady. Swedish Arial Bold 48 px with 63 px leading above Russian Arial 40
+    px with 55 px leading. Header Arial Bold 30 px, counter Arial 27 px. About 90 px horizontal safe margin.
+    All pairs use the default body sizes; all source wording retained. Source/credit cards remain unspoken.'
+  status: proposed
+  resolve_during: script
+- id: motion
+  decision: Use Helsinki panorama — DIMMIS as continuous full-frame decorative background. Darken 42%,
+    blur 2.5 px. Linear fractional diagonal pan crop(.15,.15)→(.85,.85), zoom1.06→1.219 (15% relative
+    increase). Motion starts immediately and never resets at sentences.
+  status: proposed
+  resolve_during: script
+- id: voice
+  decision: Shared local Supertonic 3 F1, sv, 32 steps, speed .95, seed 42, 44.1 kHz mono PCM16, four
+    CPU threads. One WAV per sentence; numeric speech expansions separate from exact bilingual display.
+    No independent listening approval claimed; review in complete video.
+  status: proposed
+  resolve_during: script
+- id: pacing
+  decision: Sentence pair appears .25 seconds before speech. Pause 1.3 seconds normally, 2 seconds at
+    passage boundaries, 2.5 seconds after long comparisons. Never accelerate long sentences. Actual timing
+    from WAV duration.
+  status: proposed
+  resolve_during: script
+- id: foreground
+  decision: Use restrained source-based factual cards only when they clarify an explicit number, month
+    or comparison. Rest of prose leaves image area open to the decorative photograph. Cards repeat source
+    wording only; no quantitative map or inferred proportions. Fact cards use a 1520×1440 px evergreen
+    canvas, Arial Bold 90 px for up to 3 labels or 72 px otherwise, reducing only to fit 1280 px width.
+    They scale into the fixed 760×720 px foreground slot. Card text repeats the chapter cream/gold colors.
+  status: proposed
+  resolve_during: script
+- id: music
+  decision: Dreams Become Real — Kevin MacLeod, CC BY 4.0, selected from official catalog. Distinct track
+    reserved for this subchapter. Use original from start, excerpt to video; no loop required (original
+    6m50s). Same accepted +2 dB music adjustment, gentle fades and narration ducking.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two 15-second readable credit cards over continuing background. Full source/media credits
+    alongside canonical video. Photos cropped/darkened/softened/panned; preserve applicable share-alike
+    notice.
+  status: proposed
+  resolve_during: script
+- id: review
+  decision: Production decisions proposed under existing shared direction. Final complete-video user review
+    pending. No new shared-direction exception.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: population
+  description: Consecutive source sentences u0039; population. Keep original sentence and translation
+    order.
+- id: diversity
+  description: Consecutive source sentences u0040; diversity. Keep original sentence and translation order.
+- id: urbanisation_history
+  description: Consecutive source sentences u0041; urbanisation history. Keep original sentence and translation
+    order.
+- id: city_landscapes
+  description: Consecutive source sentences u0042; city landscapes. Keep original sentence and translation
+    order.
+- id: services
+  description: Consecutive source sentences u0043; services. Keep original sentence and translation order.
+asset_requests:
+- id: background
+  kind: background
+  description: Helsinki panorama — DIMMIS; verified Finnish city panorama photograph. Continuous decorative
+    layer, not factual evidence for unrelated sentence claims.
+  fallback: Choose a different verified reusable Finnish topic photograph, update script before rendering.
+- id: fact_cards
+  kind: foreground
+  description: Locally composed typography cards repeating exact source figures and labels; never substitute
+    invented charts or proportions.
+  fallback: Omit useful-image card and retain exact bilingual sentence with highlight over background.
+- id: music_bed
+  kind: music
+  description: Dreams Become Real by Kevin MacLeod, official catalog download, CC BY 4.0.
+  fallback: Select another distinct calm instrumental official track, record script change and license.
+- id: narration
+  kind: narration
+  description: 15 sentence clips synthesized locally with shared Supertonic 3 F1 settings.
+  fallback: Retain exact source input, diagnose/regenerate problematic takes locally; no cloud synthesis.
+sentences:
+- sentence_id: hb-c01-u0039-s001
+  sv: År 2023 bodde det omkring 5,6 miljoner människor i Finland.
+  ru: В 2023 году в Финляндии проживало около 5,6 миллиона человек.
+  scene_id: population
+  visual_cue: 'Show steady source-based factual card: 2023 / 5,6 miljoner. Labels repeat source wording
+    only; no invented proportions or numerical extrapolation.'
+  asset_ids:
+  - background
+  - fact_cards
+  text_highlights:
+  - 5,6 miljoner
+  pronunciation_notes:
+  - Check Swedish number/unit pronunciation in complete-video review.
+  speech_override:
+    text: År tvåtusentjugotre bodde det omkring fem komma sex miljoner människor i Finland.
+    reason: Expand source numbers, signs and units into Swedish speech; exact displayed text unchanged.
+    review_status: pending
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0039-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.285646
+  display_segments: []
+  render_image: studio/media/hb-c01-befolkning/graphics/u0039-s001.png
+- sentence_id: hb-c01-u0039-s002
+  sv: Största delen av befolkningen bor i städer eller nära städer.
+  ru: Большая часть населения живёт в городах или рядом с ними.
+  scene_id: population
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0039-s002.wav
+  start_seconds: 11.875
+  end_seconds: 17.587109
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0039-s003
+  sv: Minst människor bor det i norra Finland.
+  ru: Меньше всего людей живёт на севере Финляндии.
+  scene_id: population
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0039-s003.wav
+  start_seconds: 19.166667
+  end_seconds: 23.067619
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0039-s004
+  sv: I Finland bor det människor med många olika bakgrunder.
+  ru: В Финляндии живут люди самого разного происхождения.
+  scene_id: population
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0039-s004.wav
+  start_seconds: 24.625
+  end_seconds: 29.57085
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0040-s001
+  sv: I Finland bor det flest finskspråkiga människor, men också människor som talar många andra språk.
+  ru: В Финляндии больше всего финноязычных жителей, но здесь также живут люди, говорящие на многих других
+    языках.
+  scene_id: diversity
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0040-s001.wav
+  start_seconds: 31.833333
+  end_seconds: 40.471156
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0040-s002
+  sv: Minoriteter i Finland är till exempel finlandssvenskar, samer, romer, judar, tatarer, personer som
+    talar ryska och personer som talar karelska.
+  ru: К меньшинствам в Финляндии относятся, например, финляндские шведы, саамы, ромы, евреи, татары, люди,
+    говорящие по-русски, и люди, говорящие по-карельски.
+  scene_id: diversity
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights:
+  - finlandssvenskar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0040-s002.wav
+  start_seconds: 42.041667
+  end_seconds: 54.789422
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0041-s001
+  sv: År 2020 bodde 73 procent av invånarna i Finland i städer.
+  ru: В 2020 году в городах проживало 73 процента жителей Финляндии.
+  scene_id: urbanisation_history
+  visual_cue: 'Show steady source-based factual card: 2020 / 73 procent / i städer. Labels repeat source
+    wording only; no invented proportions or numerical extrapolation.'
+  asset_ids:
+  - background
+  - fact_cards
+  text_highlights:
+  - 73 procent
+  pronunciation_notes:
+  - Check Swedish number/unit pronunciation in complete-video review.
+  speech_override:
+    text: År tvåtusentjugo bodde sjuttio tre procent av invånarna i Finland i städer.
+    reason: Expand source year/percentage into Swedish speech; separate sjuttio tre to clarify 73 after
+      local ASR diagnosed 70 in the first take. Exact displayed 73 procent unchanged.
+    review_status: pending
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0041-s001.wav
+  start_seconds: 57.041667
+  end_seconds: 63.937993
+  display_segments: []
+  render_image: studio/media/hb-c01-befolkning/graphics/u0041-s001.png
+- sentence_id: hb-c01-u0041-s002
+  sv: Jämfört med många andra europeiska länder urbaniserades Finland sent.
+  ru: По сравнению со многими другими европейскими странами урбанизация в Финляндии произошла поздно.
+  scene_id: urbanisation_history
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights:
+  - urbaniserades
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0041-s002.wav
+  start_seconds: 65.5
+  end_seconds: 71.908707
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0041-s003
+  sv: Den snabba urbaniseringen började i Finland först efter andra världskriget på 1950-talet.
+  ru: Быстрая урбанизация началась в Финляндии только после Второй мировой войны, в 1950-е годы.
+  scene_id: urbanisation_history
+  visual_cue: 'Show steady source-based factual card: 1950-talet. Labels repeat source wording only; no
+    invented proportions or numerical extrapolation.'
+  asset_ids:
+  - background
+  - fact_cards
+  text_highlights:
+  - 1950-talet
+  pronunciation_notes:
+  - Check Swedish number/unit pronunciation in complete-video review.
+  speech_override:
+    text: Den snabba urbaniseringen började i Finland först efter andra världskriget på nittonhundrafemtiotalet.
+    reason: Expand source numbers, signs and units into Swedish speech; exact displayed text unchanged.
+    review_status: pending
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0041-s003.wav
+  start_seconds: 73.5
+  end_seconds: 82.625442
+  display_segments: []
+  render_image: studio/media/hb-c01-befolkning/graphics/u0041-s003.png
+- sentence_id: hb-c01-u0042-s001
+  sv: Många av städerna i Finland är stora till ytan och har en rätt så liten stadskärna.
+  ru: Многие города Финляндии занимают большую площадь и имеют довольно небольшой центр.
+  scene_id: city_landscapes
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights:
+  - stadskärna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0042-s001.wav
+  start_seconds: 84.916667
+  end_seconds: 92.439932
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0042-s002
+  sv: Utanför stadskärnan är byggnaderna låga, och det finns också skog och åkrar på städernas områden.
+  ru: За пределами центра города здания невысокие, а на городских территориях есть также леса и поля.
+  scene_id: city_landscapes
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights:
+  - stadskärna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0042-s002.wav
+  start_seconds: 94.0
+  end_seconds: 102.428844
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0042-s003
+  sv: Även Finlands största städer är små jämfört med världsmetropolerna.
+  ru: Даже крупнейшие города Финляндии невелики по сравнению с крупнейшими мегаполисами мира.
+  scene_id: city_landscapes
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0042-s003.wav
+  start_seconds: 104.0
+  end_seconds: 110.269388
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0043-s001
+  sv: Urbaniseringen pågår fortfarande i Finland.
+  ru: Урбанизация в Финляндии продолжается.
+  scene_id: services
+  visual_cue: 'Show steady source-based factual card: Urbaniseringen / pågår fortfarande. Labels repeat
+    source wording only; no invented proportions or numerical extrapolation.'
+  asset_ids:
+  - background
+  - fact_cards
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0043-s001.wav
+  start_seconds: 112.541667
+  end_seconds: 116.721259
+  display_segments: []
+  render_image: studio/media/hb-c01-befolkning/graphics/u0043-s001.png
+- sentence_id: hb-c01-u0043-s002
+  sv: När människorna koncentreras till städerna blir serviceproduktionen effektivare.
+  ru: Когда население сосредоточивается в городах, предоставление услуг становится эффективнее.
+  scene_id: services
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights:
+  - serviceproduktionen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0043-s002.wav
+  start_seconds: 118.291667
+  end_seconds: 125.536293
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0043-s003
+  sv: Samtidigt har tillgången till service försämrats i de små kommunerna och utanför stadskärnorna.
+  ru: В то же время доступность услуг в небольших муниципалитетах и за пределами городских центров ухудшилась.
+  scene_id: services
+  visual_cue: Keep useful-image area open to continuous topic background; stable bilingual panel. Highlight
+    only source-based information.
+  asset_ids:
+  - background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-befolkning/narration/hb-c01-u0043-s003.wav
+  start_seconds: 127.125
+  end_seconds: 135.553844
+  display_segments: []
+  render_image: null
+fact_cards:
+  u0039-s001:
+  - '2023'
+  - 5,6 miljoner
+  u0041-s001:
+  - '2020'
+  - 73 procent
+  - i städer
+  u0041-s003:
+  - 1950-talet
+  u0043-s001:
+  - Urbaniseringen
+  - pågår fortfarande
+render:
+  music_path: studio/media/hb-c01-befolkning/sources/music.mp3
+  background_image: studio/media/hb-c01-befolkning/sources/background.jpg
+  music_gain_adjustment_db: 2.0
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: continuous full-episode linear fractional diagonal pan and zoom
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi · InfoFinland.fi
+    - Finlands Flyktinghjälp · Utbildningsstyrelsen · UF-centret
+    - Svensk originaltext med rysk översättning. Urval och formgivning för denna video.
+    - Fullständiga källhänvisningar och licensvillkor medföljer videon.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki panorama — DIMMIS · CC BY-SA 3.0
+    - Wikimedia Commons. Beskärning, toning och långsam kamerarörelse tillagda.
+    - Dreams Become Real — Kevin MacLeod (incompetech.com) · CC BY 4.0. Utdrag, toningar och volymanpassning.
+    - 'Faktarutor: endast uppgifter ur källtexten.'
+    - 'Svensk berättarröst: lokal Supertonic 3 · F1'
+  adaptation_notes:
+  - Helsinki panorama — DIMMIS is cropped, softened, darkened, and continuously panned/zoomed as decorative
+    background. Adapted photograph retains CC BY-SA 3.0.
+  - Dreams Become Real by Kevin MacLeod is excerpted, faded and ducked under narration; no loop.
+  - Source-based fact cards repeat text figures without invented numerical proportions. Original photo/music
+    masters remain unchanged.

@@ -1,0 +1,308 @@
+schema_version: 1
+section_id: hb-c01-flyttning
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c01-flyttning/sources/background.jpg
+    sha256: 27b9ec045df955d6ccbe1b7687679d341a2e96a975e9c1ae2df958649405254a
+    bytes: 2868113
+  source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Central_railway_station_main_entrance,_Finland,_2022_December.jpg
+  creator: Safa Hovinen
+  reuse_terms: CC BY 2.0; https://creativecommons.org/licenses/by/2.0
+  required_credits: 'Helsinki Central railway station main entrance, Finland, 2022 December.jpg — Safa
+    Hovinen · CC BY 2.0. https://commons.wikimedia.org/wiki/File:Helsinki_Central_railway_station_main_entrance,_Finland,_2022_December.jpg
+    License: https://creativecommons.org/licenses/by/2.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY 2.0.'
+  relevance_verification: Helsingin päärautatieasema Background is decorative context, not identification
+    of a population group or historical migration event. Metadata and identity checked on the linked original
+    file page.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c01-flyttning/cards/01.png
+    sha256: 8a521516fe0c19ed24c25860b35ece042993b69a726f73d444e4de36e95aed19
+    bytes: 16098
+    sentence_id: hb-c01-u0060-s002
+    source_substrings:
+    - 1800-talet
+    - Nordamerika
+  - path: studio/media/hb-c01-flyttning/cards/04.png
+    sha256: 0be864322fdc9fda0e678de8a270c63bc93dd1f4c1fdaab715e24c94ca119b0e
+    bytes: 19448
+    sentence_id: hb-c01-u0060-s005
+    source_substrings:
+    - 1960- och 1970-talen
+    - Sverige
+  - path: studio/media/hb-c01-flyttning/cards/06.png
+    sha256: b4ba7baff0a63599cb3e7e25dd7f20fd1cf0973d9e4162825917f8328d961b67
+    bytes: 9172
+    sentence_id: hb-c01-u0061-s001
+    source_substrings:
+    - 1990-talet
+  - path: studio/media/hb-c01-flyttning/cards/09.png
+    sha256: 3f2bd9a48fc83e49ec8107e477d288a5b4d0b1b13dbfb4a7d05a7dcc370700ee
+    bytes: 21879
+    sentence_id: hb-c01-u0062-s002
+    source_substrings:
+    - 1970- och 1980-talen
+    - Chile
+    - Vietnam
+  - path: studio/media/hb-c01-flyttning/cards/10.png
+    sha256: 0c7b8388cb8edb9aeca47f78568eda03bd5655a23133279fa6ca1080b898520c
+    bytes: 15339
+    sentence_id: hb-c01-u0062-s003
+    source_substrings:
+    - 1990-talet
+    - Balkanländerna
+  - path: studio/media/hb-c01-flyttning/cards/11.png
+    sha256: 7936f81b89f445e724da5038c2e017a79f6a626a62717fa2b964ad7785e8a606
+    bytes: 16080
+    sentence_id: hb-c01-u0063-s001
+    source_substrings:
+    - arbete
+    - studier
+    - familjen
+  - path: studio/media/hb-c01-flyttning/cards/13.png
+    sha256: 0065276a0433c543d5c7fc7ac273e94579dab39addbf090494c4ab5343c73239
+    bytes: 29520
+    sentence_id: hb-c01-u0063-s003
+    source_substrings:
+    - '2023'
+    - ester
+    - ryssar
+    - ukrainare
+    - irakier
+    - kineser
+    - indier
+    - filippinare
+    - afghaner
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c01-flyttning/prepare_assets.py
+    fonts: Arial Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c01-flyttning/sources/music.mp3
+    sha256: 3c4683a8c6396df9be99194aeffddfc01036f3c3ed3384a3e39fd1cc1d9f1e43
+    bytes: 47812614
+  - path: studio/media/hb-c01-flyttning/sources/music-bed.flac
+    sha256: c349135f5d698af17cff13969de3a739c40a3e10653504a8c5338ea423379ab1
+    bytes: 20002043
+    seconds: 196.41666666666666
+    sample_rate: 48000
+    channels: 2
+  title: Relaxing Piano Music
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500075
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Relaxing%20Piano%20Music.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Relaxing Piano Music" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c01-flyttning/prepare_assets.py
+    master_seconds: 1494.073531
+    prepared_seconds: 196.41666666666666
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s001.wav
+    sha256: 84d0eda24d5b81ff525da3a872622996e241d2214e544b2195dbf811cf6f58a3
+    bytes: 940076
+    seconds: 10.65795918367347
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s001
+    peak: 0.33233642578125
+    generation_seconds: 51.30147562496131
+    tts_input: Tidigare var Finland ett fattigt land, som många flyttade ifrån till andra länder för att
+      hitta arbete och få ett bättre liv.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s002.wav
+    sha256: 0aa8b4382f190571525c9ce83c20f7e7c95ed1739da17aa8262f887d7ae95cd3
+    bytes: 540716
+    seconds: 6.130068027210885
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s002
+    peak: 0.33221435546875
+    generation_seconds: 27.498785666015465
+    tts_input: På artonhundratalet flyttade finländare i synnerhet till Nordamerika.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s003.wav
+    sha256: f26f2aad7db4874e795c14e3f8d7003227772137b1a61069bc2b28fa53a69b22
+    bytes: 731180
+    seconds: 8.289523809523809
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s003
+    peak: 0.400970458984375
+    generation_seconds: 37.488318749994505
+    tts_input: Efter andra världskriget började finländarna i allt högre grad flytta från landet till
+      städerna.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s004.wav
+    sha256: d4a001fc8329e59df5357b32f94c9f4d7b98b2ed78fe160706703b43b054855b
+    bytes: 663596
+    seconds: 7.523265306122449
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s004
+    peak: 0.4814453125
+    generation_seconds: 29.088560417003464
+    tts_input: Många flyttade utomlands för arbete, eftersom det inte fanns arbete för alla i Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s005.wav
+    sha256: 9a8d4ce2b294387d0c80d6e965dd695c88d9a988823aa547b5f917ffb7740159
+    bytes: 1044524
+    seconds: 11.842176870748299
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s005
+    peak: 0.35382080078125
+    generation_seconds: 73.76548404095229
+    tts_input: På nittonhundrasextiotalet och nittonhundrasjuttiotalet flyttade som mest tiotusentals
+      finländare till Sverige varje år för att få arbete.
+    generation_run: Targeted correction decade-clarity; NumPy seed42 reset; one selected sentence;32steps,F1,sv,speed0.95
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s006.wav
+    sha256: 8e5b770f76ddef364f8ee43304d99a36acfeb2efbc6fa95ed2e1a56e5972be3d
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0060-s006
+    peak: 0.2408447265625
+    generation_seconds: 25.16290300001856
+    tts_input: Finländarna var länge den största gruppen nyanlända i Sverige.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0061-s001.wav
+    sha256: 20bc975d96fb11ea54e959137a7c2345ab83a41a58fd1324d2052c7abe147c76
+    bytes: 952364
+    seconds: 10.797278911564625
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0061-s001
+    peak: 0.24224853515625
+    generation_seconds: 43.3658718339866
+    tts_input: En större invandring till Finland började egentligen först efter kalla krigets slut i början
+      av nittonhundranittiotalet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0061-s002.wav
+    sha256: 9fbe8fa685943fb4fcb8b81ec066f88589e39a758348478902b090929f94608b
+    bytes: 847916
+    seconds: 9.613061224489796
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0061-s002
+    peak: 0.3211669921875
+    generation_seconds: 47.49982262501726
+    tts_input: Till följd av Sovjetunionens fall flyttade ryssar och ester samt också somaliska asylsökande
+      till Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s001.wav
+    sha256: 8494ac0755d722278dce101fdaf9176521985f7b6c289d2e3f78c826a298df60
+    bytes: 811052
+    seconds: 9.195102040816327
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0062-s001
+    peak: 0.268096923828125
+    generation_seconds: 47.03384620900033
+    tts_input: Olika världshändelser har under de senaste årtiondena fört fler människor till Finland
+      från olika länder.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s002.wav
+    sha256: 3b9ae75777974b5ad69293b71bf4e7eed5dee18e53e0305d51677c4e41392af2
+    bytes: 989228
+    seconds: 11.215238095238096
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0062-s002
+    peak: 0.307952880859375
+    generation_seconds: 54.66059733298607
+    tts_input: Finland tog emot små mängder flyktingar på nittonhundrasjuttio- och nittonhundraåttiotalen
+      först från Chile och sedan från Vietnam.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s003.wav
+    sha256: d9eaa108d231744543ffd04903abeba3480c3b03d7ea11b8c2060b7261c5ee96
+    bytes: 976940
+    seconds: 11.075918367346938
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0062-s003
+    peak: 0.352783203125
+    generation_seconds: 33.006101083010435
+    tts_input: Till följd av krigen som ledde till Jugoslaviens upplösning på nittonhundra nittiotalet
+      kom det flyktingar från Balkanländerna.
+    generation_run: Targeted correction 1990-clarity; NumPy seed42 reset; one selected sentence;32steps,F1,sv,speed0.95
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s001.wav
+    sha256: 42a188c26e89361296ec4f26f5c67c41fd36ab51d5c883e0a3853339bfb3eaf5
+    bytes: 774188
+    seconds: 8.777142857142858
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0063-s001
+    peak: 0.3455810546875
+    generation_seconds: 54.23024229198927
+    tts_input: I dag kommer en stor del av invandrarna till Finland på grund av arbete, studier eller
+      familjen.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s002.wav
+    sha256: 7da1fc659a3a53ec0f8a49857f5c67e1b9ef36a1c700e00abe46c3e91b395b46
+    bytes: 823340
+    seconds: 9.334421768707482
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0063-s002
+    peak: 0.306243896484375
+    generation_seconds: 49.89365191699471
+    tts_input: Endast en liten del av de som flyttar till Finland är kvotflyktingar eller kommer till
+      landet som asylsökande.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s003.wav
+    sha256: 97f28673d9ee5bd9d7994da5f44aaaae7856cc3f157db427a604e9bbad85eb53
+    bytes: 1302572
+    seconds: 14.767891156462586
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c01-u0063-s003
+    peak: 0.30731201171875
+    generation_seconds: 52.00215591699816
+    tts_input: År tvåtusentjugotre var de åtta största utländska nationaliteterna i Finland i storleksordning
+      ester, ryssar, ukrainare, irakier, kineser, indier, filippinare och afghaner.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; macOS arm64
+    format: 44100Hz mono PCM16 WAV

@@ -1,0 +1,1131 @@
+schema_version: 1
+section_id: hb-c01-regioner
+chapter_id: hb-c01
+title_sv: Landskap, regioner och städer
+title_ru: Ландшафты, регионы и города
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-regioner.yaml
+example_only: false
+source_section_sha256: f04ce7d2d0170c871ae7a908b45608e986e3568e54a44b33e4a57def1b26ad0b
+translation_file_sha256: 631d679357dfac3ebc2657eddeaebdcd2b24e16869d68f389372c22f95f24bdf
+episode_decisions:
+- id: opening
+  decision: Unspoken bilingual source heading for three seconds; preserve all exact body sentences and
+    Russian translations in source order.
+  status: proposed
+  resolve_during: script
+- id: palette_layout
+  decision: 'Use the shared Chapter 1 evergreen #102e2b, cream #f6f1e6, sage #bdd3c9 and gold #e7bc70
+    palette. Render 1920×1080 at24fps. Stable right text panel (890,165)-(1860,980), Swedish Arial Bold48
+    above Russian Arial40 with 5% margins; reduce font only where necessary and record each exception.
+    Steady useful-image panel left; leave empty when no useful illustration.'
+  status: proposed
+  resolve_during: script
+- id: pacing
+  decision: Show each sentence pair0.25seconds before speech, retain through1.3second pause; use2seconds
+    at scene boundaries. Do not accelerate narration.
+  status: proposed
+  resolve_during: script
+- id: voice
+  decision: Shared Supertonic3 F1 Sweden Swedish sv local ONNX CPU,32steps,speed0.95,seed42,44100Hz mono
+    PCM16. Review pronunciation within complete video.
+  status: proposed
+  resolve_during: assets
+- id: background
+  decision: Use verified Töölönlahti park photograph throughout; darken42%, blur2.5px. Continuous smooth
+    sinusoidal pan/zoom cycles over global timeline, each140seconds, normalized crop(0.15,0.15)↔(0.85,0.85),
+    zoom1.06↔1.219. Start at midpoint moving immediately; fractional bicubic sampling, smooth reversals
+    and no sentence resets. motion_cycles equals measured full-video duration/140.
+  status: proposed
+  resolve_during: script
+- id: music
+  decision: Use Floating Cities by Kevin MacLeod, CC BY4.0, unique to this subchapter. Keep cohesive bed
+    throughout with shared accepted +2dB music level, fades and speech ducking. If shorter than full episode,
+    repeat same track with4second linear crossfades, explicitly disclosed in credits.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Use two readable15second credit cards and accompanying full credits file. Whole-video user
+    review remains pending; no standalone listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source-content changes or new claims. Foreground source-based graphics repeat exact Swedish
+    phrases; geographical groupings are landscape descriptions, not administrative borders.
+  status: proposed
+  resolve_during: script
+- id: maps
+  decision: Use actual Natural Earth5.1.2 country outline and populated-place point geometry for selected
+    source-mentioned cities; no regional boundaries. Source-name cards remain useful for longer city lists.
+    Region examples not administrative areas.
+  status: proposed
+  resolve_during: script
+- id: targeted_narration
+  decision: Use targeted same-voice F1 sv, 32 steps, speed 0.95, seed 42 candidates for sentences 33 and
+    35. Begin with the complete source-order run and replace only the selected takes. Preserve original
+    hashes and diagnostic transcripts in narration-check.json. Sentence 33 separates clauses with punctuation;
+    sentence 35 keeps the input unchanged. Review pronunciation in the complete video.
+  status: proposed
+  resolve_during: assets
+scenes:
+- id: overview
+  description: 'Sentences1–4: Variationer i landskap och naturförhållanden; preserve exact source order.'
+- id: south
+  description: 'Sentences5–16: Södra Finland; preserve exact source order.'
+- id: lakes
+  description: 'Sentences17–22: Insjöfinland; preserve exact source order.'
+- id: west
+  description: 'Sentences23–30: Österbotten; preserve exact source order.'
+- id: east
+  description: 'Sentences31–38: Skogklädda höjder; preserve exact source order.'
+- id: north
+  description: 'Sentences39–46: Lappland; preserve exact source order.'
+- id: islands
+  description: 'Sentences47–54: Skärgården och Åland; preserve exact source order.'
+asset_requests:
+- id: decorative_background
+  kind: background
+  description: Verified Töölönlahti park in Helsinki photograph by Yehia Eweis / Helsinki City Museum,
+    CC BY 4.0; continuous decorative backdrop for landscape/settlement chapter. No claim all regions look
+    like Helsinki.
+  fallback: Another verified, distinct Finnish photograph under reusable terms; revise only visual choice.
+- id: source_graphics
+  kind: foreground
+  description: Steady source-based text graphics with exact Swedish place names or activity words from
+    the corresponding source scene; no map borders or invented facts.
+  fallback: Leave useful-image area open and retain text highlights.
+- id: music_bed
+  kind: music
+  description: Floating Cities — Kevin MacLeod, CC BY4.0, official Incompetech master.
+  fallback: Another distinct gentle instrumental licensed for reuse; record replacement in script.
+- id: narration
+  kind: narration
+  description: 54 local female Swedish sentence WAVs with shared F1 settings.
+  fallback: Regenerate a problematic take locally with same voice and documented speech-only expansion.
+- id: koli_view
+  kind: foreground
+  description: 'Pitke photograph from Ukko-Koli toward Pielinen: show for lakes/coniferous-forest and
+    forest-covered-hill passages, not as an administrative-region map.'
+  fallback: Source-based scene labels over decorative background.
+- id: location_maps
+  kind: foreground
+  description: Natural Earth5.1.2 Finland outline and verified city pointer for Helsingfors,Tammerfors,Vasa,Rovaniemi,Mariehamn.
+    City markers only, no regional or administrative boundaries. Swedish labels repeat source names.
+  fallback: Source-based place-name cards if geometry unavailable.
+sentences:
+- sentence_id: hb-c01-u0008-s001
+  sv: De olika områdena i Finland skiljer sig från varandra, vilket beror på olika naturförhållanden.
+  ru: Разные районы Финляндии отличаются друг от друга из-за различий в природных условиях.
+  scene_id: overview
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0008-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.609184
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0008-s002
+  sv: Naturförhållandena har påverkat hur tätt människor bor och människornas verksamhet, till exempel
+    jordbruket, industrin och byggandet.
+  ru: Природные условия повлияли на плотность расселения людей и на их деятельность, например на сельское
+    хозяйство, промышленность и строительство.
+  scene_id: overview
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0008-s002.wav
+  start_seconds: 13.166667
+  end_seconds: 24.312245
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0009-s001
+  sv: Nedan finns en kort beskrivning av olika områden i Finland.
+  ru: Ниже кратко описаны различные районы Финляндии.
+  scene_id: overview
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0009-s001.wav
+  start_seconds: 25.875
+  end_seconds: 31.378129
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0009-s002
+  sv: Indelningen baserar sig inte på de administrativa områdena, utan på variationerna när det gäller
+    landskap och naturförhållanden.
+  ru: Это деление основано не на административных территориях, а на различиях в ландшафте и природных
+    условиях.
+  scene_id: overview
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0009-s002.wav
+  start_seconds: 32.958333
+  end_seconds: 43.894932
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0010-s001
+  sv: I Södra Finland är klimatet mildare än i de nordligare delarna av landet.
+  ru: В Южной Финляндии климат мягче, чем в более северных частях страны.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0010-s001.wav
+  start_seconds: 46.166667
+  end_seconds: 52.993333
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0010-s002
+  sv: Södra Finland är ett flackt område.
+  ru: Южная Финляндия — равнинный район.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0010-s002.wav
+  start_seconds: 54.583333
+  end_seconds: 58.135986
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0010-s003
+  sv: Sett till klimatet och jordmånen är det Finlands bästa odlingsområde.
+  ru: По климату и почвам это лучший район Финляндии для земледелия.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0010-s003.wav
+  start_seconds: 59.708333
+  end_seconds: 65.768741
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0010-s004
+  sv: Det finns fler arter av lövträd där än längre norrut i landet.
+  ru: Здесь встречается больше видов лиственных деревьев, чем в более северных районах страны.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0010-s004.wav
+  start_seconds: 67.333333
+  end_seconds: 72.906122
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0011-s001
+  sv: Södra Finland är Finlands mest tätbefolkade område.
+  ru: Южная Финляндия — самый густонаселённый район Финляндии.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s001.wav
+  start_seconds: 74.458333
+  end_seconds: 79.404184
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0011-s002
+  sv: Där ligger Finlands största städer, till exempel Finlands huvudstad Helsingfors.
+  ru: Здесь расположены крупнейшие города Финляндии, например её столица Хельсинки.
+  scene_id: south
+  visual_cue: Stable Finland outline with source-named city pointer from verified Natural Earth coordinates;
+    no invented regional borders.
+  asset_ids:
+  - location_maps
+  text_highlights:
+  - Helsingfors
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s002.wav
+  start_seconds: 80.958333
+  end_seconds: 88.133299
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/maps/south.png
+- sentence_id: hb-c01-u0011-s003
+  sv: Helsingfors omges av huvudstadsregionen, som förutom Helsingfors inkluderar Esbo, Vanda och Grankulla.
+  ru: Хельсинки окружён столичным регионом (huvudstadsregionen), в который, помимо самого Хельсинки, входят
+    Эспоо, Вантаа и Кауниайнен.
+  scene_id: south
+  visual_cue: Steady source-based Södra Finland place/activity graphic, with only labels from this consecutive
+    scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - Helsingfors
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s003.wav
+  start_seconds: 89.708333
+  end_seconds: 99.042755
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/south.png
+- sentence_id: hb-c01-u0011-s004
+  sv: Andra städer i Södra Finland är bland annat Åbo, Björneborg, Kotka och Tavastehus.
+  ru: К другим городам Южной Финляндии относятся, в частности, Турку, Пори, Котка и Хямеэнлинна.
+  scene_id: south
+  visual_cue: Steady source-based Södra Finland place/activity graphic, with only labels from this consecutive
+    scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s004.wav
+  start_seconds: 100.625
+  end_seconds: 108.217925
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/south.png
+- sentence_id: hb-c01-u0011-s005
+  sv: En del av området längs kusten i Södra Finland är tvåspråkig, det vill säga en del av befolkningen
+    har finska som modersmål, en del svenska.
+  ru: Часть прибрежной территории Южной Финляндии двуязычна, то есть для части населения родным языком
+    является финский, а для части — шведский.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s005.wav
+  start_seconds: 109.791667
+  end_seconds: 121.982143
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0011-s006
+  sv: Helsingfors har det största antalet svenskspråkiga invånare i Finland.
+  ru: В Хельсинки проживает больше всего шведоязычных жителей Финляндии.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Helsingfors
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0011-s006.wav
+  start_seconds: 123.541667
+  end_seconds: 130.089694
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0012-s001
+  sv: Södra Finland har en mångsidig näringsstruktur, som omfattar lantbruk, industri och service.
+  ru: Южная Финляндия имеет разнообразную структуру экономики, включающую сельское хозяйство, промышленность
+    и сферу услуг.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0012-s001.wav
+  start_seconds: 131.666667
+  end_seconds: 140.23483
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0012-s002
+  sv: Där finns också flera hamnar med goda trafikförbindelser sjövägen ut i världen.
+  ru: Здесь также есть несколько портов с хорошим морским сообщением с другими частями мира.
+  scene_id: south
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0012-s002.wav
+  start_seconds: 141.791667
+  end_seconds: 148.757653
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0013-s001
+  sv: I mellersta och östra Finland är vintrarna ofta kallare och har mer snö än i områden som ligger
+    närmare kusten.
+  ru: В центральной и восточной Финляндии зимы часто холоднее и снежнее, чем в районах, расположенных
+    ближе к побережью.
+  scene_id: lakes
+  visual_cue: Leave useful-image area open to the moving decorative backdrop while discussing winter conditions;
+    do not use a summer photo as a literal winter illustration.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0013-s001.wav
+  start_seconds: 151.041667
+  end_seconds: 160.724388
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0013-s002
+  sv: I området finns många sjöar i olika storlekar, och i många av dem finns det öar och holmar.
+  ru: В этом районе много озёр разного размера, и на многих из них есть острова и островки.
+  scene_id: lakes
+  visual_cue: Steady verified Koli/Pielinen forest-lake panorama; illustrative of source landscape description,
+    no additional named-place label.
+  asset_ids:
+  - koli_view
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0013-s002.wav
+  start_seconds: 162.291667
+  end_seconds: 170.372211
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/sources/koli.jpg
+- sentence_id: hb-c01-u0013-s003
+  sv: Sjöarna omges i allmänhet av barrskog.
+  ru: Озёра обычно окружены хвойным лесом.
+  scene_id: lakes
+  visual_cue: Steady verified Koli/Pielinen forest-lake panorama; illustrative of source landscape description,
+    no additional named-place label.
+  asset_ids:
+  - koli_view
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0013-s003.wav
+  start_seconds: 171.958333
+  end_seconds: 176.068265
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/sources/koli.jpg
+- sentence_id: hb-c01-u0014-s001
+  sv: I Insjöfinland finns det flera ganska stora städer, till exempel Tammerfors, Jyväskylä, Kuopio,
+    Lahtis och Villmanstrand.
+  ru: В Озёрной Финляндии есть несколько довольно крупных городов, например Тампере, Ювяскюля, Куопио,
+    Лахти и Лаппеэнранта.
+  scene_id: lakes
+  visual_cue: Stable Finland outline with source-named city pointer from verified Natural Earth coordinates;
+    no invented regional borders.
+  asset_ids:
+  - location_maps
+  text_highlights:
+  - Insjöfinland
+  pronunciation_notes:
+  - Check Swedish/Finnish proper-name pronunciation during complete-video review; exact source display
+    is preserved.
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0014-s001.wav
+  start_seconds: 177.625
+  end_seconds: 188.561599
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/maps/lakes.png
+- sentence_id: hb-c01-u0014-s002
+  sv: På somrarna lockar sjöarna semesterfirare till Insjöfinland, och i området finns många sommarstugor.
+  ru: Летом озёра привлекают в Озёрную Финляндию отдыхающих, и в этом районе много дач.
+  scene_id: lakes
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Insjöfinland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0014-s002.wav
+  start_seconds: 190.125
+  end_seconds: 199.111122
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0014-s003
+  sv: Bland annat turismen och metall- och skogsindustrin är viktiga näringar i området.
+  ru: Важными отраслями экономики этого района являются, в частности, туризм, металлообрабатывающая и
+    лесная промышленность.
+  scene_id: lakes
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0014-s003.wav
+  start_seconds: 200.666667
+  end_seconds: 207.980952
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0015-s001
+  sv: Klimatet i Österbotten på den finska västkusten är mildare än i inlandet på grund av närheten till
+    havet.
+  ru: Климат Остроботнии на западном побережье Финляндии мягче, чем во внутренних районах страны, благодаря
+    близости моря.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Österbotten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0015-s001.wav
+  start_seconds: 210.25
+  end_seconds: 219.514762
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0015-s002
+  sv: Österbotten är ett mycket flackt område.
+  ru: Остроботния — район с очень ровным рельефом.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Österbotten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0015-s002.wav
+  start_seconds: 221.083333
+  end_seconds: 224.914626
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0015-s003
+  sv: Flera älvar flyter genom de österbottniska åkerområdena, som det finns mängder av.
+  ru: Через многочисленные территории Остроботнии, занятые полями, протекает несколько рек.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0015-s003.wav
+  start_seconds: 226.5
+  end_seconds: 233.744626
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0015-s004
+  sv: Det finns mycket myrmarker särskilt i de norra delarna av området.
+  ru: Здесь много болотистых земель, особенно в северных частях района.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0015-s004.wav
+  start_seconds: 235.333333
+  end_seconds: 241.393741
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0016-s001
+  sv: De största städerna är Uleåborg, Vasa och Seinäjoki.
+  ru: Крупнейшие города — Оулу, Вааса и Сейняйоки.
+  scene_id: west
+  visual_cue: Stable Finland outline with source-named city pointer from verified Natural Earth coordinates;
+    no invented regional borders.
+  asset_ids:
+  - location_maps
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish/Finnish proper-name pronunciation during complete-video review; exact source display
+    is preserved.
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0016-s001.wav
+  start_seconds: 242.958333
+  end_seconds: 248.113163
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/maps/west.png
+- sentence_id: hb-c01-u0016-s002
+  sv: Lantbruket och en mångsidig industri är viktiga näringar.
+  ru: Важными отраслями экономики являются сельское хозяйство и разнообразная промышленность.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0016-s002.wav
+  start_seconds: 249.666667
+  end_seconds: 254.960816
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0016-s003
+  sv: Uleåborgsregionen är speciellt känd som ett centrum för teknikindustri.
+  ru: Регион Оулу особенно известен как центр технологической промышленности.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0016-s003.wav
+  start_seconds: 256.541667
+  end_seconds: 263.089694
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0016-s004
+  sv: I en del kommuner i Österbotten är majoritetsspråket svenska.
+  ru: В некоторых муниципалитетах Остроботнии большинство населения говорит по-шведски.
+  scene_id: west
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Österbotten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0016-s004.wav
+  start_seconds: 264.666667
+  end_seconds: 270.518095
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0017-s001
+  sv: I området norr om Insjöfinland i de östra delarna av Finland är vintrarna kalla och mycket snörika.
+  ru: В районе к северу от Озёрной Финляндии, в восточной части страны, зимы холодные и очень снежные.
+  scene_id: east
+  visual_cue: Leave useful-image area open to the moving decorative backdrop while discussing winter conditions;
+    do not use a summer photo as a literal winter illustration.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Insjöfinland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0017-s001.wav
+  start_seconds: 272.791667
+  end_seconds: 282.126088
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0017-s002
+  sv: Terrängen är mer kuperad och det finns färre sjöar.
+  ru: Рельеф здесь более холмистый, а озёр меньше.
+  scene_id: east
+  visual_cue: Leave useful-image area open to the moving decorative backdrop while discussing winter conditions;
+    do not use a summer photo as a literal winter illustration.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0017-s002.wav
+  start_seconds: 283.708333
+  end_seconds: 288.375544
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0017-s003
+  sv: De höga backarna som täcks av skog kallas skogklädda höjder (”vaara” på finska).
+  ru: Высокие холмы, покрытые лесом, называют лесистыми возвышенностями («vaara» по-фински).
+  scene_id: east
+  visual_cue: Steady source-based Skogklädda höjder place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - vaara
+  pronunciation_notes:
+  - Check Swedish/Finnish proper-name pronunciation during complete-video review; exact source display
+    is preserved.
+  speech_override:
+    text: De höga backarna som täcks av skog, kallas skogklädda höjder. Vaara på finska.
+    reason: Punctuation-only clause separation improves recovery of the complete forested-hill description
+      and Finnish term in local diagnostics. Spoken words and meaning preserved; exact source display
+      unchanged. Review in complete video.
+    review_status: pending
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0017-s003.wav
+  start_seconds: 289.958333
+  end_seconds: 297.481599
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/east.png
+- sentence_id: hb-c01-u0017-s004
+  sv: Skogen består av barrskog.
+  ru: Леса здесь хвойные.
+  scene_id: east
+  visual_cue: Steady verified Koli/Pielinen forest-lake panorama; illustrative of source landscape description,
+    no additional named-place label.
+  asset_ids:
+  - koli_view
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0017-s004.wav
+  start_seconds: 299.041667
+  end_seconds: 302.037041
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/sources/koli.jpg
+- sentence_id: hb-c01-u0018-s001
+  sv: Befolkningen i området är gles.
+  ru: Этот район малонаселён.
+  scene_id: east
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0018-s001.wav
+  start_seconds: 303.625
+  end_seconds: 306.690034
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0018-s002
+  sv: De största städerna är Joensuu och Kajana.
+  ru: Крупнейшие города — Йоэнсуу и Каяани.
+  scene_id: east
+  visual_cue: Steady source-based Skogklädda höjder place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish/Finnish proper-name pronunciation during complete-video review; exact source display
+    is preserved.
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0018-s002.wav
+  start_seconds: 308.25
+  end_seconds: 312.499252
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/east.png
+- sentence_id: hb-c01-u0018-s003
+  sv: De skogiga landskapen lockar turister, och turismen är en viktig näring i området.
+  ru: Лесистые пейзажи привлекают туристов, и туризм является важной отраслью экономики этого района.
+  scene_id: east
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0018-s003.wav
+  start_seconds: 314.083333
+  end_seconds: 321.397619
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0018-s004
+  sv: Också skogsindustrin och annan bioindustri och gruvindustrin och teknikindustrin är viktiga näringar.
+  ru: Важными отраслями экономики являются также лесная промышленность и другие производства на основе
+    биологического сырья, а также горнодобывающая и технологическая промышленность.
+  scene_id: east
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0018-s004.wav
+  start_seconds: 322.958333
+  end_seconds: 331.874796
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0019-s001
+  sv: Den nordligaste delen av Finland är Lappland.
+  ru: Самая северная часть Финляндии — Лапландия.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0019-s001.wav
+  start_seconds: 334.125
+  end_seconds: 338.583231
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0019-s002
+  sv: I de nordligaste delarna av Lappland är klimatet så kallt att träden inte växer, och snön täcker
+    marken i genomsnitt sju månader per år.
+  ru: В самых северных частях Лапландии климат настолько холодный, что деревья не растут, а снег покрывает
+    землю в среднем семь месяцев в году.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0019-s002.wav
+  start_seconds: 340.166667
+  end_seconds: 352.217823
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0019-s003
+  sv: På andra håll i Lappland består landskapet av barrskog och det finns mycket myrar.
+  ru: В других частях Лапландии ландшафт образуют хвойные леса, и там много болот.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0019-s003.wav
+  start_seconds: 353.791667
+  end_seconds: 360.966633
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0019-s004
+  sv: I Lappland finns det också höga, kala fjäll.
+  ru: В Лапландии также есть высокие безлесные сопки.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0019-s004.wav
+  start_seconds: 362.541667
+  end_seconds: 366.790918
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0020-s001
+  sv: Lappland är stort till ytan men det bor lite människor där.
+  ru: Лапландия занимает большую площадь, но людей там живёт мало.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0020-s001.wav
+  start_seconds: 368.375
+  end_seconds: 373.66915
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0020-s002
+  sv: Den största staden är Rovaniemi.
+  ru: Самый большой город — Рованиеми.
+  scene_id: north
+  visual_cue: Stable Finland outline with source-named city pointer from verified Natural Earth coordinates;
+    no invented regional borders.
+  asset_ids:
+  - location_maps
+  text_highlights:
+  - Rovaniemi
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0020-s002.wav
+  start_seconds: 375.25
+  end_seconds: 378.524014
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/maps/north.png
+- sentence_id: hb-c01-u0020-s003
+  sv: Turismen är en viktig näring, och särskilt på vintern kommer det turister från olika håll i världen
+    för att besöka Jultomtens by.
+  ru: Туризм — важная отрасль экономики, и особенно зимой сюда приезжают туристы из разных уголков мира,
+    чтобы посетить Деревню Санта-Клауса.
+  scene_id: north
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0020-s003.wav
+  start_seconds: 380.083333
+  end_seconds: 391.019932
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0020-s004
+  sv: I Lappland ligger även samernas hembygdsområde.
+  ru: В Лапландии также расположена территория традиционного проживания саамов (samernas hembygdsområde).
+  scene_id: north
+  visual_cue: Steady source-based Lappland place/activity graphic, with only labels from this consecutive
+    scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0020-s004.wav
+  start_seconds: 392.583333
+  end_seconds: 396.902245
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/north.png
+- sentence_id: hb-c01-u0021-s001
+  sv: Längs kusten i Sydvästra Finland finns det skärgård.
+  ru: Вдоль побережья Юго-Западной Финляндии простираются шхеры.
+  scene_id: islands
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0021-s001.wav
+  start_seconds: 399.166667
+  end_seconds: 404.182177
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0021-s002
+  sv: Kusten är full av vikar, uddar och små öar.
+  ru: Побережье изобилует заливами, мысами и небольшими островами.
+  scene_id: islands
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0021-s002.wav
+  start_seconds: 405.75
+  end_seconds: 410.138571
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0021-s003
+  sv: Eftersom området ligger i söder och omges av hav, är vintrarna ganska milda och snöfattiga.
+  ru: Поскольку этот район расположен на юге и окружён морем, зимы здесь довольно мягкие и малоснежные.
+  scene_id: islands
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0021-s003.wav
+  start_seconds: 411.708333
+  end_seconds: 419.858537
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0022-s001
+  sv: Ett av de stora skärgårdsområdena är Åland.
+  ru: Один из крупных шхерных районов — Аландские острова.
+  scene_id: islands
+  visual_cue: Steady source-based Skärgården och Åland place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0022-s001.wav
+  start_seconds: 421.416667
+  end_seconds: 425.805238
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/islands.png
+- sentence_id: hb-c01-u0022-s002
+  sv: Åland har självstyre, men är en del av Finland.
+  ru: Аландские острова обладают самоуправлением, но входят в состав Финляндии.
+  scene_id: islands
+  visual_cue: Steady source-based Skärgården och Åland place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0022-s002.wav
+  start_seconds: 427.375
+  end_seconds: 431.972551
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/islands.png
+- sentence_id: hb-c01-u0022-s003
+  sv: Ålands huvudstad är Mariehamn.
+  ru: Столица Аландских островов — Мариехамн.
+  scene_id: islands
+  visual_cue: Stable Finland outline with source-named city pointer from verified Natural Earth coordinates;
+    no invented regional borders.
+  asset_ids:
+  - location_maps
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0022-s003.wav
+  start_seconds: 433.541667
+  end_seconds: 436.606701
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/maps/islands.png
+- sentence_id: hb-c01-u0022-s004
+  sv: Viktiga näringar i skärgården är sjöfart och turism.
+  ru: Важные отрасли экономики в шхерах — судоходство и туризм.
+  scene_id: islands
+  visual_cue: Steady source-based Skärgården och Åland place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0022-s004.wav
+  start_seconds: 438.166667
+  end_seconds: 443.321497
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/islands.png
+- sentence_id: hb-c01-u0022-s005
+  sv: Det enda officiella språket på Åland är svenska, och i övrigt är skärgården också delvis ett svenskspråkigt
+    område.
+  ru: Единственный официальный язык на Аландских островах — шведский, а остальные шхерные районы также
+    частично шведоязычны.
+  scene_id: islands
+  visual_cue: Steady source-based Skärgården och Åland place/activity graphic, with only labels from this
+    consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-regioner/narration/hb-c01-u0022-s005.wav
+  start_seconds: 444.875
+  end_seconds: 454.97568
+  display_segments: []
+  render_image: studio/media/hb-c01-regioner/graphics/islands.png
+render:
+  music_path: studio/media/hb-c01-regioner/sources/music.mp3
+  background_image: studio/media/hb-c01-regioner/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: Smooth140second sinusoidal diagonal pan/zoom cycles across one global timeline; starts at
+      midpoint moving immediately, no sentence resets, smooth reversals.
+    motion_cycles: 3.4785714285714286
+  music_gain_adjustment_db: 2.0
+  music_loop_crossfade_seconds: 4
+  adaptation_notes:
+  - Background photograph cropped, blurred, darkened and continuously panned/zoomed; useful foreground
+    held steady.
+  - 'Floating Cities: excerpt or same-track repeats with4second crossfades as needed, fades, normalization
+    and speech ducking.'
+  - Source-derived text graphics repeat source labels; no invented boundaries or additional narrated claims.
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk originaltext med rysk översättning.
+    - Yhteiskuntaorientaatio.fi — Finlands läge och olika områden
+    - Finlands Flyktinghjälp · Utbildningsstyrelsen · UF-centret
+    - Urval, tvåspråkig presentation och syntetisk berättarröst. Fullständiga källor och villkor medföljer
+      videon.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Töölönlahti park — Yehia Eweis / Helsinki City Museum · CC BY 4.0
+    - Koli 14052011 10 — Pitke · CC BY 3.0
+    - 'Kartdata: Natural Earth 5.1.2 · Public domain'
+    - Fotografier via Wikimedia Commons. Beskärning, bakgrundsrörelse och toning.
+    - Floating Cities — Kevin MacLeod (incompetech.com) · CC BY 4.0. Utdrag, toningar, volymanpassning
+      och eventuell upprepning.
+    - 'Källbaserad textgrafik · Svensk berättarröst: Supertonic 3 F1'

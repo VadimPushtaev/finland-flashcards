@@ -1,0 +1,484 @@
+schema_version: 1
+section_id: hb-c01-flyttning
+chapter_id: hb-c01
+title_sv: Ut- och invandring
+title_ru: Эмиграция и иммиграция
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-flyttning.yaml
+example_only: false
+source_section_sha256: 5539fd6c649c6d0b4aa517d539f3117a11a470e3f135b6973c7b0dec4aad1087
+translation_file_sha256: a329cd5242cb3ca733954aa038d893d5e479d53943a37250f03f9b32639c2fb9
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080,24fps. Chapter1 evergreen #102e2b, ivory #f6f1e6, muted sage #bdd3c9 and gold #e7bc70.
+    Fixed right bilingual panel, Swedish above Russian. Arial Bold48 and Arial40; long pairs use the renderer’s
+    recorded fitted sizes. Left useful-image area remains open when no source-based graphic clarifies
+    a fact.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki Central railway station main entrance, Finland, 2022 December.jpg by Safa
+    Hovinen continuously as decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal
+    pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in
+    motion, with no sentence resets. Total cycles=1.4029761904761904. Foreground and bilingual text remain
+    fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Relaxing Piano Music by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter's
+    distinct instrumental track. Original master 1494.074 seconds; prepared lossless stereo bed 196.417
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Generate only selected exact Swedish source words, dates and figures as calm high-contrast
+    foreground typography; preserve qualifiers in body text. Do not use anonymous portraits as evidence
+    of ethnicity. Leave the foreground area open in remaining sentences. Suppress the renderer’s duplicate
+    bottom caption for these cards with render_caption:false; retain inline highlighting in the Swedish
+    body text.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: emigration
+  description: Work and better lives abroad.
+- id: postwar_moves
+  description: Post-war urbanization and emigration to Sweden.
+- id: new_immigration
+  description: Immigration after the Cold War.
+- id: refugees
+  description: Refugee arrivals from named historical events.
+- id: today
+  description: Current migration reasons and nationalities.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Relaxing Piano Music by Kevin MacLeod with verified CC BY4.0 terms; explicit crossfade
+    repeat if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c01-u0060-s001
+  sv: Tidigare var Finland ett fattigt land, som många flyttade ifrån till andra länder för att hitta
+    arbete och få ett bättre liv.
+  ru: Раньше Финляндия была бедной страной, из которой многие уезжали в другие страны, чтобы найти работу
+    и улучшить свою жизнь.
+  scene_id: emigration
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.907959
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0060-s002
+  sv: På 1800-talet flyttade finländare i synnerhet till Nordamerika.
+  ru: В XIX веке жители Финляндии переселялись прежде всего в Северную Америку.
+  scene_id: emigration
+  visual_cue: 'Show steady source-only typography: 1800-talet, Nordamerika.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1800-talet
+  - Nordamerika
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: På artonhundratalet flyttade finländare i synnerhet till Nordamerika.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s002.wav
+  start_seconds: 15.666667
+  end_seconds: 21.796735
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/01.png
+  render_caption: false
+- sentence_id: hb-c01-u0060-s003
+  sv: Efter andra världskriget började finländarna i allt högre grad flytta från landet till städerna.
+  ru: После Второй мировой войны жители Финляндии стали всё чаще переезжать из сельской местности в города.
+  scene_id: postwar_moves
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s003.wav
+  start_seconds: 24.25
+  end_seconds: 32.539524
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0060-s004
+  sv: Många flyttade utomlands för arbete, eftersom det inte fanns arbete för alla i Finland.
+  ru: Многие уезжали за границу на заработки, поскольку работы в Финляндии хватало не всем.
+  scene_id: postwar_moves
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s004.wav
+  start_seconds: 34.291667
+  end_seconds: 41.814932
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0060-s005
+  sv: På 1960- och 1970-talen flyttade som mest tiotusentals finländare till Sverige varje år för att
+    få arbete.
+  ru: В 1960-е и 1970-е годы в пиковые периоды десятки тысяч жителей Финляндии ежегодно переезжали в Швецию,
+    чтобы найти работу.
+  scene_id: postwar_moves
+  visual_cue: 'Show steady source-only typography: 1960- och 1970-talen, Sverige.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1960- och 1970-talen
+  - Sverige
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: På nittonhundrasextiotalet och nittonhundrasjuttiotalet flyttade som mest tiotusentals finländare
+      till Sverige varje år för att få arbete.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged. Use complete decade words after ASR flagged1970 as1920 in the
+      abbreviated hyphenated trial.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s005.wav
+  start_seconds: 43.583333
+  end_seconds: 55.42551
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/04.png
+  render_caption: false
+- sentence_id: hb-c01-u0060-s006
+  sv: Finländarna var länge den största gruppen nyanlända i Sverige.
+  ru: Жители Финляндии долгое время составляли самую большую группу вновь прибывших в Швецию.
+  scene_id: postwar_moves
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0060-s006.wav
+  start_seconds: 57.208333
+  end_seconds: 63.129422
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0061-s001
+  sv: En större invandring till Finland började egentligen först efter kalla krigets slut i början av
+    1990-talet.
+  ru: Более масштабная иммиграция в Финляндию фактически началась лишь после окончания холодной войны
+    в начале 1990-х годов.
+  scene_id: new_immigration
+  visual_cue: 'Show steady source-only typography: 1990-talet.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1990-talet
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: En större invandring till Finland började egentligen först efter kalla krigets slut i början
+      av nittonhundranittiotalet.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0061-s001.wav
+  start_seconds: 65.583333
+  end_seconds: 76.380612
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/06.png
+  render_caption: false
+- sentence_id: hb-c01-u0061-s002
+  sv: Till följd av Sovjetunionens fall flyttade ryssar och ester samt också somaliska asylsökande till
+    Finland.
+  ru: Вследствие распада Советского Союза в Финляндию переехали русские и эстонцы, а также сомалийские
+    просители убежища.
+  scene_id: new_immigration
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0061-s002.wav
+  start_seconds: 78.166667
+  end_seconds: 87.779728
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0062-s001
+  sv: Olika världshändelser har under de senaste årtiondena fört fler människor till Finland från olika
+    länder.
+  ru: В последние десятилетия различные мировые события привели к тому, что в Финляндию приехало больше
+    людей из разных стран.
+  scene_id: new_immigration
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s001.wav
+  start_seconds: 89.541667
+  end_seconds: 98.736769
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0062-s002
+  sv: Finland tog emot små mängder flyktingar på 1970- och 1980-talen först från Chile och sedan från
+    Vietnam.
+  ru: В 1970-е и 1980-е годы Финляндия принимала небольшое число беженцев — сначала из Чили, а затем из
+    Вьетнама.
+  scene_id: refugees
+  visual_cue: 'Show steady source-only typography: 1970- och 1980-talen, Chile, Vietnam.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1970- och 1980-talen
+  - Chile
+  - Vietnam
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Finland tog emot små mängder flyktingar på nittonhundrasjuttio- och nittonhundraåttiotalen först
+      från Chile och sedan från Vietnam.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s002.wav
+  start_seconds: 101.208333
+  end_seconds: 112.423571
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/09.png
+  render_caption: false
+- sentence_id: hb-c01-u0062-s003
+  sv: Till följd av krigen som ledde till Jugoslaviens upplösning på 1990-talet kom det flyktingar från
+    Balkanländerna.
+  ru: Вследствие войн, приведших к распаду Югославии в 1990-е годы, прибыли беженцы из балканских стран.
+  scene_id: refugees
+  visual_cue: 'Show steady source-only typography: 1990-talet, Balkanländerna.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1990-talet
+  - Balkanländerna
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Till följd av krigen som ledde till Jugoslaviens upplösning på nittonhundra nittiotalet kom
+      det flyktingar från Balkanländerna.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged. Separate century and decade after ASR flagged1990 as1999 in the
+      first trial.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0062-s003.wav
+  start_seconds: 114.208333
+  end_seconds: 125.284252
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/10.png
+  render_caption: false
+- sentence_id: hb-c01-u0063-s001
+  sv: I dag kommer en stor del av invandrarna till Finland på grund av arbete, studier eller familjen.
+  ru: Сегодня значительная часть иммигрантов приезжает в Финляндию в связи с работой, учёбой или по семейным
+    причинам.
+  scene_id: today
+  visual_cue: 'Show steady source-only typography: arbete, studier, familjen.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - arbete
+  - studier
+  - familjen
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s001.wav
+  start_seconds: 127.75
+  end_seconds: 136.527143
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/11.png
+  render_caption: false
+- sentence_id: hb-c01-u0063-s002
+  sv: Endast en liten del av de som flyttar till Finland är kvotflyktingar eller kommer till landet som
+    asylsökande.
+  ru: Лишь небольшая часть тех, кто переезжает в Финляндию, относится к беженцам, принимаемым по квоте,
+    или приезжает в страну в качестве просителей убежища.
+  scene_id: today
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s002.wav
+  start_seconds: 138.291667
+  end_seconds: 147.626088
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0063-s003
+  sv: År 2023 var de åtta största utländska nationaliteterna i Finland i storleksordning ester, ryssar,
+    ukrainare, irakier, kineser, indier, filippinare och afghaner.
+  ru: В 2023 году восемь самых многочисленных групп иностранцев в Финляндии составляли, в порядке убывания
+    численности, граждане Эстонии, России, Украины, Ирака, Китая, Индии, Филиппин и Афганистана.
+  scene_id: today
+  visual_cue: 'Show steady source-only typography: 2023, ester, ryssar, ukrainare, irakier, kineser, indier,
+    filippinare, afghaner.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  - ester
+  - ryssar
+  - ukrainare
+  - irakier
+  - kineser
+  - indier
+  - filippinare
+  - afghaner
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  - Check the source nationality names ester, ryssar, ukrainare, irakier, kineser, indier, filippinare
+    and afghaner in the complete video; local ASR spelling varies.
+  speech_override:
+    text: År tvåtusentjugotre var de åtta största utländska nationaliteterna i Finland i storleksordning
+      ester, ryssar, ukrainare, irakier, kineser, indier, filippinare och afghaner.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-flyttning/narration/hb-c01-u0063-s003.wav
+  start_seconds: 149.416667
+  end_seconds: 164.184558
+  display_segments: []
+  render_image: studio/media/hb-c01-flyttning/cards/13.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c01-flyttning/sources/music-bed.flac
+  background_image: studio/media/hb-c01-flyttning/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.4029761904761904
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands befolkning
+    - Finlands Flyktinghjälp · Utbildningsstyrelsen · UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Urval och formgivning för denna video.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki Central railway station main entrance, Finland, 2022 December.jpg — Safa Hovinen · CC BY
+      2.0
+    - Relaxing Piano Music — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, eventuell korsfadad upprepning och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Central_railway_station_main_entrance,_Finland,_2022_December.jpg
+    description: Helsingin päärautatieasema
+    license: CC BY 2.0
