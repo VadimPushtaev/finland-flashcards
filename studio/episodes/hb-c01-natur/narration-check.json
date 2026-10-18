@@ -1,0 +1,79 @@
+{
+  "section_id": "hb-c01-natur",
+  "method": "faster-whisper small pinned model; Swedish beam5 CPU int8, local only",
+  "scope": "All eight final narration clips. Diagnostic transcript, not listening or pronunciation approval.",
+  "records": [
+    {
+      "sentence_id": "hb-c01-u0023-s001",
+      "tts_input": "Finland är ett glesbebyggt land med mycket skogar och sjöar samt orörd natur.",
+      "asr_text": "Finland är ett glesbebyggt land med mycket skogar och sjuar samt orörd natur.",
+      "normalized_match": false,
+      "sha256": "819bb23c3bfd9fd1d6e8b96bb74a5a56b6bedc718b4f6077faf433ac4d462e08"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s002",
+      "tts_input": "Finländarna uppskattar naturen och vistas gärna i den.",
+      "asr_text": "Fin länderna uppskattar naturen och vistas gärna i den.",
+      "normalized_match": false,
+      "sha256": "f541ce18c4c81506bc9021d4afd2467f6872d3019221cd9021271646e8115a7f"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s003",
+      "tts_input": "Många människor gillar till exempel fiske, terrängcykling, vinterbadande och vandring.",
+      "asr_text": "Många människor gillar till exempel fiske, terrängsjukling, vinterbadande och vandring.",
+      "normalized_match": false,
+      "sha256": "933755eace846b64873b9482c062e01fd2ea4ffebd014ddaf2c3fb03f3c30b81"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s004",
+      "tts_input": "Det är inte långt till skogen ens i huvudstaden.",
+      "asr_text": "Det är inte långt till skogen ens i huvudstaden.",
+      "normalized_match": true,
+      "sha256": "6338f02f312442b09d9260f7989e55538909dc8778f4cc5ca4ea047df2d97e5a"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s005",
+      "tts_input": "Städerna har också många parker och andra grönområden där man kan vistas.",
+      "asr_text": "Städerna har också många parker och andra grönområden där man kan vistas.",
+      "normalized_match": true,
+      "sha256": "1a7f92e6f5484fcc1419d6139fe8f0a243b72bb0ed55f95c17aaab50379b1b5d"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s006",
+      "tts_input": "För finländarna är en snygg och ren natur och miljö viktiga.",
+      "asr_text": "För finländerna är en snygg och ren natur och miljö viktiga.",
+      "normalized_match": false,
+      "sha256": "de61296c599d888668b5283d3c8f18f3b8c0c3f671d013b9f2de53bb845445ea"
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s007",
+      "tts_input": "Att skräpa ner anses hänsynslöst och oartigt och man kan också bötfällas för det.",
+      "asr_text": "Att skräpa ner anses hänsynslöst och oortid om man kan också bötfällas för det.",
+      "normalized_match": false,
+      "sha256": "6ee1d36d44bf9b7eb63b39594da2f370bd2073dfdd1792c192980173a001cad0"
+    },
+    {
+      "sentence_id": "hb-c01-u0027-s001",
+      "tts_input": "Finlands nationaldjur är björnen.",
+      "asr_text": "Finlands nationaldjur är Björnen.",
+      "normalized_match": true,
+      "sha256": "f4f801c78e3c50fbcce228e687d554799736fa8f4d0e47b6e6b074b6cb6fa3f4"
+    }
+  ],
+  "findings": [
+    "ASR writes sjöar as sjuar in sentence1; ambiguous vowel/recognition error.",
+    "ASR segments or spells finländarna as Fin länderna/finländerna in sentences2/6.",
+    "ASR writes terrängcykling as terrängsjukling in sentence3.",
+    "Sentence7 ASR differs around oartigt och: oortid om. A fresh samevoice/seed42 candidate yielded årtid och and buttfällas, so original take retained; expert auditory judgement unavailable.",
+    "Sentences4/5/8 recover exact wording after punctuation/case normalization."
+  ],
+  "retry": {
+    "sentence_id": "hb-c01-u0023-s007",
+    "same_voice": true,
+    "input_unchanged": true,
+    "seed_scope": "fresh NumPy42 stream for single sentence",
+    "asr_text": "Att skräpa ner anses hänsynslöst och årtid och man kan också buttfällas för det.",
+    "outcome": "not selected; no clear diagnostic improvement"
+  },
+  "listening_review": "Not performed by agent; user reviews complete video. No claim of approval."
+}

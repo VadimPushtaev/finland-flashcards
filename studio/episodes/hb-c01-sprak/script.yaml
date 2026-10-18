@@ -1,0 +1,485 @@
+schema_version: 1
+section_id: hb-c01-sprak
+chapter_id: hb-c01
+title_sv: Nationalspråk och andra språk
+title_ru: Национальные языки и другие языки
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-sprak.yaml
+example_only: false
+source_section_sha256: d563ede9d08262306727c4ddb8983e8d00d8fc0595b277ed2f9a61571057d0ff
+translation_file_sha256: f4e58ce2b77f3365775f3dd64580d14a573fa118a68b2205dc7a1cdecfbaf588
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080,24fps. Chapter1 evergreen #102e2b, ivory #f6f1e6, muted sage #bdd3c9 and gold #e7bc70.
+    Fixed right bilingual panel, Swedish above Russian. Arial Bold48 and Arial40; long pairs use the renderer’s
+    recorded fitted sizes. Left useful-image area remains open when no source-based graphic clarifies
+    a fact.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Bilingual street sign of Hietalahdenkatu in Helsinki, Finland, 2020.jpg by Henry
+    Söderlund continuously as decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal
+    pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in
+    motion, with no sentence resets. Total cycles=1.3148809523809524. Foreground and bilingual text remain
+    fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Evening Fall (Harp) by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter's
+    distinct instrumental track. Original master 145.219 seconds; prepared lossless stereo bed 184.083
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Generate only selected exact Swedish source words, dates and figures as calm high-contrast
+    foreground typography; preserve qualifiers in body text. Do not use anonymous portraits as evidence
+    of ethnicity. Leave the foreground area open in remaining sentences. Suppress the renderer’s duplicate
+    bottom caption for these cards with render_caption:false; retain inline highlighting in the Swedish
+    body text.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: national_languages
+  description: Two national languages and historical language communities.
+- id: language_varieties
+  description: Finland Swedish and traditional minority languages.
+- id: multilingual_finland
+  description: Languages heard in Finland today.
+- id: finland_swedes
+  description: Finland Swedish population, regions and cultural institutions.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Evening Fall Harp by Kevin MacLeod with verified CC BY4.0 terms; explicit crossfade repeat
+    if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c01-u0044-s001
+  sv: I Finland finns det två nationalspråk, finska och svenska.
+  ru: В Финляндии два национальных языка — финский и шведский.
+  scene_id: national_languages
+  visual_cue: 'Show steady source-only typography: finska, svenska.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - finska
+  - svenska
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0044-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.753129
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/00.png
+  render_caption: false
+- sentence_id: hb-c01-u0044-s002
+  sv: Omkring 85 procent av finländarna hade år 2023 finska som modersmål.
+  ru: В 2023 году финский был родным языком примерно для 85 процентов жителей Финляндии.
+  scene_id: national_languages
+  visual_cue: 'Show steady source-only typography: 85 procent, 2023.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 85 procent
+  - '2023'
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Omkring åttiofem procent av finländarna hade år tvåtusentjugotre finska som modersmål.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0044-s002.wav
+  start_seconds: 10.541667
+  end_seconds: 18.343571
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/01.png
+  render_caption: false
+- sentence_id: hb-c01-u0044-s003
+  sv: De svenskspråkiga i Finland utgjorde omkring fem procent av befolkningen.
+  ru: Шведоязычные жители Финляндии составляли около пяти процентов населения.
+  scene_id: national_languages
+  visual_cue: 'Show steady source-only typography: fem procent.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - fem procent
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0044-s003.wav
+  start_seconds: 20.125
+  end_seconds: 26.742687
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/02.png
+  render_caption: false
+- sentence_id: hb-c01-u0045-s001
+  sv: Svenskan som talas i Finland är finlandssvenska.
+  ru: Шведский язык, на котором говорят в Финляндии, — это финляндский вариант шведского языка.
+  scene_id: language_varieties
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0045-s001.wav
+  start_seconds: 29.208333
+  end_seconds: 34.014864
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0045-s002
+  sv: Uttalet skiljer sig något från svenskan i Sverige.
+  ru: Произношение несколько отличается от произношения шведского языка в Швеции.
+  scene_id: language_varieties
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0045-s002.wav
+  start_seconds: 35.791667
+  end_seconds: 40.598197
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0046-s001
+  sv: Andra språk som använts länge i Finland är de samiska språken, den finländska romanin, karelska
+    språket och teckenspråken.
+  ru: Другие языки, которые издавна используются в Финляндии, — это саамские языки, финляндский вариант
+    романи, карельский язык и жестовые языки.
+  scene_id: language_varieties
+  visual_cue: 'Show steady source-only typography: de samiska språken, den finländska romanin, karelska
+    språket, teckenspråken.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - de samiska språken
+  - den finländska romanin
+  - karelska språket
+  - teckenspråken
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0046-s001.wav
+  start_seconds: 42.375
+  end_seconds: 52.963299
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/05.png
+  render_caption: false
+- sentence_id: hb-c01-u0046-s002
+  sv: De samiska språken är de språk som talas av ursprungsbefolkningen i Lappland, och de är officiella
+    språk inom samernas hembygdsområde.
+  ru: Саамские языки — это языки, на которых говорит коренное население Лапландии, и они являются официальными
+    языками на территории исконного проживания саамов.
+  scene_id: language_varieties
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0046-s002.wav
+  start_seconds: 54.75
+  end_seconds: 66.452857
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0046-s003
+  sv: I Finland talas många olika språk.
+  ru: В Финляндии говорят на множестве разных языков.
+  scene_id: multilingual_finland
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0046-s003.wav
+  start_seconds: 68.916667
+  end_seconds: 72.39966
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0046-s004
+  sv: Några vanliga språk är ryska, estniska, engelska, somaliska och arabiska.
+  ru: Среди распространённых языков — русский, эстонский, английский, сомалийский и арабский.
+  scene_id: multilingual_finland
+  visual_cue: 'Show steady source-only typography: ryska, estniska, engelska, somaliska, arabiska.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - ryska
+  - estniska
+  - engelska
+  - somaliska
+  - arabiska
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0046-s004.wav
+  start_seconds: 74.166667
+  end_seconds: 81.202313
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/08.png
+  render_caption: false
+- sentence_id: hb-c01-u0047-s001
+  sv: Finlandssvenskar är finländare som talar svenska som sitt modersmål.
+  ru: Финляндские шведы — это жители Финляндии, для которых шведский является родным языком.
+  scene_id: finland_swedes
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0047-s001.wav
+  start_seconds: 83.666667
+  end_seconds: 90.145034
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0047-s002
+  sv: År 2023 fanns det omkring 286 000 människor i Finland med svenska som modersmål.
+  ru: В 2023 году в Финляндии было около 286 000 человек, для которых шведский был родным языком.
+  scene_id: finland_swedes
+  visual_cue: 'Show steady source-only typography: 2023, 286 000.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  - 286 000
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: År två tusen tjugotre fanns det omkring tvåhundra åttiosex tusen människor i Finland med svenska
+      som modersmål.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged. Separate year words after ASR flagged2023 as2021 in the first
+      trial. Separate number components after the year-corrected trial ASR flagged286000 as216000.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0047-s002.wav
+  start_seconds: 91.916667
+  end_seconds: 101.460068
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/10.png
+  render_caption: false
+- sentence_id: hb-c01-u0047-s003
+  sv: Finlandssvenskarna bor i huvudsak i Nyland, Österbotten, Åboland och på Åland.
+  ru: Финляндские шведы живут главным образом в Уусимаа, Остроботнии, Турунмаа и на Аландских островах.
+  scene_id: finland_swedes
+  visual_cue: 'Show steady source-only typography: Nyland, Österbotten, Åboland, Åland.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Nyland
+  - Österbotten
+  - Åboland
+  - Åland
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  - Check the source Swedish regional names Nyland, Österbotten, Åboland and Åland in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0047-s003.wav
+  start_seconds: 103.25
+  end_seconds: 110.703605
+  display_segments: []
+  render_image: studio/media/hb-c01-sprak/cards/11.png
+  render_caption: false
+- sentence_id: hb-c01-u0048-s001
+  sv: I Finlands historia har det finska och det svenska språket länge levt sida vid sida.
+  ru: В истории Финляндии финский и шведский языки долгое время существовали бок о бок.
+  scene_id: finland_swedes
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0048-s001.wav
+  start_seconds: 112.458333
+  end_seconds: 119.772619
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0048-s002
+  sv: Det nuvarande Finlands område var länge en del av Sverige.
+  ru: Территория нынешней Финляндии долгое время была частью Швеции.
+  scene_id: finland_swedes
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0048-s002.wav
+  start_seconds: 121.541667
+  end_seconds: 126.835816
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0048-s003
+  sv: Därför har Finland två nationalspråk.
+  ru: Поэтому у Финляндии два национальных языка.
+  scene_id: finland_swedes
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0048-s003.wav
+  start_seconds: 128.625
+  end_seconds: 132.247313
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0048-s004
+  sv: Finlandssvenskarna har en egen språklig och kulturell identitet och i Finland finns det svenskspråkiga
+    skolor, universitet, tidningar, radiokanaler, teatrar och organisationer samt en svenskspråkig garnison.
+  ru: У финляндских шведов своя языковая и культурная идентичность, и в Финляндии есть шведоязычные школы,
+    университеты, газеты, радиоканалы, театры и организации, а также шведоязычный гарнизон.
+  scene_id: finland_swedes
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c01-sprak/narration/hb-c01-u0048-s004.wav
+  start_seconds: 134.0
+  end_seconds: 151.554286
+  display_segments: []
+  render_image: null
+  text_style:
+    sv_size: 44
+    ru_size: 36
+render:
+  music_path: studio/media/hb-c01-sprak/sources/music-bed.flac
+  background_image: studio/media/hb-c01-sprak/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.3148809523809524
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi · Finlands Flyktinghjälp
+    - Utbildningsstyrelsen · UF-centret
+    - InfoFinland.fi · CC BY4.0 där angivet i källregistret.
+    - Fullständiga källor och licenser i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Bilingual street sign of Hietalahdenkatu in Helsinki, Finland, 2020.jpg — Henry Söderlund · CC BY
+      2.0
+    - Evening Fall (Harp) — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, eventuell korsfadad upprepning och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Bilingual_street_sign_of_Hietalahdenkatu_in_Helsinki,_Finland,_2020.jpg
+    description: Finnish-Swedish sign at Hietalahdenkatu / Sandsviksgatan, located in Kamppi, Helsinki.
+    license: CC BY 2.0

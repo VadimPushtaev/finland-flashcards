@@ -12,7 +12,7 @@ Prepared locally and accepted by the user in the complete video on 2026-10-17.
 | Music | [Light Thought var 1](../../media/sources/music.mp3), Kevin MacLeod, CC BY 4.0 |
 | Narration | 14 Supertonic 3 F1 clips, Swedish, 44.1 kHz mono; approved WAVs retained in Git |
 
-The [accepted video](../../../videos/homebrew/hb-c01-lage.mp4) includes narration,
+The [accepted video](../../../videos/homebrew/hb-c01-01-lage.mp4) includes narration,
 music and final layout. Temporary audition audio and review previews were removed.
 Source media and maps are local caches restored by the shared asset tools.
 

@@ -1,0 +1,273 @@
+schema_version: 1
+section_id: hb-c01-natur
+chapter_id: hb-c01
+title_sv: Natur och friluftsliv
+title_ru: Природа и отдых на свежем воздухе
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-natur.yaml
+example_only: false
+source_section_sha256: 86da6726a5b0f97e41d4335ed9bd75afea8949d2c461141a1f2721da37b03d48
+translation_file_sha256: 4408feb96dd3b270760462b0de3238d8b42b08ae7e34f767709b69a1d7a0c296
+episode_decisions:
+- id: opening
+  decision: Unspoken bilingual source heading for three seconds; preserve all exact body sentences and
+    Russian translations in source order.
+  status: proposed
+  resolve_during: script
+- id: palette_layout
+  decision: 'Use the shared Chapter 1 evergreen #102e2b, cream #f6f1e6, sage #bdd3c9 and gold #e7bc70
+    palette. Render 1920×1080 at24fps. Stable right text panel (890,165)-(1860,980), Swedish Arial Bold48
+    above Russian Arial40 with 5% margins; reduce font only where necessary and record each exception.
+    Steady useful-image panel left; leave empty when no useful illustration.'
+  status: proposed
+  resolve_during: script
+- id: pacing
+  decision: Show each sentence pair0.25seconds before speech, retain through1.3second pause; use2seconds
+    at scene boundaries. Do not accelerate narration.
+  status: proposed
+  resolve_during: script
+- id: voice
+  decision: Shared Supertonic3 F1 Sweden Swedish sv local ONNX CPU,32steps,speed0.95,seed42,44100Hz mono
+    PCM16. Review pronunciation within complete video.
+  status: proposed
+  resolve_during: assets
+- id: background
+  decision: Use a distinct verified photograph throughout, darken42%,blur2.5px. Linear full-episode diagonal
+    pan crop position(0.15,0.15)→(0.85,0.85), zoom1.06→1.219, fractional bicubic sampling. For this longer
+    episode use additional slow cyclic motion to keep motion visible within5–10seconds if supported; otherwise
+    inspect and adjust exact zoom after timeline.
+  status: proposed
+  resolve_during: script
+- id: music
+  decision: Use Garden Music by Kevin MacLeod, CC BY4.0, unique to this subchapter. Keep cohesive bed
+    throughout with shared accepted +2dB music level, fades and speech ducking. If shorter than full episode,
+    repeat same track with4second equal-power crossfades, explicitly disclosed in credits.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Use two readable15second credit cards and accompanying full credits file. Whole-video user
+    review remains pending; no standalone listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source-content changes or new claims. Foreground source-based graphics repeat exact Swedish
+    phrases; geographical groupings are landscape descriptions, not administrative borders.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: landscape
+  description: 'Sentences1–2: Skogar och sjöar; preserve exact source order.'
+- id: outdoors
+  description: 'Sentences3–5: Friluftsliv och grönområden; preserve exact source order.'
+- id: care
+  description: 'Sentences6–7: Ren natur och miljö; preserve exact source order.'
+- id: bear
+  description: 'Sentences8–8: Nationaldjuret; preserve exact source order.'
+asset_requests:
+- id: decorative_background
+  kind: background
+  description: 'Pitke photo Koli1405201110: forest and Lake Pielinen from Ukko-Koli, CC BY3.0. Decorative
+    natural setting, no claim all activities occur at this place.'
+  fallback: Another verified, distinct Finnish photograph under reusable terms; revise only visual choice.
+- id: source_graphics
+  kind: foreground
+  description: Steady source-based text graphics with exact Swedish place names or activity words from
+    the corresponding source scene; no map borders or invented facts.
+  fallback: Leave useful-image area open and retain text highlights.
+- id: music_bed
+  kind: music
+  description: Garden Music — Kevin MacLeod, CC BY4.0, official Incompetech master.
+  fallback: Another distinct gentle instrumental licensed for reuse; record replacement in script.
+- id: narration
+  kind: narration
+  description: 8 local female Swedish sentence WAVs with shared F1 settings.
+  fallback: Regenerate a problematic take locally with same voice and documented speech-only expansion.
+- id: bear_photo
+  kind: foreground
+  description: Verified photograph of brown bear, shown only for source national-animal sentence; source
+    geography not asserted.
+  fallback: Use exact source word björnen as a text graphic.
+sentences:
+- sentence_id: hb-c01-u0023-s001
+  sv: Finland är ett glesbebyggt land med mycket skogar och sjöar samt orörd natur.
+  ru: Финляндия — страна с редкой застройкой, множеством лесов и озёр и нетронутой природой.
+  scene_id: landscape
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.215986
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0023-s002
+  sv: Finländarna uppskattar naturen och vistas gärna i den.
+  ru: Жители Финляндии ценят природу и охотно проводят время на природе.
+  scene_id: landscape
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s002.wav
+  start_seconds: 11.791667
+  end_seconds: 17.016156
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0023-s003
+  sv: Många människor gillar till exempel fiske, terrängcykling, vinterbadande och vandring.
+  ru: Многим людям нравятся, например, рыбалка, езда на велосипеде по пересечённой местности, зимнее купание
+    и пешие походы.
+  scene_id: outdoors
+  visual_cue: Steady source-based Friluftsliv och grönområden place/activity graphic, with only labels
+    from this consecutive scene; no invented geography.
+  asset_ids:
+  - source_graphics
+  text_highlights:
+  - fiske
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s003.wav
+  start_seconds: 19.291667
+  end_seconds: 26.814932
+  display_segments: []
+  render_image: studio/media/hb-c01-natur/graphics/outdoors.png
+- sentence_id: hb-c01-u0023-s004
+  sv: Det är inte långt till skogen ens i huvudstaden.
+  ru: Даже в столице до леса недалеко.
+  scene_id: outdoors
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s004.wav
+  start_seconds: 28.375
+  end_seconds: 32.484932
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0023-s005
+  sv: Städerna har också många parker och andra grönområden där man kan vistas.
+  ru: В городах также много парков и других зелёных зон, где можно проводить время.
+  scene_id: outdoors
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights:
+  - grönområden
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s005.wav
+  start_seconds: 34.041667
+  end_seconds: 40.589694
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0023-s006
+  sv: För finländarna är en snygg och ren natur och miljö viktiga.
+  ru: Для жителей Финляндии важны опрятность и чистота природы и окружающей среды.
+  scene_id: care
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.3
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s006.wav
+  start_seconds: 42.875
+  end_seconds: 48.378129
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0023-s007
+  sv: Att skräpa ner anses hänsynslöst och oartigt och man kan också bötfällas för det.
+  ru: Мусорить считается неуважительным по отношению к другим и невежливым, и за это также могут оштрафовать.
+  scene_id: care
+  visual_cue: Keep useful-image area open to continuously moving decorative background; stable bilingual
+    text.
+  asset_ids:
+  - decorative_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0023-s007.wav
+  start_seconds: 49.958333
+  end_seconds: 56.92432
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0027-s001
+  sv: Finlands nationaldjur är björnen.
+  ru: Национальное животное-символ Финляндии — медведь.
+  scene_id: bear
+  visual_cue: Steady verified brown-bear photograph; source word björnen highlighted. No claim about photo
+    location.
+  asset_ids:
+  - bear_photo
+  text_highlights:
+  - björnen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.0
+  audio_path: studio/media/hb-c01-natur/narration/hb-c01-u0027-s001.wav
+  start_seconds: 59.208333
+  end_seconds: 62.621667
+  display_segments: []
+  render_image: studio/media/hb-c01-natur/sources/bear.jpg
+render:
+  music_path: studio/media/hb-c01-natur/sources/music-excerpt.mp3
+  background_image: studio/media/hb-c01-natur/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: continuous full-episode linear diagonal pan and15%relative zoom; no resets
+  music_gain_adjustment_db: 2.0
+  music_loop_crossfade_seconds: 4
+  adaptation_notes:
+  - Background photograph cropped, blurred, darkened and continuously panned/zoomed; useful foreground
+    held steady.
+  - 'Garden Music: excerpt or same-track repeats with4second crossfades as needed, fades, normalization
+    and speech ducking.'
+  - Source-derived text graphics repeat source labels; no invented boundaries or additional narrated claims.
+  - Garden Music master is41minutes; first180seconds stream-copied for efficient local decoding, no looping
+    required.
+  - Garden Music master is41minutes; use stream-copy excerpt of first180seconds to keep local decoding
+    bounded. No loop needed for this episode.
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk originaltext med rysk översättning.
+    - Finland – Lärobok i samhällsorientering · Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - InfoFinland.fi — Grundläggande information om Finland · CC BY4.0
+    - Urval, tvåspråkig presentation och syntetisk berättarröst. Fullständiga källor och villkor medföljer
+      videon.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Koli1405201110 — Pitke · CC BY3.0
+    - Brown Bear Sitting — Luke Jones · CC BY2.0
+    - Fotografier via Wikimedia Commons. Beskärning, bakgrundsrörelse och toning.
+    - Garden Music — Kevin MacLeod (incompetech.com) · CC BY4.0. Utdrag, toningar, volymanpassning och
+      eventuell upprepning.
+    - 'Källbaserad textgrafik · Svensk berättarröst: Supertonic3 F1'

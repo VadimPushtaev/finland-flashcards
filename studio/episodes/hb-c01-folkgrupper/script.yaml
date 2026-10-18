@@ -1,0 +1,975 @@
+schema_version: 1
+section_id: hb-c01-folkgrupper
+chapter_id: hb-c01
+title_sv: Folkgrupper och urfolk
+title_ru: Этнические группы и коренные народы
+source_path: data/homebrew/sv/chapters/01_finland_befolkningen_och_spraken.yaml
+translation_path: data/homebrew/ru/sections/hb-c01-folkgrupper.yaml
+example_only: false
+source_section_sha256: 3f716c4fd7e5c5f4355f18498d5a0000486c8e80ecae6b2cda43a7c647cdc139
+translation_file_sha256: 999d0165057f547f0b2d01918f31e8599247f1896f27e1d5505766b28cb310e5
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080,24fps. Chapter1 evergreen #102e2b, ivory #f6f1e6, muted sage #bdd3c9 and gold #e7bc70.
+    Fixed right bilingual panel, Swedish above Russian. Arial Bold48 and Arial40; long pairs use the renderer’s
+    recorded fitted sizes. Left useful-image area remains open when no source-based graphic clarifies
+    a fact.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Turku Cathedral and Aura River.jpg by Markus Koljonen (Dilaudid) continuously as
+    decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85)
+    and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=3.1529761904761906. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Meditation Impromptu 01 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter's
+    distinct instrumental track. Original master 212.820 seconds; prepared lossless stereo bed 441.417
+    seconds. Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Generate only selected exact Swedish source words, dates and figures as calm high-contrast
+    foreground typography; preserve qualifiers in body text. Do not use anonymous portraits as evidence
+    of ethnicity. Leave the foreground area open in remaining sentences. Suppress the renderer’s duplicate
+    bottom caption for these cards with render_caption:false; retain inline highlighting in the Swedish
+    body text.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: regional_roots
+  description: Regional identities and historical mixing.
+- id: sami
+  description: Indigenous roots, languages and traditions.
+- id: roma
+  description: Roma history, culture and life today.
+- id: tatars
+  description: Tatar community and arrival history.
+- id: jews
+  description: Jewish communities and languages.
+- id: karelian
+  description: Karelian language and post-war resettlement.
+- id: russian_speakers
+  description: Diverse Russian-speaking population.
+- id: estonian_speakers
+  description: Estonian language and migration.
+- id: newer_minorities
+  description: Newer communities and religious diversity.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Meditation Impromptu 01 by Kevin MacLeod with verified CC BY4.0 terms; explicit crossfade
+    repeat if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c01-u0049-s001
+  sv: Finlands befolkning har under årtusenden blandat sig med människogrupper som kommit hit från olika
+    väderstreck.
+  ru: На протяжении тысячелетий население Финляндии смешивалось с группами людей, приходившими сюда с
+    разных сторон.
+  scene_id: regional_roots
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0049-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.723741
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0049-s002
+  sv: Före det nationella uppvaknandet i början av 1800-talet ansåg man inte att det fanns ett enhetligt
+    folk i Finland.
+  ru: До национального пробуждения в начале XIX века не считалось, что в Финляндии существует единый народ.
+  scene_id: regional_roots
+  visual_cue: 'Show steady source-only typography: 1800-talet.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1800-talet
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Före det nationella uppvaknandet i början av artonhundratalet ansåg man inte att det fanns ett
+      enhetligt folk i Finland.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0049-s002.wav
+  start_seconds: 14.5
+  end_seconds: 24.80966
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/01.png
+  render_caption: false
+- sentence_id: hb-c01-u0049-s003
+  sv: Människor som bodde på olika håll i landet upplevde att de i huvudsak hörde till sin egen ort eller
+    sitt eget område.
+  ru: Люди, жившие в разных частях страны, ощущали свою принадлежность прежде всего к своей местности
+    или своему региону.
+  scene_id: regional_roots
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0049-s003.wav
+  start_seconds: 26.583333
+  end_seconds: 36.335714
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0049-s004
+  sv: Det finns fortfarande skillnader mellan olika områden i Finland när det gäller dialekter och seder
+    och bruk.
+  ru: Между разными регионами Финляндии до сих пор существуют различия в диалектах и обычаях.
+  scene_id: regional_roots
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0049-s004.wav
+  start_seconds: 38.125
+  end_seconds: 47.111122
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0050-s001
+  sv: Samerna är den enda erkända ursprungsbefolkningen inom Europeiska unionen.
+  ru: Саамы — единственный признанный коренной народ на территории Европейского союза (Europeiska unionen).
+  scene_id: sami
+  visual_cue: 'Show steady source-only typography: Samerna.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Samerna
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0050-s001.wav
+  start_seconds: 49.583333
+  end_seconds: 56.41
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/04.png
+  render_caption: false
+- sentence_id: hb-c01-u0050-s002
+  sv: Ursprungsbefolkning avser en människogrupp med starka rötter i de områden som den traditionellt
+    har befolkat och i naturen.
+  ru: Под коренным населением понимается группа людей, тесно связанная с территориями, которые она традиционно
+    населяет, и с природой.
+  scene_id: sami
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0050-s002.wav
+  start_seconds: 58.166667
+  end_seconds: 68.545986
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0050-s003
+  sv: Gruppen har sina egna språk, seder och traditioner.
+  ru: У этой группы есть свои языки, обычаи и традиции.
+  scene_id: sami
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0050-s003.wav
+  start_seconds: 70.333333
+  end_seconds: 75.139864
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0051-s001
+  sv: Liksom i många andra europeiska länder har också Finland en romsk minoritet.
+  ru: Как и во многих других европейских странах, в Финляндии тоже есть ромское меньшинство.
+  scene_id: roma
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0051-s001.wav
+  start_seconds: 77.625
+  end_seconds: 84.521327
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0051-s002
+  sv: De första romerna kom till Finland för omkring femhundra år sedan.
+  ru: Первые ромы пришли в Финляндию около пятисот лет назад.
+  scene_id: roma
+  visual_cue: 'Show steady source-only typography: femhundra år.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - femhundra år
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0051-s002.wav
+  start_seconds: 86.291667
+  end_seconds: 92.212755
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/08.png
+  render_caption: false
+- sentence_id: hb-c01-u0051-s003
+  sv: År 2023 fanns det uppskattningsvis 10 000–12 000 romer i Finland.
+  ru: По оценкам, в 2023 году в Финляндии было 10 000–12 000 ромов.
+  scene_id: roma
+  visual_cue: 'Show steady source-only typography: 2023, 10 000–12 000.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  - 10 000–12 000
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: År tvåtusentjugotre fanns det uppskattningsvis tio tusen till tolv tusen romer i Finland.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0051-s003.wav
+  start_seconds: 94.0
+  end_seconds: 101.523265
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/09.png
+  render_caption: false
+- sentence_id: hb-c01-u0052-s001
+  sv: Romerna har ett eget rikt kulturarv, såsom romsk musik, romska seder och bruk, den romska dräkten
+    och traditionellt också handarbetskonst.
+  ru: У ромов есть собственное богатое культурное наследие, включающее ромскую музыку, обычаи и обряды,
+    ромский костюм, а также традиционно искусство рукоделия.
+  scene_id: roma
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0052-s001.wav
+  start_seconds: 103.291667
+  end_seconds: 114.855204
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0052-s002
+  sv: Viktiga aspekter inom seder och bruk är respekt för de äldre, gemenskap och familjecentrering.
+  ru: Важные стороны этих обычаев — уважение к старшим, чувство общности и центральная роль семьи.
+  scene_id: roma
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0052-s002.wav
+  start_seconds: 116.625
+  end_seconds: 124.775204
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0052-s003
+  sv: Tidigare levde romerna i Finland ett kringresande liv.
+  ru: Раньше ромы в Финляндии вели кочевой образ жизни.
+  scene_id: roma
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0052-s003.wav
+  start_seconds: 126.541667
+  end_seconds: 131.557177
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0052-s004
+  sv: Numera bor största delen av dem i de största städerna i Finland.
+  ru: Теперь большинство из них живёт в крупнейших городах Финляндии.
+  scene_id: roma
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0052-s004.wav
+  start_seconds: 133.333333
+  end_seconds: 139.393741
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0053-s001
+  sv: Tatarerna är ett turkfolk och det äldsta muslimska samfundet i Finland.
+  ru: Татары — тюркский народ и старейшая мусульманская община Финляндии.
+  scene_id: tatars
+  visual_cue: 'Show steady source-only typography: Tatarerna.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Tatarerna
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0053-s001.wav
+  start_seconds: 141.875
+  end_seconds: 148.214048
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/14.png
+  render_caption: false
+- sentence_id: hb-c01-u0053-s002
+  sv: Tatarerna kom till Finland ursprungligen från Ryssland i slutet av 1800-talet och början av 1900-talet
+    främst som handelsmän.
+  ru: Татары первоначально приехали в Финляндию из России в конце XIX и начале XX века, главным образом
+    как торговцы.
+  scene_id: tatars
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Tatarerna kom till Finland ursprungligen från Ryssland i slutet av artonhundratalet och början
+      av 1900-talet främst som handelsmän.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0053-s002.wav
+  start_seconds: 150.0
+  end_seconds: 162.538776
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0054-s001
+  sv: Judar flyttade till Finland ursprungligen från Ryssland på 1830-talet.
+  ru: Евреи первоначально переселились в Финляндию из России в 1830-х годах.
+  scene_id: jews
+  visual_cue: 'Show steady source-only typography: 1830-talet.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1830-talet
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Judar flyttade till Finland ursprungligen från Ryssland på artonhundratrettiotalet.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0054-s001.wav
+  start_seconds: 165.0
+  end_seconds: 172.383946
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/16.png
+  render_caption: false
+- sentence_id: hb-c01-u0054-s002
+  sv: De har två församlingar, en i Åbo och en i Helsingfors.
+  ru: 'У них две религиозные общины: одна в Турку и одна в Хельсинки.'
+  scene_id: jews
+  visual_cue: 'Show steady source-only typography: Åbo, Helsingfors.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Åbo
+  - Helsingfors
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0054-s002.wav
+  start_seconds: 174.166667
+  end_seconds: 179.182177
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/17.png
+  render_caption: false
+- sentence_id: hb-c01-u0054-s003
+  sv: I Helsingfors finns också ett judiskt daghem och en judisk samskola.
+  ru: В Хельсинки есть также еврейский детский сад и еврейская школа совместного обучения мальчиков и
+    девочек.
+  scene_id: jews
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0054-s003.wav
+  start_seconds: 180.958333
+  end_seconds: 186.949082
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0054-s004
+  sv: De finska judarnas modersmål var på 1800-talet till stor del jiddisch och senare svenska.
+  ru: В XIX веке родным языком финляндских евреев преимущественно был идиш, а позднее — шведский.
+  scene_id: jews
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  - Check jiddisch in the complete video; local ASR writes giddish.
+  speech_override:
+    text: De finska judarnas modersmål var på artonhundratalet till stor del jiddisch och senare svenska.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0054-s004.wav
+  start_seconds: 188.708333
+  end_seconds: 197.067517
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0054-s005
+  sv: I dag talar de finska och flera andra språk som hemspråk.
+  ru: Сегодня в семье они говорят на финском и нескольких других языках.
+  scene_id: jews
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0054-s005.wav
+  start_seconds: 198.833333
+  end_seconds: 204.057823
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0064-s001
+  sv: Karelska språket är det språk som är närmast besläktat med finskan.
+  ru: Карельский язык — ближайший родственник финского языка.
+  scene_id: karelian
+  visual_cue: 'Show steady source-only typography: Karelska språket.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Karelska språket
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0064-s001.wav
+  start_seconds: 206.541667
+  end_seconds: 212.671735
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/21.png
+  render_caption: false
+- sentence_id: hb-c01-u0055-s001
+  sv: Personer som talade karelska placerades på olika håll i Finland efter andra världskriget, när deras
+    gamla hembygder blev en del av Sovjetunionen till följd av kriget.
+  ru: После Второй мировой войны людей, говоривших по-карельски, расселили по разным частям Финляндии,
+    поскольку в результате войны их прежние родные места вошли в состав Советского Союза.
+  scene_id: karelian
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0055-s001.wav
+  start_seconds: 214.458333
+  end_seconds: 228.668946
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0055-s002
+  sv: Karelska talas numera i Finland och Ryssland.
+  ru: Сегодня на карельском говорят в Финляндии и России.
+  scene_id: karelian
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0055-s002.wav
+  start_seconds: 230.458333
+  end_seconds: 234.777245
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0055-s003
+  sv: Personer som talar karelska hör i allmänhet till den ortodoxa kyrkan.
+  ru: Говорящие на карельском языке обычно принадлежат к православной церкви.
+  scene_id: karelian
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0055-s003.wav
+  start_seconds: 236.541667
+  end_seconds: 242.741395
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0056-s001
+  sv: Under olika perioder i historien har ryssar och ryskspråkiga flyttat till Finland.
+  ru: В разные исторические периоды русские и русскоязычные переселялись в Финляндию.
+  scene_id: russian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0056-s001.wav
+  start_seconds: 245.208333
+  end_seconds: 252.452959
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0056-s002
+  sv: Sovjetunionens fall år 1991 ökade inflyttningen betydligt, och både ryssar och ryskspråkiga flyttade
+    till Finland på grund av till exempel arbete, studier eller familjen.
+  ru: Распад Советского Союза в 1991 году значительно увеличил приток переселенцев, и в Финляндию переезжали
+    как русские, так и русскоязычные, например, в связи с работой, учёбой или семьёй.
+  scene_id: russian_speakers
+  visual_cue: 'Show steady source-only typography: 1991.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1991'
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Sovjetunionens fall år nittonhundra nittio ett ökade inflyttningen betydligt. Och både ryssar
+      och ryskspråkiga flyttade till Finland på grund av till exempel arbete, studier eller familjen.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged. Separate year components and phrase boundary after ASR flagged
+      an ambiguous1991 rendering and duplicated words near Finland in the long initial take. No spoken
+      source words are added or removed. Further separate ninety-one after the first retake remained ambiguous
+      in ASR.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0056-s002.wav
+  start_seconds: 254.208333
+  end_seconds: 270.369422
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/26.png
+  render_caption: false
+- sentence_id: hb-c01-u0057-s001
+  sv: Ryssarna och de ryskspråkiga i Finland har alltid varit en komplex folkgrupp.
+  ru: Русские и русскоязычные в Финляндии всегда представляли собой неоднородную этническую группу.
+  scene_id: russian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0057-s001.wav
+  start_seconds: 272.125
+  end_seconds: 279.299966
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0057-s002
+  sv: En del av de ryskspråkiga eller deras familjemedlemmar är ingermanländare, en del ester eller ukrainare,
+    eller andra utan ryskt medborgarskap.
+  ru: Часть русскоязычных или членов их семей — ингерманландцы, часть — эстонцы, украинцы или другие люди
+    без российского гражданства.
+  scene_id: russian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  - Check ingermanländare in the complete video; local ASR has unstable spelling of this proper identity
+    term.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0057-s002.wav
+  start_seconds: 281.083333
+  end_seconds: 293.482789
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0057-s003
+  sv: År 2023 fanns det uppemot 100 000 ryskspråkiga personer i Finland.
+  ru: В 2023 году в Финляндии было почти 100 000 русскоязычных человек.
+  scene_id: russian_speakers
+  visual_cue: 'Show steady source-only typography: 2023, 100 000.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  - 100 000
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: År tvåtusentjugotre fanns det uppemot hundra tusen ryskspråkiga personer i Finland.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0057-s003.wav
+  start_seconds: 295.25
+  end_seconds: 302.355306
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/29.png
+  render_caption: false
+- sentence_id: hb-c01-u0058-s001
+  sv: År 2023 fanns det omkring 50 000 estnisktalande i Finland.
+  ru: В 2023 году в Финляндии было около 50 000 носителей эстонского языка.
+  scene_id: estonian_speakers
+  visual_cue: 'Show steady source-only typography: 2023, 50 000.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  - 50 000
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: År tvåtusentjugotre fanns det omkring femtio tusen estnisktalande i Finland.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s001.wav
+  start_seconds: 304.833333
+  end_seconds: 311.381361
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/30.png
+  render_caption: false
+- sentence_id: hb-c01-u0058-s002
+  sv: Det estniska språket är släkt med finskan, och personer som kan finska kan förstå en del estniska
+    och tvärtom.
+  ru: Эстонский язык родственен финскому, и люди, знающие финский, могут отчасти понимать эстонский, и
+    наоборот.
+  scene_id: estonian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s002.wav
+  start_seconds: 313.166667
+  end_seconds: 322.640408
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0058-s003
+  sv: Efter Sovjetunionens fall flyttade estnisktalande till Finland i synnerhet av familjeskäl och i
+    egenskap av ingermanländare.
+  ru: После распада Советского Союза эстонскоязычные переселялись в Финляндию в особенности по семейным
+    обстоятельствам и как ингерманландцы.
+  scene_id: estonian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  - Check ingermanländare in the complete video; local ASR has unstable spelling of this proper identity
+    term.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s003.wav
+  start_seconds: 324.416667
+  end_seconds: 335.353265
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0058-s004
+  sv: Efter att Estland anslöt sig till Europeiska unionen år 2004 har många ester flyttat till Finland
+    för arbete.
+  ru: После вступления Эстонии в Европейский союз в 2004 году многие эстонцы переехали в Финляндию ради
+    работы.
+  scene_id: estonian_speakers
+  visual_cue: 'Show steady source-only typography: 2004.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2004'
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override:
+    text: Efter att Estland anslöt sig till Europeiska unionen år tvåtusenfyra har många ester flyttat
+      till Finland för arbete.
+    reason: Expand source digits, date notation and number ranges into Swedish speech; exact displayed
+      Swedish/Russian remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s004.wav
+  start_seconds: 337.125
+  end_seconds: 347.086361
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/33.png
+  render_caption: false
+- sentence_id: hb-c01-u0058-s005
+  sv: I Finland arbetar också många ester som bor permanent i Estland och kanske arbetar i både Finland
+    och Estland.
+  ru: В Финляндии также работают многие эстонцы, постоянно живущие в Эстонии и, возможно, работающие в
+    обеих странах — Финляндии и Эстонии.
+  scene_id: estonian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s005.wav
+  start_seconds: 348.875
+  end_seconds: 358.557721
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0058-s006
+  sv: Dessutom har ester flyttat från Estland till Finland för att studera både före och efter att Estland
+    gick med i EU.
+  ru: Кроме того, эстонцы переезжали из Эстонии в Финляндию на учёбу как до, так и после вступления Эстонии
+    в ЕС (EU).
+  scene_id: estonian_speakers
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0058-s006.wav
+  start_seconds: 360.333333
+  end_seconds: 370.573333
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0059-s001
+  sv: Det har också uppstått flera nyare etniska, språkliga, religiösa och kulturella minoritetsgrupper
+    i Finland.
+  ru: В Финляндии также появился ряд сравнительно новых этнических, языковых, религиозных и культурных
+    меньшинств.
+  scene_id: newer_minorities
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0059-s001.wav
+  start_seconds: 373.041667
+  end_seconds: 382.515408
+  display_segments: []
+  render_image: null
+- sentence_id: hb-c01-u0059-s002
+  sv: Några av de större grupper som kommit från länder utanför Europa är till exempel somalier, kineser,
+    irakier och indier.
+  ru: К числу крупных групп, прибывших из стран за пределами Европы, относятся, например, сомалийцы, китайцы,
+    иракцы и индийцы.
+  scene_id: newer_minorities
+  visual_cue: 'Show steady source-only typography: somalier, kineser, irakier, indier.'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - somalier
+  - kineser
+  - irakier
+  - indier
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0059-s002.wav
+  start_seconds: 384.291667
+  end_seconds: 394.949626
+  display_segments: []
+  render_image: studio/media/hb-c01-folkgrupper/cards/37.png
+  render_caption: false
+- sentence_id: hb-c01-u0059-s003
+  sv: I Finland bor det många som talar arabiska från olika länder, och alla de största religionerna i
+    världen finns numera representerade i Finland.
+  ru: В Финляндии живёт много арабоязычных людей из разных стран, и сегодня в Финляндии представлены все
+    крупнейшие религии мира.
+  scene_id: newer_minorities
+  visual_cue: Leave useful-image area open to the continuously moving decorative photo; bilingual text
+    remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review proper names, compound words and numerical expressions in the complete video.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c01-folkgrupper/narration/hb-c01-u0059-s003.wav
+  start_seconds: 396.708333
+  end_seconds: 409.177449
+  display_segments: []
+  render_image: null
+render:
+  music_path: studio/media/hb-c01-folkgrupper/sources/music-bed.flac
+  background_image: studio/media/hb-c01-folkgrupper/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 3.1529761904761906
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands befolkning
+    - Finlands Flyktinghjälp · Utbildningsstyrelsen · UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Urval och formgivning för denna video.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Turku Cathedral and Aura River.jpg — Markus Koljonen (Dilaudid) · CC BY-SA 3.0
+    - Meditation Impromptu 01 — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, eventuell korsfadad upprepning och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Turku_Cathedral_and_Aura_River.jpg
+    description: Turku Cathedral and Aura River in autumn at dusk.
+    license: CC BY-SA 3.0
