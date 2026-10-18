@@ -35,7 +35,33 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Site search for `medborgarskapsprov` (SV): https://migri.fi/sv/sok?q=medborgarskapsprov
 - Site search for `citizenship test` (EN): https://migri.fi/en/search?q=citizenship%20test
 
+- Citizenship application for adults (FI): https://migri.fi/kansalaisuus-aikuiselle
+- Citizenship application for adults (SV): https://migri.fi/sv/medborgarskap-for-vuxna
+- Citizenship application for adults (EN): https://migri.fi/en/citizenship-for-adults
+- Instructions (FI): https://migri.fi/ohjeet
+- Instructions (SV): https://migri.fi/sv/anvisningar
+- Instructions (EN): https://migri.fi/en/instructions
+- Press releases and bulletins (FI): https://migri.fi/tiedotteet
+- Press releases (SV): https://migri.fi/sv/pressmeddelanden
+- Press releases and bulletins (EN): https://migri.fi/en/press-releases-and-bulletins
+- Press releases (EN): https://migri.fi/en/press-releases
+- Processing fees and payment methods (FI): https://migri.fi/kasittelymaksut-ja-maksaminen
+- Processing fees and payment methods (SV): https://migri.fi/sv/behandlingsavgifter-och-betalningssatt
+- Processing fees and payment methods (EN): https://migri.fi/en/processing-fees-and-payment-methods
+- Citizenship Act amendments 2027 guidance (SV, alternate route to the existing guidance): https://migri.fi/sv/andringar-i-medborgarskapslagen-samhallskunskapsvillkoret-och-inforande-av-medborgarskapsprovet
+
+## Official (University of Helsinki)
+
+- University of Helsinki announcement on producing the citizenship-test content (FI, 2026-08-07): https://www.helsinki.fi/fi/uutiset/yliopisto/helsingin-yliopisto-toteuttaa-ensi-vuonna-kaynnistyvan-kansalaisuuskokeen-sisallot
+- University of Helsinki announcement on producing the citizenship-test content (SV, 2026-08-07): https://www.helsinki.fi/sv/nyheter/universitetet/helsingfors-universitet-utarbetar-innehallet-i-medborgarskapsprovet-som-infors-nasta-ar
+- University of Helsinki announcement on producing the citizenship-test content (EN, 2026-08-07): https://www.helsinki.fi/en/news/university/university-helsinki-draw-citizenship-test-launching-next-year
+
 ## Official press releases
+
+- Migri press release: spring 2027 test locations and year-turn publication of learning material and instructions (FI, published 2026-10-09): https://migri.fi/-/suomi-valmistautuu-ottamaan-kayttoon-kansalaisuuskokeen-oppimateriaalit-julkaistaan-vuodenvaihteessa
+- Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (EN, published 2026-10-09): https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year
+- Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (SV, published 2026-10-09): https://migri.fi/sv/-/aktuellt-om-forandringarna-i-medborgarskapslagen-laromedlen-for-medborgarskapsprovet-ges-ut-vid-arsskiftet
+- Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (FI, published 2026-10-09): https://migri.fi/-/ajankohtaista-tietoa-kansalaisuuslain-muutoksesta-kansalaisuuskokeen-oppimateriaalit-julkaistaan-vuodenvaihteessa
 
 - Supplementary budget allocates funding for citizenship test (FI, 2026-06-03): https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen
 - Supplementary budget allocates funding for citizenship test (SV, 2026-06-03): https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen?languageId=sv_SE
@@ -57,6 +83,9 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Government proposes to introduce citizenship test (FI, 2026-04-16): https://intermin.fi/-/hallitus-esittaa-kansalaisuuskokeen-kayttoonottoa
 - Government proposes to introduce citizenship test (SV, 2026-04-16): https://intermin.fi/sv/-/regeringen-foreslar-inforande-av-ett-medborgarskapsprov
 - Government proposes to introduce citizenship test (EN, 2026-04-16): https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
+- Government proposes to introduce citizenship test (FI, 2026-04-16; Valtioneuvosto mirror): https://valtioneuvosto.fi/-/1410869/hallitus-esittaa-kansalaisuuskokeen-kayttoonottoa
+- Government proposes to introduce citizenship test (SV, 2026-04-16; Valtioneuvosto mirror): https://valtioneuvosto.fi/sv/-/1410869/regeringen-foreslar-inforande-av-ett-medborgarskapsprov
+- Government proposes to introduce citizenship test (EN, 2026-04-16; Valtioneuvosto mirror): https://valtioneuvosto.fi/en/-/1410869/government-proposes-to-introduce-citizenship-test
 
 - Citizenship-test draft impact assessment press release (FI, Legislation Assessment Council, 2026-03-26): https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan
 - Legislation Assessment Council opinion PDF on the citizenship-test draft (FI, 2026-03-26): https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
@@ -64,15 +93,23 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Citizenship test press release (FI, 2025-12-22): https://intermin.fi/-/kansalaisuuskokeella-tullaan-mittaamaan-tietoja-suomalaisen-yhteiskunnan-toiminnasta-ja-perusperiaatteista
 - Citizenship test press release (SV, 2025-12-22): https://intermin.fi/sv/-/medborgarskapsprov-infors-for-att-mata-kunskaper-om-det-finlandska-samhallets-funktion-och-grundprinciper
 - Citizenship test press release (EN, 2025-12-22): https://intermin.fi/en/-/citizenship-test-to-assess-knowledge-of-finnish-society-and-its-key-principles
+- Citizenship test press release (FI, 2025-12-22; Valtioneuvosto mirror): https://valtioneuvosto.fi/-/1410869/kansalaisuuskokeella-tullaan-mittaamaan-tietoja-suomalaisen-yhteiskunnan-toiminnasta-ja-perusperiaatteista
+- Citizenship test press release (SV, 2025-12-22; Valtioneuvosto mirror): https://valtioneuvosto.fi/sv/-/1410869/medborgarskapsprov-infors-for-att-mata-kunskaper-om-det-finlandska-samhallets-funktion-och-grundprinciper
+- Citizenship test press release (EN, 2025-12-22; Valtioneuvosto mirror): https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-assess-knowledge-of-finnish-society-and-its-key-principles
 
 - Working-group report completed (FI, 2025-02-19): https://intermin.fi/-/selvitys-kansalaisuuskokeen-kayttoonottamisesta-valmistui-
 - Working-group report completed (SV, 2025-02-19): https://intermin.fi/sv/-/utredning-av-inforande-av-medborgarskapsprovet-har-blivit-klar-
 - Working-group report completed (EN, 2025-02-19): https://intermin.fi/en/-/report-exploring-introduction-of-citizenship-test-now-complete-
+- Working-group report completed (FI, 2025-02-19; Valtioneuvosto mirror): https://valtioneuvosto.fi/-/1410869/selvitys-kansalaisuuskokeen-kayttoonottamisesta-valmistui-
+- Working-group report completed (SV, 2025-02-19; Valtioneuvosto mirror): https://valtioneuvosto.fi/sv/-/1410869/utredning-av-inforande-av-medborgarskapsprovet-har-blivit-klar-
+- Working-group report completed (EN, 2025-02-19; Valtioneuvosto mirror): https://valtioneuvosto.fi/en/-/1410869/report-exploring-introduction-of-citizenship-test-now-complete-
 
 ## Phase 3 project (hankeikkuna / consultation docs)
 
 - Phase 3 project page (FI, SM056:00/2023): https://intermin.fi/hankkeet/hankesivu?tunnus=SM056:00/2023
 - Phase 3 project page (SV, SM056:00/2023): https://intermin.fi/sv/projekt-och-lagberedning/projektsida?tunnus=SM056:00/2023
+- Phase 3 project page (FI, SM056:00/2023; Valtioneuvosto mirror): https://valtioneuvosto.fi/hanke?tunnus=SM056:00/2023
+- Phase 3 project page (SV, SM056:00/2023; Valtioneuvosto mirror): https://valtioneuvosto.fi/sv/projektet?tunnus=SM056:00/2023
 
 - Valtioneuvosto decision page for submitted proposal (FI, HE 54/2026 vp / SM/2026/22, 2026-04-16): https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - Valtioneuvosto session page (FI, VN 24/2026, 2026-04-16): https://valtioneuvosto.fi/paatokset/istunto?sessionId=377
@@ -137,8 +174,8 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Parliament protocol item alternate document route (SV, PR 59/2026 rd, item 10): https://www.eduskunta.fi/riksdagshandlingar/PR+59/2026+10
 - Parliament protocol item for second reading (FI, PTK 62/2026 vp / EDK-2026-AK-34653, item 9, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34653
 - Parliament protocol item for second reading (SV, PR 62/2026 rd / EDK-2026-AK-34657, item 9, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34657
-- Parliament protocol item print/PDF version (FI, PTK 62/2026 vp, item 9; current revision 3.0 archived 2026-08-02): https://www.eduskunta.fi/pdf/PTK+62/2026+9
-- Parliament protocol item print/PDF version (SV, PR 62/2026 rd, item 9): https://www.eduskunta.fi/pdf/PR+62/2026+9
+- Parliament protocol item print/PDF version (FI, PTK 62/2026 vp, item 9; current revision 4.0 archived 2026-09-04): https://www.eduskunta.fi/pdf/PTK+62/2026+9
+- Parliament protocol item print/PDF version (SV, PR 62/2026 rd, item 9; current revision 4.0 archived 2026-09-04): https://www.eduskunta.fi/pdf/PR+62/2026+9
 - Parliament protocol item alternate document route (FI, PTK 62/2026 vp, item 9): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+62/2026+9
 - Parliament protocol item alternate document route (SV, PR 62/2026 rd, item 9): https://www.eduskunta.fi/riksdagshandlingar/PR+62/2026+9
 - Parliament protocol item for continued second reading / final vote (FI, PTK 63/2026 vp / EDK-2026-AK-35075, item 4, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35075
@@ -184,14 +221,14 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Eduskunta submitted second supplementary budget print/PDF (SV, RP 102/2026 rd): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33174/pdf
 - Parliament protocol item for second supplementary budget referral debate (FI, PTK 62/2026 vp / EDK-2026-AK-34591, item 5, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34591
 - Parliament protocol item for second supplementary budget referral debate (SV, PR 62/2026 rd / EDK-2026-AK-34599, item 5, 2026-06-09): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34599
-- Parliament protocol item print/PDF version for second supplementary budget referral debate (FI, PTK 62/2026 vp, item 5; current revision 3.0 archived 2026-08-02): https://www.eduskunta.fi/pdf/PTK+62/2026+5
-- Parliament protocol item print/PDF version for second supplementary budget referral debate (SV, PR 62/2026 rd, item 5; current revision 3.2 archived 2026-08-02): https://www.eduskunta.fi/pdf/PR+62/2026+5
+- Parliament protocol item print/PDF version for second supplementary budget referral debate (FI, PTK 62/2026 vp, item 5; current revision 4.0 archived 2026-09-04): https://www.eduskunta.fi/pdf/PTK+62/2026+5
+- Parliament protocol item print/PDF version for second supplementary budget referral debate (SV, PR 62/2026 rd, item 5; current revision 4.0 archived 2026-09-04): https://www.eduskunta.fi/pdf/PR+62/2026+5
 - Parliament protocol item alternate document route for second supplementary budget referral debate (FI, PTK 62/2026 vp, item 5): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+62/2026+5
 - Parliament protocol item alternate document route for second supplementary budget referral debate (SV, PR 62/2026 rd, item 5): https://www.eduskunta.fi/riksdagshandlingar/PR+62/2026+5
 - Parliament protocol item for continued second supplementary budget referral debate (FI, PTK 63/2026 vp / EDK-2026-AK-35241, item 17, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35241
 - Parliament protocol item for continued second supplementary budget referral debate (SV, PR 63/2026 rd / EDK-2026-AK-35281, item 17, 2026-06-10): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-35281
-- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (FI, PTK 63/2026 vp, item 17): https://www.eduskunta.fi/pdf/PTK+63/2026+17
-- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17): https://www.eduskunta.fi/pdf/PR+63/2026+17
+- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (FI, PTK 63/2026 vp, item 17; revision 4.0, source regenerated 2026-09-09): https://www.eduskunta.fi/pdf/PTK+63/2026+17
+- Parliament protocol item print/PDF version for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17; revision 4.0, source regenerated 2026-09-09): https://www.eduskunta.fi/pdf/PR+63/2026+17
 - Parliament protocol item alternate document route for continued second supplementary budget referral debate (FI, PTK 63/2026 vp, item 17): https://www.eduskunta.fi/valtiopaivaasiakirjat/PTK+63/2026+17
 - Parliament protocol item alternate document route for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17): https://www.eduskunta.fi/riksdagshandlingar/PR+63/2026+17
 - Parliament protocol item for second supplementary budget committee-report tabling (FI, PTK 70/2026 vp / EDK-2026-AK-37785, item 3, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37785
@@ -231,6 +268,10 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation published responses report (lausuntopalvelu, SV, 36 respondents): https://www.lausuntopalvelu.fi/SV/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 - Consultation attachment download (lausuntopalvelu, FI draft HE PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
 - Consultation attachment download (lausuntopalvelu, SV draft main content + draft provisions PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
+
+- Consultation attachment download (SV site, FI draft HE PDF; same bytes as FI-site attachment 26566): https://www.lausuntopalvelu.fi/SV/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
+
+- Consultation attachment download (SV site, SV draft main content and provisions PDF; same bytes as FI-site attachment 26567): https://www.lausuntopalvelu.fi/SV/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
 
 - Consultation request PDF (hankeikkuna API, FI, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/bae44b7c-83b7-4fa4-8f8f-ac00b18ed76d/LAUSUNTOPYYNTO_20251219155050.PDF
 - Draft HE PDF (hankeikkuna API, FI, 2025-12-19): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/348eb0b0-fe35-4f75-b1df-7e117def5377/LAUSUNTOPYYNTO_20251219155050.PDF
@@ -286,10 +327,31 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF
 - Consultation statement — Ylioppilastutkintolautakunta YTL (2026-03-11 07:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF
 
+## Official background reports and earlier announcements (discovered 2026-09-06)
+
+Publication dates below are historical; these sources do not replace the current Migri guidance.
+
+- Migri report Maahanmuutto Suomeen 2/2026 (PDF created/modified 2026-08-21); p. 35 mentions the citizenship test and links the Interior Ministry reform overview.: https://migri.fi/documents/5202425/166014458/Maahanmuutto_Suomeen_2_2026.pdf/b2bebab8-7abb-dc59-5f21-a687ca720ede?t=1787302809758
+- Migri statistics presentation Maahanmuuton vuosi 2025 (2026-01-30); pp. 26 and 34 discuss implementation workload and Phase 3.: https://migri.fi/documents/5202425/107201698/Mediatilaisuuden%20esitys%202026.pdf/ba8d0837-87f2-bd91-f244-30a939f08104?t=1769755138921
+- Migri performance plan 2025 and operating/financial plan 2026-2029 (dated 2025-03-04); p. 5 discusses the expected effect of citizenship reform, including the test, on application volumes. Historical forecast.: https://migri.fi/documents/5202425/5915665/Maahanmuuttoviraston_TS_vuodelle_2025_sekä_TTS_kaudelle_2026_2029.pdf/0683f193-dd7d-34cf-2c4c-d403e7926829/Maahanmuuttoviraston_TS_vuodelle_2025_sekä_TTS_kaudelle_2026_2029.pdf?t=1754462151370
+- Migri report Maahanmuutto Suomeen 1/2024 (PDF created 2024-01-31); p. 27 links the proposed citizenship test to 2023 application growth. Cover title used; embedded PDF title incorrectly says 2/2023.: https://migri.fi/documents/5202425/166014458/Maahanmuutto+Suomeen_1_2024.pdf/0a03233b-7b9b-654c-6773-65324cd63db7?t=1706674494969
+- Migri report Maahanmuutto Suomeen 2/2023 (PDF created 2023-11-28); p. 27 discusses application growth following the proposed citizenship reforms, including the test.: https://migri.fi/documents/5202425/166014458/Maahanmuutto+Suomeen_2_2023.pdf/a83c4613-98fd-1622-979e-0fb4a0f9845e?t=1701259255208
+- Migri financial statements 2023 (PDF created 2024-03-20); p. 9 discusses application growth following proposed citizenship reforms, including the test.: https://migri.fi/documents/5202425/5915665/Maahanmuuttoviraston+tilinpäätös+2023.pdf/d2bf66a8-846e-5430-ac13-faaef18235ea?t=1711528679468
+- Migri statistics press release (FI, 2026-01-30); mentions implementing the citizenship test with decreasing resources.: https://migri.fi/-/maahanmuuton-tilastot-2025-maahanmuutto-suomeen-laskussa-1
+- Migri statistics press release (SV, dated 2026-01-30; Swedish translation published 2026-02-04); mentions citizenship-test implementation.: https://migri.fi/sv/-/migrationsverkets-statistik-for-2025-invandringen-till-finland-minskar
+- Migri statistics press release (EN, dated 2026-01-30; English translation published 2026-02-04); mentions citizenship-test implementation.: https://migri.fi/en/-/immigration-statistics-2025-immigration-to-finland-decreasing
+- Interior Ministry reform-launch press release (FI, 2023-10-16), linked by Migri historical reports. Original plans, not the current timetable.: https://intermin.fi/-/kansalaisuuslain-uudistaminen-kaynnistyy-sisaministeriossa
+- Interior Ministry reform-launch press release (SV, 2023-10-16), linked from the FI release. Original plans, not the current timetable.: https://intermin.fi/sv/-/revidering-av-medborgarskapslagen-inleds-vid-inrikesministeriet
+- Interior Ministry reform-launch press release (EN, 2023-10-16), linked from the FI release. Original plans, not the current timetable.: https://intermin.fi/en/-/ministry-of-the-interior-launches-a-reform-of-the-nationality-act
+- Alternate URL for the same Migri 2025 performance / 2026-2029 operating and financial plan PDF: https://migri.fi/documents/5202425/5915665/Maahanmuuttoviraston_TS_vuodelle_2025_sekä_TTS_kaudelle_2026_2029.pdf/0683f193-dd7d-34cf-2c4c-d403e7926829?t=1754462151370
+- Alternate URL for the same Migri Maahanmuutto Suomeen 1/2024 PDF: https://migri.fi/documents/5202425/166014458/Maahanmuutto+Suomeen_1_2024.pdf/0a03233b-7b9b-654c-6773-65324cd63db7/Maahanmuutto+Suomeen_1_2024.pdf?t=1706674494969
+
 ## Working-group report (publication)
 
 - “Selvitys kansalaisuuskokeen käyttöönotosta” (URN landing): https://urn.fi/URN:ISBN:978-952-324-974-5
 - Same report (handle page): https://julkaisut.valtioneuvosto.fi/handle/11111/5083
+
+- Working-group report direct PDF (same file already archived in `news/files.md`): https://julkaisut.valtioneuvosto.fi/bitstreams/24376a1a-8fcc-40da-8685-cf92097421cb/download
 
 ## Learning materials (basis for questions)
 
