@@ -20,11 +20,13 @@ studio/runtime/.venv/bin/python studio/tools/fetch_assets.py studio/runtime/down
 studio/runtime/.venv/bin/python studio/tools/maps.py
 ```
 
-`studio/media/` is ignored except for explicitly retained approved narration
+`studio/media/` is ignored except for explicitly retained selected narration
 WAVs and metrics. Commit those takes with the final video in `videos/homebrew/`,
 the lockfile, download manifests, asset register and generation tools. Seeds do
-not guarantee identical waveforms across hardware or runtime changes. Add an
-ignore exception for each new episode's approved narration before committing it.
+not guarantee identical waveforms across hardware or runtime changes. Chapter 1
+selected narration and metrics are retained by explicit ignore exceptions; review
+status remains in each episode's review record. Add equivalent exceptions for
+future chapters when their selected takes are committed.
 Unused comparison models can be restored with `runtime/audition-downloads.yaml`;
 the default manifest contains production assets and the local ASR model. Generated-file checksums identify the reviewed takes; never
 silently rewrite them after approval. Downloaded files must match their SHA-256.

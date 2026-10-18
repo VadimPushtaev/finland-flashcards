@@ -233,7 +233,10 @@ def review_markdown(script, context):
               'Exact passage provenance and publisher notices: [sources.yaml](sources.yaml).', '']
     for item in source_snapshot(context)['sources']:
         source, credit = item['source'], item['attribution']
-        lines += [f"- [{source['title']}]({source['source_url']}): {credit['credit']}. {credit['license']}."]
+        title = source.get('title', credit['title'])
+        link = source.get('source_url') or credit.get('url')
+        label = f'[{title}]({link})' if link else title
+        lines += [f"- {label}: {credit['credit']}. {credit['license']}."]
     lines += ['', 'Swedish wording and existing Russian translations are preserved. Presentation,',
               'visual cues, and proposed speech-only expansions are added for this video.', '']
     return '\n'.join(lines)

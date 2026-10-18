@@ -3,7 +3,7 @@
 The shared [directing guide](DIRECTING.md) applies to every episode. The episode's
 `script.yaml` is the single editable source for all video-specific creative decisions.
 The first complete example is [Finland i Norden](episodes/hb-c01-lage/SCRIPT.md).
-It is a proposal for review, not an approved video or a set of finished assets.
+It is the accepted first video, with its final production records.
 
 ## Files and ownership
 
@@ -85,8 +85,7 @@ notation. With no suitable illustration, revise the visual cue, not the content.
 
 ## Script format, version 1
 
-The [template](templates/script.yaml) describes the editable shape. This is a
-production-planning format, not a promise about a future rendering API.
+The [template](templates/script.yaml) describes the editable shape. The renderer consumes the creative fields along with the `render` configuration.
 
 - Identity, titles, source paths, and source/translation fingerprints are copied
   from the anthology. Sentence IDs and order come from the stored source ranges.

@@ -21,21 +21,21 @@ FFmpeg binary provided by the locked `imageio-ffmpeg` package. It makes a 1080p,
 24 fps H.264/AAC MP4, with exact frame-aligned display timing and measured audio
 placement. It rejects text overflow and music shorter than the planned video.
 Audio normalization retains headroom; music ducks beneath narration and fades
-at the beginning and end. Useful foreground images remain still. A darkened, softly blurred forest photograph
-fills the background throughout; its fractional crop follows a continuous full-video
+at the beginning and end. Useful foreground images remain still. The selected
+darkened, softly blurred photograph fills the background throughout; its fractional crop follows a continuous full-video
 timeline, with no sentence-boundary resets. Motion should be visible over 5–10 seconds;
 the current episode uses 15% relative zoom with a diagonal pan and immediate linear
 progress rather than a near-static eased opening. Empty foreground slots remain transparent. Sentence transitions never dissolve two text pairs together.
 
-Final outputs live in `videos/homebrew/<section>.mp4` with a matching
-`<section>.CREDITS.md`. Scratch files (mix master, timeline and review frames)
+Final outputs live in `videos/homebrew/hb-c<chapter>-<subchapter>-<slug>.mp4` with a matching
+`<video-stem>.CREDITS.md`. Scratch files (mix master, timeline and review frames)
 live in `studio/media/<section>/render/` and can be removed after acceptance.
 The verifier writes review images there only when called with `--save-frames`. `render.json` in the episode directory records
 the output checksum, settings and timings. `start_seconds` and `end_seconds` in
 the script describe narration onset/end; the timeline also records the earlier
 text appearance and the hold after speech. Regenerate `SCRIPT.md` after rendering.
 
-Keep `<section>.CREDITS.md` with the MP4 when sharing it. It contains full source links,
+Keep `<video-stem>.CREDITS.md` with the MP4 when sharing it. It contains full source links,
 licenses, author attribution and adaptation notices in addition to closing cards.
 
 Check the exported file decodes end to end, has the expected frame count/duration,
@@ -52,3 +52,46 @@ episode script. It scales the music alone, preserving narration gain and the
 ducking envelope. An audio-only export may copy the existing H.264 stream after
 checking that the timeline is unchanged; verify identical video packet checksums
 and run the full export validation afterward.
+
+For Chapter 1, keep the shared evergreen palette. Long section headings fit within
+the title area; the progress indicator adapts to the sentence count. A sentence
+may explicitly record `text_style: {sv_size: 44, ru_size: 36}` when the default
+48/40 text does not fit. Sizes below 40/34 are rejected; split an oversized pair
+into manually aligned display segments instead of making it illegible.
+
+A short music track may be extended only when the episode explicitly records
+`render.music_loop_crossfade_seconds` (for example, 4). The mixer then repeats
+that same track with overlapping fades; include the loop adaptation in the script
+and credits. Keep the accepted +2 dB music setting. Per-episode
+`render.adaptation_notes` supplies the sidecar's adaptation notices. Text source
+credits support archived books with a local notice and no external URL.
+
+Long videos may set `background_style.motion_cycles` to the complete video
+duration divided by approximately 140 seconds. This uses a continuous sine path
+across the recorded pan/zoom range, starting at its midpoint while moving, with
+gentle reversals. Leave it unset for the original linear motion.
+
+For parallel production, `check_audio.py --threads 1 --resume <narration-folder>`
+transcribes available clips without repeating unchanged work. Reuse is keyed by
+the WAV checksum, so regenerated takes are checked again. Record diagnostic flags
+in the episode; ASR does not stand in for listening or whole-video acceptance.
+
+After every episode in a chapter has a verified export, run
+`poetry run python studio/tools/audit_chapter.py hb-c01`. This checks inventory
+coverage against the source chapter, exact bilingual scripts, retained audio
+inputs/settings, distinct background/music sources, checksums, timeline coverage,
+and decode evidence bound to the canonical export.
+
+A sentence may set `render_caption: false` when a useful foreground card already
+shows its source labels or a long highlight list would overflow the footer.
+The Swedish text still highlights those exact words in the main bilingual panel.
+
+When the mix master is present, export verification also compares decoded audio
+against it, recording waveform correlation and relative RMS error. This confirms
+the encoded video contains the current mix after targeted narration retakes.
+Keep the check report even when scratch mix files are removed after acceptance.
+
+Export names include the two-digit subchapter number from `episodes.yaml`,
+for example `hb-c01-03-natur.mp4` and `hb-c01-03-natur.CREDITS.md`.
+The shared output-name resolver is used by both rendering and chapter auditing;
+source IDs and internal episode paths retain their stable identifiers.

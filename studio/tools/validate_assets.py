@@ -30,12 +30,14 @@ def validate(section):
                 raise ValueError(f'Path outside studio media: {path}')
             if hashlib.sha256(path.read_bytes()).hexdigest() != entry['sha256']:
                 raise ValueError(f'Checksum mismatch: {path}')
-            if path.suffix == '.wav':
-                data, rate = sf.read(path)
-                if data.ndim != 1 or not np.all(np.isfinite(data)) or len(data) < rate * .25:
+            if path.suffix.lower() in ('.wav', '.flac'):
+                data, rate = sf.read(path, dtype='float32')
+                narration = asset['kind'] == 'narration'
+                channels_valid = data.ndim == 1 if narration else (data.ndim == 1 or (data.ndim == 2 and data.shape[1] == 2))
+                if not channels_valid or not np.all(np.isfinite(data)) or len(data) < rate * .25:
                     raise ValueError(f'Invalid audio: {path}')
                 peak = float(np.max(np.abs(data)))
-                if peak < .001 or peak >= .999:
+                if peak < .001 or peak >= (.999 if narration else 1.000001):
                     raise ValueError(f'Silent or full-scale audio: {path}')
                 if abs(len(data) / rate - entry['seconds']) > .001:
                     raise ValueError(f'Duration mismatch: {path}')

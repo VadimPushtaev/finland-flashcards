@@ -40,6 +40,20 @@ class AssetTests(unittest.TestCase):
     def test_valid_files(self):
         self.validate()
 
+    def test_stereo_music_allowed_but_narration_remains_mono(self):
+        music_path = self.path.with_name('music.wav')
+        sf.write(music_path, np.full((8000, 2), .1), 16000)
+        music = dict(self.manifest['assets'][0], asset_id='music', kind='music', files=[dict(
+            path=str(music_path.relative_to(self.root)), seconds=.5,
+            sha256=hashlib.sha256(music_path.read_bytes()).hexdigest())])
+        self.script['asset_requests'].append(dict(id='music', kind='music'))
+        self.manifest['assets'].append(music)
+        self.validate()
+        sf.write(self.path, np.full((8000, 2), .1), 16000)
+        self.entry['sha256'] = hashlib.sha256(self.path.read_bytes()).hexdigest()
+        with self.assertRaisesRegex(ValueError, 'Invalid audio'):
+            self.validate()
+
     def test_detects_changed_wav(self):
         self.path.write_bytes(self.path.read_bytes() + b'changed')
         with self.assertRaisesRegex(ValueError, 'Checksum mismatch'):

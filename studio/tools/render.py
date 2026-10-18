@@ -5,6 +5,7 @@ import json
 import math
 from pathlib import Path
 import subprocess
+import sys
 
 import imageio_ffmpeg
 import numpy as np
@@ -14,6 +15,8 @@ from scipy.signal import resample_poly
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from studio.tools.outputs import export_stem
 W, H, FPS, RATE = 1920, 1080, 24, 48000
 BG, FG, MUTED, GOLD = '#102e2b', '#f6f1e6', '#bdd3c9', '#e7bc70'
 FONTS = Path('/System/Library/Fonts/Supplemental')
@@ -21,6 +24,45 @@ FONTS = Path('/System/Library/Fonts/Supplemental')
 
 def font(size, bold=False):
     return ImageFont.truetype(str(FONTS / ('Arial Bold.ttf' if bold else 'Arial.ttf')), size)
+
+
+def fitted_font(text, size, width, bold=False, minimum=30):
+    """Fit a single-line label without clipping or changing its wording."""
+    while size > minimum and font(size, bold).getlength(text) > width:
+        size -= 1
+    face = font(size, bold)
+    if face.getlength(text) > width:
+        raise ValueError('Label exceeds available width: ' + text)
+    return face
+
+
+def sentence_style(row):
+    """Use script-selected sizes; require long pairs to remain readable."""
+    style = row.get('text_style', {})
+    sv_size, ru_size = style.get('sv_size', 48), style.get('ru_size', 40)
+    if sv_size < 40 or ru_size < 34:
+        raise ValueError('Segment long text instead of shrinking below readable sizes')
+    return sv_size, ru_size, round(sv_size * 1.3125), round(ru_size * 1.375)
+
+
+def loop_music(music, length, crossfade_seconds):
+    """Extend one selected track with explicitly requested smooth crossfades."""
+    overlap = round(crossfade_seconds * RATE)
+    if overlap <= 0 or overlap * 2 >= len(music):
+        raise ValueError('Music crossfade must be positive and shorter than half the track')
+    result = np.zeros((length, 2), dtype=np.float32)
+    first = min(length, len(music))
+    result[:first] = music[:first]
+    cursor = len(music) - overlap
+    ramp = np.linspace(0, 1, overlap, dtype=np.float32)[:, None]
+    while cursor < length:
+        count = min(len(music), length - cursor)
+        blend = min(overlap, count)
+        result[cursor:cursor + blend] *= 1 - ramp[:blend]
+        result[cursor:cursor + blend] += music[:blend] * ramp[:blend]
+        result[cursor + blend:cursor + count] = music[blend:count]
+        cursor += len(music) - overlap
+    return result
 
 
 def wrap(text, face, width):
@@ -83,10 +125,10 @@ def build_timeline(script):
 
 def mix_audio(script, timeline, frames, output):
     length = round(frames / FPS * RATE)
-    voice = np.zeros(length, dtype=np.float64)
+    voice = np.zeros(length, dtype=np.float32)
     music_adjustment_db = float(script['render'].get('music_gain_adjustment_db', 0))
     music_gain = 10 ** (music_adjustment_db / 20)
-    envelope = np.full(length, .07 * music_gain, dtype=np.float64)
+    envelope = np.full(length, .07 * music_gain, dtype=np.float32)
     rows = {row['sentence_id']: row for row in script['sentences']}
     for item in timeline:
         if item['kind'] != 'sentence':
@@ -103,17 +145,22 @@ def mix_audio(script, timeline, frames, output):
         envelope[a:b] = .025 * music_gain
     # Smooth ducking transitions over 160 ms.
     window = int(.16 * RATE)
-    cumulative = np.cumsum(np.pad(envelope, (window // 2, window // 2), mode='edge'))
-    envelope = (cumulative[window:] - cumulative[:-window])[:length] / window
+    cumulative = np.cumsum(np.pad(envelope, (window // 2, window // 2), mode='edge'), dtype=np.float64)
+    envelope = ((cumulative[window:] - cumulative[:-window])[:length] / window).astype(np.float32)
+    del cumulative
     music_path = ROOT / script['render']['music_path']
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
-    decoded = subprocess.run([ffmpeg, '-v', 'error', '-i', str(music_path), '-f', 'f32le', '-ac', '2', '-ar', str(RATE), '-'], check=True, capture_output=True).stdout
-    music = np.frombuffer(decoded, dtype='<f4').reshape(-1, 2).astype(np.float64)
+    decoded = subprocess.run([ffmpeg, '-v', 'error', '-i', str(music_path), '-t', str(length / RATE + .1), '-f', 'f32le', '-ac', '2', '-ar', str(RATE), '-'], check=True, capture_output=True).stdout
+    music = np.frombuffer(decoded, dtype='<f4').reshape(-1, 2).copy()
+    del decoded
     if len(music) < length:
-        raise ValueError('Music is shorter than video; choose an explicit loop/edit in the script')
+        crossfade = script['render'].get('music_loop_crossfade_seconds')
+        if crossfade is None:
+            raise ValueError('Music is shorter than video; choose an explicit loop/edit in the script')
+        music = loop_music(music, length, crossfade)
     music = music[:length]
     music *= .16 / max(np.sqrt(np.mean(music ** 2)), .001)
-    fade = np.ones(length)
+    fade = np.ones(length, dtype=np.float32)
     fade[:2 * RATE] = np.linspace(0, 1, 2 * RATE)
     fade[-3 * RATE:] = np.linspace(1, 0, 3 * RATE)
     mixed = voice[:, None] + music * (envelope * fade)[:, None]
@@ -124,6 +171,7 @@ def mix_audio(script, timeline, frames, output):
     return dict(seconds=length / RATE, sample_rate=RATE, channels=2, peak=peak,
                 music_gain_under_speech=.025 * music_gain, music_gain_between_sentences=.07 * music_gain,
                 music_gain_adjustment_db=music_adjustment_db,
+                music_loop_crossfade_seconds=script['render'].get('music_loop_crossfade_seconds'),
                 active_speech_rms_target=.13, speech_peak_ceiling=.70)
 
 
@@ -139,6 +187,8 @@ def panel(image, size, photo=False):
 def background_extent(size, progress, style):
     """Continuous fractional crop coordinates, independent of sentence boundaries."""
     t = min(1., max(0., progress))
+    if style.get('motion_cycles'):
+        t = .5 + .5 * math.sin(2 * math.pi * style['motion_cycles'] * t)
     zoom = style['zoom_start'] + (style['zoom_end'] - style['zoom_start']) * t
     width, height = size[0] / zoom, size[1] / zoom
     start = style.get('pan_start', [.35, .45])
@@ -165,7 +215,8 @@ def make_card(script, item, rows, images):
     draw = ImageDraw.Draw(canvas)
     if item['kind'] == 'title':
         draw.rectangle((100, 330, 1820, 700), fill=(16, 46, 43, 175))
-        y = text_block(draw, script['title_sv'], (140, 400), font(94, True), 1640, FG, 112)
+        title_face = fitted_font(script['title_sv'], 94, 1640, True, minimum=48)
+        y = text_block(draw, script['title_sv'], (140, 400), title_face, 1640, FG, 112)
         text_block(draw, script['title_ru'], (144, y + 28), font(46), 1600, MUTED, 58)
         draw.rectangle((144, 350, 250, 358), fill=GOLD)
         return canvas, None
@@ -182,46 +233,49 @@ def make_card(script, item, rows, images):
     draw.rounded_rectangle((890, 165, 1860, 980), radius=20, fill=(16, 46, 43, 225))
     row = rows[item['sentence_id']]
     index = script['sentences'].index(row)
-    draw.text((90, 65), script['title_sv'], font=font(30, True), fill=MUTED)
+    draw.text((90, 65), script['title_sv'], font=fitted_font(script['title_sv'], 30, 1550, True), fill=MUTED)
     draw.text((1740, 65), f'{index + 1:02d} / {len(rows):02d}', font=font(27), fill=MUTED)
     draw.line((90, 125, 1830, 125), fill='#35534b', width=2)
     picture = row['render_image']
-    is_photo = bool(picture and picture.endswith('.jpg'))
+    is_photo = bool(picture and Path(picture).suffix.lower() in ('.jpg', '.jpeg', '.webp'))
     if picture:
         canvas.paste(panel(images[picture], (760, 720), is_photo), (90, 180))
-    sv_lines = wrap(row['sv'], font(48, True), 900)
-    ru_lines = wrap(row['ru'], font(40), 900)
-    height = len(sv_lines) * 63 + len(ru_lines) * 55 + 56
+    sv_size, ru_size, sv_leading, ru_leading = sentence_style(row)
+    sv_lines = wrap(row['sv'], font(sv_size, True), 900)
+    ru_lines = wrap(row['ru'], font(ru_size), 900)
+    height = len(sv_lines) * sv_leading + len(ru_lines) * ru_leading + 56
     if height > 750:
         raise ValueError('Bilingual text exceeds panel: ' + row['sentence_id'])
     y = max(205, 535 - height // 2)
-    y = text_block(draw, row['sv'], (930, y), font(48, True), 900, FG, 63, row['text_highlights'])
+    y = text_block(draw, row['sv'], (930, y), font(sv_size, True), 900, FG, sv_leading, row['text_highlights'])
     draw.line((930, y + 20, 1010, y + 20), fill=GOLD, width=3)
-    y = text_block(draw, row['ru'], (930, y + 56), font(40), 900, MUTED, 55)
+    y = text_block(draw, row['ru'], (930, y + 56), font(ru_size), 900, MUTED, ru_leading)
     if y > 960:
         raise ValueError('Text bottom overflow')
-    if row['text_highlights']:
+    if row['text_highlights'] and row.get('render_caption', True):
         highlight = ' · '.join(row['text_highlights'])
-        size = 38 if len(highlight) < 25 else 27
-        face = font(size, True)
-        if face.getlength(highlight) > 760:
-            raise ValueError('Highlight overflow')
+        face = fitted_font(highlight, 38 if len(highlight) < 25 else 27, 760, True, minimum=24)
         draw.text((470, 950), highlight, font=face, fill=GOLD, anchor='mm')
+    step = min(65, 900 / len(rows))
     for n in range(len(rows)):
-        x = 930 + n * 65
-        draw.rounded_rectangle((x, 1000, x + 45, 1005), radius=2, fill=GOLD if n <= index else '#35534b')
+        x = 930 + n * step
+        draw.rounded_rectangle((x, 1000, x + step * .69, 1005), radius=2, fill=GOLD if n <= index else '#35534b')
     return canvas, picture if is_photo else None
 
 
 def write_credits(episode, output):
+    script = yaml.safe_load((episode / 'script.yaml').read_text())
     sources = yaml.safe_load((episode / 'sources.yaml').read_text())
     assets = yaml.safe_load((episode / 'assets.yaml').read_text())
-    lines = ['# Finland i Norden — source and media credits', '',
+    lines = [f"# {script['title_sv']} — source and media credits", '',
              'Keep this file with the video. Source texts and media retain their own terms.', '',
              '## Text sources', '']
     for record in sources['sources']:
         source, attribution = record['source'], record['attribution']
-        lines += [f"### {source['title']}", '', f"{attribution['credit']}. [{source['title']}]({source['source_url']}).", '',
+        title = source.get('title', attribution['title'])
+        url = source.get('source_url') or attribution.get('url')
+        label = f'[{title}]({url})' if url else title
+        lines += [f"### {title}", '', f"{attribution['credit']}. {label}.", '',
                   attribution['license'], '', attribution.get('publication_note', ''), '',
                   'Source preparation: ' + attribution.get('changes', ''), '']
         if attribution.get('license_url'):
@@ -232,16 +286,19 @@ def write_credits(episode, output):
     for asset in assets['assets']:
         lines += [f"### {asset['asset_id']}", '', asset['required_credits'], '', asset['reuse_terms'], '']
         if asset.get('source_url'):
-            lines += [f"[Source]({asset['source_url']})", '']
-    lines += ['## Adaptations in this video', '',
-              'The forest photograph is cropped, softly blurred, darkened and continuously panned/zoomed',
-              'as a full-frame background. Adaptations of the PtG photograph retain CC BY-SA 4.0.',
-              'The Saimaa photograph is cropped to a steady foreground panel.',
-              'Maps are styled from Natural Earth geometry. Music is excerpted, faded and reduced',
-              'under narration. Original photo and music masters remain unchanged.', '']
+            url = asset['source_url']
+            label = f'[Source]({url})' if url.startswith(('https://', 'http://')) else f'Repository source: `{url}`'
+            lines += [label, '']
+    lines += ['## Adaptations in this video', '']
+    notes = script['render'].get('adaptation_notes', [
+        'The selected background is cropped, softly blurred, darkened and continuously panned/zoomed.',
+        'Foreground images remain steady. Music is excerpted, faded and reduced under narration.',
+        'Source media retain the licenses and adaptation notices listed above.'])
+    for note in notes:
+        lines += [note, '']
     content = '\n'.join(lines)
     (episode / 'CREDITS.md').write_text(content)
-    (output / (episode.name + '.CREDITS.md')).write_text(content)
+    (output / (export_stem(episode.name) + '.CREDITS.md')).write_text(content)
 
 
 def main():
@@ -273,9 +330,9 @@ def main():
         return
     mix = mix_audio(script, timeline, frames, output / 'mix.wav')
     ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
-    destination = deliverables / (args.section + '.mp4')
+    destination = deliverables / (export_stem(args.section) + '.mp4')
     temporary = output / 'rendering.mp4'
-    command = [ffmpeg, '-y', '-v', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-', '-i', str(output / 'mix.wav'), '-c:v', 'libx264', '-preset', 'fast', '-crf', '20', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-frames:v', str(frames), str(temporary)]
+    command = [ffmpeg, '-y', '-v', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-', '-i', str(output / 'mix.wav'), '-c:v', 'libx264', '-threads', '2', '-preset', 'fast', '-crf', '20', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-frames:v', str(frames), str(temporary)]
     with (output / 'encode.log').open('w') as log:
         process = subprocess.Popen(command, stdin=subprocess.PIPE, stderr=log)
         try:

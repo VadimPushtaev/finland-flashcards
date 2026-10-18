@@ -94,3 +94,22 @@ attribution is required. Respect Alma's model attribution if that voice is used.
 Use [ASSETS.md](ASSETS.md) for runtime setup, downloads and integrity checks.
 The per-video script records selected settings and deviations. This document
 owns the shared engine/preset default; avoid separate conflicting voice policies.
+
+## Numbers and targeted retakes
+
+Chapter 1 production found that a recognizable year could coincide with a wrong
+adjacent number in local ASR. Check the complete sentence again after every
+change. When needed, separate Swedish number components in a speech-only
+expansion (for example, `två hundra åttio sex tusen`) while preserving the exact
+source figure on screen. Expand each decade fully rather than leaving a hanging
+spoken hyphen, such as `nittonhundrasextiotalet och nittonhundrasjuttiotalet`.
+These are diagnostic-led techniques, not automatic substitutions for every number.
+
+Generate a targeted candidate into a separate retake folder. Compare its complete
+transcript with the intended input before adopting it; ASR differences remain
+uncertain without listening. Merge only the selected clip and metric into the
+complete source-order narration set, refresh asset checksums, and regenerate the
+mix and video. `audition.py --indices` writes metrics for the selected subset, so
+never point it at the retained full narration directory during a retake.
+Use `check_audio.py --threads 1 --resume` to reuse transcripts only while the
+recorded WAV hash matches. Retain retake history in the episode diagnostic report.
