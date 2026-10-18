@@ -129,6 +129,13 @@ class ScriptTests(unittest.TestCase):
             self.assertIn(row['ru'], document)
         self.assertIn('source-validated script', document)
 
+    def test_archived_book_credit_needs_no_web_url(self):
+        context = workflow.load_context('hb-c01-natur')
+        script = workflow.scaffold(context)
+        document = workflow.review_markdown(script, context)
+        self.assertIn('Finland – Lärobok i samhällsorientering', document)
+        self.assertIn('Foreword permits free use', document)
+
 
 if __name__ == '__main__':
     unittest.main()

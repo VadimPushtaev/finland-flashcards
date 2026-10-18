@@ -5,12 +5,44 @@ from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
 
+import numpy as np
+
 SPEC = importlib.util.spec_from_file_location('render', Path(__file__).resolve().parents[2] / 'tools/render.py')
 render = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(render)
 
 
 class RenderTests(unittest.TestCase):
+    def test_long_title_and_large_sentence_count_fit(self):
+        title = 'Landskap, regioner och städer'
+        self.assertLessEqual(render.fitted_font(title, 94, 1640, True).getlength(title), 1640)
+        rows = [dict(sentence_id=str(i), sv='Finland.', ru='Финляндия.',
+                     render_image=None, text_highlights=[]) for i in range(54)]
+        card, _ = render.make_card(dict(title_sv=title, sentences=rows),
+                                   dict(kind='sentence', sentence_id='53'),
+                                   {r['sentence_id']: r for r in rows}, {})
+        self.assertEqual(card.getpixel((1840, 1002))[3], 0)
+        self.assertGreater(card.getpixel((1820, 1002))[3], 0)
+
+    def test_explicit_music_loop_preserves_level_and_duration(self):
+        music = np.full((100, 2), .25, dtype=np.float32)
+        with patch.object(render, 'RATE', 10):
+            result = render.loop_music(music, 305, 2)
+            with self.assertRaisesRegex(ValueError, 'crossfade'):
+                render.loop_music(music, 305, 6)
+        self.assertEqual(result.shape, (305, 2))
+        np.testing.assert_allclose(result, .25, atol=1e-7)
+
+    def test_long_video_background_moves_at_opening_and_turns_smoothly(self):
+        style = dict(zoom_start=1.06, zoom_end=1.219, motion_cycles=3,
+                     pan_start=[.15, .15], pan_end=[.85, .85])
+        crops = [render.background_extent((2200, 1238), n / 10080, style)
+                 for n in range(10081)]
+        self.assertGreater(crops[120][0] - crops[0][0], 10)
+        self.assertLess(max(max(abs(a-b) for a,b in zip(x,y))
+                            for x,y in zip(crops,crops[1:])), .5)
+        self.assertAlmostEqual(crops[0][0], crops[-1][0])
+
     def test_wrap_preserves_both_languages(self):
         for text in ['Finlands areal är 338 432 km².', 'Площадь Финляндии составляет 338 432 км².']:
             self.assertEqual(' '.join(render.wrap(text, render.font(40), 330)), text)

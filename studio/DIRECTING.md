@@ -21,6 +21,10 @@ indicators and panel tints while preserving readable contrast in both languages.
 Keep titles visible so color is not the only way to identify a chapter. Record
 chapter palette assignments here when selected; episode scripts use that palette.
 
+Chapter 1 uses the established evergreen palette: panel/background tint `#102e2b`,
+Swedish text `#f6f1e6`, Russian text and secondary labels `#bdd3c9`, highlights
+`#e7bc70`, and separators `#35534b`. Carry it through all Chapter 1 episodes.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its
@@ -49,7 +53,10 @@ that make the opening appear static. For an approximately two-minute episode, st
 with roughly 12–15% total zoom plus a gentle diagonal pan; record exact values in
 the script and adjust after viewing. Motion must not reset at sentence boundaries or jump by integer
 pixels. Keep foreground maps and illustrations steady so the background remains
-subordinate. Episode scripts specify the photograph and precise treatment.
+subordinate. For longer episodes, a smooth repeating pan/zoom path may use approximately
+140 seconds per cycle, starting while already moving, with gentle reversals.
+It follows the full-video clock and never restarts at sentence or scene boundaries.
+Episode scripts specify the photograph and precise treatment.
 
 Record exact fonts, palette and layout measurements in the episode script.
 Start with about 5% safe margins. Avoid placing faces, flags, or essential map labels
