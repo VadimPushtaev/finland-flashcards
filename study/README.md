@@ -42,7 +42,7 @@ from the repository root:
 rsync -azR --exclude=node_modules --exclude=dist --exclude=__pycache__ \
   --exclude='*.pyc' --exclude=.venv --exclude=test-results \
   --exclude=playwright-report \
-  compose.yaml .dockerignore study/ data/homebrew/ \
+  compose.yaml .dockerignore study/ data/homebrew/ videos/homebrew/ \
   hetzner:/opt/finland-flashcards/
 ssh hetzner 'cd /opt/finland-flashcards && docker compose -p finland-flashcards up --build -d --wait --wait-timeout 120'
 ```
@@ -63,6 +63,7 @@ progress, bookmarks and preferences live in SQLite in the persistent Docker volu
 ## Study features
 
 - Twelve chapter cards and section navigation, with reading-time estimates.
+- Inline video players and video credits for sections with available MP4 exports.
 - Complete original paragraphs and ordered/unordered lists, without rewriting.
 - Search across the anthology; results open the original passage in context.
 - Paragraph bookmarks, completed sections and resume-reading links.
@@ -234,3 +235,11 @@ Rebuild the Docker image after adding reviewed translation files.
 Browser tests cover translation selection, discontinuous expressions, Unicode
 spans, keyboard focus, unavailable/error states, non-overlapping panes, orientation
 changes, large text, and retained bookmarks/navigation across seven viewport sizes.
+
+## Section videos
+
+The reader discovers exports in `videos/homebrew/` (override with
+`HOMEBREW_VIDEO_DIR`). Name each MP4 `<chapter-id>-<two-digit-section-number>-<section-slug>.mp4`,
+for example `hb-c01-01-lage.mp4`, and keep its matching `.CREDITS.md` alongside it.
+Sections without an MP4 show no player. Playback is manual, supports seeking,
+and does not preload videos. Rebuild the Docker image after adding exports.

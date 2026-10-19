@@ -2,6 +2,7 @@
 import unittest
 import os
 import tempfile
+from pathlib import Path
 from unittest.mock import patch
 from copy import deepcopy
 
@@ -34,6 +35,28 @@ class StudyApiTests(unittest.TestCase):
                 response = self.client.get(f'/api/chapters/{entry["id"]}')
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(response.json()["sections"], read_yaml(DATA_DIR / entry["path"])["sections"])
+
+    def test_optional_videos_credits_and_range_requests(self):
+        with tempfile.TemporaryDirectory() as directory, patch('app.main.VIDEO_DIR', Path(directory)):
+            base = '/api/chapters/hb-c01/sections/hb-c01-lage/video'
+            self.assertEqual(self.client.get('/api/chapters/hb-c01').json()['videos'], {})
+            self.assertEqual(self.client.get(base).status_code, 404)
+            video = Path(directory) / 'hb-c01-01-lage.mp4'
+            video.write_bytes(b'0123456789')
+            metadata = self.client.get('/api/chapters/hb-c01').json()['videos']
+            self.assertEqual(metadata, {'hb-c01-lage': {'url': base, 'credits_url': None}})
+            response = self.client.get(base, headers={'Range': 'bytes=2-5'})
+            self.assertEqual(response.status_code, 206)
+            self.assertEqual(response.content, b'2345')
+            self.assertEqual(response.headers['content-type'], 'video/mp4')
+            self.assertEqual(response.headers['content-range'], 'bytes 2-5/10')
+            self.assertEqual(self.client.get(base + '/credits').status_code, 404)
+            video.with_suffix('.CREDITS.md').write_text('Video credits', encoding='utf-8')
+            metadata = self.client.get('/api/chapters/hb-c01').json()['videos']
+            self.assertEqual(metadata['hb-c01-lage']['credits_url'], base + '/credits')
+            self.assertEqual(self.client.get(base + '/credits').text, 'Video credits')
+            self.assertEqual(self.client.get(base.replace('hb-c01-lage', 'hb-c02-forhistoria')).status_code, 404)
+            self.assertEqual(self.client.get(base.replace('/hb-c01/', '/missing/')).status_code, 404)
 
     def test_reviewed_translation_matches_exact_sentences_and_spans(self):
         result = self.client.get('/api/chapters/hb-c01/sections/hb-c01-lage/translation').json()
