@@ -4,7 +4,7 @@ import math
 import os
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 import yaml
@@ -15,6 +15,7 @@ from app.auth import install_routes
 
 DATA_DIR = Path(os.environ.get("HOMEBREW_DATA_DIR", Path(__file__).resolve().parents[2] / "data/homebrew"))
 STATIC_DIR = Path(os.environ.get("HOMEBREW_STATIC_DIR", Path(__file__).resolve().parents[1] / "frontend/dist"))
+VIDEO_DIR = Path(os.environ.get("HOMEBREW_VIDEO_DIR", Path(__file__).resolve().parents[2] / "videos/homebrew"))
 app = FastAPI(title="Homebrew study", docs_url=None, redoc_url=None)
 
 
@@ -73,7 +74,39 @@ def get_chapter(chapter_id: str):
     _, chapters, _ = library()
     if chapter_id not in chapters:
         raise HTTPException(404, "Kapitlet finns inte.")
-    return chapters[chapter_id]
+    chapter = chapters[chapter_id]
+    videos = {}
+    for section in chapter["sections"]:
+        path = video_path(chapter, section["id"])
+        if path.is_file():
+            base = f'/api/chapters/{chapter_id}/sections/{section["id"]}'
+            videos[section["id"]] = {"url": base + "/video",
+                                     "credits_url": base + "/video/credits" if path.with_suffix(".CREDITS.md").is_file() else None}
+    return {**chapter, "videos": videos}
+
+
+def video_path(chapter, section_id):
+    """Resolve an export from a known section's number and stable slug."""
+    for number, section in enumerate(chapter["sections"], 1):
+        if section["id"] == section_id:
+            slug = section_id.removeprefix(chapter["id"] + "-")
+            return VIDEO_DIR / f'{chapter["id"]}-{number:02d}-{slug}.mp4'
+    raise HTTPException(404, "Avsnittet finns inte.")
+
+
+@app.get("/api/chapters/{chapter_id}/sections/{section_id}/video")
+@app.get("/api/chapters/{chapter_id}/sections/{section_id}/video/credits")
+def section_video(chapter_id: str, section_id: str, request: Request):
+    """Serve available exports with byte-range support for seeking."""
+    path = video_path(get_chapter(chapter_id), section_id)
+    if not path.is_file():
+        raise HTTPException(404, "Videon finns inte.")
+    credits = request.url.path.endswith("/credits")
+    if credits:
+        path = path.with_suffix(".CREDITS.md")
+    if not path.is_file():
+        raise HTTPException(404, "Videons källor finns inte.")
+    return FileResponse(path, media_type="text/plain; charset=utf-8" if credits else "video/mp4")
 
 
 @app.get("/api/chapters/{chapter_id}/sections/{section_id}/translation")
