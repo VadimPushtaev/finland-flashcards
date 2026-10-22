@@ -241,5 +241,51 @@ changes, large text, and retained bookmarks/navigation across seven viewport siz
 The reader discovers exports in `videos/homebrew/` (override with
 `HOMEBREW_VIDEO_DIR`). Name each MP4 `<chapter-id>-<two-digit-section-number>-<section-slug>.mp4`,
 for example `hb-c01-01-lage.mp4`, and keep its matching `.CREDITS.md` alongside it.
-Sections without an MP4 show no player. Playback is manual, supports seeking,
-and does not preload videos. Rebuild the Docker image after adding exports.
+Sections without an MP4 or packaged HLS export show no player. Playback is manual
+and supports seeking. Video data is loaded on play; switching language after
+playback starts can buffer the selected track. Rebuild the image after adding exports.
+
+### Swedish and Russian audio without duplicate video
+
+Place a synchronized AAC audio file beside the original MP4, named
+`<video-stem>.ru.m4a` (for example `hb-c01-01-lage.ru.m4a`). The original MP4
+supplies the Swedish track. Match the Russian narration to each scene, not only
+the total duration. Packaging rejects a total duration difference over one second;
+this check does not replace listening and scene alignment review. Include Russian
+narration credits in the matching `.CREDITS.md`.
+
+The Docker build automatically packages bilingual exports as HLS: one unchanged
+H.264 video stream, separate Swedish/Russian AAC streams, and small playlists.
+It copies compressed streams without re-encoding. The runtime image contains
+only the HLS version for bilingual exports, so it does not duplicate the original
+MP4 or store a second video for Russian. Swedish-only exports remain MP4s. Original
+source files in `videos/homebrew/` are never modified.
+
+The player shows **Ljudspråk → Svenska / Русский** only for bilingual exports.
+Switching languages retains playback position, pause state and playback speed.
+Both language playlists reference the same video file. HLS.js is loaded only for
+HLS exports; browsers without Media Source support use native HLS when available.
+A brief rebuffer can occur when changing languages. This does not translate text
+already embedded in the images. Russian narration must be produced separately.
+
+For local development, install FFmpeg (including `ffprobe`), then run from `study/`:
+
+```bash
+poetry run python -m app.package_videos ../videos/homebrew state/videos
+HOMEBREW_VIDEO_DIR="$PWD/state/videos" poetry run uvicorn app.main:app --port 18743
+```
+
+Choose a fresh output directory each time; packaging refuses to overwrite an
+existing one. No FFmpeg installation is needed in the production runtime.
+
+Test actual language switching using temporary generated tone tracks, without
+creating or publishing fake Russian narration:
+
+```bash
+cd study/frontend
+npm run build
+STUDY_E2E_VIDEO_TRACKS=1 npm run test:e2e -- video.spec.ts
+```
+
+This fixture requires FFmpeg on the test host. Backend tests also exercise
+packaging and range requests (the packaging test is skipped if FFmpeg is absent).

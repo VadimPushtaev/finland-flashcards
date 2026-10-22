@@ -15,6 +15,10 @@ if __name__ == '__main__':
     os.environ['STUDY_SECURE_COOKIES'] = 'false'
     os.environ['STUDY_PUBLIC_ORIGIN'] = 'http://127.0.0.1:18745'
     try:
+        if os.environ.get('STUDY_E2E_VIDEO_TRACKS') == '1':
+            from video_fixture import create_videos
+            _, videos = create_videos(path.parent / 'media')
+            os.environ['HOMEBREW_VIDEO_DIR'] = str(videos)
         uvicorn.run('app.main:app', host='127.0.0.1', port=18745)
     finally:
         shutil.rmtree(path.parent, ignore_errors=True)
