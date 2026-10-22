@@ -1,6 +1,6 @@
 # Finnish citizenship test (kansalaisuuskoe / medborgarskapsprov) — all we know
 
-Last updated: 2026-10-18.
+Last updated: 2026-10-20.
 
 This page tracks *confirmed* information and *draft* details about Finland’s planned citizenship test.
 It is an idempotent, consolidated snapshot (not a run log); the consultation list below is cumulative and deduplicated.
@@ -15,14 +15,14 @@ Primary sources:
 - The Government proposal introduces a new *society knowledge requirement* (“yhteiskuntatietoedellytys” / “yhteiskuntaosaaminen”) as an additional naturalisation (“kansalaistaminen”) condition.
 - The new society-knowledge requirement is explicitly separate from the existing language requirement; the proposal keeps the language requirement in place and adds society knowledge on top.
 
-## Status and timeline (as of 2026-10-18)
+## Status and timeline (as of 2026-10-20)
 
 - The Interior Ministry describes the Citizenship Act reform as a 3‑phase project:
   - Phase 1 (residence time): changes confirmed 2024-07-05, in force since 2024-10-01.
   - Phase 2 (other conditions + loss of citizenship): Government proposal given to Parliament 2025-03-27; changes confirmed 2025-10-24, in force since 2025-12-17.
   - Phase 3: citizenship test and society knowledge requirement.
 - The Phase 3 draft Government proposal was dated 2025-12-19 and was on consultation 2025-12-19 – 2026-02-06.
-- The Legislation Assessment Council (`Lainsäädännön arviointineuvosto`) issued an opinion on the draft proposal on 2026-03-26. It found the draft impact assessment mostly successful and said the draft gave a clear overall picture, but recommended more precise descriptions of assumptions and uncertainties and a more concrete assessment of practical effects on applicants before submitting the Government proposal: https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan, https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
+- The Legislation Assessment Council (`Lainsäädännön arviointineuvosto`) issued an opinion on the draft proposal on 2026-03-26. It found the draft impact assessment mostly successful and said the draft gave a clear overall picture, but recommended more precise descriptions of assumptions and uncertainties and a more concrete assessment of practical effects on applicants before submitting the Government proposal: https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan, https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950 A Swedish translation of the release was published on 2026-05-08 and links a Swedish summary of the same 2026-03-26 opinion (`VN/8206/2026-VNK-3`). The summary calls for clearer assumptions about costs, retakes, participation fees and application practices, and a more concrete assessment of applicants’ costs, time, preparation and retake burden. These are recommendations on the historical draft, not new test rules: https://valtioneuvosto.fi/sv/-/konsekvensbedomningen-av-medborgarskapsprovet-ar-i-huvudsak-val-utford-men-vissa-preciseringar-behovs, https://valtioneuvosto.fi/documents/194055633/209910742/Sammanfattning+av+utlåtandet+av+rådet+för+bedömning+av+lagstiftningen+om+ändringar+i+medborgarskapslagen.pdf/a84e5a3d-62f4-3deb-489c-6dead7cd8018?t=1778236827991
 - The Government submitted the Phase 3 proposal to Parliament on 2026-04-16. The proposal is `HE 54/2026 vp` / `SM/2026/22`: https://valtioneuvosto.fi/paatokset/paatos?decisionId=6035
 - The Interior Ministry press release confirms that the Government submitted the proposal to Parliament on 2026-04-16, and says the amendments would enter into force at the beginning of 2027, after which the citizenship test would also be introduced: https://intermin.fi/en/-/government-proposes-to-introduce-citizenship-test
 - A 2026-06-03 Valtioneuvosto / Interior Ministry press release on the Government's second supplementary budget proposal says the Government proposes EUR 4.2 million for the Finnish Immigration Service (`Maahanmuuttovirasto` / Migri) for introducing the citizenship test. It also states that the aim is for permanent citizenship-test costs to be covered by test fees in future, and that the citizenship test will be introduced in early 2027: https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen, https://valtioneuvosto.fi/en/-/1410869/supplementary-budget-allocates-funding-for-drone-defence-removals-from-the-country-and-citizenship-test
