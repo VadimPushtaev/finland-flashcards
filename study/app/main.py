@@ -78,10 +78,19 @@ def get_chapter(chapter_id: str):
     videos = {}
     for section in chapter["sections"]:
         path = video_path(chapter, section["id"])
-        if path.is_file():
+        hls = path.with_suffix("") / "master.m3u8"
+        if path.is_file() or hls.is_file():
             base = f'/api/chapters/{chapter_id}/sections/{section["id"]}'
             videos[section["id"]] = {"url": base + "/video",
                                      "credits_url": base + "/video/credits" if path.with_suffix(".CREDITS.md").is_file() else None}
+            if hls.is_file():
+                videos[section["id"]].update({
+                    "url": base + "/video/hls/master.m3u8",
+                    "format": "hls",
+                    "audio_tracks": [{"language": language, "label": label,
+                                      "url": base + f"/video/hls/master-{language}.m3u8"}
+                                     for language, label in [("sv", "Svenska"), ("ru", "Русский")]],
+                })
     return {**chapter, "videos": videos}
 
 
@@ -99,14 +108,23 @@ def video_path(chapter, section_id):
 def section_video(chapter_id: str, section_id: str, request: Request):
     """Serve available exports with byte-range support for seeking."""
     path = video_path(get_chapter(chapter_id), section_id)
-    if not path.is_file():
-        raise HTTPException(404, "Videon finns inte.")
     credits = request.url.path.endswith("/credits")
     if credits:
         path = path.with_suffix(".CREDITS.md")
     if not path.is_file():
-        raise HTTPException(404, "Videons källor finns inte.")
+        raise HTTPException(404, "Videons källor finns inte." if credits else "Videon finns inte.")
     return FileResponse(path, media_type="text/plain; charset=utf-8" if credits else "video/mp4")
+
+
+@app.get("/api/chapters/{chapter_id}/sections/{section_id}/video/hls/{filename}")
+def section_hls(chapter_id: str, section_id: str, filename: str):
+    """Serve only packaged playlists and media, including byte-range requests."""
+    root = video_path(get_chapter(chapter_id), section_id).with_suffix("").resolve()
+    path = (root / filename).resolve()
+    if path.parent != root or path.suffix not in {".m3u8", ".m4s"} or not path.is_file():
+        raise HTTPException(404, "Videon finns inte.")
+    media_type = "application/vnd.apple.mpegurl" if path.suffix == ".m3u8" else "video/mp4"
+    return FileResponse(path, media_type=media_type)
 
 
 @app.get("/api/chapters/{chapter_id}/sections/{section_id}/translation")

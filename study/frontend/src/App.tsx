@@ -1,3 +1,4 @@
+import { VideoPlayer, type VideoSource } from './VideoPlayer';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { useAccount, type Progress } from './Account';
 import { TranslationPanel, TranslationText, type Selection, type TranslationData } from './Translation';
@@ -5,7 +6,7 @@ import { TranslationPanel, TranslationText, type Selection, type TranslationData
 type Unit = { id: string; text: string; sentences?: { id: string; start: number; end: number }[] };
 type Block = Unit & { type: 'paragraph' | 'list'; ordered?: boolean; items?: Unit[] };
 type Section = { id: string; title: string; blocks: Block[] };
-type Chapter = { id: string; order: number; title: string; minutes: number; word_count: number; sections: Section[]; videos: Record<string, { url: string; credits_url: string | null }> };
+type Chapter = { id: string; order: number; title: string; minutes: number; word_count: number; sections: Section[]; videos: Record<string, VideoSource> };
 type Summary = Omit<Chapter, 'sections'> & { sections: { id: string; title: string }[] };
 type Library = { title: string; language: string; chapters: Summary[] };
 type Passage = { chapter_id: string; chapter_title: string; section_id: string; section_title: string; unit_id: string; text: string; order: number };
@@ -213,10 +214,7 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
         <div className="reader-chapter-title">{translatedText(chapter.id, chapter.title)}</div>
         <h1>{translatedText(section.id, section.title)}</h1>
         <p className="reading-time"><Icon name="clock" /> {Math.max(1, Math.ceil(sectionUnits.reduce((n, u) => n + u.text.split(/\s+/).length, 0) / 200))} min <span>·</span>{done ? 'Läst' : `Avsnitt ${sectionIndex + 1} av ${chapter.sections.length}`}</p>
-        {chapter.videos[section.id] && <figure className="section-video" key={section.id}>
-          <video controls playsInline preload="none" src={chapter.videos[section.id].url} aria-label={`Video: ${section.title}`} />
-          <figcaption><span>Video · {section.title}</span>{chapter.videos[section.id].credits_url && <a href={chapter.videos[section.id].credits_url!} target="_blank" rel="noreferrer">Videons källor och upphov</a>}</figcaption>
-        </figure>}
+        {chapter.videos[section.id] && <VideoPlayer key={section.id} source={chapter.videos[section.id]} title={section.title} />}
         <div className="translation-hint" role="status">{translationError ? <>Översättningen kunde inte hämtas. <button className="btn btn-sm btn-outline-primary" onClick={() => setTranslationAttempt(n => n + 1)}>Försök igen</button></> : !translation ? 'Hämtar språkstöd…' : translation.available ? <><Icon name="translate" /> Tryck på ett ord för rysk förklaring och mening.</> : 'Rysk översättning finns inte för det här avsnittet ännu.'}</div>
         <div className={`reader-text ${progress.serif ? 'serif' : ''}`} style={{ fontSize: progress.size }}>{section.blocks.map(block => block.type === 'paragraph' ? renderUnit(block) : block.ordered ? <ol key={block.id}>{block.items?.map(unit => <li key={unit.id}>{renderUnit(unit)}</li>)}</ol> : <ul key={block.id}>{block.items?.map(unit => <li key={unit.id}>{renderUnit(unit)}</li>)}</ul>)}</div>
         <div className="section-completion"><div><Icon name={done ? 'check-circle-fill' : 'check2-circle'} /><span>{done ? 'Det här avsnittet är läst.' : 'Klar med det här avsnittet?'}</span></div><button className={`btn ${done ? 'btn-outline-primary' : 'btn-primary'}`} aria-pressed={done} onClick={() => toggleCompleted(section.id)}>{done ? 'Markera som oläst' : 'Markera som läst'}</button></div>
