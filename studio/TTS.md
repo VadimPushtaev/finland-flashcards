@@ -113,3 +113,46 @@ mix and video. `audition.py --indices` writes metrics for the selected subset, s
 never point it at the retained full narration directory during a retake.
 Use `check_audio.py --threads 1 --resume` to reuse transcripts only while the
 recorded WAV hash matches. Retain retake history in the episode diagnostic report.
+
+## Russian alternate audio for the first episode
+
+The first Russian Supertonic F1 result was rejected by the user for pronunciation.
+Its replacement uses **Silero v5_6_ru / Baya**, a dedicated Russian model with
+stress and homograph processing, at 48 kHz and seed 42. Explicit stress hints
+cover names, EET/GMT are expanded into their Russian meanings, and the area
+figure is expanded exactly. On-screen translations remain unchanged.
+
+The three Russian presets were compared on six difficult passages, with timings
+and local-ASR evidence in `episodes/hb-c01-lage/russian-voice-comparison.json`.
+Baya has a slower native delivery than the other tested presets. All 14 final
+takes fit the original scenes without tempo changes. This is a provisional
+selection for user listening review, not an expert pronunciation certification.
+The superseded Russian audio is replaced, not retained as an alternate export.
+The accepted Swedish narration remains unchanged.
+
+Use the CPU-only Python 3.12 Poetry environment. PyTorch comes from its explicit
+CPU wheel source. The official model and its license are preserved in the
+checksum-pinned `runtime/russian-downloads.yaml` manifest. Its official LICENSE
+states CC BY-NC-SA 4.0; do not infer model terms from a README badge. The existing
+`runtime/downloads.yaml` still supplies the music and Whisper-small diagnostic model.
+
+```sh
+cd studio/runtime/narration
+poetry install --no-root
+poetry run python ../../tools/fetch_assets.py ../russian-downloads.yaml
+poetry run python ../../tools/russian_narration.py hb-c01-lage --replace
+poetry run python ../../tools/check_audio.py ../../media/hb-c01-lage/narration-ru \
+  --language ru --pattern 'hb-*.wav' --resume
+```
+
+The model is loaded locally with its checksum verified before synthesis; there
+is no cloud inference. Existing exports require explicit `--replace`. To compare
+presets, run `audition_russian.py hb-c01-lage`; unused audition WAVs are regenerable.
+
+`episodes/hb-c01-lage/russian-narration.yaml` owns pronunciation and generation
+settings. The builder verifies the video hash, translation hash and sentence order,
+uses existing scene boundaries, and rejects speech needing more than 1.12x tempo.
+It never truncates a sentence. Raw/scene-fitted takes and metrics are retained;
+the full WAV mix is regenerable. The exported AAC track is
+`videos/homebrew/hb-c01-01-lage.ru.m4a`. Docker packages it with the existing video
+as shared-video HLS with a Swedish/Russian selector.
