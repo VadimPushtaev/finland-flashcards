@@ -54,14 +54,14 @@ test('section navigation clears selection and unavailable sections remain readab
   }));
   await page.goto(first);
   await page.locator(wordSelector).first().click();
-  await page.locator('.reader-contents summary').click();
-  await page.getByRole('combobox', { name: 'Välj avsnitt' }).selectOption('hb-c01-regioner');
+  await page.getByRole('button', { name: 'Välj avsnitt' }).click();
+  await page.locator('.breadcrumb-dropdown a[href$=\"/hb-c01-regioner\"]').click();
   await expect(page.locator('.translation-panel')).toHaveCount(0);
   await expect(page.locator('.translation-hint')).toContainText('finns inte');
   await expect(page.locator('.reader-text')).toContainText('De olika områdena');
   await expect(page.locator('.translation-word')).toHaveCount(0);
-  await page.locator('.reader-contents summary').click();
-  await page.getByRole('combobox', { name: 'Välj kapitel' }).selectOption('hb-c12');
+  await page.getByRole('button', { name: 'Välj kapitel' }).click();
+  await page.locator('.breadcrumb-dropdown a[href=\"#/chapter/hb-c12\"]').click();
   await expect(page.locator('.reader-chapter-title')).toHaveText('Integration, uppehåll och medborgarskap');
 });
 
