@@ -30,3 +30,17 @@ they are diagnostic evidence, not confirmed pronunciation errors or expert revie
 Superseded exports, trial audio and render intermediates were removed. Approved
 narration takes are retained in Git. Source downloads and generated maps remain
 local caches, with pinned download manifests and production tools for restoration.
+
+## Russian alternate audio — revised 2026-10-20
+
+The user rejected the first Russian track's pronunciation and authorized replacing
+it. The [replacement Russian track](../../../videos/homebrew/hb-c01-01-lage.ru.m4a)
+uses Silero v5_6_ru / Baya with explicit Russian stress hints. All 14 takes fit the
+accepted scene boundaries without speeding up or truncation. EET/GMT are spoken
+as their Russian meanings. The original video and Swedish audio are unchanged.
+
+The original music is remixed with ducking aligned to the new Russian speech.
+See [configuration](russian-narration.yaml), [timings/checksums](russian-narration.json),
+[voice comparison](russian-voice-comparison.json), and
+[local ASR diagnostics](russian-narration-check.json). Listening review of this
+replacement is pending; automated transcripts do not establish pronunciation quality.

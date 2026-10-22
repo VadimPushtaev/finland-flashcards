@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "homebrew-narration"
+version = "0.1.0"
+description = "CPU-only Russian narration and diagnostics"
+authors = ["Vadim Pushtaev"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+torch = {version = "2.8.0+cpu", source = "pytorch-cpu"}
+numpy = "^2.2"
+soundfile = "^0.13"
+scipy = "^1.17"
+pyyaml = "^6.0"
+faster-whisper = "^1.2"
+pillow = "^11.3"
+imageio-ffmpeg = "^0.6"
+
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"

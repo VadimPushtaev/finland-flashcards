@@ -27,3 +27,13 @@ Automated checks do not constitute a listening approval.
 The exports predate the direction clarification that image captions require a
 visible foreground image. Existing videos have not been rerendered, as requested;
 the caption-visibility correction remains future rendering work.
+
+## Russian audio
+
+[1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as
+a separate, synchronized AAC track (2:21.708). The revised track uses the native
+Russian Silero Baya voice with stress hints and no speed adjustments; listening
+review is pending.
+Its [credits](hb-c01-01-lage.CREDITS.md) cover the Russian voice and reused music.
+The study Docker build adds a Swedish/Russian selector with one shared video
+stream; there is no separate Russian MP4.

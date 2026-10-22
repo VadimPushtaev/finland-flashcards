@@ -1,0 +1,40 @@
+schema_version: 1
+section_id: hb-c01-lage
+language: ru
+engine: silero
+model: v5_6_ru
+model_path: studio/media/models/silero-ru/v5_6_ru.pt
+model_sha256: 04cc9b1d08ce38bcaa9d02c488d80d3e6806d17f7eaa7c95982f36a3cbf50b2e
+model_license: CC BY-NC-SA 4.0 (official LICENSE file)
+voice: baya
+sample_rate: 48000
+seed: 42
+threads: 4
+put_accent: true
+put_stress_homo: true
+put_yo: true
+put_yo_homo: true
+max_tempo: 1.12
+scene_end_margin_seconds: 0.35
+pronunciation_replacements:
+  Финляндия: Финл+яндия
+  Финляндии: Финл+яндии
+  Финляндией: Финл+яндией
+  Соседние: Сос+едние
+  Гринвичу: Гр+инвичу
+  восточноевропейское: восточноевроп+ейское
+  Норвегия: Норв+егия
+  Норвегией: Норв+егией
+  Швеция: Шв+еция
+  Швецией: Шв+ецией
+  Эстония: Эст+ония
+  Эстонией: Эст+онией
+  Сайма: С+айма
+speech_overrides:
+  hb-c01-u0004-s001:
+    text: "Часовой пояс Финляндии — восточноевропейское время: время по Гринвичу плюс два часа."
+    reason: Expand EET and GMT into their Russian meanings; avoid spelling redundant acronyms. Plus two denotes hours. Displayed text remains unchanged.
+  hb-c01-u0006-s001:
+    text: Площадь Финляндии составляет триста тридцать восемь тысяч четыреста тридцать два квадратных километра.
+    reason: Expand exactly 338 432 and its square-kilometre unit for speech.
+review_status: replacement requested by user; pending listening review

@@ -95,3 +95,28 @@ as a full-frame background. Adaptations of the PtG photograph retain CC BY-SA 4.
 The Saimaa photograph is cropped to a steady foreground panel.
 Maps are styled from Natural Earth geometry. Music is excerpted, faded and reduced
 under narration. Original photo and music masters remain unchanged.
+
+## Russian alternate audio (revised 2026-10-20)
+
+The companion `hb-c01-01-lage.ru.m4a` uses the reviewed Russian translations
+of all 14 source sentences. It replaces the earlier Russian voice at the user's
+request. Speech is generated locally with **Silero v5_6_ru / Baya**, 48 kHz,
+seed 42, automatic Russian stress/homograph handling and explicit stress hints
+for names. The model is pinned by SHA-256 in
+`studio/runtime/russian-downloads.yaml` and `russian-narration.yaml`.
+
+[Silero Models](https://github.com/snakers4/silero-models) by the Silero team.
+Model license: **CC BY-NC-SA 4.0**, as stated in the downloaded official
+[LICENSE](https://github.com/snakers4/silero-models/blob/e382298387332f2bf461fe6eadfde99104611b0c/LICENSE).
+Model weights are not public domain; keep their noncommercial/share-alike terms
+with the model records. The model and music retain their individual terms.
+
+EET/GMT are expanded into Russian meanings for speech, and 338 432 square
+kilometres is spoken in full. Displayed translations are unchanged. Every selected
+take fits its original scene at natural speed; none is sped up or truncated.
+The original Kevin MacLeod music bed, fades and levels are reused with ducking
+aligned to the new speech. The original video file is unchanged.
+
+Generation and timing: `studio/episodes/hb-c01-lage/russian-narration.json`.
+Voice comparison and ASR diagnostics are retained alongside it. Automated
+transcripts are not listening approval; the replacement awaits user review.
