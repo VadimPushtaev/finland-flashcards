@@ -67,6 +67,8 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Supplementary budget allocates funding for citizenship test (SV, 2026-06-03): https://valtioneuvosto.fi/-/1410869/lisatalousarviossa-rahoitusta-droonipuolustukseen-maastapoistamiseen-ja-kansalaisuuskokeeseen?languageId=sv_SE
 - Supplementary budget allocates funding for citizenship test (EN, 2026-06-03): https://valtioneuvosto.fi/en/-/1410869/supplementary-budget-allocates-funding-for-drone-defence-removals-from-the-country-and-citizenship-test
 
+- Supplementary-budget press release canonical Swedish page (SV, 2026-06-03; discovered 2026-10-20): https://valtioneuvosto.fi/sv/-/1410869/tillaggsbudgeten-innehaller-finansiering-for-dronarforsvaret-avlagsnandet-ur-landet-och-medborgarskapsprovet
+
 - Citizenship test to be introduced in early 2027 (FI, 2026-06-16): https://valtioneuvosto.fi/-/1410869/kansalaisuuskoe-otetaan-kayttoon-vuoden-2027-alussa
 - Citizenship test to be introduced in early 2027 (SV, 2026-06-16): https://valtioneuvosto.fi/sv/-/1410869/medborgarskapsprov-infors-i-borjan-av-2027
 - Citizenship test to be introduced in early 2027 (EN, 2026-06-16): https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027
@@ -89,6 +91,9 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Citizenship-test draft impact assessment press release (FI, Legislation Assessment Council, 2026-03-26): https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan
 - Legislation Assessment Council opinion PDF on the citizenship-test draft (FI, 2026-03-26): https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
+
+- Legislation Assessment Council press release (SV; dated 2026-03-26, translation published 2026-05-08; discovered 2026-10-20): https://valtioneuvosto.fi/sv/-/konsekvensbedomningen-av-medborgarskapsprovet-ar-i-huvudsak-val-utford-men-vissa-preciseringar-behovs
+- Legislation Assessment Council opinion summary PDF (SV, dated 2026-03-26; discovered 2026-10-20): https://valtioneuvosto.fi/documents/194055633/209910742/Sammanfattning+av+utlåtandet+av+rådet+för+bedömning+av+lagstiftningen+om+ändringar+i+medborgarskapslagen.pdf/a84e5a3d-62f4-3deb-489c-6dead7cd8018?t=1778236827991
 
 - Citizenship test press release (FI, 2025-12-22): https://intermin.fi/-/kansalaisuuskokeella-tullaan-mittaamaan-tietoja-suomalaisen-yhteiskunnan-toiminnasta-ja-perusperiaatteista
 - Citizenship test press release (SV, 2025-12-22): https://intermin.fi/sv/-/medborgarskapsprov-infors-for-att-mata-kunskaper-om-det-finlandska-samhallets-funktion-och-grundprinciper

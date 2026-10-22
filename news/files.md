@@ -2,12 +2,15 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-10-18 (unless noted otherwise in filename).
+Download date: 2026-10-20 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
+| `news/files/snapshot_2026-10-20_valtioneuvosto_assessment_council_citizenship_test_fi.html` | Legislation Assessment Council press release (FI, 2026-03-26); snapshot includes link to the Swedish translation. | https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan | `8d85065536f9ddf70b9cb250927fb5ac87af4c7d0c37e8ca0169c1b06e7e4386` |
+| `news/files/snapshot_2026-10-20_valtioneuvosto_assessment_council_citizenship_test_sv.html` | Legislation Assessment Council press release (dated 2026-03-26; Swedish translation published 2026-05-08), linking the Swedish opinion summary. | https://valtioneuvosto.fi/sv/-/konsekvensbedomningen-av-medborgarskapsprovet-ar-i-huvudsak-val-utford-men-vissa-preciseringar-behovs | `a19b6e378527a95a9adbd7aaa2fa7b3faed0db7a2a3e3f1b41a2b4b2781160c9` |
+| `news/files/snapshot_2026-10-20_valtioneuvosto_supplementary_budget_citizenship_test_sv.html` | Supplementary-budget press release (SV, 2026-06-03); canonical Swedish route for the previously monitored release. | https://valtioneuvosto.fi/sv/-/1410869/tillaggsbudgeten-innehaller-finansiering-for-dronarforsvaret-avlagsnandet-ur-landet-och-medborgarskapsprovet | `4703e42d8ff8ba9162ffc57e36d292db6cc81a32032e18beb6a7c4d64b624683` |
 | `news/files/snapshot_2026-10-18_migri_press_release_citizenship_test_preparations_fi.html` | Migri press release: spring 2027 test locations and year-turn publication of learning material and instructions (FI, published 2026-10-09). | https://migri.fi/-/suomi-valmistautuu-ottamaan-kayttoon-kansalaisuuskokeen-oppimateriaalit-julkaistaan-vuodenvaihteessa | `6e4427a1cdc46835e3e42349d0fc3d2e75a15dbbf5ca16458bbc00fd68b1456d` |
 | `news/files/snapshot_2026-10-18_migri_customer_bulletin_citizenship_test_arrangements_en.html` | Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (EN, published 2026-10-09). | https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year | `eef04d7e17bc0dabd61875531ed7336571a495f94dcbacc83f64324430c1a046` |
 | `news/files/snapshot_2026-10-18_migri_customer_bulletin_citizenship_test_arrangements_sv.html` | Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (SV, published 2026-10-09). | https://migri.fi/sv/-/aktuellt-om-forandringarna-i-medborgarskapslagen-laromedlen-for-medborgarskapsprovet-ges-ut-vid-arsskiftet | `6387bb05002b338228915c94a5ce9e8e2f359a5dd72fcd1f5341ed0d3649f8eb` |
@@ -441,6 +444,7 @@ Download date: 2026-10-18 (unless noted otherwise in filename).
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
+| `news/files/2026-03-26_assessment_council_citizenship_test_summary_sv.pdf` | Swedish summary of the Legislation Assessment Council opinion, VN/8206/2026-VNK-3 (dated 2026-03-26; linked from translation published 2026-05-08). Three pages, including standard-opinion annex; historical draft assessment. | https://valtioneuvosto.fi/documents/194055633/209910742/Sammanfattning+av+utlåtandet+av+rådet+för+bedömning+av+lagstiftningen+om+ändringar+i+medborgarskapslagen.pdf/a84e5a3d-62f4-3deb-489c-6dead7cd8018?t=1778236827991 | `a6105624f58a3b797c8a28d0c71de21c161dd1cf4fec9c24e45617ca41f92d7c` |
 | `news/files/valtioneuvosto_arviointineuvoston_lausunto_kansalaisuuskokeesta_20260326.pdf` | FI: Legislation Assessment Council opinion on the draft Government proposal for the citizenship test (2026-03-26) | https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950 | `dcfcbcf711db88da1be096e9d4840cdc31c18981a288f79fcc86966906cf6816` |
 
 ## PDFs (Valtioneuvoston oikeuskansleri via Finlex)
