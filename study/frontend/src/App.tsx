@@ -1,3 +1,4 @@
+import { ReaderBreadcrumbs } from './ReaderBreadcrumbs';
 import { VideoPlayer, type VideoSource } from './VideoPlayer';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { useAccount, type Progress } from './Account';
@@ -201,12 +202,7 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
   const renderUnit = (unit: Unit) => <div className={`reader-unit ${route.unit === unit.id ? 'target-unit' : ''}`} id={unit.id} key={unit.id}><span>{unitText(unit)}</span><button className={`unit-bookmark btn icon-button ${progress.bookmarks.includes(unit.id) ? 'is-saved' : ''}`} aria-label={progress.bookmarks.includes(unit.id) ? 'Ta bort bokmärke' : 'Spara textstycke'} aria-pressed={progress.bookmarks.includes(unit.id)} onClick={() => toggleBookmark(unit.id)}><Icon name={progress.bookmarks.includes(unit.id) ? 'bookmark-fill' : 'bookmark-plus'} /></button></div>;
   return <div className="reader-page">
     <div className="reader-toolbar">
-      <details className="reader-contents"><summary><Icon name="list-ol" /> Innehåll <span>{chapter.order} · {sectionIndex + 1}/{chapter.sections.length}</span></summary>
-        <div className="reader-selectors">
-          <label>Kapitel<select className="form-select" aria-label="Välj kapitel" value={chapter.id} onChange={e => { location.hash = chapterLink(e.target.value); }}>{library.chapters.map(c => <option key={c.id} value={c.id}>{c.order}. {c.title}</option>)}</select></label>
-          <label>Avsnitt<select className="form-select" aria-label="Välj avsnitt" value={section.id} onChange={e => { location.hash = chapterLink(chapter.id, e.target.value); e.currentTarget.closest('details')?.removeAttribute('open'); }}>{chapter.sections.map((s, i) => <option key={s.id} value={s.id}>{i + 1}. {s.title}</option>)}</select></label>
-        </div>
-      </details>
+      <ReaderBreadcrumbs chapters={library.chapters} chapter={chapter} section={section} />
       <div className="reading-tools" role="group" aria-label="Läsinställningar"><button className="btn" onClick={() => changeProgress({ serif: !progress.serif })} aria-label="Byt typsnitt" aria-pressed={progress.serif}>Aa</button><button className="btn" onClick={() => changeProgress({ size: Math.max(18, progress.size - 2) })} disabled={progress.size === 18} aria-label="Minska textstorleken">A−</button><button className="btn" onClick={() => changeProgress({ size: Math.min(24, progress.size + 2) })} disabled={progress.size === 24} aria-label="Öka textstorleken">A+</button></div>
     </div>
     <div className={`reader-layout ${selection ? 'has-translation' : ''}`}>
