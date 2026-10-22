@@ -20,6 +20,17 @@ test('read, save, complete and resume a section across reloads', async ({ page, 
   await expect(page.getByRole('button', { name: 'Markera som oläst' })).toBeVisible();
   await page.reload();
   await expect(page.getByRole('button', { name: 'Markera som oläst' })).toBeVisible();
+  const sectionChoice = page.getByRole('button', { name: 'Välj avsnitt' });
+  await sectionChoice.click();
+  await expect(page.locator('.breadcrumb-dropdown a[aria-current] .breadcrumb-read')).toHaveText('Läst');
+  const trigger = (await sectionChoice.boundingBox())!;
+  const dropdown = (await page.locator('.breadcrumb-dropdown').boundingBox())!;
+  const viewport = page.viewportSize()!;
+  expect(Math.abs(dropdown.x - Math.max(12, Math.min(trigger.x, viewport.width - dropdown.width - 12)))).toBeLessThan(1);
+  expect(dropdown.y).toBeGreaterThanOrEqual(trigger.y + trigger.height);
+  await page.getByRole('button', { name: 'Välj kapitel' }).click();
+  await expect(page.locator('.breadcrumb-dropdown a[aria-current] .breadcrumb-read')).toHaveText('1/8 lästa');
+  await page.getByRole('button', { name: 'Välj kapitel' }).click();
   await expect(page.locator('#hb-c01-u0001').getByRole('button', { name: 'Ta bort bokmärke' })).toHaveAttribute('aria-pressed', 'true');
   await page.goto('/#/saved');
   await expect(page.locator('.passage-card')).toHaveCount(1);

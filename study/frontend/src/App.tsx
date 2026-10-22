@@ -202,7 +202,7 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
   const renderUnit = (unit: Unit) => <div className={`reader-unit ${route.unit === unit.id ? 'target-unit' : ''}`} id={unit.id} key={unit.id}><span>{unitText(unit)}</span><button className={`unit-bookmark btn icon-button ${progress.bookmarks.includes(unit.id) ? 'is-saved' : ''}`} aria-label={progress.bookmarks.includes(unit.id) ? 'Ta bort bokmärke' : 'Spara textstycke'} aria-pressed={progress.bookmarks.includes(unit.id)} onClick={() => toggleBookmark(unit.id)}><Icon name={progress.bookmarks.includes(unit.id) ? 'bookmark-fill' : 'bookmark-plus'} /></button></div>;
   return <div className="reader-page">
     <div className="reader-toolbar">
-      <ReaderBreadcrumbs chapters={library.chapters} chapter={chapter} section={section} />
+      <ReaderBreadcrumbs chapters={library.chapters} chapter={chapter} section={section} completed={progress.completed} />
       <div className="reading-tools" role="group" aria-label="Läsinställningar"><button className="btn" onClick={() => changeProgress({ serif: !progress.serif })} aria-label="Byt typsnitt" aria-pressed={progress.serif}>Aa</button><button className="btn" onClick={() => changeProgress({ size: Math.max(18, progress.size - 2) })} disabled={progress.size === 18} aria-label="Minska textstorleken">A−</button><button className="btn" onClick={() => changeProgress({ size: Math.min(24, progress.size + 2) })} disabled={progress.size === 24} aria-label="Öka textstorleken">A+</button></div>
     </div>
     <div className={`reader-layout ${selection ? 'has-translation' : ''}`}>
