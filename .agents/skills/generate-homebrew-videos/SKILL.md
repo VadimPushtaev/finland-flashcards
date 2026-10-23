@@ -20,6 +20,28 @@ Read `studio/SCRIPTING.md` for script work, `studio/ASSETS.md` and `studio/TTS.m
 
 Resolve requested chapter/subchapter numbers or titles through the inventory and anthology manifest to stable section IDs. Do not infer them from filenames or assume old readiness counts are current. Inspect existing exports and work in progress so a request for remaining videos does not regenerate finished ones. Keep the scope to the requested episodes and languages.
 
+## Required parallel-agent workflow
+
+Use parallel agents extensively for production. For a multi-episode request, the coordinator must delegate independent episodes or small episode batches to workers, keeping available agent slots occupied while useful independent work remains. Shell subprocesses alone do not satisfy this requirement. For a single episode, delegate independent asset research, script/source review, or export review where these can proceed without conflicting edits. If agent tools are unavailable or higher-priority instructions prohibit delegation, explain the limitation and continue the work that is possible.
+
+The coordinator first resolves the requested stable IDs, checks existing work and running jobs, and establishes shared direction, chapter palette, runtime and output conventions. Start independent script planning or asset research while shared runtime setup proceeds; do not make all workers wait for unrelated setup. Reserve a coordinator slot and use the remaining permitted slots for workers. Reassign finished workers to remaining episodes instead of producing the rest serially. Workers may further delegate within available limits, but must not duplicate ownership or oversubscribe the machine.
+
+Give each worker a concrete assignment containing:
+
+- Exact section IDs, source/translation paths, and existing milestones to resume.
+- The requirement to read this skill and the applicable live studio documents.
+- Exclusive writable episode directories, media directories, episode-specific download manifests, and canonical output filenames.
+- Shared palette/voice conventions, acceptance checks, resource limits, and any unresolved prerequisites.
+- A handoff requirement: artifacts, durations, checks performed, source/export hashes, unresolved issues, proposed milestone changes, and whether audiovisual review actually occurred.
+
+Workers own their assigned episodes through scripts, assets, narration, rendering and verification when dependencies permit. They must not edit another worker's files. The coordinator owns shared files such as `studio/episodes.yaml`, directing/decision documents, shared tools and lockfiles, ignore rules, and the video index. Workers report requested shared changes to the coordinator; assign a shared-tool fix to one owner at a time. Prepare shared model downloads and environment installs once, then let workers consume them read-only. Before resuming an interrupted batch, identify running processes and existing outputs so new workers do not launch duplicate synthesis or rendering jobs.
+
+Coordinate distinct background photographs and music centrally: workers propose sources and the coordinator reserves them by source identity before production. Different crops, excerpts, or download filenames do not make the same source distinct. Preserve episode-specific creative judgment rather than cloning one scene plan across the chapter.
+
+Parallelize reasoning, source checks, asset research and script preparation aggressively. Bound heavy TTS, ASR and encoding jobs by observed CPU, RAM and disk capacity; account for each tool's own threads. Keep other workers doing useful preparation/review while heavy-job capacity is occupied. Do not launch one unrestricted encoder or model instance per episode just because agent slots are available.
+
+As episodes finish, have an available worker independently review another worker's source fidelity, credits, representative frames and verification evidence. Reviewers report findings without concurrently editing the producer's files; the episode owner fixes defects. The coordinator inspects handoffs, reconciles inventory/index updates, verifies every requested section has an export or an explicit blocker, and runs the chapter audit once the chapter is ready. Agent reports do not substitute for actual checks or whole-video user acceptance. Keep work uncommitted until the existing workflow's acceptance and authorization requirements are met.
+
 ## Prepare exact source-backed scripts
 
 Read the selected source section and translation records. Require current reviewed Russian text for both body and headings; use the source and translation schemas under `data/homebrew/` when checking fingerprints. If missing/stale translations block a requested episode, record the issue and continue independent ready episodes. Do not fabricate approved translations or silently export Swedish-only text. Follow the existing translation workflow if translation work is in the user's scope.
