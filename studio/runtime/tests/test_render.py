@@ -13,6 +13,32 @@ SPEC.loader.exec_module(render)
 
 
 class RenderTests(unittest.TestCase):
+    def test_soft_background_sampler_preserves_motion_and_colors(self):
+        base = render.Image.linear_gradient('L').resize((2200, 1238)).convert('RGB')
+        style = dict(zoom_start=1.06, zoom_end=1.219,
+                     pan_start=[.15, .15], pan_end=[.85, .85])
+        cubic = np.asarray(render.background_frame(base, .2, style), dtype=np.int16)
+        linear = np.asarray(render.background_frame(base, .2, {**style, 'resampling': 'bilinear'}), dtype=np.int16)
+        later = np.asarray(render.background_frame(base, .8, {**style, 'resampling': 'bilinear'}), dtype=np.int16)
+        self.assertEqual(linear.shape, (1080, 1920, 4))
+        self.assertLessEqual(np.abs(cubic - linear).max(), 2)
+        self.assertGreater(np.abs(later - linear).mean(), 1)
+        self.assertTrue(np.all(linear[:, :, 3] == 255))
+
+    def test_episode_palette_colors_panel_and_progress(self):
+        row = dict(sentence_id='one', sv='Finland.', ru='Финляндия.',
+                   render_image=None, text_highlights=[])
+        script = dict(title_sv='Finland', sentences=[row], render={'palette': {
+            'background': '#202c40', 'highlight': '#d9b575', 'separator': '#46566d'}})
+        try:
+            render.configure_style(script)
+            card, _ = render.make_card(script, {'kind': 'sentence', 'sentence_id': 'one'}, {'one': row}, {})
+            self.assertEqual(card.getpixel((900, 500)), (32, 44, 64, 225))
+            self.assertEqual(card.getpixel((930, 1002))[:3], (217, 181, 117))
+            self.assertEqual(card.getpixel((100, 125))[:3], (70, 86, 109))
+        finally:
+            render.configure_style({})
+
     def test_long_title_and_large_sentence_count_fit(self):
         title = 'Landskap, regioner och städer'
         self.assertLessEqual(render.fitted_font(title, 94, 1640, True).getlength(title), 1640)

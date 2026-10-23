@@ -25,6 +25,10 @@ Chapter 1 uses the established evergreen palette: panel/background tint `#102e2b
 Swedish text `#f6f1e6`, Russian text and secondary labels `#bdd3c9`, highlights
 `#e7bc70`, and separators `#35534b`. Carry it through all Chapter 1 episodes.
 
+Chapter 2 uses a slate-blue history palette: panel/background tint `#202c40`,
+Swedish text `#f6f1e6`, Russian text and secondary labels `#c5d2e4`, highlights
+`#d9b575`, and separators `#46566d`. Carry it through all Chapter 2 episodes.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its

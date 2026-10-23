@@ -66,3 +66,14 @@ guide; episode scripts record the selected background and application of the pal
 Each subchapter gets its own music track, recorded in its script and asset register.
 The first subchapter retains Light Thought var 1. After user review, its music bed
 is raised by 2 dB (one small step), preserving narration gain, ducking and fades.
+
+## Chapter 2 production — 2026-10-23
+
+Chapter 2 uses the slate-blue palette recorded in `DIRECTING.md`, distinct from
+Chapter 1's evergreen. The Linux production runtime uses Liberation Sans regular
+and bold (SIL Open Font License 1.1) with Swedish and Cyrillic coverage; exact
+font paths and palette values are recorded in each episode's render configuration.
+These are production choices for the requested chapter, not a claim of user
+acceptance of the resulting videos. Swedish Supertonic 3/F1 settings remain unchanged.
+Parallel workers own separate episode batches; shared tooling, inventory and
+chapter-wide media identity checks are coordinated centrally.

@@ -1,0 +1,547 @@
+schema_version: 1
+section_id: hb-c02-sjalvstandighet
+chapter_id: hb-c02
+title_sv: Självständigheten och inbördeskriget
+title_ru: Независимость и гражданская война
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-sjalvstandighet.yaml
+example_only: false
+source_section_sha256: 98129c8e451f0e5014dd9851026b7d464c2789990b145cfdbf35a58d60a1fcfd
+translation_file_sha256: 48d4dc18d82df1530aec581ba4b3e3f5c20bbbb10398f2aa1f50b090075492b6
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds. Read every body sentence and list fragment
+    once in stored source order; preserve repetitions in the source.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter2 slate-blue #202c40, ivory #f6f1e6, secondary #c5d2e4, gold
+    #d9b575, separator #46566d. Fixed right bilingual panel, Swedish above Russian. Liberation Sans Bold48/regular40;
+    only explicitly recorded long pairs use smaller readable sizes. Left foreground stays open when a
+    graphic adds no value.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears 0.25 seconds before speech. Planned pauses1.5 seconds,2.2 at scene endings,2.5
+    for long pairs. Measure finalized speech, never truncate or accelerate to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Finnish Independence Day 2015, Senate Square Helsinki 01.JPG by Ninaras continuously
+    as decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85)
+    and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.7919642857142857. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Shared Supertonic3 F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16, local ONNX CPU
+    four threads. Exact input and measured clips recorded; pronunciation remains whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Clear Waters by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 128.088 seconds; prepared lossless stereo bed 250.875 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected exact source terms and dates use original typography. No generic photograph is presented
+    as a historical event; no borders or identity claims invented. Keep inline highlights; suppress redundant
+    foreground captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second credit cards; complete source and media terms in the accompanying CREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Modern backgrounds are decorative and identified as such
+    in production records.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: russian_rule
+  description: From Russian pressure to independence
+- id: division
+  description: Competing visions for the new state
+- id: civil_war
+  description: Crisis and outbreak of civil war
+- id: sides
+  description: Red, white and intermediate positions
+- id: conflict
+  description: Foreign support and the outcome
+- id: loss
+  description: Human losses
+asset_requests:
+- id: episode_background
+  kind: background
+  description: A contemporary Independence Day gathering on Helsinki Senate Square provides commemorative
+    context, not a photograph of events in 1917 or 1918.
+  fallback: Acquire a different verified topic-related photograph; do not silently reuse another episode
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Selected source dates and exact Swedish terms as quiet typography, without new historical
+    claims.
+  fallback: Leave the foreground area open to the continuous background; omit its caption.
+- id: music_bed
+  kind: music
+  description: Distinct gentle instrumental piano recording below narration, continuously ducked and softly
+    faded.
+  fallback: Resolve a distinct licensed calm track before rendering.
+- id: narration
+  kind: narration
+  description: Local female Sweden Swedish Supertonic3 F1 reading every source sentence once.
+  fallback: Resolve synthesis failures; do not omit a sentence.
+sentences:
+- sentence_id: hb-c02-u0033-s001
+  sv: Från 1899 och framåt tog Ryssland ett hårdare grepp om storfurstendömet Finland.
+  ru: Начиная с 1899 года Россия усилила контроль над Великим княжеством Финляндским.
+  scene_id: russian_rule
+  visual_cue: Source-only typography for 1899.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1899'
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0033-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.166463
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/00.png
+  render_caption: false
+- sentence_id: hb-c02-u0033-s002
+  sv: Finland deltog inte i första världskriget, men nationalismen hade inverkan även i det finska området.
+  ru: Финляндия не участвовала в Первой мировой войне, но национализм оказывал влияние и на финскую территорию.
+  scene_id: russian_rule
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0033-s002.wav
+  start_seconds: 13.916667
+  end_seconds: 22.833129
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0033-s003
+  sv: Finland fick en egen lantdag 1906 och det första valet ordnades 1907.
+  ru: Финляндия получила собственный сейм в 1906 году, а первые выборы были организованы в 1907 году.
+  scene_id: russian_rule
+  visual_cue: Source-only typography for 1906, 1907.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1906'
+  - '1907'
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0033-s003.wav
+  start_seconds: 24.583333
+  end_seconds: 33.012177
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/02.png
+  render_caption: false
+- sentence_id: hb-c02-u0033-s004
+  sv: Finland förklarade sig självständigt den 6 december 1917 och bolsjevikregeringen som tog makten
+    i samband med oktoberrevolutionen i Ryssland erkände självständigheten den 31 december 1917.
+  ru: Финляндия объявила себя независимой 6 декабря 1917 года, а большевистское правительство, пришедшее
+    к власти в ходе Октябрьской революции в России, признало независимость 31 декабря 1917 года.
+  scene_id: russian_rule
+  visual_cue: Source-only typography for 6 december 1917, 31 december 1917.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 6 december 1917
+  - 31 december 1917
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0033-s004.wav
+  start_seconds: 34.791667
+  end_seconds: 54.993027
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/03.png
+  render_caption: false
+- sentence_id: hb-c02-u0034-s001
+  sv: Först i det självständiga Finland var människorna av mycket olika åsikt om hur staten skulle styras
+    och utvecklas.
+  ru: В первое время в независимой Финляндии мнения людей о том, как следует управлять государством и
+    развивать его, сильно различались.
+  scene_id: division
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0034-s001.wav
+  start_seconds: 57.75
+  end_seconds: 68.268639
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0034-s002
+  sv: Socialisterna ville göra omfattande samhällsreformer för att förbättra förhållandena för arbetarna
+    och den fattiga landsbygdsbefolkningen och utveckla demokratin i kommunerna.
+  ru: Социалисты хотели провести масштабные общественные реформы, чтобы улучшить условия жизни рабочих
+    и бедного сельского населения и развить демократию в муниципалитетах.
+  scene_id: division
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0034-s002.wav
+  start_seconds: 70.041667
+  end_seconds: 84.879218
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0034-s003
+  sv: Högern motsatte sig reformerna och var rädd för socialismens inflytande i Finland.
+  ru: Правые противились реформам и опасались влияния социализма в Финляндии.
+  scene_id: division
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0034-s003.wav
+  start_seconds: 87.666667
+  end_seconds: 94.980952
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0035-s001
+  sv: Inte förrän i det självständiga Finland blev förhållandena i samhället utmanande på grund av bland
+    annat livsmedelsbrist, arbetslöshet och betydande politiska meningsskiljaktigheter.
+  ru: Лишь в независимой Финляндии положение в обществе стало сложным из-за, среди прочего, нехватки продовольствия,
+    безработицы и значительных политических разногласий.
+  scene_id: civil_war
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0035-s001.wav
+  start_seconds: 97.458333
+  end_seconds: 113.131803
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0035-s002
+  sv: Dessa faktorer bidrog till uppkomsten av inbördeskriget.
+  ru: Эти факторы способствовали возникновению гражданской войны.
+  scene_id: civil_war
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0035-s002.wav
+  start_seconds: 115.916667
+  end_seconds: 121.141156
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0035-s003
+  sv: Kriget bröt ut i januari 1918.
+  ru: Война началась в январе 1918 года.
+  scene_id: civil_war
+  visual_cue: Source-only typography for januari 1918.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - januari 1918
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override:
+    text: Kriget bröt ut i januari nitton hundra arton.
+    reason: Targeted date clarity after initial ASR read1918 as1998 and first expansion remained ambiguous;
+      separate number words for speech only.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0035-s003.wav
+  start_seconds: 122.916667
+  end_seconds: 127.235578
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/09.png
+  render_caption: false
+- sentence_id: hb-c02-u0036-s001
+  sv: I kriget stred de röda och de vita mot varandra.
+  ru: В этой войне красные и белые сражались друг против друга.
+  scene_id: sides
+  visual_cue: Source-only typography for de röda, de vita.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - de röda
+  - de vita
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0036-s001.wav
+  start_seconds: 129.708333
+  end_seconds: 134.166565
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/10.png
+  render_caption: false
+- sentence_id: hb-c02-u0036-s002
+  sv: De röda var arbetare och fattiga från landsbygden som hörde till den politiska vänstern.
+  ru: Красными были рабочие и бедняки из сельской местности, принадлежавшие к левым политическим силам.
+  scene_id: sides
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0036-s002.wav
+  start_seconds: 135.916667
+  end_seconds: 143.648912
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0036-s003
+  sv: De vita var bönder, tjänstemän och lärare som var anhängare av högerpolitik.
+  ru: Белыми были крестьяне, служащие и учителя, которые являлись сторонниками правой политики.
+  scene_id: sides
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0036-s003.wav
+  start_seconds: 145.416667
+  end_seconds: 152.382653
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0036-s004
+  sv: Alla medborgare var ändå inte knutna till de röda eller de vita, utan mångas politiska ståndpunkt
+    låg mellan dessa två.
+  ru: 'Однако не все граждане были связаны с красными или белыми: политическая позиция многих находилась
+    между этими двумя сторонами.'
+  scene_id: sides
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0036-s004.wav
+  start_seconds: 154.166667
+  end_seconds: 164.058367
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0037-s001
+  sv: Finlands ställning under självständighetens tidiga år var skör.
+  ru: Положение Финляндии в первые годы независимости было неустойчивым.
+  scene_id: conflict
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0037-s001.wav
+  start_seconds: 166.541667
+  end_seconds: 172.532415
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0037-s002
+  sv: Snart efter att landet hade blivit självständigt utbröt ett blodigt inbördeskrig i Finland.
+  ru: Вскоре после обретения независимости в Финляндии вспыхнула кровопролитная гражданская война.
+  scene_id: conflict
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0037-s002.wav
+  start_seconds: 174.291667
+  end_seconds: 182.232891
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0037-s003
+  sv: Kriget bekämpades mellan den röda arbetarrörelsen och vita regeringsstyrkor.
+  ru: Война велась между красным рабочим движением и белыми правительственными войсками.
+  scene_id: conflict
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0037-s003.wav
+  start_seconds: 184.0
+  end_seconds: 190.687347
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0037-s004
+  sv: De vita fick stöd av Tyskland och de röda av Ryssland.
+  ru: Белые получили поддержку Германии, а красные — России.
+  scene_id: conflict
+  visual_cue: Source-only typography for Tyskland, Ryssland.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Tyskland
+  - Ryssland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0037-s004.wav
+  start_seconds: 192.458333
+  end_seconds: 197.682823
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/17.png
+  render_caption: false
+- sentence_id: hb-c02-u0037-s005
+  sv: Kriget slutade med de vitas seger.
+  ru: Война закончилась победой белых.
+  scene_id: conflict
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0037-s005.wav
+  start_seconds: 199.458333
+  end_seconds: 202.732347
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0038-s001
+  sv: I kriget dog omkring 37 000 människor i strider, fångläger och avrättningar.
+  ru: Во время войны около 37 000 человек погибло в боях, лагерях для пленных и в результате казней.
+  scene_id: loss
+  visual_cue: Source-only typography for omkring 37 000.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - omkring 37 000
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0038-s001.wav
+  start_seconds: 205.208333
+  end_seconds: 213.358537
+  display_segments: []
+  render_image: studio/media/hb-c02-sjalvstandighet/cards/19.png
+  render_caption: false
+- sentence_id: hb-c02-u0038-s002
+  sv: En stor del av de som dog hörde till de röda.
+  ru: Большая часть погибших принадлежала к красным.
+  scene_id: loss
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sjalvstandighet/narration/hb-c02-u0038-s002.wav
+  start_seconds: 215.125
+  end_seconds: 219.374252
+  display_segments: []
+  render_image: null
+  render_caption: false
+render:
+  music_path: studio/media/hb-c02-sjalvstandighet/sources/music-bed.flac
+  music_loop_crossfade_seconds: 4
+  background_image: studio/media/hb-c02-sjalvstandighet/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.7919642857142857
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_gain_adjustment_db: 2
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands historia — svensk källtext och granskad rysk översättning.
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Urval och formgivning för denna video.
+    - Fullständiga källor, länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Finnish Independence Day 2015, Senate Square Helsinki 01.JPG — Ninaras · CC BY 4.0
+    - Clear Waters — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Beskärning, toningar och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian displayed in order; no added narration.
+  - Modern decorative photograph cropped, darkened, blurred and continuously panned/zoomed; its adaptation
+    retains the source license.
+  - Selected source-only typography; no inferred facts or identification of historic events from modern
+    photos.
+  - Music faded, ducked and level-adjusted, with explicit4second crossfaded repeats as required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Finnish_Independence_Day_2015,_Senate_Square_Helsinki_01.JPG
+    description: Student's torch cavalcade on Independence day 2015, Senate Square Helsinki
+    license: CC BY 4.0

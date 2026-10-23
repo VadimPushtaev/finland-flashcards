@@ -1,0 +1,78 @@
+{
+  "section_id": "hb-c02-utbildning",
+  "engine": "faster-whisper small, pinned536b0662742c02347bc0e980a01041f333bce120;CPU int8,beam5,sv,one thread",
+  "scope": "Automated diagnostic only; no listening review or user acceptance claimed.",
+  "sentences": [
+    {
+      "sentence_id": "hb-c02-u0069-s001",
+      "tts_input": "Först på nittonhundratalets sida började större delen av befolkningen stöda folkskolan och nittonhundratjugoett stiftades en lag om läroplikt i Finland.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s001.wav",
+      "sha256": "44eaa0a9a3b680911a8e7898881b1706c4794156df01459db9f71468195a809a",
+      "language": "sv",
+      "asr_text": "Först på 1900-talets sida började större delen av befolkningen stöda folkskolan och 1921 stiftades en lag om läroplikt i Finland."
+    },
+    {
+      "sentence_id": "hb-c02-u0069-s002",
+      "tts_input": "Det betydde att skolgång blev obligatoriskt för alla.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s002.wav",
+      "sha256": "6ea7f95c215db793d6e0fe0fe63d3a798c2f9535f5a98bc9266f039fe2f96c33",
+      "language": "sv",
+      "asr_text": "Det betyder att skålgång blev obligatoriskt för alla."
+    },
+    {
+      "sentence_id": "hb-c02-u0069-s003",
+      "tts_input": "Folkskolan utvidgades till att omfatta hela åldersklassen på nittonhundratjugotalet och nittonhundratrettiotalet.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s003.wav",
+      "sha256": "7da1ff8f8dd1a3bc777eb50415677098e7bb005f7eb330db75cf9d43c5c68bdc",
+      "language": "sv",
+      "asr_text": "Folkskolan utvidgades till att omfatta hela åldersklassen på 1920-talet och 1930-talet."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s001",
+      "tts_input": "Gymnasieutbildning och studentexamen blev vanligare särskilt på nittonhundrafemtiotalet och nittonhundrasextiotalet.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s001.wav",
+      "sha256": "51be2ceabfa6f62d6441331db45388ac7f4f1e692d84887aa26dd7584d875fcd",
+      "language": "sv",
+      "asr_text": "Gymnasieutbildning och studentexamen blev vanligare särskilt på 1950-talet och 1960-talet."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s002",
+      "tts_input": "I Finland började man eftersträva samhällelig jämlikhet och ekonomisk utveckling genom att bygga en välfärdsstat.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s002.wav",
+      "sha256": "93da26ba0cf1baf8d66aa7bdd4a66af23e194759b4137656e09f8ca93a2b6ca2",
+      "language": "sv",
+      "asr_text": "I Finland började man eftersträva samhällelig jämlikhet och ekonomisk utveckling genom att bygga en välfärd stat."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s003",
+      "tts_input": "Samtidigt föddes tanken på en enhetlig nioårig grundskola.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s003.wav",
+      "sha256": "69fbc725ec8ed8a018e219d38e219dd4163d6cbb08a0b1ee472b2adc1da7fd84",
+      "language": "sv",
+      "asr_text": "Samtidigt föddes tanken på en enhetlig nyår i grundskola."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s004",
+      "tts_input": "Under nittonhundrasjuttiotalet övergick man i hela landet från det gamla systemet med separat folkskola och läroverk till en grundskola som var gemensam för alla.",
+      "file": "studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s004.wav",
+      "sha256": "fe18d004d4efaef104c41913302e08180901bbe3ac7a3a3b0947c4d0b467726f",
+      "language": "sv",
+      "asr_text": "Under 1970 talet övergick man i hela landet från det gamla systemet med separat folkskola och läroverk till en grundskola som var gemensam för alla."
+    }
+  ],
+  "findings": [
+    {
+      "sentence_id": "hb-c02-u0069-s002",
+      "note": "ASR substitutes betyder/skålgång for intended betydde/skolgång in both original and a fresh same-input candidate. Retain original take; tense and school-word pronunciation require whole-video listening."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s003",
+      "note": "ASR hears nyår i/nyårig instead of nioårig. A hyphenated nio-årig candidate did not resolve the diagnostic ambiguity. Retain the original literal expansion; nine-year meaning remains a listening priority."
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s002",
+      "note": "ASR splits välfärdsstat into välfärd stat; no content omitted."
+    }
+  ],
+  "number_checks": "All date/decade values1921,1920s/1930s,1950s/1960s and1970s recovered;9-year compound remains uncertain."
+}

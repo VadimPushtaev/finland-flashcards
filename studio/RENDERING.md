@@ -95,3 +95,28 @@ Export names include the two-digit subchapter number from `episodes.yaml`,
 for example `hb-c01-03-natur.mp4` and `hb-c01-03-natur.CREDITS.md`.
 The shared output-name resolver is used by both rendering and chapter auditing;
 source IDs and internal episode paths retain their stable identifiers.
+
+## Portable fonts and chapter palettes
+
+`render.palette` may override `background`, `text`, `secondary`, `highlight`, and
+`separator`; omitted values preserve the Chapter 1 defaults. The colors apply to
+background tint, panels, text, separators and progress marks. `render.font_files`
+records `regular` and `bold` font paths (repository-relative or absolute).
+Chapter 2 production on Linux uses Liberation Sans with Swedish/Cyrillic coverage.
+Without explicit paths, the renderer uses macOS Arial when present, otherwise
+Linux Liberation Sans. Record the actual font choice in the episode script.
+Helpers importing the renderer should call `configure_style(script)` before
+creating frames so episode settings are applied.
+
+The background uses a bicubic resize over a floating-point crop box. This keeps
+the same continuous crop path while avoiding Pillow's slower general-purpose
+transform. The output remains 1920×1080 at 24fps. Verify exported motion and
+scene-boundary continuity after changing the sampler, just as for other renders.
+
+For already softened decorative backgrounds, an episode may explicitly set
+`render.background_style.resampling: bilinear`. Text and foreground graphics
+retain their existing rendering. On the Chapter 2 reference background, this
+reduced resize time from 0.108s to 0.068s/frame under concurrent load, with a mean
+pixel difference of 0.071/255 and a maximum of 2/255 versus bicubic. This is an
+optional recorded production setting; bicubic remains the default. Both methods
+use the same floating-point crop path and require exported motion checks.

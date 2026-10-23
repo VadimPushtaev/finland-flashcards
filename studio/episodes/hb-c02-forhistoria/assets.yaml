@@ -1,0 +1,408 @@
+schema_version: 1
+section_id: hb-c02-forhistoria
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c02-forhistoria/sources/background.jpg
+    sha256: c82d39ec8c4b53c2ed5b4d0fd6acec3b989164da0d0346cbb3ca55ae57456236
+    bytes: 8023868
+  source_url: https://commons.wikimedia.org/wiki/File:Lake_Vanajavesi_and_H%C3%A4me_Castle_from_air.jpg
+  creator: Janne Räkköläinen from Hämeenlinna, Finland
+  reuse_terms: CC BY-SA 2.0; https://creativecommons.org/licenses/by-sa/2.0
+  required_credits: 'Lake Vanajavesi and Häme Castle from air.jpg — Janne Räkköläinen from Hämeenlinna,
+    Finland · CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Lake_Vanajavesi_and_H%C3%A4me_Castle_from_air.jpg
+    License: https://creativecommons.org/licenses/by-sa/2.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 2.0.'
+  relevance_verification: Lake Vanajavesi and Häme Castle in Hämeenlinna, Finland from air Modern photograph
+    of Häme Castle, decorative architectural context for the medieval castles discussed; not a depiction
+    of prehistoric settlement. Identity and reuse terms checked against Commons imageinfo metadata; not
+    historical-event evidence.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c02-forhistoria/cards/00.png
+    sha256: a3e24cdadf8ac8f343e686247d7c6483fe82b5d1ba446dc0f3fd3c08839916c6
+    bytes: 15205
+    sentence_id: hb-c02-u0001-s001
+    source_substrings:
+    - '8800'
+    - före tideräkningen
+  - path: studio/media/hb-c02-forhistoria/cards/02.png
+    sha256: 3a0ba8f7d1a4d1726648c05fa158c233ac13adbbeec91ea7597dafe820264649
+    bytes: 17586
+    sentence_id: hb-c02-u0001-s003
+    source_substrings:
+    - Åbo (Turku)
+    - handelsplats
+  - path: studio/media/hb-c02-forhistoria/cards/03.png
+    sha256: 8fcc0cabe237c49bda21d67e974340252b08f92b0fece8599ce88be893f9339c
+    bytes: 9637
+    sentence_id: hb-c02-u0002-s001
+    source_substrings:
+    - 1100–1200-talen
+  - path: studio/media/hb-c02-forhistoria/cards/06.png
+    sha256: 3c62fbbb3c4ffadf394ed5e91e07adea2268e205e580737f475ce19b231f1c49
+    bytes: 16058
+    sentence_id: hb-c02-u0003-s002
+    source_substrings:
+    - Nöteborgsfreden
+    - '1323'
+  - path: studio/media/hb-c02-forhistoria/cards/13.png
+    sha256: 9991bb01d4326e39ddcfc5137f464e603feab0668f8a529dba2fa9f3d262c82d
+    bytes: 11323
+    sentence_id: hb-c02-u0005-s002
+    source_substrings:
+    - över 600 år
+  - path: studio/media/hb-c02-forhistoria/cards/17.png
+    sha256: a73202fce0c2551f9b0ec746914381b79b232925572475d209b0ba29f558f1d9
+    bytes: 18332
+    sentence_id: hb-c02-u0006-s002
+    source_substrings:
+    - Tavastehus slott
+    - Viborgs slott
+  - path: studio/media/hb-c02-forhistoria/cards/20.png
+    sha256: 2ee5521e8d28ba76dd7a89d02d8da0dc668134a2c2c3353ee059779a06d69b7a
+    bytes: 11236
+    sentence_id: hb-c02-u0007-s002
+    source_substrings:
+    - många gudar
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c02-forhistoria/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c02-forhistoria/sources/music.mp3
+    sha256: e15289a35e63d3ce560d8aaaef0ee13d1596febebf5b407fb1fd923aa84a7642
+    bytes: 42403065
+  - path: studio/media/hb-c02-forhistoria/sources/music-bed.flac
+    sha256: eade2d6354d34e3bb2712f5dd9b2674ea57df51dab38fd0846efd797feeff4b0
+    bytes: 45333750
+    seconds: 279.2916666666667
+    sample_rate: 48000
+    channels: 2
+  title: Light Awash
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100175
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Light%20Awash.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Light Awash" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By
+    Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c02-forhistoria/prepare_assets.py
+    master_seconds: 1760.052292
+    prepared_seconds: 279.2916666666667
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0001-s001.wav
+    sha256: f0137dbf55b144f5157134eee590e63b52ab6b1130b639c600072ef22c9b5ea8
+    bytes: 749612
+    seconds: 8.498503401360544
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0001-s001
+    peak: 0.24365234375
+    generation_seconds: 9.743628893978894
+    tts_input: Finland har varit bebott sedan istiden, från cirka år åtta tusen åtta hundra före tideräkningen.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0001-s002.wav
+    sha256: 03f446cedb75ecc9381e4d42431dc8b5f51b97fe01a801f6cdc84799a720cdcf
+    bytes: 903212
+    seconds: 10.24
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0001-s002
+    peak: 0.518890380859375
+    generation_seconds: 18.027928710042033
+    tts_input: Bosättningen utvecklades först vid vattendrag och det finländska territoriet har alltid
+      använts för livlig handelstrafik.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0001-s003.wav
+    sha256: 5a67b51a861e2a2097862476a7e15dfa5d85c80c26035492a3110970c3715c8c
+    bytes: 546860
+    seconds: 6.199727891156463
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0001-s003
+    peak: 0.31072998046875
+    generation_seconds: 14.983445480000228
+    tts_input: Namnet på Finlands äldsta stad, Åbo (Turku), betyder handelsplats.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0002-s001.wav
+    sha256: 8dc724ac6600be7efe47ed125990a643b30c4937a08ba5531db28c4c3527334d
+    bytes: 694316
+    seconds: 7.87156462585034
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0002-s001
+    peak: 0.358001708984375
+    generation_seconds: 26.105814724985976
+    tts_input: De första skriftliga källorna om Finland är från elvahundratalet och tolvhundratalet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0002-s002.wav
+    sha256: 1c15f48eade7b8c05cdb3c6a74ddf7b67cd35307a38fd19f7cdc7aef2f35cabd
+    bytes: 964652
+    seconds: 10.936598639455783
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0002-s002
+    peak: 0.27947998046875
+    generation_seconds: 26.470992522954475
+    tts_input: Då anslöts Finlands territorium med hjälp av korståg till påven i Roms maktkrets och det
+      medeltida nätverket av hansaköpmän.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0003-s001.wav
+    sha256: d5559df4f5b18edfafcdf7371dfecddf39f4815e0c4dff2d7ca270a2357baff0
+    bytes: 964652
+    seconds: 10.936598639455783
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0003-s001
+    peak: 0.335540771484375
+    generation_seconds: 26.442102449014783
+    tts_input: Den katolska kyrkan kom till Finland via Sverige och den ortodoxa kyrkan från Novgorod
+      i öster, nuvarande Rysslands område.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0003-s002.wav
+    sha256: 603e1ded617d8beca7fe0ed161f65f4e57be83a77ba8d053b3e9610cfe20ca20
+    bytes: 872492
+    seconds: 9.891700680272109
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0003-s002
+    peak: 0.31561279296875
+    generation_seconds: 19.215083290007897
+    tts_input: Nöteborgsfreden tretton hundra tjugo tre avslutade kriget mellan Sverige och Novgorod om
+      herraväldet i området.
+    generation_run: pronunciation-retake-seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0003-s003.wav
+    sha256: 4f9552188313cefc3bdedc23629ff9f7fb74f05982d2d287ca7dfdf0daf3c74f
+    bytes: 847916
+    seconds: 9.613061224489796
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0003-s003
+    peak: 0.33050537109375
+    generation_seconds: 22.57204639801057
+    tts_input: Med freden etablerades den katolska tron i Finlands västra delar och den ortodoxa tron
+      i landets östra delar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0003-s004.wav
+    sha256: a97e5d59d7174a3334b62ec2fc89e0e8d5ddf35ad1340ec94f2d4b45bbe91f27
+    bytes: 854060
+    seconds: 9.682721088435374
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0003-s004
+    peak: 0.2857666015625
+    generation_seconds: 17.403939023031853
+    tts_input: Denna gräns mellan religionerna finns fortfarande, men med reformationen byttes den katolska
+      tron till den lutherska.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0004-s001.wav
+    sha256: 30e5cd9734567dba2bda1a735e394e446b60ffb2f1780655273a6867deab4098
+    bytes: 872492
+    seconds: 9.891700680272109
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0004-s001
+    peak: 0.293701171875
+    generation_seconds: 18.458715080982074
+    tts_input: Under det svenska styret fanns det på Finlands område människogrupper som kommit från olika
+      håll vid olika tidpunkter.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0004-s002.wav
+    sha256: 6ca629cb515747ff22804505677b8a1fd5cb23ea638e7f6c127d7617a78daec2
+    bytes: 602156
+    seconds: 6.826666666666667
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0004-s002
+    peak: 0.2818603515625
+    generation_seconds: 14.157787979987916
+    tts_input: De levde i små samhällen och bildade inget enhetligt folk eller någon enhetlig stat.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0004-s003.wav
+    sha256: 074db538c1f5b6a5ca6a67e55fc6800f59440d9483d88410cb1e0ce72cc5ad67
+    bytes: 964652
+    seconds: 10.936598639455783
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0004-s003
+    peak: 0.354949951171875
+    generation_seconds: 23.68904249998741
+    tts_input: Sverige införlivade delar av det område som i dag kallas Finland med sitt rike under elvahundratalet
+      till trettonhundratalet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0005-s001.wav
+    sha256: 81312b07fe634e4e6c656a1c1f4ec35646baca89afe7b4b8b0e493970016badf
+    bytes: 571436
+    seconds: 6.478367346938776
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0005-s001
+    peak: 0.2845458984375
+    generation_seconds: 17.308019767981023
+    tts_input: Under det svenska styret spred sig den katolska kristendomen till Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0005-s002.wav
+    sha256: a3e5e63b01b3d259f1c03c5d5178d12ac51eafa6485bb84f3f71df4755f1dd50
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0005-s002
+    peak: 0.23944091796875
+    generation_seconds: 14.75462098303251
+    tts_input: Finland var en del av det svenska riket i över sex hundra år.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0005-s003.wav
+    sha256: 956ddea6650da21b5b36ca2115e91a5be5ffcc47951d3d9046b626a9f0268864
+    bytes: 1148972
+    seconds: 13.02639455782313
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0005-s003
+    peak: 0.3048095703125
+    generation_seconds: 31.245898427034263
+    tts_input: De förändringar, till exempel reformationen och upplysningen, som skedde i Sverige och
+      övriga Europa under dessa århundraden syntes också i Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0005-s004.wav
+    sha256: 72511e1b8b6f5f0fe8932bcd34aece1b8431c3dc39292d12dbc49700ae6b5c11
+    bytes: 682028
+    seconds: 7.732244897959184
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0005-s004
+    peak: 0.286590576171875
+    generation_seconds: 16.82868001400493
+    tts_input: När Sverige låg i krig måste också Finland skicka soldater till de svenska trupperna.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0006-s001.wav
+    sha256: 7dbc92ac477e2a0a0726326ad871353c0492712441fdce9b742749dc25453895
+    bytes: 645164
+    seconds: 7.314285714285714
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0006-s001
+    peak: 0.257171630859375
+    generation_seconds: 16.62437882402446
+    tts_input: I det medeltida Finland byggdes flera slott för att försvara området mot ryssarna.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0006-s002.wav
+    sha256: 84246852ca0c87261329d49515b77053f38522fa57c4c131344b7d0f39e48e43
+    bytes: 430124
+    seconds: 4.876190476190477
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0006-s002
+    peak: 0.29400634765625
+    generation_seconds: 11.14501931599807
+    tts_input: Två av dem var Tavaste hus slott och Viborgs slott.
+    generation_run: pronunciation-retake-seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0006-s003.wav
+    sha256: bac571add1bce4738ba21dbbcd2c6f8aa60dac922e63118a31b27b49afaedc73
+    bytes: 682028
+    seconds: 7.732244897959184
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0006-s003
+    peak: 0.27923583984375
+    generation_seconds: 15.764007741003297
+    tts_input: Under medeltiden grundades också de första städerna i Finland, bland annat Åbo och Borgå.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0007-s001.wav
+    sha256: 78ad4872be1ae74fc55174f2930fe8a13af42f768b6969ab3eb7a263acf70dda
+    bytes: 528428
+    seconds: 5.990748299319728
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0007-s001
+    peak: 0.271728515625
+    generation_seconds: 13.84607731399592
+    tts_input: Innan kristendomen kom till Finland utövades här hednisk religion.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0007-s002.wav
+    sha256: cf24adce1ce508062e6bbece7c3d480401e97962bf012c482be86c0a91f9ba1f
+    bytes: 626732
+    seconds: 7.1053061224489795
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0007-s002
+    peak: 0.260498046875
+    generation_seconds: 14.924470753991045
+    tts_input: Det var en polyteistisk religion, det vill säga människorna trodde på många gudar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0007-s003.wav
+    sha256: 1dc22ece703c6e899fb1050cd42d5b6410795b007d2626d21a411bf9c708cd3f
+    bytes: 479276
+    seconds: 5.433469387755102
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0007-s003
+    peak: 0.240966796875
+    generation_seconds: 14.161694467999041
+    tts_input: Man tillbad också avlidna och djur, till exempel björnen.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0007-s004.wav
+    sha256: fce221cdb6129b4327be6dea3f767fe0839b6cfdb762cf8d42c92f269ed58450
+    bytes: 553004
+    seconds: 6.2693877551020405
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0007-s004
+    peak: 0.243316650390625
+    generation_seconds: 15.811709220986813
+    tts_input: I samhällena fanns siare, som botade sjuka och tryggade en god skörd.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-forhistoria/narration/hb-c02-u0007-s005.wav
+    sha256: 61d8ac758360ae601542477f49d6b3d63a34f1bd4d86da40df13d1acedb39690
+    bytes: 897068
+    seconds: 10.170340136054422
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0007-s005
+    peak: 0.372650146484375
+    generation_seconds: 23.935183294990566
+    tts_input: I skogarna och på kärren fanns heliga platser där människor offrade åt gudarna och dit
+      de förde mat åt naturväsendena.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation; source order within each invocation. Interruptions
+      and targeted retakes restart the seed; see file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

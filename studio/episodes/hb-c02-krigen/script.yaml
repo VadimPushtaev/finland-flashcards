@@ -1,0 +1,766 @@
+schema_version: 1
+section_id: hb-c02-krigen
+chapter_id: hb-c02
+title_sv: Vinterkriget, fortsättningskriget och Lapplandskriget
+title_ru: Зимняя война, Война-продолжение и Лапландская война
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-krigen.yaml
+example_only: false
+source_section_sha256: 30b016a822b5ba8c0e5f99db098463a2434ab82a346a0fa761fea27faa9651bb
+translation_file_sha256: 7df9c46ed55094b075b81c5df8fa2df00acb984b96bb86af9a48778c82a06d50
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds. Read every body sentence and list fragment
+    once in stored source order; preserve repetitions in the source.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter2 slate-blue #202c40, ivory #f6f1e6, secondary #c5d2e4, gold
+    #d9b575, separator #46566d. Fixed right bilingual panel, Swedish above Russian. Liberation Sans Bold48/regular40;
+    only explicitly recorded long pairs use smaller readable sizes. Left foreground stays open when a
+    graphic adds no value.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears 0.25 seconds before speech. Planned pauses1.5 seconds,2.2 at scene endings,2.5
+    for long pairs. Measure finalized speech, never truncate or accelerate to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Hietaniemi Cemetery (fi. Hietaniemen hautausmaa), Helsinki, Finland.jpg by Image
+    tube continuously as decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85)
+    and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=2.501488095238095. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Shared Supertonic3 F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16, local ONNX CPU
+    four threads. Exact input and measured clips recorded; pronunciation remains whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Touching Moments One - Pulse by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 102.504 seconds; prepared lossless stereo bed 350.208
+    seconds. Repeat count 3, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected exact source terms and dates use original typography. No generic photograph is presented
+    as a historical event; no borders or identity claims invented. Keep inline highlights; suppress redundant
+    foreground captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second credit cards; complete source and media terms in the accompanying CREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Modern backgrounds are decorative and identified as such
+    in production records.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear fractional-crop resampling only for the already blurred decorative photograph;
+    keep full1080p output and fixed text/foreground unchanged. Coordinator benchmark found meanpixel difference0.071/255
+    and faster rendering. Inspect representative frames and full-export motion continuity.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: winter_war
+  description: Attack and Winter War
+- id: unity
+  description: Unity in defense of independence
+- id: three_wars
+  description: Winter, Continuation and Lapland wars
+- id: evacuation
+  description: Territorial losses and evacuation
+- id: reparations
+  description: Reparations and destruction
+- id: memory
+  description: Human losses and war memories
+- id: chronology
+  description: Source chronology of the World War
+- id: end
+  description: Retreat, peace and Lapland War
+asset_requests:
+- id: episode_background
+  kind: background
+  description: A modern view of Hietaniemi Cemetery provides quiet remembrance context; it is not used
+    as evidence for a particular wartime episode, grave or casualty count.
+  fallback: Acquire a different verified topic-related photograph; do not silently reuse another episode
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Selected source dates and exact Swedish terms as quiet typography, without new historical
+    claims.
+  fallback: Leave the foreground area open to the continuous background; omit its caption.
+- id: music_bed
+  kind: music
+  description: Distinct gentle instrumental piano recording below narration, continuously ducked and softly
+    faded.
+  fallback: Resolve a distinct licensed calm track before rendering.
+- id: narration
+  kind: narration
+  description: Local female Sweden Swedish Supertonic3 F1 reading every source sentence once.
+  fallback: Resolve synthesis failures; do not omit a sentence.
+sentences:
+- sentence_id: hb-c02-u0046-s001
+  sv: Den fredliga utvecklingen i samhället avbröts när Sovjetunionen anföll Finland hösten 1939.
+  ru: Мирное развитие общества прервалось, когда осенью 1939 года Советский Союз напал на Финляндию.
+  scene_id: winter_war
+  visual_cue: Source-only typography for hösten 1939.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hösten 1939
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0046-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.211361
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/00.png
+  render_caption: false
+- sentence_id: hb-c02-u0046-s002
+  sv: Bakgrunden till anfallet var de landavträdelser som Sovjetunionen krävde och som Finland inte gick
+    med på.
+  ru: Нападение было связано с территориальными уступками, которых требовал Советский Союз и на которые
+    Финляндия не согласилась.
+  scene_id: winter_war
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0046-s002.wav
+  start_seconds: 15.0
+  end_seconds: 24.125442
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0046-s003
+  sv: Detta krig kallas vinterkriget.
+  ru: Эта война называется Зимней войной.
+  scene_id: winter_war
+  visual_cue: Source-only typography for vinterkriget.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - vinterkriget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0046-s003.wav
+  start_seconds: 25.916667
+  end_seconds: 29.051361
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/02.png
+  render_caption: false
+- sentence_id: hb-c02-u0047-s001
+  sv: Även om bara två årtionden hade gått sedan inbördeskriget, stred finländarna nu sida vid sida mot
+    Sovjetunionen.
+  ru: Хотя с гражданской войны прошло всего два десятилетия, финляндцы теперь сражались бок о бок против
+    Советского Союза.
+  scene_id: unity
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0047-s001.wav
+  start_seconds: 31.541667
+  end_seconds: 41.294048
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0047-s002
+  sv: Finländarnas gemensamma mål var att bevara sin självständighet.
+  ru: Общей целью финляндцев было сохранить свою независимость.
+  scene_id: unity
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0047-s002.wav
+  start_seconds: 43.083333
+  end_seconds: 49.004422
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0047-s003
+  sv: Man ville glömma de gamla meningsskiljaktigheterna, och i medierna lyftes det finska folkets enighet
+    fram.
+  ru: Стремились забыть прежние разногласия, а в средствах массовой информации подчёркивали единство финского
+    народа.
+  scene_id: unity
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0047-s003.wav
+  start_seconds: 50.791667
+  end_seconds: 59.638469
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0047-s004
+  sv: Det gav människorna kraft att överleva kriget.
+  ru: Это давало людям силы пережить войну.
+  scene_id: unity
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0047-s004.wav
+  start_seconds: 61.416667
+  end_seconds: 65.805238
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0048-s001
+  sv: Under andra världskriget utkämpade Finland två krig mot Sovjetunionen, vinterkriget och fortsättningskriget.
+  ru: 'Во время Второй мировой войны Финляндия вела две войны против Советского Союза: Зимнюю войну и
+    Войну-продолжение.'
+  scene_id: three_wars
+  visual_cue: Source-only typography for vinterkriget, fortsättningskriget.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - vinterkriget
+  - fortsättningskriget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0048-s001.wav
+  start_seconds: 68.291667
+  end_seconds: 77.695748
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/07.png
+  render_caption: false
+- sentence_id: hb-c02-u0048-s002
+  sv: I fortsättningskriget stred Finland vid Tysklands sida för att försöka vinna tillbaka de landområden
+    som gått förlorade i vinterkriget.
+  ru: В Войне-продолжении Финляндия сражалась на стороне Германии, пытаясь вернуть территории, утраченные
+    в Зимней войне.
+  scene_id: three_wars
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0048-s002.wav
+  start_seconds: 79.458333
+  end_seconds: 91.37017
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0048-s003
+  sv: Efter det utkämpade Finland ännu Lapplandskriget mot sin tidigare allierade Tyskland.
+  ru: После этого Финляндия вела ещё и Лапландскую войну против своего прежнего союзника, Германии.
+  scene_id: three_wars
+  visual_cue: Source-only typography for Lapplandskriget.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Lapplandskriget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0048-s003.wav
+  start_seconds: 93.125
+  end_seconds: 100.648265
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/09.png
+  render_caption: false
+- sentence_id: hb-c02-u0049-s001
+  sv: Som en följd av krigen förlorade Finland stora områden till Sovjetunionen.
+  ru: В результате войн Финляндия потеряла большие территории, отошедшие Советскому Союзу.
+  scene_id: evacuation
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0049-s001.wav
+  start_seconds: 103.125
+  end_seconds: 110.160646
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0049-s002
+  sv: Människorna som bodde i dessa områden blev tvungna att lämna sina hem och evakuerades till andra
+    ställen i Finland.
+  ru: Люди, жившие на этих территориях, были вынуждены оставить свои дома и были эвакуированы в другие
+    места Финляндии.
+  scene_id: evacuation
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0049-s002.wav
+  start_seconds: 111.916667
+  end_seconds: 122.017347
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0049-s003
+  sv: Där var lokalbefolkningen länge misstänksam mot invandrarna på grund av deras annorlunda seder,
+    dialekter och religion.
+  ru: Там местное население долго относилось к переселенцам с подозрением из-за их отличавшихся обычаев,
+    диалектов и религии.
+  scene_id: evacuation
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0049-s003.wav
+  start_seconds: 123.791667
+  end_seconds: 134.240646
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0049-s004
+  sv: De som evakuerades var också tvungna att lämna kvar en stor del av sin egendom på den gamla hemorten.
+  ru: Эвакуированные также были вынуждены оставить большую часть своего имущества в прежнем месте жительства.
+  scene_id: evacuation
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0049-s004.wav
+  start_seconds: 136.0
+  end_seconds: 144.707483
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0050-s001
+  sv: Finland tvingades också betala stora krigsskadestånd till Sovjetunionen.
+  ru: Финляндия также была вынуждена выплатить Советскому Союзу большие военные репарации.
+  scene_id: reparations
+  visual_cue: Source-only typography for krigsskadestånd.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - krigsskadestånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0050-s001.wav
+  start_seconds: 147.166667
+  end_seconds: 153.854014
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/14.png
+  render_caption: false
+- sentence_id: hb-c02-u0050-s002
+  sv: Dessutom brände Finlands tidigare allierade tyskarna, som i slutet av kriget blivit fiender, en
+    stor del av Lappland när de drevs ut ur Finland under Lapplandskriget.
+  ru: Кроме того, прежние союзники Финляндии — немцы, ставшие к концу войны врагами, сожгли значительную
+    часть Лапландии, когда их изгоняли из Финляндии во время Лапландской войны.
+  scene_id: reparations
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0050-s002.wav
+  start_seconds: 155.625
+  end_seconds: 170.183912
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0050-s003
+  sv: Återuppbyggnaden tog lång tid.
+  ru: Восстановление заняло много времени.
+  scene_id: reparations
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0050-s003.wav
+  start_seconds: 172.958333
+  end_seconds: 175.884048
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0051-s001
+  sv: Dessa krig har stor betydelse för finländarna.
+  ru: Эти войны имеют большое значение для финляндцев.
+  scene_id: memory
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s001.wav
+  start_seconds: 178.375
+  end_seconds: 182.554592
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0051-s002
+  sv: I krigen dog uppemot 100 000 soldater.
+  ru: В этих войнах погибло почти 100 000 солдат.
+  scene_id: memory
+  visual_cue: Source-only typography for uppemot 100 000.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - uppemot 100 000
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s002.wav
+  start_seconds: 184.333333
+  end_seconds: 188.652245
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/18.png
+  render_caption: false
+- sentence_id: hb-c02-u0051-s003
+  sv: Krigen sammanförde folket, och Finland förblev en självständig stat.
+  ru: Войны сплотили народ, и Финляндия осталась независимым государством.
+  scene_id: memory
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s003.wav
+  start_seconds: 190.416667
+  end_seconds: 196.825374
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0051-s004
+  sv: Krigsupplevelserna förenade de generationer som var med om krigen.
+  ru: Опыт войны объединил поколения, пережившие эти войны.
+  scene_id: memory
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s004.wav
+  start_seconds: 198.583333
+  end_seconds: 204.713401
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0051-s005
+  sv: De arbetade för sitt land och levde under hårda och fattiga förhållanden efter kriget.
+  ru: Они трудились ради своей страны и после войны жили в тяжёлых условиях и бедности.
+  scene_id: memory
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s005.wav
+  start_seconds: 206.5
+  end_seconds: 213.814286
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0051-s006
+  sv: Många led på grund av traumatiska krigshändelser.
+  ru: Многие страдали из-за травмирующих событий войны.
+  scene_id: memory
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0051-s006.wav
+  start_seconds: 215.583333
+  end_seconds: 220.320204
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0052-s001
+  sv: 1939–1940 blir Finland inblandat i andra världskriget när vinterkriget mellan Finland och Sovjetunionen
+    utbryter
+  ru: 1939–1940 — Финляндия оказывается вовлечённой во Вторую мировую войну, когда начинается Зимняя война
+    между Финляндией и Советским Союзом.
+  scene_id: chronology
+  visual_cue: Source-only typography for 1939–1940.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1939–1940
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override:
+    text: Nittonhundratrettionio till nittonhundrafyrtio blir Finland inblandat i andra världskriget när
+      vinterkriget mellan Finland och Sovjetunionen utbryter.
+    reason: Speech-only expansion of1939–1940; one full-value comparison did not improve the date diagnostic,
+      so retain initial take and flag complete-video review.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0052-s001.wav
+  start_seconds: 222.791667
+  end_seconds: 235.678741
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/23.png
+  render_caption: false
+- sentence_id: hb-c02-u0053-s001
+  sv: 1941–1944 Andra världskriget fortsätter med fortsättningskriget mellan Finland och Sovjetunionen
+  ru: 1941–1944 — Вторая мировая война продолжается Войной-продолжением между Финляндией и Советским Союзом.
+  scene_id: chronology
+  visual_cue: Source-only typography for 1941–1944.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1941–1944
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override:
+    text: Nittonhundrafyrtioett till nittonhundrafyrtiofyra. Andra världskriget fortsätter med fortsättningskriget
+      mellan Finland och Sovjetunionen.
+    reason: Expand source year range or initialism for speech only; independently checked date/letter
+      meaning; display wording unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0053-s001.wav
+  start_seconds: 237.458333
+  end_seconds: 249.50949
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/24.png
+  render_caption: false
+- sentence_id: hb-c02-u0054-s001
+  sv: Först klarade sig Finland bra i kriget och erövrade fler områden.
+  ru: Сначала Финляндия успешно вела войну и захватила дополнительные территории.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s001.wav
+  start_seconds: 252.0
+  end_seconds: 257.990748
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0054-s002
+  sv: Men sedan blev det slut med Finlands bundsförvant Tysklands framgångar i Europa.
+  ru: Но затем успехам союзника Финляндии, Германии, в Европе пришёл конец.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s002.wav
+  start_seconds: 259.75
+  end_seconds: 266.994626
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0054-s003
+  sv: Tyskland hade under andra världskriget erövrat en stor del av Europa, men det stora anfallet mot
+    Sovjetunionen misslyckades och Tyskland måste retirera.
+  ru: Во время Второй мировой войны Германия завоевала значительную часть Европы, но крупное наступление
+    на Советский Союз потерпело неудачу, и Германии пришлось отступить.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s003.wav
+  start_seconds: 268.75
+  end_seconds: 281.776395
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0054-s004
+  sv: Sovjetunionen anföll Finland och hösten 1944 slöt man fred.
+  ru: Советский Союз напал на Финляндию, и осенью 1944 года был заключён мир.
+  scene_id: end
+  visual_cue: Source-only typography for hösten 1944.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hösten 1944
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s004.wav
+  start_seconds: 283.541667
+  end_seconds: 290.507653
+  display_segments: []
+  render_image: studio/media/hb-c02-krigen/cards/28.png
+  render_caption: false
+- sentence_id: hb-c02-u0054-s005
+  sv: Finland måste igen överlåta områden åt Sovjetunionen, betala krigsskadestånd och driva ut de tyska
+    trupper som fanns i landet.
+  ru: Финляндия снова должна была уступить территории Советскому Союзу, выплатить военные репарации и
+    изгнать находившиеся в стране немецкие войска.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s005.wav
+  start_seconds: 292.291667
+  end_seconds: 303.297925
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0054-s006
+  sv: Kriget mot de tyska trupperna kallas lapplandskriget.
+  ru: Война против немецких войск называется Лапландской войной.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s006.wav
+  start_seconds: 305.083333
+  end_seconds: 310.098844
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0054-s007
+  sv: I det kriget brände tyskarna en stor del av Lappland när de lämnade Finland.
+  ru: В этой войне немцы сожгли значительную часть Лапландии, уходя из Финляндии.
+  scene_id: end
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-krigen/narration/hb-c02-u0054-s007.wav
+  start_seconds: 311.875
+  end_seconds: 318.701667
+  display_segments: []
+  render_image: null
+  render_caption: false
+render:
+  music_path: studio/media/hb-c02-krigen/sources/music-bed.flac
+  music_loop_crossfade_seconds: 4
+  background_image: studio/media/hb-c02-krigen/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.501488095238095
+    resampling: bilinear
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_gain_adjustment_db: 2
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands historia — svensk källtext och granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Urval och formgivning för denna video.
+    - Fullständiga källor, länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Hietaniemi Cemetery (fi. Hietaniemen hautausmaa), Helsinki, Finland.jpg — Image tube · CC BY-SA
+      4.0
+    - Touching Moments One - Pulse — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Beskärning, toningar och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian displayed in order; no added narration.
+  - Modern decorative photograph cropped, darkened, blurred and continuously panned/zoomed; its adaptation
+    retains the source license.
+  - Selected source-only typography; no inferred facts or identification of historic events from modern
+    photos.
+  - Music faded, ducked and level-adjusted, with explicit4second crossfaded repeats as required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Hietaniemi_Cemetery_(fi._Hietaniemen_hautausmaa),_Helsinki,_Finland.jpg
+    description: '"Sankariristi", Wäinö Aaltonen (1954), is located at Sankariaukio, Hietaniemi Cemetery.
+      There are graves of soldiers from the Finnish capital fallen in the wars. Section: military cemetery'
+    license: CC BY-SA 4.0

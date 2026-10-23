@@ -1,0 +1,621 @@
+schema_version: 1
+section_id: hb-c02-utmaningar
+chapter_id: hb-c02
+title_sv: Ett föränderligt samhälle
+title_ru: Меняющееся общество
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-utmaningar.yaml
+example_only: false
+source_section_sha256: f1838106f30622ad631cc1cd91735cd52fdcd02312b588d2d156fccbb0c65edc
+translation_file_sha256: 0f4378faaf4b885581e89f1e098b4f3e1c19774b9379d64aac2baa96b30d882b
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps, Chapter2 slate-blue palette #202c40, ivory #f6f1e6, pale blue #c5d2e4,
+    brass #d9b575, separator #46566d. Liberation Sans Bold48/regular40, explicit44/36 or40/34 for long
+    pairs. Fixed Swedish-above-Russian right panel, steady source-fact cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Viikin Keltakoipi 1.jpg by Htm continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.058333333333333. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Peace of Mind by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 2157.845 seconds; prepared lossless stereo bed 288.167 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: centenary
+  description: A century of social and political change
+- id: demography
+  description: Population ageing and demographic dependency
+- id: services
+  description: Tax funding and future public services
+- id: sustainability
+  description: Meaning and aims of sustainable development
+- id: agenda
+  description: Agenda 2030
+- id: consumption
+  description: Responsible consumption and a smaller footprint
+- id: climate
+  description: Climate change and biodiversity
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct verified photograph related to Ett föränderligt samhälle. Decorative full-frame
+    context, not evidence of individual events.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Peace of Mind by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c02-u0085-s001
+  sv: Det självständiga Finland fyllde hundra år 2017.
+  ru: В 2017 году независимой Финляндии исполнилось сто лет.
+  scene_id: centenary
+  visual_cue: 'Steady source-only typography card: hundra år, 2017'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hundra år
+  - '2017'
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Det självständiga Finland fyllde hundra år tvåtusensjutton.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0085-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.753129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/00.png
+- sentence_id: hb-c02-u0085-s002
+  sv: På drygt hundra år har Finland genomgått stora förändringar.
+  ru: За немногим более ста лет Финляндия пережила большие перемены.
+  scene_id: centenary
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0085-s002.wav
+  start_seconds: 10.541667
+  end_seconds: 15.905476
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0085-s003
+  sv: Ett jordbruksdominerat, fattigt land utvecklades till ett välmående, modernt samhälle.
+  ru: Бедная страна с преобладанием сельского хозяйства превратилась в благополучное современное общество.
+  scene_id: centenary
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0085-s003.wav
+  start_seconds: 17.666667
+  end_seconds: 25.050612
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0085-s004
+  sv: Finland blev en liberal demokrati, vars grundlag skyddar alla människors rättigheter.
+  ru: Финляндия стала либеральной демократией, конституция которой защищает права всех людей.
+  scene_id: centenary
+  visual_cue: 'Steady source-only typography card: liberal demokrati'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - liberal demokrati
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0085-s004.wav
+  start_seconds: 26.833333
+  end_seconds: 34.495918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/03.png
+- sentence_id: hb-c02-u0085-s005
+  sv: Finland är också en nordisk välfärdsstat, som garanterar grundläggande livsförutsättningar för alla
+    sina invånare.
+  ru: Финляндия также является государством всеобщего благосостояния Северных стран, которое гарантирует
+    основные условия жизни всем своим жителям.
+  scene_id: centenary
+  visual_cue: 'Steady source-only typography card: nordisk välfärdsstat'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - nordisk välfärdsstat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0085-s005.wav
+  start_seconds: 36.25
+  end_seconds: 46.62932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/04.png
+- sentence_id: hb-c02-u0086-s001
+  sv: Även om förhållandena är goda, har Finland ändå olika utmaningar att lösa i dag och framöver i en
+    värld som ständigt förändras.
+  ru: Хотя условия хорошие, Финляндии всё же предстоит решать разные задачи сегодня и в будущем в мире,
+    который постоянно меняется.
+  scene_id: demography
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0086-s001.wav
+  start_seconds: 49.083333
+  end_seconds: 60.437891
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0086-s002
+  sv: En av utmaningarna är en försämrad demografisk försörjningskvot.
+  ru: Одной из таких проблем является ухудшение коэффициента демографической нагрузки.
+  scene_id: demography
+  visual_cue: 'Steady source-only typography card: demografisk försörjningskvot'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - demografisk försörjningskvot
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0086-s002.wav
+  start_seconds: 62.208333
+  end_seconds: 68.408061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/06.png
+- sentence_id: hb-c02-u0086-s003
+  sv: Med det avses att det i landet föds färre barn än tidigare, samtidigt som människorna lever allt
+    längre.
+  ru: Это означает, что в стране рождается меньше детей, чем раньше, а люди в то же время живут всё дольше.
+  scene_id: demography
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0086-s003.wav
+  start_seconds: 70.166667
+  end_seconds: 79.152789
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0086-s004
+  sv: I Finland, liksom i övriga industriländer, finns det allt fler äldre och allt färre människor i
+    arbetsför ålder i förhållande till befolkningen som helhet.
+  ru: В Финляндии, как и в других промышленно развитых странах, становится всё больше пожилых и всё меньше
+    людей трудоспособного возраста по отношению к населению в целом.
+  scene_id: demography
+  visual_cue: Steady source-term card names the two age categories. Keep the demographic trend and population-relative
+    qualification in the complete bilingual source text, without inventing absolute counts.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - äldre
+  - arbetsför ålder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0086-s004.wav
+  start_seconds: 80.916667
+  end_seconds: 94.221701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/08.png
+- sentence_id: hb-c02-u0087-s001
+  sv: Välfärdsstaten finansieras i huvudsak med skattemedel och därför är det av avgörande betydelse att
+    det finns tillräckligt med skattebetalare.
+  ru: Государство всеобщего благосостояния финансируется главным образом из налоговых средств, поэтому
+    решающее значение имеет достаточное число налогоплательщиков.
+  scene_id: services
+  visual_cue: 'Steady source-only typography card: skattemedel'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - skattemedel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0087-s001.wav
+  start_seconds: 96.708333
+  end_seconds: 108.82915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/09.png
+- sentence_id: hb-c02-u0087-s002
+  sv: Man måste fundera på hur man i framtiden ska kunna erbjuda goda utbildnings-, social- och hälsovårdstjänster
+    i Finland, när det finns allt färre människor i arbetsför ålder och skattebetalare och allt fler som
+    är i behov av tjänster.
+  ru: Нужно задуматься о том, как в будущем предоставлять хорошие образовательные, социальные и медицинские
+    услуги в Финляндии, когда людей трудоспособного возраста и налогоплательщиков становится всё меньше,
+    а нуждающихся в услугах — всё больше.
+  scene_id: services
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0087-s002.wav
+  start_seconds: 110.583333
+  end_seconds: 130.157755
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c02-u0088-s001
+  sv: En annan utmaning för Finland är att trygga en hållbar utveckling.
+  ru: Ещё одна задача Финляндии — обеспечить устойчивое развитие.
+  scene_id: sustainability
+  visual_cue: 'Steady source-only typography card: hållbar utveckling'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hållbar utveckling
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0088-s001.wav
+  start_seconds: 132.916667
+  end_seconds: 138.628776
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/11.png
+- sentence_id: hb-c02-u0088-s002
+  sv: Hållbar utveckling är lokal, regional och global utveckling som garanterar goda levnadsvillkor för
+    nuvarande och kommande generationer.
+  ru: Устойчивое развитие — это местное, региональное и глобальное развитие, гарантирующее хорошие условия
+    жизни нынешним и будущим поколениям.
+  scene_id: sustainability
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0088-s002.wav
+  start_seconds: 140.416667
+  end_seconds: 151.840884
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0088-s003
+  sv: Hållbar utveckling är att minska fattigdom, minska ekonomisk ojämlikhet och skydda miljön globalt.
+  ru: Устойчивое развитие означает сокращение бедности, уменьшение экономического неравенства и защиту
+    окружающей среды во всём мире.
+  scene_id: sustainability
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0088-s003.wav
+  start_seconds: 153.625
+  end_seconds: 162.053844
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0089-s001
+  sv: I Finland tillämpas FN:s handlingsprogram för hållbar utveckling, Agenda 2030.
+  ru: В Финляндии применяется программа действий ООН (FN) по устойчивому развитию — Повестка дня на период
+    до 2030 года (Agenda 2030).
+  scene_id: agenda
+  visual_cue: 'Steady source-only typography card: Agenda 2030'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Agenda 2030
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: I Finland tillämpas Förenta nationernas handlingsprogram för hållbar utveckling, Agenda tvåtusentrettio.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0089-s001.wav
+  start_seconds: 164.541667
+  end_seconds: 173.736769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/14.png
+- sentence_id: hb-c02-u0089-s002
+  sv: Det syftar till att bekämpa extrem fattigdom och till att skapa ett hållbart samhälle där miljön,
+    ekonomin och människan beaktas på ett jämlikt sätt.
+  ru: Она направлена на борьбу с крайней бедностью и создание устойчивого общества, в котором окружающая
+    среда, экономика и человек учитываются на равных.
+  scene_id: agenda
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0089-s002.wav
+  start_seconds: 175.5
+  end_seconds: 187.899456
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0090-s001
+  sv: Det finns ändå jobb kvar att göra.
+  ru: Однако ещё остаётся работа, которую нужно выполнить.
+  scene_id: consumption
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0090-s001.wav
+  start_seconds: 190.375
+  end_seconds: 193.649014
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0090-s002
+  sv: Målet är att konsumera mindre och mer ansvarsfullt och producera mindre avfall.
+  ru: Цель — потреблять меньше и более ответственно и производить меньше отходов.
+  scene_id: consumption
+  visual_cue: 'Steady source-only typography card: konsumera mindre, mindre avfall'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - konsumera mindre
+  - mindre avfall
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0090-s002.wav
+  start_seconds: 195.416667
+  end_seconds: 202.243333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/17.png
+- sentence_id: hb-c02-u0090-s003
+  sv: Det är viktigt att minska koldioxidavtrycket från jordbruket, industrin och energiproduktionen och
+    minska ojämlikheten mellan människorna.
+  ru: Важно уменьшать углеродный след сельского хозяйства, промышленности и производства энергии, а также
+    сокращать неравенство между людьми.
+  scene_id: consumption
+  visual_cue: 'Steady source-only typography card: koldioxidavtrycket'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - koldioxidavtrycket
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0090-s003.wav
+  start_seconds: 204.0
+  end_seconds: 215.563537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/18.png
+- sentence_id: hb-c02-u0091-s001
+  sv: Åtgärderna för att bromsa klimatförändringen måste ökas och effektiviseras.
+  ru: Меры по замедлению изменения климата необходимо усилить и сделать более эффективными.
+  scene_id: climate
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0091-s001.wav
+  start_seconds: 218.041667
+  end_seconds: 224.659354
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0091-s002
+  sv: Finlands nordliga läge skyddar landet från de värsta extrema väderfenomenen som orsakas av klimatförändringen.
+  ru: Северное расположение Финляндии защищает страну от самых тяжёлых экстремальных погодных явлений,
+    вызванных изменением климата.
+  scene_id: climate
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0091-s002.wav
+  start_seconds: 226.416667
+  end_seconds: 236.308367
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0091-s003
+  sv: Ändå lider naturen och näringarna av klimatförändringen, i synnerhet i Lappland.
+  ru: Тем не менее природа и отрасли хозяйства страдают от изменения климата, особенно в Лапландии.
+  scene_id: climate
+  visual_cue: 'Steady source-only typography card: Lappland'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Lappland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0091-s003.wav
+  start_seconds: 238.083333
+  end_seconds: 245.606599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/21.png
+- sentence_id: hb-c02-u0091-s004
+  sv: Det är också viktigt att vidta brådskande åtgärder för att stoppa förlusten av biologisk mångfald.
+  ru: Важно также принять срочные меры, чтобы остановить утрату биологического разнообразия.
+  scene_id: climate
+  visual_cue: 'Steady source-only typography card: biologisk mångfald'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - biologisk mångfald
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-utmaningar/narration/hb-c02-u0091-s004.wav
+  start_seconds: 247.375
+  end_seconds: 255.943163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-utmaningar/cards/22.png
+render:
+  music_path: studio/media/hb-c02-utmaningar/sources/music-bed.flac
+  background_image: studio/media/hb-c02-utmaningar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.058333333333333
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Finlands historia
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Viikin Keltakoipi 1.jpg — Htm · CC BY 4.0
+    - Peace of Mind — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Viikin_Keltakoipi_1.jpg
+    description: Viikin keltakoipi ("Yellow-legs of Viikki"), Viikinranta, Helsinki, Finland. Landscape
+      electricity pylon designed by architect Risto Virkkunen, completed in 2015.
+    license: CC BY 4.0

@@ -1,0 +1,611 @@
+schema_version: 1
+section_id: hb-c02-ateruppbyggnad
+chapter_id: hb-c02
+title_sv: Återuppbyggnad och kalla kriget
+title_ru: Восстановление и холодная война
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-ateruppbyggnad.yaml
+example_only: false
+source_section_sha256: c3e9ea110daf41c649995ccd9278d86bd39b42efd3886f9b6dbe6e1d464fc5ab
+translation_file_sha256: aeb19588bf41baa4734e3e5d0f0d22a87862e4cedda9bd02f3bf83d6f3a95d56
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds. Read every body sentence and list fragment
+    once in stored source order; preserve repetitions in the source.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter2 slate-blue #202c40, ivory #f6f1e6, secondary #c5d2e4, gold
+    #d9b575, separator #46566d. Fixed right bilingual panel, Swedish above Russian. Liberation Sans Bold48/regular40;
+    only explicitly recorded long pairs use smaller readable sizes. Left foreground stays open when a
+    graphic adds no value.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears 0.25 seconds before speech. Planned pauses1.5 seconds,2.2 at scene endings,2.5
+    for long pairs. Measure finalized speech, never truncate or accelerate to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:View from the Helsinki Olympic Stadium tower.jpg by Óðinn continuously as decorative
+    background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative
+    zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=2.139880952380952.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Shared Supertonic3 F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16, local ONNX CPU
+    four threads. Exact input and measured clips recorded; pronunciation remains whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Luminous Rain by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 114.081 seconds; prepared lossless stereo bed 299.583 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected exact source terms and dates use original typography. No generic photograph is presented
+    as a historical event; no borders or identity claims invented. Keep inline highlights; suppress redundant
+    foreground captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second credit cards; complete source and media terms in the accompanying CREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Modern backgrounds are decorative and identified as such
+    in production records.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear fractional-crop resampling only for the already blurred decorative photograph;
+    keep full1080p output and fixed text/foreground unchanged. Coordinator benchmark found meanpixel difference0.071/255
+    and faster rendering. Inspect representative frames and full-export motion continuity.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: reparations
+  description: Reparations and industrial growth
+- id: postwar_policy
+  description: Postwar uncertainty and relations with the Soviet Union
+- id: olympics
+  description: Helsinki Olympic Games
+- id: neutrality
+  description: Neutrality and economic relations
+- id: growth
+  description: Growth and the welfare-state goal
+- id: trust
+  description: Services and confidence in institutions
+asset_requests:
+- id: episode_background
+  kind: background
+  description: A modern view from the Helsinki Olympic Stadium tower connects with the source reference
+    to the 1952 Games and the postwar city; it is explicitly present-day decorative context, not a 1952
+    photograph.
+  fallback: Acquire a different verified topic-related photograph; do not silently reuse another episode
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Selected source dates and exact Swedish terms as quiet typography, without new historical
+    claims.
+  fallback: Leave the foreground area open to the continuous background; omit its caption.
+- id: music_bed
+  kind: music
+  description: Distinct gentle instrumental piano recording below narration, continuously ducked and softly
+    faded.
+  fallback: Resolve a distinct licensed calm track before rendering.
+- id: narration
+  kind: narration
+  description: Local female Sweden Swedish Supertonic3 F1 reading every source sentence once.
+  fallback: Resolve synthesis failures; do not omit a sentence.
+sentences:
+- sentence_id: hb-c02-u0055-s001
+  sv: Finland förlorade kriget och var därför tvunget att betala ett tungt krigsskadestånd till Sovjetunionen
+    i form av varor.
+  ru: Финляндия проиграла войну и поэтому была вынуждена выплатить Советскому Союзу обременительные военные
+    репарации в виде товаров.
+  scene_id: reparations
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0055-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.907959
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0055-s002
+  sv: Som krigsskadestånd levererade man till exempel tåg, fartyg och råvaror.
+  ru: В качестве военных репараций поставляли, например, поезда, суда и сырьё.
+  scene_id: reparations
+  visual_cue: Source-only typography for tåg, fartyg, råvaror.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - tåg
+  - fartyg
+  - råvaror
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0055-s002.wav
+  start_seconds: 15.666667
+  end_seconds: 22.214694
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/01.png
+  render_caption: false
+- sentence_id: hb-c02-u0055-s003
+  sv: Finland finansierade tillverkningen av varorna med lån och understöd.
+  ru: Финляндия финансировала производство товаров за счёт займов и финансовой помощи.
+  scene_id: reparations
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0055-s003.wav
+  start_seconds: 24.0
+  end_seconds: 30.339048
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0055-s004
+  sv: I och med produktionen av krigsskadeståndet utvecklades Finland från ett jordbruksland till ett
+    industriland.
+  ru: Благодаря производству товаров для выплаты военных репараций Финляндия превратилась из аграрной
+    страны в промышленную.
+  scene_id: reparations
+  visual_cue: Source-only typography for jordbruksland, industriland.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - jordbruksland
+  - industriland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0055-s004.wav
+  start_seconds: 32.125
+  end_seconds: 41.877381
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/03.png
+  render_caption: false
+- sentence_id: hb-c02-u0055-s005
+  sv: I takt med industrialiseringen började flyttrörelsen från landsbygden till städerna.
+  ru: По мере индустриализации началось переселение из сельской местности в города.
+  scene_id: reparations
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0055-s005.wav
+  start_seconds: 43.666667
+  end_seconds: 50.980952
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s001
+  sv: Efter krigen präglades politiken först av försiktighet och oro över att Sovjetunionen skulle ockupera
+    landet.
+  ru: После войн политика сначала характеризовалась осторожностью и опасением, что Советский Союз оккупирует
+    страну.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s001.wav
+  start_seconds: 53.458333
+  end_seconds: 62.862415
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s002
+  sv: Kommunistisk politisk verksamhet var tillåten igen och man var också rädd för en kommunistisk revolution.
+  ru: Коммунистическая политическая деятельность вновь была разрешена, и также опасались коммунистической
+    революции.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s002.wav
+  start_seconds: 64.625
+  end_seconds: 74.029082
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s003
+  sv: Men spänningen minskade så småningom när förhållandena stabiliserades.
+  ru: Но напряжение постепенно ослабло, когда обстановка стабилизировалась.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s003.wav
+  start_seconds: 75.791667
+  end_seconds: 82.200374
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s004
+  sv: När också förhållandet till Sovjet stabiliserades lärde sig finländarna hur det lönar sig att handla
+    som granne till en inflytelserik stormakt.
+  ru: Когда отношения с Советским Союзом тоже стабилизировались, финляндцы научились тому, как выгоднее
+    действовать, будучи соседями влиятельной великой державы.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s004.wav
+  start_seconds: 83.958333
+  end_seconds: 96.00949
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s005
+  sv: År 1948 slöt Finland och Sovjet VSB-pakten, det vill säga Vänskaps-, samarbets- och biståndspakten.
+  ru: В 1948 году Финляндия и Советский Союз заключили договор VSB, то есть Договор о дружбе, сотрудничестве
+    и взаимной помощи.
+  scene_id: postwar_policy
+  visual_cue: Source-only typography for 1948, VSB-pakten.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1948'
+  - VSB-pakten
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override:
+    text: År nittonhundrafyrtioåtta slöt Finland och Sovjet ve ess be-pakten, det vill säga Vänskaps-,
+      samarbets- och biståndspakten.
+    reason: Expand source year range or initialism for speech only; independently checked date/letter
+      meaning; display wording unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s005.wav
+  start_seconds: 97.791667
+  end_seconds: 108.519286
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/09.png
+  render_caption: false
+- sentence_id: hb-c02-u0056-s006
+  sv: Pakten gav Finland ekonomiska fördelar, men innebar också att Finland i både inrikes- och utrikespolitiken
+    måste handla så att man inte irriterade Sovjet.
+  ru: Договор давал Финляндии экономические преимущества, но также означал, что и во внутренней, и во
+    внешней политике Финляндия должна была действовать так, чтобы не раздражать Советский Союз.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s006.wav
+  start_seconds: 110.291667
+  end_seconds: 123.527041
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0056-s007
+  sv: Finland var officiellt ett självständigt och neutralt land, men i verkligheten måste man beakta
+    Sovjets intressen i sin politik.
+  ru: Официально Финляндия была независимой и нейтральной страной, но в действительности в своей политике
+    она должна была учитывать интересы Советского Союза.
+  scene_id: postwar_policy
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0056-s007.wav
+  start_seconds: 126.291667
+  end_seconds: 137.437245
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0057-s001
+  sv: 1952 OS i Helsingfors
+  ru: 1952 — Олимпийские игры в Хельсинки.
+  scene_id: olympics
+  visual_cue: Source-only typography for 1952, OS i Helsingfors.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1952'
+  - OS i Helsingfors
+  pronunciation_notes:
+  - Check all source years, dates and quantities in the final audio; ASR does not certify pronunciation.
+  speech_override:
+    text: Nittonhundrafemtiotvå. O ess i Helsingfors.
+    reason: Expand source year range or initialism for speech only; independently checked date/letter
+      meaning; display wording unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0057-s001.wav
+  start_seconds: 139.916667
+  end_seconds: 144.723197
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/12.png
+  render_caption: false
+- sentence_id: hb-c02-u0058-s001
+  sv: Efter andra världskriget tvingades Finland hålla samma linje som Sovjetunionen i sin utrikespolitik
+    för att undvika ockupation.
+  ru: После Второй мировой войны Финляндия была вынуждена придерживаться той же линии во внешней политике,
+    что и Советский Союз, чтобы избежать оккупации.
+  scene_id: neutrality
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0058-s001.wav
+  start_seconds: 147.208333
+  end_seconds: 158.214592
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0058-s002
+  sv: Officiellt var Finland ett neutralt land, men i verkligheten måste det i sin politik också beakta
+    Sovjetunionens intressen.
+  ru: Официально Финляндия была нейтральной страной, но в действительности в своей политике должна была
+    также учитывать интересы Советского Союза.
+  scene_id: neutrality
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0058-s002.wav
+  start_seconds: 160.0
+  end_seconds: 170.37932
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0058-s003
+  sv: Å andra sidan förblev Finland ett självständigt land och drog ekonomisk nytta av handeln med Sovjetunionen.
+  ru: С другой стороны, Финляндия оставалась независимой страной и извлекала экономическую выгоду из торговли
+    с Советским Союзом.
+  scene_id: neutrality
+  visual_cue: Source-only typography for ett självständigt land.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - ett självständigt land
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0058-s003.wav
+  start_seconds: 172.166667
+  end_seconds: 181.779728
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/15.png
+  render_caption: false
+- sentence_id: hb-c02-u0059-s001
+  sv: Efter krigen utvecklades Finlands industri och ekonomin växte kraftigt.
+  ru: После войн промышленность Финляндии развивалась, а экономика значительно выросла.
+  scene_id: growth
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0059-s001.wav
+  start_seconds: 184.25
+  end_seconds: 190.589048
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0059-s002
+  sv: Den politiska viljan att bygga upp Finland till ett ännu bättre, mer jämlikt och tryggare land var
+    stark.
+  ru: Политическая воля превратить Финляндию в ещё лучшую, более равноправную и безопасную страну была
+    сильна.
+  scene_id: growth
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0059-s002.wav
+  start_seconds: 192.375
+  end_seconds: 201.430782
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0059-s003
+  sv: Samtliga partier antog som sitt politiska mål att bygga upp en välfärdsstat.
+  ru: Все партии приняли построение государства всеобщего благосостояния как свою политическую цель.
+  scene_id: growth
+  visual_cue: Source-only typography for välfärdsstat.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - välfärdsstat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0059-s003.wav
+  start_seconds: 203.208333
+  end_seconds: 210.24398
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/18.png
+  render_caption: false
+- sentence_id: hb-c02-u0059-s004
+  sv: En viktig förutsättning för uppbyggnaden var tillräcklig ekonomisk tillväxt.
+  ru: Важной предпосылкой этого построения был достаточный экономический рост.
+  scene_id: growth
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0059-s004.wav
+  start_seconds: 212.0
+  end_seconds: 218.757007
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0059-s005
+  sv: Människorna förenades av att de upplevt svåra levnadsförhållanden, vilket gjorde att alla förband
+    sig till att utveckla samhället.
+  ru: Людей объединяло то, что они пережили тяжёлые условия жизни, в результате чего все взяли на себя
+    обязательство развивать общество.
+  scene_id: growth
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0059-s005.wav
+  start_seconds: 220.541667
+  end_seconds: 231.965884
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0060-s001
+  sv: Så småningom blev Finland en välfärdsstat, där staten och kommunerna gavs en viktig roll i att säkerställa
+    medborgarnas levnadsstandard och försörjning.
+  ru: Постепенно Финляндия стала государством всеобщего благосостояния, в котором государству и муниципалитетам
+    отводилась важная роль в обеспечении уровня жизни граждан и их средств к существованию.
+  scene_id: trust
+  visual_cue: Open foreground over the continuous documentary background; no caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0060-s001.wav
+  start_seconds: 234.416667
+  end_seconds: 247.86102
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c02-u0060-s002
+  sv: Det faktum att alla medborgare erbjöds tjänster och social trygghet som tillhandahölls med skattemedel
+    fick människorna att lita på det demokratiska beslutsfattandet och samhället och dess institutioner.
+  ru: Тот факт, что всем гражданам предлагались услуги и социальная защита, обеспечиваемые за счёт налоговых
+    средств, побуждал людей доверять демократическому принятию решений, обществу и его институтам.
+  scene_id: trust
+  visual_cue: Source-only typography for tjänster, social trygghet.
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - tjänster
+  - social trygghet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-ateruppbyggnad/narration/hb-c02-u0060-s002.wav
+  start_seconds: 250.625
+  end_seconds: 267.064728
+  display_segments: []
+  render_image: studio/media/hb-c02-ateruppbyggnad/cards/22.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c02-ateruppbyggnad/sources/music-bed.flac
+  music_loop_crossfade_seconds: 4
+  background_image: studio/media/hb-c02-ateruppbyggnad/sources/background-original.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.139880952380952
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_gain_adjustment_db: 2
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands historia — svensk källtext och granskad rysk översättning.
+    - InfoFinland.fi
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Urval och formgivning för denna video.
+    - Fullständiga källor, länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - View from the Helsinki Olympic Stadium tower.jpg — Óðinn · CC BY-SA 2.5 ca
+    - Luminous Rain — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Beskärning, toningar och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian displayed in order; no added narration.
+  - Modern decorative photograph cropped, darkened, blurred and continuously panned/zoomed; its adaptation
+    retains the source license.
+  - Selected source-only typography; no inferred facts or identification of historic events from modern
+    photos.
+  - Music faded, ducked and level-adjusted, with explicit4second crossfaded repeats as required.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:View_from_the_Helsinki_Olympic_Stadium_tower.jpg
+    description: View from the Helsinki Olympic Stadium tower.
+    license: CC BY-SA 2.5 ca

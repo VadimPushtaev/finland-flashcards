@@ -9,7 +9,7 @@ import sys
 
 import imageio_ffmpeg
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter
+from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter, ImageColor
 import soundfile as sf
 from scipy.signal import resample_poly
 import yaml
@@ -20,10 +20,31 @@ from studio.tools.outputs import export_stem
 W, H, FPS, RATE = 1920, 1080, 24, 48000
 BG, FG, MUTED, GOLD = '#102e2b', '#f6f1e6', '#bdd3c9', '#e7bc70'
 FONTS = Path('/System/Library/Fonts/Supplemental')
+SEPARATOR = '#35534b'
+FONT_FILES = None
+
+
+def configure_style(script):
+    """Apply recorded episode colors and font files without changing old defaults."""
+    global BG, FG, MUTED, GOLD, SEPARATOR, FONT_FILES
+    settings = script.get('render', {})
+    palette = settings.get('palette', {})
+    BG, FG, MUTED, GOLD, SEPARATOR = [palette.get(key, default) for key, default in
+        [('background', '#102e2b'), ('text', '#f6f1e6'), ('secondary', '#bdd3c9'),
+         ('highlight', '#e7bc70'), ('separator', '#35534b')]]
+    for color in (BG, FG, MUTED, GOLD, SEPARATOR):
+        ImageColor.getrgb(color)
+    FONT_FILES = settings.get('font_files')
 
 
 def font(size, bold=False):
-    return ImageFont.truetype(str(FONTS / ('Arial Bold.ttf' if bold else 'Arial.ttf')), size)
+    if FONT_FILES:
+        path = ROOT / FONT_FILES['bold' if bold else 'regular']
+    else:
+        path = FONTS / ('Arial Bold.ttf' if bold else 'Arial.ttf')
+        if not path.is_file():
+            path = Path('/usr/share/fonts/truetype/liberation') / ('LiberationSans-Bold.ttf' if bold else 'LiberationSans-Regular.ttf')
+    return ImageFont.truetype(str(path), size)
 
 
 def fitted_font(text, size, width, bold=False, minimum=30):
@@ -205,23 +226,28 @@ def prepare_background(image, style):
 
 
 def background_frame(base, progress, style):
-    return base.transform((W, H), Image.Transform.EXTENT,
-                          background_extent(base.size, progress, style),
-                          resample=Image.Resampling.BICUBIC).convert('RGBA')
+    # Pillow's separable resize keeps fractional crop coordinates while avoiding
+    # the slower general-purpose per-pixel transform for this scale-only mapping.
+    samplers = {'bicubic': Image.Resampling.BICUBIC, 'bilinear': Image.Resampling.BILINEAR}
+    sampler = style.get('resampling', 'bicubic')
+    if sampler not in samplers:
+        raise ValueError('Unknown background resampling: ' + sampler)
+    return base.resize((W, H), resample=samplers[sampler],
+                       box=background_extent(base.size, progress, style)).convert('RGBA')
 
 
 def make_card(script, item, rows, images):
     canvas = Image.new('RGBA', (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(canvas)
     if item['kind'] == 'title':
-        draw.rectangle((100, 330, 1820, 700), fill=(16, 46, 43, 175))
+        draw.rectangle((100, 330, 1820, 700), fill=(*ImageColor.getrgb(BG), 175))
         title_face = fitted_font(script['title_sv'], 94, 1640, True, minimum=48)
         y = text_block(draw, script['title_sv'], (140, 400), title_face, 1640, FG, 112)
         text_block(draw, script['title_ru'], (144, y + 28), font(46), 1600, MUTED, 58)
         draw.rectangle((144, 350, 250, 358), fill=GOLD)
         return canvas, None
     if item['kind'] == 'credits':
-        draw.rectangle((65, 65, 1855, 1005), fill=(16, 46, 43, 228))
+        draw.rectangle((65, 65, 1855, 1005), fill=(*ImageColor.getrgb(BG), 228))
         credit = script['render']['credits'][item['index']]
         draw.text((120, 105), credit['heading'], font=font(50, True), fill=FG)
         y = 225
@@ -230,12 +256,12 @@ def make_card(script, item, rows, images):
         if y > 980:
             raise ValueError('Credits overflow')
         return canvas, None
-    draw.rounded_rectangle((890, 165, 1860, 980), radius=20, fill=(16, 46, 43, 225))
+    draw.rounded_rectangle((890, 165, 1860, 980), radius=20, fill=(*ImageColor.getrgb(BG), 225))
     row = rows[item['sentence_id']]
     index = script['sentences'].index(row)
     draw.text((90, 65), script['title_sv'], font=fitted_font(script['title_sv'], 30, 1550, True), fill=MUTED)
     draw.text((1740, 65), f'{index + 1:02d} / {len(rows):02d}', font=font(27), fill=MUTED)
-    draw.line((90, 125, 1830, 125), fill='#35534b', width=2)
+    draw.line((90, 125, 1830, 125), fill=SEPARATOR, width=2)
     picture = row['render_image']
     is_photo = bool(picture and Path(picture).suffix.lower() in ('.jpg', '.jpeg', '.webp'))
     if picture:
@@ -259,7 +285,7 @@ def make_card(script, item, rows, images):
     step = min(65, 900 / len(rows))
     for n in range(len(rows)):
         x = 930 + n * step
-        draw.rounded_rectangle((x, 1000, x + step * .69, 1005), radius=2, fill=GOLD if n <= index else '#35534b')
+        draw.rounded_rectangle((x, 1000, x + step * .69, 1005), radius=2, fill=GOLD if n <= index else SEPARATOR)
     return canvas, picture if is_photo else None
 
 
@@ -308,6 +334,7 @@ def main():
     args = parser.parse_args()
     episode = ROOT / 'studio/episodes' / args.section
     script = yaml.safe_load((episode / 'script.yaml').read_text())
+    configure_style(script)
     output = ROOT / 'studio/media' / args.section / 'render'
     output.mkdir(parents=True, exist_ok=True)
     deliverables = ROOT / 'videos/homebrew'
