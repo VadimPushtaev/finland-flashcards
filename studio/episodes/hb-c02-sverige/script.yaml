@@ -1,0 +1,920 @@
+schema_version: 1
+section_id: hb-c02-sverige
+chapter_id: hb-c02
+title_sv: Svenskt styre, reformation och upplysning
+title_ru: Шведское правление, Реформация и Просвещение
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-sverige.yaml
+example_only: false
+source_section_sha256: 48f48dc6ea077f947c94f881939760b44f187affda2575baf0d0c1747d0dc51b
+translation_file_sha256: 6d7fdffe15104f8ef22aade1c6a4646d523d5486ed89fdb90d9c162d86ddf0d2
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter2 slate blue #202c40, ivory #f6f1e6, blue-gray #c5d2e4, antique gold
+    #d9b575 and separator #46566d. Liberation Sans Bold48 and Regular40 with Cyrillic coverage; fixed
+    right bilingual panel and steady left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Turku Castle.jpg by Markus Koljonen (Dilaudid) continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.655357142857143. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use With the Sea by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 163.399 seconds; prepared lossless stereo bed 371.750 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: estates
+  description: Social estates and unequal rights.
+- id: parliament
+  description: Participation in the Swedish estate parliament.
+- id: reformation
+  description: Reformation, royal authority and property.
+- id: written_finnish
+  description: Agricola and written Finnish.
+- id: milestones
+  description: Four verbatim dated milestones.
+- id: enlightenment
+  description: Enlightenment and rights.
+- id: colonialism
+  description: Colonialism and exploitation alongside European ideas of rights.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c02-u0008-s001
+  sv: 'Stånd: En grupp människor i Finlands historia som fastställdes enligt människornas rättigheter,
+    skyldigheter, ställning och ofta också härkomst.'
+  ru: 'Сословие: группа людей в истории Финляндии, принадлежность к которой определялась правами, обязанностями,
+    положением людей, а часто также их происхождением.'
+  scene_id: estates
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0008-s001.wav
+  start_seconds: 3.25
+  end_seconds: 16.694354
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0008-s002
+  sv: De olika stånden var adeln, prästerskapet, borgare och bönder.
+  ru: Различными сословиями были дворянство, духовенство, горожане и крестьяне.
+  scene_id: estates
+  visual_cue: 'Exact-source typography card: adeln, prästerskapet, borgare, bönder'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - adeln
+  - prästerskapet
+  - borgare
+  - bönder
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0008-s002.wav
+  start_seconds: 18.458333
+  end_seconds: 24.031122
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/01.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0008-s003
+  sv: Största delen av människorna hörde inte till något stånd och hade inte likadana rättigheter som
+    de som hörde till något av stånden.
+  ru: Большинство людей не принадлежало ни к одному сословию и не имело таких же прав, как принадлежавшие
+    к какому-либо сословию.
+  scene_id: estates
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0008-s003.wav
+  start_seconds: 25.791667
+  end_seconds: 37.146224
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0009-s001
+  sv: Från Finland deltog man under det svenska styret i den svenska ståndsriksdagen.
+  ru: Во время шведского правления представители Финляндии участвовали в шведском сословном риксдаге.
+  scene_id: parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0009-s001.wav
+  start_seconds: 39.625
+  end_seconds: 46.799966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0009-s002
+  sv: Ståndsriksdagen var en lagstiftande riksdag som tillkommit i Sverige på 1500-talet.
+  ru: Сословный риксдаг был законодательным парламентом, возникшим в Швеции в XVI веке.
+  scene_id: parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: Ståndsriksdagen var en lagstiftande riksdag som tillkommit i Sverige på femtonhundratalet.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0009-s002.wav
+  start_seconds: 48.583333
+  end_seconds: 56.733537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0009-s003
+  sv: Stånden representerade ändå bara de högre samhällsklasserna och den del av befolkningen som klarade
+    sig bäst.
+  ru: Однако сословия представляли лишь высшие общественные классы и наиболее благополучную часть населения.
+  scene_id: parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0009-s003.wav
+  start_seconds: 58.5
+  end_seconds: 67.973741
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0009-s004
+  sv: Största delen av befolkningen hörde inte till något stånd.
+  ru: Большинство населения не принадлежало ни к одному сословию.
+  scene_id: parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0009-s004.wav
+  start_seconds: 69.75
+  end_seconds: 75.11381
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0010-s001
+  sv: Till följd av reformationen övergick man i en del av Europa på 1500-talet från katolicismen till
+    protestantisk tro.
+  ru: В результате Реформации в XVI веке в части Европы перешли от католицизма к протестантской вере.
+  scene_id: reformation
+  visual_cue: 'Exact-source typography card: 1500-talet, reformationen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1500-talet
+  - reformationen
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: Till följd av reformationen övergick man i en del av Europa på femtonhundratalet från katolicismen
+      till protestantisk tro.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0010-s001.wav
+  start_seconds: 77.583333
+  end_seconds: 88.450272
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/07.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0010-s002
+  sv: I Sverige och den östra delen av riket, Finland, innebar detta lutherdom, som är en inriktning inom
+    den protestantiska kristendomen.
+  ru: В Швеции и восточной части королевства, Финляндии, это означало переход к лютеранству — одному из
+    направлений протестантского христианства.
+  scene_id: reformation
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0010-s002.wav
+  start_seconds: 90.208333
+  end_seconds: 101.702211
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0010-s003
+  sv: Bakgrunden till reformationen var både försök att förnya kyrkans läror och politiska orsaker.
+  ru: В основе Реформации лежали как попытки обновить учение церкви, так и политические причины.
+  scene_id: reformation
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0010-s003.wav
+  start_seconds: 103.458333
+  end_seconds: 111.608537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0010-s004
+  sv: Genom reformationen ökade den svenska kungens makt, när han blev kyrkans överhuvud istället för
+    påven.
+  ru: Благодаря Реформации власть шведского короля возросла, поскольку вместо папы римского главой церкви
+    стал он.
+  scene_id: reformation
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0010-s004.wav
+  start_seconds: 113.375
+  end_seconds: 122.221803
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0010-s005
+  sv: Dessutom övergick en stor del av kyrkans betydande egendom till staten.
+  ru: Кроме того, значительная часть обширного имущества церкви перешла государству.
+  scene_id: reformation
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0010-s005.wav
+  start_seconds: 124.0
+  end_seconds: 130.269388
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0011-s001
+  sv: Reformationen var av stor betydelse för det finska språkets utveckling.
+  ru: Реформация имела большое значение для развития финского языка.
+  scene_id: written_finnish
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0011-s001.wav
+  start_seconds: 132.75
+  end_seconds: 139.019388
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0011-s002
+  sv: Micael Agricola, som var biskop i Åbo, skrev den första finska ABC-boken och skapade grunderna för
+    det finska skriftspråket.
+  ru: Микаэль Агрикола, епископ Турку, написал первый финский букварь и заложил основы финского письменного
+    языка.
+  scene_id: written_finnish
+  visual_cue: 'Exact-source typography card: Micael Agricola, ABC-boken'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Micael Agricola
+  - ABC-boken
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: Micael Agricola, som var biskop i Åbo, skrev den första finska a be se-boken och skapade grunderna
+      för det finska skriftspråket.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0011-s002.wav
+  start_seconds: 140.791667
+  end_seconds: 151.867585
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/13.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0011-s003
+  sv: Agricola översatte också Nya testamentet till finska.
+  ru: Агрикола также перевёл Новый Завет на финский язык.
+  scene_id: written_finnish
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0011-s003.wav
+  start_seconds: 153.625
+  end_seconds: 158.77983
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0012-s001
+  sv: 1523 Gustav Vasa blev kung över Sverige och lösgjorde Sverige från den medeltida nordiska unionen.
+  ru: 1523 — Густав Ваза стал королём Швеции и вывел Швецию из средневекового союза Северных стран.
+  scene_id: milestones
+  visual_cue: 'Exact-source typography card: 1523, Gustav Vasa'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1523'
+  - Gustav Vasa
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: femtonhundratjugotre Gustav Vasa blev kung över Sverige och lösgjorde Sverige från den medeltida
+      nordiska unionen.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0012-s001.wav
+  start_seconds: 161.25
+  end_seconds: 171.35068
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/15.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0013-s001
+  sv: 1543 Den första finskspråkiga ABC-boken (Aapinen) ges ut i Finland
+  ru: 1543 — в Финляндии выходит первый финноязычный букварь (Aapinen).
+  scene_id: milestones
+  visual_cue: 'Exact-source typography card: 1543, ABC-boken'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1543'
+  - ABC-boken
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: femtonhundrafyrtiotre Den första finskspråkiga a be se-boken (Aapinen) ges ut i Finland
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0013-s001.wav
+  start_seconds: 173.125
+  end_seconds: 180.996565
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/16.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0014-s001
+  sv: 1550 Helsingfors grundas för att konkurrera med Tallinn om handeln på Östersjön
+  ru: 1550 — основан Хельсинки, чтобы соперничать с Таллином за торговлю на Балтийском море.
+  scene_id: milestones
+  visual_cue: 'Exact-source typography card: 1550, Helsingfors'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1550'
+  - Helsingfors
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: femtonhundrafemtio Helsingfors grundas för att konkurrera med Tallinn om handeln på Östersjön
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0014-s001.wav
+  start_seconds: 182.75
+  end_seconds: 191.039524
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/17.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0015-s001
+  sv: 1640 I Åbo grundas Finlands första universitet
+  ru: 1640 — в Турку основан первый университет Финляндии.
+  scene_id: milestones
+  visual_cue: 'Exact-source typography card: 1640, Åbo'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1640'
+  - Åbo
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: sextonhundrafyrtio I Åbo grundas Finlands första universitet
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0015-s001.wav
+  start_seconds: 192.791667
+  end_seconds: 198.503776
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/18.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s001
+  sv: I slutet av 1600-talet inleddes en period i Europa som kallades upplysningen.
+  ru: В конце XVII века в Европе начался период, который назывался Просвещением.
+  scene_id: enlightenment
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: I slutet av sextonhundratalet inleddes en period i Europa som kallades upplysningen.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s001.wav
+  start_seconds: 200.958333
+  end_seconds: 208.690578
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s002
+  sv: Under upplysningen ville man minska den enväldige kungens makt och kyrkans stora inflytande.
+  ru: В эпоху Просвещения стремились уменьшить власть самодержавного короля и большое влияние церкви.
+  scene_id: enlightenment
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s002.wav
+  start_seconds: 210.458333
+  end_seconds: 217.981599
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s003
+  sv: Man började ägna uppmärksamhet åt mänskliga rättigheter och ville göra staten till en rättsstat.
+  ru: Стали уделять внимание правам человека и стремились превратить государство в правовое государство.
+  scene_id: enlightenment
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s003.wav
+  start_seconds: 219.75
+  end_seconds: 228.248503
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s004
+  sv: I en rättsstat har alla människor mänskliga rättigheter, politiska rättigheter och rätt att delta
+    i samhället.
+  ru: В правовом государстве все люди обладают правами человека, политическими правами и правом участвовать
+    в жизни общества.
+  scene_id: enlightenment
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s004.wav
+  start_seconds: 230.0
+  end_seconds: 239.613061
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s005
+  sv: I Sverige till exempel förbjöd man tortyr som förhörsmetod.
+  ru: Например, в Швеции запретили пытки как метод допроса.
+  scene_id: enlightenment
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s005.wav
+  start_seconds: 241.375
+  end_seconds: 247.017449
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0016-s006
+  sv: Viktiga mål under upplysningen var rösträtt, yttrandefrihet och religionsfrihet.
+  ru: Важными целями эпохи Просвещения были избирательное право, свобода слова и свобода вероисповедания.
+  scene_id: enlightenment
+  visual_cue: 'Exact-source typography card: rösträtt, yttrandefrihet, religionsfrihet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - rösträtt
+  - yttrandefrihet
+  - religionsfrihet
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0016-s006.wav
+  start_seconds: 248.791667
+  end_seconds: 255.896973
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/24.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0017-s001
+  sv: Samtidigt som man i Europa diskuterade mänskliga rättigheter utövade många europeiska länder kolonialism.
+  ru: В то время как в Европе обсуждали права человека, многие европейские страны занимались колониализмом.
+  scene_id: colonialism
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0017-s001.wav
+  start_seconds: 258.375
+  end_seconds: 267.918401
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0017-s002
+  sv: Kolonialism innebär att ett land erövrar hela länder eller områden i andra världsdelar och utnyttjar
+    deras resurser, såsom arbetskraft och naturresurser.
+  ru: Колониализм означает, что страна завоёвывает целые страны или территории в других частях света и
+    использует их ресурсы, такие как рабочая сила и природные ресурсы.
+  scene_id: colonialism
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0017-s002.wav
+  start_seconds: 269.708333
+  end_seconds: 283.013367
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0017-s003
+  sv: Inom kolonialismen påverkar man också de lokala sederna, till exempel språket, religionen och utbildningen,
+    i de erövrade länderna eller områdena.
+  ru: В рамках колониализма также влияют на местные обычаи, например язык, религию и образование, в завоёванных
+    странах или территориях.
+  scene_id: colonialism
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0017-s003.wav
+  start_seconds: 284.791667
+  end_seconds: 297.260782
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0018-s001
+  sv: Den kraftiga utvecklingen och blomstringen i de länder som deltog i kolonialismen skedde delvis
+    på koloniernas bekostnad.
+  ru: Бурное развитие и процветание стран, участвовавших в колониализме, происходило отчасти за счёт колоний.
+  scene_id: colonialism
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0018-s001.wav
+  start_seconds: 299.041667
+  end_seconds: 309.212007
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0018-s002
+  sv: Länderna som deltog i koloniseringen, till exempel Sverige och därmed också Finland, drog nytta
+    av naturresurserna, råvarorna och produkterna i kolonierna samt handeln med dem.
+  ru: Страны, участвовавшие в колонизации, например Швеция, а следовательно, и Финляндия, извлекали выгоду
+    из природных ресурсов, сырья и товаров колоний, а также из торговли ими.
+  scene_id: colonialism
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0018-s002.wav
+  start_seconds: 311.0
+  end_seconds: 326.11619
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0018-s003
+  sv: Produkter och råvaror som förts från kolonierna och som såldes på den internationella marknaden
+    hade ofta producerats genom slavarbete.
+  ru: Товары и сырьё, привезённые из колоний и продававшиеся на международном рынке, часто были произведены
+    с использованием рабского труда.
+  scene_id: colonialism
+  visual_cue: 'Exact-source typography card: slavarbete'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - slavarbete
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-sverige/narration/hb-c02-u0018-s003.wav
+  start_seconds: 328.875
+  end_seconds: 340.229558
+  display_segments: []
+  render_image: studio/media/hb-c02-sverige/cards/30.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c02-sverige/sources/music-bed.flac
+  background_image: studio/media/hb-c02-sverige/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.655357142857143
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - Finland – Lärobok i samhällsorientering — © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar, källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Turku Castle.jpg — Markus Koljonen (Dilaudid) · CC BY-SA 3.0
+    - With the Sea — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Turku_Castle.jpg
+    description: Turku Castle.
+    license: CC BY-SA 3.0
+  music_loop_crossfade_seconds: 4

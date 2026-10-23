@@ -49,6 +49,12 @@ All eight Chapter 1 videos are now rendered; the seven new exports are ready for
 whole-video user review. See the [video index](../videos/homebrew/README.md) and
 [chapter audit](hb-c01-audit.json) for coverage and verification evidence.
 
+All thirteen Chapter 2 videos are also rendered and technically verified, covering
+321 exact Swedish/Russian sentence pairs in 1:03:42. They are committed previews
+awaiting whole-video user review. See the [Chapter 2 audit](hb-c02-audit.json) and
+[listening-review checklist](hb-c02-review.md), including unresolved pronunciation
+diagnostics. The video index links every export and its accompanying credits.
+
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for
 media tools; keep the root environment for script/source validation.

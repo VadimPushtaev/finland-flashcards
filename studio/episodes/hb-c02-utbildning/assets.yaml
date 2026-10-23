@@ -1,0 +1,199 @@
+schema_version: 1
+section_id: hb-c02-utbildning
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c02-utbildning/sources/background.jpg
+    sha256: d2c7d42c09e6235a91724d0a18fee71ce4c05b119627cc4f95adefb6a042cb95
+    bytes: 2084328
+  source_url: https://commons.wikimedia.org/wiki/File:Cygnaeus_School_in_Helsinki,_Finland_in_1991.jpg
+  creator: Matti Huuhka
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: 'Cygnaeus School in Helsinki, Finland in 1991.jpg — Matti Huuhka · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Cygnaeus_School_in_Helsinki,_Finland_in_1991.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: Cygnaeusskolan Background is decorative context, not identification of a specific
+    historical event. Metadata and identity checked through the Commons API for the linked original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c02-utbildning/cards/00.png
+    sha256: 78aff81852b727d6fa2869bb62021bf2702276b6eb4ab706afb2ebcfbe716090
+    bytes: 11388
+    sentence_id: hb-c02-u0069-s001
+    source_substrings:
+    - '1921'
+    - läroplikt
+  - path: studio/media/hb-c02-utbildning/cards/02.png
+    sha256: 572c53afc32059b58a1025fbd4a1725cd848f04bde32a09b1816c7b4b3fdec94
+    bytes: 14186
+    sentence_id: hb-c02-u0069-s003
+    source_substrings:
+    - 1920- och 1930-talet
+  - path: studio/media/hb-c02-utbildning/cards/03.png
+    sha256: d1421ac4dc6624c9982c5df475f71cb44ce86437231e8c8277ec47b1f0995512
+    bytes: 23097
+    sentence_id: hb-c02-u0070-s001
+    source_substrings:
+    - Gymnasieutbildning
+    - studentexamen
+  - path: studio/media/hb-c02-utbildning/cards/05.png
+    sha256: 9b28ff755ce94f6554d99929590d094912004849eed6cad4a2b92ef4a5a2875e
+    bytes: 14154
+    sentence_id: hb-c02-u0070-s003
+    source_substrings:
+    - enhetlig 9-årig grundskola
+  - path: studio/media/hb-c02-utbildning/cards/06.png
+    sha256: 0fd1d5650c8c2a6d071a2fd22e3fcd51bd00bcff4459cdf79a0096f3225ace41
+    bytes: 18373
+    sentence_id: hb-c02-u0070-s004
+    source_substrings:
+    - 1970-talet
+    - gemensam för alla
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c02-utbildning/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c02-utbildning/sources/music.mp3
+    sha256: b138685f01f2c3857303ef4f8ab1be1de1a23dad17bac1676d3820bcc2cd34d4
+    bytes: 8565155
+  - path: studio/media/hb-c02-utbildning/sources/music-bed.flac
+    sha256: 99627f713c01ce0f447fbc7b21a1e68946af64d3e0bd5b270d931606af22eb72
+    bytes: 9908394
+    seconds: 112.95833333333333
+    sample_rate: 48000
+    channels: 2
+  title: Reawakening
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400017
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Reawakening.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Reawakening" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By
+    Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c02-utbildning/prepare_assets.py
+    master_seconds: 214.073475
+    prepared_seconds: 112.95833333333333
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s001.wav
+    sha256: 44eaa0a9a3b680911a8e7898881b1706c4794156df01459db9f71468195a809a
+    bytes: 1155116
+    seconds: 13.096054421768708
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0069-s001
+    peak: 0.302642822265625
+    generation_seconds: 24.624793754017446
+    tts_input: Först på nittonhundratalets sida började större delen av befolkningen stöda folkskolan
+      och nittonhundratjugoett stiftades en lag om läroplikt i Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s002.wav
+    sha256: 6ea7f95c215db793d6e0fe0fe63d3a798c2f9535f5a98bc9266f039fe2f96c33
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0069-s002
+    peak: 0.42181396484375
+    generation_seconds: 17.559753704990726
+    tts_input: Det betydde att skolgång blev obligatoriskt för alla.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0069-s003.wav
+    sha256: 7da1ff8f8dd1a3bc777eb50415677098e7bb005f7eb330db75cf9d43c5c68bdc
+    bytes: 854060
+    seconds: 9.682721088435374
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0069-s003
+    peak: 0.342620849609375
+    generation_seconds: 24.974905015027616
+    tts_input: Folkskolan utvidgades till att omfatta hela åldersklassen på nittonhundratjugotalet och
+      nittonhundratrettiotalet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s001.wav
+    sha256: 51be2ceabfa6f62d6441331db45388ac7f4f1e692d84887aa26dd7584d875fcd
+    bytes: 909356
+    seconds: 10.309659863945578
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0070-s001
+    peak: 0.26055908203125
+    generation_seconds: 23.997044105024543
+    tts_input: Gymnasieutbildning och studentexamen blev vanligare särskilt på nittonhundrafemtiotalet
+      och nittonhundrasextiotalet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s002.wav
+    sha256: 93da26ba0cf1baf8d66aa7bdd4a66af23e194759b4137656e09f8ca93a2b6ca2
+    bytes: 860204
+    seconds: 9.752380952380953
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0070-s002
+    peak: 0.28118896484375
+    generation_seconds: 24.917026809998788
+    tts_input: I Finland började man eftersträva samhällelig jämlikhet och ekonomisk utveckling genom
+      att bygga en välfärdsstat.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s003.wav
+    sha256: 69fbc725ec8ed8a018e219d38e219dd4163d6cbb08a0b1ee472b2adc1da7fd84
+    bytes: 454700
+    seconds: 5.154829931972789
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0070-s003
+    peak: 0.290740966796875
+    generation_seconds: 11.963822352990974
+    tts_input: Samtidigt föddes tanken på en enhetlig nioårig grundskola.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c02-utbildning/narration/hb-c02-u0070-s004.wav
+    sha256: fe18d004d4efaef104c41913302e08180901bbe3ac7a3a3b0947c4d0b467726f
+    bytes: 1173548
+    seconds: 13.305034013605443
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c02-u0070-s004
+    peak: 0.364776611328125
+    generation_seconds: 28.27713175601093
+    tts_input: Under nittonhundrasjuttiotalet övergick man i hela landet från det gamla systemet med separat
+      folkskola och läroverk till en grundskola som var gemensam för alla.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

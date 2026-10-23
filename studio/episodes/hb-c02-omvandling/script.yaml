@@ -1,0 +1,758 @@
+schema_version: 1
+section_id: hb-c02-omvandling
+chapter_id: hb-c02
+title_sv: Från jordbruk till industri och informationssamhälle
+title_ru: От сельского хозяйства к промышленности и информационному обществу
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-omvandling.yaml
+example_only: false
+source_section_sha256: a171fc3d502569e0a6d17c66a61f95febc0cc8ae02af2aa9baaf2e1602988aaf
+translation_file_sha256: e4b6a88797ba5fd3b9b827e5cdd627ac79fda3840f2751ac9e2d9cba655021d9
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps, Chapter2 slate-blue palette #202c40, ivory #f6f1e6, pale blue #c5d2e4,
+    brass #d9b575, separator #46566d. Liberation Sans Bold48/regular40, explicit44/36 or40/34 for long
+    pairs. Fixed Swedish-above-Russian right panel, steady source-fact cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Finlayson TR5.jpg by IAteYourChocolate continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.300595238095238. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Music for Manatees by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 1056.052 seconds; prepared lossless stereo bed 322.083
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: urbanisation
+  description: Work moves from agriculture to industry and services
+- id: schools
+  description: Education and equality
+- id: emigration
+  description: Work and emigration to Sweden
+- id: prosperity
+  description: Post-war development and Nordic prosperity
+- id: boom
+  description: Consumption and the economic boom
+- id: recession
+  description: Overheating, recession and public borrowing
+- id: information
+  description: Information technology and international business
+- id: soviet_trade
+  description: Lost Soviet trade and debt
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct verified photograph related to Från jordbruk till industri och informationssamhälle.
+    Decorative full-frame context, not evidence of individual events.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Music for Manatees by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c02-u0071-s001
+  sv: På 1960-talet började Finland gå från ett jordbruksdominerat land till ett industri- och servicesamhälle.
+  ru: В 1960-е годы Финляндия начала переходить от страны с преобладанием сельского хозяйства к промышленному
+    обществу и обществу услуг.
+  scene_id: urbanisation
+  visual_cue: 'Steady source-only typography card: 1960-talet, industri- och servicesamhälle'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1960-talet
+  - industri- och servicesamhälle
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: På nittonhundrasextiotalet började Finland gå från ett jordbruksdominerat land till ett industri-
+      och servicesamhälle.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0071-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.62932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/00.png
+- sentence_id: hb-c02-u0071-s002
+  sv: Arbetstillfällena på landsbygden minskade när användningen av jordbruksmaskiner ökade.
+  ru: Число рабочих мест в сельской местности сокращалось с ростом использования сельскохозяйственных
+    машин.
+  scene_id: urbanisation
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0071-s002.wav
+  start_seconds: 15.416667
+  end_seconds: 23.079252
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0071-s003
+  sv: Människorna flyttade till städerna.
+  ru: Люди переезжали в города.
+  scene_id: urbanisation
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0071-s003.wav
+  start_seconds: 24.833333
+  end_seconds: 28.316327
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0071-s004
+  sv: Där fanns det arbete inom industrin, servicebranschen och handels- och transportbranschen.
+  ru: Там была работа в промышленности, сфере услуг, торговле и транспортной отрасли.
+  scene_id: urbanisation
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0071-s004.wav
+  start_seconds: 30.083333
+  end_seconds: 37.815578
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0072-s001
+  sv: Idén om en enhetlig nioårig grundskola som alla barn skulle få gå i föddes.
+  ru: Возникла идея единой девятилетней общеобразовательной школы (grundskola), которую могли бы посещать
+    все дети.
+  scene_id: schools
+  visual_cue: 'Steady source-only typography card: nioårig grundskola'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - nioårig grundskola
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0072-s001.wav
+  start_seconds: 40.291667
+  end_seconds: 46.909354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/04.png
+- sentence_id: hb-c02-u0072-s002
+  sv: På 1970-talet övergick finländarna till en sådan ny grundskola.
+  ru: В 1970-е годы финляндцы перешли к такой новой общеобразовательной школе.
+  scene_id: schools
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: På nittonhundrasjuttiotalet övergick finländarna till en sådan ny grundskola.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0072-s002.wav
+  start_seconds: 48.666667
+  end_seconds: 55.632653
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0072-s003
+  sv: När utbildningssystemet utvecklades blev samhället mer jämlikt och Finland utvecklades ekonomiskt.
+  ru: По мере развития системы образования общество становилось более равноправным, а Финляндия развивалась
+    экономически.
+  scene_id: schools
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0072-s003.wav
+  start_seconds: 57.416667
+  end_seconds: 65.91517
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0073-s001
+  sv: Det räckte ändå inte arbete och bostäder till alla, och många flyttade utomlands för att arbeta.
+  ru: Однако работы и жилья не хватало на всех, и многие уезжали за границу работать.
+  scene_id: emigration
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0073-s001.wav
+  start_seconds: 68.375
+  end_seconds: 76.316224
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0073-s002
+  sv: Över 400 000 finländare flyttade till Sverige på 1960- och 1970-talen.
+  ru: Более 400 000 финляндцев переехали в Швецию в 1960-е и 1970-е годы.
+  scene_id: emigration
+  visual_cue: 'Steady source-only typography card: Över 400 000, Sverige'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Över 400 000
+  - Sverige
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Över fyra hundra tusen finländare flyttade till Sverige på nittonhundrasextiotalet och nittonhundrasjuttiotalet.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0073-s002.wav
+  start_seconds: 78.083333
+  end_seconds: 87.905374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/08.png
+- sentence_id: hb-c02-u0073-s003
+  sv: En del återvände hem när sysselsättningsläget blev bättre i Finland, men andra stannade kvar i Sverige.
+  ru: Некоторые вернулись домой, когда ситуация с занятостью в Финляндии улучшилась, а другие остались
+    в Швеции.
+  scene_id: emigration
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0073-s003.wav
+  start_seconds: 89.666667
+  end_seconds: 98.792109
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0073-s004
+  sv: Fram till 2010-talet var finländarna den största invandrargruppen i Sverige.
+  ru: До 2010-х годов финляндцы были крупнейшей группой иммигрантов в Швеции.
+  scene_id: emigration
+  visual_cue: 'Steady source-only typography card: 2010-talet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 2010-talet
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Fram till två tusen tio talet var finländarna den största invandrargruppen i Sverige.
+    reason: Preserve source2010-talet using explicit Swedish full-value groups after initial diagnostic
+      returned2000-talet. Display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0073-s004.wav
+  start_seconds: 100.583333
+  end_seconds: 108.315578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/10.png
+- sentence_id: hb-c02-u0074-s001
+  sv: Finland blev ett lika rikt och välmående land som de övriga nordiska länderna, trots att skillnaden
+    jämfört med till exempel Sverige var stor ännu på 1950-talet.
+  ru: Финляндия стала столь же богатой и благополучной страной, как другие Северные страны, хотя разница
+    по сравнению, например, со Швецией ещё в 1950-е годы была большой.
+  scene_id: prosperity
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Finland blev ett lika rikt och välmående land som de övriga nordiska länderna, trots att skillnaden
+      jämfört med till exempel Sverige var stor ännu på nittonhundrafemtiotalet.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0074-s001.wav
+  start_seconds: 110.791667
+  end_seconds: 125.559558
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0074-s002
+  sv: Vid den tiden var Finland ett fattigare och mindre utvecklat land än sina grannar som precis hade
+    överlevt krig och betalat stora krigsskadestånd.
+  ru: В то время Финляндия, только что пережившая войны и выплатившая большие военные репарации, была
+    более бедной и менее развитой страной, чем её соседи.
+  scene_id: prosperity
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0074-s002.wav
+  start_seconds: 127.333333
+  end_seconds: 139.802449
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0075-s001
+  sv: Ekonomin växte kraftigt under uppgången på 1980-talet.
+  ru: Во время подъёма 1980-х годов экономика значительно выросла.
+  scene_id: boom
+  visual_cue: 'Steady source-only typography card: 1980-talet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1980-talet
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Ekonomin växte kraftigt under uppgången på ett tusen nio hundra åttio talet.
+    reason: Preserve source1980-talet with explicit full-value groups after ambiguous ASR. Display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0075-s001.wav
+  start_seconds: 142.291667
+  end_seconds: 148.909354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/13.png
+- sentence_id: hb-c02-u0075-s002
+  sv: Utbildningsnivån steg också i häpnadsväckande takt.
+  ru: Уровень образования тоже повышался поразительными темпами.
+  scene_id: boom
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0075-s002.wav
+  start_seconds: 150.666667
+  end_seconds: 155.542857
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0075-s003
+  sv: 'Finländarna blev så småningom konsumenter som hade råd att köpa också annat än bara det allra nödvändigaste:
+    kläder, möbler, utlandsresor och bilar.'
+  ru: Финляндцы постепенно стали потребителями, которые могли позволить себе покупать не только самое
+    необходимое, но и одежду, мебель, зарубежные поездки и автомобили.
+  scene_id: boom
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0075-s003.wav
+  start_seconds: 157.333333
+  end_seconds: 171.404626
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0075-s004
+  sv: Samtidigt steg bostadspriserna.
+  ru: Одновременно росли цены на жильё.
+  scene_id: boom
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0075-s004.wav
+  start_seconds: 173.166667
+  end_seconds: 176.44068
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0076-s001
+  sv: Så småningom blev ekonomin överhettad.
+  ru: Постепенно экономика перегрелась.
+  scene_id: recession
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s001.wav
+  start_seconds: 178.916667
+  end_seconds: 182.678299
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0076-s002
+  sv: Priserna blev för höga och till sist kraschade allt.
+  ru: Цены стали слишком высокими, и в конце концов всё рухнуло.
+  scene_id: recession
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s002.wav
+  start_seconds: 184.458333
+  end_seconds: 189.404184
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0076-s003
+  sv: Det ledde i början av 1990-talet till en lågkonjunktur, som var särskilt svår i Finland.
+  ru: В начале 1990-х годов это привело к экономическому спаду, который был особенно тяжёлым в Финляндии.
+  scene_id: recession
+  visual_cue: 'Steady source-only typography card: 1990-talet, lågkonjunktur'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1990-talet
+  - lågkonjunktur
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Det ledde i början av nittonhundranittiotalet till en lågkonjunktur, som var särskilt svår i
+      Finland.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s003.wav
+  start_seconds: 191.166667
+  end_seconds: 200.292109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/19.png
+- sentence_id: hb-c02-u0076-s004
+  sv: Arbetslösheten var hög, och banker och företag gick i konkurs.
+  ru: Безработица была высокой, а банки и предприятия обанкротились.
+  scene_id: recession
+  visual_cue: 'Steady source-only typography card: Arbetslösheten, konkurs'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Arbetslösheten
+  - konkurs
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s004.wav
+  start_seconds: 202.083333
+  end_seconds: 207.656122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/20.png
+- sentence_id: hb-c02-u0076-s005
+  sv: Man blev tvungen att minska på välfärdsstatens tjänster till medborgarna.
+  ru: Пришлось сократить услуги государства всеобщего благосостояния, предоставляемые гражданам.
+  scene_id: recession
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s005.wav
+  start_seconds: 209.416667
+  end_seconds: 215.964694
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0076-s006
+  sv: Finländarna drabbades hårt av nedgången.
+  ru: Финляндцы тяжело пострадали от спада.
+  scene_id: recession
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s006.wav
+  start_seconds: 217.75
+  end_seconds: 221.859932
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0076-s007
+  sv: Finska staten var tvungen att ta stora lån för att landet skulle klara sig ur lågkonjunkturen.
+  ru: Финское государство было вынуждено взять большие займы, чтобы страна смогла выйти из экономического
+    спада.
+  scene_id: recession
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0076-s007.wav
+  start_seconds: 223.625
+  end_seconds: 231.705544
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0077-s001
+  sv: På 1990-talet gick man från ett industri- och servicesamhälle till ett informationssamhälle.
+  ru: В 1990-е годы произошёл переход от промышленного общества и общества услуг к информационному обществу.
+  scene_id: information
+  visual_cue: 'Steady source-only typography card: informationssamhälle'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - informationssamhälle
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: På nittonhundranittiotalet gick man från ett industri- och servicesamhälle till ett informationssamhälle.
+    reason: Expand source years, decades, numbers and abbreviations into Swedish speech without changing
+      displayed source or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0077-s001.wav
+  start_seconds: 234.166667
+  end_seconds: 243.222449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/24.png
+- sentence_id: hb-c02-u0077-s002
+  sv: Informationstekniken och kommunikationstekniken utvecklades, användningen av internet blev vanligare
+    och mobiltelefonerna blev en viktig exportprodukt för finländarna.
+  ru: Информационные и коммуникационные технологии развивались, использование интернета становилось более
+    распространённым, а мобильные телефоны стали важным экспортным товаром для финляндцев.
+  scene_id: information
+  visual_cue: 'Steady source-only typography card: internet, mobiltelefonerna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - internet
+  - mobiltelefonerna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0077-s002.wav
+  start_seconds: 245.0
+  end_seconds: 259.140952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/25.png
+- sentence_id: hb-c02-u0077-s003
+  sv: Finländska företag internationaliserades.
+  ru: Финляндские предприятия выходили на международный уровень.
+  scene_id: information
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0077-s003.wav
+  start_seconds: 261.916667
+  end_seconds: 266.096259
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c02-u0078-s001
+  sv: Också Sovjetunionens upplösning år 1991 påverkade den ekonomiska krisen eftersom en stor del av
+    Finlands export gått till Sovjetunionen.
+  ru: Распад Советского Союза в 1991 году также повлиял на экономический кризис, поскольку значительная
+    часть экспорта Финляндии приходилась на Советский Союз.
+  scene_id: soviet_trade
+  visual_cue: 'Steady source-only typography card: 1991, Sovjetunionen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1991'
+  - Sovjetunionen
+  pronunciation_notes:
+  - Check complete year/decade/abbreviation pronunciation in whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Också Sovjetunionens upplösning år ett tusen nio hundra nittioett påverkade den ekonomiska krisen
+      eftersom en stor del av Finlands export gått till Sovjetunionen.
+    reason: Preserve source1991 with full-value Swedish groups after initial ASR returned1990. Display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0078-s001.wav
+  start_seconds: 268.583333
+  end_seconds: 282.236667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c02-omvandling/cards/27.png
+- sentence_id: hb-c02-u0078-s002
+  sv: Finska staten tog mycket lån för att klara den ekonomiska krisen.
+  ru: Финское государство взяло много займов, чтобы преодолеть экономический кризис.
+  scene_id: soviet_trade
+  visual_cue: Keep the foreground open over the continuous topic-related background; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-omvandling/narration/hb-c02-u0078-s002.wav
+  start_seconds: 284.0
+  end_seconds: 289.851429
+  display_segments: []
+  render_caption: false
+  render_image: null
+render:
+  music_path: studio/media/hb-c02-omvandling/sources/music-bed.flac
+  background_image: studio/media/hb-c02-omvandling/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.300595238095238
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Finlands historia
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Finlayson TR5.jpg — IAteYourChocolate · CC BY-SA 4.0
+    - Music for Manatees — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Finlayson_TR5.jpg
+    description: Finlayson TR5 building photographed in Autumn, 2020.
+    license: CC BY-SA 4.0

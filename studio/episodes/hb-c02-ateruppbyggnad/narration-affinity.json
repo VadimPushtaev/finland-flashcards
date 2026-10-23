@@ -1,0 +1,75 @@
+{
+  "initial_affinity": [
+    0
+  ],
+  "adjusted_unix": 1792789709.1568315,
+  "completed_before_adjustment": [
+    "hb-c02-u0055-s001",
+    "hb-c02-u0055-s002",
+    "hb-c02-u0055-s003"
+  ],
+  "changes": [
+    {
+      "pid": 2345980,
+      "command": "python /tmp/middle_job.py hb-c02-ateruppbyggnad tts bash /tmp/middle-last-tts.sh ",
+      "previous_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "new_affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "pid": 2345981,
+      "command": "bash /tmp/middle-last-tts.sh ",
+      "previous_affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "new_affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "pid": 2347529,
+      "command": "studio/runtime/.venv/bin/python studio/tools/audition.py supertonic --voice F1 --speed .95 --section hb-c02-ateruppbyggnad --all --output studio/media/hb-c02-ateruppbyggnad/narration ",
+      "previous_affinity": [
+        0
+      ],
+      "new_affinity": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "reason": "Coordinator authorized widening to four CPUs after one-CPU throughput proved too slow; no clips restarted and voice/steps/speed/seed unchanged."
+}

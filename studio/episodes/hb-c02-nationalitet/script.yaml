@@ -1,0 +1,727 @@
+schema_version: 1
+section_id: hb-c02-nationalitet
+chapter_id: hb-c02
+title_sv: Nationell identitet och demokratisering
+title_ru: Национальная идентичность и демократизация
+source_path: data/homebrew/sv/chapters/02_finlands_historia.yaml
+translation_path: data/homebrew/ru/sections/hb-c02-nationalitet.yaml
+example_only: false
+source_section_sha256: e6038a2803859b664554a0c5a87c5f4897aa07a7a2a83caf314e5c015a928a49
+translation_file_sha256: f407373b188299397a3ce8b5e1066af44f027bf86e388b3b74740da1d6b28fcf
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter2 slate blue #202c40, ivory #f6f1e6, blue-gray #c5d2e4, antique gold
+    #d9b575 and separator #46566d. Liberation Sans Bold48 and Regular40 with Cyrillic coverage; fixed
+    right bilingual panel and steady left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Finnish National Theatre, Helsinki - DSC03436.JPG by Daderot continuously as decorative
+    background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative
+    zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=1.8776785714285715.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Touching Moments Two - Higher by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 174.263 seconds; prepared lossless stereo bed 262.875
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: national_idea
+  description: Nationalism and the qualification that countries contain many peoples.
+- id: finnish_culture
+  description: National awakening, language and Russian administration.
+- id: language_politics
+  description: Language conflict, parties and official languages.
+- id: suffrage
+  description: Equal suffrage milestone.
+- id: parliamentary_reform
+  description: The first parliamentary election and wider participation.
+- id: women_parliament
+  description: Women voters and the first female parliamentarians.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c02-u0027-s001
+  sv: 1800-talet var också nationalismens eller nationalitetsidén århundrade.
+  ru: XIX век был также веком национализма, или национальной идеи.
+  scene_id: national_idea
+  visual_cue: 'Exact-source typography card: 1800-talet, nationalitetsidén'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1800-talet
+  - nationalitetsidén
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: artonhundratalet var också nationalismens eller nationalitetsidén århundrade.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0027-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.424966
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0027-s002
+  sv: Enligt nationalitetsidén har varje folk ett eget språk, en egen religion och en egen historia, och
+    varje folk borde vara en egen självständig stat.
+  ru: Согласно национальной идее, каждый народ имеет собственный язык, собственную религию и собственную
+    историю, и каждый народ должен иметь своё независимое государство.
+  scene_id: national_idea
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0027-s002.wav
+  start_seconds: 12.208333
+  end_seconds: 24.468469
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0027-s003
+  sv: Länderna i Europa har dock bildats av många olika folk.
+  ru: Однако страны Европы сформировались из множества разных народов.
+  scene_id: national_idea
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0027-s003.wav
+  start_seconds: 26.25
+  end_seconds: 31.47449
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0027-s004
+  sv: Till följd av nationalismen förekom det uppror och oroligheter i många europeiska länder.
+  ru: В результате национализма во многих европейских странах происходили восстания и волнения.
+  scene_id: national_idea
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0027-s004.wav
+  start_seconds: 33.25
+  end_seconds: 41.400204
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0027-s005
+  sv: Också i Finland började många anse att finländarna var ett eget folk.
+  ru: И в Финляндии многие стали считать, что финляндцы представляют собой отдельный народ.
+  scene_id: national_idea
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0027-s005.wav
+  start_seconds: 43.166667
+  end_seconds: 49.296735
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0028-s001
+  sv: Under ryska väldet föddes nationalistiska idéer i Finland först bland de bildade svenskspråkiga
+    klasserna.
+  ru: При российском правлении националистические идеи в Финляндии сначала возникли среди образованных
+    шведоязычных классов.
+  scene_id: finnish_culture
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0028-s001.wav
+  start_seconds: 51.75
+  end_seconds: 61.502381
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0028-s002
+  sv: De blev intresserade av finska språket och finsk kultur och framställde finländarna som ett folk
+    med en gemensam historia och kultur.
+  ru: Они заинтересовались финским языком и финской культурой и представляли финляндцев как народ с общей
+    историей и культурой.
+  scene_id: finnish_culture
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0028-s002.wav
+  start_seconds: 63.291667
+  end_seconds: 74.646224
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0028-s003
+  sv: Den ryska förvaltningen stödde det nationella uppvaknandet och förbättrandet av det finska språkets
+    ställning.
+  ru: Российская администрация поддерживала национальное пробуждение и улучшение положения финского языка.
+  scene_id: finnish_culture
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0028-s003.wav
+  start_seconds: 76.416667
+  end_seconds: 85.890408
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0028-s004
+  sv: I Ryssland tänkte de att nationalkänslan skulle fjärma finländarna från Sverige och svenskheten
+    och föra dem närmare Ryssland.
+  ru: В России считали, что национальное чувство отдалит финляндцев от Швеции и шведской культурной идентичности
+    и приблизит их к России.
+  scene_id: finnish_culture
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0028-s004.wav
+  start_seconds: 87.666667
+  end_seconds: 98.812245
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0028-s005
+  sv: Finskspråkiga skolor började grundas i städerna på 1860-talet.
+  ru: В 1860-е годы в городах стали создавать финноязычные школы.
+  scene_id: finnish_culture
+  visual_cue: 'Exact-source typography card: 1860-talet, Finskspråkiga skolor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1860-talet
+  - Finskspråkiga skolor
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: Finskspråkiga skolor började grundas i städerna på artonhundrasextiotalet.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0028-s005.wav
+  start_seconds: 100.583333
+  end_seconds: 107.54932
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/09.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0029-s001
+  sv: Nationalisterna kom att tvista om det finska och svenska språkets ställning i Finland.
+  ru: Националисты стали спорить о положении финского и шведского языков в Финляндии.
+  scene_id: language_politics
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0029-s001.wav
+  start_seconds: 110.0
+  end_seconds: 117.941224
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0029-s002
+  sv: En del ville bevara svenska språkets ställning i Finland medan andra ville att finska skulle vara
+    det enda språket.
+  ru: Одни хотели сохранить положение шведского языка в Финляндии, а другие хотели, чтобы финский был
+    единственным языком.
+  scene_id: language_politics
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0029-s002.wav
+  start_seconds: 119.708333
+  end_seconds: 129.600034
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0029-s003
+  sv: Språkstriden skapade de första partierna i Finland på 1860-talet.
+  ru: Языковой спор привёл к созданию первых партий в Финляндии в 1860-е годы.
+  scene_id: language_politics
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: Språkstriden skapade de första partierna i Finland på artonhundrasextiotalet.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0029-s003.wav
+  start_seconds: 131.375
+  end_seconds: 138.758946
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0029-s004
+  sv: I och med stridigheterna blev finska det andra officiella språket i Finland i början av 1900-talet.
+  ru: В результате этих конфликтов финский стал вторым официальным языком Финляндии в начале XX века.
+  scene_id: language_politics
+  visual_cue: 'Exact-source typography card: andra officiella språket'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - andra officiella språket
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: I och med stridigheterna blev finska det andra officiella språket i Finland i början av nittonhundratalet.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0029-s004.wav
+  start_seconds: 140.541667
+  end_seconds: 150.154728
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/13.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0030-s001
+  sv: 1906 Allmän och lika rösträtt, även för kvinnor
+  ru: 1906 — всеобщее и равное избирательное право, в том числе для женщин.
+  scene_id: suffrage
+  visual_cue: 'Exact-source typography card: 1906, Allmän och lika rösträtt'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1906'
+  - Allmän och lika rösträtt
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: nittonhundrasex Allmän och lika rösträtt, även för kvinnor
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0030-s001.wav
+  start_seconds: 152.625
+  end_seconds: 158.406769
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/14.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0031-s001
+  sv: I början av 1900-talet ersattes Finlands lantdagar av en riksdag.
+  ru: В начале XX века сеймы Финляндии были заменены парламентом.
+  scene_id: parliamentary_reform
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: I början av nittonhundratalet ersattes Finlands lantdagar av en riksdag.
+    reason: Spell source dates, numbers or letter names in Swedish for local synthesis without changing
+      displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0031-s001.wav
+  start_seconds: 160.875
+  end_seconds: 167.701667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0031-s002
+  sv: År 1907 hölls det första riksdagsvalet, där alla finländare över 24 år fick rösta.
+  ru: В 1907 году состоялись первые парламентские выборы, на которых все финляндцы старше 24 лет получили
+    право голосовать.
+  scene_id: parliamentary_reform
+  visual_cue: 'Exact-source typography card: 1907, över 24 år'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1907'
+  - över 24 år
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: År ett tusen nio hundra sju hölls det första riksdagsvalet, där alla finländare över tjugo fyra
+      år fick rösta.
+    reason: Full-value1907 expansion after diagnostic recovered1970/1920; exact date meaning and display
+      preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0031-s002.wav
+  start_seconds: 169.458333
+  end_seconds: 178.932075
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/16.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0031-s003
+  sv: Reformen var ett stort steg framåt.
+  ru: Реформа стала большим шагом вперёд.
+  scene_id: parliamentary_reform
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0031-s003.wav
+  start_seconds: 180.708333
+  end_seconds: 184.121667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0031-s004
+  sv: I valet fick arbetarna, de fattiga på landsbygden och kvinnorna möjlighet att för första gången
+    påverka politiken i Finland.
+  ru: На этих выборах рабочие, бедняки из сельской местности и женщины впервые получили возможность влиять
+    на политику в Финляндии.
+  scene_id: parliamentary_reform
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0031-s004.wav
+  start_seconds: 185.875
+  end_seconds: 196.32398
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0032-s001
+  sv: Finland var det tredje landet i världen och det första i Europa att ge kvinnor rösträtt.
+  ru: Финляндия стала третьей страной в мире и первой в Европе, предоставившей женщинам избирательное
+    право.
+  scene_id: women_parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0032-s001.wav
+  start_seconds: 198.791667
+  end_seconds: 206.593571
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0032-s002
+  sv: Finland var det första landet i världen att ge alla kvinnor rätt att kandidera i val.
+  ru: Финляндия стала первой страной в мире, предоставившей всем женщинам право выдвигаться кандидатами
+    на выборах.
+  scene_id: women_parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0032-s002.wav
+  start_seconds: 208.375
+  end_seconds: 215.898265
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0032-s003
+  sv: I valet år 1907 valdes 19 kvinnor in i Finlands riksdag.
+  ru: На выборах 1907 года в парламент Финляндии были избраны 19 женщин.
+  scene_id: women_parliament
+  visual_cue: 'Exact-source typography card: 1907, 19 kvinnor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1907'
+  - 19 kvinnor
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override:
+    text: I valet år ett tusen nio hundra sju valdes nitton kvinnor in i Finlands riksdag.
+    reason: Full-value1907 expansion after diagnostic recovered1970/1920; exact date meaning and display
+      preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0032-s003.wav
+  start_seconds: 217.666667
+  end_seconds: 224.771973
+  display_segments: []
+  render_image: studio/media/hb-c02-nationalitet/cards/21.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c02-u0032-s004
+  sv: De var världens första kvinnliga riksdagsledamöter.
+  ru: Они были первыми женщинами — депутатами парламента в мире.
+  scene_id: women_parliament
+  visual_cue: Keep foreground open to the continuous decorative background; the exact bilingual sentence
+    pair carries the explanation.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish names, dates and compounds in complete-video listening review; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c02-nationalitet/narration/hb-c02-u0032-s004.wav
+  start_seconds: 226.541667
+  end_seconds: 231.348197
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c02-nationalitet/sources/music-bed.flac
+  background_image: studio/media/hb-c02-nationalitet/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.8776785714285715
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - Finland – Lärobok i samhällsorientering — © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar, källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Finnish National Theatre, Helsinki - DSC03436.JPG — Daderot · CC0
+    - Touching Moments Two - Higher — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Continuous background sampled bilinearly from the already softly blurred photograph; foreground and
+    bilingual text are unchanged.
+  palette:
+    background: '#202c40'
+    text: '#f6f1e6'
+    secondary: '#c5d2e4'
+    highlight: '#d9b575'
+    separator: '#46566d'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Finnish_National_Theatre,_Helsinki_-_DSC03436.JPG
+    description: Finnish National Theatre, Helsinki, Finland.
+    license: CC0
