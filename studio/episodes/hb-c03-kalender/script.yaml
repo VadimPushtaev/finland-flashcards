@@ -1,0 +1,314 @@
+schema_version: 1
+section_id: hb-c03-kalender
+chapter_id: hb-c03
+title_sv: Högtider och flaggdagar
+title_ru: Праздники и дни поднятия флага
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-kalender.yaml
+example_only: false
+source_section_sha256: 8e9839e86815aa34592272ca52c540ad6d9b3e80e6e8c915c48fbe366b437a12
+translation_file_sha256: 8119194c65a16b13dfa97c69acc2b4c0fb95d9f161a5c9fc2eca86d475786fa8
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette: background#342736, ivory#faf3e8, secondary#d8c8dc,
+    highlight#e2bb85, separator#62506a. Liberation Sans Bold48/regular40, explicit44/36 or40/34 only when
+    needed. Fixed Swedish-above-Russian right panel; source-only term cards on left when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:FI-18 - Helsinki - Flag - Flag Of Finland (4891308175).jpg by CGP Grey continuously
+    as decorative background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85)
+    and15%relative zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=0.7869047619047619. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Atlantean Twilight by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 171.158 seconds; prepared lossless stereo bed 110.167
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0067
+  description: En del av högtiderna, till exempel jul och påsk, är allmänna lediga dagar.
+- id: hb-c03-u0068
+  description: En stor del av de finländska festerna och traditionerna grundar sig på religionen.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct licensed photograph related to Finnish flag days and traditions; decorative
+    context, not evidence of all narrated customs.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Atlantean Twilight by Kevin MacLeod, official catalogue master with verified CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0067-s001
+  sv: En del av högtiderna, till exempel jul och påsk, är allmänna lediga dagar.
+  ru: Некоторые праздники, например Рождество и Пасха, являются общими выходными днями.
+  scene_id: hb-c03-u0067
+  visual_cue: 'Steady source-only typography card: allmänna lediga dagar'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - allmänna lediga dagar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.146327
+  display_segments: []
+  render_image: studio/media/hb-c03-kalender/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0067-s002
+  sv: Då är också många butiker och ämbetsverk stängda.
+  ru: Тогда также закрыты многие магазины и государственные учреждения.
+  scene_id: hb-c03-u0067
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s002.wav
+  start_seconds: 11.916667
+  end_seconds: 16.514218
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0067-s003
+  sv: Ett sätt att fira en helgdag är att hissa flaggan.
+  ru: Один из способов отметить праздник — поднять флаг.
+  scene_id: hb-c03-u0067
+  visual_cue: 'Steady source-only typography card: hissa flaggan'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hissa flaggan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s003.wav
+  start_seconds: 18.291667
+  end_seconds: 22.819558
+  display_segments: []
+  render_image: studio/media/hb-c03-kalender/cards/02.png
+  render_caption: false
+- sentence_id: hb-c03-u0067-s004
+  sv: I Finland flaggar man på bestämda dagar som är intagna i kalendern.
+  ru: В Финляндии флаг поднимают в определённые дни, отмеченные в календаре.
+  scene_id: hb-c03-u0067
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s004.wav
+  start_seconds: 24.583333
+  end_seconds: 30.713401
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0067-s005
+  sv: Både myndigheter och vanliga människor deltar i flaggdagarna.
+  ru: В днях поднятия флага участвуют как органы власти, так и обычные люди.
+  scene_id: hb-c03-u0067
+  visual_cue: 'Steady source-only typography card: flaggdagarna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - flaggdagarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s005.wav
+  start_seconds: 32.5
+  end_seconds: 37.933469
+  display_segments: []
+  render_image: studio/media/hb-c03-kalender/cards/04.png
+  render_caption: false
+- sentence_id: hb-c03-u0067-s006
+  sv: I Finland är flaggan något högtidligt.
+  ru: В Финляндии флаг воспринимают как нечто торжественное.
+  scene_id: hb-c03-u0067
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s006.wav
+  start_seconds: 39.708333
+  end_seconds: 43.330646
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0068-s001
+  sv: En stor del av de finländska festerna och traditionerna grundar sig på religionen.
+  ru: Большая часть финляндских праздников и традиций основана на религии.
+  scene_id: hb-c03-u0068
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s001.wav
+  start_seconds: 45.791667
+  end_seconds: 53.105952
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0068-s002
+  sv: En del av traditionerna har kristen bakgrund medan andra har sina rötter i tiden då naturreligion
+    var vanlig i Finland.
+  ru: Некоторые традиции имеют христианское происхождение, тогда как корни других уходят во времена, когда
+    в Финляндии была распространена религия природы.
+  scene_id: hb-c03-u0068
+  visual_cue: 'Steady source-only typography card: kristen bakgrund'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kristen bakgrund
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s002.wav
+  start_seconds: 54.875
+  end_seconds: 65.32398
+  display_segments: []
+  render_image: studio/media/hb-c03-kalender/cards/07.png
+  render_caption: false
+- sentence_id: hb-c03-u0068-s003
+  sv: I dag innebär traditionerna och festerna för många finländare framför allt fritid tillsammans med
+    familj, släkt eller vänner.
+  ru: Сегодня традиции и праздники для многих жителей Финляндии означают прежде всего свободное время
+    вместе с семьёй, родственниками или друзьями.
+  scene_id: hb-c03-u0068
+  visual_cue: 'Steady source-only typography card: familj, släkt eller vänner'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - familj, släkt eller vänner
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s003.wav
+  start_seconds: 67.083333
+  end_seconds: 77.950272
+  display_segments: []
+  render_image: studio/media/hb-c03-kalender/cards/08.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-kalender/sources/music-bed.flac
+  background_image: studio/media/hb-c03-kalender/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 0.7869047619047619
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - FI-18 - Helsinki - Flag - Flag Of Finland (4891308175).jpg — CGP Grey · CC BY 2.0
+    - Atlantean Twilight — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:FI-18_-_Helsinki_-_Flag_-_Flag_Of_Finland_(4891308175).jpg
+    description: Flag of Finland
+    license: CC BY 2.0

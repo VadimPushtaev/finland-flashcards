@@ -1,0 +1,356 @@
+schema_version: 1
+section_id: hb-c03-kulturdagar
+chapter_id: hb-c03
+title_sv: Runeberg, kvinnodagen och Minna Canths dag (19 mars)
+title_ru: Рунеберг, Женский день и День Минны Кант (19 марта)
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-kulturdagar.yaml
+example_only: false
+source_section_sha256: be8b5de3db83bd0806d35fb6e91bda76449ed9c5181f36ce7f72e1b567d8240a
+translation_file_sha256: 784fa3af53c055680d2df3e2fc3d5e2296eb00b3aec7d85d8f930f96d656c4a5
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette: background#342736, ivory#faf3e8, secondary#d8c8dc,
+    highlight#e2bb85, separator#62506a. Liberation Sans Bold48/regular40, explicit44/36 or40/34 only when
+    needed. Fixed Swedish-above-Russian right panel; source-only term cards on left when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:2020-11-12 Esplanaadi 1.jpg by Nemo bis continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=0.89375. Foreground and
+    bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use The Parting by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 183.876 seconds; prepared lossless stereo bed 125.125 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0083
+  description: Den 5 februari firas Runebergsdagen.
+- id: hb-c03-u0084
+  description: Den 8 mars firas den internationella kvinnodagen.
+- id: hb-c03-u0085
+  description: I mars firas Minna Canths dag, eller jämställdhetens dag.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct licensed photograph related to Runeberg memorial and cultural observances;
+    decorative context, not evidence of all narrated customs.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: The Parting by Kevin MacLeod, official catalogue master with verified CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0083-s001
+  sv: Den 5 februari firas Runebergsdagen.
+  ru: 5 февраля отмечают День Рунеберга.
+  scene_id: hb-c03-u0083
+  visual_cue: 'Steady source-only typography card: 5 februari'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 5 februari
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Den femte februari firas Runebergsdagen.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0083-s001.wav
+  start_seconds: 3.25
+  end_seconds: 6.941973
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0083-s002
+  sv: Då firas Finlands nationalskald Johan Ludvig Runeberg, som skrev orden till Finlands nationalsång
+    som heter Vårt land.
+  ru: Тогда чествуют национального поэта Финляндии Йохана Людвига Рунеберга, написавшего слова финляндского
+    национального гимна под названием «Наш край» (Vårt land).
+  scene_id: hb-c03-u0083
+  visual_cue: 'Steady source-only typography card: Johan Ludvig Runeberg, Vårt land'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Johan Ludvig Runeberg
+  - Vårt land
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0083-s002.wav
+  start_seconds: 8.708333
+  end_seconds: 19.157313
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/01.png
+  render_caption: false
+- sentence_id: hb-c03-u0083-s003
+  sv: Han hade stort inflytande på finländsk litteratur och kultur.
+  ru: Он оказал большое влияние на финляндскую литературу и культуру.
+  scene_id: hb-c03-u0083
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0083-s003.wav
+  start_seconds: 20.916667
+  end_seconds: 26.350136
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0083-s004
+  sv: På Runebergsdagen äts runebergstårtor, en slags bakelse som skaldens hustru, Fredrika Runeberg,
+    brukade baka.
+  ru: В День Рунеберга едят пирожные Рунеберга — разновидность пирожных, которые обычно пекла жена поэта
+    Фредрика Рунеберг.
+  scene_id: hb-c03-u0083
+  visual_cue: 'Steady source-only typography card: runebergstårtor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - runebergstårtor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0083-s004.wav
+  start_seconds: 28.125
+  end_seconds: 37.738061
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/03.png
+  render_caption: false
+- sentence_id: hb-c03-u0084-s001
+  sv: Den 8 mars firas den internationella kvinnodagen.
+  ru: 8 марта отмечают Международный женский день.
+  scene_id: hb-c03-u0084
+  visual_cue: 'Steady source-only typography card: 8 mars, kvinnodagen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 8 mars
+  - kvinnodagen
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Den åttonde mars firas den internationella kvinnodagen.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0084-s001.wav
+  start_seconds: 40.208333
+  end_seconds: 45.154184
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/04.png
+  render_caption: false
+- sentence_id: hb-c03-u0084-s002
+  sv: Då ordnar många organisationer och andra grupper diskussionstillfällen och andra evenemang, där
+    kvinnans ställning i det finska samhället och i världen behandlas.
+  ru: Тогда многие организации и другие группы устраивают дискуссии и другие мероприятия, посвящённые
+    положению женщины в финском обществе и в мире.
+  scene_id: hb-c03-u0084
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0084-s002.wav
+  start_seconds: 46.916667
+  end_seconds: 60.50034
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0084-s003
+  sv: I Finland är kvinnodagen en vanlig arbetsdag.
+  ru: В Финляндии женский день — обычный рабочий день.
+  scene_id: hb-c03-u0084
+  visual_cue: 'Steady source-only typography card: kvinnodagen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kvinnodagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0084-s003.wav
+  start_seconds: 62.291667
+  end_seconds: 66.540918
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/06.png
+  render_caption: false
+- sentence_id: hb-c03-u0085-s001
+  sv: I mars firas Minna Canths dag, eller jämställdhetens dag.
+  ru: В марте отмечают День Минны Кант, или День гендерного равенства.
+  scene_id: hb-c03-u0085
+  visual_cue: 'Steady source-only typography card: Minna Canth, jämställdhetens dag'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Minna Canth
+  - jämställdhetens dag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0085-s001.wav
+  start_seconds: 69.0
+  end_seconds: 74.22449
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/07.png
+  render_caption: false
+- sentence_id: hb-c03-u0085-s002
+  sv: Minna Canth var en finsk författare och samhällspåverkare.
+  ru: Минна Кант была финской писательницей и общественной деятельницей.
+  scene_id: hb-c03-u0085
+  visual_cue: 'Steady source-only typography card: Minna Canth'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Minna Canth
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0085-s002.wav
+  start_seconds: 76.0
+  end_seconds: 81.29415
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0085-s003
+  sv: Hon främjade kvinnornas ställning i Finland bland annat genom att förbättra flickors möjligheter
+    till utbildning.
+  ru: Она способствовала улучшению положения женщин в Финляндии, в том числе расширяя возможности девочек
+    получить образование.
+  scene_id: hb-c03-u0085
+  visual_cue: 'Steady source-only typography card: utbildning'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - utbildning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturdagar/narration/hb-c03-u0085-s003.wav
+  start_seconds: 83.083333
+  end_seconds: 92.905374
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturdagar/cards/09.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-kulturdagar/sources/music-bed.flac
+  background_image: studio/media/hb-c03-kulturdagar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 0.89375
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 2020-11-12 Esplanaadi 1.jpg — Nemo bis · CC BY-SA 4.0
+    - The Parting — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:2020-11-12_Esplanaadi_1.jpg
+    description: Runeberg statue pavement and square
+    license: CC BY-SA 4.0

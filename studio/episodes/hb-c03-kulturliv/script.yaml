@@ -1,0 +1,432 @@
+schema_version: 1
+section_id: hb-c03-kulturliv
+chapter_id: hb-c03
+title_sv: Kulturliv
+title_ru: Культурная жизнь
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-kulturliv.yaml
+example_only: false
+source_section_sha256: 67dff8619aae4f45c5e151ca5f3252319dac2c7274f579b93060e5443875389b
+translation_file_sha256: 40aa26ce4663e1174970c17248a7ff012faac8001c696e827237268c1ed7b676
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette #342736; ivory #faf3e8, lavender #d8c8dc, warm highlight
+    #e2bb85, separator #62506a. Liberation Sans Bold48/regular40; explicitly44/36 or40/34 only where layout
+    requires. Stable Swedish-above-Russian right panel; source-only foreground term cards when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Musiikkitalo, Helsinki, Finland.jpg by Alejandro continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=1.1104166666666668. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Gymnopedie No. 1 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 187.089 seconds; prepared lossless stereo bed 155.458 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0146
+  description: 'Source passage: I Finland visas filmerna oftast på originalspråket.'
+- id: hb-c03-u0147
+  description: 'Source passage: I de flesta städerna i Finland finns en teater.'
+- id: hb-c03-u0148
+  description: 'Source passage: I Finland finns det ett museum på nästan alla orter.'
+- id: hb-c03-u0149
+  description: 'Source passage: I Finland finns många möjligheter att syssla med musik.'
+- id: hb-c03-u0150
+  description: 'Source passage: Medborgarinstitutens musikgrupper är öppna för alla.'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: 'One distinct verified photograph: Musiikkitalo, Helsinki, Finland.jpg. Decorative context
+    for Kulturliv; not an assertion about every custom or individual scene.'
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Gymnopedie No. 1 by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0146-s001
+  sv: I Finland visas filmerna oftast på originalspråket.
+  ru: В Финляндии фильмы чаще всего показывают на языке оригинала.
+  scene_id: hb-c03-u0146
+  visual_cue: 'Steady complete source-only term card: originalspråket'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - originalspråket
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.26551
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturliv/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0146-s002
+  sv: Dessutom är de textade till finska och svenska.
+  ru: Кроме того, они снабжены субтитрами на финском и шведском языках.
+  scene_id: hb-c03-u0146
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s002.wav
+  start_seconds: 10.041667
+  end_seconds: 14.639218
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0146-s003
+  sv: Ibland är filmer för barn dubbade till finska.
+  ru: Иногда детские фильмы дублируют на финский язык.
+  scene_id: hb-c03-u0146
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s003.wav
+  start_seconds: 16.416667
+  end_seconds: 20.735578
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0147-s001
+  sv: I de flesta städerna i Finland finns en teater.
+  ru: В большинстве городов Финляндии есть театр.
+  scene_id: hb-c03-u0147
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s001.wav
+  start_seconds: 23.208333
+  end_seconds: 27.666565
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0147-s002
+  sv: En del teatrar är professionella, andra är amatörteatrar.
+  ru: Некоторые театры профессиональные, другие — любительские.
+  scene_id: hb-c03-u0147
+  visual_cue: 'Steady complete source-only term card: professionella, amatörteatrar'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - professionella
+  - amatörteatrar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s002.wav
+  start_seconds: 29.416667
+  end_seconds: 34.989456
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturliv/cards/04.png
+  render_caption: false
+- sentence_id: hb-c03-u0147-s003
+  sv: Föreställningsspråket är finska, men på vissa orter finns även svenskspråkiga teatrar.
+  ru: Спектакли идут на финском языке, но в некоторых населённых пунктах есть и шведоязычные театры.
+  scene_id: hb-c03-u0147
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s003.wav
+  start_seconds: 36.75
+  end_seconds: 44.621565
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0148-s001
+  sv: I Finland finns det ett museum på nästan alla orter.
+  ru: В Финляндии почти в каждом населённом пункте есть музей.
+  scene_id: hb-c03-u0148
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s001.wav
+  start_seconds: 47.083333
+  end_seconds: 51.889864
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0148-s002
+  sv: De presenterar konst, historia, natur, någon person eller ett specialområde.
+  ru: Эти музеи знакомят с искусством, историей, природой, какой-либо личностью или отдельной специальной
+    областью.
+  scene_id: hb-c03-u0148
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s002.wav
+  start_seconds: 53.666667
+  end_seconds: 60.493333
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0148-s003
+  sv: Finländsk konst presenteras till exempel i Ateneum som hör till Nationalgalleriet och Esbo moderna
+    konstmuseum (EMMA).
+  ru: Финляндское искусство представлено, например, в Атенеуме (Ateneum), входящем в Национальную галерею
+    (Nationalgalleriet), и в Музее современного искусства Эспоо (EMMA).
+  scene_id: hb-c03-u0148
+  visual_cue: 'Steady complete source-only term card: Ateneum, EMMA'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Ateneum
+  - EMMA
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s003.wav
+  start_seconds: 62.25
+  end_seconds: 73.395578
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturliv/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0148-s004
+  sv: Med Finlands kulturhistoria kan du bekanta dig till exempel på Finlands nationalmuseum i Helsingfors.
+  ru: С культурной историей Финляндии можно познакомиться, например, в Национальном музее Финляндии (Finlands
+    nationalmuseum) в Хельсинки.
+  scene_id: hb-c03-u0148
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s004.wav
+  start_seconds: 75.166667
+  end_seconds: 84.152789
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0149-s001
+  sv: I Finland finns många möjligheter att syssla med musik.
+  ru: В Финляндии много возможностей заниматься музыкой.
+  scene_id: hb-c03-u0149
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s001.wav
+  start_seconds: 86.625
+  end_seconds: 91.64051
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0149-s002
+  sv: På många orter finns medborgarinstitut som ordnar förmånlig musikundervisning.
+  ru: Во многих населённых пунктах есть народные университеты (medborgarinstitut), которые организуют
+    недорогое обучение музыке.
+  scene_id: hb-c03-u0149
+  visual_cue: 'Steady complete source-only term card: medborgarinstitut'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - medborgarinstitut
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s002.wav
+  start_seconds: 93.416667
+  end_seconds: 100.243333
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturliv/cards/11.png
+  render_caption: false
+- sentence_id: hb-c03-u0149-s003
+  sv: Dessutom erbjuder även privata musikskolor och -institut musikundervisning.
+  ru: Кроме того, обучение музыке предлагают также частные музыкальные школы и институты.
+  scene_id: hb-c03-u0149
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s003.wav
+  start_seconds: 102.0
+  end_seconds: 108.757007
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0150-s001
+  sv: Medborgarinstitutens musikgrupper är öppna för alla.
+  ru: Музыкальные группы народных университетов открыты для всех.
+  scene_id: hb-c03-u0150
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0150-s001.wav
+  start_seconds: 111.208333
+  end_seconds: 116.223844
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0150-s002
+  sv: Du kan ansöka till musikskolorna genom ett inträdesprov.
+  ru: В музыкальные школы можно подать заявление, пройдя вступительный экзамен.
+  scene_id: hb-c03-u0150
+  visual_cue: 'Steady complete source-only term card: inträdesprov'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - inträdesprov
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0150-s002.wav
+  start_seconds: 118.0
+  end_seconds: 123.22449
+  display_segments: []
+  render_image: studio/media/hb-c03-kulturliv/cards/14.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-kulturliv/sources/music-bed.flac
+  background_image: studio/media/hb-c03-kulturliv/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.1104166666666668
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Musiikkitalo, Helsinki, Finland.jpg — Alejandro · CC BY 2.0
+    - Gymnopedie No. 1 — Kevin MacLeod (incompetech.com). Composed by Erik Satie.
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Musiikkitalo,_Helsinki,_Finland.jpg
+    description: Helsingin musiikkitalo
+    license: CC BY 2.0

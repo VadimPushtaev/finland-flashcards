@@ -1,0 +1,819 @@
+schema_version: 1
+section_id: hb-c03-tillit
+chapter_id: hb-c03
+title_sv: Tillit, jämlikhet och självständighet
+title_ru: Доверие, равенство и самостоятельность
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-tillit.yaml
+example_only: false
+source_section_sha256: 19c5f1b292a182bf8d77079b85fb5bf5da5541a0459c73c5eed6b31b055c080f
+translation_file_sha256: 3217065db4295ff21b344f2243d928bab6b16509a7f3a78b0caa497a01095c58
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter3 plum #342736, ivory #faf3e8, lilac #d8c8dc, warm gold #e2bb85,
+    separator #62506a. Liberation Sans Bold48 and Regular40; stable right bilingual panel and steady optional
+    left source-word graphics.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsingin kaupungintalo satamasta.jpg by kallerna continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.2848214285714286. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Fresh Air by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 294.060 seconds; prepared lossless stereo bed 319.875 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Trust and social equality
+- id: scene-2
+  description: Association activity
+- id: scene-3
+  description: Individual freedom
+- id: scene-4
+  description: Privacy and independence
+- id: scene-5
+  description: Work, diligence, honesty
+- id: scene-6
+  description: Protestant values
+- id: scene-7
+  description: Education and knowledge
+- id: scene-8
+  description: Nature and environmental protection
+- id: scene-9
+  description: Responsibility for security
+- id: scene-10
+  description: Independence and national feeling
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c03-u0008-s001
+  sv: Social jämlikhet och likabehandling skapar tillit mellan människor.
+  ru: Социальное равенство и равное обращение создают доверие между людьми.
+  scene_id: scene-1
+  visual_cue: 'Complete source-word typography card: Social jämlikhet, likabehandling, tillit'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Social jämlikhet
+  - likabehandling
+  - tillit
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0008-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.240748
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0008-s002
+  sv: Denna tillit skapar i sin tur stabilitet och trygghet, men också en bättre ekonomisk konkurrenskraft,
+    effektivitet och innovationsförmåga.
+  ru: Это доверие, в свою очередь, создаёт стабильность и чувство защищённости, а также повышает экономическую
+    конкурентоспособность, эффективность и способность к инновациям.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0008-s002.wav
+  start_seconds: 11.0
+  end_seconds: 22.563537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0009-s001
+  sv: Tilliten till andra än till exempel familjemedlemmar eller släktingar tar sig också uttryck i det
+    att människorna i Finland aktivt deltar i föreningsverksamhet.
+  ru: Доверие к людям, не являющимся, например, членами семьи или родственниками, проявляется также в
+    том, что люди в Финляндии активно участвуют в деятельности объединений.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0009-s001.wav
+  start_seconds: 25.041667
+  end_seconds: 38.695
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0009-s002
+  sv: Det finns mycket föreningar i Finland, och människorna är aktiva i dem för att uppnå gemensamma
+    mål.
+  ru: В Финляндии много объединений, и люди активно участвуют в них ради достижения общих целей.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0009-s002.wav
+  start_seconds: 40.458333
+  end_seconds: 49.026497
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0009-s003
+  sv: Föreningsverksamheten i sin tur ökar tilliten mellan människorna ytterligare.
+  ru: Деятельность объединений, в свою очередь, ещё больше повышает доверие между людьми.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0009-s003.wav
+  start_seconds: 50.791667
+  end_seconds: 57.618333
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0010-s001
+  sv: I den finländska kulturen framhävs individualism mer än i många andra kulturer.
+  ru: В финляндской культуре индивидуализм подчёркивается сильнее, чем во многих других культурах.
+  scene_id: scene-3
+  visual_cue: 'Complete source-word typography card: individualism'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - individualism
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0010-s001.wav
+  start_seconds: 60.083333
+  end_seconds: 67.188639
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/05.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0010-s002
+  sv: Individens frihet syns starkt i den finländska lagstiftningen.
+  ru: Свобода личности ярко отражена в финляндском законодательстве.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0010-s002.wav
+  start_seconds: 68.958333
+  end_seconds: 74.531122
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0011-s001
+  sv: Finländarna värdesätter också sin integritet och privatsfär.
+  ru: Жители Финляндии также ценят свою неприкосновенность и частную сферу жизни.
+  scene_id: scene-4
+  visual_cue: 'Complete source-word typography card: integritet, privatsfär'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - integritet
+  - privatsfär
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0011-s001.wav
+  start_seconds: 77.0
+  end_seconds: 82.781769
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/07.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0011-s002
+  sv: Till exempel uppmuntras unga vuxna att bli självständiga och flytta hemifrån.
+  ru: Например, молодых взрослых побуждают становиться самостоятельными и уезжать из родительского дома.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0011-s002.wav
+  start_seconds: 84.541667
+  end_seconds: 91.716633
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0012-s001
+  sv: Viktiga värderingar för många är också arbete och flit.
+  ru: Важными ценностями для многих также являются работа и трудолюбие.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: arbete, flit'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - arbete
+  - flit
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0012-s001.wav
+  start_seconds: 94.166667
+  end_seconds: 99.391156
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/09.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0012-s002
+  sv: Att arbeta är en viktig del av människans identitet, och flitiga och samvetsgranna arbetstagare
+    uppskattas.
+  ru: Работа — важная часть идентичности человека, а трудолюбивых и добросовестных работников ценят.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0012-s002.wav
+  start_seconds: 101.166667
+  end_seconds: 110.710068
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0012-s003
+  sv: Dessutom värdesätts sparsamhet och noggrannhet.
+  ru: Кроме того, ценятся бережливость и аккуратность.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0012-s003.wav
+  start_seconds: 112.5
+  end_seconds: 116.888571
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0012-s004
+  sv: Också ärlighet är en viktig värdering i Finland.
+  ru: Честность тоже является важной ценностью в Финляндии.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0012-s004.wav
+  start_seconds: 118.666667
+  end_seconds: 123.124898
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0013-s001
+  sv: Social jämlikhet, ärlighet och arbete är en del av de protestantiska värderingarna, som är välbekanta
+    också i många andra länder i Nordeuropa.
+  ru: Социальное равенство, честность и работа входят в число протестантских ценностей, которые хорошо
+    знакомы и во многих других странах Северной Европы.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0013-s001.wav
+  start_seconds: 125.583333
+  end_seconds: 138.122109
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s001
+  sv: Utbildning och bildning betraktas också som viktiga värderingar.
+  ru: Образование и образованность также считаются важными ценностями.
+  scene_id: scene-7
+  visual_cue: 'Complete source-word typography card: Utbildning, bildning'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Utbildning
+  - bildning
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s001.wav
+  start_seconds: 140.583333
+  end_seconds: 146.434762
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/14.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s002
+  sv: Bildning bygger på de kunskaper och färdigheter man har fått genom sin utbildning.
+  ru: Образованность основывается на знаниях и навыках, полученных в ходе обучения.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s002.wav
+  start_seconds: 148.208333
+  end_seconds: 154.96534
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s003
+  sv: En bildad människa har goda kunskaper och omdömesförmåga, funktionsförmåga och förmåga till empati.
+  ru: Образованный человек обладает хорошими знаниями, способностью выносить суждения, действовать и сопереживать.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s003.wav
+  start_seconds: 156.75
+  end_seconds: 165.527143
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s004
+  sv: I Finland värdesätts skola och utbildning samt att de är tillgängliga för alla.
+  ru: В Финляндии ценят школу и образование, а также их доступность для всех.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s004.wav
+  start_seconds: 167.291667
+  end_seconds: 174.396973
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s005
+  sv: Att gå i skola och utbilda sig till ett yrke är viktiga steg mot ett gott liv.
+  ru: Учёба в школе и получение профессионального образования — важные шаги на пути к хорошей жизни.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s005.wav
+  start_seconds: 176.166667
+  end_seconds: 182.714694
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0014-s006
+  sv: Läraryrket är populärt och respekterat i Finland.
+  ru: Профессия учителя популярна и уважаема в Финляндии.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0014-s006.wav
+  start_seconds: 184.5
+  end_seconds: 189.236871
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0015-s001
+  sv: Viktigt för finländarna är att vistas i naturen, njuta av naturen och vackra landskap, naturens
+    mångfald och naturskydd.
+  ru: Для жителей Финляндии важны пребывание на природе, наслаждение природой и красивыми пейзажами, природное
+    разнообразие и охрана природы.
+  scene_id: scene-8
+  visual_cue: 'Complete source-word typography card: naturens mångfald, naturskydd'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - naturens mångfald
+  - naturskydd
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0015-s001.wav
+  start_seconds: 191.708333
+  end_seconds: 202.575272
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/20.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0015-s002
+  sv: I exempelvis skogslagstiftningen försöker man också beakta miljöskyddets perspektiv.
+  ru: Например, в лесном законодательстве также стараются учитывать вопросы охраны окружающей среды.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0015-s002.wav
+  start_seconds: 204.333333
+  end_seconds: 211.786939
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0015-s003
+  sv: Finlands natur och nationallandskap ingår i många finländares uppfattning om hur det är att vara
+    finländare och vad som är värdefullt i Finland.
+  ru: Природа Финляндии и её национальные пейзажи входят в представление многих жителей страны о том,
+    что значит быть жителем Финляндии и что в Финляндии ценно.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0015-s003.wav
+  start_seconds: 213.541667
+  end_seconds: 226.219762
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0016-s001
+  sv: Många som bor i Finland lyfter fram en stark försvarsvilja som en viktig värdering.
+  ru: Многие живущие в Финляндии называют важной ценностью сильную готовность защищать страну.
+  scene_id: scene-9
+  visual_cue: 'Complete source-word typography card: försvarsvilja'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - försvarsvilja
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0016-s001.wav
+  start_seconds: 228.708333
+  end_seconds: 236.161939
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/23.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0016-s002
+  sv: Försvarsvilja innebär en vilja att ta hand om och ta ansvar för den egna och den närmaste kretsens
+    och det större samhällets säkerhet.
+  ru: Готовность защищать страну означает желание заботиться о собственной безопасности, безопасности
+    ближайшего окружения и общества в целом и брать на себя ответственность за неё.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0016-s002.wav
+  start_seconds: 237.916667
+  end_seconds: 249.480204
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0017-s001
+  sv: Finland har varit en självständig stat i bara drygt 100 år, och i närhistorien finns krig som hotade
+    denna självständighet.
+  ru: Финляндия является независимым государством лишь немногим более 100 лет, а в недавней истории были
+    войны, угрожавшие этой независимости.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Finland har varit en självständig stat i bara drygt hundra år, och i närhistorien finns krig
+      som hotade denna självständighet.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0017-s001.wav
+  start_seconds: 251.958333
+  end_seconds: 263.173571
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0017-s002
+  sv: I Finland har många människor en ganska stark nationalkänsla, det vill säga en känsla av samhörighet
+    och stolthet över det egna landet och dess traditioner.
+  ru: У многих людей в Финляндии довольно сильное национальное чувство, то есть чувство общности и гордости
+    за свою страну и её традиции.
+  scene_id: scene-10
+  visual_cue: 'Complete source-word typography card: nationalkänsla'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - nationalkänsla
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0017-s002.wav
+  start_seconds: 264.958333
+  end_seconds: 278.054388
+  display_segments: []
+  render_image: studio/media/hb-c03-tillit/cards/26.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0017-s003
+  sv: Om nationalkänslan är stark anser människan att det egna landet är värt att försvara.
+  ru: Если национальное чувство сильно, человек считает свою страну достойной защиты.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-tillit/narration/hb-c03-u0017-s003.wav
+  start_seconds: 279.833333
+  end_seconds: 287.635238
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c03-tillit/sources/music-bed.flac
+  background_image: studio/media/hb-c03-tillit/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.2848214285714286
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsingin kaupungintalo satamasta.jpg — kallerna · CC BY-SA 3.0
+    - Fresh Air — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsingin_kaupungintalo_satamasta.jpg
+    description: 'Helsinki City Hall, Pohjoisesplanadi 11–13, Helsinki, Finland. Built 1833. Architect:
+      Carl Ludvig Engel.'
+    license: CC BY-SA 3.0

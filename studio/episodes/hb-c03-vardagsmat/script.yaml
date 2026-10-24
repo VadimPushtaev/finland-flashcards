@@ -1,0 +1,705 @@
+schema_version: 1
+section_id: hb-c03-vardagsmat
+chapter_id: hb-c03
+title_sv: Vardagsmat och måltider
+title_ru: Повседневная еда и приёмы пищи
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-vardagsmat.yaml
+example_only: false
+source_section_sha256: 238379e956d4e84859e7becbd722e81aa0bc5baedd23709fae881a35bec33015
+translation_file_sha256: 1e644522ccbb440873f34f4150b2ee3f0efa85704e9db70449446a22250a348c
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette #342736; ivory #faf3e8, lavender #d8c8dc, warm highlight
+    #e2bb85, separator #62506a. Liberation Sans Bold48/regular40; explicitly44/36 or40/34 only where layout
+    requires. Stable Swedish-above-Russian right panel; source-only foreground term cards when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:School lunch in ylästö school.jpg by Jukajuha continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.1142857142857143. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Tranquility by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 987.063 seconds; prepared lossless stereo bed 296.000 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0114
+  description: 'Source passage: I den finska matkulturen är ingredienser från naturen viktiga, bland annat
+    vilt, bär, fisk och svamp.'
+- id: hb-c03-u0115
+  description: 'Source passage: En del äter fisk, kött och potatis till vardags, medan andra lagar pastarätter
+    eller köper hem sushi från en restaurang.'
+- id: hb-c03-u0116
+  description: 'Source passage: Ett typiskt kännetecken för den finländska vardagsmaten är att äta tillsammans.'
+- id: hb-c03-u0117
+  description: 'Source passage: I Finland är det vanligt att äta gröt och bröd och dricka kaffe eller
+    te till frukost.'
+- id: hb-c03-u0118
+  description: 'Source passage: På morgonen äter man frukost enligt vilken tid man vaknar.'
+- id: hb-c03-u0119
+  description: 'Source passage: Kranvattnet är drickbart överallt i Finland.'
+- id: hb-c03-u0120
+  description: 'Source passage: Att äta på restaurang är ofta dyrare i Finland än i andra länder.'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: 'One distinct verified photograph: School lunch in ylästö school.jpg. Decorative context
+    for Vardagsmat och måltider; not an assertion about every custom or individual scene.'
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Tranquility by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0114-s001
+  sv: I den finska matkulturen är ingredienser från naturen viktiga, bland annat vilt, bär, fisk och svamp.
+  ru: В финской культуре питания важны природные ингредиенты, в том числе дичь, ягоды, рыба и грибы.
+  scene_id: hb-c03-u0114
+  visual_cue: 'Steady complete source-only term card: vilt, bär, fisk, svamp'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - vilt
+  - bär
+  - fisk
+  - svamp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0114-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.096803
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0114-s002
+  sv: Vilt, alltså till exempel älg och fåglar, jagas i jaktsällskap.
+  ru: На дичь, то есть, например, на лосей и птиц, охотятся в охотничьих коллективах.
+  scene_id: hb-c03-u0114
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0114-s002.wav
+  start_seconds: 13.875
+  end_seconds: 19.935408
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0114-s003
+  sv: Man måste ha tillstånd för att få jaga i Finland.
+  ru: Для охоты в Финляндии необходимо иметь разрешение.
+  scene_id: hb-c03-u0114
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0114-s003.wav
+  start_seconds: 21.708333
+  end_seconds: 26.305884
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0114-s004
+  sv: Bär och svamp kan man plocka på sommaren och hösten.
+  ru: Ягоды и грибы можно собирать летом и осенью.
+  scene_id: hb-c03-u0114
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0114-s004.wav
+  start_seconds: 28.083333
+  end_seconds: 32.820204
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0115-s001
+  sv: En del äter fisk, kött och potatis till vardags, medan andra lagar pastarätter eller köper hem sushi
+    från en restaurang.
+  ru: Одни в повседневной жизни едят рыбу, мясо и картофель, а другие готовят блюда из макарон или покупают
+    домой суши из ресторана.
+  scene_id: hb-c03-u0115
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0115-s001.wav
+  start_seconds: 35.291667
+  end_seconds: 45.670986
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0115-s002
+  sv: I affären köper man fryspizza och portioner av färdigmat som värms i mikron.
+  ru: В магазине покупают замороженную пиццу и порции готовой еды, которые разогревают в микроволновке.
+  scene_id: hb-c03-u0115
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0115-s002.wav
+  start_seconds: 47.458333
+  end_seconds: 54.563639
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0115-s003
+  sv: Typiska vardagsfavoriter är till exempel ugnslax, makaronilåda, köttbullar, köttfärssås, stekt fisk
+    och soppor och olika gryt- och gröträtter som tillagas i ugnen.
+  ru: Типичные любимые повседневные блюда — например, запечённый лосось, макаронная запеканка, мясные
+    фрикадельки, соус с фаршем, жареная рыба, супы и разные тушёные блюда и каши, приготовленные в духовке.
+  scene_id: hb-c03-u0115
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0115-s003.wav
+  start_seconds: 56.333333
+  end_seconds: 70.613605
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0116-s001
+  sv: Ett typiskt kännetecken för den finländska vardagsmaten är att äta tillsammans.
+  ru: Типичная черта финляндского повседневного питания — совместные приёмы пищи.
+  scene_id: hb-c03-u0116
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s001.wav
+  start_seconds: 73.083333
+  end_seconds: 79.97966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0116-s002
+  sv: I skolan får barnen gratis skolmat, som består av en varm lunchrätt.
+  ru: В школе дети получают бесплатное школьное питание, состоящее из горячего обеденного блюда.
+  scene_id: hb-c03-u0116
+  visual_cue: 'Steady complete source-only term card: gratis skolmat'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - gratis skolmat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s002.wav
+  start_seconds: 81.75
+  end_seconds: 87.949728
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0116-s003
+  sv: I daghemmen får barnen förutom lunch också frukost och mellanmål.
+  ru: В детских садах дети получают, помимо обеда, также завтрак и перекус.
+  scene_id: hb-c03-u0116
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s003.wav
+  start_seconds: 89.708333
+  end_seconds: 95.281122
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0116-s004
+  sv: En del av de vuxna som arbetar äter sin lunch i en matsal eller på en restaurang, medan andra har
+    egen matsäck med sig.
+  ru: Некоторые работающие взрослые обедают в столовой или ресторане, а другие приносят еду с собой.
+  scene_id: hb-c03-u0116
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s004.wav
+  start_seconds: 97.041667
+  end_seconds: 107.212007
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0116-s005
+  sv: Den kan förvaras i kylskåpet på arbetsplatsen i väntan på lunchrasten.
+  ru: До обеденного перерыва её можно хранить в холодильнике на работе.
+  scene_id: hb-c03-u0116
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s005.wav
+  start_seconds: 109.0
+  end_seconds: 115.269388
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0116-s006
+  sv: Många restauranger som serverar kvällsmat har vid lunchtid ett buffébord, där man själv får ta den
+    mat man vill på tallriken.
+  ru: Во многих ресторанах, подающих ужин, в обеденное время есть шведский стол, где можно самостоятельно
+    взять на тарелку желаемую еду.
+  scene_id: hb-c03-u0116
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0116-s006.wav
+  start_seconds: 117.041667
+  end_seconds: 127.838946
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0117-s001
+  sv: I Finland är det vanligt att äta gröt och bröd och dricka kaffe eller te till frukost.
+  ru: В Финляндии на завтрак обычно едят кашу и хлеб и пьют кофе или чай.
+  scene_id: hb-c03-u0117
+  visual_cue: 'Steady complete source-only term card: gröt, bröd, kaffe, te'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - gröt
+  - bröd
+  - kaffe
+  - te
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0117-s001.wav
+  start_seconds: 130.291667
+  end_seconds: 137.675612
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/13.png
+  render_caption: false
+- sentence_id: hb-c03-u0117-s002
+  sv: Många finländare gillar gröt och lagar olika slags gröt i mikron, på spisen eller i ugnen.
+  ru: Многие жители Финляндии любят каши и готовят разные их виды в микроволновке, на плите или в духовке.
+  scene_id: hb-c03-u0117
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0117-s002.wav
+  start_seconds: 139.458333
+  end_seconds: 147.329898
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0117-s003
+  sv: Gröt lagas av till exempel havreflingor eller havregryn och vatten eller mjölk.
+  ru: Кашу готовят, например, из овсяных хлопьев или овсяной крупы и воды или молока.
+  scene_id: hb-c03-u0117
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0117-s003.wav
+  start_seconds: 149.083333
+  end_seconds: 155.97966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0117-s004
+  sv: I Finland bakas många olika slags bröd.
+  ru: В Финляндии пекут много разных видов хлеба.
+  scene_id: hb-c03-u0117
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0117-s004.wav
+  start_seconds: 157.75
+  end_seconds: 161.581293
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0117-s005
+  sv: Karakteristiskt för den finländska brödkulturen är den stora mängden och variationen av rågbröd.
+  ru: Для финляндской хлебной культуры характерны большое количество и разнообразие ржаного хлеба.
+  scene_id: hb-c03-u0117
+  visual_cue: 'Steady complete source-only term card: rågbröd'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - rågbröd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0117-s005.wav
+  start_seconds: 163.333333
+  end_seconds: 171.831837
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/17.png
+  render_caption: false
+- sentence_id: hb-c03-u0118-s001
+  sv: På morgonen äter man frukost enligt vilken tid man vaknar.
+  ru: Утром завтракают в зависимости от времени пробуждения.
+  scene_id: hb-c03-u0118
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s001.wav
+  start_seconds: 174.291667
+  end_seconds: 179.237517
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0118-s002
+  sv: Lunch serveras tidigare än i många andra länder, omkring kl. 10.30–12.
+  ru: Обед подают раньше, чем во многих других странах, примерно в 10:30–12:00.
+  scene_id: hb-c03-u0118
+  visual_cue: 'Steady complete source-only term card: 10.30–12'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 10.30–12
+  pronunciation_notes: []
+  speech_override:
+    text: Lunch serveras tidigare än i många andra länder, omkring klockan tio trettio till tolv.
+    reason: Expand exact source number or clock abbreviation into Swedish speech; preserve displayed wording
+      and meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s002.wav
+  start_seconds: 181.0
+  end_seconds: 188.662585
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/19.png
+  render_caption: false
+- sentence_id: hb-c03-u0118-s003
+  sv: Lunchen består vanligtvis av varm mat, vilket innebär att många äter två varma måltider per dag.
+  ru: Обед обычно состоит из горячей еды, а это означает, что многие едят горячее два раза в день.
+  scene_id: hb-c03-u0118
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s003.wav
+  start_seconds: 190.416667
+  end_seconds: 198.70619
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0118-s004
+  sv: Lunchrasten är ganska kort både i skolorna och på arbetsplatserna.
+  ru: Обеденный перерыв довольно короткий как в школах, так и на работе.
+  scene_id: hb-c03-u0118
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s004.wav
+  start_seconds: 200.458333
+  end_seconds: 206.379422
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0118-s005
+  sv: På grund av den tidiga lunchen äter många middag hemma redan kl. 17 eller 18.
+  ru: Из-за раннего обеда многие ужинают дома уже в 17 или 18 часов.
+  scene_id: hb-c03-u0118
+  visual_cue: 'Steady complete source-only term card: 17 eller 18'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 17 eller 18
+  pronunciation_notes: []
+  speech_override:
+    text: På grund av den tidiga lunchen äter många middag hemma redan klockan sjutton eller arton.
+    reason: Expand exact source number or clock abbreviation into Swedish speech; preserve displayed wording
+      and meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s005.wav
+  start_seconds: 208.166667
+  end_seconds: 215.829252
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/22.png
+  render_caption: false
+- sentence_id: hb-c03-u0118-s006
+  sv: Dessutom är det vanligt att äta en lätt kvällsmåltid omkring kl. 20.
+  ru: Кроме того, около 20 часов принято устраивать лёгкий вечерний приём пищи.
+  scene_id: hb-c03-u0118
+  visual_cue: 'Steady complete source-only term card: 20'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '20'
+  pronunciation_notes: []
+  speech_override:
+    text: Dessutom är det vanligt att äta en lätt kvällsmåltid omkring klockan tjugo.
+    reason: Expand exact source number or clock abbreviation into Swedish speech; preserve displayed wording
+      and meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s006.wav
+  start_seconds: 217.583333
+  end_seconds: 224.20102
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/23.png
+  render_caption: false
+- sentence_id: hb-c03-u0118-s007
+  sv: I synnerhet för barnen är också mellanmålen mellan huvudmåltiderna viktiga.
+  ru: Особенно для детей также важны перекусы между основными приёмами пищи.
+  scene_id: hb-c03-u0118
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0118-s007.wav
+  start_seconds: 225.958333
+  end_seconds: 232.506361
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0119-s001
+  sv: Kranvattnet är drickbart överallt i Finland.
+  ru: Водопроводную воду можно пить повсюду в Финляндии.
+  scene_id: hb-c03-u0119
+  visual_cue: 'Steady complete source-only term card: Kranvattnet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Kranvattnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0119-s001.wav
+  start_seconds: 234.958333
+  end_seconds: 239.346905
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/25.png
+  render_caption: false
+- sentence_id: hb-c03-u0120-s001
+  sv: Att äta på restaurang är ofta dyrare i Finland än i andra länder.
+  ru: Питание в ресторане в Финляндии часто дороже, чем в других странах.
+  scene_id: hb-c03-u0120
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0120-s001.wav
+  start_seconds: 241.833333
+  end_seconds: 247.893741
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0120-s002
+  sv: Också alkoholdrycker är dyra på restaurang.
+  ru: Алкогольные напитки в ресторане тоже дорогие.
+  scene_id: hb-c03-u0120
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0120-s002.wav
+  start_seconds: 249.666667
+  end_seconds: 253.846259
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0120-s003
+  sv: Du behöver inte lämna dricks, men du kan göra det om du vill tacka för en speciellt bra service.
+  ru: Вы не обязаны оставлять чаевые, но можете сделать это, если хотите поблагодарить за особенно хорошее
+    обслуживание.
+  scene_id: hb-c03-u0120
+  visual_cue: 'Steady complete source-only term card: dricks'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - dricks
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-vardagsmat/narration/hb-c03-u0120-s003.wav
+  start_seconds: 255.625
+  end_seconds: 263.775204
+  display_segments: []
+  render_image: studio/media/hb-c03-vardagsmat/cards/28.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-vardagsmat/sources/music-bed.flac
+  background_image: studio/media/hb-c03-vardagsmat/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.1142857142857143
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - School lunch in ylästö school.jpg — Jukajuha · CC0
+    - Tranquility — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:School_lunch_in_yl%C3%A4st%C3%B6_school.jpg
+    description: School Lunch in Ylästö School, Vantaa, Finland in 2024. Fish soup, bread with toppings
+      and water on a tray in disposable tableware.
+    license: CC0

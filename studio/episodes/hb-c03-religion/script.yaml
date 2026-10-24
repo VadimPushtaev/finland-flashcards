@@ -1,0 +1,1172 @@
+schema_version: 1
+section_id: hb-c03-religion
+chapter_id: hb-c03
+title_sv: Religioner och religionslöshet
+title_ru: Религии и нерелигиозность
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-religion.yaml
+example_only: false
+source_section_sha256: 805ab20ccff71d35dc3c5ec5ea7a148bdc63a9b9d9997e06a14075c59dc2c60a
+translation_file_sha256: 1f7932ec41efc2032f378f6e4dbd90c5b2d236c20ffa3ee47d90ca600171bb89
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter3 plum #342736, ivory #faf3e8, lilac #d8c8dc, warm gold #e2bb85,
+    separator #62506a. Liberation Sans Bold48 and Regular40; stable right bilingual panel and steady optional
+    left source-word graphics.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Turku Cathedral Park 2020.jpg by Ninara continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=3.682142857142857. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Mesmerize by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 424.072 seconds; prepared lossless stereo bed 515.500 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Freedom to join and practise religion
+- id: scene-2
+  description: Freedom not to belong
+- id: scene-3
+  description: Registered communities and teaching
+- id: scene-4
+  description: Diverse beliefs and nonreligion
+- id: scene-5
+  description: Lutheran and Orthodox membership
+- id: scene-6
+  description: Church taxation and donations
+- id: scene-7
+  description: Church services and help
+- id: scene-8
+  description: Children and youth work
+- id: scene-9
+  description: Religious ceremonies
+- id: scene-10
+  description: Women and men in church offices
+- id: scene-11
+  description: Religiously neutral state
+- id: scene-12
+  description: Diversity within Christianity
+- id: scene-13
+  description: Muslim communities and migration
+- id: scene-14
+  description: Diversity within Islam
+- id: scene-15
+  description: Establishing communities
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c03-u0040-s001
+  sv: Enligt Finlands grundlag har var och en rätt att höra till ett religiöst samfund och utöva sin egen
+    religion.
+  ru: Согласно Конституции Финляндии каждый имеет право принадлежать к религиозной общине и практиковать
+    свою религию.
+  scene_id: scene-1
+  visual_cue: 'Complete source-word typography card: grundlag, religiöst samfund'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - grundlag
+  - religiöst samfund
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0040-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.375442
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0040-s002
+  sv: Trossamfunden och församlingarna har samlingslokaler såsom kyrkor, moskéer, bönelokaler, synagogor,
+    rikets salar och tempel på olika orter i Finland.
+  ru: Религиозные общины и приходы располагают помещениями для собраний, такими как церкви, мечети, молитвенные
+    помещения, синагоги, Залы Царства и храмы в разных населённых пунктах Финляндии.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0040-s002.wav
+  start_seconds: 14.166667
+  end_seconds: 27.123401
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0040-s003
+  sv: Det är möjligt att valfritt ansluta sig till religiösa samfund och också utträda ur dem.
+  ru: Можно по своему выбору вступать в религиозные общины, а также выходить из них.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0040-s003.wav
+  start_seconds: 28.875
+  end_seconds: 36.537585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0041-s001
+  sv: Enligt lag har människorna också frihet att inte höra till något religiöst samfund och inte utöva
+    någon religion.
+  ru: По закону люди также свободны не принадлежать ни к какой религиозной общине и не практиковать никакой
+    религии.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0041-s001.wav
+  start_seconds: 39.0
+  end_seconds: 48.543401
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0041-s002
+  sv: År 2022 hörde en knapp tredjedel av invånarna i Finland inte till något registrerat religiöst samfund.
+  ru: В 2022 году чуть менее трети жителей Финляндии не принадлежали ни к какой зарегистрированной религиозной
+    общине.
+  scene_id: scene-2
+  visual_cue: 'Complete source-word typography card: 2022, knapp tredjedel'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2022'
+  - knapp tredjedel
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: År två tusen tjugotvå hörde en knapp tredjedel av invånarna i Finland inte till något registrerat
+      religiöst samfund.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0041-s002.wav
+  start_seconds: 50.333333
+  end_seconds: 60.364354
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/04.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0041-s003
+  sv: De är en heterogen människoskara, där en del inte har någon religiös övertygelse, medan andra har.
+  ru: Это неоднородная группа людей, в которой у одних нет религиозных убеждений, а у других они есть.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0041-s003.wav
+  start_seconds: 62.125
+  end_seconds: 70.414524
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0041-s004
+  sv: De är dock inte medlemmar i något trossamfund som för register över sina medlemmar.
+  ru: Однако они не состоят ни в какой религиозной общине, ведущей реестр своих членов.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0041-s004.wav
+  start_seconds: 72.166667
+  end_seconds: 79.341633
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0042-s001
+  sv: I Finland upprätthålls ett register över religiösa samfund som baserar sig på religionsfrihetslagen,
+    och de registrerade religiösa samfunden i sin tur för egna register över sina medlemmar.
+  ru: В Финляндии ведут реестр религиозных общин, основанный на законе о свободе вероисповедания, а зарегистрированные
+    религиозные общины, в свою очередь, ведут собственные реестры своих членов.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0042-s001.wav
+  start_seconds: 81.791667
+  end_seconds: 98.092075
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0042-s002
+  sv: Om ett samfund är registrerat som ett religiöst samfund enligt lagen, är det möjligt för det att
+    få understöd för sin verksamhet.
+  ru: Если община зарегистрирована как религиозная община в соответствии с законом, она может получать
+    поддержку своей деятельности.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0042-s002.wav
+  start_seconds: 99.875
+  end_seconds: 110.950918
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0042-s003
+  sv: Registreringen påverkar också till exempel samfundsmedlemmarnas rätt att få undervisning i sin religion
+    enligt läroplanen i skolan.
+  ru: Регистрация также влияет, например, на право членов общины получать в школе обучение своей религии
+    в соответствии с учебной программой.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0042-s003.wav
+  start_seconds: 112.708333
+  end_seconds: 123.853912
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0043-s001
+  sv: I Finland finns det bland annat olika kristna utövare såsom lutheraner, ortodoxer, katoliker och
+    pingstvänner samt utövare av andra världsreligioner såsom muslimer, hinduer, buddister och judar.
+  ru: В Финляндии есть, среди прочего, разные последователи христианства, такие как лютеране, православные,
+    католики и пятидесятники, а также последователи других мировых религий, такие как мусульмане, индуисты,
+    буддисты и иудеи.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0043-s001.wav
+  start_seconds: 126.333333
+  end_seconds: 143.19102
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c03-u0043-s002
+  sv: En del människor är icke-religiösa.
+  ru: Некоторые люди нерелигиозны.
+  scene_id: scene-4
+  visual_cue: 'Complete source-word typography card: icke-religiösa'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - icke-religiösa
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0043-s002.wav
+  start_seconds: 144.958333
+  end_seconds: 148.580646
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/11.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0043-s003
+  sv: Dessutom finns det många människor som upplever att de är andliga, men inte hör till något organiserat
+    trossamfund.
+  ru: Кроме того, есть много людей, которые считают себя духовными, но не принадлежат ни к какой организованной
+    религиозной общине.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0043-s003.wav
+  start_seconds: 150.333333
+  end_seconds: 160.085714
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0044-s001
+  sv: Majoriteten av invånarna i Finland, omkring 3,6 miljoner människor år 2023, hör till den evangelisk-lutherska
+    kyrkan i Finland, som är en protestantisk, kristen kyrka.
+  ru: Большинство жителей Финляндии, около 3,6 миллиона человек в 2023 году, принадлежат к Евангелическо-лютеранской
+    церкви Финляндии (evangelisk-lutherska kyrkan i Finland), которая является протестантской христианской
+    церковью.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: 3,6 miljoner, 2023'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 3,6 miljoner
+  - '2023'
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Majoriteten av invånarna i Finland, omkring tre komma sex miljoner människor år två tusen tjugotre,
+      hör till den evangelisk-lutherska kyrkan i Finland, som är en protestantisk, kristen kyrka.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0044-s001.wav
+  start_seconds: 162.541667
+  end_seconds: 179.051054
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/13.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0044-s002
+  sv: Den näst största kristna kyrkan i Finland är den ortodoxa kyrkan, till vilken omkring 53 000 personer
+    hörde år 2023.
+  ru: Вторая по величине христианская церковь Финляндии — Православная церковь (ortodoxa kyrkan), к которой
+    в 2023 году принадлежали около 53 000 человек.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: 53 000, 2023'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 53 000
+  - '2023'
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Den näst största kristna kyrkan i Finland är den ortodoxa kyrkan, till vilken omkring femtio
+      tre tusen personer hörde år tjugohundratjugotre.
+    reason: Spoken number/date expansion preserves53000 and2023. One bounded full-sentence alternative
+      year expansion removes repeated omkring in ASR with no new omissions. Exact source/Russian display
+      unchanged; listening pending.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0044-s002.wav
+  start_seconds: 180.833333
+  end_seconds: 192.95415
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/14.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0044-s003
+  sv: Den ortodoxa kyrkan i Finland lyder under Konstantinopels patriarkat, som har sitt säte i Istanbul.
+  ru: Православная церковь Финляндии подчиняется Константинопольскому патриархату (Konstantinopels patriarkat),
+    резиденция которого находится в Стамбуле.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0044-s003.wav
+  start_seconds: 194.708333
+  end_seconds: 203.624796
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0045-s001
+  sv: Den lutherska och den ortodoxa kyrkan har i Finland en särställning som baseras på lagen och med
+    stöd av vilken dessa kyrkor tar ut skatt av sina medlemmar.
+  ru: Лютеранская и православная церкви имеют в Финляндии особый статус, основанный на законе и позволяющий
+    этим церквям взимать налог со своих членов.
+  scene_id: scene-6
+  visual_cue: 'Complete source-word typography card: lutherska, ortodoxa, skatt'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - lutherska
+  - ortodoxa
+  - skatt
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0045-s001.wav
+  start_seconds: 206.083333
+  end_seconds: 219.318707
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/16.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0045-s002
+  sv: Övriga religiösa samfund kan begära olika frivilliga donationer av sina medlemmar för att finansiera
+    sin verksamhet.
+  ru: Остальные религиозные общины могут просить у своих членов различные добровольные пожертвования для
+    финансирования своей деятельности.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0045-s002.wav
+  start_seconds: 221.083333
+  end_seconds: 231.532313
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0046-s001
+  sv: Kyrkorna använder skattepengarna för sin verksamhet och till förmån för sina medlemmar, till exempel
+    för att erbjuda tjänster inom barn- och ungdomsarbete och underhålla kyrkobyggnader och begravningsplatser.
+  ru: Церкви используют налоговые средства для своей деятельности и на благо своих членов, например для
+    оказания услуг по работе с детьми и молодёжью и содержания церковных зданий и кладбищ.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0046-s001.wav
+  start_seconds: 234.0
+  end_seconds: 251.205986
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c03-u0046-s002
+  sv: Det är bra att veta att alla som bor i Finland har rätt att ta del av många av kyrkans tjänster.
+  ru: Полезно знать, что все живущие в Финляндии имеют право пользоваться многими церковными услугами.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0046-s002.wav
+  start_seconds: 252.958333
+  end_seconds: 261.456837
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0046-s003
+  sv: Vem som helst kan få hjälp genom kyrkans diakoniarbete, det vill säga hjälparbete, vid till exempel
+    ekonomiska problem eller livskriser.
+  ru: Любой человек может получить помощь через диаконическую, то есть благотворительную, работу церкви,
+    например при финансовых проблемах или жизненных кризисах.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0046-s003.wav
+  start_seconds: 263.208333
+  end_seconds: 274.841531
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0047-s001
+  sv: I Finland sysselsätter den lutherska kyrkan ett stort antal yrkesutbildade som arbetar med barn
+    och unga och som ordnar mångsidig verksamhet för barn i olika åldrar, till exempel familjeklubbar
+    och eftermiddagsklubbar för skolbarn.
+  ru: В Финляндии лютеранская церковь предоставляет работу большому числу специалистов, работающих с детьми
+    и молодёжью и организующих разнообразные занятия для детей разного возраста, например семейные клубы
+    и группы продлённого дня для школьников.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0047-s001.wav
+  start_seconds: 277.291667
+  end_seconds: 296.378469
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c03-u0048-s001
+  sv: Kyrkor ordnar olika religiösa ceremonier för sina medlemmar.
+  ru: Церкви организуют для своих членов различные религиозные церемонии.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0048-s001.wav
+  start_seconds: 298.833333
+  end_seconds: 304.475782
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0048-s002
+  sv: Det kan vara gudstjänster, vigsel, dop eller begravning.
+  ru: Это могут быть богослужения, церемонии заключения брака, крещения или похороны.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0048-s002.wav
+  start_seconds: 306.25
+  end_seconds: 311.26551
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0048-s003
+  sv: För den som är medlem i församlingen är dessa ceremonier gratis.
+  ru: Для члена прихода эти церемонии бесплатны.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0048-s003.wav
+  start_seconds: 313.041667
+  end_seconds: 318.893095
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0049-s001
+  sv: Inom den lutherska kyrkan kan både kvinnor och män vara präster, kyrkoherdar och biskopar.
+  ru: В лютеранской церкви и женщины, и мужчины могут быть пасторами, настоятелями и епископами.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0049-s001.wav
+  start_seconds: 321.375
+  end_seconds: 329.176905
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0050-s001
+  sv: I Finland är staten religiöst neutral, och i landets grundlag hänvisas inte till exempel till det
+    kristliga kulturarvet eller kristna värderingar.
+  ru: В Финляндии государство религиозно нейтрально, а в Конституции страны нет ссылок, например, на христианское
+    культурное наследие или христианские ценности.
+  scene_id: scene-11
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0050-s001.wav
+  start_seconds: 331.666667
+  end_seconds: 344.344762
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0050-s002
+  sv: Staten och kyrkorna är separata aktörer.
+  ru: Государство и церкви — отдельные субъекты.
+  scene_id: scene-11
+  visual_cue: 'Complete source-word typography card: separata aktörer'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - separata aktörer
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0050-s002.wav
+  start_seconds: 346.125
+  end_seconds: 350.234932
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/27.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0051-s001
+  sv: Inom den evangelisk-lutherska kyrkan i Finland finns olika väckelserörelser, till exempel gammallaestadianismen
+    och pietismen.
+  ru: В Евангелическо-лютеранской церкви Финляндии существуют разные движения религиозного пробуждения,
+    например лестадианство консервативного направления (gammallaestadianism) и пиетизм.
+  scene_id: scene-12
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0051-s001.wav
+  start_seconds: 352.708333
+  end_seconds: 363.923571
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0051-s002
+  sv: Dessa rörelser följer seder och värderingar som delvis skiljer sig från den konventionella evangelisk-lutherska
+    traditionen.
+  ru: Эти движения следуют обычаям и ценностям, которые отчасти отличаются от общепринятой евангелическо-лютеранской
+    традиции.
+  scene_id: scene-12
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0051-s002.wav
+  start_seconds: 365.708333
+  end_seconds: 376.296633
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0051-s003
+  sv: I Finland finns det också andra kristna kyrkor och samfund, såsom den katolska kyrkan och pingstförsamlingar.
+  ru: В Финляндии есть также другие христианские церкви и общины, такие как Католическая церковь и пятидесятнические
+    приходы.
+  scene_id: scene-12
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0051-s003.wav
+  start_seconds: 378.083333
+  end_seconds: 387.696395
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0051-s004
+  sv: Alla kristna följer inte samma seder och tolkar inte Bibeln på samma sätt.
+  ru: Не все христиане следуют одним и тем же обычаям, и не все одинаково толкуют Библию.
+  scene_id: scene-12
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0051-s004.wav
+  start_seconds: 389.458333
+  end_seconds: 396.006361
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0051-s005
+  sv: Karakteristiskt för den finländska kristendomen är att den är måttfull till sina läror.
+  ru: Для финляндского христианства характерна умеренность в учении.
+  scene_id: scene-12
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0051-s005.wav
+  start_seconds: 397.791667
+  end_seconds: 405.454252
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0052-s001
+  sv: I Finland finns en skara muslimer som etniskt och nationellt sett samt ur perspektivet för religionsutövning
+    är mycket brokig.
+  ru: Мусульмане в Финляндии образуют группу, очень разнообразную в этническом и национальном отношении,
+    а также с точки зрения религиозной практики.
+  scene_id: scene-13
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0052-s001.wav
+  start_seconds: 407.916667
+  end_seconds: 418.713946
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0052-s002
+  sv: De första muslimerna kom till Finland på 1800-talet.
+  ru: Первые мусульмане приехали в Финляндию в XIX веке.
+  scene_id: scene-13
+  visual_cue: 'Complete source-word typography card: 1800-talet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1800-talet
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: De första muslimerna kom till Finland på artonhundratalet.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0052-s002.wav
+  start_seconds: 420.5
+  end_seconds: 425.86381
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/34.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0052-s003
+  sv: De var tatarer som flyttade från Ryssland.
+  ru: Это были татары, переселившиеся из России.
+  scene_id: scene-13
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0052-s003.wav
+  start_seconds: 427.625
+  end_seconds: 431.456293
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0052-s004
+  sv: Muslimer började anlända till Finland i större mängder från och med början av 1990-talet, då Finland
+    tog emot flyktingar från till exempel Somalia och Irak.
+  ru: Мусульмане начали приезжать в Финляндию в большем количестве с начала 1990-х годов, когда Финляндия
+    принимала беженцев, например из Сомали и Ирака.
+  scene_id: scene-13
+  visual_cue: 'Complete source-word typography card: 1990-talet, Somalia, Irak'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1990-talet
+  - Somalia
+  - Irak
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Muslimer började anlända till Finland i större mängder från och med början av nittonhundranittiotalet,
+      då Finland tog emot flyktingar från till exempel Somalia och Irak.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0052-s004.wav
+  start_seconds: 433.208333
+  end_seconds: 447.627925
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/36.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0053-s001
+  sv: Liksom kristendomen är islam internt brokig och omfattar flertalet olika skolor och riktningar.
+  ru: Как и христианство, ислам внутренне разнообразен и включает множество разных школ и направлений.
+  scene_id: scene-14
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0053-s001.wav
+  start_seconds: 450.083333
+  end_seconds: 458.442517
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0053-s002
+  sv: Av dessa finns många också i Finland.
+  ru: Многие из них есть и в Финляндии.
+  scene_id: scene-14
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0053-s002.wav
+  start_seconds: 460.208333
+  end_seconds: 463.969966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0054-s001
+  sv: Minst 20 myndiga personer kan grunda ett religiöst samfund.
+  ru: Религиозную общину могут основать не менее 20 совершеннолетних человек.
+  scene_id: scene-15
+  visual_cue: 'Complete source-word typography card: 20'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '20'
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Minst tjugo myndiga personer kan grunda ett religiöst samfund.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0054-s001.wav
+  start_seconds: 466.458333
+  end_seconds: 472.100782
+  display_segments: []
+  render_image: studio/media/hb-c03-religion/cards/39.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0054-s002
+  sv: Religiösa grupper måste inte registrera sig som samfund, utan de kan även verka utan att ha registrerat
+    sig.
+  ru: Религиозным группам не обязательно регистрироваться как общины — они могут действовать и без регистрации.
+  scene_id: scene-15
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-religion/narration/hb-c03-u0054-s002.wav
+  start_seconds: 473.875
+  end_seconds: 483.279082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c03-religion/sources/music-bed.flac
+  background_image: studio/media/hb-c03-religion/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 3.682142857142857
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Turku Cathedral Park 2020.jpg — Ninara · CC BY 2.0
+    - Mesmerize — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Turku_Cathedral_Park_2020.jpg
+    description: Turku Cathderal and the Aura River with the Cathedral Park in between.
+    license: CC BY 2.0

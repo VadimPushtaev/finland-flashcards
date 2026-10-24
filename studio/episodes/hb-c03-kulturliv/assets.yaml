@@ -1,0 +1,284 @@
+schema_version: 1
+section_id: hb-c03-kulturliv
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c03-kulturliv/sources/background.jpg
+    sha256: a38d17147290288df41f774fae7199bc6627e99b555859452f04903e4ac09ae5
+    bytes: 1464079
+  source_url: https://commons.wikimedia.org/wiki/File:Musiikkitalo,_Helsinki,_Finland.jpg
+  creator: Alejandro
+  reuse_terms: CC BY 2.0; https://creativecommons.org/licenses/by/2.0
+  required_credits: 'Musiikkitalo, Helsinki, Finland.jpg — Alejandro · CC BY 2.0. https://commons.wikimedia.org/wiki/File:Musiikkitalo,_Helsinki,_Finland.jpg
+    License: https://creativecommons.org/licenses/by/2.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY 2.0.'
+  relevance_verification: Helsingin musiikkitalo Background is decorative context, not identification
+    of a specific historical event. Metadata and identity checked through the Commons API for the linked
+    original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c03-kulturliv/cards/00.png
+    sha256: cc2d74a5516165ebfdf52b4d98492d2b4eceebada563ca8ae1079036c6292309
+    bytes: 14366
+    sentence_id: hb-c03-u0146-s001
+    source_substrings:
+    - originalspråket
+  - path: studio/media/hb-c03-kulturliv/cards/04.png
+    sha256: 7d7f3a9b2d7b2e7d6dc9688f8061c76d8ff71457a9c928cfba541c5672245e55
+    bytes: 16740
+    sentence_id: hb-c03-u0147-s002
+    source_substrings:
+    - professionella
+    - amatörteatrar
+  - path: studio/media/hb-c03-kulturliv/cards/08.png
+    sha256: a2ae7d60e45978c2e418348689c3c27ecfdf390aae4b89fd85647ab26541d1a8
+    bytes: 10488
+    sentence_id: hb-c03-u0148-s003
+    source_substrings:
+    - Ateneum
+    - EMMA
+  - path: studio/media/hb-c03-kulturliv/cards/11.png
+    sha256: c0e17a61059cf1c72423dbf5438d0cf437e00d2c17abd04ccd57250b0dde07e8
+    bytes: 14186
+    sentence_id: hb-c03-u0149-s002
+    source_substrings:
+    - medborgarinstitut
+  - path: studio/media/hb-c03-kulturliv/cards/14.png
+    sha256: 0c9547e953c07f0c598e40204fdff53da119ee7cf803018be17e1f701a22ecc7
+    bytes: 12421
+    sentence_id: hb-c03-u0150-s002
+    source_substrings:
+    - inträdesprov
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c03-kulturliv/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c03-kulturliv/sources/music.mp3
+    sha256: 8cba6bb3da51066ad39520ec218a327bb6222d8fb32bc52f28a1e90b67756f70
+    bytes: 7487656
+  - path: studio/media/hb-c03-kulturliv/sources/music-bed.flac
+    sha256: 3aa6d6220dc3152f44b44b288e1e463d4a37fd6d19a5dd6cf82ca06794f9dc11
+    bytes: 20833913
+    seconds: 155.45833333333334
+    sample_rate: 48000
+    channels: 2
+  title: Gymnopedie No. 1
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100787
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Gymnopedie%20No%201.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Gymnopedie No. 1" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c03-kulturliv/prepare_assets.py
+    master_seconds: 187.089
+    prepared_seconds: 155.45833333333334
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s001.wav
+    sha256: cefa6116f0e24f4b0c4c5df9561d9168ea4ea0d9b402f7e12e32c0ca63d86349
+    bytes: 442412
+    seconds: 5.015510204081632
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0146-s001
+    peak: 0.238555908203125
+    generation_seconds: 9.094184848014265
+    tts_input: I Finland visas filmerna oftast på originalspråket.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s002.wav
+    sha256: 3f3f571aa4672ef30f8cc7ae1769e64ed1aa8389e08168f2d36c29d4aad6f981
+    bytes: 405548
+    seconds: 4.597551020408163
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0146-s002
+    peak: 0.326995849609375
+    generation_seconds: 12.617984495998826
+    tts_input: Dessutom är de textade till finska och svenska.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0146-s003.wav
+    sha256: 4a84d13872b5959b9732d16dcfd1cdd67f744c7b5603ec76f65d6a1797c00e40
+    bytes: 380972
+    seconds: 4.31891156462585
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0146-s003
+    peak: 0.280487060546875
+    generation_seconds: 9.520741454034578
+    tts_input: Ibland är filmer för barn dubbade till finska.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s001.wav
+    sha256: fedb408c678dad4eed102a995d4f48c1496f5acfd546a87c3a126687fd66bb35
+    bytes: 393260
+    seconds: 4.458231292517007
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0147-s001
+    peak: 0.301971435546875
+    generation_seconds: 10.751361499016639
+    tts_input: I de flesta städerna i Finland finns en teater.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s002.wav
+    sha256: 9762086bcc1c14184c5be711161f90e5bbce2194a9e901185f6f80c6ec08c016
+    bytes: 491564
+    seconds: 5.572789115646258
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0147-s002
+    peak: 0.3896484375
+    generation_seconds: 11.376362812996376
+    tts_input: En del teatrar är professionella, andra är amatörteatrar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0147-s003.wav
+    sha256: a128389d8b40e8162d9a500b0bff5a7db354f178a01f59971d3eddc057cbaa77
+    bytes: 694316
+    seconds: 7.87156462585034
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0147-s003
+    peak: 0.28997802734375
+    generation_seconds: 16.846790206967853
+    tts_input: Föreställningsspråket är finska, men på vissa orter finns även svenskspråkiga teatrar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s001.wav
+    sha256: b3bf137be7d56a1508ade214435697227988ba3e459e6c9e0393418aa8e1b72b
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0148-s001
+    peak: 0.360137939453125
+    generation_seconds: 10.516875938046724
+    tts_input: I Finland finns det ett museum på nästan alla orter.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s002.wav
+    sha256: f8e2d0e0873ddf9e30faf0fd7f7d46ef40178da414f72967a61dd72b56eb7de4
+    bytes: 602156
+    seconds: 6.826666666666667
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0148-s002
+    peak: 0.28094482421875
+    generation_seconds: 16.39673129899893
+    tts_input: De presenterar konst, historia, natur, någon person eller ett specialområde.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s003.wav
+    sha256: de2ace6d93b16b9161a4eeb9e3575c314a19c5c1f3e7c5c50df7c30622ca6fe4
+    bytes: 983084
+    seconds: 11.145578231292516
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0148-s003
+    peak: 0.309478759765625
+    generation_seconds: 19.58367244701367
+    tts_input: Finländsk konst presenteras till exempel i Ateneum som hör till Nationalgalleriet och Esbo
+      moderna konstmuseum (EMMA).
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0148-s004.wav
+    sha256: a386822ac276639a7011e9c51a42c181e0ada1be41ebe148d5adca837127b661
+    bytes: 792620
+    seconds: 8.986122448979591
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0148-s004
+    peak: 0.316925048828125
+    generation_seconds: 20.01702684297925
+    tts_input: Med Finlands kulturhistoria kan du bekanta dig till exempel på Finlands nationalmuseum
+      i Helsingfors.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s001.wav
+    sha256: 8c183e65f5da7ca5c484cadb8694f5a13990aaf3122094331ab4839c399b13d4
+    bytes: 442412
+    seconds: 5.015510204081632
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0149-s001
+    peak: 0.255279541015625
+    generation_seconds: 12.226576690969523
+    tts_input: I Finland finns många möjligheter att syssla med musik.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s002.wav
+    sha256: 219b2cfaeff4c577afcdad0c7f0d1a0c1f0ae02ac91ed11f816b743190f6a709
+    bytes: 602156
+    seconds: 6.826666666666667
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0149-s002
+    peak: 0.261688232421875
+    generation_seconds: 18.85742343199672
+    tts_input: På många orter finns medborgarinstitut som ordnar förmånlig musikundervisning.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0149-s003.wav
+    sha256: 870f4fdfd9e655b481d563cad297187a49f512725204e74af398a5557b854e02
+    bytes: 596012
+    seconds: 6.757006802721088
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0149-s003
+    peak: 0.313507080078125
+    generation_seconds: 17.946993188001215
+    tts_input: Dessutom erbjuder även privata musikskolor och -institut musikundervisning.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0150-s001.wav
+    sha256: 70e6838e843b01756cfb2638e13786e0fd2aeda8227ec6016154a9d88414fd5b
+    bytes: 442412
+    seconds: 5.015510204081632
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0150-s001
+    peak: 0.389434814453125
+    generation_seconds: 15.298070517019369
+    tts_input: Medborgarinstitutens musikgrupper är öppna för alla.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kulturliv/narration/hb-c03-u0150-s002.wav
+    sha256: 7f6e2b73c9b5edec1acccf06db7ef9d1cd610ead7cb0606f7253526083ecc60d
+    bytes: 460844
+    seconds: 5.224489795918367
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0150-s002
+    peak: 0.26177978515625
+    generation_seconds: 16.29404217499541
+    tts_input: Du kan ansöka till musikskolorna genom ett inträdesprov.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

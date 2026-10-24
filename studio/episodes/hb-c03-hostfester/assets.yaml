@@ -1,0 +1,188 @@
+schema_version: 1
+section_id: hb-c03-hostfester
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c03-hostfester/sources/background.jpg
+    sha256: 7f4d7a1473aaa2a5d5485538f64833c73ade8ed01305cc4dce6a8732c82c1b63
+    bytes: 3272718
+  source_url: https://commons.wikimedia.org/wiki/File:Oulu_Cemetery_20121103.JPG
+  creator: Estormiz
+  reuse_terms: CC0; http://creativecommons.org/publicdomain/zero/1.0/deed.en
+  required_credits: 'Oulu Cemetery 20121103.JPG — Estormiz · CC0. https://commons.wikimedia.org/wiki/File:Oulu_Cemetery_20121103.JPG
+    License: http://creativecommons.org/publicdomain/zero/1.0/deed.en. Cropped, darkened, blurred and
+    pan/zoom adapted; photograph adaptation retains CC0.'
+  relevance_verification: The memorial place for those buried elsewhere in the Oulu Cemetery is filled
+    with candles at the All Saints' Day (the observance takes place on the Saturday between 31 October
+    and 6 November in Finland). Background is decorative context, not identification of a specific historical
+    event. Metadata and identity checked through the Commons API for the linked original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c03-hostfester/cards/00.png
+    sha256: 29c098eb0cd5be0fcf2e0912ec1ed1724d059c7a9357f7ac812d90b4e9149850
+    bytes: 11580
+    sentence_id: hb-c03-u0079-s001
+    source_substrings:
+    - början av november
+  - path: studio/media/hb-c03-hostfester/cards/02.png
+    sha256: 0f511f60368169cd868956788e143569897a9567cecce5bb8fea8312bd2790d4
+    bytes: 5720
+    sentence_id: hb-c03-u0079-s003
+    source_substrings:
+    - ljus
+  - path: studio/media/hb-c03-hostfester/cards/04.png
+    sha256: 64a1549965b2e3f8c46e28bd007900ffb9ffb1c618312096ee1f06e93590a2ac
+    bytes: 13090
+    sentence_id: hb-c03-u0079-s005
+    source_substrings:
+    - högtidlig och stilla fest
+  - path: studio/media/hb-c03-hostfester/cards/05.png
+    sha256: aa972433d59c25dcc503f65b9739beb977a22732df6eb859fa8d2ae9cdca3175
+    bytes: 12282
+    sentence_id: hb-c03-u0080-s001
+    source_substrings:
+    - andra söndagen i november
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c03-hostfester/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c03-hostfester/sources/music.mp3
+    sha256: c775b8d916b1a3c3c046465d688fb7a7bde8d825d123fbe343a8aa4d02172090
+    bytes: 5781640
+  - path: studio/media/hb-c03-hostfester/sources/music-bed.flac
+    sha256: 787f024f5474ea808b1d8a9d6a1792b705e70a834ddab73778a37582d2965130
+    bytes: 13611035
+    seconds: 78.625
+    sample_rate: 48000
+    channels: 2
+  title: Winter Reflections
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100580
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Winter%20Reflections.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Winter Reflections" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c03-hostfester/prepare_assets.py
+    master_seconds: 142.053878
+    prepared_seconds: 78.625
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0079-s001.wav
+    sha256: 9722245345354c4c5cbcdfd64484a99359f824684c0111cfad93576d25886df9
+    bytes: 380972
+    seconds: 4.31891156462585
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0079-s001
+    peak: 0.43804931640625
+    generation_seconds: 19.27951026102528
+    tts_input: Alla helgons dag firas i början av november.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0079-s002.wav
+    sha256: 32bbcfbe9cee1d1068e3a3c17fa2d2ff3051a7a3a65783f99200b95b45dc3d7a
+    bytes: 239660
+    seconds: 2.716734693877551
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0079-s002
+    peak: 0.2635498046875
+    generation_seconds: 17.88331384398043
+    tts_input: Då minns man sina avlidna.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0079-s003.wav
+    sha256: e0cb5d0c4ec020f2d7ad632a9887e68c9c54f4fd7a104e76bee9b82d52dd39c4
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0079-s003
+    peak: 0.319427490234375
+    generation_seconds: 20.97929134295555
+    tts_input: Människorna tänder ljus på sina anhörigas gravar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0079-s004.wav
+    sha256: 0c18a76942a7500b80eabf3e94b66a68948b7f02eae7cc0ac0ccc113dd2ef5e3
+    bytes: 282668
+    seconds: 3.2043537414965986
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0079-s004
+    peak: 0.413787841796875
+    generation_seconds: 14.178713575995062
+    tts_input: Samtidigt firas också Halloween.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0079-s005.wav
+    sha256: 185ecfa71841729cc3c021a51e6d66ac7b8d16232d7b9a30f53b2fff2b6d3f99
+    bytes: 712748
+    seconds: 8.080544217687075
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0079-s005
+    peak: 0.396942138671875
+    generation_seconds: 35.41098984098062
+    tts_input: Alla helgons dag är emellertid inte en karneval som Halloween, utan en högtidlig och stilla
+      fest.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0080-s001.wav
+    sha256: 47fabc589d3c42c37d5427d915758cd41f66624ba257b9a3ca7e7051e6ee422f
+    bytes: 454700
+    seconds: 5.154829931972789
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0080-s001
+    peak: 0.367645263671875
+    generation_seconds: 27.6705519950483
+    tts_input: Farsdag firas i Finland den andra söndagen i november.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-hostfester/narration/hb-c03-u0080-s002.wav
+    sha256: 4a80f4c837d3be40447c5bf81448071e2e78bfd6bc7db1225a4ba4415f3ced2d
+    bytes: 313388
+    seconds: 3.5526530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0080-s002
+    peak: 0.337615966796875
+    generation_seconds: 16.984795536031015
+    tts_input: Far firas med många slags presenter.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

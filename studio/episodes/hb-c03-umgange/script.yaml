@@ -1,0 +1,1051 @@
+schema_version: 1
+section_id: hb-c03-umgange
+chapter_id: hb-c03
+title_sv: Hälsningar, punktlighet och besök
+title_ru: Приветствия, пунктуальность и визиты
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-umgange.yaml
+example_only: false
+source_section_sha256: 724727bbab58ef04b9405d98b4b6112421360778b8900332ce22b0dfac82ea18
+translation_file_sha256: 06405d68ad7f49539d3eece647962f93eeef46d6287e426a3c05e8f14e1d8648
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter3 plum #342736, ivory #faf3e8, lilac #d8c8dc, warm gold #e2bb85,
+    separator #62506a. Liberation Sans Bold48 and Regular40; stable right bilingual panel and steady optional
+    left source-word graphics.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Porvoo - Borgå 40.jpg by FrDr continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.6970238095238095. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Morning by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 153.313 seconds; prepared lossless stereo bed 377.583 seconds. Repeat count
+    2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Greetings and eye contact
+- id: scene-2
+  description: Handshakes and respect
+- id: scene-3
+  description: Hugs and cheek kisses
+- id: scene-4
+  description: Punctuality
+- id: scene-5
+  description: Queues and urgent care
+- id: scene-6
+  description: Equal place in the queue
+- id: scene-7
+  description: Names and equal treatment
+- id: scene-8
+  description: Modesty and consideration
+- id: scene-9
+  description: Planning visits
+- id: scene-10
+  description: Removing shoes indoors
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c03-u0030-s001
+  sv: När man hälsar i Finland ser man varandra i ögonen och tar ofta varandra i hand.
+  ru: При приветствии в Финляндии смотрят друг другу в глаза и часто пожимают руки.
+  scene_id: scene-1
+  visual_cue: 'Complete source-word typography card: ögonen, hand'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - ögonen
+  - hand
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0030-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.494626
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0030-s002
+  sv: Om den andra är obekant kan man samtidigt presentera sig, med andra ord säga sitt namn.
+  ru: Если другой человек незнаком, можно одновременно представиться, иными словами назвать своё имя.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0030-s002.wav
+  start_seconds: 12.25
+  end_seconds: 20.121565
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0030-s003
+  sv: Att skaka hand hänger också samman med jämställdhet och likabehandling, det vill säga i Finland
+    tar alla alla i hand, och det är inte viktigt vem som tar i hand först.
+  ru: Рукопожатие также связано с гендерным равенством и равным обращением, то есть в Финляндии все пожимают
+    руки всем и неважно, кто делает это первым.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0030-s003.wav
+  start_seconds: 21.875
+  end_seconds: 35.597993
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0031-s001
+  sv: Handskakning används inte bara när man presenterar sig, utan också för att bekräfta avtal eller
+    som ett tecken på att en tvist är löst.
+  ru: Рукопожатие используют не только при знакомстве, но и для подтверждения договорённостей или в знак
+    того, что спор разрешён.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0031-s001.wav
+  start_seconds: 38.083333
+  end_seconds: 49.577211
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0031-s002
+  sv: Genom att skaka hand kan man uttrycka förtroende och respekt för den andra.
+  ru: Рукопожатием можно выразить доверие и уважение к другому человеку.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0031-s002.wav
+  start_seconds: 51.333333
+  end_seconds: 57.811701
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0031-s003
+  sv: Handskakning är i Finland ett så etablerat sätt att hälsa och också bekräfta avtal att om någon
+    vägrar att ta i hand kan det göra att den andra blir förvånad eller sårad.
+  ru: Рукопожатие в Финляндии настолько привычный способ приветствия и подтверждения договорённостей,
+    что отказ пожать руку может удивить или обидеть другого человека.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0031-s003.wav
+  start_seconds: 59.583333
+  end_seconds: 74.072585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0031-s004
+  sv: Att vägra skaka hand med en person av ett annat kön kan betraktas som oartigt.
+  ru: Отказ пожать руку человеку другого пола может считаться невежливым.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0031-s004.wav
+  start_seconds: 75.833333
+  end_seconds: 82.79932
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0032-s001
+  sv: Att hälsa med en kram har under de senaste åren blivit vanligare bland vänner och bekanta.
+  ru: В последние годы приветствие объятием стало более распространённым среди друзей и знакомых.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0032-s001.wav
+  start_seconds: 85.25
+  end_seconds: 92.912585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0032-s002
+  sv: Kramen är ofta snabb och lätt.
+  ru: Объятие часто бывает быстрым и лёгким.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0032-s002.wav
+  start_seconds: 94.666667
+  end_seconds: 97.731701
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0032-s003
+  sv: Kindpussar brukar man inte ge i Finland.
+  ru: В Финляндии обычно не целуют в щёку.
+  scene_id: scene-3
+  visual_cue: 'Complete source-word typography card: Kindpussar'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Kindpussar
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0032-s003.wav
+  start_seconds: 99.5
+  end_seconds: 103.331293
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/09.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s001
+  sv: Punktlighet är viktig i Finland liksom i många andra länder i Nordeuropa.
+  ru: Пунктуальность важна в Финляндии, как и во многих других странах Северной Европы.
+  scene_id: scene-4
+  visual_cue: 'Complete source-word typography card: Punktlighet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Punktlighet
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s001.wav
+  start_seconds: 105.791667
+  end_seconds: 112.339694
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/10.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s002
+  sv: Människor förväntas komma i tid till avtalade möten.
+  ru: От людей ожидают своевременного прибытия на назначенные встречи.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s002.wav
+  start_seconds: 114.125
+  end_seconds: 119.21017
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s003
+  sv: Möten börjar vanligtvis exakt på den angivna tiden.
+  ru: Встречи обычно начинаются точно в указанное время.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s003.wav
+  start_seconds: 121.0
+  end_seconds: 125.806531
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s004
+  sv: Det anses oartigt att komma för sent.
+  ru: Опаздывать считается невежливым.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s004.wav
+  start_seconds: 127.583333
+  end_seconds: 131.066327
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s005
+  sv: Uppfattningen är att en person är respektlös mot den andra och slösar hens tid genom att komma för
+    sent till ett avtalat möte.
+  ru: Считается, что, опаздывая на назначенную встречу, человек проявляет неуважение к другому и тратит
+    его время впустую.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s005.wav
+  start_seconds: 132.833333
+  end_seconds: 143.351973
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s006
+  sv: I Finland är man också i övrigt mycket medveten om klockslag och tidens gång.
+  ru: В Финляндии и в других отношениях очень внимательно следят за временем на часах и его течением.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s006.wav
+  start_seconds: 145.125
+  end_seconds: 151.951667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0033-s007
+  sv: Ibland kan människor skynda sig och stressa över tiden i onödan.
+  ru: Иногда люди могут без необходимости спешить и переживать из-за времени.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0033-s007.wav
+  start_seconds: 153.708333
+  end_seconds: 159.559762
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s001
+  sv: När man i Finland till exempel besöker en läkare eller en myndighet, eller handlar i en affär måste
+    man ofta stå i kö.
+  ru: Когда в Финляндии, например, посещают врача или орган власти либо делают покупки в магазине, часто
+    приходится стоять в очереди.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s001.wav
+  start_seconds: 162.041667
+  end_seconds: 172.142347
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s002
+  sv: På många ställen används system med könummer.
+  ru: Во многих местах используют систему номеров очереди.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: könummer'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - könummer
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s002.wav
+  start_seconds: 173.916667
+  end_seconds: 178.096259
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/18.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s003
+  sv: När människorna ställer sig i kö tar de en lapp från en apparat.
+  ru: Вставая в очередь, люди берут талон из аппарата.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s003.wav
+  start_seconds: 179.875
+  end_seconds: 185.796088
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s004
+  sv: Allas ärenden sköts i nummerordning.
+  ru: Дела всех посетителей решают в порядке номеров.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s004.wav
+  start_seconds: 187.583333
+  end_seconds: 191.066327
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s005
+  sv: Även om inga könummer används, väntar människorna på sin tur i den ordning de ställde sig i kö.
+  ru: Даже если номера очереди не используют, люди ждут своей очереди в том порядке, в котором в неё встали.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s005.wav
+  start_seconds: 192.833333
+  end_seconds: 201.192517
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s006
+  sv: Ett undantag är sjukhusens jour, där läkaren avgör i vilken ordning patienterna ska få vård.
+  ru: Исключение составляют отделения неотложной помощи больниц, где врач определяет порядок оказания
+    помощи пациентам.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s006.wav
+  start_seconds: 202.958333
+  end_seconds: 211.108537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0034-s007
+  sv: De mest akuta fallen får vård snabbast.
+  ru: В самых неотложных случаях помощь оказывают быстрее всего.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: akuta fallen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - akuta fallen
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0034-s007.wav
+  start_seconds: 212.875
+  end_seconds: 216.497313
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/23.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0035-s001
+  sv: Att gå före i kön anses mycket oartigt, eftersom idén är att alla som köar är lika mycket värda.
+  ru: Проходить вперёд без очереди считается очень невежливым, поскольку смысл очереди в том, что все
+    стоящие в ней равноценны.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Att gå före i kön anses mycket o-artigt, eftersom idén är att alla som köar är lika mycket värda.
+    reason: Bounded full-sentence o-artigt comparison recovers the target and queue phrase without new
+      omissions. Exact source display and meaning preserved; remaining köar diagnostic and listening pending.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0035-s001.wav
+  start_seconds: 218.958333
+  end_seconds: 227.596156
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0035-s002
+  sv: Om någon går före höjer hen sig över de andra och anser att de gemensamma reglerna inte gäller hen.
+  ru: Проходя вперёд без очереди, человек ставит себя выше других и считает, что общие правила на него
+    не распространяются.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0035-s002.wav
+  start_seconds: 229.375
+  end_seconds: 237.664524
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0036-s001
+  sv: Också i övrigt är likvärdighet viktig för människorna i Finland.
+  ru: И в других отношениях равная ценность людей важна для жителей Финляндии.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0036-s001.wav
+  start_seconds: 240.125
+  end_seconds: 246.046088
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0036-s002
+  sv: I sederna och bruken tar den sig uttryck i bland annat det faktum att det i Finland inte längre
+    är vanligt att säga ni.
+  ru: В обычаях и традициях это проявляется, среди прочего, в том, что в Финляндии больше не принято обращаться
+    на «вы».
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0036-s002.wav
+  start_seconds: 247.833333
+  end_seconds: 257.864354
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0036-s003
+  sv: Människor tilltalas för det mesta med förnamnet, också chefer och lärare.
+  ru: К людям чаще всего обращаются по имени, в том числе к начальникам и учителям.
+  scene_id: scene-7
+  visual_cue: 'Complete source-word typography card: förnamnet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - förnamnet
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0036-s003.wav
+  start_seconds: 259.625
+  end_seconds: 266.033707
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/28.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0036-s004
+  sv: Människor i ledande ställning ges ganska lite särbehandling i Finland.
+  ru: В Финляндии руководящее положение человека довольно мало влияет на то, как с ним обращаются.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0036-s004.wav
+  start_seconds: 267.791667
+  end_seconds: 273.991395
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0037-s001
+  sv: Många finländare uppskattar anspråkslöshet.
+  ru: Многие жители Финляндии ценят скромность.
+  scene_id: scene-8
+  visual_cue: 'Complete source-word typography card: anspråkslöshet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - anspråkslöshet
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0037-s001.wav
+  start_seconds: 276.458333
+  end_seconds: 280.707585
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/30.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0037-s002
+  sv: Människor framhäver sig inte i gruppen, de talar inte högljutt och skryter inte.
+  ru: Люди не выделяют себя в группе, не говорят громко и не хвастаются.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0037-s002.wav
+  start_seconds: 282.458333
+  end_seconds: 289.35466
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0037-s003
+  sv: I Finland anses det vara välartat att ta hänsyn till och lyssna på andra.
+  ru: В Финляндии считается признаком воспитанности учитывать интересы других и слушать их.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0037-s003.wav
+  start_seconds: 291.125
+  end_seconds: 297.742687
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0037-s004
+  sv: Också arbetsamhet och flit värdesätts högt.
+  ru: Усердие и трудолюбие тоже высоко ценятся.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0037-s004.wav
+  start_seconds: 299.5
+  end_seconds: 303.679592
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0038-s001
+  sv: I Finland ska man alltid på förhand komma överens om besök hos andra, även hos goda vänner.
+  ru: В Финляндии о визитах к другим людям, даже к хорошим друзьям, всегда следует договариваться заранее.
+  scene_id: scene-9
+  visual_cue: 'Complete source-word typography card: på förhand'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - på förhand
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0038-s001.wav
+  start_seconds: 306.166667
+  end_seconds: 314.247211
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/34.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0038-s002
+  sv: Finländare lägger speciellt stort värde på sitt privatliv och sitt eget lugn.
+  ru: Жители Финляндии придают особенно большое значение своей частной жизни и собственному покою.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0038-s002.wav
+  start_seconds: 316.0
+  end_seconds: 322.826667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0039-s001
+  sv: Finländare använder inte skor inomhus.
+  ru: Жители Финляндии не носят обувь в помещении.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0039-s001.wav
+  start_seconds: 325.291667
+  end_seconds: 329.053299
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0039-s002
+  sv: Det är artigt att ta av sig skorna när du går in i någons hem.
+  ru: Входя в чей-либо дом, вежливо снять обувь.
+  scene_id: scene-10
+  visual_cue: 'Complete source-word typography card: ta av sig skorna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - ta av sig skorna
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0039-s002.wav
+  start_seconds: 330.833333
+  end_seconds: 336.266803
+  display_segments: []
+  render_image: studio/media/hb-c03-umgange/cards/37.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0039-s003
+  sv: När du besöker ett finländskt hem, ta av dig skorna eller fråga om du kan ha dem på.
+  ru: При посещении финляндского дома снимите обувь или спросите, можно ли остаться в ней.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-umgange/narration/hb-c03-u0039-s003.wav
+  start_seconds: 338.041667
+  end_seconds: 345.355952
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c03-umgange/sources/music-bed.flac
+  background_image: studio/media/hb-c03-umgange/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.6970238095238095
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Porvoo - Borgå 40.jpg — FrDr · CC BY-SA 4.0
+    - Morning — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Porvoo_-_Borg%C3%A5_40.jpg
+    description: Porvoo - Borgå
+    license: CC BY-SA 4.0

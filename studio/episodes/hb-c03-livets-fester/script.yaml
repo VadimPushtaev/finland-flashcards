@@ -1,0 +1,1090 @@
+schema_version: 1
+section_id: hb-c03-livets-fester
+chapter_id: hb-c03
+title_sv: Fester genom livet
+title_ru: Праздники на протяжении жизни
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-livets-fester.yaml
+example_only: false
+source_section_sha256: a2c9a1edd8ab2633c6bd9c0e676496f234c383c63ed2d1bf77fb25c6cbba65c9
+translation_file_sha256: eeb82c17a8eac8c5bfe5a1a8aeb82dfd4043988257a49bb5a130b42fb25e03cf
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080/24fps. Chapter3 plum #342736, ivory #faf3e8, lilac #d8c8dc, warm gold #e2bb85,
+    separator #62506a. Liberation Sans Bold48 and Regular40; stable right bilingual panel and steady optional
+    left source-word graphics.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki Old Church - DSC03790.JPG by Daderot continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.9145833333333333. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Promises to Keep by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 304.065 seconds; prepared lossless stereo bed 408.042 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Celebrations across the lifespan
+- id: scene-2
+  description: Baptism
+- id: scene-3
+  description: Naming celebrations
+- id: scene-4
+  description: Godparents
+- id: scene-5
+  description: Confirmation
+- id: scene-6
+  description: Nonreligious youth camps
+- id: scene-7
+  description: Graduation
+- id: scene-8
+  description: Birthdays
+- id: scene-9
+  description: Funerals
+- id: scene-10
+  description: Weddings
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+sentences:
+- sentence_id: hb-c03-u0093-s001
+  sv: Till människans levnadslopp hör också många viktiga fester som inte är beroende av kalendern och
+    som släkt, familj och vänner firar tillsammans.
+  ru: В жизни человека есть также много важных праздников, не зависящих от календаря, которые родственники,
+    семья и друзья отмечают вместе.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0093-s001.wav
+  start_seconds: 3.25
+  end_seconds: 15.788776
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0154-s001
+  sv: Vid dopet får barnet ett namn och blir en del av församlingen.
+  ru: При крещении ребёнок получает имя и становится членом церковной общины.
+  scene_id: scene-2
+  visual_cue: 'Complete source-word typography card: dopet, namn'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - dopet
+  - namn
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0154-s001.wav
+  start_seconds: 18.25
+  end_seconds: 23.753129
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/01.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0094-s001
+  sv: Föräldrar som inte hör till kyrkan kan välja att ordna en namngivningsfest i stället, där familj
+    och släktingar samlas för att fira det lilla barnet.
+  ru: Родители, не принадлежащие к церкви, могут вместо этого выбрать праздник наречения имени, на котором
+    семья и родственники собираются, чтобы устроить праздник в честь маленького ребёнка.
+  scene_id: scene-3
+  visual_cue: 'Complete source-word typography card: namngivningsfest'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - namngivningsfest
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0094-s001.wav
+  start_seconds: 26.208333
+  end_seconds: 38.956088
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/02.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0094-s002
+  sv: Dopet eller namngivningsfesten ordnas hemma eller i kyrkan eller i någon annan festlokal och de
+    närmaste släktingarna och vännerna bjuds in.
+  ru: Крещение или праздник наречения имени устраивают дома, в церкви или другом праздничном помещении,
+    приглашая ближайших родственников и друзей.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0094-s002.wav
+  start_seconds: 40.708333
+  end_seconds: 52.48085
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0095-s001
+  sv: Två faddrar utses åt barnet bland vännerna eller släktingarna.
+  ru: Среди друзей или родственников ребёнку выбирают двух крёстных родителей.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0095-s001.wav
+  start_seconds: 54.958333
+  end_seconds: 60.670442
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0095-s002
+  sv: Ursprungligen var fadderns uppgift att vara en slags andlig förälder åt barnet och sköta om barnets
+    kristna fostran.
+  ru: Первоначально задача крёстного заключалась в том, чтобы быть своего рода духовным родителем ребёнка
+    и заботиться о его христианском воспитании.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0095-s002.wav
+  start_seconds: 62.458333
+  end_seconds: 72.559014
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0095-s003
+  sv: I dag tänker man mera att barnet är en särskilt viktig människa i fadderns liv och faddern följer
+    barnets uppväxt.
+  ru: Сегодня скорее считают, что ребёнок — особенно важный человек в жизни крёстного, который следит
+    за его взрослением.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0095-s003.wav
+  start_seconds: 74.333333
+  end_seconds: 84.225034
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0096-s001
+  sv: I Finland kan barn konfirmera sig det år de fyller 15.
+  ru: В Финляндии дети могут пройти конфирмацию в том году, когда им исполняется 15 лет.
+  scene_id: scene-5
+  visual_cue: 'Complete source-word typography card: 15'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '15'
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: I Finland kan barn konfirmera sig det år de fyller femton.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0096-s001.wav
+  start_seconds: 86.708333
+  end_seconds: 91.793503
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/07.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0096-s002
+  sv: Konfirmationen är en ceremoni som hålls i kyrkan.
+  ru: Конфирмация — церемония, проводимая в церкви.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0096-s002.wav
+  start_seconds: 93.583333
+  end_seconds: 98.180884
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0096-s003
+  sv: Där bekräftas den ungas kristna tro och medlemskapet i församlingen.
+  ru: На ней подтверждаются христианская вера подростка и его членство в церковной общине.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0096-s003.wav
+  start_seconds: 99.958333
+  end_seconds: 105.949082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0096-s004
+  sv: Konfirmationen föregås av en skriftskola som innehåller religionsundervisning och som nuförtiden
+    ofta hålls i form av ett sommarläger.
+  ru: Конфирмации предшествуют конфирмационные курсы (skriftskola), включающие религиозное обучение и
+    в настоящее время часто проводимые в форме летнего лагеря.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0096-s004.wav
+  start_seconds: 107.708333
+  end_seconds: 119.55051
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0096-s005
+  sv: En stor del av de unga deltar i skriftskollägret och konfirmationen för att det är roligt på lägret,
+    för att föräldrarna förväntar sig att barnen ska göra det och för att det efter konfirmationen ordnas
+    en fest hemma där den unga får presenter.
+  ru: Значительная часть молодых людей участвует в конфирмационном лагере и конфирмации, потому что в
+    лагере весело, родители ожидают этого от детей, а после конфирмации дома устраивают праздник, на котором
+    молодой человек получает подарки.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0096-s005.wav
+  start_seconds: 121.333333
+  end_seconds: 141.047075
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c03-u0097-s001
+  sv: En del unga deltar vid samma ålder i ett Prometheus-läger som är ett religiöst och politiskt obundet
+    livssynsläger.
+  ru: Некоторые молодые люди в том же возрасте участвуют в лагере «Прометей» (Prometheus-läger) — мировоззренческом
+    лагере, независимом от религии и политики.
+  scene_id: scene-6
+  visual_cue: 'Complete source-word typography card: Prometheus-läger'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Prometheus-läger
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0097-s001.wav
+  start_seconds: 143.5
+  end_seconds: 153.53102
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/12.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0097-s002
+  sv: Lägrets syfte är att uppmuntra de unga till att utveckla sin egen livssyn.
+  ru: Цель лагеря — побудить молодых людей развивать собственное мировоззрение.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0097-s002.wav
+  start_seconds: 155.291667
+  end_seconds: 161.770034
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0097-s003
+  sv: Efter lägret hålls en fest hemma där den unga får presenter.
+  ru: После лагеря дома устраивают праздник, на котором молодой человек получает подарки.
+  scene_id: scene-6
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0097-s003.wav
+  start_seconds: 163.541667
+  end_seconds: 168.626837
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s001
+  sv: När en ung människa gått igenom gymnasiet och klarat studentskrivningarna får hon avgångsbetyg från
+    gymnasiet och ett studentbetyg.
+  ru: Когда молодой человек заканчивает гимназию (gymnasium) и сдаёт выпускные экзамены, он получает аттестат
+    об окончании гимназии и свидетельство о сдаче выпускного экзамена.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s001.wav
+  start_seconds: 171.083333
+  end_seconds: 182.019932
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s002
+  sv: Med betyget kan hon ansöka om studieplats vid ett universitet eller en högskola.
+  ru: С этим свидетельством можно подать заявление на учебное место в университете или другом вузе.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s002.wav
+  start_seconds: 183.791667
+  end_seconds: 190.757653
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s003
+  sv: Studentexamen firas både i skolan och hemma hos studenten.
+  ru: Сдачу выпускного экзамена празднуют и в школе, и дома у выпускника.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s003.wav
+  start_seconds: 192.541667
+  end_seconds: 197.835816
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s004
+  sv: I skolan får den unga sitt betyg och en studentmössa.
+  ru: В школе молодой человек получает своё свидетельство и выпускную фуражку.
+  scene_id: scene-7
+  visual_cue: 'Complete source-word typography card: studentmössa'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - studentmössa
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s004.wav
+  start_seconds: 199.625
+  end_seconds: 204.292211
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/18.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s005
+  sv: Hemma väntar en kaffebjudning och presenter.
+  ru: Дома ждут угощение с кофе и подарки.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s005.wav
+  start_seconds: 206.083333
+  end_seconds: 210.053946
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s006
+  sv: Släktingar och vänner är inbjudna.
+  ru: Родственники и друзья приглашены.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s006.wav
+  start_seconds: 211.833333
+  end_seconds: 215.246667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0098-s007
+  sv: De som utexamineras från yrkesskolor firar likadana fester.
+  ru: Выпускники профессиональных училищ отмечают такие же праздники.
+  scene_id: scene-7
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0098-s007.wav
+  start_seconds: 217.0
+  end_seconds: 222.503129
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0099-s001
+  sv: I Finland firas framför allt barns födelsedagar.
+  ru: В Финляндии отмечают прежде всего детские дни рождения.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0099-s001.wav
+  start_seconds: 224.958333
+  end_seconds: 229.555884
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0099-s002
+  sv: Barnen kan bjuda in sina kompisar på kalas.
+  ru: Дети могут приглашать своих приятелей на праздник.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0099-s002.wav
+  start_seconds: 231.333333
+  end_seconds: 235.512925
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0099-s003
+  sv: Många firar också med familj, släktingar och faddrar.
+  ru: Многие отмечают его также с семьёй, родственниками и крёстными.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0099-s003.wav
+  start_seconds: 237.291667
+  end_seconds: 242.307177
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0099-s004
+  sv: På kalasen leker man, äter kaka och ger presenter.
+  ru: На праздниках играют, едят торт и дарят подарки.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0099-s004.wav
+  start_seconds: 244.083333
+  end_seconds: 248.611224
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0099-s005
+  sv: Även vuxna kan ordna kalas för att fira sin födelsedag, särskilt när de fyller jämna år som 50,
+    60 eller 70.
+  ru: Взрослые тоже могут устроить праздник в честь своего дня рождения, особенно в юбилейные годы, например
+    когда им исполняется 50, 60 или 70 лет.
+  scene_id: scene-8
+  visual_cue: 'Complete source-word typography card: 50, 60, 70'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '50'
+  - '60'
+  - '70'
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override:
+    text: Även vuxna kan ordna kalas för att fira sin födelsedag, särskilt när de fyller jämna år som
+      femtio, sextio eller sjuttio.
+    reason: Spell the exact source number in Swedish for local synthesis; display text and spoken meaning
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0099-s005.wav
+  start_seconds: 250.375
+  end_seconds: 261.102619
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/26.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0100-s001
+  sv: När en människa dör ordnar släktingarna begravning i en kyrka, ett kapell eller någon annan lokal.
+  ru: Когда человек умирает, родственники организуют похороны в церкви, часовне или другом помещении.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0100-s001.wav
+  start_seconds: 263.583333
+  end_seconds: 272.081837
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0100-s002
+  sv: Till begravningen kommer familj och släktingar, den dödas vänner och ibland också arbetskamrater.
+  ru: На похороны приходят семья и родственники, друзья умершего, а иногда и коллеги.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0100-s002.wav
+  start_seconds: 273.833333
+  end_seconds: 282.401497
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0100-s003
+  sv: Efter den kyrkliga förrättningen samlas begravningsföljet till en minnesstund där man äter och dricker
+    kaffe och minns den avlidne, alltså den som dött.
+  ru: После церковного обряда участники похорон собираются на поминки, где едят, пьют кофе и вспоминают
+    покойного, то есть умершего человека.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0100-s003.wav
+  start_seconds: 284.166667
+  end_seconds: 296.496463
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0100-s004
+  sv: I Finland kan begravningen ordnas enligt den religion som den avlidne hörde till.
+  ru: В Финляндии похороны можно организовать в соответствии с религией, к которой принадлежал умерший.
+  scene_id: scene-9
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0100-s004.wav
+  start_seconds: 298.25
+  end_seconds: 305.215986
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0100-s005
+  sv: Begravningen kan också vara sekulär, om den avlidne inte hörde till något religiöst samfund.
+  ru: Похороны могут быть также светскими, если умерший не принадлежал ни к какой религиозной общине.
+  scene_id: scene-9
+  visual_cue: 'Complete source-word typography card: sekulär'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - sekulär
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0100-s005.wav
+  start_seconds: 307.0
+  end_seconds: 315.010884
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/31.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s001
+  sv: Vid vigseln är ofta släktingar och vänner närvarande.
+  ru: На церемонии заключения брака часто присутствуют родственники и друзья.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s001.wav
+  start_seconds: 317.5
+  end_seconds: 322.44585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s002
+  sv: Många ordnar en bröllopsfest efteråt där man äter, dansar och firar brudparet med olika programnummer.
+  ru: Многие затем устраивают свадебный праздник, где едят, танцуют и чествуют молодожёнов различными
+    номерами программы.
+  scene_id: scene-10
+  visual_cue: 'Complete source-word typography card: bröllopsfest'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - bröllopsfest
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s002.wav
+  start_seconds: 324.208333
+  end_seconds: 333.124796
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/33.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s003
+  sv: Till programmet hör ofta tal, lekar och uppträdanden.
+  ru: В программу часто входят речи, игры и выступления.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s003.wav
+  start_seconds: 334.875
+  end_seconds: 339.681531
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s004
+  sv: Brudparet får presenter.
+  ru: Молодожёны получают подарки.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s004.wav
+  start_seconds: 341.458333
+  end_seconds: 344.035748
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s005
+  sv: Bröllop är privata tillställningar dit man kan gå bara om man är bjuden.
+  ru: Свадьбы — частные мероприятия, на которые можно прийти лишь по приглашению.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s005.wav
+  start_seconds: 345.791667
+  end_seconds: 352.270034
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s006
+  sv: Eftersom det bjuds mat och dryck på bröllopsfesten kan det bli väldigt dyrt att ordna bröllop.
+  ru: Поскольку на свадебном празднике угощают едой и напитками, организация свадьбы может обойтись очень
+    дорого.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s006.wav
+  start_seconds: 354.041667
+  end_seconds: 361.913231
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s007
+  sv: Därför bjuder de flesta inte alla sina bekanta till bröllopet.
+  ru: Поэтому большинство не приглашает на свадьбу всех своих знакомых.
+  scene_id: scene-10
+  visual_cue: Leave the foreground open to the topic-related continuous photo; preserve exact bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s007.wav
+  start_seconds: 363.666667
+  end_seconds: 369.169796
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c03-u0155-s008
+  sv: Många par åker på bröllopsresa efter bröllopsfesten.
+  ru: Многие пары после свадебного праздника отправляются в свадебное путешествие.
+  scene_id: scene-10
+  visual_cue: 'Complete source-word typography card: bröllopsresa'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - bröllopsresa
+  pronunciation_notes:
+  - Check exact numbers, proper names and Swedish compounds in complete-video listening; ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-livets-fester/narration/hb-c03-u0155-s008.wav
+  start_seconds: 370.958333
+  end_seconds: 375.834524
+  display_segments: []
+  render_image: studio/media/hb-c03-livets-fester/cards/39.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c03-livets-fester/sources/music-bed.flac
+  background_image: studio/media/hb-c03-livets-fester/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.9145833333333333
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finland – Lärobok i samhällsorientering — © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki Old Church - DSC03790.JPG — Daderot · CC0
+    - Promises to Keep — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Old_Church_-_DSC03790.JPG
+    description: Helsinki Old Church, Helsinki, Finland.
+    license: CC0
