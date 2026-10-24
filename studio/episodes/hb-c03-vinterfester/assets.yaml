@@ -1,0 +1,234 @@
+schema_version: 1
+section_id: hb-c03-vinterfester
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c03-vinterfester/sources/background.jpg
+    sha256: 6b08766dd6b62df990133f0b3469d5dfbaf31d7afa007ae31dad00c6c9c6b792
+    bytes: 4900177
+  source_url: https://commons.wikimedia.org/wiki/File:New_Year%27s_fireworks_in_front_of_Helsinki_Cathedral.jpg
+  creator: JIP
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: 'New Year''s fireworks in front of Helsinki Cathedral.jpg — JIP · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:New_Year%27s_fireworks_in_front_of_Helsinki_Cathedral.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: New Year's fireworks in front of the Helsinki Cathedral in Helsinki, Uusimaa,
+    Finland, about one minute past midnight on New Year's Day. Background is decorative context, not identification
+    of a specific historical event. Metadata and identity checked through the Commons API for the linked
+    original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c03-vinterfester/cards/00.png
+    sha256: 7c1835b37dac1aa153496abdfd9936af7e64bffed96f82dbeedb795a3be763c2
+    bytes: 10606
+    sentence_id: hb-c03-u0069-s001
+    source_substrings:
+    - 31 december
+  - path: studio/media/hb-c03-vinterfester/cards/04.png
+    sha256: 5d854e7042d1014b223e5386a0a0bcad9258a17e185e9ae685ea6b789b9169c9
+    bytes: 7963
+    sentence_id: hb-c03-u0070-s001
+    source_substrings:
+    - 6 januari
+  - path: studio/media/hb-c03-vinterfester/cards/06.png
+    sha256: f536b7d3e3553caed29eaeb01910920cb7c9aa7cb451262542870a474d089936
+    bytes: 8873
+    sentence_id: hb-c03-u0071-s001
+    source_substrings:
+    - 14 februari
+  - path: studio/media/hb-c03-vinterfester/cards/08.png
+    sha256: 50f659921ccf1cf3d2344571817a225a729b409fb58e250ee19251fddff72cf7
+    bytes: 9834
+    sentence_id: hb-c03-u0072-s001
+    source_substrings:
+    - Fastlagen
+  - path: studio/media/hb-c03-vinterfester/cards/09.png
+    sha256: 7290f6f708dd50be996dd46bce1e97cc8fe473d43750f7336116cc5b08f08094
+    bytes: 10569
+    sentence_id: hb-c03-u0072-s002
+    source_substrings:
+    - fastlagsbullar
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c03-vinterfester/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c03-vinterfester/sources/music.mp3
+    sha256: 8252be99a8e57b8ccf3187f77dada5143735378cc3f1ac84555457a5a0a585bd
+    bytes: 10331806
+  - path: studio/media/hb-c03-vinterfester/sources/music-bed.flac
+    sha256: 03244bbf033bb695fce4752dd31ac3dae02c652efb39fe0430e3a70ef997ac6a
+    bytes: 14081556
+    seconds: 110.83333333333333
+    sample_rate: 48000
+    channels: 2
+  title: Moonstone
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100145
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Moonstone.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Moonstone" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By
+    Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c03-vinterfester/prepare_assets.py
+    master_seconds: 255.137978
+    prepared_seconds: 110.83333333333333
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    float_peak_before_pcm: 0.3093319833278656
+    pre_pcm_gain: 1.0
+    pre_pcm_gain_db: 0.0
+    headroom_policy: Uniform attenuation to0.98 only when the float bed reaches/exceeds1 before PCM conversion;
+      raw master unchanged, final mix normalization and accepted+2dB retained.
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0069-s001.wav
+    sha256: 3b58fc96ac5d38cdca3eb9944a7e61da3d6e23777d20f9ea816c090700b18cf0
+    bytes: 485420
+    seconds: 5.50312925170068
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0069-s001
+    peak: 0.23297119140625
+    generation_seconds: 19.42341737501556
+    tts_input: Nyårsaftonen den trettioförsta december är årets sista dag.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0069-s002.wav
+    sha256: eaed9c7b9d1ada61f415608bef78cbcf37458673ec5bd419ca210a9a9c035570
+    bytes: 215084
+    seconds: 2.4380952380952383
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0069-s002
+    peak: 0.26739501953125
+    generation_seconds: 10.939716594002675
+    tts_input: Då ordnas fyrverkerier.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0069-s003.wav
+    sha256: 37c84ca4f977d3a3550d724c9e2aeb7ffa43247c70cabff2072d19069b6dc134
+    bytes: 344108
+    seconds: 3.900952380952381
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0069-s003
+    peak: 0.287994384765625
+    generation_seconds: 15.55939839099301
+    tts_input: Fyrverkeripjäser kan köpas i affären.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0069-s004.wav
+    sha256: e51bbb9c3f6e7a920b318acc85fefe1d146edfd0f76b13ed2e167c0e0d9b934b
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0069-s004
+    peak: 0.34124755859375
+    generation_seconds: 23.25264269101899
+    tts_input: För fyrverkerierna har man satt exakta tidsgränser.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0070-s001.wav
+    sha256: 4bcabc34be977e563e68fc589c0675af8ed9679f99f3dc35a1211d395adf42d2
+    bytes: 436268
+    seconds: 4.9458503401360545
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0070-s001
+    peak: 0.267822265625
+    generation_seconds: 15.761069597967435
+    tts_input: Trettondagen den sjätte januari är julens sista dag.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0070-s002.wav
+    sha256: 8af08adf4ffca0a642fc2dca9da50fb6aacbff99ab58713383ea26ca514a7db9
+    bytes: 503852
+    seconds: 5.712108843537415
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0070-s002
+    peak: 0.255859375
+    generation_seconds: 19.80183335900074
+    tts_input: Då minns man de tre vise männen som kom med gåvor till Jesusbarnet.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0071-s001.wav
+    sha256: 8f5e615e3e28977ddfb0778d736a801daccd3d517df7695c0681916cb1b9004b
+    bytes: 743468
+    seconds: 8.428843537414966
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0071-s001
+    peak: 0.254302978515625
+    generation_seconds: 29.06536370498361
+    tts_input: På vändagen den fjortonde februari kan man minnas sina vänner till exempel med blommor
+      eller ett kort.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0071-s002.wav
+    sha256: 883daabc5a87b21ea09fbd89e5671b9d088a1da6b2b1066e8b3ac99d08c4fd5e
+    bytes: 761900
+    seconds: 8.6378231292517
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0071-s002
+    peak: 0.32891845703125
+    generation_seconds: 41.69468090403825
+    tts_input: I Finland firas vändagen inte med lika mycket pompa och ståt som till exempel i Förenta
+      staterna.
+    generation_run: One bounded3clipholidaycomparison in recorded order,NumPy42stream,4ONNXthreads,defaultfullCPUaffinity
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0072-s001.wav
+    sha256: 961d7700fe7d53f9d0df5c2e282ab919a842414124be85d495aa39abed0b8de3
+    bytes: 374828
+    seconds: 4.249251700680272
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0072-s001
+    peak: 0.425262451171875
+    generation_seconds: 14.658161348022986
+    tts_input: Fastlagen inleder förberedelserna för påsken.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-vinterfester/narration/hb-c03-u0072-s002.wav
+    sha256: 908f658970c4260397a429164998de4b37ee5e5cf4100ba8e158018f629ba3bd
+    bytes: 768044
+    seconds: 8.70748299319728
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0072-s002
+    peak: 0.330291748046875
+    generation_seconds: 28.459921758971177
+    tts_input: På fastlagen åker man i Finland backe och äter fastlagsbullar som har bland annat grädde
+      som fyllning.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

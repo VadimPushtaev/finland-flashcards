@@ -55,6 +55,13 @@ awaiting whole-video user review. See the [Chapter 2 audit](hb-c02-audit.json) a
 [listening-review checklist](hb-c02-review.md), including unresolved pronunciation
 diagnostics. The video index links every export and its accompanying credits.
 
+All twenty-one Chapter 3 videos are rendered and technically verified, covering
+520 exact Swedish/Russian sentence pairs in 1:33:50. They are committed previews
+awaiting whole-video user review. See the [Chapter 3 audit](hb-c03-audit.json),
+[music-bed check](hb-c03-music-headroom.json), and
+[listening-review checklist](hb-c03-review.md). The video index links all exports
+and their credits.
+
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for
 media tools; keep the root environment for script/source validation.

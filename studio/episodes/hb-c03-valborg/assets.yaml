@@ -1,0 +1,232 @@
+schema_version: 1
+section_id: hb-c03-valborg
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c03-valborg/sources/background.jpg
+    sha256: de32b4d902e7e30bb223f73e63673d021aaa7c67daff1941faae76d7bc87a51b
+    bytes: 4941357
+  source_url: https://commons.wikimedia.org/wiki/File:01-05-2025_Vappu_picnic_in_Helsinki.jpg
+  creator: Lorenot
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: '01-05-2025 Vappu picnic in Helsinki.jpg — Lorenot · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:01-05-2025_Vappu_picnic_in_Helsinki.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: Picnic in Kaivopuisto, Helsinki, Vappu 2025 Background is decorative context,
+    not identification of a specific historical event. Metadata and identity checked through the Commons
+    API for the linked original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c03-valborg/cards/00.png
+    sha256: fde03c49c3e142d085ac21dc359ac9ce683a6ce9cba10d8efdeaa37ca33c0d08
+    bytes: 9349
+    sentence_id: hb-c03-u0076-s001
+    source_substrings:
+    - Första maj
+  - path: studio/media/hb-c03-valborg/cards/02.png
+    sha256: 6626c2b0722f79c74aa0a1a61a5a84f6e223d61f04c97e18973aec7d482eba35
+    bytes: 7358
+    sentence_id: hb-c03-u0076-s003
+    source_substrings:
+    - picknick
+  - path: studio/media/hb-c03-valborg/cards/03.png
+    sha256: a0713620b1a9cc98896693326536cf0afda759cdf20e9453311d4b5637afac19
+    bytes: 11074
+    sentence_id: hb-c03-u0076-s004
+    source_substrings:
+    - munkar
+    - mjöd
+  - path: studio/media/hb-c03-valborg/cards/06.png
+    sha256: 7052e2303a182fca66228a84442c54ad1dcc5fe3b532cae520b54b7602ac834e
+    bytes: 13209
+    sentence_id: hb-c03-u0076-s007
+    source_substrings:
+    - vita studentmössor
+  - path: studio/media/hb-c03-valborg/cards/07.png
+    sha256: 76d4b37511e98e1e2ebd0eb7063171596575e152310fc6572888045100b189b6
+    bytes: 14923
+    sentence_id: hb-c03-u0076-s008
+    source_substrings:
+    - Valborgsmarscher
+  - path: studio/media/hb-c03-valborg/cards/08.png
+    sha256: 4f5f298b94650ec9bf0aae42dfa05e5f2e9add3cc7728b3049ae6651be4192c1
+    bytes: 13247
+    sentence_id: hb-c03-u0077-s001
+    source_substrings:
+    - andra söndagen i maj
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c03-valborg/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c03-valborg/sources/music.mp3
+    sha256: 9cba2a3c2d1c9d364220db1691f618a0f25b8d9cf6f2a857fe389ef614fd18a4
+    bytes: 9070686
+  - path: studio/media/hb-c03-valborg/sources/music-bed.flac
+    sha256: b74b3356cfab6093d079610458d882753acd32347fcedf87c701805ff555fc1c
+    bytes: 14319681
+    seconds: 97.41666666666667
+    sample_rate: 48000
+    channels: 2
+  title: Study And Relax
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900030
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Study%20And%20Relax.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Study And Relax" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c03-valborg/prepare_assets.py
+    master_seconds: 223.3992
+    prepared_seconds: 97.41666666666667
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s001.wav
+    sha256: 0abfc8f2bac6b46ef7807d9b89520de313348cc92ae59e919418e14a8821d1e4
+    bytes: 368684
+    seconds: 4.179591836734694
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s001
+    peak: 0.318450927734375
+    generation_seconds: 21.03178639599355
+    tts_input: Första maj är vårens och arbetarnas fest.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s002.wav
+    sha256: 45e592b92b0bb1843e8a4efcf6fc6ce4b3ab9ec89b479850d532c9ea579927dd
+    bytes: 589868
+    seconds: 6.6873469387755105
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s002
+    peak: 0.293365478515625
+    generation_seconds: 29.30495639098808
+    tts_input: I Finland firas Valborgsmässoafton och första maj på många olika sätt.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s003.wav
+    sha256: e1ec51e91cf653c9782289a1e0ac1d8b21dba10a67f6d44e45caa33478b57f0d
+    bytes: 288812
+    seconds: 3.274013605442177
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s003
+    peak: 0.32574462890625
+    generation_seconds: 16.62046260101488
+    tts_input: Människorna samlas på picknick.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s004.wav
+    sha256: 27876f48b0fa93bc8436a68e8eb8e8c39f53a97f147d000fbddb9fe6eca9c221
+    bytes: 509996
+    seconds: 5.7817687074829935
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s004
+    peak: 0.318572998046875
+    generation_seconds: 23.94464398699347
+    tts_input: På första maj äter man munkar och dricker mjöd, som liknar läsk.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s005.wav
+    sha256: 4ba48f20df795306080dec8609ebcd8f10da80e48c33748b5589739914929f96
+    bytes: 319532
+    seconds: 3.622312925170068
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s005
+    peak: 0.246612548828125
+    generation_seconds: 15.658416804973967
+    tts_input: Många firar också med mousserande vin.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s006.wav
+    sha256: ea9c43d92fc2fd7a08306170bba323ecc8046438f97dc74f1ade3002663f5f8f
+    bytes: 350252
+    seconds: 3.9706122448979593
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s006
+    peak: 0.378082275390625
+    generation_seconds: 18.74865863699233
+    tts_input: Hemmen dekoreras med ballonger och serpentin.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s007.wav
+    sha256: 2cd6b5ecdf25dc18a58bffcfae83e50d254730acf5f82b956f3f33fc55cf867e
+    bytes: 405548
+    seconds: 4.597551020408163
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s007
+    peak: 0.35552978515625
+    generation_seconds: 18.23468374396907
+    tts_input: Studenterna tar på sig sina vita studentmössor.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s008.wav
+    sha256: b593cced3d4432e3fad81b945d1636e948cd6d91cec8785f3236104db3b4d630
+    bytes: 313388
+    seconds: 3.5526530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0076-s008
+    peak: 0.445953369140625
+    generation_seconds: 16.563430062960833
+    tts_input: Arbetarna ordnar Valborgsmarscher.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0077-s001.wav
+    sha256: fe97e4671c81c0b90348faac3d75c71c42ba55547628574cb9847ec55a9dd67c
+    bytes: 411692
+    seconds: 4.667210884353741
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0077-s001
+    peak: 0.25067138671875
+    generation_seconds: 18.696053010993637
+    tts_input: I Finland firas morsdag den andra söndagen i maj.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-valborg/narration/hb-c03-u0077-s002.wav
+    sha256: 4545eb5280b6ab95404154f8a6222ca97cd0b34da67745ffee0fc1a6a54468ba
+    bytes: 436268
+    seconds: 4.9458503401360545
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0077-s002
+    peak: 0.334320068359375
+    generation_seconds: 23.57596405496588
+    tts_input: Mammorna firas till exempel med presenter och blommor.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

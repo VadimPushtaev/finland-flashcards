@@ -1,0 +1,676 @@
+schema_version: 1
+section_id: hb-c03-bastu
+chapter_id: hb-c03
+title_sv: Bastukultur
+title_ru: Культура сауны
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-bastu.yaml
+example_only: false
+source_section_sha256: 178d97b8c1a9a15d79b2910aaf5ae90b4ec5cb482cd7e26edf4e79c663877411
+translation_file_sha256: 33d51aae494f6ed8cab0f1d7a01fa79f974fed04b0be663aadc901195c3c8552
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette #342736; ivory #faf3e8, lavender #d8c8dc, warm highlight
+    #e2bb85, separator #62506a. Liberation Sans Bold48/regular40; explicitly44/36 or40/34 only where layout
+    requires. Stable Swedish-above-Russian right panel; source-only foreground term cards when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Rajaportti sauna1.jpg by Visa580 continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=1.9678571428571427. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Trio for Piano, Cello, and Clarinet by Kevin MacLeod (incompetech.com), CC BY 4.0, as
+    this subchapter’s distinct instrumental track. Original master 159.072 seconds; prepared lossless
+    stereo bed 275.500 seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain
+    the accepted +2 dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out.
+    Full attribution accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0134
+  description: 'Source passage: Att bada bastu är för många som bor i Finland en viktig del av både vardag
+    och fest.'
+- id: hb-c03-u0135
+  description: 'Source passage: Många olika traditioner är förknippade med uppvärmningen av bastun och
+    bastubadandet.'
+- id: hb-c03-u0136
+  description: 'Source passage: I simhallar och många allmänna bastur finns separata bastur för män och
+    kvinnor.'
+- id: hb-c03-u0137
+  description: 'Source passage: Finländarna är vana med att vara nakna i bastun och bastubad är inte förknippat
+    med något sexuellt.'
+- id: hb-c03-u0138
+  description: 'Source passage: Den finska bastuns historia går tusentals år bakåt i tiden.'
+- id: hb-c03-u0139
+  description: 'Source passage: I den kalla Norden var bastun ofta det första man byggde när människorna
+    flyttade till nya områden.'
+- id: hb-c03-u0140
+  description: 'Source passage: sauna (bastu): rum eller byggnad, där det finns en bastuugn eller ett
+    bastuaggregat och som värms upp till en hög temperatur'
+- id: hb-c03-u0142
+  description: 'Source passage: kiuas (bastuugn eller bastuaggregat): en ugn eller ett aggregat med stenar
+    längst upp'
+- id: hb-c03-u0143
+  description: 'Source passage: löyly (bad): vattenångan som stiger upp från stenarna när man kastar bad'
+- id: hb-c03-u0144
+  description: 'Source passage: vasta eller vihta: ett knippe björkris som man klappar eller piskar kroppen
+    med i bastun.'
+- id: hb-c03-u0145
+  description: 'Source passage: lauteet (lave): bänkarna i bastun som man sitter på.'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: 'One distinct verified photograph: Rajaportti sauna1.jpg. Decorative context for Bastukultur;
+    not an assertion about every custom or individual scene.'
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Trio for Piano, Cello, and Clarinet by Kevin MacLeod, official catalogue master with CC
+    BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0134-s001
+  sv: Att bada bastu är för många som bor i Finland en viktig del av både vardag och fest.
+  ru: Для многих живущих в Финляндии посещение сауны — важная часть как повседневной жизни, так и праздников.
+  scene_id: hb-c03-u0134
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0134-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.633946
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0134-s002
+  sv: Bastutraditionen är en så viktig del av kulturen att den har upptagits på Unescos lista över mänsklighetens
+    immateriella kulturarv.
+  ru: Традиция сауны настолько важна для культуры, что она включена в список нематериального культурного
+    наследия человечества ЮНЕСКО (Unesco).
+  scene_id: hb-c03-u0134
+  visual_cue: 'Steady complete source-only term card: Unescos, immateriella kulturarv'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Unescos
+  - immateriella kulturarv
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0134-s002.wav
+  start_seconds: 12.416667
+  end_seconds: 23.771224
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/01.png
+  render_caption: false
+- sentence_id: hb-c03-u0134-s003
+  sv: I bastun tvättar man sig, kopplar av och tillbringar tid med vänner, släktingar eller arbetskamrater.
+  ru: В сауне моются, расслабляются и проводят время с друзьями, родственниками или коллегами.
+  scene_id: hb-c03-u0134
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0134-s003.wav
+  start_seconds: 25.541667
+  end_seconds: 34.527789
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0134-s004
+  sv: I Finland badar kvinnor och män i allmänhet var för sig.
+  ru: В Финляндии женщины и мужчины обычно парятся по отдельности.
+  scene_id: hb-c03-u0134
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0134-s004.wav
+  start_seconds: 36.291667
+  end_seconds: 41.446497
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0134-s005
+  sv: Om man badar tillsammans kan man använda baddräkt i bastun.
+  ru: Если парятся вместе, в сауне можно пользоваться купальным костюмом.
+  scene_id: hb-c03-u0134
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0134-s005.wav
+  start_seconds: 43.208333
+  end_seconds: 48.850782
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0135-s001
+  sv: Många olika traditioner är förknippade med uppvärmningen av bastun och bastubadandet.
+  ru: С нагреванием сауны и парением связано множество разных традиций.
+  scene_id: hb-c03-u0135
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0135-s001.wav
+  start_seconds: 51.333333
+  end_seconds: 59.204898
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0135-s002
+  sv: Bastubad är en del av mångas högtidsfirande, till exempel jul eller midsommar.
+  ru: Для многих людей посещение сауны — часть праздничных торжеств, например на Рождество или Юханнус.
+  scene_id: hb-c03-u0135
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0135-s002.wav
+  start_seconds: 60.958333
+  end_seconds: 67.99398
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0135-s003
+  sv: Lika väl är bastun någonting vardagligt.
+  ru: В то же время сауна — нечто повседневное.
+  scene_id: hb-c03-u0135
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0135-s003.wav
+  start_seconds: 69.75
+  end_seconds: 73.650952
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0135-s004
+  sv: Det är vanligt att egnahemshus och bostäder har en egen bastu.
+  ru: Обычно в частных домах и жилищах есть собственная сауна.
+  scene_id: hb-c03-u0135
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0135-s004.wav
+  start_seconds: 75.416667
+  end_seconds: 80.641156
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0135-s005
+  sv: I höghus kan det finnas en gemensam bastu, där man kan boka en bastutid.
+  ru: В многоэтажных домах может быть общая сауна, время посещения которой можно забронировать.
+  scene_id: hb-c03-u0135
+  visual_cue: 'Steady complete source-only term card: gemensam bastu'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - gemensam bastu
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0135-s005.wav
+  start_seconds: 82.416667
+  end_seconds: 88.616395
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/09.png
+  render_caption: false
+- sentence_id: hb-c03-u0136-s001
+  sv: I simhallar och många allmänna bastur finns separata bastur för män och kvinnor.
+  ru: В плавательных бассейнах и многих общественных саунах есть отдельные сауны для мужчин и женщин.
+  scene_id: hb-c03-u0136
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0136-s001.wav
+  start_seconds: 91.083333
+  end_seconds: 98.188639
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0136-s002
+  sv: I simhallar får man inte gå in i bastun med simbyxorna eller baddräkten på.
+  ru: В плавательных бассейнах нельзя заходить в сауну в плавках или купальнике.
+  scene_id: hb-c03-u0136
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0136-s002.wav
+  start_seconds: 99.958333
+  end_seconds: 106.436701
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0136-s003
+  sv: Om du vill, kan du använda en handduk.
+  ru: Если хотите, можете воспользоваться полотенцем.
+  scene_id: hb-c03-u0136
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0136-s003.wav
+  start_seconds: 108.208333
+  end_seconds: 111.900306
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0136-s004
+  sv: I många blandbastur använd simbyxor eller baddräkt.
+  ru: Во многих смешанных саунах пользуйтесь плавками или купальником.
+  scene_id: hb-c03-u0136
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0136-s004.wav
+  start_seconds: 113.666667
+  end_seconds: 118.612517
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0136-s005
+  sv: I en blandbastu bastar män och kvinnor tillsammans.
+  ru: В смешанной сауне мужчины и женщины парятся вместе.
+  scene_id: hb-c03-u0136
+  visual_cue: 'Steady complete source-only term card: blandbastu'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - blandbastu
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0136-s005.wav
+  start_seconds: 120.375
+  end_seconds: 125.111871
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/14.png
+  render_caption: false
+- sentence_id: hb-c03-u0137-s001
+  sv: Finländarna är vana med att vara nakna i bastun och bastubad är inte förknippat med något sexuellt.
+  ru: Жители Финляндии привыкли находиться в сауне обнажёнными, и парение в сауне не связано с чем-либо
+    сексуальным.
+  scene_id: hb-c03-u0137
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0137-s001.wav
+  start_seconds: 127.583333
+  end_seconds: 136.499796
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0138-s001
+  sv: Den finska bastuns historia går tusentals år bakåt i tiden.
+  ru: История финской сауны уходит на тысячи лет в прошлое.
+  scene_id: hb-c03-u0138
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0138-s001.wav
+  start_seconds: 138.958333
+  end_seconds: 144.182823
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0138-s002
+  sv: Det finska ordet för bastu, ”sauna”, är ett gammalt finskt ord.
+  ru: Финское слово, обозначающее сауну, «sauna», — старое финское слово.
+  scene_id: hb-c03-u0138
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0138-s002.wav
+  start_seconds: 145.958333
+  end_seconds: 151.531122
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0139-s001
+  sv: I den kalla Norden var bastun ofta det första man byggde när människorna flyttade till nya områden.
+  ru: В холодных Северных странах сауна часто была первым, что строили люди, переселяясь на новые территории.
+  scene_id: hb-c03-u0139
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0139-s001.wav
+  start_seconds: 154.0
+  end_seconds: 162.637823
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0139-s002
+  sv: Förutom för att bada har man också fött barn i bastun och använt den för olika slags ritualer.
+  ru: Помимо мытья, в сауне также рожали детей и использовали её для разных обрядов.
+  scene_id: hb-c03-u0139
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0139-s002.wav
+  start_seconds: 164.416667
+  end_seconds: 172.77585
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0139-s003
+  sv: Bastun har varit en helig plats, vilket återspeglas på bastuupplevelsen än idag.
+  ru: Сауна была священным местом, и это до сих пор отражается на впечатлениях от её посещения.
+  scene_id: hb-c03-u0139
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0139-s003.wav
+  start_seconds: 174.541667
+  end_seconds: 181.577313
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0140-s001
+  sv: 'sauna (bastu): rum eller byggnad, där det finns en bastuugn eller ett bastuaggregat och som värms
+    upp till en hög temperatur'
+  ru: 'sauna (сауна): помещение или здание, в котором есть печь или нагреватель для сауны и которое нагревается
+    до высокой температуры'
+  scene_id: hb-c03-u0140
+  visual_cue: 'Steady complete source-only term card: sauna, bastu'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - sauna
+  - bastu
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0140-s001.wav
+  start_seconds: 184.041667
+  end_seconds: 195.396224
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/21.png
+  render_caption: false
+- sentence_id: hb-c03-u0142-s001
+  sv: 'kiuas (bastuugn eller bastuaggregat): en ugn eller ett aggregat med stenar längst upp'
+  ru: 'kiuas (печь или нагреватель для сауны): печь или нагреватель с камнями наверху'
+  scene_id: hb-c03-u0142
+  visual_cue: 'Steady complete source-only term card: kiuas'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kiuas
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0142-s001.wav
+  start_seconds: 197.875
+  end_seconds: 205.885884
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/22.png
+  render_caption: false
+- sentence_id: hb-c03-u0143-s001
+  sv: 'löyly (bad): vattenångan som stiger upp från stenarna när man kastar bad'
+  ru: 'löyly (пар): водяной пар, поднимающийся с камней, когда поддают пар'
+  scene_id: hb-c03-u0143
+  visual_cue: 'Steady complete source-only term card: löyly'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - löyly
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0143-s001.wav
+  start_seconds: 208.375
+  end_seconds: 215.549966
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/23.png
+  render_caption: false
+- sentence_id: hb-c03-u0144-s001
+  sv: 'vasta eller vihta: ett knippe björkris som man klappar eller piskar kroppen med i bastun.'
+  ru: 'vasta или vihta: пучок берёзовых веток, которым похлопывают или хлещут тело в сауне.'
+  scene_id: hb-c03-u0144
+  visual_cue: 'Steady complete source-only term card: vasta, vihta'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - vasta
+  - vihta
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0144-s001.wav
+  start_seconds: 218.0
+  end_seconds: 226.637823
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/24.png
+  render_caption: false
+- sentence_id: hb-c03-u0144-s002
+  sv: I västra Finland kallas bastukvasten för vihta, och i östra Finland för vasta.
+  ru: В западной Финляндии банный веник называют vihta, а в восточной — vasta.
+  scene_id: hb-c03-u0144
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0144-s002.wav
+  start_seconds: 228.416667
+  end_seconds: 235.730952
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0145-s001
+  sv: 'lauteet (lave): bänkarna i bastun som man sitter på.'
+  ru: 'lauteet (полок): скамьи в сауне, на которых сидят.'
+  scene_id: hb-c03-u0145
+  visual_cue: 'Steady complete source-only term card: lauteet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - lauteet
+  pronunciation_notes:
+  - Finnish sauna term preserved exactly; check pronunciation in whole-video listening. Local Swedish
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-bastu/narration/hb-c03-u0145-s001.wav
+  start_seconds: 238.208333
+  end_seconds: 243.293503
+  display_segments: []
+  render_image: studio/media/hb-c03-bastu/cards/26.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-bastu/sources/music-bed.flac
+  background_image: studio/media/hb-c03-bastu/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.9678571428571427
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Rajaportti sauna1.jpg — Visa580 · CC BY 2.5
+    - Trio for Piano, Cello, and Clarinet — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Rajaportti_sauna1.jpg
+    description: Rajaportti sauna in Tampere
+    license: CC BY 2.5

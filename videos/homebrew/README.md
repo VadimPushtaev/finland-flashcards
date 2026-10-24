@@ -58,6 +58,46 @@ See the [listening-review checklist](../../studio/hb-c02-review.md) for unresolv
 pronunciation diagnostics and timestamps. These previews and their production
 records are committed at the user's request; whole-video user acceptance is pending.
 
+## Chapter 3 — Kultur, värderingar och traditioner
+
+All twenty-one previews use Swedish narration with exact Swedish and reviewed
+Russian text on screen. Total length: **1:33:50** (5629.833 seconds).
+
+| Video | Length | Review |
+|---|---:|---|
+| [3.1 Värderingar och olikheter](hb-c03-01-varderingar.mp4) · [credits](hb-c03-01-varderingar.CREDITS.md) | 4:48 | Ready for whole-video review |
+| [3.2 Tillit, jämlikhet och självständighet](hb-c03-02-tillit.mp4) · [credits](hb-c03-02-tillit.CREDITS.md) | 5:20 | Ready for whole-video review |
+| [3.3 Seder, personligt utrymme och samtal](hb-c03-03-seder.mp4) · [credits](hb-c03-03-seder.CREDITS.md) | 6:48 | Ready for whole-video review |
+| [3.4 Hälsningar, punktlighet och besök](hb-c03-04-umgange.mp4) · [credits](hb-c03-04-umgange.CREDITS.md) | 6:18 | Ready for whole-video review |
+| [3.5 Religioner och religionslöshet](hb-c03-05-religion.mp4) · [credits](hb-c03-05-religion.CREDITS.md) | 8:36 | Ready for whole-video review |
+| [3.6 Religion i vardagen och högtiderna](hb-c03-06-religiositet.mp4) · [credits](hb-c03-06-religiositet.CREDITS.md) | 7:48 | Ready for whole-video review |
+| [3.7 Högtider och flaggdagar](hb-c03-07-kalender.mp4) · [credits](hb-c03-07-kalender.CREDITS.md) | 1:50 | Ready for whole-video review |
+| [3.8 Nyår, trettondag och vintertraditioner](hb-c03-08-vinterfester.mp4) · [credits](hb-c03-08-vinterfester.CREDITS.md) | 1:51 | Ready for whole-video review |
+| [3.9 Påsk och Kristi himmelsfärdsdag](hb-c03-09-pask.mp4) · [credits](hb-c03-09-pask.CREDITS.md) | 2:03 | Ready for whole-video review |
+| [3.10 Valborg, första maj och morsdag](hb-c03-10-valborg.mp4) · [credits](hb-c03-10-valborg.CREDITS.md) | 1:37 | Ready for whole-video review |
+| [3.11 Midsommar](hb-c03-11-midsommar.mp4) · [credits](hb-c03-11-midsommar.CREDITS.md) | 2:10 | Ready for whole-video review |
+| [3.12 Alla helgons dag och farsdag](hb-c03-12-hostfester.mp4) · [credits](hb-c03-12-hostfester.CREDITS.md) | 1:19 | Ready for whole-video review |
+| [3.13 Självständighetsdagen och julen](hb-c03-13-december.mp4) · [credits](hb-c03-13-december.CREDITS.md) | 1:52 | Ready for whole-video review |
+| [3.14 Runeberg, kvinnodagen och Minna Canths dag (19 mars)](hb-c03-14-kulturdagar.mp4) · [credits](hb-c03-14-kulturdagar.CREDITS.md) | 2:05 | Ready for whole-video review |
+| [3.15 Årets andra traditioner](hb-c03-15-ovriga-fester.mp4) · [credits](hb-c03-15-ovriga-fester.CREDITS.md) | 5:03 | Ready for whole-video review |
+| [3.16 Fester genom livet](hb-c03-16-livets-fester.mp4) · [credits](hb-c03-16-livets-fester.CREDITS.md) | 6:48 | Ready for whole-video review |
+| [3.17 Matkultur och matvanor](hb-c03-17-matkultur.mp4) · [credits](hb-c03-17-matkultur.CREDITS.md) | 7:32 | Ready for whole-video review |
+| [3.18 Vardagsmat och måltider](hb-c03-18-vardagsmat.mp4) · [credits](hb-c03-18-vardagsmat.CREDITS.md) | 4:56 | Ready for whole-video review |
+| [3.19 Festmat och drycker](hb-c03-19-festmat.mp4) · [credits](hb-c03-19-festmat.CREDITS.md) | 7:57 | Ready for whole-video review |
+| [3.20 Bastukultur](hb-c03-20-bastu.mp4) · [credits](hb-c03-20-bastu.CREDITS.md) | 4:36 | Ready for whole-video review |
+| [3.21 Kulturliv](hb-c03-21-kulturliv.mp4) · [credits](hb-c03-21-kulturliv.CREDITS.md) | 2:35 | Ready for whole-video review |
+
+All 520 sentence pairs are covered, with distinct photographs and instrumental
+music sources for each subchapter. The [Chapter 3 audit](../../studio/hb-c03-audit.json)
+records source fidelity, asset uniqueness, actual export hashes and technical checks.
+The [music-bed check](../../studio/hb-c03-music-headroom.json) confirms no PCM rail
+samples in the prepared beds. Producers and independent agents inspected exported
+long passages, numbers, credits and reduced-size previews.
+
+See the [listening-review checklist](../../studio/hb-c03-review.md) for unresolved
+pronunciation diagnostics with timestamps. These previews and their production
+records are committed at the user's request; whole-video user acceptance is pending.
+
 ## Russian audio
 
 [1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as

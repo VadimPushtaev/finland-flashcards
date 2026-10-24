@@ -1,0 +1,960 @@
+schema_version: 1
+section_id: hb-c03-matkultur
+chapter_id: hb-c03
+title_sv: Matkultur och matvanor
+title_ru: Культура питания и пищевые привычки
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-matkultur.yaml
+example_only: false
+source_section_sha256: ee4bf190f5a42a11de19351e41dba7abb73462963697d323666d810b7f15e8d8
+translation_file_sha256: d35868819663fc255ee1485f31c382d1dcf3bf2e8205aed777528a18bf38fd67
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette #342736; ivory #faf3e8, lavender #d8c8dc, warm highlight
+    #e2bb85, separator #62506a. Liberation Sans Bold48/regular40; explicitly44/36 or40/34 only where layout
+    requires. Stable Swedish-above-Russian right panel; source-only foreground term cards when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Karjalanpiirakka1.jpg by Lilitala continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=3.230654761904762. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Windswept by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 208.344 seconds; prepared lossless stereo bed 452.292 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0101
+  description: 'Source passage: Finländarnas matvanor har förändrats mycket under de senaste 50 åren.'
+- id: hb-c03-u0102
+  description: 'Source passage: Eftersom Finland tidigare var ett land med låg levnadsstandard, är många
+    fortfarande noggranna med att inte laga för mycket mat, som sedan slängs.'
+- id: hb-c03-u0103
+  description: 'Source passage: I Finland lagar både männen och kvinnorna i hushållen mat och gör dagliga
+    matinköp.'
+- id: hb-c03-u0104
+  description: 'Source passage: Att besöka torg och saluhallar eller små specialbutiker är mer sällsynt,
+    men möjligt, i synnerhet i de större städerna.'
+- id: hb-c03-u0105
+  description: 'Source passage: Förr åt människorna i Finland för det mesta potatis, men numera är ris
+    och pasta vanliga.'
+- id: hb-c03-u0106
+  description: 'Source passage: På restaurang äter man ofta till exempel pizza, hamburgare, sushi, pastarätter,
+    kinesisk mat eller mat från Mellanöstern.'
+- id: hb-c03-u0107
+  description: 'Source passage: Många är noggranna med att maten de äter är hälsosam, ekologisk och närproducerad.'
+- id: hb-c03-u0108
+  description: 'Source passage: För många är det också viktigt att djuren som används till mat har behandlats
+    väl.'
+- id: hb-c03-u0109
+  description: 'Source passage: Traditionell finsk mat har varit mild.'
+- id: hb-c03-u0110
+  description: 'Source passage: Den traditionella matkulturen i Finland är tudelad.'
+- id: hb-c03-u0111
+  description: 'Source passage: Ryska maträtter och matlagningsmetoder gör att den finska matkulturen
+    skiljer sig från den i de övriga nordiska länderna.'
+- id: hb-c03-u0112
+  description: 'Source passage: På vintern är grönsakerna dyrare än på sommaren, eftersom många av dem
+    importeras till Finland från utlandet.'
+- id: hb-c03-u0113
+  description: 'Source passage: Skördesäsong betyder den tid då grönsaker, frukter och bär är som bäst
+    och det finns mycket av dem.'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: 'One distinct verified photograph: Karjalanpiirakka1.jpg. Decorative context for Matkultur
+    och matvanor; not an assertion about every custom or individual scene.'
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Windswept by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0101-s001
+  sv: Finländarnas matvanor har förändrats mycket under de senaste 50 åren.
+  ru: Пищевые привычки жителей Финляндии сильно изменились за последние 50 лет.
+  scene_id: hb-c03-u0101
+  visual_cue: 'Steady complete source-only time-span card: de senaste 50 åren'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - de senaste 50 åren
+  pronunciation_notes: []
+  speech_override:
+    text: Finländarnas matvanor har förändrats mycket under de senaste femtio åren.
+    reason: Expand exact source number or clock abbreviation into Swedish speech; preserve displayed wording
+      and meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0101-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.728367
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0101-s002
+  sv: I affärerna finns ett brett utbud av råvaror från hela världen.
+  ru: В магазинах есть широкий выбор продуктов со всего мира.
+  scene_id: hb-c03-u0101
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0101-s002.wav
+  start_seconds: 11.5
+  end_seconds: 17.281769
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0101-s003
+  sv: I synnerhet utbudet av frukt och grönsaker har blivit mångsidigare.
+  ru: В частности, ассортимент фруктов и овощей стал более разнообразным.
+  scene_id: hb-c03-u0101
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0101-s003.wav
+  start_seconds: 19.041667
+  end_seconds: 25.102075
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0101-s004
+  sv: Människornas kost tar mycket mer än tidigare intryck från andra länder.
+  ru: Питание людей испытывает гораздо большее влияние других стран, чем раньше.
+  scene_id: hb-c03-u0101
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0101-s004.wav
+  start_seconds: 26.875
+  end_seconds: 33.214048
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0101-s005
+  sv: Även utbudet av färdigmat och halvfabrikat har ökat, och för många är de en viktig del av vardagsmatlagningen.
+  ru: Ассортимент готовой еды и полуфабрикатов тоже вырос, и для многих они являются важной частью повседневного
+    приготовления пищи.
+  scene_id: hb-c03-u0101
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0101-s005.wav
+  start_seconds: 35.0
+  end_seconds: 44.543401
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0102-s001
+  sv: Eftersom Finland tidigare var ett land med låg levnadsstandard, är många fortfarande noggranna med
+    att inte laga för mycket mat, som sedan slängs.
+  ru: Поскольку раньше Финляндия была страной с низким уровнем жизни, многие до сих пор тщательно следят
+    за тем, чтобы не готовить слишком много еды, которую потом выбрасывают.
+  scene_id: hb-c03-u0102
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0102-s001.wav
+  start_seconds: 47.0
+  end_seconds: 59.329796
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0102-s002
+  sv: För att det inte ska uppstå något matsvinn är i synnerhet de äldre generationerna av den åsikten
+    att man äter upp allt man har på tallriken.
+  ru: Чтобы не возникало пищевых отходов, особенно старшие поколения считают, что следует доедать всё,
+    что лежит на тарелке.
+  scene_id: hb-c03-u0102
+  visual_cue: 'Steady complete source-only term card: matsvinn'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - matsvinn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0102-s002.wav
+  start_seconds: 61.083333
+  end_seconds: 73.06483
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/06.png
+  render_caption: false
+- sentence_id: hb-c03-u0102-s003
+  sv: På matställen, där man själv får ta mat åt sig, tar man endast så mycket mat som man orkar äta.
+  ru: В заведениях, где еду можно брать самостоятельно, берут лишь столько, сколько способны съесть.
+  scene_id: hb-c03-u0102
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0102-s003.wav
+  start_seconds: 74.833333
+  end_seconds: 83.122857
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0103-s001
+  sv: I Finland lagar både männen och kvinnorna i hushållen mat och gör dagliga matinköp.
+  ru: В финляндских домохозяйствах и мужчины, и женщины готовят еду и ежедневно покупают продукты.
+  scene_id: hb-c03-u0103
+  visual_cue: 'Steady complete source-only term card: männen, kvinnorna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - männen
+  - kvinnorna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0103-s001.wav
+  start_seconds: 85.583333
+  end_seconds: 92.688639
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0103-s002
+  sv: Matlagning är en vanlig hobby, och människorna vill testa nya smaker och matlagningsmetoder.
+  ru: Приготовление пищи — распространённое увлечение, и люди хотят пробовать новые вкусы и способы приготовления
+    еды.
+  scene_id: hb-c03-u0103
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0103-s002.wav
+  start_seconds: 94.458333
+  end_seconds: 102.538878
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0103-s003
+  sv: Olika länders kök och varierande mattrender kommer till finländarnas kännedom via internet, medier
+    och resor och tack vare att Finland internationaliseras.
+  ru: Жители Финляндии узнают о кухнях разных стран и меняющихся пищевых тенденциях через интернет, СМИ
+    и путешествия, а также благодаря интернационализации Финляндии.
+  scene_id: hb-c03-u0103
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0103-s003.wav
+  start_seconds: 104.291667
+  end_seconds: 117.318061
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0104-s001
+  sv: Att besöka torg och saluhallar eller små specialbutiker är mer sällsynt, men möjligt, i synnerhet
+    i de större städerna.
+  ru: Посещать рыночные площади, крытые рынки или небольшие специализированные магазины менее привычно,
+    но возможно, особенно в крупных городах.
+  scene_id: hb-c03-u0104
+  visual_cue: 'Steady complete source-only term card: torg och saluhallar'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - torg och saluhallar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0104-s001.wav
+  start_seconds: 119.791667
+  end_seconds: 129.962007
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/11.png
+  render_caption: false
+- sentence_id: hb-c03-u0104-s002
+  sv: Torg är populära sommartid.
+  ru: Рыночные площади популярны летом.
+  scene_id: hb-c03-u0104
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0104-s002.wav
+  start_seconds: 131.75
+  end_seconds: 134.675714
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0104-s003
+  sv: På sommaren kan det dessutom ordnas torgevenemang för lokala producenter.
+  ru: Кроме того, летом могут устраивать рыночные мероприятия для местных производителей.
+  scene_id: hb-c03-u0104
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0104-s003.wav
+  start_seconds: 136.458333
+  end_seconds: 142.797381
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0105-s001
+  sv: Förr åt människorna i Finland för det mesta potatis, men numera är ris och pasta vanliga.
+  ru: Раньше люди в Финляндии ели главным образом картофель, а теперь распространены рис и макароны.
+  scene_id: hb-c03-u0105
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0105-s001.wav
+  start_seconds: 145.25
+  end_seconds: 153.330544
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0105-s002
+  sv: En vardagslunch är vanligtvis hälsosam och mångsidig, och på lunchrestaurangernas dagligen varierande
+    matsedlar finns det ofta typiska finska maträtter.
+  ru: Повседневный обед обычно полезен для здоровья и разнообразен, а в ежедневно меняющемся меню обеденных
+    ресторанов часто встречаются типичные финские блюда.
+  scene_id: hb-c03-u0105
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0105-s002.wav
+  start_seconds: 155.083333
+  end_seconds: 167.900748
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0106-s001
+  sv: På restaurang äter man ofta till exempel pizza, hamburgare, sushi, pastarätter, kinesisk mat eller
+    mat från Mellanöstern.
+  ru: В ресторане часто едят, например, пиццу, гамбургеры, суши, блюда из макарон, китайскую еду или еду
+    Ближнего Востока.
+  scene_id: hb-c03-u0106
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0106-s001.wav
+  start_seconds: 170.375
+  end_seconds: 180.75432
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0106-s002
+  sv: I allmänhet beställer var och en i sällskapet en egen portion åt sig, och man delar vanligtvis inte
+    på maten.
+  ru: Обычно каждый в компании заказывает себе отдельную порцию и едой, как правило, не делятся.
+  scene_id: hb-c03-u0106
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0106-s002.wav
+  start_seconds: 182.541667
+  end_seconds: 191.667109
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0106-s003
+  sv: Var och en betalar också ofta endast sin egen mat när man äter på restaurang.
+  ru: При посещении ресторана каждый также часто платит только за свою еду.
+  scene_id: hb-c03-u0106
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0106-s003.wav
+  start_seconds: 193.458333
+  end_seconds: 200.14568
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0107-s001
+  sv: Många är noggranna med att maten de äter är hälsosam, ekologisk och närproducerad.
+  ru: Многие внимательно следят за тем, чтобы их еда была полезной для здоровья, органической и произведённой
+    поблизости.
+  scene_id: hb-c03-u0107
+  visual_cue: 'Steady complete source-only term card: hälsosam, ekologisk, närproducerad'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hälsosam
+  - ekologisk
+  - närproducerad
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0107-s001.wav
+  start_seconds: 202.625
+  end_seconds: 210.008946
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/19.png
+  render_caption: false
+- sentence_id: hb-c03-u0107-s002
+  sv: Många har minskat på användningen av fett och salt och ökat mängden frukt och grönsaker i sin kost.
+  ru: Многие сократили употребление жира и соли и увеличили количество фруктов и овощей в своём рационе.
+  scene_id: hb-c03-u0107
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0107-s002.wav
+  start_seconds: 211.791667
+  end_seconds: 220.08119
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0108-s001
+  sv: För många är det också viktigt att djuren som används till mat har behandlats väl.
+  ru: Для многих также важно, чтобы с животными, используемыми в пищу, хорошо обращались.
+  scene_id: hb-c03-u0108
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0108-s001.wav
+  start_seconds: 222.541667
+  end_seconds: 229.786293
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0108-s002
+  sv: Många äter ingen animalisk mat alls, eftersom de inte vill skada djur eller eftersom de vill minska
+    koldioxidutsläppen från matproduktionen.
+  ru: Многие вообще не едят животную пищу, потому что не хотят причинять вред животным или хотят уменьшить
+    выбросы углекислого газа при производстве еды.
+  scene_id: hb-c03-u0108
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0108-s002.wav
+  start_seconds: 231.541667
+  end_seconds: 243.592823
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0108-s003
+  sv: Veganismen och vegetarianismen har ökat i Finland under de senaste 20 åren.
+  ru: За последние 20 лет веганство и вегетарианство стали более распространёнными в Финляндии.
+  scene_id: hb-c03-u0108
+  visual_cue: 'Steady complete source-only term card: Veganismen, vegetarianismen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Veganismen
+  - vegetarianismen
+  pronunciation_notes: []
+  speech_override:
+    text: Veganismen och vegetarianismen har ökat i Finland under de senaste tjugo åren.
+    reason: Expand exact source number or clock abbreviation into Swedish speech; preserve displayed wording
+      and meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0108-s003.wav
+  start_seconds: 245.375
+  end_seconds: 252.271327
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/23.png
+  render_caption: false
+- sentence_id: hb-c03-u0108-s004
+  sv: En vegansk kost innehåller inga animaliska produkter.
+  ru: Веганский рацион не содержит продуктов животного происхождения.
+  scene_id: hb-c03-u0108
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0108-s004.wav
+  start_seconds: 254.041667
+  end_seconds: 258.917857
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0109-s001
+  sv: Traditionell finsk mat har varit mild.
+  ru: Традиционная финская еда была неострой.
+  scene_id: hb-c03-u0109
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0109-s001.wav
+  start_seconds: 261.375
+  end_seconds: 264.927653
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0109-s002
+  sv: Man använde lite kryddor, eftersom de måste hämtas långt ifrån och var dyra.
+  ru: Использовали мало специй, поскольку их приходилось привозить издалека и они были дорогими.
+  scene_id: hb-c03-u0109
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0109-s002.wav
+  start_seconds: 266.708333
+  end_seconds: 273.46534
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0109-s003
+  sv: Finland var länge ett fattigt land, där maten var anspråkslös och enkel.
+  ru: Финляндия долго была бедной страной, где еда была скромной и простой.
+  scene_id: hb-c03-u0109
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0109-s003.wav
+  start_seconds: 275.25
+  end_seconds: 281.658707
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0109-s004
+  sv: Typisk finsk mat var kött och fisk med kokt potatis.
+  ru: Типичной финской едой были мясо и рыба с варёным картофелем.
+  scene_id: hb-c03-u0109
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0109-s004.wav
+  start_seconds: 283.416667
+  end_seconds: 288.223197
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0110-s001
+  sv: Den traditionella matkulturen i Finland är tudelad.
+  ru: Традиционная культура питания Финляндии делится на две части.
+  scene_id: hb-c03-u0110
+  visual_cue: 'Steady complete source-only term card: tudelad'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - tudelad
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0110-s001.wav
+  start_seconds: 290.708333
+  end_seconds: 295.445204
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/29.png
+  render_caption: false
+- sentence_id: hb-c03-u0110-s002
+  sv: I västra Finland har matkulturen inspirerats mycket av den svenska matkulturen och i östra Finland
+    av den ryska.
+  ru: На культуру питания западной Финляндии сильно повлияла шведская культура питания, а на востоке —
+    русская.
+  scene_id: hb-c03-u0110
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0110-s002.wav
+  start_seconds: 297.208333
+  end_seconds: 307.378673
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0110-s003
+  sv: I norra Finland bedriver man dessutom renskötsel, och därför används ofta också renkött.
+  ru: На севере Финляндии, кроме того, занимаются оленеводством, поэтому часто используют также оленину.
+  scene_id: hb-c03-u0110
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0110-s003.wav
+  start_seconds: 309.166667
+  end_seconds: 317.107891
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0111-s001
+  sv: Ryska maträtter och matlagningsmetoder gör att den finska matkulturen skiljer sig från den i de
+    övriga nordiska länderna.
+  ru: Русские блюда и способы приготовления пищи отличают финскую культуру питания от культуры других
+    Северных стран.
+  scene_id: hb-c03-u0111
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0111-s001.wav
+  start_seconds: 319.583333
+  end_seconds: 329.823333
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0111-s002
+  sv: Finländarna använder gärna svamp i maten och lagar karelsk stek och karelska piroger.
+  ru: Жители Финляндии охотно используют в еде грибы и готовят карельское жаркое и карельские пирожки.
+  scene_id: hb-c03-u0111
+  visual_cue: 'Steady complete source-only term card: karelsk stek, karelska piroger'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - karelsk stek
+  - karelska piroger
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0111-s002.wav
+  start_seconds: 331.583333
+  end_seconds: 339.315578
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/33.png
+  render_caption: false
+- sentence_id: hb-c03-u0111-s003
+  sv: Även påskrätterna liknar de ryska, likaså bakverk med kvarg.
+  ru: Пасхальные блюда тоже похожи на русские, как и выпечка с творогом.
+  scene_id: hb-c03-u0111
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0111-s003.wav
+  start_seconds: 341.083333
+  end_seconds: 346.586463
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0111-s004
+  sv: Maträtter som är gemensamma med svenskarnas är till exempel ärtsoppa, pannkaka, köttbullar, kanelbullar
+    och fastlagsbullar.
+  ru: Блюда, общие со шведской кухней, — например, гороховый суп, блин, мясные фрикадельки, булочки с
+    корицей и масленичные булочки.
+  scene_id: hb-c03-u0111
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0111-s004.wav
+  start_seconds: 348.375
+  end_seconds: 359.311599
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0112-s001
+  sv: På vintern är grönsakerna dyrare än på sommaren, eftersom många av dem importeras till Finland från
+    utlandet.
+  ru: Зимой овощи дороже, чем летом, поскольку многие из них ввозят в Финляндию из-за границы.
+  scene_id: hb-c03-u0112
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0112-s001.wav
+  start_seconds: 361.791667
+  end_seconds: 371.404728
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0112-s002
+  sv: I dag finns nästan alla livsmedel tillgängliga året om, men många följer ändå skördesäsongen i sin
+    matlagning.
+  ru: Сегодня почти все продукты доступны круглый год, но многие всё же учитывают сезон урожая при приготовлении
+    пищи.
+  scene_id: hb-c03-u0112
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0112-s002.wav
+  start_seconds: 373.166667
+  end_seconds: 382.710068
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0113-s001
+  sv: Skördesäsong betyder den tid då grönsaker, frukter och bär är som bäst och det finns mycket av dem.
+  ru: Сезон урожая означает время, когда овощи, фрукты и ягоды наилучшего качества и их много.
+  scene_id: hb-c03-u0113
+  visual_cue: 'Steady complete source-only term card: Skördesäsong'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Skördesäsong
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0113-s001.wav
+  start_seconds: 385.166667
+  end_seconds: 393.66517
+  display_segments: []
+  render_image: studio/media/hb-c03-matkultur/cards/38.png
+  render_caption: false
+- sentence_id: hb-c03-u0113-s002
+  sv: Också priset är lägre under skördesäsongen än annars.
+  ru: Цена в сезон урожая тоже ниже, чем в другое время.
+  scene_id: hb-c03-u0113
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0113-s002.wav
+  start_seconds: 395.416667
+  end_seconds: 400.432177
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0113-s003
+  sv: Om man till exempel vill köpa jordgubbar i juni finns det bra tillgång till finska bär och de är
+    billigare.
+  ru: Если, например, человек хочет купить клубнику в июне, финские ягоды доступны в достаточном количестве
+    и стоят дешевле.
+  scene_id: hb-c03-u0113
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0113-s003.wav
+  start_seconds: 402.208333
+  end_seconds: 411.542755
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0113-s004
+  sv: På vintern importeras jordgubbarna från utlandet och är därför mycket dyrare.
+  ru: Зимой клубнику ввозят из-за границы, поэтому она гораздо дороже.
+  scene_id: hb-c03-u0113
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-matkultur/narration/hb-c03-u0113-s004.wav
+  start_seconds: 413.333333
+  end_seconds: 420.09034
+  display_segments: []
+  render_image: null
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-matkultur/sources/music-bed.flac
+  background_image: studio/media/hb-c03-matkultur/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.230654761904762
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Karjalanpiirakka1.jpg — Lilitala · CC BY-SA 4.0
+    - Windswept — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Karjalanpiirakka1.jpg
+    description: karjalanpiirakka
+    license: CC BY-SA 4.0

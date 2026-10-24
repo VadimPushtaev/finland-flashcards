@@ -1,0 +1,330 @@
+schema_version: 1
+section_id: hb-c03-valborg
+chapter_id: hb-c03
+title_sv: Valborg, första maj och morsdag
+title_ru: Вальпургиев праздник, Первое мая и День матери
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-valborg.yaml
+example_only: false
+source_section_sha256: 066cf7a68017fc80ac7ae4e45e1c87ff1ec3e6d5e5a147fbecfc456daef70a81
+translation_file_sha256: 6ae66777e687ff78933148c7e2530b7efacdfd193cdfb36f08cf66d8d6f2a310
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette: background#342736, ivory#faf3e8, secondary#d8c8dc,
+    highlight#e2bb85, separator#62506a. Liberation Sans Bold48/regular40, explicit44/36 or40/34 only when
+    needed. Fixed Swedish-above-Russian right panel; source-only term cards on left when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:01-05-2025 Vappu picnic in Helsinki.jpg by Lorenot continuously as decorative background,
+    darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=0.6958333333333334. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Study And Relax by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 223.399 seconds; prepared lossless stereo bed 97.417 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0076
+  description: Första maj är vårens och arbetarnas fest.
+- id: hb-c03-u0077
+  description: I Finland firas morsdag den andra söndagen i maj.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct licensed photograph related to May Day picnic and student caps; decorative
+    context, not evidence of all narrated customs.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Study And Relax by Kevin MacLeod, official catalogue master with verified CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0076-s001
+  sv: Första maj är vårens och arbetarnas fest.
+  ru: Первое мая — праздник весны и трудящихся.
+  scene_id: hb-c03-u0076
+  visual_cue: 'Steady source-only typography card: Första maj'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Första maj
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.429592
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0076-s002
+  sv: I Finland firas Valborgsmässoafton och första maj på många olika sätt.
+  ru: В Финляндии Вальпургиев вечер и Первое мая отмечают множеством разных способов.
+  scene_id: hb-c03-u0076
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s002.wav
+  start_seconds: 9.208333
+  end_seconds: 15.89568
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0076-s003
+  sv: Människorna samlas på picknick.
+  ru: Люди собираются на пикник.
+  scene_id: hb-c03-u0076
+  visual_cue: 'Steady source-only typography card: picknick'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - picknick
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s003.wav
+  start_seconds: 17.666667
+  end_seconds: 20.94068
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/02.png
+  render_caption: false
+- sentence_id: hb-c03-u0076-s004
+  sv: På första maj äter man munkar och dricker mjöd, som liknar läsk.
+  ru: Первого мая едят пончики и пьют симу — напиток, похожий на лимонад.
+  scene_id: hb-c03-u0076
+  visual_cue: 'Steady source-only typography card: munkar, mjöd'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - munkar
+  - mjöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s004.wav
+  start_seconds: 22.708333
+  end_seconds: 28.490102
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/03.png
+  render_caption: false
+- sentence_id: hb-c03-u0076-s005
+  sv: Många firar också med mousserande vin.
+  ru: Многие также празднуют с игристым вином.
+  scene_id: hb-c03-u0076
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s005.wav
+  start_seconds: 30.25
+  end_seconds: 33.872313
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0076-s006
+  sv: Hemmen dekoreras med ballonger och serpentin.
+  ru: Дома украшают воздушными шарами и серпантином.
+  scene_id: hb-c03-u0076
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s006.wav
+  start_seconds: 35.625
+  end_seconds: 39.595612
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0076-s007
+  sv: Studenterna tar på sig sina vita studentmössor.
+  ru: Выпускники надевают свои белые выпускные фуражки.
+  scene_id: hb-c03-u0076
+  visual_cue: 'Steady source-only typography card: vita studentmössor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - vita studentmössor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s007.wav
+  start_seconds: 41.375
+  end_seconds: 45.972551
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/06.png
+  render_caption: false
+- sentence_id: hb-c03-u0076-s008
+  sv: Arbetarna ordnar Valborgsmarscher.
+  ru: Трудящиеся устраивают первомайские шествия.
+  scene_id: hb-c03-u0076
+  visual_cue: 'Steady source-only typography card: Valborgsmarscher'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Valborgsmarscher
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0076-s008.wav
+  start_seconds: 47.75
+  end_seconds: 51.302653
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/07.png
+  render_caption: false
+- sentence_id: hb-c03-u0077-s001
+  sv: I Finland firas morsdag den andra söndagen i maj.
+  ru: В Финляндии День матери отмечают во второе воскресенье мая.
+  scene_id: hb-c03-u0077
+  visual_cue: 'Steady source-only typography card: andra söndagen i maj'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - andra söndagen i maj
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0077-s001.wav
+  start_seconds: 53.791667
+  end_seconds: 58.458878
+  display_segments: []
+  render_image: studio/media/hb-c03-valborg/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0077-s002
+  sv: Mammorna firas till exempel med presenter och blommor.
+  ru: Мам поздравляют, например, подарками и цветами.
+  scene_id: hb-c03-u0077
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-valborg/narration/hb-c03-u0077-s002.wav
+  start_seconds: 60.25
+  end_seconds: 65.19585
+  display_segments: []
+  render_image: null
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-valborg/sources/music-bed.flac
+  background_image: studio/media/hb-c03-valborg/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 0.6958333333333334
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 01-05-2025 Vappu picnic in Helsinki.jpg — Lorenot · CC BY-SA 4.0
+    - Study And Relax — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:01-05-2025_Vappu_picnic_in_Helsinki.jpg
+    description: Picnic in Kaivopuisto, Helsinki, Vappu 2025
+    license: CC BY-SA 4.0

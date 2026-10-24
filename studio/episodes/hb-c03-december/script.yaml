@@ -1,0 +1,359 @@
+schema_version: 1
+section_id: hb-c03-december
+chapter_id: hb-c03
+title_sv: Självständighetsdagen och julen
+title_ru: День независимости и Рождество
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-december.yaml
+example_only: false
+source_section_sha256: ab71cc61e1a07c5912a59f748ebb60badfd1a5bda19a6c4875675b502ae1abea
+translation_file_sha256: 82cce6456e9058d42b2bf0c5caaa9d6b61431616f173843135b2c0c8700f5410
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette: background#342736, ivory#faf3e8, secondary#d8c8dc,
+    highlight#e2bb85, separator#62506a. Liberation Sans Bold48/regular40, explicit44/36 or40/34 only when
+    needed. Fixed Swedish-above-Russian right panel; source-only term cards on left when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Christmas market Helsinki - 20231214 - 06.jpg by AleWi continuously as decorative
+    background, darkened42% and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative
+    zoom1.06→1.219,140seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=0.7973214285714286.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Silver Blue Light by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 350.064 seconds; prepared lossless stereo bed 111.625
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Use selected exact source words and dates as complete typography cards. Cards add no claims
+    and retain source qualifiers in the full text. Leave foreground empty elsewhere; suppress orphaned/redundant
+    image captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0081
+  description: Finland blev självständigt 1917.
+- id: hb-c03-u0082
+  description: Julen är årets viktigaste fest i Finland.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: One distinct licensed photograph related to Finnish Christmas celebration; decorative context,
+    not evidence of all narrated customs.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Silver Blue Light by Kevin MacLeod, official catalogue master with verified CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0081-s001
+  sv: Finland blev självständigt 1917.
+  ru: Финляндия стала независимой в 1917 году.
+  scene_id: hb-c03-u0081
+  visual_cue: 'Steady source-only typography card: 1917'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1917'
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Finland blev självständigt ett tusen nio hundra sjutton.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0081-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.61381
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/00.png
+  render_caption: false
+- sentence_id: hb-c03-u0081-s002
+  sv: Det firas på självständighetsdagen den 6 december.
+  ru: Это отмечают в День независимости, 6 декабря.
+  scene_id: hb-c03-u0081
+  visual_cue: 'Steady source-only typography card: 6 december'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 6 december
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Det firas på självständighetsdagen den sjätte december.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0081-s002.wav
+  start_seconds: 10.375
+  end_seconds: 15.52983
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/01.png
+  render_caption: false
+- sentence_id: hb-c03-u0081-s003
+  sv: Då tittar många finländare på självständighetsdagens mottagning med presidenten som värd på TV.
+  ru: Тогда многие жители Финляндии смотрят по телевизору приём в честь Дня независимости, хозяином которого
+    выступает президент.
+  scene_id: hb-c03-u0081
+  visual_cue: 'Steady source-only typography card: TV'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - TV
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Då tittar många finländare på självständighetsdagens mottagning med presidenten som värd på
+      teve.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0081-s003.wav
+  start_seconds: 17.291667
+  end_seconds: 25.79017
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/02.png
+  render_caption: false
+- sentence_id: hb-c03-u0082-s001
+  sv: Julen är årets viktigaste fest i Finland.
+  ru: Рождество — самый важный праздник года в Финляндии.
+  scene_id: hb-c03-u0082
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s001.wav
+  start_seconds: 28.25
+  end_seconds: 32.220612
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0082-s002
+  sv: Då minns man Jesu födelse i kyrkan.
+  ru: Тогда в церкви вспоминают рождение Иисуса.
+  scene_id: hb-c03-u0082
+  visual_cue: Keep foreground open over continuous topic-related photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s002.wav
+  start_seconds: 34.0
+  end_seconds: 37.274014
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0082-s003
+  sv: Den egentliga dagen för firandet är julafton den 24 december.
+  ru: Основной день празднования — сочельник, 24 декабря.
+  scene_id: hb-c03-u0082
+  visual_cue: 'Steady source-only typography card: julafton, 24 december'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - julafton
+  - 24 december
+  pronunciation_notes:
+  - Check full sentence, names and expanded numbers in whole-video listening; ASR is diagnostic, not approval.
+  speech_override:
+    text: Den egentliga dagen för firandet är julafton den tjugofjärde december.
+    reason: Meaning-preserving Swedish expansions of source dates, numbers and abbreviations for local
+      speech; displayed source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s003.wav
+  start_seconds: 39.041667
+  end_seconds: 45.102075
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/05.png
+  render_caption: false
+- sentence_id: hb-c03-u0082-s004
+  sv: Många skaffar sig en julgran som pyntas.
+  ru: Многие приобретают рождественскую ёлку и украшают её.
+  scene_id: hb-c03-u0082
+  visual_cue: 'Steady source-only typography card: julgran'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - julgran
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s004.wav
+  start_seconds: 46.875
+  end_seconds: 50.636633
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/06.png
+  render_caption: false
+- sentence_id: hb-c03-u0082-s005
+  sv: Julklapparna delas oftast ut på julafton.
+  ru: Рождественские подарки чаще всего раздают в сочельник.
+  scene_id: hb-c03-u0082
+  visual_cue: 'Steady source-only typography card: julafton, Julklapparna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - julafton
+  - Julklapparna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s005.wav
+  start_seconds: 52.416667
+  end_seconds: 56.317619
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/07.png
+  render_caption: false
+- sentence_id: hb-c03-u0082-s006
+  sv: Till den finländska julen hör många slags festmat, såsom julskinka, rosoll som är en rödbetssallad,
+    olika slags lådor, julstjärnor och pepparkakor.
+  ru: Финляндское Рождество сопровождается множеством праздничных блюд, таких как рождественская ветчина,
+    росолли — свекольный салат, разные запеканки, слойки в форме звёзд и имбирное печенье.
+  scene_id: hb-c03-u0082
+  visual_cue: 'Steady source-only typography card: julskinka'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - julskinka
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s006.wav
+  start_seconds: 58.083333
+  end_seconds: 70.831088
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/08.png
+  render_caption: false
+- sentence_id: hb-c03-u0082-s007
+  sv: På julen sjunger man julsånger och umgås med familjen och andra nära och kära.
+  ru: На Рождество поют рождественские песни и общаются с семьёй и другими близкими людьми.
+  scene_id: hb-c03-u0082
+  visual_cue: 'Steady source-only typography card: familjen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - familjen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-december/narration/hb-c03-u0082-s007.wav
+  start_seconds: 72.583333
+  end_seconds: 79.41
+  display_segments: []
+  render_image: studio/media/hb-c03-december/cards/09.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-december/sources/music-bed.flac
+  background_image: studio/media/hb-c03-december/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 0.7973214285714286
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Christmas market Helsinki - 20231214 - 06.jpg — AleWi · CC BY-SA 4.0
+    - Silver Blue Light — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Christmas_market_Helsinki_-_20231214_-_06.jpg
+    description: Tomasmarknaden på Senatstorget den 14 december 2023
+    license: CC BY-SA 4.0

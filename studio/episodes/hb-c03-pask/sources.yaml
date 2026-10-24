@@ -1,0 +1,128 @@
+schema_version: 1
+section_id: hb-c03-pask
+provenance_path: data/homebrew/metadata/03_provenance.yaml
+units:
+  hb-c03-u0073:
+    source_path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    source_block: b0017
+    locator: html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)
+      > div:nth-of-type(6) > p:nth-of-type(12)
+    source_kind: p
+    source_role: content
+    heading: Evangelisk-lutherska kyrkan i Finland
+    source_range:
+      start: 0
+      end: 276
+    range_basis: normalized_html_block
+    extracted_passage: Påsken infaller vid olika tidpunkter, men oftast firas påsk i mars eller april.
+      Före påsken firas palmsöndagen. Då klär barn sig ut till häxor och går runt i grannskapet för
+      att dela ut videkvistar som de dekorerat. Barnen får oftast en liten present, till exempel
+      lite godis.
+    normalization: whitespace_only
+    repairs: []
+    selection: Complete source paragraph or list item.
+  hb-c03-u0074:
+    source_path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    source_block: b0018
+    locator: html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)
+      > div:nth-of-type(6) > p:nth-of-type(13)
+    source_kind: p
+    source_role: content
+    heading: Evangelisk-lutherska kyrkan i Finland
+    source_range:
+      start: 0
+      end: 217
+    range_basis: normalized_html_block
+    extracted_passage: På långfredagen minns man Jesu död i kyrkan. Söndagen är påskdagen och då
+      minns man Jesu uppståndelse. Påskfirandet fortsätter ännu på måndagen som är annandag påsk.
+      På påsken äter man ofta lamm, chokladägg och memma.
+    normalization: whitespace_only
+    repairs: []
+    selection: Complete source paragraph or list item.
+  hb-c03-u0075:
+    source_path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    source_block: b0020
+    locator: html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)
+      > div:nth-of-type(6) > p:nth-of-type(15)
+    source_kind: p
+    source_role: content
+    heading: Evangelisk-lutherska kyrkan i Finland
+    source_range:
+      start: 0
+      end: 105
+    range_basis: normalized_html_block
+    extracted_passage: På Kristi himmelsfärdsdag minns man Jesu himmelsfärd. Kristi himmelsfärdsdag
+      firas 40 dagar efter påsken.
+    normalization: whitespace_only
+    repairs: []
+    selection: Complete source paragraph or list item.
+  hb-c03-u0151:
+    source_path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    pdf_page: 18
+    printed_page: 17
+    source_range:
+      start: 2375
+      end: 2514
+    range_basis: raw_pdf_page
+    extracted_passage: "Tio dagar efter Kristi himmelsfärdsdag firas pingsten. \nDet är också en\
+      \ kristen högtid och då firar man grundandet av den kristna kyrkan. \n"
+    normalization: whitespace_only
+    repairs: []
+    selection: Preserve additional cultural explanation; complete contiguous sentences, omit only
+      neighbouring undated statistic or duplicate narrative.
+sources:
+- source:
+    path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    bytes: 13168
+    extraction: html-whitespace-normalized-v1
+    source_group: infofinland
+    attribution_record: infofinland
+    title: Finländska högtidsdagar
+    source_url: https://www.infofinland.fi/sv/information-about-finland/finnish-holidays
+    visible_dates:
+    - 08.08.2025
+  attribution:
+    title: InfoFinland.fi
+    credit: InfoFinland.fi
+    url: https://www.infofinland.fi/sv
+    local_notice: data/infofinland/content/open-data.html
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    scope: Text only; images excluded by the archived notice.
+    changes: Selection, rearrangement, new Swedish headings, list/paragraph formatting and whitespace
+      normalization. One complete legal-protection sentence selected from interview coaching. No
+      substantive rewriting.
+    publication_note: Carry this attribution, source/article links, license link and change statement
+      with distributed/rendered content; no endorsement implied.
+    local_notice_sha256: b9b683d1af2066cdb4086620cb0a4acfea66bab858d36908fafc284f2485489c
+- source:
+    path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    bytes: 1608084
+    extraction: pypdf-default-page-text-v1
+    source_group: textbook
+    attribution_record: textbook
+    pdf_metadata:
+      /Author: Lill Rasilainen
+      /Creator: Microsoft® Word Office 365:lle
+      /CreationDate: D:20190614140433+03'00'
+      /ModDate: D:20190614140433+03'00'
+      /Producer: Microsoft® Word Office 365:lle
+  attribution:
+    title: Finland – Lärobok i samhällsorientering
+    credit: © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    local_notice: data/orientation_guide.pdf
+    notice_pdf_page: 4
+    license: Foreword permits free use; no standardized redistribution license inferred
+    notice_excerpt: Det här läromedlet är avsett som handbok för utbildaren, men kan också användas
+      fritt av andra.
+    changes: Two complete paragraphs selected, rearranged under new headings; PDF line whitespace
+      normalized. No word or punctuation repairs.
+    publication_note: Preserve the original credit and notice; do not label source text MIT or CC
+      BY.
+    local_notice_sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f

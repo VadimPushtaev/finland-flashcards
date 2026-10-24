@@ -1,0 +1,216 @@
+schema_version: 1
+section_id: hb-c03-kalender
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c03-kalender/sources/background.jpg
+    sha256: 09e67ceded191f90a7f1eb742891732ce3a2de160e85f707f05e8b1d4c059297
+    bytes: 7362055
+  source_url: https://commons.wikimedia.org/wiki/File:FI-18_-_Helsinki_-_Flag_-_Flag_Of_Finland_(4891308175).jpg
+  creator: CGP Grey
+  reuse_terms: CC BY 2.0; https://creativecommons.org/licenses/by/2.0
+  required_credits: 'FI-18 - Helsinki - Flag - Flag Of Finland (4891308175).jpg — CGP Grey · CC BY 2.0.
+    https://commons.wikimedia.org/wiki/File:FI-18_-_Helsinki_-_Flag_-_Flag_Of_Finland_(4891308175).jpg
+    License: https://creativecommons.org/licenses/by/2.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY 2.0.'
+  relevance_verification: Flag of Finland Background is decorative context, not identification of a specific
+    historical event. Metadata and identity checked through the Commons API for the linked original file.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c03-kalender/cards/00.png
+    sha256: 2c1e5a5a1c2e6f1be246eb13ca9061ca9b555c24c8a272bcd084642fb870957b
+    bytes: 11529
+    sentence_id: hb-c03-u0067-s001
+    source_substrings:
+    - allmänna lediga dagar
+  - path: studio/media/hb-c03-kalender/cards/02.png
+    sha256: 86000fdd3ad0b67634ed0282327f7795462d6fec19e6940349a6001f20c246bf
+    bytes: 9152
+    sentence_id: hb-c03-u0067-s003
+    source_substrings:
+    - hissa flaggan
+  - path: studio/media/hb-c03-kalender/cards/04.png
+    sha256: 6a9bf6ed896d11787e3a55a9cd1fe93632605d6d797b137a9784954b8f51f4b0
+    bytes: 8880
+    sentence_id: hb-c03-u0067-s005
+    source_substrings:
+    - flaggdagarna
+  - path: studio/media/hb-c03-kalender/cards/07.png
+    sha256: 0b36f93ec026d4440e2f0b10e9dee5eb89368c626eb159482916e496a1d9f182
+    bytes: 13159
+    sentence_id: hb-c03-u0068-s002
+    source_substrings:
+    - kristen bakgrund
+  - path: studio/media/hb-c03-kalender/cards/08.png
+    sha256: 4d58e6cc49c0bc66cd561f88a0c5c2a56d90925d033489125385a12f4c7448e9
+    bytes: 12498
+    sentence_id: hb-c03-u0068-s003
+    source_substrings:
+    - familj, släkt eller vänner
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c03-kalender/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c03-kalender/sources/music.mp3
+    sha256: a3ad327aa9661d95ab701860e5583dac2a59b710af6d204316ff6043ee7205d3
+    bytes: 5579577
+  - path: studio/media/hb-c03-kalender/sources/music-bed.flac
+    sha256: c4a0b4af9443c99538978f981554c3ee704913750e6779bbfbaac3df0bca4012
+    bytes: 11926678
+    seconds: 110.16666666666667
+    sample_rate: 48000
+    channels: 2
+  title: Atlantean Twilight
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100322
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Atlantean%20Twilight.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Atlantean Twilight" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c03-kalender/prepare_assets.py
+    master_seconds: 171.158281
+    prepared_seconds: 110.16666666666667
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s001.wav
+    sha256: 6abf299bfd6de841874f91a5e03980ec9689a9fb8936aaa89f22cd32b100b32f
+    bytes: 608300
+    seconds: 6.896326530612245
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s001
+    peak: 0.385467529296875
+    generation_seconds: 25.483417567971628
+    tts_input: En del av högtiderna, till exempel jul och påsk, är allmänna lediga dagar.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s002.wav
+    sha256: 3bc185049d232de72d1d557cde33c20190eb58656d4e58946c6c5762d74e62d8
+    bytes: 405548
+    seconds: 4.597551020408163
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s002
+    peak: 0.26959228515625
+    generation_seconds: 20.652336266997736
+    tts_input: Då är också många butiker och ämbetsverk stängda.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s003.wav
+    sha256: 785fdc6ec3ce895ac315fc9eea284038a75505656150ff0f798b1b39bcd6a190
+    bytes: 399404
+    seconds: 4.527891156462585
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s003
+    peak: 0.41033935546875
+    generation_seconds: 17.695816713036038
+    tts_input: Ett sätt att fira en helgdag är att hissa flaggan.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s004.wav
+    sha256: b89f5c7c458a2a0fdc067de5a0085d8a0b00c7be688432159764f6d2a3caa6ce
+    bytes: 540716
+    seconds: 6.130068027210885
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s004
+    peak: 0.24444580078125
+    generation_seconds: 26.135319248016458
+    tts_input: I Finland flaggar man på bestämda dagar som är intagna i kalendern.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s005.wav
+    sha256: 43967e40c0e8cf69e7f84c0eff0e5ca9bf91bb76f7bfb94b0e6ed7d0dd6a31cc
+    bytes: 479276
+    seconds: 5.433469387755102
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s005
+    peak: 0.278076171875
+    generation_seconds: 26.68769152200548
+    tts_input: Både myndigheter och vanliga människor deltar i flaggdagarna.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0067-s006.wav
+    sha256: b91db21c0f3bf4da9e28b950a45acf1b219c540762fc1456802162f881277a21
+    bytes: 319532
+    seconds: 3.622312925170068
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0067-s006
+    peak: 0.405487060546875
+    generation_seconds: 14.302745043009054
+    tts_input: I Finland är flaggan något högtidligt.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s001.wav
+    sha256: c3d903848e41f61017ef9b982f1d6bb7291e70e4fa97fc9b3ecade9742a47e26
+    bytes: 645164
+    seconds: 7.314285714285714
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0068-s001
+    peak: 0.2630615234375
+    generation_seconds: 29.0159833090147
+    tts_input: En stor del av de finländska festerna och traditionerna grundar sig på religionen.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s002.wav
+    sha256: 371d0c0580c7feede0d94ee25850869488958760b0a2055db80cb45f540058f6
+    bytes: 921644
+    seconds: 10.448979591836734
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0068-s002
+    peak: 0.257415771484375
+    generation_seconds: 43.780768984986935
+    tts_input: En del av traditionerna har kristen bakgrund medan andra har sina rötter i tiden då naturreligion
+      var vanlig i Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  - path: studio/media/hb-c03-kalender/narration/hb-c03-u0068-s003.wav
+    sha256: 72681375c3b9ca116e83231b418c1be8c6dabea72e86ee71adbc43661cd0ab53
+    bytes: 958508
+    seconds: 10.866938775510205
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c03-u0068-s003
+    peak: 0.424102783203125
+    generation_seconds: 37.507648220984265
+    tts_input: I dag innebär traditionerna och festerna för många finländare framför allt fritid tillsammans
+      med familj, släkt eller vänner.
+    generation_run: Initial complete episode source-order stream, NumPy seed42
+  creator: Local synthesis with Supertonic3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: one NumPy42 stream per complete episode in source order, except explicitly recorded targeted
+      retakes; see each file generation_run and retake-history.json when present
+    device: local CPU ONNX; four intra-op threads; Linux x86_64
+    format: 44100Hz mono PCM16 WAV

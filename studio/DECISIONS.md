@@ -77,3 +77,16 @@ These are production choices for the requested chapter, not a claim of user
 acceptance of the resulting videos. Swedish Supertonic 3/F1 settings remain unchanged.
 Parallel workers own separate episode batches; shared tooling, inventory and
 chapter-wide media identity checks are coordinated centrally.
+
+## Chapter 3 production — 2026-10-24
+
+Chapter 3 uses the muted plum palette recorded in `DIRECTING.md`, with the same
+Liberation Sans fonts, Swedish Supertonic 3/F1 preset and music gain as Chapter 2.
+Episode scripts explicitly select bilinear sampling for softened decorative
+backgrounds; text and foreground graphics retain their existing rendering.
+Parallel workers own separate episode batches and independently review exports.
+The user authorized committing and pushing all finished Chapter 3 previews;
+that authorization does not constitute whole-video listening acceptance.
+Production runs locally on an AMD Ryzen 5 3600X (six cores, twelve logical CPUs)
+with 31 GiB RAM, using CPU inference and four ONNX intra-op threads per TTS job.
+The fourteen required TTS/ASR model files match the pinned download checksums.

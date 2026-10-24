@@ -1,0 +1,1147 @@
+schema_version: 1
+section_id: hb-c03-festmat
+chapter_id: hb-c03
+title_sv: Festmat och drycker
+title_ru: Праздничная еда и напитки
+source_path: data/homebrew/sv/chapters/03_kultur_varderingar_och_traditioner.yaml
+translation_path: data/homebrew/ru/sections/hb-c03-festmat.yaml
+example_only: false
+source_section_sha256: 6078bea2a4addc810c2d8abb01ce5768bda7e300726bef821537646ca47b4c1f
+translation_file_sha256: 0024079dcd99090f7bf84c3f3efa1a6933515f99c30c5c8a68a3ba0378db6425
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps. Chapter3 plum palette #342736; ivory #faf3e8, lavender #d8c8dc, warm highlight
+    #e2bb85, separator #62506a. Liberation Sans Bold48/regular40; explicitly44/36 or40/34 only where layout
+    requires. Stable Swedish-above-Russian right panel; source-only foreground term cards when useful.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair0.25seconds before narration. Natural local voice at speed0.95. Pause1.5seconds
+    after ordinary sentences and2.2seconds at scene ends;2.5seconds for long pairs. No target-duration
+    acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Modern Finnish joulupöytä.jpg by JIP continuously as decorative background, darkened42%
+    and blurred2.5px. Smooth cyclic diagonal pan(0.15,0.15)→(0.85,0.85) and15%relative zoom1.06→1.219,140seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=3.405654761904762. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic3/F1, Swedish,32steps,speed0.95,seed42,44100Hz mono PCM16. Exact
+    inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only expansions;
+    pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Ambiment by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 1372.865 seconds; prepared lossless stereo bed 476.792 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two15second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Use bilinear resampling only for the preblurred decorative background, preserving fractional
+    crop and continuous motion. Coordinator reference benchmark found mean pixel difference 0.071/255
+    and maximum 2/255 versus bicubic, reducing per-frame background processing. Text and foreground remain
+    unchanged; inspect stills and verify exported motion.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c03-u0121
+  description: 'Source passage: Finland har en rik tradition av festmat.'
+- id: hb-c03-u0122
+  description: 'Source passage: På många påskbord serveras lamm, ägg, memma, pasha och chokladägg.'
+- id: hb-c03-u0123
+  description: 'Source passage: På valborg dricker man mjöd och äter munkar och struvor.'
+- id: hb-c03-u0124
+  description: 'Source passage: På midsommar firar många sommaren genom att grilla ute.'
+- id: hb-c03-u0125
+  description: 'Source passage: På sensommaren äter en del kräftor och ordnar kräftskiva för sina vänner.'
+- id: hb-c03-u0126
+  description: 'Source passage: Den traditionella finska julmaten är mångsidig och läcker.'
+- id: hb-c03-u0127
+  description: 'Source passage: På julbordet serveras de bästa traditionella delikatesserna.'
+- id: hb-c03-u0128
+  description: 'Source passage: I februari finns det runebergstårtor och fastlagsbullar i affärerna.'
+- id: hb-c03-u0129
+  description: 'Source passage: I Finland dricker människorna vanligtvis vatten, mjölk eller ibland surmjölk
+    till maten.'
+- id: hb-c03-u0156
+  description: 'Source passage: Man dricker kaffe på morgonen, dagen och kvällen, på jobbet och hemma,
+    när det är fest och till vardags och på kafé eller till exempel utflykter i naturen.'
+- id: hb-c03-u0130
+  description: 'Source passage: I Finland har det länge tillverkats och druckits alkoholdrycker.'
+- id: hb-c03-u0131
+  description: 'Source passage: I Finland använder en del människor mycket alkohol.'
+- id: hb-c03-u0132
+  description: 'Source passage: Alkohol orsakar varje år många allvarliga hälsoproblem, sociala problem
+    och dödsfall.'
+- id: hb-c03-u0133
+  description: 'Source passage: Alkoholdrycker är relativt dyra i Finland och köpet av dem begränsas med
+    åldersgränser för unga personer.'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: 'One distinct verified photograph: Modern Finnish joulupöytä.jpg. Decorative context for
+    Festmat och drycker; not an assertion about every custom or individual scene.'
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Ambiment by Kevin MacLeod, official catalogue master with CC BY4.0 attribution.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+sentences:
+- sentence_id: hb-c03-u0121-s001
+  sv: Finland har en rik tradition av festmat.
+  ru: В Финляндии богатая традиция праздничной еды.
+  scene_id: hb-c03-u0121
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0121-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.359932
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0121-s002
+  sv: På olika högtider lagar eller köper man maträtter, bakverk, drycker och delikatesser som är typiska
+    för den aktuella högtiden.
+  ru: На разные праздники готовят или покупают блюда, выпечку, напитки и деликатесы, характерные для соответствующего
+    праздника.
+  scene_id: hb-c03-u0121
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0121-s002.wav
+  start_seconds: 9.125
+  end_seconds: 19.782959
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0122-s001
+  sv: På många påskbord serveras lamm, ägg, memma, pasha och chokladägg.
+  ru: На многих пасхальных столах подают баранину, яйца, мямми, творожную пасху и шоколадные яйца.
+  scene_id: hb-c03-u0122
+  visual_cue: 'Steady complete source-only term card: lamm, ägg, memma, pasha'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - lamm
+  - ägg
+  - memma
+  - pasha
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0122-s001.wav
+  start_seconds: 22.25
+  end_seconds: 28.171088
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/02.png
+  render_caption: false
+- sentence_id: hb-c03-u0122-s002
+  sv: Äggen dekoreras och målas.
+  ru: Яйца украшают и красят.
+  scene_id: hb-c03-u0122
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0122-s002.wav
+  start_seconds: 29.958333
+  end_seconds: 32.744728
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0122-s003
+  sv: Att måla ägg är ursprungligen en ortodox sed.
+  ru: Красить яйца — изначально православный обычай.
+  scene_id: hb-c03-u0122
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0122-s003.wav
+  start_seconds: 34.5
+  end_seconds: 38.888571
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0122-s004
+  sv: Memma är en söt efterrätt av malt och rågmjöl som tillagas i ugn och äts med grädde och socker.
+  ru: Мямми — сладкий десерт из солода и ржаной муки, который готовят в духовке и едят со сливками и сахаром.
+  scene_id: hb-c03-u0122
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0122-s004.wav
+  start_seconds: 40.666667
+  end_seconds: 48.95619
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0122-s005
+  sv: Pasha är en efterrätt gjord av kvarg.
+  ru: Творожная пасха — десерт из творога.
+  scene_id: hb-c03-u0122
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0122-s005.wav
+  start_seconds: 50.708333
+  end_seconds: 54.469966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0123-s001
+  sv: På valborg dricker man mjöd och äter munkar och struvor.
+  ru: На Вальпургиев праздник пьют симу и едят пончики и хворост.
+  scene_id: hb-c03-u0123
+  visual_cue: 'Steady complete source-only term card: mjöd, munkar, struvor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - mjöd
+  - munkar
+  - struvor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0123-s001.wav
+  start_seconds: 56.958333
+  end_seconds: 61.973844
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/07.png
+  render_caption: false
+- sentence_id: hb-c03-u0123-s002
+  sv: Mjöd är en dryck som tillverkas genom jäsning av vatten, citron och socker och som många tillverkar
+    hemma.
+  ru: Сима — напиток, получаемый путём брожения воды, лимона и сахара, который многие делают дома.
+  scene_id: hb-c03-u0123
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0123-s002.wav
+  start_seconds: 63.75
+  end_seconds: 72.875442
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0123-s003
+  sv: Mjöd kan innehålla en liten mängd alkohol.
+  ru: Сима может содержать небольшое количество алкоголя.
+  scene_id: hb-c03-u0123
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0123-s003.wav
+  start_seconds: 74.666667
+  end_seconds: 78.567619
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0124-s001
+  sv: På midsommar firar många sommaren genom att grilla ute.
+  ru: На Юханнус многие празднуют лето, готовя на гриле на открытом воздухе.
+  scene_id: hb-c03-u0124
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0124-s001.wav
+  start_seconds: 81.041667
+  end_seconds: 85.917857
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0124-s002
+  sv: På grillen grillas korv, kött och grönsaker.
+  ru: На гриле готовят колбаски, мясо и овощи.
+  scene_id: hb-c03-u0124
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0124-s002.wav
+  start_seconds: 87.708333
+  end_seconds: 91.887925
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0124-s003
+  sv: Kring midsommar kommer den första potatisen för säsongen till affärerna.
+  ru: Примерно к Юханнусу в магазинах появляется первый картофель сезона.
+  scene_id: hb-c03-u0124
+  visual_cue: 'Steady complete source-only term card: första potatisen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - första potatisen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0124-s003.wav
+  start_seconds: 93.666667
+  end_seconds: 100.075374
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/12.png
+  render_caption: false
+- sentence_id: hb-c03-u0124-s004
+  sv: De kokas och äts med smör och dill och sill.
+  ru: Его варят и едят с маслом, укропом и сельдью.
+  scene_id: hb-c03-u0124
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0124-s004.wav
+  start_seconds: 101.833333
+  end_seconds: 105.943265
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0125-s001
+  sv: På sensommaren äter en del kräftor och ordnar kräftskiva för sina vänner.
+  ru: В конце лета некоторые едят раков и устраивают для друзей рачьи вечеринки.
+  scene_id: hb-c03-u0125
+  visual_cue: 'Steady complete source-only term card: kräftskiva'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kräftskiva
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0125-s001.wav
+  start_seconds: 108.416667
+  end_seconds: 114.895034
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/14.png
+  render_caption: false
+- sentence_id: hb-c03-u0125-s002
+  sv: Traditionen med kräftskivor kommer från de svenskspråkiga kusttrakterna.
+  ru: Традиция рачьих вечеринок происходит из шведоязычных прибрежных районов.
+  scene_id: hb-c03-u0125
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0125-s002.wav
+  start_seconds: 116.666667
+  end_seconds: 123.214694
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0126-s001
+  sv: Den traditionella finska julmaten är mångsidig och läcker.
+  ru: Традиционная финская рождественская еда разнообразна и вкусна.
+  scene_id: hb-c03-u0126
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s001.wav
+  start_seconds: 125.666667
+  end_seconds: 130.821497
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0126-s002
+  sv: I risgrynsgröten läggs en skalad mandel.
+  ru: В рисовую кашу кладут очищенный миндальный орех.
+  scene_id: hb-c03-u0126
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s002.wav
+  start_seconds: 132.583333
+  end_seconds: 136.344966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0126-s003
+  sv: Enligt vissa traditioner får den som hittar mandeln i sin gröt lycka.
+  ru: Согласно некоторым традициям тому, кто найдёт миндальный орех в своей каше, улыбнётся удача.
+  scene_id: hb-c03-u0126
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s003.wav
+  start_seconds: 138.125
+  end_seconds: 144.185408
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0126-s004
+  sv: Glögg, det vill säga en varm, kryddad saftdryck, serveras under julen med pepparkakor.
+  ru: Глёг, то есть горячий соковый напиток со специями, подают на Рождество с пряным печеньем.
+  scene_id: hb-c03-u0126
+  visual_cue: 'Steady complete source-only term card: Glögg, pepparkakor'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Glögg
+  - pepparkakor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s004.wav
+  start_seconds: 145.958333
+  end_seconds: 153.551259
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/19.png
+  render_caption: false
+- sentence_id: hb-c03-u0126-s005
+  sv: Ibland innehåller glöggen också alkohol.
+  ru: Иногда глёг содержит также алкоголь.
+  scene_id: hb-c03-u0126
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s005.wav
+  start_seconds: 155.333333
+  end_seconds: 159.094966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0126-s006
+  sv: På Luciadagen äter man saffransbullar formade som bokstaven s.
+  ru: В День святой Люсии едят шафранные булочки в форме буквы s.
+  scene_id: hb-c03-u0126
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0126-s006.wav
+  start_seconds: 160.875
+  end_seconds: 166.517449
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0127-s001
+  sv: På julbordet serveras de bästa traditionella delikatesserna.
+  ru: На рождественский стол подают лучшие традиционные деликатесы.
+  scene_id: hb-c03-u0127
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0127-s001.wav
+  start_seconds: 169.0
+  end_seconds: 174.572789
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0127-s002
+  sv: Många steker julskinkan själv hemma.
+  ru: Многие сами запекают дома рождественскую ветчину.
+  scene_id: hb-c03-u0127
+  visual_cue: 'Steady complete source-only term card: julskinkan'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - julskinkan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0127-s002.wav
+  start_seconds: 176.333333
+  end_seconds: 180.025306
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/23.png
+  render_caption: false
+- sentence_id: hb-c03-u0127-s003
+  sv: Med den serveras kokt potatis och lådrätter, det vill säga rotsaksrätter tillagade i ugn, till exempel
+    kålrots-, potatis- och morotslåda.
+  ru: С ней подают варёный картофель и запеканки, то есть блюда из корнеплодов, приготовленные в духовке,
+    например брюквенную, картофельную и морковную запеканку.
+  scene_id: hb-c03-u0127
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0127-s003.wav
+  start_seconds: 181.791667
+  end_seconds: 194.121463
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0127-s004
+  sv: Till julbordet hör också sillsallad, det vill säga en sallad gjord av kokta och hackade rotsaker.
+  ru: К рождественскому столу относится также салат с сельдью, то есть салат из варёных и нарезанных корнеплодов.
+  scene_id: hb-c03-u0127
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0127-s004.wav
+  start_seconds: 195.875
+  end_seconds: 204.512823
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0127-s005
+  sv: På julen äter man också mycket fisk och olika slags sillar, strömming, gravad lax samt lutfisk av
+    torkad fisk, som enligt många är en av de bästa juldelikatesserna.
+  ru: 'На Рождество также едят много рыбы: разные виды сельди, салаку, слабосолёного лосося и лютефиск
+    из сушёной рыбы, который многие считают одним из лучших рождественских деликатесов.'
+  scene_id: hb-c03-u0127
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0127-s005.wav
+  start_seconds: 206.291667
+  end_seconds: 220.571939
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0128-s001
+  sv: I februari finns det runebergstårtor och fastlagsbullar i affärerna.
+  ru: В феврале в магазинах есть пирожные Рунеберга и масленичные булочки.
+  scene_id: hb-c03-u0128
+  visual_cue: 'Steady complete source-only term card: runebergstårtor, fastlagsbullar'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - runebergstårtor
+  - fastlagsbullar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s001.wav
+  start_seconds: 223.041667
+  end_seconds: 229.241395
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/27.png
+  render_caption: false
+- sentence_id: hb-c03-u0128-s002
+  sv: Runebergstårtorna smakar mandel och ovanpå dem finns hallonsylt.
+  ru: Пирожные Рунеберга имеют вкус миндаля, а сверху на них малиновое варенье.
+  scene_id: hb-c03-u0128
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s002.wav
+  start_seconds: 231.0
+  end_seconds: 236.851429
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0128-s003
+  sv: En fastlagsbulle är en stor, rund bulle skuren på mitten.
+  ru: Масленичная булочка — большая круглая булочка, разрезанная посередине.
+  scene_id: hb-c03-u0128
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s003.wav
+  start_seconds: 238.625
+  end_seconds: 243.77983
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0128-s004
+  sv: Mellan halvorna finns vispgrädde och mandelmassa eller sylt.
+  ru: Между половинками находятся взбитые сливки и миндальная масса или варенье.
+  scene_id: hb-c03-u0128
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s004.wav
+  start_seconds: 245.541667
+  end_seconds: 250.905476
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0128-s005
+  sv: På fastlagen äter man också ärtsoppa.
+  ru: На Масленицу едят также гороховый суп.
+  scene_id: hb-c03-u0128
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s005.wav
+  start_seconds: 252.666667
+  end_seconds: 256.358639
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0128-s006
+  sv: Andra delikatesser som hör början av vintern till är blinier, det vill säga plättar av bovetemjöl,
+    som ingår i den ortodoxa fastlagstraditionen.
+  ru: Другие деликатесы, относящиеся к началу зимы, — блины, то есть оладьи из гречневой муки, входящие
+    в православную масленичную традицию.
+  scene_id: hb-c03-u0128
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0128-s006.wav
+  start_seconds: 258.125
+  end_seconds: 270.942415
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0129-s001
+  sv: I Finland dricker människorna vanligtvis vatten, mjölk eller ibland surmjölk till maten.
+  ru: В Финляндии люди обычно пьют во время еды воду, молоко или иногда простоквашу.
+  scene_id: hb-c03-u0129
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0129-s001.wav
+  start_seconds: 273.416667
+  end_seconds: 281.288231
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0129-s002
+  sv: Surmjölk är syrad mjölk.
+  ru: Простокваша — сквашенное молоко.
+  scene_id: hb-c03-u0129
+  visual_cue: 'Steady complete source-only term card: Surmjölk'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Surmjölk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0129-s002.wav
+  start_seconds: 283.041667
+  end_seconds: 285.828061
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/34.png
+  render_caption: false
+- sentence_id: hb-c03-u0156-s001
+  sv: Man dricker kaffe på morgonen, dagen och kvällen, på jobbet och hemma, när det är fest och till
+    vardags och på kafé eller till exempel utflykter i naturen.
+  ru: Кофе пьют утром, днём и вечером, на работе и дома, в праздники и в будни, в кафе или, например,
+    на прогулках на природе.
+  scene_id: hb-c03-u0156
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0156-s001.wav
+  start_seconds: 288.291667
+  end_seconds: 300.900102
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0156-s002
+  sv: Kafferasten på arbetsplatsen är en trevlig social paus i arbetet.
+  ru: Перерыв на кофе на работе — приятная пауза в работе для общения.
+  scene_id: hb-c03-u0156
+  visual_cue: 'Steady complete source-only term card: Kafferasten'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Kafferasten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0156-s002.wav
+  start_seconds: 302.666667
+  end_seconds: 308.727075
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/36.png
+  render_caption: false
+- sentence_id: hb-c03-u0156-s003
+  sv: Under rasten kan man fråga arbetskamraterna om det hänt någonting nytt.
+  ru: Во время перерыва можно спросить коллег, не произошло ли чего-нибудь нового.
+  scene_id: hb-c03-u0156
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0156-s003.wav
+  start_seconds: 310.5
+  end_seconds: 316.630068
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0156-s004
+  sv: Istället för kaffe kan man också dricka te eller någon annan dryck.
+  ru: Вместо кофе можно также пить чай или другой напиток.
+  scene_id: hb-c03-u0156
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0156-s004.wav
+  start_seconds: 318.416667
+  end_seconds: 324.198435
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0130-s001
+  sv: I Finland har det länge tillverkats och druckits alkoholdrycker.
+  ru: В Финляндии алкогольные напитки давно производят и пьют.
+  scene_id: hb-c03-u0130
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0130-s001.wav
+  start_seconds: 326.666667
+  end_seconds: 332.378776
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0130-s002
+  sv: Finlands klimat är för kallt för att odla vinrankor, men potatis och spannmål lyckas bra.
+  ru: Климат Финляндии слишком холодный для выращивания виноградной лозы, но картофель и зерновые хорошо
+    удаются.
+  scene_id: hb-c03-u0130
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0130-s002.wav
+  start_seconds: 334.166667
+  end_seconds: 342.038231
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0130-s003
+  sv: Av dem görs starksprit.
+  ru: Из них делают крепкие спиртные напитки.
+  scene_id: hb-c03-u0130
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0130-s003.wav
+  start_seconds: 343.791667
+  end_seconds: 346.578061
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0130-s004
+  sv: Många finländare dricker gärna också öl och vin.
+  ru: Многие жители Финляндии также охотно пьют пиво и вино.
+  scene_id: hb-c03-u0130
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0130-s004.wav
+  start_seconds: 348.333333
+  end_seconds: 352.861224
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0131-s001
+  sv: I Finland använder en del människor mycket alkohol.
+  ru: В Финляндии некоторые люди употребляют много алкоголя.
+  scene_id: hb-c03-u0131
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0131-s001.wav
+  start_seconds: 355.333333
+  end_seconds: 360.139864
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0131-s002
+  sv: Både män och kvinnor dricker alkohol.
+  ru: Алкоголь пьют и мужчины, и женщины.
+  scene_id: hb-c03-u0131
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0131-s002.wav
+  start_seconds: 361.916667
+  end_seconds: 365.39966
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0131-s003
+  sv: I Finland är det inte en lika stor skam att vara full som i en del andra kulturer.
+  ru: В Финляндии быть пьяным не так стыдно, как в некоторых других культурах.
+  scene_id: hb-c03-u0131
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0131-s003.wav
+  start_seconds: 367.166667
+  end_seconds: 374.550612
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0131-s004
+  sv: Många finländare anser att de är mer sociala och avslappnade när de är fulla.
+  ru: Многие жители Финляндии считают, что, будучи пьяными, становятся общительнее и расслабленнее.
+  scene_id: hb-c03-u0131
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0131-s004.wav
+  start_seconds: 376.333333
+  end_seconds: 383.16
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0132-s001
+  sv: Alkohol orsakar varje år många allvarliga hälsoproblem, sociala problem och dödsfall.
+  ru: Ежегодно алкоголь вызывает много серьёзных проблем со здоровьем, социальных проблем и смертей.
+  scene_id: hb-c03-u0132
+  visual_cue: 'Steady complete source-only term card: hälsoproblem, sociala problem'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - hälsoproblem
+  - sociala problem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0132-s001.wav
+  start_seconds: 385.625
+  end_seconds: 393.287585
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/47.png
+  render_caption: false
+- sentence_id: hb-c03-u0132-s002
+  sv: Alkoholanvändningen har ändå minskat i Finland under de senaste åren.
+  ru: Однако употребление алкоголя в Финляндии в последние годы сократилось.
+  scene_id: hb-c03-u0132
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0132-s002.wav
+  start_seconds: 395.041667
+  end_seconds: 401.171735
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0132-s003
+  sv: I synnerhet unga dricker mindre alkohol än de äldre åldersklasserna.
+  ru: В частности, молодые люди пьют меньше алкоголя, чем старшие возрастные группы.
+  scene_id: hb-c03-u0132
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0132-s003.wav
+  start_seconds: 402.958333
+  end_seconds: 409.088401
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0133-s001
+  sv: Alkoholdrycker är relativt dyra i Finland och köpet av dem begränsas med åldersgränser för unga
+    personer.
+  ru: Алкогольные напитки в Финляндии относительно дорогие, и для молодых людей их покупка ограничена
+    возрастными порогами.
+  scene_id: hb-c03-u0133
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0133-s001.wav
+  start_seconds: 411.541667
+  end_seconds: 420.806429
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0133-s002
+  sv: I mataffären säljs endast milda alkoholdrycker.
+  ru: В продуктовом магазине продают только слабоалкогольные напитки.
+  scene_id: hb-c03-u0133
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0133-s002.wav
+  start_seconds: 422.583333
+  end_seconds: 427.041565
+  display_segments: []
+  render_image: null
+  render_caption: false
+- sentence_id: hb-c03-u0133-s003
+  sv: Starka alkoholdrycker köper man i de statligt reglerade Alko-butikerna.
+  ru: Крепкие алкогольные напитки покупают в регулируемых государством магазинах Alko.
+  scene_id: hb-c03-u0133
+  visual_cue: 'Steady complete source-only term card: Alko-butikerna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Alko-butikerna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0133-s003.wav
+  start_seconds: 428.791667
+  end_seconds: 435.409354
+  display_segments: []
+  render_image: studio/media/hb-c03-festmat/cards/52.png
+  render_caption: false
+- sentence_id: hb-c03-u0133-s004
+  sv: Att köra bil under alkoholpåverkan är förbjudet enligt lag och det kan ge ett hårt straff.
+  ru: Вождение автомобиля под воздействием алкоголя запрещено законом и может повлечь суровое наказание.
+  scene_id: hb-c03-u0133
+  visual_cue: Keep the foreground open over the continuous topic photograph; no foreground caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c03-festmat/narration/hb-c03-u0133-s004.wav
+  start_seconds: 437.166667
+  end_seconds: 444.550612
+  display_segments: []
+  render_image: null
+  render_caption: false
+render:
+  music_path: studio/media/hb-c03-festmat/sources/music-bed.flac
+  background_image: studio/media/hb-c03-festmat/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and15%relative zoom,140seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.405654761904762
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Kultur, värderingar och traditioner
+    - Finlands Flyktinghjälp; källor och utgivarvillkor i CREDITS.md.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Modern Finnish joulupöytä.jpg — JIP · CC BY-SA 3.0
+    - Ambiment — Kevin MacLeod (incompetech.com).
+    - CC BY4.0 · creativecommons.org/licenses/by/4.0
+    - Utdrag, toningar, korsfadad upprepning vid behov och volymanpassning.
+    - 'Svensk lokal berättarröst: Supertonic3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#342736'
+    text: '#faf3e8'
+    secondary: '#d8c8dc'
+    highlight: '#e2bb85'
+    separator: '#62506a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Modern_Finnish_joulup%C3%B6yt%C3%A4.jpg
+    description: A slightly more modern version of the traditional Finnish joulupöytä Christmas meal.
+      This dinner includes potato casserole, rosolli, gravlax, caviar, herring, olives, and various cheeses.
+      The traditional Christmas ham has been replaced with a soy version.
+    license: CC BY-SA 3.0
+  music_loop_crossfade_seconds: 4
