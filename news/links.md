@@ -58,6 +58,8 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 ## Official press releases
 
+- Migri preparation press release (SV, dated 2026-10-09; translation published 2026-10-23): https://migri.fi/sv/-/finland-forbereder-sig-pa-att-infora-ett-medborgarskapsprov-laromedlet-publiceras-vid-arsskiftet
+- Migri preparation press release (EN, dated 2026-10-09; translation published 2026-10-23): https://migri.fi/en/-/finland-prepares-to-introduce-citizenship-test-learning-materials-published-around-the-turn-of-the-year
 - Migri press release: spring 2027 test locations and year-turn publication of learning material and instructions (FI, published 2026-10-09): https://migri.fi/-/suomi-valmistautuu-ottamaan-kayttoon-kansalaisuuskokeen-oppimateriaalit-julkaistaan-vuodenvaihteessa
 - Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (EN, published 2026-10-09): https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year
 - Migri customer bulletin: learning material at year-turn, 6-10 annual test dates, 2027 locations, result validity and special arrangements (SV, published 2026-10-09): https://migri.fi/sv/-/aktuellt-om-forandringarna-i-medborgarskapslagen-laromedlen-for-medborgarskapsprovet-ges-ut-vid-arsskiftet
