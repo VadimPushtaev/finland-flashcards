@@ -1,0 +1,61 @@
+schema_version: 1
+source_id: hb-c07-problem
+result_sha256: 1b6955a59db2d40b32fcdc967f74eaeff4d59bbc5759ef6ade9b8f750a435d5e
+glossary_sha256: c796b1f1acfbcf19e0af2caa1f83e47d6f450b6c67507876db543a7c5575742f
+status: complete
+review_mode: independent
+reviewer: /root/translate_support
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c07-u0200-s001
+  blocking: false
+  resolved: true
+  note: Pinned source paragraph spells cash-payment adverb kontakt; the same archived article definition
+    explicitly says kontant. Translate unambiguous cash meaning наличными and annotate exact visible kontakt
+    span with intended lemma kontant. No source edits.
+- source_id: hb-c07-u0216-s001
+  blocking: false
+  resolved: true
+  note: Working InfoFinland archive differs from pinned provenance. Coordinator recovered the exact required
+    SHA a31f5c7e9a2a8c70a8791ededc2a20e8707d7b1be62c4818e30eb6661a26f716 from Git ba3ca2484b2d5a2fd617200fd88462fb8cb7d004
+    into a verified temporary copy; fresh v2 bundle supplied its full context. Working archive preserved.
+    The coordinator identified a harmless CRLF-versus-LF difference inside a pakolaisapu.fi URL attribute;
+    CRLF-normalized bytes agree and there is no semantic difference.
+- source_id: hb-c07-u0201-s004
+  blocking: false
+  resolved: true
+  note: Independent review grouped the complete earnings-related unemployment benefit and relational expressions,
+    aligned the occupational-safety regulator with the approved glossary, and made wage-correction Russian
+    natural without changing the archived claim.
+references:
+- location: data/infofinland/content/work-and-enterprise/problems-in-working-life.html
+  purpose: Full pinned Swedish source context and selected passage provenance read; preserves archived
+    claims, qualifications, and terminology.
+- location: data/orientation/sv/laromedel/arbete/hur-soker-man-arbete-i-finland.html
+  purpose: Full pinned Swedish source context and selected passage provenance read; preserves archived
+    claims, qualifications, and terminology.
+- location: data/orientation/sv/laromedel/arbete/problem-i-arbetet.html
+  purpose: Full pinned Swedish source context and selected passage provenance read; preserves archived
+    claims, qualifications, and terminology.
+- location: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+  purpose: Entire parent chapter and cross-section context read before drafting; frozen sentence IDs and
+    source order retained.
+- location: data/homebrew/ru/glossary.yaml
+  purpose: Reviewed existing 177 terms and coordinator-approved Chapter 7 additions; Finnish institutional
+    and employment/tax senses applied.
+- location: data/homebrew/metadata/attribution.yaml
+  purpose: Russian layer translates the attributed archived anthology; no current-law verification or
+    official endorsement asserted.
+- location: https://github.com/VadimPushtaev/finland-flashcards/blob/ba3ca2484b2d5a2fd617200fd88462fb8cb7d004/data/infofinland/content/work-and-enterprise/problems-in-working-life.html
+  purpose: Versioned original archive supplying verified v2 context for wage recovery and the three-month
+    wage-guarantee deadline.
+- location: translation/homebrew/INSTRUCTIONS.md
+  purpose: Independent review read every Swedish/Russian pair, every vocabulary occurrence, full selected
+    archive context/provenance, entire parent chapter, outline, editorial findings and attribution; all
+    six checks completed after corrections.

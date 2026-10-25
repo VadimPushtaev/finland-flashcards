@@ -3,10 +3,10 @@
 Russian sentence translations, contextual vocabulary, shared terminology, and
 review metadata for the archived Swedish Homebrew anthology.
 
-The current scope is chapters 1–6: 86 sections, 2,618 sentence records,
-86 section headings, and six chapter headings. Chapters 7–12 are deferred.
+The current scope is chapters 1–7: 99 sections, 3,422 sentence records,
+99 section headings, and seven chapter headings. Chapters 8–12 are deferred.
 Every completed target has a full review of its sentence translations,
-contextual vocabulary and dictionary meanings. Chapters 1–5 use independent
+contextual vocabulary and dictionary meanings. Chapters 1–5 and 7 use independent
 agent review; chapter 6 records a separate full author review as `self_review`.
 
 | Chapter | Sections | Sentence records | Vocabulary records, including headings | Status |
@@ -17,12 +17,13 @@ agent review; chapter 6 records a separate full author review as `self_review`.
 | 4. Demokrati, förvaltning och påverkan | 15 | 753 | 5,537 | Complete |
 | 5. Grundläggande rättigheter, jämlikhet och skyldigheter | 15 | 469 | 3,570 | Complete |
 | 6. Lagar, rättsväsende och rättsskydd | 14 | 342 | 2,509 | Complete |
-| **Total** | **86** | **2,618** | **19,688** | **Complete** |
+| 7. Arbete, näringsliv och beskattning | 13 | 804 | 5,784 | Complete |
+| **Total** | **99** | **3,422** | **25,472** | **Complete** |
 
-The [shared glossary](glossary.yaml) contains 177 reviewed terminology entries.
+The [shared glossary](glossary.yaml) contains 227 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
-All 92 expected translation targets (sections and chapter headings) are complete;
-the remaining 101 sections in chapters 7–12 have no Russian translations yet.
+All 106 translation targets in this scope (sections and chapter headings) are
+complete; the remaining 88 sections in chapters 8–12 have no Russian translations yet.
 Two combined climate sentence records were split with user approval, preserving
 all Swedish wording: `hb-c01-u0032-s002` became `s008` and `s009` in the same unit;
 `hb-c01-u0034-s003` became `s007` and `s008`. The retired IDs are documented in the
