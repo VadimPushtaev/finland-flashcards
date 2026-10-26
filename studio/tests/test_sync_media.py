@@ -68,6 +68,8 @@ sys.exit(subprocess.call(' '.join(args), shell=True))
             b'[{"path": "discarded.wav"}]')
         self.sync()
         media.verify(self.target, media.select_files(self.source))
+        self.assertFalse((self.target / CREDITS).exists())
+        self.assertFalse((self.target / METRICS).exists())
         original_stat = (self.target / VIDEO).stat()
         self.sync()
         self.assertEqual(original_stat.st_mtime_ns, (self.target / VIDEO).stat().st_mtime_ns)
@@ -81,6 +83,65 @@ sys.exit(subprocess.call(' '.join(args), shell=True))
         self.assertFalse((restore / extra).exists())
         self.assertEqual((restore / 'keep-local.txt').read_bytes(), b'local only')
         self.assertFalse(Path('INJECTED').exists())
+
+    def test_binary_only_sync_preserves_metadata_in_both_directions(self):
+        audio = 'videos/homebrew/hb-c01-01-lage.ru.m4a'
+        raw = 'studio/media/hb-c01-lage/narration-ru/raw/hb-c01-u0001-s001.wav'
+        selected = 'studio/media/hb-c01-lage/narration-ru/hb-c01-u0001-s001.wav'
+        put(self.source, audio, b'Russian audio')
+        put(self.source, raw, b'raw take')
+        put(self.source, selected, b'selected take')
+        put(self.source, 'studio/media/hb-c01-lage/narration-ru/metrics.json',
+            json.dumps([{'path': selected, 'raw_path': raw}]).encode())
+        for name in (CREDITS, METRICS):
+            put(self.target, name, b'remote Git metadata')
+        self.sync()
+        manifest = media.read_receipt(self.target)
+        self.assertEqual(set(manifest['files']), {VIDEO, WAV, audio, raw, selected})
+        for name in (CREDITS, METRICS):
+            self.assertEqual((self.target / name).read_bytes(), b'remote Git metadata')
+            put(self.source, name, b'local Git metadata')
+        (self.source / audio).unlink()
+        self.sync(pull=True)
+        self.assertEqual((self.source / audio).read_bytes(), b'Russian audio')
+        for name in (CREDITS, METRICS):
+            self.assertEqual((self.source / name).read_bytes(), b'local Git metadata')
+
+    def test_legacy_receipts_drop_metadata_on_pull_and_upload(self):
+        manifest = media.select_files(self.source)
+        legacy = {'version': 1, 'files': dict(manifest['files'])}
+        for name in (CREDITS, METRICS):
+            legacy['files'][name] = media.file_record(self.source / name)
+        # Old receipts remain usable even when Git metadata changed or is absent.
+        put(self.source, media.RECEIPT, json.dumps(legacy).encode())
+        for name in manifest['files']:
+            put(self.target, name, (self.source / name).read_bytes())
+        put(self.target, media.RECEIPT, json.dumps(legacy).encode())
+        (self.source / VIDEO).unlink()
+        self.sync(pull=True)
+        self.assertFalse((self.target / CREDITS).exists())
+        self.assertEqual(media.read_receipt(self.source), manifest)
+        self.assertEqual(json.loads((self.source / media.RECEIPT).read_text())['version'], 2)
+        # A legacy local receipt must also allow the first binary-only upload.
+        put(self.source, media.RECEIPT, json.dumps(legacy).encode())
+        self.sync()
+        self.assertEqual(json.loads((self.target / media.RECEIPT).read_text()), manifest)
+        # Migration still protects against silently dropping a binary.
+        put(self.source, media.RECEIPT, json.dumps(legacy).encode())
+        shutil.rmtree(self.source / 'studio/media')
+        with self.assertRaisesRegex(ValueError, 'incomplete'):
+            media.select_files(self.source)
+
+    def test_transfer_rejects_metadata_even_in_supplied_manifest(self):
+        for name in (CREDITS, METRICS):
+            for version in (1, 2):
+                with self.subTest(name=name, version=version):
+                    manifest = {'version': version, 'files': {
+                        name: media.file_record(self.source / name),
+                    }}
+                    with self.assertRaises(ValueError):
+                        media.transfer(self.source, 'testhost', str(self.target), manifest)
+        self.assertFalse(self.target.exists())
 
     def test_read_only_modes_and_corruption_detection(self):
         self.sync(dry_run=True)

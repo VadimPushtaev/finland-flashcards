@@ -62,12 +62,12 @@ The script captures the local `HEAD`, checks that both checkouts have no tracked
 changes, then:
 
 1. Runs the existing [media sync](../studio/MEDIA_SYNC.md) uploader, including
-   its SHA-256 verification.
+   its SHA-256 verification. Only video/audio binaries are uploaded.
 2. Connects over SSH, changes to the remote directory, and fetches that exact
    commit from `origin`.
 3. Checks out the commit with a detached HEAD and verifies tracked files match.
-   Uploaded credits and narration metrics are staged for the matching checkout;
-   no remote commit or forced reset is made.
+   Git supplies code, credits and narration metrics; deployment does not stage
+   files, make a remote commit or force a reset.
 4. Runs `docker compose up --build -d` in that directory.
 
 It deploys the captured commit even if a branch advances during the upload.
@@ -76,6 +76,12 @@ in place, and the existing named database volume is reused. Failures stop the
 script with a nonzero exit code; a successful return means Compose completed,
 not that an external HTTP health check was performed. Run one deployment at a
 time, with source files and media generation unchanged during the run.
+
+If an older deploy attempt already uploaded untracked credits or metrics, Git may
+still refuse checkout. Those pre-existing conflicts need one-time cleanup: compare
+each conflicting file with the fetched target commit, then move the matching
+metadata aside before retrying. Keep video/audio binaries and unrelated files.
+The script deliberately leaves such conflicts intact rather than overwriting them.
 
 ## Hetzner deployment
 

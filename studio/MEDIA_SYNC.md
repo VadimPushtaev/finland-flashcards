@@ -28,10 +28,12 @@ poetry run python studio/tools/sync_media.py --host hetzner --verify-only
 `--pull` also supports `--dry-run` and `--verify-only`. Use an SSH config alias
 for an IPv6 address or a nonstandard port. Authentication is noninteractive.
 
-The script transfers canonical `videos/homebrew/*.mp4`, language audio sidecars,
-matching credits, and selected narration WAVs named by
-`studio/media/hb-c*/narration*/metrics.json`, including retained raw Russian takes
-and the metrics themselves. Render records and credits identify expected exports;
+The script transfers only canonical `videos/homebrew/*.mp4`, language `.m4a`
+audio sidecars, and selected narration WAVs named by
+`studio/media/hb-c*/narration*/metrics.json`, including retained raw Russian takes.
+Credits, metrics, scripts and other metadata belong to Git and are never uploaded
+or restored by this script. Selection uses explicit media paths, without querying
+Git or checking ignore rules. Render records and credits identify expected exports;
 missing exports or selected takes fail before upload. Downloads, models, images,
 music caches, render scratch and discarded auditions are excluded. The transfer
 preserves repository-relative paths. A destination does not need a Git checkout.
@@ -43,6 +45,13 @@ are not restored. The receipt also prevents a later upload silently omitting
 previously synced files. For an intentional inventory reduction, review the
 omissions and remove the local receipt before uploading; receiver-only files
 still remain. Do not edit receipts to bypass checksum failures.
+
+New receipts use version 2 and contain only binaries. Version 1 receipts remain
+readable: their known credits/metrics entries are discarded in memory, while all
+binary entries and checksums are retained. The next successful sync writes a
+version 2 receipt. Metadata already copied by older versions is left untouched;
+sync never cleans up or overwrites those files. A standalone media storage copy
+contains binaries and the sync receipt; obtain its matching metadata through Git.
 
 Both directions replace same-path files from the source but **never delete
 receiver-only files**. They use rsync temporary files and retained partial data;

@@ -29,7 +29,7 @@ def deploy(root, host, directory):
     if dirty:
         raise ValueError('Commit or stash local tracked changes before deploying HEAD.')
 
-    # Check before sync: uploading credits may itself update tracked files.
+    # Check before uploading binaries; code and metadata are supplied by Git.
     cd = 'cd -- ' + shlex.quote(directory) + '\n'
     ssh(host, cd + '''
 test "$(git rev-parse --show-toplevel)" = "$(pwd -P)" || {
@@ -52,9 +52,6 @@ docker compose version >/dev/null
     ssh(host, cd + f'''
 export GIT_TERMINAL_PROMPT=0
 git fetch --no-tags origin {shlex.quote(commit)}
-# Sync also copies tracked credits and narration metrics. Stage these updates so
-# Git can carry them into the matching commit without forcing a checkout.
-git add --update
 git checkout --detach {shlex.quote(commit)}
 test "$(git rev-parse HEAD)" = {shlex.quote(commit)}
 test -z "$(git status --porcelain --untracked-files=no)" || {{

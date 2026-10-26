@@ -15,9 +15,14 @@ import tempfile
 ROOT = Path(__file__).resolve().parents[2] if '__file__' in globals() else None
 RECEIPT = '.media-sync.json'
 MANAGED = re.compile(
-    r'(?:videos/homebrew/hb-c\d+-\d+-[a-z0-9-]+(?:\.mp4|\.[a-z]+\.m4a|\.CREDITS\.md)'
+    r'(?:videos/homebrew/hb-c\d+-\d+-[a-z0-9-]+(?:\.mp4|\.[a-z]+\.m4a)'
     r'|studio/media/hb-c\d+-[a-z0-9-]+/narration(?:-[a-z]{2,3})?/'
-    r'(?:metrics\.json|(?:raw/)?hb-[a-z0-9-]+\.wav))\Z'
+    r'(?:raw/)?hb-[a-z0-9-]+\.wav)\Z'
+)
+# Git owns these files. Read them for selection and old-receipt migration only.
+METADATA = re.compile(
+    r'(?:videos/homebrew/hb-c\d+-\d+-[a-z0-9-]+\.CREDITS\.md'
+    r'|studio/media/hb-c\d+-[a-z0-9-]+/narration(?:-[a-z]{2,3})?/metrics\.json)\Z'
 )
 
 
@@ -47,14 +52,15 @@ def file_record(path):
     return {'size': after.st_size, 'sha256': digest.hexdigest()}
 
 
-def validate_manifest(manifest):
-    if not isinstance(manifest, dict) or manifest.get('version') != 1:
+def validate_manifest(manifest, legacy=False):
+    if not isinstance(manifest, dict) or manifest.get('version') not in ((1, 2) if legacy else (2,)):
         raise ValueError('Unsupported media manifest')
     files = manifest.get('files')
     if not isinstance(files, dict) or not files:
         raise ValueError('Empty media manifest')
     for name, record in files.items():
-        if not MANAGED.fullmatch(name):
+        if not (MANAGED.fullmatch(name) or
+                (legacy and manifest['version'] == 1 and METADATA.fullmatch(name))):
             raise ValueError(f'Not a managed media path: {name!r}')
         if (not isinstance(record, dict) or type(record.get('size')) is not int
                 or record['size'] <= 0
@@ -64,18 +70,25 @@ def validate_manifest(manifest):
 
 
 def read_receipt(root):
+    """Read old receipts without restoring their formerly synced Git metadata."""
     path = root / RECEIPT
     if path.is_symlink():
         raise ValueError(f'Symlink receipt: {path}')
-    return validate_manifest(json.loads(path.read_text()))
+    manifest = validate_manifest(json.loads(path.read_text()), legacy=True)
+    return validate_manifest({'version': 2, 'files': {
+        name: record for name, record in manifest['files'].items() if MANAGED.fullmatch(name)
+    }})
 
 
 def select_files(root):
     """Select exports and only narration takes named in generation metrics."""
     names = set()
     exports = root / 'videos/homebrew'
-    for pattern in ('*.mp4', '*.m4a', '*.CREDITS.md'):
+    for pattern in ('*.mp4', '*.m4a'):
         names.update(p.relative_to(root).as_posix() for p in exports.glob(pattern))
+    # Credits identify required exports but are supplied separately by Git.
+    for credits in exports.glob('*.CREDITS.md'):
+        names.add(credits.relative_to(root).as_posix().removesuffix('.CREDITS.md') + '.mp4')
     # Production records catch exports missing even when their sidecar is missing.
     for pattern in ('*/render.json', '*/russian-narration.json'):
         for record in (root / 'studio/episodes').glob(pattern):
@@ -83,19 +96,14 @@ def select_files(root):
             if output:
                 names.add(output)
     for name in list(names):
-        if name.endswith('.CREDITS.md'):
-            names.add(name.removesuffix('.CREDITS.md') + '.mp4')
-        elif name.endswith('.mp4'):
-            names.add(name.removesuffix('.mp4') + '.CREDITS.md')
-        elif name.endswith('.m4a'):
+        if name.endswith('.m4a'):
             stem = name.rsplit('.', 2)[0]
-            names.update((stem + '.mp4', stem + '.CREDITS.md'))
+            names.add(stem + '.mp4')
     for pattern in ('hb-c*/narration/metrics.json', 'hb-c*/narration-*/metrics.json'):
         for metrics in (root / 'studio/media').glob(pattern):
             relative = metrics.relative_to(root).as_posix()
-            if not MANAGED.fullmatch(relative):
+            if not METADATA.fullmatch(relative):
                 continue
-            names.add(relative)
             records = json.loads(metrics.read_text())
             if not isinstance(records, list) or not records:
                 raise ValueError(f'Empty or invalid narration metrics: {metrics}')
@@ -110,7 +118,7 @@ def select_files(root):
         missing = set(read_receipt(root)['files']) - names
         if missing:
             raise ValueError(f'Source is incomplete relative to last sync: {sorted(missing)[:5]}')
-    return validate_manifest({'version': 1, 'files': {
+    return validate_manifest({'version': 2, 'files': {
         name: file_record(safe_path(root, name)) for name in sorted(names)
     }})
 
@@ -196,6 +204,7 @@ def remote(host, directory, action, manifest=None):
 
 
 def transfer(root, host, directory, manifest, pull=False):
+    validate_manifest(manifest)
     names = b''.join(name.encode() + b'\0' for name in sorted(manifest['files']))
     local_path = str(root) + '/'
     remote_path = f'{host}:{directory.rstrip("/")}/'

@@ -30,7 +30,7 @@ class DeploymentTests(unittest.TestCase):
         self.git(self.local, 'config', 'user.name', 'Deployment test')
         self.git(self.local, 'config', 'user.email', 'test@example.invalid')
         self.git(self.local, 'remote', 'add', 'origin', str(self.origin))
-        self.put('.gitignore', '*.mp4\n.media-sync.json\n.env\n')
+        self.put('.gitignore', '*.mp4\n*.wav\n.media-sync.json\n.env\n')
         self.put('app.txt', 'old code')
         self.put(CREDITS, 'old credits')
         self.put('studio/tools/sync_media.py',
@@ -125,6 +125,49 @@ sys.exit(int(os.environ.get('DEPLOY_TEST_DOCKER_EXIT', '0')))
             with self.assertRaisesRegex(ValueError, 'local tracked changes'):
                 self.deploy()
         ssh.assert_not_called()
+
+    def test_new_chapter_metadata_arrives_only_through_git(self):
+        video = 'videos/homebrew/hb-c05-09-barn.mp4'
+        credits = 'videos/homebrew/hb-c05-09-barn.CREDITS.md'
+        metrics = 'studio/media/hb-c05-barn/narration/metrics.json'
+        wav = 'studio/media/hb-c05-barn/narration/hb-c05-u0121-s002.wav'
+        self.put(credits, 'Chapter 5 credits')
+        self.put(metrics, json.dumps([{'path': wav}]))
+        self.commit('Add new chapter metadata')
+        target = self.git(self.local, 'rev-parse', 'HEAD')
+        self.git(self.local, 'push', 'origin', 'main')
+        self.put(video, 'Chapter 5 video')
+        self.put(wav, 'Chapter 5 narration')
+        original_ssh = deployment.ssh
+
+        def inspect_before_checkout(host, script):
+            if 'git fetch' in script:
+                self.assertTrue((self.remote / video).is_file())
+                self.assertTrue((self.remote / wav).is_file())
+                self.assertFalse((self.remote / credits).exists())
+                self.assertFalse((self.remote / metrics).exists())
+                self.assertEqual((self.remote / CREDITS).read_text(), 'old credits')
+            original_ssh(host, script)
+
+        with patch.object(deployment, 'ssh', side_effect=inspect_before_checkout):
+            self.deploy()
+        self.assertEqual(self.git(self.remote, 'rev-parse', 'HEAD'), target)
+        self.assertEqual((self.remote / credits).read_text(), 'Chapter 5 credits')
+        self.assertEqual((self.remote / metrics).read_bytes(), (self.local / metrics).read_bytes())
+        self.assertFalse(self.git(self.remote, 'status', '--porcelain'))
+
+    def test_conflicting_untracked_metadata_is_preserved(self):
+        credits = 'videos/homebrew/hb-c05-09-barn.CREDITS.md'
+        self.put(credits, 'committed chapter credits')
+        self.commit('Add chapter credits')
+        self.git(self.local, 'push', 'origin', 'main')
+        self.put('videos/homebrew/hb-c05-09-barn.mp4', 'new video')
+        (self.remote / credits).write_text('unrelated remote contents')
+        with self.assertRaises(subprocess.CalledProcessError):
+            self.deploy()
+        self.assertEqual((self.remote / credits).read_text(), 'unrelated remote contents')
+        self.assertFalse(self.log.exists())
+        self.assertFalse(self.git(self.remote, 'diff', '--cached', '--name-only'))
 
     def test_dirty_remote_stops_before_upload(self):
         (self.remote / 'app.txt').write_text('remote work')
