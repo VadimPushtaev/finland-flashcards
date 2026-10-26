@@ -38,18 +38,11 @@ text appearance and the hold after speech. Regenerate `SCRIPT.md` after renderin
 Keep `<video-stem>.CREDITS.md` with the MP4 when sharing it. It contains full source links,
 licenses, author attribution and adaptation notices in addition to closing cards.
 
-Before committing exports to GitHub, check file sizes: ordinary Git files must
-not exceed [100 MiB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
-For an oversized MP4, retain the verified original in ignored render scratch and
-compress a separate candidate with the pinned FFmpeg, for example H.264
-`-preset slow -crf 22 -pix_fmt yuv420p -c:a copy -movflags +faststart`.
-Preserve resolution, frame rate, complete frame count and timing. Verify the
-candidate's size and identical audio packets before replacing the canonical file.
-Record original/new hashes, sizes and exact command settings under
-`distribution_compression` in `render.json`. Repeat full export verification and
-actual-frame review, then refresh picture coverage, listening/review hash bindings
-and the chapter audit. Compression is an additional reproducible export step;
-the original renderer settings alone do not describe the compressed deliverable.
+Generated exports and narration stay outside Git. Preserve verified output bytes
+and use [SSH media sync](MEDIA_SYNC.md) when a copy is requested. GitHub's file-size
+limit does not apply to these files; do not recompress just to fit Git. If a future
+render revision changes an export, rerun verification and refresh its production
+hashes and review records before syncing it.
 
 Check the exported file decodes end to end, has the expected frame count/duration,
 and retains both audio and video streams. Inspect representative frames including
@@ -58,7 +51,7 @@ balance in the complete video; there is no separate user audio-approval stage.
 Record automated checks honestly without claiming an auditory review occurred.
 
 The user reviews the whole video. Keep its status `preview_ready` until they are
-happy with the result; commit only afterward under the repository commit policy.
+happy with the result; commit production metadata only afterward under the repository commit policy.
 
 For a small music-level revision, set `render.music_gain_adjustment_db` in the
 episode script. It scales the music alone, preserving narration gain and the

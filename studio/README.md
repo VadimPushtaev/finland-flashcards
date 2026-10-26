@@ -29,8 +29,9 @@ outside the studio. Keep one canonical `hb-c<chapter>-<subchapter>-<slug>.mp4` p
 Use two digits for chapter and subchapter numbers, for example
 `hb-c01-03-natur.mp4`. Subchapter order comes from `episodes.yaml`; internal
 episode directories and source IDs keep their stable original names.
-Commit selected narration WAVs, scripts, manifests, tools, tests and production
-records. Downloaded media/models, generated maps and temporary render files stay
+Keep exports and selected narration WAVs locally and sync them over SSH using
+[the media sync tool](MEDIA_SYNC.md). Commit scripts, manifests, credits, generation
+metrics, tools, tests and production records; generated video/audio stay ignored. Downloaded media/models, generated maps and temporary render files stay
 ignored; pinned download manifests and tools restore them. Remove superseded
 exports and audition audio after acceptance, retaining comparison evidence.
 
@@ -50,13 +51,13 @@ whole-video user review. See the [video index](../videos/homebrew/README.md) and
 [chapter audit](hb-c01-audit.json) for coverage and verification evidence.
 
 All thirteen Chapter 2 videos are also rendered and technically verified, covering
-321 exact Swedish/Russian sentence pairs in 1:03:42. They are committed previews
+321 exact Swedish/Russian sentence pairs in 1:03:42. They are locally retained previews
 awaiting whole-video user review. See the [Chapter 2 audit](hb-c02-audit.json) and
 [listening-review checklist](hb-c02-review.md), including unresolved pronunciation
 diagnostics. The video index links every export and its accompanying credits.
 
 All twenty-one Chapter 3 videos are rendered and technically verified, covering
-520 exact Swedish/Russian sentence pairs in 1:33:50. They are committed previews
+520 exact Swedish/Russian sentence pairs in 1:33:50. They are locally retained previews
 awaiting whole-video user review. See the [Chapter 3 audit](hb-c03-audit.json),
 [music-bed check](hb-c03-music-headroom.json), and
 [listening-review checklist](hb-c03-review.md). The video index links all exports
@@ -68,7 +69,7 @@ has relevant foreground pictures for at least 50% of body display time.
 See the [Chapter 4 audit](hb-c04-audit.json),
 [export picture checks](hb-c04-visual-review.json),
 [music-bed check](hb-c04-music-headroom.json), and
-[listening-review checklist](hb-c04-review.md). These are committed previews;
+[listening-review checklist](hb-c04-review.md). These are locally retained previews;
 whole-video listening and user acceptance remain pending.
 
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model

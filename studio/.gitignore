@@ -1,42 +1,13 @@
-# Downloaded models, source media and regenerable intermediates.
+# Downloaded models, source media, narration and render intermediates.
 media/*
-# Preserve the selected Chapter 1 narration used by the committed exports.
-!media/hb-c01-*/
-media/hb-c01-*/*
-!media/hb-c01-*/narration/
-media/hb-c01-*/narration/*
-!media/hb-c01-*/narration/*.wav
-!media/hb-c01-*/narration/metrics.json
+# Version generation metrics for every chapter, while keeping audio local.
+!media/hb-c*/
+media/hb-c*/*
+!media/hb-c*/narration/
+!media/hb-c*/narration-[a-z][a-z]/
+!media/hb-c*/narration-[a-z][a-z][a-z]/
+media/hb-c*/narration*/*
+!media/hb-c*/narration/metrics.json
+!media/hb-c*/narration-[a-z][a-z]/metrics.json
+!media/hb-c*/narration-[a-z][a-z][a-z]/metrics.json
 .DS_Store
-
-# Retain first-episode Russian narration takes; keep the full WAV mix regenerable.
-!media/hb-c01-lage/narration-ru/
-media/hb-c01-lage/narration-ru/*
-!media/hb-c01-lage/narration-ru/hb-*.wav
-!media/hb-c01-lage/narration-ru/metrics.json
-!media/hb-c01-lage/narration-ru/raw/
-!media/hb-c01-lage/narration-ru/raw/*.wav
-
-# Retain selected Chapter 2 Swedish narration and generation metrics.
-!media/hb-c02-*/
-media/hb-c02-*/*
-!media/hb-c02-*/narration/
-media/hb-c02-*/narration/*
-!media/hb-c02-*/narration/*.wav
-!media/hb-c02-*/narration/metrics.json
-
-# Retain selected Chapter 3 narration; keep downloads and render scratch ignored.
-!media/hb-c03-*/
-media/hb-c03-*/*
-!media/hb-c03-*/narration/
-media/hb-c03-*/narration/*
-!media/hb-c03-*/narration/*.wav
-!media/hb-c03-*/narration/metrics.json
-
-# Retain selected Chapter 4 narration; keep downloads and render scratch ignored.
-!media/hb-c04-*/
-media/hb-c04-*/*
-!media/hb-c04-*/narration/
-media/hb-c04-*/narration/*
-!media/hb-c04-*/narration/hb-*.wav
-!media/hb-c04-*/narration/metrics.json

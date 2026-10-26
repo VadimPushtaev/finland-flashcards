@@ -3,6 +3,10 @@
 Finished exports live here, one MP4 per subchapter. Keep each matching
 `<video-stem>.CREDITS.md` alongside its video when sharing; media retain their individual terms.
 
+Video/audio files are ignored by Git. These links refer to local exports restored
+with [SSH media sync](../../studio/MEDIA_SYNC.md), not GitHub downloads. Credits
+and production records remain versioned.
+
 ## Chapter 1 — Finland, befolkningen och språken
 
 | Video | Length | Review |
@@ -21,7 +25,7 @@ Scripts, sources, asset records, generation recipes and review notes live in
 [the production audit](../../studio/hb-c01-audit.json).
 
 The first video was previously accepted. The seven new previews and their selected
-narration are committed at the user's request; whole-video review remains pending.
+narration are retained outside Git; whole-video review remains pending.
 Automated checks do not constitute a listening approval.
 
 The exports predate the direction clarification that image captions require a
@@ -55,8 +59,8 @@ in the [Chapter 2 audit](../../studio/hb-c02-audit.json). Representative exporte
 frames and reduced-size previews were inspected by the producer and another agent.
 
 See the [listening-review checklist](../../studio/hb-c02-review.md) for unresolved
-pronunciation diagnostics and timestamps. These previews and their production
-records are committed at the user's request; whole-video user acceptance is pending.
+pronunciation diagnostics and timestamps. These previews are retained outside Git
+with versioned production records; whole-video user acceptance is pending.
 
 ## Chapter 3 — Kultur, värderingar och traditioner
 
@@ -95,8 +99,8 @@ samples in the prepared beds. Producers and independent agents inspected exporte
 long passages, numbers, credits and reduced-size previews.
 
 See the [listening-review checklist](../../studio/hb-c03-review.md) for unresolved
-pronunciation diagnostics with timestamps. These previews and their production
-records are committed at the user's request; whole-video user acceptance is pending.
+pronunciation diagnostics with timestamps. These previews are retained outside Git
+with versioned production records; whole-video user acceptance is pending.
 
 ## Chapter 4 — Demokrati, förvaltning och påverkan
 
@@ -128,9 +132,9 @@ The [Chapter 4 audit](../../studio/hb-c04-audit.json)
 records source fidelity, media hashes, timeline coverage and export verification.
 The [music-bed check](../../studio/hb-c04-music-headroom.json) records prepared
 music headroom. See the [listening-review checklist](../../studio/hb-c04-review.md)
-for unresolved pronunciation diagnostics. These previews and their production
-records are committed at the user's request; whole-video listening and user
-acceptance remain pending.
+for unresolved pronunciation diagnostics. These previews are retained outside Git
+with versioned production records; whole-video listening and user acceptance
+remain pending.
 
 ## Russian audio
 

@@ -1,8 +1,10 @@
 # Production workflow
 
 Keep work across all stages uncommitted. Once the user approves the final video,
-prepare one commit containing the related changes, following the repository's
-staged-summary and commit-approval policy. Do not commit individual stages.
+prepare one commit containing the related scripts, credits and production metadata,
+following the repository's staged-summary and commit-approval policy. Do not commit individual stages.
+Generated video/audio remain ignored and are retained locally; use
+[SSH media sync](MEDIA_SYNC.md) when the user requests a remote copy.
 
 ## 1. Direction
 

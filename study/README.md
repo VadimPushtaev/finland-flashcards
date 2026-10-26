@@ -6,6 +6,17 @@ build the frontend; Poetry manages the separate Python application environment.
 
 ## Run with Docker Compose
 
+Video/audio files are stored outside Git. On a fresh clone, restore them before
+building if videos should appear in the reader:
+
+```bash
+poetry run python studio/tools/sync_media.py --host hetzner --pull
+```
+
+See [media sync](../studio/MEDIA_SYNC.md) for upload, verification and custom hosts.
+The default storage directory is `/root/finland-flashcards`; syncing does not
+restart the service or update the `/opt` deployment below.
+
 From the repository root:
 
 ```bash
