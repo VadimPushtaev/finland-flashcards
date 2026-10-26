@@ -1,0 +1,148 @@
+schema_version: 1
+source_id: hb-c09-foraldraledighet
+result_sha256: 26cb95800595d29e1616e8c67612b286733056e42233c847d0827a0cebe25536
+glossary_sha256: 3cbcffa1c74566b89f65a54db5bc14861385d18d91a91d66274ed37c1d69c763
+status: complete
+review_mode: independent
+reviewer: /root
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c09-foraldraledighet
+  blocking: false
+  resolved: true
+  note: Distinct full self-review covered all 33 heading/sentence records, all 193 vocabulary annotations,
+    every uncovered token and unique lemma/POS/general meaning. Verified repeated day/child/benefit occurrences,
+    exact spans, discontinuous ta reda pa with independently annotated i god tid, and complete compound
+    units. Refined borta meaning, gender-neutral unemployment wording and deltid noun classification.
+- source_id: hb-c09-u0266-s001
+  blocking: false
+  resolved: true
+  note: Coordinator approved pregnancy leave versus parental leave, pregnancy allowance versus parental
+    allowance, and partial parental allowance. Working days follows the primary Russian parallel for vardagar
+    without importing employer weekday assumptions. Preserved 14-30, 40 and approximately 1.5 months exactly.
+- source_id: hb-c09-u0268-s001
+  blocking: false
+  resolved: true
+  note: Retained the birthing-parent condition and pregnancy reaching 154 days; absence from work is distinct
+    from unemployment, and students/unemployed people remain expressly eligible under the selected conditions.
+- source_id: hb-c09-u0275-s001
+  blocking: false
+  resolved: true
+  note: 'Preserved the alternative child-age versus adoption-placement conditions: child under two, or
+    adopted child taken into care less than two years ago. At home applies to both alternatives, and no
+    under-two age restriction was added to adopted children.'
+- source_id: hb-c09-u0279-s001
+  blocking: false
+  resolved: true
+  note: Preserved the birthing parents ability to receive parental allowance after the pregnancy-allowance
+    period even if birth has not yet occurred; the other parents period starts only after birth.
+- source_id: hb-c09-u0281-s001
+  blocking: false
+  resolved: true
+  note: Retained the archived 320-day total, 160-day half, sole-guardian 320 days, twins 84 additional
+    days and transfer maximum 63 of 160 days. Allowance-day transfers are not silently relabelled as leave
+    transfers as in parts of the live Russian parallel.
+- source_id: hb-c09-u0435-s001
+  blocking: false
+  resolved: true
+  note: Retained the no-income minimum entitlement. The editorially omitted euro minimum and unselected
+    application/deadline instructions were not imported from the complete archive.
+- source_id: hb-c09-u0287-s003
+  blocking: false
+  resolved: true
+  note: Preserved payment to the employer for a period when the employee receives salary; no automatic
+    assumption that every employer pays salary during parental leave.
+- source_id: hb-c09-u0288-s003
+  blocking: false
+  resolved: true
+  note: Kept partial allowance separate from full allowance. Preserved maximum five work hours per day,
+    required part-time agreement for employees, and both alternating and simultaneous parental care options.
+- source_id: hb-c09-foraldraledighet
+  blocking: false
+  resolved: true
+  note: Independent full review checked all33 source/Russian records and all192 final annotations, every
+    uncovered token and six checks. Grouped discontinuous fyller ... ar as one attained-age expression.
+    Preserved 14-30/40 working days,154-day pregnancy condition, separate birth/adoption age conditions,320/160/63/84-day
+    limits, minimum benefit with no income, employer payment recipient, five-hour part-time limit and
+    both simultaneous/alternating care. No factual changes or omitted euro amount imported.
+references:
+- location: /tmp/hb-c09-foraldraledighet-context-08-02.yaml
+  purpose: Fresh hash-validated context; read all selected records and provenance. Parent chapter, book
+    outline, editorial review, attribution, glossary and heading identity-verified against the fully read
+    9.10 context.
+- location: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+  purpose: Entire chapter previously read in untruncated passes, then identity-verified. The later home-care
+    leave and allowance are distinct from this parental-leave section.
+- location: data/homebrew/metadata/09_provenance.yaml
+  purpose: Read all selected block paths, ranges, headings and selection notes. Retained income basis
+    and zero-income qualification without the omitted calculator and monetary amount.
+- location: data/homebrew/metadata/09_editorial_review.yaml
+  purpose: Previously read full review and identity-verified; preserved the frozen benefit rules and selected
+    qualifications.
+- location: data/infofinland/content/family/financial-support-for-families/benefits-for-a-family-after-a-child-is-born.html
+  purpose: Read complete 4942-character supplied archive, including post-birth pregnancy allowance, parental
+    entitlement, transfer, income, applications and partial allowance. Selected text alone governs translation.
+- location: data/infofinland/content/family/financial-support-for-families/support-during-pregnancy.html
+  purpose: Read complete 3255-character supplied archive, including maternity package, eligibility, applications
+    and transition to parental allowance. Preserved source thresholds and did not import omitted tax/application
+    details.
+- location: data/homebrew/ru/sections/hb-c09-tolv.yaml
+  purpose: Read all 15 completed records newly present in this context, including custody, child wishes
+    and out-of-home placement; maintained guardian meaning.
+- location: data/homebrew/ru/sections/hb-c09-foraldraskap.yaml
+  purpose: Previously authored and fully self-reviewed all records; birthing versus non-birthing parent
+    and legal guardian meanings retained.
+- location: data/homebrew/ru/sections/hb-c09-vardnad.yaml
+  purpose: Previously authored and fully self-reviewed all records; sole guardian retained as legal status,
+    not merely single parent or separate residence.
+- location: data/homebrew/ru/sections/hb-c09-underhall.yaml
+  purpose: Previously read all completed records for FPA, child maintenance and allowance distinctions.
+- location: data/homebrew/ru/sections/hb-c09-skilsmassa.yaml
+  purpose: Previously read all completed records for custody, legal status and family-service terms.
+- location: data/homebrew/ru/sections/hb-c09-familjeformer.yaml
+  purpose: Previously read all completed records for family forms, adopted children and parenting distinctions.
+- location: data/homebrew/ru/sections/hb-c09-forandring.yaml
+  purpose: Previously authored and subsequently read current completed records; retained family and parenting
+    terminology.
+- location: data/homebrew/ru/sections/hb-c09-kon.yaml
+  purpose: Previously read full completed translation, including family roles and gender equality.
+- location: data/homebrew/ru/sections/hb-c09-makar.yaml
+  purpose: Previously read full completed translation for financial duties and legal family status.
+- location: data/homebrew/ru/sections/hb-c09-aktenskap.yaml
+  purpose: Previously authored and fully reviewed the completed translation; retained parent/custodian
+    distinctions.
+- location: data/homebrew/ru/sections/hb-c09-samlevnad.yaml
+  purpose: Previously independently reviewed all pairs and annotations for legal parenthood and economic
+    support.
+- location: data/homebrew/ru/sections/hb-c07-problem.yaml
+  purpose: Read relevant pregnancy and parental allowance sentence and annotations; reused established
+    posobie po beremennosti and roditelskoye posobie terms.
+- location: data/homebrew/ru/sections/hb-c07-ledighet.yaml
+  purpose: Read relevant temporary child-care leave sentence and vocabulary; did not conflate that leave
+    with the parental leave here.
+- location: data/homebrew/ru/sections/hb-c07-arbetsavtal.yaml
+  purpose: Inspected existing part-time work and deltid vocabulary to maintain employment terminology
+    and noun classification.
+- location: data/homebrew/ru/glossary.yaml
+  purpose: Current glossary verified identical to the previously fully read approved glossary; exact FPA,
+    guardian and legal-right entries used.
+- location: https://infofinland.fi/ru/family/financial-support-for-families/support-during-pregnancy
+  purpose: 'Personally opened primary Russian parallel: lines28-39 confirm pregnancy leave, pregnancy
+    allowance, working-day terminology and the 154-day threshold; line61 distinguishes subsequent parental
+    leave/payment. Terminology only, no current facts imported.'
+- location: https://infofinland.fi/ru/family/financial-support-for-families/benefits-for-a-family-after-a-child-is-born
+  purpose: 'Personally opened primary Russian parallel: lines18-45 clarify adoption placement, benefit
+    periods and minimum entitlement; line60 payment to employer; lines89-90 partial allowance and simultaneous/alternating
+    care. Existing project parental-allowance wording retained instead of Russian parallel per-diem wording.'
+- location: /tmp/hb-c09-foraldraledighet-context-08-02.yaml
+  purpose: Root read both supplied full archives (4942 and3255characters), all selected provenance, all33
+    source/Russian pairs and all vocabulary annotations. Parent chapter, outline, editorial review, attribution
+    and glossary identity-verified against previously fully read9.10context. All supplied completed same-chapter
+    translations were previously read/reviewed in full. Distinct maternity/parental allowance and leave
+    wording follows approved terms; counts preserved without adding a calendar rule.
