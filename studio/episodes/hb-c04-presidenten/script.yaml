@@ -1,0 +1,467 @@
+schema_version: 1
+section_id: hb-c04-presidenten
+chapter_id: hb-c04
+title_sv: Republikens president
+title_ru: Президент республики
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-presidenten.yaml
+example_only: false
+source_section_sha256: 39632c6a102b54cfc843402f7fe6e0a345607d22d27f621153a0782d1d7374d2
+translation_file_sha256: c317f061e14db2a225011b5fbc7ade888e257a9ace8ebd91f0afe15b7a592a82
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber #382d24; ivory #faf3e8, secondary #dfcfbb, gold
+    #dfb96f, separator #695540. Liberation Sans Bold 48/Regular 40 with a stable Swedish-above-Russian
+    right panel and optional source-term cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair 0.25 seconds before narration. Natural local voice at speed 0.95. Pause
+    1.5 seconds after ordinary sentences and 2.2 seconds at scene ends; 2.5 seconds for long pairs. No
+    target-duration acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Presidential Palace by the Market Square in Helsinki, Finland, 2016 September.jpg
+    by Paradox.Photo continuously as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic
+    diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle,
+    starting in motion, with no sentence resets. Total cycles=0.8205357142857143. Foreground and bilingual
+    text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic 3/F1, Swedish, 32 steps,speed 0.95, seed 42, 44100 Hz mono PCM16.
+    Exact inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only
+    expansions; pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Deep Relaxation by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 3068.055 seconds; prepared lossless stereo bed 114.875 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two 15 second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Bilinear sampling of the softened decorative photograph; retain continuous fractional motion,
+    full 1080p text and steady foreground graphics. Verify motion from exported frames.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 3 relevant registered foreground pictures over 8 of 11 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: hb-c04-u0041
+  description: Republic and head of state
+- id: hb-c04-u0042
+  description: Distribution and development of presidential power
+- id: hb-c04-u0043
+  description: Presidential duties
+- id: hb-c04-u0044
+  description: Foreign policy cooperation
+- id: hb-c04-u0046
+  description: Promulgating laws
+- id: hb-c04-u0047
+  description: Appointing senior officials
+- id: hb-c04-u0048
+  description: Commander-in-chief
+asset_requests:
+- id: episode_background
+  kind: background
+  description: File:Presidential Palace by the Market Square in Helsinki, Finland, 2016 September.jpg.
+    Verified Presidential Palace exterior provides institutional context for the head of state; no current
+    politician is identified.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Deep Relaxation — Kevin MacLeod, official catalogue master, CC BY 4.0.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic 3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+- id: picture_cabinet
+  kind: foreground
+  description: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_palace
+  kind: foreground
+  description: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_parliament
+  kind: foreground
+  description: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0041-s001
+  sv: Finland är till sitt statsskick en konstitutionell republik.
+  ru: По своему государственному устройству Финляндия является конституционной республикой.
+  scene_id: hb-c04-u0041
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights:
+  - konstitutionell republik
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0041-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.892449
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0041-s002
+  sv: Finlands statsöverhuvud är republikens president, som utses genom val.
+  ru: Главой государства в Финляндии является президент республики, избираемый на выборах.
+  scene_id: hb-c04-u0041
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0041-s002.wav
+  start_seconds: 10.666667
+  end_seconds: 17.145034
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0042-s001
+  sv: Den största makten i Finland utövas av statsministern och riksdagen.
+  ru: Наибольшую власть в Финляндии осуществляют премьер-министр и парламент.
+  scene_id: hb-c04-u0042
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - statsministern
+  - riksdagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s001.wav
+  start_seconds: 19.625
+  end_seconds: 26.033707
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0042-s002
+  sv: De har mer makt än republikens president.
+  ru: У них больше власти, чем у президента республики.
+  scene_id: hb-c04-u0042
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s002.wav
+  start_seconds: 27.791667
+  end_seconds: 31.483639
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0042-s003
+  sv: Presidentens makt har minskats i Finland sedan 1980-talet.
+  ru: С 1980-х годов полномочия президента в Финляндии были сокращены.
+  scene_id: hb-c04-u0042
+  visual_cue: 'Steady complete source-only term card: 1980-talet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 1980-talet
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Presidentens makt har minskats i Finland sedan nittonhundraåttiotalet.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s003.wav
+  start_seconds: 33.25
+  end_seconds: 39.449728
+  display_segments: []
+  render_image: studio/media/hb-c04-presidenten/cards/04.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0042-s004
+  sv: Finlands president är ändå landets mest synliga ledare.
+  ru: Однако президент Финляндии является самым заметным руководителем страны.
+  scene_id: hb-c04-u0042
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s004.wav
+  start_seconds: 41.208333
+  end_seconds: 46.363163
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0043-s001
+  sv: I Finland har republikens president som uppgift att
+  ru: В Финляндии в обязанности президента республики входит
+  scene_id: hb-c04-u0043
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0043-s001.wav
+  start_seconds: 48.833333
+  end_seconds: 53.639864
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0044-s001
+  sv: leda Finlands utrikespolitik i samarbete med statsrådet
+  ru: руководить внешней политикой Финляндии в сотрудничестве с правительством (statsrådet)
+  scene_id: hb-c04-u0044
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights:
+  - utrikespolitik
+  - statsrådet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0044-s001.wav
+  start_seconds: 56.125
+  end_seconds: 61.48881
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0046-s001
+  sv: stadfästa de lagar som riksdagen stiftar
+  ru: утверждать законы, принимаемые парламентом
+  scene_id: hb-c04-u0046
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - stadfästa
+  - lagar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0046-s001.wav
+  start_seconds: 63.958333
+  end_seconds: 68.068265
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0047-s001
+  sv: utnämna de högsta ämbetsmännen för deras uppgifter
+  ru: назначать высших должностных лиц на их должности
+  scene_id: hb-c04-u0047
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights:
+  - högsta ämbetsmännen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0047-s001.wav
+  start_seconds: 70.541667
+  end_seconds: 75.348197
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0048-s001
+  sv: vara överbefälhavare för Finlands försvarsmakt.
+  ru: быть верховным главнокомандующим Сил обороны Финляндии.
+  scene_id: hb-c04-u0048
+  visual_cue: 'Steady complete source-only term card: överbefälhavare, försvarsmakt'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - överbefälhavare
+  - försvarsmakt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-presidenten/narration/hb-c04-u0048-s001.wav
+  start_seconds: 77.833333
+  end_seconds: 82.639864
+  display_segments: []
+  render_image: studio/media/hb-c04-presidenten/cards/10.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-presidenten/sources/music-bed.flac
+  background_image: studio/media/hb-c04-presidenten/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 0.8205357142857143
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Demokrati, förvaltning och påverkan
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Presidential Palace by the Market Square in Helsinki, Finland, 2016 September.jpg — Paradox.Photo
+      · CC BY 2.0
+    - 'Förgrundsfoton: Josefiina Alanen; Paasikivi; jampe.'
+    - Deep Relaxation — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Presidential_Palace_by_the_Market_Square_in_Helsinki,_Finland,_2016_September.jpg
+    description: Helsinki city centre
+    license: CC BY 2.0
+  music_loop_crossfade_seconds: 4

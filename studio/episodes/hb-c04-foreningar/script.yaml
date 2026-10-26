@@ -1,0 +1,1930 @@
+schema_version: 1
+section_id: hb-c04-foreningar
+chapter_id: hb-c04
+title_sv: Föreningar och frivilligverksamhet
+title_ru: Объединения и волонтёрская деятельность
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-foreningar.yaml
+example_only: false
+source_section_sha256: 0c81d826a9249325bda5e88b0cb2e661831b49fc1b043f49a5d78da56e9e03f4
+translation_file_sha256: 7c13bf2df99a553027b67b015e4422c42652fa72b2ce1c71a19450b454fbbdf6
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber panel #382d24, ivory #faf3e8, secondary #dfcfbb,
+    gold #dfb96f, separator #695540. Liberation Sans Bold 48 and Regular 40; stable right bilingual panel
+    and occasional exact-source graphics at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Urjalankylän palonsammutuskunta hut.jpg by Htm continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=4.949702380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Reminiscing by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 152.064 seconds; prepared lossless stereo bed 692.958 seconds.
+    Repeat count 4, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use verified photographs of actual Finnish civic activity, associations and institutions at
+    meaningful topic boundaries. Preserve full pictures and source text; captions remain off where a source
+    highlight is not a literal picture label. Measure at least 50% body-duration picture coverage; no
+    decorative background or text card counts.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Associations, civic activity and public benefit
+- id: scene-2
+  description: Services, freedom of association and governance
+- id: scene-3
+  description: Membership and voluntary work
+- id: scene-4
+  description: Different organisations and their activities
+- id: scene-5
+  description: Newcomer associations and peer support
+- id: scene-6
+  description: Registration and legal responsibility
+- id: scene-7
+  description: Annual planning, members and board
+- id: scene-8
+  description: Voluntary work and unemployment protection
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_bloodservice
+  kind: foreground
+  description: Finnish Red Cross Blood Service former Kivihaka headquarters in Helsinki. Actual nonprofit
+    health service institution, shown as an example of association-related service provision; not asserted
+    to be its current headquarters.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+- id: picture_meeting_room
+  kind: foreground
+  description: Wikimedia Suomi registered association spring meeting, 26 May 2019 at Oodi, Helsinki. Actual
+    association members discussing their organization; illustrates membership, meetings and collective
+    decisions without claiming that the photographed moment concerns every narrated legal rule.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+- id: picture_talkoot
+  kind: foreground
+  description: People jointly erect the coffee tent for the Ylimuonio midsummer gathering, 23 June 2005.
+    Actual Finnish communal volunteer work, illustrating shared spaces, collective work and local voluntary
+    activity. No claim about participants’ other affiliations or present-day status.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+- id: picture_volunteers
+  kind: foreground
+  description: Finnish Red Cross Hunger Day fundraising stand outside Helsinki Central Railway Station,
+    2020, documented by the Finnish Heritage Agency. Actual voluntary charitable work; no personal health,
+    migration or political status inferred.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+- id: picture_workshop
+  kind: foreground
+  description: All Digital Week public event at Helsinki Oodi library, 26 March 2019. Real community participation
+    and public learning activity; contextual example only, with no inference about individual immigration
+    status, employment or beliefs.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+- id: picture_youth
+  kind: foreground
+  description: Nuoret vaikuttajat goes Wikipedia workshop at Oodi, 7 March 2020. Actual youth civic activity
+    and collaborative public-information work; contextual example of participation and youth associations,
+    not a photograph of a school council or municipal youth council.
+  fallback: Choose another accurately identified relevant reusable picture; preserve complete source wording
+    and document any remaining coverage exception.
+sentences:
+- sentence_id: hb-c04-u0180-s001
+  sv: Föreningsverksamhet är medborgarverksamhet där människor organiserar sig för en gemensam sak.
+  ru: Деятельность объединений — гражданская деятельность, при которой люди организуются ради общего дела.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights:
+  - Föreningsverksamhet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0180-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.469864
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0180-s002
+  sv: Föreningsverksamhet är mycket populär i Finland.
+  ru: Деятельность объединений очень популярна в Финляндии.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0180-s002.wav
+  start_seconds: 13.25
+  end_seconds: 17.917211
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0180-s003
+  sv: Det finns många olika slags föreningar, det vill säga organisationer och stiftelser, i landet.
+  ru: В стране существует много различных видов объединений, то есть организаций и фондов.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0180-s003.wav
+  start_seconds: 19.708333
+  end_seconds: 27.858537
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0180-s004
+  sv: Organisationer kan bedriva påverkansarbete för att främja en idé eller förbättra situationen för
+    en grupp människor.
+  ru: Организации могут вести работу по оказанию влияния, чтобы продвигать идею или улучшать положение
+    группы людей.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0180-s004.wav
+  start_seconds: 29.625
+  end_seconds: 39.865
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0180-s005
+  sv: De kan också till exempel erbjuda människor motions-, idrotts-, kultur- eller socialtjänster.
+  ru: Они также могут, например, предоставлять людям физкультурные, спортивные, культурные или социальные
+    услуги.
+  scene_id: scene-1
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0180-s005.wav
+  start_seconds: 41.625
+  end_seconds: 50.332483
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0181-s001
+  sv: Inom medborgarverksamheten deltar människor aktivt i utvecklingen av sitt samhälle, lär sig nya
+    saker och arbetar tillsammans.
+  ru: В гражданской деятельности люди активно участвуют в развитии своего общества, учатся новому и работают
+    вместе.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: All Digital Week public event at Helsinki Oodi library,
+    26 March 2019. Real community participation and public learning activity; contextual example only,
+    with no inference about individual immigration status, employment or beliefs. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_workshop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0181-s001.wav
+  start_seconds: 52.083333
+  end_seconds: 63.019932
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/workshop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0181-s002
+  sv: Medborgarverksamhet bedrivs ofta i föreningar, det vill säga organisationer.
+  ru: Гражданская деятельность часто ведётся в объединениях, то есть организациях.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: All Digital Week public event at Helsinki Oodi library,
+    26 March 2019. Real community participation and public learning activity; contextual example only,
+    with no inference about individual immigration status, employment or beliefs. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_workshop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0181-s002.wav
+  start_seconds: 64.791667
+  end_seconds: 71.687993
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/workshop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0181-s003
+  sv: År 2024 fanns det omkring 108 000 registrerade föreningar och omkring 2 700 stiftelser i Finland.
+  ru: В 2024 году в Финляндии существовало около 108 000 зарегистрированных объединений и около 2700 фондов.
+  scene_id: scene-1
+  visual_cue: 'Exact-source concept card: 2024, 108 000, 2 700'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2024'
+  - 108 000
+  - 2 700
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0181-s003.wav
+  start_seconds: 73.458333
+  end_seconds: 85.30051
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/cards/07.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0181-s004
+  sv: Utöver dessa finns det också mängder av olika oregistrerade grupper, klubbar och andra sammanslutningar
+    i landet.
+  ru: Кроме них в стране также существует множество различных незарегистрированных групп, клубов и других
+    объединений.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: All Digital Week public event at Helsinki Oodi library,
+    26 March 2019. Real community participation and public learning activity; contextual example only,
+    with no inference about individual immigration status, employment or beliefs. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_workshop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0181-s004.wav
+  start_seconds: 87.083333
+  end_seconds: 97.044694
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/workshop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0182-s001
+  sv: Syftet med föreningarnas verksamhet är inte att eftersträva vinst, utan den ger många fördelar för
+    de människor som är verksamma i organisationerna och för hela samhället.
+  ru: Деятельность объединений не направлена на получение прибыли, а даёт многочисленные преимущества
+    людям, участвующим в организациях, и всему обществу.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0182-s001.wav
+  start_seconds: 98.833333
+  end_seconds: 113.183265
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0182-s002
+  sv: Många organisationer försöker främja en idé, en fråga eller en viss grupps intressen i samhället.
+  ru: Многие организации пытаются продвигать в обществе идею, вопрос или интересы определённой группы.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0182-s002.wav
+  start_seconds: 114.958333
+  end_seconds: 123.665816
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0182-s003
+  sv: Idén kan vara politisk, religiös eller basera sig mer allmänt på värderingar.
+  ru: Идея может быть политической, религиозной или, в более общем смысле, основываться на ценностях.
+  scene_id: scene-1
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0182-s003.wav
+  start_seconds: 125.416667
+  end_seconds: 132.382653
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0182-s004
+  sv: Organisationer kan till exempel bedriva kommunikations- och påverkansarbete för att försöka främja
+    frågor som de anser vara viktiga i samhället.
+  ru: Организации могут, например, вести информационную работу и работу по оказанию влияния, пытаясь продвигать
+    вопросы, которые считают важными для общества.
+  scene_id: scene-1
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0182-s004.wav
+  start_seconds: 134.166667
+  end_seconds: 146.775102
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0183-s001
+  sv: En del föreningar och stiftelser producerar också tjänster.
+  ru: Некоторые объединения и фонды также предоставляют услуги.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Blood Service former Kivihaka headquarters
+    in Helsinki. Actual nonprofit health service institution, shown as an example of association-related
+    service provision; not asserted to be its current headquarters. Keep complete source text in the fixed
+    bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_bloodservice
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0183-s001.wav
+  start_seconds: 149.25
+  end_seconds: 154.683469
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/bloodservice.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0183-s002
+  sv: En del av tjänsterna produceras i samarbete med en kommun, ett välfärdsområde eller staten.
+  ru: Часть услуг предоставляется в сотрудничестве с муниципалитетом, регионом по обеспечению благополучия
+    населения (välfärdsområde) или государством.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Blood Service former Kivihaka headquarters
+    in Helsinki. Actual nonprofit health service institution, shown as an example of association-related
+    service provision; not asserted to be its current headquarters. Keep complete source text in the fixed
+    bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_bloodservice
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0183-s002.wav
+  start_seconds: 156.458333
+  end_seconds: 164.747857
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/bloodservice.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0183-s003
+  sv: Organisationerna erbjuder tjänster inom i synnerhet motion och idrott, kultur och hobbyverksamhet,
+    men också utbildning och social- och hälsovårdstjänster.
+  ru: Организации предоставляют прежде всего услуги в области физической активности и спорта, культуры
+    и занятий по интересам, но также образовательные, социальные и медицинские услуги.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Blood Service former Kivihaka headquarters
+    in Helsinki. Actual nonprofit health service institution, shown as an example of association-related
+    service provision; not asserted to be its current headquarters. Keep complete source text in the fixed
+    bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_bloodservice
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0183-s003.wav
+  start_seconds: 166.5
+  end_seconds: 179.735374
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/bloodservice.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0184-s001
+  sv: I Finland har alla människor mötes- och föreningsfrihet.
+  ru: В Финляндии все люди обладают свободой собраний и свободой объединений.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights:
+  - mötes- och föreningsfrihet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0184-s001.wav
+  start_seconds: 181.5
+  end_seconds: 186.79415
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0184-s002
+  sv: Det betyder att alla har rätt att höra till föreningar, delta i föreningars verksamhet och bilda
+    föreningar.
+  ru: Это означает, что все имеют право состоять в объединениях, участвовать в их деятельности и создавать
+    объединения.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0184-s002.wav
+  start_seconds: 188.583333
+  end_seconds: 197.430136
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0184-s003
+  sv: I Finland är det vanligt att människor är medlemmar i många olika organisationer samtidigt och deltar
+    i deras verksamhet på olika sätt.
+  ru: В Финляндии распространено одновременное членство во многих разных организациях и участие в их деятельности
+    различными способами.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0184-s003.wav
+  start_seconds: 199.208333
+  end_seconds: 210.841531
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0185-s001
+  sv: I Finland styrs organisationernas verksamhet av till exempel föreningslagen.
+  ru: В Финляндии деятельность организаций регулируется, например, законом об объединениях (föreningslagen).
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0185-s001.wav
+  start_seconds: 212.625
+  end_seconds: 219.730306
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0185-s002
+  sv: Den säger hur beslut fattas i organisationer och hur ansvaret för en förenings verksamhet och ekonomi
+    är fördelat.
+  ru: Он устанавливает, как принимаются решения в организациях и как распределена ответственность за деятельность
+    и финансы объединения.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0185-s002.wav
+  start_seconds: 221.5
+  end_seconds: 231.113061
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0185-s003
+  sv: I övrigt försöker den offentliga förvaltningen undvika att styra organisationernas verksamhet, utan
+    respekterar deras makt att själva bestämma över sin verksamhet.
+  ru: В остальном публичная администрация старается избегать управления деятельностью организаций и уважает
+    их самостоятельность в решении вопросов своей деятельности.
+  scene_id: scene-2
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0185-s003.wav
+  start_seconds: 232.875
+  end_seconds: 246.876633
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0186-s001
+  sv: I en organisation kan man vara med som vanlig medlem eller delta i verksamheten i organisationens
+    styrelse.
+  ru: В организации можно участвовать как обычный член или в деятельности её правления.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Nuoret vaikuttajat goes Wikipedia workshop at Oodi,
+    7 March 2020. Actual youth civic activity and collaborative public-information work; contextual example
+    of participation and youth associations, not a photograph of a school council or municipal youth council.
+    Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_youth
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0186-s001.wav
+  start_seconds: 249.333333
+  end_seconds: 258.598095
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/youth.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0186-s002
+  sv: Genom att vara aktiv i en organisation lär man sig samtidigt spelreglerna i det finländska samhället.
+  ru: Активно участвуя в организации, одновременно узнаёшь правила игры финляндского общества.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Nuoret vaikuttajat goes Wikipedia workshop at Oodi,
+    7 March 2020. Actual youth civic activity and collaborative public-information work; contextual example
+    of participation and youth associations, not a photograph of a school council or municipal youth council.
+    Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_youth
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0186-s002.wav
+  start_seconds: 260.375
+  end_seconds: 269.361122
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/youth.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0186-s003
+  sv: Att vara aktiv i en organisation innebär också att man har något meningsfullt att göra.
+  ru: Активное участие в организации также означает, что у человека есть осмысленное занятие.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Nuoret vaikuttajat goes Wikipedia workshop at Oodi,
+    7 March 2020. Actual youth civic activity and collaborative public-information work; contextual example
+    of participation and youth associations, not a photograph of a school council or municipal youth council.
+    Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_youth
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0186-s003.wav
+  start_seconds: 271.125
+  end_seconds: 278.717925
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/youth.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0186-s004
+  sv: Samtidigt lär man känna andra människor som är intresserade av samma saker.
+  ru: Одновременно знакомишься с другими людьми, интересующимися теми же вещами.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Nuoret vaikuttajat goes Wikipedia workshop at Oodi,
+    7 March 2020. Actual youth civic activity and collaborative public-information work; contextual example
+    of participation and youth associations, not a photograph of a school council or municipal youth council.
+    Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_youth
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0186-s004.wav
+  start_seconds: 280.5
+  end_seconds: 287.605306
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/youth.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0187-s001
+  sv: Många organisationer erbjuder möjligheter att delta i frivilligverksamhet.
+  ru: Многие организации предлагают возможности участия в волонтёрской деятельности.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0187-s001.wav
+  start_seconds: 289.375
+  end_seconds: 295.923027
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0187-s002
+  sv: Frivilligarbete utförs utan lön.
+  ru: Волонтёрская работа выполняется без зарплаты.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights:
+  - utan lön
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0187-s002.wav
+  start_seconds: 297.708333
+  end_seconds: 301.052007
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0187-s003
+  sv: Arbetet utförs ofta till exempel ett par gånger i veckan eller då och då.
+  ru: Работу часто выполняют, например, пару раз в неделю или время от времени.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0187-s003.wav
+  start_seconds: 302.833333
+  end_seconds: 309.172381
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0187-s004
+  sv: Människor deltar i frivilligverksamhet för sitt eget nöjes skull och för att de vill arbeta för
+    en fråga som är viktig för dem.
+  ru: Люди участвуют в волонтёрской деятельности ради собственного удовольствия и потому, что хотят трудиться
+    ради важного для них дела.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0187-s004.wav
+  start_seconds: 310.958333
+  end_seconds: 321.616293
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0187-s005
+  sv: Organisations- och frivilligverksamhet är en populär hobby i Finland.
+  ru: Деятельность в организациях и волонтёрская деятельность — популярное увлечение в Финляндии.
+  scene_id: scene-3
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Hunger Day fundraising stand outside
+    Helsinki Central Railway Station, 2020, documented by the Finnish Heritage Agency. Actual voluntary
+    charitable work; no personal health, migration or political status inferred. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_volunteers
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0187-s005.wav
+  start_seconds: 323.375
+  end_seconds: 329.923027
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/volunteers.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0188-s001
+  sv: Organisationer kan se olika ut när det kommer till mål, verksamhet och ekonomi.
+  ru: Организации могут различаться по целям, деятельности и финансам.
+  scene_id: scene-4
+  visual_cue: 'Show the verified contextual picture: People jointly erect the coffee tent for the Ylimuonio
+    midsummer gathering, 23 June 2005. Actual Finnish communal volunteer work, illustrating shared spaces,
+    collective work and local voluntary activity. No claim about participants’ other affiliations or present-day
+    status. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_talkoot
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0188-s001.wav
+  start_seconds: 332.375
+  end_seconds: 339.271327
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/talkoot.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0188-s002
+  sv: En organisations anställda kan ha mycket krävande yrkesuppgifter, och dess finansiering kan vara
+    flera miljoner euro per år.
+  ru: Сотрудники организации могут выполнять очень сложные профессиональные задачи, а её финансирование
+    может составлять несколько миллионов евро в год.
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0188-s002.wav
+  start_seconds: 341.041667
+  end_seconds: 351.769286
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0188-s003
+  sv: Många organisationer är ändå små och drivs i huvudsak med frivilliga krafter, ofta lokalt.
+  ru: Однако многие организации небольшие и работают главным образом силами волонтёров, часто на местном
+    уровне.
+  scene_id: scene-4
+  visual_cue: 'Show the verified contextual picture: People jointly erect the coffee tent for the Ylimuonio
+    midsummer gathering, 23 June 2005. Actual Finnish communal volunteer work, illustrating shared spaces,
+    collective work and local voluntary activity. No claim about participants’ other affiliations or present-day
+    status. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_talkoot
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0188-s003.wav
+  start_seconds: 353.541667
+  end_seconds: 361.691871
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/talkoot.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0189-s001
+  sv: 'I Finland finns det till exempel:'
+  ru: 'В Финляндии существуют, например: '
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0189-s001.wav
+  start_seconds: 363.458333
+  end_seconds: 366.802007
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0190-s001
+  sv: idrotts- och motionsorganisationer
+  ru: спортивные и физкультурные организации
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0190-s001.wav
+  start_seconds: 368.583333
+  end_seconds: 372.275306
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0192-s001
+  sv: konst-, bildnings- och kulturföreningar
+  ru: объединения в области искусства, просвещения и культуры
+  scene_id: scene-4
+  visual_cue: 'Show the verified contextual picture: All Digital Week public event at Helsinki Oodi library,
+    26 March 2019. Real community participation and public learning activity; contextual example only,
+    with no inference about individual immigration status, employment or beliefs. Keep complete source
+    text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_workshop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0192-s001.wav
+  start_seconds: 374.041667
+  end_seconds: 377.942619
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/workshop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0193-s001
+  sv: miljöorganisationer
+  ru: природоохранные организации
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0193-s001.wav
+  start_seconds: 379.708333
+  end_seconds: 382.216088
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0194-s001
+  sv: social- och hälsovårdsorganisationer
+  ru: социальные организации и организации здравоохранения
+  scene_id: scene-4
+  visual_cue: 'Show the verified contextual picture: Finnish Red Cross Blood Service former Kivihaka headquarters
+    in Helsinki. Actual nonprofit health service institution, shown as an example of association-related
+    service provision; not asserted to be its current headquarters. Keep complete source text in the fixed
+    bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_bloodservice
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0194-s001.wav
+  start_seconds: 384.0
+  end_seconds: 387.831293
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/bloodservice.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0195-s001
+  sv: fackföreningar och företagarorganisationer
+  ru: профсоюзы и организации предпринимателей
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0195-s001.wav
+  start_seconds: 389.583333
+  end_seconds: 393.832585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0196-s001
+  sv: politiska föreningar
+  ru: политические объединения
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0196-s001.wav
+  start_seconds: 395.583333
+  end_seconds: 398.091088
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0197-s001
+  sv: människorätts- och jämställdhetsorganisationer
+  ru: правозащитные организации и организации по вопросам гендерного равенства
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0197-s001.wav
+  start_seconds: 399.875
+  end_seconds: 404.611871
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0198-s001
+  sv: föreningar för kulturell mångfald
+  ru: объединения в поддержку культурного многообразия
+  scene_id: scene-4
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0198-s001.wav
+  start_seconds: 406.375
+  end_seconds: 409.718673
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0199-s001
+  sv: stadsdels- och byföreningar.
+  ru: объединения жителей городских районов и деревень.
+  scene_id: scene-4
+  visual_cue: 'Show the verified contextual picture: People jointly erect the coffee tent for the Ylimuonio
+    midsummer gathering, 23 June 2005. Actual Finnish communal volunteer work, illustrating shared spaces,
+    collective work and local voluntary activity. No claim about participants’ other affiliations or present-day
+    status. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_talkoot
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0199-s001.wav
+  start_seconds: 411.5
+  end_seconds: 414.495374
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/talkoot.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0200-s001
+  sv: På många orter finns det också föreningar som bildats av nyanlända och som erbjuder samvaro, stöd
+    och verksamhet för till exempel människor som flyttat till Finland från ett visst land eller ett visst
+    område.
+  ru: Во многих населённых пунктах существуют также объединения, созданные недавно прибывшими и предлагающие
+    общение, поддержку и деятельность, например людям, переехавшим в Финляндию из определённой страны
+    или с определённой территории.
+  scene_id: scene-5
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0200-s001.wav
+  start_seconds: 416.958333
+  end_seconds: 434.16432
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0200-s002
+  sv: Dessa föreningar kan vara bra ställen för kamratstöd från andra människor som flyttat till landet.
+  ru: Эти объединения могут быть хорошими местами для взаимной поддержки со стороны других переехавших
+    в страну людей.
+  scene_id: scene-5
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0200-s002.wav
+  start_seconds: 435.916667
+  end_seconds: 444.41517
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0200-s003
+  sv: I dem kan man till exempel fira högtider som hör till den egna kulturen tillsammans med andra.
+  ru: В них можно, например, вместе с другими отмечать праздники собственной культуры.
+  scene_id: scene-5
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0200-s003.wav
+  start_seconds: 446.166667
+  end_seconds: 454.247211
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0201-s001
+  sv: Det lönar sig att registrera sin förening.
+  ru: Своё объединение стоит зарегистрировать.
+  scene_id: scene-6
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0201-s001.wav
+  start_seconds: 456.708333
+  end_seconds: 460.469966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0201-s002
+  sv: Då är föreningen en juridisk person vars medlemmar inte personligen bär ansvar för föreningens verksamhet.
+  ru: Тогда объединение является юридическим лицом, члены которого не несут личной ответственности за
+    деятельность объединения.
+  scene_id: scene-6
+  visual_cue: 'Exact-source concept card: juridisk person'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - juridisk person
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0201-s002.wav
+  start_seconds: 462.25
+  end_seconds: 471.096803
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/cards/48.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0201-s003
+  sv: En registrerad förening kan ansöka om finansiering och bidrag samt samarbeta med andra föreningar
+    och myndigheter.
+  ru: Зарегистрированное объединение может ходатайствовать о финансировании и финансовой поддержке и сотрудничать
+    с другими объединениями и органами власти.
+  scene_id: scene-6
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0201-s003.wav
+  start_seconds: 472.875
+  end_seconds: 482.836361
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0201-s004
+  sv: Föreningen registreras med anmälan till Patent- och registerstyrelsen.
+  ru: Объединение регистрируется посредством подачи уведомления в Управление патентов и регистрации (Patent-
+    och registerstyrelsen).
+  scene_id: scene-6
+  visual_cue: 'Exact-source concept card: Patent- och registerstyrelsen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Patent- och registerstyrelsen
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0201-s004.wav
+  start_seconds: 484.625
+  end_seconds: 490.894388
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/cards/50.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0202-s001
+  sv: Också utlänningar, d.v.s. personer som inte har finskt medborgarskap, kan grunda en registrerad
+    förening.
+  ru: Иностранцы, то есть люди, не имеющие гражданства Финляндии, также могут создать зарегистрированное
+    объединение.
+  scene_id: scene-6
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Också utlänningar, det vill säga personer som inte har finskt medborgarskap, kan grunda en registrerad
+      förening.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0202-s001.wav
+  start_seconds: 492.666667
+  end_seconds: 502.210068
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0202-s002
+  sv: I detta fall ska både ordföranden och vice ordföranden ha sin hemort i Finland.
+  ru: В этом случае и председатель, и заместитель председателя должны иметь местожительство в Финляндии.
+  scene_id: scene-6
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0202-s002.wav
+  start_seconds: 504.0
+  end_seconds: 510.826667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0203-s001
+  sv: Om ordföranden eller vice ordföranden har sin hemort utomlands kan föreningen ansöka om dispens
+    hos patent- och registerstyrelsen.
+  ru: Если председатель или заместитель председателя имеет местожительство за границей, объединение может
+    ходатайствовать в Управлении патентов и регистрации о разрешении на отступление от этого требования.
+  scene_id: scene-6
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0203-s001.wav
+  start_seconds: 512.583333
+  end_seconds: 523.728912
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0204-s001
+  sv: Föreningar bedriver sin verksamhet vanligen ett år i taget.
+  ru: Объединения обычно ведут свою деятельность годовыми периодами.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0204-s001.wav
+  start_seconds: 526.208333
+  end_seconds: 531.572143
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0204-s002
+  sv: De planerar sin verksamhet och sin ekonomi ett år fram i tiden.
+  ru: Они планируют свою деятельность и финансы на год вперёд.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0204-s002.wav
+  start_seconds: 533.333333
+  end_seconds: 538.906122
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0204-s003
+  sv: Ekonomin och bokföringen ska granskas i slutet av perioden.
+  ru: Финансы и бухгалтерский учёт должны проверяться в конце периода.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0204-s003.wav
+  start_seconds: 540.666667
+  end_seconds: 546.169796
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0205-s001
+  sv: I en förening är det medlemmarna som har makten.
+  ru: В объединении власть принадлежит его членам.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights:
+  - medlemmarna
+  - makten
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0205-s001.wav
+  start_seconds: 547.958333
+  end_seconds: 552.207585
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0205-s002
+  sv: De viktigaste besluten fattas på föreningsmöten som är öppna för alla medlemmar.
+  ru: Важнейшие решения принимаются на собраниях объединения, открытых для всех его членов.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0205-s002.wav
+  start_seconds: 553.958333
+  end_seconds: 561.063639
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0206-s001
+  sv: För föreningen väljs en styrelse på föreningsmötet dit alla föreningsmedlemmar sammankallas.
+  ru: Правление объединения избирается на собрании объединения, на которое созываются все его члены.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0206-s001.wav
+  start_seconds: 562.833333
+  end_seconds: 570.704898
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0206-s002
+  sv: Styrelsen ska bestå av minst ordföranden och två medlemmar.
+  ru: Правление должно состоять как минимум из председателя и двух членов.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights:
+  - ordföranden
+  - två medlemmar
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0206-s002.wav
+  start_seconds: 572.458333
+  end_seconds: 577.822143
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0206-s003
+  sv: Styrelsens storlek kan föreskrivas i stadgarna.
+  ru: Численность правления может быть установлена в уставе.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0206-s003.wav
+  start_seconds: 579.583333
+  end_seconds: 584.111224
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0206-s004
+  sv: Styrelsen har som uppgift att sköta ärenden enligt lagar, föreningens stadgar och föreningens beslut.
+  ru: Задача правления — вести дела в соответствии с законами, уставом и решениями объединения.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0206-s004.wav
+  start_seconds: 585.875
+  end_seconds: 594.373503
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0207-s001
+  sv: Föreningen upplöses när merparten av medlemmarna fattar beslut om detta på föreningens möte.
+  ru: Объединение распускается, когда большинство его членов принимает такое решение на собрании объединения.
+  scene_id: scene-7
+  visual_cue: 'Show the verified contextual picture: Wikimedia Suomi registered association spring meeting,
+    26 May 2019 at Oodi, Helsinki. Actual association members discussing their organization; illustrates
+    membership, meetings and collective decisions without claiming that the photographed moment concerns
+    every narrated legal rule. Keep complete source text in the fixed bilingual panel.'
+  asset_ids:
+  - episode_background
+  - picture_meeting_room
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0207-s001.wav
+  start_seconds: 596.125
+  end_seconds: 604.205544
+  display_segments: []
+  render_image: studio/media/hb-c04-foreningar/pictures/meeting_room.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0208-s001
+  sv: Om du får utkomstskydd för arbetslösa ska du på förhand fråga sysselsättningstjänsterna i din kommun
+    huruvida frivilligarbetet påverkar utbetalningen av utkomstskyddet för arbetslösa.
+  ru: Если вы получаете пособие по безработице, следует заранее спросить в службе занятости своего муниципалитета,
+    влияет ли волонтёрская работа на выплату пособия по безработице.
+  scene_id: scene-8
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0208-s001.wav
+  start_seconds: 606.666667
+  end_seconds: 622.688435
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0208-s002
+  sv: I vissa fall kan frivilligarbetet inkluderas i din integrationsplan.
+  ru: В определённых случаях волонтёрская работа может быть включена в ваш план интеграции.
+  scene_id: scene-8
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-foreningar/narration/hb-c04-u0208-s002.wav
+  start_seconds: 624.458333
+  end_seconds: 630.727721
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-foreningar/sources/music-bed.flac
+  background_image: studio/media/hb-c04-foreningar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.949702380952381
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - InfoFinland.fi — InfoFinland.fi
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Urjalankylän palonsammutuskunta hut.jpg — Htm · CC BY-SA 4.0
+    - Reminiscing — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - SPR Veripalvelu, Kivihaka, Helsinki.jpg — Abc10 · CC BY-SA 4.0
+    - WMFI kevätkokous 2019 02.jpg — Kimberli Mäkäräinen · CC BY-SA 4.0
+    - Talkoot Ylimuonio.JPG — Jvuollo at fi.wikipedia · CC BY-SA 3.0
+    - http://creativecommons.org/licenses/by-sa/3.0/
+    - https://creativecommons.org/licenses/by-sa/4.0
+    - Bilder proportionellt förminskade. Fullständiga källor i CREDITS-filen.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Punaisen Ristin Nälkäpäivä-keräys Helsingin rautatieaseman edessä 2020 (HK8219-24).jpg — Sakari
+      Kiuru · CC BY 4.0
+    - All Digital Week Oodi 26.3.2019 2.jpg — Zache · CC BY-SA 3.0
+    - Nuoret vaikuttajat goes Wikipedia 07.jpg — Kimberli Mäkäräinen · CC BY-SA 4.0
+    - https://creativecommons.org/licenses/by-sa/3.0
+    - https://creativecommons.org/licenses/by-sa/4.0
+    - https://creativecommons.org/licenses/by/4.0
+    - Bilder proportionellt förminskade. Fullständiga källor i CREDITS-filen.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Urjalankyl%C3%A4n_palonsammutuskunta_hut.jpg
+    description: Urjala village voluntary fire departmen's hut, Urjala, Finland.
+    license: CC BY-SA 4.0

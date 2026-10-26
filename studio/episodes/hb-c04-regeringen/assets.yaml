@@ -1,0 +1,651 @@
+schema_version: 1
+section_id: hb-c04-regeringen
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c04-regeringen/sources/background.jpg
+    sha256: fd8d5c864ca13ac4bfb1dce5c349345508f6814649a7b7af5b442f70d242cab1
+    bytes: 7200469
+  source_url: https://commons.wikimedia.org/wiki/File:Government_Palace,_Helsinki_20180801.jpg
+  creator: Suicasmo
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: 'Government Palace, Helsinki 20180801.jpg — Suicasmo · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Government_Palace,_Helsinki_20180801.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: Verified Government Palace exterior provides institutional context for the cabinet
+    and ministries; no claim about any individual meeting. Identity and reuse terms verified against Commons
+    API metadata and the downloaded original image.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c04-regeringen/cards/20.png
+    sha256: d7aa75239ee90d3282f0441803c003bb12b6cbe331a7c37b0bd11482889acc3e
+    bytes: 15372
+    sentence_id: hb-c04-u0036-s002
+    source_substrings:
+    - nationalpark
+    - miljöministeriet
+  - path: studio/media/hb-c04-regeringen/cards/25.png
+    sha256: bdd5cf4a38f41ebb33a0bce4d582c6872e350c85700a4056682861c3f61e02ff
+    bytes: 22831
+    sentence_id: hb-c04-u0037-s002
+    source_substrings:
+    - lag
+    - nationalpark
+    - praktiska åtgärderna
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c04-regeringen/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c04-regeringen/sources/music.mp3
+    sha256: 5b7d3a5df96e66723d7c3a25fa3c387714e13ac6872a7106b55b72ee289a1f71
+    bytes: 15667126
+  - path: studio/media/hb-c04-regeringen/sources/music-bed.flac
+    sha256: b53b053ed99dea7fc414a1a4eddfcd598b49d5f6b241127dc88ff431adfbbe6c
+    bytes: 56432497
+    seconds: 445.125
+    sample_rate: 48000
+    channels: 2
+  title: A Very Brady Special
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900060
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/A%20Very%20Brady%20Special.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"A Very Brady Special" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution 4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted,
+    repeated with 4 second equal-power crossfades.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c04-regeringen/prepare_assets.py
+    master_seconds: 388.3102
+    prepared_seconds: 445.125
+    crossfade_seconds: 4
+    crossfade_repeats: 1
+    format: 48000 Hz stereo PCM24 FLAC
+    pre_pcm_peak: 0.24255876243114471
+    pre_pcm_scale: 1.0
+    pre_pcm_attenuation_db: 0.0
+    pcm_rail_samples: 0
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s001.wav
+    sha256: 58d53e819582a9ecf0e5e48d71dde782ef1c9c1d1d9f34b8a8cbd971560425d1
+    bytes: 571436
+    seconds: 6.478367346938776
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0032-s001
+    peak: 0.39190673828125
+    generation_seconds: 8.987321179010905
+    tts_input: Statsministern och de övriga ministrarna bildar Finlands statsråd.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s002.wav
+    sha256: f10258161c3dde07d9fff0e61d0f3ce2a5a788b530631673f96448c10a8328db
+    bytes: 479276
+    seconds: 5.433469387755102
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0032-s002
+    peak: 0.39459228515625
+    generation_seconds: 7.162721555971075
+    tts_input: I vardagsspråk används ofta ordet regering för statsrådet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s003.wav
+    sha256: 75903b1f206a18fd21787c5451c40139a1e1e0e9362aa3d8c272e33500f2e849
+    bytes: 952364
+    seconds: 10.797278911564625
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0032-s003
+    peak: 0.442962646484375
+    generation_seconds: 14.844201004016213
+    tts_input: Ministrarnas antal varierar, men under de senaste årtiondena har Finlands regering bestått
+      av femton till tjugo ministrar.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s004.wav
+    sha256: 573546119aca2880b4a57ef0c932effa76597e12f3d5d8c8bac2855b44db2f58
+    bytes: 847916
+    seconds: 9.613061224489796
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0032-s004
+    peak: 0.2506103515625
+    generation_seconds: 12.72520202898886
+    tts_input: Exempel på ministrar är inrikesminister, utrikesminister, undervisningsminister och justitieminister.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s001.wav
+    sha256: 64296228b010d62ae0ae750ae504bdfa8588766cc4fced19f51a0ed0206e14e4
+    bytes: 632876
+    seconds: 7.174965986394557
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0033-s001
+    peak: 0.372894287109375
+    generation_seconds: 9.405254824960139
+    tts_input: I allmänhet blir den partiordförande som hade mest framgång i valet statsminister.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s002.wav
+    sha256: aa89b1199b174348e1ed5ccf8ffcc092bd4bc4d30d2b34f38b9091c4fd6fec1a
+    bytes: 737324
+    seconds: 8.359183673469389
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0033-s002
+    peak: 0.294189453125
+    generation_seconds: 11.222868508019019
+    tts_input: Hen diskuterar med de övriga partierna och väljer vilka partier som ska börja bilda regering.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s003.wav
+    sha256: c1294de01d826cfe60eb9bf083294d44d2da3b2b741d12c49eb3bee0802d3ed7
+    bytes: 516140
+    seconds: 5.851428571428571
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0033-s003
+    peak: 0.228546142578125
+    generation_seconds: 8.591839878994506
+    tts_input: I Finland är det vanligt att det finns flera partier i regeringen.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s004.wav
+    sha256: 9ddf9f1357b11c8f1fe0cd023f54838f488830b7752231ac28baeda990bbecbe
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0033-s004
+    peak: 0.273895263671875
+    generation_seconds: 10.173787814041134
+    tts_input: Efter det utarbetar dessa partier tillsammans ett regeringsprogram.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s005.wav
+    sha256: 9501d67793ddb8580e9f246dd20716b873274396387fb5c47a1172fdc66b552f
+    bytes: 657452
+    seconds: 7.453605442176871
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0033-s005
+    peak: 0.29052734375
+    generation_seconds: 13.6275823879987
+    tts_input: Det berättar om regeringens politiska mål och åtgärder under regeringens mandatperiod.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s001.wav
+    sha256: 0113c0f23e6e4a25e5d77bfe2608048d3fd617a89b982cec2256e25a718112ed
+    bytes: 755756
+    seconds: 8.568163265306122
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0034-s001
+    peak: 0.293121337890625
+    generation_seconds: 13.424297768971883
+    tts_input: När regeringsprogrammet är färdigt utser riksdagen officiellt en statsminister genom omröstning.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s002.wav
+    sha256: 1f2e85480c7904c30056cadf493a027204c281740f4353af377a37180ab4a1f7
+    bytes: 626732
+    seconds: 7.1053061224489795
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0034-s002
+    peak: 0.3017578125
+    generation_seconds: 13.185489897965454
+    tts_input: Regeringspartierna beslutar om vem från respektive parti som ska bli minister.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s003.wav
+    sha256: 6ea2b089076e1fd1828a1623c1de79b41fa2bcc0dda8f4d2351cc049c359e941
+    bytes: 768044
+    seconds: 8.70748299319728
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0034-s003
+    peak: 0.26995849609375
+    generation_seconds: 17.348000265017617
+    tts_input: När statsministern och övriga ministrar har utsetts utnämner presidenten dem för deras
+      uppgifter.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s004.wav
+    sha256: 7dbb385e24a3fbae4c5896de1815b5f7b0a7192b6bae8116ffbab512737c19bb
+    bytes: 718892
+    seconds: 8.150204081632653
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0034-s004
+    peak: 0.29644775390625
+    generation_seconds: 19.25215166300768
+    tts_input: Riksdagen godkänner ännu genom omröstning statsrådets sammansättning och regeringsprogrammet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s001.wav
+    sha256: dcb29d2681f956a6f5c3d660eeb4530bb5195403ce96430e1b3115d6d7e4e09c
+    bytes: 350252
+    seconds: 3.9706122448979593
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s001
+    peak: 0.339141845703125
+    generation_seconds: 8.506369084003381
+    tts_input: Ministrarna leder ministeriernas arbete.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s002.wav
+    sha256: e529ef3d13e9f98a369f023a93ea80fbecc77d8ddff0d160e63b4900fd492fc8
+    bytes: 596012
+    seconds: 6.757006802721088
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s002
+    peak: 0.285858154296875
+    generation_seconds: 11.16610520600807
+    tts_input: Ministerierna bereder och verkställer de ärenden som regeringen beslutar om.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s003.wav
+    sha256: 505b2b0ec9aa584d116050bc01324c622fb254487713881789846f47a4c684e9
+    bytes: 872492
+    seconds: 9.891700680272109
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s003
+    peak: 0.23980712890625
+    generation_seconds: 18.290035647980403
+    tts_input: Exempel på ministerier är försvarsministeriet, social- och hälsovårdsministeriet och inrikesministeriet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s004.wav
+    sha256: ee85419993b7d605b27a885ff1021b38032f9349ee0466e071e1a7fccd03850e
+    bytes: 657452
+    seconds: 7.453605442176871
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s004
+    peak: 0.2789306640625
+    generation_seconds: 13.389794645016082
+    tts_input: Flera statliga ämbetsverk och inrättningar lyder under och styrs av ministerierna.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s005.wav
+    sha256: 36c3e9509b2de29f382decd69838dfe65bcda32cc9cc2734c602b6e779f8ec29
+    bytes: 669740
+    seconds: 7.592925170068027
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s005
+    peak: 0.313873291015625
+    generation_seconds: 14.010728673019912
+    tts_input: Till exempel Migrationsverket är ett ämbetsverk som lyder under inrikesministeriet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s006.wav
+    sha256: 7ffb427b26ca86824614a4693ed90f7bdb4283e7598c658411ea20c37893e372
+    bytes: 780332
+    seconds: 8.846802721088435
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0035-s006
+    peak: 0.347991943359375
+    generation_seconds: 14.210678423987702
+    tts_input: Tillsammans med ministerierna bildar statens ämbetsverk och inrättningar statens centralförvaltning.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s001.wav
+    sha256: 243ccba041e041f31fc4db585661e97799513ef13189b8834537bbeec1da6642
+    bytes: 399404
+    seconds: 4.527891156462585
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0036-s001
+    peak: 0.301666259765625
+    generation_seconds: 11.242325853032526
+    tts_input: Regeringen bereder ärenden som riksdagen behandlar.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s002.wav
+    sha256: 786044317c0edf37d068174354e5aa50c60bf150c63508ad14004859f3f266c4
+    bytes: 1075244
+    seconds: 12.19047619047619
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0036-s002
+    peak: 0.338470458984375
+    generation_seconds: 20.672534795012325
+    tts_input: Till exempel om regeringspartierna har beslutat att en ny nationalpark ska inrättas i Finland,
+      börjar miljöministeriet bereda ärendet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s003.wav
+    sha256: 0d5aa40234a18b652dfd8b398f6a0fc55a43f1a8ebfc6814b7f130e4dd63cf3b
+    bytes: 1327148
+    seconds: 15.046530612244897
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0036-s003
+    peak: 0.303253173828125
+    generation_seconds: 23.312952363980003
+    tts_input: Ministeriet undersöker var den nya nationalparken ska inrättas och lyssnar på andra myndigheters
+      och medborgarorganisationers åsikter, information och erfarenheter i frågan.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s004.wav
+    sha256: 34681587652ab365cde59e9bfc8ad97827703371776f619bf849187906a418ee
+    bytes: 1431596
+    seconds: 16.23074829931973
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0036-s004
+    peak: 0.3001708984375
+    generation_seconds: 24.895666293043178
+    tts_input: Under regeringens ledning utarbetar ministeriet ett förslag, där det motiverar varför det
+      valda området skulle vara det bästa för den nya nationalparken och hurdana konsekvenser förslaget
+      skulle ha.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s005.wav
+    sha256: a33556a419ddc6db6f4d75e2a2cc1e07ffa08aee52d42efcaf6c7b2fba8f1aed
+    bytes: 417836
+    seconds: 4.73687074829932
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0036-s005
+    peak: 0.3668212890625
+    generation_seconds: 8.783505132014398
+    tts_input: Efter det överförs ärendet till riksdagen för beslut.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s001.wav
+    sha256: a5b01c0d84961189f8b7f9daa49ef35e3f6ded9802331349afb2b7d27cbf9090
+    bytes: 528428
+    seconds: 5.990748299319728
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0037-s001
+    peak: 0.261627197265625
+    generation_seconds: 10.779467684973497
+    tts_input: När riksdagen beslutar någonting, verkställer regeringen beslutet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s002.wav
+    sha256: afe740680e2c1cd1b63fd6dc4ef69b87b7a40267f7ebbf2486c52d07930fa216
+    bytes: 1419308
+    seconds: 16.091428571428573
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0037-s002
+    peak: 0.30438232421875
+    generation_seconds: 29.534559259016532
+    tts_input: När riksdagen till exempel utfärdar en lag om inrättande av en ny nationalpark, börjar
+      de myndigheter som ansvarar för nationalparkerna förbereda de praktiska åtgärderna i ärendet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s003.wav
+    sha256: 371c715eb62085f4582ba608a9cc0f2f37d9c9da8c9dd1e584510d0524149c83
+    bytes: 731180
+    seconds: 8.289523809523809
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0037-s003
+    peak: 0.269866943359375
+    generation_seconds: 14.863354123954196
+    tts_input: Dessa åtgärder är till exempel att ordna med informationstavlor för nationalparkens besökare.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s004.wav
+    sha256: 1f802687582c49d62add1c96994f4d0560323ffedced004ab48db87720d7c0c7
+    bytes: 1204268
+    seconds: 13.653333333333334
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0037-s004
+    peak: 0.441436767578125
+    generation_seconds: 23.322775316017214
+    tts_input: Miljöministeriet och jord- och skogsbruksministeriet övervakar att myndigheterna ordnar
+      med alla tjänster som lagen föreskriver i den nya nationalparken.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s001.wav
+    sha256: 681ae7783287dcf409d7aba735c00b034bf0b76af60ab41d05cb86973684e6d3
+    bytes: 940076
+    seconds: 10.65795918367347
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s001
+    peak: 0.30413818359375
+    generation_seconds: 20.510656504018698
+    tts_input: Regeringen ansvarar för sitt arbete inför riksdagen, det vill säga regeringen och ministrarna
+      måste ha riksdagens förtroende.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s002.wav
+    sha256: a5c7462b554aa4c6ba2328176d37943abc87adeb36d34f296ffa2d25a81616e3
+    bytes: 995372
+    seconds: 11.284897959183674
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s002
+    peak: 0.326812744140625
+    generation_seconds: 22.32031676801853
+    tts_input: Riksdagen måste alltså vara övertygad om att regeringen och alla ministrarna utför sitt
+      arbete väl och på ett tillförlitligt sätt.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s003.wav
+    sha256: ea32afb45f95dbb49b31ee065e2263eaee5c9b4c4f1098ba9129c9a24296a843
+    bytes: 528428
+    seconds: 5.990748299319728
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s003
+    peak: 0.218536376953125
+    generation_seconds: 16.02222098701168
+    tts_input: Om riksdagen inte är övertygad om det, kan hela regeringen falla.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s004.wav
+    sha256: 46b7e715931638fc352d5da0c6ae340d2d0585c8d33f69855fa1cab78359ed97
+    bytes: 657452
+    seconds: 7.453605442176871
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s004
+    peak: 0.33624267578125
+    generation_seconds: 14.90217565104831
+    tts_input: Om regeringen faller, måste det kanske hållas ett nytt riksdagsval i förtid i landet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s005.wav
+    sha256: 17345dcfc5d640da86fdeb8786740ac6016cd0f31bc53c0310fef3b053869214
+    bytes: 258092
+    seconds: 2.9257142857142857
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s005
+    peak: 0.20611572265625
+    generation_seconds: 7.140986425045412
+    tts_input: Det är ändå mycket sällsynt.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s006.wav
+    sha256: 52df92e24448bbe8ef6d70851d2ab99397766bb54f5ceeea36e651c700ec92b0
+    bytes: 534572
+    seconds: 6.060408163265306
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0038-s006
+    peak: 0.243133544921875
+    generation_seconds: 13.868640147033148
+    tts_input: I Finland har regeringarna varit långvariga de senaste årtiondena.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s001.wav
+    sha256: b568853be0fd15340fb24c67cdc250447105d61aff2acd812bfe3d53d6f89105
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0039-s001
+    peak: 0.2669677734375
+    generation_seconds: 14.393993637990206
+    tts_input: De riksdagspartier som inte ingår i regeringen bildar opposition.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s002.wav
+    sha256: 117d19819b74c5affbee93ee40717d8868466246170aa32e7bb0477977e7c84e
+    bytes: 872492
+    seconds: 9.891700680272109
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0039-s002
+    peak: 0.427978515625
+    generation_seconds: 24.008996970951557
+    tts_input: Oppositionen har som uppgift att utmana regeringen och lägga fram alternativ till den politik
+      som regeringen driver.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s003.wav
+    sha256: b87391b0b79a89ace914839936b0690590079d4417fbf9a1687c42b199837f25
+    bytes: 970796
+    seconds: 11.00625850340136
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0039-s003
+    peak: 0.37664794921875
+    generation_seconds: 21.807228919991758
+    tts_input: Om oppositionen anser att riksdagen inte kan lita på regeringens arbete, kan den kräva
+      en omröstning om regeringens förtroende.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s001.wav
+    sha256: 371fc22fdb308ff1f923ffff1842226a672d6b03f1463e05e1e1d7c53b7840d5
+    bytes: 491564
+    seconds: 5.572789115646258
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0040-s001
+    peak: 0.381072998046875
+    generation_seconds: 15.296344374015462
+    tts_input: I Finland är regeringarna i allmänhet majoritetsregeringar.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s002.wav
+    sha256: 8f44092e36898c28d913cac081a067a5226e8a5df59be23912d4eb6e3029092e
+    bytes: 608300
+    seconds: 6.896326530612245
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0040-s002
+    peak: 0.334991455078125
+    generation_seconds: 13.378606021986343
+    tts_input: Det betyder att majoriteten av riksdagsledamöterna hör till regeringspartierna.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s003.wav
+    sha256: b1d70ab1b6016c939ce6533be06773faf795d03f87c4fb450ff976ff23765cec
+    bytes: 921644
+    seconds: 10.448979591836734
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0040-s003
+    peak: 0.345306396484375
+    generation_seconds: 22.707677058002446
+    tts_input: På så vis får regeringen vid en omröstning nästan alltid riksdagens förtroende och får
+      igenom sina förslag i omröstningar.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  creator: Local synthesis with Supertonic 3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic 3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic 1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation, in source order; interrupted missing-clip resumes
+      or targeted retakes restart the seed. See each file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; Linux x86_64; actual intra-op thread count recorded per selected clip (legacy
+      records without this field used four)
+    format: 44100 Hz mono PCM16 WAV
+- asset_id: picture_cabinet
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+    sha256: 44f3963e031e9d441acc28cc1e76502ae08767e00759e43b25b949080560e2da
+    bytes: 13976396
+  source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg
+  creator: Josefiina Alanen
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Helsinki Government Palace from Senate Square 2021-03-03.jpg — Josefiina Alanen. CC
+    BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Government Palace in Helsinki. Illustrates the cabinet institution and
+    its preparation/implementation role, without claiming that every named ministry or agency is housed
+    in this building. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_palace
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+    sha256: 49f85206f9312cf5b63f3368d5daaa985587136c3d2d40ffc29f7f4a72a0612d
+    bytes: 2663109
+  source_url: https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg
+  creator: Paasikivi
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: The Presidential Palace, Helsinki, Finland 01.jpg — Paasikivi. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0.
+    https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg. Resized/cropped
+    for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Presidential Palace in Helsinki. Illustrates the presidential institution
+    and duties, without identifying a current officeholder or particular decision. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_parliament
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+    sha256: ded2673a048ba62f8c4132679201f772f59d156846fe697f9fadda3327a9e516
+    bytes: 449025
+  source_url: https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg
+  creator: jampe
+  reuse_terms: CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0
+  required_credits: Eduskuntatalo Töölönlahdenkatu - panoramio.jpg — jampe. CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0.
+    https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including
+    the modern annex. Represents the parliamentary institution; does not claim the pictured building is
+    the columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'

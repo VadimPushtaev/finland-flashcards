@@ -1,0 +1,484 @@
+schema_version: 1
+section_id: hb-c04-riksdagen
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c04-riksdagen/sources/background.jpg
+    sha256: f79e1b952b2deafaadae9838779c10b71bad14581a76acc7db22f442df8442b1
+    bytes: 18055344
+  source_url: https://commons.wikimedia.org/wiki/File:Riksdagshuset_Helsingfors_November_2025_01.jpg
+  creator: ArildV
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: 'Riksdagshuset Helsingfors November 2025 01.jpg — ArildV · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Riksdagshuset_Helsingfors_November_2025_01.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: Verified Finnish Parliament building exterior provides direct context for the
+    institution discussed. Identity and reuse terms verified against Commons API metadata and the downloaded
+    original image.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c04-riksdagen/cards/22.png
+    sha256: a3a5502bd095a70c5b767d96cd474faf74ffc70781d52ddaaaf304c6d17e9757
+    bytes: 17371
+    sentence_id: hb-c04-u0031-s003
+    source_substrings:
+    - Finlands lagar
+    - EU:s rättsakter
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c04-riksdagen/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c04-riksdagen/sources/music.mp3
+    sha256: 9d745c00e0d858ec25ae1b6a46a8a40f8a524185d49dc09870c58bf1f2f9a3a0
+    bytes: 33723695
+  - path: studio/media/hb-c04-riksdagen/sources/music-bed.flac
+    sha256: 540d704595618e495127d7fd33fb30f99178d6d83fb20e0fb4a6e1ceca03e203
+    bytes: 30067137
+    seconds: 232.0
+    sample_rate: 48000
+    channels: 2
+  title: Ethereal Relaxation
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2100031
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ethereal%20Relaxation.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Ethereal Relaxation" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution 4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c04-riksdagen/prepare_assets.py
+    master_seconds: 1686.07345
+    prepared_seconds: 232.0
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000 Hz stereo PCM24 FLAC
+    pre_pcm_peak: 0.6961218118667603
+    pre_pcm_scale: 1.0
+    pre_pcm_attenuation_db: 0.0
+    pcm_rail_samples: 0
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s001.wav
+    sha256: b3e827a69cb9b80cc9fe3356581d44f5c6ce9e15f25c7b2af93e7f2f4e423010
+    bytes: 307244
+    seconds: 3.4829931972789114
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0021-s001
+    peak: 0.301513671875
+    generation_seconds: 8.216052740986925
+    tts_input: Finlands parlament kallas riksdag.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s002.wav
+    sha256: b558cafd327f9173d22a40e0247701bbcc5acd770735b38d4c195875771ef5fa
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0021-s002
+    peak: 0.323516845703125
+    generation_seconds: 14.854176539985929
+    tts_input: Riksdagen har två hundra riksdagsledamöter, som utses genom val.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s003.wav
+    sha256: 9a37eaa74ac1d4cf1a213c7b3dad99a9511bd4f6a5ce77f9bcc7bd4c86b7d32a
+    bytes: 337964
+    seconds: 3.8312925170068026
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0021-s003
+    peak: 0.24713134765625
+    generation_seconds: 8.721581960038748
+    tts_input: Finlands riksdag är en enkammarriksdag.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0022-s001.wav
+    sha256: 8da10ddd79a18ae362132e7116b806783cd53ca7e58073be7d65c580fc883ef2
+    bytes: 264236
+    seconds: 2.995374149659864
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0022-s001
+    peak: 0.312469482421875
+    generation_seconds: 8.10063016298227
+    tts_input: Riksdagens uppgifter är att
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0023-s001.wav
+    sha256: 0ceea9a73c351439c60f870c0c2dacff3621c869ebe557cc38ae5f98b07f4391
+    bytes: 227372
+    seconds: 2.5774149659863945
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0023-s001
+    peak: 0.259918212890625
+    generation_seconds: 6.981518516957294
+    tts_input: stifta Finlands lagar
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0025-s001.wav
+    sha256: f380b8eea85db9f47139e0458fe47ea00da9717da5610dc3dede8829bc62ed36
+    bytes: 251948
+    seconds: 2.8560544217687074
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0025-s001
+    peak: 0.318206787109375
+    generation_seconds: 8.084833048051223
+    tts_input: besluta om statens budget
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0026-s001.wav
+    sha256: ad829aa5e330347eff42774649f01ea88caea751fc908905f9be3060f0e15746
+    bytes: 430124
+    seconds: 4.876190476190477
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0026-s001
+    peak: 0.322662353515625
+    generation_seconds: 11.817376893013716
+    tts_input: godkänna internationella avtal som gäller Finland
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0027-s001.wav
+    sha256: f1edebb9294b1b14e18973f5332dc547658ed9ac1fa9e9e46040296853304324
+    bytes: 387116
+    seconds: 4.388571428571429
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0027-s001
+    peak: 0.359832763671875
+    generation_seconds: 7.467173366982024
+    tts_input: övervaka regeringens och ministrarnas arbete.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s001.wav
+    sha256: ca4fd8a53725211dcda02bd81fef8b7ecb744e28274ec442856b9be50c2feef9
+    bytes: 325676
+    seconds: 3.6919727891156464
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0028-s001
+    peak: 0.324127197265625
+    generation_seconds: 7.403999283036683
+    tts_input: Riksdagen stiftar lagarna i Finland.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s002.wav
+    sha256: 652b8ae97dbbaf5fee3961b4a6b32b6d779a8360a1bc6cc4a48689c75f0f242c
+    bytes: 546860
+    seconds: 6.199727891156463
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0028-s002
+    peak: 0.238311767578125
+    generation_seconds: 13.765540623047855
+    tts_input: Vanligtvis lämnar regeringen förslag till nya lagar till riksdagen.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s003.wav
+    sha256: c7b96bed761ac1e4722b6f1ac5846fa29ae39442d145798c4d0565361097f345
+    bytes: 989228
+    seconds: 11.215238095238096
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0028-s003
+    peak: 0.343414306640625
+    generation_seconds: 22.29911214002641
+    tts_input: Också en enskild riksdagsledamot kan göra lagmotioner, eller så kan ett lagförslag komma
+      till riksdagen via ett medborgarinitiativ.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s001.wav
+    sha256: 0a5b7b906ea01724380a35e05692a03ea3c676b89a779318d04c0aa8d4e96a9a
+    bytes: 798764
+    seconds: 9.05578231292517
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0029-s001
+    peak: 0.462921142578125
+    generation_seconds: 19.176008364011068
+    tts_input: Riksdagen diskuterar lagmotionen eller regeringens lagproposition och behandlar ärendet
+      i olika utskott.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s002.wav
+    sha256: 488171b6040ccef8cb3cadbcae8e3579a6db76bbeaf847e085d7c6ee5a045d9c
+    bytes: 583724
+    seconds: 6.617687074829932
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0029-s002
+    peak: 0.298492431640625
+    generation_seconds: 14.217216231976636
+    tts_input: Till sist röstar riksdagsledamöterna om huruvida de understöder lagen.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s003.wav
+    sha256: a26cabf021a618a42b3de172d3db4ec967dec38a8350d3e85bb943b8dca9711e
+    bytes: 608300
+    seconds: 6.896326530612245
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0029-s003
+    peak: 0.27294921875
+    generation_seconds: 13.817485306004528
+    tts_input: Om riksdagen godkänner lagen, stadfäster presidenten den med sin underskrift.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s004.wav
+    sha256: c094a4f1a7e2196ff4cd5c1216074f852d36c3745d4d0679359d0da62ba9b4de
+    bytes: 847916
+    seconds: 9.613061224489796
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0029-s004
+    peak: 0.320220947265625
+    generation_seconds: 19.895678688015323
+    tts_input: Myndigheterna informerar om lagändringen, och medierna rapporterar om den nya lagen, dess
+      syfte och innehåll.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s005.wav
+    sha256: f5f263a03ac0626eb5295b239f404b51b0f844a9d61da07646be1acacf358eaf
+    bytes: 497708
+    seconds: 5.642448979591837
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0029-s005
+    peak: 0.2738037109375
+    generation_seconds: 11.598479480016977
+    tts_input: På så sätt får medborgarna aktuell information om nya lagar.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s001.wav
+    sha256: b544a1a6779f1fe253309a24bfdeaa63631239389fc2b1487e04722a461c4de4
+    bytes: 522284
+    seconds: 5.921088435374149
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0030-s001
+    peak: 0.302459716796875
+    generation_seconds: 11.563530165993143
+    tts_input: Riksdagen godkänner också regeringens förslag till statens budget.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s002.wav
+    sha256: b8f36e7f197402d123c4025a65717cb01a761686ea9992b872f8722de0a7a2f0
+    bytes: 651308
+    seconds: 7.383945578231293
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0030-s002
+    peak: 0.29779052734375
+    generation_seconds: 12.492424066993408
+    tts_input: Budgeten är en plan över hur statens skattepengar och övriga intäkter ska användas.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s003.wav
+    sha256: 72a751b93d64d2c7938421bfb3b145cd0a7a0d26a02fe919278b5604eb2b09b4
+    bytes: 645164
+    seconds: 7.314285714285714
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0030-s003
+    peak: 0.277008056640625
+    generation_seconds: 14.094678519992158
+    tts_input: Regeringen förhandlar om budgeten varje år och gör ett budgetförslag till riksdagen.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s004.wav
+    sha256: f26025f32fb528609585a78948ac7e56a857ac64299141784e153d87a8a8909c
+    bytes: 430124
+    seconds: 4.876190476190477
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0030-s004
+    peak: 0.3856201171875
+    generation_seconds: 10.051131703017745
+    tts_input: Riksdagen övervakar förverkligandet av budgeten.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s001.wav
+    sha256: ad3728dbc9b689653c92df0d28a13e23ef13193798bbae7a22591151c6d9f1e9
+    bytes: 645164
+    seconds: 7.314285714285714
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0031-s001
+    peak: 0.277587890625
+    generation_seconds: 17.935909868974704
+    tts_input: Riksdagen måste hålla sig uppdaterad om vad som beslutas i Europeiska unionen.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s002.wav
+    sha256: 412644e13beaf912b0fd901aee70a8a736826764ac8651bb0a899a508cd61fe0
+    bytes: 811052
+    seconds: 9.195102040816327
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0031-s002
+    peak: 0.255645751953125
+    generation_seconds: 18.045808618015144
+    tts_input: Riksdagen berättar för regeringen vad Finland anser om de ärenden som behandlas i Europeiska
+      unionen.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s003.wav
+    sha256: 0276d8d7a20bc6a89fe46bdfb46668563bc3a5a587de716cc31b1be97fc8f905
+    bytes: 675884
+    seconds: 7.662585034013605
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0031-s003
+    peak: 0.2803955078125
+    generation_seconds: 13.947458047012333
+    tts_input: Finlands lagar och Europeiska unionens rättsakter kan inte stå i strid med varandra.
+    intra_op_num_threads: 4
+    generation_run: Initial source-order stream, NumPy seed 42; preserved after external SIGTERM interrupted
+      the invocation.
+  - path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s004.wav
+    sha256: 1e6facdd583d8f42cc4ebc6a63bf92d01b38f3cd368c10664dc543e7e4d6d92e
+    bytes: 884780
+    seconds: 10.031020408163265
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0031-s004
+    peak: 0.34375
+    generation_seconds: 11.224066506023519
+    tts_input: Finland måste ta Europeiska unionens rättsakter i beaktande, eftersom Finland är medlem
+      i Europeiska unionen.
+    intra_op_num_threads: 4
+    generation_run: Restart after external SIGTERM; NumPy seed 42 restarted for missing source indices
+      23
+  creator: Local synthesis with Supertonic 3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic 3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic 1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation, in source order; interrupted missing-clip resumes
+      or targeted retakes restart the seed. See each file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; Linux x86_64; actual intra-op thread count recorded per selected clip (legacy
+      records without this field used four)
+    format: 44100 Hz mono PCM16 WAV
+- asset_id: picture_ballot
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+    sha256: 00fa9868ef131a516644270481bd114260c0242930d588aa41ae457eebc422ac
+    bytes: 1862357
+  source_url: https://commons.wikimedia.org/wiki/File:Valb%C3%A5s_med_riksdagskandiidater_Finland_2019.jpg
+  creator: LPfi
+  reuse_terms: Public domain; https://commons.wikimedia.org/wiki/Commons:Public_domain
+  required_credits: Valbås med riksdagskandiidater Finland 2019.jpg — LPfi. Public domain https://commons.wikimedia.org/wiki/Commons:Public_domain.
+    https://commons.wikimedia.org/wiki/File:Valb%C3%A5s_med_riksdagskandiidater_Finland_2019.jpg. Resized/cropped
+    for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual parliamentary-election voting booth and candidate list from Finland in
+    2019. Used for general electoral representation and voting, never presented as the 1994 referendum
+    or any other dated election. Original photograph and Commons identity metadata visually checked on
+    2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_cabinet
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+    sha256: 44f3963e031e9d441acc28cc1e76502ae08767e00759e43b25b949080560e2da
+    bytes: 13976396
+  source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg
+  creator: Josefiina Alanen
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Helsinki Government Palace from Senate Square 2021-03-03.jpg — Josefiina Alanen. CC
+    BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Government Palace in Helsinki. Illustrates the cabinet institution and
+    its preparation/implementation role, without claiming that every named ministry or agency is housed
+    in this building. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_palace
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+    sha256: 49f85206f9312cf5b63f3368d5daaa985587136c3d2d40ffc29f7f4a72a0612d
+    bytes: 2663109
+  source_url: https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg
+  creator: Paasikivi
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: The Presidential Palace, Helsinki, Finland 01.jpg — Paasikivi. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0.
+    https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg. Resized/cropped
+    for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Presidential Palace in Helsinki. Illustrates the presidential institution
+    and duties, without identifying a current officeholder or particular decision. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_parliament
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+    sha256: ded2673a048ba62f8c4132679201f772f59d156846fe697f9fadda3327a9e516
+    bytes: 449025
+  source_url: https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg
+  creator: jampe
+  reuse_terms: CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0
+  required_credits: Eduskuntatalo Töölönlahdenkatu - panoramio.jpg — jampe. CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0.
+    https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including
+    the modern annex. Represents the parliamentary institution; does not claim the pictured building is
+    the columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'

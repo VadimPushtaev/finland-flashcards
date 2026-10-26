@@ -1,0 +1,1500 @@
+schema_version: 1
+section_id: hb-c04-partisystem
+chapter_id: hb-c04
+title_sv: Politiska partier och ideologier
+title_ru: Политические партии и идеологии
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-partisystem.yaml
+example_only: false
+source_section_sha256: 6cb52521dcb77c5d1dd96c6de462bfeb961c2e0fa8e0d1bc83d26fdf80daef71
+translation_file_sha256: efed9410ba48e42872089bed4fb69a0d123f510b6c10da572df8a2aca38b1b78
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every exact source sentence/list fragment once. Episode-specific scenes below follow
+    institutional distinctions and explain their relationships in the original source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at24fps. Chapter4 warm umber #382d24, ivory #faf3e8, secondary #dfcfbb, gold #dfb96f,
+    separator #695540. Liberation Sans Bold48/Regular40 with44/36 or40/34 only where necessary. Stable
+    right bilingual text panel, separate steady source-term cards at selected explanatory turns.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Election posters Kemi 20170407.jpg by Estormiz continuously as decorative background,
+    darkened 42% and blurred 2.5px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=4.474702380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Continue Life by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 114.051 seconds; prepared lossless stereo bed 626.458 seconds.
+    Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Political dividing lines and funding overview
+- id: scene-2
+  description: Party purpose and programme
+- id: scene-3
+  description: Membership and candidacy
+- id: scene-4
+  description: Multiparty cooperation and compromise
+- id: scene-5
+  description: Registered parties in 2024
+- id: scene-6
+  description: Public finance and member fees
+- id: scene-7
+  description: Donations and financial oversight
+- id: scene-8
+  description: Left and right
+- id: scene-9
+  description: Conservatism and liberalism
+- id: scene-10
+  description: Rural and urban priorities
+- id: scene-11
+  description: Growth and environment
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic photograph, selected centrally for this episode, continuous decorative
+    context with source identity recorded in assets.yaml.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Continue Life — Kevin MacLeod, CC BY4.0, verified official master.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: parliament
+  kind: foreground
+  description: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: campaign
+  kind: foreground
+  description: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: eu_flag
+  kind: foreground
+  description: The European flag identifies the European Union passages; its 12 stars are a fixed symbol,
+    not the number of member states.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: funding
+  kind: foreground
+  description: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: farming
+  kind: foreground
+  description: Wheat field in Vampula, Finland, photographed 2022; illustrates domestic agriculture and
+    rural policy, without assigning a party affiliation.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: environment
+  kind: foreground
+  description: Finnish lake and forest landscape illustrates the environment discussed in the source;
+    no claim that the pictured location faces a particular development proposal.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+sentences:
+- sentence_id: hb-c04-u0122-s001
+  sv: De viktigaste indelningarna för att skilja partierna åt är indelningen i högerpartier och vänsterpartier
+    samt konservativa och liberala partier.
+  ru: Главные различия между партиями — разделение на правые и левые партии, а также на консервативные
+    и либеральные партии.
+  scene_id: scene-1
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights:
+  - högerpartier
+  - vänsterpartier
+  - konservativa
+  - liberala
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0122-s001.wav
+  start_seconds: 3.25
+  end_seconds: 15.719116
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0122-s002
+  sv: Dessutom skiljer sig partierna från varandra i fråga om till exempel inställningen till lantbruk
+    och upprätthållande av servicen i glesbygden, inställningen till invandring samt hur viktiga de anser
+    att miljöskydd och bromsandet av klimatförändringen är.
+  ru: Кроме того, партии отличаются друг от друга, например, отношением к сельскому хозяйству и поддержанию
+    услуг в малонаселённых районах, отношением к иммиграции, а также тем, насколько важными они считают
+    охрану окружающей среды и замедление изменения климата.
+  scene_id: scene-1
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0122-s002.wav
+  start_seconds: 17.5
+  end_seconds: 38.676599
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c04-u0123-s001
+  sv: De partier som har ledamöter i riksdagen får ekonomiskt stöd av staten.
+  ru: Партии, имеющие членов в парламенте, получают финансовую поддержку от государства.
+  scene_id: scene-1
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0123-s001.wav
+  start_seconds: 40.458333
+  end_seconds: 46.936701
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0123-s002
+  sv: Partierna och kandidaterna får också bidrag för sina valkampanjer.
+  ru: Партии и кандидаты также получают пожертвования на свои избирательные кампании.
+  scene_id: scene-1
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0123-s002.wav
+  start_seconds: 48.708333
+  end_seconds: 54.699082
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0123-s003
+  sv: De som utses till riksdagsledamöter och ersättare för riksdagsledamöter ska dock göra en anmälan
+    där de berättar vem de fått finansiering av.
+  ru: Однако избранные депутаты парламента и лица, замещающие депутатов, должны подать уведомление, в
+    котором сообщают, от кого они получили финансирование.
+  scene_id: scene-1
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0123-s003.wav
+  start_seconds: 56.458333
+  end_seconds: 68.64881
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0124-s001
+  sv: Politiska partier är organisationer vars verksamhetsidé är att utveckla samhället i den riktning
+    partiets medlemmar vill.
+  ru: Политические партии — организации, идея деятельности которых заключается в развитии общества в направлении,
+    желаемом членами партии.
+  scene_id: scene-2
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0124-s001.wav
+  start_seconds: 71.125
+  end_seconds: 81.50432
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0124-s002
+  sv: Partiet ska ha ett partiprogram.
+  ru: У партии должна быть партийная программа.
+  scene_id: scene-2
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights:
+  - partiprogram
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0124-s002.wav
+  start_seconds: 83.291667
+  end_seconds: 86.49602
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0124-s003
+  sv: Det är ett dokument där partiets viktigaste principer och mål finns inskrivna.
+  ru: Это документ, в котором записаны важнейшие принципы и цели партии.
+  scene_id: scene-2
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0124-s003.wav
+  start_seconds: 88.25
+  end_seconds: 95.007007
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0124-s004
+  sv: Programmet anger också hur partiet vill påverka det finländska samhället och de politiska besluten.
+  ru: Программа также указывает, как партия хочет влиять на финляндское общество и политические решения.
+  scene_id: scene-2
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0124-s004.wav
+  start_seconds: 96.791667
+  end_seconds: 105.08119
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0125-s001
+  sv: I Finland kan vem som helst höra till ett politiskt parti.
+  ru: В Финляндии любой может состоять в политической партии.
+  scene_id: scene-3
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0125-s001.wav
+  start_seconds: 107.541667
+  end_seconds: 112.835816
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0125-s002
+  sv: Medlemskap i ett parti får inte vara en grund för att till exempel som arbetssökande inte bli vald
+    till en anställning.
+  ru: Членство в партии не может служить основанием, например, для отказа соискателю в приёме на работу.
+  scene_id: scene-3
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0125-s002.wav
+  start_seconds: 114.625
+  end_seconds: 124.93466
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0125-s003
+  sv: Ett viktigt sätt för samhällelig påverkan är att själv kandidera i val.
+  ru: Важный способ общественного влияния — самому выдвинуть свою кандидатуру на выборах.
+  scene_id: scene-3
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0125-s003.wav
+  start_seconds: 126.708333
+  end_seconds: 133.256361
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0125-s004
+  sv: Kandidater är i allmänhet medlemmar i ett parti.
+  ru: Кандидаты обычно являются членами партии.
+  scene_id: scene-3
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0125-s004.wav
+  start_seconds: 135.041667
+  end_seconds: 139.569558
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0125-s005
+  sv: Det är ändå möjligt att ställa upp också som obunden kandidat eller som kandidat för en valmansförening.
+  ru: Однако можно выдвигаться также как независимый кандидат или кандидат объединения избирателей.
+  scene_id: scene-3
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights:
+  - obunden kandidat
+  - valmansförening
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0125-s005.wav
+  start_seconds: 141.333333
+  end_seconds: 150.180136
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0126-s001
+  sv: Finland har ett flerpartisystem, det vill säga det finns många olika partier.
+  ru: В Финляндии многопартийная система, то есть существует много разных партий.
+  scene_id: scene-4
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights:
+  - flerpartisystem
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0126-s001.wav
+  start_seconds: 152.666667
+  end_seconds: 159.562993
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0126-s002
+  sv: Stödet för partierna varierar från val till val.
+  ru: Поддержка партий меняется от выборов к выборам.
+  scene_id: scene-4
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0126-s002.wav
+  start_seconds: 161.333333
+  end_seconds: 166.000544
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0126-s003
+  sv: I allmänhet har inget enskilt parti absolut majoritet i riksdagen.
+  ru: Обычно ни одна отдельная партия не имеет абсолютного большинства в парламенте.
+  scene_id: scene-4
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0126-s003.wav
+  start_seconds: 167.791667
+  end_seconds: 173.712755
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0126-s004
+  sv: Partierna måste samarbeta med varandra.
+  ru: Партии должны сотрудничать друг с другом.
+  scene_id: scene-4
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0126-s004.wav
+  start_seconds: 175.5
+  end_seconds: 179.331293
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0126-s005
+  sv: Därför är det viktigt att kunna förhandla och göra kompromisser inom finländsk politik.
+  ru: Поэтому в финляндской политике важно уметь вести переговоры и достигать компромиссов.
+  scene_id: scene-4
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - förhandla
+  - kompromisser
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0126-s005.wav
+  start_seconds: 181.083333
+  end_seconds: 188.745918
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0127-s001
+  sv: År 2024 fanns det 16 registrerade partier i Finland varav nio hade ledamöter i riksdagen.
+  ru: В 2024 году в Финляндии было 16 зарегистрированных партий, из которых девять имели членов в парламенте.
+  scene_id: scene-5
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - '2024'
+  - 16 registrerade partier
+  - nio
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0127-s001.wav
+  start_seconds: 191.208333
+  end_seconds: 201.239354
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0127-s002
+  sv: De övriga partierna var små.
+  ru: Остальные партии были небольшими.
+  scene_id: scene-5
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0127-s002.wav
+  start_seconds: 203.0
+  end_seconds: 205.995374
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0127-s003
+  sv: Deras mål var att få en riksdagsplats i valet.
+  ru: Их целью было получить место в парламенте на выборах.
+  scene_id: scene-5
+  visual_cue: Election posters in Otto Karhi Park, Oulu, 1 April 2023. Historical campaign photograph
+    illustrating competing parties and candidacy; not evidence of 2024registration counts or current officeholders.
+  asset_ids:
+  - episode_background
+  - campaign
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0127-s003.wav
+  start_seconds: 207.75
+  end_seconds: 211.999252
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/campaign.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0128-s001
+  sv: I Finland finansierar staten, det vill säga skattebetalarna, partiernas verksamhet.
+  ru: В Финляндии государство, то есть налогоплательщики, финансирует деятельность партий.
+  scene_id: scene-6
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0128-s001.wav
+  start_seconds: 214.458333
+  end_seconds: 222.120918
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0128-s002
+  sv: Bidraget från staten räcker till för att betala endast en del av partiernas kostnader.
+  ru: Государственной финансовой поддержки хватает для оплаты лишь части расходов партий.
+  scene_id: scene-6
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0128-s002.wav
+  start_seconds: 223.875
+  end_seconds: 231.537585
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0128-s003
+  sv: Partierna får dessutom pengar genom till exempel medlemsavgifter.
+  ru: Кроме того, партии получают деньги, например, за счёт членских взносов.
+  scene_id: scene-6
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights:
+  - medlemsavgifter
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0128-s003.wav
+  start_seconds: 233.291667
+  end_seconds: 239.143095
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0128-s004
+  sv: Ett parti får ekonomiskt bidrag från staten enligt hur många riksdagsledamöter det har i riksdagen.
+  ru: Партия получает финансовую поддержку государства в зависимости от того, сколько депутатов у неё
+    в парламенте.
+  scene_id: scene-6
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0128-s004.wav
+  start_seconds: 240.916667
+  end_seconds: 249.27585
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0128-s005
+  sv: Stora partier som har stor framgång i val får alltså mer pengar än små partier.
+  ru: Таким образом крупные партии, добивающиеся большого успеха на выборах, получают больше денег, чем
+    небольшие партии.
+  scene_id: scene-6
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0128-s005.wav
+  start_seconds: 251.041667
+  end_seconds: 258.146973
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0129-s001
+  sv: Partierna och kandidaterna får också annan finansiering till exempel inför val.
+  ru: Партии и кандидаты также получают другое финансирование, например перед выборами.
+  scene_id: scene-7
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0129-s001.wav
+  start_seconds: 260.625
+  end_seconds: 267.660646
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0129-s002
+  sv: En del av finansieringen är bidrag från privatpersoner, företag eller organisationer.
+  ru: Часть финансирования составляют пожертвования частных лиц, предприятий или организаций.
+  scene_id: scene-7
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0129-s002.wav
+  start_seconds: 269.416667
+  end_seconds: 277.218571
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0129-s003
+  sv: Kandidaterna får inte ta emot bidrag av givare som inte kan utredas.
+  ru: Кандидаты не могут принимать пожертвования от жертвователей, чью личность невозможно установить.
+  scene_id: scene-7
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0129-s003.wav
+  start_seconds: 279.0
+  end_seconds: 285.269388
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0129-s004
+  sv: Det maximala beloppet från en och samma uppbackare är reglerat i lag.
+  ru: Максимальная сумма от одного и того же сторонника регулируется законом.
+  scene_id: scene-7
+  visual_cue: Euro coins and banknotes illustrate funding and membership fees; not evidence of an actual
+    donation or any named party transaction.
+  asset_ids:
+  - episode_background
+  - funding
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0129-s004.wav
+  start_seconds: 287.041667
+  end_seconds: 293.102075
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/funding.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0129-s005
+  sv: Statens revisionsverk övervakar partifinansieringen.
+  ru: Государственное контрольно-ревизионное управление (Statens revisionsverk) контролирует финансирование
+    партий.
+  scene_id: scene-7
+  visual_cue: 'Steady exact-source concept card: Statens revisionsverk'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Statens revisionsverk
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0129-s005.wav
+  start_seconds: 294.875
+  end_seconds: 300.02983
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/cards/31.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0130-s001
+  sv: Den traditionellt sett viktigaste faktorn som skiljer partierna åt har varit indelningen i höger
+    och vänster.
+  ru: Традиционно важнейшим фактором, различающим партии, было разделение на правых и левых.
+  scene_id: scene-8
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0130-s001.wav
+  start_seconds: 302.5
+  end_seconds: 311.764762
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0130-s002
+  sv: Vänsterpartierna har förespråkat socialism eller socialdemokrati, arbetarnas rättigheter och en
+    stark stat, som erbjuder människorna olika tjänster och får sin finansiering genom de skatter som
+    enskilda individer och företag betalar.
+  ru: Левые партии выступали за социализм или социал-демократию, права работников и сильное государство,
+    которое предоставляет людям различные услуги и финансируется за счёт налогов, уплачиваемых отдельными
+    людьми и предприятиями.
+  scene_id: scene-8
+  visual_cue: 'Steady exact-source concept card: socialism, socialdemokrati'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - socialism
+  - socialdemokrati
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0130-s002.wav
+  start_seconds: 313.541667
+  end_seconds: 333.046429
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/cards/33.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0130-s003
+  sv: Vänstern har varit beredd att acceptera höga skatter, eftersom man enligt deras uppfattning kan
+    bygga och upprätthålla ett jämställt samhälle där alla människor tas om hand med hjälp av skatter.
+  ru: Левые были готовы принять высокие налоги, поскольку, по их мнению, с помощью налогов можно построить
+    и поддерживать равноправное общество, в котором обо всех людях заботятся.
+  scene_id: scene-8
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0130-s003.wav
+  start_seconds: 334.833333
+  end_seconds: 351.064082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0131-s001
+  sv: Högerpartierna har förespråkat kapitalism, fri marknadsekonomi och lägre skatter.
+  ru: Правые партии выступали за капитализм, свободную рыночную экономику и более низкие налоги.
+  scene_id: scene-8
+  visual_cue: 'Steady exact-source concept card: kapitalism, fri marknadsekonomi'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kapitalism
+  - fri marknadsekonomi
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0131-s001.wav
+  start_seconds: 352.833333
+  end_seconds: 360.356599
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/cards/35.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0131-s002
+  sv: Högern vill att staten har en mindre roll i samhället och att individens eget ansvar för sitt liv
+    är större.
+  ru: Правые хотят, чтобы государство играло меньшую роль в обществе, а собственная ответственность человека
+    за свою жизнь была больше.
+  scene_id: scene-8
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0131-s002.wav
+  start_seconds: 362.125
+  end_seconds: 371.250442
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0131-s003
+  sv: Högern driver också egenföretagarnas och företagens intressen.
+  ru: Правые также отстаивают интересы индивидуальных предпринимателей и предприятий.
+  scene_id: scene-8
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0131-s003.wav
+  start_seconds: 373.041667
+  end_seconds: 378.684116
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0131-s004
+  sv: I samhället har företagen en viktig roll i skapandet av ekonomisk tillväxt och arbetsplatser.
+  ru: В обществе предприятия играют важную роль в создании экономического роста и рабочих мест.
+  scene_id: scene-8
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0131-s004.wav
+  start_seconds: 380.458333
+  end_seconds: 388.678197
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0132-s001
+  sv: Man kan också göra andra indelningar av partierna.
+  ru: Партии можно также разделять и другими способами.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0132-s001.wav
+  start_seconds: 391.166667
+  end_seconds: 396.112517
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0132-s002
+  sv: I dag skiljer i synnerhet konservatismen och liberalismen människor åt.
+  ru: Сегодня людей разделяют прежде всего консерватизм и либерализм.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0132-s002.wav
+  start_seconds: 397.875
+  end_seconds: 404.353367
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0132-s003
+  sv: Konservatismen är förknippad med traditionella värderingar och måttliga, det vill säga små, reformer
+    i samhället.
+  ru: Консерватизм связан с традиционными ценностями и умеренными, то есть небольшими, реформами в обществе.
+  scene_id: scene-9
+  visual_cue: 'Steady exact-source concept card: Konservatismen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Konservatismen
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0132-s003.wav
+  start_seconds: 406.125
+  end_seconds: 416.29534
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/cards/41.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0132-s004
+  sv: Nuförtiden är de konservativa ofta nationellt sinnade, det vill säga de försöker framhäva Finlands
+    nationella intresse i sina beslut.
+  ru: В настоящее время консерваторы часто ориентированы на национальные интересы, то есть пытаются подчёркивать
+    национальные интересы Финляндии в своих решениях.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0132-s004.wav
+  start_seconds: 418.083333
+  end_seconds: 429.577211
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0132-s005
+  sv: Många konservativa förespråkar också en strikt reglering av invandringen.
+  ru: Многие консерваторы также выступают за строгое регулирование иммиграции.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0132-s005.wav
+  start_seconds: 431.333333
+  end_seconds: 438.09034
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0133-s001
+  sv: Liberalismen i sin tur är förknippad med stor individuell och ekonomisk frihet, liberala värderingar
+    och mänskliga rättigheter.
+  ru: Либерализм, в свою очередь, связан с большой личной и экономической свободой, либеральными ценностями
+    и правами человека.
+  scene_id: scene-9
+  visual_cue: 'Steady exact-source concept card: Liberalismen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Liberalismen
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0133-s001.wav
+  start_seconds: 439.875
+  end_seconds: 451.020578
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/cards/44.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0133-s002
+  sv: För liberaler är till exempel kvinnors rättigheter och rättigheterna för könsminoriteter och sexuella
+    minoriteter ofta viktiga.
+  ru: Для либералов, например, часто важны права женщин и права гендерных и сексуальных меньшинств.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0133-s002.wav
+  start_seconds: 452.791667
+  end_seconds: 463.937245
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0133-s003
+  sv: Liberaler betonar internationellt samarbete och Finlands internationella ansvar.
+  ru: Либералы подчёркивают международное сотрудничество и международную ответственность Финляндии.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0133-s003.wav
+  start_seconds: 465.708333
+  end_seconds: 472.883299
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0133-s004
+  sv: Liberaler förhåller sig också i allmänhet mer positivt till invandring än konservativa.
+  ru: Либералы также обычно относятся к иммиграции более положительно, чем консерваторы.
+  scene_id: scene-9
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0133-s004.wav
+  start_seconds: 474.666667
+  end_seconds: 482.468571
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0134-s001
+  sv: I Finland har det traditionellt varit viktigt för väljarna huruvida en kandidat driver landsbygdens
+    eller städernas frågor.
+  ru: В Финляндии для избирателей традиционно было важно, занимается ли кандидат вопросами сельской местности
+    или городов.
+  scene_id: scene-10
+  visual_cue: Wheat field in Vampula, Finland, photographed 2022; illustrates domestic agriculture and
+    rural policy, without assigning a party affiliation.
+  asset_ids:
+  - episode_background
+  - farming
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0134-s001.wav
+  start_seconds: 484.958333
+  end_seconds: 495.616293
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/farming.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0134-s002
+  sv: Viktiga frågor för stadsbor är ofta globala nätverk och ett nära internationellt samarbete med till
+    exempel Europeiska unionen.
+  ru: Для горожан важными вопросами часто являются глобальные сети и тесное международное сотрудничество,
+    например с Европейским союзом.
+  scene_id: scene-10
+  visual_cue: The European flag identifies the European Union passages; its 12 stars are a fixed symbol,
+    not the number of member states.
+  asset_ids:
+  - episode_background
+  - eu_flag
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0134-s002.wav
+  start_seconds: 497.375
+  end_seconds: 508.450918
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/eu_flag.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0135-s001
+  sv: Ur landsbygdens synvinkel är bevarande av servicen i glesbygden och inhemsk jordbruksproduktion
+    viktigare.
+  ru: С точки зрения сельской местности важнее сохранение услуг в малонаселённых районах и отечественное
+    сельскохозяйственное производство.
+  scene_id: scene-10
+  visual_cue: Wheat field in Vampula, Finland, photographed 2022; illustrates domestic agriculture and
+    rural policy, without assigning a party affiliation.
+  asset_ids:
+  - episode_background
+  - farming
+  text_highlights:
+  - servicen i glesbygden
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0135-s001.wav
+  start_seconds: 510.208333
+  end_seconds: 519.542755
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/farming.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0135-s002
+  sv: I det perspektivet är det möjligt att beroendet av andra länder betraktas som någonting negativt
+    som tar arbetsplatser från Finland, gör det svårare att idka jordbruk och orsakar instabilitet i samhället.
+  ru: С этой точки зрения зависимость от других стран может рассматриваться как нечто отрицательное, что
+    отнимает у Финляндии рабочие места, затрудняет ведение сельского хозяйства и вызывает нестабильность
+    в обществе.
+  scene_id: scene-10
+  visual_cue: Wheat field in Vampula, Finland, photographed 2022; illustrates domestic agriculture and
+    rural policy, without assigning a party affiliation.
+  asset_ids:
+  - episode_background
+  - farming
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0135-s002.wav
+  start_seconds: 521.333333
+  end_seconds: 538.4
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/farming.jpg
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0136-s001
+  sv: För många väljare är det också av betydelse huruvida partiet anser att ekonomisk tillväxt eller
+    natur- och miljöskydd är viktigare.
+  ru: Для многих избирателей также имеет значение, считает ли партия более важным экономический рост или
+    охрану природы и окружающей среды.
+  scene_id: scene-11
+  visual_cue: Finnish lake and forest landscape illustrates the environment discussed in the source; no
+    claim that the pictured location faces a particular development proposal.
+  asset_ids:
+  - episode_background
+  - environment
+  text_highlights:
+  - ekonomisk tillväxt
+  - natur- och miljöskydd
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0136-s001.wav
+  start_seconds: 540.875
+  end_seconds: 552.508197
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/environment.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0136-s002
+  sv: Ekonomisk tillväxt kan förstöra miljön, men å andra sidan kan den skapa välstånd och arbetsplatser
+    i samhället.
+  ru: Экономический рост может разрушать окружающую среду, но, с другой стороны, он может создавать благосостояние
+    и рабочие места в обществе.
+  scene_id: scene-11
+  visual_cue: Finnish lake and forest landscape illustrates the environment discussed in the source; no
+    claim that the pictured location faces a particular development proposal.
+  asset_ids:
+  - episode_background
+  - environment
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partisystem/narration/hb-c04-u0136-s002.wav
+  start_seconds: 554.291667
+  end_seconds: 564.253027
+  display_segments: []
+  render_image: studio/media/hb-c04-partisystem/foreground/environment.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-partisystem/sources/music-bed.flac
+  background_image: studio/media/hb-c04-partisystem/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.474702380952381
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Exakt svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Election posters Kemi 20170407.jpg — Estormiz · CC0
+    - Continue Life — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Finlands riksdag — jampe · CC BY-SA 3.0
+    - Valkampanjer i Finland — Estormiz · CC0
+    - Europeiska unionens flagga — Commons contributors (public domain) · Public domain
+    - Euro och partifinansiering — Avij (talk · contribs) · Public domain
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Jordbruk i Finland — kallerna · CC BY-SA 4.0
+    - Natur och miljöskydd — Mathew Schwartz · CC BY 3.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Election_posters_Kemi_20170407.jpg
+    description: '500px provided description: Open lake in Finland.  There is a tiny bird in the photo,
+      since being able to zoom with feet using a prime lens doesnt work so well on an island.
+
+
+      Visit my website for more creative work outside of photography. [#sky ,#landscape ,#water ,#bird
+      ,#blue ,#ocean ,#grass ,#finland]'
+    license: CC0

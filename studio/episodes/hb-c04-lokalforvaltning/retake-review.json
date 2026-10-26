@@ -1,0 +1,92 @@
+{
+  "status": "comparison_complete",
+  "reason": "Specific local-ASR lexical differences warrant one same-text candidate each; no listening diagnosis is claimed.",
+  "indices": [
+    16,
+    22
+  ],
+  "initial_selected_takes": [
+    {
+      "sentence_id": "hb-c04-u0055-s002",
+      "tts_input": "Kommunen erbjuder sina invånare mycket basservice.",
+      "asr_text": "Kommunen erbjuder sina invånare mycket bassevise.",
+      "sha256": "78a833815a6fc0265960ebebd196986e7b770f8832bca946ff446d48aa2b7e5b",
+      "seconds": 4.73687074829932,
+      "sample_rate": 44100,
+      "peak": 0.349761962890625,
+      "token_similarity": 0.8333333333333334,
+      "listening_status": "pending",
+      "review_note": "Hash-bound local ASR and waveform checks; transcript differences are diagnostic and require whole-video listening."
+    },
+    {
+      "sentence_id": "hb-c04-u0057-s001",
+      "tts_input": "Kommunfullmäktige utser också nämnder.",
+      "asr_text": "Kommer en fullmäktig utsär också nämnder.",
+      "sha256": "1d763fa108740a7d48f356ccf3febc910d07a47a88066105cb613f12a42ea8eb",
+      "seconds": 3.622312925170068,
+      "sample_rate": 44100,
+      "peak": 0.29071044921875,
+      "token_similarity": 0.4,
+      "listening_status": "pending",
+      "review_note": "Hash-bound local ASR and waveform checks; transcript differences are diagnostic and require whole-video listening."
+    }
+  ],
+  "candidate_metrics": [
+    {
+      "sentence_id": "hb-c04-u0055-s002",
+      "text": "Kommunen erbjuder sina invånare mycket basservice.",
+      "engine": "supertonic",
+      "voice": "F1",
+      "speed": 0.95,
+      "seed": 42,
+      "path": "studio/media/hb-c04-lokalforvaltning/retakes-source-20261026/hb-c04-u0055-s002.wav",
+      "sample_rate": 44100,
+      "seconds": 4.73687074829932,
+      "peak": 0.388946533203125,
+      "generation_seconds": 11.51716408599168,
+      "intra_op_num_threads": 2
+    },
+    {
+      "sentence_id": "hb-c04-u0057-s001",
+      "text": "Kommunfullmäktige utser också nämnder.",
+      "engine": "supertonic",
+      "voice": "F1",
+      "speed": 0.95,
+      "seed": 42,
+      "path": "studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0057-s001.wav",
+      "sample_rate": 44100,
+      "seconds": 3.622312925170068,
+      "peak": 0.31915283203125,
+      "generation_seconds": 8.886652757995762,
+      "intra_op_num_threads": 2,
+      "generation_run": "Targeted same-text retake after lexical ASR mismatch; source-order subset indices16,22, seed42 reset, two ONNX threads."
+    }
+  ],
+  "candidate_asr": [
+    {
+      "file": "studio/media/hb-c04-lokalforvaltning/retakes-source-20261026/hb-c04-u0055-s002.wav",
+      "sha256": "74330bdf2b7ed56c74ab9fc1321bbe601aade1b9790770d59c1404cc256da14a",
+      "language": "sv",
+      "asr_text": "Kommunen erbjuder sina invånare mycket baservise."
+    },
+    {
+      "file": "studio/media/hb-c04-lokalforvaltning/retakes-source-20261026/hb-c04-u0057-s001.wav",
+      "sha256": "d807232ee8304da7de77de4933d2a069551c6610b98203aed8b8f0415db799d9",
+      "language": "sv",
+      "asr_text": "Kommonfullmäktige utser också nämnder."
+    }
+  ],
+  "decisions": [
+    {
+      "sentence_id": "hb-c04-u0055-s002",
+      "selected": "initial",
+      "reason": "Same-text candidate still transcribed basservice as baservise; no clear complete-word recovery, retain initial and mark listening priority."
+    },
+    {
+      "sentence_id": "hb-c04-u0057-s001",
+      "selected": "candidate",
+      "sha256": "d807232ee8304da7de77de4933d2a069551c6610b98203aed8b8f0415db799d9",
+      "reason": "Candidate preserves utser and the compound Kommunfullmäktige as a single near-matching word (ASR Kommonfullmäktige), improving the initial Kommer en fullmäktig utsär transcription. Minor vowel/spelling uncertainty remains for listening."
+    }
+  ]
+}

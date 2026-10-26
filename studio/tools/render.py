@@ -310,7 +310,7 @@ def write_credits(episode, output):
               'bilingual presentation and synthetic narration. Speech-only number/abbreviation expansions',
               'are recorded in the episode script. No endorsement by the sources is implied.', '', '## Media', '']
     for asset in assets['assets']:
-        lines += [f"### {asset['asset_id']}", '', asset['required_credits'], '', asset['reuse_terms'], '']
+        lines += [f"### {asset['asset_id']}", '', asset['required_credits'], '', asset['reuse_terms'].rstrip(), '']
         if asset.get('source_url'):
             url = asset['source_url']
             label = f'[Source]({url})' if url.startswith(('https://', 'http://')) else f'Repository source: `{url}`'

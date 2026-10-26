@@ -33,6 +33,10 @@ Chapter 3 uses a muted plum culture palette: panel/background tint `#342736`,
 Swedish text `#faf3e8`, Russian text and secondary labels `#d8c8dc`, highlights
 `#e2bb85`, and separators `#62506a`. Carry it through all Chapter 3 episodes.
 
+Chapter 4 uses a warm umber civic palette: panel/background tint `#382d24`,
+Swedish text `#faf3e8`, Russian text and secondary labels `#dfcfbb`, highlights
+`#dfb96f`, and separators `#695540`. Carry it through all Chapter 4 episodes.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its
@@ -68,7 +72,14 @@ Episode scripts specify the photograph and precise treatment.
 
 Record exact fonts, palette and layout measurements in the episode script.
 Start with about 5% safe margins. Avoid placing faces, flags, or essential map labels
-behind the text panel. Foreground illustrations are optional, not mandatory per sentence.
+behind the text panel. Aim for relevant pictures in the left foreground during
+at least 50% of each episode's body timeline, excluding titles and credits.
+Plan pictures for at least half the sentence pairs, then check measured duration.
+Photographs, accurate maps, flags and explanatory illustrations count; plain text
+cards and the decorative background do not. Pictures remain optional for individual
+sentences. When suitable imagery would be misleading, nonsensical or genuinely
+difficult to obtain after reasonable research, record the passages, reason and
+achieved coverage in the episode review. Never use irrelevant filler to meet a quota.
 
 ## Narration and bilingual text
 

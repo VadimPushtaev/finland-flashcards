@@ -1,0 +1,108 @@
+{
+  "reason": "Reduce the distribution MP4 below GitHub’s 100 MiB per-file limit while preserving narration and timing.",
+  "input_path": "studio/media/hb-c04-medier/render/pre-commit-original.mp4",
+  "input_sha256": "645e51eb299fe551b2f6efea25bd41bf25f43becd8c31042ad733f47e8adb289",
+  "output_sha256": "ffbc6760efcfffef299e11662981a76e0f876a2b9e84243f4b9f44f0eaf1535f",
+  "codec": "libx264",
+  "preset": "slow",
+  "crf": 22,
+  "threads": 3,
+  "audio_mode": "stream copy",
+  "bytes_before": 118288368,
+  "bytes_after": 101193721,
+  "ffmpeg_path": "studio/runtime/.venv/lib/python3.13/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+  "ffmpeg_sha256": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99",
+  "exact_args": [
+    "/home/vadim/finland-flashcards/studio/runtime/.venv/lib/python3.13/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2",
+    "-y",
+    "-threads",
+    "1",
+    "-i",
+    "/home/vadim/finland-flashcards/studio/media/hb-c04-medier/render/pre-commit-original.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "slow",
+    "-crf",
+    "22",
+    "-threads",
+    "3",
+    "-pix_fmt",
+    "yuv420p",
+    "-fps_mode",
+    "passthrough",
+    "-c:a",
+    "copy",
+    "-movflags",
+    "+faststart",
+    "/home/vadim/finland-flashcards/studio/media/hb-c04-medier/render/pre-commit-compressed.mp4"
+  ],
+  "original_and_compressed_stream_metadata": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24.0,
+    "frames": 20271,
+    "video_seconds": 844.625,
+    "audio_codec": "aac",
+    "sample_rate": 48000,
+    "channels": 2
+  },
+  "audio_packet_identity": {
+    "sha256": "12608f19306bf4bb2187b088a070407ac6aef32a588d7e8407e0493707889d35",
+    "packets": 39593
+  },
+  "representative_frame_comparison": [
+    {
+      "frame_index": 0,
+      "mean_absolute_pixel_difference_255": 0.9175649285316467,
+      "p99_absolute_pixel_difference_255": 5.0,
+      "psnr_db": 44.84474563598633
+    },
+    {
+      "frame_index": 4,
+      "mean_absolute_pixel_difference_255": 0.5714417695999146,
+      "p99_absolute_pixel_difference_255": 4.0,
+      "psnr_db": 46.913780212402344
+    },
+    {
+      "frame_index": 13,
+      "mean_absolute_pixel_difference_255": 0.6228381991386414,
+      "p99_absolute_pixel_difference_255": 5.0,
+      "psnr_db": 46.06134796142578
+    },
+    {
+      "frame_index": 37,
+      "mean_absolute_pixel_difference_255": 0.7892813086509705,
+      "p99_absolute_pixel_difference_255": 5.0,
+      "psnr_db": 45.313106536865234
+    },
+    {
+      "frame_index": 51,
+      "mean_absolute_pixel_difference_255": 0.6301339268684387,
+      "p99_absolute_pixel_difference_255": 5.0,
+      "psnr_db": 45.99153518676758
+    },
+    {
+      "frame_index": 82,
+      "mean_absolute_pixel_difference_255": 0.3581021726131439,
+      "p99_absolute_pixel_difference_255": 3.0,
+      "psnr_db": 49.33599853515625
+    },
+    {
+      "frame_index": 83,
+      "mean_absolute_pixel_difference_255": 0.4757035970687866,
+      "p99_absolute_pixel_difference_255": 4.0,
+      "psnr_db": 47.95965576171875
+    }
+  ],
+  "producer_visual_review": {
+    "date": "2026-10-26",
+    "reviewer": "/root/c04_institutions",
+    "observations": "Compared actual compressed title, all three dated picture treatments, longest bilingual text and both credits with preserved original frames. Longest also viewed at 640×360. No material readability or image-quality concern found in these samples.",
+    "limitations": "No whole-video listening, physical-device testing or user audiovisual acceptance claimed."
+  }
+}

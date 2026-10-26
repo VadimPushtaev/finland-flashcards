@@ -1,0 +1,2329 @@
+schema_version: 1
+section_id: hb-c04-partier
+chapter_id: hb-c04
+title_sv: Partierna i riksdagsvalet 2023
+title_ru: Партии на парламентских выборах 2023 года
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-partier.yaml
+example_only: false
+source_section_sha256: 1ca27dadfc7e1f8258f04d11aec511b3eeacdd9e647d25b0f394e8de5bb66fed
+translation_file_sha256: f14737c40deb3bdd74d52198c54bf9dc655e278290a80971f04f4d15972e440f
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber panel #382d24, ivory #faf3e8, secondary #dfcfbb,
+    gold #dfb96f, separator #695540. Liberation Sans Bold 48 and Regular 40; stable right bilingual panel
+    and occasional exact-source graphics at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Election posters Otto Karhi Park Oulu 20230401 01.jpg by Estormiz continuously as
+    decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=6.001488095238096. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Friday Morning by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 210.338 seconds; prepared lossless stereo bed 840.208 seconds.
+    Repeat count 4, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Show eight verified dated party portraits and the graphical Centre clover at meaningful party
+    boundaries. Historical 2023 affiliations and source licenses are documented. Preserve complete photographs
+    and fixed bilingual source display. Introductory dates and the final Movement Now passage retain source-only
+    text cards or open background.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: 'Five readable 15-second credit cards over continuing photo: source, background/music/voice,
+    then three dedicated foreground attribution cards. Full source URLs, licenses and changes accompany
+    the MP4 in its CREDITS file.'
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: 'Scope: parliamentary election 2023 and historical average support'
+- id: scene-2
+  description: 'National Coalition: background and economic policies'
+- id: scene-3
+  description: 'Social Democrats: roots and welfare policy'
+- id: scene-4
+  description: 'Centre: countryside, services and enterprise'
+- id: scene-5
+  description: 'Finns Party: nationalism and policy priorities'
+- id: scene-6
+  description: 'Left Alliance: equality and welfare'
+- id: scene-7
+  description: 'Greens: environment and human rights'
+- id: scene-8
+  description: 'Swedish People’s Party: bilingualism and liberal policies'
+- id: scene-9
+  description: 'Christian Democrats: values and economic policy'
+- id: scene-10
+  description: 'Movement Now: economic policy and openness'
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_orpo
+  kind: foreground
+  description: Petteri Orpo, pictured 2023-06-20 22:23, illustrates the corresponding Samlingspartiet
+    passage. Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the
+    official National Audit Office election register. No claim about current leadership, current office,
+    or personal authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_marin
+  kind: foreground
+  description: Sanna Marin, pictured 14 August 2019, 14:10:30, illustrates the corresponding SDP passage.
+    Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the official
+    National Audit Office election register. No claim about current leadership, current office, or personal
+    authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_saarikko
+  kind: foreground
+  description: Annika Saarikko, pictured 2020-08-06, illustrates the corresponding Centerpartiet passage.
+    Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the official
+    National Audit Office election register. No claim about current leadership, current office, or personal
+    authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_purra
+  kind: foreground
+  description: Riikka Purra, pictured 2023-06-20 22:25, illustrates the corresponding Sannfinländarna
+    passage. Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the
+    official National Audit Office election register. No claim about current leadership, current office,
+    or personal authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_andersson
+  kind: foreground
+  description: Li Andersson, pictured 13 August 2019, 14:07:58, illustrates the corresponding Vänsterförbundet
+    passage. Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the
+    official National Audit Office election register. No claim about current leadership, current office,
+    or personal authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_ohisalo
+  kind: foreground
+  description: Maria Ohisalo, pictured 2019-06-26 09:29:26, illustrates the corresponding De Gröna passage.
+    Historical 2023 party affiliation verified in portrait-affiliations-2023.json against the official
+    National Audit Office election register. No claim about current leadership, current office, or personal
+    authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_henriksson
+  kind: foreground
+  description: Anna-Maja Henriksson, pictured 2023-06-20 22:12, illustrates the corresponding Svenska
+    folkpartiet passage. Historical 2023 party affiliation verified in portrait-affiliations-2023.json
+    against the official National Audit Office election register. No claim about current leadership, current
+    office, or personal authorship of every party policy.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_essayah
+  kind: foreground
+  description: 'Sari Essayah, pictured creation time: 2023-21-06; file modification time: 2023-20-06,
+    illustrates the corresponding Kristdemokraterna passage. Historical 2023 party affiliation verified
+    in portrait-affiliations-2023.json against the official National Audit Office election register. No
+    claim about current leadership, current office, or personal authorship of every party policy.'
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+- id: picture_centre_clover
+  kind: foreground
+  description: Distinctive graphical four-leaf clover emblem of Finland’s Centre Party, verified from
+    Commons description and visual inspection; illustrates the Centerpartiet policy passage. This is a
+    genuine emblem, not a text-only card.
+  fallback: Use another correctly identified licensed picture of this party; preserve source wording and
+    record any coverage exception.
+sentences:
+- sentence_id: hb-c04-u0137-s001
+  sv: Nedan presenteras de partier som fick minst en riksdagsledamot i riksdagsvalet år 2023.
+  ru: Ниже представлены партии, получившие хотя бы одного депутата на парламентских выборах 2023 года.
+  scene_id: scene-1
+  visual_cue: 'Exact-source concept card: 2023'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '2023'
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0137-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.305782
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0137-s002
+  sv: Partierna presenteras i storleksordning utifrån deras genomsnittliga stöd i riksdagsvalen åren 2003–2023.
+  ru: Партии представлены по величине их средней поддержки на парламентских выборах в 2003–2023 годах.
+  scene_id: scene-1
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Partierna presenteras i storleksordning utifrån deras genomsnittliga stöd i riksdagsvalen åren
+      två tusen tre till två tusen tjugotre.
+    reason: Early ASR omitted the first year of source range 2003–2023. Expand both endpoints and the
+      range relation explicitly in Swedish; displayed source and meaning remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0137-s002.wav
+  start_seconds: 14.083333
+  end_seconds: 25.437891
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0138-s001
+  sv: Samlingspartiet är ett högerparti.
+  ru: Национальная коалиционная партия (Samlingspartiet) — правая партия.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights:
+  - Samlingspartiet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0138-s001.wav
+  start_seconds: 27.916667
+  end_seconds: 31.33
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0138-s002
+  sv: Traditionellt har det varit ett parti för den ekonomiska eliten och den utbildade högre samhällsklassen.
+  ru: Традиционно она была партией экономической элиты и образованного высшего общественного класса.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0138-s002.wav
+  start_seconds: 33.083333
+  end_seconds: 41.860476
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0138-s003
+  sv: Det har en stark ställning i huvudstadsregionen, men är också ett av Finlands största partier.
+  ru: Она занимает сильное положение в столичном регионе, но также является одной из крупнейших партий
+    Финляндии.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0138-s003.wav
+  start_seconds: 43.625
+  end_seconds: 51.775204
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0138-s004
+  sv: En del av samlingspartiets politiker har liberala värderingar, andra konservativa.
+  ru: Часть политиков Национальной коалиционной партии придерживается либеральных ценностей, другие —
+    консервативных.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0138-s004.wav
+  start_seconds: 53.541667
+  end_seconds: 61.273912
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s001
+  sv: Samlingspartiets grundläggande värderingar är bland annat frihet, ansvar, säkerhet och jämlika möjligheter.
+  ru: Основные ценности Национальной коалиционной партии включают, в частности, свободу, ответственность,
+    безопасность и равные возможности.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s001.wav
+  start_seconds: 63.041667
+  end_seconds: 72.445748
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s002
+  sv: För samlingspartiet är företagarnas intressen viktiga.
+  ru: Для Национальной коалиционной партии важны интересы предпринимателей.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s002.wav
+  start_seconds: 74.208333
+  end_seconds: 79.432823
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s003
+  sv: Man vill uppmuntra människor att vara företagsamma och starta egna företag.
+  ru: Она хочет поощрять людей быть предприимчивыми и создавать собственные предприятия.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s003.wav
+  start_seconds: 81.208333
+  end_seconds: 88.10466
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s004
+  sv: Därför anser partiet till exempel att de skatter som företagen betalar borde sänkas.
+  ru: Поэтому партия, например, считает, что налоги, уплачиваемые предприятиями, следует снизить.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s004.wav
+  start_seconds: 89.875
+  end_seconds: 97.328605
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s005
+  sv: Statens roll ska vara mindre än enligt vänsterpartierna.
+  ru: Роль государства должна быть меньше, чем считают левые партии.
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s005.wav
+  start_seconds: 99.083333
+  end_seconds: 104.447143
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0139-s006
+  sv: Samlingspartiet ställer sig positivt till EU.
+  ru: Национальная коалиционная партия положительно относится к ЕС (EU).
+  scene_id: scene-2
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_orpo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Samlingspartiet ställer sig positivt till e u.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0139-s006.wav
+  start_seconds: 106.208333
+  end_seconds: 110.666565
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/orpo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0140-s001
+  sv: Finlands Socialdemokratiska Parti, SDP, har länge varit ett stort parti som ofta sitter i regeringen.
+  ru: Социал-демократическая партия Финляндии (Finlands Socialdemokratiska Parti, SDP) давно является
+    крупной партией, часто входящей в правительство.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights:
+  - Socialdemokratiska Parti
+  - SDP
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Finlands Socialdemokratiska Parti, ess de pe, har länge varit ett stort parti som ofta sitter
+      i regeringen.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0140-s001.wav
+  start_seconds: 113.125
+  end_seconds: 122.529082
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0140-s002
+  sv: SDP, Centern och Samlingspartiet är Finlands äldsta och traditionellt sett största partier.
+  ru: SDP, Партия центра (Centern) и Национальная коалиционная партия — старейшие и традиционно крупнейшие
+    партии Финляндии.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Finlands socialdemokratiska parti, Centern och Samlingspartiet är Finlands äldsta och traditionellt
+      sett största partier.
+    reason: Expand SDP to its established full Swedish party name after the same treatment produced a
+      clear complete diagnostic transcript in hb-c04-u0140-s003. Meaning and displayed source remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0140-s002.wav
+  start_seconds: 124.291667
+  end_seconds: 135.088946
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0140-s003
+  sv: SDP har varit ett vänsterorientart parti för industriarbetare och lönearbetare i städerna.
+  ru: SDP была партией левого направления для промышленных и наёмных рабочих в городах.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Finlands socialdemokratiska parti har varit ett vänsterorienterat parti för industriarbetare
+      och lönearbetare i städerna.
+    reason: One bounded pronunciation repair after hash-bound ASR mangled SDP/KD. Expand SDP to the established
+      party name; for KD separate Swedish letter names with commas. In SDP sentence, pronounce obvious
+      source typo vänsterorientart as vänsterorienterat without changing displayed source text or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0140-s003.wav
+  start_seconds: 136.875
+  end_seconds: 147.672279
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0140-s004
+  sv: Dess ideologi är socialdemokratin med utgångspunkt i socialismen, och partiet är inte lika vänsterorienterat
+    som Vänsterförbundet.
+  ru: Её идеология — социал-демократия, исходящая из социализма, и партия не настолько левая, как Левый
+    союз (Vänsterförbundet).
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0140-s004.wav
+  start_seconds: 149.458333
+  end_seconds: 160.812891
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0140-s005
+  sv: SDP är till sina värderingar ett liberalt parti.
+  ru: По своим ценностям SDP — либеральная партия.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Finlands socialdemokratiska parti är till sina värderingar ett liberalt parti.
+    reason: Expand SDP to its established full Swedish party name after the same treatment produced a
+      clear complete diagnostic transcript in hb-c04-u0140-s003. Meaning and displayed source remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0140-s005.wav
+  start_seconds: 162.583333
+  end_seconds: 169.827959
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0141-s001
+  sv: Viktiga frågor för SDP är bevarande av välfärdssamhället och social rättvisa.
+  ru: Важные вопросы для SDP — сохранение общества всеобщего благосостояния и социальная справедливость.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Viktiga frågor för Finlands socialdemokratiska parti är bevarande av välfärdssamhället och social
+      rättvisa.
+    reason: Expand SDP to its established full Swedish party name after the same treatment produced a
+      clear complete diagnostic transcript in hb-c04-u0140-s003. Meaning and displayed source remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0141-s001.wav
+  start_seconds: 171.583333
+  end_seconds: 181.614354
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0141-s002
+  sv: Partiet vill arbeta för ett jämställt och solidariskt samhälle.
+  ru: Партия хочет работать ради равноправного и солидарного общества.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0141-s002.wav
+  start_seconds: 183.375
+  end_seconds: 189.087109
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0141-s003
+  sv: Det motsätter sig en okontrollerad marknadsekonomi.
+  ru: Она выступает против неконтролируемой рыночной экономики.
+  scene_id: scene-3
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_marin
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0141-s003.wav
+  start_seconds: 190.875
+  end_seconds: 195.472551
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/marin.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0142-s001
+  sv: Centern i Finland, det vill säga Centerpartiet, har traditionellt varit det populäraste partiet
+    på landsbygden i Finland.
+  ru: Партия центра Финляндии (Centern i Finland), то есть Партия центра (Centerpartiet), традиционно
+    была самой популярной партией в сельской местности Финляндии.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_saarikko
+  text_highlights:
+  - Centern i Finland
+  - Centerpartiet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0142-s001.wav
+  start_seconds: 197.958333
+  end_seconds: 208.476973
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/saarikko.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0142-s002
+  sv: Det har dock tappat stöd till förmån för i synnerhet Sannfinländarna.
+  ru: Однако она потеряла поддержку, прежде всего в пользу партии «Истинные финны» (Sannfinländarna).
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_saarikko
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0142-s002.wav
+  start_seconds: 210.25
+  end_seconds: 216.449728
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/saarikko.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0142-s003
+  sv: Centerpartiet definierar sig självt som mer högerorienterat än vänsterorienterat.
+  ru: Партия центра определяет себя скорее как правую, чем как левую.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_saarikko
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0142-s003.wav
+  start_seconds: 218.208333
+  end_seconds: 225.592279
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/saarikko.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0142-s004
+  sv: En del av partiets politiker förespråkar liberala värderingar, andra konservativa.
+  ru: Часть политиков партии выступает за либеральные ценности, другие — за консервативные.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_saarikko
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0142-s004.wav
+  start_seconds: 227.375
+  end_seconds: 235.246565
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/saarikko.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s001
+  sv: Centerpartiet driver landsbygdens intressen, till exempel statens och EU:s ekonomiska stöd till
+    jordbrukare.
+  ru: Партия центра отстаивает интересы сельской местности, например финансовую поддержку сельхозпроизводителей
+    государством и ЕС.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Centerpartiet driver landsbygdens intressen, till exempel statens och e u:s ekonomiska stöd
+      till jordbrukare.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s001.wav
+  start_seconds: 237.0
+  end_seconds: 247.17034
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s002
+  sv: Centerpartiet strävar efter att tjänster och arbetsplatser ska bevaras i hela Finland.
+  ru: Партия центра стремится сохранить услуги и рабочие места во всей Финляндии.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s002.wav
+  start_seconds: 248.958333
+  end_seconds: 256.620918
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s003
+  sv: Finland är ett glest befolkat land, och att erbjuda tjänster på landsbygden är ofta dyrt.
+  ru: Финляндия — малонаселённая страна, и предоставлять услуги в сельской местности часто дорого.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s003.wav
+  start_seconds: 258.375
+  end_seconds: 266.107245
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s004
+  sv: För Centerpartiet är det ändå viktigt att människorna är i en jämlik ställning sinsemellan oberoende
+    av var de bor.
+  ru: Однако для Партии центра важно, чтобы люди находились в равном положении друг с другом независимо
+    от того, где живут.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s004.wav
+  start_seconds: 267.875
+  end_seconds: 277.836361
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s005
+  sv: Också Centerpartiet driver företagarnas intressen.
+  ru: Партия центра также отстаивает интересы предпринимателей.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s005.wav
+  start_seconds: 279.625
+  end_seconds: 284.361871
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s006
+  sv: Det strävar efter att det ska vara lättare för företag att sysselsätta människor.
+  ru: Она стремится облегчить предприятиям трудоустройство людей.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s006.wav
+  start_seconds: 286.125
+  end_seconds: 293.299966
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0143-s007
+  sv: Centerpartiet betonar också vikten av Finlands säkerhet och självförsörjning.
+  ru: Партия центра также подчёркивает важность безопасности и самообеспечения Финляндии.
+  scene_id: scene-4
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_centre_clover
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0143-s007.wav
+  start_seconds: 295.083333
+  end_seconds: 302.188639
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/centre_clover.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0144-s001
+  sv: Sannfinländarna är ett nationalistiskt parti.
+  ru: «Истинные финны» — националистическая партия.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights:
+  - Sannfinländarna
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0144-s001.wav
+  start_seconds: 304.666667
+  end_seconds: 309.194558
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0144-s002
+  sv: Sannfinländarna var tidigare ett litet parti, men från och med riksdagsvalet år 2011 har det fått
+    mycket röster och etablerat sin ställning som ett av de stora partierna.
+  ru: Раньше «Истинные финны» были небольшой партией, но начиная с парламентских выборов 2011 года она
+    получила много голосов и утвердилась как одна из крупных партий.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0144-s002.wav
+  start_seconds: 310.958333
+  end_seconds: 326.492483
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0144-s003
+  sv: Tidigare hade Sannfinländarna anhängare både från högern och vänstern, men partiet har blivit klart
+    mer högerorienterat.
+  ru: Раньше у «Истинных финнов» были сторонники как справа, так и слева, но партия стала явно более правой.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0144-s003.wav
+  start_seconds: 328.25
+  end_seconds: 338.42034
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0144-s004
+  sv: Till sina värderingar är Sannfinländarna mycket konservativa.
+  ru: По своим ценностям «Истинные финны» очень консервативны.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0144-s004.wav
+  start_seconds: 340.208333
+  end_seconds: 345.990102
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0145-s001
+  sv: I sin politik lyfter Sannfinländarna fram vikten av att bevara den finländska identiteten och finländska
+    kulturen.
+  ru: В своей политике «Истинные финны» выдвигают на первый план важность сохранения финляндской идентичности
+    и финляндской культуры.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0145-s001.wav
+  start_seconds: 347.75
+  end_seconds: 357.78102
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0145-s002
+  sv: Sannfinländarna vill minska invandringen till Finland och förhåller sig kritiska till EU.
+  ru: «Истинные финны» хотят сократить иммиграцию в Финляндию и критически относятся к ЕС.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Sannfinländarna vill minska invandringen till Finland och förhåller sig kritiska till e u.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0145-s002.wav
+  start_seconds: 359.541667
+  end_seconds: 367.761531
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0145-s003
+  sv: Det är också viktigt för partiet att främja finländskt arbete och företagande.
+  ru: Для партии также важно содействовать финляндскому труду и предпринимательству.
+  scene_id: scene-5
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_purra
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0145-s003.wav
+  start_seconds: 369.541667
+  end_seconds: 376.229014
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/purra.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0146-s001
+  sv: Vänsterförbundet är ett vänsterparti.
+  ru: Левый союз — левая партия.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights:
+  - Vänsterförbundet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0146-s001.wav
+  start_seconds: 378.708333
+  end_seconds: 382.539626
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0146-s002
+  sv: Vänsterförbundet har traditionellt varit ett parti för den lågavlönade arbetarbefolkningen, men
+    nuförtiden är det framför allt unga som röstar på det.
+  ru: Левый союз традиционно был партией низкооплачиваемого рабочего населения, но в настоящее время за
+    него голосуют прежде всего молодые люди.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0146-s002.wav
+  start_seconds: 384.291667
+  end_seconds: 396.830442
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0146-s003
+  sv: Vänsterförbundet är ett mycket liberalt parti.
+  ru: Левый союз — очень либеральная партия.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0146-s003.wav
+  start_seconds: 398.583333
+  end_seconds: 402.971905
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0147-s001
+  sv: Vänsterförbundets grundläggande värderingar är jämlikhet, rättvisa, frihet och ekologisk hållbarhet.
+  ru: Основные ценности Левого союза — равенство, справедливость, свобода и экологическая устойчивость.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0147-s001.wav
+  start_seconds: 404.75
+  end_seconds: 413.457483
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0147-s002
+  sv: Enligt Vänsterförbundet bör välfärdssamhället utvecklas och kapitalismen begränsas.
+  ru: По мнению Левого союза, общество всеобщего благосостояния следует развивать, а капитализм — ограничивать.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0147-s002.wav
+  start_seconds: 415.208333
+  end_seconds: 422.661939
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0147-s003
+  sv: Partiets mål är en ekologiskt hållbar välfärdsstat där alla kan delta i beslutsfattandet.
+  ru: Цель партии — экологически устойчивое государство всеобщего благосостояния, в котором все могут
+    участвовать в принятии решений.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0147-s003.wav
+  start_seconds: 424.416667
+  end_seconds: 432.148912
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0147-s004
+  sv: Partiet vill främja likabehandling och feminism och miljöskydd.
+  ru: Партия хочет содействовать равному обращению, феминизму и охране окружающей среды.
+  scene_id: scene-6
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_andersson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0147-s004.wav
+  start_seconds: 433.916667
+  end_seconds: 439.628776
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/andersson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0148-s001
+  sv: Viktiga frågor för De Gröna är miljöskydd och bromsande av klimatförändringen.
+  ru: Важные вопросы для Зелёного союза (De Gröna) — охрана окружающей среды и замедление изменения климата.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights:
+  - De Gröna
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0148-s001.wav
+  start_seconds: 442.083333
+  end_seconds: 449.327959
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0148-s002
+  sv: I synnerhet unga högutbildade stadsbor röstar på De Gröna.
+  ru: За Зелёный союз голосуют особенно молодые высокообразованные горожане.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0148-s002.wav
+  start_seconds: 451.083333
+  end_seconds: 456.447143
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0148-s003
+  sv: Största delen av De Grönas anhängare är rätt så vänsterorienterade, men partiet har också mer högerorienterade
+    anhängare.
+  ru: Большинство сторонников Зелёного союза довольно левые, но у партии есть также более правые сторонники.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0148-s003.wav
+  start_seconds: 458.208333
+  end_seconds: 468.657313
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0148-s004
+  sv: De Gröna är ett mycket liberalt parti.
+  ru: Зелёный союз — очень либеральная партия.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0148-s004.wav
+  start_seconds: 470.416667
+  end_seconds: 474.108639
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0149-s001
+  sv: Utöver miljöskyddet betonar De Gröna också jämställdhet och mänskliga rättigheter i sin politik.
+  ru: Помимо охраны окружающей среды Зелёный союз также подчёркивает в своей политике гендерное равенство
+    и права человека.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0149-s001.wav
+  start_seconds: 475.875
+  end_seconds: 484.164524
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0149-s002
+  sv: De Gröna försöker främja en rättvis övergång till en ekologiskt hållbar ekonomi.
+  ru: Зелёный союз пытается содействовать справедливому переходу к экологически устойчивой экономике.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0149-s002.wav
+  start_seconds: 485.916667
+  end_seconds: 493.021973
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0149-s003
+  sv: De Grönas mål är ett ekologiskt och socialt hållbart samhälle, där alla kan leva det liv som de
+    själva vill.
+  ru: Цель Зелёного союза — экологически и социально устойчивое общество, в котором все могут жить той
+    жизнью, которой сами хотят.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0149-s003.wav
+  start_seconds: 494.791667
+  end_seconds: 504.126088
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0149-s004
+  sv: Också rättigheterna för olika minoriteter är viktiga för partiet.
+  ru: Права различных меньшинств также важны для партии.
+  scene_id: scene-7
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_ohisalo
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0149-s004.wav
+  start_seconds: 505.916667
+  end_seconds: 511.907415
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/ohisalo.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s001
+  sv: Svenska folkpartiet i Finland, SFP, är ett parti för i synnerhet den svensktalande befolkningen
+    i Finland.
+  ru: Шведская народная партия Финляндии (Svenska folkpartiet i Finland, SFP) — партия прежде всего шведскоязычного
+    населения Финляндии.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights:
+  - Svenska folkpartiet
+  - SFP
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Svenska folkpartiet i Finland, ess eff pe, är ett parti för i synnerhet den svensktalande befolkningen
+      i Finland.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s001.wav
+  start_seconds: 514.375
+  end_seconds: 524.40602
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s002
+  sv: Det förespråkar tvåspråkighet och strävar efter att främja och upprätthålla tjänster på svenska.
+  ru: Она выступает за двуязычие и стремится содействовать предоставлению услуг на шведском языке и поддерживать
+    их.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s002.wav
+  start_seconds: 526.166667
+  end_seconds: 534.52585
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s003
+  sv: SFP är ett litet parti, men sitter ändå nästan alltid i Finlands regering.
+  ru: SFP — небольшая партия, но она всё же почти всегда входит в правительство Финляндии.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: ess eff pe är ett litet parti, men sitter ändå nästan alltid i Finlands regering.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s003.wav
+  start_seconds: 536.291667
+  end_seconds: 543.396973
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s004
+  sv: SFP och svenskspråkigheten är också en viktig länk för Finland till det nordiska samarbetet och
+    den nordiska kulturen.
+  ru: SFP и шведскоязычность также служат для Финляндии важным связующим звеном с сотрудничеством и культурой
+    Северных стран.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: ess eff pe och svenskspråkigheten är också en viktig länk för Finland till det nordiska samarbetet
+      och den nordiska kulturen.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s004.wav
+  start_seconds: 545.166667
+  end_seconds: 555.894286
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s005
+  sv: Största delen av SFP-politikerna är rätt så högerorienterade i ekonomiska frågor.
+  ru: Большинство политиков SFP в экономических вопросах довольно правые.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Största delen av ess eff pe-politikerna är rätt så högerorienterade i ekonomiska frågor.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s005.wav
+  start_seconds: 557.666667
+  end_seconds: 565.747211
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0150-s006
+  sv: SFP är ett liberalt parti.
+  ru: SFP — либеральная партия.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: ess eff pe är ett liberalt parti.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0150-s006.wav
+  start_seconds: 567.5
+  end_seconds: 570.774014
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0151-s001
+  sv: Eftersom så många finlandssvenskar understöder SFP, finns det flera olika inriktningar inom partiet.
+  ru: Поскольку так много финляндских шведов поддерживают SFP, внутри партии существует несколько различных
+    направлений.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Eftersom så många finlandssvenskar understöder ess eff pe, finns det flera olika inriktningar
+      inom partiet.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0151-s001.wav
+  start_seconds: 572.541667
+  end_seconds: 581.667109
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0151-s002
+  sv: Inom partiet finns det till exempel å ena sidan en urban inriktning och å andra sidan en mer jordbruksbetonad
+    inriktning.
+  ru: Внутри партии существует, например, с одной стороны, городское направление, а с другой — направление,
+    более ориентированное на сельское хозяйство.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0151-s002.wav
+  start_seconds: 583.458333
+  end_seconds: 593.698333
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0151-s003
+  sv: Partiet understöder Europeiska unionen och en stark europeisk enighet.
+  ru: Партия поддерживает Европейский союз и сильное европейское единство.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0151-s003.wav
+  start_seconds: 595.458333
+  end_seconds: 601.797381
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0151-s004
+  sv: SFP eftersträvar ett öppet och tolerant samhälle och betonar individens frihet och ansvar.
+  ru: SFP стремится к открытому и терпимому обществу и подчёркивает свободу и ответственность личности.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: ess eff pe eftersträvar ett öppet och tolerant samhälle och betonar individens frihet och ansvar.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0151-s004.wav
+  start_seconds: 603.583333
+  end_seconds: 611.872857
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0151-s005
+  sv: SFP förhåller sig positivt till invandring, kulturell mångfald och minoriteters rättigheter.
+  ru: SFP положительно относится к иммиграции, культурному многообразию и правам меньшинств.
+  scene_id: scene-8
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_henriksson
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: ess eff pe förhåller sig positivt till invandring, kulturell mångfald och minoriteters rättigheter.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0151-s005.wav
+  start_seconds: 613.625
+  end_seconds: 622.262823
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/henriksson.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0152-s001
+  sv: Kristdemokraterna i Finland, KD, anser att det är viktigt att beakta kristna värderingar i beslutsfattandet.
+  ru: Христианские демократы Финляндии (Kristdemokraterna i Finland, KD) считают важным учитывать христианские
+    ценности при принятии решений.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights:
+  - Kristdemokraterna
+  - KD
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Kristdemokraterna i Finland, kå de, anser att det är viktigt att beakta kristna värderingar
+      i beslutsfattandet.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0152-s001.wav
+  start_seconds: 624.75
+  end_seconds: 634.502381
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0152-s002
+  sv: Politiken bygger på kristendomen.
+  ru: Политика основывается на христианстве.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0152-s002.wav
+  start_seconds: 636.291667
+  end_seconds: 639.426361
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0152-s003
+  sv: Kristdemokraterna är ett litet parti.
+  ru: Христианские демократы — небольшая партия.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0152-s003.wav
+  start_seconds: 641.208333
+  end_seconds: 644.900306
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0152-s004
+  sv: Inom den ekonomiska politiken är partiet på samma sätt som Centerpartiet aningen mer högerorienterat
+    än vänsterorienterat.
+  ru: В экономической политике партия, как и Партия центра, немного ближе к правым взглядам, чем к левым.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0152-s004.wav
+  start_seconds: 646.666667
+  end_seconds: 657.115646
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0152-s005
+  sv: Partiet har konservativa värderingar.
+  ru: Партия придерживается консервативных ценностей.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0152-s005.wav
+  start_seconds: 658.875
+  end_seconds: 662.497313
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0153-s001
+  sv: Viktiga värderingar för kristdemokraterna är människovärdet, familjens betydelse och stärkande av
+    närsamhällen.
+  ru: Важные ценности для христианских демократов — человеческое достоинство, значимость семьи и укрепление
+    местных сообществ.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0153-s001.wav
+  start_seconds: 664.25
+  end_seconds: 674.35068
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0153-s002
+  sv: Kristdemokraterna eftersträvar ett samhälle där ekonomin och välfärden bygger på företagsamhet och
+    ansvar.
+  ru: Христианские демократы стремятся к обществу, в котором экономика и благополучие основываются на
+    предприимчивости и ответственности.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0153-s002.wav
+  start_seconds: 676.125
+  end_seconds: 685.320102
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0153-s003
+  sv: Rättvisa, hälsa och utbildning är andra viktiga teman.
+  ru: Справедливость, здоровье и образование — другие важные темы.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0153-s003.wav
+  start_seconds: 687.083333
+  end_seconds: 692.238163
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0153-s004
+  sv: Kristdemokraterna motsätter sig abort och rätten att ingå äktenskap för personer av samma kön.
+  ru: Христианские демократы выступают против аборта и права на заключение брака для людей одного пола.
+  scene_id: scene-9
+  visual_cue: Show the verified dated party portrait or graphical Centre emblem, complete and uncropped;
+    retain the fixed bilingual source panel. No claim of current leadership.
+  asset_ids:
+  - episode_background
+  - picture_essayah
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0153-s004.wav
+  start_seconds: 694.0
+  end_seconds: 702.219864
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/pictures/essayah.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0154-s001
+  sv: Rörelse Nu är ett litet parti.
+  ru: «Движение сейчас» (Rörelse Nu) — небольшая партия.
+  scene_id: scene-10
+  visual_cue: 'Exact-source concept card: Rörelse Nu'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Rörelse Nu
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0154-s001.wav
+  start_seconds: 704.708333
+  end_seconds: 707.843027
+  display_segments: []
+  render_image: studio/media/hb-c04-partier/cards/73.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0154-s002
+  sv: Det har som mål att förnya politiken och ekonomin i Finland.
+  ru: Её цель — обновить политику и экономику Финляндии.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0154-s002.wav
+  start_seconds: 709.625
+  end_seconds: 714.91915
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0154-s003
+  sv: Det vill inte förbinda sig till de traditionella partiernas ideologier.
+  ru: Она не хочет связывать себя с идеологиями традиционных партий.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0154-s003.wav
+  start_seconds: 716.708333
+  end_seconds: 722.977721
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0154-s004
+  sv: Dess politiker är ändå till största delen ekonomiskt högerorienterade.
+  ru: Однако её политики в большинстве своём правые в экономическом отношении.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0154-s004.wav
+  start_seconds: 724.75
+  end_seconds: 730.949728
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0154-s005
+  sv: Till sina värderingar är partiet först och främst rätt så konservativt.
+  ru: По своим ценностям партия прежде всего довольно консервативная.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0154-s005.wav
+  start_seconds: 732.708333
+  end_seconds: 739.117041
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0155-s001
+  sv: Rörelse Nu anser att företagsamhet och utveckling av marknadsekonomin är viktiga.
+  ru: «Движение сейчас» считает важными предприимчивость и развитие рыночной экономики.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0155-s001.wav
+  start_seconds: 740.875
+  end_seconds: 748.119626
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0155-s002
+  sv: Partiet vill främja öppenhet och individens frihet.
+  ru: Партия хочет содействовать открытости и свободе личности.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0155-s002.wav
+  start_seconds: 749.875
+  end_seconds: 754.611871
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0155-s003
+  sv: Också främjande av ekonomisk tillväxt och säkerhet hör till partiets mål.
+  ru: К целям партии также относится содействие экономическому росту и безопасности.
+  scene_id: scene-10
+  visual_cue: Leave foreground open to the verified continuous background; preserve complete bilingual
+    source pair.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-partier/narration/hb-c04-u0155-s003.wav
+  start_seconds: 756.375
+  end_seconds: 762.992687
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-partier/sources/music-bed.flac
+  background_image: studio/media/hb-c04-partier/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 6.001488095238096
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Election posters Otto Karhi Park Oulu 20230401 01.jpg — Estormiz · CC0
+    - Friday Morning — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - paragraphs:
+    - Petteri Orpo (2023) — Lauri Heikkinen, valtioneuvoston kanslia · CC BY 4.0
+    - Riikka Purra (2023) — Lauri Heikkinen, valtioneuvoston kanslia · CC BY 4.0
+    - Anna-Maja Henriksson (2023) — Lauri Heikkinen, valtioneuvoston kanslia · CC BY 4.0
+    - Sari Essayah (2023) — Lauri Heikkinen · CC BY 4.0
+    - https://creativecommons.org/licenses/by/4.0
+    - Bilder proportionellt förminskade. Fullständiga källor i CREDITS-filen.
+    heading: Förgrundsbilder 1/3 · Изображения
+  - paragraphs:
+    - Sanna Marin (2019) — Laura Kotila, valtioneuvoston kanslia · CC BY 4.0
+    - Li Andersson (2019) — Laura Kotila · CC BY 4.0
+    - Maria Ohisalo (2019) — Laura Kotila/valtioneuvoston kanslia · CC BY 4.0
+    - https://creativecommons.org/licenses/by/4.0
+    - Bilder proportionellt förminskade. Fullständiga källor i CREDITS-filen.
+    heading: Förgrundsbilder 2/3 · Изображения
+  - paragraphs:
+    - Annika Saarikko (2020) — Lauri Heikkinen / valtioneuvoston kanslia · CC BY 2.0
+    - Centerns klöversymbol — Suomen Keskusta r.p. · CC BY-SA 4.0
+    - https://creativecommons.org/licenses/by-sa/4.0
+    - https://creativecommons.org/licenses/by/2.0
+    - Bilder proportionellt förminskade. Fullständiga källor i CREDITS-filen.
+    heading: Förgrundsbilder 3/3 · Изображения
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Election_posters_Otto_Karhi_Park_Oulu_20230401_01.jpg
+    description: Election posters of the parliamentary elections at the Otto Karhi Park in Oulu.
+    license: CC0

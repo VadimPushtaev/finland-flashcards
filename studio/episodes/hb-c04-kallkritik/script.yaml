@@ -1,0 +1,1463 @@
+schema_version: 1
+section_id: hb-c04-kallkritik
+chapter_id: hb-c04
+title_sv: Källkritik och mediekunnighet
+title_ru: Критическая оценка источников и медиаграмотность
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-kallkritik.yaml
+example_only: false
+source_section_sha256: e8ee3724b1843c6de6b15b60865b2f075542046aadab820ba506eaad30bf1e89
+translation_file_sha256: 1160eb20a673dc256689cf21ee06ef3d7268fae2612bda57d181719d8681d9bf
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber panel #382d24, ivory #faf3e8, secondary #dfcfbb,
+    gold #dfb96f, separator #695540. Liberation Sans Bold 48 and Regular 40; stable right bilingual panel
+    and occasional exact-source graphics at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki University Library Interior B - Marit Henriksson.jpg by Marit Henriksson
+    continuously as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan
+    (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in
+    motion, with no sentence resets. Total cycles=4.092559523809524. Foreground and bilingual text remain
+    fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Two Together by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 116.663 seconds; prepared lossless stereo bed 572.958 seconds.
+    Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use sparse exact-source concept cards at the topic transitions identified in the sentence
+    plan. They emphasize the chapter’s institutional or civic vocabulary without suggesting a depicted
+    historical event. Keep background open elsewhere and omit redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 4 relevant registered foreground pictures over 25 of 49 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: scene-1
+  description: Critical media literacy
+- id: scene-2
+  description: Reliability, emotions and competing accounts
+- id: scene-3
+  description: False claims, misleading photographs and AI
+- id: scene-4
+  description: Editorial verification and trust
+- id: scene-5
+  description: Check before sharing
+- id: scene-6
+  description: Questions about sources, evidence and motives
+- id: scene-7
+  description: Compare sources and publication dates
+- id: scene-8
+  description: Recognising commercial messages
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_editor
+  kind: foreground
+  description: GIMP screenshot2015 demonstrating photo-editing tools; illustrative editing capability,
+    not fabricated news or a current interface.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+- id: picture_laptop
+  kind: foreground
+  description: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+- id: picture_newspaper
+  kind: foreground
+  description: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+- id: picture_yle_tower
+  kind: foreground
+  description: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0230-s001
+  sv: Kritisk mediekunnighet betyder att en människa kan granska medieinnehåll kritiskt.
+  ru: Критическая медиаграмотность означает, что человек может критически анализировать медиаконтент.
+  scene_id: scene-1
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - Kritisk mediekunnighet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0230-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.215986
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0230-s002
+  sv: Medieinnehåll är både innehåll i traditionella medier, såsom tidningsartiklar och tv-nyheter, samt
+    till exempel blogginlägg, inlägg på sociala medier och olika videor som sprids på internet.
+  ru: Медиаконтент — это и содержание традиционных СМИ, такое как газетные статьи и телевизионные новости,
+    и, например, публикации в блогах, публикации в социальных сетях и различные видео, распространяемые
+    в интернете.
+  scene_id: scene-1
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0230-s002.wav
+  start_seconds: 12.0
+  end_seconds: 27.673469
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0230-s003
+  sv: Kritisk betyder i fråga om mediekunnighet inte en negativ inställning eller motstånd.
+  ru: В отношении медиаграмотности слово «критический» не означает отрицательного отношения или сопротивления.
+  scene_id: scene-1
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0230-s003.wav
+  start_seconds: 29.458333
+  end_seconds: 36.772619
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0230-s004
+  sv: Det betyder att man är intresserad av att förstå medieinnehåll och varför man berättar om olika
+    saker på ett visst sätt.
+  ru: Это означает интерес к пониманию медиаконтента и того, почему о разных вещах рассказывают определённым
+    способом.
+  scene_id: scene-1
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0230-s004.wav
+  start_seconds: 38.541667
+  end_seconds: 48.851327
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0230-s005
+  sv: En mediekunnig person kan kritiskt granska också såväl sin egen som andras aktivitet i olika medier.
+  ru: Медиаграмотный человек может также критически анализировать как свою, так и чужую деятельность в
+    различных СМИ.
+  scene_id: scene-1
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0230-s005.wav
+  start_seconds: 50.625
+  end_seconds: 59.471803
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0231-s001
+  sv: Nuförtiden är i synnerhet internet och sociala medier fulla av olika slags innehåll, inklusive nyheter
+    och påståenden som framställs som fakta.
+  ru: В настоящее время особенно интернет и социальные сети полны различного рода контента, включая новости
+    и утверждения, представляемые как факты.
+  scene_id: scene-2
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0231-s001.wav
+  start_seconds: 61.958333
+  end_seconds: 74.427449
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0231-s002
+  sv: Det kan vara svårt att bedöma vilken information som är sann och vilka källor som är pålitliga.
+  ru: Может быть трудно оценить, какая информация истинна и какие источники надёжны.
+  scene_id: scene-2
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0231-s002.wav
+  start_seconds: 76.208333
+  end_seconds: 84.567517
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0231-s003
+  sv: Många aktörer vill få människor att tro på just deras version av olika saker och händelser.
+  ru: Многие участники хотят добиться того, чтобы люди поверили именно в их версию различных вещей и событий.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0231-s003.wav
+  start_seconds: 86.333333
+  end_seconds: 94.483537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0232-s001
+  sv: Med hjälp av nyheter och sociala medieinnehåll försöker man vädja till folks känslor, eftersom sådana
+    texter enklast får uppmärksamhet och flest klick.
+  ru: С помощью новостей и контента социальных сетей пытаются обращаться к чувствам людей, поскольку именно
+    такие тексты легче всего привлекают внимание и получают больше всего кликов.
+  scene_id: scene-2
+  visual_cue: 'Exact-source concept card: känslor, klick'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - känslor
+  - klick
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0232-s001.wav
+  start_seconds: 96.25
+  end_seconds: 109.485374
+  display_segments: []
+  render_image: studio/media/hb-c04-kallkritik/cards/08.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0232-s002
+  sv: Uppmärksamheten för i sin tur med sig makt och pengar via annonsörer.
+  ru: Внимание, в свою очередь, приносит власть и деньги через рекламодателей.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0232-s002.wav
+  start_seconds: 111.25
+  end_seconds: 117.380068
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0232-s003
+  sv: När man följer olika medier är det bra att vara uppmärksam på hur de försöker påverka människors
+    tankar genom att vädja till känslorna.
+  ru: Следя за различными СМИ, полезно обращать внимание на то, как они пытаются влиять на мысли людей
+    посредством обращения к чувствам.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0232-s003.wav
+  start_seconds: 119.166667
+  end_seconds: 130.939184
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0233-s001
+  sv: Det finns inte nödvändigtvis alltid en enda entydig sanning om vissa saker.
+  ru: В некоторых вопросах не обязательно всегда есть одна-единственная однозначная истина.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0233-s001.wav
+  start_seconds: 132.708333
+  end_seconds: 139.186701
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0233-s002
+  sv: Olika människors upplevelser av samma händelse kan skilja sig mycket från varandra.
+  ru: Впечатления разных людей от одного и того же события могут сильно отличаться друг от друга.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0233-s002.wav
+  start_seconds: 140.958333
+  end_seconds: 148.481599
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0233-s003
+  sv: I sådana fall kan det hända att två olika beskrivningar av en händelse till viss del kan vara sanna
+    båda två.
+  ru: В таких случаях может случиться, что два разных описания события оба отчасти правдивы.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0233-s003.wav
+  start_seconds: 150.25
+  end_seconds: 159.723741
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0233-s004
+  sv: Ofta baserar sig ändå en del beskrivningar i högre grad på objektiva fakta än andra.
+  ru: Однако часто одни описания в большей степени основываются на объективных фактах, чем другие.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0233-s004.wav
+  start_seconds: 161.5
+  end_seconds: 168.814286
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0233-s005
+  sv: Till exempel en bedömning av en expert som forskat i ett ämne är en pålitligare informationskälla
+    än en vanlig människas personliga åsikt.
+  ru: Например, оценка эксперта, исследовавшего тему, является более надёжным источником информации, чем
+    личное мнение обычного человека.
+  scene_id: scene-2
+  visual_cue: 'Exact-source concept card: expert, personliga åsikt'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - expert
+  - personliga åsikt
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0233-s005.wav
+  start_seconds: 170.583333
+  end_seconds: 182.77381
+  display_segments: []
+  render_image: studio/media/hb-c04-kallkritik/cards/15.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0234-s001
+  sv: I synnerhet i sociala medier sprids också mycket innehåll som är fullständigt falskt.
+  ru: Особенно в социальных сетях распространяется также много совершенно ложного контента.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0234-s001.wav
+  start_seconds: 185.25
+  end_seconds: 192.842925
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0234-s002
+  sv: Den som sprider innehållet kan avsiktligt lägga fram felaktiga påståenden och försöka få människor
+    att tro att de är sanna.
+  ru: Распространяющий контент может намеренно выдвигать ошибочные утверждения и пытаться добиться того,
+    чтобы люди поверили в их истинность.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0234-s002.wav
+  start_seconds: 194.625
+  end_seconds: 205.07398
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0234-s003
+  sv: Syftet kan vara att till exempel väcka hat eller misstro mot någon person eller människogrupp.
+  ru: Цель может состоять, например, в том, чтобы вызвать ненависть или недоверие к какому-либо человеку
+    или группе людей.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0234-s003.wav
+  start_seconds: 206.833333
+  end_seconds: 214.983537
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0235-s001
+  sv: Det har länge varit möjligt att redigera bilder.
+  ru: Редактировать изображения возможно уже давно.
+  scene_id: scene-3
+  visual_cue: GIMP screenshot2015 demonstrating photo-editing tools; illustrative editing capability,
+    not fabricated news or a current interface. Commons file page opened2026-10-26; source and license
+    text inspected by coordinator. Keep the foreground steady beside the exact bilingual source pair;
+    source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_editor
+  text_highlights:
+  - redigera bilder
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0235-s001.wav
+  start_seconds: 216.75
+  end_seconds: 220.929592
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/editor.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0235-s002
+  sv: Äkta bilder används också på ett vilseledande sätt så att en bild kan vara tagen i en helt annan
+    situation och på en helt annan plats än vad som påstås.
+  ru: Подлинные изображения также используются вводящим в заблуждение способом, когда изображение может
+    быть снято в совершенно другой ситуации и совершенно другом месте, чем утверждается.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0235-s002.wav
+  start_seconds: 222.708333
+  end_seconds: 235.456088
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0236-s001
+  sv: Tekniken utvecklas hela tiden och gör det allt lättare att sprida falsk information.
+  ru: Технология постоянно развивается и делает распространение ложной информации всё легче.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0236-s001.wav
+  start_seconds: 237.208333
+  end_seconds: 244.452959
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0236-s002
+  sv: I dag är det till exempel med hjälp av artificiell intelligens möjligt att producera videor som
+    ser väldigt äkta ut och där en person ser ut att göra något som hen aldrig har gjort i verkligheten.
+  ru: Сегодня, например, с помощью искусственного интеллекта можно создавать видео, которые выглядят очень
+    подлинно и на которых человек как будто делает то, чего в действительности никогда не делал.
+  scene_id: scene-3
+  visual_cue: 'Exact-source concept card: artificiell intelligens'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - artificiell intelligens
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0236-s002.wav
+  start_seconds: 246.208333
+  end_seconds: 262.369422
+  display_segments: []
+  render_image: studio/media/hb-c04-kallkritik/cards/22.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0236-s003
+  sv: Också människors röst och sätt att prata kan kopieras så att det är nästan omöjligt att skilja slutresultatet
+    från verkligheten.
+  ru: Голос людей и их манеру говорить также можно скопировать так, что конечный результат почти невозможно
+    отличить от реальности.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0236-s003.wav
+  start_seconds: 264.125
+  end_seconds: 274.991939
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0236-s004
+  sv: I takt med att falskt innehåll på internet blir allt mer trovärdigt blir det allt viktigare att
+    var och en kan granska medieinnehåll kritiskt och agera ansvarsfullt.
+  ru: По мере того как ложный контент в интернете становится всё более правдоподобным, всё важнее, чтобы
+    каждый мог критически анализировать медиаконтент и действовать ответственно.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0236-s004.wav
+  start_seconds: 276.75
+  end_seconds: 290.333673
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0237-s001
+  sv: Innan sociala medier blev vanliga fick människor information om världshändelser i huvudsak via tv,
+    radio och tidningar.
+  ru: До распространения социальных сетей люди получали информацию о мировых событиях главным образом
+    через телевидение, радио и газеты.
+  scene_id: scene-4
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0237-s001.wav
+  start_seconds: 292.791667
+  end_seconds: 303.310306
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0237-s002
+  sv: Också i dessa traditionella mediekanaler kan det av misstag spridas felaktig information, och journalister
+    är inte alltid opartiska.
+  ru: В этих традиционных медиаканалах также может по ошибке распространяться неверная информация, и журналисты
+    не всегда беспристрастны.
+  scene_id: scene-4
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0237-s002.wav
+  start_seconds: 305.083333
+  end_seconds: 316.646871
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0237-s003
+  sv: Redaktionerna strävar ändå efter att säkerställa att informationen är korrekt innan den publiceras
+    och åtgärdar fel i efterhand när de upptäcks.
+  ru: Однако редакции стремятся убедиться в правильности информации до её публикации и впоследствии исправляют
+    ошибки, когда они обнаруживаются.
+  scene_id: scene-4
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0237-s003.wav
+  start_seconds: 318.416667
+  end_seconds: 330.955442
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0238-s001
+  sv: I Finland har människor i allmänhet ett starkt förtroende för traditionella medier, i synnerhet
+    Yles och andra stora mediebolags nyheter.
+  ru: В Финляндии люди обычно сильно доверяют традиционным СМИ, особенно новостям Юле (Yle) и других крупных
+    медиакомпаний.
+  scene_id: scene-4
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0238-s001.wav
+  start_seconds: 332.708333
+  end_seconds: 344.41119
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0239-s001
+  sv: I fråga om andra än traditionella medier krävs det ofta mer arbete av en människa att bedöma om
+    information är tillförlitlig.
+  ru: При обращении к другим СМИ, помимо традиционных, человеку часто требуется больше усилий, чтобы оценить
+    достоверность информации.
+  scene_id: scene-5
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0239-s001.wav
+  start_seconds: 346.875
+  end_seconds: 358.090238
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0239-s002
+  sv: Det är värt att ställa sig skeptisk särskilt till information som publicerats av någon som man inte
+    vet så mycket om.
+  ru: Стоит относиться скептически особенно к информации, опубликованной кем-либо, о ком известно не так
+    много.
+  scene_id: scene-5
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0239-s002.wav
+  start_seconds: 359.875
+  end_seconds: 370.04534
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0239-s003
+  sv: Det är också viktigt att försöka ta reda på om informationen är korrekt innan man själv delar den
+    vidare i sociala medier.
+  ru: Также важно попытаться выяснить, верна ли информация, прежде чем самому распространять её дальше
+    в социальных сетях.
+  scene_id: scene-5
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - korrekt
+  - delar den vidare
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0239-s003.wav
+  start_seconds: 371.833333
+  end_seconds: 382.421633
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0240-s001
+  sv: 'Alltid när man stöter på en nyhet eller ny information i vilket medium som helst är det bra att
+    ställa sig följande frågor:'
+  ru: 'Каждый раз, сталкиваясь с новостью или новой информацией в любом СМИ, полезно задать себе следующие
+    вопросы:'
+  scene_id: scene-6
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0240-s001.wav
+  start_seconds: 384.875
+  end_seconds: 395.950918
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0241-s001
+  sv: Vem sprider informationen?
+  ru: Кто распространяет информацию?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - Vem sprider informationen?
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0241-s001.wav
+  start_seconds: 397.708333
+  end_seconds: 400.355408
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0241-s002
+  sv: Representerar informationsspridaren ett företag, ett parti, en organisation eller staten?
+  ru: Представляет ли распространитель информации предприятие, партию, организацию или государство?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0241-s002.wav
+  start_seconds: 402.125
+  end_seconds: 410.066224
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0243-s001
+  sv: Vad baserar sig informationen på?
+  ru: На чём основывается информация?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - Vad baserar sig informationen på?
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0243-s001.wav
+  start_seconds: 411.833333
+  end_seconds: 415.037687
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0243-s002
+  sv: Är den som publicerar informationen en expert på ämnet eller baserar den sig på vetenskapliga fakta
+    som producerats av en pålitlig källa?
+  ru: Является ли тот, кто публикует информацию, экспертом по теме или сама информация основывается на
+    научных фактах, полученных из надёжного источника?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0243-s002.wav
+  start_seconds: 416.791667
+  end_seconds: 428.285544
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0243-s003
+  sv: Ligger en ögonvittnesskildring eller en anonym persons berättelse bakom nyheten?
+  ru: Стоит ли за новостью рассказ очевидца или анонимного человека?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0243-s003.wav
+  start_seconds: 430.041667
+  end_seconds: 436.937993
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0243-s004
+  sv: Är det fråga om en åsikt eller ett antagande?
+  ru: Речь идёт о мнении или предположении?
+  scene_id: scene-6
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0243-s004.wav
+  start_seconds: 438.708333
+  end_seconds: 442.748605
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0244-s001
+  sv: Vilket syfte och motiv har den som publicerar informationen?
+  ru: Каковы цель и мотив публикующего информацию?
+  scene_id: scene-6
+  visual_cue: 'Exact-source concept card: syfte, motiv'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - syfte
+  - motiv
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0244-s001.wav
+  start_seconds: 444.5
+  end_seconds: 449.86381
+  display_segments: []
+  render_image: studio/media/hb-c04-kallkritik/cards/39.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0244-s002
+  sv: Försöker hen få människor att tänka eller känna på ett visst sätt om ett ämne?
+  ru: Пытается ли он добиться того, чтобы люди думали или чувствовали определённым образом по какой-либо
+    теме?
+  scene_id: scene-6
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0244-s002.wav
+  start_seconds: 451.625
+  end_seconds: 458.451667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0244-s003
+  sv: Drar hen nytta av att människor tror på informationen?
+  ru: Получает ли он пользу от того, что люди верят информации?
+  scene_id: scene-6
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0244-s003.wav
+  start_seconds: 460.208333
+  end_seconds: 465.154184
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0245-s001
+  sv: Det är bra att alltid försöka hitta flera källor om ett ämne.
+  ru: Полезно всегда стараться находить несколько источников по теме.
+  scene_id: scene-7
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - flera källor
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0245-s001.wav
+  start_seconds: 467.625
+  end_seconds: 473.197789
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0245-s002
+  sv: Om många olika aktörer berättar om samma sak på någotsånär samma sätt, är det mer sannolikt att
+    det är sant.
+  ru: Если многие различные участники рассказывают об одном и том же примерно одинаково, вероятнее, что
+    это правда.
+  scene_id: scene-7
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0245-s002.wav
+  start_seconds: 474.958333
+  end_seconds: 484.641054
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0245-s003
+  sv: Det är också värt att kontrollera när informationen ursprungligen har publicerats och om det redan
+    finns nyare information i ämnet.
+  ru: Также стоит проверить, когда информация была первоначально опубликована и существует ли уже более
+    новая информация по теме.
+  scene_id: scene-7
+  visual_cue: Laptop displaying Wikipedia; illustrative online-source-checking context, not a claim about
+    factual reliability. Commons file page opened2026-10-26; source and license text inspected by coordinator.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_laptop
+  text_highlights:
+  - publicerats
+  - nyare information
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0245-s003.wav
+  start_seconds: 486.416667
+  end_seconds: 497.492585
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/laptop.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0246-s001
+  sv: Ibland kan det också vara svårt att se om till exempel en rekommendation om en produkt som publicerats
+    på sociala medier är en ärlig åsikt eller betald reklam.
+  ru: Иногда бывает также трудно понять, является ли, например, опубликованная в социальных сетях рекомендация
+    товара честным мнением или оплаченной рекламой.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0246-s001.wav
+  start_seconds: 499.958333
+  end_seconds: 513.681327
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0246-s002
+  sv: I Finland kräver lagen att kommersiella meddelanden enkelt ska kunna kännas igen som sådana.
+  ru: В Финляндии закон требует, чтобы коммерческие сообщения можно было легко распознать как таковые.
+  scene_id: scene-8
+  visual_cue: 'Exact-source concept card: kommersiella meddelanden'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - kommersiella meddelanden
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0246-s002.wav
+  start_seconds: 515.458333
+  end_seconds: 523.469218
+  display_segments: []
+  render_image: studio/media/hb-c04-kallkritik/cards/46.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0246-s003
+  sv: Kommersiella meddelanden är alla meddelanden som syftar till att få människor att köpa någonting.
+  ru: Коммерческие сообщения — это все сообщения, цель которых — побудить людей что-либо купить.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0246-s003.wav
+  start_seconds: 525.25
+  end_seconds: 533.539524
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0246-s004
+  sv: Det gäller ändå endast meddelanden som producerats i Finland.
+  ru: Однако это касается только сообщений, произведённых в Финляндии.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-kallkritik/narration/hb-c04-u0246-s004.wav
+  start_seconds: 535.291667
+  end_seconds: 540.725136
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-kallkritik/sources/music-bed.flac
+  background_image: studio/media/hb-c04-kallkritik/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.092559523809524
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki University Library Interior B - Marit Henriksson.jpg — Marit Henriksson · CC BY-SA 4.0
+    - 'Förgrundsbilder: Igor2; GIMP contributors; SimpsonsFan-on-Commons; Turun Sanomat; National Library
+      of Finland digitization; Skorpion87; color/tilt correction by Mysid.'
+    - Two Together — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki_University_Library_Interior_B_-_Marit_Henriksson.jpg
+    description: This is a photo of a monument in Finland identified by the ID 'National Library of Finland'
+      (Q420747)
+    license: CC BY-SA 4.0

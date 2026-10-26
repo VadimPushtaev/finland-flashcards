@@ -98,6 +98,40 @@ See the [listening-review checklist](../../studio/hb-c03-review.md) for unresolv
 pronunciation diagnostics with timestamps. These previews and their production
 records are committed at the user's request; whole-video user acceptance is pending.
 
+## Chapter 4 — Demokrati, förvaltning och påverkan
+
+All fifteen previews use Swedish narration with exact Swedish and reviewed Russian
+text on screen. Total length: **2:16:36** (8195.958 seconds).
+
+| Video | Length | Pictures during body | Review |
+|---|---:|---:|---|
+| [4.1 Demokrati och folkstyre](hb-c04-01-demokrati.mp4) · [credits](hb-c04-01-demokrati.CREDITS.md) | 11:36 | 57.5% | Ready for whole-video review |
+| [4.2 Grundlagen och maktfördelningen](hb-c04-02-maktfordelning.mp4) · [credits](hb-c04-02-maktfordelning.CREDITS.md) | 2:04 | 79.7% | Ready for whole-video review |
+| [4.3 Riksdagens uppgifter](hb-c04-03-riksdagen.mp4) · [credits](hb-c04-03-riksdagen.CREDITS.md) | 3:52 | 78.9% | Ready for whole-video review |
+| [4.4 Regeringen och parlamentarismen](hb-c04-04-regeringen.mp4) · [credits](hb-c04-04-regeringen.CREDITS.md) | 7:25 | 65.0% | Ready for whole-video review |
+| [4.5 Republikens president](hb-c04-05-presidenten.mp4) · [credits](hb-c04-05-presidenten.CREDITS.md) | 1:55 | 72.5% | Ready for whole-video review |
+| [4.6 Kommuner och välfärdsområden](hb-c04-06-lokalforvaltning.mp4) · [credits](hb-c04-06-lokalforvaltning.CREDITS.md) | 5:05 | 80.0% | Ready for whole-video review |
+| [4.7 EU och internationellt samarbete](hb-c04-07-internationellt.mp4) · [credits](hb-c04-07-internationellt.CREDITS.md) | 7:40 | 77.2% | Ready for whole-video review |
+| [4.8 Val, valhemlighet och proportionellt valsätt](hb-c04-08-valsystemet.mp4) · [credits](hb-c04-08-valsystemet.CREDITS.md) | 10:12 | 75.9% | Ready for whole-video review |
+| [4.9 Rösträtt och valbarhet](hb-c04-09-rostratt.mp4) · [credits](hb-c04-09-rostratt.CREDITS.md) | 10:25 | 92.4% | Ready for whole-video review |
+| [4.10 Politiska partier och ideologier](hb-c04-10-partisystem.mp4) · [credits](hb-c04-10-partisystem.CREDITS.md) | 10:26 | 60.0% | Ready for whole-video review |
+| [4.11 Partierna i riksdagsvalet 2023](hb-c04-11-partier.mp4) · [credits](hb-c04-11-partier.CREDITS.md) | 14:00 | 88.8% | Ready for whole-video review |
+| [4.12 Medborgarengagemang och påverkan](hb-c04-12-paverkan.mp4) · [credits](hb-c04-12-paverkan.CREDITS.md) | 16:44 | 72.7% | Ready for whole-video review |
+| [4.13 Föreningar och frivilligverksamhet](hb-c04-13-foreningar.mp4) · [credits](hb-c04-13-foreningar.CREDITS.md) | 11:33 | 65.4% | Ready for whole-video review |
+| [4.14 Medier, pressfrihet och publicistiskt ansvar](hb-c04-14-medier.mp4) · [credits](hb-c04-14-medier.CREDITS.md) | 14:05 | 55.1% | Ready for whole-video review |
+| [4.15 Källkritik och mediekunnighet](hb-c04-15-kallkritik.mp4) · [credits](hb-c04-15-kallkritik.CREDITS.md) | 9:33 | 50.6% | Ready for whole-video review |
+
+All 753 sentence pairs are covered, with distinct background photographs and
+instrumental music sources. Every preview has foreground pictures for at least 50%
+of body display time; decorative backgrounds and text cards do not count.
+The [Chapter 4 audit](../../studio/hb-c04-audit.json)
+records source fidelity, media hashes, timeline coverage and export verification.
+The [music-bed check](../../studio/hb-c04-music-headroom.json) records prepared
+music headroom. See the [listening-review checklist](../../studio/hb-c04-review.md)
+for unresolved pronunciation diagnostics. These previews and their production
+records are committed at the user's request; whole-video listening and user
+acceptance remain pending.
+
 ## Russian audio
 
 [1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as

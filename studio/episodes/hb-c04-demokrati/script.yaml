@@ -1,0 +1,1704 @@
+schema_version: 1
+section_id: hb-c04-demokrati
+chapter_id: hb-c04
+title_sv: Demokrati och folkstyre
+title_ru: Демократия и народовластие
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-demokrati.yaml
+example_only: false
+source_section_sha256: 440413a00b88f123d5cf6724f56997da6c0840821b325b04427dd8041a163863
+translation_file_sha256: d28d05f5a0eecce97bb2de852a9cd6b90e18acadbc8be025af6dd7ad6470fa53
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber #382d24; ivory #faf3e8, secondary #dfcfbb, gold
+    #dfb96f, separator #695540. Liberation Sans Bold 48/Regular 40 with a stable Swedish-above-Russian
+    right panel and optional source-term cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair 0.25 seconds before narration. Natural local voice at speed 0.95. Pause
+    1.5 seconds after ordinary sentences and 2.2 seconds at scene ends; 2.5 seconds for long pairs. No
+    target-duration acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Parliament House in Helsinki in Finland, 2024 December.jpg by Safa Hovinen continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=4.972619047619047. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic 3/F1, Swedish, 32 steps,speed 0.95, seed 42, 44100 Hz mono PCM16.
+    Exact inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only
+    expansions; pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use That Zen Moment by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 601.809 seconds; prepared lossless stereo bed 696.167 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two 15 second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Bilinear sampling of the softened decorative photograph; retain continuous fractional motion,
+    full 1080p text and steady foreground graphics. Verify motion from exported frames.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 4 relevant registered foreground pictures over 35 of 60 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: hb-c04-u0001
+  description: Representative democracy and free elections
+- id: hb-c04-u0002
+  description: Who can influence shared decisions
+- id: hb-c04-u0003
+  description: Discussion, votes and compromise
+- id: hb-c04-u0004
+  description: Direct democracy
+- id: hb-c04-u0005
+  description: Direct democracy at national scale
+- id: hb-c04-u0006
+  description: Participation and resident panels
+- id: hb-c04-u0007
+  description: Regular representative elections
+- id: hb-c04-u0008
+  description: Delegation to elected institutions
+- id: hb-c04-u0009
+  description: Full-time and part-time representation
+- id: hb-c04-u0010
+  description: Independence and public accountability
+- id: hb-c04-u0011
+  description: Public budgets and election promises
+- id: hb-c04-u0012
+  description: Election integrity
+- id: hb-c04-u0013
+  description: Choice between alternatives
+- id: hb-c04-u0014
+  description: Majorities and minority rights
+- id: hb-c04-u0015
+  description: Freedom of expression
+- id: hb-c04-u0016
+  description: Negotiation among social actors
+- id: hb-c04-u0017
+  description: Citizens contribute information
+asset_requests:
+- id: episode_background
+  kind: background
+  description: File:Parliament House in Helsinki in Finland, 2024 December.jpg. Parliament exterior provides
+    decorative context for elected representative institutions; no claim that this photograph depicts
+    every form of democracy.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: That Zen Moment — Kevin MacLeod, official catalogue master, CC BY 4.0.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic 3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+- id: picture_ballot
+  kind: foreground
+  description: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_cabinet
+  kind: foreground
+  description: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_court
+  kind: foreground
+  description: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_parliament
+  kind: foreground
+  description: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0001-s001
+  sv: Finland är en demokratisk stat.
+  ru: Финляндия — демократическое государство.
+  scene_id: hb-c04-u0001
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 6.524014
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0001-s002
+  sv: Det betyder att folket i Finland har makt att bestämma hur staten ska styras.
+  ru: Это означает, что народ Финляндии обладает властью решать, как должно управляться государство.
+  scene_id: hb-c04-u0001
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0001-s002.wav
+  start_seconds: 8.291667
+  end_seconds: 14.700374
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0001-s003
+  sv: Demokratin i Finland är en representativ demokrati, det vill säga medborgarna väljer representanter
+    för sig själva som fattar beslut för dem.
+  ru: Демократия в Финляндии является представительной демократией, то есть граждане выбирают для себя
+    представителей, которые принимают за них решения.
+  scene_id: hb-c04-u0001
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - representativ demokrati
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0001-s003.wav
+  start_seconds: 16.458333
+  end_seconds: 28.57915
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0001-s004
+  sv: Representanterna väljs i rättvisa och fria val.
+  ru: Представители избираются на справедливых и свободных выборах.
+  scene_id: hb-c04-u0001
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0001-s004.wav
+  start_seconds: 30.333333
+  end_seconds: 35.000544
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0001-s005
+  sv: De beslutsfattare som utsetts genom val ska lyssna på väljarnas åsikter, eftersom väljarna annars
+    kanske inte röstar på dem i följande val.
+  ru: Лица, принимающие решения и избранные на выборах, должны прислушиваться к мнениям избирателей, поскольку
+    в противном случае избиратели, возможно, не проголосуют за них на следующих выборах.
+  scene_id: hb-c04-u0001
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0001-s005.wav
+  start_seconds: 36.791667
+  end_seconds: 48.842823
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0002-s001
+  sv: Demokrati är ett statsskick där medborgarna påverkar hurdana beslut som fattas i gemensamma frågor,
+    vem som fattar besluten och vad statens pengar används till.
+  ru: Демократия — это государственное устройство, при котором граждане влияют на то, какие решения принимаются
+    по общим вопросам, кто принимает решения и на что используются деньги государства.
+  scene_id: hb-c04-u0002
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0002-s001.wav
+  start_seconds: 51.333333
+  end_seconds: 64.847347
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0002-s002
+  sv: Könet eller samhällsställningen har ingen betydelse för vem som får påverka i olika frågor.
+  ru: Пол или общественное положение не имеют значения для того, кто может влиять на различные вопросы.
+  scene_id: hb-c04-u0002
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0002-s002.wav
+  start_seconds: 66.625
+  end_seconds: 74.357245
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0003-s001
+  sv: Medborgarna väljer beslutsfattare med hjälp av val.
+  ru: Граждане выбирают лиц, принимающих решения, посредством выборов.
+  scene_id: hb-c04-u0003
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0003-s001.wav
+  start_seconds: 76.833333
+  end_seconds: 81.848844
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0003-s002
+  sv: Beslutsfattarna fattar beslut om landets angelägenheter genom att diskutera, rösta och göra kompromisser.
+  ru: Лица, принимающие решения, решают дела страны посредством обсуждения, голосования и достижения компромиссов.
+  scene_id: hb-c04-u0003
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - diskutera
+  - rösta
+  - kompromisser
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0003-s002.wav
+  start_seconds: 83.625
+  end_seconds: 92.820102
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0004-s001
+  sv: En demokrati kan vara direkt, deltagande eller representativ.
+  ru: Демократия может быть прямой, партисипативной или представительной.
+  scene_id: hb-c04-u0004
+  visual_cue: 'Steady complete source-only term card: direkt, deltagande, representativ'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - direkt
+  - deltagande
+  - representativ
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0004-s001.wav
+  start_seconds: 95.291667
+  end_seconds: 100.864456
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/cards/09.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0004-s002
+  sv: Med direkt demokrati avses till exempel att en fråga avgörs genom ett massmöte eller en folkomröstning.
+  ru: Под прямой демократией понимается, например, решение вопроса на массовом собрании или референдуме.
+  scene_id: hb-c04-u0004
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0004-s002.wav
+  start_seconds: 102.625
+  end_seconds: 111.611122
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0004-s003
+  sv: Beslutet baserar sig direkt på medborgarnas åsikt.
+  ru: Решение основывается непосредственно на мнении граждан.
+  scene_id: hb-c04-u0004
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0004-s003.wav
+  start_seconds: 113.375
+  end_seconds: 117.972551
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0004-s004
+  sv: Majoritetens åsikt vinner.
+  ru: Побеждает мнение большинства.
+  scene_id: hb-c04-u0004
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0004-s004.wav
+  start_seconds: 119.75
+  end_seconds: 122.606054
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0004-s005
+  sv: När en medborgare deltar i en omröstning kan hen direkt påverka resultatet av den.
+  ru: Участвуя в голосовании, гражданин может непосредственно повлиять на его результат.
+  scene_id: hb-c04-u0004
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0004-s005.wav
+  start_seconds: 124.375
+  end_seconds: 131.619626
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0005-s001
+  sv: Direkt demokrati är svår att genomföra på statlig nivå, eftersom människorna är många.
+  ru: Прямую демократию трудно осуществлять на государственном уровне, поскольку людей много.
+  scene_id: hb-c04-u0005
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0005-s001.wav
+  start_seconds: 134.083333
+  end_seconds: 141.815578
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0005-s002
+  sv: I en direkt demokrati borde varje medborgare ägna mycket tid åt att bestämma om gemensamma angelägenheter
+    genom att delta i möten, omröstningar och olika val.
+  ru: В условиях прямой демократии каждому гражданину пришлось бы уделять много времени решению общих
+    дел, участвуя в собраниях, голосованиях и различных выборах.
+  scene_id: hb-c04-u0005
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0005-s002.wav
+  start_seconds: 143.583333
+  end_seconds: 156.818707
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0005-s003
+  sv: Därför avgörs endast en del frågor i många demokratiska länder med hjälp av direkt folkstyre.
+  ru: Поэтому во многих демократических странах с помощью прямого народовластия решается лишь часть вопросов.
+  scene_id: hb-c04-u0005
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0005-s003.wav
+  start_seconds: 158.583333
+  end_seconds: 166.663878
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0005-s004
+  sv: I Finland ordnades till exempel en rådgivande folkomröstning år 1994 om huruvida Finland borde gå
+    med i Europeiska unionen eller inte.
+  ru: Например, в Финляндии в 1994 году был проведён консультативный референдум о том, следует ли Финляндии
+    вступать в Европейский союз.
+  scene_id: hb-c04-u0005
+  visual_cue: 'Steady complete source-only term card: 1994, Europeiska unionen'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - '1994'
+  - Europeiska unionen
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: I Finland ordnades till exempel en rådgivande folkomröstning år nittonhundranittiofyra om huruvida
+      Finland borde gå med i Europeiska unionen eller inte.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0005-s004.wav
+  start_seconds: 168.416667
+  end_seconds: 181.721701
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/cards/17.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0006-s001
+  sv: Deltagande demokrati betyder olika sätt för människor att på ett friare sätt delta i det gemensamma
+    beslutsfattandet.
+  ru: Партисипативная демократия означает различные способы более свободного участия людей в совместном
+    принятии решений.
+  scene_id: hb-c04-u0006
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0006-s001.wav
+  start_seconds: 184.208333
+  end_seconds: 193.821395
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0006-s002
+  sv: Deltagande demokrati är till exempel medborgarverksamhet eller att kommunen ordnar en invånarpanel,
+    dit alla invånare i kommunen bjuds in för att diskutera en fråga som det ska fattas beslut i.
+  ru: Примером партисипативной демократии служит гражданская деятельность или организованная муниципалитетом
+    группа жителей, куда приглашаются все жители муниципалитета для обсуждения вопроса, по которому должно
+    быть принято решение.
+  scene_id: hb-c04-u0006
+  visual_cue: 'Steady complete source-only term card: medborgarverksamhet, invånarpanel'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - medborgarverksamhet
+  - invånarpanel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0006-s002.wav
+  start_seconds: 195.583333
+  end_seconds: 211.535442
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/cards/19.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0006-s003
+  sv: Panelen fattar inget direkt beslut, men politikerna lyssnar på den och tar invånarnas synpunkter
+    i beaktande när de fattar beslutet.
+  ru: Группа не принимает непосредственного решения, но политики прислушиваются к ней и учитывают мнения
+    жителей при принятии решения.
+  scene_id: hb-c04-u0006
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0006-s003.wav
+  start_seconds: 213.291667
+  end_seconds: 224.367585
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0007-s001
+  sv: I demokratiska stater tillämpas i allmänhet representativ demokrati, som kan kompletteras med direkt
+    och deltagande demokrati.
+  ru: В демократических государствах обычно применяется представительная демократия, которую можно дополнять
+    прямой и партисипативной демократией.
+  scene_id: hb-c04-u0007
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0007-s001.wav
+  start_seconds: 226.833333
+  end_seconds: 237.769932
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0007-s002
+  sv: Så är fallet också i Finland.
+  ru: Так обстоит дело и в Финляндии.
+  scene_id: hb-c04-u0007
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0007-s002.wav
+  start_seconds: 239.541667
+  end_seconds: 242.606701
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0007-s003
+  sv: I Finland hålls regelbundet val, där medborgarna väljer representanter för sig.
+  ru: В Финляндии регулярно проводятся выборы, на которых граждане выбирают для себя представителей.
+  scene_id: hb-c04-u0007
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0007-s003.wav
+  start_seconds: 244.375
+  end_seconds: 251.340986
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0007-s004
+  sv: Representanterna bedriver politiskt arbete i samhället och representerar vanliga medborgare.
+  ru: Представители ведут политическую работу в обществе и представляют обычных граждан.
+  scene_id: hb-c04-u0007
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0007-s004.wav
+  start_seconds: 253.125
+  end_seconds: 261.135884
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0008-s001
+  sv: När en kandidat får tillräckligt många röster i ett val blir hen vald.
+  ru: Когда кандидат получает на выборах достаточно много голосов, он становится избранным.
+  scene_id: hb-c04-u0008
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0008-s001.wav
+  start_seconds: 263.625
+  end_seconds: 269.824728
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0008-s002
+  sv: Då får hen fullmakt från folket att fatta beslut i gemensamma frågor för andras räkning.
+  ru: Тогда этот кандидат получает от народа полномочия принимать решения по общим вопросам от имени других.
+  scene_id: hb-c04-u0008
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0008-s002.wav
+  start_seconds: 271.583333
+  end_seconds: 278.758299
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0008-s003
+  sv: Väljarna överlåter alltså en del av sin makt till personen.
+  ru: Таким образом избиратели передают этому человеку часть своей власти.
+  scene_id: hb-c04-u0008
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0008-s003.wav
+  start_seconds: 280.541667
+  end_seconds: 286.114456
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0008-s004
+  sv: Med hjälp av val väljer finländarna till exempel medlemmar i riksdagen, det vill säga riksdagsledamöter,
+    ledamöter i kommunfullmäktige, som fattar beslut i kommunerna, och ledamöter i välfärdsområdesfullmäktige,
+    som fattar beslut i välfärdsområdena.
+  ru: Посредством выборов жители Финляндии выбирают, например, членов парламента, то есть депутатов парламента,
+    членов муниципальных советов, принимающих решения в муниципалитетах, и членов советов регионов по
+    обеспечению благополучия населения, принимающих решения в этих регионах.
+  scene_id: hb-c04-u0008
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - riksdagsledamöter
+  - kommunfullmäktige
+  - välfärdsområdesfullmäktige
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0008-s004.wav
+  start_seconds: 287.875
+  end_seconds: 309.330238
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c04-u0009-s001
+  sv: I en representativ demokrati arbetar representanterna på heltid eller deltid och beslutar om gemensamma
+    frågor för medborgarnas räkning.
+  ru: При представительной демократии представители работают полный или неполный рабочий день и принимают
+    решения по общим вопросам от имени граждан.
+  scene_id: hb-c04-u0009
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0009-s001.wav
+  start_seconds: 312.083333
+  end_seconds: 323.716531
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0009-s002
+  sv: Då kan de övriga medborgarna fokusera på sina egna arbeten.
+  ru: Тогда остальные граждане могут сосредоточиться на собственной работе.
+  scene_id: hb-c04-u0009
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0009-s002.wav
+  start_seconds: 325.5
+  end_seconds: 330.86381
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0010-s001
+  sv: En representant får fatta självständiga beslut och är inte tvungen att följa väljarnas vilja.
+  ru: Представитель вправе принимать самостоятельные решения и не обязан следовать воле избирателей.
+  scene_id: hb-c04-u0010
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0010-s001.wav
+  start_seconds: 333.333333
+  end_seconds: 341.622857
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0010-s002
+  sv: Väljarna är ändå intresserade av hur representanterna sköter sitt arbete och hurdana beslut de fattar.
+  ru: Однако избиратели интересуются тем, как представители выполняют свою работу и какие решения они
+    принимают.
+  scene_id: hb-c04-u0010
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0010-s002.wav
+  start_seconds: 343.375
+  end_seconds: 352.500442
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0010-s003
+  sv: Till exempel republikens president, ministrar och riksdagsledamöter måste ofta motivera sina beslut
+    för väljarna.
+  ru: Например, президент республики, министры и депутаты парламента часто должны обосновывать свои решения
+    перед избирателями.
+  scene_id: hb-c04-u0010
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0010-s003.wav
+  start_seconds: 354.291667
+  end_seconds: 364.253027
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0010-s004
+  sv: Mediernas uppgift är att följa och rapportera om hur representanterna använder makten de fått.
+  ru: Задача СМИ — следить за тем, как представители используют полученную власть, и сообщать об этом.
+  scene_id: hb-c04-u0010
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - Mediernas uppgift
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0010-s004.wav
+  start_seconds: 366.041667
+  end_seconds: 374.40085
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0011-s001
+  sv: Politiska beslutsfattare måste sätta sig in i komplicerade frågor på kort tid.
+  ru: Политики, принимающие решения, должны за короткое время разобраться в сложных вопросах.
+  scene_id: hb-c04-u0011
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0011-s001.wav
+  start_seconds: 376.875
+  end_seconds: 383.840986
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0011-s002
+  sv: Statens och kommunernas medel är begränsade.
+  ru: Средства государства и муниципалитетов ограничены.
+  scene_id: hb-c04-u0011
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0011-s002.wav
+  start_seconds: 385.625
+  end_seconds: 389.804592
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0011-s003
+  sv: Besluten om till vad de gemensamma pengarna ska användas och hur mycket måste vara sådana att politikerna
+    kan motivera dem för sina väljare och uppbackare.
+  ru: Решения о том, на что и в каком количестве должны использоваться общие деньги, должны быть такими,
+    чтобы политики могли обосновать их перед своими избирателями и сторонниками.
+  scene_id: hb-c04-u0011
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0011-s003.wav
+  start_seconds: 391.583333
+  end_seconds: 404.818707
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0011-s004
+  sv: Om en representant vill att väljarna ska rösta på hen på nytt i nästa val, måste hen försöka uppfylla
+    de löften som hen har gett väljarna.
+  ru: Если представитель хочет, чтобы избиратели вновь проголосовали за него на следующих выборах, он
+    должен стараться выполнить данные избирателям обещания.
+  scene_id: hb-c04-u0011
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0011-s004.wav
+  start_seconds: 406.583333
+  end_seconds: 418.35585
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0012-s001
+  sv: I en del länder sker valfusk av olika orsaker, och röstantalen eller valresultatet kan mycket väl
+    förfalskas.
+  ru: В некоторых странах по различным причинам происходят нарушения на выборах, а количество голосов
+    или результат выборов вполне могут быть сфальсифицированы.
+  scene_id: hb-c04-u0012
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0012-s001.wav
+  start_seconds: 420.833333
+  end_seconds: 430.655374
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0012-s002
+  sv: Storskaligt valfusk är mer sannolikt i instabila samhällen.
+  ru: Масштабная фальсификация выборов более вероятна в нестабильных обществах.
+  scene_id: hb-c04-u0012
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0012-s002.wav
+  start_seconds: 432.416667
+  end_seconds: 438.059116
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0012-s003
+  sv: I Finland är förrättande av val mycket noggrant reglerat och övervakat.
+  ru: В Финляндии проведение выборов очень тщательно регулируется и контролируется.
+  scene_id: hb-c04-u0012
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - reglerat
+  - övervakat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0012-s003.wav
+  start_seconds: 439.833333
+  end_seconds: 446.311701
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0012-s004
+  sv: Resultaten är tillförlitliga, och också den part som förlorat i ett val accepterar valresultatet.
+  ru: Результаты достоверны, и сторона, проигравшая на выборах, также принимает их результат.
+  scene_id: hb-c04-u0012
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0012-s004.wav
+  start_seconds: 448.083333
+  end_seconds: 456.790816
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0013-s001
+  sv: I en demokrati måste människorna välja mellan olika alternativ, i såväl val som annat beslutsfattande.
+  ru: При демократии люди должны выбирать между различными вариантами как на выборах, так и при принятии
+    других решений.
+  scene_id: hb-c04-u0013
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0013-s001.wav
+  start_seconds: 459.25
+  end_seconds: 468.445102
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0013-s002
+  sv: I ett val måste det finnas åtminstone två alternativ.
+  ru: На выборах должны существовать как минимум два варианта.
+  scene_id: hb-c04-u0013
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0013-s002.wav
+  start_seconds: 470.208333
+  end_seconds: 475.084524
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0014-s001
+  sv: I ett val får de partier som får flest röster av väljarna flest representanter.
+  ru: На выборах партии, получившие больше всего голосов избирателей, получают больше всего представителей.
+  scene_id: hb-c04-u0014
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0014-s001.wav
+  start_seconds: 477.541667
+  end_seconds: 484.716633
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0014-s002
+  sv: Det betyder ändå inte att majoriteten fram till nästa val skulle ha rätt att diskriminera eller
+    förtrycka minoriteten, det vill säga dem som är av en annan åsikt än majoriteten.
+  ru: Однако это не означает, что до следующих выборов большинство имеет право дискриминировать или угнетать
+    меньшинство, то есть тех, кто придерживается иного мнения, чем большинство.
+  scene_id: hb-c04-u0014
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0014-s002.wav
+  start_seconds: 486.5
+  end_seconds: 501.198231
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/court.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0014-s003
+  sv: I ett samhälle och en rättsstat som representerar en liberal demokrati ska makten användas på ett
+    sådant sätt att de grundläggande och mänskliga rättigheterna och individens friheter tas i beaktande.
+  ru: В обществе и правовом государстве, представляющих либеральную демократию, власть должна использоваться
+    так, чтобы учитывались основные права, права человека и свободы личности.
+  scene_id: hb-c04-u0014
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0014-s003.wav
+  start_seconds: 502.958333
+  end_seconds: 519.328401
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/court.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0014-s004
+  sv: Alla människor ska behandlas jämlikt och i enlighet med de grundläggande rättigheter som föreskrivs
+    i grundlagen.
+  ru: Со всеми людьми следует обращаться на равных и в соответствии с основными правами, установленными
+    конституцией.
+  scene_id: hb-c04-u0014
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights:
+  - jämlikt
+  - grundlagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0014-s004.wav
+  start_seconds: 521.083333
+  end_seconds: 530.487415
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/court.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s001
+  sv: Yttrandefrihet innebär till exempel att en person kan kritisera politiska beslutsfattare och makthavare
+    om hen inte är nöjd med deras arbete.
+  ru: Свобода выражения мнений означает, например, что человек может критиковать политиков, принимающих
+    решения, и тех, кто обладает властью, если он недоволен их работой.
+  scene_id: hb-c04-u0015
+  visual_cue: 'Steady complete source-only term card: Yttrandefrihet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Yttrandefrihet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s001.wav
+  start_seconds: 532.958333
+  end_seconds: 544.93983
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/cards/49.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s002
+  sv: I Finland förs hela tiden livliga diskussioner i samhällsfrågor i till exempel tidningar och sociala
+    medier.
+  ru: В Финляндии постоянно ведутся оживлённые дискуссии по общественным вопросам, например в газетах
+    и социальных сетях.
+  scene_id: hb-c04-u0015
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s002.wav
+  start_seconds: 546.708333
+  end_seconds: 556.251735
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s003
+  sv: Vem som helst som bor i Finland kan delta i diskussionerna och skriva vad hen tycker i frågorna
+    eller om beslutsfattarna.
+  ru: Любой живущий в Финляндии может участвовать в дискуссиях и писать, что он думает об обсуждаемых
+    вопросах или о лицах, принимающих решения.
+  scene_id: hb-c04-u0015
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s003.wav
+  start_seconds: 558.041667
+  end_seconds: 568.629966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s004
+  sv: Man kan också kontakta politiker direkt för att berätta om sina tankar.
+  ru: Можно также напрямую связываться с политиками, чтобы рассказать о своих мыслях.
+  scene_id: hb-c04-u0015
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s004.wav
+  start_seconds: 570.416667
+  end_seconds: 576.964694
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s005
+  sv: Människorna kan kritisera politikernas arbete utan att bli föremål för påtryckningar eller hot.
+  ru: Люди могут критиковать работу политиков, не подвергаясь давлению или угрозам.
+  scene_id: hb-c04-u0015
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s005.wav
+  start_seconds: 578.75
+  end_seconds: 587.178844
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0015-s006
+  sv: Också osakliga åsikter får framföras, men hatretorik regleras i lagstiftningen, och till exempel
+    att hota människor är olagligt.
+  ru: Можно высказывать и некорректные мнения, но язык ненависти регулируется законодательством, а, например,
+    угрожать людям незаконно.
+  scene_id: hb-c04-u0015
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0015-s006.wav
+  start_seconds: 588.958333
+  end_seconds: 599.894932
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0016-s001
+  sv: Diskussion är en viktig aspekt i en demokrati.
+  ru: Дискуссия — важный аспект демократии.
+  scene_id: hb-c04-u0016
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - Diskussion
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0016-s001.wav
+  start_seconds: 602.375
+  end_seconds: 606.763571
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0016-s002
+  sv: Politiker från olika partier diskuterar och förhandlar sinsemellan och med tjänstemän, experter,
+    medborgarorganisationer och andra aktörer i medborgarsamhället, med företag och andra instanser när
+    de fattar beslut i gemensamma frågor.
+  ru: При принятии решений по общим вопросам политики из различных партий обсуждают их и ведут переговоры
+    друг с другом и с должностными лицами, экспертами, гражданскими организациями и другими участниками
+    гражданского общества, с предприятиями и другими инстанциями.
+  scene_id: hb-c04-u0016
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0016-s002.wav
+  start_seconds: 608.541667
+  end_seconds: 627.837449
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c04-u0017-s001
+  sv: Alla människor som är intresserade av gemensamma frågor och följer vad som sker inom politiken och
+    i samhället behövs i diskussionen.
+  ru: В дискуссии нужны все люди, которые интересуются общими вопросами и следят за происходящим в политике
+    и обществе.
+  scene_id: hb-c04-u0017
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0017-s001.wav
+  start_seconds: 630.291667
+  end_seconds: 641.715884
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0017-s002
+  sv: Av väljarna får politikerna viktig information om vad som inte fungerar i samhället och hur problemen
+    skulle kunna åtgärdas.
+  ru: От избирателей политики получают важную информацию о том, что в обществе не работает и как можно
+    было бы устранить проблемы.
+  scene_id: hb-c04-u0017
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0017-s002.wav
+  start_seconds: 643.5
+  end_seconds: 654.297279
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0017-s003
+  sv: Frågor som politikerna beslutar om påverkar ofta vardagen för alla som bor i Finland.
+  ru: Вопросы, по которым политики принимают решения, часто влияют на повседневную жизнь всех живущих
+    в Финляндии.
+  scene_id: hb-c04-u0017
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-demokrati/narration/hb-c04-u0017-s003.wav
+  start_seconds: 656.083333
+  end_seconds: 663.954898
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-demokrati/sources/music-bed.flac
+  background_image: studio/media/hb-c04-demokrati/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.972619047619047
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Demokrati, förvaltning och påverkan
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Parliament House in Helsinki in Finland, 2024 December.jpg — Safa Hovinen · CC BY 2.0
+    - 'Förgrundsfoton: LPfi; Josefiina Alanen; Uhooep; jampe.'
+    - That Zen Moment — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Parliament_House_in_Helsinki_in_Finland,_2024_December.jpg
+    description: 'Kodak Gold 200
+
+      Leica M-A
+
+
+      Elmarit 28mm f2.8'
+    license: CC BY 2.0
+  music_loop_crossfade_seconds: 4

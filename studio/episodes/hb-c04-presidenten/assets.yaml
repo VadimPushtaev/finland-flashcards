@@ -1,0 +1,288 @@
+schema_version: 1
+section_id: hb-c04-presidenten
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c04-presidenten/sources/background.jpg
+    sha256: e706e25e8842bc54054bc43dc3e2dde19a14ba5eaf3faad711d44d1778f5ee8c
+    bytes: 7557377
+  source_url: https://commons.wikimedia.org/wiki/File:Presidential_Palace_by_the_Market_Square_in_Helsinki,_Finland,_2016_September.jpg
+  creator: Paradox.Photo
+  reuse_terms: CC BY 2.0; https://creativecommons.org/licenses/by/2.0
+  required_credits: 'Presidential Palace by the Market Square in Helsinki, Finland, 2016 September.jpg
+    — Paradox.Photo · CC BY 2.0. https://commons.wikimedia.org/wiki/File:Presidential_Palace_by_the_Market_Square_in_Helsinki,_Finland,_2016_September.jpg
+    License: https://creativecommons.org/licenses/by/2.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY 2.0.'
+  relevance_verification: Verified Presidential Palace exterior provides institutional context for the
+    head of state; no current politician is identified. Identity and reuse terms verified against Commons
+    API metadata and the downloaded original image.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c04-presidenten/cards/04.png
+    sha256: a891b2993caf8dc2f1dccd2b9fb2538794d748000e584aae3a977f59a2fff394
+    bytes: 10781
+    sentence_id: hb-c04-u0042-s003
+    source_substrings:
+    - 1980-talet
+  - path: studio/media/hb-c04-presidenten/cards/10.png
+    sha256: 6df6aa965de3569818fee55bd72eab9ee306a24f5dd05865444a31d725dbfb1f
+    bytes: 19058
+    sentence_id: hb-c04-u0048-s001
+    source_substrings:
+    - överbefälhavare
+    - försvarsmakt
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c04-presidenten/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c04-presidenten/sources/music.mp3
+    sha256: 6d7b3f83741bac282f4dfeaa27032f5bf87fcb28d1246b468eec88a38cf1a7c2
+    bytes: 122857035
+  - path: studio/media/hb-c04-presidenten/sources/music-bed.flac
+    sha256: ba227673079e1fd91943ed873ebaffad3c180ffc1b43b5120678cdebc4ed8060
+    bytes: 15605943
+    seconds: 114.875
+    sample_rate: 48000
+    channels: 2
+  title: Deep Relaxation
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1900045
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Deep%20Relaxation.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Deep Relaxation" Kevin MacLeod (incompetech.com). Licensed under Creative Commons:
+    By Attribution 4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c04-presidenten/prepare_assets.py
+    master_seconds: 3068.0555
+    prepared_seconds: 114.875
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000 Hz stereo PCM24 FLAC
+    pre_pcm_peak: 0.24471420049667358
+    pre_pcm_scale: 1.0
+    pre_pcm_attenuation_db: 0.0
+    pcm_rail_samples: 0
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0041-s001.wav
+    sha256: f23bbf76914013bcd752ce57a2258a808f25177aa1ca856674b6e903e5c2308a
+    bytes: 497708
+    seconds: 5.642448979591837
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0041-s001
+    peak: 0.316436767578125
+    generation_seconds: 9.537205750006251
+    tts_input: Finland är till sitt statsskick en konstitutionell republik.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0041-s002.wav
+    sha256: e003e0948927a945e63c11b70d56e012811d949055841944429bdadfc76cbb2b
+    bytes: 571436
+    seconds: 6.478367346938776
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0041-s002
+    peak: 0.31402587890625
+    generation_seconds: 14.238857070973609
+    tts_input: Finlands statsöverhuvud är republikens president, som utses genom val.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s001.wav
+    sha256: 4ee8710667cb33159e8ce3e37f643f76caba00cc43689444a361973b813418de
+    bytes: 565292
+    seconds: 6.408707482993197
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0042-s001
+    peak: 0.303192138671875
+    generation_seconds: 14.51770582597237
+    tts_input: Den största makten i Finland utövas av statsministern och riksdagen.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s002.wav
+    sha256: 85c651e8c02cca56ed08a38e2d22f41bb76b0171969e8ee73786f44c23241c1a
+    bytes: 325676
+    seconds: 3.6919727891156464
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0042-s002
+    peak: 0.35833740234375
+    generation_seconds: 8.840896817971952
+    tts_input: De har mer makt än republikens president.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s003.wav
+    sha256: a006d03c1c067939fa42e25288136dba12cdd8752697bb980a88eb1e9176e97e
+    bytes: 546860
+    seconds: 6.199727891156463
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0042-s003
+    peak: 0.29986572265625
+    generation_seconds: 15.178752604988404
+    tts_input: Presidentens makt har minskats i Finland sedan nittonhundraåttiotalet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0042-s004.wav
+    sha256: f198992569ca38dff73eb2f7483a9b1b8b96c1ae8920ef66ec5e0c7f110d65ff
+    bytes: 454700
+    seconds: 5.154829931972789
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0042-s004
+    peak: 0.32208251953125
+    generation_seconds: 14.659087806998286
+    tts_input: Finlands president är ändå landets mest synliga ledare.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0043-s001.wav
+    sha256: 3d4e91b9743e4ebfa780585c2a53eda344ee53463427614231dd30971ebb3712
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0043-s001
+    peak: 0.37518310546875
+    generation_seconds: 12.701390429981984
+    tts_input: I Finland har republikens president som uppgift att
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0044-s001.wav
+    sha256: b0e9c76383a47d5efac7a49f9ae8ab13c24d112901693c7c72246fc90c8ad3d8
+    bytes: 473132
+    seconds: 5.363809523809524
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0044-s001
+    peak: 0.31353759765625
+    generation_seconds: 11.935007078049239
+    tts_input: leda Finlands utrikespolitik i samarbete med statsrådet
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0046-s001.wav
+    sha256: 646470fd269098635ded6188c5fc2ff0a67eb7e94d577b586262f8f5ab5fda19
+    bytes: 362540
+    seconds: 4.1099319727891155
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0046-s001
+    peak: 0.402862548828125
+    generation_seconds: 8.710579156992026
+    tts_input: stadfästa de lagar som riksdagen stiftar
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0047-s001.wav
+    sha256: 3a9990a709b7a64e99d8398447be0faac5b469cfbbd995ce8556f6ae5d53e0e5
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0047-s001
+    peak: 0.275054931640625
+    generation_seconds: 16.49556107999524
+    tts_input: utnämna de högsta ämbetsmännen för deras uppgifter
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-presidenten/narration/hb-c04-u0048-s001.wav
+    sha256: ed496b93a6ae5745845345bac0ca3353c4b0ed805dedb4fec2dd51fb4e82e32d
+    bytes: 423980
+    seconds: 4.806530612244898
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0048-s001
+    peak: 0.302764892578125
+    generation_seconds: 12.297202070010826
+    tts_input: vara överbefälhavare för Finlands försvarsmakt.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  creator: Local synthesis with Supertonic 3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic 3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic 1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation, in source order; interrupted missing-clip resumes
+      or targeted retakes restart the seed. See each file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; Linux x86_64; actual intra-op thread count recorded per selected clip (legacy
+      records without this field used four)
+    format: 44100 Hz mono PCM16 WAV
+- asset_id: picture_cabinet
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+    sha256: 44f3963e031e9d441acc28cc1e76502ae08767e00759e43b25b949080560e2da
+    bytes: 13976396
+  source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg
+  creator: Josefiina Alanen
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Helsinki Government Palace from Senate Square 2021-03-03.jpg — Josefiina Alanen. CC
+    BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Government Palace in Helsinki. Illustrates the cabinet institution and
+    its preparation/implementation role, without claiming that every named ministry or agency is housed
+    in this building. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_palace
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+    sha256: 49f85206f9312cf5b63f3368d5daaa985587136c3d2d40ffc29f7f4a72a0612d
+    bytes: 2663109
+  source_url: https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg
+  creator: Paasikivi
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: The Presidential Palace, Helsinki, Finland 01.jpg — Paasikivi. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0.
+    https://commons.wikimedia.org/wiki/File:The_Presidential_Palace,_Helsinki,_Finland_01.jpg. Resized/cropped
+    for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Presidential Palace in Helsinki. Illustrates the presidential institution
+    and duties, without identifying a current officeholder or particular decision. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_parliament
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+    sha256: ded2673a048ba62f8c4132679201f772f59d156846fe697f9fadda3327a9e516
+    bytes: 449025
+  source_url: https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg
+  creator: jampe
+  reuse_terms: CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0
+  required_credits: Eduskuntatalo Töölönlahdenkatu - panoramio.jpg — jampe. CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0.
+    https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including
+    the modern annex. Represents the parliamentary institution; does not claim the pictured building is
+    the columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'

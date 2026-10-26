@@ -1,0 +1,1662 @@
+schema_version: 1
+section_id: hb-c04-valsystemet
+chapter_id: hb-c04
+title_sv: Val, valhemlighet och proportionellt valsätt
+title_ru: Выборы, тайна голосования и пропорциональная избирательная система
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-valsystemet.yaml
+example_only: false
+source_section_sha256: 60081bf39ce2a2801b8d5111a051354fc924e57746d375f87b7f7f6de4186c0c
+translation_file_sha256: d13372eee91db21a37516a8d44551dfc2e740b14fd78308046a655abef63944e
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every exact source sentence/list fragment once. Episode-specific scenes below follow
+    institutional distinctions and explain their relationships in the original source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at24fps. Chapter4 warm umber #382d24, ivory #faf3e8, secondary #dfcfbb, gold #dfb96f,
+    separator #695540. Liberation Sans Bold48/Regular40 with44/36 or40/34 only where necessary. Stable
+    right bilingual text panel, separate steady source-term cards at selected explanatory turns.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Polling station Allitie 3 Oulu 20230402.jpg by Estormiz continuously as decorative
+    background, darkened 42% and blurred 2.5px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=4.373511904761904. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Kalimba Relaxation Music by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 428.069 seconds; prepared lossless stereo bed 612.292
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Kinds of elections and their cycles
+- id: scene-2
+  description: Consultative referendums
+- id: scene-3
+  description: Who may vote
+- id: scene-4
+  description: Advance voting and election day
+- id: scene-5
+  description: Secrecy of the ballot
+- id: scene-6
+  description: Identity check, booth and ballot box
+- id: scene-7
+  description: Counting while preserving anonymity
+- id: scene-8
+  description: Preventing pressure and vote buying
+- id: scene-9
+  description: Proportional representation and constituencies
+- id: scene-10
+  description: Candidate votes and party totals
+- id: scene-11
+  description: Turnout and participation
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic photograph, selected centrally for this episode, continuous decorative
+    context with source identity recorded in assets.yaml.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Kalimba Relaxation Music — Kevin MacLeod, CC BY4.0, verified official master.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: parliament
+  kind: foreground
+  description: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: palace
+  kind: foreground
+  description: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: ballot
+  kind: foreground
+  description: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate
+    the secret voting setting; the dated visible list is not a current candidate list.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: city_hall
+  kind: foreground
+  description: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: county_map
+  kind: foreground
+  description: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: eu_parliament
+  kind: foreground
+  description: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and
+    its legislative role, not as evidence of the2024seat count.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: district_map
+  kind: foreground
+  description: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+sentences:
+- sentence_id: hb-c04-u0069-s001
+  sv: 'I Finland hålls flera olika allmänna val:'
+  ru: 'В Финляндии проводятся всеобщие выборы нескольких различных видов:'
+  scene_id: scene-1
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0069-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.429592
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0070-s001
+  sv: riksdagsval vart fjärde år
+  ru: парламентские выборы каждые четыре года
+  scene_id: scene-1
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - vart fjärde år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0070-s001.wav
+  start_seconds: 9.208333
+  end_seconds: 12.203707
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0072-s001
+  sv: välfärdsområdes- och kommunalval vart fjärde år
+  ru: выборы в советы регионов по обеспечению благополучия населения и муниципальные выборы каждые четыре
+    года
+  scene_id: scene-1
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0072-s001.wav
+  start_seconds: 13.958333
+  end_seconds: 18.764864
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0073-s001
+  sv: presidentval vart sjätte år
+  ru: президентские выборы каждые шесть лет
+  scene_id: scene-1
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights:
+  - vart sjätte år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  - Check the six-year interval in whole-video listening; the explicit cardinal interval is a synthesis-only
+    numeric expansion.
+  speech_override:
+    text: presidentval med sex års mellanrum
+    reason: 'Numeric interval clarification for synthesis under SCRIPTING.md section 5: vart sjätte år
+      and med sex års mellanrum express the identical six-year interval. Exact Swedish/Russian display
+      retained; this is not a source rewrite or user-approved wording.'
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0073-s001.wav
+  start_seconds: 20.541667
+  end_seconds: 24.09432
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0074-s001
+  sv: Europaparlamentsval vart femte år.
+  ru: выборы в Европейский парламент каждые пять лет.
+  scene_id: scene-1
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights:
+  - vart femte år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0074-s001.wav
+  start_seconds: 25.875
+  end_seconds: 29.357993
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0075-s001
+  sv: Dessutom kan det ordnas statliga, regionala eller kommunala rådgivande folkomröstningar i Finland.
+  ru: Кроме того, в Финляндии могут проводиться государственные, региональные или муниципальные консультативные
+    референдумы.
+  scene_id: scene-2
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0075-s001.wav
+  start_seconds: 31.833333
+  end_seconds: 40.540816
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0075-s002
+  sv: Rådgivande folkomröstningar ordnas sällan.
+  ru: Консультативные референдумы проводятся редко.
+  scene_id: scene-2
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0075-s002.wav
+  start_seconds: 42.291667
+  end_seconds: 46.401599
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0076-s001
+  sv: Finska medborgare som är permanent bosatta i Finland och som senast på valdagen fyller 18 år kan
+    rösta i alla val i Finland.
+  ru: Граждане Финляндии, постоянно проживающие в Финляндии и достигающие 18 лет не позднее дня выборов,
+    могут голосовать на всех выборах в Финляндии.
+  scene_id: scene-3
+  visual_cue: 'Steady exact-source concept card: 18 år'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0076-s001.wav
+  start_seconds: 48.875
+  end_seconds: 60.647517
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/cards/07.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0076-s002
+  sv: Utlandsfinländare, det vill säga finska medborgare som är permanent bosatta utomlands, har rösträtt
+    i riksdagsval och presidentval och ofta också i Europaparlamentsval.
+  ru: Зарубежные финляндцы, то есть граждане Финляндии, постоянно проживающие за границей, имеют право
+    голоса на парламентских и президентских выборах, а часто также и на выборах в Европейский парламент.
+  scene_id: scene-3
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0076-s002.wav
+  start_seconds: 62.416667
+  end_seconds: 76.975578
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0076-s003
+  sv: Utlandsfinländare har inte rösträtt i välfärdsområdes- och kommunalval.
+  ru: Зарубежные финляндцы не имеют права голоса на выборах в советы регионов по обеспечению благополучия
+    населения и на муниципальных выборах.
+  scene_id: scene-3
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0076-s003.wav
+  start_seconds: 78.75
+  end_seconds: 85.367687
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0077-s001
+  sv: Medborgare i andra länder som är permanent bosatta i Finland kan på vissa villkor rösta i välfärdsområdes-
+    och kommunalval och Europaparlamentsval.
+  ru: Граждане других стран, постоянно проживающие в Финляндии, при определённых условиях могут голосовать
+    на выборах в советы регионов по обеспечению благополучия населения, муниципальных выборах и выборах
+    в Европейский парламент.
+  scene_id: scene-3
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0077-s001.wav
+  start_seconds: 87.125
+  end_seconds: 100.360374
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0078-s001
+  sv: I val kan man rösta antingen på den egentliga valdagen eller på förhand.
+  ru: На выборах можно голосовать либо в сам день выборов, либо заранее.
+  scene_id: scene-4
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - valdagen
+  - på förhand
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0078-s001.wav
+  start_seconds: 102.833333
+  end_seconds: 109.102721
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0078-s002
+  sv: Om man röstar på förhand, kan man rösta på vilket allmänt förhandsröstningsställe som helst i Finland
+    eller utomlands.
+  ru: При досрочном голосовании можно проголосовать на любом общем участке досрочного голосования в Финляндии
+    или за границей.
+  scene_id: scene-4
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0078-s002.wav
+  start_seconds: 110.875
+  end_seconds: 121.393639
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0078-s003
+  sv: Det finns röstningsställen i många offentliga lokaler, såsom bibliotek, kommunhus och köpcentrum.
+  ru: Участки голосования находятся во многих общественных помещениях, таких как библиотеки, здания муниципальных
+    администраций и торговые центры.
+  scene_id: scene-4
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0078-s003.wav
+  start_seconds: 123.166667
+  end_seconds: 131.45619
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0078-s004
+  sv: Om en väljare befinner sig utomlands, kan hen rösta på ett allmänt förhandsröstningsställe i det
+    aktuella landet eller per brev.
+  ru: Если избиратель находится за границей, он может проголосовать на общем участке досрочного голосования
+    в соответствующей стране или по почте.
+  scene_id: scene-4
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0078-s004.wav
+  start_seconds: 133.208333
+  end_seconds: 144.144932
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0079-s001
+  sv: Om man röstar på valdagen, kan man rösta bara på det ställe som anges i meddelandet om rösträtt.
+  ru: При голосовании в день выборов можно проголосовать только в месте, указанном в уведомлении о праве
+    голоса.
+  scene_id: scene-4
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0079-s001.wav
+  start_seconds: 145.916667
+  end_seconds: 154.55449
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0079-s002
+  sv: Man kan inte rösta på valdagen om man redan röstat på förhand.
+  ru: Нельзя голосовать в день выборов, если уже проголосовал заранее.
+  scene_id: scene-4
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0079-s002.wav
+  start_seconds: 156.333333
+  end_seconds: 162.045442
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0080-s001
+  sv: Till röstningsstället ska man ha med sig ett giltigt identitetsbevis med foto, till exempel sitt
+    pass.
+  ru: На участок голосования следует взять с собой действительное удостоверение личности с фотографией,
+    например паспорт.
+  scene_id: scene-4
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0080-s001.wav
+  start_seconds: 163.833333
+  end_seconds: 172.680136
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0081-s001
+  sv: I Finland råder valhemlighet.
+  ru: В Финляндии действует тайна голосования.
+  scene_id: scene-5
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - valhemlighet
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0081-s001.wav
+  start_seconds: 175.166667
+  end_seconds: 178.092381
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0081-s002
+  sv: Det betyder att man inte behöver berätta för någon vilken kandidat man röstar på.
+  ru: Это означает, что не требуется никому рассказывать, за какого кандидата голосуешь.
+  scene_id: scene-5
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0081-s002.wav
+  start_seconds: 179.875
+  end_seconds: 186.492687
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0081-s003
+  sv: När en person går för att rösta ser ingen annan vem hen röstar på.
+  ru: Когда человек идёт голосовать, никто другой не видит, за кого он голосует.
+  scene_id: scene-5
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0081-s003.wav
+  start_seconds: 188.25
+  end_seconds: 194.101429
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0081-s004
+  sv: Om man vill kan man naturligtvis avslöja sin kandidat för andra.
+  ru: При желании можно, конечно, рассказать другим, за какого кандидата голосуешь.
+  scene_id: scene-5
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0081-s004.wav
+  start_seconds: 195.875
+  end_seconds: 201.935408
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0082-s001
+  sv: På röstningsstället kontrollerar valfunktionärerna väljarens identitetsbevis.
+  ru: На участке голосования сотрудники избирательной комиссии проверяют удостоверение личности избирателя.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0082-s001.wav
+  start_seconds: 204.416667
+  end_seconds: 211.382653
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0082-s002
+  sv: På så vis säkerställs att väljaren har rösträtt i valet i fråga och att var och en röstar bara en
+    gång.
+  ru: Таким образом обеспечивается, чтобы избиратель имел право голоса на данных выборах и каждый голосовал
+    только один раз.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0082-s002.wav
+  start_seconds: 213.166667
+  end_seconds: 222.083129
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0083-s001
+  sv: Efter det går väljaren till ett valbås, dit inga andra får komma samtidigt.
+  ru: После этого избиратель идёт в кабину для голосования, куда никто другой не может войти одновременно
+    с ним.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - valbås
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0083-s001.wav
+  start_seconds: 223.833333
+  end_seconds: 230.381361
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0083-s002
+  sv: Ingen annan ser in i valbåset.
+  ru: Никто другой не видит, что происходит внутри кабины для голосования.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0083-s002.wav
+  start_seconds: 232.166667
+  end_seconds: 235.162041
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0083-s003
+  sv: I båset skriver personen numret på sin kandidat på valsedeln.
+  ru: В кабине человек пишет номер своего кандидата на избирательном бюллетене.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0083-s003.wav
+  start_seconds: 236.916667
+  end_seconds: 242.280476
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0083-s004
+  sv: Man får inte skriva någonting annat än numret på sedeln.
+  ru: В бюллетене нельзя писать ничего, кроме номера.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0083-s004.wav
+  start_seconds: 244.041667
+  end_seconds: 249.057177
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0083-s005
+  sv: Vid behov får väljaren ta hjälp av ett valbiträde för att skriva numret.
+  ru: При необходимости избиратель может воспользоваться помощью помощника при голосовании, чтобы написать
+    номер.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0083-s005.wav
+  start_seconds: 250.833333
+  end_seconds: 257.52068
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0084-s001
+  sv: Till sist stämplar en valfunktionär valsedeln, och väljaren lägger den stämplade sedeln i en valurna.
+  ru: В завершение сотрудник избирательной комиссии ставит печать на бюллетене, а избиратель опускает
+    бюллетень с печатью в избирательную урну.
+  scene_id: scene-6
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - stämplar
+  - valurna
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0084-s001.wav
+  start_seconds: 259.291667
+  end_seconds: 268.06881
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0084-s002
+  sv: Valurnan är en stängd låda.
+  ru: Избирательная урна — это закрытый ящик.
+  scene_id: scene-6
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0084-s002.wav
+  start_seconds: 269.833333
+  end_seconds: 272.689388
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0084-s003
+  sv: På detta sätt får ingen veta vem väljaren har röstat på.
+  ru: Таким образом никто не узнаёт, за кого проголосовал избиратель.
+  scene_id: scene-6
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0084-s003.wav
+  start_seconds: 274.458333
+  end_seconds: 279.404184
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0085-s001
+  sv: När röstningstiden är slut, räknas antalet röster som kandidaterna fått på basis av valsedlarna.
+  ru: Когда время голосования заканчивается, по бюллетеням подсчитывают число голосов, полученных кандидатами.
+  scene_id: scene-7
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0085-s001.wav
+  start_seconds: 281.875
+  end_seconds: 290.791463
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0085-s002
+  sv: Endast stämplade sedlar godkänns.
+  ru: Принимаются только бюллетени с печатью.
+  scene_id: scene-7
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - stämplade sedlar
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0085-s002.wav
+  start_seconds: 292.541667
+  end_seconds: 295.81568
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0085-s003
+  sv: När förhandsrösterna räknas separeras valkuverten från följebreven innan de öppnas.
+  ru: При подсчёте досрочных голосов конверты с бюллетенями отделяют от сопроводительных писем до вскрытия.
+  scene_id: scene-7
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0085-s003.wav
+  start_seconds: 297.583333
+  end_seconds: 305.176259
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0085-s004
+  sv: På så vis vet ingen vilken valsedel som hör till vilken väljare.
+  ru: Таким образом никто не знает, какой бюллетень принадлежит какому избирателю.
+  scene_id: scene-7
+  visual_cue: Open foreground while the exact source explains ballot-box and counting procedures; no photograph
+    of these specific operations was acquired.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0085-s004.wav
+  start_seconds: 306.958333
+  end_seconds: 312.461463
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0086-s001
+  sv: Syftet med valhemligheten är att förhindra att någon köper eller säljer röster i ett val.
+  ru: Цель тайны голосования — предотвратить покупку или продажу голосов на выборах.
+  scene_id: scene-8
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0086-s001.wav
+  start_seconds: 314.916667
+  end_seconds: 322.648912
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0086-s002
+  sv: Väljare kan inte hotas till eller tvingas att rösta på en viss kandidat.
+  ru: Избирателей нельзя угрозами или принуждением заставить голосовать за определённого кандидата.
+  scene_id: scene-8
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0086-s002.wav
+  start_seconds: 324.416667
+  end_seconds: 330.825374
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s001
+  sv: I Finland tillämpas ett proportionellt valsätt vid riksdagsval, välfärdsområdes- och kommunalval
+    och Europaparlamentsval.
+  ru: В Финляндии на парламентских выборах, выборах в советы регионов по обеспечению благополучия населения,
+    муниципальных выборах и выборах в Европейский парламент применяется пропорциональная избирательная
+    система.
+  scene_id: scene-9
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - proportionellt valsätt
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s001.wav
+  start_seconds: 333.291667
+  end_seconds: 344.367585
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s002
+  sv: Det innebär att i varje valkrets blir det antal kandidater från varje parti valt som motsvarar partiets
+    andel av alla avgivna röster i valkretsen.
+  ru: Это означает, что в каждом избирательном округе от каждой партии избирается такое число кандидатов,
+    которое соответствует доле партии во всех поданных в округе голосах.
+  scene_id: scene-9
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s002.wav
+  start_seconds: 346.125
+  end_seconds: 358.872755
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s003
+  sv: Om ett parti med andra ord får 20 procent av de avgivna rösterna, får det i stort sett 20 procent
+    av platserna.
+  ru: Иными словами, если партия получает 20 процентов поданных голосов, она получает примерно 20 процентов
+    мест.
+  scene_id: scene-9
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights:
+  - 20 procent
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s003.wav
+  start_seconds: 360.625
+  end_seconds: 371.561599
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s004
+  sv: I riksdagsval är valkretsarna stora, och från varje valkrets väljs flera representanter.
+  ru: На парламентских выборах избирательные округа большие, и от каждого округа избирается несколько
+    представителей.
+  scene_id: scene-9
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s004.wav
+  start_seconds: 373.333333
+  end_seconds: 381.344218
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s005
+  sv: Vid välfärdsområdesval utgörs valkretsen av välfärdsområdet och vid kommunalval av kommunen.
+  ru: На выборах в советы регионов по обеспечению благополучия населения избирательным округом является
+    соответствующий регион, а на муниципальных выборах — муниципалитет.
+  scene_id: scene-9
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s005.wav
+  start_seconds: 383.125
+  end_seconds: 391.693163
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0087-s006
+  sv: Vid Europaparlamentsval utgör hela landet valkretsen.
+  ru: На выборах в Европейский парламент вся страна образует избирательный округ.
+  scene_id: scene-9
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0087-s006.wav
+  start_seconds: 393.458333
+  end_seconds: 398.543503
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0088-s001
+  sv: När man röstar på en kandidat för ett parti, går rösten i första hand till partiet.
+  ru: При голосовании за кандидата партии голос в первую очередь поступает партии.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0088-s001.wav
+  start_seconds: 401.0
+  end_seconds: 408.383946
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0088-s002
+  sv: Partiets alla kandidater drar nytta av den avgivna rösten, även om just den egna kandidaten inte
+    skulle bli vald.
+  ru: Все кандидаты партии получают пользу от поданного голоса, даже если именно выбранный самим избирателем
+    кандидат не будет избран.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0088-s002.wav
+  start_seconds: 410.166667
+  end_seconds: 420.058367
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0089-s001
+  sv: Utifrån väljarnas röster bestäms också vilka av partiets kandidater som sist och slutligen blir
+    valda.
+  ru: По голосам избирателей определяется также, кто из кандидатов партии в конечном итоге будет избран.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0089-s001.wav
+  start_seconds: 421.833333
+  end_seconds: 431.098095
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0089-s002
+  sv: Väljarna kan alltså påverka både vilka partier som får flest representantplatser i valet och vilka
+    av partiets kandidater som blir valda.
+  ru: Таким образом избиратели могут влиять и на то, какие партии получают больше всего представительских
+    мест на выборах, и на то, кто из кандидатов партии будет избран.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0089-s002.wav
+  start_seconds: 432.875
+  end_seconds: 444.856497
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0090-s001
+  sv: Som en följd av det proportionella valsättet har Finland ett flerpartisystem.
+  ru: В результате пропорциональной избирательной системы в Финляндии существует многопартийная система.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - flerpartisystem
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0090-s001.wav
+  start_seconds: 446.625
+  end_seconds: 453.730306
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0090-s002
+  sv: Ett parti kan få en representant också med en ganska liten andel röster.
+  ru: Партия может получить представителя даже при довольно небольшой доле голосов.
+  scene_id: scene-10
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0090-s002.wav
+  start_seconds: 455.5
+  end_seconds: 461.699728
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0091-s001
+  sv: Valdeltagandet anger hur stor del av de röstberättigade som röstat i ett val.
+  ru: Явка на выборы показывает, какая доля имеющих право голоса проголосовала на выборах.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - Valdeltagandet
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0091-s001.wav
+  start_seconds: 464.166667
+  end_seconds: 471.271973
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0091-s002
+  sv: Det är viktigt men frivilligt att rösta.
+  ru: Голосование важно, но остаётся добровольным.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0091-s002.wav
+  start_seconds: 473.041667
+  end_seconds: 476.733639
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0091-s003
+  sv: I Finland varierar valdeltagandet från val till val.
+  ru: В Финляндии явка меняется от выборов к выборам.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0091-s003.wav
+  start_seconds: 478.5
+  end_seconds: 483.37619
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0092-s001
+  sv: Det kan finnas många orsaker till att en röstberättigad inte röstar i ett val.
+  ru: Может существовать множество причин, по которым имеющий право голоса не голосует на выборах.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0092-s001.wav
+  start_seconds: 485.166667
+  end_seconds: 491.993333
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0092-s002
+  sv: Någon kanske tänker att en röst inte har någon inverkan i valet.
+  ru: Возможно, кто-то думает, что один голос не влияет на выборы.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0092-s002.wav
+  start_seconds: 493.75
+  end_seconds: 499.392449
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0092-s003
+  sv: Ibland kan ändå en röst vara avgörande.
+  ru: Однако иногда один голос может оказаться решающим.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0092-s003.wav
+  start_seconds: 501.166667
+  end_seconds: 505.067619
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0092-s004
+  sv: Om man inte röstar och säger sin åsikt om vilken av kandidaterna som borde bli vald, ställer man
+    sig frivilligt utanför det demokratiska beslutsfattandet.
+  ru: Если не голосовать и не высказывать своё мнение о том, кто из кандидатов должен быть избран, то
+    добровольно оказываешься вне демократического принятия решений.
+  scene_id: scene-11
+  visual_cue: Actual Finnish voting booth and parliamentary candidate list, 2019. Used to illustrate the
+    secret voting setting; the dated visible list is not a current candidate list.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0092-s004.wav
+  start_seconds: 506.833333
+  end_seconds: 520.277687
+  display_segments: []
+  render_image: studio/media/hb-c04-valsystemet/foreground/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0093-s001
+  sv: Forskning visar att äldre, höginkomsttagare och högutbildade röstar oftare än unga, låginkomsttagare
+    och lågutbildade.
+  ru: Исследования показывают, что пожилые люди, лица с высоким доходом и высоким уровнем образования
+    голосуют чаще, чем молодые люди, лица с низким доходом и низким уровнем образования.
+  scene_id: scene-11
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0093-s001.wav
+  start_seconds: 522.041667
+  end_seconds: 532.212007
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0093-s002
+  sv: Kvinnornas valdeltagande är i Finland aningen högre än männens.
+  ru: В Финляндии явка женщин несколько выше явки мужчин.
+  scene_id: scene-11
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0093-s002.wav
+  start_seconds: 534.0
+  end_seconds: 539.642449
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0093-s003
+  sv: Skillnaderna i valdeltagande inverkar på vems röst som hörs i det samhälleliga beslutsfattandet.
+  ru: Различия в явке влияют на то, чей голос слышен при принятии общественных решений.
+  scene_id: scene-11
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-valsystemet/narration/hb-c04-u0093-s003.wav
+  start_seconds: 541.416667
+  end_seconds: 550.05449
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-valsystemet/sources/music-bed.flac
+  background_image: studio/media/hb-c04-valsystemet/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.373511904761904
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Exakt svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Polling station Allitie 3 Oulu 20230402.jpg — Estormiz · CC0
+    - Kalimba Relaxation Music — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Finlands riksdag — jampe · CC BY-SA 3.0
+    - Republikens president — Paasikivi · CC BY-SA 4.0
+    - Valbås i Finland — LPfi · Public domain
+    - Helsingfors stadshus — kallerna · CC BY-SA 3.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Välfärdsområden i Finland — Fenn-O-maniC · CC BY-SA 4.0
+    - Europaparlamentet i Strasbourg — Diliff · CC BY-SA 3.0
+    - Finlands valkretsar — Fenn-O-maniC · CC BY-SA 4.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Polling_station_Allitie_3_Oulu_20230402.jpg
+    description: Electoral constituencies of Finland since 2021.
+    license: CC0

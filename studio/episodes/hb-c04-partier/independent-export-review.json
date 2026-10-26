@@ -1,0 +1,105 @@
+{
+  "section_id": "hb-c04-partier",
+  "old_sha256": "17e3be9f0d24c9c257fa3045507c5786dc3f54aa5fb351546ca39bf9c09463d0",
+  "new_sha256": "687137c4a875f253fe590f0b66f53a94a8657afc17f7be491b843dede13fd4c8",
+  "old_bytes": 107322901,
+  "new_bytes": 93503770,
+  "aac_packet_count": 39386,
+  "aac_packet_timeline_sha256": "e5b389193e236ef7076467f71dd88cb5199c29c38455d785a1ca4a3ab203877e",
+  "compressed_aac_packet_timeline_sha256": "e5b389193e236ef7076467f71dd88cb5199c29c38455d785a1ca4a3ab203877e",
+  "decoded_frames": 20165,
+  "duration_seconds": 840.2083333333334,
+  "mix_correlation": 0.9998215300099232,
+  "picture_fraction": 0.887935275788553,
+  "stream": {
+    "width": 1920,
+    "height": 1080,
+    "r_frame_rate": "24/1",
+    "nb_frames": "20165"
+  },
+  "audio_comparison": "All AAC payloads, packet counts, PTS and DTS identical. PyAV exposes only final packet duration normalization 784 to 768 ticks at 1/48000 (16 sample ticks / 0.333 ms of container padding metadata); decoded float32 PCM samples and sample count are exactly identical.",
+  "decoded_pcm_identity": {
+    "result": "exact decoded float32 PCM samples and sample count identical",
+    "streams": [
+      {
+        "label": "original",
+        "path": "studio/media/hb-c04-partier/render/pre-commit-original.mp4",
+        "pcm_f32le_bytes": 322641920,
+        "stereo_sample_frames": 40330240,
+        "sha256": "262a0fbbb564b2d6121afda4cdaac22a127cc1a65fad4c10b94fc51c7d2feff1"
+      },
+      {
+        "label": "compressed",
+        "path": "studio/media/hb-c04-partier/render/pre-commit-compressed.mp4",
+        "pcm_f32le_bytes": 322641920,
+        "stereo_sample_frames": 40330240,
+        "sha256": "262a0fbbb564b2d6121afda4cdaac22a127cc1a65fad4c10b94fc51c7d2feff1"
+      }
+    ],
+    "terminal_packet_duration_only": "784 to 768 ticks at 1/48000; 16 sample ticks / 0.333 ms of container padding metadata, not missing decoded audio"
+  },
+  "source_and_assets": "byte-identical to original",
+  "credits": "episode, canonical and original identical",
+  "comparisons": [
+    {
+      "frame": 0,
+      "seconds": 1.5,
+      "mean_absolute_pixel_difference": 0.9618127942085266,
+      "psnr_db": 44.8546067166954
+    },
+    {
+      "frame": 3,
+      "seconds": 30.25,
+      "mean_absolute_pixel_difference": 0.5929821133613586,
+      "psnr_db": 46.689675641370656
+    },
+    {
+      "frame": 13,
+      "seconds": 118.45833333333333,
+      "mean_absolute_pixel_difference": 0.5726125240325928,
+      "psnr_db": 47.06550196690404
+    },
+    {
+      "frame": 33,
+      "seconds": 319.3541666666667,
+      "mean_absolute_pixel_difference": 0.5433196425437927,
+      "psnr_db": 47.28093626217992
+    },
+    {
+      "frame": 84,
+      "seconds": 802.7083333333334,
+      "mean_absolute_pixel_difference": 0.37451115250587463,
+      "psnr_db": 49.32490881720394
+    },
+    {
+      "frame": 86,
+      "seconds": 832.7083333333334,
+      "mean_absolute_pixel_difference": 0.48511090874671936,
+      "psnr_db": 48.14748754002201
+    }
+  ],
+  "visual_review": "passed: independently compared six matched original/compressed frames covering title, representative photographs, longest bilingual text and detailed credits. Paverkan longest text and dense credits were additionally inspected at full resolution. No material loss of text legibility, picture quality or clipping observed.",
+  "reviewer": "/root/c04_elections",
+  "result": "passed",
+  "limitations": "No whole-video auditory or physical-device acceptance claimed; source, asset and credit bytes are unchanged, and current full decode/mix/coverage/listening hashes were checked.",
+  "native_packet_differences": [
+    {
+      "index": 39385,
+      "original": [
+        40329216,
+        40329216,
+        784,
+        "1/48000"
+      ],
+      "compressed": [
+        40329216,
+        40329216,
+        768,
+        "1/48000"
+      ]
+    }
+  ],
+  "packet_reader_note": "System ffprobe normalizes the original terminal duration too, so its equal canonical packet hashes above do not imply identical raw final-duration metadata; the explicit PyAV comparison records the difference.",
+  "export_sha256": "687137c4a875f253fe590f0b66f53a94a8657afc17f7be491b843dede13fd4c8",
+  "old_export_status": "Superseded original distribution export; retained only as the explicit comparison baseline."
+}

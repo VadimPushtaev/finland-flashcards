@@ -1,0 +1,1711 @@
+schema_version: 1
+section_id: hb-c04-rostratt
+chapter_id: hb-c04
+title_sv: Rösträtt och valbarhet
+title_ru: Право голоса и право быть избранным
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-rostratt.yaml
+example_only: false
+source_section_sha256: 3f6a753aea762bc9877b8d56b9a97480012b299e0bb368750424f0e84514c46a
+translation_file_sha256: 5d1f9b3d7a2a83a7e3c2f7bdb5a882ca65fce40759da5b9e6bb7fdd8a3775fe4
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every exact source sentence/list fragment once. Episode-specific scenes below follow
+    institutional distinctions and explain their relationships in the original source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at24fps. Chapter4 warm umber #382d24, ivory #faf3e8, secondary #dfcfbb, gold #dfb96f,
+    separator #695540. Liberation Sans Bold48/Regular40 with44/36 or40/34 only where necessary. Stable
+    right bilingual text panel, separate steady source-term cards at selected explanatory turns.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Eduskuntavaalit 1945.jpg by Photographer unknown; Yle Archives continuously as decorative
+    background, darkened 42% and blurred 2.5px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=4.4660714285714285. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Elf Meditation by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 3534.054 seconds; prepared lossless stereo bed 625.250 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Sparse exact-source date and concept cards at selected factual turning points. Background
+    remains visible otherwise. These typography cards do not imply historical event imagery; suppress
+    redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+- id: historical_background
+  decision: The background photograph records the 1945 election. It is historical context for voting,
+    not a depiction of current eligibility or current election arrangements; date and archive appear in
+    credits.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Municipal voting eligibility and residence deadline
+- id: scene-2
+  description: County voting eligibility
+- id: scene-3
+  description: Parliamentary voting and candidacy
+- id: scene-4
+  description: Parliamentary constituencies
+- id: scene-5
+  description: County candidates
+- id: scene-6
+  description: Local councils and simultaneous elections
+- id: scene-7
+  description: Municipal candidates
+- id: scene-8
+  description: Presidential terms and two rounds
+- id: scene-9
+  description: Presidential voters and candidates
+- id: scene-10
+  description: European Parliament seats
+- id: scene-11
+  description: European voting and registration
+- id: scene-12
+  description: European candidates and national constituency
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic photograph, selected centrally for this episode, continuous decorative
+    context with source identity recorded in assets.yaml.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Elf Meditation — Kevin MacLeod, CC BY4.0, verified official master.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: parliament
+  kind: foreground
+  description: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: palace
+  kind: foreground
+  description: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: city_hall
+  kind: foreground
+  description: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: county_map
+  kind: foreground
+  description: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: eu_parliament
+  kind: foreground
+  description: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and
+    its legislative role, not as evidence of the2024seat count.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+- id: district_map
+  kind: foreground
+  description: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  fallback: Leave the passage open if the verified source cannot be restored; keep full bilingual text.
+sentences:
+- sentence_id: hb-c04-u0094-s001
+  sv: Du kan rösta i kommunalval om du fyller 18 år senast på valdagen.
+  ru: Вы можете голосовать на муниципальных выборах, если вам исполняется 18 лет не позднее дня выборов.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0094-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.728367
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0094-s002
+  sv: 'Dessutom krävs att du fyller ett av följande villkor:'
+  ru: 'Кроме того, требуется, чтобы вы соответствовали одному из следующих условий:'
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0094-s002.wav
+  start_seconds: 11.5
+  end_seconds: 16.79415
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0095-s001
+  sv: Du är medborgare i Finland, ett annat EU-land, Island eller Norge och har en hemkommun i Finland.
+  ru: Вы являетесь гражданином Финляндии, другой страны ЕС, Исландии или Норвегии и имеете муниципалитет
+    проживания в Финляндии.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - Finland
+  - Island
+  - Norge
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0095-s001.wav
+  start_seconds: 18.583333
+  end_seconds: 27.290816
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0097-s001
+  sv: Du är medborgare i ett annat land och din hemkommun har varit i Finland i minst två år.
+  ru: Вы являетесь гражданином другой страны, и ваш муниципалитет проживания находится в Финляндии не
+    менее двух лет.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - minst två år
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0097-s001.wav
+  start_seconds: 29.041667
+  end_seconds: 36.425612
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0098-s001
+  sv: I kommunalval har du rösträtt i den kommun som är registrerad som din hemkommun i befolkningsdatasystemet
+    i Finland den 51:a dagen före valdagen.
+  ru: На муниципальных выборах вы имеете право голоса в том муниципалитете, который зарегистрирован как
+    ваш муниципалитет проживания в информационной системе населения Финляндии за 51 день до дня выборов.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - 51:a dagen
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override:
+    text: I kommunalval har du rösträtt i den kommun som är registrerad som din hemkommun i befolkningsdatasystemet
+      i Finland den femtioförsta dagen före valdagen.
+    reason: Spell the source ordinal for Swedish speech; exact bilingual display retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0098-s001.wav
+  start_seconds: 38.208333
+  end_seconds: 51.374048
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0098-s002
+  sv: Om din hemkommun ändras efter detta förblir din rösträtt i den kommun som var din hemkommun 51 dagar
+    före valet.
+  ru: Если после этого ваш муниципалитет проживания изменится, ваше право голоса останется в том муниципалитете,
+    который был вашим муниципалитетом проживания за 51 день до выборов.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0098-s002.wav
+  start_seconds: 53.125
+  end_seconds: 64.131259
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0098-s003
+  sv: Du kan endast rösta på en kandidat från denna kommun.
+  ru: Вы можете голосовать только за кандидата из этого муниципалитета.
+  scene_id: scene-1
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0098-s003.wav
+  start_seconds: 65.916667
+  end_seconds: 70.583878
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0099-s001
+  sv: Du kan rösta i välfärdsområdesval om du fyller 18 år senast på valdagen.
+  ru: Вы можете голосовать на выборах в советы регионов по обеспечению благополучия населения (välfärdsområdesval),
+    если вам исполняется 18 лет не позднее дня выборов.
+  scene_id: scene-2
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0099-s001.wav
+  start_seconds: 73.041667
+  end_seconds: 80.286293
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0099-s002
+  sv: 'Dessutom krävs att du fyller ett av följande villkor:'
+  ru: 'Кроме того, требуется, чтобы вы соответствовали одному из следующих условий:'
+  scene_id: scene-2
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0099-s002.wav
+  start_seconds: 82.041667
+  end_seconds: 87.335816
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0100-s001
+  sv: Du är medborgare i Finland, ett annat EU-land, Island eller Norge och har en hemkommun i Finland.
+  ru: Вы являетесь гражданином Финляндии, другой страны ЕС, Исландии или Норвегии и имеете муниципалитет
+    проживания в Финляндии.
+  scene_id: scene-2
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0100-s001.wav
+  start_seconds: 89.125
+  end_seconds: 97.832483
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0102-s001
+  sv: Du är medborgare i ett annat land och din hemkommun har varit i Finland i minst två år.
+  ru: Вы являетесь гражданином другой страны, и ваш муниципалитет проживания находится в Финляндии не
+    менее двух лет.
+  scene_id: scene-2
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0102-s001.wav
+  start_seconds: 99.583333
+  end_seconds: 106.967279
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0103-s001
+  sv: Du har rösträtt i det välfärdsområde i vilket din hemkommun ingår.
+  ru: Вы имеете право голоса в том регионе по обеспечению благополучия населения, в состав которого входит
+    ваш муниципалитет проживания.
+  scene_id: scene-2
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0103-s001.wav
+  start_seconds: 108.75
+  end_seconds: 114.601429
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0104-s001
+  sv: Du kan rösta i riksdagsval om du är finsk medborgare och fyller 18 år senast på valdagen.
+  ru: Вы можете голосовать на парламентских выборах, если являетесь гражданином Финляндии и вам исполняется
+    18 лет не позднее дня выборов.
+  scene_id: scene-3
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - finsk medborgare
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0104-s001.wav
+  start_seconds: 117.083333
+  end_seconds: 125.651497
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0104-s002
+  sv: Även utomlands bosatta finska medborgare har rösträtt.
+  ru: Граждане Финляндии, проживающие за границей, также имеют право голоса.
+  scene_id: scene-3
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0104-s002.wav
+  start_seconds: 127.416667
+  end_seconds: 132.432177
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0105-s001
+  sv: I riksdagsval måste en kandidat också vara en myndig finsk medborgare.
+  ru: На парламентских выборах кандидат также должен быть совершеннолетним гражданином Финляндии.
+  scene_id: scene-3
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0105-s001.wav
+  start_seconds: 134.208333
+  end_seconds: 140.477721
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0105-s002
+  sv: I allmänhet hör kandidaterna till politiska partier.
+  ru: Обычно кандидаты принадлежат к политическим партиям.
+  scene_id: scene-3
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0105-s002.wav
+  start_seconds: 142.25
+  end_seconds: 147.12619
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0105-s003
+  sv: Det finns inga begränsningar för hur många gånger samma kandidat kan bli vald till riksdagen i på
+    varandra följande val.
+  ru: Нет ограничений на то, сколько раз один и тот же кандидат может быть избран в парламент на последовательных
+    выборах.
+  scene_id: scene-3
+  visual_cue: Parliament complex viewed from Töölönlahdenkatu in Helsinki illustrates the national legislature;
+    building photograph does not assert the composition or outcome of an election.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0105-s003.wav
+  start_seconds: 148.916667
+  end_seconds: 158.878027
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0106-s001
+  sv: Vid riksdagsval är Finland indelat i 13 valkretsar.
+  ru: Для парламентских выборов Финляндия разделена на 13 избирательных округов.
+  scene_id: scene-4
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights:
+  - 13 valkretsar
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0106-s001.wav
+  start_seconds: 161.333333
+  end_seconds: 167.184762
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0106-s002
+  sv: När en person röstar i ett riksdagsval, kan hen rösta endast på kandidater i sin egen valkrets.
+  ru: Голосуя на парламентских выборах, человек может голосовать только за кандидатов своего избирательного
+    округа.
+  scene_id: scene-4
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0106-s002.wav
+  start_seconds: 168.958333
+  end_seconds: 177.456837
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0106-s003
+  sv: Till exempel invånarna i Jyväskylä röstar på en kandidat i Mellersta Finlands valkrets.
+  ru: Например, жители Ювяскюля голосуют за кандидата в избирательном округе Центральной Финляндии.
+  scene_id: scene-4
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0106-s003.wav
+  start_seconds: 179.208333
+  end_seconds: 187.358537
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0106-s004
+  sv: Med detta arrangemang vill man säkerställa att representanter från olika håll i landet väljs in
+    i riksdagen.
+  ru: Такая организация призвана обеспечить избрание в парламент представителей из разных частей страны.
+  scene_id: scene-4
+  visual_cue: Map of parliamentary electoral constituencies from 2021, retained for source passages about
+    the 13 districts; does not show wellbeing counties or election results. Transparent source composited
+    onto a pale neutral field; all original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - district_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0106-s004.wav
+  start_seconds: 189.125
+  end_seconds: 198.598741
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/district_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0107-s001
+  sv: Man kan ställa upp som kandidat om man har rösträtt i välfärdsområdesvalet.
+  ru: Можно выдвинуть свою кандидатуру, если имеешь право голоса на региональных выборах.
+  scene_id: scene-5
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0107-s001.wav
+  start_seconds: 201.083333
+  end_seconds: 208.188639
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0107-s002
+  sv: Personer som arbetar med vissa ledningsuppgifter inom välfärdsområdet kan ändå inte kandidera.
+  ru: Однако лица, выполняющие определённые руководящие задачи в регионе, не могут выдвигать свою кандидатуру.
+  scene_id: scene-5
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0107-s002.wav
+  start_seconds: 209.958333
+  end_seconds: 218.108537
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0107-s003
+  sv: Kandidaterna hör vanligtvis till något politiskt parti, men det finns också obundna kandidater.
+  ru: Кандидаты обычно принадлежат к какой-либо политической партии, но существуют также независимые кандидаты.
+  scene_id: scene-5
+  visual_cue: Map of Finland wellbeing services counties used for the source division into 21 counties;
+    includes separate Helsinki and Åland areas. Verify visual boundaries and legend before use. The numbered
+    map legend identifies 1–21 as wellbeing counties, 22 as Helsinki and 23 as Åland; the latter two are
+    separate systems, not additional counties. Transparent background is composited onto a neutral field
+    without changing any borders or labels. Transparent source composited onto a pale neutral field; all
+    original borders and labels preserved.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0107-s003.wav
+  start_seconds: 219.875
+  end_seconds: 228.303844
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0108-s001
+  sv: I kommunfullmäktige beslutar man om kommunala frågor.
+  ru: Муниципальный совет (kommunfullmäktige) принимает решения по муниципальным вопросам.
+  scene_id: scene-6
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0108-s001.wav
+  start_seconds: 230.791667
+  end_seconds: 235.737517
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0108-s002
+  sv: Ledamöterna i kommunfullmäktige väljs i ett kommunalval.
+  ru: Члены муниципального совета избираются на муниципальных выборах.
+  scene_id: scene-6
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0108-s002.wav
+  start_seconds: 237.5
+  end_seconds: 242.72449
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0108-s003
+  sv: Fullmäktiges storlek beror på antalet invånare i kommunen.
+  ru: Размер совета зависит от числа жителей муниципалитета.
+  scene_id: scene-6
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0108-s003.wav
+  start_seconds: 244.5
+  end_seconds: 249.86381
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0108-s004
+  sv: Om kommunen har många invånare, finns det fler ledamöter i kommunfullmäktige.
+  ru: Если в муниципалитете много жителей, в муниципальном совете больше членов.
+  scene_id: scene-6
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0108-s004.wav
+  start_seconds: 251.625
+  end_seconds: 258.451667
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0109-s001
+  sv: Kommunalvalet hålls samtidigt som välfärdsområdesvalet.
+  ru: Муниципальные выборы проводятся одновременно с региональными выборами.
+  scene_id: scene-6
+  visual_cue: Actual Helsinki City Hall illustrates municipal councils, local self-government and the
+    named Helsinki exception; it is not a wellbeing-county council.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - samtidigt
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0109-s001.wav
+  start_seconds: 260.208333
+  end_seconds: 265.502483
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0109-s002
+  sv: I båda valen kan en röstberättigad alltså rösta på två olika kandidater samtidigt, en i välfärdsområdesvalet
+    och en i kommunalvalet.
+  ru: Таким образом имеющий право голоса может на этих двух выборах одновременно проголосовать за двух
+    разных кандидатов, одного на региональных выборах и одного на муниципальных.
+  scene_id: scene-6
+  visual_cue: Open foreground during specific combined-election and municipal candidacy rules; retain
+    complete bilingual source.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0109-s002.wav
+  start_seconds: 267.291667
+  end_seconds: 278.994524
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0109-s003
+  sv: Om samma kandidat ställer upp i båda valen, kan väljaren välja att rösta på samma kandidat i båda
+    valen.
+  ru: Если один и тот же кандидат выдвигается на обоих выборах, избиратель может решить голосовать за
+    этого кандидата на обоих выборах.
+  scene_id: scene-6
+  visual_cue: Open foreground during specific combined-election and municipal candidacy rules; retain
+    complete bilingual source.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0109-s003.wav
+  start_seconds: 280.75
+  end_seconds: 290.154082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0110-s001
+  sv: Man kan kandidera i kommunalvalet om man är invånare i en kommun och har rösträtt i kommunalvalet.
+  ru: Можно выдвигать свою кандидатуру на муниципальных выборах, если являешься жителем муниципалитета
+    и имеешь право голоса на муниципальных выборах.
+  scene_id: scene-7
+  visual_cue: Open foreground during specific combined-election and municipal candidacy rules; retain
+    complete bilingual source.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0110-s001.wav
+  start_seconds: 292.625
+  end_seconds: 301.541463
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0110-s002
+  sv: Man behöver alltså inte vara finsk medborgare.
+  ru: Таким образом гражданство Финляндии не требуется.
+  scene_id: scene-7
+  visual_cue: Open foreground during specific combined-election and municipal candidacy rules; retain
+    complete bilingual source.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0110-s002.wav
+  start_seconds: 303.291667
+  end_seconds: 307.610578
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0111-s001
+  sv: Presidenten väljs i presidentval.
+  ru: Президент избирается на президентских выборах.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0111-s001.wav
+  start_seconds: 310.083333
+  end_seconds: 313.427007
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0111-s002
+  sv: Presidentval förrättas vart sjätte år.
+  ru: Президентские выборы проводятся каждые шесть лет.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0111-s002.wav
+  start_seconds: 315.208333
+  end_seconds: 319.178946
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0111-s003
+  sv: Samma person kan väljas till president för högst två mandatperioder i följd.
+  ru: Один и тот же человек может быть избран президентом не более чем на два срока полномочий подряд.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights:
+  - två mandatperioder
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0111-s003.wav
+  start_seconds: 320.958333
+  end_seconds: 327.785
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0112-s001
+  sv: Presidentvalet har vanligen två steg.
+  ru: Президентские выборы обычно проходят в два этапа.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0112-s001.wav
+  start_seconds: 329.541667
+  end_seconds: 333.02466
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0112-s002
+  sv: Om ingen av kandidaterna får mer än hälften av de givna rösterna vid första valomgången, förrättas
+    en andra valomgång.
+  ru: Если ни один из кандидатов не получает больше половины поданных голосов в первом туре, проводится
+    второй тур.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights:
+  - andra valomgång
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0112-s002.wav
+  start_seconds: 334.791667
+  end_seconds: 345.379966
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0112-s003
+  sv: I den andra valomgången kandiderar de två kandidater som fick flest röster vid första valomgången.
+  ru: Во втором туре участвуют два кандидата, получившие больше всего голосов в первом туре.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0112-s003.wav
+  start_seconds: 347.166667
+  end_seconds: 355.66517
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0112-s004
+  sv: Den person som får flest röster vid andra valomgången väljs till president.
+  ru: Президентом избирается человек, получивший больше всего голосов во втором туре.
+  scene_id: scene-8
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0112-s004.wav
+  start_seconds: 357.416667
+  end_seconds: 364.034354
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0113-s001
+  sv: Du kan rösta i presidentval om du är finsk medborgare och fyller 18 år senast på valdagen.
+  ru: Вы можете голосовать на президентских выборах, если являетесь гражданином Финляндии и вам исполняется
+    18 лет не позднее дня выборов.
+  scene_id: scene-9
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0113-s001.wav
+  start_seconds: 366.5
+  end_seconds: 375.068163
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0113-s002
+  sv: Även utomlands bosatta finska medborgare har rösträtt.
+  ru: Граждане Финляндии, проживающие за границей, также имеют право голоса.
+  scene_id: scene-9
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0113-s002.wav
+  start_seconds: 376.833333
+  end_seconds: 381.848844
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0114-s001
+  sv: Republikens president ska vara infödd finsk medborgare.
+  ru: Президент республики должен быть гражданином Финляндии по рождению.
+  scene_id: scene-9
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights:
+  - infödd finsk medborgare
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0114-s001.wav
+  start_seconds: 383.625
+  end_seconds: 388.71017
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0114-s002
+  sv: Kandidaterna nomineras oftast av olika partier, men ibland finns det också kandidater som nomineras
+    av valmansföreningar utanför partierna.
+  ru: Кандидатов чаще всего выдвигают различные партии, но иногда бывают также кандидаты, которых выдвигают
+    внепартийные объединения избирателей.
+  scene_id: scene-9
+  visual_cue: Presidential Palace in Helsinki illustrates the office of president; no portrait or claim
+    about the current incumbent.
+  asset_ids:
+  - episode_background
+  - palace
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0114-s002.wav
+  start_seconds: 390.5
+  end_seconds: 403.247755
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s001
+  sv: EU-parlamentet är Europeiska unionens representativa organ.
+  ru: Парламент ЕС — представительный орган Европейского союза.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s001.wav
+  start_seconds: 405.708333
+  end_seconds: 411.559762
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s002
+  sv: Ledamöterna i EU-parlamentet är representanter som utsetts genom val i medlemsländerna.
+  ru: Члены парламента ЕС — представители, избранные на выборах в странах-членах.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s002.wav
+  start_seconds: 413.333333
+  end_seconds: 421.413878
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s003
+  sv: Finland väljer egna representanter till EU-parlamentet i Europaparlamentsvalet.
+  ru: Финляндия выбирает собственных представителей в парламент ЕС на выборах в Европейский парламент.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s003.wav
+  start_seconds: 423.166667
+  end_seconds: 430.898912
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s004
+  sv: Sammanlagt väljs 720 ledamöter från alla EU-länder till Europaparlamentet.
+  ru: Всего от всех стран ЕС в Европейский парламент избираются 720 членов.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights:
+  - 720 ledamöter
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s004.wav
+  start_seconds: 432.666667
+  end_seconds: 440.95619
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s005
+  sv: Antalet ledamöter som väljs i Finland varierar.
+  ru: Число членов, избираемых в Финляндии, меняется.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s005.wav
+  start_seconds: 442.708333
+  end_seconds: 447.236224
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0115-s006
+  sv: I valet år 2024 valdes 15 ledamöter från Finland.
+  ru: На выборах 2024 года от Финляндии были избраны 15 членов.
+  scene_id: scene-10
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights:
+  - '2024'
+  - 15 ledamöter
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0115-s006.wav
+  start_seconds: 449.0
+  end_seconds: 455.130068
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0116-s001
+  sv: 'Du kan rösta i Europaparlamentsvalet om du uppfyller något av följande villkor:'
+  ru: 'Вы можете голосовать на выборах в Европейский парламент, если соответствуете одному из следующих
+    условий:'
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0116-s001.wav
+  start_seconds: 457.583333
+  end_seconds: 465.176259
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0117-s001
+  sv: Du är finsk medborgare och fyller 18 år senast på valdagen.
+  ru: Вы являетесь гражданином Финляндии, и вам исполняется 18 лет не позднее дня выборов.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0117-s001.wav
+  start_seconds: 466.958333
+  end_seconds: 472.670442
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0119-s001
+  sv: Du är medborgare i ett annat EU-land och fyller 18 år senast på valdagen.
+  ru: Вы являетесь гражданином другой страны ЕС, и вам исполняется 18 лет не позднее дня выборов.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0119-s001.wav
+  start_seconds: 474.458333
+  end_seconds: 481.702959
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0119-s002
+  sv: Dessutom ska du ha hemkommun i Finland den 51:a dagen före valdagen.
+  ru: Кроме того, за 51 день до дня выборов у вас должен быть муниципалитет проживания в Финляндии.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override:
+    text: Dessutom ska du ha hemkommun i Finland den femtioförsta dagen före valdagen.
+    reason: Spell the source ordinal for Swedish speech; exact bilingual display retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0119-s002.wav
+  start_seconds: 483.458333
+  end_seconds: 490.07602
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0119-s003
+  sv: Du måste också anmäla dig till rösträttsregistret i Finland.
+  ru: Вы также должны зарегистрироваться в реестре избирателей в Финляндии.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0119-s003.wav
+  start_seconds: 491.833333
+  end_seconds: 497.406122
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0119-s004
+  sv: Anmälningen ska göras till Myndigheten för digitalisering och befolkningsdata senast den 80:e dagen
+    före valdagen.
+  ru: Заявление необходимо подать в Агентство цифровой информации и учёта населения (Myndigheten för digitalisering
+    och befolkningsdata) не позднее чем за 80 дней до дня выборов.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights:
+  - 80:e dagen
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override:
+    text: Anmälningen ska göras till Myndigheten för digitalisering och befolkningsdata senast den åttionde
+      dagen före valdagen.
+    reason: Spell the source ordinal for Swedish speech; exact bilingual display retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0119-s004.wav
+  start_seconds: 499.166667
+  end_seconds: 509.128027
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0120-s001
+  sv: I samma val kan du rösta i endast ett EU-land.
+  ru: На одних и тех же выборах вы можете голосовать только в одной стране ЕС.
+  scene_id: scene-11
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights:
+  - endast ett EU-land
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0120-s001.wav
+  start_seconds: 510.916667
+  end_seconds: 515.583878
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0121-s001
+  sv: Kandidaterna i Europaparlamentsvalet representerar olika partier, på samma sätt som i riksdagsvalet.
+  ru: Кандидаты на выборах в Европейский парламент представляют различные партии, как и на парламентских
+    выборах.
+  scene_id: scene-12
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0121-s001.wav
+  start_seconds: 518.041667
+  end_seconds: 527.585068
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0121-s002
+  sv: Hela Finland är en och samma valkrets, det vill säga man kan rösta på samma kandidater överallt
+    i Finland.
+  ru: Вся Финляндия является одним и тем же избирательным округом, то есть повсюду в Финляндии можно голосовать
+    за одних и тех же кандидатов.
+  scene_id: scene-12
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0121-s002.wav
+  start_seconds: 529.375
+  end_seconds: 538.848741
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0121-s003
+  sv: Man kan ställa upp som kandidat om man är finsk medborgare eller medborgare i ett annat EU-land,
+    det vill säga om man har rösträtt i Europaparlamentsvalet.
+  ru: Можно выдвинуть свою кандидатуру, если являешься гражданином Финляндии или другой страны ЕС, то
+    есть если имеешь право голоса на выборах в Европейский парламент.
+  scene_id: scene-12
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0121-s003.wav
+  start_seconds: 540.625
+  end_seconds: 554.626633
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0121-s004
+  sv: Kandidaterna nomineras av ett politiskt parti eller en valmansförening.
+  ru: Кандидаты выдвигаются политической партией или объединением избирателей.
+  scene_id: scene-12
+  visual_cue: Actual Strasbourg plenary chamber photographed in2014, used to identify Parliament and its
+    legislative role, not as evidence of the2024seat count.
+  asset_ids:
+  - episode_background
+  - eu_parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-rostratt/narration/hb-c04-u0121-s004.wav
+  start_seconds: 556.416667
+  end_seconds: 563.034354
+  display_segments: []
+  render_image: studio/media/hb-c04-rostratt/foreground/eu_parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-rostratt/sources/music-bed.flac
+  background_image: studio/media/hb-c04-rostratt/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.4660714285714285
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Exakt svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Eduskuntavaalit 1945.jpg — Photographer unknown; Yle Archives · Public domain
+    - Elf Meditation — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Finlands riksdag — jampe · CC BY-SA 3.0
+    - Republikens president — Paasikivi · CC BY-SA 4.0
+    - Helsingfors stadshus — kallerna · CC BY-SA 3.0
+    - Välfärdsområden i Finland — Fenn-O-maniC · CC BY-SA 4.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Europaparlamentet i Strasbourg — Diliff · CC BY-SA 3.0
+    - Finlands valkretsar — Fenn-O-maniC · CC BY-SA 4.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Eduskuntavaalit_1945.jpg
+    description: Electoral constituencies of Finland since 2021.
+    license: Public domain

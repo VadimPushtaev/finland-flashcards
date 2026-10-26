@@ -1,0 +1,2272 @@
+schema_version: 1
+section_id: hb-c04-medier
+chapter_id: hb-c04
+title_sv: Medier, pressfrihet och publicistiskt ansvar
+title_ru: СМИ, свобода прессы и ответственность за публикации
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-medier.yaml
+example_only: false
+source_section_sha256: bdd5cedd07a249285e94fc83f3cd5ee54623327149c38647c77b169d26e50326
+translation_file_sha256: 73bee5b92dd328b2efaaf37aa5bc74a99c72055bd254c539e65d864604ec3ae2
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber panel #382d24, ivory #faf3e8, secondary #dfcfbb,
+    gold #dfb96f, separator #695540. Liberation Sans Bold 48 and Regular 40; stable right bilingual panel
+    and occasional exact-source graphics at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Sanomatalo - Helsinki - 13.9.2013.jpg by Sektori continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=6.033035714285714. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Sapphire Isle by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 131.531 seconds; prepared lossless stereo bed 844.625 seconds.
+    Repeat count 6, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use sparse exact-source concept cards at the topic transitions identified in the sentence
+    plan. They emphasize the chapter’s institutional or civic vocabulary without suggesting a depicted
+    historical event. Keep background open elsewhere and omit redundant captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two readable15second credit cards over continuing photo. Full source and media attribution
+    travels beside final MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 3 relevant registered foreground pictures over 45 of 81 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: scene-1
+  description: Expression, information and scrutiny
+- id: scene-2
+  description: Editorial selection and social media
+- id: scene-3
+  description: Press freedom and self-censorship
+- id: scene-4
+  description: Privacy, responsibility and online law
+- id: scene-5
+  description: Journalist rules and the media council
+- id: scene-6
+  description: 'Yle: funding, services and public mission'
+- id: scene-7
+  description: Editorial independence
+- id: scene-8
+  description: Newspapers, online reading and ownership
+- id: scene-9
+  description: Media as the fourth estate
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_newspaper
+  kind: foreground
+  description: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+- id: picture_newsroom
+  kind: foreground
+  description: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+- id: picture_yle_tower
+  kind: foreground
+  description: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+  fallback: Leave affected passages open if the source cannot be restored/verified; document coverage
+    instead of unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0209-s001
+  sv: I Finland ger grundlagen människor yttrandefrihet.
+  ru: В Финляндии конституция предоставляет людям свободу выражения мнений.
+  scene_id: scene-1
+  visual_cue: 'Exact-source concept card: yttrandefrihet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - yttrandefrihet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0209-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.777891
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0209-s002
+  sv: Dessutom har människorna rätt att själva bestämma vad de tycker i olika frågor, det vill säga de
+    har åsiktsfrihet.
+  ru: Кроме того, люди вправе сами решать, что они думают по различным вопросам, то есть они обладают
+    свободой мнений.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0209-s002.wav
+  start_seconds: 9.541667
+  end_seconds: 19.503027
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0209-s003
+  sv: Alla människor har denna frihet och också medierna, det vill säga tv, radio, tidningar, internettjänster
+    och andra massmedier.
+  ru: Этой свободой обладают все люди, а также СМИ, то есть телевидение, радио, газеты, интернет-сервисы
+    и другие средства массовой информации.
+  scene_id: scene-1
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0209-s003.wav
+  start_seconds: 21.291667
+  end_seconds: 31.949626
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s001
+  sv: Medierna är en viktig del av demokratin.
+  ru: СМИ — важная часть демократии.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights:
+  - demokratin
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s001.wav
+  start_seconds: 33.708333
+  end_seconds: 37.609286
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s002
+  sv: De förväntas ge människor tillförlitlig information om samhället.
+  ru: От них ожидают предоставления людям достоверной информации об обществе.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s002.wav
+  start_seconds: 39.375
+  end_seconds: 45.365748
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s003
+  sv: Med hjälp av medierna får människor information om samhälleliga beslut och diskussioner.
+  ru: С помощью СМИ люди получают информацию об общественных решениях и дискуссиях.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s003.wav
+  start_seconds: 47.125
+  end_seconds: 55.205544
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s004
+  sv: De lyfter fram problem och missbruk i beslutsfattandet och förvaltningen.
+  ru: Они выдвигают на первый план проблемы и злоупотребления в принятии решений и управлении.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s004.wav
+  start_seconds: 56.958333
+  end_seconds: 63.227721
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s005
+  sv: Dessutom följer och kritiserar medierna vad politikerna och andra makthavare gör och säger.
+  ru: Кроме того, СМИ следят за тем, что политики и другие обладатели власти делают и говорят, и критикуют
+    их.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s005.wav
+  start_seconds: 65.0
+  end_seconds: 73.080544
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0210-s006
+  sv: I Finland får journalister fritt kritisera politikernas beslut och uttalanden.
+  ru: В Финляндии журналисты могут свободно критиковать решения и высказывания политиков.
+  scene_id: scene-1
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0210-s006.wav
+  start_seconds: 74.833333
+  end_seconds: 81.938639
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0211-s001
+  sv: Medierna har mycket makt när de väljer vilka frågor de ger publicitet och på vilket sätt de behandlar
+    dem.
+  ru: СМИ обладают большой властью, выбирая, какие вопросы освещать публично и как их рассматривать.
+  scene_id: scene-2
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0211-s001.wav
+  start_seconds: 84.416667
+  end_seconds: 93.05449
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0211-s002
+  sv: På det sättet påverkar de människors åsikter och uppfattningen om hurdana frågor som är värda att
+    ta upp i samhällsdebatten.
+  ru: Тем самым они влияют на мнения людей и представление о том, какие вопросы заслуживают обсуждения
+    в общественной дискуссии.
+  scene_id: scene-2
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0211-s002.wav
+  start_seconds: 94.833333
+  end_seconds: 105.560952
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0212-s001
+  sv: I dag har de traditionella mediernas makt att välja vilka frågor som tas upp till offentlig debatt
+    ändå minskat.
+  ru: Однако сегодня власть традиционных СМИ выбирать, какие вопросы выносить на публичное обсуждение,
+    уменьшилась.
+  scene_id: scene-2
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0212-s001.wav
+  start_seconds: 107.333333
+  end_seconds: 116.807075
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0212-s002
+  sv: Med traditionella medier avses till exempel tidningar och tv-kanaler.
+  ru: Под традиционными СМИ подразумеваются, например, газеты и телеканалы.
+  scene_id: scene-2
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0212-s002.wav
+  start_seconds: 118.583333
+  end_seconds: 124.852721
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0212-s003
+  sv: I dessa väljer redaktionen och huvudredaktören vad de rapporterar om och på vilket sätt.
+  ru: В них редакция и главный редактор выбирают, о чём и каким образом сообщать.
+  scene_id: scene-2
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0212-s003.wav
+  start_seconds: 126.625
+  end_seconds: 134.496565
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0212-s004
+  sv: Vid sidan av traditionella medier har de sociala medierna seglat upp.
+  ru: Наряду с традиционными СМИ появились социальные сети.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0212-s004.wav
+  start_seconds: 136.25
+  end_seconds: 142.658707
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0213-s001
+  sv: I sociala medier kan vem som helst publicera sina åsikter om vilket ämne som helst.
+  ru: В социальных сетях любой может публиковать свои мнения на любую тему.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0213-s001.wav
+  start_seconds: 144.416667
+  end_seconds: 151.800612
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0213-s002
+  sv: Inlägg från vanliga människor kan snabbt sprida sig till tusentals eller till och med miljontals
+    människor runt om i världen.
+  ru: Публикации обычных людей могут быстро распространяться среди тысяч или даже миллионов людей по всему
+    миру.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0213-s002.wav
+  start_seconds: 153.583333
+  end_seconds: 164.310952
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0213-s003
+  sv: Detta är på många sätt en bra sak för demokratin, eftersom det ger alla möjlighet att delta i samhällsdebatten.
+  ru: Во многих отношениях это хорошо для демократии, поскольку даёт всем возможность участвовать в общественной
+    дискуссии.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0213-s003.wav
+  start_seconds: 166.083333
+  end_seconds: 175.278435
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0213-s004
+  sv: Risken är ändå att det är svårt att veta vad som är sant och inte när vem som helst kan skriva vad
+    som helst.
+  ru: Однако риск заключается в том, что трудно знать, что правда, а что нет, когда любой может писать
+    что угодно.
+  scene_id: scene-2
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0213-s004.wav
+  start_seconds: 177.041667
+  end_seconds: 186.585068
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0214-s001
+  sv: Pressfrihet betyder att medier och journalister har frihet att utföra sitt arbete och rapportera
+    om allt som händer i samhället.
+  ru: Свобода прессы означает, что СМИ и журналисты имеют свободу выполнять свою работу и сообщать обо
+    всём происходящем в обществе.
+  scene_id: scene-3
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights:
+  - Pressfrihet
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0214-s001.wav
+  start_seconds: 189.041667
+  end_seconds: 199.699626
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0214-s002
+  sv: Pressfriheten är på olika sätt begränsad eller hotad i stora delar av världen.
+  ru: В значительной части мира свобода прессы различным образом ограничена или находится под угрозой.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0214-s002.wav
+  start_seconds: 201.458333
+  end_seconds: 208.563639
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0214-s003
+  sv: Staten kan begränsa pressfriheten genom att till exempel utöva påtryckningar mot medierna för att
+    de inte ska publicera material som kritiserar beslutsfattarnas handlingar.
+  ru: Государство может ограничивать свободу прессы, например оказывая давление на СМИ, чтобы они не публиковали
+    материалы, критикующие действия лиц, принимающих решения.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0214-s003.wav
+  start_seconds: 210.333333
+  end_seconds: 224.892245
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0214-s004
+  sv: I en del länder kan journalister bli fängslade eller till och med dödade om de enligt beslutsfattarna
+    skriver om fel saker.
+  ru: В некоторых странах журналистов могут заключить в тюрьму или даже убить, если, по мнению лиц, принимающих
+    решения, они пишут о неправильных вещах.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0214-s004.wav
+  start_seconds: 226.666667
+  end_seconds: 237.324626
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0215-s001
+  sv: Också hot och trakasserier mot journalister från vanliga människor kan äventyra pressfriheten.
+  ru: Угрозы и преследование журналистов со стороны обычных людей также могут подвергать риску свободу
+    прессы.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0215-s001.wav
+  start_seconds: 239.083333
+  end_seconds: 247.303197
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0215-s002
+  sv: Till exempel hot mot journalister i diskussionsforum på internet kan påverka vilka ämnen journalisterna
+    vågar skriva om och på vilket sätt.
+  ru: Например, угрозы журналистам на дискуссионных форумах в интернете могут влиять на то, на какие темы
+    журналисты осмеливаются писать и каким образом.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0215-s002.wav
+  start_seconds: 249.083333
+  end_seconds: 261.20415
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0215-s003
+  sv: Då pratar man om självcensur.
+  ru: Тогда говорят о самоцензуре.
+  scene_id: scene-3
+  visual_cue: 'Exact-source concept card: självcensur'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - självcensur
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0215-s003.wav
+  start_seconds: 262.958333
+  end_seconds: 266.023367
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/cards/25.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0216-s001
+  sv: Internationella jämförelser visar att pressfriheten i Finland är bland de bästa i världen.
+  ru: Международные сравнения показывают, что свобода прессы в Финляндии находится на одном из самых высоких
+    уровней в мире.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0216-s001.wav
+  start_seconds: 267.791667
+  end_seconds: 275.872211
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0216-s002
+  sv: Jämfört med de flesta andra länder kan finländska journalister skriva mycket fritt om vilka ämnen
+    som helst.
+  ru: По сравнению с большинством других стран финляндские журналисты могут очень свободно писать на любые
+    темы.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0216-s002.wav
+  start_seconds: 277.625
+  end_seconds: 287.029082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0216-s003
+  sv: De behöver i allmänhet inte heller vara rädda för sin säkerhet.
+  ru: Обычно им также не приходится бояться за свою безопасность.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0216-s003.wav
+  start_seconds: 288.791667
+  end_seconds: 294.364456
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0216-s004
+  sv: Det är ändå viktigt att man också i Finland ägnar uppmärksamhet åt till exempel trakasserier mot
+    journalister i sociala medier.
+  ru: Однако и в Финляндии важно обращать внимание, например, на преследование журналистов в социальных
+    сетях.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0216-s004.wav
+  start_seconds: 296.125
+  end_seconds: 307.061599
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0216-s005
+  sv: Det är viktigt att värna om pressfriheten för att skydda demokratin och ett öppet samhälle.
+  ru: Важно защищать свободу прессы, чтобы защищать демократию и открытое общество.
+  scene_id: scene-3
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0216-s005.wav
+  start_seconds: 308.833333
+  end_seconds: 316.635238
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0217-s001
+  sv: I Finland har enskilda individer och medierna yttrandefrihet.
+  ru: В Финляндии отдельные люди и СМИ имеют свободу выражения мнений.
+  scene_id: scene-4
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0217-s001.wav
+  start_seconds: 319.125
+  end_seconds: 324.628129
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0217-s002
+  sv: Yttrandefrihet betyder ändå inte att journalister eller enskilda individer kan publicera precis
+    vad som helst.
+  ru: Однако свобода выражения мнений не означает, что журналисты или отдельные люди могут публиковать
+    абсолютно всё, что угодно.
+  scene_id: scene-4
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0217-s002.wav
+  start_seconds: 326.416667
+  end_seconds: 335.681429
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0218-s001
+  sv: Grundlagen tryggar varje individs ära och privatliv.
+  ru: Конституция защищает честь и частную жизнь каждого человека.
+  scene_id: scene-4
+  visual_cue: 'Exact-source concept card: ära, privatliv'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - ära
+  - privatliv
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0218-s001.wav
+  start_seconds: 337.458333
+  end_seconds: 342.543503
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/cards/33.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0218-s002
+  sv: Också medierna måste respektera dessa.
+  ru: СМИ также должны уважать их.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0218-s002.wav
+  start_seconds: 344.333333
+  end_seconds: 348.094966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0218-s003
+  sv: Ärekränkning eller ogrundad publicering av information om människors privatliv är inte tillåten.
+  ru: Клевета или необоснованная публикация информации о частной жизни людей не допускаются.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0218-s003.wav
+  start_seconds: 349.875
+  end_seconds: 358.512823
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0218-s004
+  sv: Ibland är det svårt att avgöra om det är motiverat att skriva om till exempel en politikers eller
+    någon annan offentlig persons privatliv eller om det kränker personens integritet.
+  ru: Иногда трудно решить, обоснованно ли писать, например, о частной жизни политика или другого публичного
+    лица, либо это нарушает неприкосновенность его частной жизни.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0218-s004.wav
+  start_seconds: 360.291667
+  end_seconds: 375.547177
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0218-s005
+  sv: Om informationen kan vara av samhällelig betydelse är yttrandefriheten i allmänhet en starkare princip.
+  ru: Если информация может иметь общественное значение, свобода выражения мнений обычно является более
+    весомым принципом.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0218-s005.wav
+  start_seconds: 377.333333
+  end_seconds: 386.458776
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0219-s001
+  sv: Det är viktigt att komma ihåg att lagar också gäller i sociala medier.
+  ru: Важно помнить, что законы действуют и в социальных сетях.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0219-s001.wav
+  start_seconds: 388.25
+  end_seconds: 394.310408
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0219-s002
+  sv: Man kan hamna att stå till svars för sina texter om de bryter mot lagen.
+  ru: За свои тексты можно быть привлечённым к ответственности, если они нарушают закон.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0219-s002.wav
+  start_seconds: 396.083333
+  end_seconds: 402.631361
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0219-s003
+  sv: Till exempel rasistisk text kan leda till åtal för hets mot folkgrupp.
+  ru: Например, расистский текст может привести к обвинению в разжигании ненависти к группе населения.
+  scene_id: scene-4
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0219-s003.wav
+  start_seconds: 404.416667
+  end_seconds: 410.825374
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0220-s001
+  sv: I Finland regleras mediernas verksamhet av lagen och dessutom av Journalistreglerna.
+  ru: В Финляндии деятельность СМИ регулируется законом, а кроме того, Правилами для журналистов (Journalistreglerna).
+  scene_id: scene-5
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights:
+  - Journalistreglerna
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0220-s001.wav
+  start_seconds: 413.291667
+  end_seconds: 421.093571
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0220-s002
+  sv: Journalistreglerna är ett gemensamt avtal för mediebranschen om att alla medier som förbundit sig
+    till reglerna ska utföra sitt arbete på ett etiskt sätt.
+  ru: Правила для журналистов — общее соглашение медиаотрасли о том, что все СМИ, обязавшиеся соблюдать
+    правила, должны выполнять свою работу этично.
+  scene_id: scene-5
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0220-s002.wav
+  start_seconds: 422.875
+  end_seconds: 435.901395
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0220-s003
+  sv: Syftet med reglerna är att styra mediernas arbete och försvara publiceringsfriheten.
+  ru: Цель правил — направлять работу СМИ и защищать свободу публикации.
+  scene_id: scene-5
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0220-s003.wav
+  start_seconds: 437.666667
+  end_seconds: 445.120272
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0220-s004
+  sv: En stor del av de journalistiska medierna i Finland har förbundit sig till dessa regler.
+  ru: Большая часть журналистских СМИ Финляндии обязалась соблюдать эти правила.
+  scene_id: scene-5
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0220-s004.wav
+  start_seconds: 446.875
+  end_seconds: 454.816224
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0221-s001
+  sv: Opinionsnämnden för massmedier, ONM, utvärderar god journalistisk sed genom att tolka Journalistreglerna.
+  ru: Совет по делам средств массовой информации (Opinionsnämnden för massmedier, ONM) оценивает надлежащую
+    журналистскую практику, толкуя Правила для журналистов.
+  scene_id: scene-5
+  visual_cue: 'Exact-source concept card: Opinionsnämnden, ONM'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Opinionsnämnden
+  - ONM
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Opinionsnämnden för massmedier, o enn emm, utvärderar god journalistisk sed genom att tolka
+      Journalistreglerna.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0221-s001.wav
+  start_seconds: 456.583333
+  end_seconds: 466.614354
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/cards/45.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0221-s002
+  sv: ONM är ett samarbetsorgan som grundats av medieutgivare och journalister.
+  ru: ONM — орган сотрудничества, созданный издателями СМИ и журналистами.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: o enn emm är ett samarbetsorgan som grundats av medieutgivare och journalister.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0221-s002.wav
+  start_seconds: 468.375
+  end_seconds: 475.689286
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0221-s003
+  sv: Om man misstänker att ett medium har agerat i strid med Journalistreglerna, kan man klaga hos ONM.
+  ru: Если подозревают, что какое-либо СМИ действовало в нарушение Правил для журналистов, можно пожаловаться
+    в ONM.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: Om man misstänker att ett medium har agerat i strid med Journalistreglerna, kan man klaga hos
+      o enn emm.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0221-s003.wav
+  start_seconds: 477.458333
+  end_seconds: 486.583776
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0221-s004
+  sv: Om organet tar upp ärendet till behandling, ger det antingen ett friande eller ett fällande beslut.
+  ru: Если орган принимает вопрос к рассмотрению, он выносит решение либо об отсутствии нарушения, либо
+    о наличии нарушения.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0221-s004.wav
+  start_seconds: 488.375
+  end_seconds: 496.594864
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0221-s005
+  sv: ONM är ingen domstol och utdömer inga straff, men medierna tar dess beslut på allvar.
+  ru: ONM не является судом и не назначает наказаний, но СМИ принимают его решения всерьёз.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override:
+    text: o enn emm är ingen domstol och utdömer inga straff, men medierna tar dess beslut på allvar.
+    reason: Spell Swedish letter names or expand the source abbreviation for local narration; exact display
+      text and meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0221-s005.wav
+  start_seconds: 498.375
+  end_seconds: 506.246565
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0222-s001
+  sv: Rundradion, eller Yle, är ett mediebolag som bedriver allmännyttig verksamhet i Finland och vars
+    verksamhet regleras av lagen om Rundradion Ab.
+  ru: Юле (Rundradion, или Yle) — медиакомпания, ведущая общественно полезную деятельность в Финляндии,
+    деятельность которой регулируется законом об акционерном обществе Юле (Rundradion Ab).
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights:
+  - Rundradion
+  - Yle
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0222-s001.wav
+  start_seconds: 508.708333
+  end_seconds: 521.038129
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0222-s002
+  sv: Yles verksamhet finansieras med offentliga medel.
+  ru: Деятельность Юле финансируется из публичных средств.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0222-s002.wav
+  start_seconds: 522.791667
+  end_seconds: 527.180238
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0222-s003
+  sv: Alla vars inkomster överskrider en viss gräns betalar Yle-skatt.
+  ru: Все, чьи доходы превышают определённый порог, платят налог Юле.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0222-s003.wav
+  start_seconds: 528.958333
+  end_seconds: 534.740102
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0222-s004
+  sv: Yles tjänster är avgiftsfria för användarna.
+  ru: Услуги Юле бесплатны для пользователей.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0222-s004.wav
+  start_seconds: 536.5
+  end_seconds: 540.818912
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0223-s001
+  sv: Yles utbud omfattar nyheter, aktualitetsprogram, kultur, konst, idrottsprogram och underhållning.
+  ru: Контент Юле включает новости, программы о текущих событиях, культуру, искусство, спортивные программы
+    и развлечения.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0223-s001.wav
+  start_seconds: 542.583333
+  end_seconds: 551.290816
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0223-s002
+  sv: Yle har tv- och radiokanaler, streamingtjänsten Arenan på internet och en nyhetssajt, flera sociala
+    mediekanaler och annat webbinnehåll.
+  ru: У Юле есть телевизионные и радиоканалы, стриминговый сервис «Арена» (Arenan) в интернете и новостной
+    сайт, несколько каналов в социальных сетях и другой веб-контент.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0223-s002.wav
+  start_seconds: 553.041667
+  end_seconds: 564.187245
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0224-s001
+  sv: Yle har en särskild uppgift i att stödja demokratin och allas möjligheter att påverka.
+  ru: Особая задача Юле — поддерживать демократию и возможности каждого влиять на общественную жизнь.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0224-s001.wav
+  start_seconds: 565.958333
+  end_seconds: 573.342279
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0224-s002
+  sv: Yle erbjuder innehåll på finska och svenska, men också på till exempel teckenspråk, samiska, engelska
+    och ryska.
+  ru: Юле предлагает контент на финском и шведском языках, а также, например, на жестовом, саамском, английском
+    и русском языках.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0224-s002.wav
+  start_seconds: 575.125
+  end_seconds: 584.598741
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0224-s003
+  sv: Dessutom sänder Yle nyheter på lätt språk på både finska och svenska.
+  ru: Кроме того, Юле передаёт новости на простом языке как по-фински, так и по-шведски.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights:
+  - lätt språk
+  - finska
+  - svenska
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0224-s003.wav
+  start_seconds: 586.375
+  end_seconds: 592.435408
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0224-s004
+  sv: Enligt lagen är bolaget skyldigt att stödja bevarandet av det finländska kulturarvet, tolerans,
+    jämlikhet, jämställdhet och kulturell mångfald.
+  ru: Согласно закону компания обязана поддерживать сохранение финляндского культурного наследия, терпимость,
+    равенство, гендерное равенство и культурное многообразие.
+  scene_id: scene-6
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0224-s004.wav
+  start_seconds: 594.208333
+  end_seconds: 606.18983
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0225-s001
+  sv: Även om riksdagen beslutar om Yles finansiering och uppdrag, bestämmer politikerna inte direkt om
+    Yles verksamhet.
+  ru: Хотя парламент принимает решения о финансировании и задачах Юле, политики не определяют непосредственно
+    деятельность Юле.
+  scene_id: scene-7
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0225-s001.wav
+  start_seconds: 608.666667
+  end_seconds: 618.697687
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0225-s002
+  sv: Yle har samma journalistiska frihet som vilket medium som helst.
+  ru: Юле обладает такой же журналистской свободой, как любое другое СМИ.
+  scene_id: scene-7
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0225-s002.wav
+  start_seconds: 620.458333
+  end_seconds: 626.170442
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0225-s003
+  sv: Till exempel Yles nyhetsredaktion bestämmer själv vilka ämnen den ska rapportera om och på vilket
+    sätt.
+  ru: Например, редакция новостей Юле сама решает, о каких темах и каким образом сообщать.
+  scene_id: scene-7
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0225-s003.wav
+  start_seconds: 627.958333
+  end_seconds: 637.153435
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0225-s004
+  sv: I sin nyhetsrapportering strävar bolaget efter att vara jämlikt och opartiskt, och rapporteringen
+    representerar inte något visst partis åsikter.
+  ru: В освещении новостей компания стремится к равному и беспристрастному подходу, а освещение не представляет
+    мнений какой-либо определённой партии.
+  scene_id: scene-7
+  visual_cue: Yle transmission tower, Pasila, Helsinki, photographed2005; physical broadcasting infrastructure.
+    Commons file page opened2026-10-26; source and license text inspected by coordinator. Keep the foreground
+    steady beside the exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_yle_tower
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0225-s004.wav
+  start_seconds: 638.916667
+  end_seconds: 651.107143
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/yle_tower.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0226-s001
+  sv: Tidningar är mycket populära i Finland.
+  ru: Газеты очень популярны в Финляндии.
+  scene_id: scene-8
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0226-s001.wav
+  start_seconds: 653.583333
+  end_seconds: 657.414626
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0226-s002
+  sv: År 2023 läste 96 procent av finländarna över 15 år tidningar antingen i pappersform eller på nätet.
+  ru: В 2023 году 96 процентов жителей Финляндии старше 15 лет читали газеты либо в бумажном виде, либо
+    в интернете.
+  scene_id: scene-8
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights:
+  - '2023'
+  - 96 procent
+  - 15 år
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0226-s002.wav
+  start_seconds: 659.166667
+  end_seconds: 670.939184
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0226-s003
+  sv: I Finland finns det ett tjugotal tidningar som utkommer varje dag eller nästan varje dag och dessutom
+    omkring hundra tidningar som utkommer en eller ett par gånger i veckan.
+  ru: В Финляндии существует около двадцати газет, выходящих каждый день или почти каждый день, а кроме
+    того, около ста газет, выходящих один или пару раз в неделю.
+  scene_id: scene-8
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0226-s003.wav
+  start_seconds: 672.708333
+  end_seconds: 686.779626
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0226-s004
+  sv: Några tidningar läses i hela Finland, och därtill finns det ett antal tidningar som läses i ett
+    eller några landskap.
+  ru: Некоторые газеты читают по всей Финляндии, а кроме того, существует ряд газет, которые читают в
+    одном или нескольких регионах.
+  scene_id: scene-8
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0226-s004.wav
+  start_seconds: 688.541667
+  end_seconds: 698.503027
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0226-s005
+  sv: Många av tidningarna är små lokaltidningar.
+  ru: Многие газеты — небольшие местные газеты.
+  scene_id: scene-8
+  visual_cue: Historical Turun Sanomat front page,1January1905. Use only as explicitly historical print-media
+    illustration; not current news. Commons file page opened2026-10-26; source and license text inspected
+    by coordinator. Keep the foreground steady beside the exact bilingual source pair; source highlights
+    remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newspaper
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0226-s005.wav
+  start_seconds: 700.291667
+  end_seconds: 704.610578
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newspaper.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0227-s001
+  sv: Tidningsläsningen har flyttat till nätet överallt i världen, också i Finland.
+  ru: Чтение газет переместилось в интернет повсюду в мире, в том числе в Финляндии.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0227-s001.wav
+  start_seconds: 706.375
+  end_seconds: 713.201667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0227-s002
+  sv: I landet i dag läses tidningarnas nyheter på nätet i klart större utsträckning än tryckta tidningar.
+  ru: Сегодня в стране газетные новости читают в интернете в явно большей степени, чем печатные газеты.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0227-s002.wav
+  start_seconds: 714.958333
+  end_seconds: 723.596156
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0227-s003
+  sv: Många tidningar publicerar nyhetsinnehåll också i sociala medier.
+  ru: Многие газеты публикуют новостной контент также в социальных сетях.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0227-s003.wav
+  start_seconds: 725.375
+  end_seconds: 731.226429
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0227-s004
+  sv: Många i Finland tycker ändå fortfarande om att få en papperstidning hem på morgonen.
+  ru: Однако многим в Финляндии по-прежнему нравится получать бумажную газету домой по утрам.
+  scene_id: scene-8
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0227-s004.wav
+  start_seconds: 733.0
+  end_seconds: 740.244626
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0228-s001
+  sv: Tidningarna ägs i allmänhet av privata mediebolag.
+  ru: Газеты обычно принадлежат частным медиакомпаниям.
+  scene_id: scene-8
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0228-s001.wav
+  start_seconds: 742.0
+  end_seconds: 746.94585
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0228-s002
+  sv: I Finland är de flesta tidningar inte politiskt bundna, utan bestämmer själva sin linje i olika
+    samhällsfrågor.
+  ru: В Финляндии большинство газет политически не связаны с кем-либо и сами определяют свою линию по
+    различным общественным вопросам.
+  scene_id: scene-8
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0228-s002.wav
+  start_seconds: 748.708333
+  end_seconds: 758.600034
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0228-s003
+  sv: Det finns också politiska tidningar, men deras antal har minskat under de senaste årtiondena.
+  ru: Существуют также политические газеты, но их число уменьшилось за последние десятилетия.
+  scene_id: scene-8
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0228-s003.wav
+  start_seconds: 760.375
+  end_seconds: 768.246565
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0228-s004
+  sv: De senaste åren har tidningsägandet koncentrerats till stora mediebolag.
+  ru: В последние годы владение газетами сосредоточилось у крупных медиакомпаний.
+  scene_id: scene-8
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0228-s004.wav
+  start_seconds: 770.0
+  end_seconds: 776.199728
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0228-s005
+  sv: Denna utveckling kan begränsa vilka frågor medierna rapporterar om.
+  ru: Такое развитие может ограничивать круг вопросов, о которых сообщают СМИ.
+  scene_id: scene-8
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0228-s005.wav
+  start_seconds: 777.958333
+  end_seconds: 783.949082
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0229-s001
+  sv: Medierna utövar samtidigt en betydande makt när de väljer vad de lyfter fram i offentligheten och
+    hur de behandlar olika frågor.
+  ru: СМИ одновременно осуществляют значительную власть, выбирая, что выдвигать на первый план в публичном
+    пространстве и как рассматривать различные вопросы.
+  scene_id: scene-9
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0229-s001.wav
+  start_seconds: 786.416667
+  end_seconds: 796.935306
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0229-s002
+  sv: Därför kallas medierna också den fjärde statsmakten.
+  ru: Поэтому СМИ называют также четвёртой властью.
+  scene_id: scene-9
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights:
+  - fjärde statsmakten
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0229-s002.wav
+  start_seconds: 798.708333
+  end_seconds: 803.514864
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0229-s003
+  sv: De lyfter fram missförhållanden och missbruk och ger dem mycket synlighet om de vill.
+  ru: Они выдвигают на первый план неблагополучные явления и злоупотребления и, если хотят, делают их
+    очень заметными.
+  scene_id: scene-9
+  visual_cue: Helsingin Sanomat newsroom, April1965. Historical photographic illustration of newspaper
+    editorial work; not a present-day staff or technology claim. Commons file page and image metadata
+    inspected; original photograph viewed. Keep the foreground steady beside the exact bilingual source
+    pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_newsroom
+  text_highlights: []
+  pronunciation_notes:
+  - Check Swedish compounds, proper names and any source abbreviations in whole-video listening; automated
+    ASR remains diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-medier/narration/hb-c04-u0229-s003.wav
+  start_seconds: 805.291667
+  end_seconds: 812.396973
+  display_segments: []
+  render_image: studio/media/hb-c04-medier/foreground-source/newsroom.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-medier/sources/music-bed.flac
+  background_image: studio/media/hb-c04-medier/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 6.033035714285714
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - Finland – Lärobok i samhällsorientering — © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Sanomatalo - Helsinki - 13.9.2013.jpg — Sektori · CC BY-SA 3.0
+    - 'Förgrundsbilder: Turun Sanomat; National Library of Finland digitization; Unknown photographer;
+      Skorpion87; color/tilt correction by Mysid.'
+    - Sapphire Isle — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Sanomatalo_-_Helsinki_-_13.9.2013.jpg
+    description: Sanomatalo.
+    license: CC BY-SA 3.0

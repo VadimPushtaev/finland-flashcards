@@ -1,0 +1,1185 @@
+schema_version: 1
+section_id: hb-c04-regeringen
+chapter_id: hb-c04
+title_sv: Regeringen och parlamentarismen
+title_ru: Правительство и парламентаризм
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-regeringen.yaml
+example_only: false
+source_section_sha256: d422f8718dd0bec68b6e6fd13979e309c86f49468bf568043b23dd3e85b03412
+translation_file_sha256: 99fb731863620fabe7a0ee42beaad9730790149e15bb07bf54d4f52fc3dd3550
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber #382d24; ivory #faf3e8, secondary #dfcfbb, gold
+    #dfb96f, separator #695540. Liberation Sans Bold 48/Regular 40 with a stable Swedish-above-Russian
+    right panel and optional source-term cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair 0.25 seconds before narration. Natural local voice at speed 0.95. Pause
+    1.5 seconds after ordinary sentences and 2.2 seconds at scene ends; 2.5 seconds for long pairs. No
+    target-duration acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Government Palace, Helsinki 20180801.jpg by Suicasmo continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=3.179464285714286. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic 3/F1, Swedish, 32 steps,speed 0.95, seed 42, 44100 Hz mono PCM16.
+    Exact inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only
+    expansions; pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use A Very Brady Special by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 388.310 seconds; prepared lossless stereo bed 445.125
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two 15 second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Bilinear sampling of the softened decorative photograph; retain continuous fractional motion,
+    full 1080p text and steady foreground graphics. Verify motion from exported frames.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 3 relevant registered foreground pictures over 28 of 40 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: hb-c04-u0032
+  description: Cabinet and ministers
+- id: hb-c04-u0033
+  description: Coalition formation and government programme
+- id: hb-c04-u0034
+  description: Election and appointment of ministers
+- id: hb-c04-u0035
+  description: Ministries and central administration
+- id: hb-c04-u0036
+  description: Preparing a national park proposal
+- id: hb-c04-u0037
+  description: Implementing parliament decisions
+- id: hb-c04-u0038
+  description: Parliamentary confidence
+- id: hb-c04-u0039
+  description: Opposition scrutiny
+- id: hb-c04-u0040
+  description: Majority government
+asset_requests:
+- id: episode_background
+  kind: background
+  description: File:Government Palace, Helsinki 20180801.jpg. Verified Government Palace exterior provides
+    institutional context for the cabinet and ministries; no claim about any individual meeting.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: A Very Brady Special — Kevin MacLeod, official catalogue master, CC BY 4.0.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic 3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+- id: picture_cabinet
+  kind: foreground
+  description: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_palace
+  kind: foreground
+  description: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_parliament
+  kind: foreground
+  description: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0032-s001
+  sv: Statsministern och de övriga ministrarna bildar Finlands statsråd.
+  ru: Премьер-министр и остальные министры образуют правительство Финляндии (statsrådet).
+  scene_id: hb-c04-u0032
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights:
+  - Statsministern
+  - ministrarna
+  - statsråd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.728367
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0032-s002
+  sv: I vardagsspråk används ofta ordet regering för statsrådet.
+  ru: В повседневной речи для обозначения правительства, statsrådet, часто используют слово regering.
+  scene_id: hb-c04-u0032
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s002.wav
+  start_seconds: 11.5
+  end_seconds: 16.933469
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0032-s003
+  sv: Ministrarnas antal varierar, men under de senaste årtiondena har Finlands regering bestått av 15–20
+    ministrar.
+  ru: Количество министров меняется, но в последние десятилетия правительство Финляндии состояло из 15–20
+    министров.
+  scene_id: hb-c04-u0032
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights:
+  - 15–20
+  - ministrar
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Ministrarnas antal varierar, men under de senaste årtiondena har Finlands regering bestått av
+      femton till tjugo ministrar.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s003.wav
+  start_seconds: 18.708333
+  end_seconds: 29.505612
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0032-s004
+  sv: Exempel på ministrar är inrikesminister, utrikesminister, undervisningsminister och justitieminister.
+  ru: Примерами министров являются министр внутренних дел, министр иностранных дел, министр образования
+    и министр юстиции.
+  scene_id: hb-c04-u0032
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0032-s004.wav
+  start_seconds: 31.291667
+  end_seconds: 40.904728
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0033-s001
+  sv: I allmänhet blir den partiordförande som hade mest framgång i valet statsminister.
+  ru: Обычно премьер-министром становится председатель партии, добившейся наибольшего успеха на выборах.
+  scene_id: hb-c04-u0033
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s001.wav
+  start_seconds: 43.375
+  end_seconds: 50.549966
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0033-s002
+  sv: Hen diskuterar med de övriga partierna och väljer vilka partier som ska börja bilda regering.
+  ru: Этот председатель обсуждает ситуацию с остальными партиями и выбирает, какие партии начнут формировать
+    правительство.
+  scene_id: hb-c04-u0033
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s002.wav
+  start_seconds: 52.333333
+  end_seconds: 60.692517
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0033-s003
+  sv: I Finland är det vanligt att det finns flera partier i regeringen.
+  ru: В Финляндии в правительство обычно входят несколько партий.
+  scene_id: hb-c04-u0033
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s003.wav
+  start_seconds: 62.458333
+  end_seconds: 68.309762
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0033-s004
+  sv: Efter det utarbetar dessa partier tillsammans ett regeringsprogram.
+  ru: После этого эти партии совместно разрабатывают правительственную программу.
+  scene_id: hb-c04-u0033
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights:
+  - regeringsprogram
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s004.wav
+  start_seconds: 70.083333
+  end_seconds: 76.004422
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0033-s005
+  sv: Det berättar om regeringens politiska mål och åtgärder under regeringens mandatperiod.
+  ru: Она описывает политические цели правительства и меры на срок его полномочий.
+  scene_id: hb-c04-u0033
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0033-s005.wav
+  start_seconds: 77.791667
+  end_seconds: 85.245272
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0034-s001
+  sv: När regeringsprogrammet är färdigt utser riksdagen officiellt en statsminister genom omröstning.
+  ru: Когда правительственная программа готова, парламент официально избирает премьер-министра голосованием.
+  scene_id: hb-c04-u0034
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - riksdagen
+  - statsminister
+  - omröstning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s001.wav
+  start_seconds: 87.708333
+  end_seconds: 96.276497
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0034-s002
+  sv: Regeringspartierna beslutar om vem från respektive parti som ska bli minister.
+  ru: Партии правительства решают, кто из каждой партии станет министром.
+  scene_id: hb-c04-u0034
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s002.wav
+  start_seconds: 98.041667
+  end_seconds: 105.146973
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0034-s003
+  sv: När statsministern och övriga ministrar har utsetts utnämner presidenten dem för deras uppgifter.
+  ru: Когда премьер-министр и остальные министры выбраны, президент назначает их на должности.
+  scene_id: hb-c04-u0034
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s003.wav
+  start_seconds: 106.916667
+  end_seconds: 115.62415
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0034-s004
+  sv: Riksdagen godkänner ännu genom omröstning statsrådets sammansättning och regeringsprogrammet.
+  ru: Парламент затем ещё голосованием одобряет состав правительства и правительственную программу.
+  scene_id: hb-c04-u0034
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0034-s004.wav
+  start_seconds: 117.375
+  end_seconds: 125.525204
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s001
+  sv: Ministrarna leder ministeriernas arbete.
+  ru: Министры руководят работой министерств.
+  scene_id: hb-c04-u0035
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s001.wav
+  start_seconds: 128.0
+  end_seconds: 131.970612
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s002
+  sv: Ministerierna bereder och verkställer de ärenden som regeringen beslutar om.
+  ru: Министерства занимаются подготовкой и исполнением решений по вопросам, которые решает правительство.
+  scene_id: hb-c04-u0035
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s002.wav
+  start_seconds: 133.75
+  end_seconds: 140.507007
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s003
+  sv: Exempel på ministerier är försvarsministeriet, social- och hälsovårdsministeriet och inrikesministeriet.
+  ru: Примерами министерств являются Министерство обороны, Министерство социального обеспечения и здравоохранения
+    и Министерство внутренних дел.
+  scene_id: hb-c04-u0035
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s003.wav
+  start_seconds: 142.291667
+  end_seconds: 152.183367
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s004
+  sv: Flera statliga ämbetsverk och inrättningar lyder under och styrs av ministerierna.
+  ru: Министерствам подчиняются и ими управляются несколько государственных ведомств и учреждений.
+  scene_id: hb-c04-u0035
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s004.wav
+  start_seconds: 153.958333
+  end_seconds: 161.411939
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s005
+  sv: Till exempel Migrationsverket är ett ämbetsverk som lyder under inrikesministeriet.
+  ru: Например, Миграционная служба (Migrationsverket) — ведомство, подчиняющееся Министерству внутренних
+    дел.
+  scene_id: hb-c04-u0035
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - Migrationsverket
+  - inrikesministeriet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s005.wav
+  start_seconds: 163.166667
+  end_seconds: 170.759592
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0035-s006
+  sv: Tillsammans med ministerierna bildar statens ämbetsverk och inrättningar statens centralförvaltning.
+  ru: Вместе с министерствами государственные ведомства и учреждения образуют центральную государственную
+    администрацию.
+  scene_id: hb-c04-u0035
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0035-s006.wav
+  start_seconds: 172.541667
+  end_seconds: 181.388469
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0036-s001
+  sv: Regeringen bereder ärenden som riksdagen behandlar.
+  ru: Правительство готовит вопросы, которые рассматривает парламент.
+  scene_id: hb-c04-u0036
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s001.wav
+  start_seconds: 183.875
+  end_seconds: 188.402891
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0036-s002
+  sv: Till exempel om regeringspartierna har beslutat att en ny nationalpark ska inrättas i Finland, börjar
+    miljöministeriet bereda ärendet.
+  ru: Например, если партии правительства решили создать в Финляндии новый национальный парк, Министерство
+    окружающей среды начинает готовить этот вопрос.
+  scene_id: hb-c04-u0036
+  visual_cue: 'Steady complete source-only term card: nationalpark, miljöministeriet'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - nationalpark
+  - miljöministeriet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s002.wav
+  start_seconds: 190.166667
+  end_seconds: 202.357143
+  display_segments: []
+  render_image: studio/media/hb-c04-regeringen/cards/20.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0036-s003
+  sv: Ministeriet undersöker var den nya nationalparken ska inrättas och lyssnar på andra myndigheters
+    och medborgarorganisationers åsikter, information och erfarenheter i frågan.
+  ru: Министерство изучает, где создать новый национальный парк, и выслушивает мнения, сведения и опыт
+    других органов власти и гражданских организаций по этому вопросу.
+  scene_id: hb-c04-u0036
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s003.wav
+  start_seconds: 204.125
+  end_seconds: 219.171531
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0036-s004
+  sv: Under regeringens ledning utarbetar ministeriet ett förslag, där det motiverar varför det valda
+    området skulle vara det bästa för den nya nationalparken och hurdana konsekvenser förslaget skulle
+    ha.
+  ru: Под руководством правительства министерство разрабатывает предложение, в котором обосновывает, почему
+    выбранная территория была бы лучшей для нового национального парка и какие последствия имело бы предложение.
+  scene_id: hb-c04-u0036
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s004.wav
+  start_seconds: 220.958333
+  end_seconds: 237.189082
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0036-s005
+  sv: Efter det överförs ärendet till riksdagen för beslut.
+  ru: После этого вопрос передаётся в парламент для принятия решения.
+  scene_id: hb-c04-u0036
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0036-s005.wav
+  start_seconds: 238.958333
+  end_seconds: 243.695204
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0037-s001
+  sv: När riksdagen beslutar någonting, verkställer regeringen beslutet.
+  ru: Когда парламент что-либо решает, правительство исполняет это решение.
+  scene_id: hb-c04-u0037
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s001.wav
+  start_seconds: 246.166667
+  end_seconds: 252.157415
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0037-s002
+  sv: När riksdagen till exempel utfärdar en lag om inrättande av en ny nationalpark, börjar de myndigheter
+    som ansvarar för nationalparkerna förbereda de praktiska åtgärderna i ärendet.
+  ru: Когда парламент, например, принимает закон о создании нового национального парка, органы власти,
+    отвечающие за национальные парки, начинают готовить практические меры по этому вопросу.
+  scene_id: hb-c04-u0037
+  visual_cue: 'Steady complete source-only term card: lag, nationalpark, praktiska åtgärderna'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - lag
+  - nationalpark
+  - praktiska åtgärderna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s002.wav
+  start_seconds: 253.916667
+  end_seconds: 270.008095
+  display_segments: []
+  render_image: studio/media/hb-c04-regeringen/cards/25.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0037-s003
+  sv: Dessa åtgärder är till exempel att ordna med informationstavlor för nationalparkens besökare.
+  ru: К таким мерам относится, например, установка информационных щитов для посетителей национального
+    парка.
+  scene_id: hb-c04-u0037
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s003.wav
+  start_seconds: 271.791667
+  end_seconds: 280.08119
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0037-s004
+  sv: Miljöministeriet och jord- och skogsbruksministeriet övervakar att myndigheterna ordnar med alla
+    tjänster som lagen föreskriver i den nya nationalparken.
+  ru: Министерство окружающей среды и Министерство сельского и лесного хозяйства контролируют, чтобы органы
+    власти обеспечили в новом национальном парке все предусмотренные законом услуги.
+  scene_id: hb-c04-u0037
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0037-s004.wav
+  start_seconds: 281.833333
+  end_seconds: 295.486667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s001
+  sv: Regeringen ansvarar för sitt arbete inför riksdagen, det vill säga regeringen och ministrarna måste
+    ha riksdagens förtroende.
+  ru: Правительство отвечает за свою работу перед парламентом, то есть правительство и министры должны
+    пользоваться доверием парламента.
+  scene_id: hb-c04-u0038
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - riksdagens förtroende
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s001.wav
+  start_seconds: 297.958333
+  end_seconds: 308.616293
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s002
+  sv: Riksdagen måste alltså vara övertygad om att regeringen och alla ministrarna utför sitt arbete väl
+    och på ett tillförlitligt sätt.
+  ru: Следовательно, парламент должен быть убеждён в том, что правительство и все министры выполняют свою
+    работу хорошо и надёжно.
+  scene_id: hb-c04-u0038
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s002.wav
+  start_seconds: 310.375
+  end_seconds: 321.659898
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s003
+  sv: Om riksdagen inte är övertygad om det, kan hela regeringen falla.
+  ru: Если парламент в этом не убеждён, всё правительство может уйти в отставку.
+  scene_id: hb-c04-u0038
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s003.wav
+  start_seconds: 323.416667
+  end_seconds: 329.407415
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s004
+  sv: Om regeringen faller, måste det kanske hållas ett nytt riksdagsval i förtid i landet.
+  ru: Если правительство уходит в отставку, возможно, в стране потребуется провести новые досрочные парламентские
+    выборы.
+  scene_id: hb-c04-u0038
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s004.wav
+  start_seconds: 331.166667
+  end_seconds: 338.620272
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s005
+  sv: Det är ändå mycket sällsynt.
+  ru: Однако это происходит очень редко.
+  scene_id: hb-c04-u0038
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s005.wav
+  start_seconds: 340.375
+  end_seconds: 343.300714
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0038-s006
+  sv: I Finland har regeringarna varit långvariga de senaste årtiondena.
+  ru: В последние десятилетия правительства Финляндии работали длительное время.
+  scene_id: hb-c04-u0038
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0038-s006.wav
+  start_seconds: 345.083333
+  end_seconds: 351.143741
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0039-s001
+  sv: De riksdagspartier som inte ingår i regeringen bildar opposition.
+  ru: Парламентские партии, не входящие в правительство, образуют оппозицию.
+  scene_id: hb-c04-u0039
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - opposition
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s001.wav
+  start_seconds: 353.625
+  end_seconds: 359.546088
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0039-s002
+  sv: Oppositionen har som uppgift att utmana regeringen och lägga fram alternativ till den politik som
+    regeringen driver.
+  ru: Задача оппозиции — оспаривать действия правительства и предлагать альтернативы проводимой им политике.
+  scene_id: hb-c04-u0039
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s002.wav
+  start_seconds: 361.333333
+  end_seconds: 371.225034
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0039-s003
+  sv: Om oppositionen anser att riksdagen inte kan lita på regeringens arbete, kan den kräva en omröstning
+    om regeringens förtroende.
+  ru: Если оппозиция считает, что парламент не может доверять работе правительства, она может потребовать
+    голосования о доверии правительству.
+  scene_id: hb-c04-u0039
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0039-s003.wav
+  start_seconds: 373.0
+  end_seconds: 384.006259
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0040-s001
+  sv: I Finland är regeringarna i allmänhet majoritetsregeringar.
+  ru: В Финляндии правительства обычно являются правительствами большинства.
+  scene_id: hb-c04-u0040
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - majoritetsregeringar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s001.wav
+  start_seconds: 386.458333
+  end_seconds: 392.031122
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0040-s002
+  sv: Det betyder att majoriteten av riksdagsledamöterna hör till regeringspartierna.
+  ru: Это означает, что большинство депутатов парламента принадлежит к партиям правительства.
+  scene_id: hb-c04-u0040
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s002.wav
+  start_seconds: 393.791667
+  end_seconds: 400.687993
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0040-s003
+  sv: På så vis får regeringen vid en omröstning nästan alltid riksdagens förtroende och får igenom sina
+    förslag i omröstningar.
+  ru: Таким образом правительство при голосовании почти всегда получает доверие парламента и добивается
+    принятия своих предложений на голосованиях.
+  scene_id: hb-c04-u0040
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-regeringen/narration/hb-c04-u0040-s003.wav
+  start_seconds: 402.458333
+  end_seconds: 412.907313
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-regeringen/sources/music-bed.flac
+  background_image: studio/media/hb-c04-regeringen/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.179464285714286
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Demokrati, förvaltning och påverkan
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Government Palace, Helsinki 20180801.jpg — Suicasmo · CC BY-SA 4.0
+    - 'Förgrundsfoton: Josefiina Alanen; Paasikivi; jampe.'
+    - A Very Brady Special — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Government_Palace,_Helsinki_20180801.jpg
+    description: Government Palace, Helsinki
+    license: CC BY-SA 4.0
+  music_loop_crossfade_seconds: 4

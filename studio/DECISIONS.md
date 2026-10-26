@@ -90,3 +90,32 @@ that authorization does not constitute whole-video listening acceptance.
 Production runs locally on an AMD Ryzen 5 3600X (six cores, twelve logical CPUs)
 with 31 GiB RAM, using CPU inference and four ONNX intra-op threads per TTS job.
 The fourteen required TTS/ASR model files match the pinned download checksums.
+
+## Chapter 4 production — 2026-10-26
+
+Chapter 4 uses the warm umber palette in `DIRECTING.md`, with Liberation Sans
+fonts and the established local Swedish Supertonic 3/F1 preset. Each of its
+fifteen episodes retains exact Swedish narration and reviewed Russian display
+text, a distinct background photograph and a distinct instrumental music source.
+Three parallel workers own separate episode batches; the coordinator owns
+shared records and reserves media identities across the chapter. After the user's
+parallelism revision, ready episodes progress through stages independently of
+their batch. CPU allocation is shared across active synthesis, ASR and encoders;
+new synthesis jobs can use two threads, leaving room for simultaneous diagnostics
+and exports. Thread counts and concurrency are adjusted to measured capacity.
+The fourteen required local
+TTS/ASR files were checked against the pinned download checksums before synthesis.
+These production choices do not imply whole-video listening or user acceptance.
+
+The user requested relevant foreground pictures for at least half the body
+timeline where practical. All fifteen verified previews meet this target, with
+50.6–92.4% coverage. Registered pictorial assets and measured per-episode coverage
+distinguish pictures from plain typography. The complete chapter preserves all
+753 bilingual sentence pairs and runs for 2:16:36.
+
+The user explicitly authorized committing and pushing the previews on 2026-10-26;
+that authorization does not constitute whole-video listening acceptance. Three
+exports exceeded GitHub's ordinary Git file limit and require a recorded H.264
+compression step, with original audio copied unchanged. Original exports remain
+in ignored scratch; current verification and review records bind the distributed
+files. Narration, source wording, frame count and timeline are unchanged.

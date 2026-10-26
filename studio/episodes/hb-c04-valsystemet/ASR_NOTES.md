@@ -1,0 +1,7 @@
+# Pronunciation diagnostics — Val, valhemlighet och proportionellt valsätt
+
+All 60 selected clips pass finite mono 44100 Hz waveform, exact source/override input, source-order and current hash-bound Swedish ASR checks. Synthesis used two ONNX threads; diagnostic ASR used one. No auditory review is claimed.
+
+The source fragment “presidentval vart sjätte år” remains exact on screen. Initial and same-text candidate ASR ambiguously reported 60 years; a phonetic sjette candidate remained unclear. The selected speech-only numeric clarification “presidentval med sex års mellanrum” transcribes “Presidentval med 6 års mellanrum.” It expresses the identical six-year interval under SCRIPTING.md §5; this is synthesis clarification, not a source rewrite or user-approved wording. Its listening review remains pending. Initial metrics and all three candidate runs are preserved in retake-review.json.
+
+A targeted ballot-stamping candidate did not clearly improve the valsedeln/sedeln diagnostic; the initial take is retained. Listen especially to ballot terms in rows 26–33, the secret-voting sentence (row 20), the voluntary-voting sentence (row 51), and the comparison of women's and men's participation (row 58). Transcript spelling such as C-delen/CDN, valunan, Erikstagsval and människt does not establish an audible error. Age 18 is transcribed as åtton, the five-year interval is retained, both 20-percent references are recovered, and voting negations remain present. Whole-video pronunciation, pacing, mix balance and physical-device checks remain pending.

@@ -1,0 +1,832 @@
+schema_version: 1
+section_id: hb-c04-riksdagen
+chapter_id: hb-c04
+title_sv: Riksdagens uppgifter
+title_ru: Задачи парламента
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-riksdagen.yaml
+example_only: false
+source_section_sha256: cc0aab8cdb18b81d59480e0c1a08bc04222b98847d720c3e3969e806f687e668
+translation_file_sha256: 26cb16b773ee4e61e6ead9c14a678c61e3d6886dc18219c9b7917aaceb50589e
+episode_decisions:
+- id: opening
+  decision: Exact bilingual source heading, unspoken, for three seconds. No added narration.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use consecutive source paragraphs as the scenes below, preserving every sentence and list
+    fragment in stored source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 4 warm umber #382d24; ivory #faf3e8, secondary #dfcfbb, gold
+    #dfb96f, separator #695540. Liberation Sans Bold 48/Regular 40 with a stable Swedish-above-Russian
+    right panel and optional source-term cards on the left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display each pair 0.25 seconds before narration. Natural local voice at speed 0.95. Pause
+    1.5 seconds after ordinary sentences and 2.2 seconds at scene ends; 2.5 seconds for long pairs. No
+    target-duration acceleration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Riksdagshuset Helsingfors November 2025 01.jpg by ArildV continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.6571428571428573. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use series local Supertonic 3/F1, Swedish, 32 steps,speed 0.95, seed 42, 44100 Hz mono PCM16.
+    Exact inputs and checksums retained. Numbers and abbreviations have separately recorded speech-only
+    expansions; pronunciation awaits whole-video review.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Ethereal Relaxation by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 1686.073 seconds; prepared lossless stereo bed 232.000
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Selected source terms highlight this episode’s actual concepts. Use complete source-only typography
+    cards; labels preserve exact source spelling and add no facts. Leave the foreground open elsewhere,
+    suppressing unused captions.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two 15 second source/media credit cards; complete attribution accompanies exported MP4.
+  status: proposed
+  resolve_during: script
+- id: background_resampling
+  decision: Bilinear sampling of the softened decorative photograph; retain continuous fractional motion,
+    full 1080p text and steady foreground graphics. Verify motion from exported frames.
+  status: proposed
+  resolve_during: render
+- id: exceptions
+  decision: No exception to shared direction. All creative choices are proposals for whole-video user
+    review.
+  status: proposed
+  resolve_during: script
+- id: foreground_picture_coverage
+  decision: Use 4 relevant registered foreground pictures over 20 of 24 source pairs as the planning proxy
+    for at least 50% of body display time. Verify actual coverage against measured narration timing. Identities
+    and sentence-specific relevance reviewed; no text cards or background duplicates count.
+  status: proposed
+  resolve_during: render
+scenes:
+- id: hb-c04-u0021
+  description: Composition of parliament
+- id: hb-c04-u0022
+  description: Duties of parliament
+- id: hb-c04-u0023
+  description: Legislation
+- id: hb-c04-u0025
+  description: The state budget
+- id: hb-c04-u0026
+  description: International agreements
+- id: hb-c04-u0027
+  description: Government scrutiny
+- id: hb-c04-u0028
+  description: Origins of legislative proposals
+- id: hb-c04-u0029
+  description: Committee work, votes and promulgation
+- id: hb-c04-u0030
+  description: Budget preparation and oversight
+- id: hb-c04-u0031
+  description: Parliament and European Union law
+asset_requests:
+- id: episode_background
+  kind: background
+  description: File:Riksdagshuset Helsingfors November 2025 01.jpg. Verified Finnish Parliament building
+    exterior provides direct context for the institution discussed.
+  fallback: Find another verified, licensed topic-related photograph; do not reuse another subchapter
+    background.
+- id: fact_cards
+  kind: foreground
+  description: Original typography of selected exact source terms and dates; no added facts.
+  fallback: Leave the foreground open when no useful factual graphic is needed, without a caption.
+- id: music_bed
+  kind: music
+  description: Ethereal Relaxation — Kevin MacLeod, official catalogue master, CC BY 4.0.
+  fallback: Select another distinct calm instrumental with verified reuse terms; do not silently omit
+    music.
+- id: narration
+  kind: narration
+  description: Local Swedish Supertonic 3/F1 source-order sentence WAVs.
+  fallback: Resolve synthesis problems without changing source or truncating speech.
+- id: picture_ballot
+  kind: foreground
+  description: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_cabinet
+  kind: foreground
+  description: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_palace
+  kind: foreground
+  description: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+- id: picture_parliament
+  kind: foreground
+  description: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade.
+  fallback: Leave the affected passage open only after documenting unavailable/misleading imagery and
+    measured coverage; do not substitute unrelated filler.
+sentences:
+- sentence_id: hb-c04-u0021-s001
+  sv: Finlands parlament kallas riksdag.
+  ru: Парламент Финляндии называется риксдагом (riksdag).
+  scene_id: hb-c04-u0021
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s001.wav
+  start_seconds: 3.25
+  end_seconds: 6.732993
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0021-s002
+  sv: Riksdagen har 200 riksdagsledamöter, som utses genom val.
+  ru: В парламенте 200 депутатов, которые избираются на выборах.
+  scene_id: hb-c04-u0021
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - '200'
+  - riksdagsledamöter
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Riksdagen har två hundra riksdagsledamöter, som utses genom val.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s002.wav
+  start_seconds: 8.5
+  end_seconds: 14.421088
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/ballot.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0021-s003
+  sv: Finlands riksdag är en enkammarriksdag.
+  ru: Парламент Финляндии однопалатный.
+  scene_id: hb-c04-u0021
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0021-s003.wav
+  start_seconds: 16.208333
+  end_seconds: 20.039626
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0022-s001
+  sv: Riksdagens uppgifter är att
+  ru: Задачи парламента —
+  scene_id: hb-c04-u0022
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0022-s001.wav
+  start_seconds: 22.5
+  end_seconds: 25.495374
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0023-s001
+  sv: stifta Finlands lagar
+  ru: принимать законы Финляндии
+  scene_id: hb-c04-u0023
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - stifta Finlands lagar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0023-s001.wav
+  start_seconds: 27.958333
+  end_seconds: 30.535748
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0025-s001
+  sv: besluta om statens budget
+  ru: принимать решения о государственном бюджете
+  scene_id: hb-c04-u0025
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - statens budget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0025-s001.wav
+  start_seconds: 33.0
+  end_seconds: 35.856054
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0026-s001
+  sv: godkänna internationella avtal som gäller Finland
+  ru: одобрять международные соглашения, касающиеся Финляндии
+  scene_id: hb-c04-u0026
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - internationella avtal
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0026-s001.wav
+  start_seconds: 38.333333
+  end_seconds: 43.209524
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0027-s001
+  sv: övervaka regeringens och ministrarnas arbete.
+  ru: контролировать работу правительства и министров.
+  scene_id: hb-c04-u0027
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - övervaka
+  - regeringens
+  - ministrarnas
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0027-s001.wav
+  start_seconds: 45.666667
+  end_seconds: 50.055238
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0028-s001
+  sv: Riksdagen stiftar lagarna i Finland.
+  ru: Парламент принимает законы Финляндии.
+  scene_id: hb-c04-u0028
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s001.wav
+  start_seconds: 52.541667
+  end_seconds: 56.233639
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0028-s002
+  sv: Vanligtvis lämnar regeringen förslag till nya lagar till riksdagen.
+  ru: Обычно правительство вносит в парламент предложения о новых законах.
+  scene_id: hb-c04-u0028
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s002.wav
+  start_seconds: 58.0
+  end_seconds: 64.199728
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0028-s003
+  sv: Också en enskild riksdagsledamot kan göra lagmotioner, eller så kan ett lagförslag komma till riksdagen
+    via ett medborgarinitiativ.
+  ru: Отдельный депутат парламента также может вносить законодательные предложения, или законопроект может
+    поступить в парламент через гражданскую инициативу.
+  scene_id: hb-c04-u0028
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - lagmotioner
+  - medborgarinitiativ
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0028-s003.wav
+  start_seconds: 65.958333
+  end_seconds: 77.173571
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0029-s001
+  sv: Riksdagen diskuterar lagmotionen eller regeringens lagproposition och behandlar ärendet i olika
+    utskott.
+  ru: Парламент обсуждает депутатское законодательное предложение или правительственный законопроект и
+    рассматривает вопрос в различных комитетах.
+  scene_id: hb-c04-u0029
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - utskott
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s001.wav
+  start_seconds: 79.625
+  end_seconds: 88.680782
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0029-s002
+  sv: Till sist röstar riksdagsledamöterna om huruvida de understöder lagen.
+  ru: В завершение депутаты парламента голосуют о том, поддерживают ли они закон.
+  scene_id: hb-c04-u0029
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s002.wav
+  start_seconds: 90.458333
+  end_seconds: 97.07602
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0029-s003
+  sv: Om riksdagen godkänner lagen, stadfäster presidenten den med sin underskrift.
+  ru: Если парламент одобряет закон, президент утверждает его своей подписью.
+  scene_id: hb-c04-u0029
+  visual_cue: Actual Presidential Palace in Helsinki. Illustrates the presidential institution and duties,
+    without identifying a current officeholder or particular decision. Original photograph and Commons
+    identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the exact bilingual
+    source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_palace
+  text_highlights:
+  - stadfäster
+  - presidenten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s003.wav
+  start_seconds: 98.833333
+  end_seconds: 105.72966
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/palace.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0029-s004
+  sv: Myndigheterna informerar om lagändringen, och medierna rapporterar om den nya lagen, dess syfte
+    och innehåll.
+  ru: Органы власти информируют об изменении закона, а СМИ сообщают о новом законе, его цели и содержании.
+  scene_id: hb-c04-u0029
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s004.wav
+  start_seconds: 107.5
+  end_seconds: 117.113061
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0029-s005
+  sv: På så sätt får medborgarna aktuell information om nya lagar.
+  ru: Таким образом граждане получают актуальную информацию о новых законах.
+  scene_id: hb-c04-u0029
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0029-s005.wav
+  start_seconds: 118.875
+  end_seconds: 124.517449
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0030-s001
+  sv: Riksdagen godkänner också regeringens förslag till statens budget.
+  ru: Парламент также одобряет предложение правительства о государственном бюджете.
+  scene_id: hb-c04-u0030
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s001.wav
+  start_seconds: 127.0
+  end_seconds: 132.921088
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0030-s002
+  sv: Budgeten är en plan över hur statens skattepengar och övriga intäkter ska användas.
+  ru: Бюджет — это план использования налоговых средств государства и других поступлений.
+  scene_id: hb-c04-u0030
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - skattepengar
+  - övriga intäkter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s002.wav
+  start_seconds: 134.708333
+  end_seconds: 142.092279
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0030-s003
+  sv: Regeringen förhandlar om budgeten varje år och gör ett budgetförslag till riksdagen.
+  ru: Правительство ежегодно ведёт переговоры о бюджете и вносит в парламент проект бюджета.
+  scene_id: hb-c04-u0030
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Keep the foreground steady beside the
+    exact bilingual source pair; source highlights remain in the text.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s003.wav
+  start_seconds: 143.875
+  end_seconds: 151.189286
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0030-s004
+  sv: Riksdagen övervakar förverkligandet av budgeten.
+  ru: Парламент контролирует исполнение бюджета.
+  scene_id: hb-c04-u0030
+  visual_cue: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including the
+    modern annex. Represents the parliamentary institution; does not claim the pictured building is the
+    columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Keep the foreground steady beside the exact bilingual source pair; source highlights remain in the
+    text.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0030-s004.wav
+  start_seconds: 152.958333
+  end_seconds: 157.834524
+  display_segments: []
+  render_image: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0031-s001
+  sv: Riksdagen måste hålla sig uppdaterad om vad som beslutas i Europeiska unionen.
+  ru: Парламент должен быть в курсе решений, принимаемых в Европейском союзе.
+  scene_id: hb-c04-u0031
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s001.wav
+  start_seconds: 160.291667
+  end_seconds: 167.605952
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0031-s002
+  sv: Riksdagen berättar för regeringen vad Finland anser om de ärenden som behandlas i EU.
+  ru: Парламент сообщает правительству позицию Финляндии по вопросам, рассматриваемым в ЕС (EU).
+  scene_id: hb-c04-u0031
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Riksdagen berättar för regeringen vad Finland anser om de ärenden som behandlas i Europeiska
+      unionen.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s002.wav
+  start_seconds: 169.375
+  end_seconds: 178.570102
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0031-s003
+  sv: Finlands lagar och EU:s rättsakter kan inte stå i strid med varandra.
+  ru: Законы Финляндии и правовые акты ЕС не могут противоречить друг другу.
+  scene_id: hb-c04-u0031
+  visual_cue: 'Steady complete source-only term card: Finlands lagar, EU:s rättsakter'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - Finlands lagar
+  - EU:s rättsakter
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Finlands lagar och Europeiska unionens rättsakter kan inte stå i strid med varandra.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s003.wav
+  start_seconds: 180.333333
+  end_seconds: 187.995918
+  display_segments: []
+  render_image: studio/media/hb-c04-riksdagen/cards/22.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0031-s004
+  sv: Finland måste ta EU:s rättsakter i beaktande, eftersom Finland är medlem i EU.
+  ru: Финляндия должна учитывать правовые акты ЕС, поскольку является членом ЕС.
+  scene_id: hb-c04-u0031
+  visual_cue: Leave the foreground open for this passage; no verified specific picture is assigned and
+    no foreground caption is shown.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check this meaning-preserving number/abbreviation expansion in whole-video listening; diagnostic ASR
+    cannot certify pronunciation.
+  speech_override:
+    text: Finland måste ta Europeiska unionens rättsakter i beaktande, eftersom Finland är medlem i Europeiska
+      unionen.
+    reason: Expand the exact source year, quantity or abbreviation for Swedish synthesis without changing
+      meaning or displayed text.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-riksdagen/narration/hb-c04-u0031-s004.wav
+  start_seconds: 189.75
+  end_seconds: 199.78102
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-riksdagen/sources/music-bed.flac
+  background_image: studio/media/hb-c04-riksdagen/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.6571428571428573
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Homebrew — Demokrati, förvaltning och påverkan
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - Exakt svensk källtext med granskad rysk översättning.
+    - 'Urval, typografi och videobearbetning: Homebrew-studion.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Riksdagshuset Helsingfors November 2025 01.jpg — ArildV · CC BY-SA 4.0
+    - 'Förgrundsfoton: LPfi; Josefiina Alanen; Paasikivi; jampe.'
+    - Ethereal Relaxation — Kevin MacLeod (incompetech.com).
+    - 'Musik: CC BY 4.0. Alla bildkällor, licenser och bearbetningar i CREDITS.md.'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Relevant foreground photographs held steady; resized/cropped for the left panel. Individual original
+    licenses and adaptation notices are preserved in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Riksdagshuset_Helsingfors_November_2025_01.jpg
+    description: Parliament House in Helsinki, Finland. Built in 1926–1931 in the Nordic Classicism style
+      of neoclassical architecture, designed by architect Johan Sigfrid Sirén.
+    license: CC BY-SA 4.0
+  music_loop_crossfade_seconds: 4

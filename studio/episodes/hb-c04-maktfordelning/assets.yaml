@@ -1,0 +1,256 @@
+schema_version: 1
+section_id: hb-c04-maktfordelning
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c04-maktfordelning/sources/background.jpg
+    sha256: 92660a1c124d7a992ab70f90279dcd081893e57883840ab94b16672323f66dc1
+    bytes: 12574088
+  source_url: https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland_facade_2021-04-20.jpg
+  creator: Josefiina Alanen
+  reuse_terms: CC BY 4.0; https://creativecommons.org/licenses/by/4.0
+  required_credits: 'Supreme Court of Finland facade 2021-04-20.jpg — Josefiina Alanen · CC BY 4.0. https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland_facade_2021-04-20.jpg
+    License: https://creativecommons.org/licenses/by/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY 4.0.'
+  relevance_verification: Verified Supreme Court of Finland exterior supplies judicial-institution context
+    for separation of powers. The photo does not illustrate a particular judgment. Identity and reuse
+    terms verified against Commons API metadata and the downloaded original image.
+- asset_id: fact_cards
+  kind: foreground
+  files:
+  - path: studio/media/hb-c04-maktfordelning/cards/00.png
+    sha256: 516cc9c09d27b59823ccfafa2dd10dbc6226abc68e6e23f9658b52c34eadf253
+    bytes: 11195
+    sentence_id: hb-c04-u0018-s001
+    source_substrings:
+    - Grundlagen
+  - path: studio/media/hb-c04-maktfordelning/cards/02.png
+    sha256: 7b2d325d6f9d9ebaaba4e3a1c82ce8bf5eb934455c38b9c078664966d413114e
+    bytes: 27786
+    sentence_id: hb-c04-u0019-s001
+    source_substrings:
+    - lagstiftande makt
+    - verkställande makt
+    - domsrätt
+  creator: Homebrew video studio typography
+  reuse_terms: Original layout; text repeats the episode source with its recorded credits.
+  required_credits: Source text credits in sources.yaml; no third-party imagery in these cards.
+  relevance_verification: Each label is an exact substring of its associated Swedish source sentence;
+    no inferred figures, identities, routes or geographic boundaries.
+  creation_method:
+    tool: studio/episodes/hb-c04-maktfordelning/prepare_assets.py
+    fonts: Liberation Sans Bold
+    size: 760×720
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c04-maktfordelning/sources/music.mp3
+    sha256: 45e91c3a804bab0a27f54323a34b3a404cfb172ccace169518384afdb51c311a
+    bytes: 3727283
+  - path: studio/media/hb-c04-maktfordelning/sources/music-bed.flac
+    sha256: 8cb6a0a617c430dd99e91a2951b89651a8e244aae906b720a453106e75c49e3f
+    bytes: 21722067
+    seconds: 124.16666666666667
+    sample_rate: 48000
+    channels: 2
+  title: Evening
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN2300002
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/Evening.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"Evening" Kevin MacLeod (incompetech.com). Licensed under Creative Commons: By Attribution
+    4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded, level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c04-maktfordelning/prepare_assets.py
+    master_seconds: 186.25305
+    prepared_seconds: 124.16666666666667
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    format: 48000 Hz stereo PCM24 FLAC
+    pre_pcm_peak: 0.8823564052581787
+    pre_pcm_scale: 1.0
+    pre_pcm_attenuation_db: 0.0
+    pcm_rail_samples: 0
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0018-s001.wav
+    sha256: cf8086029bab127387bbc723b9cfd8261838f0566c9c650b40d2066315c020c8
+    bytes: 688172
+    seconds: 7.801904761904762
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0018-s001
+    peak: 0.353057861328125
+    generation_seconds: 7.796209150052164
+    tts_input: Grundlagen är grunden för all lagstiftning och allt utövande av offentlig makt i Finland.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0018-s002.wav
+    sha256: 90badd906effffb8362010e9a305dbfbcb9180025a4917a6ea77602a2f6e7278
+    bytes: 1105964
+    seconds: 12.538775510204081
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0018-s002
+    peak: 0.30584716796875
+    generation_seconds: 15.853850125975441
+    tts_input: I grundlagen föreskrivs om hur staten är organiserad, vilken makt som hör till vilken aktör
+      i Finland och hur till exempel lagar stiftas i landet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0019-s001.wav
+    sha256: bc65e7fba1baf1160c5febbce5059d1dbc5cbf21c531bbb7dc69f54585de822f
+    bytes: 632876
+    seconds: 7.174965986394557
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0019-s001
+    peak: 0.364837646484375
+    generation_seconds: 11.183437236992177
+    tts_input: I Finland är makten indelad i lagstiftande makt, verkställande makt och domsrätt.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0019-s002.wav
+    sha256: 9063cb83f6c219654385c2f0632d33c581f9429209516d0efd3d0c0292a92622
+    bytes: 663596
+    seconds: 7.523265306122449
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0019-s002
+    peak: 0.371429443359375
+    generation_seconds: 11.001607703976333
+    tts_input: Den lagstiftande makten, det vill säga makten att stifta lagar, utövas av riksdagen.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0019-s003.wav
+    sha256: ca4f644c0394c46b175443fef26dfd9a4a7495ccb78a692daa6982c52faacd60
+    bytes: 878636
+    seconds: 9.961360544217687
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0019-s003
+    peak: 0.3614501953125
+    generation_seconds: 13.435782802000176
+    tts_input: Den verkställande makten, det vill säga makten att tillämpa lagar i praktiken, utövas av
+      presidenten och regeringen.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0019-s004.wav
+    sha256: 5570847569dfbd24940c47c661c69880a9eb23ee101ce9223740bfe1f8f21919
+    bytes: 940076
+    seconds: 10.65795918367347
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0019-s004
+    peak: 0.3380126953125
+    generation_seconds: 16.563644554989878
+    tts_input: Regeringen ser till exempel till att ministerierna och de myndigheter som lyder under dem
+      fattar beslut i enlighet med lagarna.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0019-s005.wav
+    sha256: aba18fd00d03dff6d6a2f8d2a73498593cb05de3766d39d1f97d5cab54ec978c
+    bytes: 1013804
+    seconds: 11.493877551020407
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0019-s005
+    peak: 0.3814697265625
+    generation_seconds: 20.33452325401595
+    tts_input: Domsrätten, det vill säga makten att bedöma huruvida någon har agerat i enlighet med lagen
+      i ett enskilt fall, verkställs av domstolarna.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c04-maktfordelning/narration/hb-c04-u0020-s001.wav
+    sha256: f9af88adf5514a1e17e60667d8542ec3873d364b21fa5883d1e016b091c7c8f0
+    bytes: 682028
+    seconds: 7.732244897959184
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c04-u0020-s001
+    peak: 0.26409912109375
+    generation_seconds: 12.613524040963966
+    tts_input: I Finland beslutar riksdagen, regeringen och presidenten om frågor som rör hela landet.
+    intra_op_num_threads: 4
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  creator: Local synthesis with Supertonic 3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic 3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic 1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation, in source order; interrupted missing-clip resumes
+      or targeted retakes restart the seed. See each file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; Linux x86_64; actual intra-op thread count recorded per selected clip (legacy
+      records without this field used four)
+    format: 44100 Hz mono PCM16 WAV
+- asset_id: picture_cabinet
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/cabinet.jpg
+    sha256: 44f3963e031e9d441acc28cc1e76502ae08767e00759e43b25b949080560e2da
+    bytes: 13976396
+  source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg
+  creator: Josefiina Alanen
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Helsinki Government Palace from Senate Square 2021-03-03.jpg — Josefiina Alanen. CC
+    BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0. https://commons.wikimedia.org/wiki/File:Helsinki_Government_Palace_from_Senate_Square_2021-03-03.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Government Palace in Helsinki. Illustrates the cabinet institution and
+    its preparation/implementation role, without claiming that every named ministry or agency is housed
+    in this building. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_court
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/court.jpg
+    sha256: c35a338978094cdac9ff137bfbaaa0c0b06d2693b598534e19323fcfa0a57be6
+    bytes: 7255292
+  source_url: https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland,_Helsinki.jpg
+  creator: Uhooep
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Supreme Court of Finland, Helsinki.jpg — Uhooep. CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0.
+    https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland,_Helsinki.jpg. Resized/cropped for
+    a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Actual Supreme Court of Finland exterior. Illustrates the judicial institution
+    in passages on courts, constitutional rights and separation of powers; no particular case or judgment
+    is depicted. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'
+- asset_id: picture_parliament
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c04-demokrati/foreground-source/parliament.jpg
+    sha256: ded2673a048ba62f8c4132679201f772f59d156846fe697f9fadda3327a9e516
+    bytes: 449025
+  source_url: https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg
+  creator: jampe
+  reuse_terms: CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0
+  required_credits: Eduskuntatalo Töölönlahdenkatu - panoramio.jpg — jampe. CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0.
+    https://commons.wikimedia.org/wiki/File:Eduskuntatalo_T%C3%B6%C3%B6l%C3%B6nlahdenkatu_-_panoramio.jpg.
+    Resized/cropped for a steady foreground panel; adaptation retains applicable original reuse terms.
+  relevance_verification: Parliament complex in Helsinki, viewed from Toolonlahdenkatu, prominently including
+    the modern annex. Represents the parliamentary institution; does not claim the pictured building is
+    the columned main facade. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+  metadata_retrieved: '2026-10-26'

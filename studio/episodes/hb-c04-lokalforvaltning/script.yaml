@@ -1,0 +1,873 @@
+schema_version: 1
+section_id: hb-c04-lokalforvaltning
+chapter_id: hb-c04
+title_sv: Kommuner och välfärdsområden
+title_ru: Муниципалитеты и регионы по обеспечению благополучия населения
+source_path: data/homebrew/sv/chapters/04_demokrati_forvaltning_och_paverkan.yaml
+translation_path: data/homebrew/ru/sections/hb-c04-lokalforvaltning.yaml
+example_only: false
+source_section_sha256: 0c6862045757cd5ec8e2756268f81dc08388b94311d01659c18ff6594eb32190
+translation_file_sha256: 231270ebe4626fd254940ca77085b420a4a129c9d60a2c9929d1aa9a3a206164
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every exact source sentence/list fragment once. Episode-specific scenes below follow
+    institutional distinctions and explain their relationships in the original source order.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at24fps. Chapter4 warm umber #382d24, ivory #faf3e8, secondary #dfcfbb, gold #dfb96f,
+    separator #695540. Liberation Sans Bold48/Regular40 with44/36 or40/34 only where necessary. Stable
+    right bilingual text panel, separate steady source-term cards at selected explanatory turns.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Tampereen raatihuone3.jpg by Mikkoau continuously as decorative background, darkened
+    42% and blurred 2.5px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=2.1758928571428573.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Wind of the Rainforest by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 3534.054 seconds; prepared lossless stereo bed 304.625
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Use four verified foreground sources at relevant topic boundaries: wellbeing-county map,
+    Tornio health centre, municipal public library and Helsinki City Hall. Target at least50% of measured
+    body display time. Source-term cards remain only where useful and do not count as pictures.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Readable15-second cards for text sources, background/music/voice and foreground-picture attribution.
+    Full source URLs, licenses and adaptation notices accompany the MP4 in CREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: State regional and local administration
+- id: scene-2
+  description: Division between wellbeing counties and municipalities
+- id: scene-3
+  description: Healthcare and rescue responsibilities
+- id: scene-4
+  description: Elected county councils and state funding
+- id: scene-5
+  description: Municipal autonomy and taxation
+- id: scene-6
+  description: Everyday municipal services
+- id: scene-7
+  description: Council, executive board and committees
+- id: scene-8
+  description: Helsinki and Åland exception
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic photograph, selected centrally for this episode, continuous decorative
+    context with source identity recorded in assets.yaml.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: fact_cards
+  kind: foreground
+  description: Source-derived text graphics for dates, figures and named languages, groups or places;
+    exact Swedish substrings only.
+  fallback: Leave foreground open to background; preserve full bilingual source display.
+- id: music_bed
+  kind: music
+  description: Wind of the Rainforest — Kevin MacLeod, CC BY4.0, verified official master.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: county_map
+  kind: foreground
+  description: File:Hyvinvointialueet.svg. Map of Finland wellbeing services counties used for the source
+    division into21counties; includes separate Helsinki andÅland areas. Verify visual boundaries and legend
+    before use.
+  fallback: If this specific licensed image cannot be restored, use another verified photograph/map of
+    the same institution or service; record any coverage shortfall rather than substitute unrelated imagery.
+- id: health_centre
+  kind: foreground
+  description: File:Health centre in Tornio 20230521 001.jpg. Actual Tornio health centre illustrates
+    the healthcare services for which wellbeing counties are responsible; not used for the Helsinki exception.
+  fallback: If this specific licensed image cannot be restored, use another verified photograph/map of
+    the same institution or service; record any coverage shortfall rather than substitute unrelated imagery.
+- id: municipal_library
+  kind: foreground
+  description: File:Helsinki Central Library Oodi, 2019 (01).jpg. Actual municipal public library in Helsinki
+    illustrates municipal basic services and libraries.
+  fallback: If this specific licensed image cannot be restored, use another verified photograph/map of
+    the same institution or service; record any coverage shortfall rather than substitute unrelated imagery.
+- id: city_hall
+  kind: foreground
+  description: File:Helsingin kaupungintalo satamasta.jpg. Actual Helsinki City Hall illustrates municipal
+    councils, local self-government and the named Helsinki exception; it is not a wellbeing-county council.
+  fallback: If this specific licensed image cannot be restored, use another verified photograph/map of
+    the same institution or service; record any coverage shortfall rather than substitute unrelated imagery.
+sentences:
+- sentence_id: hb-c04-u0049-s001
+  sv: Utöver centralförvaltningen har staten också en regionförvaltning.
+  ru: Помимо центральной администрации у государства есть также региональная администрация.
+  scene_id: scene-1
+  visual_cue: 'Steady exact-source concept card: regionförvaltning'
+  asset_ids:
+  - episode_background
+  - fact_cards
+  text_highlights:
+  - regionförvaltning
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0049-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.171088
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/cards/00.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0049-s002
+  sv: Vid regionförvaltningens ämbetsverk och centraler hanteras till exempel miljöfrågor, säkerheten
+    inom landet och trafikens funktion.
+  ru: В ведомствах и центрах региональной администрации занимаются, например, вопросами окружающей среды,
+    внутренней безопасности страны и функционирования транспорта.
+  scene_id: scene-1
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0049-s002.wav
+  start_seconds: 10.958333
+  end_seconds: 22.103912
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0050-s001
+  sv: I statens lokalförvaltning ingår i sin tur bland annat polisinrättningarna.
+  ru: В состав государственной местной администрации, в свою очередь, входят, в частности, полицейские
+    управления.
+  scene_id: scene-1
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0050-s001.wav
+  start_seconds: 23.875
+  end_seconds: 30.701667
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0051-s001
+  sv: Också välfärdsområdena, som är självständiga aktörer, är en del av regionförvaltningen.
+  ru: Регионы по обеспечению благополучия населения (välfärdsområden), являющиеся самостоятельными участниками,
+    также входят в состав региональной администрации.
+  scene_id: scene-2
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights:
+  - välfärdsområdena
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0051-s001.wav
+  start_seconds: 33.166667
+  end_seconds: 41.45619
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0051-s002
+  sv: Kommunerna å andra sidan är de viktigaste aktörerna inom lokalförvaltningen.
+  ru: Муниципалитеты, с другой стороны, являются важнейшими участниками местного управления.
+  scene_id: scene-2
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0051-s002.wav
+  start_seconds: 43.208333
+  end_seconds: 50.17432
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0052-s001
+  sv: Välfärdsområdena ansvarar för social- och hälsovårdstjänsterna och räddningsväsendet i sina respektive
+    områden.
+  ru: Регионы по обеспечению благополучия населения отвечают за социальные и медицинские услуги и спасательную
+    службу на своих соответствующих территориях.
+  scene_id: scene-3
+  visual_cue: Show the verified foreground picture Hälsocentral i Torneå. Actual Tornio health centre
+    illustrates the healthcare services for which wellbeing counties are responsible; not used for the
+    Helsinki exception. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - health_centre
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0052-s001.wav
+  start_seconds: 52.625
+  end_seconds: 62.79534
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/health_centre.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0052-s002
+  sv: I Finland finns det 21 välfärdsområden.
+  ru: В Финляндии существует 21 регион по обеспечению благополучия населения.
+  scene_id: scene-3
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights:
+  - 21 välfärdsområden
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0052-s002.wav
+  start_seconds: 64.583333
+  end_seconds: 69.111224
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0052-s003
+  sv: Helsingfors hör inte till något välfärdsområde, utan producerar själv sina social- och hälsovårdstjänster
+    och räddningsväsendets tjänster.
+  ru: Хельсинки не входит ни в один регион по обеспечению благополучия населения, а самостоятельно предоставляет
+    социальные, медицинские и спасательные услуги.
+  scene_id: scene-3
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0052-s003.wav
+  start_seconds: 70.875
+  end_seconds: 83.274456
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0053-s001
+  sv: I ett välfärdsområde fattas besluten av välfärdsområdesfullmäktige.
+  ru: В регионе по обеспечению благополучия населения решения принимает совет региона по обеспечению благополучия
+    населения (välfärdsområdesfullmäktige).
+  scene_id: scene-4
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0053-s001.wav
+  start_seconds: 85.75
+  end_seconds: 92.089048
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0053-s002
+  sv: Ledamöterna i välfärdsområdesfullmäktige utses genom val.
+  ru: Члены совета региона по обеспечению благополучия населения избираются на выборах.
+  scene_id: scene-4
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0053-s002.wav
+  start_seconds: 93.875
+  end_seconds: 99.23881
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0053-s003
+  sv: Välfärdsområdena får sin finansiering från staten.
+  ru: Регионы по обеспечению благополучия населения получают финансирование от государства.
+  scene_id: scene-4
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0053-s003.wav
+  start_seconds: 101.0
+  end_seconds: 105.736871
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0054-s001
+  sv: Det finns cirka 300 kommuner i Finland.
+  ru: В Финляндии существует около 300 муниципалитетов.
+  scene_id: scene-5
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - 300 kommuner
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0054-s001.wav
+  start_seconds: 108.208333
+  end_seconds: 112.387925
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0054-s002
+  sv: Kommunerna beslutar i mycket hög grad själva om sina angelägenheter och sin ekonomi.
+  ru: Муниципалитеты в очень большой степени самостоятельно принимают решения о своих делах и финансах.
+  scene_id: scene-5
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0054-s002.wav
+  start_seconds: 114.166667
+  end_seconds: 121.620272
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0054-s003
+  sv: Kommunerna har rätt att ta ut skatt av invånarna.
+  ru: Муниципалитеты имеют право взимать налог с жителей.
+  scene_id: scene-5
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - skatt
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0054-s003.wav
+  start_seconds: 123.375
+  end_seconds: 128.111871
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0054-s004
+  sv: Utöver kommunalskatten får kommunerna också pengar från staten för att ordna tjänster.
+  ru: Помимо муниципального налога муниципалитеты также получают от государства средства для организации
+    услуг.
+  scene_id: scene-5
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0054-s004.wav
+  start_seconds: 129.875
+  end_seconds: 137.398265
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0055-s001
+  sv: Var och en som är permanent bosatt i Finland är invånare i en kommun.
+  ru: Каждый постоянно проживающий в Финляндии является жителем какого-либо муниципалитета.
+  scene_id: scene-6
+  visual_cue: Show the verified foreground picture Helsingfors centrumbibliotek Ode. Actual municipal
+    public library in Helsinki illustrates municipal basic services and libraries. Keep bilingual text
+    fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - municipal_library
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0055-s001.wav
+  start_seconds: 139.875
+  end_seconds: 146.283707
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/municipal_library.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0055-s002
+  sv: Kommunen erbjuder sina invånare mycket basservice.
+  ru: Муниципалитет предоставляет своим жителям много базовых услуг.
+  scene_id: scene-6
+  visual_cue: Show the verified foreground picture Helsingfors centrumbibliotek Ode. Actual municipal
+    public library in Helsinki illustrates municipal basic services and libraries. Keep bilingual text
+    fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - municipal_library
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0055-s002.wav
+  start_seconds: 148.041667
+  end_seconds: 152.778537
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/municipal_library.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0055-s003
+  sv: Kommunen ansvarar för till exempel skolorna, småbarnspedagogiken, biblioteken och olika motions-
+    och idrottstjänster.
+  ru: Муниципалитет отвечает, например, за школы, дошкольное воспитание и обучение, библиотеки и различные
+    физкультурные и спортивные услуги.
+  scene_id: scene-6
+  visual_cue: Show the verified foreground picture Helsingfors centrumbibliotek Ode. Actual municipal
+    public library in Helsinki illustrates municipal basic services and libraries. Keep bilingual text
+    fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - municipal_library
+  text_highlights:
+  - skolorna
+  - biblioteken
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0055-s003.wav
+  start_seconds: 154.541667
+  end_seconds: 165.060306
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/municipal_library.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0055-s004
+  sv: Kommunen planerar också gator, bostäder och parkområden och sörjer för vatten- och eltillgången
+    och renhållningen.
+  ru: Муниципалитет также планирует улицы, жильё и парковые зоны и заботится о водоснабжении, электроснабжении
+    и поддержании чистоты.
+  scene_id: scene-6
+  visual_cue: Continuous topic photograph with open foreground; hold the exact bilingual pair without
+    a floating caption.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0055-s004.wav
+  start_seconds: 166.833333
+  end_seconds: 176.446395
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0056-s001
+  sv: I en kommun fattas besluten demokratiskt i kommunfullmäktige.
+  ru: В муниципалитете решения демократическим путём принимает муниципальный совет (kommunfullmäktige).
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - kommunfullmäktige
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0056-s001.wav
+  start_seconds: 178.916667
+  end_seconds: 184.489456
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0056-s002
+  sv: Ledamöterna i kommunfullmäktige utses i ett kommunalval.
+  ru: Члены муниципального совета избираются на муниципальных выборах.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0056-s002.wav
+  start_seconds: 186.25
+  end_seconds: 191.47449
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0056-s003
+  sv: Fullmäktige i sin tur utser medlemmar i kommunstyrelsen, som har som uppgift att bereda fullmäktiges
+    beslut och verkställa dem.
+  ru: Совет, в свою очередь, избирает членов муниципального правления (kommunstyrelsen), задачей которого
+    является подготовка решений совета и их исполнение.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - kommunstyrelsen
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0056-s003.wav
+  start_seconds: 193.25
+  end_seconds: 203.768639
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0057-s001
+  sv: Kommunfullmäktige utser också nämnder.
+  ru: Муниципальный совет также назначает комиссии.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0057-s001.wav
+  start_seconds: 205.541667
+  end_seconds: 209.16398
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0057-s002
+  sv: Exempel på nämnder är bildningsnämnden, som ansvarar för utbildnings- och kulturfrågor, och centralvalnämnden,
+    som ansvarar för förrättandet av val i kommunens område.
+  ru: Примерами комиссий служат комиссия по образованию и культуре, отвечающая за вопросы образования
+    и культуры, и центральная избирательная комиссия, отвечающая за проведение выборов на территории муниципалитета.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - bildningsnämnden
+  - centralvalnämnden
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0057-s002.wav
+  start_seconds: 210.916667
+  end_seconds: 225.336259
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c04-u0057-s003
+  sv: Nämnderna bereder ärenden för kommunfullmäktige, som fattar besluten.
+  ru: Комиссии готовят вопросы для муниципального совета, который принимает решения.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0057-s003.wav
+  start_seconds: 227.125
+  end_seconds: 233.324728
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0057-s004
+  sv: Medlemmarna i nämnderna är kommunfullmäktigeledamöter eller kommuninvånare som utsetts av partierna.
+  ru: Члены комиссий являются членами муниципального совета или жителями муниципалитета, назначенными
+    партиями.
+  scene_id: scene-7
+  visual_cue: Show the verified foreground picture Helsingfors stadshus. Actual Helsinki City Hall illustrates
+    municipal councils, local self-government and the named Helsinki exception; it is not a wellbeing-county
+    council. Keep bilingual text fixed; do not present source-word highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0057-s004.wav
+  start_seconds: 235.083333
+  end_seconds: 244.069456
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/city_hall.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c04-u0058-s001
+  sv: I Helsingfors och på Åland ordnas inget välfärdsområdesval, eftersom Helsingfors stad och Åland
+    ordnar tjänsterna själva.
+  ru: В Хельсинки и на Аландских островах выборы в советы регионов по обеспечению благополучия населения
+    не проводятся, поскольку город Хельсинки и Аландские острова организуют услуги самостоятельно.
+  scene_id: scene-8
+  visual_cue: Show the verified foreground picture Välfärdsområden i Finland. Map of Finland wellbeing
+    services counties used for the source division into21counties; includes separate Helsinki andÅland
+    areas. Verify visual boundaries and legend before use. Keep bilingual text fixed; do not present source-word
+    highlights as picture captions.
+  asset_ids:
+  - episode_background
+  - county_map
+  text_highlights:
+  - Helsingfors
+  - Åland
+  pronunciation_notes:
+  - Check names, compound institutional terms and all numbers in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c04-lokalforvaltning/narration/hb-c04-u0058-s001.wav
+  start_seconds: 246.541667
+  end_seconds: 257.408605
+  display_segments: []
+  render_image: studio/media/hb-c04-lokalforvaltning/foreground/county_map-display.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c04-lokalforvaltning/sources/music-bed.flac
+  background_image: studio/media/hb-c04-lokalforvaltning/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.1758928571428573
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Exakt svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Tampereen raatihuone3.jpg — Mikkoau · CC BY-SA 4.0
+    - Wind of the Rainforest — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten.'
+  - heading: Bilder i förgrunden · Иллюстрации
+    paragraphs:
+    - Välfärdsområden i Finland — Fenn-O-maniC · CC BY-SA 4.0
+    - Hälsocentral i Torneå — Methem (Mikko J. Putkonen) · CC BY 4.0
+    - Helsingfors centrumbibliotek Ode — Bahnfrend · CC BY-SA 4.0
+    - Helsingfors stadshus — kallerna · CC BY-SA 3.0
+    - Fullständiga länkar och bildvillkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  - Foreground pictures are independently sourced, steady and resized/cropped; map includes21wellbeing
+    counties and the separate Helsinki(22) andÅland(23) areas. Full original picture licenses retained
+    in accompanying credits.
+  palette:
+    background: '#382d24'
+    text: '#faf3e8'
+    secondary: '#dfcfbb'
+    highlight: '#dfb96f'
+    separator: '#695540'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Tampereen_raatihuone3.jpg
+    description: 'Helsinki City Hall, Pohjoisesplanadi 11–13, Helsinki, Finland. Built 1833. Architect:
+      Carl Ludvig Engel.'
+    license: CC BY-SA 4.0
