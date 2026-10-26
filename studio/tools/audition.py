@@ -21,7 +21,11 @@ def main():
     parser.add_argument('--speed', type=float, default=.85)
     parser.add_argument('--output', type=Path)
     parser.add_argument('--indices', default='0,2,8,11,12,13')
+    parser.add_argument('--threads', type=int, default=4,
+                        help='Supertonic ONNX CPU threads; coordinate across parallel jobs')
     args = parser.parse_args()
+    if args.threads < 1:
+        parser.error('--threads must be positive')
     script = yaml.safe_load((ROOT / 'studio/episodes' / args.section / 'script.yaml').read_text())
     rows = script['sentences']
     if not args.all:
@@ -33,7 +37,7 @@ def main():
     np.random.seed(42)
     if args.engine == 'supertonic':
         from supertonic import TTS
-        model = TTS(model_dir=models / 'supertonic3', auto_download=False, intra_op_num_threads=4)
+        model = TTS(model_dir=models / 'supertonic3', auto_download=False, intra_op_num_threads=args.threads)
         style = model.get_voice_style(args.voice)
     elif args.engine == 'alma':
         from piper import PiperVoice, SynthesisConfig
@@ -65,6 +69,8 @@ def main():
                 reference = path
         data, rate = sf.read(path)
         record = dict(sentence_id=row['sentence_id'], text=text, engine=args.engine, voice=args.voice, speed=args.speed, seed=42, path=str(path.relative_to(ROOT)), sample_rate=rate, seconds=len(data)/rate, peak=float(np.max(np.abs(data))), generation_seconds=time.monotonic()-start)
+        if args.engine == 'supertonic':
+            record['intra_op_num_threads'] = args.threads
         records.append(record)
         print(json.dumps(record, ensure_ascii=False), flush=True)
         (output / 'metrics.json').write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')

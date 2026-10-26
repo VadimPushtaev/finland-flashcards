@@ -18,7 +18,7 @@ def main():
     parser.add_argument('--pattern', default='*.wav', help='Filename glob for selected takes')
     parser.add_argument('--language', default='sv', choices=['sv', 'ru'])
     parser.add_argument('--threads', type=int, default=4,
-                        help='CPU threads; use 1 while other episodes are synthesizing')
+                        help='CPU threads; allocate against the shared synthesis/rendering budget')
     parser.add_argument('--resume', action='store_true',
                         help='Reuse transcripts only when their recorded WAV checksum still matches')
     args = parser.parse_args()

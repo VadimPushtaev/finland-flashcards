@@ -38,6 +38,19 @@ text appearance and the hold after speech. Regenerate `SCRIPT.md` after renderin
 Keep `<video-stem>.CREDITS.md` with the MP4 when sharing it. It contains full source links,
 licenses, author attribution and adaptation notices in addition to closing cards.
 
+Before committing exports to GitHub, check file sizes: ordinary Git files must
+not exceed [100 MiB](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+For an oversized MP4, retain the verified original in ignored render scratch and
+compress a separate candidate with the pinned FFmpeg, for example H.264
+`-preset slow -crf 22 -pix_fmt yuv420p -c:a copy -movflags +faststart`.
+Preserve resolution, frame rate, complete frame count and timing. Verify the
+candidate's size and identical audio packets before replacing the canonical file.
+Record original/new hashes, sizes and exact command settings under
+`distribution_compression` in `render.json`. Repeat full export verification and
+actual-frame review, then refresh picture coverage, listening/review hash bindings
+and the chapter audit. Compression is an additional reproducible export step;
+the original renderer settings alone do not describe the compressed deliverable.
+
 Check the exported file decodes end to end, has the expected frame count/duration,
 and retains both audio and video streams. Inspect representative frames including
 the longest text, numerical facts and credits. Review voice quality and music
@@ -75,6 +88,18 @@ For parallel production, `check_audio.py --threads 1 --resume <narration-folder>
 transcribes available clips without repeating unchanged work. Reuse is keyed by
 the WAV checksum, so regenerated takes are checked again. Record diagnostic flags
 in the episode; ASR does not stand in for listening or whole-video acceptance.
+
+For the foreground-picture target, register picture assets as `kind: foreground`
+with `visual_type: photograph`, `map`, `flag`, `illustration` or `diagram`, on the
+asset or individual file. Plain text cards use `text_card` or remain unclassified.
+After stills, run `poetry run python studio/tools/picture_coverage.py SECTION
+--planned --require-target`; after the final render and script review, omit
+`--planned` to bind the report to the export and current script/assets. The tool
+excludes titles, credits, typography and copies of the background, and measures
+whole sentence-display intervals. Visual review must still confirm relevance.
+Document any genuine shortfall under `DIRECTING.md`; do not relabel text cards.
+For a chapter meeting the target throughout, add `--require-pictures` to the
+chapter audit to check current coverage reports as well as the video checks.
 
 After every episode in a chapter has a verified export, run
 `poetry run python studio/tools/audit_chapter.py hb-c01`. This checks inventory

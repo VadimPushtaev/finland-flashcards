@@ -27,6 +27,13 @@ seed `42`, 44,100 Hz mono PCM16 WAV. Package `supertonic==1.3.1`; model revision
 `aafc6e32416a594460b32413efc49d7fe4ce6d46`. Use local ONNX CPU inference with
 four intra-op threads. The first production run uses macOS 15.3.2 on arm64.
 
+For parallel production, `audition.py --threads N` can adjust ONNX CPU allocation
+without changing voice, language, steps, speed or seed. The default remains four;
+new metrics record the actual thread count. Coordinate the total with ASR and
+encoders, and retain existing takes rather than regenerating them to change thread
+allocation. Check any newly generated takes normally; identical waveforms across
+runtime configurations are not guaranteed.
+
 This is the studio default, accepted by the user with the first complete video
 on 2026-10-17 and selected on observed script fidelity,
 fixed voice identity, practical local operation and recorded model terms. It is

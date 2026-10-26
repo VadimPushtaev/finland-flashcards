@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from studio.tools import script as scripts
 from studio.tools.outputs import export_stem
+from studio.tools.picture_coverage import build_report as picture_report
 
 
 def digest(path):
@@ -23,7 +24,7 @@ def digest(path):
     return checksum.hexdigest()
 
 
-def audit(chapter_id):
+def audit(chapter_id, require_pictures=False):
     """Require every inventory section to have a source-validated, verified export."""
     inventory = scripts.read(ROOT / 'studio/episodes.yaml')
     episodes = [e for e in inventory['episodes'] if e['chapter_id'] == chapter_id]
@@ -86,6 +87,12 @@ def audit(chapter_id):
         scripts.require(credits.read_bytes() == (episode / 'CREDITS.md').read_bytes(), 'Stale accompanying credits: ' + section)
         scripts.require(script['title_sv'] in credits.read_text(), 'Incorrect credit title: ' + section)
         rows.append(dict(section_id=section, sentences=len(script['sentences']), seconds=report['seconds'], output=report['output'], sha256=report['sha256'], production_status=entry['production_status']))
+        if require_pictures:
+            coverage = picture_report(section)
+            saved = json.loads((episode / 'picture-coverage.json').read_text())
+            scripts.require(saved == coverage, 'Stale picture coverage: ' + section)
+            scripts.require(coverage['meets_target'], 'Below 50% picture target: ' + section)
+            rows[-1]['picture_fraction'] = coverage['picture_fraction']
         print('PASS:', section, flush=True)
     result = dict(chapter_id=chapter_id, episodes=len(rows), sentences=sum(r['sentences'] for r in rows), distinct_backgrounds=len(backgrounds), distinct_music_tracks=len(tracks), results=rows,
                   review_note='Automated production audit. Whole-video user acceptance is recorded separately per episode.')
@@ -97,4 +104,7 @@ def audit(chapter_id):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('chapter_id')
-    print(json.dumps(audit(parser.parse_args().chapter_id), ensure_ascii=False, indent=2))
+    parser.add_argument('--require-pictures', action='store_true',
+                        help='Require current coverage reports meeting the 50% picture target')
+    args = parser.parse_args()
+    print(json.dumps(audit(args.chapter_id, args.require_pictures), ensure_ascii=False, indent=2))
