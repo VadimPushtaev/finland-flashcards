@@ -59,13 +59,13 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
 .progress-bar { background: var(--study-green); }
 .workspace { margin-left: 248px; }
 .topbar { height: 79px; border-bottom: 1px solid var(--study-border); background: var(--study-surface); display: flex; align-items: center; justify-content: space-between; padding: 0 46px; gap: 16px; }
-.search-form { display: flex; gap: 10px; align-items: center; width: min(420px, 100%); color: var(--study-muted); }
+.search-form { display: flex; gap: 10px; align-items: center; width: min(420px, 100%); min-width: 0; color: var(--study-muted); }
 .search-form > .bi { font-size: .92rem; }
-.search-form input { font-size: .8rem; border: none; background: transparent; padding-left: 1px; color: var(--study-ink); }
+.search-form input { min-width: 0; font-size: .8rem; border: none; background: transparent; padding-left: 1px; color: var(--study-ink); }
 .search-form input::placeholder { color: var(--study-muted); opacity: .8; }
 .search-form input:focus { background: transparent; box-shadow: none; }
 .search-submit { border: 1px solid var(--study-border); border-radius: 5px; padding: 1px 5px; font-size: .7rem; color: var(--study-muted); background: transparent; }
-.topbar-tools { display: flex; align-items: center; gap: 23px; }
+.topbar-tools { display: flex; flex-shrink: 0; align-items: center; gap: 23px; }
 .language-label { display: flex; align-items: center; gap: 8px; font-size: .75rem; white-space: nowrap; color: var(--study-muted); }
 .finland-flag { display: inline-block; width: 24px; height: 16px; background: linear-gradient(transparent 39%, #345b8b 39% 61%, transparent 61%), linear-gradient(90deg, white 29%, #345b8b 29% 43%, white 43%); border: 1px solid #d8dfdf; border-radius: 2px; flex-shrink: 0; }
 .page { max-width: 1330px; padding: 44px 48px 0; margin: auto; }
@@ -303,8 +303,13 @@ mark { background: #eddeb3; color: #303622; padding: 1px 2px; border-radius: 2px
 .account-dialog .form-control { min-height: 44px; font-size: 16px; }
 .account-dialog .btn { min-height: 44px; }
 .account-controls { display: flex; align-items: center; gap: 5px; }
-.account-name { max-width: 100px; overflow: hidden; text-overflow: ellipsis; font-size: .75rem; }
-@media (max-width: 767px) { .account-name, .account-controls + .language-label { display: none; } .account-controls .btn { font-size: .7rem; padding: 5px; min-height: 40px; } }
+.account-name { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .75rem; }
+.account-controls .btn { white-space: nowrap; }
+@media (max-width: 767px) {
+  .account-controls { flex-direction: column; gap: 0; }
+  .account-name { font-size: .7rem; line-height: 1.2; }
+  .account-controls .btn { font-size: .7rem; padding: 4px 5px; min-height: 28px; }
+}
 
 .section-video { margin: 0 0 1.5rem; }
 .section-video video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; border-radius: .5rem; }
