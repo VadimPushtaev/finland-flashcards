@@ -20,11 +20,11 @@ See each target's review record for the actual review mode of later chapters.
 | 6. Lagar, rättsväsende och rättsskydd | 14 | 342 | 2,509 | Complete |
 | 7. Arbete, näringsliv och beskattning | 13 | 804 | 5,784 | Complete |
 | 8. Utbildning och lärande | 11 | 593 | 4,387 | Complete |
-| 9. Familj, barn och relationer | 25 | 1,083 | 7,913 | Complete |
+| 9. Familj, barn och relationer | 25 | 1,083 | 7,914 | Complete |
 | 10. Hälsa, social trygghet och åldrande | 13 | 685 | 4,922 | Complete |
 | 11. Boende, vardag och miljö | 19 | 766 | 5,094 | Complete |
 | 12. Integration, uppehåll och medborgarskap | 20 | 603 | 4,878 | Complete |
-| **Total** | **187** | **7,152** | **52,678** | **Complete** |
+| **Total** | **187** | **7,152** | **52,679** | **Complete** |
 
 The [shared glossary](glossary.yaml) contains 232 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
