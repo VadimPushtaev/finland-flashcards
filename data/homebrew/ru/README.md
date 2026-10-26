@@ -3,9 +3,8 @@
 Russian sentence translations, contextual vocabulary, shared terminology, and
 review metadata for the archived Swedish Homebrew anthology.
 
-Completed translations cover 186 of 187 sections: 7,137 sentence records,
-186 section headings, and 12 chapter headings. The remaining 1 sections
-are still pending. Work proceeds in chapter and subchapter order.
+Completed translations cover all 187 sections: 7,152 sentence records,
+187 section headings, and 12 chapter headings.
 Every completed target has a full review of its sentence translations,
 contextual vocabulary and dictionary meanings. Chapters 1–5 and 7 use independent
 agent review; chapter 6 records a separate full author review as `self_review`.
@@ -24,13 +23,13 @@ See each target's review record for the actual review mode of later chapters.
 | 9. Familj, barn och relationer | 25 | 1,083 | 7,913 | Complete |
 | 10. Hälsa, social trygghet och åldrande | 13 | 685 | 4,922 | Complete |
 | 11. Boende, vardag och miljö | 19 | 766 | 5,094 | Complete |
-| 12. Integration, uppehåll och medborgarskap | 19 | 588 | 4,757 | 19 / 20 sections complete |
-| **Total** | **186** | **7,137** | **52,542** | **1 sections pending** |
+| 12. Integration, uppehåll och medborgarskap | 20 | 603 | 4,878 | Complete |
+| **Total** | **187** | **7,152** | **52,663** | **Complete** |
 
 The [shared glossary](glossary.yaml) contains 232 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
-All 198 available translation targets (sections and chapter headings) are
-complete; this does not imply that the remaining sections have translations.
+All 199 expected translation targets (187 sections and 12 chapter headings) are
+complete.
 Two combined climate sentence records were split with user approval, preserving
 all Swedish wording: `hb-c01-u0032-s002` became `s008` and `s009` in the same unit;
 `hb-c01-u0034-s003` became `s007` and `s008`. The retired IDs are documented in the
