@@ -22,9 +22,9 @@ See each target's review record for the actual review mode of later chapters.
 | 8. Utbildning och lärande | 11 | 593 | 4,387 | Complete |
 | 9. Familj, barn och relationer | 25 | 1,083 | 7,914 | Complete |
 | 10. Hälsa, social trygghet och åldrande | 13 | 685 | 4,924 | Complete |
-| 11. Boende, vardag och miljö | 19 | 766 | 5,095 | Complete |
+| 11. Boende, vardag och miljö | 19 | 766 | 5,096 | Complete |
 | 12. Integration, uppehåll och medborgarskap | 20 | 603 | 4,878 | Complete |
-| **Total** | **187** | **7,152** | **52,682** | **Complete** |
+| **Total** | **187** | **7,152** | **52,683** | **Complete** |
 
 The [shared glossary](glossary.yaml) contains 232 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
