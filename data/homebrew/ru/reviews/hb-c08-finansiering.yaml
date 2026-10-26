@@ -1,0 +1,103 @@
+schema_version: 1
+source_id: hb-c08-finansiering
+result_sha256: 305ce1ddb08591ef64d2027bf2fda991d5ec4a82a0c738c1d29028e801a6f079
+glossary_sha256: 6d09347a74cefe67416df53bd752de5bb674794e12bde645f68b827da020b25e
+status: complete
+review_mode: independent
+reviewer: /root
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c08-u0169-s001
+  blocking: false
+  resolved: true
+  note: Coordinator-approved overall studiestod is financial aid for studies, matching completed Hux terminology,
+    not a wholly nonrepayable allowance. Kept studiepenning as the cash study grant, state guarantee for
+    a student loan as a distinct component, and housing supplement distinct from a general housing allowance;
+    ordinary stipendium remains scholarship/grant in context.
+- source_id: hb-c08-u0175-s001
+  blocking: false
+  resolved: true
+  note: Preserved attained age 17 exactly, rather than the loose over-17 phrasing on the primary Russian
+    terminology page; full-time studies are full study workload, without imposing a classroom-attendance
+    requirement.
+- source_id: hb-c08-u0180-s002
+  blocking: false
+  resolved: true
+  note: Preserved at least ten travel days per month, not ten individual trips, along with the sufficiently
+    long school journey condition; no current distance threshold or benefit amount was added.
+- source_id: hb-c08-u0184-s002
+  blocking: false
+  resolved: true
+  note: Scholarship may cover the whole academic-year tuition fee or part of that fee, not a semester
+    or part of a study period; Swedish source governs where the current Russian terminology page is loose.
+- source_id: hb-c08-u0163-s001
+  blocking: false
+  resolved: true
+  note: Kept the two introductory list fragments and each original list item in its own frozen record;
+    residence registration, required permit and non-study purpose remain cumulative, and every later exception
+    and modality remains intact.
+- source_id: hb-c08-u0186-s005
+  blocking: false
+  resolved: true
+  note: Distinct full self-review of all 64 records and 407 annotations refined the frequency statement
+    without adding an unsupported wider student group, broadened living expenses beyond accommodation,
+    and grouped hur mycket with its contextual amount sense. Every content occurrence, repeated word,
+    suspended compound and uncovered token was reviewed.
+- source_id: hb-c08-u0189-s001
+  blocking: false
+  resolved: true
+  note: Self-selected study is kept distinct from employment-service training, consistent with the completed
+    unemployment chapter. Receiving unemployment benefit while studying remains conditional and the joint
+    employment/integration-plan agreement requirement is retained. No current-law or financial-eligibility
+    update was made.
+- source_id: hb-c08-u0185-s001
+  blocking: false
+  resolved: true
+  note: 'Independent full review of all 64 source/Russian records and all vocabulary occurrences preserved
+    every archived qualification and list relationship. Corrected Nordic countries to the established
+    Northern Countries grouping rather than broader geographic Northern Europe; split the ordinary adjective/noun
+    combination and attached the approved nordisk entry. Polished full-time employment wording. Final
+    coverage: 408 annotations.'
+references:
+- location: /tmp/hb-c08-finansiering-context-agent01.yaml
+  purpose: Fresh validated bundle and archive hashes; read full supplied context, selected provenance,
+    book outline, editorial findings, attribution, glossary and all completed same-chapter translations.
+    The full Chapter 8 was read earlier in the same worker session.
+- location: data/infofinland/content/education/financing-your-studies.html
+  purpose: Read full archived article including surrounding conditions; translate selected frozen eligibility,
+    aid components, travel-day rules, meal support, scholarships and study-time work rights without importing
+    omitted thresholds or schemes.
+- location: data/orientation/sv/laromedel/studier-och-utbildning/vuxenutbildning.html
+  purpose: Entire full article was read in untruncated passes for section 8.9 in this same worker session;
+    supplies the selected adult-study finance and conditional unemployment-benefit passages.
+- location: https://infofinland.fi/ru/education/financing-your-studies
+  purpose: Actual primary terminology lookup for cash study grant, student loan, housing supplement, school-transport
+    and meal subsidies; Swedish archived source controls age 17, travel days and academic-year fee scope
+    where the Russian wording is imprecise.
+- location: data/homebrew/ru/sections/hb-c08-hux.yaml
+  purpose: Read completed translation and followed coordinator direction to keep studiestod as finansovaya
+    pomoshch na obuchenie.
+- location: data/homebrew/ru/sections/hb-c08-hogskolor.yaml
+  purpose: Read completed translation and retained degree and institutional distinctions; scholarship
+    study programmes remain bachelor/master, not Russian candidate-of-sciences degrees.
+- location: data/homebrew/ru/sections/hb-c07-arbetsloshet.yaml
+  purpose: Read related completed source/translation terminology for unemployment benefit, labour-market
+    training, self-selected study and employment plans.
+- location: data/homebrew/ru/sections/hb-c08-stod.yaml
+  purpose: Read all completed records in untruncated passes, retaining the distinction between school
+    transport arrangements and the financial subsidy in this section.
+- location: data/homebrew/ru/sections/hb-c08-yrkesutbildning.yaml
+  purpose: Read completed vocational-education translation to retain professional training and qualification
+    meanings.
+- location: /tmp/hb-c08-finansiering-context-agent01.yaml
+  purpose: Root independent reviewer read every selected provenance record and all translation/annotation
+    pairs; both entire supplied archives were already read in untruncated passes in this session. Parent,
+    outline, editorial and attribution were verified identical to the fully read Chapter 8 context. Read
+    final adult-education and higher-education translations, with earlier same-chapter translations already
+    read; retained financial aid, qualification and employment-plan distinctions.
