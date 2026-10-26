@@ -34,6 +34,16 @@ Open **http://localhost:18743**. The site uses Python/FastAPI with Poetry,
 Node.js/React and Bootstrap. See [study/README.md](study/README.md) for
 development, testing and port configuration.
 
+Deploy the current local commit and upload its media to an SSH host:
+
+```bash
+poetry run python deploy_over_ssh.py --host hetzner
+```
+
+The remote checkout defaults to `/root/finland-flashcards`; use `--remote-dir`
+to change it. See [deployment instructions](study/README.md#deploy-over-ssh)
+for prerequisites and behavior.
+
 ## Repository Structure
 
 The [Homebrew Video Studio](studio/README.md) contains directing principles,

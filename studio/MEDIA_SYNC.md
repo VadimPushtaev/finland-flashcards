@@ -54,6 +54,9 @@ Run one sync at a time, with generation/editing paused for the selected files.
 On a fresh checkout, pull media before building the study Docker image. The
 Docker build still includes local exports and packages alternate audio normally.
 Sync does not build, restart, deploy, or change `.env` or application databases.
+To upload assets and deploy the local Git commit in one command, use
+`poetry run python deploy_over_ssh.py --host hetzner`; see
+[deployment instructions](../study/README.md#deploy-over-ssh).
 The default `/root/finland-flashcards` storage copy is distinct from the existing
 `/opt/finland-flashcards` deployment described in [study/README.md](../study/README.md).
 

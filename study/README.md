@@ -39,6 +39,44 @@ The image uses Node.js 24 for the frontend build and Python 3.12 for runtime.
 Both dependency lockfiles pin the build inputs. The application reads a copy
 of `data/homebrew/`; rebuild the image after updating that collection.
 
+## Deploy over SSH
+
+From the local repository root:
+
+```bash
+poetry run python deploy_over_ssh.py --host hetzner
+
+# Another SSH host or checkout directory:
+poetry run python deploy_over_ssh.py --host user@example.com \
+  --remote-dir /srv/finland-flashcards
+```
+
+The default remote directory is `/root/finland-flashcards`. It must already be
+a Git checkout whose `origin` can fetch the local commit. Push that commit first;
+the deploy script does not commit or push. Configure the remote `.env` and SSH
+authentication before deploying. Locally, Git, rsync and OpenSSH are required;
+the host also needs Python 3.9+, rsync, Git and Docker with Compose. The remote
+user must have permission to run Docker and fetch from `origin`.
+
+The script captures the local `HEAD`, checks that both checkouts have no tracked
+changes, then:
+
+1. Runs the existing [media sync](../studio/MEDIA_SYNC.md) uploader, including
+   its SHA-256 verification.
+2. Connects over SSH, changes to the remote directory, and fetches that exact
+   commit from `origin`.
+3. Checks out the commit with a detached HEAD and verifies tracked files match.
+   Uploaded credits and narration metrics are staged for the matching checkout;
+   no remote commit or forced reset is made.
+4. Runs `docker compose up --build -d` in that directory.
+
+It deploys the captured commit even if a branch advances during the upload.
+Uncommitted local code is not deployed. Ignored media and the remote `.env` stay
+in place, and the existing named database volume is reused. Failures stop the
+script with a nonzero exit code; a successful return means Compose completed,
+not that an external HTTP health check was performed. Run one deployment at a
+time, with source files and media generation unchanged during the run.
+
 ## Hetzner deployment
 
 The public reader is at **http://fi.pushtaev.ru:18743** on `ssh hetzner`.
@@ -46,16 +84,12 @@ Its files live in `/opt/finland-flashcards`, using Compose project
 `finland-flashcards`. The server `.env` sets `STUDY_BIND=0.0.0.0` and
 `STUDY_PORT=18743`; local Compose runs still bind to localhost by default.
 
-To update from the current local checkout (including uncommitted files), run
-from the repository root:
+To target that existing `/opt` deployment instead of the default `/root` path,
+ensure it is a Git checkout as described above, then run:
 
 ```bash
-rsync -azR --exclude=node_modules --exclude=dist --exclude=__pycache__ \
-  --exclude='*.pyc' --exclude=.venv --exclude=test-results \
-  --exclude=playwright-report \
-  compose.yaml .dockerignore study/ data/homebrew/ videos/homebrew/ \
-  hetzner:/opt/finland-flashcards/
-ssh hetzner 'cd /opt/finland-flashcards && docker compose -p finland-flashcards up --build -d --wait --wait-timeout 120'
+poetry run python deploy_over_ssh.py --host hetzner \
+  --remote-dir /opt/finland-flashcards
 ```
 
 Operational commands:
