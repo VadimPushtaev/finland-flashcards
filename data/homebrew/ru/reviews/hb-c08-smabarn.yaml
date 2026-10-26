@@ -1,0 +1,71 @@
+schema_version: 1
+source_id: hb-c08-smabarn
+result_sha256: 5f95018d115794ec4074c7d1a605b031846e81c196dc55e03b2f998a7cafe90c
+glossary_sha256: 81346e1ad7489c5b7020ef5ba0239bde849934817e05174e1abede30f4f78af8
+status: complete
+review_mode: independent
+reviewer: /root/translate_08_01
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c08-u0022-s002
+  blocking: false
+  resolved: true
+  note: The archived source has familjen inkomster rather than familjens inkomster. Full article and the
+    preceding income list make the intended family-income meaning unambiguous; Russian uses grammatical
+    wording while Swedish remains untouched.
+- source_id: hb-c08-u0026-s005
+  blocking: false
+  resolved: true
+  note: Full self-review distinguishes educational support here from the financial allowance in preceding
+    records; contextual vocabulary uses support in learning rather than benefit.
+- source_id: hb-c08-u0200-s001
+  blocking: false
+  resolved: true
+  note: Grouped discontinuous beror ... på, keeping intervening bland annat independently annotated; likewise
+    grouped tar ... hand om and fronted Till ... hör elsewhere. All remaining unannotated occurrences
+    were checked individually for grammatical function or plain numbers.
+- source_id: hb-c08-u0015-s003
+  blocking: false
+  resolved: true
+  note: 'Independent review removed an unsupported restriction to attending institutions: the archived
+    service also includes family daycare in private homes. Russian now states the start of early-childhood
+    education without restricting the provider or setting; the average age remains 1.5–2 years.'
+- source_id: hb-c08-u0194-s002
+  blocking: false
+  resolved: true
+  note: Independent review made the provider condition explicitly require having municipal approval, matching
+    maste ha rather than implying a new application step. All benefit eligibility alternatives, household/family
+    exclusions, direct payment, tax and no-abroad conditions were checked against the complete archived
+    article.
+references:
+- location: data/homebrew/sv/chapters/08_utbildning_och_larande.yaml
+  purpose: Read the complete parent chapter to distinguish early-childhood education from the subsequent
+    pre-primary year and school teaching.
+- location: data/infofinland/content/education/early-childhood-education.html
+  purpose: Read the full archived article, including the private-care allowance conditions and family-care
+    context; preserve archived nine-month entitlement, fees, eligibility exclusions, direct payment, taxation
+    and no payment abroad.
+- location: data/homebrew/metadata/08_provenance.yaml
+  purpose: Checked all selected units against original article blocks b0002, b0008-b0055 and verified
+    the archive hash through the context preparation tool.
+- location: data/homebrew/metadata/08_editorial_review.yaml
+  purpose: Read source-selection decisions, especially restored provider introduction and complete private-care
+    allowance conditions; do not import omitted application deadlines or family-leave material.
+- location: data/homebrew/ru/sections/hb-c05-jamstalldhet.yaml
+  purpose: Retain established småbarnspedagogik = дошкольное воспитание и обучение, also used by chapter
+    4 local-government material and now in the shared glossary.
+- location: data/homebrew/ru/sections/hb-c04-lokalforvaltning.yaml
+  purpose: Checked established Russian terminology for municipal early-childhood services.
+- location: https://infofinland.fi/ru/education/early-childhood-education
+  purpose: Consulted Russian terminology for family daycare, social-work professionals, childcare workers,
+    service vouchers and private childcare allowance; used as a language reference without replacing or
+    updating the frozen Swedish content.
+- location: data/homebrew/ru/glossary.yaml
+  purpose: Use reviewed institutional meanings for Finland, right, employer, duty, home municipality,
+    FPA and early-childhood education.
