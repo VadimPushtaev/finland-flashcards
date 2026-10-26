@@ -1,0 +1,1323 @@
+schema_version: 1
+section_id: hb-c05-sprak
+chapter_id: hb-c05
+title_sv: Språkliga minoriteter och urfolk
+title_ru: Языковые меньшинства и коренные народы
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-sprak.yaml
+example_only: false
+source_section_sha256: d54a0558bc14798437dbbaea25c5a778072aa9208e139b2df4fb9b0978248a9e
+translation_file_sha256: 4d7894ddfa35a19af6f249f1e1bb4967ebd382358d68310303f98116d72088e8
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Chapter 5 burgundy panel #39252b, text #faf3e8, secondary #e2c8cf, highlight
+    #dfbd82, separator #70515a. Liberation Sans 48/40, fixed bilingual panel and separate left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Sajos behind trees.jpg by JIP continuously as decorative background, darkened 42%
+    and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=3.9080357142857145.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Organic Meditations Three by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 967.288 seconds; prepared lossless stereo bed 547.125
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Relevant verified photographs and flags at meaningful topic boundaries, targeting at least
+    50% measured body picture coverage. No inferred personal health, ethnicity, immigration or political
+    status. Any generic illustration is explicitly described as such in provenance.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Nationalsprak och språkliga tjänster
+- id: scene-2
+  description: Minoriteternas språk och kultur
+- id: scene-3
+  description: Samerna och traditionella näringar
+- id: scene-4
+  description: Sametinget och självstyre
+- id: scene-5
+  description: Finlands romer
+- id: scene-6
+  description: Teckenspråk och tolkning
+- id: scene-7
+  description: Ålands självstyre och svenska språk
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_bilingual
+  kind: foreground
+  description: Actual Finnish/Swedish street sign in Helsinki; demonstrates the two national languages
+    without implying every service rule is visible.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_languages
+  kind: foreground
+  description: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to
+    minority-language culture.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_sami
+  kind: foreground
+  description: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_craft
+  kind: foreground
+  description: Documented Sámi knife by Nils Anders Inga, an actual example of traditional handicraft.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_parliament
+  kind: foreground
+  description: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_romani
+  kind: foreground
+  description: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_sign
+  kind: foreground
+  description: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+- id: picture_aland
+  kind: foreground
+  description: Åland flag, regional symbol for its autonomy and Swedish-language status.
+  fallback: Leave foreground open and document a measured shortfall only if no accurate licensed alternative
+    can be acquired.
+sentences:
+- sentence_id: hb-c05-u0082-s001
+  sv: I Finland finns det två nationalspråk, finska och svenska.
+  ru: В Финляндии два национальных языка — финский и шведский.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - två nationalspråk
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.753129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0082-s002
+  sv: Omkring 85 procent av finländarna hade år 2023 finska som modersmål.
+  ru: В 2023 году финский был родным языком примерно для 85 процентов жителей Финляндии.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - 85 procent
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s002.wav
+  start_seconds: 10.541667
+  end_seconds: 19.04017
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0082-s003
+  sv: De svenskspråkiga i Finland utgjorde omkring fem procent av befolkningen.
+  ru: Шведоязычные жители Финляндии составляли около пяти процентов населения.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - fem procent
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s003.wav
+  start_seconds: 20.791667
+  end_seconds: 27.409354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0082-s004
+  sv: Enligt grundlagen har den finskspråkiga och den svenskspråkiga befolkningen lika rättigheter till
+    kultur- och samhällstjänster på sitt eget språk.
+  ru: Согласно конституции финноязычное и шведоязычное население имеет равные права на культурные и общественные
+    услуги на своём языке.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - lika rättigheter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s004.wav
+  start_seconds: 29.166667
+  end_seconds: 41.287483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0082-s005
+  sv: Det finns många olika dialekter av svenska och finska.
+  ru: Существует много разных диалектов шведского и финского языков.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - dialekter
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s005.wav
+  start_seconds: 43.041667
+  end_seconds: 48.057177
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0082-s006
+  sv: På olika håll i Finland talar man alltså finska och svenska på lite olika sätt.
+  ru: Таким образом, в разных частях Финляндии на финском и шведском говорят немного по-разному.
+  scene_id: scene-1
+  visual_cue: Verified Helsinki bilingual street sign, tightly cropped to make both language forms visible.
+    Fixed bilingual source panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_bilingual
+  text_highlights:
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0082-s006.wav
+  start_seconds: 49.833333
+  end_seconds: 56.86898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/bilingual.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0083-s001
+  sv: Andra språk som använts länge i Finland är de samiska språken, den finländska romanin, karelska
+    språket och teckenspråken.
+  ru: Другие языки, которые издавна используются в Финляндии, — это саамские языки, финляндский вариант
+    романи, карельский язык и жестовые языки.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights:
+  - samiska språken
+  - romani
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0083-s001.wav
+  start_seconds: 59.333333
+  end_seconds: 69.921633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0083-s002
+  sv: De samiska språken är de språk som talas av ursprungsbefolkningen i Lappland, och de är officiella
+    språk inom samernas hembygdsområde.
+  ru: Саамские языки — это языки, на которых говорит коренное население Лапландии, и они являются официальными
+    языками на территории исконного проживания саамов.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights:
+  - samiska språken
+  - ursprungsbefolkningen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0083-s002.wav
+  start_seconds: 71.708333
+  end_seconds: 83.41119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0083-s003
+  sv: I Finland talas många olika språk.
+  ru: В Финляндии говорят на множестве разных языков.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0083-s003.wav
+  start_seconds: 85.166667
+  end_seconds: 88.64966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0083-s004
+  sv: Några vanliga språk är ryska, estniska, engelska, somaliska och arabiska.
+  ru: Среди распространённых языков — русский, эстонский, английский, сомалийский и арабский.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0083-s004.wav
+  start_seconds: 90.416667
+  end_seconds: 97.452313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0084-s001
+  sv: Det finns också många olika minoriteter i Finland.
+  ru: В Финляндии также существует много разных меньшинств.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0084-s001.wav
+  start_seconds: 99.208333
+  end_seconds: 103.736224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0084-s002
+  sv: En del minoriteter har ett gemensamt språk, medan andra förenas av sin kultur, sin religion eller
+    sitt etniska ursprung.
+  ru: У части меньшинств общий язык, тогда как другие объединяет культура, религия или этническое происхождение.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0084-s002.wav
+  start_seconds: 105.5
+  end_seconds: 115.87932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0084-s003
+  sv: Enligt Finlands grundlag har alla minoriteter i Finland rätt att bevara och utveckla sitt eget språk
+    och sin egen kultur.
+  ru: Согласно конституции Финляндии все меньшинства в Финляндии имеют право сохранять и развивать свой
+    язык и свою культуру.
+  scene_id: scene-2
+  visual_cue: Actual multilingual library shelf sign at Iso Omena; illustrative example of access to minority-language
+    culture. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_languages
+  text_highlights:
+  - sin egen kultur
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0084-s003.wav
+  start_seconds: 117.666667
+  end_seconds: 127.697687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/languages.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s001
+  sv: Samerna är den enda erkända ursprungsbefolkningen inom Europeiska unionen.
+  ru: Саамы — единственный признанный коренной народ на территории Европейского союза (Europeiska unionen).
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights:
+  - ursprungsbefolkningen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s001.wav
+  start_seconds: 130.166667
+  end_seconds: 136.993333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s002
+  sv: Ursprungsbefolkning avser en människogrupp med starka rötter i de områden som den traditionellt
+    har befolkat och i naturen.
+  ru: Под коренным населением понимается группа людей, тесно связанная с территориями, которые она традиционно
+    населяла, и с природой.
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s002.wav
+  start_seconds: 138.75
+  end_seconds: 149.12932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s003
+  sv: Gruppen har sina egna språk, seder och traditioner.
+  ru: У этой группы есть свои языки, обычаи и традиции.
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s003.wav
+  start_seconds: 150.916667
+  end_seconds: 155.723197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s004
+  sv: Som ursprungsbefolkning har samerna rätt att bevara och utveckla sitt språk och sin kultur samt
+    de traditionella näringar som hör till den i Finland.
+  ru: Как коренной народ саамы имеют в Финляндии право сохранять и развивать свой язык, свою культуру
+    и относящиеся к ней традиционные промыслы.
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights:
+  - traditionella näringar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s004.wav
+  start_seconds: 157.5
+  end_seconds: 170.108435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s005
+  sv: Samernas traditionella näringar är renskötsel, fiske och jakt, samlande och hantverk.
+  ru: Традиционные промыслы саамов — оленеводство, рыболовство и охота, собирательство и ремёсла.
+  scene_id: scene-3
+  visual_cue: Documented Sámi knife by Nils Anders Inga, an actual example of traditional handicraft.
+    Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_craft
+  text_highlights:
+  - traditionella näringar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s005.wav
+  start_seconds: 171.875
+  end_seconds: 179.328605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/craft.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s006
+  sv: Numera bor största delen av samerna i städer och arbetar inom samma branscher som övriga invånare
+    i Finland.
+  ru: Теперь большинство саамов живёт в городах и работает в тех же отраслях, что и остальные жители Финляндии.
+  scene_id: scene-3
+  visual_cue: Keep the foreground open to the moving background; exact bilingual source text remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s006.wav
+  start_seconds: 181.083333
+  end_seconds: 190.835714
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0085-s007
+  sv: År 2023 bodde det omkring 10 000 samer i Finland.
+  ru: В 2023 году в Финляндии жило около 10 000 саамов.
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights:
+  - 10 000
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0085-s007.wav
+  start_seconds: 192.625
+  end_seconds: 198.406769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0086-s001
+  sv: Förutom i Finland finns det samer i Sverige, Norge och Ryssland.
+  ru: Помимо Финляндии саамы живут также в Швеции, Норвегии и России.
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0086-s001.wav
+  start_seconds: 200.166667
+  end_seconds: 206.157415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0086-s002
+  sv: 'De talar flera olika samiska språk, varav tre används i Finland: nordsamiska, skoltsamiska och
+    enaresamiska.'
+  ru: 'Они говорят на нескольких разных саамских языках, из которых три используются в Финляндии: северносаамский,
+    колтта-саамский и инари-саамский.'
+  scene_id: scene-3
+  visual_cue: Sámi flag, representing the indigenous people discussed; not a territory map or population
+    graphic. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sami
+  text_highlights:
+  - nordsamiska, skoltsamiska och enaresamiska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0086-s002.wav
+  start_seconds: 207.916667
+  end_seconds: 218.992585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sami.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0086-s003
+  sv: Dagens samer är i huvudsak kristna, varav största delen hör till den evangelisk-lutherska kyrkan.
+  ru: Современные саамы преимущественно христиане, большинство из которых принадлежит к евангелическо-лютеранской
+    церкви.
+  scene_id: scene-3
+  visual_cue: Keep the foreground open to the moving background; exact bilingual source text remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0086-s003.wav
+  start_seconds: 220.75
+  end_seconds: 229.318163
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0086-s004
+  sv: Skolterna har traditionellt varit ortodoxa.
+  ru: Колтта-саамы традиционно были православными.
+  scene_id: scene-3
+  visual_cue: Keep the foreground open to the moving background; exact bilingual source text remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0086-s004.wav
+  start_seconds: 231.083333
+  end_seconds: 235.471905
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0087-s001
+  sv: Samerna har självstyre i fråga om sitt språk och sin kultur i det samiska området, som omfattar
+    vissa kommuner eller delar av kommuner i nordligaste Lappland.
+  ru: Саамы обладают самоуправлением в вопросах своего языка и своей культуры на саамской территории,
+    охватывающей определённые муниципалитеты или части муниципалитетов на крайнем севере Лапландии.
+  scene_id: scene-4
+  visual_cue: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - självstyre
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0087-s001.wav
+  start_seconds: 237.958333
+  end_seconds: 251.820646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/parliament.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0087-s002
+  sv: Över hälften av Finlands samer bor utanför det samiska området.
+  ru: Более половины саамов Финляндии живёт за пределами саамской территории.
+  scene_id: scene-4
+  visual_cue: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0087-s002.wav
+  start_seconds: 253.583333
+  end_seconds: 259.574082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/parliament.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0088-s001
+  sv: Sametinget är samernas representativa självstyrelseorgan i Finland.
+  ru: Саамский парламент (Sametinget) — представительный орган самоуправления саамов в Финляндии.
+  scene_id: scene-4
+  visual_cue: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - självstyre
+  - Sametinget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0088-s001.wav
+  start_seconds: 261.333333
+  end_seconds: 267.672381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/parliament.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0088-s002
+  sv: Sametingets viktigaste uppgift är att verkställa det självstyre i fråga om språket och kulturen
+    som tryggas för det i grundlagen och att säkerställa att samernas ursprungskultur bevaras och utvecklas.
+  ru: Важнейшая задача Саамского парламента — осуществлять гарантированное ему конституцией самоуправление
+    в вопросах языка и культуры и обеспечивать сохранение и развитие исконной культуры саамов.
+  scene_id: scene-4
+  visual_cue: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights:
+  - självstyre
+  - Sametinget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0088-s002.wav
+  start_seconds: 269.458333
+  end_seconds: 286.176701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/parliament.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0088-s003
+  sv: Enligt lag ska Finlands myndigheter förhandla med sametinget om alla åtgärder som kan inverka på
+    samernas ställning.
+  ru: Согласно закону органы власти Финляндии должны вести переговоры с Саамским парламентом обо всех
+    мерах, которые могут повлиять на положение саамов.
+  scene_id: scene-4
+  visual_cue: Sajos, actual Sámi Parliament building in Inari; a different photograph from the decorative
+    background. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_parliament
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0088-s003.wav
+  start_seconds: 287.958333
+  end_seconds: 297.919694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/parliament.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0089-s001
+  sv: Samernas kulturella och språkliga rättigheter rättigheter som gäller markägande har i det förflutna
+    inte respekterats, och detta har orsakat samerna mycket lidande.
+  ru: В прошлом культурные и языковые права саамов, а также их права, касающиеся владения землёй, не соблюдались,
+    и это причинило саамам много страданий.
+  scene_id: scene-4
+  visual_cue: Keep the foreground open to the moving background; exact bilingual source text remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0089-s001.wav
+  start_seconds: 299.708333
+  end_seconds: 313.431327
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0089-s002
+  sv: Kampen för ett bättre förverkligande av rättigheterna fortsätter ännu i dag.
+  ru: Борьба за более полное осуществление прав продолжается и сегодня.
+  scene_id: scene-4
+  visual_cue: Keep the foreground open to the moving background; exact bilingual source text remains fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0089-s002.wav
+  start_seconds: 315.208333
+  end_seconds: 322.17432
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0090-s001
+  sv: De finska romernas modersmål är vanligtvis finska, men omkring en tredjedel av dem har åtminstone
+    nöjaktiga muntliga kunskaper i romani.
+  ru: Родной язык финляндских ромов обычно финский, но около трети из них владеют разговорным романи хотя
+    бы на удовлетворительном уровне.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights:
+  - romani
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0090-s001.wav
+  start_seconds: 324.625
+  end_seconds: 336.258197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0090-s002
+  sv: Barnen kan få undervisning i romani i skolan.
+  ru: Дети могут изучать романи в школе.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights:
+  - romani
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0090-s002.wav
+  start_seconds: 338.041667
+  end_seconds: 342.221259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0090-s003
+  sv: Språket är släkt med sanskrit och hindi.
+  ru: Этот язык родственен санскриту и хинди.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0090-s003.wav
+  start_seconds: 344.0
+  end_seconds: 347.900952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0090-s004
+  sv: Romerna i Finland är kristna och hör vanligtvis till den evangelisk-lutherska kyrkan eller till
+    en pingstförsamling.
+  ru: Ромы в Финляндии — христиане и обычно принадлежат к евангелическо-лютеранской церкви или к пятидесятнической
+    общине.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0090-s004.wav
+  start_seconds: 349.666667
+  end_seconds: 359.837007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0091-s001
+  sv: Romerna har mött mycket trakasserier och fördomar i Finland till exempel i skolan och arbetslivet
+    samt när det gäller boende.
+  ru: Ромы сталкивались в Финляндии со многими притеснениями и предрассудками, например в школе, трудовой
+    жизни и в вопросах жилья.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0091-s001.wav
+  start_seconds: 361.625
+  end_seconds: 372.282959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0091-s002
+  sv: Romernas ställning som en historisk språklig och kulturell minoritet i Finland har gradvis förbättrats.
+  ru: Положение ромов как исторического языкового и культурного меньшинства Финляндии постепенно улучшилось.
+  scene_id: scene-5
+  visual_cue: Hoisted Romani flag as cultural symbol, not a depiction of an individual or any discriminatory
+    incident. Preserve the whole image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_romani
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0091-s002.wav
+  start_seconds: 374.041667
+  end_seconds: 383.236769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/romani.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0092-s001
+  sv: I Finland betraktas teckenspråkiga personer som en språklig minoritet.
+  ru: В Финляндии люди, пользующиеся жестовыми языками, считаются языковым меньшинством.
+  scene_id: scene-6
+  visual_cue: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sign
+  text_highlights:
+  - teckenspråk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0092-s001.wav
+  start_seconds: 385.708333
+  end_seconds: 392.117041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sign.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0092-s002
+  sv: I Finland används två nationella teckenspråk, det finska och det finlandssvenska teckenspråket.
+  ru: 'В Финляндии используются два национальных жестовых языка: финский и финско-шведский.'
+  scene_id: scene-6
+  visual_cue: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sign
+  text_highlights:
+  - teckenspråk
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0092-s002.wav
+  start_seconds: 393.875
+  end_seconds: 402.164524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sign.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0092-s003
+  sv: Teckenspråkiga personer kan vara döva, hörande eller ha nedsatt hörsel.
+  ru: Пользователи жестовых языков могут быть глухими, слышащими или слабослышащими.
+  scene_id: scene-6
+  visual_cue: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sign
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0092-s003.wav
+  start_seconds: 403.916667
+  end_seconds: 410.186054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sign.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0092-s004
+  sv: Uppskattningsvis 5 500 personer använder det finska teckenspråket som modersmål.
+  ru: По оценкам, 5500 человек используют финский жестовый язык как родной.
+  scene_id: scene-6
+  visual_cue: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sign
+  text_highlights:
+  - teckenspråk
+  - 5 500
+  pronunciation_notes: []
+  speech_override:
+    text: Uppskattningsvis fem tusen fem hundra personer använder det finska teckenspråket som modersmål.
+    reason: Current full-sentence ASR recovered500 instead of source5500; explicit Swedish components
+      preserve the exact source quantity.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0092-s004.wav
+  start_seconds: 411.958333
+  end_seconds: 420.108537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sign.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0092-s005
+  sv: Om en teckenspråkig person behöver en tolk när hen ska uträtta olika ärenden, har hen en lagstadgad
+    rätt att få kostnadsfri tolkning.
+  ru: Если человеку, пользующемуся жестовым языком, нужен переводчик для решения различных дел, у него
+    есть законное право на бесплатный перевод.
+  scene_id: scene-6
+  visual_cue: Finnish government sign-language interpreter photographed at April 2020 briefing; actual
+    interpreting, not a claim that any pictured gesture represents the narrated words. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_sign
+  text_highlights:
+  - teckenspråk
+  - kostnadsfri tolkning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0092-s005.wav
+  start_seconds: 421.875
+  end_seconds: 433.020578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/sign.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0093-s001
+  sv: Ett av de stora skärgårdsområdena är Åland.
+  ru: Один из крупных районов архипелага — Аландские острова.
+  scene_id: scene-7
+  visual_cue: Åland flag, regional symbol for its autonomy and Swedish-language status. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_aland
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0093-s001.wav
+  start_seconds: 435.5
+  end_seconds: 439.888571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/aland.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0093-s002
+  sv: Åland har självstyre, men är en del av Finland.
+  ru: Аландские острова обладают самоуправлением, но являются частью Финляндии.
+  scene_id: scene-7
+  visual_cue: Åland flag, regional symbol for its autonomy and Swedish-language status. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_aland
+  text_highlights:
+  - självstyre
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0093-s002.wav
+  start_seconds: 441.666667
+  end_seconds: 446.264218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/aland.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0093-s003
+  sv: Ålands huvudstad är Mariehamn.
+  ru: Столица Аландских островов — Мариехамн.
+  scene_id: scene-7
+  visual_cue: Åland flag, regional symbol for its autonomy and Swedish-language status. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_aland
+  text_highlights:
+  - Åland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0093-s003.wav
+  start_seconds: 448.041667
+  end_seconds: 451.106701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/aland.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0093-s004
+  sv: Viktiga näringar i skärgården är sjöfart och turism.
+  ru: Важные отрасли хозяйства архипелага — судоходство и туризм.
+  scene_id: scene-7
+  visual_cue: Åland flag, regional symbol for its autonomy and Swedish-language status. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_aland
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0093-s004.wav
+  start_seconds: 452.875
+  end_seconds: 458.02983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/aland.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0093-s005
+  sv: Det enda officiella språket på Åland är svenska, och i övrigt är skärgården också delvis ett svenskspråkigt
+    område.
+  ru: Единственный официальный язык Аландских островов — шведский, и остальные части архипелага тоже отчасти
+    шведоязычны.
+  scene_id: scene-7
+  visual_cue: Åland flag, regional symbol for its autonomy and Swedish-language status. Preserve the whole
+    image and fixed bilingual panel; no caption.
+  asset_ids:
+  - episode_background
+  - picture_aland
+  text_highlights:
+  - Åland
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-sprak/narration/hb-c05-u0093-s005.wav
+  start_seconds: 459.791667
+  end_seconds: 469.892347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-sprak/pictures/aland.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-sprak/sources/music-bed.flac
+  background_image: studio/media/hb-c05-sprak/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.9080357142857145
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Sajos behind trees.jpg — JIP · CC BY-SA 4.0
+    - Organic Meditations Three — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Hietalahdenkatu / Sandsviksgatan, Helsinki — Henry Söderlund · CC BY 2.0
+    - Minoritetslitteratur, Iso Omena — Kimberli Mäkäräinen · CC BY-SA 4.0
+    - Samisk flagga — Jeltz · Public domain
+    - Bearbetningar anges i CREDITS.md.
+    - Fullständiga källor och licenser i medföljande CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Samisk kniv av Nils Anders Inga — Christopher Forster · CC BY-SA 3.0
+    - Sametingets Sajos, Enare — Ben morphett; cropped derivative by Bff · CC BY-SA 3.0
+    - Romsk flagga — Showman · CC BY-SA 3.0
+    - Bearbetningar anges i CREDITS.md.
+    - Fullständiga källor och licenser i medföljande CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Teckenspråkstolkning, Finland 2020 — Laura Kotila / FinnishGovernment · CC BY 2.0
+    - Ålands flagga — -tacitos- · CC BY 4.0
+    - Bearbetningar anges i CREDITS.md.
+    - Fullständiga källor och licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Sajos_behind_trees.jpg
+    description: The Sajos cultural centre in Inari, Lapland, Finland, seen behind some trees.
+    license: CC BY-SA 4.0

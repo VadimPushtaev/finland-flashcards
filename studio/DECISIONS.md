@@ -119,3 +119,11 @@ exports exceeded GitHub's ordinary Git file limit and require a recorded H.264
 compression step, with original audio copied unchanged. Original exports remain
 in ignored scratch; current verification and review records bind the distributed
 files. Narration, source wording, frame count and timeline are unchanged.
+
+## Chapter 5 production — 2026-10-26
+
+Chapter 5 uses the burgundy palette in `DIRECTING.md`, Liberation Sans and the
+established local Swedish Supertonic 3/F1 preset. Production is isolated in the
+`video/chapter-05` worktree. Parallel workers own independent episodes; shared
+source reservations, runtime checks and inventory updates are coordinated centrally.
+These choices do not imply whole-video listening or user acceptance.

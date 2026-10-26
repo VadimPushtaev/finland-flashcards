@@ -1,0 +1,1036 @@
+schema_version: 1
+section_id: hb-c05-friheter
+chapter_id: hb-c05
+title_sv: Grundläggande friheter och rättigheter
+title_ru: Основные свободы и права
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-friheter.yaml
+example_only: false
+source_section_sha256: d7af52dda0f0cd162a5f4397e575c7ff4ca655d14cbf42c8ad72eee738a0ab5e
+translation_file_sha256: 1f93ef6a9f75a21a37226fbc8401fcac62c10f7aef0a0088f1553d20fc86914b
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps, Chapter 5 burgundy palette: #39252b / #faf3e8 / #e2c8cf / #dfbd82 /
+    #70515a. Liberation Sans Bold 48 and Regular 40, fixed bilingual panel at right, relevant pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki Court House and Salmisaari Power Plant in September.jpg by JIP continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=2.3916666666666666. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Facile by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 212.062 seconds; prepared lossless stereo bed 334.833 seconds. Repeat count
+    1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use verified photographs of actual Finnish civic activity, associations and institutions at
+    meaningful topic boundaries. Preserve full pictures and source text; captions remain off where a source
+    highlight is not a literal picture label. Measure at least 50% body-duration picture coverage; no
+    decorative background or text card counts.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Equal protection and integrity
+- id: scene-2
+  description: Movement and private life
+- id: scene-3
+  description: Belief and expression
+- id: scene-4
+  description: Public information and participation
+- id: scene-5
+  description: Property, education and work
+- id: scene-6
+  description: Welfare, environment and legal protection
+- id: scene-7
+  description: Assembly and association
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: parliament
+  kind: foreground
+  description: Finnish Parliament exterior, institution of constitutional legislation. Source identity/license
+    retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: court
+  kind: foreground
+  description: Supreme Court of Finland exterior contextualizes judicial treatment and protection of rights.
+    Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: privacy
+  kind: foreground
+  description: House and lock pictogram illustrates protection of the home and private communications.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: demonstration
+  kind: foreground
+  description: Actual anti-war demonstration in Helsinki illustrates freedom of assembly; not an assertion
+    about its particular notification process. Source identity/license retained from verified earlier
+    production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: city_hall
+  kind: foreground
+  description: Helsinki City Hall exterior illustrates public authorities holding public records. Source
+    identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: ballot
+  kind: foreground
+  description: Finnish polling booth and 2019 candidate lists illustrate voting, not a current candidate
+    list. Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: library
+  kind: foreground
+  description: Oodi public library in Helsinki illustrates learning and cultural access; not a school
+    classroom. Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: health_centre
+  kind: foreground
+  description: Tornio health centre exterior illustrates health services without implying anything about
+    patients. Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: environment
+  kind: foreground
+  description: Finnish lake and forest landscape illustrates a healthy living environment. Source identity/license
+    retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: meeting
+  kind: foreground
+  description: Wikimedia Suomi association spring meeting at Oodi 2019 illustrates voluntary association
+    membership. Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: classroom
+  kind: foreground
+  description: Actual Vantaankoski primary-school classroom, Vantaa, photographed 2010. Illustrates basic
+    education, not a claim about current teaching practice.
+  fallback: Use the planned source-based diagram or leave open, preserving exact source text.
+sentences:
+- sentence_id: hb-c05-u0010-s001
+  sv: De grundläggande rättigheterna gäller alla som bor och lever i Finland, inte bara finska medborgare.
+  ru: Основные права распространяются на всех, кто живёт и проживает в Финляндии, а не только на финских
+    граждан.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior, institution of constitutional legislation. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - grundläggande rättigheterna
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0010-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.818163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/parliament-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0011-s001
+  sv: 'Grundlagen garanterar alla följande grundläggande rättigheter:'
+  ru: 'Конституция гарантирует всем следующие основные права:'
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior, institution of constitutional legislation. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0011-s001.wav
+  start_seconds: 13.583333
+  end_seconds: 19.434762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/parliament-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0013-s001
+  sv: I Finland är lagen densamma för alla och alla är lika inför lagen.
+  ru: В Финляндии закон один для всех, и все равны перед законом.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior, institution of constitutional legislation. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights:
+  - lika inför lagen
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0013-s001.wav
+  start_seconds: 21.208333
+  end_seconds: 27.199082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/parliament-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0013-s002
+  sv: Ingen får utan godtagbart skäl särbehandlas på grund av kön, ålder, ursprung, språk, religion, övertygelse,
+    åsikt, hälsotillstånd eller handikapp eller av någon annan orsak som gäller hens person.
+  ru: Ни с кем нельзя без приемлемого основания обращаться иначе из-за пола, возраста, происхождения,
+    языка, религии, убеждений, мнения, состояния здоровья, инвалидности или по иной причине, связанной
+    с его личностью.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior, institution of constitutional legislation. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0013-s002.wav
+  start_seconds: 28.958333
+  end_seconds: 45.328401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/parliament-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0014-s001
+  sv: Alla har rätt till liv och till personlig frihet, integritet och trygghet.
+  ru: Все имеют право на жизнь, личную свободу, неприкосновенность и безопасность.
+  scene_id: scene-1
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - personlig frihet
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0014-s001.wav
+  start_seconds: 47.083333
+  end_seconds: 53.422381
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0014-s002
+  sv: Ingen får dömas till döden eller torteras eller utsättas för någon annan behandling som kränker
+    människovärdet.
+  ru: Никого нельзя приговорить к смерти, подвергать пыткам или иному обращению, унижающему человеческое
+    достоинство.
+  scene_id: scene-1
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0014-s002.wav
+  start_seconds: 55.208333
+  end_seconds: 64.612415
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0015-s001
+  sv: Ingen får dömas till straff på grund av en handling som inte var straffbar när den utfördes.
+  ru: Никого нельзя приговорить к наказанию за деяние, которое не было наказуемым в момент его совершения.
+  scene_id: scene-1
+  visual_cue: Supreme Court of Finland exterior, contextual illustration of legal safeguards. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0015-s001.wav
+  start_seconds: 66.375
+  end_seconds: 74.176905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/court-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0016-s001
+  sv: Var och en får själv välja bostadsort och röra sig fritt i Finland.
+  ru: Каждый вправе самостоятельно выбирать место жительства и свободно передвигаться по Финляндии.
+  scene_id: scene-2
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0016-s001.wav
+  start_seconds: 75.958333
+  end_seconds: 82.367041
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0017-s001
+  sv: Var och en har rätt till skydd för privatlivet.
+  ru: Каждый имеет право на защиту частной жизни.
+  scene_id: scene-2
+  visual_cue: House and lock pictogram illustrates protection of the home and private communications.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - privacy
+  text_highlights:
+  - privatlivet
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0017-s001.wav
+  start_seconds: 84.125
+  end_seconds: 88.513571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/privacy.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0017-s002
+  sv: Man får inte gå in i någons hem utan tillstånd.
+  ru: Нельзя входить в чужой дом без разрешения.
+  scene_id: scene-2
+  visual_cue: House and lock pictogram illustrates protection of the home and private communications.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - privacy
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0017-s002.wav
+  start_seconds: 90.291667
+  end_seconds: 94.540918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/privacy.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0017-s003
+  sv: Man får inte läsa andra människors brev eller lyssna på någons samtal utan tillstånd.
+  ru: Нельзя читать письма других людей или слушать чьи-либо разговоры без разрешения.
+  scene_id: scene-2
+  visual_cue: House and lock pictogram illustrates protection of the home and private communications.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - privacy
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0017-s003.wav
+  start_seconds: 96.291667
+  end_seconds: 103.954252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/privacy.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0018-s001
+  sv: I Finland råder religionsfrihet.
+  ru: В Финляндии действует свобода вероисповедания.
+  scene_id: scene-3
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - religionsfrihet
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0018-s001.wav
+  start_seconds: 105.708333
+  end_seconds: 108.912687
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0018-s002
+  sv: Var och en har rätt att tro som de vill och utöva sin religion.
+  ru: Каждый вправе верить так, как хочет, и исповедовать свою религию.
+  scene_id: scene-3
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0018-s002.wav
+  start_seconds: 110.666667
+  end_seconds: 116.309116
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0018-s003
+  sv: Ingen är tvungen att höra till ett religiöst samfund eller delta i religionsutövning.
+  ru: Никто не обязан принадлежать к религиозной общине или участвовать в религиозной практике.
+  scene_id: scene-3
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0018-s003.wav
+  start_seconds: 118.083333
+  end_seconds: 125.327959
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0019-s001
+  sv: I Finland råder yttrandefrihet.
+  ru: В Финляндии действует свобода слова.
+  scene_id: scene-3
+  visual_cue: Actual anti-war demonstration in Helsinki, contextual example of expression and assembly.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - demonstration
+  text_highlights:
+  - yttrandefrihet
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0019-s001.wav
+  start_seconds: 127.083333
+  end_seconds: 130.148367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/demonstration-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0019-s002
+  sv: Var och en får fritt säga sin åsikt.
+  ru: Каждый вправе свободно высказывать своё мнение.
+  scene_id: scene-3
+  visual_cue: Actual anti-war demonstration in Helsinki, contextual example of expression and assembly.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - demonstration
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0019-s002.wav
+  start_seconds: 131.916667
+  end_seconds: 135.46932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/demonstration-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0020-s001
+  sv: Var och en har rätt att ta del av offentliga handlingar.
+  ru: Каждый имеет право знакомиться с общедоступными документами.
+  scene_id: scene-4
+  visual_cue: Helsinki City Hall exterior illustrates public authorities holding public records. Source
+    identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights:
+  - offentliga handlingar
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0020-s001.wav
+  start_seconds: 137.25
+  end_seconds: 142.40483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/city_hall-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0020-s002
+  sv: Handlingar som innehas av myndigheter är i princip offentliga, om det inte är nödvändigt att begränsa
+    deras offentlighet.
+  ru: Документы, находящиеся в распоряжении органов власти, в принципе общедоступны, если нет необходимости
+    ограничить их открытость.
+  scene_id: scene-4
+  visual_cue: Helsinki City Hall exterior illustrates public authorities holding public records. Source
+    identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - city_hall
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0020-s002.wav
+  start_seconds: 144.166667
+  end_seconds: 154.685306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/city_hall-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0021-s001
+  sv: Var och en som enligt lagen har rösträtt har rätt att rösta i val.
+  ru: Каждый, кто по закону имеет избирательное право, вправе голосовать на выборах.
+  scene_id: scene-4
+  visual_cue: Finnish polling booth and 2019 candidate lists illustrate voting, not a current candidate
+    list. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights:
+  - rösträtt
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0021-s001.wav
+  start_seconds: 156.458333
+  end_seconds: 162.379422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/ballot-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0021-s002
+  sv: Den offentliga makten ska främja människors möjligheter att delta i samhällelig verksamhet och påverka
+    beslutsfattande som rör dem.
+  ru: Публичная власть должна содействовать возможностям людей участвовать в общественной деятельности
+    и влиять на принятие решений, которые их касаются.
+  scene_id: scene-4
+  visual_cue: Finnish polling booth and 2019 candidate lists illustrate voting, not a current candidate
+    list. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - ballot
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0021-s002.wav
+  start_seconds: 164.166667
+  end_seconds: 175.033605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/ballot-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0022-s001
+  sv: Vars och ens egendom är tryggad, det vill säga staten skyddar människors rätt att äga egendom.
+  ru: Имущество каждого защищено, то есть государство защищает право людей владеть имуществом.
+  scene_id: scene-5
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - egendom
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0022-s001.wav
+  start_seconds: 176.791667
+  end_seconds: 185.011531
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0023-s001
+  sv: Alla har rätt till avgiftsfri grundläggande utbildning.
+  ru: Все имеют право на бесплатное основное общее образование.
+  scene_id: scene-5
+  visual_cue: Actual Vantaankoski primary-school classroom, Vantaa, photographed 2010. Illustrates basic
+    education, not a claim about current teaching practice.
+  asset_ids:
+  - episode_background
+  - classroom
+  text_highlights:
+  - avgiftsfri
+  - utbildning
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0023-s001.wav
+  start_seconds: 186.791667
+  end_seconds: 191.737517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/classroom.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0023-s002
+  sv: Alla har också rätt till utbildning efter den grundläggande utbildningen, enligt sin förmåga och
+    sina behov.
+  ru: Все также имеют право на образование после основного общего образования в соответствии со своими
+    способностями и потребностями.
+  scene_id: scene-5
+  visual_cue: Oodi public library in Helsinki illustrates learning and cultural access; not a school classroom.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - library
+  text_highlights:
+  - utbildning
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0023-s002.wav
+  start_seconds: 193.5
+  end_seconds: 202.346803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/library-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0023-s003
+  sv: Vetenskapens, konstens och den högsta utbildningens frihet är tryggad.
+  ru: Свобода науки, искусства и высшего образования защищена.
+  scene_id: scene-5
+  visual_cue: Oodi public library in Helsinki illustrates learning and cultural access; not a school classroom.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - library
+  text_highlights:
+  - utbildning
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0023-s003.wav
+  start_seconds: 204.125
+  end_seconds: 210.255068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/library-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0024-s001
+  sv: Var och en har rätt att skaffa sig sin försörjning genom arbete eller näring som hen valt fritt.
+  ru: Каждый имеет право обеспечивать себе средства к существованию трудом или предпринимательской деятельностью,
+    которые он свободно выбрал.
+  scene_id: scene-5
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - försörjning
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0024-s001.wav
+  start_seconds: 212.041667
+  end_seconds: 220.122211
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0025-s001
+  sv: Alla som inte kan skaffa sig den trygghet som behövs för ett människovärdigt liv har rätt till oundgänglig
+    försörjning och omsorg.
+  ru: Все, кто не может обеспечить себе необходимую для достойной жизни защищённость, имеют право на необходимые
+    средства к существованию и уход.
+  scene_id: scene-6
+  visual_cue: Tornio health centre exterior illustrates health services without implying anything about
+    patients. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - health_centre
+  text_highlights:
+  - försörjning
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0025-s001.wav
+  start_seconds: 221.875
+  end_seconds: 232.602619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/health_centre-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0025-s002
+  sv: Alla har rätt till tillräckliga social-, hälsovårds- och sjukvårdstjänster.
+  ru: Все имеют право на достаточные социальные услуги, услуги охраны здоровья и медицинской помощи.
+  scene_id: scene-6
+  visual_cue: Tornio health centre exterior illustrates health services without implying anything about
+    patients. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - health_centre
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0025-s002.wav
+  start_seconds: 234.375
+  end_seconds: 241.549966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/health_centre-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0026-s001
+  sv: Alla har rätt att leva i en sund miljö och påverka beslut i frågor som gäller den egna livsmiljön.
+  ru: Все имеют право жить в здоровой окружающей среде и влиять на решения по вопросам, касающимся их
+    собственной среды обитания.
+  scene_id: scene-6
+  visual_cue: Finnish lake and forest landscape illustrates a healthy living environment. Source identity/license
+    retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - environment
+  text_highlights:
+  - sund miljö
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0026-s001.wav
+  start_seconds: 243.333333
+  end_seconds: 251.622857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/environment-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0027-s001
+  sv: Var och en har rätt att på behörigt sätt och utan ogrundat dröjsmål få sin sak behandlad av en domstol
+    eller någon annan myndighet.
+  ru: Каждый имеет право на надлежащее рассмотрение своего дела судом или другим органом власти без необоснованной
+    задержки.
+  scene_id: scene-6
+  visual_cue: Supreme Court of Finland exterior contextualizes judicial treatment and protection of rights.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights:
+  - domstol
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0027-s001.wav
+  start_seconds: 253.375
+  end_seconds: 264.241939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/court-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0028-s001
+  sv: Det allmänna ska se till att de grundläggande fri- och rättigheterna och de mänskliga rättigheterna
+    tillgodoses.
+  ru: Органы публичной власти должны обеспечивать осуществление основных свобод и прав, а также прав человека.
+  scene_id: scene-6
+  visual_cue: Supreme Court of Finland exterior contextualizes judicial treatment and protection of rights.
+    Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0028-s001.wav
+  start_seconds: 266.0
+  end_seconds: 275.404082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/court-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0029-s001
+  sv: Människor får ordna möten och demonstrationer och delta i dem.
+  ru: Люди вправе организовывать собрания и демонстрации и участвовать в них.
+  scene_id: scene-7
+  visual_cue: Actual anti-war demonstration in Helsinki illustrates freedom of assembly; not an assertion
+    about its particular notification process. Source identity/license retained from verified earlier
+    production record.
+  asset_ids:
+  - episode_background
+  - demonstration
+  text_highlights:
+  - demonstrationer
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0029-s001.wav
+  start_seconds: 277.166667
+  end_seconds: 282.809116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/demonstration-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0029-s002
+  sv: För en demonstration behövs inget tillstånd från myndigheter.
+  ru: Для проведения демонстрации не требуется разрешения органов власти.
+  scene_id: scene-7
+  visual_cue: Actual anti-war demonstration in Helsinki illustrates freedom of assembly; not an assertion
+    about its particular notification process. Source identity/license retained from verified earlier
+    production record.
+  asset_ids:
+  - episode_background
+  - demonstration
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0029-s002.wav
+  start_seconds: 284.583333
+  end_seconds: 290.016803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/demonstration-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0029-s003
+  sv: Den måste dock anmälas till polisen i förväg.
+  ru: Однако о ней необходимо заранее уведомить полицию.
+  scene_id: scene-7
+  visual_cue: Actual anti-war demonstration in Helsinki illustrates freedom of assembly; not an assertion
+    about its particular notification process. Source identity/license retained from verified earlier
+    production record.
+  asset_ids:
+  - episode_background
+  - demonstration
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0029-s003.wav
+  start_seconds: 291.791667
+  end_seconds: 296.040918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/demonstration-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0030-s001
+  sv: Var och en har också rätt att bilda och höra till föreningar.
+  ru: Каждый также имеет право создавать объединения и состоять в них.
+  scene_id: scene-7
+  visual_cue: Wikimedia Suomi association spring meeting at Oodi 2019 illustrates voluntary association
+    membership. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - meeting
+  text_highlights:
+  - föreningar
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-friheter/narration/hb-c05-u0030-s001.wav
+  start_seconds: 297.791667
+  end_seconds: 303.294796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-friheter/pictures/meeting-0.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-friheter/sources/music-bed.flac
+  background_image: studio/media/hb-c05-friheter/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 2.3916666666666666
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Samhällskunskap inför medborgarskapsprovet
+    - 'Kapitel 5: Rättigheter, jämlikhet och skyldigheter'
+    - 'Källtext och rysk översättning: Homebrew-antologin.'
+    - 'Fullständiga källor och licenser: videons CREDITS-fil.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki Court House and Salmisaari Power Plant in September.jpg — JIP · CC BY-SA 4.0
+    - Facile — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki_Court_House_and_Salmisaari_Power_Plant_in_September.jpg
+    description: A view of Salmisaari in southwestern Helsinki, Finland on a September morning. The brown
+      brick building on the left is the Helsinki Court House while the brown brick building on the right
+      is the Salmisaari Power Plant.
+    license: CC BY-SA 4.0

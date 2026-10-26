@@ -136,6 +136,36 @@ for unresolved pronunciation diagnostics. These previews are retained outside Gi
 with versioned production records; whole-video listening and user acceptance
 remain pending.
 
+## Chapter 5 — Grundläggande rättigheter, jämlikhet och skyldigheter
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [5.1 Grundläggande och mänskliga rättigheter](hb-c05-01-grundlag.mp4) · [credits](hb-c05-01-grundlag.CREDITS.md) | 3:37 | 71.8% | Ready for whole-video review |
+| [5.2 Grundläggande friheter och rättigheter](hb-c05-02-friheter.mp4) · [credits](hb-c05-02-friheter.CREDITS.md) | 5:35 | 77.3% | Ready for whole-video review |
+| [5.3 Jämställdhet mellan könen](hb-c05-03-jamstalldhet.mp4) · [credits](hb-c05-03-jamstalldhet.CREDITS.md) | 6:12 | 71.8% | Ready for whole-video review |
+| [5.4 Likabehandling och diskriminering](hb-c05-04-likabehandling.mp4) · [credits](hb-c05-04-likabehandling.CREDITS.md) | 9:37 | 98.0% | Ready for whole-video review |
+| [5.5 Rasism och hatbrott](hb-c05-05-rasism.mp4) · [credits](hb-c05-05-rasism.CREDITS.md) | 7:05 | 90.4% | Ready for whole-video review |
+| [5.6 Hjälp vid diskriminering](hb-c05-06-hjalp.mp4) · [credits](hb-c05-06-hjalp.CREDITS.md) | 4:46 | 100.0% | Ready for whole-video review |
+| [5.7 Språkliga minoriteter och urfolk](hb-c05-07-sprak.mp4) · [credits](hb-c05-07-sprak.CREDITS.md) | 9:07 | 88.6% | Ready for whole-video review |
+| [5.8 Rättigheter för personer med funktionsnedsättning](hb-c05-08-delaktighet.mp4) · [credits](hb-c05-08-delaktighet.CREDITS.md) | 11:26 | 64.7% | Ready for whole-video review |
+| [5.9 Barns rättigheter](hb-c05-09-barn.mp4) · [credits](hb-c05-09-barn.CREDITS.md) | 5:07 | 74.3% | Ready for whole-video review |
+| [5.10 Religionsfrihet och barnets religion](hb-c05-10-religion.mp4) · [credits](hb-c05-10-religion.CREDITS.md) | 2:18 | 77.2% | Ready for whole-video review |
+| [5.11 Sexuella rättigheter och kroppslig integritet](hb-c05-11-sexualitet.mp4) · [credits](hb-c05-11-sexualitet.CREDITS.md) | 12:19 | 100.0% | Ready for whole-video review |
+| [5.12 Självbestämmande och reproduktiv hälsa](hb-c05-12-reproduktion.mp4) · [credits](hb-c05-12-reproduktion.CREDITS.md) | 5:48 | 95.1% | Ready for whole-video review |
+| [5.13 Individens skyldigheter](hb-c05-13-skyldigheter.mp4) · [credits](hb-c05-13-skyldigheter.CREDITS.md) | 2:46 | 63.8% | Ready for whole-video review |
+| [5.14 Rättigheter och skyldigheter som följer av medborgarskap](hb-c05-14-medborgarskap.mp4) · [credits](hb-c05-14-medborgarskap.CREDITS.md) | 2:44 | 81.7% | Ready for whole-video review |
+| [5.15 Försvarsplikt, beväringstjänst och civiltjänst](hb-c05-15-forsvar.mp4) · [credits](hb-c05-15-forsvar.CREDITS.md) | 3:32 | 89.8% | Ready for whole-video review |
+
+All 469 exact Swedish/Russian sentence pairs are covered in 1:31:57, with
+distinct background photographs and instrumental music sources. Every preview
+meets the 50% foreground-picture target. Generated media remain local and ignored.
+See the [chapter audit](../../studio/hb-c05-audit.json),
+[narration checks](../../studio/hb-c05-narration-check.json),
+[music headroom](../../studio/hb-c05-music-headroom.json),
+[export review records](../../studio/hb-c05-visual-review.json), and
+[listening priorities](../../studio/hb-c05-review.md). Whole-video listening,
+physical-device playback and user acceptance remain pending.
+
 ## Russian audio
 
 [1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as

@@ -1,0 +1,1010 @@
+schema_version: 1
+section_id: hb-c05-rasism
+chapter_id: hb-c05
+title_sv: Rasism och hatbrott
+title_ru: Расизм и преступления на почве ненависти
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-rasism.yaml
+example_only: false
+source_section_sha256: 10b044e7d4afce0d6f9d5263401a168ffe441aedc1fb58befff014b852de8b51
+translation_file_sha256: 94c0eed7459e42991d4863d8523e18f92ee9bc50c30abadeef0565b636c5f97f
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps; Chapter 5 burgundy palette: panel #39252b, ivory #faf3e8, secondary
+    #e2c8cf, highlight #dfbd82, separator #70515a. Liberation Sans Bold48/Regular40 with fixed right bilingual
+    panel and separate left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:ME EMME VAIKENE 023 Rasismia ja fasismia vastaan (53164904580).jpg by rajatonvimma
+    /// VJ Group Random Doctors continuously as decorative background, darkened 42% and blurred 2.5 px.
+    Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per
+    motion cycle, starting in motion, with no sentence resets. Total cycles=3.032738095238095. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Disquiet by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 185.078 seconds; prepared lossless stereo bed 424.583 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Topic-specific verified photographs and source-backed pictorial diagrams explain equality,
+    access, support and reporting without assigning discrimination or victim status to photographed people.
+    Change pictures at meaningful boundaries; measure actual body coverage against50% target. Diagrams
+    are labeled illustrative and contain no additional legal claim.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+- id: racism-definition-open
+  decision: Leave source definition rows10–12 open rather than reuse an equality-labelled illustration.
+    Keep all exact source text, narration and timing.
+  status: approved
+  resolve_during: render
+scenes:
+- id: scene-1
+  description: Hate-crime motive and protected characteristics
+- id: scene-2
+  description: Offence and motive; illustrative damaged car
+- id: scene-3
+  description: Racist assumptions and attitudes
+- id: scene-4
+  description: Structures, rules and institutions
+- id: scene-5
+  description: Interactions and microaggressions
+- id: scene-6
+  description: Repeated experiences, stress and self-image
+- id: scene-7
+  description: Speaking up and getting support
+- id: scene-8
+  description: Reporting racist crime to police
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_hatecrime
+  kind: foreground
+  description: Source-backed pictorial explanation or accurately identified photograph for hatecrime.
+    No inferred personal status or extra claim.
+  fallback: Use a source-based explanatory diagram where a photograph could misidentify people; preserve
+    complete source and document coverage.
+- id: picture_structures
+  kind: foreground
+  description: Source-backed pictorial explanation or accurately identified photograph for structures.
+    No inferred personal status or extra claim.
+  fallback: Use a source-based explanatory diagram where a photograph could misidentify people; preserve
+    complete source and document coverage.
+- id: picture_interaction
+  kind: foreground
+  description: Source-backed pictorial explanation or accurately identified photograph for interaction.
+    No inferred personal status or extra claim.
+  fallback: Use a source-based explanatory diagram where a photograph could misidentify people; preserve
+    complete source and document coverage.
+- id: picture_stress
+  kind: foreground
+  description: Source-backed pictorial explanation or accurately identified photograph for stress. No
+    inferred personal status or extra claim.
+  fallback: Use a source-based explanatory diagram where a photograph could misidentify people; preserve
+    complete source and document coverage.
+- id: picture_police
+  kind: foreground
+  description: Source-backed pictorial explanation or accurately identified photograph for police. No
+    inferred personal status or extra claim.
+  fallback: Use a source-based explanatory diagram where a photograph could misidentify people; preserve
+    complete source and document coverage.
+- id: photo_antiracism
+  kind: foreground
+  description: Actual Helsinki anti-racism demonstration2023; illustrates speaking up against racism,
+    not victim or offender identities.
+  fallback: Retain the already prepared source-based pictorial diagram for this passage; preserve exact
+    text.
+sentences:
+- sentence_id: hb-c05-u0067-s001
+  sv: Vid ett hatbrott blir en människa, en grupp, en egendom, en institution eller en representant för
+    dessa utsatt för ett brott på grund av en omständighet som förknippas med dem.
+  ru: При преступлении на почве ненависти человек, группа, имущество, учреждение или их представитель
+    становятся объектом преступления из-за связанного с ними обстоятельства.
+  scene_id: scene-1
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0067-s001.wav
+  start_seconds: 3.25
+  end_seconds: 17.948231
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0067-s002
+  sv: Omständigheten kan vara till exempel etniskt ursprung, könsidentitet eller funktionsnedsättning.
+  ru: Таким обстоятельством может быть, например, этническое происхождение, гендерная идентичность или
+    инвалидность.
+  scene_id: scene-1
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0067-s002.wav
+  start_seconds: 19.708333
+  end_seconds: 28.137177
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0067-s003
+  sv: Motivet till hatbrottet är ofta en fördom eller hat mot en viss människogrupp.
+  ru: Мотивом преступления на почве ненависти часто является предубеждение или ненависть к определённой
+    группе людей.
+  scene_id: scene-1
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0067-s003.wav
+  start_seconds: 29.916667
+  end_seconds: 36.743333
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s001
+  sv: Vilket brott som helst kan vara ett hatbrott.
+  ru: Любое преступление может быть преступлением на почве ненависти.
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s001.wav
+  start_seconds: 39.208333
+  end_seconds: 43.387925
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s002
+  sv: Det väsentliga är av vilken orsak brottet har begåtts.
+  ru: Существенно то, по какой причине совершено преступление.
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s002.wav
+  start_seconds: 45.166667
+  end_seconds: 50.251837
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s003
+  sv: Ett hatbrott kan alltså vara till exempel misshandel, ärekränkning eller skadegörelse.
+  ru: Таким образом, преступлением на почве ненависти может быть, например, применение насилия к человеку,
+    оскорбление чести и достоинства или повреждение имущества.
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s003.wav
+  start_seconds: 52.041667
+  end_seconds: 59.495272
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s004
+  sv: Till exempel om någon krossar fönstren på en bil för att bilens ägare hör till en annan religion
+    än skadegöraren, är det fråga om ett hatbrott.
+  ru: Например, если кто-то разбивает стёкла автомобиля, потому что его владелец исповедует другую религию,
+    чем лицо, повреждающее имущество, речь идёт о преступлении на почве ненависти.
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s004.wav
+  start_seconds: 61.25
+  end_seconds: 73.510136
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s005
+  sv: Egendomen behöver inte vara verklig, utan skadegörarens antagande om ett offer räcker.
+  ru: 'Признак не обязательно должен быть реальным: достаточно предположения лица, повреждающего имущество,
+    о жертве.'
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s005.wav
+  start_seconds: 75.291667
+  end_seconds: 82.884592
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0068-s006
+  sv: Om ett brott är ett hatbrott kan man få ett strängare straff än annars för samma brott.
+  ru: Если преступление совершено на почве ненависти, за него можно получить более строгое наказание,
+    чем за такое же преступление при иных обстоятельствах.
+  scene_id: scene-2
+  visual_cue: Show the source-backed hatecrime picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_hatecrime
+  text_highlights:
+  - hatbrott
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0068-s006.wav
+  start_seconds: 84.666667
+  end_seconds: 92.189932
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/hatecrime.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0069-s001
+  sv: Rasism är en tankemodell där människogrupper definieras som mindre värda på basis av till exempel
+    ursprung, hudfärg, nationalitet, modersmål eller religion.
+  ru: Расизм — это образ мышления, при котором группы людей признаются менее ценными на основании, например,
+    происхождения, цвета кожи, гражданства, родного языка или религии.
+  scene_id: scene-3
+  visual_cue: Leave foreground open for the source definition and manifestations of racism. The verified
+    anti-racism demonstration background supplies contextual imagery without presenting equality as the
+    definition of racism.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - Rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0069-s001.wav
+  start_seconds: 94.666667
+  end_seconds: 108.38966
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0069-s002
+  sv: Rasistiska attityder kan ta sig uttryck i medvetna handlingar och ord, men de kan också vara omedvetna
+    tankemodeller som styr beteendet.
+  ru: Расистские установки могут проявляться в осознанных действиях и словах, но также могут быть неосознанными
+    образами мышления, управляющими поведением.
+  scene_id: scene-3
+  visual_cue: Leave foreground open for the source definition and manifestations of racism. The verified
+    anti-racism demonstration background supplies contextual imagery without presenting equality as the
+    definition of racism.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0069-s002.wav
+  start_seconds: 110.166667
+  end_seconds: 121.521224
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0069-s003
+  sv: Rasism definieras på olika sätt i olika sammanhang.
+  ru: В разных контекстах расизм определяют по-разному.
+  scene_id: scene-3
+  visual_cue: Leave foreground open for the source definition and manifestations of racism. The verified
+    anti-racism demonstration background supplies contextual imagery without presenting equality as the
+    definition of racism.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - Rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0069-s003.wav
+  start_seconds: 123.291667
+  end_seconds: 128.307177
+  display_segments: []
+  render_image: null
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s001
+  sv: Strukturell rasism är rasism som uppstår i samhällets och olika institutioners praxis, strukturer
+    och regler.
+  ru: Структурный расизм — это расизм, возникающий в практике, структурах и правилах общества и различных
+    учреждений.
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights:
+  - rasism
+  - Strukturell rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s001.wav
+  start_seconds: 130.791667
+  end_seconds: 140.822687
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s002
+  sv: Den kan förekomma till exempel i arbetslivet och inom utbildning och tjänster.
+  ru: Он может встречаться, например, в трудовой жизни, образовании и услугах.
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s002.wav
+  start_seconds: 142.583333
+  end_seconds: 149.47966
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s003
+  sv: Strukturell rasism kan synas i form av diskriminerande handlingar, men också som tillvägagångssätt
+    och processer som antingen direkt eller indirekt diskriminerar vissa människogrupper.
+  ru: Структурный расизм может проявляться в форме дискриминационных действий, а также в виде способов
+    действий и процессов, прямо или косвенно дискриминирующих определённые группы людей.
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights:
+  - rasism
+  - Strukturell rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s003.wav
+  start_seconds: 151.25
+  end_seconds: 166.993129
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s004
+  sv: Strukturell rasism kan visa sig också i till exempel vitsar eller reklaminslag.
+  ru: Структурный расизм может проявляться и, например, в шутках или рекламных роликах.
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights:
+  - rasism
+  - Strukturell rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s004.wav
+  start_seconds: 168.75
+  end_seconds: 175.994626
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s005
+  sv: Ofta är det inte lätt att identifiera strukturell rasism, utan den kan vara omedveten.
+  ru: 'Часто структурный расизм нелегко распознать: он может быть неосознанным.'
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights:
+  - rasism
+  - strukturell rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s005.wav
+  start_seconds: 177.75
+  end_seconds: 185.412585
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0070-s006
+  sv: Det är inte alltid fråga om enskilda handlingar, utan om ett större fenomen som berör hela samhället.
+  ru: Речь не всегда идёт об отдельных действиях, а о более широком явлении, затрагивающем всё общество.
+  scene_id: scene-4
+  visual_cue: Show the source-backed structures picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_structures
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0070-s006.wav
+  start_seconds: 187.166667
+  end_seconds: 195.94381
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/structures.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0071-s001
+  sv: Rasism som dyker upp i interaktion kan visa sig i form av till exempel rop, öknamn, gester, utestängning,
+    användning av rasistiska begrepp eller uttryck, eller mikroaggressioner.
+  ru: Расизм, возникающий во взаимодействии, может проявляться, например, в форме выкриков, обидных прозвищ,
+    жестов, исключения из общения, использования расистских понятий или выражений либо микроагрессий.
+  scene_id: scene-5
+  visual_cue: Show the source-backed interaction picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_interaction
+  text_highlights:
+  - Rasism
+  - mikroaggressioner
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0071-s001.wav
+  start_seconds: 198.416667
+  end_seconds: 213.811497
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/interaction.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0071-s002
+  sv: Mikroaggressioner är till exempel frågor eller kommentarer om utseende eller beteende som kan vara
+    oavsiktliga och välmenande, men som ändå stärker och upprätthåller rasistiska eller diskriminerande
+    stereotyper.
+  ru: Микроагрессии — это, например, вопросы или комментарии о внешности или поведении, которые могут
+    быть непреднамеренными и благонамеренными, но всё же усиливают и поддерживают расистские или дискриминационные
+    стереотипы.
+  scene_id: scene-5
+  visual_cue: Show the source-backed interaction picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_interaction
+  text_highlights:
+  - Mikroaggressioner
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0071-s002.wav
+  start_seconds: 215.583333
+  end_seconds: 233.137619
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/interaction.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c05-u0071-s003
+  sv: De upprätthåller idén om att en person avviker från normen, det vill säga från hurdan en person
+    som befinner sig i en viss ställning eller som talar ett visst språk förväntas vara.
+  ru: Они поддерживают представление о том, что человек отклоняется от нормы, то есть от того, каким ожидают
+    видеть человека в определённом положении или говорящего на определённом языке.
+  scene_id: scene-5
+  visual_cue: Show the source-backed interaction picture, with full source pair in fixed bilingual panel.
+    Labels are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_interaction
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0071-s003.wav
+  start_seconds: 234.916667
+  end_seconds: 249.893537
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/interaction.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s001
+  sv: Upprepad rasism som förekommer i interaktion och mikroaggressioner kan ge upphov till minoritetsstress.
+  ru: Повторяющийся расизм во взаимодействии и микроагрессии могут вызывать стресс меньшинств.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights:
+  - rasism
+  - mikroaggressioner
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s001.wav
+  start_seconds: 252.375
+  end_seconds: 261.709422
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s002
+  sv: Den uppkommer till följd av upplevelser av diskriminering och rasism eller en rädsla för att sådana
+    ska upprepas i olika situationer.
+  ru: Он возникает вследствие пережитой дискриминации и расизма либо страха их повторения в различных
+    ситуациях.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights:
+  - rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s002.wav
+  start_seconds: 263.5
+  end_seconds: 275.411837
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s003
+  sv: Minoritetsstress försämrar människans välbefinnande.
+  ru: Стресс меньшинств ухудшает благополучие человека.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights:
+  - Minoritetsstress
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s003.wav
+  start_seconds: 277.166667
+  end_seconds: 282.251837
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s004
+  sv: Den kan också leda till internaliserad rasism, det vill säga till att den som upplever rasism själv
+    börjar tro att hen är på något sätt sämre än andra.
+  ru: Он также может привести к интернализованному расизму, то есть к тому, что человек, сталкивающийся
+    с расизмом, сам начинает верить, что он в чём-то хуже других.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights:
+  - rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s004.wav
+  start_seconds: 284.041667
+  end_seconds: 297.346701
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s005
+  sv: Den kan påverka självkänslan och uppfattningen om den egna förmågan på ett negativt sätt.
+  ru: Он может негативно влиять на самооценку и представление о собственных способностях.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s005.wav
+  start_seconds: 299.125
+  end_seconds: 306.857245
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0072-s006
+  sv: Internaliserad rasism uppkommer ofta till följd av att omgivningen inte ingriper i rasistiska situationer,
+    utan tigande verkar acceptera rasismen.
+  ru: Интернализованный расизм часто возникает вследствие того, что окружающие не вмешиваются в расистские
+    ситуации, а своим молчанием словно принимают расизм.
+  scene_id: scene-6
+  visual_cue: Show the source-backed stress picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_stress
+  text_highlights:
+  - rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0072-s006.wav
+  start_seconds: 308.625
+  end_seconds: 321.581735
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/stress.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0073-s001
+  sv: Rasism är alltid fel, även om den inte skulle uppfylla kännetecknen för diskriminering eller brott.
+  ru: Расизм всегда недопустим, даже если он не соответствует признакам дискриминации или преступления.
+  scene_id: scene-7
+  visual_cue: 'Verified contextual photograph: Actual Helsinki anti-racism demonstration2023; illustrates
+    speaking up against racism, not victim or offender identities. Keep full bilingual sentence on right;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - photo_antiracism
+  text_highlights:
+  - Rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0073-s001.wav
+  start_seconds: 324.041667
+  end_seconds: 332.67949
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/sources/antiracism.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0073-s002
+  sv: Man kan ta upp beteende eller praxis som skapar ojämlikhet till exempel på arbetsplatsen med chefen,
+    på läroanstalten med en lärare eller inom myndighetstjänster med myndigheten i fråga.
+  ru: Поведение или практику, создающие неравенство, можно обсудить, например, на работе с руководителем,
+    в учебном заведении с учителем или при получении услуг органов власти с соответствующим органом власти.
+  scene_id: scene-7
+  visual_cue: 'Verified contextual photograph: Actual Helsinki anti-racism demonstration2023; illustrates
+    speaking up against racism, not victim or offender identities. Keep full bilingual sentence on right;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - photo_antiracism
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0073-s002.wav
+  start_seconds: 334.458333
+  end_seconds: 349.992483
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/sources/antiracism.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0073-s003
+  sv: Olika organisationer erbjuder också stödtjänster eller kamratstöd för personer som upplevt rasism.
+  ru: Различные организации также предлагают услуги поддержки или взаимную поддержку людям, столкнувшимся
+    с расизмом.
+  scene_id: scene-7
+  visual_cue: 'Verified contextual photograph: Actual Helsinki anti-racism demonstration2023; illustrates
+    speaking up against racism, not victim or offender identities. Keep full bilingual sentence on right;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - photo_antiracism
+  text_highlights:
+  - rasism
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0073-s003.wav
+  start_seconds: 351.75
+  end_seconds: 360.596803
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/sources/antiracism.jpg
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0074-s001
+  sv: Om du blir utsatt för ett rasistiskt brott, ska du anmäla ärendet till polisen.
+  ru: Если вы стали жертвой преступления на почве расизма, вам следует сообщить об этом в полицию.
+  scene_id: scene-8
+  visual_cue: Show the source-backed police picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_police
+  text_highlights:
+  - polisen
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0074-s001.wav
+  start_seconds: 363.083333
+  end_seconds: 370.327959
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/police.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0074-s002
+  sv: Be att polisen beaktar gärningsmannens rasistiska motiv.
+  ru: Попросите полицию учесть расистский мотив преступника.
+  scene_id: scene-8
+  visual_cue: Show the source-backed police picture, with full source pair in fixed bilingual panel. Labels
+    are part of the illustration; omit separate caption.
+  asset_ids:
+  - episode_background
+  - picture_police
+  text_highlights:
+  - polisen
+  pronunciation_notes:
+  - Review Swedish compounds and Finnish legal/official names in complete-video listening; ASR is diagnostic.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-rasism/narration/hb-c05-u0074-s002.wav
+  start_seconds: 372.083333
+  end_seconds: 377.377483
+  display_segments: []
+  render_image: studio/media/hb-c05-rasism/pictures/police.png
+  render_caption: false
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-rasism/sources/music-bed.flac
+  background_image: studio/media/hb-c05-rasism/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 3.032738095238095
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials — Finlands Flyktinghjälp; Utbildningsstyrelsen;
+      UF-centret
+    - InfoFinland.fi — InfoFinland.fi
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga länkar och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - ME EMME VAIKENE 023 Rasismia ja fasismia vastaan (53164904580).jpg — rajatonvimma /// VJ Group Random
+      Doctors · CC BY 2.0
+    - Disquiet — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Källbaserade illustrationer: Homebrew video studio. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - ME EMME VAIKENE 023 Rasismia ja fasismia vastaan (53165104469).jpg
+    - Upphovspersoner, källor och licenser i videons CREDITS-fil.
+    - 'Källbaserade illustrationer: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-backed schematic illustrations use anonymous figures and are labeled as illustrations; photographs
+    show verified contexts and institutions. No photographed person is identified as a discrimination
+    victim or offender.
+  - Background photograph cropped, blurred, darkened and continuously panned/zoomed; its adaptation retains
+    the original license. Foreground photographs proportionally resized and centre-cropped for a steady
+    panel.
+  - Music excerpted, faded, ducked and level-adjusted;4-second equal-power crossfade repeats where required.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:ME_EMME_VAIKENE_023_Rasismia_ja_fasismia_vastaan_(53164904580).jpg
+    description: ME EMME VAIKENE 023 Rasismia ja fasismia vastaan
+    license: CC BY 2.0

@@ -1,0 +1,7 @@
+# Narration diagnostic notes
+
+The retained first 29 takes were preserved after the managed synthesis process ended. Only the missing final 20 takes were generated in a separate folder, with a fresh seed-42 run recorded in the merged metrics. Original-take hashes are checked before merging. Diagnostics on completed resumed takes run concurrently with synthesis, then are remapped only after their hashes match the selected main-folder WAVs.
+
+The complete first 29 source/input/transcript pairs were reviewed. Recognition differences include `hen`/`henne`, `bero`/`BRO`, the compounds `funktionshinderservice` and `hörselskadad`, the organization name `Förenta nationernas`, and short connective words. They remain listening priorities, not established synthesis defects. No material number error or omitted sentence was demonstrated in this partial diagnostic review. All 49 complete diagnostic pairs have now been reviewed; finite unclipped 44,100 Hz mono waveform, input, duration and current ASR-hash checks pass in `narration-check.json`. The resumed takes add listening priorities for `partiellt arbetsför`, `hjälpmedel`, and a possible repeated syllable in `funktionsnedsättning` / repeated `till`. These remain uncertain recognizer differences rather than a demonstrated material sentence loss; no further retakes were made.
+
+No whole-video listening, headphone/speaker balance check, physical-device playback or user acceptance is claimed.

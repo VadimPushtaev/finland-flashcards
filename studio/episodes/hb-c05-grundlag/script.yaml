@@ -1,0 +1,630 @@
+schema_version: 1
+section_id: hb-c05-grundlag
+chapter_id: hb-c05
+title_sv: Grundläggande och mänskliga rättigheter
+title_ru: Основные права и права человека
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-grundlag.yaml
+example_only: false
+source_section_sha256: eca7d82b05278c9922ce7722efe9873697384a49421bbe30d7c27cdad787e1e3
+translation_file_sha256: e44d0bcb03ab1ad9f40b12b1d703336df73e3b7366787fd08d6471eddf0fbad7
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps, Chapter 5 burgundy palette: #39252b / #faf3e8 / #e2c8cf / #dfbd82 /
+    #70515a. Liberation Sans Bold 48 and Regular 40, fixed bilingual panel at right, relevant pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Palace of Nations - flags - 2.JPG by Benoît Prieur continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.5511904761904762. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Avec Soin by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 145.084 seconds; prepared lossless stereo bed 217.167 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use verified photographs of actual Finnish civic activity, associations and institutions at
+    meaningful topic boundaries. Preserve full pictures and source text; captions remain off where a source
+    highlight is not a literal picture label. Measure at least 50% body-duration picture coverage; no
+    decorative background or text card counts.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Constitution and fundamental rights
+- id: scene-2
+  description: International human rights
+- id: scene-3
+  description: Universal and inalienable rights
+- id: scene-4
+  description: Indivisible and fundamental rights
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: parliament
+  kind: foreground
+  description: Finnish Parliament exterior contextualizes constitutional legislation; not an image of
+    the Constitution text. Source identity/license retained from verified earlier production record.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: equality
+  kind: foreground
+  description: Equal-sized people on a balanced support illustrate equal treatment. Symbolic explanatory
+    illustration, not a photograph or statistical chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: universal
+  kind: foreground
+  description: People surrounding a schematic globe illustrate rights applying to everyone; globe has
+    no asserted political boundaries. Symbolic explanatory illustration, not a photograph or statistical
+    chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: inalienable
+  kind: foreground
+  description: Person enclosed by protective shield illustrates rights that cannot be taken away. Symbolic
+    explanatory illustration, not a photograph or statistical chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: indivisible
+  kind: foreground
+  description: Connected book, person, home and scales pictograms illustrate interdependent rights, not
+    an exhaustive list. Symbolic explanatory illustration, not a photograph or statistical chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+- id: foundation
+  kind: foreground
+  description: People supported by a common foundation illustrate fundamental rights shared by everyone.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  fallback: Leave the foreground open and preserve all source wording if the verified picture cannot be
+    restored; report coverage.
+sentences:
+- sentence_id: hb-c05-u0001-s001
+  sv: Finlands viktigaste lag är grundlagen.
+  ru: Важнейший закон Финляндии — конституция.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior contextualizes constitutional legislation; not an image of the
+    Constitution text. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 6.941973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/parliament-0.jpg
+- sentence_id: hb-c05-u0001-s002
+  sv: Ingen annan lag kan strida mot den.
+  ru: Ни один другой закон не может ей противоречить.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior contextualizes constitutional legislation; not an image of the
+    Constitution text. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0001-s002.wav
+  start_seconds: 8.708333
+  end_seconds: 11.843027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/parliament-0.jpg
+- sentence_id: hb-c05-u0001-s003
+  sv: Finlands nuvarande reformerade grundlag trädde i kraft år 2000.
+  ru: Нынешняя реформированная конституция Финляндии вступила в силу в 2000 году.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior contextualizes constitutional legislation; not an image of the
+    Constitution text. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override:
+    text: Finlands nuvarande reformerade grundlag trädde i kraft år två tusen.
+    reason: Local ASR diagnosed a probable number pronunciation error on 2000; explicit speech-only Swedish
+      expansion preserves the displayed year.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0001-s003.wav
+  start_seconds: 13.625
+  end_seconds: 19.755068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/parliament-0.jpg
+- sentence_id: hb-c05-u0002-s001
+  sv: I en rättsstat respekteras lagarna och människornas grundläggande och mänskliga rättigheter.
+  ru: В правовом государстве соблюдаются законы, основные права людей и права человека.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior contextualizes constitutional legislation; not an image of the
+    Constitution text. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0002-s001.wav
+  start_seconds: 21.541667
+  end_seconds: 29.622211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/parliament-0.jpg
+- sentence_id: hb-c05-u0002-s002
+  sv: De grundläggande rättigheterna fastställs i grundlagen.
+  ru: Основные права закреплены в конституции.
+  scene_id: scene-1
+  visual_cue: Finnish Parliament exterior contextualizes constitutional legislation; not an image of the
+    Constitution text. Source identity/license retained from verified earlier production record.
+  asset_ids:
+  - episode_background
+  - parliament
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0002-s002.wav
+  start_seconds: 31.375
+  end_seconds: 36.32085
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/parliament-0.jpg
+- sentence_id: hb-c05-u0002-s003
+  sv: Till de grundläggande rättigheterna hör bland annat rätten till likabehandling, frihet och personlig
+    integritet.
+  ru: К основным правам относятся, в частности, право на равное обращение, свободу и личную неприкосновенность.
+  scene_id: scene-1
+  visual_cue: Equal-sized people on a balanced support illustrate equal treatment. Symbolic explanatory
+    illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - equality
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0002-s003.wav
+  start_seconds: 38.083333
+  end_seconds: 47.487415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/equality.png
+- sentence_id: hb-c05-u0002-s004
+  sv: Grundläggande rättigheter är också till exempel rätt till avgiftsfri grundläggande utbildning och
+    rätt till oundgänglig försörjning.
+  ru: К основным правам также относятся, например, право на бесплатное основное общее образование и право
+    на необходимое обеспечение средств к существованию.
+  scene_id: scene-1
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0002-s004.wav
+  start_seconds: 49.25
+  end_seconds: 60.395578
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c05-u0003-s001
+  sv: De mänskliga rättigheterna fastställs i internationella avtal.
+  ru: Права человека закреплены в международных договорах.
+  scene_id: scene-2
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0003-s001.wav
+  start_seconds: 62.166667
+  end_seconds: 67.948435
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c05-u0003-s002
+  sv: Den allmänna förklaringen om de mänskliga rättigheterna antogs av Förenta nationerna år 1948.
+  ru: Всеобщая декларация прав человека была принята Организацией Объединённых Наций в 1948 году.
+  scene_id: scene-2
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0003-s002.wav
+  start_seconds: 69.708333
+  end_seconds: 80.226973
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c05-u0003-s003
+  sv: Finland har godkänt FN:s förklaring om de mänskliga rättigheterna och förbundit sig till dess principer.
+  ru: Финляндия одобрила декларацию ООН (FN) о правах человека и обязалась соблюдать её принципы.
+  scene_id: scene-2
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0003-s003.wav
+  start_seconds: 82.0
+  end_seconds: 91.961361
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c05-u0004-s001
+  sv: 'Definitionen av de mänskliga rättigheterna fastställer att:'
+  ru: 'Определение прав человека устанавливает, что:'
+  scene_id: scene-2
+  visual_cue: Fixed bilingual text, relevant verified foreground picture at the passage topic boundary;
+    leave open where a picture would misrepresent the text.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0004-s001.wav
+  start_seconds: 93.75
+  end_seconds: 99.462109
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c05-u0006-s001
+  sv: de mänskliga rättigheterna är universella.
+  ru: права человека универсальны.
+  scene_id: scene-3
+  visual_cue: People surrounding a schematic globe illustrate rights applying to everyone; globe has no
+    asserted political boundaries. Symbolic explanatory illustration, not a photograph or statistical
+    chart.
+  asset_ids:
+  - episode_background
+  - universal
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0006-s001.wav
+  start_seconds: 101.25
+  end_seconds: 105.359932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/universal.png
+- sentence_id: hb-c05-u0006-s002
+  sv: Det betyder att de mänskliga rättigheterna gäller alla världens människor och att de är desamma
+    överallt i världen
+  ru: Это означает, что права человека распространяются на всех людей мира и одинаковы во всём мире
+  scene_id: scene-3
+  visual_cue: People surrounding a schematic globe illustrate rights applying to everyone; globe has no
+    asserted political boundaries. Symbolic explanatory illustration, not a photograph or statistical
+    chart.
+  asset_ids:
+  - episode_background
+  - universal
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0006-s002.wav
+  start_seconds: 107.125
+  end_seconds: 116.807721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/universal.png
+- sentence_id: hb-c05-u0007-s001
+  sv: de mänskliga rättigheterna är oförytterliga.
+  ru: права человека неотчуждаемы.
+  scene_id: scene-3
+  visual_cue: Person enclosed by protective shield illustrates rights that cannot be taken away. Symbolic
+    explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - inalienable
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0007-s001.wav
+  start_seconds: 118.583333
+  end_seconds: 122.902245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/inalienable.png
+- sentence_id: hb-c05-u0007-s002
+  sv: Det betyder att man inte kan ta de mänskliga rättigheterna från någon.
+  ru: Это означает, что ни у кого нельзя отнять права человека.
+  scene_id: scene-3
+  visual_cue: Person enclosed by protective shield illustrates rights that cannot be taken away. Symbolic
+    explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - inalienable
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0007-s002.wav
+  start_seconds: 124.666667
+  end_seconds: 130.518095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/inalienable.png
+- sentence_id: hb-c05-u0007-s003
+  sv: Inte ens människan själv kan ge bort sina mänskliga rättigheter
+  ru: Даже сам человек не может отказаться от своих прав человека
+  scene_id: scene-3
+  visual_cue: Person enclosed by protective shield illustrates rights that cannot be taken away. Symbolic
+    explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - inalienable
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0007-s003.wav
+  start_seconds: 132.291667
+  end_seconds: 138.143095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/inalienable.png
+- sentence_id: hb-c05-u0008-s001
+  sv: de mänskliga rättigheterna är odelbara.
+  ru: права человека неделимы.
+  scene_id: scene-4
+  visual_cue: Connected book, person, home and scales pictograms illustrate interdependent rights, not
+    an exhaustive list. Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - indivisible
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0008-s001.wav
+  start_seconds: 139.916667
+  end_seconds: 143.817619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/indivisible.png
+- sentence_id: hb-c05-u0008-s002
+  sv: Det betyder att de mänskliga rättigheterna inte uppfylls om inte samtliga av dem uppfylls.
+  ru: Это означает, что права человека не реализованы, если не реализованы все они.
+  scene_id: scene-4
+  visual_cue: Connected book, person, home and scales pictograms illustrate interdependent rights, not
+    an exhaustive list. Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - indivisible
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0008-s002.wav
+  start_seconds: 145.583333
+  end_seconds: 153.315578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/indivisible.png
+- sentence_id: hb-c05-u0008-s003
+  sv: Alla mänskliga rättigheter är lika viktiga och beroende av varandra
+  ru: Все права человека одинаково важны и зависят друг от друга
+  scene_id: scene-4
+  visual_cue: Connected book, person, home and scales pictograms illustrate interdependent rights, not
+    an exhaustive list. Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - indivisible
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0008-s003.wav
+  start_seconds: 155.083333
+  end_seconds: 161.422381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/indivisible.png
+- sentence_id: hb-c05-u0009-s001
+  sv: de mänskliga rättigheterna är fundamentala.
+  ru: права человека фундаментальны.
+  scene_id: scene-4
+  visual_cue: People supported by a common foundation illustrate fundamental rights shared by everyone.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - foundation
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0009-s001.wav
+  start_seconds: 163.208333
+  end_seconds: 167.387925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/foundation.png
+- sentence_id: hb-c05-u0009-s002
+  sv: Det betyder att de mänskliga rättigheterna är särskilt viktiga rättigheter.
+  ru: Это означает, что права человека являются особенно важными правами.
+  scene_id: scene-4
+  visual_cue: People supported by a common foundation illustrate fundamental rights shared by everyone.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - foundation
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0009-s002.wav
+  start_seconds: 169.166667
+  end_seconds: 175.645034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/foundation.png
+- sentence_id: hb-c05-u0009-s003
+  sv: Om man kräver en rättighet för sig själv, måste man vara beredd att också ge den till andra.
+  ru: Если человек требует для себя какого-либо права, он должен быть готов предоставить его и другим.
+  scene_id: scene-4
+  visual_cue: People supported by a common foundation illustrate fundamental rights shared by everyone.
+    Symbolic explanatory illustration, not a photograph or statistical chart.
+  asset_ids:
+  - episode_background
+  - foundation
+  text_highlights: []
+  pronunciation_notes:
+  - Review Swedish legal compounds and any numbers in complete-video listening.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-grundlag/narration/hb-c05-u0009-s003.wav
+  start_seconds: 177.416667
+  end_seconds: 185.636531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-grundlag/pictures/foundation.png
+render:
+  music_path: studio/media/hb-c05-grundlag/sources/music-bed.flac
+  background_image: studio/media/hb-c05-grundlag/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.5511904761904762
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Samhällskunskap inför medborgarskapsprovet
+    - 'Kapitel 5: Rättigheter, jämlikhet och skyldigheter'
+    - 'Källtext och rysk översättning: Homebrew-antologin.'
+    - 'Fullständiga källor och licenser: videons CREDITS-fil.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Palace of Nations - flags - 2.JPG — Benoît Prieur · CC0
+    - Avec Soin — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Palace_of_Nations_-_flags_-_2.JPG
+    description: Palais des Nations à Genève.
+    license: CC0

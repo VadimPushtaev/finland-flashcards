@@ -1,0 +1,546 @@
+schema_version: 1
+section_id: hb-c05-medborgarskap
+chapter_id: hb-c05
+title_sv: Rättigheter och skyldigheter som följer av medborgarskap
+title_ru: Права и обязанности, обусловленные гражданством
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-medborgarskap.yaml
+example_only: false
+source_section_sha256: 2fc1e8240a13825244b3499f0ce3fb10baa29b8745eecf32c7cd3c7cca7e22a6
+translation_file_sha256: a5907905edd33cebaa9c1b00a02a3924fd49a82d24b7371e0b27949336944555
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Muted burgundy chapter palette {''background'': ''#39252b'', ''text'':
+    ''#faf3e8'', ''secondary'': ''#e2c8cf'', ''highlight'': ''#dfbd82'', ''separator'': ''#70515a''}.
+    Liberation Sans Bold 48 / Regular 40, stable right bilingual panel and relevant foreground pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Embassy of Finland in Stockholm, 2010.JPG by Mr Bullitt continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.169047619047619. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Enchanted Valley by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 190.276 seconds; prepared lossless stereo bed 163.667 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use topic-specific factual diagrams and verified relevant photographs across at least half
+    of body display time. Diagrams explain relationships with pictorial objects and arrows; typography
+    alone does not count. No inference about photographed people’s health, beliefs or experiences.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two unspoken 15-second source/media credit cards, with full image licenses and adaptation
+    details in accompanying credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Citizenship and rights
+- id: scene-2
+  description: Political rights
+- id: scene-3
+  description: EU and consular rights
+- id: scene-4
+  description: Duties and law
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: source_diagrams
+  kind: foreground
+  description: Pictorial explanations of the exact source relationships, using original schematic objects,
+    people, arrows and source labels; no additional legal or medical claims.
+  fallback: Use accurately identified relevant photographs; document any unresolved picture shortfall
+    without filler.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_ballot
+  kind: foreground
+  description: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Here shown as a contextual foreground photograph; no personal status inferred.
+  fallback: Use a source-based diagram and document missing photo.
+- id: picture_cabinet
+  kind: foreground
+  description: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Here shown as a contextual foreground
+    photograph; no personal status inferred.
+  fallback: Use a source-based diagram and document missing photo.
+- id: picture_court
+  kind: foreground
+  description: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  fallback: Use a source-based diagram and document missing photo.
+- id: picture_passport
+  kind: foreground
+  description: Dated 2007 Finnish passport specimen, used solely to illustrate the right to a Finnish
+    passport; not a representation of the current design.
+  fallback: Use original passport diagram.
+sentences:
+- sentence_id: hb-c05-u0184-s001
+  sv: Finska medborgare har vissa rättigheter och skyldigheter som utlänningar bosatta i Finland inte
+    nödvändigtvis har.
+  ru: У граждан Финляндии есть определённые права и обязанности, которых у иностранцев, проживающих в
+    Финляндии, может не быть.
+  scene_id: scene-1
+  visual_cue: Dated 2007 Finnish passport specimen, used solely to illustrate the right to a Finnish passport;
+    not a representation of the current design.
+  asset_ids:
+  - episode_background
+  - picture_passport
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0184-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.211361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/sources/passport.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0185-s001
+  sv: Rättigheter
+  ru: Права
+  scene_id: scene-1
+  visual_cue: Dated 2007 Finnish passport specimen, used solely to illustrate the right to a Finnish passport;
+    not a representation of the current design.
+  asset_ids:
+  - episode_background
+  - picture_passport
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0185-s001.wav
+  start_seconds: 15.0
+  end_seconds: 16.950476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/sources/passport.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0187-s001
+  sv: rätt att få finskt pass
+  ru: право получить финский паспорт
+  scene_id: scene-1
+  visual_cue: Dated 2007 Finnish passport specimen, used solely to illustrate the right to a Finnish passport;
+    not a representation of the current design.
+  asset_ids:
+  - episode_background
+  - picture_passport
+  text_highlights:
+  - finskt pass
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0187-s001.wav
+  start_seconds: 18.708333
+  end_seconds: 21.355408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/sources/passport.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0205-s001
+  sv: En finsk medborgare kan inte hindras från att komma till Finland, hen kan inte förvisas från Finland
+  ru: Нельзя препятствовать въезду гражданина Финляндии в Финляндию, и его нельзя выслать из Финляндии
+  scene_id: scene-1
+  visual_cue: Dated 2007 Finnish passport specimen, used solely to illustrate the right to a Finnish passport;
+    not a representation of the current design.
+  asset_ids:
+  - episode_background
+  - picture_passport
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0205-s001.wav
+  start_seconds: 23.125
+  end_seconds: 31.762823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/sources/passport.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0188-s001
+  sv: rätt att rösta i presidentval, riksdagsval och folkomröstningar då man fyllt 18 år.
+  ru: право голосовать на президентских и парламентских выборах и референдумах после достижения 18 лет.
+  scene_id: scene-2
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Here shown as a contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0188-s001.wav
+  start_seconds: 34.25
+  end_seconds: 42.609184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/ballot.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0189-s001
+  sv: rätt att ställa upp som kandidat i riksdagsval då man fyllt 18 år.
+  ru: право выдвигать свою кандидатуру на парламентских выборах после достижения 18 лет.
+  scene_id: scene-2
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Here shown as a contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0189-s001.wav
+  start_seconds: 44.375
+  end_seconds: 51.271327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/ballot.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0190-s001
+  sv: möjlighet att bli utnämnd till sådana statliga ämbeten för vilka det krävs finskt medborgarskap
+  ru: возможность быть назначенным на такие государственные должности, для которых требуется финское гражданство
+  scene_id: scene-2
+  visual_cue: Actual Government Palace in Helsinki. Illustrates the cabinet institution and its preparation/implementation
+    role, without claiming that every named ministry or agency is housed in this building. Original photograph
+    and Commons identity metadata visually checked on 2026-10-26. Here shown as a contextual foreground
+    photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_cabinet
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0190-s001.wav
+  start_seconds: 53.041667
+  end_seconds: 61.47051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/cabinet.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0191-s001
+  sv: EU-medborgarnas rättigheter som rätten att fritt röra sig och arbeta inom EU:s område och rätten
+    att rösta och ställa upp som kandidat i EU-val
+  ru: права граждан ЕС (EU), например право свободно передвигаться и работать на территории ЕС и право
+    голосовать и выдвигать свою кандидатуру на выборах в Европарламент
+  scene_id: scene-3
+  visual_cue: Leave left foreground open to the actual Finnish embassy background; no generic courthouse
+    is used for EU movement or consular assistance.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - EU
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0191-s001.wav
+  start_seconds: 63.958333
+  end_seconds: 77.750986
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0192-s001
+  sv: Utomlands får finska medborgare hjälp på Finlands ambassader och konsulat.
+  ru: За границей граждане Финляндии получают помощь в посольствах и консульствах Финляндии.
+  scene_id: scene-3
+  visual_cue: Leave left foreground open to the actual Finnish embassy background; no generic courthouse
+    is used for EU movement or consular assistance.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0192-s001.wav
+  start_seconds: 79.541667
+  end_seconds: 86.159354
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0193-s001
+  sv: Även om du inte är finsk medborgare kan du ha rösträtt i vissa val.
+  ru: Даже если вы не гражданин Финляндии, у вас может быть избирательное право на некоторых выборах.
+  scene_id: scene-3
+  visual_cue: Actual parliamentary-election voting booth and candidate list from Finland in 2019. Used
+    for general electoral representation and voting, never presented as the 1994 referendum or any other
+    dated election. Original photograph and Commons identity metadata visually checked on 2026-10-26.
+    Here shown as a contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_ballot
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0193-s001.wav
+  start_seconds: 87.916667
+  end_seconds: 94.046735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/ballot.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0194-s001
+  sv: Skyldigheter
+  ru: Обязанности
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0194-s001.wav
+  start_seconds: 96.5
+  end_seconds: 98.450476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0196-s001
+  sv: Finska medborgare har skyldighet att delta i landets försvar eller bistå i det.
+  ru: Граждане Финляндии обязаны участвовать в обороне страны или помогать в этом.
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0196-s001.wav
+  start_seconds: 100.208333
+  end_seconds: 107.035
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0196-s002
+  sv: Män som har fyllt 18 år har värnplikt (asevelvollisuus).
+  ru: Мужчины, достигшие 18 лет, несут воинскую обязанность (asevelvollisuus).
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - 18 år
+  - värnplikt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0196-s002.wav
+  start_seconds: 108.791667
+  end_seconds: 114.573435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0197-s001
+  sv: Finska medborgare har skyldighet att följa Finlands lagar även annanstans än i Finland.
+  ru: Граждане Финляндии обязаны соблюдать законы Финляндии также за её пределами.
+  scene_id: scene-4
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights:
+  - Finlands lag
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0197-s001.wav
+  start_seconds: 116.333333
+  end_seconds: 123.995918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0197-s002
+  sv: Finska medborgare kan i Finland dömas för brott som begåtts utomlands.
+  ru: Граждане Финляндии могут быть осуждены в Финляндии за преступления, совершённые за границей.
+  scene_id: scene-4
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-medborgarskap/narration/hb-c05-u0197-s002.wav
+  start_seconds: 125.75
+  end_seconds: 132.158707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-medborgarskap/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-medborgarskap/sources/music-bed.flac
+  background_image: studio/media/hb-c05-medborgarskap/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.169047619047619
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Originalkällor, titlar och utgivarvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Embassy of Finland in Stockholm, 2010.JPG — Mr Bullitt · CC BY-SA 3.0
+    - Enchanted Valley — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained.
+  - Original pictorial diagrams explain source relationships without adding factual claims.
+  - Background photograph cropped, blurred, darkened and continuously moved; original photo license retained.
+  - Music faded, ducked and level-adjusted; repeated with 4-second equal-power crossfades if needed.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Embassy_of_Finland_in_Stockholm,_2010.JPG
+    description: Embassy of Finland in Stockholm
+    license: CC BY-SA 3.0

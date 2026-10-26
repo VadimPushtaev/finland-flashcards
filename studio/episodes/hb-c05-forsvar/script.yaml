@@ -1,0 +1,595 @@
+schema_version: 1
+section_id: hb-c05-forsvar
+chapter_id: hb-c05
+title_sv: Försvarsplikt, beväringstjänst och civiltjänst
+title_ru: Обязанность защищать страну, военная служба по призыву и альтернативная гражданская служба
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-forsvar.yaml
+example_only: false
+source_section_sha256: c9209ecbd2363a3be5d4d9931a4fe5beea0a80ebdf73c45a4b7581f9848e3a6f
+translation_file_sha256: 225722fc6596bd766818ef2fdb05c1039c5a01216c892cc64dd2555037b328d6
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Muted burgundy chapter palette {''background'': ''#39252b'', ''text'':
+    ''#faf3e8'', ''secondary'': ''#e2c8cf'', ''highlight'': ''#dfbd82'', ''separator'': ''#70515a''}.
+    Liberation Sans Bold 48 / Regular 40, stable right bilingual panel and relevant foreground pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Lapinjärven koulutuskeskus, päärakennus.jpg by Samuli Lintula continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.5119047619047619. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Immersed by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 248.973 seconds; prepared lossless stereo bed 211.667 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use topic-specific factual diagrams and verified relevant photographs across at least half
+    of body display time. Diagrams explain relationships with pictorial objects and arrows; typography
+    alone does not count. No inference about photographed people’s health, beliefs or experiences.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two unspoken 15-second source/media credit cards, with full image licenses and adaptation
+    details in accompanying credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Defence duty and alternative service paths
+- id: scene-2
+  description: Training and reserve
+- id: scene-3
+  description: 'Archived source: 2023 choices'
+- id: scene-4
+  description: Refusal and penalties
+- id: scene-5
+  description: Citizenship and voluntary service
+- id: scene-6
+  description: Reserve-based defence
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: source_diagrams
+  kind: foreground
+  description: Pictorial explanations of the exact source relationships, using original schematic objects,
+    people, arrows and source labels; no additional legal or medical claims.
+  fallback: Use accurately identified relevant photographs; document any unresolved picture shortfall
+    without filler.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_conscripts
+  kind: foreground
+  description: A Finnish conscript fires the M27 Infantry Automatic Rifle during a live-fire range in
+    Upinniemi, Finland, June 7, 2024. Marines worked closely with their Finnish counterparts to conduct
+    training as part of their 2024 Reconnaissance/Counter-Reconnaissance deployment in the Baltic Sea
+    region in support of Task Force 61/2. (U.S. Marine Corps photo by Lance Cpl. Francis Hrosar) Contextual
+    actual service photograph, not a depiction of the numerical statistics or the current eligibility
+    rules.
+  fallback: Use source-based service-path diagram.
+- id: picture_civil-service
+  kind: foreground
+  description: Lapinjärven koulutuskeskuksen B-rakennus. Kuvan oikealla olevasta ovesta mennään majoitustiloihin,
+    talon toisesta päästä terveydenhoitajalle ja lääkärille. Contextual actual service photograph, not
+    a depiction of the numerical statistics or the current eligibility rules.
+  fallback: Use source-based service-path diagram.
+sentences:
+- sentence_id: hb-c05-u0198-s001
+  sv: Av skyldigheten att försvara landet följer att alla finländska män i åldern 18–60 år har värnplikt.
+  ru: Из обязанности защищать страну следует, что все мужчины Финляндии в возрасте 18–60 лет несут воинскую
+    обязанность.
+  scene_id: scene-1
+  visual_cue: Show source-based service pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - värnplikt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override:
+    text: Av skyldigheten att försvara landet följer att alla finländska män i åldern arton till sextio
+      år har värnplikt.
+    reason: Original diagnostic collapsed the age range to 1860. Expand the range in speech only; displayed
+      source remains exact.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0198-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.932721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/service.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0198-s002
+  sv: Det betyder att de måste göra antingen beväringstjänst, det vill säga militärtjänst, eller civiltjänst.
+  ru: Это означает, что они должны пройти либо военную службу по призыву, то есть военную службу, либо
+    альтернативную гражданскую службу.
+  scene_id: scene-1
+  visual_cue: Show source-based service pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - civiltjänst
+  - beväringstjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0198-s002.wav
+  start_seconds: 14.708333
+  end_seconds: 23.206837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/service.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0198-s003
+  sv: Civiltjänst är ett alternativ för dem som inte vill göra militärtjänst.
+  ru: Альтернативная гражданская служба — это вариант для тех, кто не хочет проходить военную службу.
+  scene_id: scene-1
+  visual_cue: Lapinjärven koulutuskeskuksen B-rakennus. Kuvan oikealla olevasta ovesta mennään majoitustiloihin,
+    talon toisesta päästä terveydenhoitajalle ja lääkärille. Contextual actual service photograph, not
+    a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_civil-service
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0198-s003.wav
+  start_seconds: 24.958333
+  end_seconds: 31.506361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/civil-service.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0199-s001
+  sv: Beväringstjänstens, det vill säga arméutbildningens, längd är cirka sex månader till ett år.
+  ru: Продолжительность военной службы по призыву, то есть армейской подготовки, составляет примерно от
+    шести месяцев до года.
+  scene_id: scene-2
+  visual_cue: A Finnish conscript fires the M27 Infantry Automatic Rifle during a live-fire range in Upinniemi,
+    Finland, June 7, 2024. Marines worked closely with their Finnish counterparts to conduct training
+    as part of their 2024 Reconnaissance/Counter-Reconnaissance deployment in the Baltic Sea region in
+    support of Task Force 61/2. (U.S. Marine Corps photo by Lance Cpl. Francis Hrosar) Contextual actual
+    service photograph, not a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_conscripts
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0199-s001.wav
+  start_seconds: 33.958333
+  end_seconds: 42.108537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/conscripts.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0199-s002
+  sv: Efter beväringstjänsten hör den som slutfört den till reserven och kallas regelbundet till repetitionsövningar.
+  ru: После военной службы по призыву тот, кто её завершил, зачисляется в резерв и регулярно вызывается
+    на учебные сборы.
+  scene_id: scene-2
+  visual_cue: A Finnish conscript fires the M27 Infantry Automatic Rifle during a live-fire range in Upinniemi,
+    Finland, June 7, 2024. Marines worked closely with their Finnish counterparts to conduct training
+    as part of their 2024 Reconnaissance/Counter-Reconnaissance deployment in the Baltic Sea region in
+    support of Task Force 61/2. (U.S. Marine Corps photo by Lance Cpl. Francis Hrosar) Contextual actual
+    service photograph, not a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_conscripts
+  text_highlights:
+  - beväringstjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0199-s002.wav
+  start_seconds: 43.875
+  end_seconds: 53.139762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/conscripts.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0199-s003
+  sv: I civiltjänstgöringen ingår en utbildningsperiod på en månad och en arbetstjänst på knappt ett år.
+  ru: Альтернативная гражданская служба включает месячный период обучения и трудовую службу продолжительностью
+    чуть менее года.
+  scene_id: scene-2
+  visual_cue: Lapinjärven koulutuskeskuksen B-rakennus. Kuvan oikealla olevasta ovesta mennään majoitustiloihin,
+    talon toisesta päästä terveydenhoitajalle ja lääkärille. Contextual actual service photograph, not
+    a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_civil-service
+  text_highlights:
+  - civiltjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0199-s003.wav
+  start_seconds: 54.916667
+  end_seconds: 63.34551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/civil-service.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0200-s001
+  sv: Av de män som kallades in i armén år 2023 valde 75 procent beväringstjänst och 1,6 procent civiltjänst.
+  ru: Из мужчин, призванных в армию в 2023 году, 75 процентов выбрали военную службу по призыву, а 1,6
+    процента — альтернативную гражданскую службу.
+  scene_id: scene-3
+  visual_cue: Show source-based statistics pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - civiltjänst
+  - beväringstjänst
+  - '2023'
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0200-s001.wav
+  start_seconds: 65.833333
+  end_seconds: 78.372109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/statistics.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0200-s002
+  sv: Resten antingen befriades från tjänstgöring på grund av hälsoskäl eller andra skäl, eller så flyttades
+    deras tjänstgöring till en senare tidpunkt.
+  ru: Остальных либо освободили от службы по состоянию здоровья или по другим причинам, либо перенесли
+    их службу на более поздний срок.
+  scene_id: scene-3
+  visual_cue: Show source-based statistics pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0200-s002.wav
+  start_seconds: 80.125
+  end_seconds: 92.524456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/statistics.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0201-s001
+  sv: Om en värnpliktig vägrar att göra antingen beväringstjänst eller civiltjänst, eller vägrar att slutföra
+    en påbörjad tjänstgöring, döms hen för vägran att fullgöra värnplikt eller civiltjänst.
+  ru: Если военнообязанный отказывается проходить военную службу по призыву или альтернативную гражданскую
+    службу либо отказывается завершить уже начатую службу, его осуждают за отказ от исполнения воинской
+    обязанности или прохождения альтернативной гражданской службы.
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - värnplikt
+  - civiltjänst
+  - beväringstjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0201-s001.wav
+  start_seconds: 95.0
+  end_seconds: 111.091429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/law.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c05-u0201-s002
+  sv: Domens längd är hälften av den kvarvarande tjänstgöringstiden.
+  ru: Срок по приговору составляет половину оставшегося срока службы.
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0201-s002.wav
+  start_seconds: 113.875
+  end_seconds: 119.517449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0201-s003
+  sv: Numera avtjänas straff för vägran i allmänhet som övervakningsstraff, det vill säga husarrest, i
+    stället för i fängelse.
+  ru: В настоящее время наказание за отказ обычно отбывают под надзором, то есть под домашним арестом,
+    вместо содержания в тюрьме.
+  scene_id: scene-4
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0201-s003.wav
+  start_seconds: 121.291667
+  end_seconds: 131.601327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0202-s001
+  sv: Om en man får finskt medborgarskap när han är under 30 år, måste han göra antingen beväringstjänst
+    eller civiltjänst.
+  ru: Если мужчина получает финское гражданство в возрасте младше 30 лет, он должен пройти либо военную
+    службу по призыву, либо альтернативную гражданскую службу.
+  scene_id: scene-5
+  visual_cue: Show source-based service pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - civiltjänst
+  - beväringstjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0202-s001.wav
+  start_seconds: 134.083333
+  end_seconds: 144.671633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/diagrams/service.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0202-s002
+  sv: Kvinnor har inte värnplikt, men kan göra frivillig värnplikt om de vill.
+  ru: Женщины не несут воинской обязанности, но могут добровольно пройти военную службу, если хотят.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open. The earlier military/civil-service choice diagram could imply
+    an unstated civilian-service alternative for women; the conscript photograph could imply an unverified
+    personal identity. Preserve exact bilingual source and numerical highlights.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - värnplikt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0202-s002.wav
+  start_seconds: 146.458333
+  end_seconds: 152.797381
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0202-s003
+  sv: År 2024 ansökte 1 555 kvinnor om frivillig värnplikt.
+  ru: В 2024 году 1 555 женщин подали заявления на добровольную военную службу.
+  scene_id: scene-5
+  visual_cue: Leave the foreground open. The earlier military/civil-service choice diagram could imply
+    an unstated civilian-service alternative for women; the conscript photograph could imply an unverified
+    personal identity. Preserve exact bilingual source and numerical highlights.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - värnplikt
+  - '2024'
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0202-s003.wav
+  start_seconds: 154.583333
+  end_seconds: 162.245918
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0203-s001
+  sv: Finlands försvar bygger på värnplikten och den värnpliktsarmé som reservisterna som fullgjort beväringstjänst
+    bildar.
+  ru: Оборона Финляндии основывается на воинской обязанности и призывной армии, состоящей из резервистов,
+    прошедших военную службу по призыву.
+  scene_id: scene-6
+  visual_cue: A Finnish conscript fires the M27 Infantry Automatic Rifle during a live-fire range in Upinniemi,
+    Finland, June 7, 2024. Marines worked closely with their Finnish counterparts to conduct training
+    as part of their 2024 Reconnaissance/Counter-Reconnaissance deployment in the Baltic Sea region in
+    support of Task Force 61/2. (U.S. Marine Corps photo by Lance Cpl. Francis Hrosar) Contextual actual
+    service photograph, not a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_conscripts
+  text_highlights:
+  - värnplikt
+  - beväringstjänst
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0203-s001.wav
+  start_seconds: 164.708333
+  end_seconds: 175.087653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/conscripts.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0203-s002
+  sv: Det finns ingen yrkesarmé i Finland.
+  ru: В Финляндии нет профессиональной армии.
+  scene_id: scene-6
+  visual_cue: A Finnish conscript fires the M27 Infantry Automatic Rifle during a live-fire range in Upinniemi,
+    Finland, June 7, 2024. Marines worked closely with their Finnish counterparts to conduct training
+    as part of their 2024 Reconnaissance/Counter-Reconnaissance deployment in the Baltic Sea region in
+    support of Task Force 61/2. (U.S. Marine Corps photo by Lance Cpl. Francis Hrosar) Contextual actual
+    service photograph, not a depiction of the numerical statistics or the current eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture_conscripts
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-forsvar/narration/hb-c05-u0203-s002.wav
+  start_seconds: 176.875
+  end_seconds: 180.149014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-forsvar/sources/conscripts.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-forsvar/sources/music-bed.flac
+  background_image: studio/media/hb-c05-forsvar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.5119047619047619
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Originalkällor, titlar och utgivarvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Lapinjärven koulutuskeskus, päärakennus.jpg — Samuli Lintula · CC BY-SA 3.0
+    - Immersed — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained.
+  - Original pictorial diagrams explain source relationships without adding factual claims.
+  - Background photograph cropped, blurred, darkened and continuously moved; original photo license retained.
+  - Music faded, ducked and level-adjusted; repeated with 4-second equal-power crossfades if needed.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Lapinj%C3%A4rven_koulutuskeskus,_p%C3%A4%C3%A4rakennus.jpg
+    description: Lapinjärven koulutuskeskuksen päärakennus, A-talo. Respa, toimistot, majoitustiloja,
+      ATK-opetushuone.
+    license: CC BY-SA 3.0

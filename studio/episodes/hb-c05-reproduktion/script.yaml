@@ -1,0 +1,1083 @@
+schema_version: 1
+section_id: hb-c05-reproduktion
+chapter_id: hb-c05
+title_sv: Självbestämmande och reproduktiv hälsa
+title_ru: Самоопределение и репродуктивное здоровье
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-reproduktion.yaml
+example_only: false
+source_section_sha256: 340dfe7e982efc6398d7812d3d96fe842dd2322e374401300971f49f4955b96b
+translation_file_sha256: fadf7975e721319f337d7f088eaa5ebc5dcce9f8ac2cb81aca6f20a20552cfe6
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Muted burgundy chapter palette {''background'': ''#39252b'', ''text'':
+    ''#faf3e8'', ''secondary'': ''#e2c8cf'', ''highlight'': ''#dfbd82'', ''separator'': ''#70515a''}.
+    Liberation Sans Bold 48 / Regular 40, stable right bilingual panel and relevant foreground pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Jäkärlän terveyskeskus ja neuvola.jpg by Samuli Lintula continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=2.4872023809523807. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Mana Two - Part 3 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 192.013 seconds; prepared lossless stereo bed 348.208
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use topic-specific factual diagrams and verified relevant photographs across at least half
+    of body display time. Diagrams explain relationships with pictorial objects and arrows; typography
+    alone does not count. No inference about photographed people’s health, beliefs or experiences.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two unspoken 15-second source/media credit cards, with full image licenses and adaptation
+    details in accompanying credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: 'Archived source: termination timelines and decisions'
+- id: scene-2
+  description: 'Archived source: listed grounds'
+- id: scene-3
+  description: 'Archived source: exceptions and professional decisions'
+- id: scene-4
+  description: Confidentiality for minors
+- id: scene-5
+  description: Prescriptions and contraception
+- id: scene-6
+  description: Access to treatment
+- id: scene-7
+  description: Consent and medical safeguards
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: source_diagrams
+  kind: foreground
+  description: Pictorial explanations of the exact source relationships, using original schematic objects,
+    people, arrows and source labels; no additional legal or medical claims.
+  fallback: Use accurately identified relevant photographs; document any unresolved picture shortfall
+    without filler.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_court
+  kind: foreground
+  description: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  fallback: Use a source-based diagram and document missing photo.
+- id: picture_health
+  kind: foreground
+  description: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  fallback: Use original source-based health-services diagram.
+sentences:
+- sentence_id: hb-c05-u0156-s001
+  sv: Fram till graviditetsvecka 12+0 kan du kan du i Finland få abort med ditt eget beslut.
+  ru: В Финляндии вы можете сделать аборт по собственному решению на сроке до 12+0 недель беременности.
+  scene_id: scene-1
+  visual_cue: Show source-based timeline pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - 12+0
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override:
+    text: Fram till graviditetsvecka tolv plus noll, kan du kan du i Finland få abort med ditt eget beslut.
+    reason: Second targeted candidate adds an unspoken comma after expanded week/day notation because
+      the first candidate recovered12+0 but ASR blurred the adjacent phrase få abort into få bort. Exact
+      display retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0156-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.748503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/timeline.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0156-s002
+  sv: Då behöver du inget tillstånd för aborten och du behöver inte heller motivera ditt beslut på något
+    sätt.
+  ru: В этом случае вам не требуется разрешение на аборт и не нужно каким-либо образом обосновывать своё
+    решение.
+  scene_id: scene-1
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0156-s002.wav
+  start_seconds: 13.5
+  end_seconds: 21.928844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0157-s001
+  sv: I många situationer kan du få en abort också efter den första trimestern.
+  ru: Во многих ситуациях аборт можно сделать и после первого триместра.
+  scene_id: scene-1
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0157-s001.wav
+  start_seconds: 23.708333
+  end_seconds: 30.117041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0158-s001
+  sv: I graviditetsvecka 12+1–20+0 kan abort göras med ett särskilt tillstånd från Valvira.
+  ru: На сроке беременности 12+1–20+0 недель аборт можно сделать по специальному разрешению Valvira.
+  scene_id: scene-1
+  visual_cue: Show source-based timeline pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - Valvira
+  - 12+1–20+0
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override:
+    text: I graviditetsvecka tolv plus ett till tjugo plus noll kan abort göras med ett särskilt tillstånd
+      från Valvira.
+    reason: Local ASR of the retained take misrecognized the gestational week/day notation; expand only
+      the exact source numerals and range in Swedish speech. Display remains verbatim.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0158-s001.wav
+  start_seconds: 31.875
+  end_seconds: 41.557721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/timeline.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0158-s002
+  sv: Valvira är tillstånds- och tillsynsverket för social- och hälsovården.
+  ru: Valvira — Ведомство по выдаче разрешений и надзору в сфере социального обеспечения и здравоохранения.
+  scene_id: scene-1
+  visual_cue: Health-service oversight context; no misidentification of the judicial building as Valvira.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - Valvira
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0158-s002.wav
+  start_seconds: 43.333333
+  end_seconds: 49.881361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0158-s003
+  sv: Ange i din ansökan varför aborten inte gjordes tidigare.
+  ru: В заявлении укажите, почему аборт не был сделан раньше.
+  scene_id: scene-1
+  visual_cue: Show source-based timeline pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0158-s003.wav
+  start_seconds: 51.666667
+  end_seconds: 56.751837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/timeline.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0158-s004
+  sv: I Finlands lag föreskrivs grunderna på vilka du kan få abort under denna period.
+  ru: Закон Финляндии устанавливает основания, по которым вы можете сделать аборт в этот период.
+  scene_id: scene-1
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights:
+  - Finlands lag
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0158-s004.wav
+  start_seconds: 58.541667
+  end_seconds: 65.507653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0158-s005
+  sv: 'Du kan få en abort i graviditetsvecka 12–20 om du befinner dig någon av följande situationer:'
+  ru: 'Вы можете сделать аборт на сроке беременности 12–20 недель, если находитесь в одной из следующих
+    ситуаций:'
+  scene_id: scene-2
+  visual_cue: Show source-based health pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override:
+    text: 'Du kan få en abort i graviditetsvecka tolv till tjugo om du befinner dig någon av följande
+      situationer:'
+    reason: Local ASR of the retained take misrecognized the gestational week/day notation; expand only
+      the exact source numerals and range in Swedish speech. Display remains verbatim.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0158-s005.wav
+  start_seconds: 67.958333
+  end_seconds: 77.432075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0160-s001
+  sv: Att få barnet skulle vara avsevärt betungande för dig,
+  ru: рождение ребёнка стало бы для вас значительным бременем,
+  scene_id: scene-2
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0160-s001.wav
+  start_seconds: 79.208333
+  end_seconds: 84.293503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0161-s001
+  sv: du eller den andra föräldern har en sjukdom som gör det svårare att sköta barnet,
+  ru: у вас или у другого родителя есть заболевание, затрудняющее уход за ребёнком,
+  scene_id: scene-2
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0161-s001.wav
+  start_seconds: 86.083333
+  end_seconds: 93.676259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0162-s001
+  sv: graviditeten har inletts till följd av ett sexualbrott
+  ru: беременность наступила в результате сексуального преступления
+  scene_id: scene-2
+  visual_cue: Show source-based health pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0162-s001.wav
+  start_seconds: 95.458333
+  end_seconds: 100.752483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0163-s001
+  sv: det finns skäl att förmoda att fostret har en svår sjukdom eller kroppsskada,
+  ru: есть основания предполагать, что у плода тяжёлое заболевание или телесная травма,
+  scene_id: scene-2
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0163-s001.wav
+  start_seconds: 102.541667
+  end_seconds: 109.786293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0164-s001
+  sv: du var under sjutton år eller över fyrtio år när graviditeten började eller
+  ru: на момент наступления беременности вам было меньше семнадцати или больше сорока лет либо
+  scene_id: scene-2
+  visual_cue: Show source-based health pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0164-s001.wav
+  start_seconds: 111.541667
+  end_seconds: 118.298673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0165-s001
+  sv: du har redan fött fyra barn.
+  ru: вы уже родили четверых детей.
+  scene_id: scene-2
+  visual_cue: Show source-based health pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0165-s001.wav
+  start_seconds: 120.083333
+  end_seconds: 122.800068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0166-s001
+  sv: Om fostret har en svår sjukdom eller kroppsskada kan du få abort fram till graviditetsvecka 24+0.
+  ru: Если у плода тяжёлое заболевание или телесная травма, вы можете сделать аборт на сроке до 24+0 недель
+    беременности.
+  scene_id: scene-3
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights:
+  - 24+0
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override:
+    text: Om fostret har en svår sjukdom eller kroppsskada kan du få abort fram till graviditetsvecka
+      tjugofyra plus noll.
+    reason: Diagnostic transcript rendered24+0 as24.00 and blurred the adjacent word abort; expand the
+      exact week/day notation for a targeted full-sentence retake. Display remains verbatim.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0166-s001.wav
+  start_seconds: 125.291667
+  end_seconds: 135.462007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0166-s002
+  sv: För detta behöver du ett tillstånd från Valvira.
+  ru: Для этого вам нужно разрешение Valvira.
+  scene_id: scene-3
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights:
+  - Valvira
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0166-s002.wav
+  start_seconds: 137.25
+  end_seconds: 141.847551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0167-s001
+  sv: Om graviditeten utgör en fara för din hälsa, finns det ingen tidsgräns för aborten.
+  ru: Если беременность представляет опасность для вашего здоровья, ограничений по сроку аборта нет.
+  scene_id: scene-3
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0167-s001.wav
+  start_seconds: 143.625
+  end_seconds: 150.939286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0167-s002
+  sv: Då behöver du tillstånd från två läkare.
+  ru: В этом случае вам нужно разрешение двух врачей.
+  scene_id: scene-3
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0167-s002.wav
+  start_seconds: 152.708333
+  end_seconds: 156.400306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0168-s001
+  sv: Om du är minderårig och vill göra abort behöver du inte tillstånd av dina föräldrar.
+  ru: Если вы несовершеннолетняя и хотите сделать аборт, разрешение родителей вам не требуется.
+  scene_id: scene-4
+  visual_cue: Show source-based privacy pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0168-s001.wav
+  start_seconds: 158.875
+  end_seconds: 166.607245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/privacy.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0168-s002
+  sv: Det är dock ofta bra att diskutera saken med föräldrarna.
+  ru: Однако зачастую стоит обсудить этот вопрос с родителями.
+  scene_id: scene-4
+  visual_cue: Show source-based privacy pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0168-s002.wav
+  start_seconds: 168.375
+  end_seconds: 173.52983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/privacy.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0168-s003
+  sv: Om du emellertid inte vill göra det har de yrkesutbildade personerna inom hälsovården tystnadsplikt.
+  ru: Если же вы не хотите этого делать, медицинские специалисты обязаны соблюдать конфиденциальность.
+  scene_id: scene-4
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights:
+  - tystnadsplikt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0168-s003.wav
+  start_seconds: 175.291667
+  end_seconds: 183.92949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0204-s001
+  sv: Om du behöver p-piller behöver du ett recept från läkaren.
+  ru: Если вам нужны противозачаточные таблетки, потребуется рецепт врача.
+  scene_id: scene-5
+  visual_cue: Show source-based prescription pictorial explanation; preserve exact bilingual panel and
+    avoid depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0204-s001.wav
+  start_seconds: 186.416667
+  end_seconds: 191.710816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/prescription.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0204-s002
+  sv: Med receptet kan du hämta ut dina piller på apoteket.
+  ru: По рецепту вы можете получить свои таблетки в аптеке.
+  scene_id: scene-5
+  visual_cue: Show source-based prescription pictorial explanation; preserve exact bilingual panel and
+    avoid depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0204-s002.wav
+  start_seconds: 193.5
+  end_seconds: 198.306531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/prescription.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0204-s003
+  sv: Boka en tid hos läkaren för att få receptet.
+  ru: Чтобы получить рецепт, запишитесь на приём к врачу.
+  scene_id: scene-5
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0204-s003.wav
+  start_seconds: 200.083333
+  end_seconds: 204.053946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0169-s001
+  sv: Du behöver inte ha vårdnadshavarens tillstånd för receptet om du är minderårig.
+  ru: Если вы несовершеннолетняя, для получения рецепта не требуется разрешение вашего опекуна.
+  scene_id: scene-5
+  visual_cue: Show source-based prescription pictorial explanation; preserve exact bilingual panel and
+    avoid depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0169-s001.wav
+  start_seconds: 205.833333
+  end_seconds: 212.66
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/prescription.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0169-s002
+  sv: Vissa områden erbjuder unga kostnadsfria preventivmedel.
+  ru: В некоторых регионах молодым людям предоставляют бесплатные контрацептивы.
+  scene_id: scene-5
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0169-s002.wav
+  start_seconds: 214.416667
+  end_seconds: 219.780476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0169-s003
+  sv: Du kan fråga om detta på social- och hälsocentralen eller av hälsovårdaren på din skola.
+  ru: Об этом можно спросить в центре социального обслуживания и здравоохранения или у медсестры в вашей
+    школе.
+  scene_id: scene-5
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0169-s003.wav
+  start_seconds: 221.541667
+  end_seconds: 229.482891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0170-s001
+  sv: Också papperslösa och asylsökande har rätt att få behandling för könssjukdomar.
+  ru: Люди без документов на пребывание и просители убежища также имеют право на лечение заболеваний,
+    передающихся половым путём.
+  scene_id: scene-6
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0170-s001.wav
+  start_seconds: 231.958333
+  end_seconds: 238.92432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0170-s002
+  sv: Om du vistas i Finland utan uppehållstillstånd kan du emellertid bli tvungen att betala för vården.
+  ru: Однако если вы находитесь в Финляндии без вида на жительство, вам, возможно, придётся оплатить медицинскую
+    помощь.
+  scene_id: scene-6
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0170-s002.wav
+  start_seconds: 240.708333
+  end_seconds: 249.485476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0171-s001
+  sv: Fundera noga på om omskärelse behövs.
+  ru: Тщательно обдумайте, нужно ли обрезание.
+  scene_id: scene-7
+  visual_cue: Show source-based consent pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0171-s001.wav
+  start_seconds: 251.958333
+  end_seconds: 255.789626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0171-s002
+  sv: Om pojken är gammal nog för att säga sin åsikt ska han tillfrågas om han samtycker till operationen.
+  ru: Если мальчик достаточно взрослый, чтобы высказать своё мнение, его нужно спросить, согласен ли он
+    на операцию.
+  scene_id: scene-7
+  visual_cue: Show source-based consent pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - samtycke
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0171-s002.wav
+  start_seconds: 257.541667
+  end_seconds: 266.388469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0171-s003
+  sv: Operationen får inte göras om pojken motsätter sig.
+  ru: Операцию нельзя проводить, если мальчик возражает.
+  scene_id: scene-7
+  visual_cue: Show source-based consent pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0171-s003.wav
+  start_seconds: 268.166667
+  end_seconds: 273.112517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/diagrams/consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0171-s004
+  sv: Om pojken har två vårdnadshavare måste båda ge sitt skriftliga samtycke till operationen.
+  ru: Если у мальчика двое опекунов, оба должны дать письменное согласие на операцию.
+  scene_id: scene-7
+  visual_cue: 'Leave foreground open: child-consent illustration does not explain both guardians written
+    consent.'
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - samtycke
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0171-s004.wav
+  start_seconds: 274.875
+  end_seconds: 282.746565
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0172-s001
+  sv: Om det inte finns några medicinska skäl till omskärelsen kan den inte utföras inom den offentliga
+    hälsovården.
+  ru: Если медицинских оснований для обрезания нет, его нельзя провести в государственной системе здравоохранения.
+  scene_id: scene-7
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0172-s001.wav
+  start_seconds: 284.5
+  end_seconds: 294.043401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0172-s002
+  sv: Då måste du betala för operationen själv.
+  ru: В таком случае вы должны сами оплатить операцию.
+  scene_id: scene-7
+  visual_cue: 'Leave foreground open: child-consent illustration does not explain self-payment for an
+    operation.'
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0172-s002.wav
+  start_seconds: 295.833333
+  end_seconds: 299.803946
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0173-s001
+  sv: Endast en läkare får utföra operationen.
+  ru: Проводить операцию имеет право только врач.
+  scene_id: scene-7
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0173-s001.wav
+  start_seconds: 301.583333
+  end_seconds: 305.344966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0173-s002
+  sv: Den ska göras i steril miljö.
+  ru: Её нужно проводить в стерильной обстановке.
+  scene_id: scene-7
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0173-s002.wav
+  start_seconds: 307.125
+  end_seconds: 310.120374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0173-s003
+  sv: Läkaren ska se till att patienten får smärtlindring.
+  ru: Врач должен обеспечить пациенту обезболивание.
+  scene_id: scene-7
+  visual_cue: 'Actual Kalasatama health and wellbeing centre: contextual public health services, without
+    a claim about particular patients.'
+  asset_ids:
+  - episode_background
+  - picture_health
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-reproduktion/narration/hb-c05-u0173-s003.wav
+  start_seconds: 311.875
+  end_seconds: 316.681531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-reproduktion/pictures/health-centre.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-reproduktion/sources/music-bed.flac
+  background_image: studio/media/hb-c05-reproduktion/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.4872023809523807
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Originalkällor, titlar och utgivarvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Jäkärlän terveyskeskus ja neuvola.jpg — Samuli Lintula · CC BY 3.0
+    - Mana Two - Part 3 — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained.
+  - Original pictorial diagrams explain source relationships without adding factual claims.
+  - Background photograph cropped, blurred, darkened and continuously moved; original photo license retained.
+  - Music faded, ducked and level-adjusted; repeated with 4-second equal-power crossfades if needed.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:J%C3%A4k%C3%A4rl%C3%A4n_terveyskeskus_ja_neuvola.jpg
+    description: Jäkärlän terveyskeskus ja neuvola.
+    license: CC BY 3.0

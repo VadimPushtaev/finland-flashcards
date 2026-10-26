@@ -72,6 +72,13 @@ See the [Chapter 4 audit](hb-c04-audit.json),
 [listening-review checklist](hb-c04-review.md). These are locally retained previews;
 whole-video listening and user acceptance remain pending.
 
+All fifteen Chapter 5 videos are rendered and technically verified, covering
+469 exact Swedish/Russian sentence pairs in 1:31:57. Every preview meets
+the 50% foreground-picture target. See the [chapter audit](hb-c05-audit.json),
+[export review records](hb-c05-visual-review.json), and
+[listening-review checklist](hb-c05-review.md). Whole-video listening and user
+acceptance remain pending; exports stay local and uncommitted.
+
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for
 media tools; keep the root environment for script/source validation.

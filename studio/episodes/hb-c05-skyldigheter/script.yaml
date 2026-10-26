@@ -1,0 +1,482 @@
+schema_version: 1
+section_id: hb-c05-skyldigheter
+chapter_id: hb-c05
+title_sv: Individens skyldigheter
+title_ru: Обязанности человека
+source_path: data/homebrew/sv/chapters/05_rattigheter_jamlikhet_och_skyldigheter.yaml
+translation_path: data/homebrew/ru/sections/hb-c05-skyldigheter.yaml
+example_only: false
+source_section_sha256: 55517f40ff15c77a6a17309f8f2b214e8190a8a5babde3f412f0e210601c399d
+translation_file_sha256: 1e245b005759a16480215438d6f8465eaf79d6736f7e41c8aa312f50096c9cde
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920×1080 at 24 fps. Muted burgundy chapter palette {''background'': ''#39252b'', ''text'':
+    ''#faf3e8'', ''secondary'': ''#e2c8cf'', ''highlight'': ''#dfbd82'', ''separator'': ''#70515a''}.
+    Liberation Sans Bold 48 / Regular 40, stable right bilingual panel and relevant foreground pictures
+    at left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Lohja, Verotoimisto.jpg by Abc10 continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=1.1854166666666668.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Teller of the Tales by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 212.376 seconds; prepared lossless stereo bed 165.958
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use topic-specific factual diagrams and verified relevant photographs across at least half
+    of body display time. Diagrams explain relationships with pictorial objects and arrows; typography
+    alone does not count. No inference about photographed people’s health, beliefs or experiences.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Two unspoken 15-second source/media credit cards, with full image licenses and adaptation
+    details in accompanying credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Law and taxes
+- id: scene-2
+  description: Care, help and testimony
+- id: scene-3
+  description: Environment and education
+- id: scene-4
+  description: Rights and age
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: source_diagrams
+  kind: foreground
+  description: Pictorial explanations of the exact source relationships, using original schematic objects,
+    people, arrows and source labels; no additional legal or medical claims.
+  fallback: Use accurately identified relevant photographs; document any unresolved picture shortfall
+    without filler.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: picture_court
+  kind: foreground
+  description: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  fallback: Use a source-based diagram and document missing photo.
+- id: picture_classroom
+  kind: foreground
+  description: Actual Vantaankoski primary-school classroom in Vantaa, photographed2010. Direct contextual
+    illustration of basic education, not a claim about current classroom design or about the compulsory
+    upper-secondary continuation.
+  fallback: Leave the foreground open if the actual classroom cannot be restored; preserve every source
+    word.
+sentences:
+- sentence_id: hb-c05-u0174-s001
+  sv: Alla som bor i Finland har enligt lagen också skyldigheter.
+  ru: У всех живущих в Финляндии по закону есть также обязанности.
+  scene_id: scene-1
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0174-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.47449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0176-s001
+  sv: Den viktigaste skyldigheten för alla som bor i Finland är att följa Finlands lag.
+  ru: Важнейшая обязанность всех живущих в Финляндии — соблюдать законы Финляндии.
+  scene_id: scene-1
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights:
+  - Finlands lag
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0176-s001.wav
+  start_seconds: 10.25
+  end_seconds: 17.355306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0177-s001
+  sv: Alla måste betala skatt till staten på inkomster, egendom och arv.
+  ru: Все должны платить государству налог с доходов, имущества и наследства.
+  scene_id: scene-1
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - skatt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0177-s001.wav
+  start_seconds: 19.125
+  end_seconds: 25.255068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0177-s002
+  sv: Människorna betalar också skatt på tjänster, produkter och många förmåner.
+  ru: Люди также платят налог с услуг, товаров и многих пособий.
+  scene_id: scene-1
+  visual_cue: Show source-based law pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights:
+  - skatt
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0177-s002.wav
+  start_seconds: 27.041667
+  end_seconds: 33.729014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/diagrams/law.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0178-s001
+  sv: Föräldrar är skyldiga att ta hand om sina minderåriga barn.
+  ru: Родители обязаны заботиться о своих несовершеннолетних детях.
+  scene_id: scene-2
+  visual_cue: Show source-based care pictorial explanation; preserve exact bilingual panel and avoid depicting
+    unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0178-s001.wav
+  start_seconds: 36.208333
+  end_seconds: 41.850782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/diagrams/care.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0179-s001
+  sv: Alla är skyldiga att hjälpa om någon behöver hjälp vid till exempel en olycka.
+  ru: Все обязаны помогать, если кому-либо нужна помощь, например при несчастном случае.
+  scene_id: scene-2
+  visual_cue: 'Leave foreground open: the earlier fundraising picture did not directly illustrate helping
+    at an accident. Preserve the complete bilingual source pair.'
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0179-s001.wav
+  start_seconds: 43.625
+  end_seconds: 50.590986
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0180-s001
+  sv: Var och en är skyldig att vittna i domstol om en domstol kallar en som vittne.
+  ru: Каждый обязан давать показания в суде, если суд вызывает его в качестве свидетеля.
+  scene_id: scene-2
+  visual_cue: Actual Supreme Court of Finland exterior. Illustrates the judicial institution in passages
+    on courts, constitutional rights and separation of powers; no particular case or judgment is depicted.
+    Original photograph and Commons identity metadata visually checked on 2026-10-26. Here shown as a
+    contextual foreground photograph; no personal status inferred.
+  asset_ids:
+  - episode_background
+  - picture_court
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0180-s001.wav
+  start_seconds: 52.375
+  end_seconds: 59.340986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/pictures/court.jpg
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0181-s001
+  sv: Alla har ansvar för naturen och dess mångfald och för miljön och kulturarvet.
+  ru: Все несут ответственность за природу и её разнообразие, а также за окружающую среду и культурное
+    наследие.
+  scene_id: scene-3
+  visual_cue: Show source-based education pictorial explanation; preserve exact bilingual panel and avoid
+    depicting unrelated people as case examples.
+  asset_ids:
+  - episode_background
+  - source_diagrams
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0181-s001.wav
+  start_seconds: 61.791667
+  end_seconds: 68.409354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/diagrams/nature.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0182-s001
+  sv: Enligt läropliktslagen ska alla barn både delta i undervisning enligt lagen om grundläggande utbildning
+    eller på annat sätt få kunskaper som motsvarar den grundläggande utbildningens lärokurs och studera
+    på till exempel en utbildning på andra stadiet tills de utexamineras eller fyller 18 år.
+  ru: Согласно закону об обязательном обучении, все дети должны либо участвовать в обучении по закону
+    об основном общем образовании, либо иным способом получить знания, соответствующие программе основного
+    общего образования, а также учиться, например, по программе образования второй ступени до её окончания
+    или до достижения 18 лет.
+  scene_id: scene-3
+  visual_cue: Actual Vantaankoski primary-school classroom in Vantaa, photographed2010. Direct contextual
+    illustration of basic education, not a claim about current classroom design or about the compulsory
+    upper-secondary continuation.
+  asset_ids:
+  - episode_background
+  - picture_classroom
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0182-s001.wav
+  start_seconds: 70.166667
+  end_seconds: 94.408299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c05-skyldigheter/pictures/classroom.jpg
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c05-u0183-s001
+  sv: Många grundläggande rättigheter gäller alla oavsett ålder.
+  ru: Многие основные права распространяются на всех независимо от возраста.
+  scene_id: scene-4
+  visual_cue: Age-specific rights remain in the full bilingual text; leave foreground open rather than
+    imply all these rights concern schooling.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0183-s001.wav
+  start_seconds: 96.875
+  end_seconds: 102.02983
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0183-s002
+  sv: En del rättigheter och skyldigheter, till exempel rätten att rösta i val, gäller bara myndiga personer,
+    det vill säga personer över 18 år.
+  ru: Часть прав и обязанностей, например право голосовать на выборах, относится только к совершеннолетним,
+    то есть к людям старше 18 лет.
+  scene_id: scene-4
+  visual_cue: Age-specific rights remain in the full bilingual text; leave foreground open rather than
+    imply all these rights concern schooling.
+  asset_ids:
+  - episode_background
+  text_highlights:
+  - 18 år
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0183-s002.wav
+  start_seconds: 103.791667
+  end_seconds: 116.400102
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0183-s003
+  sv: Andra rättigheter och skyldigheter gäller yngre personer.
+  ru: Другие права и обязанности относятся к людям младшего возраста.
+  scene_id: scene-4
+  visual_cue: Age-specific rights remain in the full bilingual text; leave foreground open rather than
+    imply all these rights concern schooling.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0183-s003.wav
+  start_seconds: 118.166667
+  end_seconds: 123.042857
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c05-u0183-s004
+  sv: Till exempel en 15-åring får själv bestämma hur hen använder pengar som hen förtjänat genom att
+    arbeta.
+  ru: Например, пятнадцатилетний человек может сам решать, как использовать деньги, заработанные им трудом.
+  scene_id: scene-4
+  visual_cue: Age-specific rights remain in the full bilingual text; leave foreground open rather than
+    imply all these rights concern schooling.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, numbers and source names; ASR is diagnostic only.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c05-skyldigheter/narration/hb-c05-u0183-s004.wav
+  start_seconds: 124.833333
+  end_seconds: 134.446395
+  display_segments: []
+  render_caption: false
+  render_image: null
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c05-skyldigheter/sources/music-bed.flac
+  background_image: studio/media/hb-c05-skyldigheter/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.1854166666666668
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Originalkällor, titlar och utgivarvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Lohja, Verotoimisto.jpg — Abc10 · CC BY-SA 4.0
+    - Teller of the Tales — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained.
+  - Original pictorial diagrams explain source relationships without adding factual claims.
+  - Background photograph cropped, blurred, darkened and continuously moved; original photo license retained.
+  - Music faded, ducked and level-adjusted; repeated with 4-second equal-power crossfades if needed.
+  palette:
+    background: '#39252b'
+    text: '#faf3e8'
+    secondary: '#e2c8cf'
+    highlight: '#dfbd82'
+    separator: '#70515a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Lohja,_Verotoimisto.jpg
+    description: Tax office of Lohja, at Laurinkatu 50, Lohja, Finland
+    license: CC BY-SA 4.0
