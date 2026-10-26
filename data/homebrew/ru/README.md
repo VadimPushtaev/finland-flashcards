@@ -16,7 +16,7 @@ See each target's review record for the actual review mode of later chapters.
 | 2. Finlands historia | 13 | 321 | 2,565 | Complete |
 | 3. Kultur, värderingar och traditioner | 21 | 520 | 3,919 | Complete |
 | 4. Demokrati, förvaltning och påverkan | 15 | 753 | 5,537 | Complete |
-| 5. Grundläggande rättigheter, jämlikhet och skyldigheter | 15 | 469 | 3,570 | Complete |
+| 5. Grundläggande rättigheter, jämlikhet och skyldigheter | 15 | 469 | 3,571 | Complete |
 | 6. Lagar, rättsväsende och rättsskydd | 14 | 342 | 2,509 | Complete |
 | 7. Arbete, näringsliv och beskattning | 13 | 804 | 5,784 | Complete |
 | 8. Utbildning och lärande | 11 | 593 | 4,384 | Complete |
@@ -24,7 +24,7 @@ See each target's review record for the actual review mode of later chapters.
 | 10. Hälsa, social trygghet och åldrande | 13 | 685 | 4,922 | Complete |
 | 11. Boende, vardag och miljö | 19 | 766 | 5,094 | Complete |
 | 12. Integration, uppehåll och medborgarskap | 20 | 603 | 4,878 | Complete |
-| **Total** | **187** | **7,152** | **52,674** | **Complete** |
+| **Total** | **187** | **7,152** | **52,675** | **Complete** |
 
 The [shared glossary](glossary.yaml) contains 232 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
