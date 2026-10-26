@@ -1,0 +1,92 @@
+schema_version: 1
+source_id: hb-c09-vardledighet
+result_sha256: 427151bf33dca8cc1f17537368725d1efa6fdfb60250b347ddcb57268848cb7a
+glossary_sha256: 4722c23f22bfe8ac1da622a00d0bf1ca346978e1a7b7793077adc06729a67e7c
+status: complete
+review_mode: independent
+reviewer: /root/translate_08_01
+checks:
+  fidelity: true
+  one_to_one: true
+  natural_russian: true
+  vocabulary: true
+  terminology: true
+  headings: true
+issues:
+- source_id: hb-c09-u0292-s001
+  blocking: false
+  resolved: true
+  note: Preserved all four cumulative home-care conditions, including 160 working days (about six months),
+    followed by one of the two residence alternatives. Temporary Finland residence requires at least one
+    parent working in Finland and employment-pension insurance. No source benefit amounts from unselected
+    archive passages were imported.
+- source_id: hb-c09-u0302-s001
+  blocking: false
+  resolved: true
+  note: Home-care allowance may cover multiple children below school age while they are outside early
+    childhood education/care, and ends when the youngest child reaches three; flexible/partial care allowance
+    later is for only one child at a time. Distinct benefit scope retained rather than reconciling these
+    separate rules.
+- source_id: hb-c09-u0317-s001
+  blocking: false
+  resolved: true
+  note: Self-review made full-day scope explicit for both daycare and other early-childhood provision;
+    the following sentence expressly allows part-time attendance. Preserved the under-three/maximum-30-hours
+    conditions for flexible allowance and school-years-one-or-two/maximum-30-hours conditions for partial
+    allowance.
+- source_id: hb-c09-u0324-s001
+  blocking: false
+  resolved: true
+  note: Coordinator approved distinction between home-care allowance, flexible and partial care allowance,
+    and parental allowance. Foraldradagpenning retains the broader родительское дневное пособие used in
+    9.15; final exclusion preserves and/or between parental and home-care benefits plus personally caring
+    for children. The shared written vardpenning is annotated once in discontinuous flexibel vardpenning,
+    with intervening partiell independently annotated to avoid overlapping spans.
+- source_id: hb-c09-vardledighet
+  blocking: false
+  resolved: true
+  note: Distinct full self-review checked all 34 source/Russian records and all 188 annotations, followed
+    by contextual review of every uncovered token. Reviewed lexical locative vara, lexical adverbs, repeated
+    words and country names, compound EU-land reconstruction, year-class abbreviation ak, passive versus
+    born-deponent lemmas, list fragments, all negations/quantities and heading. No blocking issues remain.
+- source_id: hb-c09-vardledighet
+  blocking: false
+  resolved: true
+  note: Independent full review checked all 34 source/Russian records and all 188 original annotations,
+    including each uncovered token. All conditions, four cumulative requirements plus residence alternatives,
+    temporary/employed pension-insurance requirement, sibling versus single-child benefit scopes, 160
+    working days, ages, 30-hour maxima, full-day versus part-day ECEC and final and/or exclusion are faithfully
+    retained. Grouped the two discontinuous fyller ... ar age expressions as fylla ar, preserving exact
+    component spans and leaving the intervening plain number unannotated; final count 186. No Russian
+    sentence change or source blocker was necessary. All six review dimensions passed.
+references:
+- location: /tmp/hb-c09-vardledighet-context-agent03.yaml
+  purpose: Fresh validated context with archive hash checks. Read the complete supplied article and all
+    selected provenance in untruncated passes. Parent chapter, whole-book outline, editorial audit, attribution
+    and glossary verified identical to the fully read preceding Chapter 9 context. Read all newly completed
+    88-record upbringing and 33-record parental-leave translations; other completed same-chapter translations
+    already fully read in this continuous session.
+- location: data/infofinland/content/family/financial-support-for-families/benefits-for-looking-after-a-child-at-home.html
+  purpose: Read full 3,721-character archive for unpaid care leave, home-care conditions, foreign payment,
+    flexible/partial allowances, part-time preschool and final benefit exclusions. Kept only selected
+    source content and archived conditions.
+- location: https://infofinland.fi/ru/family/financial-support-for-families/benefits-for-looking-after-a-child-at-home?hl=ru-RU
+  purpose: Actual primary Russian terminology lookup confirming пособие по уходу за ребёнком на дому,
+    гибкое/частичное пособие по уходу за ребёнком and страхование трудовой пенсии. Russian reference omits
+    full-day qualifier in one list bullet; retained the exact Swedish full-day condition, clarified by
+    the following part-time sentence. Did not import amounts or current rules.
+- location: data/homebrew/ru/sections/hb-c09-foraldraledighet.yaml
+  purpose: Read all 33 completed records; align родительское пособие, частичное родительское пособие and
+    родительское дневное пособие, distinct from care allowances.
+- location: data/homebrew/ru/sections/hb-c07-ledighet.yaml
+  purpose: Read related care-leave occurrence and vocabulary; retained general отпуск по уходу за ребёнком
+    without importing temporary sick-child conditions from that separate context.
+- location: data/homebrew/ru/headings/hb-c09.yaml
+  purpose: Reused complete independently reviewed chapter heading; own section heading fully translated
+    and reviewed.
+- location: /tmp/hb-c09-vardledighet-context-review01.yaml
+  purpose: Fresh normally validated independent-review context. Entire parent, outline, editorial findings,
+    attribution and glossary identity-verified against prior fully read Chapter 9 context. Read full 3721-character
+    supplied archive and all selected provenance, identity-checked with author bundle, read newly supplied
+    family-services translation and all target source/Russian pairs and vocabulary. Other supplied completed
+    translations previously authored/read/reviewed in full.
