@@ -3,8 +3,8 @@
 Russian sentence translations, contextual vocabulary, shared terminology, and
 review metadata for the archived Swedish Homebrew anthology.
 
-Completed translations cover 107 of 187 sections: 3,844 sentence records,
-107 section headings, and 8 chapter headings. The remaining 80 sections
+Completed translations cover 108 of 187 sections: 3,889 sentence records,
+108 section headings, and 8 chapter headings. The remaining 79 sections
 are still pending. Work proceeds in chapter and subchapter order.
 Every completed target has a full review of its sentence translations,
 contextual vocabulary and dictionary meanings. Chapters 1–5 and 7 use independent
@@ -20,12 +20,12 @@ See each target's review record for the actual review mode of later chapters.
 | 5. Grundläggande rättigheter, jämlikhet och skyldigheter | 15 | 469 | 3,570 | Complete |
 | 6. Lagar, rättsväsende och rättsskydd | 14 | 342 | 2,509 | Complete |
 | 7. Arbete, näringsliv och beskattning | 13 | 804 | 5,784 | Complete |
-| 8. Utbildning och lärande | 8 | 422 | 3,117 | 8 / 11 sections complete |
-| **Total** | **107** | **3,844** | **28,589** | **80 sections pending** |
+| 8. Utbildning och lärande | 9 | 467 | 3,492 | 9 / 11 sections complete |
+| **Total** | **108** | **3,889** | **28,964** | **79 sections pending** |
 
 The [shared glossary](glossary.yaml) contains 231 reviewed terminology entries.
 Reviewed sections become available after rebuilding the study image.
-All 115 available translation targets (sections and chapter headings) are
+All 116 available translation targets (sections and chapter headings) are
 complete; this does not imply that the remaining sections have translations.
 Two combined climate sentence records were split with user approval, preserving
 all Swedish wording: `hb-c01-u0032-s002` became `s008` and `s009` in the same unit;
