@@ -1,0 +1,633 @@
+schema_version: 1
+section_id: hb-c06-manniskohandel
+chapter_id: hb-c06
+title_sv: Människohandel och hjälp till utsatta
+title_ru: Торговля людьми и помощь пострадавшим
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-manniskohandel.yaml
+example_only: false
+source_section_sha256: 5b1a266a4b7ef9baf8565a0f6e5703c93e93b3573b7e74c1ff641a3818291a3d
+translation_file_sha256: 4da47e3d03017c6f0ec4224095f631e87723ef276e9cfe774ed96e25f07a3300
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds; background motion begins immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive source-based scenes below; each body sentence/list fragment read once in frozen
+    order. No added transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: 1920x1080 at24fps, Chapter6 indigo palette, Liberation Sans48/40 with fixed right bilingual
+    panel and separate left pictorial foreground. Inspect long pairs, split manually if necessary; never
+    below40/34.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show pairs0.25seconds before speech; allow1.5seconds after each,2.2seconds at topic boundaries
+    and2.5seconds after long pairs; use measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Finlayson, kuusvooninkinen.jpg by Laura Jokisalo continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.2785714285714285. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic 3 / F1, Swedish, 32 steps, speed 0.95, seed 42, 44,100 Hz mono
+    PCM16. These clips use one ONNX intra-op thread under the shared production budget; metrics record
+    actual settings and separate seed invocations. Pronunciation and overall mix await complete-video
+    listening.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Numinous Shine by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 258.194 seconds; prepared lossless stereo bed 179.000 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_pictures
+  decision: Relevant non-graphic photographs and original pictorial diagrams of source relationships.
+    Every planned body pair has contextual illustration; verify measured>=50percent and relevance. People
+    icons represent generic roles, never actual victims or accused persons.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: forms
+  description: Former av tvång
+- id: signs
+  description: Kontroll, hot och frihet
+- id: people
+  description: Utsatthet och förövare
+- id: help
+  description: Kontakta stöd och juridisk rådgivning
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct licensed topic-related photograph; identity and terms verified in media-sources.json.
+  fallback: Acquire another accurately identified licensed related photograph; do not invent a location.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm instrumental source.
+  fallback: Choose a new distinct licensed instrumental source and record replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One exact-source Swedish local F1 clip per sentence.
+  fallback: Review targeted speech-only expansions without changing display wording or using cloud TTS.
+- id: picture_work
+  kind: foreground
+  description: Original non-graphic pictorial diagram for work; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_restriction
+  kind: foreground
+  description: Original non-graphic pictorial diagram for restriction; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_people
+  kind: foreground
+  description: Original non-graphic pictorial diagram for people; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_contact
+  kind: foreground
+  description: Original non-graphic pictorial diagram for contact; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_boundary
+  kind: foreground
+  description: Original non-graphic source-based boundary pictorial illustration.
+  fallback: Use another accurate pictorial treatment without actual victim identity or added claim.
+- id: picture_marriage
+  kind: foreground
+  description: Original non-graphic source-based marriage pictorial illustration.
+  fallback: Use another accurate pictorial treatment without actual victim identity or added claim.
+- id: picture_website
+  kind: foreground
+  description: Original browser-window illustration with exact source domain ihmiskauppa.fi.
+  fallback: Use a neutral contact illustration while retaining exact domain on screen.
+- id: picture_coercion
+  kind: foreground
+  description: Source-specific non-graphic coercion illustration labelled tvinga, without implying violence
+    is a necessary condition.
+  fallback: Use a neutral source-based forced-choice diagram without victim identity.
+sentences:
+- sentence_id: hb-c06-u0067-s001
+  sv: Människohandel är ett brott i Finland.
+  ru: Торговля людьми является преступлением в Финляндии.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based work pictorial illustration; generic roles only, no personal identities
+    or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_work
+  text_highlights:
+  - Människohandel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0067-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.011633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/work.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0067-s002
+  sv: 'Människohandel är till exempel:'
+  ru: 'Торговля людьми — это, например:'
+  scene_id: forms
+  visual_cue: Non-graphic, source-based work pictorial illustration; generic roles only, no personal identities
+    or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_work
+  text_highlights:
+  - Människohandel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0067-s002.wav
+  start_seconds: 8.791667
+  end_seconds: 12.13534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/work.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0068-s001
+  sv: att tvinga någon till arbete, för vilket man betalar för lite eller ingen lön alls
+  ru: принуждение человека к работе, за которую платят слишком мало или вообще не платят зарплату
+  scene_id: forms
+  visual_cue: Non-graphic, source-based work pictorial illustration; generic roles only, no personal identities
+    or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_work
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0068-s001.wav
+  start_seconds: 13.916667
+  end_seconds: 20.952313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/work.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0070-s001
+  sv: att tvinga någon att sälja sex
+  ru: принуждение человека к продаже сексуальных услуг
+  scene_id: forms
+  visual_cue: Original person/shield boundary illustration labelled tvinga for coercion; does not imply
+    physical violence is a prerequisite. No graphic imagery or actual victim identity, no caption.
+  asset_ids:
+  - episode_background
+  - picture_coercion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0070-s001.wav
+  start_seconds: 22.708333
+  end_seconds: 26.052007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/coercion.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0071-s001
+  sv: att tvinga någon att tigga eller begå brott
+  ru: принуждение человека к попрошайничеству или совершению преступлений
+  scene_id: forms
+  visual_cue: Source-based restricted-choice/person illustration for forced begging/crime; no added sector
+    or offence example. Keep bilingual text and omit image caption.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0071-s001.wav
+  start_seconds: 27.833333
+  end_seconds: 31.873605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0072-s001
+  sv: att tvinga någon till äktenskap.
+  ru: принуждение человека к браку.
+  scene_id: forms
+  visual_cue: Pictorial paired rings and a crossed free-choice path for forced marriage; no cultural,
+    religious or national identity implied. Keep bilingual text and omit image caption.
+  asset_ids:
+  - episode_background
+  - picture_marriage
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0072-s001.wav
+  start_seconds: 33.625
+  end_seconds: 36.899014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/marriage.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0073-s001
+  sv: Du kan vara offer för människohandel, om
+  ru: Вы можете быть жертвой торговли людьми, если
+  scene_id: signs
+  visual_cue: Non-graphic, source-based restriction pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0073-s001.wav
+  start_seconds: 39.375
+  end_seconds: 43.206293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0074-s001
+  sv: någon tvingar dig att göra saker som du inte vill göra
+  ru: кто-либо заставляет вас делать то, чего вы не хотите делать
+  scene_id: signs
+  visual_cue: Non-graphic, source-based restriction pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0074-s001.wav
+  start_seconds: 44.958333
+  end_seconds: 49.973844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0076-s001
+  sv: någon hotar dig eller din familj med våld
+  ru: кто-либо угрожает вам или вашей семье насилием
+  scene_id: signs
+  visual_cue: Source-based person/shield illustration for the explicit threat of violence to you or family;
+    no actual family depiction. Keep bilingual text and omit image caption.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0076-s001.wav
+  start_seconds: 51.75
+  end_seconds: 55.511633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0077-s001
+  sv: någon hotar med att ange dig till myndigheter om du inte gör som hen säger
+  ru: кто-либо угрожает донести на вас органам власти, если вы не делаете то, что он говорит
+  scene_id: signs
+  visual_cue: Non-graphic, source-based restriction pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0077-s001.wav
+  start_seconds: 57.291667
+  end_seconds: 63.700374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0078-s001
+  sv: någon hindrar eller övervakar dina rörelser
+  ru: кто-либо препятствует вашим передвижениям или контролирует их
+  scene_id: signs
+  visual_cue: Non-graphic, source-based restriction pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0078-s001.wav
+  start_seconds: 65.458333
+  end_seconds: 69.637925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0079-s001
+  sv: du inte kan fritt prata om din situation för andra.
+  ru: вы не можете свободно говорить с другими о своей ситуации.
+  scene_id: signs
+  visual_cue: Non-graphic, source-based restriction pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_restriction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0079-s001.wav
+  start_seconds: 71.416667
+  end_seconds: 76.292857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/restriction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0080-s001
+  sv: Såväl män som kvinnor och barn kan vara offer till människohandel.
+  ru: Жертвами торговли людьми могут быть как мужчины, так и женщины и дети.
+  scene_id: people
+  visual_cue: Non-graphic, source-based people pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_people
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0080-s001.wav
+  start_seconds: 78.75
+  end_seconds: 84.671088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/people.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0080-s002
+  sv: Förövarna kan vara yrkesbrottslingar men även offrets bekanta, vänner eller släktingar.
+  ru: Преступниками могут быть профессиональные преступники, но также знакомые, друзья или родственники
+    жертвы.
+  scene_id: people
+  visual_cue: Non-graphic, source-based people pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_people
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0080-s002.wav
+  start_seconds: 86.458333
+  end_seconds: 94.120918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/people.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0081-s001
+  sv: Människohandelns offer kan få hjälp.
+  ru: Жертвы торговли людьми могут получить помощь.
+  scene_id: help
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Människohandel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0081-s001.wav
+  start_seconds: 96.583333
+  end_seconds: 99.996667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0081-s002
+  sv: Om du misstänker att du är offer för människohandel, kontakta Hjälpsystemet för offer för människohandel.
+  ru: Если вы подозреваете, что стали жертвой торговли людьми, обратитесь в Систему помощи жертвам торговли
+    людьми (Hjälpsystemet för offer för människohandel).
+  scene_id: help
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Hjälpsystemet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0081-s002.wav
+  start_seconds: 101.75
+  end_seconds: 111.014762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0081-s003
+  sv: Du hittar kontaktuppgifterna på webbplatsen ihmiskauppa.fi.
+  ru: Контактные данные можно найти на сайте ihmiskauppa.fi.
+  scene_id: help
+  visual_cue: Source-specific browser-window pictogram labelled ihmiskauppa.fi, repeating the exact source
+    domain for contact details; no added phone number or provider channel. No caption.
+  asset_ids:
+  - episode_background
+  - picture_website
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override:
+    text: Du hittar kontaktuppgifterna på webbplatsen ihmiskauppa punkt fi.
+    reason: Candidate speech-only expansion of source URL .fi as punkt fi to clarify the dot after diagnostic
+      i Miss Gauppa i FI; exact visible domain and source meaning unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0081-s003.wav
+  start_seconds: 112.791667
+  end_seconds: 118.573435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/website.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0082-s001
+  sv: Om du har blivit utsatt för ett brott, kan du få hjälp och råd vid Brottsofferjouren.
+  ru: Если вы стали жертвой преступления, вы можете получить помощь и совет в Службе помощи жертвам преступлений
+    (Brottsofferjouren).
+  scene_id: help
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Brottsofferjouren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0082-s001.wav
+  start_seconds: 120.333333
+  end_seconds: 127.786939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0082-s002
+  sv: Du kan kontakta Brottsofferjouren per telefon eller via chatten eller besöka servicepunkten.
+  ru: Вы можете связаться со Службой помощи жертвам преступлений по телефону или через чат либо посетить
+    пункт обслуживания.
+  scene_id: help
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Brottsofferjouren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0082-s002.wav
+  start_seconds: 129.541667
+  end_seconds: 137.343571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0082-s003
+  sv: Brottsofferjouren (Rikosuhripäivystys) erbjuder även kostnadsfri rådgivning av en jurist.
+  ru: Служба помощи жертвам преступлений (Rikosuhripäivystys) также предлагает бесплатную консультацию
+    юриста.
+  scene_id: help
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Brottsofferjouren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-manniskohandel/narration/hb-c06-u0082-s003.wav
+  start_seconds: 139.125
+  end_seconds: 147.484184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-manniskohandel/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c06-manniskohandel/sources/music-bed.flac
+  background_image: studio/media/hb-c06-manniskohandel/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.2785714285714285
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - InfoFinland.fi · Människohandel och tvångsarbete
+    - 'Text: CC BY 4.0 · creativecommons.org/licenses/by/4.0/'
+    - Urval och omdisponering; svensk källtext med granskad rysk översättning.
+    - Artikelkällor, fullständig attribution och ändringsnotis i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Finlayson, kuusvooninkinen.jpg — Laura Jokisalo · CC BY-SA 4.0
+    - Numinous Shine — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Förgrund: källbaserade piktogram utan tillagda fakta; se CREDITS.md.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Original pictorial diagrams show only source relationships; generic roles are not actual victims or
+    suspects.
+  - Background photograph cropped, softened, darkened and continuously panned/zoomed; adaptation retains
+    source license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repetitions when required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Finlayson,_kuusvooninkinen.jpg
+    description: This is a photo of a monument in Finland identified by the ID 'Finlayson factory' (Q15846380)
+    license: CC BY-SA 4.0

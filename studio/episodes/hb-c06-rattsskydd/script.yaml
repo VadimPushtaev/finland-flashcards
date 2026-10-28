@@ -1,0 +1,804 @@
+schema_version: 1
+section_id: hb-c06-rattsskydd
+chapter_id: hb-c06
+title_sv: Beslut, rättelse och tillsyn
+title_ru: Решения, пересмотр и надзор
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-rattsskydd.yaml
+example_only: false
+source_section_sha256: 43ff1c706b9db5bc94622093075ec7c049bc6146cf201e54dfd9440658074a2e
+translation_file_sha256: c23fdc337aedaa4166af3a6290fb7a34d018e7858386cdec66266c31fe8d24a6
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual title for3seconds; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every source sentence and list fragment once, in original order; scenes reflect consecutive
+    source units.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080,24fps, fixed right bilingual panel; Liberation Sans Bold48/Regular40; indigo Chapter6
+    palette #252747/#faf3e8/#cbd1ec/#e3c58b/#515a82.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before speech; pause1.5seconds,2.2at topic boundary and2.5for long
+    pairs. Timing follows measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Pikkuparlamentti Helsinki 2022-09-16 02.jpg by Leonhard Lenz continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=2.5279761904761906. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Supertonic3/F1 SwedenSwedish,32steps,speed0.95,seed42,44100Hz monoPCM16;2intra-opthreads.
+    Listening remains whole-video review.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Summer Day by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 198.060 seconds; prepared lossless stereo bed 353.917 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Topic-specific institution photographs and original pictorial process diagrams; no photographed
+    person assigned wrongdoing. At least50% measured body coverage; no plain typography counted.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source/media credits,15secondspercard; full links and adaptation notices inCREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception requested. Source remains archived; no current law or new factual claim added.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: written
+  description: Written decisions and reasons
+- id: waiting
+  description: Estimated processing time and requests for additional information
+- id: explanation
+  description: Ask the deciding authority to explain an unclear decision
+- id: correction
+  description: Written correction or appeal within the specified time
+- id: complaint
+  description: Complaint about conduct is distinct from changing the decision
+- id: oversight
+  description: Oversight by ombudsman and chancellor of justice
+- id: submission
+  description: Written complaint, free-form or on a form
+- id: investigation
+  description: Investigation and free complaint process
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct reserved topic-related institutional photograph, continuous decoration.
+  fallback: Use another verified licensed institutional photograph; narration unchanged.
+- id: music_bed
+  kind: music
+  description: Coordinator-reserved distinct calm instrumental track.
+  fallback: Reserve another distinct calm licensed instrumental source.
+- id: narration
+  kind: narration
+  description: LocalF1Swedish exact body narration, one complete clip per source sentence.
+  fallback: Use a meaning-preserving speech-only expansion if diagnostics identify a specific issue; no
+    cloud synthesis.
+- id: picture_written
+  kind: foreground
+  description: 'Original pictorial source-based schematic: written'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_waiting
+  kind: foreground
+  description: 'Original pictorial source-based schematic: waiting'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_advice
+  kind: foreground
+  description: 'Original pictorial source-based schematic: advice'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_correction
+  kind: foreground
+  description: 'Original pictorial source-based schematic: correction'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_complaint
+  kind: foreground
+  description: 'Original pictorial source-based schematic: complaint'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_photo_chancellor
+  kind: foreground
+  description: Verified institution photo
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_rights
+  kind: foreground
+  description: Original pictorial court, documents and anonymous people illustrate the source rights and
+    good-administration statement without implying a particular Ombudsman office building.
+  fallback: Retain the exact bilingual statement against its topic-related background and document any
+    picture-coverage shortfall.
+sentences:
+- sentence_id: hb-c06-u0028-s001
+  sv: I lagen föreskrivs om vilka rättigheter och skyldigheter en person som uträttar ärenden hos en myndighet
+    har.
+  ru: Закон устанавливает права и обязанности человека, который ведёт дела в органе власти.
+  scene_id: written
+  visual_cue: Written decisions and reasons. Fixed source-backed foreground picture; exact Swedish/Russian
+    panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0028-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.445102
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0028-s002
+  sv: Kunden har till exempel rätt att få information om myndighetens beslut skriftligt.
+  ru: Заявитель, например, имеет право получить информацию о решении органа власти в письменном виде.
+  scene_id: written
+  visual_cue: Written decisions and reasons. Fixed source-backed foreground picture; exact Swedish/Russian
+    panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0028-s002.wav
+  start_seconds: 14.208333
+  end_seconds: 21.313639
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0028-s003
+  sv: I beslutsbrevet motiverar myndigheten varför beslutet ser ut som det gör och vilka faktorer myndigheten
+    har beaktat när den fattade beslutet.
+  ru: В письме с решением орган власти обосновывает, почему решение имеет именно такое содержание и какие
+    факторы были учтены при его принятии.
+  scene_id: written
+  visual_cue: Written decisions and reasons. Fixed source-backed foreground picture; exact Swedish/Russian
+    panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0028-s003.wav
+  start_seconds: 23.083333
+  end_seconds: 34.577211
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0029-s001
+  sv: Kunden har rätt att få en uppskattning av hur länge det kommer att ta att behandla hens ärende.
+  ru: Заявитель имеет право получить оценку того, сколько времени займёт рассмотрение его дела.
+  scene_id: waiting
+  visual_cue: Estimated processing time and requests for additional information. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_waiting
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0029-s001.wav
+  start_seconds: 37.041667
+  end_seconds: 44.843571
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/waiting.png
+  render_caption: false
+- sentence_id: hb-c06-u0029-s002
+  sv: Myndigheten ska också svara på frågor om hur behandlingen framskrider.
+  ru: Орган власти должен также отвечать на вопросы о ходе рассмотрения.
+  scene_id: waiting
+  visual_cue: Estimated processing time and requests for additional information. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_waiting
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0029-s002.wav
+  start_seconds: 46.625
+  end_seconds: 52.964048
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/waiting.png
+  render_caption: false
+- sentence_id: hb-c06-u0029-s003
+  sv: Det är ändå bra att komma ihåg att handläggningstiden är en uppskattning, och ibland kan det ta
+    längre eller kortare tid att behandla ett ärende.
+  ru: Однако полезно помнить, что срок рассмотрения является оценочным и иногда на рассмотрение дела может
+    потребоваться больше или меньше времени.
+  scene_id: waiting
+  visual_cue: Estimated processing time and requests for additional information. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_waiting
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0029-s003.wav
+  start_seconds: 54.75
+  end_seconds: 66.522517
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/waiting.png
+  render_caption: false
+- sentence_id: hb-c06-u0029-s004
+  sv: På behandlingens längd inverkar hur komplicerat ärendet är eller huruvida myndigheten är tvungen
+    att begära ytterligare utredningar av kunden.
+  ru: На продолжительность рассмотрения влияет сложность дела либо необходимость органу власти запрашивать
+    у заявителя дополнительные сведения.
+  scene_id: waiting
+  visual_cue: Estimated processing time and requests for additional information. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_waiting
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0029-s004.wav
+  start_seconds: 68.291667
+  end_seconds: 80.064184
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/waiting.png
+  render_caption: false
+- sentence_id: hb-c06-u0030-s001
+  sv: Om man inte förstår ett beslut som man har fått ska man alltid kontakta den myndighet som fattat
+    beslutet.
+  ru: Если полученное решение непонятно, всегда следует обращаться в орган власти, который его принял.
+  scene_id: explanation
+  visual_cue: Ask the deciding authority to explain an unclear decision. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_advice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0030-s001.wav
+  start_seconds: 82.541667
+  end_seconds: 91.527789
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/advice.png
+  render_caption: false
+- sentence_id: hb-c06-u0030-s002
+  sv: Myndigheten kan förklara varför beslutet ser ut som det gör.
+  ru: Орган власти может объяснить, почему решение имеет именно такое содержание.
+  scene_id: explanation
+  visual_cue: Ask the deciding authority to explain an unclear decision. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_advice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0030-s002.wav
+  start_seconds: 93.291667
+  end_seconds: 98.725136
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/advice.png
+  render_caption: false
+- sentence_id: hb-c06-u0031-s001
+  sv: Man kan i allmänhet kräva rättelse av eller överklaga ett felaktigt beslut.
+  ru: Обычно можно потребовать пересмотра ошибочного решения или обжаловать его.
+  scene_id: correction
+  visual_cue: Written correction or appeal within the specified time. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_correction
+  text_highlights:
+  - rättelse
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0031-s001.wav
+  start_seconds: 101.208333
+  end_seconds: 108.035
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/correction.png
+  render_caption: false
+- sentence_id: hb-c06-u0031-s002
+  sv: I anslutning till beslutet måste myndigheten ge kunden skriftliga anvisningar för hur hen kan söka
+    rättelse eller göra en överklagan.
+  ru: Вместе с решением орган власти должен предоставить заявителю письменные инструкции о том, как подать
+    заявление о пересмотре или жалобу на решение.
+  scene_id: correction
+  visual_cue: Written correction or appeal within the specified time. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_correction
+  text_highlights:
+  - rättelse
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0031-s002.wav
+  start_seconds: 109.791667
+  end_seconds: 120.867585
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/correction.png
+  render_caption: false
+- sentence_id: hb-c06-u0031-s003
+  sv: Kunden måste göra ett skriftligt krav på rättelse eller en skriftlig överklagan inom en viss tid
+    efter att hen fått beslutet.
+  ru: Заявитель должен подать письменное требование о пересмотре или письменную жалобу на решение в течение
+    определённого времени после его получения.
+  scene_id: correction
+  visual_cue: Written correction or appeal within the specified time. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_correction
+  text_highlights:
+  - rättelse
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0031-s003.wav
+  start_seconds: 122.625
+  end_seconds: 133.00432
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/correction.png
+  render_caption: false
+- sentence_id: hb-c06-u0031-s004
+  sv: Myndigheten måste granska beslutet och orsakerna till det på nytt.
+  ru: Орган власти должен заново проверить решение и его основания.
+  scene_id: correction
+  visual_cue: Written correction or appeal within the specified time. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_correction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0031-s004.wav
+  start_seconds: 134.791667
+  end_seconds: 140.573435
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/correction.png
+  render_caption: false
+- sentence_id: hb-c06-u0031-s005
+  sv: Om myndigheten konstaterar att beslutet var felaktigt korrigeras det och ett nytt beslut fattas.
+  ru: Если орган власти установит, что решение было ошибочным, его исправляют и принимают новое решение.
+  scene_id: correction
+  visual_cue: Written correction or appeal within the specified time. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_correction
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0031-s005.wav
+  start_seconds: 142.333333
+  end_seconds: 150.692517
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/correction.png
+  render_caption: false
+- sentence_id: hb-c06-u0032-s001
+  sv: Man kan också anföra klagomål över en myndighets verksamhet.
+  ru: Можно также подать жалобу на деятельность органа власти.
+  scene_id: complaint
+  visual_cue: Complaint about conduct is distinct from changing the decision. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_complaint
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0032-s001.wav
+  start_seconds: 153.166667
+  end_seconds: 158.600136
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/complaint.png
+  render_caption: false
+- sentence_id: hb-c06-u0032-s002
+  sv: Man kan anföra klagomål om man upplever att myndigheten har handlat i strid mot lagen.
+  ru: Можно подать жалобу, если вы считаете, что орган власти действовал вопреки закону.
+  scene_id: complaint
+  visual_cue: Complaint about conduct is distinct from changing the decision. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_complaint
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0032-s002.wav
+  start_seconds: 160.375
+  end_seconds: 167.828605
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/complaint.png
+  render_caption: false
+- sentence_id: hb-c06-u0032-s003
+  sv: Det är inte möjligt att söka ändring i ett myndighetsbeslut genom klagomål.
+  ru: С помощью жалобы на деятельность органа власти нельзя добиваться изменения его решения.
+  scene_id: complaint
+  visual_cue: Complaint about conduct is distinct from changing the decision. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_complaint
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0032-s003.wav
+  start_seconds: 169.583333
+  end_seconds: 175.992041
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/complaint.png
+  render_caption: false
+- sentence_id: hb-c06-u0033-s001
+  sv: Också myndigheterna måste följa lagen.
+  ru: Органы власти также должны соблюдать закон.
+  scene_id: oversight
+  visual_cue: Oversight by ombudsman and chancellor of justice. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0033-s001.wav
+  start_seconds: 178.458333
+  end_seconds: 182.080646
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+- sentence_id: hb-c06-u0033-s002
+  sv: Om man misstänker att en myndighet inte agerar enligt lagen, kan man ingripa i dess verksamhet.
+  ru: Если есть подозрение, что орган власти действует не по закону, можно вмешаться в его деятельность.
+  scene_id: oversight
+  visual_cue: Oversight by ombudsman and chancellor of justice. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0033-s002.wav
+  start_seconds: 183.833333
+  end_seconds: 192.122857
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+- sentence_id: hb-c06-u0033-s003
+  sv: Människorna kan anföra klagomål om myndigheters verksamhet hos justitieombudsmannen eller justitiekanslern.
+  ru: Люди могут подавать жалобы на деятельность органов власти парламентскому омбудсмену (justitieombudsmannen)
+    или канцлеру юстиции (justitiekanslern).
+  scene_id: oversight
+  visual_cue: Oversight by ombudsman and chancellor of justice. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights:
+  - klagomål
+  - justitieombudsmannen
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0033-s003.wav
+  start_seconds: 193.875
+  end_seconds: 203.348741
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+- sentence_id: hb-c06-u0034-s001
+  sv: Justitieombudsmannen och justitiekanslern övervakar att regeringen, ministerierna, presidenten,
+    domstolarna, åklagarna, myndigheterna och övriga tjänstemän agerar i enlighet med lagen och fullgör
+    sina skyldigheter.
+  ru: Парламентский омбудсмен и канцлер юстиции следят за тем, чтобы правительство, министерства, президент,
+    суды, прокуроры, органы власти и остальные служащие действовали в соответствии с законом и выполняли
+    свои обязанности.
+  scene_id: oversight
+  visual_cue: Oversight by ombudsman and chancellor of justice. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights:
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0034-s001.wav
+  start_seconds: 205.125
+  end_seconds: 222.888265
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c06-u0034-s002
+  sv: Justitieombudsmannen säkerställer att de grundläggande och mänskliga rättigheterna uppfylls i rätten
+    och att rätten följer principerna för god förvaltning.
+  ru: Парламентский омбудсмен обеспечивает осуществление основных прав и прав человека в суде и соблюдение
+    судом принципов надлежащего управления.
+  scene_id: oversight
+  visual_cue: Source-backed court/document/people schematic illustrates basic and human rights plus good-administration
+    principles; no building is identified as the Ombudsman office. Exact bilingual text fixed, no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_rights
+  text_highlights:
+  - god förvaltning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0034-s002.wav
+  start_seconds: 225.666667
+  end_seconds: 238.762721
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/rights.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s001
+  sv: Vem som helst kan klaga hos justitieombudsmannen eller justitiekanslern om en myndighet har förfarit
+    felaktigt.
+  ru: Любой человек может пожаловаться парламентскому омбудсмену или канцлеру юстиции, если орган власти
+    действовал неправильно.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights:
+  - justitieombudsmannen
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s001.wav
+  start_seconds: 241.25
+  end_seconds: 250.793401
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s002
+  sv: Man kan anföra klagomål om myndigheter, tjänstemän och personer som har ett offentligt uppdrag.
+  ru: Можно подавать жалобы на органы власти, служащих и лиц, выполняющих публичные обязанности.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s002.wav
+  start_seconds: 252.583333
+  end_seconds: 261.012177
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s003
+  sv: Ett klagomål görs alltid skriftligt.
+  ru: Жалоба всегда подаётся письменно.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s003.wav
+  start_seconds: 262.791667
+  end_seconds: 266.41398
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s004
+  sv: Det kan vara fritt formulerat eller lämnas in med en blankett.
+  ru: Её можно составить в свободной форме или подать на бланке.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s004.wav
+  start_seconds: 268.166667
+  end_seconds: 273.460816
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s005
+  sv: Blanketter finns på justitieombudsmannens och justitiekanslerns byrå eller på internet.
+  ru: Бланки можно найти в бюро парламентского омбудсмена и канцлера юстиции или в интернете.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights:
+  - justitieombudsmannen
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s005.wav
+  start_seconds: 275.25
+  end_seconds: 282.633946
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0035-s006
+  sv: Justitieombudsmannen eller justitiekanslern utreder klagomålet.
+  ru: Парламентский омбудсмен или канцлер юстиции расследует жалобу.
+  scene_id: submission
+  visual_cue: Written complaint, free-form or on a form. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_written
+  text_highlights:
+  - klagomål
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0035-s006.wav
+  start_seconds: 284.416667
+  end_seconds: 290.128776
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/written.png
+  render_caption: false
+- sentence_id: hb-c06-u0036-s001
+  sv: Justitieombudsmannen och justitiekanslern undersöker klagomålen och granskar myndigheter och instanser.
+  ru: Парламентский омбудсмен и канцлер юстиции рассматривают жалобы и проверяют органы власти и учреждения.
+  scene_id: investigation
+  visual_cue: Investigation and free complaint process. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights:
+  - klagomål
+  - justitiekanslern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0036-s001.wav
+  start_seconds: 292.583333
+  end_seconds: 301.430136
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+- sentence_id: hb-c06-u0036-s002
+  sv: Det kostar inget att anföra klagomål.
+  ru: Подача жалобы бесплатна.
+  scene_id: investigation
+  visual_cue: Investigation and free complaint process. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_chancellor
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattsskydd/narration/hb-c06-u0036-s002.wav
+  start_seconds: 303.208333
+  end_seconds: 306.691327
+  display_segments: []
+  render_image: studio/media/hb-c06-rattsskydd/pictures/photo_chancellor.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c06-rattsskydd/sources/music-bed.flac
+  background_image: studio/media/hb-c06-rattsskydd/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    resampling: bilinear
+    motion_cycles: 2.5279761904761906
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk arkiverad källtext med granskad rysk översättning.
+    - Fullständiga länkar och villkor i videons CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Pikkuparlamentti Helsinki 2022-09-16 02.jpg — Leonhard Lenz · CC0
+    - Summer Day — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Källbaserade illustrationer: Homebrew video studio. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Valtioneuvoston linna Helsinki 2022-09-16 02.jpg — Leonhard Lenz · CC0
+    - Fullständiga källor och licenser i CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish body and reviewed Russian translation shown in source order.
+  - Pictorial diagrams illustrate only selected source relationships; no real person is labeled an offender
+    or beneficiary of corruption.
+  - Foreground photographs proportionally resized; decorative background cropped, darkened, blurred and
+    continuously moved.
+  - Instrumental music excerpted and crossfade-looped when necessary, ducked under speech.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Pikkuparlamentti_Helsinki_2022-09-16_02.jpg
+    description: Pikkuparlamentti parliament building in Helsinki.
+    license: CC0

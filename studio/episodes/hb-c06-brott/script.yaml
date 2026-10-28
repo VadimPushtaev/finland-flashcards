@@ -1,0 +1,701 @@
+schema_version: 1
+section_id: hb-c06-brott
+chapter_id: hb-c06
+title_sv: Brott och straffansvar
+title_ru: Преступления и уголовная ответственность
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-brott.yaml
+example_only: false
+source_section_sha256: 00937f671218ad7765b84ba17dfc0935bb8baedd6f7dfa80ed9d1453341ca779
+translation_file_sha256: 08f0ea17e7a50cbb694fa6227d3b0e47ff07b6bae99af6942aa2a5408c924ca5
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted indigo Chapter6palette {''background'': ''#252747'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#cbd1ec'', ''highlight'': ''#e3c58b'', ''separator'': ''#515a82''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Vantaan poliisitalo - Tikkurila.jpg by Paju continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.7982142857142858. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16; actual threads/settings
+    measured in metrics. Names/numbers/overallbalance pending whole-video listening; ASR diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use White Lotus by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 2071.641 seconds; prepared lossless stereo bed 251.750 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at source topic boundaries: accurately identified photos of places/objects
+    and original pictorial process diagrams. Aim>=50% measured narrated body display; never imply photographed
+    people are offenders or victims. Source text unchanged; no new legal advice or updated facts.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Förbjudna handlingar, försummelse och försök
+- id: scene-2
+  description: Att förebygga och anmäla allvarliga brott
+- id: scene-3
+  description: Exempel på brott
+- id: scene-4
+  description: Stöld och snatteri
+- id: scene-5
+  description: Trafikregler och körkort
+- id: scene-6
+  description: Skadegörelse och ersättning
+- id: scene-7
+  description: Våld och brott mot liv
+- id: scene-8
+  description: Straffrättsligt ansvar från 15 år
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_law
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Förbjudna handlingar,
+    försummelse och försök.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_report
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Att förebygga och
+    anmäla allvarliga brott.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_types
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Exempel på brott.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_shop
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Stöld och snatteri.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_traffic
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Trafikregler och
+    körkort.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_damage
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Skadegörelse och
+    ersättning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_protection
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Våld och brott mot
+    liv.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_age
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Straffrättsligt
+    ansvar från 15 år.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c06-u0043-s001
+  sv: Ett brott är en förbjuden handling som man enligt lagen får ett straff för.
+  ru: Преступление — это запрещённое действие, за которое по закону назначается наказание.
+  scene_id: scene-1
+  visual_cue: Show Förbjudna handlingar, försummelse och försök using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_law
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0043-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.519388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/law.png
+- sentence_id: hb-c06-u0043-s002
+  sv: Också försummelse, det vill säga att låta bli att göra något, kan vara ett brott, likaså att uppvigla
+    någon annan till ett brott.
+  ru: Преступлением также может быть неисполнение обязанности, то есть несовершение какого-либо действия,
+    как и подстрекательство другого человека к преступлению.
+  scene_id: scene-1
+  visual_cue: Show Förbjudna handlingar, försummelse och försök using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_law
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0043-s002.wav
+  start_seconds: 11.291667
+  end_seconds: 21.949626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/law.png
+- sentence_id: hb-c06-u0043-s003
+  sv: Ibland är redan ett försök till brott ett brott, som kan ge ett straff.
+  ru: Иногда уже попытка совершить преступление является преступлением, за которое может быть назначено
+    наказание.
+  scene_id: scene-1
+  visual_cue: Show Förbjudna handlingar, försummelse och försök using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_law
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0043-s003.wav
+  start_seconds: 23.708333
+  end_seconds: 29.908061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/law.png
+- sentence_id: hb-c06-u0044-s001
+  sv: I Finland är alla skyldiga att meddela till polisen om man vet att någon planerar ett brott.
+  ru: В Финляндии все обязаны сообщать полиции, если знают, что кто-либо планирует преступление.
+  scene_id: scene-2
+  visual_cue: Show Att förebygga och anmäla allvarliga brott using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0044-s001.wav
+  start_seconds: 32.375
+  end_seconds: 40.455544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/report.png
+- sentence_id: hb-c06-u0044-s002
+  sv: Då kan brottet ännu förhindras.
+  ru: Тогда преступление ещё можно предотвратить.
+  scene_id: scene-2
+  visual_cue: Show Att förebygga och anmäla allvarliga brott using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0044-s002.wav
+  start_seconds: 42.208333
+  end_seconds: 45.203707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/report.png
+- sentence_id: hb-c06-u0044-s003
+  sv: Anmälningsskyldigheten gäller allvarliga brott, till exempel brott mot liv, våldtäkt, misshandel
+    och rån.
+  ru: Обязанность сообщать касается тяжких преступлений, например преступлений против жизни, изнасилования,
+    применения насилия к человеку и ограбления.
+  scene_id: scene-2
+  visual_cue: Show Att förebygga och anmäla allvarliga brott using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0044-s003.wav
+  start_seconds: 46.958333
+  end_seconds: 55.805136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/report.png
+- sentence_id: hb-c06-u0044-s004
+  sv: Närstående familjemedlemmar till en person som planerar ett brott har inte anmälningsskyldighet.
+  ru: Близкие члены семьи человека, планирующего преступление, не обязаны сообщать об этом.
+  scene_id: scene-2
+  visual_cue: Show Att förebygga och anmäla allvarliga brott using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0044-s004.wav
+  start_seconds: 57.583333
+  end_seconds: 65.803197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/report.png
+- sentence_id: hb-c06-u0045-s001
+  sv: 'Följande är typiska brott i Finland:'
+  ru: 'Следующие преступления типичны для Финляндии:'
+  scene_id: scene-3
+  visual_cue: Show Exempel på brott using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_types
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0045-s001.wav
+  start_seconds: 68.291667
+  end_seconds: 72.262279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/types.png
+- sentence_id: hb-c06-u0046-s001
+  sv: 'Stöld: Stöld betyder att en människa tar någon annans egendom utan lov.'
+  ru: 'Кража: кража означает, что человек берёт чужое имущество без разрешения.'
+  scene_id: scene-4
+  visual_cue: Show Stöld och snatteri using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_shop
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0046-s001.wav
+  start_seconds: 74.75
+  end_seconds: 81.507007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/shop.png
+- sentence_id: hb-c06-u0046-s002
+  sv: Butiksstölder anmäls alltid till polisen.
+  ru: О магазинных кражах всегда сообщают полиции.
+  scene_id: scene-4
+  visual_cue: Show Stöld och snatteri using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_shop
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0046-s002.wav
+  start_seconds: 83.291667
+  end_seconds: 87.192619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/shop.png
+- sentence_id: hb-c06-u0046-s003
+  sv: Att stjäla mindre värdefulla saker kallas snatteri.
+  ru: Кража менее ценных вещей называется мелкой кражей.
+  scene_id: scene-4
+  visual_cue: Show Stöld och snatteri using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_shop
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0046-s003.wav
+  start_seconds: 88.958333
+  end_seconds: 93.834524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/shop.png
+- sentence_id: hb-c06-u0048-s001
+  sv: 'Trafikbrott: Trafikreglerna, till exempel fartbegränsningarna, måste följas.'
+  ru: 'Дорожные преступления: правила дорожного движения, например ограничения скорости, должны соблюдаться.'
+  scene_id: scene-5
+  visual_cue: Show Trafikregler och körkort using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_traffic
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0048-s001.wav
+  start_seconds: 96.291667
+  end_seconds: 103.605952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/traffic.png
+- sentence_id: hb-c06-u0048-s002
+  sv: Man får inte köra fordon utan körkort.
+  ru: Нельзя управлять транспортным средством без водительского удостоверения.
+  scene_id: scene-5
+  visual_cue: Show Trafikregler och körkort using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_traffic
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0048-s002.wav
+  start_seconds: 105.375
+  end_seconds: 109.136633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/traffic.png
+- sentence_id: hb-c06-u0048-s003
+  sv: Man får inte köra bil, motorcykel eller moped när man är berusad eller påverkad av droger.
+  ru: Нельзя управлять автомобилем, мотоциклом или мопедом в состоянии опьянения или под воздействием
+    наркотиков.
+  scene_id: scene-5
+  visual_cue: Show Trafikregler och körkort using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_traffic
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0048-s003.wav
+  start_seconds: 110.916667
+  end_seconds: 118.927551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/traffic.png
+- sentence_id: hb-c06-u0049-s001
+  sv: 'Skadegörelse: Man får inte skada eller förstöra någon annans egendom.'
+  ru: 'Повреждение имущества: нельзя повреждать или уничтожать чужое имущество.'
+  scene_id: scene-6
+  visual_cue: Show Skadegörelse och ersättning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0049-s001.wav
+  start_seconds: 121.416667
+  end_seconds: 128.173673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/damage.png
+- sentence_id: hb-c06-u0049-s002
+  sv: Om en människa orsakar skada på någon annans egendom, är hen ersättningsskyldig.
+  ru: Если человек причиняет вред чужому имуществу, он обязан возместить ущерб.
+  scene_id: scene-6
+  visual_cue: Show Skadegörelse och ersättning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0049-s002.wav
+  start_seconds: 129.958333
+  end_seconds: 137.272619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/damage.png
+- sentence_id: hb-c06-u0049-s003
+  sv: Det betyder att hen måste betala för skadorna.
+  ru: Это означает, что он должен заплатить за ущерб.
+  scene_id: scene-6
+  visual_cue: Show Skadegörelse och ersättning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0049-s003.wav
+  start_seconds: 139.041667
+  end_seconds: 143.012279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/damage.png
+- sentence_id: hb-c06-u0049-s004
+  sv: Om gärningsmannen inte betalar för skadorna, kan en myndighet dra av skadeersättningarna direkt
+    på hens lön.
+  ru: Если виновник не возмещает ущерб, орган власти может удержать компенсацию прямо из его зарплаты.
+  scene_id: scene-6
+  visual_cue: Show Skadegörelse och ersättning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0049-s004.wav
+  start_seconds: 144.791667
+  end_seconds: 154.335068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/damage.png
+- sentence_id: hb-c06-u0050-s001
+  sv: 'Våldsbrott och brott mot liv: Våld är ett brott i Finland.'
+  ru: 'Насильственные преступления и преступления против жизни: насилие является преступлением в Финляндии.'
+  scene_id: scene-7
+  visual_cue: Show Våld och brott mot liv using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0050-s001.wav
+  start_seconds: 156.791667
+  end_seconds: 162.503776
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/protection.png
+- sentence_id: hb-c06-u0050-s002
+  sv: Våld kan vara fysiskt, sexuellt eller psykiskt våld eller hot om våld.
+  ru: Насилие может быть физическим, сексуальным или психологическим, либо представлять собой угрозу насилием.
+  scene_id: scene-7
+  visual_cue: Show Våld och brott mot liv using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0050-s002.wav
+  start_seconds: 164.291667
+  end_seconds: 170.630714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/protection.png
+- sentence_id: hb-c06-u0050-s003
+  sv: Brott mot liv är mord, dråp och vållande till annans död.
+  ru: К преступлениям против жизни относятся убийство с отягчающими обстоятельствами (mord), умышленное
+    убийство (dråp) и причинение смерти по неосторожности.
+  scene_id: scene-7
+  visual_cue: Show Våld och brott mot liv using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0050-s003.wav
+  start_seconds: 172.416667
+  end_seconds: 177.571497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/protection.png
+- sentence_id: hb-c06-u0051-s001
+  sv: Ett brott är en handling som det i Finlands lag föreskrivs ett straff för.
+  ru: Преступление — это действие, за которое в законе Финляндии предусмотрено наказание.
+  scene_id: scene-8
+  visual_cue: Show Straffrättsligt ansvar från 15 år using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_age
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0051-s001.wav
+  start_seconds: 180.041667
+  end_seconds: 186.450374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/age.png
+- sentence_id: hb-c06-u0051-s002
+  sv: I Finland är alla som fyllt 15 år straffrättsligt ansvariga för sina handlingar.
+  ru: В Финляндии все, кому исполнилось 15 лет, несут уголовную ответственность за свои действия.
+  scene_id: scene-8
+  visual_cue: Show Straffrättsligt ansvar från 15 år using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_age
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: I Finland är alla som fyllt femton år straffrättsligt ansvariga för sina handlingar.
+    reason: Speech-only expansion of exact source ages; display text retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0051-s002.wav
+  start_seconds: 188.208333
+  end_seconds: 195.870918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/age.png
+- sentence_id: hb-c06-u0051-s003
+  sv: Det betyder att alla som är minst 15 år kan åtalas och få en dom om de begår ett brott.
+  ru: Это означает, что всем людям в возрасте не менее 15 лет можно предъявить обвинение и вынести приговор,
+    если они совершат преступление.
+  scene_id: scene-8
+  visual_cue: Show Straffrättsligt ansvar från 15 år using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_age
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Det betyder att alla som är minst femton år kan åtalas och få en dom om de begår ett brott.
+    reason: Speech-only expansion of exact source ages; display text retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brott/narration/hb-c06-u0051-s003.wav
+  start_seconds: 197.625
+  end_seconds: 205.217925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brott/pictures/age.png
+render:
+  music_path: studio/media/hb-c06-brott/sources/music-bed.flac
+  background_image: studio/media/hb-c06-brott/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.7982142857142858
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Vantaan poliisitalo - Tikkurila.jpg — Paju · CC BY-SA 3.0
+    - White Lotus — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Finnish police car on Kaivokatu.jpg — JIP · CC BY-SA 4.0
+    - Broken-Window-20130513.jpg — WiseWoman · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal claims.
+  - Photographs proportionally resized for foreground; background darkened,blurred,cropped and moved continuously;
+    photo licenses retained.
+  - Original pictorial process diagrams illustrate only selected source statements.
+  - Music faded,ducked,level-adjusted and repeated with4-second equal-power crossfades if required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Vantaan_poliisitalo_-_Tikkurila.jpg
+    description: 'Vantaa police house. Address: Kielotie 21, Tikkurila, 01300 Vantaa, Finland. The neighboring
+      house (Vantaa courthouse, to the right) shares the same street address and is home of the Vantaa
+      district court.'
+    license: CC BY-SA 3.0

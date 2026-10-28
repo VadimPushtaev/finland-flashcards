@@ -1,0 +1,554 @@
+schema_version: 1
+section_id: hb-c06-overklagande
+chapter_id: hb-c06
+title_sv: Överklagande och rättegångskostnader
+title_ru: Обжалование и судебные расходы
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-overklagande.yaml
+example_only: false
+source_section_sha256: 267da569355f7b8cb4f3c9ad91b7fa2750826b20bc9f06f7590d0a643b6a0bee
+translation_file_sha256: a56bf4f30ceb39a3da1c94baf405c49b1920db7eaebd47bec9196d5889e37b94
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual title for3seconds; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every source sentence and list fragment once, in original order; scenes reflect consecutive
+    source units.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080,24fps, fixed right bilingual panel; Liberation Sans Bold48/Regular40; indigo Chapter6
+    palette #252747/#faf3e8/#cbd1ec/#e3c58b/#515a82.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before speech; pause1.5seconds,2.2at topic boundary and2.5for long
+    pairs. Timing follows measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Turun hovioikeus.jpg by Markus Koljonen (Dilaudid) with thanks to Jontts continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=1.738392857142857. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Supertonic 3 / F1 Swedish,32 steps,speed0.95,seed42,44100Hz mono PCM16. One ONNX
+    intra-op thread; per-clip metrics record actual settings. Pronunciation and overall mix await complete-video
+    listening.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use On the Shore by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 100.780 seconds; prepared lossless stereo bed 243.375 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Topic-specific institution photographs and original pictorial process diagrams; no photographed
+    person assigned wrongdoing. At least50% measured body coverage; no plain typography counted.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source/media credits,15secondspercard; full links and adaptation notices inCREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception requested. Source remains archived; no current law or new factual claim added.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: appeal
+  description: Appeal from district court to court of appeal
+- id: supreme
+  description: Leave to appeal and Supreme Court precedent
+- id: europe
+  description: European Court of Human Rights after domestic legal remedies
+- id: costs
+  description: Court fee, legal representatives and witness compensation
+- id: civil
+  description: Costs in civil proceedings and possible barriers
+- id: criminal
+  description: Criminal-case costs depend on the finding
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct reserved topic-related institutional photograph, continuous decoration.
+  fallback: Use another verified licensed institutional photograph; narration unchanged.
+- id: music_bed
+  kind: music
+  description: Coordinator-reserved distinct calm instrumental track.
+  fallback: Reserve another distinct calm licensed instrumental source.
+- id: narration
+  kind: narration
+  description: LocalF1Swedish exact body narration, one complete clip per source sentence.
+  fallback: Use a meaning-preserving speech-only expansion if diagnostics identify a specific issue; no
+    cloud synthesis.
+- id: picture_appeal
+  kind: foreground
+  description: 'Original pictorial source-based schematic: appeal'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_photo_supreme
+  kind: foreground
+  description: Verified institution photo
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_photo_europe
+  kind: foreground
+  description: Verified institution photo
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_costs
+  kind: foreground
+  description: 'Original pictorial source-based schematic: costs'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_civilcosts
+  kind: foreground
+  description: 'Original pictorial source-based schematic: civilcosts'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_criminalcosts
+  kind: foreground
+  description: 'Original pictorial source-based schematic: criminalcosts'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- kind: foreground
+  description: 'Original pictorial schematic: each party and its own costs, no payment transfer arrow.'
+  fallback: Use source-backed neutral cost imagery.
+  id: picture_owncosts
+sentences:
+- sentence_id: hb-c06-u0103-s001
+  sv: Om en person är missnöjd med tingsrättens beslut, kan hen överklaga till följande rättsinstans,
+    som är hovrätten.
+  ru: Если человек недоволен решением уездного суда, он может обжаловать его в следующей судебной инстанции
+    — апелляционном суде.
+  scene_id: appeal
+  visual_cue: Appeal from district court to court of appeal. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_appeal
+  text_highlights:
+  - hovrätten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0103-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.35068
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/appeal.png
+  render_caption: false
+- sentence_id: hb-c06-u0103-s002
+  sv: Hovrätten behandlar överklaganden av tingsrättens beslut.
+  ru: Апелляционный суд рассматривает жалобы на решения уездного суда.
+  scene_id: appeal
+  visual_cue: Appeal from district court to court of appeal. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_appeal
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0103-s002.wav
+  start_seconds: 15.125
+  end_seconds: 20.41915
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/appeal.png
+  render_caption: false
+- sentence_id: hb-c06-u0103-s003
+  sv: Ibland kan hovrätten ändra tingsrättens beslut.
+  ru: Иногда апелляционный суд может изменить решение уездного суда.
+  scene_id: appeal
+  visual_cue: Appeal from district court to court of appeal. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_appeal
+  text_highlights:
+  - hovrätten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0103-s003.wav
+  start_seconds: 22.208333
+  end_seconds: 26.666565
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/appeal.png
+  render_caption: false
+- sentence_id: hb-c06-u0104-s001
+  sv: Om parterna inte är nöjda med hovrättens beslut, kan de ansöka om besvärstillstånd till högsta domstolen.
+  ru: Если стороны недовольны решением апелляционного суда, они могут подать заявление о разрешении на
+    обжалование в Верховном суде.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights:
+  - högsta domstolen
+  - hovrätten
+  - besvärstillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0104-s001.wav
+  start_seconds: 29.125
+  end_seconds: 38.738061
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0104-s002
+  sv: I Finland är högsta domstolen den sista och högsta rättsinstansen.
+  ru: В Финляндии Верховный суд является последней и высшей судебной инстанцией.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights:
+  - högsta domstolen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0104-s002.wav
+  start_seconds: 40.5
+  end_seconds: 46.490748
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0104-s003
+  sv: Högsta domstolen behandlar bara ärenden som har fått besvärstillstånd till högsta domstolen.
+  ru: Верховный суд рассматривает только дела, по которым получено разрешение на обжалование в Верховном
+    суде.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights:
+  - högsta domstolen
+  - besvärstillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0104-s003.wav
+  start_seconds: 48.25
+  end_seconds: 56.330544
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0104-s004
+  sv: Besvärstillstånd beviljas endast sällan.
+  ru: Разрешение на обжалование предоставляют лишь изредка.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0104-s004.wav
+  start_seconds: 58.083333
+  end_seconds: 62.123605
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0105-s001
+  sv: Högsta domstolen behandlar samhälleligt viktiga ärenden.
+  ru: Верховный суд рассматривает общественно значимые дела.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0105-s001.wav
+  start_seconds: 63.875
+  end_seconds: 69.02983
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0105-s002
+  sv: Sådana är bland annat ärenden som det tidigare inte har utfärdats något domstolsbeslut i och som
+    senare kan bli prejudikatfall.
+  ru: К ним относятся, в частности, дела, по которым ранее не выносили судебных решений и которые впоследствии
+    могут стать прецедентами.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0105-s002.wav
+  start_seconds: 70.791667
+  end_seconds: 81.937245
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0105-s003
+  sv: Tingsrätterna och hovrätterna följer i allmänhet prejudikatfall när de beslutar om domar i framtida
+    liknande fall.
+  ru: Уездные и апелляционные суды обычно следуют прецедентам, когда выносят решения по последующим аналогичным
+    делам.
+  scene_id: supreme
+  visual_cue: Leave to appeal and Supreme Court precedent. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_supreme
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0105-s003.wav
+  start_seconds: 83.708333
+  end_seconds: 93.809014
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_supreme.png
+  render_caption: false
+- sentence_id: hb-c06-u0106-s001
+  sv: Om man upplever att man inte har blivit behandlad på det sätt som de mänskliga rättigheterna förutsätter
+    i en rättegångsförhandling i Finland, kan man vidare överklaga till Europadomstolen.
+  ru: Если человек считает, что во время судебного заседания в Финляндии с ним обращались не так, как
+    того требуют права человека, он может далее обратиться с жалобой в Европейский суд по правам человека.
+  scene_id: europe
+  visual_cue: European Court of Human Rights after domestic legal remedies. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_europe
+  text_highlights:
+  - Europadomstolen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0106-s001.wav
+  start_seconds: 96.291667
+  end_seconds: 112.174116
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_europe.png
+  render_caption: false
+- sentence_id: hb-c06-u0106-s002
+  sv: Man kan anföra klagomål om alla rättsliga medel i Finland har använts.
+  ru: Жалобу можно подать, если использованы все средства правовой защиты в Финляндии.
+  scene_id: europe
+  visual_cue: European Court of Human Rights after domestic legal remedies. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_europe
+  text_highlights:
+  - klagomål
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0106-s002.wav
+  start_seconds: 113.958333
+  end_seconds: 120.64568
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/photo_europe.png
+  render_caption: false
+- sentence_id: hb-c06-u0107-s001
+  sv: Kostnaderna för en rättegång består av rättegångsavgiften, arvoden till rättegångsbiträden, till
+    exempel advokater, och de ersättningar som betalas till vittnen.
+  ru: Расходы на судебный процесс состоят из судебного сбора, вознаграждения судебным представителям,
+    например адвокатам, и компенсаций, выплачиваемых свидетелям.
+  scene_id: costs
+  visual_cue: Court fee, legal representatives and witness compensation. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_costs
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0107-s001.wav
+  start_seconds: 123.125
+  end_seconds: 137.056973
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/costs.png
+  render_caption: false
+- sentence_id: hb-c06-u0108-s001
+  sv: I tvistemål, det vill säga meningsskiljaktigheter mellan privatpersoner eller till exempel företag,
+    är den part som förlorat tvisten ofta tvungen att betala också den andra partens rättegångskostnader.
+  ru: В гражданских делах, то есть спорах между частными лицами или, например, компаниями, сторона, проигравшая
+    спор, часто обязана оплатить также судебные расходы другой стороны.
+  scene_id: civil
+  visual_cue: Costs in civil proceedings and possible barriers. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_civilcosts
+  text_highlights:
+  - rättegångskostnader
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0108-s001.wav
+  start_seconds: 139.541667
+  end_seconds: 156.120714
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/civilcosts.png
+  render_caption: false
+- sentence_id: hb-c06-u0108-s002
+  sv: Ibland ansvarar vardera parten för sina respektive kostnader.
+  ru: Иногда каждая сторона отвечает за собственные расходы.
+  scene_id: civil
+  visual_cue: Costs in civil proceedings and possible barriers. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_owncosts
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0108-s002.wav
+  start_seconds: 157.875
+  end_seconds: 163.656769
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/owncosts.png
+  render_caption: false
+- sentence_id: hb-c06-u0108-s003
+  sv: Rädslan för höga kostnader kan ibland hindra människor från att ta tvistemål till rätten.
+  ru: Боязнь больших расходов иногда может удерживать людей от обращения в суд по гражданским делам.
+  scene_id: civil
+  visual_cue: Costs in civil proceedings and possible barriers. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_costs
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0108-s003.wav
+  start_seconds: 165.416667
+  end_seconds: 173.357891
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/costs.png
+  render_caption: false
+- sentence_id: hb-c06-u0109-s001
+  sv: I brottmål ålägger rätten ofta den åtalade att betala rättegångskostnaderna, om hen konstateras
+    vara skyldig.
+  ru: В уголовных делах суд часто обязывает обвиняемого оплатить судебные расходы, если его признают виновным.
+  scene_id: criminal
+  visual_cue: Criminal-case costs depend on the finding. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_criminalcosts
+  text_highlights:
+  - rättegångskostnader
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0109-s001.wav
+  start_seconds: 175.833333
+  end_seconds: 185.307075
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/criminalcosts.png
+  render_caption: false
+- sentence_id: hb-c06-u0109-s002
+  sv: Om den åtalade konstateras vara oskyldig, kan hen ansöka om ersättning för sina rättegångskostnader.
+  ru: Если обвиняемого признают невиновным, он может подать заявление о возмещении своих судебных расходов.
+  scene_id: criminal
+  visual_cue: Criminal-case costs depend on the finding. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_criminalcosts
+  text_highlights:
+  - rättegångskostnader
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-overklagande/narration/hb-c06-u0109-s002.wav
+  start_seconds: 187.083333
+  end_seconds: 196.139116
+  display_segments: []
+  render_image: studio/media/hb-c06-overklagande/pictures/criminalcosts.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c06-overklagande/sources/music-bed.flac
+  background_image: studio/media/hb-c06-overklagande/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    resampling: bilinear
+    motion_cycles: 1.738392857142857
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk arkiverad källtext med granskad rysk översättning.
+    - Fullständiga länkar och villkor i videons CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Turun hovioikeus.jpg — Markus Koljonen (Dilaudid) with thanks to Jontts · CC BY-SA 3.0
+    - On the Shore — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Källbaserade illustrationer: Homebrew video studio. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Cour européenne des droits de l'homme (Strasbourg) (1).jpg — Gzen92 · CC BY-SA 4.0
+    - Korkein oikeus Helsinki 2022-09-16 01.jpg — Leonhard Lenz · CC0
+    - Fullständiga källor och licenser i CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish body and reviewed Russian translation shown in source order.
+  - Pictorial diagrams illustrate only selected source relationships; no real person is labeled an offender
+    or beneficiary of corruption.
+  - Foreground photographs proportionally resized; decorative background cropped, darkened, blurred and
+    continuously moved.
+  - Instrumental music excerpted and crossfade-looped when necessary, ducked under speech.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Turun_hovioikeus.jpg
+    description: Court of Appeal, Academy House, Turku, with Turku Cathedral's tower on the background,
+      and a statue of Gustav II Adolf, the founder of the Court of Appeal, on the foreground.
+    license: CC BY-SA 3.0

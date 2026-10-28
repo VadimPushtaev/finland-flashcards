@@ -1,0 +1,395 @@
+schema_version: 1
+section_id: hb-c06-rattshjalp
+chapter_id: hb-c06
+title_sv: Rättshjälp och biträde
+title_ru: Юридическая помощь и представительство
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-rattshjalp.yaml
+example_only: false
+source_section_sha256: a31fa930afa4700cc3612a0aea63e2823525ab5ac88e3c909ee06a51702e5c18
+translation_file_sha256: 2507cfa415509a8ab53454bc9c032ff2adcc1ed73ec7804a98235c09e996734e
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds; background motion begins immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive source-based scenes below; each body sentence/list fragment read once in frozen
+    order. No added transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: 1920x1080 at24fps, Chapter6 indigo palette, Liberation Sans48/40 with fixed right bilingual
+    panel and separate left pictorial foreground. Inspect long pairs, split manually if necessary; never
+    below40/34.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show pairs0.25seconds before speech; allow1.5seconds after each,2.2seconds at topic boundaries
+    and2.5seconds after long pairs; use measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Tampereen käräjäoikeus.jpg by Stefan Flöper continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.0601190476190478. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic 3 / F1, Swedish, 32 steps, speed 0.95, seed 42, 44,100 Hz mono
+    PCM16. These clips use one ONNX intra-op thread under the shared production budget; metrics record
+    actual settings and separate seed invocations. Pronunciation and overall mix await complete-video
+    listening.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Water Prelude by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 324.911 seconds; prepared lossless stereo bed 148.417 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_pictures
+  decision: Relevant non-graphic photographs and original pictorial diagrams of source relationships.
+    Every planned body pair has contextual illustration; verify measured>=50percent and relevance. People
+    icons represent generic roles, never actual victims or accused persons.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: aid
+  description: Rättshjälp och ansökan
+- id: representation
+  description: Försvarare och stödperson
+- id: residence
+  description: Juridisk hjälp i asyl- och uppehållsärenden
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct licensed topic-related photograph; identity and terms verified in media-sources.json.
+  fallback: Acquire another accurately identified licensed related photograph; do not invent a location.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm instrumental source.
+  fallback: Choose a new distinct licensed instrumental source and record replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One exact-source Swedish local F1 clip per sentence.
+  fallback: Review targeted speech-only expansions without changing display wording or using cloud TTS.
+- id: picture_documents
+  kind: foreground
+  description: Original non-graphic pictorial diagram for documents; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_justice
+  kind: foreground
+  description: Original non-graphic pictorial diagram for justice; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_contact
+  kind: foreground
+  description: Original non-graphic pictorial diagram for contact; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_budget
+  kind: foreground
+  description: Source-based pictorial income/legal-document illustration without monetary thresholds.
+  fallback: Use a generic legal-assistance illustration without additional amounts.
+sentences:
+- sentence_id: hb-c06-u0121-s001
+  sv: I Finland har alla rätt till rättshjälp om de har juridiska problem.
+  ru: В Финляндии каждый имеет право на юридическую помощь, если у него возникают правовые проблемы.
+  scene_id: aid
+  visual_cue: Non-graphic, source-based documents pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_documents
+  text_highlights:
+  - rättshjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0121-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.519388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/documents.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0121-s002
+  sv: Staten hjälper mindre bemedlade vars inkomster inte räcker till för att betala till exempel advokatarvoden.
+  ru: Государство помогает малоимущим, доходов которых не хватает для оплаты, например, услуг адвоката.
+  scene_id: aid
+  visual_cue: Original coins, person and legal-document relationship for insufficient income and legal
+    fees, without invented amounts or income thresholds.
+  asset_ids:
+  - episode_background
+  - picture_budget
+  text_highlights:
+  - advokat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0121-s002.wav
+  start_seconds: 11.291667
+  end_seconds: 20.695748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/budget.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0121-s003
+  sv: Rättshjälpen kan vara till exempel en advokat eller ett allmänt rättsbiträde vid en rättegång, juridisk
+    rådgivning, hjälp vid förlikningsförhandlingar och uppgörande av olika dokument, avtal eller klagomål.
+  ru: Юридическая помощь может включать, например, услуги адвоката или государственного юридического помощника
+    в судебном процессе, юридические консультации, помощь в переговорах о примирении и составление различных
+    документов, договоров или жалоб.
+  scene_id: aid
+  visual_cue: Non-graphic, source-based documents pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_documents
+  text_highlights:
+  - juridisk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0121-s003.wav
+  start_seconds: 22.458333
+  end_seconds: 40.012619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/documents.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c06-u0121-s004
+  sv: Om en person behöver offentlig rättshjälp, ska hen ansöka om det hos en rättshjälpsbyrå.
+  ru: Если человеку нужна государственная юридическая помощь, он должен подать заявление в бюро юридической
+    помощи.
+  scene_id: aid
+  visual_cue: Non-graphic, source-based documents pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_documents
+  text_highlights:
+  - rättshjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0121-s004.wav
+  start_seconds: 41.791667
+  end_seconds: 49.593571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/documents.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0122-s001
+  sv: Den som är åtalad för ett brott har rätt att få en försvarsadvokat.
+  ru: Обвиняемый в преступлении имеет право на адвоката-защитника.
+  scene_id: representation
+  visual_cue: Non-graphic, source-based justice pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_justice
+  text_highlights:
+  - advokat
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0122-s001.wav
+  start_seconds: 52.083333
+  end_seconds: 58.074082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/justice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0122-s002
+  sv: Ibland förordnar domstolen på eget initiativ en försvarare åt den åtalade, om den åtalade är minderårig
+    eller av någon annan orsak inte kan försvara sig själv.
+  ru: Иногда суд по собственной инициативе назначает обвиняемому защитника, если обвиняемый несовершеннолетний
+    или по какой-либо другой причине не может сам себя защищать.
+  scene_id: representation
+  visual_cue: Non-graphic, source-based justice pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_justice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0122-s002.wav
+  start_seconds: 59.833333
+  end_seconds: 73.974286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/justice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0122-s003
+  sv: Brottsoffret kan få ett biträde eller en stödperson för rättegången.
+  ru: Жертва преступления может получить представителя или сопровождающего для участия в судебном процессе.
+  scene_id: representation
+  visual_cue: Non-graphic, source-based justice pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_justice
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0122-s003.wav
+  start_seconds: 75.75
+  end_seconds: 81.601429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/justice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0123-s001
+  sv: Flyktingrådgivningen bistår med juridisk hjälp i asylprocesser och även i andra processer gällande
+    uppehållstillstånd.
+  ru: Организация Flyktingrådgivningen оказывает юридическую помощь в процедурах предоставления убежища,
+    а также в других процедурах, связанных с видом на жительство.
+  scene_id: residence
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - juridisk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0123-s001.wav
+  start_seconds: 84.083333
+  end_seconds: 94.462653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0123-s002
+  sv: Flyktingrådgivningen ger även allmän juridisk rådgivning i frågor kring asyl och uppehållstillstånd.
+  ru: Flyktingrådgivningen также предоставляет общие юридические консультации по вопросам убежища и вида
+    на жительство.
+  scene_id: residence
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - juridisk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0123-s002.wav
+  start_seconds: 96.25
+  end_seconds: 104.818163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0124-s001
+  sv: Du kan även vända dig till en rättshjälpsbyrå om du behöver rådgivning eller rättshjälp i ett uppehållstillståndsärende.
+  ru: Вы также можете обратиться в бюро юридической помощи, если вам нужна консультация или юридическая
+    помощь по делу о виде на жительство.
+  scene_id: residence
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - rättshjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-rattshjalp/narration/hb-c06-u0124-s001.wav
+  start_seconds: 106.583333
+  end_seconds: 116.892993
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-rattshjalp/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c06-rattshjalp/sources/music-bed.flac
+  background_image: studio/media/hb-c06-rattshjalp/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.0601190476190478
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Finland – Lärobok i samhällsorientering — © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - 'InfoFinland.fi — text: CC BY 4.0 · creativecommons.org/licenses/by/4.0/'
+    - Urval, nya rubriker och granskad rysk översättning.
+    - Källor och respektive utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Tampereen käräjäoikeus.jpg — Stefan Flöper · CC BY-SA 4.0
+    - Water Prelude — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Förgrund: källbaserade piktogram utan tillagda fakta; se CREDITS.md.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Original pictorial diagrams show only source relationships; generic roles are not actual victims or
+    suspects.
+  - Background photograph cropped, softened, darkened and continuously panned/zoomed; adaptation retains
+    source license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repetitions when required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Tampereen_k%C3%A4r%C3%A4j%C3%A4oikeus.jpg
+    description: Pirkanmaan käräjäoikeus (Court for Pirkanmaa area), Tampere, Finland
+    license: CC BY-SA 4.0

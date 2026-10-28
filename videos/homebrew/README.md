@@ -166,6 +166,28 @@ See the [chapter audit](../../studio/hb-c05-audit.json),
 [listening priorities](../../studio/hb-c05-review.md). Whole-video listening,
 physical-device playback and user acceptance remain pending.
 
+## Chapter 6 — Lagar, rättsväsende och rättsskydd
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [6.1 Rättsstaten och grundlagen](hb-c06-01-rattsstat.mp4) · [credits](hb-c06-01-rattsstat.CREDITS.md) | 7:43 | 100.0% | Ready for whole-video review |
+| [6.2 God förvaltning och korruption](hb-c06-02-god-forvaltning.mp4) · [credits](hb-c06-02-god-forvaltning.CREDITS.md) | 8:17 | 100.0% | Ready for whole-video review |
+| [6.3 Beslut, rättelse och tillsyn](hb-c06-03-rattsskydd.mp4) · [credits](hb-c06-03-rattsskydd.CREDITS.md) | 5:54 | 100.0% | Ready for whole-video review |
+| [6.4 Polisen och rättsväsendets aktörer](hb-c06-04-polis.mp4) · [credits](hb-c06-04-polis.CREDITS.md) | 4:09 | 100.0% | Ready for whole-video review |
+| [6.5 Brott och straffansvar](hb-c06-05-brott.mp4) · [credits](hb-c06-05-brott.CREDITS.md) | 4:12 | 100.0% | Ready for whole-video review |
+| [6.6 Våld och sexuellt självbestämmande](hb-c06-06-vald.mp4) · [credits](hb-c06-06-vald.CREDITS.md) | 7:42 | 100.0% | Ready for whole-video review |
+| [6.7 Människohandel och hjälp till utsatta](hb-c06-07-manniskohandel.mp4) · [credits](hb-c06-07-manniskohandel.CREDITS.md) | 2:59 | 100.0% | Ready for whole-video review |
+| [6.8 Brottsoffers rättigheter och stöd](hb-c06-08-brottsoffer.mp4) · [credits](hb-c06-08-brottsoffer.CREDITS.md) | 3:25 | 100.0% | Ready for whole-video review |
+| [6.9 Förundersökning, medling och åtal](hb-c06-09-forundersokning.mp4) · [credits](hb-c06-09-forundersokning.CREDITS.md) | 3:52 | 100.0% | Ready for whole-video review |
+| [6.10 Domstolar och rättegång](hb-c06-10-domstolar.mp4) · [credits](hb-c06-10-domstolar.CREDITS.md) | 4:15 | 94.9% | Ready for whole-video review |
+| [6.11 Överklagande och rättegångskostnader](hb-c06-11-overklagande.mp4) · [credits](hb-c06-11-overklagande.CREDITS.md) | 4:03 | 100.0% | Ready for whole-video review |
+| [6.12 Straff och skadestånd](hb-c06-12-straff.mp4) · [credits](hb-c06-12-straff.CREDITS.md) | 5:06 | 100.0% | Ready for whole-video review |
+| [6.13 Barn och unga i rättssystemet](hb-c06-13-unga.mp4) · [credits](hb-c06-13-unga.CREDITS.md) | 2:56 | 100.0% | Ready for whole-video review |
+| [6.14 Rättshjälp och biträde](hb-c06-14-rattshjalp.mp4) · [credits](hb-c06-14-rattshjalp.CREDITS.md) | 2:28 | 100.0% | Ready for whole-video review |
+
+All 342 exact Swedish/Russian sentence pairs are covered in **1:07:01**, with distinct background photographs and instrumental music sources. Every preview exceeds the 50% foreground-picture target (minimum 94.9%). Generated media remain local and ignored.
+See the [chapter audit](../../studio/hb-c06-audit.json), [narration checks](../../studio/hb-c06-narration-check.json), [music headroom](../../studio/hb-c06-music-headroom.json), [export reviews](../../studio/hb-c06-visual-review.json), and [listening priorities](../../studio/hb-c06-review.md). Whole-video listening, physical-device playback and user acceptance remain pending.
+
 ## Russian audio
 
 [1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as

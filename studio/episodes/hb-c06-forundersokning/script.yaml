@@ -1,0 +1,581 @@
+schema_version: 1
+section_id: hb-c06-forundersokning
+chapter_id: hb-c06
+title_sv: Förundersökning, medling och åtal
+title_ru: Предварительное расследование, медиация и уголовное обвинение
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-forundersokning.yaml
+example_only: false
+source_section_sha256: 0c8b034ce3ea32ceae838f22cac776510fa228ecff9054ef15e758a99483504d
+translation_file_sha256: 9a67b7674ba3b71a07c50e4021e6c3e3e71f9a8b2898f3bd18cc69f359da7806
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted indigo Chapter6palette {''background'': ''#252747'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#cbd1ec'', ''highlight'': ''#e3c58b'', ''separator'': ''#515a82''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Vantaan oikeustalo - Tikkurila.jpg by Paju continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.6604166666666667. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16; actual threads/settings
+    measured in metrics. Names/numbers/overallbalance pending whole-video listening; ASR diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Wood and Metal and Water by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 2916.075 seconds; prepared lossless stereo bed 232.458
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at source topic boundaries: accurately identified photos of places/objects
+    and original pictorial process diagrams. Aim>=50% measured narrated body display; never imply photographed
+    people are offenders or victims. Source text unchanged; no new legal advice or updated facts.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Domstol och strafflag
+- id: scene-2
+  description: Polisens förundersökning
+- id: scene-3
+  description: Allmänt åtal och målsägandebrott
+- id: scene-4
+  description: Frivillig medling och båda parters godkännande
+- id: scene-5
+  description: Åklagarens prövning
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_court
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Domstol och strafflag.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_investigation
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Polisens förundersökning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_prosecution
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Allmänt åtal och
+    målsägandebrott.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_mediation
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Frivillig medling
+    och båda parters godkännande.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_prosecutor
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Åklagarens prövning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c06-u0091-s001
+  sv: I Finland bedömer en domstol vad den lagenliga lösningen är i konfliktsituationer eller om ett brott
+    har begåtts.
+  ru: В Финляндии суд определяет законное решение конфликтной ситуации или оценивает, совершено ли преступление.
+  scene_id: scene-1
+  visual_cue: Show Domstol och strafflag using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_court
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0091-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.072041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/court.png
+- sentence_id: hb-c06-u0091-s002
+  sv: Den kan också utdöma straff.
+  ru: Он также может назначать наказания.
+  scene_id: scene-1
+  visual_cue: Show Domstol och strafflag using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_court
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0091-s002.wav
+  start_seconds: 14.833333
+  end_seconds: 17.689388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/court.png
+- sentence_id: hb-c06-u0091-s003
+  sv: Strafflagen fastställer vilka handlingar man får straff för och vad straffet kan vara.
+  ru: Уголовный кодекс (strafflagen) устанавливает, за какие действия назначается наказание и каким оно
+    может быть.
+  scene_id: scene-1
+  visual_cue: Show Domstol och strafflag using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_court
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0091-s003.wav
+  start_seconds: 19.458333
+  end_seconds: 26.842279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/court.png
+- sentence_id: hb-c06-u0092-s001
+  sv: Om polisen har skäl att misstänka att ett brott har begåtts inleds en förundersökning.
+  ru: Если у полиции есть основания подозревать, что совершено преступление, начинается предварительное
+    расследование.
+  scene_id: scene-2
+  visual_cue: Show Polisens förundersökning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_investigation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0092-s001.wav
+  start_seconds: 29.333333
+  end_seconds: 36.856599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/investigation.png
+- sentence_id: hb-c06-u0092-s002
+  sv: Under förundersökningen utreder polisen närmare vad som har hänt.
+  ru: В ходе предварительного расследования полиция подробнее выясняет, что произошло.
+  scene_id: scene-2
+  visual_cue: Show Polisens förundersökning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_investigation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0092-s002.wav
+  start_seconds: 38.625
+  end_seconds: 44.337109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/investigation.png
+- sentence_id: hb-c06-u0092-s003
+  sv: Om det i förundersökningen konstateras att ett brott har begåtts, överför polisen ärendet till en
+    åklagare.
+  ru: Если в ходе предварительного расследования устанавливается, что совершено преступление, полиция
+    передаёт дело прокурору.
+  scene_id: scene-2
+  visual_cue: Show Polisens förundersökning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_investigation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0092-s003.wav
+  start_seconds: 46.125
+  end_seconds: 55.459422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/investigation.png
+- sentence_id: hb-c06-u0092-s004
+  sv: Polisen kan också ålägga gärningsmannen böter eller föreslå medling mellan parterna.
+  ru: Полиция также может назначить виновнику штраф или предложить сторонам медиацию.
+  scene_id: scene-2
+  visual_cue: Show Polisens förundersökning using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_investigation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0092-s004.wav
+  start_seconds: 57.25
+  end_seconds: 64.424966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/investigation.png
+- sentence_id: hb-c06-u0093-s001
+  sv: Om det är fråga om ett brott som hör under allmänt åtal, utreder polisen brottet även om offret
+    för brottet inte kräver det.
+  ru: Если речь идёт о преступлении, подпадающем под публичное обвинение, полиция расследует его даже
+    без требования потерпевшего.
+  scene_id: scene-3
+  visual_cue: Show Allmänt åtal och målsägandebrott using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecution
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0093-s001.wav
+  start_seconds: 66.875
+  end_seconds: 77.672279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecution.png
+- sentence_id: hb-c06-u0093-s002
+  sv: Sådana brott är till exempel brott mot liv och misshandel.
+  ru: Такими преступлениями являются, например, преступления против жизни и применение насилия к человеку.
+  scene_id: scene-3
+  visual_cue: Show Allmänt åtal och målsägandebrott using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecution
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0093-s002.wav
+  start_seconds: 79.458333
+  end_seconds: 84.752483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecution.png
+- sentence_id: hb-c06-u0094-s001
+  sv: Om det är fråga om ett målsägandebrott, utreder polisen brottet endast om målsäganden själv vill
+    det.
+  ru: Если речь идёт о преступлении, преследуемом по заявлению потерпевшего, полиция расследует его только
+    по желанию самого потерпевшего.
+  scene_id: scene-3
+  visual_cue: Show Allmänt åtal och målsägandebrott using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecution
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0094-s001.wav
+  start_seconds: 86.541667
+  end_seconds: 95.806429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecution.png
+- sentence_id: hb-c06-u0094-s002
+  sv: Målsägandebrott är till exempel ärekränkning och hemfridsbrott.
+  ru: К преступлениям, преследуемым по заявлению потерпевшего, относятся, например, посягательство на
+    честь и достоинство и нарушение домашнего покоя.
+  scene_id: scene-3
+  visual_cue: Show Allmänt åtal och målsägandebrott using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecution
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0094-s002.wav
+  start_seconds: 97.583333
+  end_seconds: 103.295442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecution.png
+- sentence_id: hb-c06-u0095-s001
+  sv: Medling betyder att man löser ett ärende och till exempel kommer överens om betalning av ersättning
+    mellan parterna utan att ärendet behandlas i en domstol.
+  ru: Медиация означает решение дела и, например, согласование между сторонами выплаты компенсации без
+    рассмотрения дела в суде.
+  scene_id: scene-4
+  visual_cue: Show Frivillig medling och båda parters godkännande using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_mediation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0095-s001.wav
+  start_seconds: 105.75
+  end_seconds: 118.706735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/mediation.png
+- sentence_id: hb-c06-u0095-s002
+  sv: Medling är alltid frivillig.
+  ru: Медиация всегда добровольна.
+  scene_id: scene-4
+  visual_cue: Show Frivillig medling och båda parters godkännande using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_mediation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0095-s002.wav
+  start_seconds: 120.458333
+  end_seconds: 123.314388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/mediation.png
+- sentence_id: hb-c06-u0095-s003
+  sv: Dessutom bedömer medlingsbyrån om ärendet är lämpligt att lösa genom medling.
+  ru: Кроме того, бюро медиации оценивает, подходит ли дело для решения посредством медиации.
+  scene_id: scene-4
+  visual_cue: Show Frivillig medling och båda parters godkännande using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_mediation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0095-s003.wav
+  start_seconds: 125.083333
+  end_seconds: 131.77068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/mediation.png
+- sentence_id: hb-c06-u0095-s004
+  sv: I en medling deltar alltid utbildade medlare, som har som uppgift att se till att båda parterna
+    godkänner lösningen.
+  ru: В медиации всегда участвуют обученные посредники, задача которых — следить за тем, чтобы обе стороны
+    одобрили решение.
+  scene_id: scene-4
+  visual_cue: Show Frivillig medling och båda parters godkännande using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_mediation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0095-s004.wav
+  start_seconds: 133.541667
+  end_seconds: 143.363707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/mediation.png
+- sentence_id: hb-c06-u0095-s005
+  sv: Resultatet av medlingen är rättsligt bindande för parterna.
+  ru: Результат медиации юридически обязателен для сторон.
+  scene_id: scene-4
+  visual_cue: Show Frivillig medling och båda parters godkännande using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_mediation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0095-s005.wav
+  start_seconds: 145.125
+  end_seconds: 150.558469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/mediation.png
+- sentence_id: hb-c06-u0096-s001
+  sv: När polisen har överfört ett ärende till en åklagare, utreder hen fallet och bestämmer om ärendet
+    ska föras vidare till domstol.
+  ru: Когда полиция передаёт дело прокурору, он изучает его и решает, нужно ли направить дело дальше в
+    суд.
+  scene_id: scene-5
+  visual_cue: Show Åklagarens prövning using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecutor
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0096-s001.wav
+  start_seconds: 153.041667
+  end_seconds: 163.978265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecutor.png
+- sentence_id: hb-c06-u0096-s002
+  sv: Åklagaren kan bestämma att inget åtal väcks, om till exempel brottet är ringa eller man redan har
+    gjort en förlikning i ärendet.
+  ru: Прокурор может решить не предъявлять обвинение, например если преступление незначительно или по
+    делу уже достигнуто примирение.
+  scene_id: scene-5
+  visual_cue: Show Åklagarens prövning using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecutor
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0096-s002.wav
+  start_seconds: 165.75
+  end_seconds: 176.547279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecutor.png
+- sentence_id: hb-c06-u0096-s003
+  sv: Åklagaren kan också påföra gärningsmannen böter eller föreslå förlikning mellan parterna.
+  ru: Прокурор также может назначить виновнику штраф или предложить сторонам примирение.
+  scene_id: scene-5
+  visual_cue: Show Åklagarens prövning using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prosecutor
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-forundersokning/narration/hb-c06-u0096-s003.wav
+  start_seconds: 178.333333
+  end_seconds: 185.926259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-forundersokning/pictures/prosecutor.png
+render:
+  music_path: studio/media/hb-c06-forundersokning/sources/music-bed.flac
+  background_image: studio/media/hb-c06-forundersokning/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.6604166666666667
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Vantaan oikeustalo - Tikkurila.jpg — Paju · CC BY-SA 3.0
+    - Wood and Metal and Water — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Supreme Court of Finland.jpg — Tomisti · CC BY-SA 3.0
+    - Finnish police car on Kaivokatu.jpg — JIP · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal claims.
+  - Photographs proportionally resized for foreground; background darkened,blurred,cropped and moved continuously;
+    photo licenses retained.
+  - Original pictorial process diagrams illustrate only selected source statements.
+  - Music faded,ducked,level-adjusted and repeated with4-second equal-power crossfades if required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Vantaan_oikeustalo_-_Tikkurila.jpg
+    description: "Former Vantaa court house, located in Tikkurila, Vantaa. \nHome of the Vantaa district\
+      \ court, later named as Itä-Uusimaa district court (until March 2020 when it moved to new address).\
+      \ Next building to the left was the main police station of Itä-Uudenmaa Police (which also moved\
+      \ elsewhere in January 2020). This building will be demolished, e.g. due to indoor air quality problems,\
+      \ and new court / police house is expected to be build in few years."
+    license: CC BY-SA 3.0

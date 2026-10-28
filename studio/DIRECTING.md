@@ -41,6 +41,10 @@ Chapter 5 uses a muted burgundy rights palette: panel/background tint `#39252b`,
 Swedish text `#faf3e8`, Russian text and secondary labels `#e2c8cf`, highlights
 `#dfbd82`, and separators `#70515a`. Carry it through all Chapter 5 episodes.
 
+Chapter 6 uses a muted indigo justice palette: panel/background tint `#252747`,
+Swedish text `#faf3e8`, Russian text and secondary labels `#cbd1ec`, highlights
+`#e3c58b`, and separators `#515a82`. Carry it through all Chapter 6 episodes.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its

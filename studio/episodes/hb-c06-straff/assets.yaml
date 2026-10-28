@@ -1,0 +1,537 @@
+schema_version: 1
+section_id: hb-c06-straff
+assets:
+- asset_id: episode_background
+  kind: background
+  files:
+  - path: studio/media/hb-c06-straff/sources/background.jpg
+    sha256: 7f0aba78dd33a40e1a747e48acf93bec0c026a4e87003dcaaa9611f69f706a67
+    bytes: 3170367
+  source_url: https://commons.wikimedia.org/wiki/File:Helsingin_vankila_2019.jpg
+  creator: Seppo Palander
+  reuse_terms: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: 'Helsingin vankila 2019.jpg — Seppo Palander · CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Helsingin_vankila_2019.jpg
+    License: https://creativecommons.org/licenses/by-sa/4.0. Cropped, darkened, blurred and pan/zoom adapted;
+    photograph adaptation retains CC BY-SA 4.0.'
+  relevance_verification: 'This is a photo of a monument in Finland identified by the ID ''Helsinki Prison''
+    (Q5710538) -  RKY: 939 Verified Helsinki prison exterior,2019; illustrative penal institution, not
+    a depicted individual or new factual claim. Identity and reuse terms checked against Commons imageinfo
+    metadata; not historical-event evidence.'
+- asset_id: visual_authorities
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c06-straff/pictures/authorities.png
+    sha256: 7733ff1ac022585afe006cc55b37ef4226b6a4ad48dc9a01f4c3642f44fe6dcc
+    bytes: 1253189
+  source_url: https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland.jpg
+  creator: Tomisti
+  reuse_terms: CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/
+  required_credits: Supreme Court of Finland.jpg — Tomisti. CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Finland.jpg
+    http://creativecommons.org/licenses/by-sa/3.0/. Proportionally resized, original image preserved;
+    original license retained.
+  relevance_verification: 'Supreme Court of Finland building,Helsinki,used as a verified illustration
+    of a Finnish judicial institution,not a claim that every described case is decided there. Source metadata:
+    Supreme Court of Finland in Helsinki'
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    transform: Proportional downscale; complete source photograph preserved.
+- asset_id: visual_prison
+  kind: foreground
+  visual_type: photograph
+  files:
+  - path: studio/media/hb-c06-straff/pictures/prison.png
+    sha256: b09651bd81eb03e8d3febdbe651e995421db5aa3b4793e264a4e092ffdef4d78
+    bytes: 873670
+  source_url: https://commons.wikimedia.org/wiki/File:Helsingin_vankila_2020-03-06.jpg
+  creator: Joneikifi
+  reuse_terms: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0
+  required_credits: Helsingin vankila 2020-03-06.jpg — Joneikifi. CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Helsingin_vankila_2020-03-06.jpg
+    https://creativecommons.org/licenses/by-sa/4.0. Proportionally resized, original image preserved;
+    original license retained.
+  relevance_verification: 'Verified aerial architectural view of Helsinki prison,2020. Commonsmetadata
+    explicitly lists HelsinkiPrison,2020aerialphotographsofFinland,2020blackandwhitephotographs,andblackandwhiteaerialphotographsofHelsinki;
+    creatorJoneikifi andcapture2020-03-06. Illustrates prisonasonepenalpossibility,notautomaticimprisonment
+    oranyprisoneridentity. Genuinelydifferentphotographfromdecorativebackground. Source metadata: This
+    is a photo of a monument in Finland identified by the ID ''Ristikkotie 11b'' (Q98432371)'
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    transform: Proportional downscale; complete source photograph preserved.
+- asset_id: visual_compensation
+  kind: foreground
+  visual_type: diagram
+  files:
+  - path: studio/media/hb-c06-straff/pictures/compensation.png
+    sha256: 612cf766aa7bf5021bc38e4a32adbf4a75910764072f7c03d6aca55511029523
+    bytes: 25004
+  creator: Homebrew video studio
+  reuse_terms: Original schematic artwork under repository MIT license; source wording retains original
+    publisher terms.
+  required_credits: 'Original schematic diagram: Homebrew video studio. Source wording credited in sources.yaml
+    and accompanying CREDITS.md.'
+  relevance_verification: Original pictorial diagram reviewed against exact source records hb-c06-u0112-s001,
+    hb-c06-u0112-s002, hb-c06-u0112-s003. Objects and relationships visualize only selected source statements;
+    schematic comparisons contain no currency amounts or extra legal rules.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    diagram_specification: studio/episodes/hb-c06-straff/pictorial-plan.json
+    source_sentence_ids:
+    - hb-c06-u0112-s001
+    - hb-c06-u0112-s002
+    - hb-c06-u0112-s003
+- asset_id: visual_law
+  kind: foreground
+  visual_type: diagram
+  files:
+  - path: studio/media/hb-c06-straff/pictures/law.png
+    sha256: dd8105795df614d54f7cebb83b4cbceb2e1fa1dbc745f8c4d826637db25cc24c
+    bytes: 20508
+  creator: Homebrew video studio
+  reuse_terms: Original schematic artwork under repository MIT license; source wording retains original
+    publisher terms.
+  required_credits: 'Original schematic diagram: Homebrew video studio. Source wording credited in sources.yaml
+    and accompanying CREDITS.md.'
+  relevance_verification: Original pictorial diagram reviewed against exact source records hb-c06-u0113-s001.
+    Objects and relationships visualize only selected source statements; schematic comparisons contain
+    no currency amounts or extra legal rules.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    diagram_specification: studio/episodes/hb-c06-straff/pictorial-plan.json
+    source_sentence_ids:
+    - hb-c06-u0113-s001
+- asset_id: visual_registry
+  kind: foreground
+  visual_type: diagram
+  files:
+  - path: studio/media/hb-c06-straff/pictures/registry.png
+    sha256: b178a77888b1233ca3ac16bf5203bb42b946e7646ca4cd2203383d7ba2ce9f80
+    bytes: 25216
+  creator: Homebrew video studio
+  reuse_terms: Original schematic artwork under repository MIT license; source wording retains original
+    publisher terms.
+  required_credits: 'Original schematic diagram: Homebrew video studio. Source wording credited in sources.yaml
+    and accompanying CREDITS.md.'
+  relevance_verification: Original pictorial diagram reviewed against exact source records hb-c06-u0114-s001,
+    hb-c06-u0114-s002, hb-c06-u0114-s003, hb-c06-u0115-s001, hb-c06-u0115-s002. Objects and relationships
+    visualize only selected source statements; schematic comparisons contain no currency amounts or extra
+    legal rules.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    diagram_specification: studio/episodes/hb-c06-straff/pictorial-plan.json
+    source_sentence_ids:
+    - hb-c06-u0114-s001
+    - hb-c06-u0114-s002
+    - hb-c06-u0114-s003
+    - hb-c06-u0115-s001
+    - hb-c06-u0115-s002
+- asset_id: visual_fine_procedure
+  kind: foreground
+  visual_type: diagram
+  files:
+  - path: studio/media/hb-c06-straff/pictures/fine_procedure.png
+    sha256: 218257c5b2d402f8359618e22a699e1c44babf2301c47d5286d81194af8860d5
+    bytes: 32782
+  creator: Homebrew video studio
+  reuse_terms: Original schematic artwork under repository MIT license; source wording retains original
+    publisher terms.
+  required_credits: 'Original schematic diagram: Homebrew video studio. Source wording credited in sources.yaml
+    and accompanying CREDITS.md.'
+  relevance_verification: Original pictorial diagram reviewed against exact source records hb-c06-u0116-s001,
+    hb-c06-u0116-s002, hb-c06-u0116-s003, hb-c06-u0116-s004. Objects and relationships visualize only
+    selected source statements; schematic comparisons contain no currency amounts or extra legal rules.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    diagram_specification: studio/episodes/hb-c06-straff/pictorial-plan.json
+    source_sentence_ids:
+    - hb-c06-u0116-s001
+    - hb-c06-u0116-s002
+    - hb-c06-u0116-s003
+    - hb-c06-u0116-s004
+- asset_id: visual_income
+  kind: foreground
+  visual_type: diagram
+  files:
+  - path: studio/media/hb-c06-straff/pictures/income.png
+    sha256: a1218ab7dd51cf0f0d633c596f87ae1ac75f5290bd91cfb69d878ce902faedd0
+    bytes: 26891
+  creator: Homebrew video studio
+  reuse_terms: Original schematic artwork under repository MIT license; source wording retains original
+    publisher terms.
+  required_credits: 'Original schematic diagram: Homebrew video studio. Source wording credited in sources.yaml
+    and accompanying CREDITS.md.'
+  relevance_verification: Original pictorial diagram reviewed against exact source records hb-c06-u0117-s001,
+    hb-c06-u0117-s002, hb-c06-u0117-s003, hb-c06-u0117-s004, hb-c06-u0117-s005, hb-c06-u0117-s006. Objects
+    and relationships visualize only selected source statements; schematic comparisons contain no currency
+    amounts or extra legal rules.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_foregrounds.py
+    diagram_specification: studio/episodes/hb-c06-straff/pictorial-plan.json
+    source_sentence_ids:
+    - hb-c06-u0117-s001
+    - hb-c06-u0117-s002
+    - hb-c06-u0117-s003
+    - hb-c06-u0117-s004
+    - hb-c06-u0117-s005
+    - hb-c06-u0117-s006
+- asset_id: music_bed
+  kind: music
+  files:
+  - path: studio/media/hb-c06-straff/sources/music.mp3
+    sha256: ef3867bf115a62f54fff88bdcc59d22e44197e5acc505174b04e6087964dda9b
+    bytes: 14965189
+  - path: studio/media/hb-c06-straff/sources/music-bed.flac
+    sha256: f5cdc695385c22fa9083a55a0d2fa3ddce82a32486158ab972c9f96d4ffb021a
+    bytes: 52470085
+    seconds: 305.7083333333333
+    sample_rate: 48000
+    channels: 2
+  title: String Impromptu Number 1
+  source_url: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1300004
+  source_audio_url: https://incompetech.com/music/royalty-free/mp3-royaltyfree/String%20Impromptu%20Number%201.mp3
+  creator: Kevin MacLeod (incompetech.com)
+  reuse_terms: CC BY 4.0 https://creativecommons.org/licenses/by/4.0/
+  required_credits: '"String Impromptu Number 1" Kevin MacLeod (incompetech.com). Licensed under Creative
+    Commons: By Attribution 4.0 License https://creativecommons.org/licenses/by/4.0/. Excerpted, faded,
+    level-adjusted.'
+  relevance_verification: Distinct calm instrumental track. Composer catalogue attribution and downloadable
+    master verified; no narration or vocals specified by source. Final perceptual balance remains complete-video
+    review.
+  creation_method:
+    tool: studio/episodes/hb-c06-straff/prepare_assets.py
+    master_seconds: 374.073475
+    prepared_seconds: 305.7083333333333
+    crossfade_seconds: 4
+    crossfade_repeats: 0
+    pre_normalization_peak: 0.9885146021842957
+    headroom_gain: 0.9913864679737849
+    format: 48,000 Hz stereo PCM24 FLAC
+- asset_id: narration
+  kind: narration
+  files:
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0110-s001.wav
+    sha256: 4223ce597e72b2e184638abf281602a7cb1604969c240ca16ead321e26513670
+    bytes: 866348
+    seconds: 9.822040816326531
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0110-s001
+    peak: 0.342376708984375
+    generation_seconds: 51.02085443492979
+    tts_input: Olika myndigheter, polisen, åklagaren och domstolarna kan utdöma straff åt dem som gjort
+      sig skyldiga till brott.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0110-s002.wav
+    sha256: 8adcd8813061bf5aa00b52e458aeb2f1d880c0e11075d1633732f869c2a3b534
+    bytes: 614444
+    seconds: 6.965986394557823
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0110-s002
+    peak: 0.33251953125
+    generation_seconds: 29.99821064702701
+    tts_input: I Finland får bara den som begått brottet ett straff, inte förbrytarens familj.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0111-s001.wav
+    sha256: b2eb18a356f6b7e0fa0d12aaad2f60344cf13b32c3050d756c1de2885a82f08e
+    bytes: 718892
+    seconds: 8.150204081632653
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0111-s001
+    peak: 0.354400634765625
+    generation_seconds: 35.5015778390225
+    tts_input: Om brottet inte är särskilt allvarligt, kan straffet vara böter, som betalas till staten.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0111-s002.wav
+    sha256: 5501c45e74a6b908b922f7d4834c9b081e31261e8f464030f17db3b60513493e
+    bytes: 651308
+    seconds: 7.383945578231293
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0111-s002
+    peak: 0.437225341796875
+    generation_seconds: 37.50028072705027
+    tts_input: Andra vanliga straff i Finland är fängelse, samhällstjänst och övervakningsstraff.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0111-s003.wav
+    sha256: cfe962f74da559cb49b4621302589a01782f81f33a299efcc2576b08ff887c90
+    bytes: 737324
+    seconds: 8.359183673469389
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0111-s003
+    peak: 0.34063720703125
+    generation_seconds: 34.95307975402102
+    tts_input: Ett fängelsestraff kan vara ovillkorligt, varvid straffet avtjänas i fängelse, eller villkorligt.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0111-s004.wav
+    sha256: 039f3c11f5768e12ba2f615d2f2718837b7698ed9b6281594281992db270b35c
+    bytes: 743468
+    seconds: 8.428843537414966
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0111-s004
+    peak: 0.377227783203125
+    generation_seconds: 37.35956603602972
+    tts_input: Villkorligt fängelsestraff betyder att den dömde inte hamnar direkt i fängelse, utan får
+      en prövotid.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0111-s005.wav
+    sha256: f09f5c8d86cae61fb4aaa691ab0aca38d3f8c59a9e7a91dcb17ac2df433a30c7
+    bytes: 804908
+    seconds: 9.125442176870749
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0111-s005
+    peak: 0.343841552734375
+    generation_seconds: 33.940247153979726
+    tts_input: Om hen inte gör sig skyldig till nya brott under prövotiden, behöver hen inte avtjäna straffet
+      i fängelse.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0112-s001.wav
+    sha256: c8bf49838d5cbde8b500b5cef1000f05b1d6b369676622d9d546690ec8462ad6
+    bytes: 540716
+    seconds: 6.130068027210885
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0112-s001
+    peak: 0.322296142578125
+    generation_seconds: 20.269147319020703
+    tts_input: Utöver straffet kan man bli tvungen att betala skadestånd till offren.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0112-s002.wav
+    sha256: f312ada0c7d43685a685dde2dc7c61cad341a6889934d0f7091bc74b67bd80d0
+    bytes: 675884
+    seconds: 7.662585034013605
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0112-s002
+    peak: 0.331573486328125
+    generation_seconds: 28.442715547047555
+    tts_input: En utländsk medborgare som dömts för ett brott kan i vissa fall förvisas från Finland.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0112-s003.wav
+    sha256: 15f9f755eff1f255b76ede0689c6b512574bf49cdf08da66b69c4389c9396b5f
+    bytes: 485420
+    seconds: 5.50312925170068
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0112-s003
+    peak: 0.3411865234375
+    generation_seconds: 19.54758885107003
+    tts_input: Då förfaller hens uppehållstillstånd och hen måste lämna landet.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0113-s001.wav
+    sha256: d92c6b1702adcf2c8319b20de05f1fa3a28cdace4503afab08706392d9f7ce52
+    bytes: 319532
+    seconds: 3.622312925170068
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0113-s001
+    peak: 0.428741455078125
+    generation_seconds: 14.763721991097555
+    tts_input: I Finland tillämpas inte dödsstraff.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0114-s001.wav
+    sha256: f2d3b6de47886fb18a6b6eb3fadc09f15d0db734808af4e3ce1d0ce0d72d5323
+    bytes: 546860
+    seconds: 6.199727891156463
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0114-s001
+    peak: 0.337646484375
+    generation_seconds: 23.672058325028047
+    tts_input: Om en person begår ett brott, får hen en anteckning i straffregistret.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0114-s002.wav
+    sha256: af5f23d78fe8029b0111f93fb16dfeba6998d0a455ea428e4d91635f5d6a78f8
+    bytes: 620588
+    seconds: 7.035646258503402
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0114-s002
+    peak: 0.346405029296875
+    generation_seconds: 26.910505258012563
+    tts_input: Straffregistret är en databas med uppgifter om alla som är dömda för brott.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0114-s003.wav
+    sha256: c02d46f293ad085ce57812070bfbeefd0a86b7b46d399961527fafb86b11f6cd
+    bytes: 669740
+    seconds: 7.592925170068027
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0114-s003
+    peak: 0.4598388671875
+    generation_seconds: 22.93673292407766
+    tts_input: Böter ger i allmänhet ingen anteckning i straffregistret, medan alla andra straff gör det.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0115-s001.wav
+    sha256: c8f7182acb721870afa561dbea578311156fad0e08c604f851cdcc5382e5e003
+    bytes: 946220
+    seconds: 10.727619047619047
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0115-s001
+    peak: 0.326568603515625
+    generation_seconds: 28.078620637999848
+    tts_input: En anteckning i straffregistret kan hindra eller göra det svårare för en person att få
+      uppehållstillstånd och vissa arbeten.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0115-s002.wav
+    sha256: e15bc09d557f78a1fdfc8951288cd5b014ae96ec6015ccee0b539af2f81bf818
+    bytes: 620588
+    seconds: 7.035646258503402
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0115-s002
+    peak: 0.464874267578125
+    generation_seconds: 15.768019017996266
+    tts_input: Hur länge uppgifterna sparas i straffregistret beror på hur strängt straffet är.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0116-s001.wav
+    sha256: 6120f8b94b3da2a4d4c6a80a94c74699f3f942c4bdae8ff1c02b8ed04638aac5
+    bytes: 817196
+    seconds: 9.264761904761905
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0116-s001
+    peak: 0.3021240234375
+    generation_seconds: 23.185635764035396
+    tts_input: Om det är fråga om ett lindrigt brott, kan polisen eller åklagaren utdöma ordningsböter
+      eller dagsböter.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0116-s002.wav
+    sha256: fd7377256a10f59d690ed05a1b3094f01dea2cd6d070b369c6d335ee0a2a3352
+    bytes: 503852
+    seconds: 5.712108843537415
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0116-s002
+    peak: 0.4239501953125
+    generation_seconds: 14.893160495907068
+    tts_input: Då inleds ingen straffprocess och ärendet behandlas inte i rätten.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0116-s003.wav
+    sha256: e48679ea1f754349288f67a248f1aa577fc02a276de693318837b019dd4af9ff
+    bytes: 933932
+    seconds: 10.588299319727891
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0116-s003
+    peak: 0.3328857421875
+    generation_seconds: 27.941456077969633
+    tts_input: Både den som böterna utdöms till och det eventuella offret för brottet ska gå med på att
+      ärendet behandlas i ett bötesförfarande.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0116-s004.wav
+    sha256: 7190fee92d98f134f57ed3e50aeca73bfa7872b0108f8dcec6c3f025e3e66ebe
+    bytes: 835628
+    seconds: 9.47374149659864
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0116-s004
+    peak: 0.380615234375
+    generation_seconds: 26.75800721300766
+    tts_input: Om antingen gärningsmannen eller offret motsätter sig ett bötesförfarande, inleds en straffprocess
+      i ärendet.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s001.wav
+    sha256: ab834d807894ca727523729c2cc29c907898fb499c0c842ca24d8345a7f4331f
+    bytes: 669740
+    seconds: 7.592925170068027
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s001
+    peak: 0.454071044921875
+    generation_seconds: 21.845265810959972
+    tts_input: Beloppet av en dagsbot beror både på hur allvarligt brottet är och på personens inkomster.
+    generation_run: Initial complete episode source-order stream, NumPy seed 42
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s002.wav
+    sha256: 2594ab4a0c2682670a82b00c5c04e26d6bb3a349b8b82ab34bd16bd44437fa44
+    bytes: 780332
+    seconds: 8.846802721088435
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s002
+    peak: 0.4444580078125
+    generation_seconds: 22.09608535899315
+    tts_input: På basis av brottets allvarlighetsgrad bestämmer myndigheten för hur många dagar man måste
+      betala böter.
+    generation_run: Resumed only missing source indices after verified143 termination; NumPyseed42 reset
+      per retained run,ONNX1thread,completedpriorWAVs unchanged.
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s003.wav
+    sha256: 7e5c71a08deac57669537f840d16c1c67b868a3dbdbd9180a5551afc29895b0d
+    bytes: 380972
+    seconds: 4.31891156462585
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s003
+    peak: 0.4171142578125
+    generation_seconds: 9.96790854795836
+    tts_input: Dagsbotens belopp beräknas utifrån inkomsterna.
+    generation_run: Resumed only missing source indices after verified143 termination; NumPyseed42 reset
+      per retained run,ONNX1thread,completedpriorWAVs unchanged.
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s004.wav
+    sha256: c4d08faa93c2249a25ef588c6c35b20d42f0b9b014c770c3d3dfd6dc60936920
+    bytes: 749612
+    seconds: 8.498503401360544
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s004
+    peak: 0.247039794921875
+    generation_seconds: 20.898603630950674
+    tts_input: En person med höga inkomster måste alltså betala mycket mer i böter än en person med låga
+      inkomster.
+    generation_run: Resumed only missing source indices after verified143 termination; NumPyseed42 reset
+      per retained run,ONNX1thread,completedpriorWAVs unchanged.
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s005.wav
+    sha256: b0cdd7167b05d6e3ee707afe07ef7c216306effcaee0d057e602155b2d0f98b5
+    bytes: 1394732
+    seconds: 15.81278911564626
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s005
+    peak: 0.390350341796875
+    generation_seconds: 43.92389176401775
+    tts_input: Tanken är att det skulle vara orättvist om böterna var lika stora för alla, eftersom det
+      i sådana fall skulle vara ett strängare straff för en låginkomsttagare än för en höginkomsttagare.
+    generation_run: Resumed only missing source indices after verified143 termination; NumPyseed42 reset
+      per retained run,ONNX1thread,completedpriorWAVs unchanged.
+  - path: studio/media/hb-c06-straff/narration/hb-c06-u0117-s006.wav
+    sha256: 269e13493ea4e5a88c22c63d47809a568a4b47cc6907df4520b006664f8a6db2
+    bytes: 583724
+    seconds: 6.617687074829932
+    sample_rate: 44100
+    channels: 1
+    sentence_id: hb-c06-u0117-s006
+    peak: 0.309417724609375
+    generation_seconds: 17.847938628983684
+    tts_input: Dagsböter kan utdömas för till exempel snatteri och de flesta trafikbrott.
+    generation_run: Resumed only missing source indices after verified143 termination; NumPyseed42 reset
+      per retained run,ONNX1thread,completedpriorWAVs unchanged.
+  creator: Local synthesis with Supertonic 3 by Supertone
+  reuse_terms: Code MIT; model OpenRAIL-M. Model licensor claims no rights in generated output; retain
+    license and restrictions at studio/media/models/supertonic3/LICENSE.
+  required_credits: 'Voluntary credit: local Swedish narration Supertonic 3 (Supertone), F1.'
+  source_url: https://huggingface.co/supertone-oss-archive/supertonic-3/tree/aafc6e32416a594460b32413efc49d7fe4ce6d46
+  relevance_verification: One measured clip per source sentence in exact source order; script records
+    meaning-preserving speech expansions. No listening or user approval is claimed; review with complete
+    video.
+  review_status: pending_complete_video_review
+  creation_method:
+    tool: studio/tools/audition.py
+    engine: supertonic 1.3.1
+    model: supertonic-3
+    model_revision: aafc6e32416a594460b32413efc49d7fe4ce6d46
+    voice: F1
+    language: sv
+    total_steps: 32
+    speed: 0.95
+    seed: 42
+    seed_scope: NumPy seed 42 per generation invocation; source order within each invocation. Interruptions
+      and targeted retakes restart the seed; see file generation_run, narration-restart.json and retake-history.json
+      when present
+    device: local CPU ONNX; Linux x86_64
+    intra_op_num_threads:
+    - 1
+    format: 44,100 Hz mono PCM16 WAV

@@ -1,0 +1,1025 @@
+schema_version: 1
+section_id: hb-c06-god-forvaltning
+chapter_id: hb-c06
+title_sv: God förvaltning och korruption
+title_ru: Надлежащее управление и коррупция
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-god-forvaltning.yaml
+example_only: false
+source_section_sha256: 37f36369857d0b6086794d1bb48f68306d586f84133fd28182c34fd162d03f00
+translation_file_sha256: ba784b1497ef3254d6225f38f03e8faa3ebcef7de8758c044f6c2d02d40ffcda
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual title for3seconds; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Preserve every source sentence and list fragment once, in original order; scenes reflect consecutive
+    source units.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080,24fps, fixed right bilingual panel; Liberation Sans Bold48/Regular40; indigo Chapter6
+    palette #252747/#faf3e8/#cbd1ec/#e3c58b/#515a82.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before speech; pause1.5seconds,2.2at topic boundary and2.5for long
+    pairs. Timing follows measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:13 Helsinki City Hall.jpg by Derbrauni continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=3.5467261904761904.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Supertonic 3 / F1 Swedish,32 steps,speed0.95,seed42,44100Hz mono PCM16. Initial
+    clips used two ONNX intra-op threads; the selected diagnostic-led retake used one. Per-clip metrics
+    and retake-history.json record actual settings. Pronunciation and overall mix await complete-video
+    listening.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Inner Light by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 576.209 seconds; prepared lossless stereo bed 496.542 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Topic-specific institution photographs and original pictorial process diagrams; no photographed
+    person assigned wrongdoing. At least50% measured body coverage; no plain typography counted.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source/media credits,15secondspercard; full links and adaptation notices inCREDITS.md.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception requested. Source remains archived; no current law or new factual claim added.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: administration
+  description: Finnish authorities and good administration
+- id: corruption
+  description: Anonymous pictorial examples of corruption, not accusations against photographed people
+- id: equality
+  description: Equal treatment and income distribution as source-described civic goals
+- id: competence
+  description: Law determines the authority competent to decide
+- id: rules
+  description: A bounded decision process treats comparable cases equally
+- id: principles
+  description: Equality, impartiality, lawful purpose and proportionality
+- id: advice
+  description: Free advice and referral to the competent authority
+- id: bribery
+  description: Buying favourable treatment is not a lawful route
+- id: discretion
+  description: Whole-situation assessment within legal bounds
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct reserved topic-related institutional photograph, continuous decoration.
+  fallback: Use another verified licensed institutional photograph; narration unchanged.
+- id: music_bed
+  kind: music
+  description: Coordinator-reserved distinct calm instrumental track.
+  fallback: Reserve another distinct calm licensed instrumental source.
+- id: narration
+  kind: narration
+  description: LocalF1Swedish exact body narration, one complete clip per source sentence.
+  fallback: Use a meaning-preserving speech-only expansion if diagnostics identify a specific issue; no
+    cloud synthesis.
+- id: picture_photo_government
+  kind: foreground
+  description: Verified institution photo
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_corruption
+  kind: foreground
+  description: 'Original pictorial source-based schematic: corruption'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_equality
+  kind: foreground
+  description: 'Original pictorial source-based schematic: equality'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_competence
+  kind: foreground
+  description: 'Original pictorial source-based schematic: competence'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_rules
+  kind: foreground
+  description: 'Original pictorial source-based schematic: rules'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_principles
+  kind: foreground
+  description: 'Original pictorial source-based schematic: principles'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_advice
+  kind: foreground
+  description: 'Original pictorial source-based schematic: advice'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_discretion
+  kind: foreground
+  description: 'Original pictorial source-based schematic: discretion'
+  fallback: Use a truthful source-based diagram and record any coverage shortfall rather than unrelated
+    imagery.
+- id: picture_photo_tax
+  kind: foreground
+  description: A photographed Finnish tax-office exterior in Lohja illustrates taxation and equal treatment
+    by a tax office. Not evidence of a particular tax decision, staff conduct, bribery or wrongdoing.
+  fallback: Use the existing source-backed pictorial explanation; narration unchanged.
+- id: picture_photo_speed
+  kind: foreground
+  description: Finnish speed-camera warning sign provides actual road-enforcement context for the source
+    example of proportional speeding fines. It does not depict a specific violation or state any current
+    fine amount.
+  fallback: Use the existing source-backed pictorial explanation; narration unchanged.
+sentences:
+- sentence_id: hb-c06-u0013-s001
+  sv: Finlands rättssystem avser det sätt som rätten fungerar på i Finland och som myndigheterna använder
+    för att övervaka utövandet av rätten.
+  ru: Правовая система Финляндии означает то, как действует право в Финляндии и как органы власти контролируют
+    применение права.
+  scene_id: administration
+  visual_cue: Finnish authorities and good administration. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_government
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0013-s001.wav
+  start_seconds: 3.25
+  end_seconds: 15.370816
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_government.png
+  render_caption: false
+- sentence_id: hb-c06-u0013-s002
+  sv: Finland är ett land med god förvaltning.
+  ru: Финляндия — страна с надлежащим управлением.
+  scene_id: administration
+  visual_cue: Finnish authorities and good administration. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_government
+  text_highlights:
+  - god förvaltning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0013-s002.wav
+  start_seconds: 17.125
+  end_seconds: 21.025952
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_government.png
+  render_caption: false
+- sentence_id: hb-c06-u0013-s003
+  sv: God förvaltning betyder att samhället fungerar smidigt och är jämlikt och att myndigheterna verkar
+    objektivt och i proportion till det eftersträvade målet.
+  ru: Надлежащее управление означает, что общество функционирует слаженно и является равноправным, а органы
+    власти действуют объективно и соразмерно поставленной цели.
+  scene_id: administration
+  visual_cue: Finnish authorities and good administration. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_government
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0013-s003.wav
+  start_seconds: 22.791667
+  end_seconds: 35.748401
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_government.png
+  render_caption: false
+- sentence_id: hb-c06-u0013-s004
+  sv: Människorna kan utöva sina rättigheter och skyldigheter, och det förekommer lite korruption.
+  ru: Люди могут осуществлять свои права и выполнять обязанности, а коррупция встречается редко.
+  scene_id: administration
+  visual_cue: Finnish authorities and good administration. Fixed source-backed foreground picture; exact
+    Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_government
+  text_highlights:
+  - korruption
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0013-s004.wav
+  start_seconds: 37.5
+  end_seconds: 45.510884
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_government.png
+  render_caption: false
+- sentence_id: hb-c06-u0014-s001
+  sv: Korruption betyder att myndigheter kan mutas och inte alltid följer regler eller lagar i sitt arbete.
+  ru: Коррупция означает, что органы власти могут быть подкуплены и не всегда соблюдают правила или законы
+    в своей работе.
+  scene_id: corruption
+  visual_cue: Anonymous pictorial examples of corruption, not accusations against photographed people.
+    Fixed source-backed foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_corruption
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0014-s001.wav
+  start_seconds: 48.0
+  end_seconds: 56.428844
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/corruption.png
+  render_caption: false
+- sentence_id: hb-c06-u0014-s002
+  sv: Korruption är till exempel om någon ger eller får en gentjänst för pengar eller andra förmåner som
+    hen inte har laglig rätt till.
+  ru: Коррупция — это, например, когда кто-либо оказывает или получает ответную услугу за деньги или другие
+    выгоды, на которые не имеет законного права.
+  scene_id: corruption
+  visual_cue: Anonymous pictorial examples of corruption, not accusations against photographed people.
+    Fixed source-backed foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_corruption
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0014-s002.wav
+  start_seconds: 58.208333
+  end_seconds: 69.005612
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/corruption.png
+  render_caption: false
+- sentence_id: hb-c06-u0014-s003
+  sv: Korruption är också till exempel att favorisera släktingar eller vänner i beslutsfattande eller
+    att en politiker deltar i beslutsfattande som direkt gynnar ett företag som hen äger.
+  ru: Коррупция — это также, например, предоставление преимуществ родственникам или друзьям при принятии
+    решений либо участие политика в принятии решений, непосредственно выгодных предприятию, которым он
+    владеет.
+  scene_id: corruption
+  visual_cue: Anonymous pictorial examples of corruption, not accusations against photographed people.
+    Fixed source-backed foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_corruption
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0014-s003.wav
+  start_seconds: 70.791667
+  end_seconds: 85.838197
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/corruption.png
+  render_caption: false
+- sentence_id: hb-c06-u0015-s001
+  sv: I Finland är målet att skapa ett mer jämlikt samhälle.
+  ru: В Финляндии цель состоит в создании более равноправного общества.
+  scene_id: equality
+  visual_cue: Equal treatment and income distribution as source-described civic goals. Fixed source-backed
+    foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_equality
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0015-s001.wav
+  start_seconds: 88.291667
+  end_seconds: 93.237517
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/equality.png
+  render_caption: false
+- sentence_id: hb-c06-u0015-s002
+  sv: Därför till exempel jämnas inkomstskillnaderna mellan människor ut med hjälp av beskattning.
+  ru: Поэтому, например, различия в доходах между людьми сглаживаются с помощью налогообложения.
+  scene_id: equality
+  visual_cue: A photographed Finnish tax-office exterior in Lohja illustrates taxation and equal treatment
+    by a tax office. Not evidence of a particular tax decision, staff conduct, bribery or wrongdoing.
+    Keep exact bilingual text fixed; no caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_tax
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0015-s002.wav
+  start_seconds: 95.0
+  end_seconds: 103.080544
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_tax.png
+  render_caption: false
+- sentence_id: hb-c06-u0015-s003
+  sv: Jämlika inkomster ökar människornas tillit till samhället och minskar korruption.
+  ru: Равенство доходов повышает доверие людей к обществу и уменьшает коррупцию.
+  scene_id: equality
+  visual_cue: A photographed Finnish tax-office exterior in Lohja illustrates taxation and equal treatment
+    by a tax office. Not evidence of a particular tax decision, staff conduct, bribery or wrongdoing.
+    Keep exact bilingual text fixed; no caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_tax
+  text_highlights:
+  - korruption
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0015-s003.wav
+  start_seconds: 104.833333
+  end_seconds: 112.008299
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_tax.png
+  render_caption: false
+- sentence_id: hb-c06-u0015-s004
+  sv: Finland hör till ett av de minst korrumperade länderna i världen.
+  ru: Финляндия относится к числу наименее коррумпированных стран мира.
+  scene_id: equality
+  visual_cue: Equal treatment and income distribution as source-described civic goals. Fixed source-backed
+    foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_equality
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0015-s004.wav
+  start_seconds: 113.791667
+  end_seconds: 119.782415
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/equality.png
+  render_caption: false
+- sentence_id: hb-c06-u0015-s005
+  sv: Missbruk förekommer ibland också i Finland, men man försöker ingripa effektivt i det.
+  ru: Злоупотребления иногда встречаются и в Финляндии, но с ними стараются эффективно бороться.
+  scene_id: equality
+  visual_cue: Equal treatment and income distribution as source-described civic goals. Fixed source-backed
+    foreground picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_equality
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0015-s005.wav
+  start_seconds: 121.541667
+  end_seconds: 129.204252
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/equality.png
+  render_caption: false
+- sentence_id: hb-c06-u0016-s001
+  sv: I Finland regleras alla myndigheters verksamhet av förvaltningslagen som allmän lag.
+  ru: В Финляндии деятельность всех органов власти регулируется законом об административной деятельности
+    (förvaltningslagen) как общим законом.
+  scene_id: competence
+  visual_cue: Law determines the authority competent to decide. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_competence
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0016-s001.wav
+  start_seconds: 131.666667
+  end_seconds: 139.329252
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/competence.png
+  render_caption: false
+- sentence_id: hb-c06-u0016-s002
+  sv: Dessutom finns det egna lagar för många myndigheters verksamhet som föreskriver om vilka ärenden
+    som ingår i den aktuella myndighetens behörighet.
+  ru: Кроме того, для деятельности многих органов власти существуют собственные законы, определяющие,
+    какие дела относятся к компетенции соответствующего органа.
+  scene_id: competence
+  visual_cue: Law determines the authority competent to decide. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_competence
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0016-s002.wav
+  start_seconds: 141.083333
+  end_seconds: 153.13449
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/competence.png
+  render_caption: false
+- sentence_id: hb-c06-u0016-s003
+  sv: Med behörighet avses de frågor som den aktuella myndigheten har makt att fatta beslut i.
+  ru: Под компетенцией понимаются вопросы, по которым соответствующий орган власти имеет полномочия принимать
+    решения.
+  scene_id: competence
+  visual_cue: Law determines the authority competent to decide. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_competence
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0016-s003.wav
+  start_seconds: 154.916667
+  end_seconds: 162.230952
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/competence.png
+  render_caption: false
+- sentence_id: hb-c06-u0016-s004
+  sv: En del frågor inom myndigheternas verksamhet, såsom behandlingen av personuppgifter, regleras genom
+    EU-lagstiftning.
+  ru: Часть вопросов деятельности органов власти, например обработка персональных данных, регулируется
+    законодательством ЕС.
+  scene_id: competence
+  visual_cue: Law determines the authority competent to decide. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_competence
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0016-s004.wav
+  start_seconds: 164.0
+  end_seconds: 174.30966
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/competence.png
+  render_caption: false
+- sentence_id: hb-c06-u0017-s001
+  sv: Eftersom myndigheternas verksamhet i Finland är strängt reglerad av lagar kan den ibland kännas
+    stel.
+  ru: Поскольку деятельность органов власти в Финляндии строго регулируется законами, она иногда может
+    казаться негибкой.
+  scene_id: rules
+  visual_cue: A bounded decision process treats comparable cases equally. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_rules
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0017-s001.wav
+  start_seconds: 176.791667
+  end_seconds: 185.56881
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/rules.png
+  render_caption: false
+- sentence_id: hb-c06-u0017-s002
+  sv: Det är vanligtvis inte möjligt att påskynda en enskild kunds ärende eller göra undantag i ett beslut,
+    eller så är det möjligt endast om det finns en grundad anledning eller särskilt vägande skäl.
+  ru: Обычно невозможно ускорить рассмотрение дела отдельного заявителя или сделать исключение в решении,
+    либо это возможно лишь при наличии обоснованной причины или особенно веских оснований.
+  scene_id: rules
+  visual_cue: A bounded decision process treats comparable cases equally. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_rules
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0017-s002.wav
+  start_seconds: 187.333333
+  end_seconds: 203.076463
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/rules.png
+  render_caption: false
+- sentence_id: hb-c06-u0017-s003
+  sv: Sådana skäl är i allmänhet fastställda i förväg, och en enskild tjänsteman kan inte avvika från
+    reglerna även om hen skulle vilja.
+  ru: Такие основания обычно установлены заранее, и отдельный служащий не может отступать от правил, даже
+    если хотел бы.
+  scene_id: rules
+  visual_cue: A bounded decision process treats comparable cases equally. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_rules
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0017-s003.wav
+  start_seconds: 204.833333
+  end_seconds: 216.396871
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/rules.png
+  render_caption: false
+- sentence_id: hb-c06-u0017-s004
+  sv: Syftet är att alla ska behandlas lika och att myndigheternas beslut ska följa lagen.
+  ru: Цель состоит в том, чтобы со всеми обращались одинаково и решения органов власти соответствовали
+    закону.
+  scene_id: rules
+  visual_cue: A bounded decision process treats comparable cases equally. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_rules
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0017-s004.wav
+  start_seconds: 218.166667
+  end_seconds: 225.550612
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/rules.png
+  render_caption: false
+- sentence_id: hb-c06-u0018-s001
+  sv: Myndigheternas verksamhet styrs av principerna för god förvaltning.
+  ru: Деятельность органов власти определяется принципами надлежащего управления.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights:
+  - god förvaltning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0018-s001.wav
+  start_seconds: 228.041667
+  end_seconds: 234.241395
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0018-s002
+  sv: Dessa principer är fastställda i lag.
+  ru: Эти принципы закреплены в законе.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0018-s002.wav
+  start_seconds: 236.0
+  end_seconds: 239.691973
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0018-s003
+  sv: Enligt principerna
+  ru: Согласно принципам
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0018-s003.wav
+  start_seconds: 241.458333
+  end_seconds: 243.757109
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0019-s001
+  sv: ska myndigheternas verksamhet vara rättvis, det vill säga en myndighet ska behandla alla människor
+    jämlikt, konsekvent och utan att diskriminera någon.
+  ru: деятельность органов власти должна быть справедливой, то есть орган власти должен обращаться со
+    всеми людьми на равных, последовательно и никого не дискриминируя.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0019-s001.wav
+  start_seconds: 245.541667
+  end_seconds: 258.289422
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0019-s002
+  sv: Till exempel får en anställd på skattebyrån inte ge sina släktingar en lägre skatteprocent än någon
+    annan i en exakt likadan situation
+  ru: Например, сотрудник налогового бюро не может назначить своим родственникам меньшую налоговую ставку,
+    чем другому человеку в точно такой же ситуации
+  scene_id: principles
+  visual_cue: A photographed Finnish tax-office exterior in Lohja illustrates taxation and equal treatment
+    by a tax office. Not evidence of a particular tax decision, staff conduct, bribery or wrongdoing.
+    Keep exact bilingual text fixed; no caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_tax
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0019-s002.wav
+  start_seconds: 260.041667
+  end_seconds: 271.674864
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_tax.png
+  render_caption: false
+- sentence_id: hb-c06-u0021-s001
+  sv: ska verksamheten vara objektiv.
+  ru: деятельность должна быть объективной.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0021-s001.wav
+  start_seconds: 273.458333
+  end_seconds: 276.732347
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0021-s002
+  sv: En kommun får till exempel inte ge alla nya byggprojekt till samma byggföretag bara för att företagets
+    direktör hör till samma parti som kommundirektören
+  ru: Например, муниципалитет не может отдавать все новые строительные проекты одной и той же строительной
+    компании лишь потому, что её директор принадлежит к той же партии, что и руководитель муниципалитета
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0021-s002.wav
+  start_seconds: 278.5
+  end_seconds: 291.665714
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0022-s001
+  sv: får en myndighet bara använda sina befogenheter för godtagbara syften som står i lagen.
+  ru: орган власти может использовать свои полномочия только для допустимых целей, указанных в законе.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0022-s001.wav
+  start_seconds: 293.416667
+  end_seconds: 301.009592
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0022-s002
+  sv: Till exempel får en polis inte utöva sin makt för att få personliga fördelar
+  ru: Например, полицейский не может осуществлять свою власть для получения личных преимуществ
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0022-s002.wav
+  start_seconds: 302.791667
+  end_seconds: 309.618333
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0023-s001
+  sv: ska myndigheternas åtgärder också stå i rätt proportion till den eftersträvade nyttan.
+  ru: меры органов власти также должны быть соразмерны предполагаемой пользе.
+  scene_id: principles
+  visual_cue: Equality, impartiality, lawful purpose and proportionality. Fixed source-backed foreground
+    picture; exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_principles
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0023-s001.wav
+  start_seconds: 311.375
+  end_seconds: 319.037585
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/principles.png
+  render_caption: false
+- sentence_id: hb-c06-u0023-s002
+  sv: Det skulle till exempel vara orimligt om om ett litet överskridande av hastighetsgränsen gav lika
+    höga böter som ett stort överskridande.
+  ru: Например, было бы неразумно, если за небольшое превышение ограничения скорости назначался такой
+    же высокий штраф, как за значительное превышение.
+  scene_id: principles
+  visual_cue: Finnish speed-camera warning sign provides actual road-enforcement context for the source
+    example of proportional speeding fines. It does not depict a specific violation or state any current
+    fine amount. Keep exact bilingual text fixed; no caption.
+  asset_ids:
+  - episode_background
+  - picture_photo_speed
+  text_highlights: []
+  pronunciation_notes:
+  - The archived source repeats om om; display and narration retain both tokens rather than silently editing
+    the source.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0023-s002.wav
+  start_seconds: 320.791667
+  end_seconds: 332.703503
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/photo_speed.png
+  render_caption: false
+- sentence_id: hb-c06-u0024-s001
+  sv: Utöver dessa grundprinciper föreskriver lagen bland annat att en myndighet inom ramen för sin behörighet
+    ska ge avgiftsfri rådgivning och svara på frågor och förfrågningar som gäller uträttandet av ärenden.
+  ru: Помимо этих основных принципов, закон, в частности, предписывает органу власти в пределах своей
+    компетенции предоставлять бесплатные консультации и отвечать на вопросы и запросы, касающиеся ведения
+    дел.
+  scene_id: advice
+  visual_cue: Free advice and referral to the competent authority. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_advice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0024-s001.wav
+  start_seconds: 335.166667
+  end_seconds: 352.024354
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/advice.png
+  render_caption: false
+- sentence_id: hb-c06-u0024-s002
+  sv: Om ett ärende inte hör till den aktuella myndighetens behörighet ska den i mån av möjlighet hänvisa
+    personen till rätt myndighet.
+  ru: Если дело не относится к компетенции соответствующего органа власти, он должен по возможности направить
+    человека в нужный орган.
+  scene_id: advice
+  visual_cue: Free advice and referral to the competent authority. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_advice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0024-s002.wav
+  start_seconds: 353.791667
+  end_seconds: 364.519286
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/advice.png
+  render_caption: false
+- sentence_id: hb-c06-u0025-s001
+  sv: Till god förvaltning hör också att man inte kan köpa sig specialbehandling av myndigheter genom
+    mutor.
+  ru: К надлежащему управлению относится также невозможность купить особое обращение со стороны органов
+    власти при помощи взяток.
+  scene_id: bribery
+  visual_cue: Buying favourable treatment is not a lawful route. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_corruption
+  text_highlights:
+  - god förvaltning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0025-s001.wav
+  start_seconds: 367.0
+  end_seconds: 375.707483
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/corruption.png
+  render_caption: false
+- sentence_id: hb-c06-u0025-s002
+  sv: I Finland är det ett brott att muta myndigheter.
+  ru: В Финляндии подкуп органов власти является преступлением.
+  scene_id: bribery
+  visual_cue: Buying favourable treatment is not a lawful route. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_corruption
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0025-s002.wav
+  start_seconds: 377.458333
+  end_seconds: 381.777245
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/corruption.png
+  render_caption: false
+- sentence_id: hb-c06-u0026-s001
+  sv: Ibland är det möjligt för en myndighet att utöva prövningsrätt.
+  ru: Иногда орган власти может использовать право действовать по своему усмотрению.
+  scene_id: discretion
+  visual_cue: Whole-situation assessment within legal bounds. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_discretion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0026-s001.wav
+  start_seconds: 384.25
+  end_seconds: 389.892449
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/discretion.png
+  render_caption: false
+- sentence_id: hb-c06-u0026-s002
+  sv: Prövningsrätt innebär att det i lag inte entydigt föreskrivs om hur ett beslut ska fattas, utan
+    tjänstemän kan i viss utsträckning utöva prövning.
+  ru: Право действовать по усмотрению означает, что закон не предписывает однозначно, как следует принимать
+    решение, и служащие могут в определённых пределах действовать по своему усмотрению.
+  scene_id: discretion
+  visual_cue: Whole-situation assessment within legal bounds. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_discretion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0026-s002.wav
+  start_seconds: 391.666667
+  end_seconds: 403.857143
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/discretion.png
+  render_caption: false
+- sentence_id: hb-c06-u0026-s003
+  sv: I lagen föreskrivs när prövning kan utövas och hur stor frihet en myndighet har att välja mellan
+    olika beslutsalternativ.
+  ru: Закон устанавливает, когда можно действовать по усмотрению и насколько свободен орган власти в выборе
+    между разными вариантами решений.
+  scene_id: discretion
+  visual_cue: Whole-situation assessment within legal bounds. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_discretion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0026-s003.wav
+  start_seconds: 405.625
+  end_seconds: 415.865
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/discretion.png
+  render_caption: false
+- sentence_id: hb-c06-u0027-s001
+  sv: Ett beslut baseras på en helhetsbedömning av situationen.
+  ru: Решение основывается на всесторонней оценке ситуации.
+  scene_id: discretion
+  visual_cue: Whole-situation assessment within legal bounds. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_discretion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0027-s001.wav
+  start_seconds: 417.625
+  end_seconds: 422.84949
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/discretion.png
+  render_caption: false
+- sentence_id: hb-c06-u0027-s002
+  sv: Beslut som olika människor får kan därför vara olika om deras situationer är olika ur ett helhetsperspektiv.
+  ru: Поэтому решения, которые получают разные люди, могут различаться, если их ситуации различаются при
+    рассмотрении в целом.
+  scene_id: discretion
+  visual_cue: Whole-situation assessment within legal bounds. Fixed source-backed foreground picture;
+    exact Swedish/Russian panel remains steady. No separate caption.
+  asset_ids:
+  - episode_background
+  - picture_discretion
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-god-forvaltning/narration/hb-c06-u0027-s002.wav
+  start_seconds: 424.625
+  end_seconds: 434.307721
+  display_segments: []
+  render_image: studio/media/hb-c06-god-forvaltning/pictures/discretion.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c06-god-forvaltning/sources/music-bed.flac
+  background_image: studio/media/hb-c06-god-forvaltning/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    resampling: bilinear
+    motion_cycles: 3.5467261904761904
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk arkiverad källtext med granskad rysk översättning.
+    - Fullständiga länkar och villkor i videons CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 13 Helsinki City Hall.jpg — Derbrauni · CC BY-SA 4.0
+    - Inner Light — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Källbaserade illustrationer: Homebrew video studio. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Valtioneuvoston linna Helsinki 2022-09-16 02.jpg — Leonhard Lenz · CC0
+    - Finnish speed camera sign.jpg — Santeri Viinamäki · CC BY-SA 4.0
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Lohja, Verotoimisto.jpg — Abc10 · CC BY-SA 4.0
+    - Fullständiga källor och licenser i CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish body and reviewed Russian translation shown in source order.
+  - Pictorial diagrams illustrate only selected source relationships; no real person is labeled an offender
+    or beneficiary of corruption.
+  - Foreground photographs proportionally resized; decorative background cropped, darkened, blurred and
+    continuously moved.
+  - Instrumental music excerpted and crossfade-looped when necessary, ducked under speech.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:13_Helsinki_City_Hall.jpg
+    description: Helsinki City Hall
+    license: CC BY-SA 4.0

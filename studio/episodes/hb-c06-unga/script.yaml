@@ -1,0 +1,430 @@
+schema_version: 1
+section_id: hb-c06-unga
+chapter_id: hb-c06
+title_sv: Barn och unga i rättssystemet
+title_ru: Дети и молодёжь в правовой системе
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-unga.yaml
+example_only: false
+source_section_sha256: 8490f76459ab1eb6e2cdd53466fd05b9984070022d5ed09f4abc8f09949d262b
+translation_file_sha256: 1c36b23a96b9ec5662d2ac2e9fd3a440ca5c61f5a3878c61901bb0b387c1f175
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted indigo Chapter6palette {''background'': ''#252747'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#cbd1ec'', ''highlight'': ''#e3c58b'', ''separator'': ''#515a82''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Youth Centre Kirkkopuistonkatu 25 Iisalmi 20230621 01.jpg by Estormiz continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=1.257440476190476. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16; actual threads/settings
+    measured in metrics. Names/numbers/overallbalance pending whole-video listening; ASR diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Soaring by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 380.056 seconds; prepared lossless stereo bed 176.042 seconds. Repeat count
+    0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at source topic boundaries: accurately identified photos of places/objects
+    and original pictorial process diagrams. Aim>=50% measured narrated body display; never imply photographed
+    people are offenders or victims. Source text unchanged; no new legal advice or updated facts.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Barn under 15 år
+- id: scene-2
+  description: Ersättningsansvar trots ung ålder
+- id: scene-3
+  description: Barnskyddsanmälan och hjälp
+- id: scene-4
+  description: Ungdomsstraff för 15–17-åringar
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_age
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Barn under 15 år.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_damage
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Ersättningsansvar
+    trots ung ålder.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_support
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Barnskyddsanmälan
+    och hjälp.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_young_work
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Ungdomsstraff för
+    15–17-åringar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c06-u0118-s001
+  sv: Barn under 15 år är inte straffrättsligt ansvariga i Finland.
+  ru: В Финляндии дети младше 15 лет не несут уголовной ответственности.
+  scene_id: scene-1
+  visual_cue: Show Barn under 15 år using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_age
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Barn under femton år är inte straffrättsligt ansvariga i Finland.
+    reason: Speech-only expansion of exact source ages; display text retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0118-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.310408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/age.png
+- sentence_id: hb-c06-u0118-s002
+  sv: Om de begår ett brott, ställs de inte inför rätta.
+  ru: Если они совершают преступление, их не предают суду.
+  scene_id: scene-1
+  visual_cue: Show Barn under 15 år using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_age
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0118-s002.wav
+  start_seconds: 11.083333
+  end_seconds: 15.889864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/age.png
+- sentence_id: hb-c06-u0118-s003
+  sv: De har ändå ersättningsansvar, det vill säga de måste ersätta skadorna de orsakat.
+  ru: Однако они несут ответственность за возмещение ущерба, то есть обязаны возместить причинённый ими
+    ущерб.
+  scene_id: scene-2
+  visual_cue: Show Ersättningsansvar trots ung ålder using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0118-s003.wav
+  start_seconds: 18.375
+  end_seconds: 25.689286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/damage.png
+- sentence_id: hb-c06-u0118-s004
+  sv: Skador som måste ersättas kan vara till exempel sönderslagen egendom, eller skada eller lidande
+    som orsakats en annan människa.
+  ru: Ущерб, подлежащий возмещению, может включать, например, разбитое имущество либо вред или страдания,
+    причинённые другому человеку.
+  scene_id: scene-2
+  visual_cue: Show Ersättningsansvar trots ung ålder using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0118-s004.wav
+  start_seconds: 27.458333
+  end_seconds: 38.882551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/damage.png
+- sentence_id: hb-c06-u0118-s005
+  sv: Ofta betalar barnet i praktiken ersättningen först i vuxen ålder när hen börjar få arbetsinkomster.
+  ru: На практике ребёнок часто выплачивает компенсацию лишь во взрослом возрасте, когда начинает получать
+    доход от работы.
+  scene_id: scene-2
+  visual_cue: Show Ersättningsansvar trots ung ålder using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_damage
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0118-s005.wav
+  start_seconds: 40.666667
+  end_seconds: 49.23483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/damage.png
+- sentence_id: hb-c06-u0119-s001
+  sv: Om ett barn under 15 år begår ett brott, görs en barnskyddsanmälan om hen.
+  ru: Если ребёнок младше 15 лет совершает преступление, о нём подают уведомление в службу защиты детей.
+  scene_id: scene-3
+  visual_cue: Show Barnskyddsanmälan och hjälp using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Om ett barn under femton år begår ett brott, görs en barnskyddsanmälan om hen.
+    reason: Speech-only expansion of exact source ages; display text retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0119-s001.wav
+  start_seconds: 51.708333
+  end_seconds: 58.60466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/support.png
+- sentence_id: hb-c06-u0119-s002
+  sv: En barnskyddsanmälan innebär en anmälan till de sociala myndigheterna.
+  ru: Уведомление в службу защиты детей означает обращение в органы социальной защиты.
+  scene_id: scene-3
+  visual_cue: Show Barnskyddsanmälan och hjälp using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0119-s002.wav
+  start_seconds: 60.375
+  end_seconds: 66.574728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/support.png
+- sentence_id: hb-c06-u0119-s003
+  sv: De sociala myndigheterna utreder barnets situation och tar reda på hur de kan hjälpa hen.
+  ru: Органы социальной защиты выясняют ситуацию ребёнка и узнают, как могут ему помочь.
+  scene_id: scene-3
+  visual_cue: Show Barnskyddsanmälan och hjälp using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0119-s003.wav
+  start_seconds: 68.333333
+  end_seconds: 75.926259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/support.png
+- sentence_id: hb-c06-u0119-s004
+  sv: I de allvarligaste fallen kan barnet omhändertas och till exempel placeras på en sluten anstalt,
+    om det är nödvändigt med tanke på hens egen och andras säkerhet.
+  ru: В наиболее серьёзных случаях ребёнка могут взять под опеку и, например, поместить в закрытое учреждение,
+    если это необходимо для его собственной безопасности и безопасности других людей.
+  scene_id: scene-3
+  visual_cue: Show Barnskyddsanmälan och hjälp using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0119-s004.wav
+  start_seconds: 77.708333
+  end_seconds: 91.222347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/support.png
+- sentence_id: hb-c06-u0120-s001
+  sv: Om en gärningsman är en ung person i åldern 15–17 år kan rätten utdöma ett ungdomsstraff till hen.
+  ru: Если правонарушитель — молодой человек в возрасте 15–17 лет, суд может назначить ему наказание для
+    несовершеннолетних.
+  scene_id: scene-4
+  visual_cue: Show Ungdomsstraff för 15–17-åringar using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_young_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Om en gärningsman är en ung person i åldern femton till sjutton år kan rätten utdöma ett ungdomsstraff
+      till hen.
+    reason: Speech-only expansion of exact source ages; display text retained.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0120-s001.wav
+  start_seconds: 93.708333
+  end_seconds: 103.530374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/young_work.png
+- sentence_id: hb-c06-u0120-s002
+  sv: Syftet med det är att hindra den unga från att begå nya brott eller bli socialt utslagen.
+  ru: Его цель — не допустить совершения молодым человеком новых преступлений или его социального исключения.
+  scene_id: scene-4
+  visual_cue: Show Ungdomsstraff för 15–17-åringar using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_young_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0120-s002.wav
+  start_seconds: 105.291667
+  end_seconds: 112.954252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/young_work.png
+- sentence_id: hb-c06-u0120-s003
+  sv: Ett ungdomsstraff kan vara till exempel övervakat oavlönat arbete eller deltagande i olika program
+    som främjar den ungas förmåga att agera i sociala situationer.
+  ru: Наказанием для несовершеннолетних может быть, например, неоплачиваемая работа под надзором или участие
+    в различных программах, развивающих способность молодого человека действовать в социальных ситуациях.
+  scene_id: scene-4
+  visual_cue: Show Ungdomsstraff för 15–17-åringar using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_young_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c06-unga/narration/hb-c06-u0120-s003.wav
+  start_seconds: 114.708333
+  end_seconds: 128.500986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-unga/pictures/young_work.png
+render:
+  music_path: studio/media/hb-c06-unga/sources/music-bed.flac
+  background_image: studio/media/hb-c06-unga/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.257440476190476
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Youth Centre Kirkkopuistonkatu 25 Iisalmi 20230621 01.jpg — Estormiz · CC0
+    - Soaring — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Broken-Window-20130513.jpg — WiseWoman · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal claims.
+  - Photographs proportionally resized for foreground; background darkened,blurred,cropped and moved continuously;
+    photo licenses retained.
+  - Original pictorial process diagrams illustrate only selected source statements.
+  - Music faded,ducked,level-adjusted and repeated with4-second equal-power crossfades if required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Youth_Centre_Kirkkopuistonkatu_25_Iisalmi_20230621_01.jpg
+    description: Iisalmi Youth Centre
+    license: CC0

@@ -1,0 +1,576 @@
+schema_version: 1
+section_id: hb-c06-domstolar
+chapter_id: hb-c06
+title_sv: Domstolar och rättegång
+title_ru: Суды и судебное разбирательство
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-domstolar.yaml
+example_only: false
+source_section_sha256: 6a6998dbf008b790d277f8b5e9d55055d1e24b883e6a59f202e24275e1d1abe7
+translation_file_sha256: 314bc99557d431a2d245046471e58306948750e0ed451d18dac91333490f0c74
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 24fps; Chapter6 indigo palette #252747/#faf3e8/#cbd1ec/#e3c58b/#515a82. Liberation
+    Sans Bold48 and Regular40; bilingual panel right, relevant foreground pictures left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Turku Court of Appeals.jpg by Ypsilon from Finland continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.818452380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Ripples by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 205.453 seconds; prepared lossless stereo bed 254.583 seconds. Repeat count
+    1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use verified photographs of actual Finnish legal institutions and objects, plus original source-based
+    pictorial diagrams at meaningful topic boundaries. Preserve complete source text and leave captions
+    off. Measure at least50% body-duration picture coverage; neither the decorative background nor typography
+    cards count.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: system
+  description: Court system and separate jurisdictions
+- id: bevis
+  description: Evidence and lay judges
+- id: tingsratt
+  description: District court and parties
+- id: vittnen
+  description: Witnesses and assistance
+- id: skydd
+  description: Witness protection
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: bench
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for bench. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: court
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for court. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: levels
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for levels. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: screen
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for screen. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: video
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for video. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+sentences:
+- sentence_id: hb-c06-u0097-s001
+  sv: 'Finland har ett domstolssystem i tre steg: tingsrätter, hovrätter och högsta domstolen.'
+  ru: 'В Финляндии трёхступенчатая судебная система: уездные суды (tingsrätter), апелляционные суды (hovrätter)
+    и Верховный суд (högsta domstolen).'
+  scene_id: system
+  visual_cue: Court system and separate jurisdictions; foreground levels
+  asset_ids:
+  - episode_background
+  - levels
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0097-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.260884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/levels.png
+- sentence_id: hb-c06-u0097-s002
+  sv: I Finland finns det också en förvaltningsdomstol, som behandlar främst ärenden som gäller myndigheter
+    och deras verksamhet.
+  ru: В Финляндии также существует административный суд, который рассматривает прежде всего дела, касающиеся
+    органов власти и их деятельности.
+  scene_id: system
+  visual_cue: Court system and separate jurisdictions; foreground levels
+  asset_ids:
+  - episode_background
+  - levels
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0097-s002.wav
+  start_seconds: 13.041667
+  end_seconds: 23.560306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/levels.png
+- sentence_id: hb-c06-u0097-s003
+  sv: Som högsta förvaltningsdomstol verkar högsta förvaltningsdomstolen.
+  ru: В качестве высшего административного суда действует Высший административный суд (högsta förvaltningsdomstolen).
+  scene_id: system
+  visual_cue: Court system and separate jurisdictions; foreground levels
+  asset_ids:
+  - episode_background
+  - levels
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0097-s003.wav
+  start_seconds: 25.333333
+  end_seconds: 31.672381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/levels.png
+- sentence_id: hb-c06-u0097-s004
+  sv: Utöver dessa finns det också specialdomstolar, till exempel en arbetsdomstol, en försäkringsdomstol
+    och en marknadsdomstol.
+  ru: Помимо них существуют также специальные суды, например суд по трудовым спорам, суд по вопросам страхования
+    и рыночный суд.
+  scene_id: system
+  visual_cue: Court system and separate jurisdictions; foreground levels
+  asset_ids:
+  - episode_background
+  - levels
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0097-s004.wav
+  start_seconds: 33.458333
+  end_seconds: 44.325272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/levels.png
+- sentence_id: hb-c06-u0098-s001
+  sv: I rätten bedömer domarna om bevisen i fallen är tillförlitliga.
+  ru: В суде судьи оценивают надёжность доказательств по делам.
+  scene_id: bevis
+  visual_cue: Actual Finnish court interior illustrates evidence assessment and judicial decisions; no
+    foreign jury depicted.
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s001.wav
+  start_seconds: 46.791667
+  end_seconds: 52.712755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0098-s002
+  sv: Sedan utfärdar de domar i fallen de behandlar.
+  ru: Затем они выносят решения по рассматриваемым делам.
+  scene_id: bevis
+  visual_cue: Actual Finnish court interior illustrates evidence assessment and judicial decisions; no
+    foreign jury depicted.
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s002.wav
+  start_seconds: 54.5
+  end_seconds: 58.679592
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0098-s003
+  sv: I en del länder bedöms bevisen av en jury eller så kan landets rättssystem basera sig på religionen.
+  ru: В некоторых странах доказательства оценивают присяжные, либо правовая система страны может основываться
+    на религии.
+  scene_id: bevis
+  visual_cue: Leave foreground open during the general comparison with foreign jury/religious systems;
+    do not imply the verified Finnish court interior depicts a foreign jury. Bilingual source text remains
+    fixed.
+  asset_ids:
+  - episode_background
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s003.wav
+  start_seconds: 60.458333
+  end_seconds: 69.165816
+  display_segments: []
+  render_caption: false
+  render_image: null
+- sentence_id: hb-c06-u0098-s004
+  sv: Också i Finland kan det ibland finnas nämndemän, det vill säga lekmannadomare, vid domstolsförhandlingar,
+    om det är fråga om ett grovt eller allvarligt brottmål.
+  ru: И в Финляндии в судебных заседаниях иногда могут участвовать заседатели, то есть непрофессиональные
+    судьи, если рассматривается тяжкое или серьёзное уголовное дело.
+  scene_id: bevis
+  visual_cue: Evidence and lay judges; foreground bench
+  asset_ids:
+  - episode_background
+  - bench
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s004.wav
+  start_seconds: 70.916667
+  end_seconds: 84.50034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/bench.png
+- sentence_id: hb-c06-u0098-s005
+  sv: I sådana fall är det i allmänhet en nämndemannasammansättning bestående av en yrkesdomare och två
+    nämndemän som beslutar om domen.
+  ru: В таких случаях решение обычно принимает состав суда из одного профессионального судьи и двух заседателей.
+  scene_id: bevis
+  visual_cue: Evidence and lay judges; foreground bench
+  asset_ids:
+  - episode_background
+  - bench
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s005.wav
+  start_seconds: 86.291667
+  end_seconds: 97.506905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/bench.png
+- sentence_id: hb-c06-u0098-s006
+  sv: Varje medlem i sammansättningen har samma makt i beslutsfattandet.
+  ru: Каждый член состава суда имеет одинаковые полномочия при принятии решения.
+  scene_id: bevis
+  visual_cue: Evidence and lay judges; foreground bench
+  asset_ids:
+  - episode_background
+  - bench
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0098-s006.wav
+  start_seconds: 99.291667
+  end_seconds: 105.212755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/bench.png
+- sentence_id: hb-c06-u0099-s001
+  sv: Om åklagaren väcker åtal, behandlas ärendet i en domstol, det vill säga i rätten.
+  ru: Если прокурор предъявляет обвинение, дело рассматривается судом, то есть в судебном порядке.
+  scene_id: tingsratt
+  visual_cue: District court and parties; foreground court
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0099-s001.wav
+  start_seconds: 107.666667
+  end_seconds: 115.189932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0099-s002
+  sv: Domstolen löser meningsskiljaktigheter och avgör om lagen har brutits.
+  ru: Суд разрешает разногласия и определяет, был ли нарушен закон.
+  scene_id: tingsratt
+  visual_cue: District court and parties; foreground court
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0099-s002.wav
+  start_seconds: 116.958333
+  end_seconds: 123.227721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0100-s001
+  sv: Den första rättsinstansen är tingsrätten, som fäller en dom i ärendet.
+  ru: Первой судебной инстанцией является уездный суд, который выносит решение по делу.
+  scene_id: tingsratt
+  visual_cue: District court and parties; foreground court
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0100-s001.wav
+  start_seconds: 125.0
+  end_seconds: 131.408707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0100-s002
+  sv: Förhandlingen i tingsrätten kan ske muntligt eller skriftligt.
+  ru: Рассмотрение в уездном суде может проходить устно или письменно.
+  scene_id: tingsratt
+  visual_cue: District court and parties; foreground court
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0100-s002.wav
+  start_seconds: 133.166667
+  end_seconds: 138.669796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0100-s003
+  sv: Vid en muntlig förhandling berättar parterna (den åtalade, målsäganden, det vill säga offret, och
+    åklagaren) vad som har hänt ur sitt perspektiv.
+  ru: В ходе устного заседания стороны — обвиняемый, потерпевший, то есть жертва преступления, и прокурор
+    — рассказывают о случившемся со своей точки зрения.
+  scene_id: tingsratt
+  visual_cue: District court and parties; foreground court
+  asset_ids:
+  - episode_background
+  - court
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0100-s003.wav
+  start_seconds: 140.458333
+  end_seconds: 152.788129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/court.png
+- sentence_id: hb-c06-u0101-s001
+  sv: Vid en rättegång kan rätten höra experter och vittnen.
+  ru: В ходе судебного разбирательства суд может заслушивать экспертов и свидетелей.
+  scene_id: vittnen
+  visual_cue: Witnesses and assistance; foreground video
+  asset_ids:
+  - episode_background
+  - video
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0101-s001.wav
+  start_seconds: 155.25
+  end_seconds: 160.12619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/video.png
+- sentence_id: hb-c06-u0101-s002
+  sv: Parterna kan anlita ett biträde för domstolsförhandlingen.
+  ru: Стороны могут воспользоваться помощью представителя для судебного заседания.
+  scene_id: vittnen
+  visual_cue: Witnesses and assistance; foreground video
+  asset_ids:
+  - episode_background
+  - video
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0101-s002.wav
+  start_seconds: 161.916667
+  end_seconds: 167.141156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/video.png
+- sentence_id: hb-c06-u0101-s003
+  sv: Ibland kan rätten höra vittnen också per telefon eller via videoförbindelse.
+  ru: Иногда суд может заслушать свидетелей также по телефону или по видеосвязи.
+  scene_id: vittnen
+  visual_cue: Witnesses and assistance; foreground video
+  asset_ids:
+  - episode_background
+  - video
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0101-s003.wav
+  start_seconds: 168.916667
+  end_seconds: 175.534354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/video.png
+- sentence_id: hb-c06-u0102-s001
+  sv: Om ett vittne är rädd, kan rätten höra hen vid en annan tidpunkt än den åtalade eller bakom en skärmvägg.
+  ru: Если свидетель боится, суд может заслушать его в другое время, чем обвиняемого, или за ширмой.
+  scene_id: skydd
+  visual_cue: Witness protection; foreground screen
+  asset_ids:
+  - episode_background
+  - screen
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0102-s001.wav
+  start_seconds: 178.0
+  end_seconds: 187.125442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/screen.png
+- sentence_id: hb-c06-u0102-s002
+  sv: Då behöver vittnet inte se eller träffa den åtalade i rätten.
+  ru: Тогда свидетелю не нужно видеть обвиняемого или встречаться с ним в суде.
+  scene_id: skydd
+  visual_cue: Witness protection; foreground screen
+  asset_ids:
+  - episode_background
+  - screen
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0102-s002.wav
+  start_seconds: 188.916667
+  end_seconds: 194.210816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/screen.png
+- sentence_id: hb-c06-u0102-s003
+  sv: I extremfall kan ett vittnesskyddsprogram inledas för ett vittne som innebär att hen tillfälligt
+    får ett nytt namn och en ny bostadsort.
+  ru: В исключительных случаях для свидетеля может быть начата программа защиты свидетелей, предусматривающая
+    временное получение нового имени и нового места жительства.
+  scene_id: skydd
+  visual_cue: Witness protection; foreground screen
+  asset_ids:
+  - episode_background
+  - screen
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-domstolar/narration/hb-c06-u0102-s003.wav
+  start_seconds: 196.0
+  end_seconds: 207.354558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-domstolar/pictures/screen.png
+render:
+  music_path: studio/media/hb-c06-domstolar/sources/music-bed.flac
+  background_image: studio/media/hb-c06-domstolar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.818452380952381
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Samhällskunskap inför medborgarskapsprovet
+    - 'Kapitel 6: Lagar, rättsväsende och rättsskydd'
+    - 'Källtext och rysk översättning: Homebrew-antologin.'
+    - 'Fullständiga källor och licenser: videons CREDITS-fil.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Turku Court of Appeals.jpg — Ypsilon from Finland · CC0
+    - Ripples — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Bilder · Изображения
+    paragraphs:
+    - 'Originaldiagram: Homebrew video studio; relationer ur källtexten.'
+    - 'Fotografier och flagga: Wikimedia Commons; fulla upphovs- och licensuppgifter i CREDITS-filen.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Turku_Court_of_Appeals.jpg
+    description: Turku court of appeals
+    license: CC0

@@ -127,3 +127,13 @@ established local Swedish Supertonic 3/F1 preset. Production is isolated in the
 `video/chapter-05` worktree. Parallel workers own independent episodes; shared
 source reservations, runtime checks and inventory updates are coordinated centrally.
 These choices do not imply whole-video listening or user acceptance.
+
+## Chapter 6 production — 2026-10-28
+
+Chapter 6 uses the indigo palette in `DIRECTING.md`, Liberation Sans and the
+established local Swedish Supertonic 3/F1 preset. Parallel workers own independent
+episodes in the main checkout, with centrally reserved background and music
+identities. The coordinator manages shared records and resource allocation;
+generated exports and retained narration stay ignored alongside their versioned
+production metadata. These choices do not imply whole-video listening or user
+acceptance.

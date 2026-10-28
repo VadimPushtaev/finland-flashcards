@@ -1,0 +1,620 @@
+schema_version: 1
+section_id: hb-c06-polis
+chapter_id: hb-c06
+title_sv: Polisen och rättsväsendets aktörer
+title_ru: Полиция и участники системы правосудия
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-polis.yaml
+example_only: false
+source_section_sha256: e5bdc7fd40b595aedc10b7fdd83b2c778beb56289a04d771a7979b4d84eeb6e0
+translation_file_sha256: 520b39002e46f4784f9d2b9857ae36718270c8d2611eade6aaeab75b13cd8b6b
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, for three seconds. Continuous photo motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Group consecutive source sentences into the scenes below. Read every body sentence once in
+    its exact original order, without added narration.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 24fps; Chapter6 indigo palette #252747/#faf3e8/#cbd1ec/#e3c58b/#515a82. Liberation
+    Sans Bold48 and Regular40; bilingual panel right, relevant foreground pictures left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Display text 0.25 seconds before speech. Moderate local voice speed0.95; allow 1.5 seconds
+    after each pair and2.2 seconds at scene endings. Longer pairs receive2.5 seconds. Measure full clips
+    rather than truncating to target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Main Police Station in Jokiniemi, Vantaa, Finland; October 2024 – 02.jpg by Sanni
+    Penttinen continuously as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal
+    pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting
+    in motion, with no sentence resets. Total cycles=1.7788690476190476. Foreground and bilingual text
+    remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic3/F1, sv,32steps,speed0.95,seed42,44100Hz mono PCM16. Record exact
+    inputs and generated clip metrics. Pronunciation and overall mix await review in complete video; no
+    separate listening approval gate.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Prelude in C (BWV 846) by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 178.704 seconds; prepared lossless stereo bed 249.042
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Use verified photographs of actual Finnish legal institutions and objects, plus original source-based
+    pictorial diagrams at meaningful topic boundaries. Preserve complete source text and leave captions
+    off. Measure at least50% body-duration picture coverage; neither the decorative background nor typography
+    cards count.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credit cards plus dedicated foreground attribution cards, 15 seconds each,
+    over continuing background. Full URLs, licenses and adaptation details accompany the canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; no additions to spoken source or translated display.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: aktorer
+  description: Parliament, police and courts
+- id: sakerhet
+  description: Authorities and public security
+- id: anmalan
+  description: Reporting suspected crime
+- id: korruption
+  description: Bribery and corruption
+- id: kontakt
+  description: Reporting channels and anonymity
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified topic-related photograph identified in assets.yaml; continuous full-frame
+    decorative treatment.
+  fallback: Use another accurately identified reusable topic-related photograph; revise only this visual
+    choice.
+- id: music_bed
+  kind: music
+  description: Distinct calm licensed instrumental track selected during assets, with documented crossfade
+    extension if needed.
+  fallback: Choose a distinct calm licensed instrumental track and document replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One complete local Supertonic3 F1 Swedish clip per exact source sentence, with separate
+    speech-only number expansions where needed.
+  fallback: Revise pronunciation expansion preserving source meaning; do not use cloud TTS.
+- id: bribery
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for bribery. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: police
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for police. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: powers
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for powers. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: report
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for report. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: station
+  kind: foreground
+  description: Source-specific verified photograph or original explanatory diagram for station. See scene
+    plan.
+  fallback: Use an accurate original diagram of only claims in the selected source if licensed photography
+    cannot be verified; keep narration exact.
+- id: tips
+  kind: foreground
+  description: Anonymous telephone/email tip channels, distinct from formal brottsanmalan.
+  fallback: Original source-only telephone and email diagram; do not conflate anonymity with formal criminal
+    reports.
+- id: defence
+  kind: foreground
+  description: Verified Finnish conscript training photograph for the armed defence task only; no depicted
+    police or combat event.
+  fallback: Source-only Finnish national-defence pictorial illustration without extra service rules.
+sentences:
+- sentence_id: hb-c06-u0037-s001
+  sv: I det finländska rättssystemet stiftar riksdagen lagarna.
+  ru: В финляндской правовой системе законы принимает парламент.
+  scene_id: aktorer
+  visual_cue: Parliament, police and courts; foreground powers
+  asset_ids:
+  - episode_background
+  - powers
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0037-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.54415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/powers.png
+- sentence_id: hb-c06-u0037-s002
+  sv: Polisen och övriga myndigheter övervakar att människorna följer lagen.
+  ru: Полиция и другие органы власти следят за тем, чтобы люди соблюдали закон.
+  scene_id: aktorer
+  visual_cue: Parliament, police and courts; foreground powers
+  asset_ids:
+  - episode_background
+  - powers
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0037-s002.wav
+  start_seconds: 10.333333
+  end_seconds: 16.672381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/powers.png
+- sentence_id: hb-c06-u0037-s003
+  sv: Domstolarna utövar sin domsrätt, det vill säga bedömer om någon har agerat i strid med lagen.
+  ru: Суды осуществляют свою судебную власть, то есть оценивают, действовал ли кто-либо вопреки закону.
+  scene_id: aktorer
+  visual_cue: Parliament, police and courts; foreground powers
+  asset_ids:
+  - episode_background
+  - powers
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0037-s003.wav
+  start_seconds: 18.458333
+  end_seconds: 26.747857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/powers.png
+- sentence_id: hb-c06-u0037-s004
+  sv: Domstolarna har också makt att utdöma straff om någon har brutit mot lagen.
+  ru: Суды также имеют полномочия назначать наказания, если кто-либо нарушил закон.
+  scene_id: aktorer
+  visual_cue: Parliament, police and courts; foreground powers
+  asset_ids:
+  - episode_background
+  - powers
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0037-s004.wav
+  start_seconds: 28.5
+  end_seconds: 35.048027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/powers.png
+- sentence_id: hb-c06-u0037-s005
+  sv: Domstolarna, polisen och övriga myndigheter utför sitt arbete fria från politiskt inflytande.
+  ru: Суды, полиция и другие органы власти выполняют свою работу независимо от политического влияния.
+  scene_id: aktorer
+  visual_cue: Parliament, police and courts; foreground powers
+  asset_ids:
+  - episode_background
+  - powers
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0037-s005.wav
+  start_seconds: 36.833333
+  end_seconds: 44.844218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/powers.png
+- sentence_id: hb-c06-u0038-s001
+  sv: I Finland övervakar myndigheterna att människorna följer lagarna.
+  ru: В Финляндии органы власти следят за тем, чтобы люди соблюдали законы.
+  scene_id: sakerhet
+  visual_cue: Authorities and public security; foreground police
+  asset_ids:
+  - episode_background
+  - police
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0038-s001.wav
+  start_seconds: 47.333333
+  end_seconds: 53.393741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/police.png
+- sentence_id: hb-c06-u0038-s002
+  sv: Säkerheten i samhället övervakas gemensamt av räddningsverket, polisen, Tullen, gränsbevakningsväsendet
+    och försvarsmakten.
+  ru: За безопасностью общества совместно следят спасательная служба, полиция, Таможня (Tullen), пограничная
+    служба и силы обороны.
+  scene_id: sakerhet
+  visual_cue: Authorities and public security; foreground police
+  asset_ids:
+  - episode_background
+  - police
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0038-s002.wav
+  start_seconds: 55.166667
+  end_seconds: 66.103265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/police.png
+- sentence_id: hb-c06-u0038-s003
+  sv: Försvarsmakten har som uppgift att försvara Finland militärt.
+  ru: Задача сил обороны — защищать Финляндию военными средствами.
+  scene_id: sakerhet
+  visual_cue: Actual Finnish conscript training photograph illustrates military national defence, distinct
+    from neighboring police/public-order tasks.
+  asset_ids:
+  - episode_background
+  - defence
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0038-s003.wav
+  start_seconds: 67.875
+  end_seconds: 73.796088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/defence.png
+- sentence_id: hb-c06-u0038-s004
+  sv: Polisen upprätthåller den allmänna säkerheten och ordningen i landet.
+  ru: Полиция поддерживает общественную безопасность и порядок в стране.
+  scene_id: sakerhet
+  visual_cue: Authorities and public security; foreground police
+  asset_ids:
+  - episode_background
+  - police
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0038-s004.wav
+  start_seconds: 75.583333
+  end_seconds: 81.574082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/police.png
+- sentence_id: hb-c06-u0038-s005
+  sv: Polisen är en respekterad myndighet i Finland.
+  ru: Полиция — уважаемый орган власти в Финляндии.
+  scene_id: sakerhet
+  visual_cue: Authorities and public security; foreground police
+  asset_ids:
+  - episode_background
+  - police
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0038-s005.wav
+  start_seconds: 83.333333
+  end_seconds: 87.582585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/police.png
+- sentence_id: hb-c06-u0039-s001
+  sv: Polisen utreder också brott och försöker förebygga brottslighet.
+  ru: Полиция также расследует преступления и старается предотвращать преступность.
+  scene_id: anmalan
+  visual_cue: Reporting suspected crime; foreground station
+  asset_ids:
+  - episode_background
+  - station
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0039-s001.wav
+  start_seconds: 90.041667
+  end_seconds: 95.684116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/station.png
+- sentence_id: hb-c06-u0039-s002
+  sv: Var och en kan meddela till polisen om man misstänker att ett brott har begåtts.
+  ru: Каждый может сообщить полиции о подозрении, что совершено преступление.
+  scene_id: anmalan
+  visual_cue: Reporting suspected crime; foreground station
+  asset_ids:
+  - episode_background
+  - station
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0039-s002.wav
+  start_seconds: 97.458333
+  end_seconds: 104.42432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/station.png
+- sentence_id: hb-c06-u0039-s003
+  sv: Man kan göra en polisanmälan på en polisstation, per telefon eller på internet.
+  ru: Заявление в полицию можно подать в полицейском участке, по телефону или через интернет.
+  scene_id: anmalan
+  visual_cue: Reporting suspected crime; foreground station
+  asset_ids:
+  - episode_background
+  - station
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0039-s003.wav
+  start_seconds: 106.208333
+  end_seconds: 113.313639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/station.png
+- sentence_id: hb-c06-u0039-s004
+  sv: Anmälan kan vara muntlig eller skriftlig.
+  ru: Заявление может быть устным или письменным.
+  scene_id: anmalan
+  visual_cue: Reporting suspected crime; foreground station
+  asset_ids:
+  - episode_background
+  - station
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0039-s004.wav
+  start_seconds: 115.083333
+  end_seconds: 118.844966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/station.png
+- sentence_id: hb-c06-u0040-s001
+  sv: Polisen, myndigheter och politiker tar inte emot mutor.
+  ru: Полиция, органы власти и политики не принимают взяток.
+  scene_id: korruption
+  visual_cue: Bribery and corruption; foreground bribery
+  asset_ids:
+  - episode_background
+  - bribery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0040-s001.wav
+  start_seconds: 121.333333
+  end_seconds: 126.209524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/bribery.png
+- sentence_id: hb-c06-u0040-s002
+  sv: En muta är en gåva eller en förmån som ges till en myndighet för att denna ska hjälpa den som ger
+    gåvan på ett annat sätt än andra människor.
+  ru: Взятка — это подарок или выгода, предоставляемые органу власти, чтобы он помог дарителю иначе, чем
+    другим людям.
+  scene_id: korruption
+  visual_cue: Bribery and corruption; foreground bribery
+  asset_ids:
+  - episode_background
+  - bribery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0040-s002.wav
+  start_seconds: 128.0
+  end_seconds: 139.772517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/bribery.png
+- sentence_id: hb-c06-u0040-s003
+  sv: Då är det fråga om korruption.
+  ru: Тогда речь идёт о коррупции.
+  scene_id: korruption
+  visual_cue: Bribery and corruption; foreground bribery
+  asset_ids:
+  - episode_background
+  - bribery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0040-s003.wav
+  start_seconds: 141.541667
+  end_seconds: 144.606701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/bribery.png
+- sentence_id: hb-c06-u0040-s004
+  sv: I Finland är det ett brott både att ge och att ta emot mutor.
+  ru: В Финляндии как дача, так и получение взяток являются преступлением.
+  scene_id: korruption
+  visual_cue: Bribery and corruption; foreground bribery
+  asset_ids:
+  - episode_background
+  - bribery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0040-s004.wav
+  start_seconds: 146.375
+  end_seconds: 151.59949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/bribery.png
+- sentence_id: hb-c06-u0041-s001
+  sv: Om man vet eller misstänker att ett brott har begåtts, kan man göra en brottsanmälan till polisen.
+  ru: Если известно или есть подозрение, что совершено преступление, можно подать заявление о преступлении
+    в полицию.
+  scene_id: kontakt
+  visual_cue: Reporting channels and anonymity; foreground report
+  asset_ids:
+  - episode_background
+  - report
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0041-s001.wav
+  start_seconds: 154.083333
+  end_seconds: 162.651497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/report.png
+- sentence_id: hb-c06-u0041-s002
+  sv: Vem som helst kan göra en brottsanmälan på en polisstation, på internet, genom att berätta för en
+    polispatrull om det eller ibland också per telefon.
+  ru: Любой человек может подать заявление о преступлении в полицейском участке, через интернет, сообщив
+    о нём полицейскому патрулю или, иногда, также по телефону.
+  scene_id: kontakt
+  visual_cue: Reporting channels and anonymity; foreground report
+  asset_ids:
+  - episode_background
+  - report
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0041-s002.wav
+  start_seconds: 164.416667
+  end_seconds: 177.094762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/report.png
+- sentence_id: hb-c06-u0041-s003
+  sv: Polisen är skyldig att ta emot brottsanmälningar.
+  ru: Полиция обязана принимать заявления о преступлениях.
+  scene_id: kontakt
+  visual_cue: Reporting channels and anonymity; foreground report
+  asset_ids:
+  - episode_background
+  - report
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0041-s003.wav
+  start_seconds: 178.875
+  end_seconds: 183.333231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/report.png
+- sentence_id: hb-c06-u0042-s001
+  sv: Man kan anmäla brott till polisen också anonymt genom att ringa en tipstelefon eller skicka e-post.
+  ru: Сообщать о преступлениях в полицию можно также анонимно, позвонив на телефон для сообщений или отправив
+    электронное письмо.
+  scene_id: kontakt
+  visual_cue: Telephone and email tips can be anonymous as source states, distinct from formal reporting
+    channels.
+  asset_ids:
+  - episode_background
+  - tips
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0042-s001.wav
+  start_seconds: 185.083333
+  end_seconds: 193.651497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/tips.png
+- sentence_id: hb-c06-u0042-s002
+  sv: Då får den som begått brottet inte veta vem som har anmält det till polisen.
+  ru: Тогда совершивший преступление не узнает, кто сообщил о нём полиции.
+  scene_id: kontakt
+  visual_cue: Telephone and email tips can be anonymous as source states, distinct from formal reporting
+    channels.
+  asset_ids:
+  - episode_background
+  - tips
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-polis/narration/hb-c06-u0042-s002.wav
+  start_seconds: 195.416667
+  end_seconds: 201.825374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-polis/pictures/tips.png
+render:
+  music_path: studio/media/hb-c06-polis/sources/music-bed.flac
+  background_image: studio/media/hb-c06-polis/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.7788690476190476
+    resampling: bilinear
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Samhällskunskap inför medborgarskapsprovet
+    - 'Kapitel 6: Lagar, rättsväsende och rättsskydd'
+    - 'Källtext och rysk översättning: Homebrew-antologin.'
+    - 'Fullständiga källor och licenser: videons CREDITS-fil.'
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Main Police Station in Jokiniemi, Vantaa, Finland; October 2024 – 02.jpg — Sanni Penttinen · CC
+      BY 4.0
+    - Prelude in C (BWV 846) — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Bilder · Изображения
+    paragraphs:
+    - 'Originaldiagram: Homebrew video studio; relationer ur källtexten.'
+    - 'Fotografier och flagga: Wikimedia Commons; fulla upphovs- och licensuppgifter i CREDITS-filen.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Source-only typography and selected excerpts arranged for the bilingual video; no added narration.
+  - Photograph cropped, blurred, darkened and continuously panned/zoomed. Photo adaptation retains the
+    original license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repeats if required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Main_Police_Station_in_Jokiniemi,_Vantaa,_Finland;_October_2024_%E2%80%93_02.jpg
+    description: Itä-Uudenmaan poliisilaitoksen pääpoliisiasema, valmistunut 2024.
+    license: CC BY 4.0

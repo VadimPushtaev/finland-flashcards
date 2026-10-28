@@ -1,0 +1,547 @@
+schema_version: 1
+section_id: hb-c06-brottsoffer
+chapter_id: hb-c06
+title_sv: Brottsoffers rättigheter och stöd
+title_ru: Права жертв преступлений и поддержка
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-brottsoffer.yaml
+example_only: false
+source_section_sha256: 062cd26c16e38733b3daa73381c3d636c7a49725ad28877f152cfc77b16d60b0
+translation_file_sha256: 49874a7e7645f8e6378e8ef5ce170b16edd09f02da9a9b2c941396dfce71e610
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds; background motion begins immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive source-based scenes below; each body sentence/list fragment read once in frozen
+    order. No added transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: 1920x1080 at24fps, Chapter6 indigo palette, Liberation Sans48/40 with fixed right bilingual
+    panel and separate left pictorial foreground. Inspect long pairs, split manually if necessary; never
+    below40/34.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show pairs0.25seconds before speech; allow1.5seconds after each,2.2seconds at topic boundaries
+    and2.5seconds after long pairs; use measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Ruosilankujan pelastusasema 2020-05-19.jpg by Joneikifi continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.463690476190476. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Use shared local Supertonic 3 / F1, Swedish, 32 steps, speed 0.95, seed 42, 44,100 Hz mono
+    PCM16. These clips use one ONNX intra-op thread under the shared production budget; metrics record
+    actual settings and separate seed invocations. Pronunciation and overall mix await complete-video
+    listening.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use White by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 184.660 seconds; prepared lossless stereo bed 204.917 seconds. Repeat count
+    1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_pictures
+  decision: Relevant non-graphic photographs and original pictorial diagrams of source relationships.
+    Every planned body pair has contextual illustration; verify measured>=50percent and relevance. People
+    icons represent generic roles, never actual victims or accused persons.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: emergency
+  description: Nödsituation och112
+- id: support
+  description: Brottsofferjouren och stödperson
+- id: shelter
+  description: Tillfälligt skyddshem
+- id: organisations
+  description: Hjälpsystemet och föreningar
+- id: services
+  description: Kommunala tjänster och andra stödvägar
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct licensed topic-related photograph; identity and terms verified in media-sources.json.
+  fallback: Acquire another accurately identified licensed related photograph; do not invent a location.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm instrumental source.
+  fallback: Choose a new distinct licensed instrumental source and record replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One exact-source Swedish local F1 clip per sentence.
+  fallback: Review targeted speech-only expansions without changing display wording or using cloud TTS.
+- id: picture_emergency
+  kind: foreground
+  description: Original non-graphic pictorial diagram for emergency; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_support
+  kind: foreground
+  description: Original non-graphic pictorial diagram for support; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_shelter
+  kind: foreground
+  description: Original non-graphic pictorial diagram for shelter; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_contact
+  kind: foreground
+  description: Original non-graphic pictorial diagram for contact; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_services
+  kind: foreground
+  description: Original non-graphic pictorial diagram for services; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+sentences:
+- sentence_id: hb-c06-u0083-s001
+  sv: När det är fråga om en nödsituation och hjälp behövs till platsen genast ska man ringa nödnumret
+    112.
+  ru: В экстренной ситуации, когда помощь нужна на месте немедленно, следует звонить по номеру экстренной
+    помощи 112.
+  scene_id: emergency
+  visual_cue: Non-graphic, source-based emergency pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_emergency
+  text_highlights:
+  - '112'
+  pronunciation_notes: []
+  speech_override:
+    text: När det är fråga om en nödsituation och hjälp behövs till platsen genast ska man ringa nödnumret
+      ett ett två.
+    reason: Speech-only Swedish age/emergency-number expansion preserving exact numeric meaning; display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0083-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.584422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/emergency.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0083-s002
+  sv: En nödsituation är när någons liv, hälsa, egendom eller omgivning är i fara.
+  ru: Экстренная ситуация — это когда чья-либо жизнь, здоровье, имущество или окружающая среда находятся
+    в опасности.
+  scene_id: emergency
+  visual_cue: Non-graphic, source-based emergency pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_emergency
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0083-s002.wav
+  start_seconds: 14.375
+  end_seconds: 21.201667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/emergency.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0084-s001
+  sv: Det är viktigt att söka hjälp om man faller offer för ett brott.
+  ru: Важно обратиться за помощью, если вы стали жертвой преступления.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0084-s001.wav
+  start_seconds: 23.666667
+  end_seconds: 29.239456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0084-s002
+  sv: Det kan vara svårt att klara av situationen på egen hand.
+  ru: Справиться с ситуацией самостоятельно может быть трудно.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0084-s002.wav
+  start_seconds: 31.0
+  end_seconds: 36.22449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0084-s003
+  sv: 'Till exempel på följande ställen kan man få hjälp:'
+  ru: 'Например, помощь можно получить в следующих местах:'
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0084-s003.wav
+  start_seconds: 38.0
+  end_seconds: 42.87619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0085-s001
+  sv: 'Brottsofferjouren: Brottsofferjouren RIKU är en avgiftsfri tjänst som kan användas av brottsoffer,
+    närstående till offer och vittnen.'
+  ru: 'Служба помощи жертвам преступлений (Brottsofferjouren): Служба помощи жертвам преступлений RIKU
+    — бесплатная услуга для жертв преступлений, их близких и свидетелей.'
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - Brottsofferjouren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0085-s001.wav
+  start_seconds: 44.666667
+  end_seconds: 57.693061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0085-s002
+  sv: Hos brottsofferjouren kan man få rådgivning eller en stödperson för olika faser av straffprocessen.
+  ru: В Службе помощи жертвам преступлений можно получить консультацию или помощь сопровождающего на разных
+    этапах уголовного процесса.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0085-s002.wav
+  start_seconds: 59.458333
+  end_seconds: 68.165816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0086-s001
+  sv: 'Skyddshem: På många orter finns skyddshem.'
+  ru: 'Кризисные приюты: во многих населённых пунктах есть кризисные приюты.'
+  scene_id: shelter
+  visual_cue: Non-graphic, source-based shelter pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_shelter
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0086-s001.wav
+  start_seconds: 70.625
+  end_seconds: 74.665272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/shelter.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0086-s002
+  sv: Man kan komma till ett sådant ensam eller tillsammans med sina barn om det förekommer våld eller
+    hot om våld hemma.
+  ru: В такой приют можно прийти одному или вместе со своими детьми, если дома есть насилие или угроза
+    насилия.
+  scene_id: shelter
+  visual_cue: Non-graphic, source-based shelter pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_shelter
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0086-s002.wav
+  start_seconds: 76.416667
+  end_seconds: 86.099388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/shelter.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0086-s003
+  sv: På ett skyddshem kan man bo tillfälligt, och där får man hjälp för att ta sig ur våldet.
+  ru: В кризисном приюте можно временно жить и получить помощь, чтобы выйти из ситуации насилия.
+  scene_id: shelter
+  visual_cue: Non-graphic, source-based shelter pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_shelter
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0086-s003.wav
+  start_seconds: 87.875
+  end_seconds: 95.049966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/shelter.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0086-s004
+  sv: Förbundet för mödra- och skyddshem och det egna välfärdsområdets socialtjänster ger mer information
+    om skyddshemmen.
+  ru: Больше информации о кризисных приютах предоставляют Союз домов матери и ребёнка и приютов (Förbundet
+    för mödra- och skyddshem) и социальные службы вашего региона по обеспечению благополучия населения.
+  scene_id: shelter
+  visual_cue: Non-graphic, source-based shelter pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_shelter
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0086-s004.wav
+  start_seconds: 96.833333
+  end_seconds: 106.794694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/shelter.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0087-s001
+  sv: 'Hjälpsystemet för offer för människohandel: Hjälpsystemet för offer för människohandel hjälper
+    människor som har utsatts för människohandel.'
+  ru: 'Система помощи жертвам торговли людьми (Hjälpsystemet för offer för människohandel): Система помощи
+    жертвам торговли людьми помогает людям, ставшим жертвами торговли людьми.'
+  scene_id: organisations
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - Hjälpsystemet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0087-s001.wav
+  start_seconds: 109.25
+  end_seconds: 121.858435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0088-s001
+  sv: 'Föreningar: Många föreningar hjälper människor som har upplevt våld eller hot om våld.'
+  ru: 'Объединения: многие объединения помогают людям, пережившим насилие или угрозу насилия.'
+  scene_id: organisations
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0088-s001.wav
+  start_seconds: 123.625
+  end_seconds: 131.984184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0088-s002
+  sv: Också närstående till offer får hjälp.
+  ru: Близкие жертв тоже получают помощь.
+  scene_id: organisations
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0088-s002.wav
+  start_seconds: 133.75
+  end_seconds: 137.441973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0088-s003
+  sv: Sådana föreningar är till exempel förbundet Monika-Naiset liittos Kriscenter Monika och Kvinnolinjen.
+  ru: Такими объединениями являются, например, Кризисный центр Monika (Kriscenter Monika) организации
+    Monika-Naiset liitto и «Женская линия» (Kvinnolinjen).
+  scene_id: organisations
+  visual_cue: Non-graphic, source-based contact pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_contact
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0088-s003.wav
+  start_seconds: 139.208333
+  end_seconds: 148.542755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0089-s001
+  sv: 'Kommunen, välfärdsområdet och församlingarna: Man kan också söka hjälp hos kommunens eller stadens
+    rådgivningstjänster, välfärdsområdets socialtjänster, hälsocentralen, familjerådgivningen eller till
+    exempel kyrkans familjerådgivningscentral.'
+  ru: 'Муниципалитет, регион по обеспечению благополучия населения и церковные приходы: за помощью можно
+    также обратиться в консультационные службы муниципалитета или города, социальные службы региона по
+    обеспечению благополучия населения, медицинский центр, семейную консультацию или, например, в церковный
+    центр семейного консультирования.'
+  scene_id: services
+  visual_cue: Non-graphic, source-based services pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_services
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c06-brottsoffer/narration/hb-c06-u0089-s001.wav
+  start_seconds: 151.0
+  end_seconds: 172.385578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-brottsoffer/pictures/services.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+render:
+  music_path: studio/media/hb-c06-brottsoffer/sources/music-bed.flac
+  background_image: studio/media/hb-c06-brottsoffer/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.463690476190476
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Ruosilankujan pelastusasema 2020-05-19.jpg — Joneikifi · CC BY-SA 4.0
+    - White — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Förgrund: källbaserade piktogram utan tillagda fakta; se CREDITS.md.'
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Original pictorial diagrams show only source relationships; generic roles are not actual victims or
+    suspects.
+  - Background photograph cropped, softened, darkened and continuously panned/zoomed; adaptation retains
+    source license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repetitions when required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Ruosilankujan_pelastusasema_2020-05-19.jpg
+    description: Temporary fire station in Konala, Helsinki, Finland.
+    license: CC BY-SA 4.0

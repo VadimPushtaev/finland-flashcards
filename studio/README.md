@@ -43,8 +43,8 @@ Use the [Homebrew manifest](../data/homebrew/manifest.yaml),
 Preserve source IDs, wording, order, provenance, and attribution. Production notes
 belong here; do not edit the anthology to accommodate a visual or TTS limitation.
 
-The inventory contains 187 episodes: 86 have reviewed Russian translations
-(chapters 1–6), and 101 await translation (chapters 7–12). The first video,
+The inventory contains 187 episodes, all with current reviewed Russian translations
+(chapters 1–12). The first video,
 [Finland i Norden](../videos/homebrew/hb-c01-01-lage.mp4), is complete and accepted.
 All eight Chapter 1 videos are now rendered; the seven new exports are ready for
 whole-video user review. See the [video index](../videos/homebrew/README.md) and
@@ -78,6 +78,13 @@ the 50% foreground-picture target. See the [chapter audit](hb-c05-audit.json),
 [export review records](hb-c05-visual-review.json), and
 [listening-review checklist](hb-c05-review.md). Whole-video listening and user
 acceptance remain pending; exports stay local and uncommitted.
+
+All fourteen Chapter 6 videos are rendered and technically verified, covering
+342 exact Swedish/Russian sentence pairs in 1:07:01. Relevant foreground
+pictures cover at least 94.9% of body display time in each video. See the
+[chapter audit](hb-c06-audit.json), [export reviews](hb-c06-visual-review.json),
+[music headroom](hb-c06-music-headroom.json), and [listening priorities](hb-c06-review.md).
+These are locally retained previews; whole-video listening and user acceptance remain pending.
 
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for

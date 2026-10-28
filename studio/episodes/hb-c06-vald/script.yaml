@@ -1,0 +1,1182 @@
+schema_version: 1
+section_id: hb-c06-vald
+chapter_id: hb-c06
+title_sv: Våld och sexuellt självbestämmande
+title_ru: Насилие и сексуальное самоопределение
+source_path: data/homebrew/sv/chapters/06_lagar_rattsvasende_och_rattsskydd.yaml
+translation_path: data/homebrew/ru/sections/hb-c06-vald.yaml
+example_only: false
+source_section_sha256: bd4dab869766e34c6b51924eec6de2a3e1d9e36d556a20bfe4b755b203ad0ac3
+translation_file_sha256: 7e022c08ceffe6e047bfb5f0cce101e3eadb74cf4bc452c27a33204044e78745
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken for three seconds; background motion begins immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive source-based scenes below; each body sentence/list fragment read once in frozen
+    order. No added transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: 1920x1080 at24fps, Chapter6 indigo palette, Liberation Sans48/40 with fixed right bilingual
+    panel and separate left pictorial foreground. Inspect long pairs, split manually if necessary; never
+    below40/34.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show pairs0.25seconds before speech; allow1.5seconds after each,2.2seconds at topic boundaries
+    and2.5seconds after long pairs; use measured narration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Meilahden sairaala-alue Helsinki 2022-09-19 02.jpg by Leonhard Lenz continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=3.2997023809523807. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Supertonic3 F1 sv,32steps,speed0.95,seed42,44100HzmonoPCM16; twoONNXthreads.
+    Retain exact speech inputs. Listening and accent approval remain pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Parting of the Ways - Part 1 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 563.749 seconds; prepared lossless stereo bed 461.958
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_pictures
+  decision: Relevant non-graphic photographs and original pictorial diagrams of source relationships.
+    Every planned body pair has contextual illustration; verify measured>=50percent and relevance. People
+    icons represent generic roles, never actual victims or accused persons.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: rights
+  description: Våldets följder och mänskliga rättigheter
+- id: forms
+  description: Former av våld utan grafiska illustrationer
+- id: prosecution
+  description: Allmänt åtal
+- id: consent
+  description: Sexuellt självbestämmande och samtycke
+- id: children
+  description: Barn, ålder och självbestämmande
+- id: support
+  description: Skuld, återhämtning och stöd
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct licensed topic-related photograph; identity and terms verified in media-sources.json.
+  fallback: Acquire another accurately identified licensed related photograph; do not invent a location.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm instrumental source.
+  fallback: Choose a new distinct licensed instrumental source and record replacement; never omit music.
+- id: narration
+  kind: narration
+  description: One exact-source Swedish local F1 clip per sentence.
+  fallback: Review targeted speech-only expansions without changing display wording or using cloud TTS.
+- id: picture_rights
+  kind: foreground
+  description: Original non-graphic pictorial diagram for rights; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_boundary
+  kind: foreground
+  description: Original non-graphic pictorial diagram for boundary; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_consent
+  kind: foreground
+  description: Original non-graphic pictorial diagram for consent; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_age
+  kind: foreground
+  description: Original non-graphic pictorial diagram for age; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_support
+  kind: foreground
+  description: Original non-graphic pictorial diagram for support; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_choice
+  kind: foreground
+  description: Original non-graphic pictorial diagram for choice; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_sleep
+  kind: foreground
+  description: Original non-graphic pictorial diagram for sleep; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_scope
+  kind: foreground
+  description: Original non-graphic pictorial diagram for scope; explicit relationships and labels derive
+    only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_recovery
+  kind: foreground
+  description: Original non-graphic pictorial diagram for recovery; explicit relationships and labels
+    derive only from the visible source sentences.
+  fallback: Use another accurate source-based pictorial treatment or record genuine shortfall; plain text
+    alone does not count.
+- id: picture_prosecution
+  kind: foreground
+  description: Source-based courtroom/prosecutorial relationship diagram for allmant atal.
+  fallback: Use an accurate legal-institution illustration without new factual claims.
+- id: photo_health
+  kind: foreground
+  description: Licensed stethoscope photograph as a visible health-care object, no individual identity.
+  fallback: Use source-based health illustration without a patient identity or new medical claim.
+- id: picture_no_consent
+  kind: foreground
+  description: Source-specific non-graphic no_consent pictorial illustration, preserving source qualifiers.
+  fallback: Use a neutral accurate pictorial alternative without added personal identity or legal claim.
+- id: picture_fear
+  kind: foreground
+  description: Source-specific non-graphic fear pictorial illustration, preserving source qualifiers.
+  fallback: Use a neutral accurate pictorial alternative without added personal identity or legal claim.
+- id: picture_child
+  kind: foreground
+  description: Source-specific non-graphic child pictorial illustration, preserving source qualifiers.
+  fallback: Use a neutral accurate pictorial alternative without added personal identity or legal claim.
+- id: picture_peers
+  kind: foreground
+  description: Source-specific non-graphic peers pictorial illustration, preserving source qualifiers.
+  fallback: Use a neutral accurate pictorial alternative without added personal identity or legal claim.
+sentences:
+- sentence_id: hb-c06-u0052-s001
+  sv: Våld kränker de mänskliga rättigheterna.
+  ru: Насилие нарушает права человека.
+  scene_id: rights
+  visual_cue: Non-graphic, source-based rights pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_rights
+  text_highlights:
+  - mänskliga rättigheterna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0052-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.150952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/rights.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0052-s002
+  sv: Det påverkar välbefinnandet och hälsan för alla inblandade.
+  ru: Оно влияет на благополучие и здоровье всех вовлечённых людей.
+  scene_id: rights
+  visual_cue: Verified stethoscope photograph as an illustrative medical object for the source health
+    consequences; not a patient or actual victim. Complete image, no caption.
+  asset_ids:
+  - episode_background
+  - photo_health
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0052-s002.wav
+  start_seconds: 8.916667
+  end_seconds: 14.071497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/photo-health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0052-s003
+  sv: Våld orsakar förutom fysiska skador också till exempel depression, ångest, ätstörningar och sömnstörningar.
+  ru: Помимо физических повреждений, насилие вызывает также, например, депрессию, тревогу, расстройства
+    пищевого поведения и нарушения сна.
+  scene_id: rights
+  visual_cue: Verified stethoscope photograph as an illustrative medical object for the source health
+    consequences; not a patient or actual victim. Complete image, no caption.
+  asset_ids:
+  - episode_background
+  - photo_health
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0052-s003.wav
+  start_seconds: 15.833333
+  end_seconds: 25.585714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/photo-health.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0053-s001
+  sv: Fysiskt våld är till exempel att slå, knuffa, dra i håret, strypa, sparka eller förhindra någon
+    att röra sig.
+  ru: Физическое насилие — это, например, удары, толчки, дёрганье за волосы, удушение, пинки или ограничение
+    свободы движения человека.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0053-s001.wav
+  start_seconds: 28.041667
+  end_seconds: 37.654728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0053-s002
+  sv: Misshandel betyder att en människa riktar eller försöker rikta våld mot en annan människa.
+  ru: Применение насилия к человеку (misshandel) означает, что один человек применяет или пытается применить
+    насилие к другому человеку.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0053-s002.wav
+  start_seconds: 39.416667
+  end_seconds: 47.148912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0053-s003
+  sv: Misshandel är ett brott även om den inte skulle lämna spår på kroppen.
+  ru: Применение насилия к человеку является преступлением, даже если оно не оставляет следов на теле.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0053-s003.wav
+  start_seconds: 48.916667
+  end_seconds: 55.116395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0055-s001
+  sv: Psykiskt våld är att hota, utöva utpressning mot någon, kalla någon vid öknamn, isolera någon från
+    andra och behandla någon illa eller till exempel undersöka någons telefon eller e-post.
+  ru: Психологическое насилие — это угрозы, шантаж, обзывание, изоляция человека от других и плохое обращение
+    с ним либо, например, проверка его телефона или электронной почты.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0055-s001.wav
+  start_seconds: 56.875
+  end_seconds: 72.13051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0055-s002
+  sv: Psykiskt våld lämnar inga yttre spår och är därför ibland svårt att känna igen.
+  ru: Психологическое насилие не оставляет внешних следов, поэтому его иногда трудно распознать.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0055-s002.wav
+  start_seconds: 73.916667
+  end_seconds: 80.952313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0056-s001
+  sv: Sexuellt våld är till exempel ofredande, beröring, trakasserier, våldtäkt eller sexuella övergrepp.
+  ru: Сексуальное насилие — это, например, посягательства на личную неприкосновенность, прикосновения,
+    домогательства, изнасилование или сексуальное посягательство.
+  scene_id: forms
+  visual_cue: Non-graphic, source-based boundary pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_boundary
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0056-s001.wav
+  start_seconds: 82.708333
+  end_seconds: 91.764116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/boundary.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0057-s001
+  sv: I Finland är misshandel ett brott som hör under allmänt åtal.
+  ru: В Финляндии применение насилия к человеку относится к преступлениям, преследуемым в порядке публичного
+    обвинения.
+  scene_id: prosecution
+  visual_cue: Original courtroom/party pictorial diagram for allmant atal; generic roles, not a legal-aid
+    service depiction. No added claim or caption.
+  asset_ids:
+  - episode_background
+  - picture_prosecution
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0057-s001.wav
+  start_seconds: 94.25
+  end_seconds: 99.822789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/prosecution.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0057-s002
+  sv: Det betyder att gärningsmannen kan åtalas för sina gärningar, även om offret, det vill säga den
+    som utsatts för våldet, inte skulle vilja det.
+  ru: Это означает, что правонарушителю могут предъявить обвинение за его действия, даже если жертва,
+    то есть человек, подвергшийся насилию, этого не хочет.
+  scene_id: prosecution
+  visual_cue: Original courtroom/party pictorial diagram for allmant atal; generic roles, not a legal-aid
+    service depiction. No added claim or caption.
+  asset_ids:
+  - episode_background
+  - picture_prosecution
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0057-s002.wav
+  start_seconds: 101.583333
+  end_seconds: 113.28619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/prosecution.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0058-s001
+  sv: Sexualbrott är brott som kränker en annan människas sexuella självbestämmanderätt.
+  ru: Сексуальные преступления — это преступления, нарушающие право другого человека на сексуальное самоопределение.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based consent pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_consent
+  text_highlights:
+  - sexuella självbestämmanderätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0058-s001.wav
+  start_seconds: 115.75
+  end_seconds: 123.482245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0058-s002
+  sv: Sexualbrott är bland annat våldtäkt, sexuella övergrepp och sexuellt ofredande.
+  ru: К сексуальным преступлениям относятся, в частности, изнасилование, сексуальное посягательство и
+    сексуальные домогательства.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based consent pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_consent
+  text_highlights:
+  - våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0058-s002.wav
+  start_seconds: 125.25
+  end_seconds: 132.424966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0059-s001
+  sv: Könsumgänge utan den andra partens samtycke är alltid våldtäkt.
+  ru: Половое сношение без согласия другой стороны всегда является изнасилованием.
+  scene_id: consent
+  visual_cue: Non-consent is represented by a crossed assent marker, never a positive JA/check; source
+    rape claim remains on-screen without graphic imagery. Fixed bilingual panel, no caption.
+  asset_ids:
+  - episode_background
+  - picture_no_consent
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0059-s001.wav
+  start_seconds: 134.208333
+  end_seconds: 139.850782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/no_consent.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0059-s002
+  sv: Samtycke innebär att en människa deltar i handlingen frivilligt av sin egen vilja.
+  ru: Согласие означает, что человек участвует в действии добровольно, по собственной воле.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based choice pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_choice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0059-s002.wav
+  start_seconds: 141.625
+  end_seconds: 148.730306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/choice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0059-s003
+  sv: Om man deltar endast för att man är rädd för att säga nej, är det inte fråga om samtycke.
+  ru: Если человек участвует только потому, что боится сказать «нет», это не является согласием.
+  scene_id: consent
+  visual_cue: A NEJ speech bubble and crossed assent marker illustrate fear of saying no; no positive
+    JA/check or implication of consent. Fixed bilingual panel, no caption.
+  asset_ids:
+  - episode_background
+  - picture_fear
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0059-s003.wav
+  start_seconds: 150.5
+  end_seconds: 158.510884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/fear.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0059-s004
+  sv: En människa som till exempel sover eller är medvetslös på grund av alkohol, droger eller läkemedel
+    kan inte samtycka till sex.
+  ru: Человек, который, например, спит или находится без сознания из-за алкоголя, наркотиков или лекарств,
+    не может дать согласие на секс.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based sleep pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_sleep
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0059-s004.wav
+  start_seconds: 160.291667
+  end_seconds: 171.228265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/sleep.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0059-s005
+  sv: Samtycke kan ges till exempel i ord eller med kroppsspråk.
+  ru: Согласие можно выразить, например, словами или языком тела.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based choice pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_choice
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0059-s005.wav
+  start_seconds: 173.0
+  end_seconds: 178.29415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/choice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0060-s001
+  sv: Också andra sexuella handlingar än könsumgänge är brott om den andra parten inte har samtyckt till
+    dem.
+  ru: Другие сексуальные действия, помимо полового сношения, также являются преступлениями, если другая
+    сторона не дала на них согласия.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0060-s001.wav
+  start_seconds: 180.083333
+  end_seconds: 188.721156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0060-s002
+  sv: Brottsrubriceringen är då sexuellt övergrepp.
+  ru: В таком случае преступление квалифицируется как сексуальное посягательство.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0060-s002.wav
+  start_seconds: 190.5
+  end_seconds: 194.749252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0060-s003
+  sv: Sådana handlingar kan vara till exempel att kraftigt röra en annan persons könsorgan eller bröst,
+    eller att masturbera inför någon annan.
+  ru: К таким действиям могут относиться, например, интенсивные прикосновения к половым органам или груди
+    другого человека либо мастурбация перед другим человеком.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0060-s003.wav
+  start_seconds: 196.5
+  end_seconds: 208.202857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0061-s001
+  sv: Sexuellt ofredande är till exempel att röra någon annan sexuellt utan hens samtycke.
+  ru: Сексуальные домогательства — это, например, прикосновения сексуального характера к другому человеку
+    без его согласия.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0061-s001.wav
+  start_seconds: 209.958333
+  end_seconds: 217.342279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0061-s002
+  sv: Dessutom kan sexuellt ofredande vara till exempel upprepade verbala handlingar, meddelanden eller
+    blottande som kränker en annan människas sexuella självbestämmanderätt.
+  ru: Кроме того, сексуальными домогательствами могут быть, например, повторяющиеся словесные действия,
+    сообщения или обнажение тела, нарушающие право другого человека на сексуальное самоопределение.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights:
+  - sexuella självbestämmanderätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0061-s002.wav
+  start_seconds: 219.125
+  end_seconds: 233.683912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0062-s001
+  sv: En sexuell handling utan den andras samtycke eller sexuellt ofredande berättigas inte av att offret
+    till exempel bar avslöjande kläder, var berusat, gick hem till gärningsmannens bostad tillsammans
+    med hen eller tidigare har samtyckt till sex med gärningsmannen eller någon annan.
+  ru: Сексуальное действие без согласия другого человека или сексуальные домогательства не оправдываются
+    тем, что жертва, например, носила откровенную одежду, была в состоянии опьянения, вместе с правонарушителем
+    пришла к нему домой или ранее давала согласие на секс с правонарушителем либо с кем-то другим.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0062-s001.wav
+  start_seconds: 235.458333
+  end_seconds: 257.958469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c06-u0062-s002
+  sv: Ett parförhållande eller äktenskap innebär inte automatiskt samtycke till sexuella handlingar, utan
+    man måste fråga om samtycke separat varje gång.
+  ru: 'Партнёрские отношения или брак не означают автоматического согласия на сексуальные действия: о
+    согласии нужно спрашивать отдельно каждый раз.'
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0062-s002.wav
+  start_seconds: 260.75
+  end_seconds: 272.940476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0063-s001
+  sv: Inte heller samtycke till en typ av sexuell handling, till exempel samlag med kondom, innebär automatiskt
+    samtycke till andra sexuella handlingar, till exempel samlag utan kondom.
+  ru: Согласие на один вид сексуального действия, например половой акт с презервативом, также не означает
+    автоматического согласия на другие сексуальные действия, например половой акт без презерватива.
+  scene_id: consent
+  visual_cue: Non-graphic, source-based scope pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_scope
+  text_highlights:
+  - samtycke
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0063-s001.wav
+  start_seconds: 274.708333
+  end_seconds: 289.406565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/scope.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0064-s001
+  sv: När offret är ett barn under 16 år är könsumgänge eller någon annan sexuell handling alltid ett
+    brott.
+  ru: Если жертва — ребёнок младше 16 лет, половое сношение или любое другое сексуальное действие всегда
+    является преступлением.
+  scene_id: children
+  visual_cue: Generic child silhouette with under16 label and protective shield; no16/17adult-threshold
+    graphic. Fixed bilingual panel, no caption.
+  asset_ids:
+  - episode_background
+  - picture_child
+  text_highlights:
+  - '16'
+  pronunciation_notes: []
+  speech_override:
+    text: När offret är ett barn under sexton år är könsumgänge eller någon annan sexuell handling alltid
+      ett brott.
+    reason: Speech-only Swedish age/emergency-number expansion preserving exact numeric meaning; display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0064-s001.wav
+  start_seconds: 291.875
+  end_seconds: 300.930782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/child.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0064-s002
+  sv: Ett barn under 16 år kan alltså inte samtycka till sex.
+  ru: Таким образом, ребёнок младше 16 лет не может дать согласие на секс.
+  scene_id: children
+  visual_cue: Generic child silhouette and under16 label; source no-consent claim stays exact. Fixed bilingual
+    panel, no caption.
+  asset_ids:
+  - episode_background
+  - picture_child
+  text_highlights:
+  - '16'
+  pronunciation_notes: []
+  speech_override:
+    text: Ett barn under sexton år kan alltså inte samtycka till sex.
+    reason: Speech-only Swedish age/emergency-number expansion preserving exact numeric meaning; display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0064-s002.wav
+  start_seconds: 302.708333
+  end_seconds: 308.072143
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/child.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0064-s003
+  sv: Undantaget är om båda parterna är i samma ålder och den sexuella självbestämmanderätten inte har
+    kränkts.
+  ru: Исключение составляют случаи, когда обе стороны одного возраста и право на сексуальное самоопределение
+    не нарушено.
+  scene_id: children
+  visual_cue: Same-height neutral peer silhouettes illustrate same age only; no age threshold, affirmative
+    consent badge or omission of the explicit no-rights-violation condition on-screen. Fixed bilingual
+    panel, no caption.
+  asset_ids:
+  - episode_background
+  - picture_peers
+  text_highlights:
+  - sexuella självbestämmanderätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0064-s003.wav
+  start_seconds: 309.833333
+  end_seconds: 319.307075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/peers.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0064-s004
+  sv: Om det handlar om en ung person i åldern 16–17 år, är det fråga om ett brott om den andra parten
+    har en dominerande ställning över den unga.
+  ru: Если речь идёт о молодом человеке в возрасте 16–17 лет, действие является преступлением, когда другая
+    сторона занимает доминирующее положение по отношению к нему.
+  scene_id: children
+  visual_cue: Non-graphic, source-based age pictorial illustration; generic roles only, no personal identities
+    or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_age
+  text_highlights:
+  - '16'
+  pronunciation_notes: []
+  speech_override:
+    text: Om det handlar om en ung person i åldern sexton till sjutton år, är det fråga om ett brott om
+      den andra parten har en dominerande ställning över den unga.
+    reason: Speech-only Swedish age/emergency-number expansion preserving exact numeric meaning; display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0064-s004.wav
+  start_seconds: 321.083333
+  end_seconds: 334.318707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/age.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0065-s001
+  sv: Det är vanligt att offer inte anmäler sexualbrott till polisen.
+  ru: Жертвы нередко не сообщают о сексуальных преступлениях в полицию.
+  scene_id: support
+  visual_cue: Non-graphic, source-based recovery pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_recovery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0065-s001.wav
+  start_seconds: 336.791667
+  end_seconds: 342.364456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/recovery.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0065-s002
+  sv: Det kan bero på att de känner skam eller skuld över händelsen.
+  ru: Это может быть связано с тем, что они испытывают стыд или чувство вины из-за случившегося.
+  scene_id: support
+  visual_cue: Non-graphic, source-based recovery pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_recovery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0065-s002.wav
+  start_seconds: 344.125
+  end_seconds: 349.41915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/recovery.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0065-s003
+  sv: Ett sexualbrott är dock aldrig offrets fel.
+  ru: Однако жертва никогда не виновата в сексуальном преступлении.
+  scene_id: support
+  visual_cue: Non-graphic, source-based recovery pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_recovery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0065-s003.wav
+  start_seconds: 351.208333
+  end_seconds: 355.248605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/recovery.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0065-s004
+  sv: Under straffprocessen är det möjligt att få stöd.
+  ru: Во время уголовного процесса можно получить поддержку.
+  scene_id: support
+  visual_cue: Non-graphic, source-based recovery pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_recovery
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0065-s004.wav
+  start_seconds: 357.0
+  end_seconds: 361.458231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/recovery.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0065-s005
+  sv: Även om det ofta är en traumatisk upplevelse att falla offer för ett sexualbrott, är det möjligt
+    att återhämta sig från det.
+  ru: Хотя пережитое сексуальное преступление часто становится травматическим опытом, восстановиться после
+    него возможно.
+  scene_id: support
+  visual_cue: Non-graphic, source-based recovery pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_recovery
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0065-s005.wav
+  start_seconds: 363.208333
+  end_seconds: 373.657313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/recovery.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0066-s001
+  sv: Offer för sexualbrott kan få stöd också utan att göra en brottsanmälan.
+  ru: Жертвы сексуальных преступлений могут получить поддержку и без подачи заявления о преступлении.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0066-s001.wav
+  start_seconds: 375.416667
+  end_seconds: 381.825374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0066-s002
+  sv: På Seri-stödcentren får man till exempel traumastöd och psykologisk rådgivning.
+  ru: В центрах поддержки Seri предоставляют, например, помощь в преодолении травмы и психологические
+    консультации.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0066-s002.wav
+  start_seconds: 383.583333
+  end_seconds: 390.688639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0066-s003
+  sv: Alla över 16 år oavsett kön kan kontakta ett stödcenter.
+  ru: Все лица старше 16 лет независимо от пола могут обратиться в центр поддержки.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override:
+    text: Alla över sexton år oavsett kön kan kontakta ett stödcenter.
+    reason: Speech-only Swedish age/emergency-number expansion preserving exact numeric meaning; display
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0066-s003.wav
+  start_seconds: 392.458333
+  end_seconds: 397.891803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0066-s004
+  sv: Också en del organisationer erbjuder stöd för offer för sexualbrott.
+  ru: Некоторые организации также предлагают поддержку жертвам сексуальных преступлений.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0066-s004.wav
+  start_seconds: 399.666667
+  end_seconds: 405.936054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c06-u0066-s005
+  sv: Om ett sexualbrott riktar sig mot ett barn, får barnet och familjen stöd hos barnskyddet.
+  ru: Если сексуальное преступление направлено против ребёнка, ребёнок и его семья получают поддержку
+    в службе защиты детей.
+  scene_id: support
+  visual_cue: Non-graphic, source-based support pictorial illustration; generic roles only, no personal
+    identities or added legal claims. Keep the bilingual panel steady and omit captions.
+  asset_ids:
+  - episode_background
+  - picture_support
+  text_highlights:
+  - stöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c06-vald/narration/hb-c06-u0066-s005.wav
+  start_seconds: 407.708333
+  end_seconds: 415.440578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c06-vald/pictures/support.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c06-vald/sources/music-bed.flac
+  background_image: studio/media/hb-c06-vald/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.2997023809523807
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Yhteiskuntaorientaatio.fi — Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Svensk källtext med granskad rysk översättning.
+    - Fullständiga källor och utgivarvillkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Meilahden sairaala-alue Helsinki 2022-09-19 02.jpg — Leonhard Lenz · CC0
+    - Parting of the Ways - Part 1 — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Förgrund: källbaserade piktogram utan tillagda fakta; se CREDITS.md.'
+  - heading: Förgrund · Изображения
+    paragraphs:
+    - Stetoskop — Jacek Halicki · CC BY-SA4.0
+    - Bilden proportionellt förminskad; licens behålls.
+    - Källa och fullständig licens i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact Swedish source and reviewed Russian translation displayed sentence by sentence.
+  - Original pictorial diagrams show only source relationships; generic roles are not actual victims or
+    suspects.
+  - Background photograph cropped, softened, darkened and continuously panned/zoomed; adaptation retains
+    source license.
+  - Music excerpted, faded, ducked and level-adjusted;4second crossfade repetitions when required.
+  palette:
+    background: '#252747'
+    text: '#faf3e8'
+    secondary: '#cbd1ec'
+    highlight: '#e3c58b'
+    separator: '#515a82'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Meilahden_sairaala-alue_Helsinki_2022-09-19_02.jpg
+    description: Meilahti hospital area Helsinki.
+    license: CC0
