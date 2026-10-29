@@ -245,7 +245,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Parliament protocol item for second supplementary budget final handling / Parliament letter delivery (FI, PTK 71/2026 vp / EDK-2026-AK-37849, item 2, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849
 - Parliament protocol item for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd / EDK-2026-AK-37883, item 2, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883
 - Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (FI, PTK 71/2026 vp, item 2): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849/pdf
-- Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd, item 2): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883/pdf
+- Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd, item 2; revision 4.0, marked Granskats, PDF regenerated 2026-10-08): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883/pdf
 - Parliament Finance Committee report for second supplementary budget (FI, VaVM 19/2026 vp / EDK-2026-AK-37016, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016
 - Parliament Finance Committee report for second supplementary budget PDF (FI, VaVM 19/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016/pdf
 - Parliament Finance Committee report for second supplementary budget (SV, FiUB 19/2026 rd / EDK-2026-AK-37017, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37017
@@ -388,3 +388,39 @@ Publication dates below are historical; these sources do not replace the current
 - Pending Government proposals — Ministry of the Interior (Finlex, FI): https://www.finlex.fi/fi/hallituksen-esitykset/vireilla/sisaministerio
 - Pending Government proposals — Ministry of the Interior (Finlex, SV): https://www.finlex.fi/sv/regeringspropositioner/pa-gang/inrikesministeriet
 - Pending Government proposals — Ministry of the Interior (Finlex, EN): https://www.finlex.fi/en/government-proposals/pending/sisaministerio
+
+## Additional official source routes (discovered 2026-10-29)
+
+These are direct or alternate URLs for documents and pages already monitored above. They do not represent additional consultation statements.
+
+- Eduskunta submitted proposal print/PDF (FI, HE 54/2026 vp; same SHA256 as Valtioneuvosto PDF) — current direct URL: https://api.eduskunta.fi/documents/fi/D9802F6F-870C-4CD3-A923-2BD5F3E361AC.pdf
+- Eduskunta submitted proposal print/PDF (SV, RP 54/2026 rd; same SHA256 as Valtioneuvosto PDF) — current direct URL: https://api.eduskunta.fi/documents/sv/1177A177-E834-4C0A-801B-CF6B71B9B4DC.pdf
+- Parliament protocol item print/PDF version (FI, PTK 41/2026 vp, item 5; current revision 4.0 archived 2026-08-02) — current direct URL: https://api.eduskunta.fi/documents/fi/344A3C09-9C42-C5F2-85C3-9F4223A00000.pdf
+- Parliament protocol item print/PDF version (SV, PR 41/2026 rd, item 5; current revision 4.0 archived 2026-08-02) — current direct URL: https://api.eduskunta.fi/documents/sv/C6BE4CE8-5A50-CE64-84DC-9F4223F00000.pdf
+- Parliament Administrative Committee report PDF (FI, HaVM 10/2026 vp) — current direct URL: https://api.eduskunta.fi/documents/fi/A3BE34FB-8EA2-CAD5-865B-9E6922500000.pdf
+- Parliament protocol item print/PDF version (FI, PTK 58/2026 vp, item 10) — current direct URL: https://api.eduskunta.fi/documents/fi/85755717-0601-42A8-BBCA-A91F3C7FF008.pdf
+- Parliament protocol item print/PDF version (SV, PR 58/2026 rd, item 10) — current direct URL: https://api.eduskunta.fi/documents/sv/63394C89-7CCC-4781-A8C5-E93B642FDF5D.pdf
+- Parliament protocol item print/PDF version (FI, PTK 62/2026 vp, item 9; current revision 4.0 archived 2026-09-04) — current direct URL: https://api.eduskunta.fi/documents/fi/3D8687FA-0C09-C7BA-8DB8-A06646E00000.pdf
+- Parliament protocol item print/PDF version (SV, PR 62/2026 rd, item 9; current revision 4.0 archived 2026-09-04) — current direct URL: https://api.eduskunta.fi/documents/sv/EC5CC290-808A-C5BD-87DB-A06647300000.pdf
+- Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd, item 2; revision 4.0, marked Granskats, PDF regenerated 2026-10-08) — current direct URL: https://api.eduskunta.fi/documents/sv/E19BCDAA-F1B2-CE28-87FA-A11B80900000.pdf
+- Parliament letter for second supplementary budget PDF (FI, EK 30/2026 vp) — current direct URL: https://api.eduskunta.fi/documents/fi/4C86D888-8DC4-C83D-8417-9EF32E200000.pdf
+- Parliament letter for second supplementary budget PDF (SV, RSk 30/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/37F1F449-D806-C7C9-848F-9EF2F9500000.pdf
+- “Selvitys kansalaisuuskokeen käyttöönotosta” (URN landing) — current direct URL: https://julkaisut.valtioneuvosto.fi/items/1482c90b-16cb-418c-b0ed-4561011fe7d4
+- Citizenship Act (Kansalaisuuslaki 359/2003, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/2003/359
+- Citizenship Act (Medborgarskapslag 359/2003, SV) — current direct URL: https://www.finlex.fi/sv/lagstiftning/2003/359
+- Phase 1 act (474/2024, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/474
+- Phase 1 act (474/2024, SV) — current direct URL: https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2024/474
+- Phase 2 act (929/2025, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/929
+- Phase 2 act (929/2025, SV) — current direct URL: https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2025/929
+- Parliament response alternate route (FI, EV 86/2026; linked from the Phase 3 project page): https://www.eduskunta.fi/valtiopaivaasiakirjat/EV+86/2026
+- Consultation without JavaScript (FI; same consultation, 36 responses): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJs?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation without JavaScript (SV; same consultation, 36 responses): https://www.lausuntopalvelu.fi/SV/Proposal/ParticipationNonJs?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Parliament plenary protocol main page (FI, PTK 59/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/eduskuntatunnus/PTK%2059%2F2026%20vp?asiakirjatyyppikoodi=PTKPS
+- Parliament plenary protocol main page (FI, PTK 63/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/eduskuntatunnus/PTK%2063%2F2026%20vp?asiakirjatyyppikoodi=PTKPS
+- Submitted Government proposal alternate document route (FI, HE 54/2026 vp): https://www.eduskunta.fi/valtiopaivaasiakirjat/HE+54/2026
+- Parliament plenary protocol main page (FI, PTK 58/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/eduskuntatunnus/PTK%2058%2F2026%20vp?asiakirjatyyppikoodi=PTKPS
+- Parliament plenary protocol main page (FI, PTK 41/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/eduskuntatunnus/PTK%2041%2F2026%20vp?asiakirjatyyppikoodi=PTKPS
+- Parliament plenary protocol main page (FI, PTK 62/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/eduskuntatunnus/PTK%2062%2F2026%20vp?asiakirjatyyppikoodi=PTKPS
+- Parliament response alternate PDF route (SV, RSv 86/2026 rd): https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-31561/pdf
+- Parliament letter alternate PDF route (SV, RSk 30/2026 rd): https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-37019/pdf
+- Parliament letter alternate document route (FI, EK 30/2026 vp): https://www.eduskunta.fi/valtiopaivaasiakirjat/EK+30/2026
