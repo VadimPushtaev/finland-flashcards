@@ -45,6 +45,10 @@ Chapter 6 uses a muted indigo justice palette: panel/background tint `#252747`,
 Swedish text `#faf3e8`, Russian text and secondary labels `#cbd1ec`, highlights
 `#e3c58b`, and separators `#515a82`. Carry it through all Chapter 6 episodes.
 
+Chapter 7 uses a muted olive work palette: panel/background tint `#30371f`,
+Swedish text `#faf3e8`, Russian text and secondary labels `#d2d9b7`, highlights
+`#e7bf78`, and separators `#636e42`. Carry it through all Chapter 7 episodes.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its

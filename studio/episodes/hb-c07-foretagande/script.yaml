@@ -1,0 +1,2293 @@
+schema_version: 1
+section_id: hb-c07-foretagande
+chapter_id: hb-c07
+title_sv: Företagande och företagsformer
+title_ru: Предпринимательство и организационно-правовые формы предприятий
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-foretagande.yaml
+example_only: false
+source_section_sha256: b925e3bd85efe21d88a0279f126723933c4cc5d138c9d5f7af0a331ef8c22c17
+translation_file_sha256: 221a6f0e9d2955b623265743258d0e5b93ba788deac512425431482b6b0b123b
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Episode-specific consecutive source-topic scenes below; read all body sentences/list fragments
+    exactly once in stored source order without additions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40
+    with fixed right bilingual panel and left foreground picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: 'Use File:Hakaniemi market hall.jpg by JIP | Talk.
+
+
+    Original uploader was JIP at en.wikipedia continuously as decorative background, darkened 42% and
+    blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=7.069345238095238.
+    Foreground and bilingual text remain fixed.'
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,mono44100PCM16; initial2ONNXthreads
+    with one selected1thread bounded age-component candidate. Pronunciation and whole-video mix still
+    await listening; ASR cannot establish audible quality.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Pensif by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 129.071 seconds; prepared lossless stereo bed 989.708 seconds. Repeat count
+    7, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific diagrams and verified photographs change at meaningful source-topic boundaries;
+    aim>=50%actual narrated-body display duration. No speculative numerical data or updated legal/economic
+    claims.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Egenföretagande och olika yrken
+- id: scene-2
+  description: Affärsidé, kunder och ekonomisk risk
+- id: scene-3
+  description: Affärsplan och kunskaper
+- id: scene-4
+  description: Nyföretagarcentrum och kommunal rådgivning
+- id: scene-5
+  description: 'Finansiering: eget kapital, banklån och Finnvera'
+- id: scene-6
+  description: Startbidrag för företagarens levnadskostnader
+- id: scene-7
+  description: Bokföring av inkomster och utgifter
+- id: scene-8
+  description: Företagare eller i praktiken anställd
+- id: scene-9
+  description: Arbetsavtal och råd om rättigheter
+- id: scene-10
+  description: Enskild näringsidkare och bestämmanderätt
+- id: scene-11
+  description: Aktiebolag och delägarnas aktier
+- id: scene-12
+  description: Öppet bolag och personligt gemensamt ansvar
+- id: scene-13
+  description: 'Kommanditbolag: ansvariga och tysta bolagsmän'
+- id: scene-14
+  description: Andelslag och medlemmarnas röster
+- id: scene-15
+  description: Tillstånd och anmälan när det krävs
+- id: scene-16
+  description: 'FöPL: source-listade villkor tillsammans'
+- id: scene-17
+  description: Pensionsskydd och försäkring
+- id: scene-18
+  description: Arbetsinkomst och social trygghet
+- id: scene-19
+  description: Företagsform, beskattningsbar inkomst och förhandsuppskattning
+- id: scene-20
+  description: Utländska arbetstagares rätt att arbeta
+- id: scene-21
+  description: Arbetsgivarens avgifter och försäkringar
+- id: scene-22
+  description: Avslutat företagande och arbetslöshetsförmåner
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: business_photo
+  kind: foreground
+  description: Egenföretagande och olika yrken — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: business_risk
+  kind: foreground
+  description: Affärsidé, kunder och ekonomisk risk — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: business_plan
+  kind: foreground
+  description: Affärsplan och kunskaper — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: guidance
+  kind: foreground
+  description: Nyföretagarcentrum och kommunal rådgivning — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: finance
+  kind: foreground
+  description: 'Finansiering: eget kapital, banklån och Finnvera — relevant verified photograph or original
+    pictorial source-based diagram.'
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: grant
+  kind: foreground
+  description: Startbidrag för företagarens levnadskostnader — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: accounts
+  kind: foreground
+  description: Bokföring av inkomster och utgifter — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: employment_status
+  kind: foreground
+  description: Företagare eller i praktiken anställd — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: contract_advice
+  kind: foreground
+  description: Arbetsavtal och råd om rättigheter — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: sole_trader
+  kind: foreground
+  description: Enskild näringsidkare och bestämmanderätt — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: shares
+  kind: foreground
+  description: Aktiebolag och delägarnas aktier — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: partnership
+  kind: foreground
+  description: Öppet bolag och personligt gemensamt ansvar — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: limited_partnership
+  kind: foreground
+  description: 'Kommanditbolag: ansvariga och tysta bolagsmän — relevant verified photograph or original
+    pictorial source-based diagram.'
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: cooperative
+  kind: foreground
+  description: Andelslag och medlemmarnas röster — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: permits
+  kind: foreground
+  description: Tillstånd och anmälan när det krävs — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: pension_conditions
+  kind: foreground
+  description: 'FöPL: source-listade villkor tillsammans — relevant verified photograph or original pictorial
+    source-based diagram.'
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: pension_protection
+  kind: foreground
+  description: Pensionsskydd och försäkring — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: pension_income
+  kind: foreground
+  description: Arbetsinkomst och social trygghet — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: business_tax
+  kind: foreground
+  description: Företagsform, beskattningsbar inkomst och förhandsuppskattning — relevant verified photograph
+    or original pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: right_to_work
+  kind: foreground
+  description: Utländska arbetstagares rätt att arbeta — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: employer_insurance
+  kind: foreground
+  description: Arbetsgivarens avgifter och försäkringar — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: unemployment
+  kind: foreground
+  description: Avslutat företagande och arbetslöshetsförmåner — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+sentences:
+- sentence_id: hb-c07-u0242-s001
+  sv: Ett alternativ till arbete är att starta ett eget företag eller bli egenföretagare.
+  ru: Альтернативой работе по найму может стать создание собственной компании или самостоятельная предпринимательская
+    деятельность.
+  scene_id: scene-1
+  visual_cue: Egenföretagande och olika yrken; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0242-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.355306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_photo.png
+- sentence_id: hb-c07-u0242-s002
+  sv: Till exempel tolkar, journalister, musiker, bokförare och grafiska formgivare kan vara egenföretagare.
+  ru: Например, устные переводчики, журналисты, музыканты, бухгалтеры и графические дизайнеры могут работать
+    самостоятельно как предприниматели.
+  scene_id: scene-1
+  visual_cue: Egenföretagande och olika yrken; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0242-s002.wav
+  start_seconds: 12.125
+  end_seconds: 21.459422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_photo.png
+- sentence_id: hb-c07-u0243-s001
+  sv: Om man vill bli företagare ska man ha en bra affärsidé.
+  ru: Чтобы стать предпринимателем, нужна хорошая бизнес-идея.
+  scene_id: scene-2
+  visual_cue: Affärsidé, kunder och ekonomisk risk; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - business_risk
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0243-s001.wav
+  start_seconds: 23.916667
+  end_seconds: 29.210816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_risk.png
+- sentence_id: hb-c07-u0243-s002
+  sv: Man behöver också tillräckligt mycket pengar för att komma igång.
+  ru: Для начала также необходимо достаточно денег.
+  scene_id: scene-2
+  visual_cue: Affärsidé, kunder och ekonomisk risk; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - business_risk
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0243-s002.wav
+  start_seconds: 31.0
+  end_seconds: 36.851429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_risk.png
+- sentence_id: hb-c07-u0243-s003
+  sv: Företagande är alltid förknippat med en ekonomisk risk.
+  ru: Предпринимательство всегда связано с финансовым риском.
+  scene_id: scene-2
+  visual_cue: Affärsidé, kunder och ekonomisk risk; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - business_risk
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0243-s003.wav
+  start_seconds: 38.625
+  end_seconds: 43.84949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_risk.png
+- sentence_id: hb-c07-u0243-s004
+  sv: Om ett företag inte har några kunder, får det inga inkomster.
+  ru: Если у компании нет клиентов, она не получает дохода.
+  scene_id: scene-2
+  visual_cue: Affärsidé, kunder och ekonomisk risk; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - business_risk
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0243-s004.wav
+  start_seconds: 45.625
+  end_seconds: 51.128129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_risk.png
+- sentence_id: hb-c07-u0243-s005
+  sv: Om en person är företagare på heltid eller egenföretagare, har hen inte rätt till arbetslöshetsförmåner.
+  ru: Если человек занимается предпринимательством как основной деятельностью или является самостоятельным
+    предпринимателем, он не имеет права на пособия по безработице.
+  scene_id: scene-2
+  visual_cue: Affärsidé, kunder och ekonomisk risk; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - business_risk
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0243-s005.wav
+  start_seconds: 52.916667
+  end_seconds: 62.042109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_risk.png
+- sentence_id: hb-c07-u0244-s001
+  sv: Att starta företag kräver yrkesskicklighet och kunskap om till exempel beskattning och bokföring.
+  ru: Создание компании требует профессионального мастерства и знаний, например, в области налогообложения
+    и бухгалтерского учёта.
+  scene_id: scene-3
+  visual_cue: Affärsplan och kunskaper; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_plan
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0244-s001.wav
+  start_seconds: 64.5
+  end_seconds: 72.719864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_plan.png
+- sentence_id: hb-c07-u0244-s002
+  sv: Om man funderar på att starta eget företag ska man först göra upp en preliminär affärsplan, det
+    vill säga en kalkyl över huruvida företaget kommer att vara lönsamt.
+  ru: Если вы задумываетесь о создании собственной компании, прежде всего следует составить предварительный
+    бизнес-план, то есть расчёт того, будет ли компания рентабельной.
+  scene_id: scene-3
+  visual_cue: Affärsplan och kunskaper; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_plan
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0244-s002.wav
+  start_seconds: 74.5
+  end_seconds: 88.501633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_plan.png
+- sentence_id: hb-c07-u0245-s001
+  sv: Städernas nyföretagarcentrum erbjuder hjälp med upprättande av affärsplaner och allt som rör startande
+    av företag.
+  ru: Городские центры поддержки начинающих предпринимателей помогают составлять бизнес-планы и решать
+    все вопросы, связанные с созданием компании.
+  scene_id: scene-4
+  visual_cue: Nyföretagarcentrum och kommunal rådgivning; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - guidance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0245-s001.wav
+  start_seconds: 90.958333
+  end_seconds: 101.546633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/guidance.png
+- sentence_id: hb-c07-u0245-s002
+  sv: De erbjuder också utbildning för personer som vill bli företagare.
+  ru: Они также предлагают обучение людям, желающим стать предпринимателями.
+  scene_id: scene-4
+  visual_cue: Nyföretagarcentrum och kommunal rådgivning; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - guidance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0245-s002.wav
+  start_seconds: 103.333333
+  end_seconds: 109.184762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/guidance.png
+- sentence_id: hb-c07-u0245-s003
+  sv: Likaså erbjuder kommunens sysselsättningstjänster tjänster för företagare.
+  ru: Муниципальные службы занятости также предоставляют услуги предпринимателям.
+  scene_id: scene-4
+  visual_cue: Nyföretagarcentrum och kommunal rådgivning; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - guidance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0245-s003.wav
+  start_seconds: 110.958333
+  end_seconds: 117.71534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/guidance.png
+- sentence_id: hb-c07-u0246-s001
+  sv: För att starta ett företag behövs pengar, i synnerhet om företaget behöver hyra affärslokaler eller
+    köpa utrustning.
+  ru: Для создания компании нужны деньги, особенно если ей требуется арендовать коммерческие помещения
+    или купить оборудование.
+  scene_id: scene-5
+  visual_cue: 'Finansiering: eget kapital, banklån och Finnvera; fixed relevant left foreground, exact
+    bilingual text right.'
+  asset_ids:
+  - episode_background
+  - finance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0246-s001.wav
+  start_seconds: 120.166667
+  end_seconds: 130.406667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/finance.png
+- sentence_id: hb-c07-u0246-s002
+  sv: Bankerna kan bevilja lån för företagsverksamhet.
+  ru: Банки могут предоставлять кредиты для предпринимательской деятельности.
+  scene_id: scene-5
+  visual_cue: 'Finansiering: eget kapital, banklån och Finnvera; fixed relevant left foreground, exact
+    bilingual text right.'
+  asset_ids:
+  - episode_background
+  - finance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0246-s002.wav
+  start_seconds: 132.166667
+  end_seconds: 136.624898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/finance.png
+- sentence_id: hb-c07-u0246-s003
+  sv: Också det statsägda finansinstitutet Finnvera kan bevilja företag lån eller gå i borgen för banklån.
+  ru: Государственная финансовая организация Finnvera также может предоставлять компаниям кредиты или
+    поручительство по банковским кредитам.
+  scene_id: scene-5
+  visual_cue: 'Finansiering: eget kapital, banklån och Finnvera; fixed relevant left foreground, exact
+    bilingual text right.'
+  asset_ids:
+  - episode_background
+  - finance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0246-s003.wav
+  start_seconds: 138.375
+  end_seconds: 146.803844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/finance.png
+- sentence_id: hb-c07-u0247-s001
+  sv: En ny företagare kan ansöka om startbidrag hos kommunens sysselsättningstjänster för det inledande
+    skedet av företagsstarten.
+  ru: Начинающий предприниматель может обратиться в муниципальную службу занятости за стартовым пособием
+    на начальный этап создания компании.
+  scene_id: scene-6
+  visual_cue: Startbidrag för företagarens levnadskostnader; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - grant
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0247-s001.wav
+  start_seconds: 149.291667
+  end_seconds: 160.646224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/grant.png
+- sentence_id: hb-c07-u0247-s002
+  sv: Startbidraget är avsett för företagarens levnadskostnader, inte för företagets verksamhet.
+  ru: Стартовое пособие предназначено для покрытия расходов предпринимателя на жизнь, а не для деятельности
+    компании.
+  scene_id: scene-6
+  visual_cue: Startbidrag för företagarens levnadskostnader; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - grant
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0247-s002.wav
+  start_seconds: 162.416667
+  end_seconds: 170.427551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/grant.png
+- sentence_id: hb-c07-u0247-s003
+  sv: Startbidrag kan betalas i högst tolv månader.
+  ru: Стартовое пособие может выплачиваться не более двенадцати месяцев.
+  scene_id: scene-6
+  visual_cue: Startbidrag för företagarens levnadskostnader; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - grant
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0247-s003.wav
+  start_seconds: 172.208333
+  end_seconds: 176.596905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/grant.png
+- sentence_id: hb-c07-u0248-s001
+  sv: Företagaren är skyldig att ordna med företagets bokföring.
+  ru: Предприниматель обязан организовать бухгалтерский учёт компании.
+  scene_id: scene-7
+  visual_cue: Bokföring av inkomster och utgifter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - accounts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0248-s001.wav
+  start_seconds: 179.083333
+  end_seconds: 184.377483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/accounts.png
+- sentence_id: hb-c07-u0248-s002
+  sv: I bokföringen antecknas företagets inkomster och utgifter.
+  ru: В бухгалтерском учёте отражаются доходы и расходы компании.
+  scene_id: scene-7
+  visual_cue: Bokföring av inkomster och utgifter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - accounts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0248-s002.wav
+  start_seconds: 186.166667
+  end_seconds: 191.321497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/accounts.png
+- sentence_id: hb-c07-u0248-s003
+  sv: Företagaren kan upprätta bokföringen själv eller anlita en bokföringsbyrå för det.
+  ru: Предприниматель может вести бухгалтерский учёт самостоятельно или поручить его бухгалтерской фирме.
+  scene_id: scene-7
+  visual_cue: Bokföring av inkomster och utgifter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - accounts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0248-s003.wav
+  start_seconds: 193.083333
+  end_seconds: 200.467279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/accounts.png
+- sentence_id: hb-c07-u0248-s004
+  sv: Bokföringen måste upprättas på det sätt som lagen föreskriver.
+  ru: Бухгалтерский учёт должен вестись в установленном законом порядке.
+  scene_id: scene-7
+  visual_cue: Bokföring av inkomster och utgifter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - accounts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0248-s004.wav
+  start_seconds: 202.25
+  end_seconds: 207.892449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/accounts.png
+- sentence_id: hb-c07-u0249-s001
+  sv: Det är inte alltid lätt att veta om man är företagare eller anställd.
+  ru: Не всегда легко понять, являетесь ли вы предпринимателем или наёмным работником.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0249-s001.wav
+  start_seconds: 210.375
+  end_seconds: 216.505068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+- sentence_id: hb-c07-u0249-s002
+  sv: Ibland kan det i arbetsavtalet stå att en person är företagare, trots att hen i praktiken arbetar
+    som anställd.
+  ru: Иногда в трудовом договоре может быть указано, что человек является предпринимателем, хотя фактически
+    он работает по найму.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0249-s002.wav
+  start_seconds: 218.291667
+  end_seconds: 228.044048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+- sentence_id: hb-c07-u0249-s003
+  sv: I sådana fall ska hen ha samma rättigheter som en anställd.
+  ru: В таких случаях он должен иметь те же права, что и наёмный работник.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0249-s003.wav
+  start_seconds: 229.833333
+  end_seconds: 235.266803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+- sentence_id: hb-c07-u0250-s001
+  sv: Som företagare är man fri att bestämma hur, när, till vilket pris och för vem man arbetar.
+  ru: Как предприниматель вы свободны решать, как, когда, по какой цене и на кого работать.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0250-s001.wav
+  start_seconds: 237.041667
+  end_seconds: 245.261531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+- sentence_id: hb-c07-u0250-s002
+  sv: Om ett företag till exempel meddelar en person om arbetstider kan det hända att hen är anställd.
+  ru: Если, например, компания сообщает человеку его рабочее расписание, возможно, он является наёмным
+    работником.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0250-s002.wav
+  start_seconds: 247.041667
+  end_seconds: 255.54017
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+- sentence_id: hb-c07-u0250-s003
+  sv: Då har hen samma rättigheter som en anställd, till exempel semester med lön, sjukledighet med lön,
+    övertidsersättning, företagshälsovård och olycksfallsförsäkring.
+  ru: В таком случае он имеет те же права, что и наёмный работник, например право на оплачиваемый ежегодный
+    отпуск, оплату времени болезни, компенсацию за сверхурочную работу, медицинское обслуживание на работе
+    и страхование от несчастных случаев.
+  scene_id: scene-8
+  visual_cue: Företagare eller i praktiken anställd; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - employment_status
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0250-s003.wav
+  start_seconds: 257.291667
+  end_seconds: 271.293299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employment_status.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0251-s001
+  sv: Det är bra att se till sina rättigheter som anställd.
+  ru: Работнику стоит заботиться о соблюдении своих прав.
+  scene_id: scene-9
+  visual_cue: Arbetsavtal och råd om rättigheter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - contract_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0251-s001.wav
+  start_seconds: 273.75
+  end_seconds: 278.69585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/contract_advice.png
+- sentence_id: hb-c07-u0251-s002
+  sv: Det är värt att läsa igenom villkoren i arbetsavtalet noggrant.
+  ru: Следует внимательно прочитать условия трудового договора.
+  scene_id: scene-9
+  visual_cue: Arbetsavtal och råd om rättigheter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - contract_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0251-s002.wav
+  start_seconds: 280.458333
+  end_seconds: 286.100782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/contract_advice.png
+- sentence_id: hb-c07-u0251-s003
+  sv: Det är en långsam och arbetsdryg process att kräva sina rättigheter i efterhand.
+  ru: Добиваться соблюдения своих прав задним числом — долгий и трудоёмкий процесс.
+  scene_id: scene-9
+  visual_cue: Arbetsavtal och råd om rättigheter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - contract_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0251-s003.wav
+  start_seconds: 287.875
+  end_seconds: 294.910646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/contract_advice.png
+- sentence_id: hb-c07-u0251-s004
+  sv: Om man inte är säker på om man är företagare eller anställd kan man fråga arbetarskyddsmyndigheten
+    om råd.
+  ru: Если вы не уверены, являетесь ли предпринимателем или наёмным работником, можно обратиться за советом
+    в орган надзора за охраной труда.
+  scene_id: scene-9
+  visual_cue: Arbetsavtal och råd om rättigheter; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - contract_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0251-s004.wav
+  start_seconds: 296.666667
+  end_seconds: 306.210068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/contract_advice.png
+- sentence_id: hb-c07-u0252-s001
+  sv: Det enklaste och vanligaste sättet att starta företagsverksamhet är att driva en firma som enskild
+    näringsidkare.
+  ru: Самый простой и распространённый способ начать предпринимательскую деятельность — вести частное
+    предприятие в качестве индивидуального предпринимателя (enskild näringsidkare).
+  scene_id: scene-10
+  visual_cue: Enskild näringsidkare och bestämmanderätt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - sole_trader
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0252-s001.wav
+  start_seconds: 308.666667
+  end_seconds: 318.419048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/sole_trader.png
+- sentence_id: hb-c07-u0252-s002
+  sv: Du har bestämmanderätt över och ansvar för firmans ärenden och företaget kan anställa medarbetare
+    precis som andra företag.
+  ru: Вы имеете право принимать решения по делам частного предприятия и несёте за них ответственность,
+    а предприятие может нанимать работников так же, как и другие компании.
+  scene_id: scene-10
+  visual_cue: Enskild näringsidkare och bestämmanderätt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - sole_trader
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0252-s002.wav
+  start_seconds: 320.208333
+  end_seconds: 330.726973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/sole_trader.png
+- sentence_id: hb-c07-u0252-s003
+  sv: Om företagsverksamheten är en bisyssla lönar det sig ofta att starta firma som enskild näringsidkare.
+  ru: Если предпринимательская деятельность является побочным занятием, часто выгодно создать частное
+    предприятие в качестве индивидуального предпринимателя.
+  scene_id: scene-10
+  visual_cue: Enskild näringsidkare och bestämmanderätt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - sole_trader
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0252-s003.wav
+  start_seconds: 332.5
+  end_seconds: 341.695102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/sole_trader.png
+- sentence_id: hb-c07-u0252-s004
+  sv: Det går snabbt och enkelt att starta företagsverksamhet.
+  ru: Начать предпринимательскую деятельность можно быстро и просто.
+  scene_id: scene-10
+  visual_cue: Enskild näringsidkare och bestämmanderätt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - sole_trader
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0252-s004.wav
+  start_seconds: 343.458333
+  end_seconds: 348.334524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/sole_trader.png
+- sentence_id: hb-c07-u0253-s001
+  sv: Aktiebolaget är den vanligaste företagsformen i Finland.
+  ru: Акционерное общество (aktiebolag) — самая распространённая организационно-правовая форма предприятия
+    в Финляндии.
+  scene_id: scene-11
+  visual_cue: Aktiebolag och delägarnas aktier; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - shares
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0253-s001.wav
+  start_seconds: 350.791667
+  end_seconds: 356.016156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/shares.png
+- sentence_id: hb-c07-u0253-s002
+  sv: Ett aktiebolag passar för all slags affärsverksamhet.
+  ru: Акционерное общество подходит для любых видов коммерческой деятельности.
+  scene_id: scene-11
+  visual_cue: Aktiebolag och delägarnas aktier; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - shares
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0253-s002.wav
+  start_seconds: 357.791667
+  end_seconds: 362.876837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/shares.png
+- sentence_id: hb-c07-u0253-s003
+  sv: Du kan grunda ett aktiebolag antingen själv eller tillsammans med andra delägare.
+  ru: Вы можете учредить акционерное общество самостоятельно или вместе с другими совладельцами.
+  scene_id: scene-11
+  visual_cue: Aktiebolag och delägarnas aktier; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - shares
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0253-s003.wav
+  start_seconds: 364.666667
+  end_seconds: 371.771973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/shares.png
+- sentence_id: hb-c07-u0253-s004
+  sv: Delägarens rösträtt, avkastning och ansvar i bolaget beror på hur många aktier i bolaget hen äger.
+  ru: Право голоса совладельца, его доход и ответственность в обществе зависят от количества принадлежащих
+    ему акций общества.
+  scene_id: scene-11
+  visual_cue: Aktiebolag och delägarnas aktier; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - shares
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0253-s004.wav
+  start_seconds: 373.541667
+  end_seconds: 381.83119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/shares.png
+- sentence_id: hb-c07-u0254-s001
+  sv: Ett öppet bolag bildas då två eller fler personer kommer överens om att grunda ett bolag genom att
+    teckna ett bolagsavtal.
+  ru: Открытое товарищество (öppet bolag) возникает, когда два человека или более договариваются учредить
+    товарищество, заключив учредительный договор.
+  scene_id: scene-12
+  visual_cue: Öppet bolag och personligt gemensamt ansvar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - partnership
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0254-s001.wav
+  start_seconds: 384.291667
+  end_seconds: 394.253027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/partnership.png
+- sentence_id: hb-c07-u0254-s002
+  sv: Bolagsmännen, det vill säga de personer som tillsammans äger bolaget, är jämställda i all verksamhet
+    som bolaget driver och ansvarar tillsammans och personligen för bolagets beslut, förbindelser och
+    skulder.
+  ru: Участники товарищества, то есть люди, совместно владеющие товариществом, равноправны во всей его
+    деятельности и совместно несут личную ответственность за решения, обязательства и долги товарищества.
+  scene_id: scene-12
+  visual_cue: Öppet bolag och personligt gemensamt ansvar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - partnership
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0254-s002.wav
+  start_seconds: 396.041667
+  end_seconds: 413.038673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/partnership.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0255-s001
+  sv: Ett kommanditbolag är ett personbolag som skiljer sig från ett öppet bolag på så sätt att det i
+    kommanditbolaget finns utöver en eller flera ansvariga bolagsmän åtminstone en tyst bolagsman, det
+    vill säga en person som är delägare i företaget.
+  ru: Коммандитное товарищество (kommanditbolag) — это товарищество, отличающееся от открытого товарищества
+    тем, что в нём помимо одного или нескольких ответственных участников есть как минимум один участник
+    без права голоса, то есть совладелец предприятия.
+  scene_id: scene-13
+  visual_cue: 'Kommanditbolag: ansvariga och tysta bolagsmän; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - limited_partnership
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0255-s001.wav
+  start_seconds: 415.5
+  end_seconds: 434.795782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/limited_partnership.png
+  text_style:
+    sv_size: 44
+    ru_size: 35
+- sentence_id: hb-c07-u0255-s002
+  sv: Vanligen är den tysta bolagsmannen en investerare.
+  ru: Обычно такой участник без права голоса является инвестором.
+  scene_id: scene-13
+  visual_cue: 'Kommanditbolag: ansvariga och tysta bolagsmän; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - limited_partnership
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0255-s002.wav
+  start_seconds: 437.583333
+  end_seconds: 442.180884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/limited_partnership.png
+- sentence_id: hb-c07-u0256-s001
+  sv: Ett andelslag är ett företag som ägs av medlemmarna.
+  ru: Кооператив (andelslag) — это предприятие, принадлежащее своим членам.
+  scene_id: scene-14
+  visual_cue: Andelslag och medlemmarnas röster; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - cooperative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0256-s001.wav
+  start_seconds: 444.666667
+  end_seconds: 449.612517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/cooperative.png
+- sentence_id: hb-c07-u0256-s002
+  sv: Ett andelslag kan ha en eller fler medlemmar.
+  ru: Кооператив может состоять из одного или нескольких членов.
+  scene_id: scene-14
+  visual_cue: Andelslag och medlemmarnas röster; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - cooperative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0256-s002.wav
+  start_seconds: 451.375
+  end_seconds: 455.275952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/cooperative.png
+- sentence_id: hb-c07-u0256-s003
+  sv: På andelslagets stämma har varje medlem en röst.
+  ru: На собрании кооператива каждый член имеет один голос.
+  scene_id: scene-14
+  visual_cue: Andelslag och medlemmarnas röster; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - cooperative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0256-s003.wav
+  start_seconds: 457.041667
+  end_seconds: 461.430238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/cooperative.png
+- sentence_id: hb-c07-u0256-s004
+  sv: Medlemmarna ansvarar för andelslagets förpliktelser (t.ex. skulder) endast med det belopp som de
+    investerat i andelslaget.
+  ru: Члены кооператива отвечают по его обязательствам (например, долгам) только в пределах суммы, которую
+    они вложили в кооператив.
+  scene_id: scene-14
+  visual_cue: Andelslag och medlemmarnas röster; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - cooperative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Medlemmarna ansvarar för andelslagets förpliktelser (till exempel skulder) endast med det belopp
+      som de investerat i andelslaget.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0256-s004.wav
+  start_seconds: 463.208333
+  end_seconds: 474.423571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/cooperative.png
+- sentence_id: hb-c07-u0257-s001
+  sv: I Finland får man driva en laglig näring som följer god sed utan ett tillstånd som beviljas av myndigheter.
+  ru: В Финляндии можно заниматься законной предпринимательской деятельностью, соответствующей общепринятым
+    нормам, без разрешения органов власти.
+  scene_id: scene-15
+  visual_cue: Tillstånd och anmälan när det krävs; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - permits
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0257-s001.wav
+  start_seconds: 476.875
+  end_seconds: 486.209422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/permits.png
+- sentence_id: hb-c07-u0257-s002
+  sv: I vissa fall behövs det dock ett tillstånd från myndigheter för att starta företagsverksamhet, eller
+    också måste man anmäla verksamheten till myndigheter.
+  ru: Однако в некоторых случаях для начала предпринимательской деятельности требуется разрешение органов
+    власти либо необходимо уведомить их о деятельности.
+  scene_id: scene-15
+  visual_cue: Tillstånd och anmälan när det krävs; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - permits
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0257-s002.wav
+  start_seconds: 488.0
+  end_seconds: 500.817415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/permits.png
+- sentence_id: hb-c07-u0258-s001
+  sv: Du måste teckna en företagarpensionsförsäkring (FöPL) om
+  ru: Вы обязаны оформить пенсионное страхование предпринимателя (FöPL), если
+  scene_id: scene-16
+  visual_cue: 'FöPL: source-listade villkor tillsammans; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - pension_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Du måste teckna en företagarpensionsförsäkring (eff ö pe ell) om
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0258-s001.wav
+  start_seconds: 503.291667
+  end_seconds: 509.073435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_conditions.png
+- sentence_id: hb-c07-u0259-s001
+  sv: du är företagare,
+  ru: вы являетесь предпринимателем,
+  scene_id: scene-16
+  visual_cue: 'FöPL: source-listade villkor tillsammans; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - pension_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0259-s001.wav
+  start_seconds: 510.833333
+  end_seconds: 513.201769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_conditions.png
+- sentence_id: hb-c07-u0261-s001
+  sv: du är 18–69 år gammal,
+  ru: вам от 18 до 69 лет,
+  scene_id: scene-16
+  visual_cue: 'FöPL: source-listade villkor tillsammans; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - pension_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: du är arton till sextio nio år gammal,
+    reason: Speech-only numeral expansion and compound separation for exact source18–69; one bounded candidate
+      recovers18–69 in ASR. Swedish/Russian display unchanged, listening pending.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0261-s001.wav
+  start_seconds: 514.958333
+  end_seconds: 518.859286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_conditions.png
+- sentence_id: hb-c07-u0262-s001
+  sv: du har bedrivit företagsverksamhet i minst fyra månader och
+  ru: вы ведёте предпринимательскую деятельность не менее четырёх месяцев и
+  scene_id: scene-16
+  visual_cue: 'FöPL: source-listade villkor tillsammans; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - pension_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0262-s001.wav
+  start_seconds: 520.625
+  end_seconds: 525.91915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_conditions.png
+- sentence_id: hb-c07-u0263-s001
+  sv: din arbetsinkomst från företagsverksamheten är (FöPL-arbetsinkomst) är minst 9 208,43 euro per år
+    (2025).
+  ru: ваш расчётный трудовой доход от предпринимательской деятельности (доход FöPL) составляет не менее
+    9 208,43 евро в год (2025).
+  scene_id: scene-16
+  visual_cue: 'FöPL: source-listade villkor tillsammans; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - pension_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: din arbetsinkomst från företagsverksamheten är (eff ö pe ell-arbetsinkomst) är minst nio tusen
+      två hundra åtta euro och fyrtio tre cent per år (tvåtusentjugofem).
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0263-s001.wav
+  start_seconds: 527.708333
+  end_seconds: 541.013367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_conditions.png
+- sentence_id: hb-c07-u0264-s001
+  sv: Pensionsförsäkringen tryggar företagarens utkomst då företagsverksamheten upphör på grund av invaliditet
+    eller ålder och den ger företagarens anhöriga ett familjepensionsskydd efter att företagaren har dött.
+  ru: Пенсионное страхование обеспечивает предпринимателю средства к существованию при прекращении предпринимательской
+    деятельности из-за инвалидности или возраста, а после его смерти обеспечивает его близким защиту в
+    виде пенсии по потере кормильца.
+  scene_id: scene-17
+  visual_cue: Pensionsskydd och försäkring; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - pension_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0264-s001.wav
+  start_seconds: 543.5
+  end_seconds: 560.845306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_protection.png
+  text_style:
+    sv_size: 44
+    ru_size: 35
+- sentence_id: hb-c07-u0264-s002
+  sv: Pensionsförsäkringar fås antingen genom försäkringsbolag eller pensionskassor (eläkekassa).
+  ru: Пенсионное страхование можно оформить в страховой компании или пенсионной кассе (eläkekassa).
+  scene_id: scene-17
+  visual_cue: Pensionsskydd och försäkring; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - pension_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0264-s002.wav
+  start_seconds: 563.625
+  end_seconds: 571.705544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_protection.png
+- sentence_id: hb-c07-u0264-s003
+  sv: Teckna en pensionsförsäkring senast när det har gått sex månader sedan du startade företagsverksamheten.
+  ru: Оформите пенсионное страхование не позднее чем через шесть месяцев после начала предпринимательской
+    деятельности.
+  scene_id: scene-17
+  visual_cue: Pensionsskydd och försäkring; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - pension_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0264-s003.wav
+  start_seconds: 573.458333
+  end_seconds: 582.444456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_protection.png
+- sentence_id: hb-c07-u0264-s004
+  sv: En ny företagare får en rabatt på 22 procent på pensionspremierna under de fyra första åren.
+  ru: Начинающий предприниматель получает скидку 22 процента на пенсионные страховые взносы в течение
+    первых четырёх лет.
+  scene_id: scene-17
+  visual_cue: Pensionsskydd och försäkring; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - pension_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: En ny företagare får en rabatt på tjugotvå procent på pensionspremierna under de fyra första
+      åren.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0264-s004.wav
+  start_seconds: 584.208333
+  end_seconds: 592.985476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_protection.png
+- sentence_id: hb-c07-u0265-s001
+  sv: Storleken av försäkringspremierna och pensionen beror på hur stor förvärvsinkomst (työtulo) förtagaren
+    har.
+  ru: Размер страховых взносов и пенсии зависит от величины расчётного трудового дохода (työtulo) предпринимателя.
+  scene_id: scene-18
+  visual_cue: Arbetsinkomst och social trygghet; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - pension_income
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0265-s001.wav
+  start_seconds: 595.458333
+  end_seconds: 605.001735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_income.png
+- sentence_id: hb-c07-u0265-s002
+  sv: Arbetsinkomstens storlek påverkar förutom arbetspensionen också direkt din sociala trygghet om du
+    blir sjuk eller arbetslös eller ska vara föräldraledig.
+  ru: Размер расчётного трудового дохода напрямую влияет не только на трудовую пенсию, но и на ваше социальное
+    обеспечение в случае болезни, безработицы или родительского отпуска.
+  scene_id: scene-18
+  visual_cue: Arbetsinkomst och social trygghet; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - pension_income
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0265-s002.wav
+  start_seconds: 606.791667
+  end_seconds: 619.887721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/pension_income.png
+- sentence_id: hb-c07-u0266-s001
+  sv: Företagsformen påverkar företagets beskattning.
+  ru: Организационно-правовая форма предприятия влияет на его налогообложение.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0266-s001.wav
+  start_seconds: 622.375
+  end_seconds: 626.833231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0266-s002
+  sv: Detta är det bra att beakta när du väljer företagsform.
+  ru: Это стоит учитывать при выборе организационно-правовой формы предприятия.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0266-s002.wav
+  start_seconds: 628.583333
+  end_seconds: 633.598844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0267-s001
+  sv: Skatter betalas på de inkomster som företagaren eller företaget har kvar när alla kostnader för
+    företagsverksamheten har dragits av försäljningen.
+  ru: Налоги уплачиваются с дохода, остающегося у предпринимателя или компании после вычета из выручки
+    всех расходов на предпринимательскую деятельность.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0267-s001.wav
+  start_seconds: 635.375
+  end_seconds: 648.192415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0267-s002
+  sv: Företagets skatter betalas på basis av de beskattningsbara inkomsterna, vars belopp man uppskattar
+    på förhand.
+  ru: Налоги компании уплачиваются на основании налогооблагаемого дохода, размер которого оценивается
+    заранее.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0267-s002.wav
+  start_seconds: 649.958333
+  end_seconds: 659.780374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0267-s003
+  sv: Uppskattningen baseras på beloppet av de beskattningsbara inkomsterna året innan.
+  ru: Оценка основывается на размере налогооблагаемого дохода за предыдущий год.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0267-s003.wav
+  start_seconds: 661.541667
+  end_seconds: 668.855952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0267-s004
+  sv: I ett nytt företag uppskattar företagaren själv storleken av den beskattningsbara inkomsten och
+    meddelar denna till skattmyndigheten.
+  ru: В новой компании предприниматель сам оценивает размер налогооблагаемого дохода и сообщает его налоговому
+    органу.
+  scene_id: scene-19
+  visual_cue: Företagsform, beskattningsbar inkomst och förhandsuppskattning; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - business_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0267-s004.wav
+  start_seconds: 670.625
+  end_seconds: 682.049218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/business_tax.png
+- sentence_id: hb-c07-u0268-s001
+  sv: Om en arbetstagare kommer från ett land utanför EU eller EES, måste hen ha rätt att arbeta i Finland.
+  ru: Если работник приезжает из страны за пределами Европейского союза (EU) или Европейской экономической
+    зоны (EES), он должен иметь право на работу в Финляндии.
+  scene_id: scene-20
+  visual_cue: Utländska arbetstagares rätt att arbeta; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - right_to_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Om en arbetstagare kommer från ett land utanför e u eller e e ess, måste hen ha rätt att arbeta
+      i Finland.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0268-s001.wav
+  start_seconds: 684.5
+  end_seconds: 693.625442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/right_to_work.png
+- sentence_id: hb-c07-u0268-s002
+  sv: När du anställer en utländsk arbetstagare ska du säkerställa att hens rätt att arbeta gäller under
+    hela anställningstiden.
+  ru: Нанимая иностранного работника, вы должны убедиться, что его право на работу действует в течение
+    всего срока трудовых отношений.
+  scene_id: scene-20
+  visual_cue: Utländska arbetstagares rätt att arbeta; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - right_to_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0268-s002.wav
+  start_seconds: 695.416667
+  end_seconds: 705.935306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/right_to_work.png
+- sentence_id: hb-c07-u0268-s003
+  sv: Förvara grunden för och övriga uppgifter om din utländska arbetstagares rätt att arbeta i fyra års
+    tid efter att anställningen har upphört.
+  ru: Храните сведения об основании и другие данные о праве вашего иностранного работника на работу в
+    течение четырёх лет после прекращения трудовых отношений.
+  scene_id: scene-20
+  visual_cue: Utländska arbetstagares rätt att arbeta; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - right_to_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0268-s003.wav
+  start_seconds: 707.708333
+  end_seconds: 719.75949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/right_to_work.png
+- sentence_id: hb-c07-u0268-s004
+  sv: Uppgifterna måste finnas på arbetsplatsen så att arbetarskyddsmyndigheterna vid behov kan kontrollera
+    dem.
+  ru: Эти сведения должны находиться на рабочем месте, чтобы органы надзора за охраной труда при необходимости
+    могли их проверить.
+  scene_id: scene-20
+  visual_cue: Utländska arbetstagares rätt att arbeta; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - right_to_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0268-s004.wav
+  start_seconds: 721.541667
+  end_seconds: 730.736769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/right_to_work.png
+- sentence_id: hb-c07-u0269-s001
+  sv: För din utländska arbetstagare gäller samma anställningsvillkor, arbetssäkerhetskrav och lagstadgade
+    försäkringar som på dina finländska arbetstagare.
+  ru: На вашего иностранного работника распространяются те же условия трудовых отношений, требования безопасности
+    труда и предусмотренные законом страховки, что и на ваших финляндских работников.
+  scene_id: scene-20
+  visual_cue: Utländska arbetstagares rätt att arbeta; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - right_to_work
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0269-s001.wav
+  start_seconds: 732.5
+  end_seconds: 745.735374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/right_to_work.png
+- sentence_id: hb-c07-u0270-s001
+  sv: Om ditt företag har anställda ska du också sköta pensions- och arbetslöshetsförsäkringsavgifterna
+    och socialskyddsavgifterna för dina anställda.
+  ru: Если у вашей компании есть работники, вы также должны уплачивать за них взносы на пенсионное страхование,
+    страхование по безработице и социальное обеспечение.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0270-s001.wav
+  start_seconds: 748.208333
+  end_seconds: 761.095408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0270-s002
+  sv: Du måste teckna en pensionsförsäkring (ArPL-försäkring) och en olycksfallsförsäkring, som omfattar
+    en grupplivförsäkring och en arbetslöshetsförsäkring, för de anställda.
+  ru: Вы должны оформить для работников пенсионное страхование (ArPL) и страхование от несчастных случаев,
+    включающее групповое страхование жизни и страхование по безработице.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Du måste teckna en pensionsförsäkring (a är pe ell-försäkring) och en olycksfallsförsäkring,
+      som omfattar en grupplivförsäkring och en arbetslöshetsförsäkring, för de anställda.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0270-s002.wav
+  start_seconds: 762.875
+  end_seconds: 778.06085
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0270-s003
+  sv: Arbetsgivaren betalar arbetstagarens socialskyddsavgifter till skattemyndigheten i anslutning till
+    skatteinnehållningen.
+  ru: Работодатель перечисляет взносы на социальное обеспечение работника налоговому органу вместе с удержанным
+    налогом.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0270-s003.wav
+  start_seconds: 779.833333
+  end_seconds: 790.073333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0271-s001
+  sv: Som arbetsgivare måste du teckna en yrkessjukdoms- och arbetsolycksfallsförsäkring för dina anställda.
+  ru: Как работодатель вы должны оформить для своих работников страхование от профессиональных заболеваний
+    и несчастных случаев на производстве.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0271-s001.wav
+  start_seconds: 791.833333
+  end_seconds: 801.098095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0271-s002
+  sv: Detta ska alltid göras när en anställning börjar.
+  ru: Это всегда необходимо делать в начале трудовых отношений.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0271-s002.wav
+  start_seconds: 802.875
+  end_seconds: 807.472551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0271-s003
+  sv: Arbetstagaren kan få ersättning om hen råkar ut för ett olycksfall i arbetet.
+  ru: Работник может получить компенсацию, если с ним произойдёт несчастный случай на производстве.
+  scene_id: scene-21
+  visual_cue: Arbetsgivarens avgifter och försäkringar; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - employer_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0271-s003.wav
+  start_seconds: 809.25
+  end_seconds: 816.007007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/employer_insurance.png
+- sentence_id: hb-c07-u0272-s001
+  sv: Också en företagare kan ha rätt till arbetslöshetsförmåner, om hen är arbetslös och registrerad
+    som arbetssökande.
+  ru: Предприниматель также может иметь право на пособия по безработице, если он является безработным
+    и зарегистрирован как соискатель работы.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0272-s001.wav
+  start_seconds: 818.458333
+  end_seconds: 828.628673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0272-s002
+  sv: En företagare är arbetslös när hen har lagt ned sin företagsverksamhet eller sålt sin andel av företaget.
+  ru: Предприниматель является безработным, когда он прекратил предпринимательскую деятельность или продал
+    свою долю в компании.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0272-s002.wav
+  start_seconds: 830.416667
+  end_seconds: 839.542109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0272-s003
+  sv: Företagandet kan också upphöra om företaget säljs, avvecklas, går i konkurs, försätts i likvidation
+    eller på grund av skilsmässa.
+  ru: Предпринимательская деятельность также может прекратиться, если компанию продали, закрыли, она обанкротилась,
+    была переведена в процедуру ликвидации либо в связи с разводом.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0272-s003.wav
+  start_seconds: 841.333333
+  end_seconds: 853.24517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0272-s004
+  sv: Företagandet kan också upphöra om du inte längre arbetar för företaget.
+  ru: Предпринимательская деятельность также может прекратиться, если вы больше не работаете в компании.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0272-s004.wav
+  start_seconds: 855.0
+  end_seconds: 861.478367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0273-s001
+  sv: För att få arbetslöshetsförmåner måste din jobbsökning vara i kraft och du måste vara beredd att
+    ta emot ett heltidsjobb.
+  ru: Чтобы получать пособия по безработице, ваша регистрация в качестве соискателя должна действовать
+    и вы должны быть готовы принять работу на полный рабочий день.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0273-s001.wav
+  start_seconds: 863.25
+  end_seconds: 873.35068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0274-s001
+  sv: Om du vill få inkomstrelaterat utkomstskydd för arbetslösa, ska du ansluta dig som medlem i företagarnas
+    arbetslöshetskassa (yrittäjien työttömyyskassa).
+  ru: Если вы хотите получать обеспечение по безработице, соотнесённое с утраченным заработком, необходимо
+    вступить в кассу по безработице предпринимателей (yrittäjien työttömyyskassa).
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0274-s001.wav
+  start_seconds: 875.125
+  end_seconds: 888.778333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0274-s002
+  sv: Om din företagsverksamhet upphör, kan du ansöka om inkomstrelaterad dagpenning (ansiosidonnainen
+    päiväraha) vid arbetslöshetskassan.
+  ru: Если ваша предпринимательская деятельность прекращается, вы можете подать в кассу по безработице
+    заявление на пособие, соотнесённое с утраченным заработком (ansiosidonnainen päiväraha).
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0274-s002.wav
+  start_seconds: 890.541667
+  end_seconds: 902.383844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0275-s001
+  sv: Du kan få inkomstrelaterad dagpenning från företagarnas arbetslöshetskassa om du har bedrivit företagsverksamhet
+    och varit medlem i kassan tillräckligt länge innan du blev arbetslös.
+  ru: Вы можете получать пособие, соотнесённое с утраченным заработком, от кассы по безработице предпринимателей,
+    если до наступления безработицы вы вели предпринимательскую деятельность и состояли в кассе достаточно
+    долго.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0275-s001.wav
+  start_seconds: 904.166667
+  end_seconds: 919.352517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0275-s002
+  sv: Den inkomstrelaterade dagpenningen är större än grunddagpenningen eller arbetsmarknadsstödet.
+  ru: Пособие, соотнесённое с утраченным заработком, больше базового пособия по безработице или пособия
+    рынка труда.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0275-s002.wav
+  start_seconds: 922.125
+  end_seconds: 930.066224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+- sentence_id: hb-c07-u0275-s003
+  sv: Hur stor inkomstrelaterad dagpenning du får beror på hur stora förvärvsinkomster du angett som grund
+    för arbetslöshetsförsäkringen.
+  ru: Размер получаемого вами пособия, соотнесённого с утраченным заработком, зависит от размера расчётных
+    трудовых доходов, которые вы указали в качестве основы для страхования по безработице.
+  scene_id: scene-22
+  visual_cue: Avslutat företagande och arbetslöshetsförmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - unemployment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-foretagande/narration/hb-c07-u0275-s003.wav
+  start_seconds: 931.833333
+  end_seconds: 943.187891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-foretagande/pictures/unemployment.png
+render:
+  music_path: studio/media/hb-c07-foretagande/sources/music-bed.flac
+  background_image: studio/media/hb-c07-foretagande/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 7.069345238095238
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi och InfoFinland.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - InfoFinland.fi · CC BY4.0 för InfoFinlands texter.
+    - Fullständiga ursprungliga villkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 'Hakaniemi market hall.jpg — JIP | Talk.
+
+
+      Original uploader was JIP at en.wikipedia · CC BY-SA 3.0'
+    - Pensif — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Hakaniemi market hall interior after renovation 2023.jpg — Ypsilon from Finland · CC0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian displayed sentence by sentence; no added narration.
+  - Background cropped,darkened,blurred and continuously panned/zoomed; photo adaptation retains source
+    license.
+  - Foreground photos proportionally resized; original pictorial diagrams show only source-stated concepts.
+  - Music faded,ducked,+2dB adjusted and repeated with4-second equal-power crossfades when needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Hakaniemi_market_hall.jpg
+    description: The Hakaniemi market hall as seen from the Hakaniemi metro station.
+    license: CC BY-SA 3.0

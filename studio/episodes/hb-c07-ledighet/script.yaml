@@ -1,0 +1,1321 @@
+schema_version: 1
+section_id: hb-c07-ledighet
+chapter_id: hb-c07
+title_sv: Semester och ledighet
+title_ru: Ежегодный отпуск и другие виды отпуска
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-ledighet.yaml
+example_only: false
+source_section_sha256: af3e5507538acc199445cbbefe94b4cbaca5c012e823a6a73b000f282b11127c
+translation_file_sha256: 32a712892beb4b83bd6f179ffc5a87169af6961b49783fc6616418d3a87925f2
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted olive Chapter7palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Hietaniemi beach from air.JPG by MKFI continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=3.746130952380952.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,mono44100PCM16; initial2-thread source-order
+    run. One selected exact-input written-agreement diagnostic retake used1thread. All48 other takes preserved.
+    Names/numbers/overall balance pending whole-video listening; ASR diagnostics cannot approve pronunciation.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use There is Romance by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 197.664 seconds; prepared lossless stereo bed 524.458 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at employment-source topic boundaries: accurately identified
+    photos of places/objects and original pictorial process diagrams. Aim>=50% measured narrated body
+    display; never imply photographed people face the depicted employment problem. Source text unchanged;
+    no added employment advice or updated claims.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Intjänad semester
+- id: scene-2
+  description: Semesterdagar enligt anställningens längd
+- id: scene-3
+  description: Sommarsemesterperioden
+- id: scene-4
+  description: Ersättning för outtagna dagar
+- id: scene-5
+  description: Frånvaro, sjukdom och läkarintyg
+- id: scene-6
+  description: Semesterlön och avtalsenlig semesterpremie
+- id: scene-7
+  description: Familj, studier och hälsa
+- id: scene-8
+  description: 'Intjäning: dagar eller timmar'
+- id: scene-9
+  description: Semesterberäkning april till mars
+- id: scene-10
+  description: Exempel på sex månaders intjäning
+- id: scene-11
+  description: Kontrollera antal dagar
+- id: scene-12
+  description: Sommarperioden och juli
+- id: scene-13
+  description: Önskemål och arbetsgivarens beslut
+- id: scene-14
+  description: Semesterlön och specifikation
+- id: scene-15
+  description: Ersättning när anställningen upphör
+- id: scene-16
+  description: Skriftligt avtal om obetald ledighet
+- id: scene-17
+  description: Sjuklön, självrisk och sjukdagpenning
+- id: scene-18
+  description: Vård av akut sjukt barn
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_holiday
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Intjänad semester.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_accrual
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Semesterdagar enligt
+    anställningens längd.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_summer
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Sommarsemesterperioden.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_compensation
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Ersättning för outtagna
+    dagar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_illness
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Frånvaro, sjukdom
+    och läkarintyg.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_holidaypay
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Semesterlön och
+    avtalsenlig semesterpremie.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_family
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Familj, studier
+    och hälsa.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_threshold
+  kind: foreground
+  description: 'Relevant photograph or original pictorial source-based explanation for Intjäning: dagar
+    eller timmar.'
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_reference
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Semesterberäkning
+    april till mars.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_example
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Exempel på sex månaders
+    intjäning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_ask
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Kontrollera antal
+    dagar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_summerdates
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Sommarperioden och
+    juli.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_negotiate
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Önskemål och arbetsgivarens
+    beslut.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_unpaid
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Skriftligt avtal
+    om obetald ledighet.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_sickpay
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Sjuklön, självrisk
+    och sjukdagpenning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_sickchild
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Vård av akut sjukt
+    barn.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c07-u0149-s001
+  sv: Den anställda tjänar in en viss mängd ledighet som hen får lön för.
+  ru: Работник накапливает право на определённый период освобождения от работы с сохранением заработной
+    платы.
+  scene_id: scene-1
+  visual_cue: Show Intjänad semester using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holiday
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0149-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.031769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holiday.png
+- sentence_id: hb-c07-u0149-s002
+  sv: Denna ledighet kallas semester.
+  ru: Этот период освобождения от работы называется ежегодным отпуском.
+  scene_id: scene-1
+  visual_cue: Show Intjänad semester using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holiday
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0149-s002.wav
+  start_seconds: 10.791667
+  end_seconds: 13.717381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holiday.png
+- sentence_id: hb-c07-u0149-s003
+  sv: I semesterlagen regleras semesterlönen och semesterersättningarna och hur semestern får tas ut.
+  ru: Закон о ежегодных отпусках регулирует оплату отпуска, компенсацию за неиспользованный отпуск и порядок
+    использования отпуска.
+  scene_id: scene-1
+  visual_cue: Show Intjänad semester using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holiday
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0149-s003.wav
+  start_seconds: 15.5
+  end_seconds: 23.580544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holiday.png
+- sentence_id: hb-c07-u0150-s001
+  sv: Semesterns längd och lönen för semestertiden beror på hur länge anställningsförhållandet har varat
+    och hurdant antal arbetstimmar den anställda har.
+  ru: Продолжительность отпуска и оплата за время отпуска зависят от продолжительности трудовых отношений
+    и количества рабочих часов работника.
+  scene_id: scene-1
+  visual_cue: Show Intjänad semester using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holiday
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0150-s001.wav
+  start_seconds: 25.333333
+  end_seconds: 37.52381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holiday.png
+- sentence_id: hb-c07-u0150-s002
+  sv: I heltidsarbete tjänar man in minst 2,5 dagar semester per månad när anställningsförhållandet har
+    varat i ett år.
+  ru: При работе полный рабочий день после одного года трудовых отношений накапливается не менее 2,5 дня
+    отпуска за каждый месяц.
+  scene_id: scene-2
+  visual_cue: Show Semesterdagar enligt anställningens längd using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_accrual
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: I heltidsarbete tjänar man in minst två och en halv dagar semester per månad när anställningsförhållandet
+      har varat i ett år.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0150-s002.wav
+  start_seconds: 40.0
+  end_seconds: 50.518639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/accrual.png
+- sentence_id: hb-c07-u0150-s003
+  sv: Om anställningsförhållandet har varat i mindre än ett år, tjänar man in minst två dagar semester
+    per månad.
+  ru: Если трудовые отношения длились менее года, за каждый месяц накапливается не менее двух дней отпуска.
+  scene_id: scene-2
+  visual_cue: Show Semesterdagar enligt anställningens längd using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_accrual
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0150-s003.wav
+  start_seconds: 52.291667
+  end_seconds: 61.556429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/accrual.png
+- sentence_id: hb-c07-u0151-s001
+  sv: Huvudregeln är att största delen av semestern ska tas ut under sommarsemesterperioden, det vill
+    säga mellan maj och september.
+  ru: Основное правило состоит в том, что бо́льшую часть отпуска следует использовать в период летних
+    отпусков, то есть с мая по сентябрь.
+  scene_id: scene-3
+  visual_cue: Show Sommarsemesterperioden using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_summer
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0151-s001.wav
+  start_seconds: 64.041667
+  end_seconds: 74.908605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/summer.png
+- sentence_id: hb-c07-u0151-s002
+  sv: Ibland upphör ett anställningsförhållande så att den anställda inte hinner ta ut alla intjänade
+    semesterdagar.
+  ru: Иногда трудовые отношения прекращаются до того, как работник успевает использовать все накопленные
+    дни отпуска.
+  scene_id: scene-4
+  visual_cue: Show Ersättning för outtagna dagar using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_compensation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0151-s002.wav
+  start_seconds: 77.375
+  end_seconds: 86.709422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/compensation.png
+- sentence_id: hb-c07-u0151-s003
+  sv: Då får hen ekonomisk ersättning för de outtagna dagarna.
+  ru: Тогда за неиспользованные дни ему выплачивается денежная компенсация.
+  scene_id: scene-4
+  visual_cue: Show Ersättning för outtagna dagar using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_compensation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0151-s003.wav
+  start_seconds: 88.5
+  end_seconds: 93.44585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/compensation.png
+- sentence_id: hb-c07-u0152-s001
+  sv: Man får aldrig vara borta från arbetet utan grundad anledning.
+  ru: Нельзя отсутствовать на работе без уважительной причины.
+  scene_id: scene-5
+  visual_cue: Show Frånvaro, sjukdom och läkarintyg using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_illness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0152-s001.wav
+  start_seconds: 95.916667
+  end_seconds: 101.489456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/illness.png
+- sentence_id: hb-c07-u0152-s002
+  sv: Om en anställd blir sjuk, ska hen genast informera arbetsgivaren om det genom att ringa eller följa
+    arbetsplatsens rutiner.
+  ru: Если работник заболел, он должен немедленно сообщить об этом работодателю по телефону или в соответствии
+    с принятым на рабочем месте порядком.
+  scene_id: scene-5
+  visual_cue: Show Frånvaro, sjukdom och läkarintyg using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_illness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0152-s002.wav
+  start_seconds: 103.25
+  end_seconds: 114.116939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/illness.png
+- sentence_id: hb-c07-u0152-s003
+  sv: Varje arbetsplats har egna regler för hur många dagar en person kan vara borta från arbetet utan
+    läkarintyg.
+  ru: На каждом рабочем месте действуют свои правила о том, сколько дней можно отсутствовать на работе
+    без медицинской справки.
+  scene_id: scene-5
+  visual_cue: Show Frånvaro, sjukdom och läkarintyg using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_illness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0152-s003.wav
+  start_seconds: 115.875
+  end_seconds: 124.930782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/illness.png
+- sentence_id: hb-c07-u0153-s001
+  sv: När du arbetar i Finland har du laglig rätt till semester.
+  ru: Если вы работаете в Финляндии, закон даёт вам право на ежегодный отпуск.
+  scene_id: scene-6
+  visual_cue: Show Semesterlön och avtalsenlig semesterpremie using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holidaypay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0153-s001.wav
+  start_seconds: 127.416667
+  end_seconds: 132.780476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holidaypay.png
+- sentence_id: hb-c07-u0153-s002
+  sv: Du får semesterlön under din semester.
+  ru: Во время ежегодного отпуска вы получаете отпускные.
+  scene_id: scene-6
+  visual_cue: Show Semesterlön och avtalsenlig semesterpremie using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holidaypay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0153-s002.wav
+  start_seconds: 134.541667
+  end_seconds: 137.955
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holidaypay.png
+- sentence_id: hb-c07-u0153-s003
+  sv: Dessutom kan du få semesterpenning, så kallad semesterpremie, om detta föreskrivs i kollektivavtalet.
+  ru: Кроме того, вы можете получить отпускную премию, называемую semesterpenning или semesterpremie,
+    если это предусмотрено коллективным договором.
+  scene_id: scene-6
+  visual_cue: Show Semesterlön och avtalsenlig semesterpremie using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holidaypay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0153-s003.wav
+  start_seconds: 139.708333
+  end_seconds: 148.555136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holidaypay.png
+- sentence_id: hb-c07-u0154-s001
+  sv: I olika livssituationer kan du också få ledigt från jobbet enligt lag.
+  ru: В различных жизненных ситуациях закон также позволяет вам взять отпуск с работы.
+  scene_id: scene-7
+  visual_cue: Show Familj, studier och hälsa using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_family
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0154-s001.wav
+  start_seconds: 151.041667
+  end_seconds: 157.102075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/family.png
+- sentence_id: hb-c07-u0154-s002
+  sv: Sådana situationer är till exempel graviditet, barnets födelse, vård av ett litet barn och sjukdom
+    hos ett litet barn.
+  ru: К таким ситуациям относятся, например, беременность, рождение ребёнка, уход за маленьким ребёнком
+    и болезнь маленького ребёнка.
+  scene_id: scene-7
+  visual_cue: Show Familj, studier och hälsa using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_family
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0154-s002.wav
+  start_seconds: 158.875
+  end_seconds: 169.463299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/family.png
+- sentence_id: hb-c07-u0154-s003
+  sv: Tanken bakom lagstiftningen om detta har varit att ge människorna möjligheter att studera och utveckla
+    sig och säkerställa människornas arbetshälsa.
+  ru: Замысел соответствующего законодательства состоял в том, чтобы дать людям возможность учиться и
+    развиваться, а также обеспечить сохранение их здоровья в трудовой жизни.
+  scene_id: scene-7
+  visual_cue: Show Familj, studier och hälsa using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_family
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0154-s003.wav
+  start_seconds: 171.25
+  end_seconds: 183.788776
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/family.png
+- sentence_id: hb-c07-u0155-s001
+  sv: Du tjänar in semester om du arbetar minst 14 dagar eller 35 timmar i månaden.
+  ru: Право на ежегодный отпуск накапливается, если вы работаете не менее 14 дней или 35 часов в месяц.
+  scene_id: scene-8
+  visual_cue: 'Show Intjäning: dagar eller timmar using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.'
+  asset_ids:
+  - episode_background
+  - visual_threshold
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Du tjänar in semester om du arbetar minst fjorton dagar eller trettiofem timmar i månaden.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0155-s001.wav
+  start_seconds: 186.25
+  end_seconds: 193.982245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/threshold.png
+- sentence_id: hb-c07-u0155-s002
+  sv: Om du arbetar mindre, har du rätt till ledighet och semesterersättning.
+  ru: Если вы работаете меньше, вы имеете право на освобождение от работы и отпускную компенсацию.
+  scene_id: scene-8
+  visual_cue: 'Show Intjäning: dagar eller timmar using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.'
+  asset_ids:
+  - episode_background
+  - visual_threshold
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0155-s002.wav
+  start_seconds: 195.75
+  end_seconds: 202.089048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/threshold.png
+- sentence_id: hb-c07-u0156-s001
+  sv: Antalet semesterdagar beräknas under perioden 1 april–31 mars (t.ex. 1.4.2024–31.3.2025).
+  ru: Количество дней отпуска рассчитывается за период с 1 апреля по 31 марта (например, с 1.4.2024 по
+    31.3.2025).
+  scene_id: scene-9
+  visual_cue: Show Semesterberäkning april till mars using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Antalet semesterdagar beräknas under perioden första april till trettioförsta mars, till exempel
+      från den första april tvåtusentjugofyra till den trettioförsta mars tvåtusentjugofem.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0156-s001.wav
+  start_seconds: 204.541667
+  end_seconds: 219.797177
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/reference.png
+- sentence_id: hb-c07-u0156-s002
+  sv: Längden på din anställning påverkar hur många semesterdagar du tjänar in per kalendermånad.
+  ru: Продолжительность ваших трудовых отношений влияет на то, сколько дней отпуска вы накапливаете за
+    календарный месяц.
+  scene_id: scene-9
+  visual_cue: Show Semesterberäkning april till mars using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0156-s002.wav
+  start_seconds: 221.583333
+  end_seconds: 229.315578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/reference.png
+- sentence_id: hb-c07-u0156-s003
+  sv: Om du till exempel börjar på ett nytt jobb den 1 maj och din anställning endast varar sex månader,
+    tjänar du in två semesterdagar per arbetsmånad, alltså 12 semesterdagar.
+  ru: Например, если вы начинаете новую работу 1 мая и ваши трудовые отношения длятся всего шесть месяцев,
+    вы накапливаете по два дня отпуска за каждый месяц работы, то есть 12 дней отпуска.
+  scene_id: scene-10
+  visual_cue: Show Exempel på sex månaders intjäning using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_example
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Om du till exempel börjar på ett nytt jobb den första maj och din anställning endast varar sex
+      månader, tjänar du in två semesterdagar per arbetsmånad, alltså tolv semesterdagar.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0156-s003.wav
+  start_seconds: 231.791667
+  end_seconds: 247.116837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/example.png
+- sentence_id: hb-c07-u0156-s004
+  sv: Detta förutsätter att du har arbetat minst 14 dagar eller 35 timmar per månad.
+  ru: При этом вы должны отработать не менее 14 дней или 35 часов в месяц.
+  scene_id: scene-10
+  visual_cue: Show Exempel på sex månaders intjäning using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_example
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Detta förutsätter att du har arbetat minst fjorton dagar eller trettiofem timmar per månad.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0156-s004.wav
+  start_seconds: 248.875
+  end_seconds: 256.467925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/example.png
+- sentence_id: hb-c07-u0156-s005
+  sv: Fråga din arbetsgivare eller fackförbundet om det exakta antalet semesterdagar.
+  ru: Уточните точное количество дней отпуска у работодателя или в профсоюзе.
+  scene_id: scene-11
+  visual_cue: Show Kontrollera antal dagar using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_ask
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0156-s005.wav
+  start_seconds: 258.958333
+  end_seconds: 266.202959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/ask.png
+- sentence_id: hb-c07-u0157-s001
+  sv: Semesterperioden är 2 maj–30 september.
+  ru: Период летних отпусков длится со 2 мая по 30 сентября.
+  scene_id: scene-12
+  visual_cue: Show Sommarperioden och juli using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_summerdates
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Semesterperioden är från den andra maj till den trettionde september.
+    reason: Speech-only expansion of exact source numbers, dates or letter abbreviations; displayed Swedish
+      and reviewed Russian preserved.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0157-s001.wav
+  start_seconds: 268.666667
+  end_seconds: 274.727075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/summerdates.png
+- sentence_id: hb-c07-u0157-s002
+  sv: Normalt måste man ta sommarsemestern under den här perioden.
+  ru: Обычно летний отпуск необходимо использовать в этот период.
+  scene_id: scene-12
+  visual_cue: Show Sommarperioden och juli using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_summerdates
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0157-s002.wav
+  start_seconds: 276.5
+  end_seconds: 281.79415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/summerdates.png
+- sentence_id: hb-c07-u0157-s003
+  sv: De flesta människorna i Finland tar semester i juli.
+  ru: Большинство жителей Финляндии берут отпуск в июле.
+  scene_id: scene-12
+  visual_cue: Show Sommarperioden och juli using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_summerdates
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0157-s003.wav
+  start_seconds: 283.583333
+  end_seconds: 288.459524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/summerdates.png
+- sentence_id: hb-c07-u0157-s004
+  sv: Meddela din arbetsgivare när du vill ta din semester.
+  ru: Сообщите работодателю, когда вы хотите взять отпуск.
+  scene_id: scene-13
+  visual_cue: Show Önskemål och arbetsgivarens beslut using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_negotiate
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0157-s004.wav
+  start_seconds: 290.916667
+  end_seconds: 295.723197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/negotiate.png
+- sentence_id: hb-c07-u0157-s005
+  sv: Arbetsgivaren är dock den som bestämmer när semester kan tas.
+  ru: Однако решение о том, когда можно использовать отпуск, принимает работодатель.
+  scene_id: scene-13
+  visual_cue: Show Önskemål och arbetsgivarens beslut using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_negotiate
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0157-s005.wav
+  start_seconds: 297.5
+  end_seconds: 303.003129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/negotiate.png
+- sentence_id: hb-c07-u0158-s001
+  sv: Under semestern får du semesterlön.
+  ru: Во время отпуска вы получаете отпускные.
+  scene_id: scene-14
+  visual_cue: Show Semesterlön och specifikation using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holidaypay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0158-s001.wav
+  start_seconds: 305.458333
+  end_seconds: 308.732347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holidaypay.png
+- sentence_id: hb-c07-u0158-s002
+  sv: Arbetsgivaren ska samtidigt ge dig en lönespecifikation av semesterlönen.
+  ru: При этом работодатель должен предоставить вам расчётный листок с расчётом отпускных.
+  scene_id: scene-14
+  visual_cue: Show Semesterlön och specifikation using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_holidaypay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0158-s002.wav
+  start_seconds: 310.5
+  end_seconds: 317.117687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/holidaypay.png
+- sentence_id: hb-c07-u0158-s003
+  sv: Om din anställning upphör, har du rätt att få semesterersättning för semester eller ledighet som
+    du inte har tagit ut.
+  ru: Если ваши трудовые отношения прекращаются, вы имеете право получить компенсацию за неиспользованный
+    ежегодный отпуск или другие неиспользованные дни освобождения от работы.
+  scene_id: scene-15
+  visual_cue: Show Ersättning när anställningen upphör using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_compensation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0158-s003.wav
+  start_seconds: 319.583333
+  end_seconds: 329.405374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/compensation.png
+- sentence_id: hb-c07-u0159-s001
+  sv: Om du vill ta ut obetald ledighet (palkaton vapaa) av andra skäl än vård av barn eller studier ska
+    du komma överens om detta med din arbetsgivare.
+  ru: Если вы хотите взять неоплачиваемый отпуск (palkaton vapaa) по причинам, не связанным с уходом за
+    детьми или учёбой, вы должны договориться об этом с работодателем.
+  scene_id: scene-16
+  visual_cue: Show Skriftligt avtal om obetald ledighet using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_unpaid
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0159-s001.wav
+  start_seconds: 331.875
+  end_seconds: 344.831735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/unpaid.png
+- sentence_id: hb-c07-u0159-s002
+  sv: Ingå avtalet skriftligt.
+  ru: Заключите соглашение в письменной форме.
+  scene_id: scene-16
+  visual_cue: Show Skriftligt avtal om obetald ledighet using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_unpaid
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0159-s002.wav
+  start_seconds: 346.583333
+  end_seconds: 349.300068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/unpaid.png
+- sentence_id: hb-c07-u0160-s001
+  sv: Arbetsgivaren har rätt att neka till obetald ledighet.
+  ru: Работодатель имеет право отказать в неоплачиваемом отпуске.
+  scene_id: scene-16
+  visual_cue: Show Skriftligt avtal om obetald ledighet using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_unpaid
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0160-s001.wav
+  start_seconds: 351.083333
+  end_seconds: 355.959524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/unpaid.png
+- sentence_id: hb-c07-u0160-s002
+  sv: Och vice versa – din arbetsgivare kan inte tvinga dig att ta ledigt utan lön.
+  ru: И наоборот — работодатель не может принудить вас взять отпуск без сохранения заработной платы.
+  scene_id: scene-16
+  visual_cue: Show Skriftligt avtal om obetald ledighet using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_unpaid
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0160-s002.wav
+  start_seconds: 357.75
+  end_seconds: 364.367687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/unpaid.png
+- sentence_id: hb-c07-u0294-s001
+  sv: Självrisktiden är vanligen den dag då du insjuknade och därpå följande nio vardagar.
+  ru: Период ожидания выплаты пособия обычно включает день заболевания и следующие за ним девять будних
+    дней.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0294-s001.wav
+  start_seconds: 366.833333
+  end_seconds: 374.426259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0294-s002
+  sv: Om din anställning har varat över en månad före insjuknandet betalar din arbetsgivare full lön för
+    självrisktiden.
+  ru: Если до заболевания ваши трудовые отношения длились больше месяца, работодатель выплачивает вам
+    полную заработную плату за период ожидания.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0294-s002.wav
+  start_seconds: 376.208333
+  end_seconds: 386.448333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0295-s001
+  sv: Om du inte kan återvända till arbetet efter dessa dagar kan du ansöka om sjukdagpenning hos Kela,
+    om du är sjukförsäkrad i Finland.
+  ru: Если по истечении этих дней вы не можете вернуться к работе, вы можете подать в Ведомство социального
+    обеспечения (Kela) заявление на пособие по болезни, если вы застрахованы на случай болезни в Финляндии.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0295-s001.wav
+  start_seconds: 388.208333
+  end_seconds: 400.18983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0295-s002
+  sv: Arbetsgivare kan betala lön också för en längre period.
+  ru: Работодатели могут выплачивать заработную плату и за более длительный период.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0295-s002.wav
+  start_seconds: 402.958333
+  end_seconds: 408.043503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0295-s003
+  sv: Sjukdagpenningens belopp beror på din inkomst.
+  ru: Размер пособия по болезни зависит от вашего дохода.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0295-s003.wav
+  start_seconds: 409.833333
+  end_seconds: 414.082585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0162-s001
+  sv: I kollektivavtalet kan det finnas andra bestämmelser om arbetsgivarens skyldighet att betala lön
+    för sjukdomstiden.
+  ru: В коллективном договоре могут содержаться другие положения об обязанности работодателя выплачивать
+    заработную плату за время болезни.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0162-s001.wav
+  start_seconds: 415.833333
+  end_seconds: 425.934014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0162-s002
+  sv: Kontrollera detta i kollektivavtalet eller hos ditt fackförbund.
+  ru: Уточните это в коллективном договоре или в своём профсоюзе.
+  scene_id: scene-17
+  visual_cue: Show Sjuklön, självrisk och sjukdagpenning using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0162-s002.wav
+  start_seconds: 427.708333
+  end_seconds: 433.559762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickpay.png
+- sentence_id: hb-c07-u0163-s001
+  sv: Om ett barn yngre än tio år insjuknar akut kan en av barnets föräldrar stanna hemma för att ta hand
+    om barnet.
+  ru: Если ребёнок младше десяти лет внезапно заболел, один из его родителей может остаться дома, чтобы
+    ухаживать за ним.
+  scene_id: scene-18
+  visual_cue: Show Vård av akut sjukt barn using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickchild
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0163-s001.wav
+  start_seconds: 436.041667
+  end_seconds: 445.724388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickchild.png
+- sentence_id: hb-c07-u0163-s002
+  sv: Om du måste stanna hemma för att ta hand om ett sjukt barn ska du utan dröjsmål meddela detta till
+    din chef.
+  ru: Если вам необходимо остаться дома для ухода за больным ребёнком, вы должны незамедлительно сообщить
+    об этом руководителю.
+  scene_id: scene-18
+  visual_cue: Show Vård av akut sjukt barn using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickchild
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0163-s002.wav
+  start_seconds: 447.5
+  end_seconds: 456.904082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickchild.png
+- sentence_id: hb-c07-u0163-s003
+  sv: Vårdledigheten kan vara högst fyra dagar.
+  ru: Отпуск по уходу за больным ребёнком может длиться не более четырёх дней.
+  scene_id: scene-18
+  visual_cue: Show Vård av akut sjukt barn using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickchild
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0163-s003.wav
+  start_seconds: 458.666667
+  end_seconds: 462.497959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickchild.png
+- sentence_id: hb-c07-u0163-s004
+  sv: I kollektivavtalet bestäms om du får lön för denna tid eller inte.
+  ru: Коллективный договор определяет, выплачивается ли вам заработная плата за это время.
+  scene_id: scene-18
+  visual_cue: Show Vård av akut sjukt barn using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickchild
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0163-s004.wav
+  start_seconds: 464.25
+  end_seconds: 470.171088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickchild.png
+- sentence_id: hb-c07-u0163-s005
+  sv: Om branschen inte har ett kollektivavtal behöver lön inte betalas.
+  ru: Если в отрасли нет коллективного договора, выплата заработной платы за это время не обязательна.
+  scene_id: scene-18
+  visual_cue: Show Vård av akut sjukt barn using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_sickchild
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ledighet/narration/hb-c07-u0163-s005.wav
+  start_seconds: 471.958333
+  end_seconds: 477.949082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ledighet/pictures/sickchild.png
+render:
+  music_path: studio/media/hb-c07-ledighet/sources/music-bed.flac
+  background_image: studio/media/hb-c07-ledighet/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.746130952380952
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi och InfoFinland.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - InfoFinland.fi · CC BY 4.0 för InfoFinlands texter.
+    - Fullständiga utgivarvillkor och källor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Hietaniemi beach from air.JPG — MKFI · Public domain
+    - There is Romance — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Diagrammen visar endast uppgifter i källtexten.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal or employment claims.
+  - Original foreground pictorial diagrams remain steady and illustrate only selected source statements.
+  - Background photograph cropped, darkened, blurred and moved continuously; original photograph terms
+    retained.
+  - Music excerpted, faded, ducked, level-adjusted and repeated with4-second equal-power crossfades when
+    required.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Hietaniemi_beach_from_air.JPG
+    description: Hietaniemi beach photographed from a hot air balloon.
+    license: Public domain

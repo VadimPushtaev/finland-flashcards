@@ -1,0 +1,1367 @@
+schema_version: 1
+section_id: hb-c07-ekonomi
+chapter_id: hb-c07
+title_sv: Samhällets sektorer och ekonomi
+title_ru: Секторы общества и экономика
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-ekonomi.yaml
+example_only: false
+source_section_sha256: c8dc64bce87cfc22361d884c5cd82339bddcbae1a70503132e930dbd91b7afc4
+translation_file_sha256: a01cd80abc1ba610005b1d50c7c36ba8c3d070bd4e992be46b82ec545fc83df1
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Episode-specific consecutive source-topic scenes below; read all body sentences/list fragments
+    exactly once in stored source order without additions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40
+    with fixed right bilingual panel and left foreground picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Vuosaari Harbour.jpg by kallerna continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=4.117559523809524.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial complete source-order
+    run used2ONNXthreads; one selected exact-input numericretake used1thread with freshseed42. Actual
+    perclipsettings and retainedoriginal comparison are in metrics/retake-history.json. Whole-video listening
+    and user acceptance pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Feather Waltz by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 90.070 seconds; prepared lossless stereo bed 576.458 seconds.
+    Repeat count 6, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific diagrams and verified photographs change at meaningful source-topic boundaries;
+    aim>=50%actual narrated-body display duration. No speculative numerical data or updated legal/economic
+    claims.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Från jordbruk till industri och tjänster
+- id: scene-2
+  description: Tjänster och olika yrken
+- id: scene-3
+  description: Näringsstruktur, offentlig service och industrins utveckling
+- id: scene-4
+  description: Export och import av varor och tjänster
+- id: scene-5
+  description: Teknikindustri, kemiindustri och skogsindustri
+- id: scene-6
+  description: Informations- och kommunikationsteknik
+- id: scene-7
+  description: Marknadsekonomi, utbud och efterfrågan
+- id: scene-8
+  description: Blandekonomi och offentlig reglering
+- id: scene-9
+  description: Privat och offentlig sektor
+- id: scene-10
+  description: Tredje sektorn och frivilligarbete
+- id: scene-11
+  description: Fjärde sektorn och fria medborgarnätverk
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: economic_change
+  kind: foreground
+  description: Från jordbruk till industri och tjänster — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: service_photo
+  kind: foreground
+  description: Tjänster och olika yrken — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: industry_photo
+  kind: foreground
+  description: Industrins utveckling och skogsindustri — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: trade
+  kind: foreground
+  description: Export och import av varor och tjänster — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: technology
+  kind: foreground
+  description: Teknikindustri, kemiindustri och skogsindustri — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: ict
+  kind: foreground
+  description: Informations- och kommunikationsteknik — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: market
+  kind: foreground
+  description: Marknadsekonomi, utbud och efterfrågan — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: mixed
+  kind: foreground
+  description: Blandekonomi och offentlig reglering — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: sectors
+  kind: foreground
+  description: Privat och offentlig sektor — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: third
+  kind: foreground
+  description: Tredje sektorn och frivilligarbete — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: fourth
+  kind: foreground
+  description: Fjärde sektorn och fria medborgarnätverk — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: public_service
+  kind: foreground
+  description: Pictorial social/healthcare services and more workers, matching only u0003s002.
+  fallback: Relevant accurately identified public hospital photo; never paper-mill imagery for this sentence.
+sentences:
+- sentence_id: hb-c07-u0001-s001
+  sv: Före andra världskriget arbetade största delen av den arbetande befolkningen i Finland inom jordbruket.
+  ru: До Второй мировой войны большая часть работающего населения Финляндии была занята в сельском хозяйстве.
+  scene_id: scene-1
+  visual_cue: Från jordbruk till industri och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - economic_change
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.375442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/economic_change.png
+- sentence_id: hb-c07-u0001-s002
+  sv: Från och med 1950-talet har antalet finländare som försörjer sig på jordbruk minskat drastiskt.
+  ru: Начиная с 1950-х годов число жителей Финляндии, живущих за счёт сельского хозяйства, резко сократилось.
+  scene_id: scene-1
+  visual_cue: Från jordbruk till industri och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - economic_change
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Från och med nittonhundrafemtiotalet har antalet finländare som försörjer sig på jordbruk minskat
+      drastiskt.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0001-s002.wav
+  start_seconds: 14.166667
+  end_seconds: 23.501088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/economic_change.png
+- sentence_id: hb-c07-u0001-s003
+  sv: Människorna har övergått till att arbeta inom industrin och tjänstesektorn.
+  ru: Люди стали переходить на работу в промышленность и сферу услуг.
+  scene_id: scene-1
+  visual_cue: Från jordbruk till industri och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - economic_change
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0001-s003.wav
+  start_seconds: 25.291667
+  end_seconds: 32.048673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/economic_change.png
+- sentence_id: hb-c07-u0002-s001
+  sv: Antalet arbetstagare inom i synnerhet servicenäringarna har ökat mycket kraftigt.
+  ru: Особенно сильно выросло число работников в отраслях сферы услуг.
+  scene_id: scene-2
+  visual_cue: Tjänster och olika yrken; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - service_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0002-s001.wav
+  start_seconds: 34.5
+  end_seconds: 41.674966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/service_photo.png
+- sentence_id: hb-c07-u0002-s002
+  sv: Servicenäringarna består av en mycket varierande grupp yrkesområden.
+  ru: Сфера услуг объединяет самые разные профессиональные области.
+  scene_id: scene-2
+  visual_cue: Tjänster och olika yrken; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - service_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0002-s002.wav
+  start_seconds: 43.458333
+  end_seconds: 49.727721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/service_photo.png
+- sentence_id: hb-c07-u0002-s003
+  sv: Exempel på yrken inom servicebranschen är servitör, busschaufför, klasslärare, violinist, programutvecklare
+    och företagskonsult.
+  ru: Примеры профессий в сфере услуг — официант, водитель автобуса, учитель начальных классов, скрипач,
+    разработчик программ и консультант по вопросам бизнеса.
+  scene_id: scene-2
+  visual_cue: Tjänster och olika yrken; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - service_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0002-s003.wav
+  start_seconds: 51.5
+  end_seconds: 62.854558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/service_photo.png
+- sentence_id: hb-c07-u0003-s001
+  sv: Näringsstrukturen började förändras senare i Finland än i en del andra europeiska länder, men utvecklingen
+    var snabb.
+  ru: Отраслевая структура экономики начала меняться в Финляндии позже, чем в некоторых других европейских
+    странах, но изменения происходили быстро.
+  scene_id: scene-3
+  visual_cue: Industrins utveckling och skogsindustri; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - industry_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0003-s001.wav
+  start_seconds: 65.333333
+  end_seconds: 75.782313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/industry_photo.png
+- sentence_id: hb-c07-u0003-s002
+  sv: Antalet arbetstagare inom i synnerhet social- och hälsovårdssektorn ökade när finska staten började
+    utveckla sin offentliga service.
+  ru: Особенно выросло число работников в сфере социального обеспечения и здравоохранения, когда финское
+    государство начало развивать государственные услуги.
+  scene_id: scene-3
+  visual_cue: Relevant source-based public-healthcare/social-services pictorial diagram, not industrial
+    building, for public-service employment expansion.
+  asset_ids:
+  - episode_background
+  - public_service
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0003-s002.wav
+  start_seconds: 77.541667
+  end_seconds: 89.035544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/public_service.png
+- sentence_id: hb-c07-u0003-s003
+  sv: Även om servicebranscherna ökade mycket, utvecklades också industrin i Finland i rask takt.
+  ru: Хотя сфера услуг значительно расширилась, промышленность в Финляндии тоже развивалась быстрыми темпами.
+  scene_id: scene-3
+  visual_cue: Industrins utveckling och skogsindustri; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - industry_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0003-s003.wav
+  start_seconds: 90.791667
+  end_seconds: 99.08119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/industry_photo.png
+- sentence_id: hb-c07-u0003-s004
+  sv: De största industrisektorerna var skogsindustrin, träindustrin och pappersindustrin samt metallindustrin
+    och verkstadsindustrin.
+  ru: Крупнейшими отраслями промышленности были лесная, деревообрабатывающая и бумажная промышленность,
+    а также металлургия и машиностроение.
+  scene_id: scene-3
+  visual_cue: Industrins utveckling och skogsindustri; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - industry_photo
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0003-s004.wav
+  start_seconds: 100.833333
+  end_seconds: 112.187891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/industry_photo.png
+- sentence_id: hb-c07-u0004-s001
+  sv: Finland är starkt beroende av exporten till och handeln med andra länder.
+  ru: Финляндия сильно зависит от экспорта в другие страны и торговли с ними.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s001.wav
+  start_seconds: 114.666667
+  end_seconds: 121.284354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0004-s002
+  sv: Export betyder att finländska företag säljer varor och tjänster till andra länder.
+  ru: Экспорт означает, что финские предприятия продают товары и услуги в другие страны.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s002.wav
+  start_seconds: 123.041667
+  end_seconds: 130.355952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0004-s003
+  sv: Dessa företag betalar skatt i Finland och lön till sina anställda.
+  ru: Эти предприятия платят налоги в Финляндии и выплачивают заработную плату своим сотрудникам.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s003.wav
+  start_seconds: 132.125
+  end_seconds: 138.185408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0004-s004
+  sv: På så vis stannar pengarna i Finland.
+  ru: Таким образом деньги остаются в Финляндии.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s004.wav
+  start_seconds: 139.958333
+  end_seconds: 143.510986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0004-s005
+  sv: Import i sin tur innebär att man importerar varor och tjänster till Finland från andra länder.
+  ru: Импорт, в свою очередь, означает ввоз товаров и услуг в Финляндию из других стран.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s005.wav
+  start_seconds: 145.291667
+  end_seconds: 153.72051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0004-s006
+  sv: Då betalar företag och människor i Finland för varorna och tjänsterna till företag i andra länder.
+  ru: При этом предприятия и люди в Финляндии платят за товары и услуги предприятиям в других странах.
+  scene_id: scene-4
+  visual_cue: Export och import av varor och tjänster; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - trade
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0004-s006.wav
+  start_seconds: 155.5
+  end_seconds: 164.207483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/trade.png
+- sentence_id: hb-c07-u0005-s001
+  sv: De viktigaste exportprodukterna för Finland är olika produkter från teknikindustrin, såsom produkter
+    från elektronik- och elindustrin och maskin- och metallindustrin.
+  ru: Важнейшие экспортные товары Финляндии — это различная продукция технологической промышленности,
+    в том числе электронной, электротехнической, машиностроительной и металлургической промышленности.
+  scene_id: scene-5
+  visual_cue: Teknikindustri, kemiindustri och skogsindustri; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - technology
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0005-s001.wav
+  start_seconds: 166.666667
+  end_seconds: 180.946939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/technology.png
+- sentence_id: hb-c07-u0005-s002
+  sv: Andra viktiga exportprodukter är produkter från kemiindustrin och skogsindustrin.
+  ru: Другие важные экспортные товары — продукция химической и лесной промышленности.
+  scene_id: scene-5
+  visual_cue: Teknikindustri, kemiindustri och skogsindustri; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - technology
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0005-s002.wav
+  start_seconds: 182.708333
+  end_seconds: 190.022619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/technology.png
+- sentence_id: hb-c07-u0006-s001
+  sv: Också informationstekniken, det vill säga IKT-branschen, är viktig för Finland.
+  ru: Информационные технологии, то есть отрасль ИКТ, тоже важны для Финляндии.
+  scene_id: scene-6
+  visual_cue: Informations- och kommunikationsteknik; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - ict
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Också informationstekniken, det vill säga i kå te-branschen, är viktig för Finland.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0006-s001.wav
+  start_seconds: 192.5
+  end_seconds: 199.883946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/ict.png
+- sentence_id: hb-c07-u0006-s002
+  sv: Förut tillverkades mycket mobiltelefoner i Finland.
+  ru: Раньше в Финляндии производили много мобильных телефонов.
+  scene_id: scene-6
+  visual_cue: Informations- och kommunikationsteknik; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - ict
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0006-s002.wav
+  start_seconds: 201.666667
+  end_seconds: 206.473197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/ict.png
+- sentence_id: hb-c07-u0006-s003
+  sv: Numera sysselsätter IKT-branschen människor inom till exempel serverbranschen, dataspelsbranschen
+    och programvaruutveckling.
+  ru: Сегодня отрасль ИКТ обеспечивает людям работу, например, в области серверных технологий, компьютерных
+    игр и разработки программного обеспечения.
+  scene_id: scene-6
+  visual_cue: Informations- och kommunikationsteknik; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - ict
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Numera sysselsätter i kå te-branschen människor inom till exempel serverbranschen, dataspelsbranschen
+      och programvaruutveckling.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0006-s003.wav
+  start_seconds: 208.25
+  end_seconds: 219.256259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/ict.png
+- sentence_id: hb-c07-u0007-s001
+  sv: Det ekonomiska systemet i Finland bygger på en öppen marknadsekonomi.
+  ru: Экономическая система Финляндии основана на открытой рыночной экономике.
+  scene_id: scene-7
+  visual_cue: Marknadsekonomi, utbud och efterfrågan; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0007-s001.wav
+  start_seconds: 221.708333
+  end_seconds: 227.838401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/market.png
+- sentence_id: hb-c07-u0007-s002
+  sv: Det betyder att Finland bedriver handel med andra länder och att exporten är en viktig del av Finlands
+    ekonomi.
+  ru: Это означает, что Финляндия торгует с другими странами и экспорт составляет важную часть её экономики.
+  scene_id: scene-7
+  visual_cue: Marknadsekonomi, utbud och efterfrågan; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0007-s002.wav
+  start_seconds: 229.625
+  end_seconds: 239.029082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/market.png
+- sentence_id: hb-c07-u0007-s003
+  sv: I en marknadsekonomi bestäms priserna på produkter och tjänster på den fria marknaden, enligt utbudet
+    och efterfrågan.
+  ru: В рыночной экономике цены на товары и услуги определяются на свободном рынке в соответствии со спросом
+    и предложением.
+  scene_id: scene-7
+  visual_cue: Marknadsekonomi, utbud och efterfrågan; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0007-s003.wav
+  start_seconds: 240.791667
+  end_seconds: 250.822687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/market.png
+- sentence_id: hb-c07-u0007-s004
+  sv: Vem som helst kan bli företagare och starta ett företag.
+  ru: Любой человек может стать предпринимателем и открыть предприятие.
+  scene_id: scene-7
+  visual_cue: Marknadsekonomi, utbud och efterfrågan; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0007-s004.wav
+  start_seconds: 252.583333
+  end_seconds: 257.738163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/market.png
+- sentence_id: hb-c07-u0007-s005
+  sv: Privata företag producerar varor och tjänster och bedriver handel på marknadens villkor.
+  ru: Частные предприятия производят товары и услуги и ведут торговлю на рыночных условиях.
+  scene_id: scene-7
+  visual_cue: Marknadsekonomi, utbud och efterfrågan; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0007-s005.wav
+  start_seconds: 259.5
+  end_seconds: 267.092925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/market.png
+- sentence_id: hb-c07-u0008-s001
+  sv: Det ekonomiska systemet i Finland, liksom i nästan alla länder, är en så kallad blandekonomi.
+  ru: Экономическая система Финляндии, как и почти всех стран, представляет собой так называемую смешанную
+    экономику.
+  scene_id: scene-8
+  visual_cue: Blandekonomi och offentlig reglering; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - mixed
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0008-s001.wav
+  start_seconds: 269.583333
+  end_seconds: 277.872857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/mixed.png
+- sentence_id: hb-c07-u0008-s002
+  sv: Även om ekonomin baserar sig på fritt utbud och fri efterfrågan av varor och tjänster, reglerar
+    den offentliga makten marknadens verksamhet och äger också en del företag.
+  ru: Хотя экономика основана на свободном предложении товаров и услуг и свободном спросе на них, публичная
+    власть регулирует деятельность рынка и также владеет частью предприятий.
+  scene_id: scene-8
+  visual_cue: Blandekonomi och offentlig reglering; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - mixed
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0008-s002.wav
+  start_seconds: 279.625
+  end_seconds: 293.696293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/mixed.png
+- sentence_id: hb-c07-u0008-s003
+  sv: Finska staten äger till exempel helt och hållet eller aktiemajoriteten i Posti och VR, som ansvarar
+    för tågtrafiken, samt flygbolaget Finnair.
+  ru: Например, финское государство полностью владеет компаниями Posti и VR, которая отвечает за железнодорожное
+    сообщение, а также авиакомпанией Finnair либо владеет большинством акций этих компаний.
+  scene_id: scene-8
+  visual_cue: Blandekonomi och offentlig reglering; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - mixed
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Finska staten äger till exempel helt och hållet eller aktiemajoriteten i Posti och ve är, som
+      ansvarar för tågtrafiken, samt flygbolaget Finnair.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0008-s003.wav
+  start_seconds: 295.458333
+  end_seconds: 307.788129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/mixed.png
+- sentence_id: hb-c07-u0008-s004
+  sv: Staten har monopol på försäljningen av starka alkoholdrycker som Alko ansvarar för.
+  ru: У государства есть монополия на продажу крепких алкогольных напитков, за которую отвечает компания
+    Alko.
+  scene_id: scene-8
+  visual_cue: Blandekonomi och offentlig reglering; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - mixed
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0008-s004.wav
+  start_seconds: 309.541667
+  end_seconds: 317.273912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/mixed.png
+- sentence_id: hb-c07-u0009-s001
+  sv: När man talar om ekonomi och arbetsplatser talar man ofta om den privata sektorn och den offentliga
+    sektorn.
+  ru: Когда говорят об экономике и рабочих местах, часто упоминают частный и государственный секторы.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s001.wav
+  start_seconds: 319.75
+  end_seconds: 329.363061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s002
+  sv: Med privata sektorn avses närmast företagsverksamhet som ägs av privatpersoner eller privata grupper.
+  ru: Под частным сектором подразумевают главным образом предпринимательскую деятельность, принадлежащую
+    частным лицам или частным группам.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s002.wav
+  start_seconds: 331.125
+  end_seconds: 340.320102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s003
+  sv: Till den privata sektorn hör alla företag, både små företag och stora multinationella företag.
+  ru: К частному сектору относятся все предприятия — как небольшие, так и крупные транснациональные компании.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s003.wav
+  start_seconds: 342.083333
+  end_seconds: 350.372857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s004
+  sv: Syftet med företag är att generera vinst för sina ägare.
+  ru: Цель предприятий — приносить прибыль своим владельцам.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s004.wav
+  start_seconds: 352.125
+  end_seconds: 357.34949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s005
+  sv: Företagen lyssnar på vad de betalande kunderna vill ha och behöver och erbjuder dem sådana varor
+    och tjänster.
+  ru: Предприятия прислушиваются к желаниям и потребностям платящих клиентов и предлагают им соответствующие
+    товары и услуги.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s005.wav
+  start_seconds: 359.125
+  end_seconds: 368.459422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s006
+  sv: Företagen betalar skatt till staten.
+  ru: Предприятия платят налоги государству.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s006.wav
+  start_seconds: 370.25
+  end_seconds: 373.802653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0009-s007
+  sv: Med statens skatteintäkter bekostas den offentliga sektorns tjänster.
+  ru: За счёт налоговых поступлений государства финансируются услуги государственного сектора.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0009-s007.wav
+  start_seconds: 375.583333
+  end_seconds: 381.852721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0010-s001
+  sv: Den offentliga sektorn avser staten, kommunerna och välfärdsområdena.
+  ru: Государственный сектор включает государство, муниципалитеты и регионы по обеспечению благополучия
+    населения.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0010-s001.wav
+  start_seconds: 383.625
+  end_seconds: 389.894388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0010-s002
+  sv: De producerar tjänster som främjar människornas välfärd.
+  ru: Они оказывают услуги, способствующие благополучию людей.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0010-s002.wav
+  start_seconds: 391.666667
+  end_seconds: 397.030476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0010-s003
+  sv: Den offentliga sektorns uppgift är inte att generera vinst.
+  ru: Задача государственного сектора — не получение прибыли.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0010-s003.wav
+  start_seconds: 398.791667
+  end_seconds: 403.946497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0010-s004
+  sv: Sektorn är en stor arbetsgivare i Finland.
+  ru: Этот сектор является крупным работодателем в Финляндии.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0010-s004.wav
+  start_seconds: 405.708333
+  end_seconds: 409.818265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+- sentence_id: hb-c07-u0010-s005
+  sv: Alla de som arbetar på till exempel offentliga sjukhus, daghem, skolor och socialbyråer, liksom
+    vid polisen, hos skatteverket och inom försvarsmakten arbetar för staten, kommunerna och välfärdsområdena.
+  ru: Все, кто работает, например, в государственных больницах, детских садах, школах и социальных службах,
+    а также в полиции, налоговом ведомстве и силах обороны, работают на государство, муниципалитеты и
+    регионы по обеспечению благополучия населения.
+  scene_id: scene-9
+  visual_cue: Privat och offentlig sektor; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - sectors
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0010-s005.wav
+  start_seconds: 411.583333
+  end_seconds: 428.371361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/sectors.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0011-s001
+  sv: Ofta talar man förutom om den offentliga och den privata sektorn också om den tredje sektorn.
+  ru: Помимо государственного и частного секторов часто говорят также о третьем секторе.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s001.wav
+  start_seconds: 430.833333
+  end_seconds: 438.983537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0011-s002
+  sv: Med tredje sektorn avses olika organisationer, till exempel idrottsföreningar, miljöorganisationer
+    och politiska organisationer.
+  ru: Под третьим сектором понимаются различные организации, например спортивные объединения, экологические
+    и политические организации.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s002.wav
+  start_seconds: 440.75
+  end_seconds: 452.452857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0011-s003
+  sv: En stor del av organisationerna utför socialt eller ideellt arbete.
+  ru: Большая часть организаций занимается социальной или общественно полезной некоммерческой деятельностью.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s003.wav
+  start_seconds: 454.208333
+  end_seconds: 460.547381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0011-s004
+  sv: De vill alltså förbättra förhållandena för människorna och samhället socialt eller samhälleligt.
+  ru: Таким образом они хотят улучшить условия жизни людей и общества в социальной или общественной сфере.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s004.wav
+  start_seconds: 462.333333
+  end_seconds: 470.622857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0011-s005
+  sv: En del av arbetstagarna inom den tredje sektorn får lön för sitt arbete, men en stor del av verksamheten
+    bedrivs av frivilliga.
+  ru: Часть работников третьего сектора получает заработную плату за свою работу, но значительная часть
+    деятельности осуществляется добровольцами.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s005.wav
+  start_seconds: 472.375
+  end_seconds: 483.590238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0011-s006
+  sv: Syftet med organisationerna är inte att generera vinst.
+  ru: Цель организаций — не получение прибыли.
+  scene_id: scene-10
+  visual_cue: Tredje sektorn och frivilligarbete; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - third
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0011-s006.wav
+  start_seconds: 485.375
+  end_seconds: 490.52983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/third.png
+- sentence_id: hb-c07-u0012-s001
+  sv: I dag talar man också om fjärde sektorn.
+  ru: Сегодня говорят также о четвёртом секторе.
+  scene_id: scene-11
+  visual_cue: Fjärde sektorn och fria medborgarnätverk; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - fourth
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0012-s001.wav
+  start_seconds: 493.0
+  end_seconds: 496.900952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/fourth.png
+- sentence_id: hb-c07-u0012-s002
+  sv: Med den avses ett fritt och utspritt medborgarsamhälle.
+  ru: Под ним понимается свободное, децентрализованное гражданское общество.
+  scene_id: scene-11
+  visual_cue: Fjärde sektorn och fria medborgarnätverk; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - fourth
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0012-s002.wav
+  start_seconds: 498.666667
+  end_seconds: 503.612517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/fourth.png
+- sentence_id: hb-c07-u0012-s003
+  sv: Medborgarverksamheten inom den fjärde sektorn har ökat sin betydelse vid sidan om mer traditionell
+    organisationsverksamhet.
+  ru: Значение гражданской активности в четвёртом секторе возросло наряду с более традиционной деятельностью
+    организаций.
+  scene_id: scene-11
+  visual_cue: Fjärde sektorn och fria medborgarnätverk; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - fourth
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0012-s003.wav
+  start_seconds: 505.375
+  end_seconds: 516.102619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/fourth.png
+- sentence_id: hb-c07-u0012-s004
+  sv: Till den fjärde sektorn hör till exempel nätverk för stadsodling och återanvändning som ofta organiserar
+    sin verksamhet via sociala medier.
+  ru: К четвёртому сектору относятся, например, сети городского огородничества и повторного использования
+    вещей, которые часто организуют свою деятельность через социальные сети.
+  scene_id: scene-11
+  visual_cue: Fjärde sektorn och fria medborgarnätverk; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - fourth
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-ekonomi/narration/hb-c07-u0012-s004.wav
+  start_seconds: 517.875
+  end_seconds: 529.926156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-ekonomi/pictures/fourth.png
+render:
+  music_path: studio/media/hb-c07-ekonomi/sources/music-bed.flac
+  background_image: studio/media/hb-c07-ekonomi/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.117559523809524
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Vuosaari Harbour.jpg — kallerna · CC BY-SA 4.0
+    - Feather Waltz — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Helsinki bus line 510.jpg — Lentokonefani · CC BY-SA 4.0
+    - Tervasaari paper mill.jpg — Tomi Mäkitalo · CC BY 3.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian displayed sentence by sentence; no added narration.
+  - Background cropped,darkened,blurred and continuously panned/zoomed; photo adaptation retains source
+    license.
+  - Foreground photos proportionally resized; original pictorial diagrams show only source-stated concepts.
+  - Music faded,ducked,+2dB adjusted and repeated with4-second equal-power crossfades when needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Vuosaari_Harbour.jpg
+    description: Vuosaari Harbour
+    license: CC BY-SA 4.0

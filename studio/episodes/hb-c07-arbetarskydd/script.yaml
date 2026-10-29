@@ -1,0 +1,1241 @@
+schema_version: 1
+section_id: hb-c07-arbetarskydd
+chapter_id: hb-c07
+title_sv: Arbetarskydd och företagshälsovård
+title_ru: Охрана труда и медицинское обслуживание на работе
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-arbetarskydd.yaml
+example_only: false
+source_section_sha256: 00d8e1b16380141995f47badeeb22085363c316bb44df663ebd729e817bcb4a8
+translation_file_sha256: e60ba351282525e05430097c9dc401d660ddac0a48585b0ba6ae2540bfbffe41
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted olive Chapter7palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Construction site at Hakaniemi Bridge in May 2024.jpg by JIP continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=3.9083333333333337. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16; actual threads/settings
+    measured in metrics. Names/numbers/overallbalance pending whole-video listening; ASR diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Starry by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 198.505 seconds; prepared lossless stereo bed 547.167 seconds. Repeat count
+    2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at employment-source topic boundaries: accurately identified
+    photos of places/objects and original pictorial process diagrams. Aim>=50% measured narrated body
+    display; never imply photographed people face the depicted employment problem. Source text unchanged;
+    no added employment advice or updated claims.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Säker och hälsosam arbetsplats
+- id: scene-2
+  description: Rapportera risker och föreslå förbättringar
+- id: scene-3
+  description: Vald arbetarskyddsfullmäktig
+- id: scene-4
+  description: Myndighetens tillsyn och rådgivning
+- id: scene-5
+  description: Utbildning, instruktioner och säkerhet
+- id: scene-6
+  description: Olycksfall och yrkessjukdomsförsäkring
+- id: scene-7
+  description: Exponering och yrkessjukdomar
+- id: scene-8
+  description: Grupplivförsäkring och familj
+- id: scene-9
+  description: Företagshälsovård för alla anställda
+- id: scene-10
+  description: Förebyggande vård och varierande tjänster
+- id: scene-11
+  description: Utredning och vårdställen
+- id: scene-12
+  description: Endast anställda
+- id: scene-13
+  description: Förebyggande tjänster och tillgängligt avtal
+- id: scene-14
+  description: Hälsa, arbetsförmåga och avgiftsfria tjänster
+- id: scene-15
+  description: Sekretess och bedömning av arbetsförmåga
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_safety
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Säker och hälsosam
+    arbetsplats.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_report
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Rapportera risker
+    och föreslå förbättringar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_representative
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Vald arbetarskyddsfullmäktig.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_inspection
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Myndighetens tillsyn
+    och rådgivning.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_training
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Utbildning, instruktioner
+    och säkerhet.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_insurance
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Olycksfall och yrkessjukdomsförsäkring.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_exposure
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Exponering och yrkessjukdomar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_lifeinsurance
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Grupplivförsäkring
+    och familj.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_health
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Företagshälsovård
+    för alla anställda.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_prevention
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Förebyggande vård
+    och varierande tjänster.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_clinic
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Utredning och vårdställen.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_employees
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Endast anställda.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_contract
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Förebyggande tjänster
+    och tillgängligt avtal.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_wellbeing
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Hälsa, arbetsförmåga
+    och avgiftsfria tjänster.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_privacy
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Sekretess och bedömning
+    av arbetsförmåga.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c07-u0164-s001
+  sv: Arbetarskyddslagen föreskriver att arbetsplatsen ska vara säker och hälsosam.
+  ru: Закон об охране труда предписывает, чтобы рабочее место было безопасным и не вредило здоровью.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0164-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.285646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0164-s002
+  sv: Det ansvarar arbetsgivaren och cheferna för.
+  ru: За это отвечают работодатель и руководители.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0164-s002.wav
+  start_seconds: 12.041667
+  end_seconds: 16.151599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0164-s003
+  sv: Arbetet ska vara säkert både fysiskt och mentalt.
+  ru: Работа должна быть безопасной как физически, так и психологически.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0164-s003.wav
+  start_seconds: 17.916667
+  end_seconds: 22.444558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0164-s004
+  sv: Arbetsgivaren ska också se till att de anställda inte blir sjuka på grund av arbetet.
+  ru: Работодатель также должен следить за тем, чтобы работники не заболевали из-за работы.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0164-s004.wav
+  start_seconds: 24.208333
+  end_seconds: 32.010238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0165-s001
+  sv: Arbetarskydd innebär åtgärder som genomförs för att det ska vara säkert på arbetsplatsen.
+  ru: Охрана труда включает меры, принимаемые для обеспечения безопасности на рабочем месте.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0165-s001.wav
+  start_seconds: 33.791667
+  end_seconds: 41.663231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0165-s002
+  sv: Arbetarskyddet är en gemensam uppgift för hela arbetsplatsen.
+  ru: Охрана труда — общая задача всего коллектива.
+  scene_id: scene-1
+  visual_cue: Show Säker och hälsosam arbetsplats using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0165-s002.wav
+  start_seconds: 43.416667
+  end_seconds: 48.919796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/safety.png
+- sentence_id: hb-c07-u0166-s001
+  sv: Om en anställd upptäcker en fara på arbetsplatsen ska hen genast informera chefen eller arbetarskyddsfullmäktigen
+    om det.
+  ru: Если работник заметил опасность на рабочем месте, он должен немедленно сообщить об этом руководителю
+    или уполномоченному по охране труда.
+  scene_id: scene-2
+  visual_cue: Show Rapportera risker och föreslå förbättringar using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0166-s001.wav
+  start_seconds: 51.375
+  end_seconds: 61.893639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/report.png
+- sentence_id: hb-c07-u0166-s002
+  sv: Det kan vara fråga om till exempel ett farligt arbetssätt, ett trasigt verktyg eller otillräcklig
+    skyddsutrustning.
+  ru: Речь может идти, например, об опасном способе работы, сломанном инструменте или недостаточных средствах
+    защиты.
+  scene_id: scene-2
+  visual_cue: Show Rapportera risker och föreslå förbättringar using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0166-s002.wav
+  start_seconds: 63.666667
+  end_seconds: 73.349388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/report.png
+- sentence_id: hb-c07-u0166-s003
+  sv: Den anställda kan också föreslå hur arbetet skulle kunna göras säkrare.
+  ru: Работник также может предложить, как сделать работу безопаснее.
+  scene_id: scene-2
+  visual_cue: Show Rapportera risker och föreslå förbättringar using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_report
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0166-s003.wav
+  start_seconds: 75.125
+  end_seconds: 81.464048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/report.png
+- sentence_id: hb-c07-u0167-s001
+  sv: På arbetsplatsen sörjer också arbetarskyddsfullmäktigen för arbetarskyddet.
+  ru: На рабочем месте об охране труда также заботится уполномоченный по охране труда.
+  scene_id: scene-3
+  visual_cue: Show Vald arbetarskyddsfullmäktig using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0167-s001.wav
+  start_seconds: 83.916667
+  end_seconds: 90.604014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/representative.png
+- sentence_id: hb-c07-u0167-s002
+  sv: Hen väljs i ett val bland de anställda.
+  ru: Его выбирают путём голосования из числа работников.
+  scene_id: scene-3
+  visual_cue: Show Vald arbetarskyddsfullmäktig using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0167-s002.wav
+  start_seconds: 92.375
+  end_seconds: 96.206293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/representative.png
+- sentence_id: hb-c07-u0167-s003
+  sv: Arbetarskyddsfullmäktigen har till uppgift att regelbundet övervaka faktorer som påverkar de anställdas
+    säkerhet och hälsa på arbetsplatsen, informera arbetsgivaren om missförhållanden som hen upptäcker
+    och representera de anställda i frågor som rör arbetarskyddet.
+  ru: В обязанности уполномоченного по охране труда входит регулярно контролировать факторы, влияющие
+    на безопасность и здоровье работников на рабочем месте, сообщать работодателю о замеченных нарушениях
+    и представлять работников в вопросах охраны труда.
+  scene_id: scene-3
+  visual_cue: Show Vald arbetarskyddsfullmäktig using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0167-s003.wav
+  start_seconds: 97.958333
+  end_seconds: 119.692211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/representative.png
+  text_style:
+    sv_size: 44
+    ru_size: 35
+- sentence_id: hb-c07-u0168-s001
+  sv: Arbetarskyddsmyndigheten övervakar att arbetsgivaren följer de lagar som gäller arbetarskydd.
+  ru: Орган надзора за охраной труда (arbetarskyddsmyndigheten) контролирует соблюдение работодателем
+    законов об охране труда.
+  scene_id: scene-4
+  visual_cue: Show Myndighetens tillsyn och rådgivning using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_inspection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0168-s001.wav
+  start_seconds: 122.166667
+  end_seconds: 130.386531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/inspection.png
+- sentence_id: hb-c07-u0168-s002
+  sv: Myndigheten gör bland annat inspektioner på arbetsplatser, ger arbetsgivare och arbetstagare rådgivning
+    och utreder orsakerna till allvarliga olycksfall i arbetet och arbetsrelaterade sjukdomar.
+  ru: Этот орган, в частности, проводит проверки на рабочих местах, консультирует работодателей и работников
+    и расследует причины тяжёлых несчастных случаев на производстве и заболеваний, связанных с работой.
+  scene_id: scene-4
+  visual_cue: Show Myndighetens tillsyn och rådgivning using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_inspection
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0168-s002.wav
+  start_seconds: 132.166667
+  end_seconds: 148.606395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/inspection.png
+- sentence_id: hb-c07-u0169-s001
+  sv: Den anställda måste få utbildning i rätt arbetssätt och en genomgång av sådant som rör arbetssäkerheten.
+  ru: Работника необходимо обучить правильным способам работы и ознакомить с вопросами безопасности труда.
+  scene_id: scene-5
+  visual_cue: Show Utbildning, instruktioner och säkerhet using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0169-s001.wav
+  start_seconds: 151.083333
+  end_seconds: 159.999796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/training.png
+- sentence_id: hb-c07-u0169-s002
+  sv: På arbetsplatsen ska det finnas tydliga anvisningar i händelse av olycksfall eller olyckor.
+  ru: На рабочем месте должны быть чёткие инструкции на случай травм или аварий.
+  scene_id: scene-5
+  visual_cue: Show Utbildning, instruktioner och säkerhet using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0169-s002.wav
+  start_seconds: 161.75
+  end_seconds: 169.830544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/training.png
+- sentence_id: hb-c07-u0169-s003
+  sv: Alla anställda måste veta hur de ska agera i sådana situationer.
+  ru: Все работники должны знать, как действовать в таких ситуациях.
+  scene_id: scene-5
+  visual_cue: Show Utbildning, instruktioner och säkerhet using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0169-s003.wav
+  start_seconds: 171.583333
+  end_seconds: 177.434762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/training.png
+- sentence_id: hb-c07-u0169-s004
+  sv: Den anställda ska följa arbetsgivarens instruktioner och utföra arbetet på ett säkert sätt.
+  ru: Работник должен следовать инструкциям работодателя и выполнять работу безопасным способом.
+  scene_id: scene-5
+  visual_cue: Show Utbildning, instruktioner och säkerhet using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0169-s004.wav
+  start_seconds: 179.208333
+  end_seconds: 187.219218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/training.png
+- sentence_id: hb-c07-u0169-s005
+  sv: Om en arbetsuppgift är för farlig kan man vägra att utföra den.
+  ru: Если рабочее задание слишком опасно, можно отказаться от его выполнения.
+  scene_id: scene-5
+  visual_cue: Show Utbildning, instruktioner och säkerhet using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0169-s005.wav
+  start_seconds: 189.0
+  end_seconds: 194.921088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/training.png
+- sentence_id: hb-c07-u0170-s001
+  sv: Enligt finsk lag ska arbetsgivare ha en försäkring för olycksfall i arbetet och yrkessjukdom som
+    gäller samtliga anställda.
+  ru: По финскому законодательству работодатель должен оформить для всех работников страхование от несчастных
+    случаев на производстве и профессиональных заболеваний.
+  scene_id: scene-6
+  visual_cue: Show Olycksfall och yrkessjukdomsförsäkring using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0170-s001.wav
+  start_seconds: 197.375
+  end_seconds: 207.963299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/insurance.png
+- sentence_id: hb-c07-u0170-s002
+  sv: Försäkringen ersätter kostnader om en anställd råkar ut för ett olycksfall i arbetet.
+  ru: Страховка возмещает расходы, если с работником произошёл несчастный случай на производстве.
+  scene_id: scene-6
+  visual_cue: Show Olycksfall och yrkessjukdomsförsäkring using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0170-s002.wav
+  start_seconds: 209.75
+  end_seconds: 217.412585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/insurance.png
+- sentence_id: hb-c07-u0170-s003
+  sv: Försäkringen ersätter också kostnader om en anställd får en yrkessjukdom av sitt arbete.
+  ru: Страховка также возмещает расходы, если у работника вследствие работы возникло профессиональное
+    заболевание.
+  scene_id: scene-6
+  visual_cue: Show Olycksfall och yrkessjukdomsförsäkring using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0170-s003.wav
+  start_seconds: 219.166667
+  end_seconds: 227.247211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/insurance.png
+- sentence_id: hb-c07-u0171-s001
+  sv: En yrkessjukdom är en sjukdom som sannolikt beror på att en arbetstagare har exponerats för en fysikalisk,
+    kemisk eller biologisk agens i sitt arbete.
+  ru: Профессиональное заболевание — это заболевание, вероятно вызванное воздействием на работника физического,
+    химического или биологического фактора в процессе работы.
+  scene_id: scene-7
+  visual_cue: Show Exponering och yrkessjukdomar using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_exposure
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0171-s001.wav
+  start_seconds: 229.708333
+  end_seconds: 242.804388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/exposure.png
+- sentence_id: hb-c07-u0171-s002
+  sv: Vanliga yrkessjukdomar är till exempel bullerskador, astma, allergiska eksem och belastningsskador
+    i händerna eller armarna.
+  ru: К распространённым профессиональным заболеваниям относятся, например, повреждения слуха от шума,
+    астма, аллергическая экзема и повреждения кистей или рук из-за повторяющихся нагрузок.
+  scene_id: scene-7
+  visual_cue: Show Exponering och yrkessjukdomar using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_exposure
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0171-s002.wav
+  start_seconds: 244.583333
+  end_seconds: 255.728912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/exposure.png
+- sentence_id: hb-c07-u0172-s001
+  sv: I allmänhet måste arbetsgivaren också teckna en grupplivförsäkring för de anställda.
+  ru: Как правило, работодатель также должен оформить для работников групповое страхование жизни.
+  scene_id: scene-8
+  visual_cue: Show Grupplivförsäkring och familj using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_lifeinsurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0172-s001.wav
+  start_seconds: 258.208333
+  end_seconds: 265.592279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/lifeinsurance.png
+- sentence_id: hb-c07-u0172-s002
+  sv: Om en anställd avlider på arbetstid eller på fritiden, betalar försäkringen ersättning till den
+    anställdas familj.
+  ru: Если работник умирает в рабочее или свободное время, страховая выплата производится его семье.
+  scene_id: scene-8
+  visual_cue: Show Grupplivförsäkring och familj using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_lifeinsurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0172-s002.wav
+  start_seconds: 267.375
+  end_seconds: 277.54534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/lifeinsurance.png
+- sentence_id: hb-c07-u0173-s001
+  sv: Enligt lagen är arbetsgivaren skyldig att ordna företagshälsovård för de anställda.
+  ru: По закону работодатель обязан организовать медицинское обслуживание на работе (företagshälsovård)
+    для своих работников.
+  scene_id: scene-9
+  visual_cue: Show Företagshälsovård för alla anställda using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_health
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0173-s001.wav
+  start_seconds: 280.0
+  end_seconds: 287.383946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/health.png
+- sentence_id: hb-c07-u0173-s002
+  sv: Arbetsgivaren måste erbjuda alla anställda företagshälsovård, oberoende av om de är fast anställda,
+    visstidsanställda eller deltidsanställda.
+  ru: Работодатель должен предоставлять медицинское обслуживание на работе всем работникам независимо
+    от того, работают ли они постоянно, по срочному договору или неполное рабочее время.
+  scene_id: scene-9
+  visual_cue: Show Företagshälsovård för alla anställda using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_health
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0173-s002.wav
+  start_seconds: 289.166667
+  end_seconds: 301.984082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/health.png
+- sentence_id: hb-c07-u0174-s001
+  sv: Företagshälsovårdstjänsternas omfattning varierar mellan olika arbetsgivare.
+  ru: Объём медицинского обслуживания на работе различается у разных работодателей.
+  scene_id: scene-9
+  visual_cue: Show Företagshälsovård för alla anställda using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_health
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0174-s001.wav
+  start_seconds: 303.75
+  end_seconds: 310.785646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/health.png
+- sentence_id: hb-c07-u0174-s002
+  sv: En del arbetsgivare erbjuder sina anställda omfattande företagshälsovårdstjänster, medan andra erbjuder
+    mer begränsade.
+  ru: Одни работодатели предоставляют своим работникам широкий набор услуг медицинского обслуживания на
+    работе, другие — более ограниченный.
+  scene_id: scene-9
+  visual_cue: Show Företagshälsovård för alla anställda using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_health
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0174-s002.wav
+  start_seconds: 312.541667
+  end_seconds: 323.199626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/health.png
+- sentence_id: hb-c07-u0174-s003
+  sv: Man kan fråga arbetsgivaren om företagshälsovårdstjänsterna till exempel under anställningsintervjun.
+  ru: О медицинском обслуживании на работе можно спросить работодателя, например, на собеседовании при
+    приёме на работу.
+  scene_id: scene-9
+  visual_cue: Show Företagshälsovård för alla anställda using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_health
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0174-s003.wav
+  start_seconds: 324.958333
+  end_seconds: 334.432075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/health.png
+- sentence_id: hb-c07-u0175-s001
+  sv: Företagshälsovård är förebyggande hälsovård som inkluderar till exempel hälsokontroller.
+  ru: Медицинское обслуживание на работе — это профилактическая медицинская помощь, включающая, например,
+    медицинские осмотры.
+  scene_id: scene-10
+  visual_cue: Show Förebyggande vård och varierande tjänster using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prevention
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0175-s001.wav
+  start_seconds: 336.916667
+  end_seconds: 344.927551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/prevention.png
+- sentence_id: hb-c07-u0175-s002
+  sv: Arbetsgivaren får själv bestämma huruvida företagshälsovården ska täcka också till exempel sjukvård
+    och besök hos läkare, företagshälsovårdspsykolog eller fysioterapeut.
+  ru: Работодатель сам решает, будет ли медицинское обслуживание на работе также включать, например, лечение
+    и посещения врача, психолога службы медицинского обслуживания на работе или физиотерапевта.
+  scene_id: scene-10
+  visual_cue: Show Förebyggande vård och varierande tjänster using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prevention
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0175-s002.wav
+  start_seconds: 346.708333
+  end_seconds: 361.754864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/prevention.png
+- sentence_id: hb-c07-u0175-s003
+  sv: Arbetsgivaren ska berätta för de anställda vilka tjänster som ingår i företagshälsovården.
+  ru: Работодатель должен рассказать работникам, какие услуги входят в медицинское обслуживание на работе.
+  scene_id: scene-10
+  visual_cue: Show Förebyggande vård och varierande tjänster using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_prevention
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0175-s003.wav
+  start_seconds: 363.541667
+  end_seconds: 371.622211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/prevention.png
+- sentence_id: hb-c07-u0176-s001
+  sv: Om man misstänker att en sjukdom hos en anställd beror på arbetet, ska en utredning av ärendet inledas
+    vid företagshälsovården.
+  ru: Если есть подозрение, что заболевание работника связано с работой, выяснение этого вопроса следует
+    начать в службе медицинского обслуживания на работе.
+  scene_id: scene-11
+  visual_cue: Show Utredning och vårdställen using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_clinic
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0176-s001.wav
+  start_seconds: 374.083333
+  end_seconds: 385.437891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/clinic.png
+- sentence_id: hb-c07-u0176-s002
+  sv: Företagshälsovården kan finnas på den lokala hälsovårdscentralen eller en privat läkarcentral.
+  ru: Медицинское обслуживание на работе может предоставляться в местном медицинском центре или частной
+    клинике.
+  scene_id: scene-11
+  visual_cue: Show Utredning och vårdställen using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_clinic
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0176-s002.wav
+  start_seconds: 387.208333
+  end_seconds: 395.567517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/clinic.png
+- sentence_id: hb-c07-u0176-s003
+  sv: Tjänsterna får användas endast av de anställda, inte deras familjemedlemmar.
+  ru: Пользоваться этими услугами могут только сами работники, а не члены их семей.
+  scene_id: scene-12
+  visual_cue: Show Endast anställda using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_employees
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0176-s003.wav
+  start_seconds: 398.041667
+  end_seconds: 405.077313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/employees.png
+- sentence_id: hb-c07-u0177-s001
+  sv: Enligt finsk lag måste arbetsgivaren ordna förebyggande företagshälsovård för alla arbetstagare.
+  ru: По финскому законодательству работодатель должен организовать профилактическое медицинское обслуживание
+    на работе для всех работников.
+  scene_id: scene-13
+  visual_cue: Show Förebyggande tjänster och tillgängligt avtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_contract
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s001.wav
+  start_seconds: 407.541667
+  end_seconds: 415.97051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/contract.png
+- sentence_id: hb-c07-u0177-s002
+  sv: Arbetsgivaren måste informera dig om vilka tjänster du får via företagshälsovården.
+  ru: Работодатель должен сообщить вам, какие услуги вы получаете в рамках медицинского обслуживания на
+    работе.
+  scene_id: scene-13
+  visual_cue: Show Förebyggande tjänster och tillgängligt avtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_contract
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s002.wav
+  start_seconds: 417.75
+  end_seconds: 425.203605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/contract.png
+- sentence_id: hb-c07-u0177-s003
+  sv: Avtalet om företagshälsovård ska finnas tillgängligt på din arbetsplats.
+  ru: Договор о медицинском обслуживании на работе должен быть доступен на вашем рабочем месте.
+  scene_id: scene-13
+  visual_cue: Show Förebyggande tjänster och tillgängligt avtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_contract
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s003.wav
+  start_seconds: 426.958333
+  end_seconds: 433.64568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/contract.png
+- sentence_id: hb-c07-u0177-s004
+  sv: Där kan du kontrollera vilka tjänster du får via företagshälsovården.
+  ru: В нём вы можете проверить, какие услуги вы получаете в рамках медицинского обслуживания на работе.
+  scene_id: scene-13
+  visual_cue: Show Förebyggande tjänster och tillgängligt avtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_contract
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s004.wav
+  start_seconds: 435.416667
+  end_seconds: 441.616395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/contract.png
+- sentence_id: hb-c07-u0177-s005
+  sv: Anställningens längd och form har ingen betydelse.
+  ru: Продолжительность и форма трудовых отношений не имеют значения.
+  scene_id: scene-13
+  visual_cue: Show Förebyggande tjänster och tillgängligt avtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_contract
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s005.wav
+  start_seconds: 443.375
+  end_seconds: 447.763571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/contract.png
+- sentence_id: hb-c07-u0177-s006
+  sv: Syftet med företagshälsovården är att främja arbetstagarnas hälsa, arbetsförmåga och säkerhet på
+    arbetsplatsen.
+  ru: Цель медицинского обслуживания на работе — укреплять здоровье работников, поддерживать их трудоспособность
+    и обеспечивать безопасность на рабочем месте.
+  scene_id: scene-14
+  visual_cue: Show Hälsa, arbetsförmåga och avgiftsfria tjänster using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_wellbeing
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s006.wav
+  start_seconds: 450.25
+  end_seconds: 460.35068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/wellbeing.png
+- sentence_id: hb-c07-u0177-s007
+  sv: Företagshälsovårdens tjänster är kostnadsfria för arbetstagarna.
+  ru: Услуги медицинского обслуживания на работе бесплатны для работников.
+  scene_id: scene-14
+  visual_cue: Show Hälsa, arbetsförmåga och avgiftsfria tjänster using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_wellbeing
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0177-s007.wav
+  start_seconds: 462.125
+  end_seconds: 468.255068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/wellbeing.png
+- sentence_id: hb-c07-u0178-s001
+  sv: Personalen inom företagshälsovården har sekretess.
+  ru: Персонал службы медицинского обслуживания на работе обязан соблюдать конфиденциальность.
+  scene_id: scene-15
+  visual_cue: Show Sekretess och bedömning av arbetsförmåga using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_privacy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0178-s001.wav
+  start_seconds: 470.708333
+  end_seconds: 475.445204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/privacy.png
+- sentence_id: hb-c07-u0178-s002
+  sv: De lämnar inte ut information om din situation till din arbetsgivare, om inte du själv har gett
+    tillstånd till det.
+  ru: Сотрудники не передают работодателю информацию о вашей ситуации, если вы сами не дали на это разрешения.
+  scene_id: scene-15
+  visual_cue: Show Sekretess och bedömning av arbetsförmåga using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_privacy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0178-s002.wav
+  start_seconds: 477.208333
+  end_seconds: 487.309014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/privacy.png
+- sentence_id: hb-c07-u0178-s003
+  sv: Företagshälsovården kan dock ge din arbetsgivare en bedömning av huruvida ditt hälsotillstånd tillåter
+    att du fortsätter att arbeta.
+  ru: Однако служба медицинского обслуживания на работе может дать работодателю заключение о том, позволяет
+    ли ваше состояние здоровья продолжать работу.
+  scene_id: scene-15
+  visual_cue: Show Sekretess och bedömning av arbetsförmåga using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_privacy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetarskydd/narration/hb-c07-u0178-s003.wav
+  start_seconds: 489.083333
+  end_seconds: 500.646871
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetarskydd/pictures/privacy.png
+render:
+  music_path: studio/media/hb-c07-arbetarskydd/sources/music-bed.flac
+  background_image: studio/media/hb-c07-arbetarskydd/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.9083333333333337
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi och InfoFinland.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - InfoFinland.fi · CC BY 4.0 för InfoFinlands texter.
+    - Fullständiga utgivarvillkor och källor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Construction site at Hakaniemi Bridge in May 2024.jpg — JIP · CC BY-SA 4.0
+    - Starry — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Diagrammen visar endast uppgifter i källtexten.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal or employment claims.
+  - Original foreground pictorial diagrams remain steady and illustrate only selected source statements.
+  - Background photograph cropped, darkened, blurred and moved continuously; original photograph terms
+    retained.
+  - Music excerpted, faded, ducked, level-adjusted and repeated with4-second equal-power crossfades when
+    required.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Construction_site_at_Hakaniemi_Bridge_in_May_2024.jpg
+    description: A view of a construction site at the Hakaniemi Bridge in Hakaniemi, Helsinki, Finland
+      on an afternoon in May 2024. I did not actually enter the construction site - this picture was taken
+      over the construction site fence.
+    license: CC BY-SA 4.0

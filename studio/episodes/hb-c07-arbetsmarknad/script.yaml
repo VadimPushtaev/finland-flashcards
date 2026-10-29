@@ -1,0 +1,1395 @@
+schema_version: 1
+section_id: hb-c07-arbetsmarknad
+chapter_id: hb-c07
+title_sv: Arbetsmarknaden och sysselsättning
+title_ru: Рынок труда и занятость
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-arbetsmarknad.yaml
+example_only: false
+source_section_sha256: a923127799f4ec7445e004a7fe52cfeb71de37f691d6be53d43ad5c7835ac29b
+translation_file_sha256: 8e784a2a42d1082cfb9cb9d8c36f521ce95c39ff1cbd3c0f10ea3aff24ce793a
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, on a three-second card; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Individually planned consecutive scenes preserve every exact body sentence and list fragment
+    once in source order. No added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Linux Liberation
+    Sans Bold48/Regular40 with Swedish and Cyrillic coverage. Fixed bilingual right panel and separate
+    left pictorial foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25s before complete measured narration. Pause1.5s normally,2.2s at scene boundaries
+    and2.5s for long pairs; no acceleration to fit a target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki-Vantaa crew center.jpg by Jaakko from Espoo, Finland, Finland continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=4.429464285714285. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPy seed42,44100Hz monoPCM16; initial ONNX
+    intra-op2threads. Complete-video pronunciation and overall mix remain pending; ASR is diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Crinoline Dreams by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 246.439 seconds; prepared lossless stereo bed 620.125 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific pictorial workplace objects, process diagrams and accurately identified photographs
+    at topic boundaries; >=50% actual body timeline picture target. No unrelated filler or text-only cards
+    counted. No photographs imply depicted people are victims, offenders or particular applicants.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credits and foreground credits,15seconds each, over continuous background.
+    Full actual publisher/copyright/license notices accompany canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; exact archived source and current reviewed Russian display
+    remain unchanged. No new employment rules, benefits or legal advice introduced.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Arbetsgivare, arbetstagare och arbetsavtal
+- id: scene-2
+  description: Förhandling och arbetsmarknadens regler
+- id: scene-3
+  description: Arbete, integration och offentlig service
+- id: scene-4
+  description: Konjunkturer och lediga arbetsplatser
+- id: scene-5
+  description: Språk och möjligheter att få arbete
+- id: scene-6
+  description: Utbildning och fortbildning
+- id: scene-7
+  description: Reglerade yrken och behörighet
+- id: scene-8
+  description: Reglerade vårdyrken
+- id: scene-9
+  description: Utländsk examen och myndighetsbeslut
+- id: scene-10
+  description: Rätten att arbeta och intyg
+- id: scene-11
+  description: Egna identitetshandlingar
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Centrally reserved distinct verified Finnish workplace-related photograph.
+  fallback: Another verified topic-related photograph with coordinator reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental with full license/attribution.
+  fallback: Another suitable licensed instrumental reserved by coordinator; never omit music.
+- id: narration
+  kind: narration
+  description: Complete local Swedish F1 narration per exact source sentence in original order.
+  fallback: Targeted separate-folder speech-only pronunciation correction preserving meaning; never cloud
+    TTS.
+- id: visual_market
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsgivare, arbetstagare
+    och arbetsavtal.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_negotiation
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Förhandling och
+    arbetsmarknadens regler.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_integration
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbete, integration
+    och offentlig service.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_economy
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Konjunkturer och
+    lediga arbetsplatser.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_languages
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Språk och möjligheter
+    att få arbete.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_education
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Utbildning och
+    fortbildning.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_regulated
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Reglerade yrken
+    och behörighet.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_recognition
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Utländsk examen
+    och myndighetsbeslut.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_documents
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Rätten att arbeta
+    och intyg.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_retain_documents
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Egna identitetshandlingar.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_hospital
+  kind: foreground
+  description: Verified actual Finnish hospital photograph illustrating healthcare professions; never
+    claimed to show Valvira or a licensing procedure.
+  fallback: Accurate source-based pictorial healthcare/licensing diagram if the verified image becomes
+    unavailable.
+sentences:
+- sentence_id: hb-c07-u0013-s001
+  sv: Arbetsmarknaden betyder marknaden mellan arbetsgivare och arbetstagare, där arbetstagarna söker
+    arbete och arbetsgivarna erbjuder arbete.
+  ru: Рынок труда — это рынок между работодателями и работниками, на котором работники ищут работу, а
+    работодатели её предлагают.
+  scene_id: scene-1
+  visual_cue: Show Arbetsgivare, arbetstagare och arbetsavtal with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0013-s001.wav
+  start_seconds: 3.25
+  end_seconds: 14.952857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/market.png
+- sentence_id: hb-c07-u0013-s002
+  sv: När en arbetsgivare erbjuder ett arbete åt en arbetstagare gör de upp ett arbetsavtal och kommer
+    i ett anställningsförhållande till varandra.
+  ru: Когда работодатель предлагает работнику работу, они заключают трудовой договор и вступают друг с
+    другом в трудовые отношения.
+  scene_id: scene-1
+  visual_cue: Show Arbetsgivare, arbetstagare och arbetsavtal with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0013-s002.wav
+  start_seconds: 16.708333
+  end_seconds: 28.68983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/market.png
+- sentence_id: hb-c07-u0013-s003
+  sv: Arbetsmarknaden är en viktig del av samhället, som man försöker påverka genom politik och annat
+    beslutsfattande.
+  ru: Рынок труда — важная часть общества, на которую пытаются влиять через политику и другие формы принятия
+    решений.
+  scene_id: scene-1
+  visual_cue: Show Arbetsgivare, arbetstagare och arbetsavtal with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0013-s003.wav
+  start_seconds: 30.458333
+  end_seconds: 40.141054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/market.png
+- sentence_id: hb-c07-u0013-s004
+  sv: På arbetsmarknaden verkar olika människor i olika ställningar samt många slag av institutioner.
+  ru: На рынке труда действуют разные люди, занимающие разные положения, а также учреждения различного
+    рода.
+  scene_id: scene-1
+  visual_cue: Show Arbetsgivare, arbetstagare och arbetsavtal with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0013-s004.wav
+  start_seconds: 41.916667
+  end_seconds: 50.41517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/market.png
+- sentence_id: hb-c07-u0013-s005
+  sv: Arbetsmarknaden styrs av lagar, avtal och näringslivets konjunkturer.
+  ru: Рынок труда регулируется законами, договорами и колебаниями экономической конъюнктуры.
+  scene_id: scene-1
+  visual_cue: Show Arbetsgivare, arbetstagare och arbetsavtal with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_market
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0013-s005.wav
+  start_seconds: 52.166667
+  end_seconds: 58.714694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/market.png
+- sentence_id: hb-c07-u0014-s001
+  sv: Den finländska arbetsmarknaden styrs av en kultur av demokratiskt förhandlande och överenskommande.
+  ru: Финский рынок труда определяется культурой демократического ведения переговоров и достижения договорённостей.
+  scene_id: scene-2
+  visual_cue: Show Förhandling och arbetsmarknadens regler with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0014-s001.wav
+  start_seconds: 61.166667
+  end_seconds: 69.94381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/negotiation.png
+- sentence_id: hb-c07-u0014-s002
+  sv: På arbetsmarknaden representeras enskilda människor av institutioner, till exempel intresseorganisationer.
+  ru: На рынке труда интересы отдельных людей представляют учреждения, например организации по защите
+    интересов.
+  scene_id: scene-2
+  visual_cue: Show Förhandling och arbetsmarknadens regler with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0014-s002.wav
+  start_seconds: 71.708333
+  end_seconds: 81.391054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/negotiation.png
+- sentence_id: hb-c07-u0014-s003
+  sv: De förhandlar och kommer överens om arbetsmarknadens regler och åtgärder, som lönenivå, arbetstider,
+    åtgärder som förbättrar sysselsättningen och liknande.
+  ru: Они ведут переговоры и договариваются о правилах и мерах на рынке труда, например об уровне заработной
+    платы, рабочем времени, мерах по улучшению занятости и тому подобном.
+  scene_id: scene-2
+  visual_cue: Show Förhandling och arbetsmarknadens regler with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0014-s003.wav
+  start_seconds: 83.166667
+  end_seconds: 96.541361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/negotiation.png
+- sentence_id: hb-c07-u0014-s004
+  sv: Det här systemet kallas arbetsmarknadssystemet och det har fått sin nuvarande form efter hand.
+  ru: Эту систему называют системой регулирования рынка труда, и свою нынешнюю форму она обрела постепенно.
+  scene_id: scene-2
+  visual_cue: Show Förhandling och arbetsmarknadens regler with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0014-s004.wav
+  start_seconds: 98.291667
+  end_seconds: 106.093571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/negotiation.png
+- sentence_id: hb-c07-u0015-s001
+  sv: Det är viktigt att personer som flyttar till Finland får arbete med tanke på såväl deras utkomst,
+    välbefinnande och integration som hela samhället.
+  ru: Трудоустройство переезжающих в Финляндию важно как для их средств к существованию, благополучия
+    и интеграции, так и для всего общества.
+  scene_id: scene-3
+  visual_cue: Show Arbete, integration och offentlig service with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_integration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0015-s001.wav
+  start_seconds: 108.583333
+  end_seconds: 120.77381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/integration.png
+- sentence_id: hb-c07-u0015-s002
+  sv: Om en nyanländ får ett bra arbete betalar hen också mer skatt, vilket är till nytta för samhällsekonomin
+    och bidrar till att finansiera den offentliga servicen.
+  ru: Если недавно прибывший человек получает хорошую работу, он также платит больше налогов, что приносит
+    пользу экономике страны и помогает финансировать государственные услуги.
+  scene_id: scene-3
+  visual_cue: Show Arbete, integration och offentlig service with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_integration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0015-s002.wav
+  start_seconds: 122.541667
+  end_seconds: 136.26466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/integration.png
+- sentence_id: hb-c07-u0016-s001
+  sv: Ju längre en person bor i Finland, desto mer förbättras hens möjligheter att hitta arbete.
+  ru: Чем дольше человек живёт в Финляндии, тем больше у него возможностей найти работу.
+  scene_id: scene-3
+  visual_cue: Show Arbete, integration och offentlig service with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_integration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0016-s001.wav
+  start_seconds: 138.041667
+  end_seconds: 145.773912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/integration.png
+- sentence_id: hb-c07-u0016-s002
+  sv: Integration i det finländska samhället och kunskaper i finska eller svenska gör det lättare att
+    få arbete.
+  ru: Интеграция в финское общество и знание финского или шведского языка облегчают трудоустройство.
+  scene_id: scene-3
+  visual_cue: Show Arbete, integration och offentlig service with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_integration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0016-s002.wav
+  start_seconds: 147.541667
+  end_seconds: 156.458129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/integration.png
+- sentence_id: hb-c07-u0017-s001
+  sv: Situationen i samhället och ekonomin påverkar allas sysselsättning.
+  ru: Ситуация в обществе и экономике влияет на занятость всех людей.
+  scene_id: scene-4
+  visual_cue: Show Konjunkturer och lediga arbetsplatser with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_economy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0017-s001.wav
+  start_seconds: 158.916667
+  end_seconds: 164.977075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/economy.png
+- sentence_id: hb-c07-u0017-s002
+  sv: Om den ekonomiska situationen i ett område eller i hela landet är dålig finns det färre lediga arbetsplatser.
+  ru: Если экономическая ситуация в регионе или во всей стране плохая, свободных рабочих мест становится
+    меньше.
+  scene_id: scene-4
+  visual_cue: Show Konjunkturer och lediga arbetsplatser with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_economy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0017-s002.wav
+  start_seconds: 166.75
+  end_seconds: 176.223741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/economy.png
+- sentence_id: hb-c07-u0017-s003
+  sv: Också sysselsättningsmöjligheterna inom olika branscher varierar.
+  ru: Возможности трудоустройства в разных отраслях тоже различаются.
+  scene_id: scene-4
+  visual_cue: Show Konjunkturer och lediga arbetsplatser with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_economy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0017-s003.wav
+  start_seconds: 178.0
+  end_seconds: 184.130068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/economy.png
+- sentence_id: hb-c07-u0018-s001
+  sv: När en person flyttar till Finland av andra orsaker än arbete kan det ta längre tid att få sysselsättning
+    och man måste anstränga sig för att hitta ett arbete.
+  ru: Когда человек переезжает в Финляндию по причинам, не связанным с работой, трудоустройство может
+    занять больше времени и для поиска работы приходится прилагать усилия.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0018-s001.wav
+  start_seconds: 186.583333
+  end_seconds: 199.888367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0018-s002
+  sv: Om man kan finska eller svenska bra är det lättare att hitta arbete.
+  ru: Если хорошо знать финский или шведский язык, найти работу легче.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0018-s002.wav
+  start_seconds: 201.666667
+  end_seconds: 208.005714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0018-s003
+  sv: En del arbeten kan utföras på engelska, men det finns mycket färre arbetsmöjligheter.
+  ru: Некоторую работу можно выполнять на английском языке, но таких возможностей трудоустройства гораздо
+    меньше.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0018-s003.wav
+  start_seconds: 209.791667
+  end_seconds: 217.036293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0019-s001
+  sv: En del orter i Finland är svenskspråkiga och en del tvåspråkiga.
+  ru: Некоторые населённые пункты в Финляндии шведоязычные, а некоторые — двуязычные.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0019-s001.wav
+  start_seconds: 218.791667
+  end_seconds: 224.852075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0019-s002
+  sv: Därför kan också kunskaper i svenska hjälpa en att hitta arbete.
+  ru: Поэтому знание шведского языка тоже может помочь найти работу.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0019-s002.wav
+  start_seconds: 226.625
+  end_seconds: 232.476429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0019-s003
+  sv: På orter där majoriteten talar svenska är kunskaper i svenska ofta ett krav för att få en anställning.
+  ru: В населённых пунктах, где большинство говорит по-шведски, знание шведского языка часто является
+    требованием при приёме на работу.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0019-s003.wav
+  start_seconds: 234.25
+  end_seconds: 243.236122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0020-s001
+  sv: Många arbetsgivare vill att arbetstagaren kan språket som används på arbetsplatsen mycket väl.
+  ru: Многие работодатели хотят, чтобы работник очень хорошо владел языком, используемым на рабочем месте.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0020-s001.wav
+  start_seconds: 245.0
+  end_seconds: 253.498503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0020-s002
+  sv: I många arbetsuppgifter är kunskaper i finska eller svenska ett villkor för att bli rekryterad.
+  ru: Для многих видов работы знание финского или шведского языка является условием приёма на работу.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0020-s002.wav
+  start_seconds: 255.25
+  end_seconds: 263.678844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0020-s003
+  sv: För en del tjänster inom den offentliga sektorn förutsätts att en person kan både finska och svenska.
+  ru: Для некоторых должностей в государственном секторе требуется, чтобы человек знал и финский, и шведский
+    язык.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0020-s003.wav
+  start_seconds: 265.458333
+  end_seconds: 274.235476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0020-s004
+  sv: Det är värt att utveckla sina kunskaper i finska eller svenska också utanför arbetet till exempel
+    genom att gå på språkkurser.
+  ru: Стоит развивать знание финского или шведского языка и вне работы, например посещая языковые курсы.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0020-s004.wav
+  start_seconds: 276.0
+  end_seconds: 286.588299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0020-s005
+  sv: Att utveckla sina språkkunskaper kan hjälpa en att avancera i karriären eller göra det lättare att
+    hitta ett nytt arbete.
+  ru: Развитие языковых навыков может помочь продвинуться по карьерной лестнице или облегчить поиск новой
+    работы.
+  scene_id: scene-5
+  visual_cue: Show Språk och möjligheter att få arbete with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_languages
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0020-s005.wav
+  start_seconds: 288.375
+  end_seconds: 298.615
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/languages.png
+- sentence_id: hb-c07-u0021-s001
+  sv: I Finland har utbildningsnivån stor inverkan på sysselsättningsmöjligheterna och lönen.
+  ru: В Финляндии уровень образования сильно влияет на возможности трудоустройства и заработную плату.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0021-s001.wav
+  start_seconds: 301.083333
+  end_seconds: 308.815578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0021-s002
+  sv: Det har också betydelse var utbildningen har avlagts.
+  ru: Имеет значение и то, где получено образование.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0021-s002.wav
+  start_seconds: 310.583333
+  end_seconds: 315.180884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0021-s003
+  sv: Arbetsgivare värdesätter ofta utbildning och arbetslivserfarenhet som skaffats i Finland mer.
+  ru: Работодатели часто выше ценят образование и опыт работы, полученные в Финляндии.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0021-s003.wav
+  start_seconds: 316.958333
+  end_seconds: 325.247857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0021-s004
+  sv: För största delen av alla arbetsuppgifter krävs någon typ av utbildning eller examen.
+  ru: Для большинства видов работы требуется какое-либо образование или диплом.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0021-s004.wav
+  start_seconds: 327.0
+  end_seconds: 334.941224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0022-s001
+  sv: När en arbetstagare börjar på en ny arbetsplats måste hen i allmänhet ha nödvändig kompetens genom
+    utbildning och tidigare arbetslivserfarenhet för sitt arbete.
+  ru: Когда работник начинает трудиться на новом месте, обычно он уже должен обладать необходимой для
+    работы компетентностью, приобретённой благодаря образованию и прежнему опыту работы.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0022-s001.wav
+  start_seconds: 336.708333
+  end_seconds: 350.431327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0022-s002
+  sv: Dessutom förväntas det ofta att hen kontinuerligt fortbildar sig.
+  ru: Кроме того, часто ожидается, что он будет постоянно повышать квалификацию.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0022-s002.wav
+  start_seconds: 352.208333
+  end_seconds: 357.990102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0022-s003
+  sv: Det kan innebära olika korta eller längre kurser där arbetstagaren kompletterar sina kunskaper och
+    sin kompetens.
+  ru: Это может означать различные короткие или более длительные курсы, на которых работник пополняет
+    свои знания и совершенствует профессиональные навыки.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0022-s003.wav
+  start_seconds: 359.75
+  end_seconds: 369.363061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0022-s004
+  sv: En del arbetsgivare tillåter att man går kurser på arbetstid, och en del kurser kan ordnas av arbetsgivaren.
+  ru: Некоторые работодатели разрешают посещать курсы в рабочее время, а некоторые курсы могут организовываться
+    работодателем.
+  scene_id: scene-6
+  visual_cue: Show Utbildning och fortbildning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_education
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0022-s004.wav
+  start_seconds: 371.125
+  end_seconds: 380.668401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/education.png
+- sentence_id: hb-c07-u0023-s001
+  sv: I en del yrken måste man uppfylla detaljerade behörighetskrav som är fastställda i lag.
+  ru: В некоторых профессиях нужно соответствовать подробным квалификационным требованиям, установленным
+    законом.
+  scene_id: scene-7
+  visual_cue: Show Reglerade yrken och behörighet with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_regulated
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0023-s001.wav
+  start_seconds: 383.125
+  end_seconds: 390.648265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/regulated.png
+- sentence_id: hb-c07-u0023-s002
+  sv: Kraven kan gälla utbildning eller arbetslivserfarenhet, eller avläggande av ett visst prov.
+  ru: Требования могут касаться образования или опыта работы либо сдачи определённого экзамена.
+  scene_id: scene-7
+  visual_cue: Show Reglerade yrken och behörighet with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_regulated
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0023-s002.wav
+  start_seconds: 392.416667
+  end_seconds: 400.497211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/regulated.png
+- sentence_id: hb-c07-u0024-s001
+  sv: Sådana yrken är reglerade yrken.
+  ru: Такие профессии являются регулируемыми.
+  scene_id: scene-8
+  visual_cue: Show verified Meilahti hospital exterior as an illustrative healthcare workplace, not licensing-office
+    identity.
+  asset_ids:
+  - episode_background
+  - visual_hospital
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0024-s001.wav
+  start_seconds: 402.958333
+  end_seconds: 405.953707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/hospital.png
+- sentence_id: hb-c07-u0024-s002
+  sv: Till exempel de flesta yrken inom hälsovårds- och socialbranschen är reglerade i Finland.
+  ru: Например, большинство профессий в сфере здравоохранения и социального обеспечения в Финляндии регулируются.
+  scene_id: scene-8
+  visual_cue: Show verified Meilahti hospital exterior as an illustrative healthcare workplace, not licensing-office
+    identity.
+  asset_ids:
+  - episode_background
+  - visual_hospital
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0024-s002.wav
+  start_seconds: 407.708333
+  end_seconds: 415.719218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/hospital.png
+- sentence_id: hb-c07-u0024-s003
+  sv: För att en person ska kunna arbeta inom dessa branscher måste hen ha rätt att utöva yrket.
+  ru: Чтобы работать в этих отраслях, человек должен иметь право заниматься соответствующей профессиональной
+    деятельностью.
+  scene_id: scene-8
+  visual_cue: Show verified Meilahti hospital exterior as an illustrative healthcare workplace, not licensing-office
+    identity.
+  asset_ids:
+  - episode_background
+  - visual_hospital
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0024-s003.wav
+  start_seconds: 417.5
+  end_seconds: 425.162585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/hospital.png
+- sentence_id: hb-c07-u0024-s004
+  sv: Rätten beviljas av Valvira, som är tillstånds- och tillsynsverket för social- och hälsovården.
+  ru: Это право предоставляет Ведомство по выдаче разрешений и надзору в сфере социального обеспечения
+    и здравоохранения (Valvira).
+  scene_id: scene-8
+  visual_cue: Show verified Meilahti hospital exterior as an illustrative healthcare workplace, not licensing-office
+    identity.
+  asset_ids:
+  - episode_background
+  - visual_hospital
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0024-s004.wav
+  start_seconds: 426.916667
+  end_seconds: 435.62415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/hospital.png
+- sentence_id: hb-c07-u0025-s001
+  sv: Andra reglerade yrken är till exempel yrken inom utbildningsbranschen, advokat, revisor, bilskollärare,
+    mottagare av körprov och väktare samt kyrkliga yrken och yrken inom räddningsväsendet.
+  ru: Другие регулируемые профессии — например, профессии в сфере образования, адвокат, аудитор, инструктор
+    автошколы, экзаменатор по вождению и охранник, а также церковные профессии и профессии в спасательных
+    службах.
+  scene_id: scene-9
+  visual_cue: Show Utländsk examen och myndighetsbeslut with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_recognition
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0025-s001.wav
+  start_seconds: 438.083333
+  end_seconds: 453.965782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/recognition.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0025-s002
+  sv: Om man har avlagt en examen utomlands behöver man ett beslut av en myndighet i Finland för att få
+    behörighet att arbeta inom dessa yrken.
+  ru: Если человек получил диплом за границей, для получения права работать по этим профессиям ему необходимо
+    решение органа власти Финляндии.
+  scene_id: scene-9
+  visual_cue: Show Utländsk examen och myndighetsbeslut with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_recognition
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0025-s002.wav
+  start_seconds: 455.75
+  end_seconds: 467.243878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/recognition.png
+- sentence_id: hb-c07-u0026-s001
+  sv: Om man har avlagt en examen utomlands behöver man ett beslut om erkännande av sin examen också om
+    man vill arbeta i en uppgift som det enligt lag krävs en högskoleexamen eller en högskoleexamen på
+    en viss nivå för.
+  ru: Если человек получил диплом за границей, решение о признании диплома необходимо также в том случае,
+    когда он хочет работать на должности, для которой по закону требуется высшее образование или высшее
+    образование определённого уровня.
+  scene_id: scene-9
+  visual_cue: Show Utländsk examen och myndighetsbeslut with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_recognition
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0026-s001.wav
+  start_seconds: 469.0
+  end_seconds: 486.693605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/recognition.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0026-s002
+  sv: Sådana uppgifter finns särskilt inom den offentliga sektorn, det vill säga hos staten och kommunerna.
+  ru: Такие должности есть особенно в государственном секторе, то есть у государства и муниципалитетов.
+  scene_id: scene-9
+  visual_cue: Show Utländsk examen och myndighetsbeslut with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_recognition
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0026-s002.wav
+  start_seconds: 489.458333
+  end_seconds: 498.305136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/recognition.png
+- sentence_id: hb-c07-u0026-s003
+  sv: Beslutet fattas av Utbildningsstyrelsen och är avgiftsbelagt.
+  ru: Решение принимает Национальное управление образования (Utbildningsstyrelsen), и оно является платным.
+  scene_id: scene-9
+  visual_cue: Show Utländsk examen och myndighetsbeslut with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_recognition
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0026-s003.wav
+  start_seconds: 500.083333
+  end_seconds: 505.795442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/recognition.png
+- sentence_id: hb-c07-u0027-s001
+  sv: Om du inte är finsk medborgare måste du bevisa för arbetsgivaren att du har rätt att arbeta i Finland.
+  ru: Если вы не гражданин Финляндии, вы должны доказать работодателю, что имеете право работать в Финляндии.
+  scene_id: scene-10
+  visual_cue: Show Rätten att arbeta och intyg with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0027-s001.wav
+  start_seconds: 508.25
+  end_seconds: 517.236122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/documents.png
+- sentence_id: hb-c07-u0027-s002
+  sv: Rätten att arbeta beror på i vilket land du är medborgare och från vilket land du flyttar hit.
+  ru: Право на работу зависит от того, гражданином какой страны вы являетесь и из какой страны переезжаете
+    сюда.
+  scene_id: scene-10
+  visual_cue: Show Rätten att arbeta och intyg with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0027-s002.wav
+  start_seconds: 519.0
+  end_seconds: 526.941224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/documents.png
+- sentence_id: hb-c07-u0027-s003
+  sv: Om du har uppehållstillstånd ser du rätten att arbeta på ditt uppehållstillståndskort.
+  ru: Если у вас есть вид на жительство, ваше право на работу указано в карточке вида на жительство.
+  scene_id: scene-10
+  visual_cue: Show Rätten att arbeta och intyg with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0027-s003.wav
+  start_seconds: 528.708333
+  end_seconds: 536.370918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/documents.png
+- sentence_id: hb-c07-u0028-s001
+  sv: Visa arbetsgivaren antingen ditt pass, ett officiellt resedokument eller ditt uppehållstillståndskort.
+  ru: Покажите работодателю свой паспорт, официальный проездной документ или карточку вида на жительство.
+  scene_id: scene-11
+  visual_cue: Show Egna identitetshandlingar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_retain_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0028-s001.wav
+  start_seconds: 538.833333
+  end_seconds: 547.680136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/retain_documents.png
+- sentence_id: hb-c07-u0028-s002
+  sv: Du har rätt att själv behålla ditt pass och uppehållstillstånd.
+  ru: Вы имеете право оставить свой паспорт и вид на жительство у себя.
+  scene_id: scene-11
+  visual_cue: Show Egna identitetshandlingar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_retain_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0028-s002.wav
+  start_seconds: 549.458333
+  end_seconds: 555.170442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/retain_documents.png
+- sentence_id: hb-c07-u0028-s003
+  sv: Arbetsgivaren har endast rätt att se dem.
+  ru: Работодатель имеет право только посмотреть их.
+  scene_id: scene-11
+  visual_cue: Show Egna identitetshandlingar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_retain_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0028-s003.wav
+  start_seconds: 556.958333
+  end_seconds: 560.789626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/retain_documents.png
+- sentence_id: hb-c07-u0028-s004
+  sv: Arbetsgivaren tar vanligtvis en kopia av grunden för din rätt att arbeta, eftersom den enligt lag
+    måste förvaras på arbetsplatsen.
+  ru: Обычно работодатель делает копию документа, подтверждающего основание вашего права на работу, поскольку
+    по закону эта копия должна храниться на рабочем месте.
+  scene_id: scene-11
+  visual_cue: Show Egna identitetshandlingar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_retain_documents
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsmarknad/narration/hb-c07-u0028-s004.wav
+  start_seconds: 562.541667
+  end_seconds: 573.617585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsmarknad/pictures/retain_documents.png
+render:
+  music_path: studio/media/hb-c07-arbetsmarknad/sources/music-bed.flac
+  background_image: studio/media/hb-c07-arbetsmarknad/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.429464285714285
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finland – Lärobok i samhällsorientering; Yhteiskuntaorientaatio.fi, Swedish learning materials;
+      InfoFinland.fi
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor, upphovsrätt och licensvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsinki-Vantaa crew center.jpg — Jaakko from Espoo, Finland, Finland · CC BY 2.0
+    - Crinoline Dreams — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Meilahden tornisairaala.jpg — Mjeltsch · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained; no new employment claims.
+  - Photographs proportionally resized for foreground; background cropped, softened, darkened and moved
+    continuously; original photo licenses retained.
+  - Original pictorial diagrams visualize only relationships in selected source statements.
+  - Music faded, ducked, level-adjusted and repeated with4-second equal-power crossfades if needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki-Vantaa_crew_center.jpg
+    description: Finnair Crew centre (TOKE building) at Helsinki-Vantaa Airport, Vantaa, Finland
+    license: CC BY 2.0

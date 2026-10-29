@@ -1,0 +1,1818 @@
+schema_version: 1
+section_id: hb-c07-arbetsloshet
+chapter_id: hb-c07
+title_sv: Arbetslöshet och stöd till sysselsättning
+title_ru: Безработица и содействие трудоустройству
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-arbetsloshet.yaml
+example_only: false
+source_section_sha256: 4efcaa678f47055967519cf1a976b6e5f8d1fc8867304fb395d3e70d7f67cc84
+translation_file_sha256: 791d4a087283c9bc8a83e45a4976e422356e6cb67eff6108a920933ef48b8f43
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, on a three-second card; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Individually planned consecutive scenes preserve every exact body sentence and list fragment
+    once in source order. No added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Linux Liberation
+    Sans Bold48/Regular40 with Swedish and Cyrillic coverage. Fixed bilingual right panel and separate
+    left pictorial foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25s before complete measured narration. Pause1.5s normally,2.2s at scene boundaries
+    and2.5s for long pairs; no acceleration to fit a target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:TE-toimisto Seinäjoki 20180417.jpg by Santeri Viinamäki continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=6.0651785714285715. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPy seed42,44100Hz monoPCM16. Initial complete
+    stream used2 ONNX intra-op threads; one selected exact-input prior-approval retake used1. Actual per-clip
+    settings and reset seed scope are recorded in metrics and retake-history.json. Complete-video listening
+    and user acceptance pending; ASR is diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Northern Glade by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 315.024 seconds; prepared lossless stereo bed 849.125 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific pictorial workplace objects, process diagrams and accurately identified photographs
+    at topic boundaries; >=50% actual body timeline picture target. No unrelated filler or text-only cards
+    counted. No photographs imply depicted people are victims, offenders or particular applicants.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credits and foreground credits,15seconds each, over continuous background.
+    Full actual publisher/copyright/license notices accompany canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; exact archived source and current reviewed Russian display
+    remain unchanged. No new employment rules, benefits or legal advice introduced.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Stöd vid arbetslöshet
+- id: scene-2
+  description: Anmälan som arbetssökande
+- id: scene-3
+  description: Intervju och sysselsättningsplan
+- id: scene-4
+  description: Utlåtande om rätt till förmån
+- id: scene-5
+  description: Anmäl förändringar
+- id: scene-6
+  description: Förmån och aktiv jobbsökning
+- id: scene-7
+  description: Skatt och separat ansökan
+- id: scene-8
+  description: Arbetslöshetskassa och medlemskap
+- id: scene-9
+  description: FPA och grunddagpenning
+- id: scene-10
+  description: Försörjning och annat stöd
+- id: scene-11
+  description: Aktiv jobbsökning och rådgivning
+- id: scene-12
+  description: Utbildningsmöjligheter och skyldigheter
+- id: scene-13
+  description: Arbetsprövning och godkännande
+- id: scene-14
+  description: Oavlönat arbete kräver godkännande
+- id: scene-15
+  description: Lönesubvention
+- id: scene-16
+  description: Arbetsverksamhet i rehabiliteringssyfte
+- id: scene-17
+  description: Utbildning och byte av yrke
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Centrally reserved distinct verified Finnish workplace-related photograph.
+  fallback: Another verified topic-related photograph with coordinator reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental with full license/attribution.
+  fallback: Another suitable licensed instrumental reserved by coordinator; never omit music.
+- id: narration
+  kind: narration
+  description: Complete local Swedish F1 narration per exact source sentence in original order.
+  fallback: Targeted separate-folder speech-only pronunciation correction preserving meaning; never cloud
+    TTS.
+- id: visual_support
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Stöd vid arbetslöshet.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_registration
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Anmälan som arbetssökande.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_interview
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Intervju och sysselsättningsplan.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_eligibility_statement
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Utlåtande om rätt
+    till förmån.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_changes
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Anmäl förändringar.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_eligibility
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Förmån och aktiv
+    jobbsökning.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_application
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Skatt och separat
+    ansökan.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_fund
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetslöshetskassa
+    och medlemskap.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_kela
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for FPA och grunddagpenning.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_costs
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Försörjning och
+    annat stöd.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_jobsearch
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Aktiv jobbsökning
+    och rådgivning.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_offers
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Utbildningsmöjligheter
+    och skyldigheter.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_trial
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsprövning
+    och godkännande.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_approval
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Oavlönat arbete
+    kräver godkännande.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_subsidy
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Lönesubvention.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_rehabilitation
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsverksamhet
+    i rehabiliteringssyfte.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_training
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Utbildning och
+    byte av yrke.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+sentences:
+- sentence_id: hb-c07-u0219-s001
+  sv: Vem som helst kan någon gång i livet bli arbetslös.
+  ru: Любой человек может когда-нибудь в жизни остаться без работы.
+  scene_id: scene-1
+  visual_cue: Show Stöd vid arbetslöshet with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0219-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.917211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/support.png
+- sentence_id: hb-c07-u0219-s002
+  sv: Då kan man få stöd för jobbsökningen och försörjningen av olika myndigheter, fackförbund och organisationer.
+  ru: В таком случае различные органы власти, профсоюзы и организации могут оказать помощь в поиске работы
+    и обеспечении средств к существованию.
+  scene_id: scene-1
+  visual_cue: Show Stöd vid arbetslöshet with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0219-s002.wav
+  start_seconds: 9.708333
+  end_seconds: 19.182075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/support.png
+- sentence_id: hb-c07-u0220-s001
+  sv: Om man blir arbetslös ska man först anmäla sig som arbetssökande hos kommunens sysselsättningstjänster.
+  ru: Если вы остались без работы, прежде всего необходимо зарегистрироваться в качестве соискателя работы
+    в службе занятости своего муниципалитета.
+  scene_id: scene-2
+  visual_cue: Show Anmälan som arbetssökande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_registration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0220-s001.wav
+  start_seconds: 21.666667
+  end_seconds: 30.931429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/registration.png
+- sentence_id: hb-c07-u0220-s002
+  sv: Anmälan kan göras redan före den första arbetslöshetsdagen på internet, per telefon eller genom
+    att besöka den lokala arbetskraftsmyndigheten.
+  ru: Зарегистрироваться можно ещё до первого дня безработицы через интернет, по телефону или лично посетив
+    местный орган по вопросам занятости.
+  scene_id: scene-2
+  visual_cue: Show Anmälan som arbetssökande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_registration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0220-s002.wav
+  start_seconds: 32.708333
+  end_seconds: 44.55051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/registration.png
+- sentence_id: hb-c07-u0221-s001
+  sv: Sysselsättningstjänsterna kallar den som anmält sig som arbetssökande till en inledande intervju.
+  ru: Служба занятости приглашает зарегистрировавшегося соискателя на первичное собеседование.
+  scene_id: scene-3
+  visual_cue: Show Intervju och sysselsättningsplan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_interview
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0221-s001.wav
+  start_seconds: 47.041667
+  end_seconds: 55.74915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/interview.png
+- sentence_id: hb-c07-u0221-s002
+  sv: I den kartläggs den sökandes situation och görs en sysselsättningsplan upp.
+  ru: На нём выясняют ситуацию соискателя и составляют план трудоустройства.
+  scene_id: scene-3
+  visual_cue: Show Intervju och sysselsättningsplan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_interview
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0221-s002.wav
+  start_seconds: 57.5
+  end_seconds: 64.257007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/interview.png
+- sentence_id: hb-c07-u0221-s003
+  sv: Vid mötet kommer man överens om hur man ska hålla kontakten och går igenom den arbetssökandes skyldigheter.
+  ru: На встрече договариваются о способах поддержания связи и разъясняют обязанности соискателя.
+  scene_id: scene-3
+  visual_cue: Show Intervju och sysselsättningsplan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_interview
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0221-s003.wav
+  start_seconds: 66.041667
+  end_seconds: 75.097449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/interview.png
+- sentence_id: hb-c07-u0221-s004
+  sv: En arbetslös arbetssökande förväntas söka arbete aktivt och i huvudsak självständigt.
+  ru: От безработного соискателя ожидается активный и преимущественно самостоятельный поиск работы.
+  scene_id: scene-3
+  visual_cue: Show Intervju och sysselsättningsplan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_interview
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0221-s004.wav
+  start_seconds: 76.875
+  end_seconds: 84.746565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/interview.png
+- sentence_id: hb-c07-u0222-s001
+  sv: När man anmäler sig som arbetssökande ger sysselsättningstjänsterna den som betalar arbetslöshetsförmånen
+    ett utlåtande om huruvida personen har rätt till arbetslöshetsförmån.
+  ru: После регистрации соискателя служба занятости направляет организации, выплачивающей пособие по безработице,
+    заключение о том, имеет ли человек право на такое пособие.
+  scene_id: scene-4
+  visual_cue: Show Utlåtande om rätt till förmån with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility_statement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0222-s001.wav
+  start_seconds: 87.208333
+  end_seconds: 102.254864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility_statement.png
+- sentence_id: hb-c07-u0222-s002
+  sv: En arbetslöshetsförmån är ekonomiskt stöd som betalas av FPA eller en arbetslöshetskassa.
+  ru: Пособие по безработице — это денежная помощь, выплачиваемая Ведомством социального обеспечения (FPA)
+    или кассой по безработице.
+  scene_id: scene-4
+  visual_cue: Show Utlåtande om rätt till förmån with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility_statement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: En arbetslöshetsförmån är ekonomiskt stöd som betalas av F P A eller en arbetslöshetskassa.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0222-s002.wav
+  start_seconds: 104.041667
+  end_seconds: 112.81881
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility_statement.png
+- sentence_id: hb-c07-u0223-s001
+  sv: Förändringar i den sökandes situation ska alltid anmälas till sysselsättningstjänsterna.
+  ru: О любых изменениях в ситуации соискателя необходимо всегда сообщать в службу занятости.
+  scene_id: scene-5
+  visual_cue: Show Anmäl förändringar with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_changes
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0223-s001.wav
+  start_seconds: 115.291667
+  end_seconds: 123.441871
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/changes.png
+- sentence_id: hb-c07-u0223-s002
+  sv: En anmälan ska göras om den sökande får arbete eller en studieplats, eller om adressen eller telefonnumret
+    ändras.
+  ru: Сообщить необходимо, если соискатель получил работу или место учёбы, а также если изменились его
+    адрес или номер телефона.
+  scene_id: scene-5
+  visual_cue: Show Anmäl förändringar with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_changes
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0223-s002.wav
+  start_seconds: 125.208333
+  end_seconds: 135.239354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/changes.png
+- sentence_id: hb-c07-u0223-s003
+  sv: Den arbetssökande ska också meddela om hens livssituation förändras och hen inte längre kan söka
+    eller ta emot ett heltidsarbete eller en studieplats.
+  ru: Соискатель также должен сообщить, если его жизненные обстоятельства изменились и он больше не может
+    искать работу на полный рабочий день или место учёбы либо принять предложение такой работы или учёбы.
+  scene_id: scene-5
+  visual_cue: Show Anmäl förändringar with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_changes
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0223-s003.wav
+  start_seconds: 137.0
+  end_seconds: 149.608435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/changes.png
+- sentence_id: hb-c07-u0224-s001
+  sv: När en person är arbetslös arbetssökande har hen vanligtvis rätt att få arbetslöshetsförmån.
+  ru: Безработный, зарегистрированный как соискатель работы, обычно имеет право получать пособие по безработице.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0224-s001.wav
+  start_seconds: 152.083333
+  end_seconds: 160.233537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0224-s002
+  sv: Det betyder arbetslöshetsdagpenning eller arbetsmarknadsstöd.
+  ru: Это означает пособие по безработице или пособие рынка труда.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0224-s002.wav
+  start_seconds: 162.0
+  end_seconds: 167.433469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0224-s003
+  sv: En nyanlända med temporärt uppehållstillstånd kan anmäla sig som arbetssökande.
+  ru: Недавно приехавший человек с временным видом на жительство может зарегистрироваться как соискатель
+    работы.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0224-s003.wav
+  start_seconds: 169.208333
+  end_seconds: 176.452959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0224-s004
+  sv: Hen har ändå inte nödvändigtvis rätt till arbetslöshetsskydd om hen inte redan har arbetat i Finland.
+  ru: Однако он не обязательно имеет право на обеспечение по безработице, если ещё не работал в Финляндии.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0224-s004.wav
+  start_seconds: 178.208333
+  end_seconds: 187.194456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0225-s001
+  sv: Det är möjligt att få arbetslöshetsförmån endast för den tid som jobbsökningen är i kraft.
+  ru: Получать пособие по безработице можно только в период, когда регистрация в качестве соискателя работы
+    действует.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0225-s001.wav
+  start_seconds: 188.958333
+  end_seconds: 196.551259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0225-s002
+  sv: Arbetslöshetsdagpenning kan beviljas en arbetslös som har anmält sig som arbetssökande och som är
+    beredd att ta emot ett heltidsarbete eller en utbildning.
+  ru: Пособие по безработице может быть назначено безработному, зарегистрированному как соискатель и готовому
+    принять предложение работы на полный рабочий день или обучения.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0225-s002.wav
+  start_seconds: 198.333333
+  end_seconds: 211.150748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0225-s003
+  sv: En arbetslös arbetssökande är skyldig att söka arbete under hela den tid som jobbsökningen är i
+    kraft och ska vara beredd att ta emot ett nytt arbete om ett sådant erbjuds.
+  ru: Безработный соискатель обязан искать работу всё время, пока действует его регистрация в качестве
+    соискателя, и быть готовым принять предложение новой работы, если оно поступит.
+  scene_id: scene-6
+  visual_cue: Show Förmån och aktiv jobbsökning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_eligibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0225-s003.wav
+  start_seconds: 212.916667
+  end_seconds: 227.127279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/eligibility.png
+- sentence_id: hb-c07-u0226-s001
+  sv: På arbetslöshetsförmånen betalar man skatt.
+  ru: С пособия по безработице уплачивается налог.
+  scene_id: scene-7
+  visual_cue: Show Skatt och separat ansökan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_application
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0226-s001.wav
+  start_seconds: 229.583333
+  end_seconds: 233.693265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/application.png
+- sentence_id: hb-c07-u0226-s002
+  sv: Det är bra att kontrollera sin skatteprocent för förmånen hos skattemyndigheten.
+  ru: Рекомендуется уточнить в налоговом органе свою налоговую ставку для этого пособия.
+  scene_id: scene-7
+  visual_cue: Show Skatt och separat ansökan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_application
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0226-s002.wav
+  start_seconds: 235.458333
+  end_seconds: 242.14568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/application.png
+- sentence_id: hb-c07-u0226-s003
+  sv: Man ansöker själv med en separat ansökan om arbetslöshetsförmån hos arbetslöshetskassan eller FPA.
+  ru: За пособием по безработице необходимо обратиться самостоятельно, подав отдельное заявление в кассу
+    по безработице или FPA.
+  scene_id: scene-7
+  visual_cue: Show Skatt och separat ansökan with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_application
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: Man ansöker själv med en separat ansökan om arbetslöshetsförmån hos arbetslöshetskassan eller
+      F P A.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0226-s003.wav
+  start_seconds: 243.916667
+  end_seconds: 253.529728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/application.png
+- sentence_id: hb-c07-u0227-s001
+  sv: Arbetslöshetskassan betalar inkomstrelaterad dagpenning som arbetslöshetsförmån till personer som
+    har rätt till arbetslöshetsförmån, som är medlem i kassan och som medan medlemskapet varit i kraft
+    har varit tillräckligt länge i arbete.
+  ru: Касса по безработице выплачивает пособие по безработице, соотнесённое с утраченным заработком, тем,
+    кто имеет право на пособие по безработице, состоит в кассе и проработал достаточно долго в период
+    членства в ней.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0227-s001.wav
+  start_seconds: 256.0
+  end_seconds: 275.156463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0228-s001
+  sv: En arbetslöshetskassa är en organisation som har som syfte att betala lagstadgad inkomstrelaterad
+    dagpenning till sina medlemmar.
+  ru: Касса по безработице — это организация, цель которой состоит в выплате своим членам предусмотренного
+    законом пособия, соотнесённого с утраченным заработком.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0228-s001.wav
+  start_seconds: 277.916667
+  end_seconds: 289.271224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+- sentence_id: hb-c07-u0228-s002
+  sv: När man ansluter sig till en arbetslöshetskassa tecknar man på sätt och vis en försäkring för arbetslöshet
+    för sig själv.
+  ru: Вступая в кассу по безработице, человек в некотором смысле страхует себя на случай безработицы.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0228-s002.wav
+  start_seconds: 291.041667
+  end_seconds: 301.629966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+- sentence_id: hb-c07-u0228-s003
+  sv: Till kassan betalar man en medlemsavgift en gång per år, och om man blir arbetslös får man försörjning
+    från kassan under arbetslösheten.
+  ru: Раз в год в кассу уплачивается членский взнос, а в случае потери работы человек получает от кассы
+    средства к существованию на время безработицы.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0228-s003.wav
+  start_seconds: 303.416667
+  end_seconds: 315.049864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+- sentence_id: hb-c07-u0229-s001
+  sv: Personer som hör till ett fackförbund är i allmänhet samtidigt också medlemmar i en arbetslöshetskassa.
+  ru: Люди, состоящие в профсоюзе, обычно одновременно являются членами кассы по безработице.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0229-s001.wav
+  start_seconds: 316.833333
+  end_seconds: 325.819456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+- sentence_id: hb-c07-u0229-s002
+  sv: Man kan höra till en arbetslöshetskassa också utan att höra till ett fackförbund.
+  ru: Состоять в кассе по безработице можно и без членства в профсоюзе.
+  scene_id: scene-8
+  visual_cue: Show Arbetslöshetskassa och medlemskap with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0229-s002.wav
+  start_seconds: 327.583333
+  end_seconds: 334.897619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/fund.png
+- sentence_id: hb-c07-u0230-s001
+  sv: Till personer som inte är medlemmar i någon arbetslöshetskassa beviljas och betalas arbetslöshetsförmånen
+    av FPA.
+  ru: Людям, не состоящим ни в одной кассе по безработице, пособие по безработице назначает и выплачивает
+    FPA.
+  scene_id: scene-9
+  visual_cue: Show FPA och grunddagpenning with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_kela
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: Till personer som inte är medlemmar i någon arbetslöshetskassa beviljas och betalas arbetslöshetsförmånen
+      av F P A.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0230-s001.wav
+  start_seconds: 337.375
+  end_seconds: 347.963299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/kela.png
+- sentence_id: hb-c07-u0230-s002
+  sv: En arbetslös kan få grunddagpenning om hen innan arbetslösheten började hade varit minst tolv månader
+    i arbete.
+  ru: Безработный может получать базовое пособие по безработице, если до наступления безработицы он проработал
+    не менее двенадцати месяцев.
+  scene_id: scene-9
+  visual_cue: Show FPA och grunddagpenning with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_kela
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0230-s002.wav
+  start_seconds: 349.75
+  end_seconds: 359.293401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/kela.png
+- sentence_id: hb-c07-u0231-s001
+  sv: Om man ännu inte har varit i arbete tillräckligt länge eller redan har fått grunddagpenning eller
+    inkomstrelaterad dagpenning för maximitiden kan man få arbetsmarknadsstöd från FPA.
+  ru: Если человек ещё не проработал достаточно долго или уже получал базовое пособие либо пособие, соотнесённое
+    с утраченным заработком, в течение максимального срока, он может получать от FPA пособие рынка труда.
+  scene_id: scene-9
+  visual_cue: Show FPA och grunddagpenning with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_kela
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: Om man ännu inte har varit i arbete tillräckligt länge eller redan har fått grunddagpenning
+      eller inkomstrelaterad dagpenning för maximitiden kan man få arbetsmarknadsstöd från F P A.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0231-s001.wav
+  start_seconds: 361.083333
+  end_seconds: 376.617483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/kela.png
+- sentence_id: hb-c07-u0231-s002
+  sv: Arbetsmarknadsstödet och grunddagpenningen är lika stora förmåner.
+  ru: Размер пособия рынка труда и базового пособия по безработице одинаков.
+  scene_id: scene-9
+  visual_cue: Show FPA och grunddagpenning with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_kela
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0231-s002.wav
+  start_seconds: 378.375
+  end_seconds: 384.296088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/kela.png
+- sentence_id: hb-c07-u0232-s001
+  sv: Syftet med arbetslöshetsskyddet är att alla arbetslösa ska ha en rimlig ekonomisk försörjning medan
+    de aktivt söker ett heltidsarbete.
+  ru: Цель обеспечения по безработице состоит в том, чтобы все безработные имели приемлемые средства к
+    существованию, пока они активно ищут работу на полный рабочий день.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0232-s001.wav
+  start_seconds: 386.75
+  end_seconds: 398.243878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0232-s002
+  sv: Stödet är knappt för dem som inte får inkomstrelaterad arbetslöshetsdagpenning.
+  ru: Для тех, кто не получает пособие по безработице, соотнесённое с утраченным заработком, размер помощи
+    невелик.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0232-s002.wav
+  start_seconds: 400.0
+  end_seconds: 407.105306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0232-s003
+  sv: Arbetslösa arbetssökande som får arbetsmarknadsstöd eller grunddagpenning får ofta också andra stöd,
+    till exempel bostadsbidrag eller utkomststöd.
+  ru: Безработные соискатели, получающие пособие рынка труда или базовое пособие по безработице, часто
+    получают и другие виды помощи, например жилищное пособие или социальное пособие.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0232-s003.wav
+  start_seconds: 408.875
+  end_seconds: 421.483435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0233-s001
+  sv: En arbetslös arbetssökande kan också ansöka om utkomststöd, om hens inkomster och tillgångar inte
+    räcker till för de nödvändiga utgifterna.
+  ru: Безработный соискатель также может подать заявление на социальное пособие, если его доходов и имущества
+    недостаточно для покрытия необходимых расходов.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0233-s001.wav
+  start_seconds: 423.25
+  end_seconds: 435.579796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0233-s002
+  sv: Grundläggande utkomststöd beviljas av FPA och kan i allmänhet fås för en månad i taget.
+  ru: Базовое социальное пособие назначается FPA и обычно предоставляется каждый раз на один месяц.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: Grundläggande utkomststöd beviljas av F P A och kan i allmänhet fås för en månad i taget.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0233-s002.wav
+  start_seconds: 437.333333
+  end_seconds: 445.622857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0233-s003
+  sv: Utkomststödet är avsett för tillfälliga behov.
+  ru: Социальное пособие предназначено для временных нужд.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0233-s003.wav
+  start_seconds: 447.375
+  end_seconds: 451.902891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0233-s004
+  sv: I vissa fall kan det vara möjligt att dessutom få kompletterande eller förebyggande utkomststöd
+    av det egna välfärdsområdet.
+  ru: В некоторых случаях можно дополнительно получать от своего региона по обеспечению благополучия населения
+    дополнительное или профилактическое социальное пособие.
+  scene_id: scene-10
+  visual_cue: Show Försörjning och annat stöd with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0233-s004.wav
+  start_seconds: 453.666667
+  end_seconds: 464.254966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/costs.png
+- sentence_id: hb-c07-u0234-s001
+  sv: När en person söker arbete är det viktigaste att hen själv är aktiv.
+  ru: Когда человек ищет работу, самое важное — чтобы он сам проявлял активность.
+  scene_id: scene-11
+  visual_cue: Show Aktiv jobbsökning och rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_jobsearch
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0234-s001.wav
+  start_seconds: 466.708333
+  end_seconds: 473.117041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/jobsearch.png
+- sentence_id: hb-c07-u0234-s002
+  sv: Sysselsättningstjänsterna ger handledning och rådgivning för jobbsökningen och utvecklingen av den
+    egna kompetensen.
+  ru: Службы занятости дают рекомендации и консультации по поиску работы и развитию собственных навыков.
+  scene_id: scene-11
+  visual_cue: Show Aktiv jobbsökning och rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_jobsearch
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0234-s002.wav
+  start_seconds: 474.875
+  end_seconds: 484.488061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/jobsearch.png
+- sentence_id: hb-c07-u0234-s003
+  sv: De hänvisar arbetssökande till exempelvis rekryteringsevenemang och till att leta efter lediga platser
+    på internet och lämna in arbetsansökningar.
+  ru: Они направляют соискателей, например, на мероприятия по подбору персонала, а также рекомендуют искать
+    вакансии в интернете и подавать заявления о приёме на работу.
+  scene_id: scene-11
+  visual_cue: Show Aktiv jobbsökning och rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_jobsearch
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0234-s003.wav
+  start_seconds: 486.25
+  end_seconds: 498.579796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/jobsearch.png
+- sentence_id: hb-c07-u0235-s001
+  sv: Sysselsättningstjänsterna kartlägger också tillsammans med kunden olika utbildningsmöjligheter,
+    till exempel arbetskraftsutbildningar eller självständiga studier.
+  ru: Службы занятости также совместно с клиентом изучают различные возможности обучения, например обучение
+    для рынка труда или самостоятельное обучение.
+  scene_id: scene-12
+  visual_cue: Show Utbildningsmöjligheter och skyldigheter with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_offers
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0235-s001.wav
+  start_seconds: 501.041667
+  end_seconds: 515.252279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/offers.png
+- sentence_id: hb-c07-u0235-s002
+  sv: I synnerhet till personer som varit arbetslösa en längre tid kan sysselsättningstjänsterna skicka
+    erbjudanden om lediga platser som de måste söka.
+  ru: В особенности людям, длительное время остающимся без работы, службы занятости могут направлять предложения
+    вакансий, на которые те обязаны откликнуться.
+  scene_id: scene-12
+  visual_cue: Show Utbildningsmöjligheter och skyldigheter with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_offers
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0235-s002.wav
+  start_seconds: 517.041667
+  end_seconds: 529.928741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/offers.png
+- sentence_id: hb-c07-u0235-s003
+  sv: Om de inte gör det kan de förlora rätten till arbetslöshetsskydd för en viss tid.
+  ru: Если они этого не сделают, они могут на определённое время потерять право на обеспечение по безработице.
+  scene_id: scene-12
+  visual_cue: Show Utbildningsmöjligheter och skyldigheter with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_offers
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0235-s003.wav
+  start_seconds: 531.708333
+  end_seconds: 538.952959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/offers.png
+- sentence_id: hb-c07-u0236-s001
+  sv: Vid arbetsprövning arbetar den arbetssökande som normalt på en arbetsplats, men får ingen lön för
+    det utan endast arbetslöshetsdagpenning.
+  ru: Во время пробной работы соискатель работает на рабочем месте как обычно, но получает за это только
+    пособие по безработице, без заработной платы.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0236-s001.wav
+  start_seconds: 541.416667
+  end_seconds: 553.189184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0236-s002
+  sv: Man måste själv hitta en plats för arbetsprövning.
+  ru: Место для пробной работы необходимо найти самостоятельно.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0236-s002.wav
+  start_seconds: 554.958333
+  end_seconds: 559.904184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0236-s003
+  sv: Efter det måste man ännu få ett beslut från sysselsättningstjänsterna om att man kan inleda arbetsprövningen.
+  ru: После этого нужно ещё получить решение службы занятости, разрешающее начать пробную работу.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0236-s003.wav
+  start_seconds: 561.666667
+  end_seconds: 570.861769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0237-s001
+  sv: En arbetsprövning kan pågå i högst sex månader hos samma arbetsgivare.
+  ru: Пробная работа у одного работодателя может длиться не более шести месяцев.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0237-s001.wav
+  start_seconds: 572.625
+  end_seconds: 578.964048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0237-s002
+  sv: Under den tiden ges den som deltar i arbetsprövningen möjlighet att visa för arbetsgivaren vad hen
+    kan och hur stor motivation hen har för arbetet.
+  ru: За это время участник пробной работы получает возможность показать работодателю свои навыки и степень
+    мотивации к работе.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0237-s002.wav
+  start_seconds: 580.75
+  end_seconds: 592.661837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0237-s003
+  sv: Ibland kan en period av arbetsprövning ge en riktig arbetsplats med lön eller ett lönesubventionerat
+    arbete.
+  ru: Иногда период пробной работы может привести к получению настоящего оплачиваемого рабочего места
+    или работы с субсидированием заработной платы.
+  scene_id: scene-13
+  visual_cue: Show Arbetsprövning och godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_trial
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0237-s003.wav
+  start_seconds: 594.416667
+  end_seconds: 603.751088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/trial.png
+- sentence_id: hb-c07-u0238-s001
+  sv: Det är viktigt att komma ihåg att i Finland kan endast arbetskraftstjänsterna eller läroanstalter
+    godkänna oavlönade perioder av arbetspraktik eller arbetsprövning.
+  ru: Важно помнить, что в Финляндии только службы занятости или учебные заведения могут разрешать неоплачиваемую
+    производственную практику или пробную работу.
+  scene_id: scene-14
+  visual_cue: Show Oavlönat arbete kräver godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_approval
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0238-s001.wav
+  start_seconds: 606.208333
+  end_seconds: 620.209966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/approval.png
+- sentence_id: hb-c07-u0238-s002
+  sv: Ibland kan det hända att en arbetsgivare tar en arbetstagare direkt till arbetsplatsen för en oavlönad
+    praktikperiod och lovar att hen kan få ett lönearbete när perioden är slut.
+  ru: Иногда работодатель может принять работника непосредственно на рабочее место на неоплачиваемую практику,
+    пообещав оплачиваемую работу после её окончания.
+  scene_id: scene-14
+  visual_cue: Show Oavlönat arbete kräver godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_approval
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0238-s002.wav
+  start_seconds: 622.0
+  end_seconds: 636.837551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/approval.png
+- sentence_id: hb-c07-u0238-s003
+  sv: Arbetsgivaren har ändå inte rätt att låta en arbetstagare utföra gratis arbete, om sysselsättningstjänsterna
+    eller en läroanstalt inte först har godkänt praktik- eller prövningsperioden.
+  ru: Однако работодатель не имеет права привлекать работника к бесплатной работе, если служба занятости
+    или учебное заведение предварительно не одобрили период практики или пробной работы.
+  scene_id: scene-14
+  visual_cue: Show Oavlönat arbete kräver godkännande with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_approval
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0238-s003.wav
+  start_seconds: 638.625
+  end_seconds: 654.15915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/approval.png
+- sentence_id: hb-c07-u0239-s001
+  sv: Lönesubvention är ett ekonomiskt stöd som betalas av staten och som underlättar sysselsättningen
+    av arbetslösa arbetssökande.
+  ru: Субсидия на оплату труда — это государственная денежная помощь, облегчающая трудоустройство безработных
+    соискателей.
+  scene_id: scene-15
+  visual_cue: Show Lönesubvention with its source-specific registered pictorial foreground; retain all
+    qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_subsidy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0239-s001.wav
+  start_seconds: 656.625
+  end_seconds: 667.979558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/subsidy.png
+- sentence_id: hb-c07-u0239-s002
+  sv: Lönesubvention betalas till arbetsgivaren för arbetstagarens lönekostnader.
+  ru: Субсидия на оплату труда выплачивается работодателю для покрытия расходов на заработную плату работника.
+  scene_id: scene-15
+  visual_cue: Show Lönesubvention with its source-specific registered pictorial foreground; retain all
+    qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_subsidy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0239-s002.wav
+  start_seconds: 669.75
+  end_seconds: 676.576667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/subsidy.png
+- sentence_id: hb-c07-u0239-s003
+  sv: Arbetstagaren har ett normalt anställningsförhållande med arbetsgivaren.
+  ru: Работник состоит в обычных трудовых отношениях с работодателем.
+  scene_id: scene-15
+  visual_cue: Show Lönesubvention with its source-specific registered pictorial foreground; retain all
+    qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_subsidy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0239-s003.wav
+  start_seconds: 678.333333
+  end_seconds: 684.672381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/subsidy.png
+- sentence_id: hb-c07-u0239-s004
+  sv: Man kan fråga om möjligheten till lönesubvention hos sysselsättningstjänsterna.
+  ru: О возможности получения субсидии на оплату труда можно спросить в службе занятости.
+  scene_id: scene-15
+  visual_cue: Show Lönesubvention with its source-specific registered pictorial foreground; retain all
+    qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_subsidy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0239-s004.wav
+  start_seconds: 686.458333
+  end_seconds: 693.633299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/subsidy.png
+- sentence_id: hb-c07-u0239-s005
+  sv: Arbetslösa arbetssökande kan ansöka om lönesubvention också för läroavtalsutbildning.
+  ru: Безработные соискатели могут ходатайствовать о субсидии на оплату труда также для обучения по ученическому
+    договору.
+  scene_id: scene-15
+  visual_cue: Show Lönesubvention with its source-specific registered pictorial foreground; retain all
+    qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_subsidy
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0239-s005.wav
+  start_seconds: 695.416667
+  end_seconds: 703.288231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/subsidy.png
+- sentence_id: hb-c07-u0240-s001
+  sv: Om en arbetssökande har varit länge arbetslös, kan hen få delta i arbetsverksamhet i rehabiliteringssyfte.
+  ru: Если соискатель долгое время был безработным, он может получить возможность участвовать в реабилитационной
+    трудовой деятельности.
+  scene_id: scene-16
+  visual_cue: Show Arbetsverksamhet i rehabiliteringssyfte with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rehabilitation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0240-s001.wav
+  start_seconds: 705.75
+  end_seconds: 715.223741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/rehabilitation.png
+- sentence_id: hb-c07-u0240-s002
+  sv: Man kommer överens om innehållet i den tillsammans med sysselsättningstjänsterna och välfärdsområdet.
+  ru: Её содержание согласовывают со службой занятости и регионом по обеспечению благополучия населения.
+  scene_id: scene-16
+  visual_cue: Show Arbetsverksamhet i rehabiliteringssyfte with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rehabilitation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0240-s002.wav
+  start_seconds: 717.0
+  end_seconds: 726.055782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/rehabilitation.png
+- sentence_id: hb-c07-u0240-s003
+  sv: Syftet med arbetsverksamhet i rehabiliteringssyfte är att stärka kundens arbets- och funktionsförmåga
+    och förbättra hens kompetens.
+  ru: Цель реабилитационной трудовой деятельности — укрепить трудоспособность и способность клиента справляться
+    с повседневной жизнью, а также улучшить его навыки.
+  scene_id: scene-16
+  visual_cue: Show Arbetsverksamhet i rehabiliteringssyfte with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rehabilitation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0240-s003.wav
+  start_seconds: 727.833333
+  end_seconds: 739.257551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/rehabilitation.png
+- sentence_id: hb-c07-u0240-s004
+  sv: Verksamheten kan vara av samma typ som vid arbetsprövning.
+  ru: Такая деятельность может быть похожа на пробную работу.
+  scene_id: scene-16
+  visual_cue: Show Arbetsverksamhet i rehabiliteringssyfte with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rehabilitation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0240-s004.wav
+  start_seconds: 741.041667
+  end_seconds: 746.544796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/rehabilitation.png
+- sentence_id: hb-c07-u0241-s001
+  sv: Det är möjligt att be om stöd också för utbildning eller byte av yrke hos sysselsättningstjänsterna.
+  ru: В службе занятости можно также попросить поддержку для обучения или смены профессии.
+  scene_id: scene-17
+  visual_cue: Show Utbildning och byte av yrke with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0241-s001.wav
+  start_seconds: 749.0
+  end_seconds: 757.568163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/training.png
+- sentence_id: hb-c07-u0241-s002
+  sv: Ett av de viktigaste alternativen är yrkesinriktad arbetskraftsutbildning.
+  ru: Один из важнейших вариантов — профессиональное обучение для рынка труда.
+  scene_id: scene-17
+  visual_cue: Show Utbildning och byte av yrke with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0241-s002.wav
+  start_seconds: 759.333333
+  end_seconds: 766.09034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/training.png
+- sentence_id: hb-c07-u0241-s003
+  sv: Det finns utbildning inom många olika branscher.
+  ru: Обучение предлагается по многим различным отраслям.
+  scene_id: scene-17
+  visual_cue: Show Utbildning och byte av yrke with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0241-s003.wav
+  start_seconds: 767.875
+  end_seconds: 772.054592
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/training.png
+- sentence_id: hb-c07-u0241-s004
+  sv: Till arbetskraftsutbildningar ansöker man via sysselsättningstjänsterna.
+  ru: Заявление на обучение для рынка труда подают через службу занятости.
+  scene_id: scene-17
+  visual_cue: Show Utbildning och byte av yrke with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0241-s004.wav
+  start_seconds: 773.833333
+  end_seconds: 780.52068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/training.png
+- sentence_id: hb-c07-u0241-s005
+  sv: Sysselsättningstjänsterna kan också stödja frivillig utbildning som den arbetssökande själv har
+    hittat, om den förbättrar hens sysselsättningsmöjligheter och det bland arbetskraftsutbildningarna
+    inte finns någon lämplig utbildning.
+  ru: Служба занятости также может поддержать обучение, которое соискатель добровольно выбрал и нашёл
+    сам, если оно улучшает его возможности трудоустройства и среди программ обучения для рынка труда нет
+    подходящей.
+  scene_id: scene-17
+  visual_cue: Show Utbildning och byte av yrke with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_training
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-arbetsloshet/narration/hb-c07-u0241-s005.wav
+  start_seconds: 782.291667
+  end_seconds: 801.587449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-arbetsloshet/pictures/training.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+render:
+  music_path: studio/media/hb-c07-arbetsloshet/sources/music-bed.flac
+  background_image: studio/media/hb-c07-arbetsloshet/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 6.0651785714285715
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor, upphovsrätt och licensvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - TE-toimisto Seinäjoki 20180417.jpg — Santeri Viinamäki · CC BY-SA 4.0
+    - Northern Glade — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Kela hdqtrs 08.JPG — Htm · CC BY-SA 3.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained; no new employment claims.
+  - Photographs proportionally resized for foreground; background cropped, softened, darkened and moved
+    continuously; original photo licenses retained.
+  - Original pictorial diagrams visualize only relationships in selected source statements.
+  - Music faded, ducked, level-adjusted and repeated with4-second equal-power crossfades if needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:TE-toimisto_Sein%C3%A4joki_20180417.jpg
+    description: Työ- ja elinkeinotoimisto Seinäjoella.
+    license: CC BY-SA 4.0

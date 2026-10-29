@@ -137,3 +137,13 @@ identities. The coordinator manages shared records and resource allocation;
 generated exports and retained narration stay ignored alongside their versioned
 production metadata. These choices do not imply whole-video listening or user
 acceptance.
+
+## Chapter 7 production — 2026-10-28
+
+Chapter 7 uses the olive palette in `DIRECTING.md`, Liberation Sans and the
+established local Swedish Supertonic 3/F1 preset. Independent episode owners
+pipeline scripts, source-specific foreground pictures, local narration and exports;
+shared runtime checks, source reservations, inventory and chapter audits remain
+centrally coordinated. Every episode aims for relevant foreground pictures during
+at least half its body timeline. Generated media remain local and ignored.
+Production checks do not imply whole-video listening or user acceptance.

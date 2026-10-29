@@ -1,0 +1,2026 @@
+schema_version: 1
+section_id: hb-c07-problem
+chapter_id: hb-c07
+title_sv: Rekrytering och problem i arbetslivet
+title_ru: Наём на работу и проблемы в трудовой жизни
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-problem.yaml
+example_only: false
+source_section_sha256: da66b08074a3e8628a582f6611d2cf9f39995fee52b5ca462fa986ddf6160013
+translation_file_sha256: 310d59e1d6db5257618f40bf2696f2481978c85a4626e85d26ec22a888f83869
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading, unspoken, on a three-second card; background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Individually planned consecutive scenes preserve every exact body sentence and list fragment
+    once in source order. No added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Linux Liberation
+    Sans Bold48/Regular40 with Swedish and Cyrillic coverage. Fixed bilingual right panel and separate
+    left pictorial foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25s before complete measured narration. Pause1.5s normally,2.2s at scene boundaries
+    and2.5s for long pairs; no acceleration to fit a target duration.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Fujitsun ja ABB-n konttorit - panoramio.jpg by Aulo Aasmaa continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=6.144047619047619. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPy seed42,44100Hz monoPCM16; initial ONNX
+    intra-op2threads. Complete-video pronunciation and overall mix remain pending; ASR is diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Midnight Tale by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 161.567 seconds; prepared lossless stereo bed 860.167 seconds.
+    Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific pictorial workplace objects, process diagrams and accurately identified photographs
+    at topic boundaries; >=50% actual body timeline picture target. No unrelated filler or text-only cards
+    counted. No photographs imply depicted people are victims, offenders or particular applicants.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credits and foreground credits,15seconds each, over continuous background.
+    Full actual publisher/copyright/license notices accompany canonical MP4.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction; exact archived source and current reviewed Russian display
+    remain unchanged. No new employment rules, benefits or legal advice introduced.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Referenser och tillstånd att ange kontaktuppgifter
+- id: scene-2
+  description: Förbud mot diskriminering vid rekrytering
+- id: scene-3
+  description: Anmäla diskriminering
+- id: scene-4
+  description: Arbetsavtal, skyldigheter och utnyttjande
+- id: scene-5
+  description: Känna sina rättigheter och be om hjälp
+- id: scene-6
+  description: Problem med lön och ersättningar
+- id: scene-7
+  description: Arbetsskift och vila
+- id: scene-8
+  description: Arbetarskydd och hälsovård
+- id: scene-9
+  description: Arbetsintyg
+- id: scene-10
+  description: Svartarbete och skatter
+- id: scene-11
+  description: Konsekvenser för arbetstagare och samhälle
+- id: scene-12
+  description: Tvång och människohandel
+- id: scene-13
+  description: Handlingar, övernattning och hot
+- id: scene-14
+  description: Beroende av arbetsgivaren
+- id: scene-15
+  description: Prata med chefen eller en representant
+- id: scene-16
+  description: Allvarliga problem och utomstående hjälp
+- id: scene-17
+  description: Arbetarskydd och ombudsmän
+- id: scene-18
+  description: Fackförbund och gratis rådgivning
+- id: scene-19
+  description: Polis, Brottsofferjouren och hjälpsystemet
+- id: scene-20
+  description: Brottsofferjourens rådgivning och stöd
+- id: scene-21
+  description: Hjälpsystemet under Migrationsverket
+- id: scene-22
+  description: Rätta löneutbetalningen
+- id: scene-23
+  description: Lönegaranti och tidsfrist
+- id: scene-24
+  description: Domstol som sista alternativ
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Centrally reserved distinct verified Finnish workplace-related photograph.
+  fallback: Another verified topic-related photograph with coordinator reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental with full license/attribution.
+  fallback: Another suitable licensed instrumental reserved by coordinator; never omit music.
+- id: narration
+  kind: narration
+  description: Complete local Swedish F1 narration per exact source sentence in original order.
+  fallback: Targeted separate-folder speech-only pronunciation correction preserving meaning; never cloud
+    TTS.
+- id: visual_reference
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Referenser och
+    tillstånd att ange kontaktuppgifter.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_equality
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Förbud mot diskriminering
+    vid rekrytering.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_discrimination_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Anmäla diskriminering.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_rights
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsavtal, skyldigheter
+    och utnyttjande.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_awareness
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Känna sina rättigheter
+    och be om hjälp.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_pay
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Problem med lön
+    och ersättningar.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_shifts
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsskift och
+    vila.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_safety
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetarskydd och
+    hälsovård.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_certificate
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetsintyg.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_undeclared
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Svartarbete och
+    skatter.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_consequences
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Konsekvenser för
+    arbetstagare och samhälle.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_coercion
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Tvång och människohandel.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_seizure
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Handlingar, övernattning
+    och hot.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_dependence
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Beroende av arbetsgivaren.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_workplace_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Prata med chefen
+    eller en representant.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_outside_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Allvarliga problem
+    och utomstående hjälp.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_authority_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Arbetarskydd och
+    ombudsmän.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_union_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Fackförbund och
+    gratis rådgivning.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_victim_support
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Polis, Brottsofferjouren
+    och hjälpsystemet.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_pay_help
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Rätta löneutbetalningen.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_guarantee
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Lönegaranti och
+    tidsfrist.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_court
+  kind: foreground
+  description: Relevant source-based pictorial illustration or verified photograph for Domstol som sista
+    alternativ.
+  fallback: An accurate alternative source-based pictorial diagram without additional claims; document
+    genuine picture shortfall only after reasonable research.
+- id: visual_victim_organisation
+  kind: foreground
+  description: Original source-based pictorial diagram of Brottsofferjouren as a separate victim-support
+    organisation, not a police unit.
+  fallback: Another accurate source-based pictorial diagram retaining the separate institution and qualifying
+    conditions.
+- id: visual_assistance_system
+  kind: foreground
+  description: Source-based assistance-system diagram, explicitly under Migrationsverket and conditional
+    on acceptance/as-needed support.
+  fallback: Another accurate source-based pictorial diagram retaining the separate institution and qualifying
+    conditions.
+sentences:
+- sentence_id: hb-c07-u0179-s001
+  sv: I meritförteckningen kan man ange en referens.
+  ru: В резюме можно указать рекомендателя.
+  scene_id: scene-1
+  visual_cue: Show Referenser och tillstånd att ange kontaktuppgifter with its source-specific registered
+    pictorial foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0179-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.220612
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/reference.png
+- sentence_id: hb-c07-u0179-s002
+  sv: En referens är till exempel en tidigare chef eller arbetskamrat som kan berätta positiva saker om
+    den arbetssökande.
+  ru: Рекомендателем может быть, например, прежний руководитель или коллега, способный положительно охарактеризовать
+    соискателя.
+  scene_id: scene-1
+  visual_cue: Show Referenser och tillstånd att ange kontaktuppgifter with its source-specific registered
+    pictorial foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0179-s002.wav
+  start_seconds: 9.0
+  end_seconds: 19.24
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/reference.png
+- sentence_id: hb-c07-u0179-s003
+  sv: Man måste alltid fråga referensen om lov att ange hens kontaktuppgifter i meritförteckningen.
+  ru: Всегда нужно спрашивать у рекомендателя разрешение указать его контактные данные в резюме.
+  scene_id: scene-1
+  visual_cue: Show Referenser och tillstånd att ange kontaktuppgifter with its source-specific registered
+    pictorial foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0179-s003.wav
+  start_seconds: 21.0
+  end_seconds: 29.150204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/reference.png
+- sentence_id: hb-c07-u0179-s004
+  sv: Det kan hända att en rekryterare ringer referensen för att fråga hurdan hen tycker att den sökande
+    är som arbetstagare.
+  ru: Может случиться, что специалист по подбору персонала позвонит рекомендателю, чтобы спросить, как
+    он оценивает соискателя как работника.
+  scene_id: scene-1
+  visual_cue: Show Referenser och tillstånd att ange kontaktuppgifter with its source-specific registered
+    pictorial foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_reference
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0179-s004.wav
+  start_seconds: 30.916667
+  end_seconds: 40.669048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/reference.png
+- sentence_id: hb-c07-u0180-s001
+  sv: I Finland är diskriminering i platsannonser och vid rekrytering förbjudna i lag.
+  ru: В Финляндии дискриминация в объявлениях о вакансиях и при найме запрещена законом.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0180-s001.wav
+  start_seconds: 43.125
+  end_seconds: 50.299966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+- sentence_id: hb-c07-u0180-s002
+  sv: Diskriminering betyder att en arbetssökande behandlas sämre än andra på grund av en personlig egenskap.
+  ru: Дискриминация означает, что с соискателем обращаются хуже, чем с другими, из-за какого-либо личного
+    качества.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0180-s002.wav
+  start_seconds: 52.083333
+  end_seconds: 60.999796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+- sentence_id: hb-c07-u0181-s001
+  sv: I platsannonser får man inte kräva egenskaper eller färdigheter av de sökande som inte är nödvändiga
+    för arbetet.
+  ru: В объявлениях о вакансиях нельзя требовать от соискателей качеств или навыков, которые не нужны
+    для работы.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0181-s001.wav
+  start_seconds: 62.75
+  end_seconds: 72.711361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+- sentence_id: hb-c07-u0181-s002
+  sv: I en anställningsintervju får arbetsgivaren inte ställa frågor om den sökandes personliga angelägenheter
+    som inte är relaterade till arbetsuppgiften.
+  ru: На собеседовании работодатель не вправе задавать вопросы о личных делах соискателя, не связанных
+    с рабочей задачей.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0181-s002.wav
+  start_seconds: 74.5
+  end_seconds: 87.387075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+- sentence_id: hb-c07-u0181-s003
+  sv: Sådana frågor kan gälla till exempel den sökandes religion, politiska övertygelse eller planer på
+    att skaffa barn.
+  ru: Такие вопросы могут касаться, например, религии соискателя, его политических убеждений или планов
+    завести детей.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0181-s003.wav
+  start_seconds: 89.166667
+  end_seconds: 99.128027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+- sentence_id: hb-c07-u0182-s001
+  sv: Vid rekrytering får man inte diskriminera en sökande på grund av kön, ålder, ursprung, nationalitet,
+    språk, religion, övertygelse, åsikt, politisk verksamhet, facklig verksamhet, familjeförhållanden,
+    hälsotillstånd, funktionsnedsättning, sexuell läggning eller könsuttryck.
+  ru: При найме нельзя дискриминировать соискателя по признаку пола, возраста, происхождения, гражданства,
+    языка, религии, убеждений, мнения, политической или профсоюзной деятельности, семейных обстоятельств,
+    состояния здоровья, инвалидности, сексуальной ориентации или гендерного самовыражения.
+  scene_id: scene-2
+  visual_cue: Show Förbud mot diskriminering vid rekrytering with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_equality
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0182-s001.wav
+  start_seconds: 100.916667
+  end_seconds: 123.625782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/equality.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c07-u0183-s001
+  sv: Om man möter diskriminering när man söker arbete kan man anmäla det till arbetarskyddsmyndigheten
+    eller diskrimineringsombudsmannen.
+  ru: Если при поиске работы человек сталкивается с дискриминацией, он может сообщить об этом в орган
+    надзора за охраной труда (arbetarskyddsmyndigheten) или уполномоченному по вопросам равенства (diskrimineringsombudsmannen).
+  scene_id: scene-3
+  visual_cue: Show Anmäla diskriminering with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_discrimination_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0183-s001.wav
+  start_seconds: 126.083333
+  end_seconds: 137.437891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/discrimination_help.png
+- sentence_id: hb-c07-u0184-s001
+  sv: I Finland följer man i allmänhet arbetsavtal, kollektivavtal och arbetslagstiftningen.
+  ru: В Финляндии обычно соблюдают трудовые договоры, коллективные договоры и трудовое законодательство.
+  scene_id: scene-4
+  visual_cue: Show Arbetsavtal, skyldigheter och utnyttjande with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0184-s001.wav
+  start_seconds: 139.916667
+  end_seconds: 147.788231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/rights.png
+- sentence_id: hb-c07-u0184-s002
+  sv: Ändå uppstår det ibland problem i arbetet.
+  ru: Тем не менее иногда на работе возникают проблемы.
+  scene_id: scene-4
+  visual_cue: Show Arbetsavtal, skyldigheter och utnyttjande with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0184-s002.wav
+  start_seconds: 149.541667
+  end_seconds: 153.721259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/rights.png
+- sentence_id: hb-c07-u0184-s003
+  sv: Problemen kan vara lindrigare eller allvarligare.
+  ru: Проблемы могут быть менее или более серьёзными.
+  scene_id: scene-4
+  visual_cue: Show Arbetsavtal, skyldigheter och utnyttjande with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0184-s003.wav
+  start_seconds: 155.5
+  end_seconds: 160.027891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/rights.png
+- sentence_id: hb-c07-u0184-s004
+  sv: Arbetsgivaren känner inte alltid till sina skyldigheter eller så handlar arbetsgivaren ibland felaktigt
+    med avsikt.
+  ru: Работодатель не всегда знает свои обязанности, а иногда намеренно поступает неправильно.
+  scene_id: scene-4
+  visual_cue: Show Arbetsavtal, skyldigheter och utnyttjande with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0184-s004.wav
+  start_seconds: 161.791667
+  end_seconds: 171.613707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/rights.png
+- sentence_id: hb-c07-u0184-s005
+  sv: Arbetsrelaterat utnyttjande innebär att en anställd i en svag ställning utnyttjas i syfte att uppnå
+    ekonomisk nytta.
+  ru: Трудовая эксплуатация означает использование уязвимого положения сотрудника ради получения экономической
+    выгоды.
+  scene_id: scene-4
+  visual_cue: Show Arbetsavtal, skyldigheter och utnyttjande with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0184-s005.wav
+  start_seconds: 173.375
+  end_seconds: 183.47568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/rights.png
+- sentence_id: hb-c07-u0185-s001
+  sv: Om en anställd inte känner till sina rättigheter i arbetet, ökar risken för att bli utnyttjad.
+  ru: Если сотрудник не знает своих трудовых прав, риск подвергнуться эксплуатации возрастает.
+  scene_id: scene-5
+  visual_cue: Show Känna sina rättigheter och be om hjälp with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_awareness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0185-s001.wav
+  start_seconds: 185.958333
+  end_seconds: 194.317517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/awareness.png
+- sentence_id: hb-c07-u0185-s002
+  sv: En del anställda är också rädda för att det påverkar deras uppehållstillstånd om de lyfter fram
+    problem på arbetsplatsen.
+  ru: Некоторые сотрудники также боятся, что сообщение о проблемах на работе повлияет на их вид на жительство.
+  scene_id: scene-5
+  visual_cue: Show Känna sina rättigheter och be om hjälp with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_awareness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0185-s002.wav
+  start_seconds: 196.083333
+  end_seconds: 206.671633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/awareness.png
+- sentence_id: hb-c07-u0185-s003
+  sv: Personer som blivit utnyttjade av en arbetsgivare kan i Finland ansöka om fortsatt uppehållstillstånd
+    för sin vistelse på grund av utnyttjandet.
+  ru: Люди, подвергшиеся эксплуатации со стороны работодателя, могут в Финляндии подать заявление о продлении
+    вида на жительство на основании этой эксплуатации.
+  scene_id: scene-5
+  visual_cue: Show Känna sina rättigheter och be om hjälp with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_awareness
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0185-s003.wav
+  start_seconds: 208.458333
+  end_seconds: 221.136429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/awareness.png
+- sentence_id: hb-c07-u0186-s001
+  sv: 'Problem kan uppstå i bland annat följande situationer:'
+  ru: 'Проблемы могут возникнуть, в частности, в следующих ситуациях:'
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0186-s001.wav
+  start_seconds: 223.625
+  end_seconds: 228.84949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0187-s001
+  sv: Arbetsgivaren betalar inte lön i enlighet med kollektivavtalet.
+  ru: Работодатель не выплачивает заработную плату в соответствии с коллективным договором.
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0187-s001.wav
+  start_seconds: 230.625
+  end_seconds: 236.267449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0189-s001
+  sv: Arbetsgivaren betalar inte de tillägg eller övertidsersättningar som ingår i den anställdas lön.
+  ru: Работодатель не выплачивает надбавки или компенсацию за сверхурочную работу, входящие в заработную
+    плату сотрудника.
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0189-s001.wav
+  start_seconds: 238.041667
+  end_seconds: 246.33119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0190-s001
+  sv: Arbetsgivaren vill betala lönen direkt i handen, det vill säga inte betala skatter och andra avgifter.
+  ru: Работодатель хочет платить заработную плату прямо на руки, то есть не платить налоги и другие взносы.
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0190-s001.wav
+  start_seconds: 248.083333
+  end_seconds: 256.860476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0191-s001
+  sv: Arbetsgivaren betalar för lite eller ingen lön alls för sjukdomstid.
+  ru: Работодатель выплачивает слишком маленькую заработную плату за время болезни или вовсе её не выплачивает.
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0191-s001.wav
+  start_seconds: 258.625
+  end_seconds: 264.685408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0192-s001
+  sv: Arbetsgivaren ger ingen lönespecifikation till den anställda.
+  ru: Работодатель не выдаёт сотруднику расчётный листок.
+  scene_id: scene-6
+  visual_cue: Show Problem med lön och ersättningar with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0192-s001.wav
+  start_seconds: 266.458333
+  end_seconds: 272.031122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay.png
+- sentence_id: hb-c07-u0193-s001
+  sv: Arbetsgivaren ger arbetsskiftsförteckningen för sent eller ändrar arbetsskift i den utan den anställdas
+    samtycke.
+  ru: Работодатель слишком поздно выдаёт график смен или меняет в нём смены без согласия сотрудника.
+  scene_id: scene-7
+  visual_cue: Show Arbetsskift och vila with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_shifts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0193-s001.wav
+  start_seconds: 274.5
+  end_seconds: 284.043401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/shifts.png
+- sentence_id: hb-c07-u0194-s001
+  sv: Arbetsgivaren ringer den anställda när hen är på semester eller har en ledig dag och beordrar hen
+    att komma till arbetet.
+  ru: Работодатель звонит сотруднику во время отпуска или в выходной день и приказывает выйти на работу.
+  scene_id: scene-7
+  visual_cue: Show Arbetsskift och vila with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_shifts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0194-s001.wav
+  start_seconds: 285.833333
+  end_seconds: 295.655374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/shifts.png
+- sentence_id: hb-c07-u0195-s001
+  sv: Det är farligt att arbeta på arbetsplatsen, eftersom till exempel skyddsutrustning saknas.
+  ru: На рабочем месте опасно работать, поскольку, например, отсутствуют средства защиты.
+  scene_id: scene-8
+  visual_cue: Show Arbetarskydd och hälsovård with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0195-s001.wav
+  start_seconds: 298.125
+  end_seconds: 305.996565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/safety.png
+- sentence_id: hb-c07-u0196-s001
+  sv: Arbetsgivaren låter den anställda arbeta för mycket.
+  ru: Работодатель заставляет сотрудника работать слишком много.
+  scene_id: scene-8
+  visual_cue: Show Arbetarskydd och hälsovård with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0196-s001.wav
+  start_seconds: 307.75
+  end_seconds: 312.62619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/safety.png
+- sentence_id: hb-c07-u0197-s001
+  sv: Arbetsgivaren reagerar inte, trots att den anställda trakasseras eller behandlas osakligt.
+  ru: Работодатель не реагирует на то, что сотрудник подвергается притеснениям или некорректному обращению.
+  scene_id: scene-8
+  visual_cue: Show Arbetarskydd och hälsovård with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0197-s001.wav
+  start_seconds: 314.416667
+  end_seconds: 322.357891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/safety.png
+- sentence_id: hb-c07-u0198-s001
+  sv: Arbetsgivaren vägrar ordna företagshälsovårdstjänster för den anställda.
+  ru: Работодатель отказывается организовать для сотрудника услуги медицинского обслуживания на работе.
+  scene_id: scene-8
+  visual_cue: Show Arbetarskydd och hälsovård with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_safety
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0198-s001.wav
+  start_seconds: 324.125
+  end_seconds: 330.882007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/safety.png
+- sentence_id: hb-c07-u0199-s001
+  sv: Arbetsgivaren ger inget arbetsintyg när anställningen upphör, trots att den anställda ber om det.
+  ru: Работодатель не выдаёт справку о работе по окончании трудовых отношений, хотя сотрудник просит об
+    этом.
+  scene_id: scene-9
+  visual_cue: Show Arbetsintyg with its source-specific registered pictorial foreground; retain all qualifying
+    conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_certificate
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0199-s001.wav
+  start_seconds: 333.333333
+  end_seconds: 341.622857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/certificate.png
+- sentence_id: hb-c07-u0200-s001
+  sv: För svartarbete betalas lönen vanligtvis kontakt, och arbetsgivaren och den anställda meddelar inte
+    inkomsterna från svartarbetet till myndigheterna.
+  ru: За незадекларированную работу заработную плату обычно платят наличными, а работодатель и сотрудник
+    не сообщают властям о доходах от такой работы.
+  scene_id: scene-10
+  visual_cue: Show Svartarbete och skatter with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_undeclared
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0200-s001.wav
+  start_seconds: 344.083333
+  end_seconds: 356.761429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/undeclared.png
+- sentence_id: hb-c07-u0200-s002
+  sv: Arbetsgivaren betalar inte den anställdas socialförsäkringsavgifter och verkställer ingen förskottsinnehållning
+    på lönen.
+  ru: Работодатель не платит за сотрудника взносы социального страхования и не производит предварительное
+    удержание налога из заработной платы.
+  scene_id: scene-10
+  visual_cue: Show Svartarbete och skatter with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_undeclared
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0200-s002.wav
+  start_seconds: 358.541667
+  end_seconds: 368.781667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/undeclared.png
+- sentence_id: hb-c07-u0200-s003
+  sv: Ofta har arbetsgivaren och den anställda kommit överens om svartarbetet.
+  ru: Нередко работодатель и сотрудник договариваются о незадекларированной работе.
+  scene_id: scene-10
+  visual_cue: Show Svartarbete och skatter with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_undeclared
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0200-s003.wav
+  start_seconds: 370.541667
+  end_seconds: 377.020034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/undeclared.png
+- sentence_id: hb-c07-u0200-s004
+  sv: Svartarbete är ett brott i Finland.
+  ru: Незадекларированная работа в Финляндии является преступлением.
+  scene_id: scene-10
+  visual_cue: Show Svartarbete och skatter with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_undeclared
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0200-s004.wav
+  start_seconds: 378.791667
+  end_seconds: 382.34432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/undeclared.png
+- sentence_id: hb-c07-u0200-s005
+  sv: Både den anställda och arbetsgivaren kan få ett straff för det.
+  ru: За неё могут быть наказаны и сотрудник, и работодатель.
+  scene_id: scene-10
+  visual_cue: Show Svartarbete och skatter with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_undeclared
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0200-s005.wav
+  start_seconds: 384.125
+  end_seconds: 389.628129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/undeclared.png
+- sentence_id: hb-c07-u0201-s001
+  sv: Svartarbete är inte lönsamt för varken arbetstagaren eller samhället.
+  ru: Незадекларированная работа невыгодна ни работнику, ни обществу.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0201-s001.wav
+  start_seconds: 392.083333
+  end_seconds: 398.283061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0201-s002
+  sv: Samhällets tjänster betalas med gemensamma skattepengar.
+  ru: Общественные услуги оплачиваются из общих налоговых средств.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0201-s002.wav
+  start_seconds: 400.041667
+  end_seconds: 405.196497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0201-s003
+  sv: Om människorna inte betalar skatt, äventyras välfärden och stabiliteten i samhället.
+  ru: Если люди не платят налоги, благополучие и стабильность общества оказываются под угрозой.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0201-s003.wav
+  start_seconds: 406.958333
+  end_seconds: 414.690578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0201-s004
+  sv: Den som utför svartarbete blir utan inkomstrelaterad arbetslöshetsdagpenning och graviditetspenning
+    och föräldrapenning, och tjänar inte in någon pension för ålderdomen eller i händelse av arbetsoförmåga.
+  ru: Человек, выполняющий незадекларированную работу, остаётся без пособия по безработице, соотнесённого
+    с утраченным заработком, пособия по беременности и родительского пособия, а также не накапливает пенсию
+    на старость или на случай нетрудоспособности.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0201-s004.wav
+  start_seconds: 416.458333
+  end_seconds: 433.45534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c07-u0202-s001
+  sv: Den som utför svartarbete är i en betydligt svagare ställning än anställda i ett lagligt anställningsförhållande.
+  ru: Человек, выполняющий незадекларированную работу, находится в значительно более уязвимом положении,
+    чем сотрудники, состоящие в законных трудовых отношениях.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0202-s001.wav
+  start_seconds: 436.208333
+  end_seconds: 446.100034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0202-s002
+  sv: Om det uppstår en tvist med arbetsgivaren om till exempel lönen, är det svårt att få hjälp.
+  ru: Если с работодателем возникает спор, например о заработной плате, получить помощь трудно.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0202-s002.wav
+  start_seconds: 447.875
+  end_seconds: 456.234184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0202-s003
+  sv: Om det sker en olycka på arbetsplatsen kan den anställda inte få någon försäkringsersättning.
+  ru: Если на рабочем месте происходит несчастный случай, сотрудник не может получить страховое возмещение.
+  scene_id: scene-11
+  visual_cue: Show Konsekvenser för arbetstagare och samhälle with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_consequences
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0202-s003.wav
+  start_seconds: 458.0
+  end_seconds: 466.150204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/consequences.png
+- sentence_id: hb-c07-u0203-s001
+  sv: I värsta fall kan utnyttjande av en arbetstagare vara människohandel.
+  ru: В худшем случае эксплуатация работника может являться торговлей людьми.
+  scene_id: scene-12
+  visual_cue: Show Tvång och människohandel with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_coercion
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0203-s001.wav
+  start_seconds: 468.625
+  end_seconds: 475.033707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/coercion.png
+- sentence_id: hb-c07-u0203-s002
+  sv: Med människohandel avses en situation där en arbetstagare är tvungen att arbeta under förhållanden
+    som påminner om tvångsarbete.
+  ru: Под торговлей людьми понимается ситуация, когда работника принуждают трудиться в условиях, напоминающих
+    принудительный труд.
+  scene_id: scene-12
+  visual_cue: Show Tvång och människohandel with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_coercion
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0203-s002.wav
+  start_seconds: 476.791667
+  end_seconds: 487.937245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/coercion.png
+- sentence_id: hb-c07-u0204-s001
+  sv: 'Människohandel kännetecknas av bland annat följande:'
+  ru: 'Для торговли людьми характерно, в частности, следующее:'
+  scene_id: scene-12
+  visual_cue: Show Tvång och människohandel with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_coercion
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0204-s001.wav
+  start_seconds: 489.708333
+  end_seconds: 495.002483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/coercion.png
+- sentence_id: hb-c07-u0205-s001
+  sv: Arbetsgivaren beslagtar arbetstagarens bankkort, pass, uppehållstillstånd eller andra viktiga handlingar.
+  ru: Работодатель отбирает у работника банковскую карту, паспорт, вид на жительство или другие важные
+    документы.
+  scene_id: scene-13
+  visual_cue: Show Handlingar, övernattning och hot with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_seizure
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0205-s001.wav
+  start_seconds: 497.458333
+  end_seconds: 506.792755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/seizure.png
+- sentence_id: hb-c07-u0207-s001
+  sv: Arbetstagaren är tvungen att övernatta på arbetsplatsen under eländiga förhållanden.
+  ru: Работник вынужден ночевать на рабочем месте в ужасных условиях.
+  scene_id: scene-13
+  visual_cue: Show Handlingar, övernattning och hot with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_seizure
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0207-s001.wav
+  start_seconds: 508.583333
+  end_seconds: 516.036939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/seizure.png
+- sentence_id: hb-c07-u0208-s001
+  sv: Arbetsgivaren är våldsam mot eller hotar arbetstagaren med våld.
+  ru: Работодатель применяет к работнику насилие или угрожает ему насилием.
+  scene_id: scene-13
+  visual_cue: Show Handlingar, övernattning och hot with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_seizure
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0208-s001.wav
+  start_seconds: 517.791667
+  end_seconds: 523.643095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/seizure.png
+- sentence_id: hb-c07-u0209-s001
+  sv: Människohandel är ofta förknippad med att en arbetstagare är verkligt bunden till arbetsgivaren.
+  ru: Торговля людьми часто связана с тем, что работник находится в сильной зависимости от работодателя.
+  scene_id: scene-14
+  visual_cue: Show Beroende av arbetsgivaren with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_dependence
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0209-s001.wav
+  start_seconds: 526.125
+  end_seconds: 534.693163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/dependence.png
+- sentence_id: hb-c07-u0209-s002
+  sv: Arbetstagaren kan stå i skuld till arbetsgivaren eller så har arbetsgivaren beslagtagit den anställdas
+    handlingar.
+  ru: Работник может быть должен работодателю деньги, или работодатель мог отобрать у сотрудника документы.
+  scene_id: scene-14
+  visual_cue: Show Beroende av arbetsgivaren with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_dependence
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0209-s002.wav
+  start_seconds: 536.458333
+  end_seconds: 546.280374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/dependence.png
+- sentence_id: hb-c07-u0209-s003
+  sv: Det är i praktiken omöjligt för den anställda att vägra utföra arbetet eller sluta att arbeta för
+    arbetsgivaren.
+  ru: На практике сотруднику невозможно отказаться выполнять работу или перестать работать на работодателя.
+  scene_id: scene-14
+  visual_cue: Show Beroende av arbetsgivaren with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_dependence
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0209-s003.wav
+  start_seconds: 548.041667
+  end_seconds: 557.724388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/dependence.png
+- sentence_id: hb-c07-u0209-s004
+  sv: Dessutom kan det hända att arbetsgivaren använder våld eller hotar att skada arbetstagaren eller
+    hens närstående.
+  ru: Кроме того, работодатель может применять насилие или угрожать причинить вред работнику или его близким.
+  scene_id: scene-14
+  visual_cue: Show Beroende av arbetsgivaren with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_dependence
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0209-s004.wav
+  start_seconds: 559.5
+  end_seconds: 569.182721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/dependence.png
+- sentence_id: hb-c07-u0210-s001
+  sv: Det är bra om den anställda först pratar direkt med chefen.
+  ru: Хорошо, если сотрудник сначала поговорит непосредственно с руководителем.
+  scene_id: scene-15
+  visual_cue: Show Prata med chefen eller en representant with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_workplace_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0210-s001.wav
+  start_seconds: 571.666667
+  end_seconds: 576.960816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/workplace_help.png
+- sentence_id: hb-c07-u0210-s002
+  sv: Hen kan också be förtroendemannen eller arbetarskyddsfullmäktigen om hjälp om en sådan finns på
+    arbetsplatsen.
+  ru: Он также может попросить о помощи профсоюзного представителя (förtroendeman) или уполномоченного
+    по охране труда (arbetarskyddsfullmäktig), если такой представитель есть на рабочем месте.
+  scene_id: scene-15
+  visual_cue: Show Prata med chefen eller en representant with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_workplace_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0210-s002.wav
+  start_seconds: 578.75
+  end_seconds: 588.432721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/workplace_help.png
+- sentence_id: hb-c07-u0211-s001
+  sv: Ibland kan man inte vända sig till chefen, eftersom hen är delaktig i den dåliga behandlingen av
+    den anställda.
+  ru: Иногда обратиться к руководителю нельзя, поскольку он сам причастен к плохому обращению с сотрудником.
+  scene_id: scene-16
+  visual_cue: Show Allvarliga problem och utomstående hjälp with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_outside_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0211-s001.wav
+  start_seconds: 590.916667
+  end_seconds: 600.390408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/outside_help.png
+- sentence_id: hb-c07-u0211-s002
+  sv: Om situationen inte kan lösas på arbetsplatsen eller om det är fråga om allvarligare problem, är
+    det värt att berätta om den dåliga behandlingen för en utomstående, till exempel en myndighet eller
+    Brottsofferjouren.
+  ru: Если ситуацию невозможно разрешить на рабочем месте или речь идёт о более серьёзных проблемах, стоит
+    рассказать о плохом обращении кому-то со стороны, например органу власти или Службе помощи жертвам
+    преступлений (Brottsofferjouren).
+  scene_id: scene-16
+  visual_cue: Show Allvarliga problem och utomstående hjälp with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_outside_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0211-s002.wav
+  start_seconds: 602.166667
+  end_seconds: 619.929932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/outside_help.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0212-s001
+  sv: Arbetarskyddsmyndigheten ger både arbetstagare och arbetsgivare rådgivning.
+  ru: Орган надзора за охраной труда консультирует как работников, так и работодателей.
+  scene_id: scene-17
+  visual_cue: Show Arbetarskydd och ombudsmän with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_authority_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0212-s001.wav
+  start_seconds: 622.416667
+  end_seconds: 629.034354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/authority_help.png
+- sentence_id: hb-c07-u0212-s002
+  sv: Den övervakar att arbetsgivarna följer de lagar som gäller arbetslivet.
+  ru: Он следит за тем, чтобы работодатели соблюдали законы, регулирующие трудовую жизнь.
+  scene_id: scene-17
+  visual_cue: Show Arbetarskydd och ombudsmän with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_authority_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0212-s002.wav
+  start_seconds: 630.791667
+  end_seconds: 637.200374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/authority_help.png
+- sentence_id: hb-c07-u0212-s003
+  sv: Vid diskriminering kan man kontakta förutom arbetarskyddsmyndigheten också diskrimineringsombudsmannen
+    eller jämställdhetsombudsmannen.
+  ru: В случае дискриминации помимо органа надзора за охраной труда можно связаться также с уполномоченным
+    по вопросам равенства или уполномоченным по вопросам равноправия (jämställdhetsombudsmannen).
+  scene_id: scene-17
+  visual_cue: Show Arbetarskydd och ombudsmän with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_authority_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0212-s003.wav
+  start_seconds: 638.958333
+  end_seconds: 650.66119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/authority_help.png
+- sentence_id: hb-c07-u0213-s001
+  sv: Också fackförbundet erbjuder hjälp om den anställda är medlem i ett sådant.
+  ru: Профсоюз тоже предлагает помощь, если сотрудник является его членом.
+  scene_id: scene-18
+  visual_cue: Show Fackförbund och gratis rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_union_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0213-s001.wav
+  start_seconds: 653.125
+  end_seconds: 659.812347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/union_help.png
+- sentence_id: hb-c07-u0213-s002
+  sv: Fackförbunden främjar arbetstagarnas rättigheter.
+  ru: Профсоюзы содействуют защите прав работников.
+  scene_id: scene-18
+  visual_cue: Show Fackförbund och gratis rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_union_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0213-s002.wav
+  start_seconds: 661.583333
+  end_seconds: 666.320204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/union_help.png
+- sentence_id: hb-c07-u0213-s003
+  sv: Finlands Fackförbunds Centralorganisation FFC erbjuder dessutom gratis anställningsrådgivning, även
+    om man inte är medlem i något fackförbund.
+  ru: Кроме того, Центральная организация профсоюзов Финляндии (Finlands Fackförbunds Centralorganisation,
+    FFC) предлагает бесплатные консультации по трудовым отношениям, даже если человек не состоит ни в
+    одном профсоюзе.
+  scene_id: scene-18
+  visual_cue: Show Fackförbund och gratis rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_union_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override:
+    text: Finlands Fackförbunds Centralorganisation F F C erbjuder dessutom gratis anställningsrådgivning,
+      även om man inte är medlem i något fackförbund.
+    reason: Speech-only expansion of the exact Swedish initialism; displayed source unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0213-s003.wav
+  start_seconds: 668.083333
+  end_seconds: 681.388367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/union_help.png
+- sentence_id: hb-c07-u0213-s004
+  sv: Man kan få rådgivning per telefon och e-post.
+  ru: Консультацию можно получить по телефону и электронной почте.
+  scene_id: scene-18
+  visual_cue: Show Fackförbund och gratis rådgivning with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_union_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0213-s004.wav
+  start_seconds: 683.166667
+  end_seconds: 687.276599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/union_help.png
+- sentence_id: hb-c07-u0214-s001
+  sv: Människohandel är en polisfråga i Finland, men man kan till en början söka hjälp också hos till
+    exempel arbetarskyddsmyndigheterna eller Brottsofferjouren.
+  ru: В Финляндии торговля людьми относится к ведению полиции, но сначала можно обратиться за помощью
+    также, например, в органы надзора за охраной труда или в Службу помощи жертвам преступлений.
+  scene_id: scene-19
+  visual_cue: Show Polis, Brottsofferjouren och hjälpsystemet with its source-specific registered pictorial
+    foreground; retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_victim_support
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0214-s001.wav
+  start_seconds: 689.75
+  end_seconds: 703.194354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/victim_support.png
+- sentence_id: hb-c07-u0214-s002
+  sv: Brottsofferjouren är en organisation som ger brottsoffer rådgivning och stöd.
+  ru: Служба помощи жертвам преступлений — это организация, предоставляющая пострадавшим от преступлений
+    консультации и поддержку.
+  scene_id: scene-20
+  visual_cue: Show Brottsofferjourens rådgivning och stöd as its own distinct actor with source eligibility/need
+    qualifiers; never reuse police imagery for these bodies.
+  asset_ids:
+  - episode_background
+  - visual_victim_organisation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0214-s002.wav
+  start_seconds: 705.666667
+  end_seconds: 712.493333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/victim_organisation.png
+- sentence_id: hb-c07-u0215-s001
+  sv: I Finland finns dessutom Hjälpsystemet för offer för människohandel, som är en myndighet som lyder
+    under Migrationsverket.
+  ru: В Финляндии существует также Система помощи жертвам торговли людьми (Hjälpsystemet för offer för
+    människohandel), которая является органом власти, подчинённым Миграционной службе (Migrationsverket).
+  scene_id: scene-21
+  visual_cue: Show Hjälpsystemet under Migrationsverket as its own distinct actor with source eligibility/need
+    qualifiers; never reuse police imagery for these bodies.
+  asset_ids:
+  - episode_background
+  - visual_assistance_system
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0215-s001.wav
+  start_seconds: 714.958333
+  end_seconds: 725.546633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/assistance_system.png
+- sentence_id: hb-c07-u0215-s002
+  sv: Personer som antagits i hjälpsystemet kan genom systemet vid behov få bland annat ett tryggt boende,
+    handledning och rådgivning eller ett rättsbiträde.
+  ru: Люди, принятые в эту систему, могут при необходимости получить через неё, в частности, безопасное
+    жильё, сопровождение и консультации или помощь юриста.
+  scene_id: scene-21
+  visual_cue: Show Hjälpsystemet under Migrationsverket as its own distinct actor with source eligibility/need
+    qualifiers; never reuse police imagery for these bodies.
+  asset_ids:
+  - episode_background
+  - visual_assistance_system
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0215-s002.wav
+  start_seconds: 727.333333
+  end_seconds: 739.663129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/assistance_system.png
+- sentence_id: hb-c07-u0216-s001
+  sv: Om du har fått för lite lön, ska du be din arbetsgivare att rätta till löneutbetalningen.
+  ru: Если вам выплатили слишком маленькую заработную плату, попросите работодателя исправить ошибку при
+    выплате заработной платы.
+  scene_id: scene-22
+  visual_cue: Show Rätta löneutbetalningen with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0216-s001.wav
+  start_seconds: 742.125
+  end_seconds: 749.857245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay_help.png
+- sentence_id: hb-c07-u0216-s002
+  sv: Om arbetsgivaren inte betalar ut din lön korrekt, trots att du ber om det, kan du kontakta ditt
+    fackförbund.
+  ru: Если работодатель, несмотря на вашу просьбу, не выплачивает заработную плату правильно, вы можете
+    обратиться в свой профсоюз.
+  scene_id: scene-22
+  visual_cue: Show Rätta löneutbetalningen with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0216-s002.wav
+  start_seconds: 751.625
+  end_seconds: 761.029082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay_help.png
+- sentence_id: hb-c07-u0216-s003
+  sv: Om du inte är med i ett fackförbund kan du be om hjälp från personalrepresentanterna på din arbetsplats
+    eller rättshjälpsbyrån.
+  ru: Если вы не состоите в профсоюзе, можно попросить о помощи представителей персонала на вашем рабочем
+    месте или бюро юридической помощи.
+  scene_id: scene-22
+  visual_cue: Show Rätta löneutbetalningen with its source-specific registered pictorial foreground; retain
+    all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_pay_help
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0216-s003.wav
+  start_seconds: 762.791667
+  end_seconds: 774.076565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/pay_help.png
+- sentence_id: hb-c07-u0217-s001
+  sv: Om arbetsgivaren inte kan betala ut din lön, ska du omgående kontakta Lönegarantin.
+  ru: Если работодатель не может выплатить вам заработную плату, немедленно обратитесь в систему гарантирования
+    выплаты заработной платы (Lönegarantin).
+  scene_id: scene-23
+  visual_cue: Show Lönegaranti och tidsfrist with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_guarantee
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0217-s001.wav
+  start_seconds: 776.541667
+  end_seconds: 784.064932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/guarantee.png
+- sentence_id: hb-c07-u0217-s002
+  sv: Om arbetsgivaren inte har pengar kan du få betalt där.
+  ru: Если у работодателя нет денег, вы можете получить выплату там.
+  scene_id: scene-23
+  visual_cue: Show Lönegaranti och tidsfrist with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_guarantee
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0217-s002.wav
+  start_seconds: 785.833333
+  end_seconds: 790.918503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/guarantee.png
+- sentence_id: hb-c07-u0217-s003
+  sv: Gör ansökan inom tre månader från det att lönen skulle ha betalats.
+  ru: Подайте заявление в течение трёх месяцев со дня, когда заработная плата должна была быть выплачена.
+  scene_id: scene-23
+  visual_cue: Show Lönegaranti och tidsfrist with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_guarantee
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0217-s003.wav
+  start_seconds: 792.708333
+  end_seconds: 798.559762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/guarantee.png
+- sentence_id: hb-c07-u0218-s001
+  sv: Om man inte kommer överens om löneutbetalningen måste ärendet avgöras i domstol.
+  ru: Если договориться о выплате заработной платы не удаётся, дело должно решаться в суде.
+  scene_id: scene-24
+  visual_cue: Show Domstol som sista alternativ with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_court
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0218-s001.wav
+  start_seconds: 801.041667
+  end_seconds: 808.286293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/court.png
+- sentence_id: hb-c07-u0218-s002
+  sv: Detta är dock det sista alternativet.
+  ru: Однако это последний вариант.
+  scene_id: scene-24
+  visual_cue: Show Domstol som sista alternativ with its source-specific registered pictorial foreground;
+    retain all qualifying conditions and negations.
+  asset_ids:
+  - episode_background
+  - visual_court
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish legal/work compounds and Finnish authority names need whole-video listening; ASR alone is
+    not approval.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-problem/narration/hb-c07-u0218-s002.wav
+  start_seconds: 810.041667
+  end_seconds: 813.66398
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-problem/pictures/court.png
+render:
+  music_path: studio/media/hb-c07-problem/sources/music-bed.flac
+  background_image: studio/media/hb-c07-problem/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 6.144047619047619
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials; InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor, upphovsrätt och licensvillkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Fujitsun ja ABB-n konttorit - panoramio.jpg — Aulo Aasmaa · CC BY 3.0
+    - Midnight Tale — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Finnish police car on Kaivokatu.jpg — JIP · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish source and reviewed Russian translation retained; no new employment claims.
+  - Photographs proportionally resized for foreground; background cropped, softened, darkened and moved
+    continuously; original photo licenses retained.
+  - Original pictorial diagrams visualize only relationships in selected source statements.
+  - Music faded, ducked, level-adjusted and repeated with4-second equal-power crossfades if needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Fujitsun_ja_ABB-n_konttorit_-_panoramio.jpg
+    description: Fujitsun ja ABB-n konttorit
+    license: CC BY 3.0

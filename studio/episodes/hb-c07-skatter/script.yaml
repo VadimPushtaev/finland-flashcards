@@ -1,0 +1,1604 @@
+schema_version: 1
+section_id: hb-c07-skatter
+chapter_id: hb-c07
+title_sv: Skatter och deklarationsskyldighet
+title_ru: Налоги и обязанность подавать декларацию
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-skatter.yaml
+example_only: false
+source_section_sha256: 2d713e173cc37a5b4254abaca49e8a980339bb5583389258b1e6240c30e3c428
+translation_file_sha256: 270ef5d142c5eb8c4d902b26dfc9e1926d22d633951bfb5b10a85b81b199ace3
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Episode-specific consecutive source-topic scenes below; read all body sentences/list fragments
+    exactly once in stored source order without additions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40
+    with fixed right bilingual panel and left foreground picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Haapaniemenkatu 7, Helsingin verotoimisto - N220595 - hkm.HKMS000005-km002uuj.jpg
+    by Jan Alanco continuously as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic
+    diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle,
+    starting in motion, with no sentence resets. Total cycles=4.5633928571428575. Foreground and bilingual
+    text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16 with2ONNXthreads. Retain
+    the actual source-order synthesis stream andrecordsettingsinselectedmetrics; all exact speech-only
+    expansions separatefromdisplay. Whole-video listening and user acceptance pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Blue Paint by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 130.691 seconds; prepared lossless stereo bed 638.875 seconds.
+    Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: Source-specific diagrams and verified photographs change at meaningful source-topic boundaries;
+    aim>=50%actual narrated-body display duration. No speculative numerical data or updated legal/economic
+    claims.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Skatter finansierar offentlig service
+- id: scene-2
+  description: Förvärvsinkomster från arbete och förmåner
+- id: scene-3
+  description: Arbetsgivare eller förmånsbetalare drar av skatt
+- id: scene-4
+  description: Mervärdesskatt, bilskatt, arv och fastighet
+- id: scene-5
+  description: Progressiv skatt efter inkomster
+- id: scene-6
+  description: Förvärvsinkomst och kapitalinkomst
+- id: scene-7
+  description: Individuell beskattning och skatteprocent
+- id: scene-8
+  description: Skatteförvaltningens skatteräknare
+- id: scene-9
+  description: Skattekort och arbetsgivarens skatteinnehållning
+- id: scene-10
+  description: För mycket eller för lite betald skatt
+- id: scene-11
+  description: Kontrollera lönespecifikation och spara kvitton
+- id: scene-12
+  description: Obligatoriska försäkringspremier
+- id: scene-13
+  description: 'Mer än sex månader: källans huvudregel'
+- id: scene-14
+  description: 'Högst sex månader: villkor och undantag'
+- id: scene-15
+  description: Sjukförsäkringsavgift och A1-intyg
+- id: scene-16
+  description: Kontrollera och rätta skattedeklarationen
+- id: scene-17
+  description: Automatiska och anmälda avdrag
+- id: scene-18
+  description: Beskattningsbeslut och ändringar
+- id: scene-19
+  description: Skatteåterbäring eller kvarskatt
+- id: scene-20
+  description: Betala kvarskatt med uppgifter i beslut eller MinSkatt
+- id: scene-21
+  description: Skattenummer och fotoförsedd namnskylt
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: public_funding
+  kind: foreground
+  description: Skatter finansierar offentlig service — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: earned_income
+  kind: foreground
+  description: Förvärvsinkomster från arbete och förmåner — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: withholding
+  kind: foreground
+  description: Arbetsgivare eller förmånsbetalare drar av skatt — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: other_taxes
+  kind: foreground
+  description: Mervärdesskatt, bilskatt, arv och fastighet — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: progressive
+  kind: foreground
+  description: Progressiv skatt efter inkomster — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: income_types
+  kind: foreground
+  description: Förvärvsinkomst och kapitalinkomst — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: individual_tax
+  kind: foreground
+  description: Individuell beskattning och skatteprocent — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: tax_calculator
+  kind: foreground
+  description: Source-based pictorial computer/calculator diagram for Skatteförvaltningens skatteräknare,
+    not a fabricated screenshot.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: tax_card
+  kind: foreground
+  description: Skattekort och arbetsgivarens skatteinnehållning — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: assessment
+  kind: foreground
+  description: För mycket eller för lite betald skatt — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: payslip
+  kind: foreground
+  description: Kontrollera lönespecifikation och spara kvitton — relevant verified photograph or original
+    pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: insurance
+  kind: foreground
+  description: Obligatoriska försäkringspremier — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: long_stay
+  kind: foreground
+  description: 'Mer än sex månader: källans huvudregel — relevant verified photograph or original pictorial
+    source-based diagram.'
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: short_stay
+  kind: foreground
+  description: 'Högst sex månader: villkor och undantag — relevant verified photograph or original pictorial
+    source-based diagram.'
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: a1_certificate
+  kind: foreground
+  description: Sjukförsäkringsavgift och A1-intyg — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: declaration
+  kind: foreground
+  description: Kontrollera och rätta skattedeklarationen — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: deductions
+  kind: foreground
+  description: Automatiska och anmälda avdrag — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: tax_decision
+  kind: foreground
+  description: Beskattningsbeslut och ändringar — relevant verified photograph or original pictorial source-based
+    diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: back_tax
+  kind: foreground
+  description: Betala kvarskatt med uppgifter i beslut eller MinSkatt — relevant verified photograph or
+    original pictorial source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+- id: tax_number
+  kind: foreground
+  description: Skattenummer och fotoförsedd namnskylt — relevant verified photograph or original pictorial
+    source-based diagram.
+  fallback: Accurate pictorial diagram of only source-stated relationships if suitable reusable photo
+    unavailable.
+sentences:
+- sentence_id: hb-c07-u0276-s001
+  sv: I Finland måste alla betala skatt.
+  ru: В Финляндии все должны платить налоги.
+  scene_id: scene-1
+  visual_cue: Skatter finansierar offentlig service; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - public_funding
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0276-s001.wav
+  start_seconds: 3.25
+  end_seconds: 6.663333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/public_funding.png
+- sentence_id: hb-c07-u0276-s002
+  sv: Med skattepengarna tillhandahåller staten omfattande offentlig service, som främjar medborgarnas
+    välbefinnande.
+  ru: За счёт налоговых средств государство предоставляет широкий спектр государственных услуг, способствующих
+    благополучию граждан.
+  scene_id: scene-1
+  visual_cue: Skatter finansierar offentlig service; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - public_funding
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0276-s002.wav
+  start_seconds: 8.416667
+  end_seconds: 18.099388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/public_funding.png
+- sentence_id: hb-c07-u0276-s003
+  sv: Människorna betalar skatt på sina förvärvsinkomster.
+  ru: Люди платят налог со своих трудовых доходов.
+  scene_id: scene-2
+  visual_cue: Förvärvsinkomster från arbete och förmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - earned_income
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0276-s003.wav
+  start_seconds: 20.583333
+  end_seconds: 25.738163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/earned_income.png
+- sentence_id: hb-c07-u0276-s004
+  sv: Förvärvsinkomster är till exempel lön, arbetslöshetsdagpenning, pension och studiestöd.
+  ru: К трудовым доходам относятся, например, заработная плата, пособие по безработице, пенсия и пособие
+    на обучение.
+  scene_id: scene-2
+  visual_cue: Förvärvsinkomster från arbete och förmåner; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - earned_income
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0276-s004.wav
+  start_seconds: 27.5
+  end_seconds: 35.650204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/earned_income.png
+- sentence_id: hb-c07-u0276-s005
+  sv: Arbetsgivaren eller den som betalar förmånerna, till exempel FPA, drar av skatterna på lönen eller
+    förmånen automatiskt och betalar dem direkt till Skatteförvaltningen.
+  ru: Работодатель или плательщик пособий, например Ведомство социального обеспечения (FPA), автоматически
+    удерживает налоги из заработной платы или пособия и перечисляет их непосредственно в Налоговое управление
+    (Skatteförvaltningen).
+  scene_id: scene-3
+  visual_cue: Arbetsgivare eller förmånsbetalare drar av skatt; fixed relevant left foreground, exact
+    bilingual text right.
+  asset_ids:
+  - episode_background
+  - withholding
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Arbetsgivaren eller den som betalar förmånerna, till exempel eff pe a, drar av skatterna på
+      lönen eller förmånen automatiskt och betalar dem direkt till Skatteförvaltningen.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0276-s005.wav
+  start_seconds: 38.125
+  end_seconds: 52.474932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/withholding.png
+- sentence_id: hb-c07-u0277-s001
+  sv: I Finland betalar människorna också många andra skatter.
+  ru: В Финляндии люди платят также много других налогов.
+  scene_id: scene-4
+  visual_cue: Mervärdesskatt, bilskatt, arv och fastighet; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - other_taxes
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0277-s001.wav
+  start_seconds: 54.958333
+  end_seconds: 60.322143
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/other_taxes.png
+- sentence_id: hb-c07-u0277-s002
+  sv: För produkter och tjänster betalas mervärdesskatt, bilägare betalar bilskatt, för arv betalas arvsskatt
+    och fastighetsägare betalar fastighetsskatt.
+  ru: За товары и услуги платят налог на добавленную стоимость, владельцы автомобилей платят автомобильный
+    налог, с наследства платят налог на наследство, а владельцы недвижимости — налог на недвижимость.
+  scene_id: scene-4
+  visual_cue: Mervärdesskatt, bilskatt, arv och fastighet; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - other_taxes
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0277-s002.wav
+  start_seconds: 62.083333
+  end_seconds: 74.970408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/other_taxes.png
+- sentence_id: hb-c07-u0278-s001
+  sv: I Finland tillämpas progressiv beskattning när förvärvsinkomster beskattas.
+  ru: В Финляндии при налогообложении трудовых доходов применяется прогрессивная шкала.
+  scene_id: scene-5
+  visual_cue: Progressiv skatt efter inkomster; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - progressive
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0278-s001.wav
+  start_seconds: 77.458333
+  end_seconds: 84.42432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/progressive.png
+- sentence_id: hb-c07-u0278-s002
+  sv: Det betyder att ju mer inkomster en person har, desto högre procent betalar hen i skatt.
+  ru: Это означает, что чем больше у человека доходов, тем больший процент он платит в виде налога.
+  scene_id: scene-5
+  visual_cue: Progressiv skatt efter inkomster; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - progressive
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0278-s002.wav
+  start_seconds: 86.208333
+  end_seconds: 93.383299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/progressive.png
+- sentence_id: hb-c07-u0278-s003
+  sv: Om en person har hög lön är också skatteprocenten hög, och om lönen är liten är skatteprocenten
+    låg.
+  ru: Если у человека высокая заработная плата, налоговая ставка тоже высокая, а если заработная плата
+    маленькая, то и налоговая ставка низкая.
+  scene_id: scene-5
+  visual_cue: Progressiv skatt efter inkomster; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - progressive
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0278-s003.wav
+  start_seconds: 95.166667
+  end_seconds: 103.80449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/progressive.png
+- sentence_id: hb-c07-u0279-s001
+  sv: Skatt betalas på både förvärvs- och kapitalinkomster.
+  ru: Налогом облагаются как трудовые доходы, так и доходы от капитала.
+  scene_id: scene-6
+  visual_cue: Förvärvsinkomst och kapitalinkomst; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - income_types
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0279-s001.wav
+  start_seconds: 106.291667
+  end_seconds: 111.655476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/income_types.png
+- sentence_id: hb-c07-u0279-s002
+  sv: Förvärvs- och kapitalinkomsterna beskattas på olika sätt.
+  ru: Трудовые доходы и доходы от капитала облагаются налогом по-разному.
+  scene_id: scene-6
+  visual_cue: Förvärvsinkomst och kapitalinkomst; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - income_types
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0279-s002.wav
+  start_seconds: 113.416667
+  end_seconds: 119.198435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/income_types.png
+- sentence_id: hb-c07-u0279-s003
+  sv: Kapitalinkomst är inkomster från förmögenhet.
+  ru: Доход от капитала — это доход от имущества.
+  scene_id: scene-6
+  visual_cue: Förvärvsinkomst och kapitalinkomst; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - income_types
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0279-s003.wav
+  start_seconds: 120.958333
+  end_seconds: 125.277245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/income_types.png
+- sentence_id: hb-c07-u0279-s004
+  sv: De övriga inkomsterna är förvärvsinkomst.
+  ru: Остальные доходы относятся к трудовым доходам.
+  scene_id: scene-6
+  visual_cue: Förvärvsinkomst och kapitalinkomst; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - income_types
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0279-s004.wav
+  start_seconds: 127.041667
+  end_seconds: 131.221259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/income_types.png
+- sentence_id: hb-c07-u0280-s001
+  sv: I Finland är beskattningen progressiv.
+  ru: В Финляндии налогообложение прогрессивное.
+  scene_id: scene-7
+  visual_cue: Individuell beskattning och skatteprocent; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - individual_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s001.wav
+  start_seconds: 133.708333
+  end_seconds: 137.400306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/individual_tax.png
+- sentence_id: hb-c07-u0280-s002
+  sv: Det innebär att man på en stor lön betalar en större andel skatt än på en mindre lön.
+  ru: Это означает, что с большой заработной платы платят более высокую долю налога, чем с маленькой.
+  scene_id: scene-7
+  visual_cue: Individuell beskattning och skatteprocent; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - individual_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s002.wav
+  start_seconds: 139.166667
+  end_seconds: 146.271973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/individual_tax.png
+- sentence_id: hb-c07-u0280-s003
+  sv: Skatteprocenten anger hur mycket skatt du betalar på dina inkomster.
+  ru: Налоговая ставка показывает, сколько налога вы платите со своих доходов.
+  scene_id: scene-7
+  visual_cue: Individuell beskattning och skatteprocent; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - individual_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s003.wav
+  start_seconds: 148.041667
+  end_seconds: 154.171735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/individual_tax.png
+- sentence_id: hb-c07-u0280-s004
+  sv: Den beräknas i Finland för var och en separat.
+  ru: В Финляндии она рассчитывается для каждого отдельно.
+  scene_id: scene-7
+  visual_cue: Individuell beskattning och skatteprocent; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - individual_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s004.wav
+  start_seconds: 155.958333
+  end_seconds: 160.346905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/individual_tax.png
+- sentence_id: hb-c07-u0280-s005
+  sv: Din makas/makes inkomster inverkar inte på din skatteprocent.
+  ru: Доходы вашей супруги или вашего супруга не влияют на вашу налоговую ставку.
+  scene_id: scene-7
+  visual_cue: Individuell beskattning och skatteprocent; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - individual_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Din makas eller makes inkomster inverkar inte på din skatteprocent.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s005.wav
+  start_seconds: 162.125
+  end_seconds: 167.976429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/individual_tax.png
+- sentence_id: hb-c07-u0280-s006
+  sv: Du kan uppskatta din skatteprocent med Skatteförvaltningens skatteräknare.
+  ru: Вы можете оценить свою налоговую ставку с помощью налогового калькулятора Налогового управления.
+  scene_id: scene-8
+  visual_cue: Skatteförvaltningens skatteräknare; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - tax_calculator
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0280-s006.wav
+  start_seconds: 170.458333
+  end_seconds: 177.07602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_calculator.png
+- sentence_id: hb-c07-u0281-s001
+  sv: Om du får lön drar arbetsgivaren av skatten från lönen och betalar den direkt till skattemyndigheten.
+  ru: Если вы получаете заработную плату, работодатель удерживает из неё налог и перечисляет его непосредственно
+    налоговому органу.
+  scene_id: scene-9
+  visual_cue: Skattekort och arbetsgivarens skatteinnehållning; fixed relevant left foreground, exact
+    bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_card
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s001.wav
+  start_seconds: 179.541667
+  end_seconds: 188.24915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_card.png
+- sentence_id: hb-c07-u0281-s002
+  sv: För att kunna göra det behöver arbetsgivaren ett skattekort av dig.
+  ru: Для этого работодателю нужна ваша налоговая карточка.
+  scene_id: scene-9
+  visual_cue: Skattekort och arbetsgivarens skatteinnehållning; fixed relevant left foreground, exact
+    bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_card
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s002.wav
+  start_seconds: 190.0
+  end_seconds: 196.060408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_card.png
+- sentence_id: hb-c07-u0281-s003
+  sv: Skattekortet är ett dokument som anger din skatteprocent.
+  ru: Налоговая карточка — это документ, в котором указана ваша налоговая ставка.
+  scene_id: scene-9
+  visual_cue: Skattekort och arbetsgivarens skatteinnehållning; fixed relevant left foreground, exact
+    bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_card
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s003.wav
+  start_seconds: 197.833333
+  end_seconds: 203.057823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_card.png
+- sentence_id: hb-c07-u0281-s004
+  sv: Skatteförvaltningen räknar efter varje år om du har betalat tillräckligt med skatt på dina inkomster.
+  ru: После окончания каждого года Налоговое управление рассчитывает, достаточно ли налога вы заплатили
+    со своих доходов.
+  scene_id: scene-10
+  visual_cue: För mycket eller för lite betald skatt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s004.wav
+  start_seconds: 205.541667
+  end_seconds: 214.527789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0281-s005
+  sv: Om du har betalat för mycket skatt får du skatteåterbäring.
+  ru: Если вы заплатили слишком много налога, вам возвращают переплату.
+  scene_id: scene-10
+  visual_cue: För mycket eller för lite betald skatt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s005.wav
+  start_seconds: 216.291667
+  end_seconds: 221.794796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0281-s006
+  sv: Om du har betalat för lite skatt ska du betala den återstående delen som kvarskatt.
+  ru: Если вы заплатили слишком мало налога, оставшуюся часть нужно внести в качестве доплаты налога.
+  scene_id: scene-10
+  visual_cue: För mycket eller för lite betald skatt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0281-s006.wav
+  start_seconds: 223.583333
+  end_seconds: 230.967279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0282-s001
+  sv: Kontrollera i lönespecifikationen och skattedeklarationen att arbetsgivaren har dragit av skatten
+    från din lön och betalat den till skattemyndigheten.
+  ru: Проверьте в расчётном листке и налоговой декларации, что работодатель удержал налог из вашей заработной
+    платы и перечислил его налоговому органу.
+  scene_id: scene-11
+  visual_cue: Kontrollera lönespecifikation och spara kvitton; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0282-s001.wav
+  start_seconds: 233.458333
+  end_seconds: 246.206088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/payslip.png
+- sentence_id: hb-c07-u0282-s002
+  sv: Spara lönekvittona.
+  ru: Сохраняйте квитанции о заработной плате.
+  scene_id: scene-11
+  visual_cue: Kontrollera lönespecifikation och spara kvitton; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0282-s002.wav
+  start_seconds: 247.958333
+  end_seconds: 250.466088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/payslip.png
+- sentence_id: hb-c07-u0283-s001
+  sv: Förutom skatterna drar arbetsgivaren av från din lön obligatoriska försäkringspremier till exempel
+    för arbetslöshet och insjuknande.
+  ru: Помимо налогов работодатель удерживает из вашей заработной платы обязательные страховые взносы,
+    например на случай безработицы и болезни.
+  scene_id: scene-12
+  visual_cue: Obligatoriska försäkringspremier; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - insurance
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0283-s001.wav
+  start_seconds: 252.916667
+  end_seconds: 264.828503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/insurance.png
+- sentence_id: hb-c07-u0284-s001
+  sv: Om du vistas i Finland i mer än sex månader, ska du i allmänhet betala skatt på alla dina inkomster
+    till Finland.
+  ru: Если вы пребываете в Финляндии более шести месяцев, вы, как правило, должны платить в Финляндию
+    налог со всех своих доходов.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s001.wav
+  start_seconds: 267.291667
+  end_seconds: 277.531667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0284-s002
+  sv: Detta gäller även de inkomster som du får från utlandet.
+  ru: Это касается также доходов, полученных за границей.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s002.wav
+  start_seconds: 279.291667
+  end_seconds: 284.237517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0284-s003
+  sv: Du ska i allmänhet också betala de obligatoriska försäkringspremierna till Finland.
+  ru: Как правило, вы также должны платить обязательные страховые взносы в Финляндию.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s003.wav
+  start_seconds: 286.0
+  end_seconds: 293.592925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0284-s004
+  sv: Om du har en finländsk arbetsgivare bestäms din skatteprocent enligt inkomsterna för hela året.
+  ru: Если у вас финский работодатель, ваша налоговая ставка определяется по доходам за весь год.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s004.wav
+  start_seconds: 295.375
+  end_seconds: 303.734184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0284-s005
+  sv: Skatteprocenten är desto större ju mer du har löneinkomster.
+  ru: Чем больше ваши доходы от заработной платы, тем выше налоговая ставка.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s005.wav
+  start_seconds: 305.5
+  end_seconds: 311.003129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0284-s006
+  sv: Du behöver en finländsk personbeteckning och ett finländskt skattekort.
+  ru: Вам нужны финский личный идентификационный код и финская налоговая карточка.
+  scene_id: scene-13
+  visual_cue: 'Mer än sex månader: källans huvudregel; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - long_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0284-s006.wav
+  start_seconds: 312.791667
+  end_seconds: 318.782415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/long_stay.png
+- sentence_id: hb-c07-u0285-s001
+  sv: Om du vistas i Finland i högst sex månader och din arbetsgivare är ett utländskt företag, behöver
+    du i allmänhet inte betala skatt till Finland.
+  ru: Если вы пребываете в Финляндии не более шести месяцев, а ваш работодатель — иностранное предприятие,
+    платить налоги в Финляндию, как правило, не нужно.
+  scene_id: scene-14
+  visual_cue: 'Högst sex månader: villkor och undantag; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - short_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0285-s001.wav
+  start_seconds: 321.25
+  end_seconds: 333.719116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/short_stay.png
+- sentence_id: hb-c07-u0285-s002
+  sv: Om din arbetsgivare dock är finländare eller om din utländska arbetsgivare har en arbetsplats i
+    Finland, betalar du skatt i Finland.
+  ru: Однако если ваш работодатель — финляндец или у вашего иностранного работодателя есть рабочее место
+    в Финляндии, вы платите налоги в Финляндии.
+  scene_id: scene-14
+  visual_cue: 'Högst sex månader: villkor och undantag; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - short_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0285-s002.wav
+  start_seconds: 335.5
+  end_seconds: 347.272517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/short_stay.png
+- sentence_id: hb-c07-u0285-s003
+  sv: Du kan söka progressiv beskattning, om du bor i ett land som hör till Europeiska ekonomiska samarbetsområdet
+    eller i ett land med vilket Finland har ett skatteavtal.
+  ru: Вы можете подать заявление о применении прогрессивного налогообложения, если живёте в стране Европейской
+    экономической зоны (Europeiska ekonomiska samarbetsområdet) или в стране, с которой у Финляндии есть
+    налоговое соглашение.
+  scene_id: scene-14
+  visual_cue: 'Högst sex månader: villkor och undantag; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - short_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0285-s003.wav
+  start_seconds: 349.041667
+  end_seconds: 362.973639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/short_stay.png
+- sentence_id: hb-c07-u0285-s004
+  sv: I annat fall betalar du en källskatt på 35 procent på lönen och du behöver ett källskattekort.
+  ru: В противном случае вы платите налог у источника в размере 35 процентов от заработной платы и вам
+    нужна карточка налога у источника.
+  scene_id: scene-14
+  visual_cue: 'Högst sex månader: villkor och undantag; fixed relevant left foreground, exact bilingual
+    text right.'
+  asset_ids:
+  - episode_background
+  - short_stay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: I annat fall betalar du en källskatt på trettiofem procent på lönen och du behöver ett källskattekort.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0285-s004.wav
+  start_seconds: 365.75
+  end_seconds: 374.178844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/short_stay.png
+- sentence_id: hb-c07-u0286-s001
+  sv: Om du har sjukförsäkring i Finland förordnar Skatteförvaltningen dig arbetstagarens sjukförsäkringsavgift.
+  ru: Если у вас есть медицинское страхование в Финляндии, Налоговое управление назначает вам страховой
+    взнос работника на медицинское страхование.
+  scene_id: scene-15
+  visual_cue: Sjukförsäkringsavgift och A1-intyg; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - a1_certificate
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0286-s001.wav
+  start_seconds: 376.666667
+  end_seconds: 386.697687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/a1_certificate.png
+- sentence_id: hb-c07-u0286-s002
+  sv: Du betalar dock inte sjukförsäkringsavgift i Finland om du har ett A1-intyg eller liknande intyg
+    med vilket du påvisar att du är försäkrad i det land där du bor.
+  ru: Однако вы не платите взнос на медицинское страхование в Финляндии, если у вас есть свидетельство
+    A1 или аналогичный документ, подтверждающий, что вы застрахованы в стране своего проживания.
+  scene_id: scene-15
+  visual_cue: Sjukförsäkringsavgift och A1-intyg; fixed relevant left foreground, exact bilingual text
+    right.
+  asset_ids:
+  - episode_background
+  - a1_certificate
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override:
+    text: Du betalar dock inte sjukförsäkringsavgift i Finland om du har ett a ett-intyg eller liknande
+      intyg med vilket du påvisar att du är försäkrad i det land där du bor.
+    reason: Speech-only expansion of source numeral or abbreviation; exact display unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0286-s002.wav
+  start_seconds: 388.458333
+  end_seconds: 402.320646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/a1_certificate.png
+- sentence_id: hb-c07-u0287-s001
+  sv: I skattedeklarationen ser du uppgifterna om dina inkomster, skatter och avdrag under det föregående
+    året.
+  ru: В налоговой декларации вы видите сведения о своих доходах, налогах и вычетах за предыдущий год.
+  scene_id: scene-16
+  visual_cue: Kontrollera och rätta skattedeklarationen; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - declaration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0287-s001.wav
+  start_seconds: 404.791667
+  end_seconds: 414.056429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/declaration.png
+- sentence_id: hb-c07-u0287-s002
+  sv: Kontrollera skattedeklarationen och komplettera och rätta till uppgifterna i webbtjänsten MinSkatt.
+  ru: Проверьте налоговую декларацию, дополните и исправьте сведения в онлайн-сервисе MinSkatt.
+  scene_id: scene-16
+  visual_cue: Kontrollera och rätta skattedeklarationen; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - declaration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0287-s002.wav
+  start_seconds: 415.833333
+  end_seconds: 424.819456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/declaration.png
+- sentence_id: hb-c07-u0287-s003
+  sv: Om uppgifterna är korrekta behöver du inte göra något.
+  ru: Если сведения верны, ничего делать не нужно.
+  scene_id: scene-16
+  visual_cue: Kontrollera och rätta skattedeklarationen; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - declaration
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0287-s003.wav
+  start_seconds: 426.583333
+  end_seconds: 431.807823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/declaration.png
+- sentence_id: hb-c07-u0288-s001
+  sv: Du kan i beskattningen få avdrag som minskar beloppet på skatt som betalas.
+  ru: При налогообложении вам могут предоставляться вычеты, уменьшающие сумму уплачиваемого налога.
+  scene_id: scene-17
+  visual_cue: Automatiska och anmälda avdrag; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - deductions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0288-s001.wav
+  start_seconds: 434.291667
+  end_seconds: 440.770034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/deductions.png
+- sentence_id: hb-c07-u0288-s002
+  sv: Skatteförvaltningen gör en del avdrag automatiskt, men en del måste du själv anmäla.
+  ru: Некоторые вычеты Налоговое управление делает автоматически, а о других вы должны заявить сами.
+  scene_id: scene-17
+  visual_cue: Automatiska och anmälda avdrag; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - deductions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0288-s002.wav
+  start_seconds: 442.541667
+  end_seconds: 450.273912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/deductions.png
+- sentence_id: hb-c07-u0288-s003
+  sv: Du kan anmäla avdragen på ditt skattekort eller i din skattedeklaration.
+  ru: Вы можете заявить вычеты в своей налоговой карточке или налоговой декларации.
+  scene_id: scene-17
+  visual_cue: Automatiska och anmälda avdrag; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - deductions
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0288-s003.wav
+  start_seconds: 452.041667
+  end_seconds: 458.450374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/deductions.png
+- sentence_id: hb-c07-u0289-s001
+  sv: Utfallet av din beskattning för föregående året ser du på ditt beskattningsbeslut.
+  ru: Результат расчёта ваших налогов за предыдущий год указан в вашем налоговом решении.
+  scene_id: scene-18
+  visual_cue: Beskattningsbeslut och ändringar; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_decision
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0289-s001.wav
+  start_seconds: 460.916667
+  end_seconds: 467.952313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_decision.png
+- sentence_id: hb-c07-u0289-s002
+  sv: Om du gör ändringar i din på förhand ifyllda skattedeklaration eller Skatteförvaltningen får från
+    annanstans (till exempel av din arbetsgivare) uppgifter som påverkar din beskattning, får du ett nytt
+    beskattningsbeslut.
+  ru: Если вы вносите изменения в предварительно заполненную налоговую декларацию или Налоговое управление
+    получает из другого источника, например от вашего работодателя, сведения, влияющие на ваше налогообложение,
+    вы получите новое налоговое решение.
+  scene_id: scene-18
+  visual_cue: Beskattningsbeslut och ändringar; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_decision
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0289-s002.wav
+  start_seconds: 469.708333
+  end_seconds: 487.889558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_decision.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0289-s003
+  sv: I beskattningsbeslutet finns en beräkning på utfallet av din beskattning.
+  ru: В налоговом решении содержится расчёт итогов вашего налогообложения.
+  scene_id: scene-18
+  visual_cue: Beskattningsbeslut och ändringar; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_decision
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0289-s003.wav
+  start_seconds: 490.666667
+  end_seconds: 496.936054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_decision.png
+- sentence_id: hb-c07-u0289-s004
+  sv: Du kan behöva beskattningsbeslutet till exempel då du söker hyresbostad eller du förordnas dagvårdsavgifter.
+  ru: Налоговое решение может понадобиться вам, например, при поиске арендного жилья или назначении платы
+    за дневной уход за ребёнком.
+  scene_id: scene-18
+  visual_cue: Beskattningsbeslut och ändringar; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - tax_decision
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0289-s004.wav
+  start_seconds: 498.708333
+  end_seconds: 507.973095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_decision.png
+- sentence_id: hb-c07-u0290-s001
+  sv: I beskattningsbeslutet ser du om du har betalat rätt mängd skatt.
+  ru: В налоговом решении вы видите, правильную ли сумму налога вы уплатили.
+  scene_id: scene-19
+  visual_cue: Skatteåterbäring eller kvarskatt; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0290-s001.wav
+  start_seconds: 510.458333
+  end_seconds: 516.309762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0290-s002
+  sv: Om du har betalat för mycket skatt får du skatteåterbäring.
+  ru: Если вы заплатили слишком много налога, вам возвращают переплату.
+  scene_id: scene-19
+  visual_cue: Skatteåterbäring eller kvarskatt; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0290-s002.wav
+  start_seconds: 518.083333
+  end_seconds: 523.586463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0290-s003
+  sv: Om du har betalat för lite i skatt blir du tvungen att betala kvarskatt.
+  ru: Если вы заплатили слишком мало налога, вам придётся доплатить налог.
+  scene_id: scene-19
+  visual_cue: Skatteåterbäring eller kvarskatt; fixed relevant left foreground, exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - assessment
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0290-s003.wav
+  start_seconds: 525.375
+  end_seconds: 531.853367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/assessment.png
+- sentence_id: hb-c07-u0291-s001
+  sv: Om du har betalat för lite skatt under året ska du betala den återstående delen som kvarskatt.
+  ru: Если в течение года вы заплатили слишком мало налога, оставшуюся часть нужно внести в качестве доплаты
+    налога.
+  scene_id: scene-20
+  visual_cue: Betala kvarskatt med uppgifter i beslut eller MinSkatt; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - back_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0291-s001.wav
+  start_seconds: 534.333333
+  end_seconds: 542.553197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/back_tax.png
+- sentence_id: hb-c07-u0291-s002
+  sv: I beskattningsbeslutet eller på MinSkatt ser du alla uppgifter du behöver när du betalar kvarskatt.
+  ru: В налоговом решении или в MinSkatt вы найдёте все сведения, необходимые для доплаты налога.
+  scene_id: scene-20
+  visual_cue: Betala kvarskatt med uppgifter i beslut eller MinSkatt; fixed relevant left foreground,
+    exact bilingual text right.
+  asset_ids:
+  - episode_background
+  - back_tax
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0291-s002.wav
+  start_seconds: 544.333333
+  end_seconds: 552.971156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/back_tax.png
+- sentence_id: hb-c07-u0292-s001
+  sv: Du behöver ett skattenummer om du arbetar på en byggarbetsplats eller ett varvsområde i Finland.
+  ru: Если вы работаете на стройплощадке или территории судоверфи в Финляндии, вам нужен налоговый номер.
+  scene_id: scene-21
+  visual_cue: Skattenummer och fotoförsedd namnskylt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - tax_number
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0292-s001.wav
+  start_seconds: 555.458333
+  end_seconds: 563.747857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_number.png
+- sentence_id: hb-c07-u0292-s002
+  sv: Med hjälp av skattenumret kontrolleras att alla arbetstagare finns i Skatteförvaltningens register.
+  ru: С помощью налогового номера проверяют, что все работники внесены в реестр Налогового управления.
+  scene_id: scene-21
+  visual_cue: Skattenummer och fotoförsedd namnskylt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - tax_number
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0292-s002.wav
+  start_seconds: 565.5
+  end_seconds: 574.416463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_number.png
+- sentence_id: hb-c07-u0292-s003
+  sv: Skattenumret ska framgå av den fotoförsedda namnskylt som du får av din arbetsgivare.
+  ru: Налоговый номер должен быть указан на именном бейдже с фотографией, который вы получаете от работодателя.
+  scene_id: scene-21
+  visual_cue: Skattenummer och fotoförsedd namnskylt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - tax_number
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0292-s003.wav
+  start_seconds: 576.166667
+  end_seconds: 583.898912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_number.png
+- sentence_id: hb-c07-u0292-s004
+  sv: Du får inte arbeta på en byggarbetsplats eller ett varvsområde utan namnskylt.
+  ru: Работать на стройплощадке или территории судоверфи без именного бейджа нельзя.
+  scene_id: scene-21
+  visual_cue: Skattenummer och fotoförsedd namnskylt; fixed relevant left foreground, exact bilingual
+    text right.
+  asset_ids:
+  - episode_background
+  - tax_number
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and any names/numerals remain whole-video listening priorities; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-skatter/narration/hb-c07-u0292-s004.wav
+  start_seconds: 585.666667
+  end_seconds: 592.354014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-skatter/pictures/tax_number.png
+render:
+  music_path: studio/media/hb-c07-skatter/sources/music-bed.flac
+  background_image: studio/media/hb-c07-skatter/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.5633928571428575
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi och InfoFinland.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - InfoFinland.fi · CC BY4.0 för InfoFinlands texter.
+    - Fullständiga ursprungliga villkor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Helsingfors skattekontor (arkivbild 1987) — Jan Alanco / Helsingfors stadsmuseum · CC BY 4.0
+    - Blue Paint — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Diagrammen visar endast uppgifter i källtexten.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian displayed sentence by sentence; no added narration.
+  - Background cropped,darkened,blurred and continuously panned/zoomed; photo adaptation retains source
+    license.
+  - Foregrounds are original source-based pictorial diagrams; they illustrate only source-stated concepts.
+  - Music faded,ducked,+2dB adjusted and repeated with4-second equal-power crossfades when needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Haapaniemenkatu_7,_Helsingin_verotoimisto_-_N220595_-_hkm.HKMS000005-km002uuj.jpg
+    description: Haapaniemenkatu 7.  Helsingin verotoimisto; negatiivi, filmi, mv
+    license: CC BY 4.0

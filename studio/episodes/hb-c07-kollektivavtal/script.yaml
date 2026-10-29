@@ -1,0 +1,1245 @@
+schema_version: 1
+section_id: hb-c07-kollektivavtal
+chapter_id: hb-c07
+title_sv: Kollektivavtal och fackförbund
+title_ru: Коллективные договоры и профсоюзы
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-kollektivavtal.yaml
+example_only: false
+source_section_sha256: 305673bbd8f56726cfb928087cb625236922a7320f67a48bbcde91a063e2d229
+translation_file_sha256: 939bda1c7917bcbee1fca990d9a1271a92d99664e8731d32bbfda0c96cb96fa4
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans
+    Bold48/Regular40. Fixed Swedish/Russian panel right and source-specific foreground pictures left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Suomen Ammattiliittojen Keskusjärjestö SAK.jpg by Kaihsu Tai continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=3.6541666666666663. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,mono44100PCM16; two ONNX intra-op threads
+    for the complete source-order take stream. Retained existing takes throughout CPU-budget adjustments;
+    only ASR was paused until encoder capacity freed. Complete-video listening remains pending; ASR diagnostics
+    cannot approve pronunciation.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Canon in D for Two Harps by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 339.618 seconds; prepared lossless stereo bed 511.583
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Individual pictorial scene plan: source-based diagrams and verified workplace/institution
+    photos. Aim>=50% measured body picture coverage without generic filler. Labels only repeat source
+    concepts; no new current-law claims.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Kollektivavtal och förhandlingar
+- id: scene-2
+  description: Minimivillkor och bättre villkor
+- id: scene-3
+  description: Branschernas kollektivavtal
+- id: scene-4
+  description: Arbetsfred och avtalstid
+- id: scene-5
+  description: Fackförbundens förhandlingar och stöd
+- id: scene-6
+  description: Förtroendeman och förtroendeombud
+- id: scene-7
+  description: Arbetsgivarens skyldigheter
+- id: scene-8
+  description: Rätt att organisera sig och få stöd
+- id: scene-9
+  description: Förtroendemannens uppgifter
+- id: scene-10
+  description: Arbetslöshetskassans villkor
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_negotiation
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Kollektivavtal
+    och förhandlingar.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_floor
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Minimivillkor
+    och bättre villkor.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_sectors
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Branschernas
+    kollektivavtal.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_peace
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetsfred
+    och avtalstid.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_union
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Fackförbundens
+    förhandlingar och stöd.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_representative
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Förtroendeman
+    och förtroendeombud.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_employer
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetsgivarens
+    skyldigheter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_association
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Rätt att
+    organisera sig och få stöd.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_fund
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetslöshetskassans
+    villkor.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_alternative
+  kind: foreground
+  description: Source-based pictorial distinction between förtroendeman and the alternative förtroendeombud
+    or union support when the former is absent.
+  fallback: Open left area for these exact three passages if an accurate distinction cannot be pictured.
+sentences:
+- sentence_id: hb-c07-u0113-s001
+  sv: Det är viktigt att den anställda vet vad kollektivavtal är.
+  ru: Работнику важно знать, что такое коллективный договор.
+  scene_id: scene-1
+  visual_cue: Kollektivavtal och förhandlingar; show source-specific negotiation picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0113-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.61381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/negotiation.png
+- sentence_id: hb-c07-u0113-s002
+  sv: Kollektivavtal är avtal som upprättats i samarbete mellan arbetsgivar- och arbetstagarorganisationer.
+  ru: Коллективные договоры — это соглашения, совместно составленные организациями работодателей и работников.
+  scene_id: scene-1
+  visual_cue: Kollektivavtal och förhandlingar; show source-specific negotiation picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0113-s002.wav
+  start_seconds: 10.375
+  end_seconds: 19.848741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/negotiation.png
+- sentence_id: hb-c07-u0113-s003
+  sv: I dem avtalas om lönerna och övriga villkor inom olika branscher.
+  ru: В них договариваются о заработной плате и других условиях в разных отраслях.
+  scene_id: scene-1
+  visual_cue: Kollektivavtal och förhandlingar; show source-specific negotiation picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0113-s003.wav
+  start_seconds: 21.625
+  end_seconds: 27.824728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/negotiation.png
+- sentence_id: hb-c07-u0113-s004
+  sv: Arbetsvillkor är till exempel arbetstider, raster och semestrar.
+  ru: К условиям труда относятся, например, рабочее время, перерывы и отпуска.
+  scene_id: scene-1
+  visual_cue: Kollektivavtal och förhandlingar; show source-specific negotiation picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0113-s004.wav
+  start_seconds: 29.583333
+  end_seconds: 35.713401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/negotiation.png
+- sentence_id: hb-c07-u0113-s005
+  sv: På finska används ofta förkortningen TES för kollektivavtal, och på svenska ibland KA.
+  ru: По-фински для обозначения коллективного договора часто используется сокращение TES, а по-шведски
+    иногда — KA.
+  scene_id: scene-1
+  visual_cue: Kollektivavtal och förhandlingar; show source-specific negotiation picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_negotiation
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override:
+    text: På finska används ofta förkortningen te e ess för kollektivavtal, och på svenska ibland kå a.
+    reason: Speech-only expansion of exact source numerals or letter abbreviation; displayed source text
+      preserved.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0113-s005.wav
+  start_seconds: 37.5
+  end_seconds: 45.650204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/negotiation.png
+- sentence_id: hb-c07-u0114-s001
+  sv: Den anställda kan i sitt eget arbetsavtal avtala om bättre arbetsvillkor än de som finns i branschens
+    kollektivavtal.
+  ru: В своём трудовом договоре работник может договориться о лучших условиях труда, чем предусмотрены
+    коллективным договором отрасли.
+  scene_id: scene-2
+  visual_cue: Minimivillkor och bättre villkor; show source-specific floor picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_floor
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0114-s001.wav
+  start_seconds: 48.125
+  end_seconds: 58.43466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/floor.png
+- sentence_id: hb-c07-u0114-s002
+  sv: I arbetsavtalet kan man inte avtala om villkor som är sämre än i kollektivavtalet.
+  ru: В трудовом договоре нельзя согласовать условия хуже, чем в коллективном договоре.
+  scene_id: scene-2
+  visual_cue: Minimivillkor och bättre villkor; show source-specific floor picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_floor
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0114-s002.wav
+  start_seconds: 60.208333
+  end_seconds: 67.801259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/floor.png
+- sentence_id: hb-c07-u0115-s001
+  sv: I kollektivavtal avtalas ofta om bättre arbetsvillkor än vad som regleras i lag.
+  ru: В коллективных договорах часто договариваются о лучших условиях труда, чем установлено законом.
+  scene_id: scene-2
+  visual_cue: Minimivillkor och bättre villkor; show source-specific floor picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_floor
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0115-s001.wav
+  start_seconds: 69.583333
+  end_seconds: 77.106599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/floor.png
+- sentence_id: hb-c07-u0115-s002
+  sv: Nästan alla branscher har ett eget kollektivavtal.
+  ru: Почти во всех отраслях есть свой коллективный договор.
+  scene_id: scene-3
+  visual_cue: Branschernas kollektivavtal; show source-specific sectors picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_sectors
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0115-s002.wav
+  start_seconds: 79.583333
+  end_seconds: 84.250544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/sectors.png
+- sentence_id: hb-c07-u0115-s003
+  sv: Till exempel handeln, byggbranschen och restaurangbranschen har ett eget kollektivavtal.
+  ru: Например, собственные коллективные договоры есть в торговле, строительстве и ресторанном бизнесе.
+  scene_id: scene-3
+  visual_cue: Branschernas kollektivavtal; show source-specific sectors picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_sectors
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0115-s003.wav
+  start_seconds: 86.041667
+  end_seconds: 93.495272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/sectors.png
+- sentence_id: hb-c07-u0115-s004
+  sv: Kollektivavtalet måste följas.
+  ru: Коллективный договор необходимо соблюдать.
+  scene_id: scene-3
+  visual_cue: Branschernas kollektivavtal; show source-specific sectors picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_sectors
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0115-s004.wav
+  start_seconds: 95.25
+  end_seconds: 98.454354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/sectors.png
+- sentence_id: hb-c07-u0116-s001
+  sv: Syftet med kollektivavtalen är å ena sidan att garantera en miniminivå för arbetsvillkoren för arbetstagarna
+    och å andra sidan arbetsfred.
+  ru: Цель коллективных договоров — с одной стороны, гарантировать работникам минимальный уровень условий
+    труда, а с другой — обеспечить трудовой мир.
+  scene_id: scene-4
+  visual_cue: Arbetsfred och avtalstid; show source-specific peace picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_peace
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0116-s001.wav
+  start_seconds: 100.916667
+  end_seconds: 113.107143
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/peace.png
+- sentence_id: hb-c07-u0116-s002
+  sv: Med arbetsfred avses att arbetstagarna till exempel inte får gå i strejk för att kräva bättre lön
+    medan ett kollektivavtal gäller.
+  ru: Под трудовым миром понимается, например, то, что работники не вправе устраивать забастовку с требованием
+    повысить заработную плату, пока действует коллективный договор.
+  scene_id: scene-4
+  visual_cue: Arbetsfred och avtalstid; show source-specific peace picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_peace
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0116-s002.wav
+  start_seconds: 114.875
+  end_seconds: 126.090238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/peace.png
+- sentence_id: hb-c07-u0117-s001
+  sv: Kollektivavtal är nästan alltid tidsbundna och gäller i några år i taget.
+  ru: Коллективные договоры почти всегда срочные и действуют по несколько лет.
+  scene_id: scene-4
+  visual_cue: Arbetsfred och avtalstid; show source-specific peace picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_peace
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0117-s001.wav
+  start_seconds: 127.875
+  end_seconds: 134.562347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/peace.png
+- sentence_id: hb-c07-u0117-s002
+  sv: Efter det omförhandlas avtalen.
+  ru: После этого условия договоров пересматриваются на переговорах.
+  scene_id: scene-4
+  visual_cue: Arbetsfred och avtalstid; show source-specific peace picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_peace
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0117-s002.wav
+  start_seconds: 136.333333
+  end_seconds: 139.398367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/peace.png
+- sentence_id: hb-c07-u0117-s003
+  sv: Kollektivavtal upprättas i samarbete mellan representanter för arbetsgivarna och arbetstagarna.
+  ru: Коллективные договоры составляются совместно представителями работодателей и работников.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0117-s003.wav
+  start_seconds: 141.875
+  end_seconds: 150.443163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0117-s004
+  sv: I förhandlingarna deltar fackförbunden, som representerar arbetstagarna, och representanter för
+    arbetsgivarna.
+  ru: В переговорах участвуют профсоюзы, представляющие работников, и представители работодателей.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0117-s004.wav
+  start_seconds: 152.208333
+  end_seconds: 161.960714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0118-s001
+  sv: Fackförbunden bevakar sina medlemmars intressen.
+  ru: Профсоюзы защищают интересы своих членов.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0118-s001.wav
+  start_seconds: 163.75
+  end_seconds: 168.277891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0118-s002
+  sv: Om det uppstår problem i arbetet, ger fackförbundet stöd och hjälp.
+  ru: Если на работе возникают проблемы, профсоюз оказывает поддержку и помощь.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0118-s002.wav
+  start_seconds: 170.041667
+  end_seconds: 176.241395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0118-s003
+  sv: Fackförbundet kan hjälpa till exempel om en arbetstagare inte får den lön som hen har rätt till.
+  ru: Профсоюз может помочь, например, если работник не получает заработную плату, на которую имеет право.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0118-s003.wav
+  start_seconds: 178.0
+  end_seconds: 186.359184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0118-s004
+  sv: Fackförbundet ger stöd också vid jobbsökning och arbetslöshet.
+  ru: Профсоюз также оказывает поддержку при поиске работы и безработице.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0118-s004.wav
+  start_seconds: 188.125
+  end_seconds: 193.767449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0118-s005
+  sv: Fackförbunden hjälper också sina medlemmar med att bilda nätverk och utveckla sin yrkeskompetens.
+  ru: Профсоюзы также помогают своим членам налаживать связи и развивать профессиональную компетентность.
+  scene_id: scene-5
+  visual_cue: Fackförbundens förhandlingar och stöd; show source-specific union picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_union
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0118-s005.wav
+  start_seconds: 195.541667
+  end_seconds: 203.83119
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/union.png
+- sentence_id: hb-c07-u0119-s001
+  sv: På stora arbetsplatser representeras fackförbundets medlemmar av en förtroendeman.
+  ru: В крупных трудовых коллективах членов профсоюза представляет профсоюзный представитель (förtroendeman).
+  scene_id: scene-6
+  visual_cue: Förtroendeman och förtroendeombud; show source-specific representative picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0119-s001.wav
+  start_seconds: 206.291667
+  end_seconds: 213.675612
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0119-s002
+  sv: Hen väljs i ett val bland de anställda.
+  ru: Его избирают на выборах из числа работников.
+  scene_id: scene-6
+  visual_cue: Förtroendeman och förtroendeombud; show source-specific representative picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0119-s002.wav
+  start_seconds: 215.458333
+  end_seconds: 219.289626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0119-s003
+  sv: Förtroendemannen övervakar att arbetsgivaren följer kollektivavtalet och arbetslagstiftningen på
+    arbetsplatsen.
+  ru: Профсоюзный представитель следит за тем, чтобы работодатель соблюдал на рабочем месте коллективный
+    договор и трудовое законодательство.
+  scene_id: scene-6
+  visual_cue: Förtroendeman och förtroendeombud; show source-specific representative picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0119-s003.wav
+  start_seconds: 221.041667
+  end_seconds: 230.794048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0119-s004
+  sv: Förtroendemannens uppgift är att stödja och hjälpa de anställda och ingripa i problem.
+  ru: Задача профсоюзного представителя — поддерживать работников, помогать им и вмешиваться при возникновении
+    проблем.
+  scene_id: scene-6
+  visual_cue: Förtroendeman och förtroendeombud; show source-specific representative picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0119-s004.wav
+  start_seconds: 232.583333
+  end_seconds: 240.315578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0119-s005
+  sv: Förtroendemannen ser till att de anställda behandlas rättvist och jämlikt på arbetsplatsen.
+  ru: Профсоюзный представитель следит за тем, чтобы на рабочем месте к работникам относились справедливо
+    и на равных.
+  scene_id: scene-6
+  visual_cue: Förtroendeman och förtroendeombud; show source-specific representative picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0119-s005.wav
+  start_seconds: 242.083333
+  end_seconds: 249.954898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0120-s001
+  sv: Alla arbetsplatser har inte en förtroendeman.
+  ru: Профсоюзный представитель есть не на каждом рабочем месте.
+  scene_id: scene-6
+  visual_cue: Show alternative elected employee representative or union support, expressly distinguished
+    from a förtroendeman with wider powers.
+  asset_ids:
+  - episode_background
+  - visual_alternative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0120-s001.wav
+  start_seconds: 251.708333
+  end_seconds: 255.887925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/alternative.png
+- sentence_id: hb-c07-u0120-s002
+  sv: I sådana fall kan de anställda välja en anställd till förtroendeombud eller söka stöd hos fackförbundet.
+  ru: В таких случаях работники могут выбрать из своего числа выборного представителя работников (förtroendeombud)
+    или обратиться за поддержкой в профсоюз.
+  scene_id: scene-6
+  visual_cue: Show alternative elected employee representative or union support, expressly distinguished
+    from a förtroendeman with wider powers.
+  asset_ids:
+  - episode_background
+  - visual_alternative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0120-s002.wav
+  start_seconds: 257.666667
+  end_seconds: 266.861769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/alternative.png
+- sentence_id: hb-c07-u0120-s003
+  sv: Förtroendeombudet har inte lika omfattande uppgifter och befogenheter som en förtroendeman.
+  ru: У выборного представителя работников не такие широкие функции и полномочия, как у профсоюзного представителя.
+  scene_id: scene-6
+  visual_cue: Show alternative elected employee representative or union support, expressly distinguished
+    from a förtroendeman with wider powers.
+  asset_ids:
+  - episode_background
+  - visual_alternative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0120-s003.wav
+  start_seconds: 268.625
+  end_seconds: 276.357245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/alternative.png
+- sentence_id: hb-c07-u0121-s001
+  sv: En arbetsgivare är vem som helst som anställer en annan person som arbetstagare.
+  ru: Работодатель — это любой, кто нанимает другого человека в качестве работника.
+  scene_id: scene-7
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0121-s001.wav
+  start_seconds: 278.833333
+  end_seconds: 286.077959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/employer.png
+- sentence_id: hb-c07-u0121-s002
+  sv: Det är viktigt att arbetsgivaren är medveten om den lagstiftning som gäller arbetet och om arbetsgivarens
+    skyldigheter.
+  ru: Важно, чтобы работодатель знал законодательство, регулирующее труд, и обязанности работодателя.
+  scene_id: scene-7
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0121-s002.wav
+  start_seconds: 287.833333
+  end_seconds: 297.864354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/employer.png
+- sentence_id: hb-c07-u0121-s003
+  sv: Arbetsgivaren ska ta reda på om det finns ett allmänt bindande kollektivavtal som gäller för branschen.
+  ru: Работодатель должен выяснить, действует ли в отрасли общеобязательный коллективный договор.
+  scene_id: scene-7
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0121-s003.wav
+  start_seconds: 299.625
+  end_seconds: 308.541463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/employer.png
+- sentence_id: hb-c07-u0121-s004
+  sv: Föreskrifterna i ett allmänt bindande kollektivavtal om till exempel minimilöner ska följas, även
+    om arbetsgivaren inte skulle höra till något arbetsgivarförbund.
+  ru: Предписания общеобязательного коллективного договора, например о минимальной заработной плате, необходимо
+    соблюдать, даже если работодатель не входит ни в одно объединение работодателей.
+  scene_id: scene-7
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0121-s004.wav
+  start_seconds: 310.291667
+  end_seconds: 324.571939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/employer.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c07-u0121-s005
+  sv: Det är också bra om arbetsgivaren berättar för den anställda om dennes skyldigheter och rättigheter.
+  ru: Также полезно, чтобы работодатель рассказывал работнику о его обязанностях и правах.
+  scene_id: scene-7
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0121-s005.wav
+  start_seconds: 327.333333
+  end_seconds: 336.040816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/employer.png
+- sentence_id: hb-c07-u0122-s001
+  sv: Samma fackförbund omfattar vanligtvis personer inom samma bransch (till exempel sjuksköterskor)
+    eller personer med samma utbildning (till exempel ingenjörer).
+  ru: Один профсоюз обычно объединяет людей одной отрасли, например медсестёр, или людей с одинаковым
+    образованием, например инженеров.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0122-s001.wav
+  start_seconds: 338.5
+  end_seconds: 352.292653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0122-s002
+  sv: Arbetstagarens rätt att höra till ett fackförbund kan inte begränsas med avtal.
+  ru: Право работника состоять в профсоюзе нельзя ограничить договором.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0122-s002.wav
+  start_seconds: 354.083333
+  end_seconds: 361.04932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0122-s003
+  sv: Det är straffbart att diskriminera arbetstagare på grund av deras medlemskap i ett fackförbund.
+  ru: Дискриминация работников из-за их членства в профсоюзе наказуема.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0122-s003.wav
+  start_seconds: 362.833333
+  end_seconds: 371.192517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0123-s001
+  sv: Fackförbundets medlemmar kan delta i utbildning och fritidsaktiviteter som förbundet ordnar.
+  ru: Члены профсоюза могут участвовать в обучении и досуговых мероприятиях, которые организует профсоюз.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0123-s001.wav
+  start_seconds: 372.958333
+  end_seconds: 381.108537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0123-s002
+  sv: De får också stöd av förbundets förtroendeman vid konflikter på arbetsplatsen.
+  ru: При конфликтах на рабочем месте они также получают поддержку профсоюзного представителя.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0123-s002.wav
+  start_seconds: 382.875
+  end_seconds: 389.840986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0123-s003
+  sv: Vid behov får man också råd eller förhandlingsstöd från fackförbundet.
+  ru: При необходимости в профсоюзе можно также получить совет или поддержку на переговорах.
+  scene_id: scene-8
+  visual_cue: Rätt att organisera sig och få stöd; show source-specific association picture without an
+    orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_association
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0123-s003.wav
+  start_seconds: 391.625
+  end_seconds: 397.894388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/association.png
+- sentence_id: hb-c07-u0124-s001
+  sv: På arbetsplatsen representeras fackförbundet och de anställda som är medlemmar i det av förtroendemannen.
+  ru: На рабочем месте профсоюз и работников, которые в нём состоят, представляет профсоюзный представитель.
+  scene_id: scene-9
+  visual_cue: Förtroendemannens uppgifter; show source-specific representative picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0124-s001.wav
+  start_seconds: 400.375
+  end_seconds: 409.500442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0124-s002
+  sv: Förtroendemannen väljs av de anställda.
+  ru: Профсоюзного представителя избирают работники.
+  scene_id: scene-9
+  visual_cue: Förtroendemannens uppgifter; show source-specific representative picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0124-s002.wav
+  start_seconds: 411.291667
+  end_seconds: 415.331939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0124-s003
+  sv: Förtroendemannen agerar som förhandlare, medlare och informationsförmedlare mellan arbetsgivaren
+    och anställda.
+  ru: Профсоюзный представитель выступает переговорщиком, посредником и связующим звеном для передачи
+    информации между работодателем и работниками.
+  scene_id: scene-9
+  visual_cue: Förtroendemannens uppgifter; show source-specific representative picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0124-s003.wav
+  start_seconds: 417.083333
+  end_seconds: 426.835714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0124-s004
+  sv: Man kan också vända sig till förtroendemannen till exempel med frågor om kollektivavtalet.
+  ru: К профсоюзному представителю также можно обращаться, например, с вопросами о коллективном договоре.
+  scene_id: scene-9
+  visual_cue: Förtroendemannens uppgifter; show source-specific representative picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_representative
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0124-s004.wav
+  start_seconds: 428.625
+  end_seconds: 436.705544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/representative.png
+- sentence_id: hb-c07-u0125-s001
+  sv: För att få inkomstrelaterad dagpenning från arbetslöshetskassan finns några villkor.
+  ru: Для получения из кассы по безработице пособия по безработице, соотнесённого с утраченным заработком,
+    необходимо выполнить определённые условия.
+  scene_id: scene-10
+  visual_cue: Arbetslöshetskassans villkor; show source-specific fund picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0125-s001.wav
+  start_seconds: 439.166667
+  end_seconds: 446.480952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/fund.png
+- sentence_id: hb-c07-u0125-s002
+  sv: Ta reda på dessa villkor genast när du ansluter dig till arbetslöshetskassan.
+  ru: Выясните эти условия сразу при вступлении в кассу по безработице.
+  scene_id: scene-10
+  visual_cue: Arbetslöshetskassans villkor; show source-specific fund picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0125-s002.wav
+  start_seconds: 448.25
+  end_seconds: 455.215986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/fund.png
+- sentence_id: hb-c07-u0125-s003
+  sv: Till exempel måste du arbeta och vara medlem av arbetslöshetskassan under en viss period.
+  ru: Например, вы должны работать и состоять в кассе по безработице в течение определённого периода.
+  scene_id: scene-10
+  visual_cue: Arbetslöshetskassans villkor; show source-specific fund picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_fund
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-kollektivavtal/narration/hb-c07-u0125-s003.wav
+  start_seconds: 457.0
+  end_seconds: 465.080544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-kollektivavtal/pictures/fund.png
+render:
+  music_path: studio/media/hb-c07-kollektivavtal/sources/music-bed.flac
+  background_image: studio/media/hb-c07-kollektivavtal/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.6541666666666663
+  music_gain_adjustment_db: 2.0
+  credits:
+  - paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+    heading: Källor · Источники
+  - paragraphs:
+    - Suomen Ammattiliittojen Keskusjärjestö SAK.jpg — Kaihsu Tai · CC BY-SA 3.0
+    - Canon in D for Two Harps — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Akavatalo kesäkuu2017.jpg — RitvaS · CC BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Suomen_Ammattiliittojen_Keskusj%C3%A4rjest%C3%B6_SAK.jpg
+    description: Central Organisation of Finnish Trade Unions, Hakaniemi, Helsinki
+    license: CC BY-SA 3.0

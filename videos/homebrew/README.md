@@ -188,6 +188,27 @@ physical-device playback and user acceptance remain pending.
 All 342 exact Swedish/Russian sentence pairs are covered in **1:07:01**, with distinct background photographs and instrumental music sources. Every preview exceeds the 50% foreground-picture target (minimum 94.9%). Generated media remain local and ignored.
 See the [chapter audit](../../studio/hb-c06-audit.json), [narration checks](../../studio/hb-c06-narration-check.json), [music headroom](../../studio/hb-c06-music-headroom.json), [export reviews](../../studio/hb-c06-visual-review.json), and [listening priorities](../../studio/hb-c06-review.md). Whole-video listening, physical-device playback and user acceptance remain pending.
 
+## Chapter 7 — Arbete, näringsliv och beskattning
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [7.1 Samhällets sektorer och ekonomi](hb-c07-01-ekonomi.mp4) · [credits](hb-c07-01-ekonomi.CREDITS.md) | 9:36 | 100.0% | Ready for whole-video review |
+| [7.2 Arbetsmarknaden och sysselsättning](hb-c07-02-arbetsmarknad.mp4) · [credits](hb-c07-02-arbetsmarknad.CREDITS.md) | 10:20 | 100.0% | Ready for whole-video review |
+| [7.3 Arbetskultur](hb-c07-03-arbetskultur.mp4) · [credits](hb-c07-03-arbetskultur.CREDITS.md) | 9:02 | 100.0% | Ready for whole-video review |
+| [7.4 Arbetsavtal och anställningsformer](hb-c07-04-arbetsavtal.mp4) · [credits](hb-c07-04-arbetsavtal.CREDITS.md) | 16:35 | 100.0% | Ready for whole-video review |
+| [7.5 Arbetstagarens och arbetsgivarens rättigheter och skyldigheter](hb-c07-05-regler.mp4) · [credits](hb-c07-05-regler.CREDITS.md) | 5:46 | 100.0% | Ready for whole-video review |
+| [7.6 Kollektivavtal och fackförbund](hb-c07-06-kollektivavtal.mp4) · [credits](hb-c07-06-kollektivavtal.CREDITS.md) | 8:32 | 100.0% | Ready for whole-video review |
+| [7.7 Lön och arbetstid](hb-c07-07-lon.mp4) · [credits](hb-c07-07-lon.CREDITS.md) | 12:45 | 100.0% | Ready for whole-video review |
+| [7.8 Semester och ledighet](hb-c07-08-ledighet.mp4) · [credits](hb-c07-08-ledighet.CREDITS.md) | 8:44 | 100.0% | Ready for whole-video review |
+| [7.9 Arbetarskydd och företagshälsovård](hb-c07-09-arbetarskydd.mp4) · [credits](hb-c07-09-arbetarskydd.CREDITS.md) | 9:07 | 100.0% | Ready for whole-video review |
+| [7.10 Rekrytering och problem i arbetslivet](hb-c07-10-problem.mp4) · [credits](hb-c07-10-problem.CREDITS.md) | 14:20 | 100.0% | Ready for whole-video review |
+| [7.11 Arbetslöshet och stöd till sysselsättning](hb-c07-11-arbetsloshet.mp4) · [credits](hb-c07-11-arbetsloshet.CREDITS.md) | 14:09 | 100.0% | Ready for whole-video review |
+| [7.12 Företagande och företagsformer](hb-c07-12-foretagande.mp4) · [credits](hb-c07-12-foretagande.CREDITS.md) | 16:30 | 100.0% | Ready for whole-video review |
+| [7.13 Skatter och deklarationsskyldighet](hb-c07-13-skatter.mp4) · [credits](hb-c07-13-skatter.CREDITS.md) | 10:39 | 100.0% | Ready for whole-video review |
+
+All 804 exact Swedish/Russian sentence pairs are covered in **2:26:04**, with distinct background photographs and instrumental music sources. Every preview exceeds the 50% foreground-picture target (minimum 100.0%). Generated media remain local and ignored.
+See the [chapter audit](../../studio/hb-c07-audit.json), [narration checks](../../studio/hb-c07-narration-check.json), [music headroom](../../studio/hb-c07-music-headroom.json), [export reviews](../../studio/hb-c07-visual-review.json), and [listening priorities](../../studio/hb-c07-review.md). Whole-video listening, physical-device playback and user acceptance remain pending.
+
 ## Russian audio
 
 [1.1 Finland i Norden — Russian audio](hb-c01-01-lage.ru.m4a) is available as

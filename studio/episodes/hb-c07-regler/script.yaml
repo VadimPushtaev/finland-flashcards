@@ -1,0 +1,1082 @@
+schema_version: 1
+section_id: hb-c07-regler
+chapter_id: hb-c07
+title_sv: Arbetstagarens och arbetsgivarens rättigheter och skyldigheter
+title_ru: Права и обязанности работника и работодателя
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-regler.yaml
+example_only: false
+source_section_sha256: a12687c6cb61d0888a7286d261718566519b5a498b045687374c71ca5258dec3
+translation_file_sha256: 80f992c9d364cf13da86ae01bdfc350f11f89fb91730749692d972b9b65adc89
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, Chapter7 olive palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans
+    Bold48/Regular40. Fixed Swedish/Russian panel right and source-specific foreground pictures left.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:An office building in Leppävaara Espoo 2024-07-15.jpg by Drefer continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=2.468452380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,mono44100PCM16;2ONNX intra-op threads
+    for initial source-order run. Complete-video listening remains pending; ASR diagnostics cannot approve
+    pronunciation.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Meditation Impromptu 02 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 249.104 seconds; prepared lossless stereo bed 345.583
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Individual pictorial scene plan: source-based diagrams and verified workplace/institution
+    photos. Aim>=50% measured body picture coverage without generic filler. Labels only repeat source
+    concepts; no new current-law claims.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Avtalets två parter
+- id: scene-2
+  description: Arbetstagarens rättigheter
+- id: scene-3
+  description: Arbetsgivarens rättigheter
+- id: scene-4
+  description: Arbetstagarens skyldigheter
+- id: scene-5
+  description: Tystnadsplikt och handlingar
+- id: scene-6
+  description: Arbetsgivarens skyldigheter
+- id: scene-7
+  description: Arbetslagstiftning och likabehandling
+- id: scene-8
+  description: Minimivillkor och tillsyn
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_parties
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Avtalets
+    två parter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_rights
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetstagarens
+    rättigheter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_leadership
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetsgivarens
+    rättigheter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_duties
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetstagarens
+    skyldigheter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_confidential
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Tystnadsplikt
+    och handlingar.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_employer
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetsgivarens
+    skyldigheter.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_laws
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Arbetslagstiftning
+    och likabehandling.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+- id: visual_minimum
+  kind: foreground
+  description: Verified relevant photograph or original source-based pictorial explanation for Minimivillkor
+    och tillsyn.
+  fallback: Use an accurate original pictorial explanation of only source claims if licensed photography
+    unavailable; document any genuinely unsuitable passage.
+sentences:
+- sentence_id: hb-c07-u0081-s001
+  sv: Arbetsgivaren och den anställda har rättigheter och skyldigheter.
+  ru: У работодателя и работника есть права и обязанности.
+  scene_id: scene-1
+  visual_cue: Avtalets två parter; show source-specific parties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_parties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0081-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.962109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/parties.png
+- sentence_id: hb-c07-u0081-s002
+  sv: De fastställs i lagar och kollektivavtal.
+  ru: Они устанавливаются законами и коллективными договорами.
+  scene_id: scene-1
+  visual_cue: Avtalets två parter; show source-specific parties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_parties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0081-s002.wav
+  start_seconds: 10.75
+  end_seconds: 14.790272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/parties.png
+- sentence_id: hb-c07-u0081-s003
+  sv: När båda parterna följer det som man tillsammans kommit överens om löper arbetet bättre.
+  ru: Когда обе стороны соблюдают то, о чём совместно договорились, работа идёт лучше.
+  scene_id: scene-1
+  visual_cue: Avtalets två parter; show source-specific parties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_parties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0081-s003.wav
+  start_seconds: 16.541667
+  end_seconds: 24.413231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/parties.png
+- sentence_id: hb-c07-u0082-s001
+  sv: Till den anställdas viktigaste rättigheter hör bland annat rätten att få
+  ru: К важнейшим правам работника относятся, в частности, право получать
+  scene_id: scene-2
+  visual_cue: Arbetstagarens rättigheter; show source-specific rights picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0082-s001.wav
+  start_seconds: 26.875
+  end_seconds: 33.353367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/rights.png
+- sentence_id: hb-c07-u0083-s001
+  sv: lön i enlighet med kollektivavtalet
+  ru: заработную плату в соответствии с коллективным договором
+  scene_id: scene-2
+  visual_cue: Arbetstagarens rättigheter; show source-specific rights picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0083-s001.wav
+  start_seconds: 35.125
+  end_seconds: 38.747313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/rights.png
+- sentence_id: hb-c07-u0085-s001
+  sv: sådant skydd som lagar och avtal ger för arbetet
+  ru: защиту в сфере труда, которую предоставляют законы и договоры
+  scene_id: scene-2
+  visual_cue: Arbetstagarens rättigheter; show source-specific rights picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0085-s001.wav
+  start_seconds: 40.5
+  end_seconds: 45.097551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/rights.png
+- sentence_id: hb-c07-u0086-s001
+  sv: höra till ett fackförbund
+  ru: состоять в профсоюзе
+  scene_id: scene-2
+  visual_cue: Arbetstagarens rättigheter; show source-specific rights picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0086-s001.wav
+  start_seconds: 46.875
+  end_seconds: 49.661395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/rights.png
+- sentence_id: hb-c07-u0087-s001
+  sv: en trygg och sund arbetsmiljö.
+  ru: безопасную и здоровую рабочую среду.
+  scene_id: scene-2
+  visual_cue: Arbetstagarens rättigheter; show source-specific rights picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_rights
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0087-s001.wav
+  start_seconds: 51.416667
+  end_seconds: 54.481701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/rights.png
+- sentence_id: hb-c07-u0088-s001
+  sv: Till arbetsgivarens rättigheter hör bland annat rätten att
+  ru: К правам работодателя относится, в частности, право
+  scene_id: scene-3
+  visual_cue: Arbetsgivarens rättigheter; show source-specific leadership picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_leadership
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0088-s001.wav
+  start_seconds: 56.958333
+  end_seconds: 62.391803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/leadership.png
+- sentence_id: hb-c07-u0089-s001
+  sv: bestämma vem som anställs i arbete
+  ru: решать, кого принимать на работу
+  scene_id: scene-3
+  visual_cue: Arbetsgivarens rättigheter; show source-specific leadership picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_leadership
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0089-s001.wav
+  start_seconds: 64.166667
+  end_seconds: 67.858639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/leadership.png
+- sentence_id: hb-c07-u0091-s001
+  sv: övervaka och leda arbetet
+  ru: контролировать работу и руководить ею
+  scene_id: scene-3
+  visual_cue: Arbetsgivarens rättigheter; show source-specific leadership picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_leadership
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0091-s001.wav
+  start_seconds: 69.625
+  end_seconds: 72.550714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/leadership.png
+- sentence_id: hb-c07-u0092-s001
+  sv: ge instruktioner och föreskrifter
+  ru: давать инструкции и предписания
+  scene_id: scene-3
+  visual_cue: Arbetsgivarens rättigheter; show source-specific leadership picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_leadership
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0092-s001.wav
+  start_seconds: 74.333333
+  end_seconds: 77.677007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/leadership.png
+- sentence_id: hb-c07-u0093-s001
+  sv: avsluta anställningsförhållanden om vissa villkor uppfylls.
+  ru: прекращать трудовые отношения при выполнении определённых условий.
+  scene_id: scene-3
+  visual_cue: Arbetsgivarens rättigheter; show source-specific leadership picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_leadership
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0093-s001.wav
+  start_seconds: 79.458333
+  end_seconds: 85.100782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/leadership.png
+- sentence_id: hb-c07-u0094-s001
+  sv: En anställd har många skyldigheter.
+  ru: У работника много обязанностей.
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0094-s001.wav
+  start_seconds: 87.583333
+  end_seconds: 90.857347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0094-s002
+  sv: Om hen inte iakttar dem kan anställningsförhållandet till och med avslutas.
+  ru: Если он их не соблюдает, трудовые отношения могут даже быть прекращены.
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0094-s002.wav
+  start_seconds: 92.625
+  end_seconds: 99.451667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0095-s001
+  sv: Den anställda är bland annat skyldig att
+  ru: Работник, в частности, обязан
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0095-s001.wav
+  start_seconds: 101.208333
+  end_seconds: 105.039626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0096-s001
+  sv: utföra arbetet väl
+  ru: хорошо выполнять работу
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0096-s001.wav
+  start_seconds: 106.791667
+  end_seconds: 109.369082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0098-s001
+  sv: följa arbetsgivarens anvisningar och reglerna på arbetsplatsen.
+  ru: следовать указаниям работодателя и правилам на рабочем месте.
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0098-s001.wav
+  start_seconds: 111.125
+  end_seconds: 117.115748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0098-s002
+  sv: Man får till exempel inte komma berusad till jobbet och inte stjäla eller avsiktligen förstöra arbetsgivarens
+    egendom
+  ru: Например, нельзя приходить на работу в нетрезвом виде, воровать или умышленно портить имущество
+    работодателя
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0098-s002.wav
+  start_seconds: 118.875
+  end_seconds: 129.18466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0099-s001
+  sv: bevara affärs- och yrkeshemligheter för arbetsgivarens räkning
+  ru: сохранять коммерческие и профессиональные тайны работодателя
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0099-s001.wav
+  start_seconds: 130.958333
+  end_seconds: 136.670442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0100-s001
+  sv: beakta arbetsgivarens intressen
+  ru: учитывать интересы работодателя
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0100-s001.wav
+  start_seconds: 138.458333
+  end_seconds: 141.802007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0101-s001
+  sv: vägra att delta i verksamhet som konkurrerar med arbetsgivaren.
+  ru: отказываться от участия в деятельности, конкурирующей с работодателем.
+  scene_id: scene-4
+  visual_cue: Arbetstagarens skyldigheter; show source-specific duties picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_duties
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0101-s001.wav
+  start_seconds: 143.583333
+  end_seconds: 149.434762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/duties.png
+- sentence_id: hb-c07-u0102-s001
+  sv: I många yrken, till exempel inom hälsovårdsbranschen, har den anställda också tystnadsplikt.
+  ru: Во многих профессиях, например в здравоохранении, на работника также возлагается обязанность соблюдать
+    конфиденциальность.
+  scene_id: scene-5
+  visual_cue: Tystnadsplikt och handlingar; show source-specific confidential picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_confidential
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0102-s001.wav
+  start_seconds: 151.916667
+  end_seconds: 159.927551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/confidential.png
+- sentence_id: hb-c07-u0102-s002
+  sv: Det betyder att hen under inga omständigheter får berätta för andra om vad hen hör eller hurdana
+    dokument hen ser i sitt arbete.
+  ru: Это означает, что он ни при каких обстоятельствах не вправе рассказывать другим о том, что слышит
+    на работе или какие документы видит.
+  scene_id: scene-5
+  visual_cue: Tystnadsplikt och handlingar; show source-specific confidential picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_confidential
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0102-s002.wav
+  start_seconds: 161.708333
+  end_seconds: 172.017993
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/confidential.png
+- sentence_id: hb-c07-u0102-s003
+  sv: Tystnadsplikten måste iakttas.
+  ru: Обязанность соблюдать конфиденциальность необходимо выполнять.
+  scene_id: scene-5
+  visual_cue: Tystnadsplikt och handlingar; show source-specific confidential picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_confidential
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0102-s003.wav
+  start_seconds: 173.791667
+  end_seconds: 176.856701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/confidential.png
+- sentence_id: hb-c07-u0103-s001
+  sv: Också arbetsgivaren har skyldigheter gentemot de anställda.
+  ru: У работодателя тоже есть обязанности перед работниками.
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0103-s001.wav
+  start_seconds: 179.333333
+  end_seconds: 184.557823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0103-s002
+  sv: Arbetsgivaren måste
+  ru: Работодатель обязан
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0103-s002.wav
+  start_seconds: 186.333333
+  end_seconds: 188.841088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0104-s001
+  sv: följa lagar och avtal
+  ru: соблюдать законы и договоры
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0104-s001.wav
+  start_seconds: 190.625
+  end_seconds: 193.341735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0106-s001
+  sv: behandla alla anställda jämlikt och jämställt
+  ru: относиться ко всем работникам на равных, в том числе независимо от пола
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0106-s001.wav
+  start_seconds: 195.125
+  end_seconds: 199.583231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0107-s001
+  sv: sörja för arbetarskyddet
+  ru: заботиться об охране труда
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0107-s001.wav
+  start_seconds: 201.333333
+  end_seconds: 204.189388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0108-s001
+  sv: ge de viktigaste villkoren för anställningsförhållandet skriftligt till den anställda
+  ru: письменно предоставлять работнику важнейшие условия трудовых отношений
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0108-s001.wav
+  start_seconds: 205.958333
+  end_seconds: 213.411939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0109-s001
+  sv: främja ett gott arbetsklimat och de anställdas arbetsprestationer och yrkesmässiga utveckling.
+  ru: способствовать хорошему климату в коллективе, результативной работе сотрудников и их профессиональному
+    развитию.
+  scene_id: scene-6
+  visual_cue: Arbetsgivarens skyldigheter; show source-specific employer picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_employer
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0109-s001.wav
+  start_seconds: 215.166667
+  end_seconds: 223.52585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/employer.png
+- sentence_id: hb-c07-u0110-s001
+  sv: Arbetslagstiftningen omfattar många olika lagar.
+  ru: Трудовое законодательство включает много разных законов.
+  scene_id: scene-7
+  visual_cue: Arbetslagstiftning och likabehandling; show source-specific laws picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_laws
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0110-s001.wav
+  start_seconds: 226.0
+  end_seconds: 230.597551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/laws.png
+- sentence_id: hb-c07-u0110-s002
+  sv: För anställda är arbetsavtalslagen, arbetstidslagen och semesterlagen de viktigaste.
+  ru: Для работников важнейшими являются закон о трудовых договорах (arbetsavtalslagen), закон о рабочем
+    времени (arbetstidslagen) и закон об ежегодных отпусках (semesterlagen).
+  scene_id: scene-7
+  visual_cue: Arbetslagstiftning och likabehandling; show source-specific laws picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_laws
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0110-s002.wav
+  start_seconds: 232.375
+  end_seconds: 240.176905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/laws.png
+- sentence_id: hb-c07-u0110-s003
+  sv: Också diskrimineringslagen är viktig.
+  ru: Важен также закон о равенстве (diskrimineringslagen).
+  scene_id: scene-7
+  visual_cue: Arbetslagstiftning och likabehandling; show source-specific laws picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_laws
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0110-s003.wav
+  start_seconds: 241.958333
+  end_seconds: 245.650306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/laws.png
+- sentence_id: hb-c07-u0110-s004
+  sv: Den skyddar anställda och arbetssökande mot till exempel diskriminering på grund av språk, ursprung
+    eller religion.
+  ru: Он защищает работников и соискателей, например, от дискриминации по признаку языка, происхождения
+    или религии.
+  scene_id: scene-7
+  visual_cue: Arbetslagstiftning och likabehandling; show source-specific laws picture without an orphaned
+    caption.
+  asset_ids:
+  - episode_background
+  - visual_laws
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0110-s004.wav
+  start_seconds: 247.416667
+  end_seconds: 257.447687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/laws.png
+- sentence_id: hb-c07-u0111-s001
+  sv: På alla arbetsplatser måste lagar följas.
+  ru: На всех рабочих местах необходимо соблюдать законы.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0111-s001.wav
+  start_seconds: 259.916667
+  end_seconds: 263.887279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0111-s002
+  sv: Dessutom måste kollektivavtal följas inom nästan alla branscher.
+  ru: Кроме того, почти во всех отраслях необходимо соблюдать коллективные договоры.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0111-s002.wav
+  start_seconds: 265.666667
+  end_seconds: 271.587755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0111-s003
+  sv: Lagarna och kollektivavtalen fastställer minimivillkoren för anställningsförhållandet.
+  ru: Законы и коллективные договоры устанавливают минимальные условия трудовых отношений.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0111-s003.wav
+  start_seconds: 273.375
+  end_seconds: 280.967925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0111-s004
+  sv: De gäller på samma sätt för finländska och utländska arbetstagare.
+  ru: Они одинаково распространяются на финских и иностранных работников.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0111-s004.wav
+  start_seconds: 282.75
+  end_seconds: 288.671088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0112-s001
+  sv: Kollektivavtal är avtal mellan arbetsgivar- och arbetstagarorganisationer.
+  ru: Коллективные договоры — это соглашения между организациями работодателей и работников.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0112-s001.wav
+  start_seconds: 290.458333
+  end_seconds: 297.563639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0112-s002
+  sv: I dem avtalas ofta om bättre villkor än de som föreskrivs i lag.
+  ru: В них часто договариваются о лучших условиях, чем предусмотрено законом.
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0112-s002.wav
+  start_seconds: 299.333333
+  end_seconds: 305.324082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+- sentence_id: hb-c07-u0112-s003
+  sv: Efterlevnaden av arbetslagstiftningen övervakas av arbetarskyddsmyndigheten.
+  ru: Соблюдение трудового законодательства контролирует орган надзора за охраной труда (arbetarskyddsmyndigheten).
+  scene_id: scene-8
+  visual_cue: Minimivillkor och tillsyn; show source-specific minimum picture without an orphaned caption.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - 'Whole-video listening: Swedish compounds, Finnish terms and any numbers; transcript diagnostics are
+    not auditory acceptance.'
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-regler/narration/hb-c07-u0112-s003.wav
+  start_seconds: 307.083333
+  end_seconds: 314.04932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-regler/pictures/minimum.png
+render:
+  music_path: studio/media/hb-c07-regler/sources/music-bed.flac
+  background_image: studio/media/hb-c07-regler/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.468452380952381
+  music_gain_adjustment_db: 2.0
+  credits:
+  - paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+    heading: Källor · Источники
+  - paragraphs:
+    - An office building in Leppävaara Espoo 2024-07-15.jpg — Drefer · CC BY-SA 4.0
+    - Meditation Impromptu 02 — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:An_office_building_in_Lepp%C3%A4vaara_Espoo_2024-07-15.jpg
+    description: Office building in Leppävaara, Espoo, Finland. July of 2024.
+    license: CC BY-SA 4.0

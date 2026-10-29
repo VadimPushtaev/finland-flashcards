@@ -1,0 +1,1802 @@
+schema_version: 1
+section_id: hb-c07-lon
+chapter_id: hb-c07
+title_sv: Lön och arbetstid
+title_ru: Заработная плата и рабочее время
+source_path: data/homebrew/sv/chapters/07_arbete_naringsliv_och_beskattning.yaml
+translation_path: data/homebrew/ru/sections/hb-c07-lon.yaml
+example_only: false
+source_section_sha256: ded40e94cb726be345c1a786995361dd3a66adfd5ad884753a844e8233a6b894
+translation_file_sha256: 7e7c702e51ad3c5fa9faacd22c87b775cb379edde1d96dbabbca49a9fbe4b20f
+episode_decisions:
+- id: opening
+  decision: Exact bilingual heading on an unspoken3-second card; continuous background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Use the individually planned consecutive scenes; every source sentence/list fragment exactly
+    once in original order without added spoken transitions.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps, muted olive Chapter7palette {''background'': ''#30371f'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d2d9b7'', ''highlight'': ''#e7bf78'', ''separator'': ''#636e42''}. Liberation Sans48/40;
+    fixed right bilingual panel and separate left picture area.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears0.25seconds before complete measured narration; pause1.5seconds normally,2.2at
+    scene boundaries,2.5for long pairs. No acceleration to force runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:0661 Nordea Helsinki.JPG by Arto Alanenpää continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=5.461011904761905. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Shared local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16; actual threads/settings
+    measured in metrics. Names/numbers/overallbalance pending whole-video listening; ASR diagnostic only.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Thinking of You by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 110.054 seconds; prepared lossless stereo bed 764.542 seconds.
+    Repeat count 7, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Change relevant foregrounds at employment-source topic boundaries: accurately identified
+    photos of places/objects and original pictorial process diagrams. Aim>=50% measured narrated body
+    display; never imply photographed people face the depicted employment problem. Source text unchanged;
+    no added employment advice or updated claims.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Unspoken source/media credit cards and additional readable picture attributions,15seconds
+    percard; full source,license and adaptation details accompany canonical export.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Exact archived Swedish and current reviewed Russian display
+    preserved.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Branschernas minimilöner i kollektivavtal
+- id: scene-2
+  description: Olika löneformer
+- id: scene-3
+  description: Tillägg och söndagsarbete
+- id: scene-4
+  description: Lönespecifikation och korrigering
+- id: scene-5
+  description: Sedvanlig och skälig lön samt prövotid
+- id: scene-6
+  description: Tim-, vecko-, månads- och ackordslön
+- id: scene-7
+  description: Lön på överenskommen bankdag
+- id: scene-8
+  description: Bruttolön, avdrag och nettolön
+- id: scene-9
+  description: Tulorekisteri och korrekta uppgifter
+- id: scene-10
+  description: Arbetstid och regler
+- id: scene-11
+  description: Arbetstidsbokföring
+- id: scene-12
+  description: Ordinarie arbetstid och lediga dagar
+- id: scene-13
+  description: Periodiskt arbete i vissa yrken
+- id: scene-14
+  description: Flexibel arbetstid inom avtalets villkor
+- id: scene-15
+  description: Skiftarbete och skiftlista
+- id: scene-16
+  description: Övertid med bådas samtycke
+- id: scene-17
+  description: Skriftlig förklaring när arbete inte längre erbjuds
+- id: scene-18
+  description: Bankkonto och undantagsvis kontanter
+- id: scene-19
+  description: Mat- och kafferaster
+- id: scene-20
+  description: Privata ärenden och arbetstelefon
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved episode-specific licensed photograph, distinct across series.
+  fallback: Another verified topic-related reusable photograph with revised source reservation.
+- id: music_bed
+  kind: music
+  description: Reserved distinct calm KevinMacLeod instrumental track with full attribution.
+  fallback: Another centrally reserved suitable licensed instrumental; retain narration clarity.
+- id: narration
+  kind: narration
+  description: One complete measured local F1 Swedish clip per frozen source sentence in order.
+  fallback: Targeted speech-only pronunciation correction into separate retake folder; preserve exact
+    meaning.
+- id: visual_minimum
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Branschernas minimilöner
+    i kollektivavtal.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_payforms
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Olika löneformer.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_supplements
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Tillägg och söndagsarbete.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_payslip
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Lönespecifikation
+    och korrigering.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_agreement
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Sedvanlig och skälig
+    lön samt prövotid.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_bankpay
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Lön på överenskommen
+    bankdag.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_registry
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Tulorekisteri och
+    korrekta uppgifter.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_hours
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Arbetstid och regler.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_records
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Arbetstidsbokföring.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_limits
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Ordinarie arbetstid
+    och lediga dagar.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_periods
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Periodiskt arbete
+    i vissa yrken.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_flexibility
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Flexibel arbetstid
+    inom avtalets villkor.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_shifts
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Skiftarbete och
+    skiftlista.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_overtime
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Övertid med bådas
+    samtycke.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_explanation
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Skriftlig förklaring
+    när arbete inte längre erbjuds.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_cash
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Bankkonto och undantagsvis
+    kontanter.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_breaks
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Mat- och kafferaster.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+- id: visual_phone
+  kind: foreground
+  description: Relevant photograph or original pictorial source-based explanation for Privata ärenden
+    och arbetstelefon.
+  fallback: Verified alternative photo or useful pictorial diagram; only document genuine coverage shortfall
+    after reasonable research.
+sentences:
+- sentence_id: hb-c07-u0126-s001
+  sv: I Finland finns ingen allmän minimilön som skulle gälla alla yrken.
+  ru: В Финляндии нет единой минимальной заработной платы, которая распространялась бы на все профессии.
+  scene_id: scene-1
+  visual_cue: Show Branschernas minimilöner i kollektivavtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0126-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.171088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/minimum.png
+- sentence_id: hb-c07-u0126-s002
+  sv: Minilönerna för olika branscher anges i kollektivavtalen.
+  ru: Минимальная заработная плата для разных отраслей указывается в коллективных договорах.
+  scene_id: scene-1
+  visual_cue: Show Branschernas minimilöner i kollektivavtal using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_minimum
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0126-s002.wav
+  start_seconds: 10.958333
+  end_seconds: 16.322143
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/minimum.png
+- sentence_id: hb-c07-u0126-s003
+  sv: Lönen kan vara antingen månadslön eller timlön.
+  ru: Заработная плата может быть месячной или почасовой.
+  scene_id: scene-2
+  visual_cue: Show Olika löneformer using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payforms
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0126-s003.wav
+  start_seconds: 18.791667
+  end_seconds: 23.040918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payforms.png
+- sentence_id: hb-c07-u0126-s004
+  sv: Lönen kan också vara en ackordslön.
+  ru: Заработная плата также может быть сдельной.
+  scene_id: scene-2
+  visual_cue: Show Olika löneformer using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payforms
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0126-s004.wav
+  start_seconds: 24.791667
+  end_seconds: 28.27466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payforms.png
+- sentence_id: hb-c07-u0126-s005
+  sv: Då får en person lön när ett visst projekt eller en viss arbetsprestation har slutförts.
+  ru: В таком случае человек получает оплату после завершения определённого проекта или определённой работы.
+  scene_id: scene-2
+  visual_cue: Show Olika löneformer using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payforms
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0126-s005.wav
+  start_seconds: 30.041667
+  end_seconds: 37.634592
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payforms.png
+- sentence_id: hb-c07-u0127-s001
+  sv: Om en anställd arbetar på kvällar, helger eller högtider får hen utöver den vanliga lönen också
+    tillägg.
+  ru: Если работник работает по вечерам, в выходные или праздники, он получает надбавки к обычной заработной
+    плате.
+  scene_id: scene-3
+  visual_cue: Show Tillägg och söndagsarbete using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_supplements
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0127-s001.wav
+  start_seconds: 40.125
+  end_seconds: 49.111122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/supplements.png
+- sentence_id: hb-c07-u0127-s002
+  sv: Tilläggens storlek beror på yrket och kollektivavtalet för branschen.
+  ru: Размер надбавок зависит от профессии и коллективного договора отрасли.
+  scene_id: scene-3
+  visual_cue: Show Tillägg och söndagsarbete using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_supplements
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0127-s002.wav
+  start_seconds: 50.875
+  end_seconds: 56.865748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/supplements.png
+- sentence_id: hb-c07-u0127-s003
+  sv: För söndagsarbete måste man betala dubbel lön inom alla branscher.
+  ru: За работу по воскресеньям во всех отраслях необходимо платить вдвойне.
+  scene_id: scene-3
+  visual_cue: Show Tillägg och söndagsarbete using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_supplements
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0127-s003.wav
+  start_seconds: 58.625
+  end_seconds: 64.615748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/supplements.png
+- sentence_id: hb-c07-u0127-s004
+  sv: Om en anställd på arbetsgivarens order arbetar övertid utöver den normala arbetstiden, måste extra
+    lön betalas också för det.
+  ru: Если работник по распоряжению работодателя работает сверхурочно сверх обычного рабочего времени,
+    за это также необходимо платить дополнительно.
+  scene_id: scene-3
+  visual_cue: Show Tillägg och söndagsarbete using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_supplements
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0127-s004.wav
+  start_seconds: 66.375
+  end_seconds: 77.450918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/supplements.png
+- sentence_id: hb-c07-u0127-s005
+  sv: I kollektivavtalet för den egna branschen finns information om hurdana tillägg som ska betalas till
+    arbetstagarna.
+  ru: В коллективном договоре своей отрасли можно найти сведения о том, какие надбавки должны выплачиваться
+    работникам.
+  scene_id: scene-3
+  visual_cue: Show Tillägg och söndagsarbete using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_supplements
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0127-s005.wav
+  start_seconds: 79.208333
+  end_seconds: 89.169694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/supplements.png
+- sentence_id: hb-c07-u0128-s001
+  sv: Arbetsgivaren måste ge den anställda en lönespecifikation.
+  ru: Работодатель обязан выдавать работнику расчётный листок.
+  scene_id: scene-4
+  visual_cue: Show Lönespecifikation och korrigering using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0128-s001.wav
+  start_seconds: 91.625
+  end_seconds: 96.98881
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0128-s002
+  sv: I den ser den anställda alla skatter och övriga avgifter som dragits av på lönen.
+  ru: В нём работник видит все налоги и другие платежи, удержанные из заработной платы.
+  scene_id: scene-4
+  visual_cue: Show Lönespecifikation och korrigering using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0128-s002.wav
+  start_seconds: 98.75
+  end_seconds: 106.203605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0128-s003
+  sv: I specifikationen kan man också kontrollera att lönen och tilläggen har betalats ut korrekt.
+  ru: По расчётному листку также можно проверить, правильно ли выплачены заработная плата и надбавки.
+  scene_id: scene-4
+  visual_cue: Show Lönespecifikation och korrigering using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0128-s003.wav
+  start_seconds: 107.958333
+  end_seconds: 115.760238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0128-s004
+  sv: Om det finns ett fel i lönebetalningen och det har betalats för lite lön, ska man be att det korrigeras.
+  ru: Если при выплате заработной платы допущена ошибка и выплачено слишком мало, следует попросить её
+    исправить.
+  scene_id: scene-4
+  visual_cue: Show Lönespecifikation och korrigering using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0128-s004.wav
+  start_seconds: 117.541667
+  end_seconds: 126.17949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0128-s005
+  sv: Om man av misstag har fått för mycket lön är den anställda skyldig att betala tillbaka den del som
+    överstiger den normala lönen.
+  ru: Если по ошибке выплачено слишком много, работник обязан вернуть часть, превышающую обычную заработную
+    плату.
+  scene_id: scene-4
+  visual_cue: Show Lönespecifikation och korrigering using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0128-s005.wav
+  start_seconds: 127.958333
+  end_seconds: 138.894932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0129-s001
+  sv: Om branschen inte har ett kollektivavtal kan arbetsgivaren och arbetstagaren komma överens om lönen
+    sinsemellan.
+  ru: Если в отрасли нет коллективного договора, работодатель и работник могут договориться о заработной
+    плате между собой.
+  scene_id: scene-5
+  visual_cue: Show Sedvanlig och skälig lön samt prövotid using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_agreement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0129-s001.wav
+  start_seconds: 141.375
+  end_seconds: 151.197041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/agreement.png
+- sentence_id: hb-c07-u0129-s002
+  sv: Enligt lagen ska lönen vara sedvanlig och skälig, med andra ord ska du få samma lön som andra som
+    utför samma eller liknande arbete.
+  ru: По закону заработная плата должна быть обычной для такой работы и разумной, то есть вы должны получать
+    столько же, сколько другие люди, выполняющие такую же или похожую работу.
+  scene_id: scene-5
+  visual_cue: Show Sedvanlig och skälig lön samt prövotid using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_agreement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0129-s002.wav
+  start_seconds: 152.958333
+  end_seconds: 164.034252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/agreement.png
+- sentence_id: hb-c07-u0130-s001
+  sv: Om du har en prövotid ska normal lön betalas under denna period.
+  ru: Если у вас есть испытательный срок, в этот период должна выплачиваться обычная заработная плата.
+  scene_id: scene-5
+  visual_cue: Show Sedvanlig och skälig lön samt prövotid using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_agreement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0130-s001.wav
+  start_seconds: 165.791667
+  end_seconds: 171.712755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/agreement.png
+- sentence_id: hb-c07-u0130-s002
+  sv: Att arbeta utan lön är lagligt endast i sysselsättningstjänsternas arbetsprövning, i volontärarbete
+    eller under en praktik som ingår i studierna.
+  ru: Работать без оплаты законно только в рамках пробной работы, организованной службой занятости, волонтёрской
+    деятельности или практики, входящей в программу обучения.
+  scene_id: scene-5
+  visual_cue: Show Sedvanlig och skälig lön samt prövotid using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_agreement
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0130-s002.wav
+  start_seconds: 173.5
+  end_seconds: 185.899456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/agreement.png
+- sentence_id: hb-c07-u0131-s001
+  sv: Lönen för arbetet kan betalas som timlön, veckolön eller månadslön.
+  ru: За работу могут платить по часовой, недельной или месячной ставке.
+  scene_id: scene-6
+  visual_cue: Show Tim-, vecko-, månads- och ackordslön using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payforms
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0131-s001.wav
+  start_seconds: 188.375
+  end_seconds: 194.365748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payforms.png
+- sentence_id: hb-c07-u0131-s002
+  sv: I vissa branscher betalas ackordslön (urakkapalkka), som baserar sig på prestationen.
+  ru: В некоторых отраслях выплачивается сдельная заработная плата (urakkapalkka), зависящая от результата
+    работы.
+  scene_id: scene-6
+  visual_cue: Show Tim-, vecko-, månads- och ackordslön using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payforms
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0131-s002.wav
+  start_seconds: 196.125
+  end_seconds: 203.857245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payforms.png
+- sentence_id: hb-c07-u0132-s001
+  sv: Arbetsgivaren ska betala in lönen på ditt bankkonto den dag som överenskommits i arbetsavtalet.
+  ru: Работодатель должен перечислять заработную плату на ваш банковский счёт в день, согласованный в
+    трудовом договоре.
+  scene_id: scene-7
+  visual_cue: Show Lön på överenskommen bankdag using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_bankpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0132-s001.wav
+  start_seconds: 206.333333
+  end_seconds: 214.553197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/bankpay.png
+- sentence_id: hb-c07-u0132-s002
+  sv: Vanligtvis betalas lönen en gång i månaden eller varannan vecka.
+  ru: Обычно заработная плата выплачивается раз в месяц или раз в две недели.
+  scene_id: scene-7
+  visual_cue: Show Lön på överenskommen bankdag using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_bankpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0132-s002.wav
+  start_seconds: 216.333333
+  end_seconds: 221.975782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/bankpay.png
+- sentence_id: hb-c07-u0132-s003
+  sv: Om utbetalningsdagen infaller på veckoslutet eller en helgdag ska lönen betalas den föregående vardagen.
+  ru: Если день выплаты приходится на выходной или праздник, заработная плата должна выплачиваться в предшествующий
+    будний день.
+  scene_id: scene-7
+  visual_cue: Show Lön på överenskommen bankdag using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_bankpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0132-s003.wav
+  start_seconds: 223.75
+  end_seconds: 232.596803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/bankpay.png
+- sentence_id: hb-c07-u0132-s004
+  sv: Lön betalas också under sjukledighet och semester.
+  ru: Заработная плата также выплачивается во время больничного и ежегодного отпуска.
+  scene_id: scene-7
+  visual_cue: Show Lön på överenskommen bankdag using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_bankpay
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0132-s004.wav
+  start_seconds: 234.375
+  end_seconds: 238.972551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/bankpay.png
+- sentence_id: hb-c07-u0133-s001
+  sv: Av lönespecifikationen framgår hur mycket lön du har fått, vilka avdrag som gjorts från denna bruttolön
+    (bruttopalkka) och hur mycket pengar som betalas in på ditt konto, alltså vad din nettolön (nettopalkka)
+    är.
+  ru: В расчётном листке указано, какая заработная плата вам начислена, какие удержания произведены из
+    этой суммы брутто (bruttopalkka) и сколько денег перечисляется на ваш счёт, то есть какова ваша заработная
+    плата нетто (nettopalkka).
+  scene_id: scene-8
+  visual_cue: Show Bruttolön, avdrag och nettolön using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0133-s001.wav
+  start_seconds: 241.458333
+  end_seconds: 258.59466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+  text_style:
+    sv_size: 46
+    ru_size: 38
+- sentence_id: hb-c07-u0133-s002
+  sv: Du ska kontrollera att uppgifterna i lönespecifikationen är korrekta.
+  ru: Вы должны проверять правильность сведений в расчётном листке.
+  scene_id: scene-8
+  visual_cue: Show Bruttolön, avdrag och nettolön using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0133-s002.wav
+  start_seconds: 261.375
+  end_seconds: 267.644388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0133-s003
+  sv: Skriv upp dina arbetstimmar så är det lättare att kontrollera lönespecifikationen.
+  ru: Записывайте отработанные часы, чтобы было легче проверять расчётный листок.
+  scene_id: scene-8
+  visual_cue: Show Bruttolön, avdrag och nettolön using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_payslip
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0133-s003.wav
+  start_seconds: 269.416667
+  end_seconds: 276.939932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/payslip.png
+- sentence_id: hb-c07-u0134-s001
+  sv: Tulorekisteri är en databas dit arbetsgivarna anmäler lönerna som de betalat till sina anställda.
+  ru: Реестр доходов Tulorekisteri — это база данных, в которую работодатели сообщают о заработной плате,
+    выплаченной своим работникам.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0134-s001.wav
+  start_seconds: 279.416667
+  end_seconds: 288.12415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0134-s002
+  sv: Uppgifterna i tulorekisteri används av många organisationer och myndigheter som har rätt att göra
+    det.
+  ru: Сведения из tulorekisteri используют многие организации и органы власти, имеющие на это право.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0134-s002.wav
+  start_seconds: 289.875
+  end_seconds: 299.139762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0134-s003
+  sv: Förutom Skatteförvaltningen är dessa Migrationsverket (Maahanmuuttovirasto), FPA (Kela), Pensionsskyddscentralen
+    (Eläketurvakeskus), arbetslöshetskassorna och andra myndigheter.
+  ru: Помимо Налогового управления (Skatteförvaltningen), это Миграционная служба (Migrationsverket, по-фински
+    Maahanmuuttovirasto), Ведомство социального обеспечения FPA (Kela), Центр пенсионного обеспечения
+    (Pensionsskyddscentralen, по-фински Eläketurvakeskus), кассы по безработице и другие органы власти.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0134-s003.wav
+  start_seconds: 300.916667
+  end_seconds: 317.495714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+  text_style:
+    sv_size: 44
+    ru_size: 35
+- sentence_id: hb-c07-u0135-s001
+  sv: Arbetsgivaren ansvarar för att anmäla korrekta uppgifter till inkomstregistret.
+  ru: Работодатель отвечает за передачу правильных сведений в реестр доходов.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0135-s001.wav
+  start_seconds: 320.25
+  end_seconds: 327.424966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0135-s002
+  sv: När löneuppgifterna är korrekt anmälda borde du se samma belopp på ditt konto och i inkomstregistret.
+  ru: Если сведения о заработной плате переданы правильно, на своём счёте и в реестре доходов вы должны
+    видеть одинаковую сумму.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0135-s002.wav
+  start_seconds: 329.208333
+  end_seconds: 337.985476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0135-s003
+  sv: Om det finns fel i uppgifterna ska du be arbetsgivaren att korrigera uppgifterna i inkomstregistret.
+  ru: Если в сведениях есть ошибки, попросите работодателя исправить сведения в реестре доходов.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0135-s003.wav
+  start_seconds: 339.75
+  end_seconds: 348.805782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0135-s004
+  sv: Du kan fråga skattemyndigheterna om mer information.
+  ru: Дополнительную информацию можно запросить у налоговых органов.
+  scene_id: scene-9
+  visual_cue: Show Tulorekisteri och korrekta uppgifter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_registry
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0135-s004.wav
+  start_seconds: 350.583333
+  end_seconds: 355.250544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/registry.png
+- sentence_id: hb-c07-u0136-s001
+  sv: Med arbetstid avses den tid som används på arbetet och som arbetstagaren ska befinna sig på arbetsplatsen
+    eller finnas tillgänglig för arbetsgivarens förfogande.
+  ru: Под рабочим временем понимается время, затрачиваемое на работу, когда работник должен находиться
+    на рабочем месте или быть в распоряжении работодателя.
+  scene_id: scene-10
+  visual_cue: Show Arbetstid och regler using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_hours
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0136-s001.wav
+  start_seconds: 357.708333
+  end_seconds: 371.431327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/hours.png
+- sentence_id: hb-c07-u0136-s002
+  sv: I Finland regleras arbetstiden av arbetstidslagen (työaikalaki) och kollektivavtalen (työehtosopimus).
+  ru: В Финляндии рабочее время регулируется законом о рабочем времени (arbetstidslagen, по-фински työaikalaki)
+    и коллективными договорами (työehtosopimus).
+  scene_id: scene-10
+  visual_cue: Show Arbetstid och regler using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_hours
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0136-s002.wav
+  start_seconds: 373.208333
+  end_seconds: 382.473095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/hours.png
+- sentence_id: hb-c07-u0137-s001
+  sv: Arbetsgivaren måste bokföra dina arbetstimmar.
+  ru: Работодатель обязан вести учёт ваших рабочих часов.
+  scene_id: scene-11
+  visual_cue: Show Arbetstidsbokföring using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_records
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0137-s001.wav
+  start_seconds: 384.958333
+  end_seconds: 389.416565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/records.png
+- sentence_id: hb-c07-u0137-s002
+  sv: Du har rätt att få en kopia av arbetstidsbokföringen.
+  ru: Вы имеете право получить копию учёта рабочего времени.
+  scene_id: scene-11
+  visual_cue: Show Arbetstidsbokföring using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_records
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0137-s002.wav
+  start_seconds: 391.166667
+  end_seconds: 396.042857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/records.png
+- sentence_id: hb-c07-u0137-s003
+  sv: Det är bra att också själv skriva upp hur många timmar du har arbetat.
+  ru: Полезно и самому записывать, сколько часов вы отработали.
+  scene_id: scene-11
+  visual_cue: Show Arbetstidsbokföring using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_records
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0137-s003.wav
+  start_seconds: 397.833333
+  end_seconds: 404.102721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/records.png
+- sentence_id: hb-c07-u0137-s004
+  sv: Kom ihåg att också anteckna när arbetsskiften börjar och slutar.
+  ru: Не забывайте также отмечать время начала и окончания рабочих смен.
+  scene_id: scene-11
+  visual_cue: Show Arbetstidsbokföring using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_records
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0137-s004.wav
+  start_seconds: 405.875
+  end_seconds: 411.865748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/records.png
+- sentence_id: hb-c07-u0138-s001
+  sv: Arbetstiden varierar i olika branscher.
+  ru: Рабочее время различается в зависимости от отрасли.
+  scene_id: scene-12
+  visual_cue: Show Ordinarie arbetstid och lediga dagar using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_limits
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0138-s001.wav
+  start_seconds: 414.333333
+  end_seconds: 418.164626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/limits.png
+- sentence_id: hb-c07-u0138-s002
+  sv: Enligt lag får den ordinarie arbetstiden (säännöllinen työaika) vara högst åtta timmar per dygn
+    och 40 timmar per vecka.
+  ru: По закону нормальное рабочее время (säännöllinen työaika) не может превышать восьми часов в сутки
+    и 40 часов в неделю.
+  scene_id: scene-12
+  visual_cue: Show Ordinarie arbetstid och lediga dagar using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_limits
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Enligt lag får den ordinarie arbetstiden (säännöllinen työaika) vara högst åtta timmar per dygn
+      och fyrtio timmar per vecka.
+    reason: Speech-only expansion of exact source hours or percentage; displayed Swedish and Russian remain
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0138-s002.wav
+  start_seconds: 419.916667
+  end_seconds: 430.295986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/limits.png
+- sentence_id: hb-c07-u0138-s003
+  sv: Arbetstagaren har vanligtvis rätt till två lediga dagar per vecka.
+  ru: Работник обычно имеет право на два выходных дня в неделю.
+  scene_id: scene-12
+  visual_cue: Show Ordinarie arbetstid och lediga dagar using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_limits
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0138-s003.wav
+  start_seconds: 432.083333
+  end_seconds: 438.074082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/limits.png
+- sentence_id: hb-c07-u0139-s001
+  sv: I vissa yrken, till exempel i restaurangbranschen, transportbranschen och på vårdinrättningar, kan
+    den ordinarie arbetstiden ordnas som periodiskt arbete.
+  ru: В некоторых профессиях, например в ресторанном бизнесе, на транспорте и в лечебных учреждениях,
+    нормальное рабочее время может организовываться как работа с суммированным учётом рабочего времени.
+  scene_id: scene-13
+  visual_cue: Show Periodiskt arbete i vissa yrken using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_periods
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0139-s001.wav
+  start_seconds: 440.541667
+  end_seconds: 453.777041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/periods.png
+- sentence_id: hb-c07-u0139-s002
+  sv: I detta fall är den ordinarie arbetstiden antingen 80 timmar under en tvåveckorsperiod eller 120
+    timmar under en treveckorsperiod.
+  ru: В таком случае нормальное рабочее время составляет либо 80 часов за двухнедельный период, либо 120
+    часов за трёхнедельный период.
+  scene_id: scene-13
+  visual_cue: Show Periodiskt arbete i vissa yrken using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_periods
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: I detta fall är den ordinarie arbetstiden antingen åttio timmar under en tvåveckorsperiod eller
+      hundratjugo timmar under en treveckorsperiod.
+    reason: Speech-only expansion of exact source hours or percentage; displayed Swedish and Russian remain
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0139-s002.wav
+  start_seconds: 455.541667
+  end_seconds: 467.592823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/periods.png
+- sentence_id: hb-c07-u0139-s003
+  sv: Kontrollera arbetstiden i kollektivavtalet för din bransch.
+  ru: Проверьте рабочее время в коллективном договоре своей отрасли.
+  scene_id: scene-13
+  visual_cue: Show Periodiskt arbete i vissa yrken using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_periods
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0139-s003.wav
+  start_seconds: 469.375
+  end_seconds: 474.947789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/periods.png
+- sentence_id: hb-c07-u0140-s001
+  sv: Flexibel arbetstid (liukuva työaika) innebär att du själv kan bestämma vilken tid under dagen du
+    börjar och slutar jobba.
+  ru: Гибкое рабочее время (liukuva työaika) означает, что вы сами можете определять, в какое время дня
+    начинать и заканчивать работу.
+  scene_id: scene-14
+  visual_cue: Show Flexibel arbetstid inom avtalets villkor using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_flexibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0140-s001.wav
+  start_seconds: 477.416667
+  end_seconds: 488.213946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/flexibility.png
+- sentence_id: hb-c07-u0140-s002
+  sv: Du måste ändå följa de randvillkor som avtalas i arbetsavtalet.
+  ru: Однако вы должны соблюдать ограничения, согласованные в трудовом договоре.
+  scene_id: scene-14
+  visual_cue: Show Flexibel arbetstid inom avtalets villkor using the source-specific foreground defined
+    in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_flexibility
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0140-s002.wav
+  start_seconds: 490.0
+  end_seconds: 495.921088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/flexibility.png
+- sentence_id: hb-c07-u0141-s001
+  sv: I skiftarbete (vuorotyö) varierar arbetsskiften så att du till exempel kan arbeta i morgonskift,
+    kvällsskift eller nattskift.
+  ru: При сменной работе (vuorotyö) рабочие смены меняются, так что вы можете работать, например, в утреннюю,
+    вечернюю или ночную смену.
+  scene_id: scene-15
+  visual_cue: Show Skiftarbete och skiftlista using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_shifts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0141-s001.wav
+  start_seconds: 498.375
+  end_seconds: 509.311599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/shifts.png
+- sentence_id: hb-c07-u0141-s002
+  sv: Arbetsgivaren måste göra en skiftlista i förväg som du har rätt att se senast en vecka innan arbetsveckan
+    börjar.
+  ru: Работодатель обязан заранее составить график смен, с которым вы имеете право ознакомиться не позднее
+    чем за неделю до начала рабочей недели.
+  scene_id: scene-15
+  visual_cue: Show Skiftarbete och skiftlista using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_shifts
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0141-s002.wav
+  start_seconds: 511.083333
+  end_seconds: 520.975034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/shifts.png
+- sentence_id: hb-c07-u0142-s001
+  sv: Om arbetsgivaren ber dig att arbeta övertid (ylityö), det vill säga att arbeta utöver din ordinarie
+    arbetstid, måste du få en högre lön för det.
+  ru: Если работодатель просит вас работать сверхурочно (ylityö), то есть сверх нормального рабочего времени,
+    вы должны получать за это повышенную заработную плату.
+  scene_id: scene-16
+  visual_cue: Show Övertid med bådas samtycke using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_overtime
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0142-s001.wav
+  start_seconds: 523.458333
+  end_seconds: 535.788129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/overtime.png
+- sentence_id: hb-c07-u0142-s002
+  sv: Höjningen är minst 50 procent.
+  ru: Надбавка составляет не менее 50 процентов.
+  scene_id: scene-16
+  visual_cue: Show Övertid med bådas samtycke using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_overtime
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override:
+    text: Höjningen är minst femtio procent.
+    reason: Speech-only expansion of exact source hours or percentage; displayed Swedish and Russian remain
+      unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0142-s002.wav
+  start_seconds: 537.541667
+  end_seconds: 540.74602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/overtime.png
+- sentence_id: hb-c07-u0142-s003
+  sv: Du kan inte arbeta övertid utan arbetsgivarens tillstånd.
+  ru: Вы не можете работать сверхурочно без разрешения работодателя.
+  scene_id: scene-16
+  visual_cue: Show Övertid med bådas samtycke using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_overtime
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0142-s003.wav
+  start_seconds: 542.5
+  end_seconds: 547.65483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/overtime.png
+- sentence_id: hb-c07-u0142-s004
+  sv: Arbetsgivaren måste också få ditt samtycke till övertidsarbete.
+  ru: Работодатель также обязан получить ваше согласие на сверхурочную работу.
+  scene_id: scene-16
+  visual_cue: Show Övertid med bådas samtycke using the source-specific foreground defined in its asset
+    request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_overtime
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0142-s004.wav
+  start_seconds: 549.416667
+  end_seconds: 555.059116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/overtime.png
+- sentence_id: hb-c07-u0143-s001
+  sv: Observera att om arbetsgivaren slutar att erbjuda dig arbete helt och hållet, har du rätt att få
+    en skriftlig förklaring av arbetsgivaren om varför arbetsmängden har minskat.
+  ru: Учтите, что если работодатель полностью перестаёт предоставлять вам работу, вы имеете право получить
+    от него письменное объяснение причин уменьшения объёма работы.
+  scene_id: scene-17
+  visual_cue: Show Skriftlig förklaring när arbete inte längre erbjuds using the source-specific foreground
+    defined in its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_explanation
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0143-s001.wav
+  start_seconds: 557.541667
+  end_seconds: 572.030918
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/explanation.png
+- sentence_id: hb-c07-u0144-s001
+  sv: Din arbetsgivare borde betala ut lönen till ditt bankkonto.
+  ru: Ваш работодатель должен перечислять заработную плату на ваш банковский счёт.
+  scene_id: scene-18
+  visual_cue: Show Bankkonto och undantagsvis kontanter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_cash
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0144-s001.wav
+  start_seconds: 574.5
+  end_seconds: 579.72449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/cash.png
+- sentence_id: hb-c07-u0144-s002
+  sv: Lönen får endast betalas ut i kontanter om inga andra alternativ finns.
+  ru: Заработную плату можно выплачивать наличными только при отсутствии других вариантов.
+  scene_id: scene-18
+  visual_cue: Show Bankkonto och undantagsvis kontanter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_cash
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0144-s002.wav
+  start_seconds: 581.5
+  end_seconds: 588.048027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/cash.png
+- sentence_id: hb-c07-u0144-s003
+  sv: Så gör man till exempel om du inte har ett bankkonto.
+  ru: Так поступают, например, если у вас нет банковского счёта.
+  scene_id: scene-18
+  visual_cue: Show Bankkonto och undantagsvis kontanter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_cash
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0144-s003.wav
+  start_seconds: 589.833333
+  end_seconds: 594.709524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/cash.png
+- sentence_id: hb-c07-u0145-s001
+  sv: Om du får lönen utbetalad i kontanter, ska du ge din arbetsgivare ett skriftligt intyg om löneutbetalningen.
+  ru: Если вы получаете заработную плату наличными, вы должны выдать работодателю письменное подтверждение
+    её получения.
+  scene_id: scene-18
+  visual_cue: Show Bankkonto och undantagsvis kontanter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_cash
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0145-s001.wav
+  start_seconds: 596.5
+  end_seconds: 605.904082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/cash.png
+- sentence_id: hb-c07-u0145-s002
+  sv: På så sätt kan man bevisa att lönen verkligen har betalats till dig.
+  ru: Так можно доказать, что заработная плата действительно была вам выплачена.
+  scene_id: scene-18
+  visual_cue: Show Bankkonto och undantagsvis kontanter using the source-specific foreground defined in
+    its asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_cash
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0145-s002.wav
+  start_seconds: 607.666667
+  end_seconds: 613.518095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/cash.png
+- sentence_id: hb-c07-u0146-s001
+  sv: Under arbetsdagen har den anställda raster.
+  ru: В течение рабочего дня у работника есть перерывы.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0146-s001.wav
+  start_seconds: 616.0
+  end_seconds: 619.970612
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0146-s002
+  sv: Rasternas antal och längd beror på arbetsdagens längd.
+  ru: Количество и продолжительность перерывов зависят от продолжительности рабочего дня.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0146-s002.wav
+  start_seconds: 621.75
+  end_seconds: 626.76551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0146-s003
+  sv: I branschens kollektivavtal kan man kontrollera vad som avtalats om raster.
+  ru: В коллективном договоре отрасли можно проверить, что согласовано в отношении перерывов.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0146-s003.wav
+  start_seconds: 628.541667
+  end_seconds: 635.507653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0146-s004
+  sv: Om arbetsdagen är över sex timmar lång, har den anställda rätt till minst en halvtimmes rast under
+    dagen.
+  ru: Если рабочий день длится более шести часов, работник имеет право как минимум на получасовой перерыв
+    в течение дня.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0146-s004.wav
+  start_seconds: 637.291667
+  end_seconds: 646.486769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0146-s005
+  sv: Om den anställda arbetar åtta timmar per dag, har hen vanligtvis en längre matrast och två korta
+    kafferaster.
+  ru: Если работник работает восемь часов в день, у него обычно есть более продолжительный обеденный перерыв
+    и два коротких перерыва на кофе.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0146-s005.wav
+  start_seconds: 648.25
+  end_seconds: 657.654082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0147-s001
+  sv: Matrasten på en halvtimme ingår i allmänhet inte i den avlönade arbetstiden, vilket innebär att
+    man kan avlägsna sig från arbetsplatsen.
+  ru: Получасовой обеденный перерыв, как правило, не входит в оплачиваемое рабочее время, а значит, в
+    это время можно покидать рабочее место.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0147-s001.wav
+  start_seconds: 659.416667
+  end_seconds: 670.980204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0147-s002
+  sv: Kafferasten i sin tur ingår i arbetstiden och ska tillbringas på arbetsplatsen.
+  ru: Перерыв на кофе, в свою очередь, входит в рабочее время и должен проводиться на рабочем месте.
+  scene_id: scene-19
+  visual_cue: Show Mat- och kafferaster using the source-specific foreground defined in its asset request;
+    keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_breaks
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0147-s002.wav
+  start_seconds: 672.75
+  end_seconds: 679.924966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/breaks.png
+- sentence_id: hb-c07-u0148-s001
+  sv: Den anställda får inte sköta egna angelägenheter på arbetstid.
+  ru: Работнику нельзя заниматься личными делами в рабочее время.
+  scene_id: scene-20
+  visual_cue: Show Privata ärenden och arbetstelefon using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_phone
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0148-s001.wav
+  start_seconds: 682.375
+  end_seconds: 687.878129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/phone.png
+- sentence_id: hb-c07-u0148-s002
+  sv: I allmänhet är till exempel användning av egen telefon begränsad under arbetsdagen.
+  ru: Например, использование личного телефона в течение рабочего дня обычно ограничено.
+  scene_id: scene-20
+  visual_cue: Show Privata ärenden och arbetstelefon using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_phone
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0148-s002.wav
+  start_seconds: 689.666667
+  end_seconds: 697.120272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/phone.png
+- sentence_id: hb-c07-u0148-s003
+  sv: Den anställda får ändå använda sin telefon på raster och då uträtta ärenden.
+  ru: Однако в перерывах работник может пользоваться своим телефоном и заниматься личными делами.
+  scene_id: scene-20
+  visual_cue: Show Privata ärenden och arbetstelefon using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_phone
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0148-s003.wav
+  start_seconds: 698.875
+  end_seconds: 705.632007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/phone.png
+- sentence_id: hb-c07-u0148-s004
+  sv: Om arbetsgivaren förser den anställda med en arbetstelefon, är den i allmänhet avsedd endast för
+    utförande av arbetet.
+  ru: Если работодатель предоставляет работнику служебный телефон, он, как правило, предназначен только
+    для выполнения работы.
+  scene_id: scene-20
+  visual_cue: Show Privata ärenden och arbetstelefon using the source-specific foreground defined in its
+    asset request; keep bilingual panel fixed.
+  asset_ids:
+  - episode_background
+  - visual_phone
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds and numerals require whole-video listening; ASR alone cannot approve pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c07-lon/narration/hb-c07-u0148-s004.wav
+  start_seconds: 707.416667
+  end_seconds: 718.004966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c07-lon/pictures/phone.png
+render:
+  music_path: studio/media/hb-c07-lon/sources/music-bed.flac
+  background_image: studio/media/hb-c07-lon/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 5.461011904761905
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi och InfoFinland.fi.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret.
+    - InfoFinland.fi · CC BY 4.0 för InfoFinlands texter.
+    - Fullständiga utgivarvillkor och källor i CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 0661 Nordea Helsinki.JPG — Arto Alanenpää · CC BY-SA 4.0
+    - Thinking of You — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Diagrammen visar endast uppgifter i källtexten.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained; no new legal claims.
+  - The background photograph is cropped, darkened, blurred and continuously panned/zoomed, with its license
+    and attribution retained. Foregrounds are original source-based pictorial diagrams.
+  - Original pictorial process diagrams illustrate only selected source statements.
+  - Music faded,ducked,level-adjusted and repeated with4-second equal-power crossfades if required.
+  palette:
+    background: '#30371f'
+    text: '#faf3e8'
+    secondary: '#d2d9b7'
+    highlight: '#e7bf78'
+    separator: '#636e42'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:0661_Nordea_Helsinki.JPG
+    description: Nordea bank building in Helsinki. Original 5472x3648 pix. Contact arto.alanenpaa@gmail.com
+    license: CC BY-SA 4.0

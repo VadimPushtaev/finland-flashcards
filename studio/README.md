@@ -86,6 +86,13 @@ pictures cover at least 94.9% of body display time in each video. See the
 [music headroom](hb-c06-music-headroom.json), and [listening priorities](hb-c06-review.md).
 These are locally retained previews; whole-video listening and user acceptance remain pending.
 
+All thirteen Chapter 7 videos are rendered and technically verified, covering
+804 exact Swedish/Russian sentence pairs in 2:26:04. Source-based foreground
+pictures and diagrams cover the full body timeline in each video. See the
+[chapter audit](hb-c07-audit.json), [export reviews](hb-c07-visual-review.json),
+[music headroom](hb-c07-music-headroom.json), and [listening priorities](hb-c07-review.md).
+These are locally retained previews; whole-video listening and user acceptance remain pending.
+
 Asset production: [ASSETS.md](ASSETS.md). Shared local voice policy and model
 comparison: [TTS.md](TTS.md). Use the isolated Poetry runtime in `runtime/` for
 media tools; keep the root environment for script/source validation.
