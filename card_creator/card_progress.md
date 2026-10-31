@@ -20,7 +20,7 @@ appropriate. No existing Homebrew cards were reused and no selected candidates
 remain blocked. CORE denotes study priority, not guaranteed exam coverage.
 
 The [saved selection report](homebrew/selections/hb-c01-2026-10-31-core.json)
-uses the whole assessed collection (currently these 213 sentences): **CORE >=41:
+used the whole assessed collection at that generation (213 sentences): **CORE >=41:
 48; SUPPORTING =40: 29; SKIP <40: 136**. Only CORE material was used for independent
 questions. Assessments remain separate from these derived priorities.
 
@@ -46,6 +46,61 @@ exact category, source links, row hashes, and selected CORE primary sentences.
 All questions/answers fit the 120/70-character limits (actual maxima: 99/62).
 Reopened every exported workbook and checked all 44 questions, options,
 20-second time limits, and correct-answer indices against the decks.
+
+Homebrew chapter 2 (2026-10-31), **Finlands historia** (`hb-c02`): all **321 body
+sentences across 13 subchapters** were individually assessed, with no existing
+Chapter 2 assessments to reuse. Generated **57 new CORE cards in 12 subchapter
+decks**, covering the 79 selected sentences. Related claims share cards, including
+repeated school-reform and EU-accession passages; no previously generated cards
+needed reuse. No selected candidate remains blocked.
+
+The [Chapter 2 selection report](homebrew/selections/hb-c02-2026-10-31-core.json)
+calibrates once against all 534 current assessments in 21 sections. Its thresholds
+are **CORE >=46, SUPPORTING 42-45, SKIP <42**. Chapter 2 has **79 CORE, 44 SUPPORTING,
+198 SKIP** sentences; the whole assessed collection has 87 / 64 / 383 respectively.
+Equal scores stay together and no subchapter quotas were applied. Chapter 1's
+existing cards retain their original selection report and were not reselected.
+
+| Chapter 2 subchapter | Selected CORE sentences | New cards |
+| --- | ---: | ---: |
+| Förhistoria och medeltid | 0 | 0 |
+| Svenskt styre, reformation och upplysning | 2 | 2 |
+| Autonomin och industrialiseringen | 3 | 3 |
+| Nationell identitet och demokratisering | 5 | 5 |
+| Självständigheten och inbördeskriget | 2 | 2 |
+| Republik och demokrati mellan krigen | 7 | 5 |
+| Vinterkriget, fortsättningskriget och Lapplandskriget | 11 | 8 |
+| Återuppbyggnad och kalla kriget | 7 | 5 |
+| Välfärdsstatens framväxt | 15 | 10 |
+| Utbildning för hela befolkningen | 4 | 2 |
+| Från jordbruk till industri och informationssamhälle | 3 | 1 |
+| Finland i EU och Nato | 12 | 9 |
+| Ett föränderligt samhälle | 8 | 5 |
+| **Total** | **79** | **57** |
+
+The prehistory subchapter has no qualifying CORE candidates and no empty deck.
+The selected-sentence counts above belong to their original sections; shared
+learning points may be covered by a card in another Chapter 2 subchapter.
+
+Outputs: [Chapter 2 decks and combined ALL.txt](../cards/homebrew/hb-c02/),
+[source records](homebrew/card_sources/), and
+[12 Kahoot workbooks](../kahoot/homebrew/hb-c02/).
+Reviewed all questions and alternatives against their context. Dated primary-source
+checks in the records resolve election wording, historical insurance coverage,
+EU law, euro cash versus currency adoption, NATO assistance, and demographic
+framing. In particular, the early accident-insurance card does not repeat the
+source's implication that occupational diseases were covered by the 1895 law;
+government legislative history dates that extension to 1925. The demographic
+question tests a conditional financing relationship rather than asserting an
+uninterrupted present-day decline in working-age numbers.
+
+Validation passed for all 321 assessments, all 57 card rows and their exact
+categories, source links, selected primary sentences, row hashes, and coverage of
+all 79 CORE candidates. Questions/answers have maximum lengths of 101/67 characters
+within the 120/70 limits. All 12 exported workbooks were reopened and their 57
+questions, four options, time limits and correct-answer indices matched the decks.
+The combined chapter deck has 57 rows in anthology order and passes
+`make check-homebrew`; generated combined files are excluded from card counts.
 
 ## 1. Main Textbook (PRIMARY SOURCE)
 

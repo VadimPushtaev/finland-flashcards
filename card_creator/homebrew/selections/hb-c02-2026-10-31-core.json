@@ -1,0 +1,2336 @@
+{
+  "schema_version": 1,
+  "formula": "9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity",
+  "score_range": [
+    0,
+    60
+  ],
+  "calibration": {
+    "mode": "global_tied_scores",
+    "targets_percent": {
+      "CORE": 21,
+      "SUPPORTING": 14
+    },
+    "core_min": 46,
+    "supporting_min": 42,
+    "assessed_sentences": 534,
+    "assessed_sections": 21,
+    "counts": {
+      "CORE": 87,
+      "SUPPORTING": 64,
+      "SKIP": 383
+    }
+  },
+  "assessment_inputs": {
+    "hb-c01-arstider": {
+      "assessment_sha256": "763a4ffe51e60576ba2e9ebda8061c2ceb4e13c313273a8d0b19249d6d0f5444",
+      "source_sha256": "f4c33bc58f4005d5b435e81e1b881dd6f145a7a190751a23c3369bb1487c91f8"
+    },
+    "hb-c01-befolkning": {
+      "assessment_sha256": "31e61245bca1d305c1f46de0da16ce8fed95d47bcf8b3419094ff4028debc449",
+      "source_sha256": "d5059d6e6e9c876bf21dd0ed2541e41f671174ff2d5bca509988422cd3f1ea84"
+    },
+    "hb-c01-flyttning": {
+      "assessment_sha256": "3959c01e0acd4b4cab50c3c14d00d3e5f102364c64831acfb732b71b80ee5651",
+      "source_sha256": "5539fd6c649c6d0b4aa517d539f3117a11a470e3f135b6973c7b0dec4aad1087"
+    },
+    "hb-c01-folkgrupper": {
+      "assessment_sha256": "d96a75dd790991fe6ba861592486b000a66b5e8ef1d4a13952e474df261e8bd3",
+      "source_sha256": "3f716c4fd7e5c5f4355f18498d5a0000486c8e80ecae6b2cda43a7c647cdc139"
+    },
+    "hb-c01-lage": {
+      "assessment_sha256": "b21399bde6ec0ce60088176653fedb86ec4f1c284f0509791e638d7004a0b2cb",
+      "source_sha256": "1bd0782bc0deb460a81a7b54c4b6a17d5a75462981abbbdf07af3a50c195d246"
+    },
+    "hb-c01-natur": {
+      "assessment_sha256": "9a0079f6b2cb8a22e0b75ae594c601f1451e2bfee869feb4d22de8bf1a27f6e3",
+      "source_sha256": "86da6726a5b0f97e41d4335ed9bd75afea8949d2c461141a1f2721da37b03d48"
+    },
+    "hb-c01-regioner": {
+      "assessment_sha256": "71623682b3dae5b03881fddd72423d5f0ed5912d8363c1ee6295cd647bb7254d",
+      "source_sha256": "f04ce7d2d0170c871ae7a908b45608e986e3568e54a44b33e4a57def1b26ad0b"
+    },
+    "hb-c01-sprak": {
+      "assessment_sha256": "80682d49d1423a04f2fd38acf8aacccb523c07182ea0da1684c88ee38e07423e",
+      "source_sha256": "d563ede9d08262306727c4ddb8983e8d00d8fc0595b277ed2f9a61571057d0ff"
+    },
+    "hb-c02-ateruppbyggnad": {
+      "assessment_sha256": "e9e87e14dd71ae41c34f5dea7c57317d3db92fd2657f662ec652d8ae0536ffaf",
+      "source_sha256": "c3e9ea110daf41c649995ccd9278d86bd39b42efd3886f9b6dbe6e1d464fc5ab"
+    },
+    "hb-c02-autonomi": {
+      "assessment_sha256": "c9158663bfaca272b643b207a44bccb65c3e01beccd211680b3f2608cee27c33",
+      "source_sha256": "aa25beb5e27353463a339b041ceb6bd2e9ba1e45a3cfa4da3a6826ea70561c22"
+    },
+    "hb-c02-demokrati": {
+      "assessment_sha256": "d302b19faee9a296668600382eb40a97535afe0f53824c1b2b757236625b6180",
+      "source_sha256": "f4bc4e7a418729f65148a273bcf43d834a16c03eaceb34c7f71b74dc88f78300"
+    },
+    "hb-c02-eu-nato": {
+      "assessment_sha256": "a198e423f0be1196f896916ccecfeea1da670173efbe6f3e8aaa2de05b9a1887",
+      "source_sha256": "797cded1c68856ce6bc69441a522414f8fec8b10ce7ac36b4986beed653010c1"
+    },
+    "hb-c02-forhistoria": {
+      "assessment_sha256": "c2d57101186ba6d4209762657c04d29eb6080cf93e8f815efb122d43cb12a5cd",
+      "source_sha256": "227656ccd1085f989e9381922f4044a63642c8f342ff1d9046015c74e2231451"
+    },
+    "hb-c02-krigen": {
+      "assessment_sha256": "6a455f00145601af79c985ad94a0f5afc602d1bead3bdf20d12bf7d9ad17a771",
+      "source_sha256": "30b016a822b5ba8c0e5f99db098463a2434ab82a346a0fa761fea27faa9651bb"
+    },
+    "hb-c02-nationalitet": {
+      "assessment_sha256": "0e8e33f90ab280ecb2b481b84e3da303cdfc877e3bd85e7ea8ca8a5280fc2346",
+      "source_sha256": "e6038a2803859b664554a0c5a87c5f4897aa07a7a2a83caf314e5c015a928a49"
+    },
+    "hb-c02-omvandling": {
+      "assessment_sha256": "43f7e3479902aedd1e84a1e10f0092e88782a6e1827cdf24a3b18c1646ea8be6",
+      "source_sha256": "a171fc3d502569e0a6d17c66a61f95febc0cc8ae02af2aa9baaf2e1602988aaf"
+    },
+    "hb-c02-sjalvstandighet": {
+      "assessment_sha256": "3d7c1c19ed238ae7d9de0993b2c130966f05fb0f72c6c565b885f9b32b45c38f",
+      "source_sha256": "98129c8e451f0e5014dd9851026b7d464c2789990b145cfdbf35a58d60a1fcfd"
+    },
+    "hb-c02-sverige": {
+      "assessment_sha256": "8383a77522453cb7ffd32b25dbd5e057a9a12bcd905532432759913d39c54b25",
+      "source_sha256": "48f48dc6ea077f947c94f881939760b44f187affda2575baf0d0c1747d0dc51b"
+    },
+    "hb-c02-utbildning": {
+      "assessment_sha256": "f967d5134822d026e2e230bc78fb5d786ec7399a23efa2262cfa7359d4197b38",
+      "source_sha256": "fbc82a9e0f9195470418b4d409e583cbc91b1ab901decf5a2d040712ce3c7c6d"
+    },
+    "hb-c02-utmaningar": {
+      "assessment_sha256": "0c0e40eeb57970410485778e0096d80a59c294fb773681d3e8e2b47fc4cdb362",
+      "source_sha256": "f1838106f30622ad631cc1cd91735cd52fdcd02312b588d2d156fccbb0c65edc"
+    },
+    "hb-c02-valfard": {
+      "assessment_sha256": "58941da536451e334e9241808357435f0150f8dd21c4680a855107de881a3466",
+      "source_sha256": "684f7d5c7af2a521705451683c9d773634a933ae8774b25f54006d76f7215853"
+    }
+  },
+  "excluded_invalid_files": [],
+  "requested_sentence_ids": [
+    "hb-c02-u0001-s001",
+    "hb-c02-u0001-s002",
+    "hb-c02-u0001-s003",
+    "hb-c02-u0002-s001",
+    "hb-c02-u0002-s002",
+    "hb-c02-u0003-s001",
+    "hb-c02-u0003-s002",
+    "hb-c02-u0003-s003",
+    "hb-c02-u0003-s004",
+    "hb-c02-u0004-s001",
+    "hb-c02-u0004-s002",
+    "hb-c02-u0004-s003",
+    "hb-c02-u0005-s001",
+    "hb-c02-u0005-s002",
+    "hb-c02-u0005-s003",
+    "hb-c02-u0005-s004",
+    "hb-c02-u0006-s001",
+    "hb-c02-u0006-s002",
+    "hb-c02-u0006-s003",
+    "hb-c02-u0007-s001",
+    "hb-c02-u0007-s002",
+    "hb-c02-u0007-s003",
+    "hb-c02-u0007-s004",
+    "hb-c02-u0007-s005",
+    "hb-c02-u0008-s001",
+    "hb-c02-u0008-s002",
+    "hb-c02-u0008-s003",
+    "hb-c02-u0009-s001",
+    "hb-c02-u0009-s002",
+    "hb-c02-u0009-s003",
+    "hb-c02-u0009-s004",
+    "hb-c02-u0010-s001",
+    "hb-c02-u0010-s002",
+    "hb-c02-u0010-s003",
+    "hb-c02-u0010-s004",
+    "hb-c02-u0010-s005",
+    "hb-c02-u0011-s001",
+    "hb-c02-u0011-s002",
+    "hb-c02-u0011-s003",
+    "hb-c02-u0012-s001",
+    "hb-c02-u0013-s001",
+    "hb-c02-u0014-s001",
+    "hb-c02-u0015-s001",
+    "hb-c02-u0016-s001",
+    "hb-c02-u0016-s002",
+    "hb-c02-u0016-s003",
+    "hb-c02-u0016-s004",
+    "hb-c02-u0016-s005",
+    "hb-c02-u0016-s006",
+    "hb-c02-u0017-s001",
+    "hb-c02-u0017-s002",
+    "hb-c02-u0017-s003",
+    "hb-c02-u0018-s001",
+    "hb-c02-u0018-s002",
+    "hb-c02-u0018-s003",
+    "hb-c02-u0019-s001",
+    "hb-c02-u0019-s002",
+    "hb-c02-u0019-s003",
+    "hb-c02-u0019-s004",
+    "hb-c02-u0019-s005",
+    "hb-c02-u0020-s001",
+    "hb-c02-u0021-s001",
+    "hb-c02-u0022-s001",
+    "hb-c02-u0023-s001",
+    "hb-c02-u0023-s002",
+    "hb-c02-u0023-s003",
+    "hb-c02-u0023-s004",
+    "hb-c02-u0024-s001",
+    "hb-c02-u0024-s002",
+    "hb-c02-u0024-s003",
+    "hb-c02-u0024-s004",
+    "hb-c02-u0025-s001",
+    "hb-c02-u0025-s002",
+    "hb-c02-u0025-s003",
+    "hb-c02-u0025-s004",
+    "hb-c02-u0025-s005",
+    "hb-c02-u0025-s006",
+    "hb-c02-u0025-s007",
+    "hb-c02-u0026-s001",
+    "hb-c02-u0026-s002",
+    "hb-c02-u0026-s003",
+    "hb-c02-u0026-s004",
+    "hb-c02-u0026-s005",
+    "hb-c02-u0027-s001",
+    "hb-c02-u0027-s002",
+    "hb-c02-u0027-s003",
+    "hb-c02-u0027-s004",
+    "hb-c02-u0027-s005",
+    "hb-c02-u0028-s001",
+    "hb-c02-u0028-s002",
+    "hb-c02-u0028-s003",
+    "hb-c02-u0028-s004",
+    "hb-c02-u0028-s005",
+    "hb-c02-u0029-s001",
+    "hb-c02-u0029-s002",
+    "hb-c02-u0029-s003",
+    "hb-c02-u0029-s004",
+    "hb-c02-u0030-s001",
+    "hb-c02-u0031-s001",
+    "hb-c02-u0031-s002",
+    "hb-c02-u0031-s003",
+    "hb-c02-u0031-s004",
+    "hb-c02-u0032-s001",
+    "hb-c02-u0032-s002",
+    "hb-c02-u0032-s003",
+    "hb-c02-u0032-s004",
+    "hb-c02-u0033-s001",
+    "hb-c02-u0033-s002",
+    "hb-c02-u0033-s003",
+    "hb-c02-u0033-s004",
+    "hb-c02-u0034-s001",
+    "hb-c02-u0034-s002",
+    "hb-c02-u0034-s003",
+    "hb-c02-u0035-s001",
+    "hb-c02-u0035-s002",
+    "hb-c02-u0035-s003",
+    "hb-c02-u0036-s001",
+    "hb-c02-u0036-s002",
+    "hb-c02-u0036-s003",
+    "hb-c02-u0036-s004",
+    "hb-c02-u0037-s001",
+    "hb-c02-u0037-s002",
+    "hb-c02-u0037-s003",
+    "hb-c02-u0037-s004",
+    "hb-c02-u0037-s005",
+    "hb-c02-u0038-s001",
+    "hb-c02-u0038-s002",
+    "hb-c02-u0039-s001",
+    "hb-c02-u0039-s002",
+    "hb-c02-u0039-s003",
+    "hb-c02-u0040-s001",
+    "hb-c02-u0040-s002",
+    "hb-c02-u0040-s003",
+    "hb-c02-u0041-s001",
+    "hb-c02-u0041-s002",
+    "hb-c02-u0041-s003",
+    "hb-c02-u0041-s004",
+    "hb-c02-u0042-s001",
+    "hb-c02-u0042-s002",
+    "hb-c02-u0042-s003",
+    "hb-c02-u0042-s004",
+    "hb-c02-u0043-s001",
+    "hb-c02-u0043-s002",
+    "hb-c02-u0043-s003",
+    "hb-c02-u0044-s001",
+    "hb-c02-u0044-s002",
+    "hb-c02-u0044-s003",
+    "hb-c02-u0044-s004",
+    "hb-c02-u0044-s005",
+    "hb-c02-u0044-s006",
+    "hb-c02-u0045-s001",
+    "hb-c02-u0045-s002",
+    "hb-c02-u0045-s003",
+    "hb-c02-u0045-s004",
+    "hb-c02-u0046-s001",
+    "hb-c02-u0046-s002",
+    "hb-c02-u0046-s003",
+    "hb-c02-u0047-s001",
+    "hb-c02-u0047-s002",
+    "hb-c02-u0047-s003",
+    "hb-c02-u0047-s004",
+    "hb-c02-u0048-s001",
+    "hb-c02-u0048-s002",
+    "hb-c02-u0048-s003",
+    "hb-c02-u0049-s001",
+    "hb-c02-u0049-s002",
+    "hb-c02-u0049-s003",
+    "hb-c02-u0049-s004",
+    "hb-c02-u0050-s001",
+    "hb-c02-u0050-s002",
+    "hb-c02-u0050-s003",
+    "hb-c02-u0051-s001",
+    "hb-c02-u0051-s002",
+    "hb-c02-u0051-s003",
+    "hb-c02-u0051-s004",
+    "hb-c02-u0051-s005",
+    "hb-c02-u0051-s006",
+    "hb-c02-u0052-s001",
+    "hb-c02-u0053-s001",
+    "hb-c02-u0054-s001",
+    "hb-c02-u0054-s002",
+    "hb-c02-u0054-s003",
+    "hb-c02-u0054-s004",
+    "hb-c02-u0054-s005",
+    "hb-c02-u0054-s006",
+    "hb-c02-u0054-s007",
+    "hb-c02-u0055-s001",
+    "hb-c02-u0055-s002",
+    "hb-c02-u0055-s003",
+    "hb-c02-u0055-s004",
+    "hb-c02-u0055-s005",
+    "hb-c02-u0056-s001",
+    "hb-c02-u0056-s002",
+    "hb-c02-u0056-s003",
+    "hb-c02-u0056-s004",
+    "hb-c02-u0056-s005",
+    "hb-c02-u0056-s006",
+    "hb-c02-u0056-s007",
+    "hb-c02-u0057-s001",
+    "hb-c02-u0058-s001",
+    "hb-c02-u0058-s002",
+    "hb-c02-u0058-s003",
+    "hb-c02-u0059-s001",
+    "hb-c02-u0059-s002",
+    "hb-c02-u0059-s003",
+    "hb-c02-u0059-s004",
+    "hb-c02-u0059-s005",
+    "hb-c02-u0060-s001",
+    "hb-c02-u0060-s002",
+    "hb-c02-u0061-s001",
+    "hb-c02-u0061-s002",
+    "hb-c02-u0061-s003",
+    "hb-c02-u0062-s001",
+    "hb-c02-u0062-s002",
+    "hb-c02-u0062-s003",
+    "hb-c02-u0062-s004",
+    "hb-c02-u0063-s001",
+    "hb-c02-u0063-s002",
+    "hb-c02-u0063-s003",
+    "hb-c02-u0063-s004",
+    "hb-c02-u0063-s005",
+    "hb-c02-u0064-s001",
+    "hb-c02-u0064-s002",
+    "hb-c02-u0064-s003",
+    "hb-c02-u0064-s004",
+    "hb-c02-u0064-s005",
+    "hb-c02-u0064-s006",
+    "hb-c02-u0065-s001",
+    "hb-c02-u0065-s002",
+    "hb-c02-u0065-s003",
+    "hb-c02-u0065-s004",
+    "hb-c02-u0066-s001",
+    "hb-c02-u0066-s002",
+    "hb-c02-u0066-s003",
+    "hb-c02-u0066-s004",
+    "hb-c02-u0066-s005",
+    "hb-c02-u0067-s001",
+    "hb-c02-u0067-s002",
+    "hb-c02-u0067-s003",
+    "hb-c02-u0067-s004",
+    "hb-c02-u0067-s005",
+    "hb-c02-u0068-s001",
+    "hb-c02-u0068-s002",
+    "hb-c02-u0068-s003",
+    "hb-c02-u0068-s004",
+    "hb-c02-u0069-s001",
+    "hb-c02-u0069-s002",
+    "hb-c02-u0069-s003",
+    "hb-c02-u0070-s001",
+    "hb-c02-u0070-s002",
+    "hb-c02-u0070-s003",
+    "hb-c02-u0070-s004",
+    "hb-c02-u0071-s001",
+    "hb-c02-u0071-s002",
+    "hb-c02-u0071-s003",
+    "hb-c02-u0071-s004",
+    "hb-c02-u0072-s001",
+    "hb-c02-u0072-s002",
+    "hb-c02-u0072-s003",
+    "hb-c02-u0073-s001",
+    "hb-c02-u0073-s002",
+    "hb-c02-u0073-s003",
+    "hb-c02-u0073-s004",
+    "hb-c02-u0074-s001",
+    "hb-c02-u0074-s002",
+    "hb-c02-u0075-s001",
+    "hb-c02-u0075-s002",
+    "hb-c02-u0075-s003",
+    "hb-c02-u0075-s004",
+    "hb-c02-u0076-s001",
+    "hb-c02-u0076-s002",
+    "hb-c02-u0076-s003",
+    "hb-c02-u0076-s004",
+    "hb-c02-u0076-s005",
+    "hb-c02-u0076-s006",
+    "hb-c02-u0076-s007",
+    "hb-c02-u0077-s001",
+    "hb-c02-u0077-s002",
+    "hb-c02-u0077-s003",
+    "hb-c02-u0078-s001",
+    "hb-c02-u0078-s002",
+    "hb-c02-u0079-s001",
+    "hb-c02-u0079-s002",
+    "hb-c02-u0079-s003",
+    "hb-c02-u0080-s001",
+    "hb-c02-u0080-s002",
+    "hb-c02-u0080-s003",
+    "hb-c02-u0080-s004",
+    "hb-c02-u0081-s001",
+    "hb-c02-u0081-s002",
+    "hb-c02-u0081-s003",
+    "hb-c02-u0081-s004",
+    "hb-c02-u0082-s001",
+    "hb-c02-u0083-s001",
+    "hb-c02-u0083-s002",
+    "hb-c02-u0083-s003",
+    "hb-c02-u0084-s001",
+    "hb-c02-u0084-s002",
+    "hb-c02-u0085-s001",
+    "hb-c02-u0085-s002",
+    "hb-c02-u0085-s003",
+    "hb-c02-u0085-s004",
+    "hb-c02-u0085-s005",
+    "hb-c02-u0086-s001",
+    "hb-c02-u0086-s002",
+    "hb-c02-u0086-s003",
+    "hb-c02-u0086-s004",
+    "hb-c02-u0087-s001",
+    "hb-c02-u0087-s002",
+    "hb-c02-u0088-s001",
+    "hb-c02-u0088-s002",
+    "hb-c02-u0088-s003",
+    "hb-c02-u0089-s001",
+    "hb-c02-u0089-s002",
+    "hb-c02-u0090-s001",
+    "hb-c02-u0090-s002",
+    "hb-c02-u0090-s003",
+    "hb-c02-u0091-s001",
+    "hb-c02-u0091-s002",
+    "hb-c02-u0091-s003",
+    "hb-c02-u0091-s004"
+  ],
+  "requested_counts": {
+    "CORE": 79,
+    "SUPPORTING": 44,
+    "SKIP": 198
+  },
+  "included_tiers": [
+    "CORE"
+  ],
+  "selected_count": 79,
+  "sentences": [
+    {
+      "sentence_id": "hb-c02-u0016-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0016-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Attention to human rights and a state governed by law is foundational civic development; preserve the historical aspiration.",
+      "section_id": "hb-c02-sverige",
+      "text": "Man började ägna uppmärksamhet åt mänskliga rättigheter och ville göra staten till en rättsstat.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0016-s006",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0016-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Suffrage and freedoms of expression and religion connect the Enlightenment directly to major civic rights.",
+      "section_id": "hb-c02-sverige",
+      "text": "Viktiga mål under upplysningen var rösträtt, yttrandefrihet och religionsfrihet.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0019-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The 1809 transfer from Sweden to Russia is a defining transition in Finland's constitutional history.",
+      "section_id": "hb-c02-autonomi",
+      "text": "Finland blev en del av det ryska riket år 1809, då Sverige förlorade ett krig som det förde mot Ryssland.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0019-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Autonomy as self-government is foundational for understanding Finland's status inside the Russian Empire.",
+      "section_id": "hb-c02-autonomi",
+      "text": "Den ryska kejsaren beviljade Finland autonomi, det vill säga självstyre.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0025-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0025-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equality, social justice and women's suffrage are major civic goals, with context needed to identify the historical movement.",
+      "section_id": "hb-c02-autonomi",
+      "text": "Viktiga frågor var medborgarnas jämlikhet, social rättvisa och kvinnornas rösträtt.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0030-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Universal and equal suffrage including women is a defining constitutional milestone, with the historical year explicit.",
+      "section_id": "hb-c02-nationalitet",
+      "text": "1906 Allmän och lika rösträtt, även för kvinnor",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0031-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Replacement of the estate diet by parliament explains democratization; the institutional form needs contextual wording.",
+      "section_id": "hb-c02-nationalitet",
+      "text": "I början av 1900-talet ersattes Finlands lantdagar av en riksdag.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0031-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0030-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "The first election is important, but the blanket assertion that all over-24s could vote omits historical exclusions and must be narrowed.",
+      "section_id": "hb-c02-nationalitet",
+      "text": "År 1907 hölls det första riksdagsvalet, där alla finländare över 24 år fick rösta.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0031-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0031-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Expansion of participation to previously excluded groups explains the reform's democratic importance; avoid an absolute claim of no prior political activity.",
+      "section_id": "hb-c02-nationalitet",
+      "text": "I valet fick arbetarna, de fattiga på landsbygden och kvinnorna möjlighet att för första gången påverka politiken i Finland.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0032-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Women's right to stand for election is distinct from voting and fundamental to the reform's significance; the worldwide first claim requires careful verification.",
+      "section_id": "hb-c02-nationalitet",
+      "text": "Finland var det första landet i världen att ge alla kvinnor rätt att kandidera i val.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0033-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Independence on 6 December 1917 is central national civic history; recognition is a separate dated claim to distinguish from the declaration.",
+      "section_id": "hb-c02-sjalvstandighet",
+      "text": "Finland förklarade sig självständigt den 6 december 1917 och bolsjevikregeringen som tog makten i samband med oktoberrevolutionen i Ryssland erkände självständigheten den 31 december 1917.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0035-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0035-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The 1918 civil war is a major national turning point; the month can remain context rather than necessary trivia.",
+      "section_id": "hb-c02-sjalvstandighet",
+      "text": "Kriget bröt ut i januari 1918.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0039-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The declaration's republican intention helps distinguish constitutional aims from the later enacted settlement.",
+      "section_id": "hb-c02-demokrati",
+      "text": "I självständighetsförklaringen år 1917 hade man bestämt att Finland skulle vara en republik.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0039-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The 1919 constitutional settlement is a defining milestone in the independent state's government.",
+      "section_id": "hb-c02-demokrati",
+      "text": "År 1919 efter inbördeskriget bekräftade riksdagen Finlands grundlag.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0039-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0039-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The republican form of government is foundational civic knowledge; keep the 1919 constitutional context.",
+      "section_id": "hb-c02-demokrati",
+      "text": "Enligt den blev Finland en republik.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0042-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0042-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equal suffrage and the eight-hour working day are major civic advances; the 1917 date applies to the working-time law, not both reforms.",
+      "section_id": "hb-c02-demokrati",
+      "text": "Dessa var bland annat allmän och lika rösträtt och arbetstidslagen om åtta timmars arbetsdag som hade trätt i kraft år 1917.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0043-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "procedure",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0036-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Compromise through democratic institutions explains how divided groups could govern together and is a valuable civic principle.",
+      "section_id": "hb-c02-demokrati",
+      "text": "Det politiska samarbetet mellan de olika parterna var inte enkelt, men i arbetet i de demokratiska institutionerna var man tvungen att lära sig att göra kompromisser.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0044-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Opposition to democracy and demand for strong leadership identify the historical authoritarian threat to constitutional government.",
+      "section_id": "hb-c02-demokrati",
+      "text": "Extremhögerns anhängare motsatte sig demokrati och ville ha en stark ledare för staten.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0044-s006",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0044-s001",
+        "hb-c02-u0044-s005"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's retention of democracy during the interwar authoritarian turn is a major political-history outcome.",
+      "section_id": "hb-c02-demokrati",
+      "text": "Finland förblev ändå en demokrati.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0046-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The Soviet attack in 1939 is a central event in Finland's wartime and independence history.",
+      "section_id": "hb-c02-krigen",
+      "text": "Den fredliga utvecklingen i samhället avbröts när Sovjetunionen anföll Finland hösten 1939.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0046-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0046-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Identifying the Winter War from the preceding attack is central historical terminology.",
+      "section_id": "hb-c02-krigen",
+      "text": "Detta krig kallas vinterkriget.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0047-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0046-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Preserving independence is the central civic purpose attributed to Finland's wartime defence.",
+      "section_id": "hb-c02-krigen",
+      "text": "Finländarnas gemensamma mål var att bevara sin självständighet.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0048-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Distinguishing the two wars against the Soviet Union is central to Finland's Second World War history.",
+      "section_id": "hb-c02-krigen",
+      "text": "Under andra världskriget utkämpade Finland två krig mot Sovjetunionen, vinterkriget och fortsättningskriget.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0048-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0048-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The Lapland War's different opponent is essential for understanding the sequence of Finland's wars.",
+      "section_id": "hb-c02-krigen",
+      "text": "Efter det utkämpade Finland ännu Lapplandskriget mot sin tidigare allierade Tyskland.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0049-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0049-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Forced evacuation and resettlement explain the human and social effects of territorial loss; the affected areas need context.",
+      "section_id": "hb-c02-krigen",
+      "text": "Människorna som bodde i dessa områden blev tvungna att lämna sina hem och evakuerades till andra ställen i Finland.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0051-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0048-s001",
+        "hb-c02-u0048-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Finland retaining independence is a fundamental wartime outcome; national unity is a separate interpretive claim.",
+      "section_id": "hb-c02-krigen",
+      "text": "Krigen sammanförde folket, och Finland förblev en självständig stat.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0052-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The Winter War's 1939-1940 timeframe is a major national-history marker; combine with its opponent and outbreak where useful.",
+      "section_id": "hb-c02-krigen",
+      "text": "1939–1940 blir Finland inblandat i andra världskriget när vinterkriget mellan Finland och Sovjetunionen utbryter",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0053-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The Continuation War's 1941-1944 timeframe distinguishes it from the Winter and Lapland wars.",
+      "section_id": "hb-c02-krigen",
+      "text": "1941–1944 Andra världskriget fortsätter med fortsättningskriget mellan Finland och Sovjetunionen",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0054-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0054-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Territorial concessions, reparations and removal of German forces explain the armistice obligations; separate the conditions when asking.",
+      "section_id": "hb-c02-krigen",
+      "text": "Finland måste igen överlåta områden åt Sovjetunionen, betala krigsskadestånd och driva ut de tyska trupper som fanns i landet.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0054-s006",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0054-s005"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The name of the war against Germany overlaps the earlier Lapland War account but has a narrower naming claim.",
+      "section_id": "hb-c02-krigen",
+      "text": "Kriget mot de tyska trupperna kallas lapplandskriget.",
+      "score": 54,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0055-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reparations paid in goods connect the war settlement to postwar economic development; keep the historical obligation explicit.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Finland förlorade kriget och var därför tvunget att betala ett tungt krigsskadestånd till Sovjetunionen i form av varor.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0056-s007",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0056-s005"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The tension between formal independence and neutrality and Soviet influence is important for understanding Finland's Cold War position.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Finland var officiellt ett självständigt och neutralt land, men i verkligheten måste man beakta Sovjets intressen i sin politik.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0058-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0056-s005"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Formal neutrality alongside consideration of Soviet interests repeats the key policy tension, without all of the earlier statement's independence claim.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Officiellt var Finland ett neutralt land, men i verkligheten måste det i sin politik också beakta Sovjetunionens intressen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0058-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Continuing independence and benefits from Soviet trade qualify the account of constrained foreign policy and should be separated when asked.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Å andra sidan förblev Finland ett självständigt land och drog ekonomisk nytta av handeln med Sovjetunionen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0059-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0059-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Economic resources as a prerequisite for welfare provision are an important relationship in understanding social policy.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "En viktig förutsättning för uppbyggnaden var tillräcklig ekonomisk tillväxt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0060-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Public responsibility for living standards and livelihood is foundational to the welfare-state model; this passage concerns its historical development.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Så småningom blev Finland en välfärdsstat, där staten och kommunerna gavs en viktig roll i att säkerställa medborgarnas levnadsstandard och försörjning.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0060-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0060-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Tax-funded services and social security link welfare institutions to democratic trust; do not present a universal causal guarantee.",
+      "section_id": "hb-c02-ateruppbyggnad",
+      "text": "Det faktum att alla medborgare erbjöds tjänster och social trygghet som tillhandahölls med skattemedel fick människorna att lita på det demokratiska beslutsfattandet och samhället och dess institutioner.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0063-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Civil-society participation contributing to democracy is an important civic principle illustrated by Finnish history.",
+      "section_id": "hb-c02-valfard",
+      "text": "Samhällsaktiviteten i organisationerna var viktig för demokratins utveckling i Finland.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0063-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0063-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Learning to manage shared affairs explains how organizations prepared people for civic participation; isolate that function from the other effects.",
+      "section_id": "hb-c02-valfard",
+      "text": "De utbildade och upplyste finländarna, skapade nationalkänsla och lärde människorna att sköta gemensamma ärenden.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0064-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Comprehensive social and income protection is a foundational feature of Finnish welfare, though the sentence is broadly phrased.",
+      "section_id": "hb-c02-valfard",
+      "text": "Grunden till den finska välfärden är heltäckande tjänster inom social- och utkomstskydd.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0064-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0064-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Compensation for work-related harm is important, but the description of the 1895 law's occupational-disease scope needs historical verification.",
+      "section_id": "hb-c02-valfard",
+      "text": "Lagen fastslog att arbetstagaren skulle betalas ersättning i fall av arbetsolycka eller yrkessjukdom.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0065-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0065-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Income protection in old age and disability explains the purpose of the national pension in its original legal setting.",
+      "section_id": "hb-c02-valfard",
+      "text": "Lagen gav de försäkrade folkpension, det vill säga ekonomisk hjälp för ålderdomen och vid arbetsoförmåga.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0065-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0065-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "FPA's foundation and original pension-payment responsibility explain a major Finnish social-security institution.",
+      "section_id": "hb-c02-valfard",
+      "text": "Samma år grundades Folkpensionsanstalten FPA (på finska Kela), vars uppgift var att betala folkpensionen.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0066-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Reducing poverty and ensuring daily livelihood are foundational welfare-state goals with a clear focused answer.",
+      "section_id": "hb-c02-valfard",
+      "text": "Den ursprungliga målsättningen med att göra Finland till en välfärdsstat var att minska fattigdomen och garantera en daglig utkomst för alla finländare.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0066-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0066-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Social stability and reduced support for extremism explain the civic rationale for welfare provision as an intended effect.",
+      "section_id": "hb-c02-valfard",
+      "text": "Man ansåg att detta skulle stabilisera samhället och dess utveckling och minska stödet för alla slags extrema rörelser.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0066-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0066-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reducing income disparities to advance equality is a core social-policy rationale; preserve it as a policy aim.",
+      "section_id": "hb-c02-valfard",
+      "text": "Tanken var också att mindre inkomstskillnader skulle göra människorna mer jämlika.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0067-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0067-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Growing state responsibility is a key principle of the historical expansion of welfare provision.",
+      "section_id": "hb-c02-valfard",
+      "text": "Staten tog allt mer ansvar för medborgarnas välfärd.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0067-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0067-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Income transfers and reimbursements illustrate expanded social protection; the historic examples are not a list of current benefit names or rules.",
+      "section_id": "hb-c02-valfard",
+      "text": "Medborgarna fick fler inkomstöverföringar från staten, till exempel moderskapspenning och sjukpenning samt ersättningar för läkemedelsutgifter och läkararvoden.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0068-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0067-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equality was a guiding aim of welfare development; concrete consequences in schooling and study aid follow.",
+      "section_id": "hb-c02-valfard",
+      "text": "Välfärdsstaten utvecklades ur jämlikhetsperspektiv.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0068-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "right",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "A common free school across social classes is a major equality reform; retain the historical 1970s transition.",
+      "section_id": "hb-c02-valfard",
+      "text": "På 1970-talet började alla barn oberoende av samhällsklass gå samma kostnadsfria grundskola.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0068-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Study aid as living-cost support explains access to further education in its historical introduction, rather than current eligibility details.",
+      "section_id": "hb-c02-valfard",
+      "text": "De som studerade vid universitet, högskolor eller andra stadiets läroanstalter började få studiestöd, det vill säga ekonomiskt stöd för livet under studietiden.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0068-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0068-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reduced dependence on family wealth explains the equality purpose of student support without claiming all economic barriers disappeared.",
+      "section_id": "hb-c02-valfard",
+      "text": "Tack vare studiestödet hade barndomsfamiljens tillgångar inte längre så stor betydelse för om en ung vuxen hade ekonomisk möjlighet att utbilda sig till det yrke hen ville.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0069-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The 1921 compulsory-education law is a major education-history milestone; public support is a separate background clause.",
+      "section_id": "hb-c02-utbildning",
+      "text": "Först på 1900-talets sida började större delen av befolkningen stöda folkskolan och 1921 stiftades en lag om läroplikt i Finland.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equality and economic development were welfare-state aims; this sets the context for educational reform.",
+      "section_id": "hb-c02-utbildning",
+      "text": "I Finland började man eftersträva samhällelig jämlikhet och ekonomisk utveckling genom att bygga en välfärdsstat.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "number",
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0070-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A unified nine-year comprehensive school is a central educational institution; the preceding aim explains its conception.",
+      "section_id": "hb-c02-utbildning",
+      "text": "Samtidigt föddes tanken på en enhetlig 9-årig grundskola.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0070-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Replacing separate school tracks with a common comprehensive school in the 1970s is a defining equality reform.",
+      "section_id": "hb-c02-utbildning",
+      "text": "Under 1970-talet övergick man i hela landet från det gamla systemet med separat folkskola och läroverk till en grundskola som var gemensam för alla.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0072-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "number",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c02-u0070-s003",
+      "assessment_confidence": "medium",
+      "rationale": "This repeats the unified nine-year school proposal; reuse the earlier educational learning point.",
+      "section_id": "hb-c02-omvandling",
+      "text": "Idén om en enhetlig nioårig grundskola som alla barn skulle få gå i föddes.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0072-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0072-s001"
+      ],
+      "duplicate_of": "hb-c02-u0070-s004",
+      "assessment_confidence": "medium",
+      "rationale": "This repeats the 1970s comprehensive-school transition in the economic narrative and should reuse the education card.",
+      "section_id": "hb-c02-omvandling",
+      "text": "På 1970-talet övergick finländarna till en sådan ny grundskola.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0072-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0072-s001",
+        "hb-c02-u0072-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Educational development's equality and economic benefits are important relationships, framed as contributions rather than sole causes.",
+      "section_id": "hb-c02-omvandling",
+      "text": "När utbildningssystemet utvecklades blev samhället mer jämlikt och Finland utvecklades ekonomiskt.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0079-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "EU accession in 1995 is central to Finland's current institutional position and national chronology.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "År 1995 blev Finland medlem i Europeiska unionen EU.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0080-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "The euro is central everyday civic and economic knowledge; current currency status is slow-changing but should be verified for publication.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "I Finland används i dag valutan euro, som är den gemensamma valutan i euroområdet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0080-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "EU law's role in Finnish legislation is central civic knowledge; current rules require authoritative verification and should distinguish legal instruments when needed.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "I Finlands lagstiftning ska de direktiv och förordningar som utfärdas i EU beaktas.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0080-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Participation in common EU external and economic policy explains membership's practical significance without implying exclusive EU authority.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Som medlem i EU deltar Finland i Europas gemensamma utrikespolitik och ekonomiska politik.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0081-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c02-u0079-s003",
+      "assessment_confidence": "high",
+      "rationale": "This repeats the 1995 EU accession date exactly and should share the earlier card.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Finland gick med i Europeiska unionen år 1995.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0081-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0081-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying Finland's first female president is important national representation history, with the antecedent restored.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Hon var Finlands första kvinnliga president.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0081-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "The 2002 transition matters, but it refers to cash; a question must distinguish this from adoption of the euro as a currency in 1999.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Den gemensamma valutan euro togs i bruk i Finland 2002 och den finska marken slopades.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0082-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "NATO accession in 2023 is a central security-policy milestone and a fixed historical event.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "År 2023 anslöt sig Finland till Nordatlantiska fördragsorganisationen Nato.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0083-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0082-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Participation in collective defence is the core meaning of NATO membership; the current treaty framework needs verification.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Den mest betydande effekten av medlemskapet är att Finland blev en del av Natos gemensamma försvar.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0083-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0082-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Coverage by NATO guarantees restates collective-defence participation without explaining the mechanism; combine with adjacent claims.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Finland omfattas nu också av Natos säkerhetsgarantier.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0083-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0083-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Allied assistance following armed attack is a core treaty obligation; verify its conditions and avoid implying identical or automatically military responses.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Enligt säkerhetsgarantierna är vart och ett av Natos medlemsländer skyldigt att hjälpa en allierad som blir föremål för angrepp.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0084-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0082-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Joining a military alliance ended Finland's military non-alignment; terminology should distinguish this from broader historical neutrality.",
+      "section_id": "hb-c02-eu-nato",
+      "text": "Att Finland anslöt sig till Nato innebar också att landet inte längre är ett militärt neutralt land.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0085-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Constitutional protection of rights in a liberal democracy is foundational civic knowledge; preserve protection for everyone rather than only citizens.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Finland blev en liberal demokrati, vars grundlag skyddar alla människors rättigheter.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0085-s005",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Nordic welfare-state model concerns fundamental livelihood protection; it should not be interpreted as unconditional entitlement to every benefit.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Finland är också en nordisk välfärdsstat, som garanterar grundläggande livsförutsättningar för alla sina invånare.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0086-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0086-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The balance between older and working-age residents is central to welfare sustainability, with present demographic trends requiring verification.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "I Finland, liksom i övriga industriländer, finns det allt fler äldre och allt färre människor i arbetsför ålder i förhållande till befolkningen som helhet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0087-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Tax financing and the need for a sufficient tax base are foundational to understanding welfare provision.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Välfärdsstaten finansieras i huvudsak med skattemedel och därför är det av avgörande betydelse att det finns tillräckligt med skattebetalare.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0087-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0086-s004",
+        "hb-c02-u0087-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Growing service needs relative to the working-age population explain fiscal pressure; this is a challenge, not a prediction of inevitable collapse.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Man måste fundera på hur man i framtiden ska kunna erbjuda goda utbildnings-, social- och hälsovårdstjänster i Finland, när det finns allt färre människor i arbetsför ålder och skattebetalare och allt fler som är i behov av tjänster.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c02-u0088-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "high",
+      "rationale": "Protecting living conditions for both current and future generations is a foundational sustainability concept.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Hållbar utveckling är lokal, regional och global utveckling som garanterar goda levnadsvillkor för nuvarande och kommande generationer.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0088-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0088-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Poverty, inequality and environmental protection describe the social and environmental breadth of sustainability.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Hållbar utveckling är att minska fattigdom, minska ekonomisk ojämlikhet och skydda miljön globalt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c02-u0089-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c02-u0089-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Poverty reduction and balanced social, economic and environmental development explain the programme's purpose rather than an accomplished outcome.",
+      "section_id": "hb-c02-utmaningar",
+      "text": "Det syftar till att bekämpa extrem fattigdom och till att skapa ett hållbart samhälle där miljön, ekonomin och människan beaktas på ett jämlikt sätt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    }
+  ]
+}
