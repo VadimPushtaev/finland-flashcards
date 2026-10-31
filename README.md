@@ -20,8 +20,16 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `make` (creates `cards/ALL.txt`)
   - Homebrew decks stay separate; all `.txt` files under `cards/homebrew/`,
     including subdirectories, are excluded from the combined file.
+- Combine Homebrew cards by chapter:
+  - `make combine-homebrew` writes `cards/homebrew/<chapter>/ALL.txt` for each
+    chapter with cards, in anthology subchapter order. `make` also rebuilds these.
+  - `make check-homebrew` checks for missing, stale or obsolete chapter decks
+    without changing files. CI checks that regenerated decks are committed.
+  - Edit the subchapter decks, then regenerate and commit the chapter files.
 - Export decks as Kahoot quizzes (XLSX):
   - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`; large decks are split into `__0001` chunks)
+  - Combined `ALL.txt` decks are skipped by default. Use
+    `make kahoot KAHOOT_ARGS=--include-all` to include them.
 
 ## Homebrew study website
 

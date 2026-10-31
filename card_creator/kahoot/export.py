@@ -338,12 +338,12 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--skip-all",
         action="store_true",
-        help="Skip exporting cards/ALL.txt (default behavior).",
+        help="Skip all combined ALL.txt decks (default behavior).",
     )
     parser.add_argument(
         "--include-all",
         action="store_true",
-        help="Include cards/ALL.txt in Kahoot exports.",
+        help="Include combined ALL.txt decks, including Homebrew chapter decks.",
     )
     return parser
 
@@ -371,7 +371,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     skipped_decks = 0
     skip_all = args.skip_all or not args.include_all
     for deck_path in decks:
-        if skip_all and deck_path.resolve() == (cards_dir / "ALL.txt").resolve():
+        if skip_all and deck_path.name == "ALL.txt":
             continue
         xlsx_paths = export_deck(
             cards_path=deck_path,

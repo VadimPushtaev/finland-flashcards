@@ -30,6 +30,9 @@ jobs:
         run: |
           poetry install --no-interaction --no-root
 
+      - name: Test Homebrew card tools
+        run: poetry run python -m unittest discover -s card_creator/homebrew/tests -v
+
       - name: Rebuild generated files
         run: |
           make
@@ -64,5 +67,6 @@ jobs:
           }
 
           check_file_clean "cards/ALL.txt"
+          check_dir_clean "cards/homebrew"
           check_dir_clean "kahoot"
           exit "$fail"

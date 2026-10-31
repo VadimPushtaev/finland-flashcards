@@ -81,6 +81,24 @@ These materials can serve as:
 
 See `card_progress.md` for detailed tracking of which data sources have been converted to cards.
 
+## Combined Homebrew chapter decks
+
+Subchapter files under `cards/homebrew/<chapter>/` are the editable card sources.
+Run `make combine-homebrew` after changing them to regenerate each chapter's
+`ALL.txt`; the regular `make` also does this. Commit the generated files with the
+source changes. Cards follow the section order in the Swedish anthology, retaining
+their original rows and categories. Chapters without cards have no combined file;
+partially completed chapters combine the subchapter decks that exist.
+
+`poetry run python card_creator/homebrew/combine_chapters.py --check` (or
+`make check-homebrew`) verifies these outputs without writing. CI rebuilds them
+and fails if committed outputs differ or are missing. The combiner excludes its
+own output and removes an obsolete combined file when no chapter cards remain.
+
+The generated chapter `ALL.txt` files are derived copies, not additional cards to
+assess, count, edit or give source records. They remain outside `cards/ALL.txt`.
+Kahoot exports skip combined decks unless `--include-all` is requested.
+
 ## Notes
 
 - Keep questions factual and based on source material
