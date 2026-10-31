@@ -3,9 +3,49 @@
 This document tracks which data sources have been converted into flashcards.
 
 Homebrew preparation material: all twelve chapters have been curated as a
-Swedish source-based reading collection in `data/homebrew/`. No
-Homebrew flashcards have been generated. Track its source selections and next
-steps in [`wip/homebrew/PROGRESS.md`](../wip/homebrew/PROGRESS.md).
+Swedish source-based reading collection in `data/homebrew/`. Track its source
+selections and next steps in
+[`wip/homebrew/PROGRESS.md`](../wip/homebrew/PROGRESS.md).
+
+Homebrew sentence assessments: chapter 1, **Finland, befolkningen och språken**
+(`hb-c01`), has all 213 body sentences across eight subchapters assessed for future
+card selection in [`homebrew/assessments/`](homebrew/assessments/). The first 14
+assessments in `hb-c01-lage` were retained; the remaining 199 were added across
+`hb-c01-regioner`, `hb-c01-natur`, `hb-c01-arstider`, `hb-c01-befolkning`,
+`hb-c01-sprak`, `hb-c01-folkgrupper`, and `hb-c01-flyttning`.
+
+Homebrew cards (2026-10-31): chapter 1 now has **44 CORE cards in eight decks**,
+covering all 48 selected CORE sentences. Related claims share a card where
+appropriate. No existing Homebrew cards were reused and no selected candidates
+remain blocked. CORE denotes study priority, not guaranteed exam coverage.
+
+The [saved selection report](homebrew/selections/hb-c01-2026-10-31-core.json)
+uses the whole assessed collection (currently these 213 sentences): **CORE >=41:
+48; SUPPORTING =40: 29; SKIP <40: 136**. Only CORE material was used for independent
+questions. Assessments remain separate from these derived priorities.
+
+| Subchapter | CORE sentences covered | Cards |
+| --- | ---: | ---: |
+| Finland i Norden | 8 | 6 |
+| Landskap, regioner och städer | 9 | 8 |
+| Natur och friluftsliv | 1 | 1 |
+| Klimat och årstider | 2 | 2 |
+| Befolkning och urbanisering | 4 | 4 |
+| Nationalspråk och andra språk | 10 | 9 |
+| Folkgrupper och urfolk | 9 | 9 |
+| Ut- och invandring | 5 | 5 |
+| **Total** | **48** | **44** |
+
+Outputs: [Anki decks](../cards/homebrew/hb-c01/),
+[card source records](homebrew/card_sources/), and
+[eight Kahoot workbooks](../kahoot/homebrew/hb-c01/).
+Reviewed Swedish source context and all answer choices; retained the 2023 frame
+for population/language figures and recorded dated primary-source checks for
+flagged claims in the source records. Validation passed for every deck's format,
+exact category, source links, row hashes, and selected CORE primary sentences.
+All questions/answers fit the 120/70-character limits (actual maxima: 99/62).
+Reopened every exported workbook and checked all 44 questions, options,
+20-second time limits, and correct-answer indices against the decks.
 
 ## 1. Main Textbook (PRIMARY SOURCE)
 

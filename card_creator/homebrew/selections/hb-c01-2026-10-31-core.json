@@ -1,0 +1,1400 @@
+{
+  "schema_version": 1,
+  "formula": "9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity",
+  "score_range": [
+    0,
+    60
+  ],
+  "calibration": {
+    "mode": "global_tied_scores",
+    "targets_percent": {
+      "CORE": 21,
+      "SUPPORTING": 14
+    },
+    "core_min": 41,
+    "supporting_min": 40,
+    "assessed_sentences": 213,
+    "assessed_sections": 8,
+    "counts": {
+      "CORE": 48,
+      "SUPPORTING": 29,
+      "SKIP": 136
+    }
+  },
+  "assessment_inputs": {
+    "hb-c01-arstider": {
+      "assessment_sha256": "763a4ffe51e60576ba2e9ebda8061c2ceb4e13c313273a8d0b19249d6d0f5444",
+      "source_sha256": "f4c33bc58f4005d5b435e81e1b881dd6f145a7a190751a23c3369bb1487c91f8"
+    },
+    "hb-c01-befolkning": {
+      "assessment_sha256": "31e61245bca1d305c1f46de0da16ce8fed95d47bcf8b3419094ff4028debc449",
+      "source_sha256": "d5059d6e6e9c876bf21dd0ed2541e41f671174ff2d5bca509988422cd3f1ea84"
+    },
+    "hb-c01-flyttning": {
+      "assessment_sha256": "3959c01e0acd4b4cab50c3c14d00d3e5f102364c64831acfb732b71b80ee5651",
+      "source_sha256": "5539fd6c649c6d0b4aa517d539f3117a11a470e3f135b6973c7b0dec4aad1087"
+    },
+    "hb-c01-folkgrupper": {
+      "assessment_sha256": "d96a75dd790991fe6ba861592486b000a66b5e8ef1d4a13952e474df261e8bd3",
+      "source_sha256": "3f716c4fd7e5c5f4355f18498d5a0000486c8e80ecae6b2cda43a7c647cdc139"
+    },
+    "hb-c01-lage": {
+      "assessment_sha256": "b21399bde6ec0ce60088176653fedb86ec4f1c284f0509791e638d7004a0b2cb",
+      "source_sha256": "1bd0782bc0deb460a81a7b54c4b6a17d5a75462981abbbdf07af3a50c195d246"
+    },
+    "hb-c01-natur": {
+      "assessment_sha256": "9a0079f6b2cb8a22e0b75ae594c601f1451e2bfee869feb4d22de8bf1a27f6e3",
+      "source_sha256": "86da6726a5b0f97e41d4335ed9bd75afea8949d2c461141a1f2721da37b03d48"
+    },
+    "hb-c01-regioner": {
+      "assessment_sha256": "71623682b3dae5b03881fddd72423d5f0ed5912d8363c1ee6295cd647bb7254d",
+      "source_sha256": "f04ce7d2d0170c871ae7a908b45608e986e3568e54a44b33e4a57def1b26ad0b"
+    },
+    "hb-c01-sprak": {
+      "assessment_sha256": "80682d49d1423a04f2fd38acf8aacccb523c07182ea0da1684c88ee38e07423e",
+      "source_sha256": "d563ede9d08262306727c4ddb8983e8d00d8fc0595b277ed2f9a61571057d0ff"
+    }
+  },
+  "excluded_invalid_files": [],
+  "requested_sentence_ids": [
+    "hb-c01-u0001-s001",
+    "hb-c01-u0001-s002",
+    "hb-c01-u0001-s003",
+    "hb-c01-u0002-s001",
+    "hb-c01-u0002-s002",
+    "hb-c01-u0003-s001",
+    "hb-c01-u0003-s002",
+    "hb-c01-u0003-s003",
+    "hb-c01-u0003-s004",
+    "hb-c01-u0003-s005",
+    "hb-c01-u0003-s006",
+    "hb-c01-u0004-s001",
+    "hb-c01-u0006-s001",
+    "hb-c01-u0007-s001",
+    "hb-c01-u0008-s001",
+    "hb-c01-u0008-s002",
+    "hb-c01-u0009-s001",
+    "hb-c01-u0009-s002",
+    "hb-c01-u0010-s001",
+    "hb-c01-u0010-s002",
+    "hb-c01-u0010-s003",
+    "hb-c01-u0010-s004",
+    "hb-c01-u0011-s001",
+    "hb-c01-u0011-s002",
+    "hb-c01-u0011-s003",
+    "hb-c01-u0011-s004",
+    "hb-c01-u0011-s005",
+    "hb-c01-u0011-s006",
+    "hb-c01-u0012-s001",
+    "hb-c01-u0012-s002",
+    "hb-c01-u0013-s001",
+    "hb-c01-u0013-s002",
+    "hb-c01-u0013-s003",
+    "hb-c01-u0014-s001",
+    "hb-c01-u0014-s002",
+    "hb-c01-u0014-s003",
+    "hb-c01-u0015-s001",
+    "hb-c01-u0015-s002",
+    "hb-c01-u0015-s003",
+    "hb-c01-u0015-s004",
+    "hb-c01-u0016-s001",
+    "hb-c01-u0016-s002",
+    "hb-c01-u0016-s003",
+    "hb-c01-u0016-s004",
+    "hb-c01-u0017-s001",
+    "hb-c01-u0017-s002",
+    "hb-c01-u0017-s003",
+    "hb-c01-u0017-s004",
+    "hb-c01-u0018-s001",
+    "hb-c01-u0018-s002",
+    "hb-c01-u0018-s003",
+    "hb-c01-u0018-s004",
+    "hb-c01-u0019-s001",
+    "hb-c01-u0019-s002",
+    "hb-c01-u0019-s003",
+    "hb-c01-u0019-s004",
+    "hb-c01-u0020-s001",
+    "hb-c01-u0020-s002",
+    "hb-c01-u0020-s003",
+    "hb-c01-u0020-s004",
+    "hb-c01-u0021-s001",
+    "hb-c01-u0021-s002",
+    "hb-c01-u0021-s003",
+    "hb-c01-u0022-s001",
+    "hb-c01-u0022-s002",
+    "hb-c01-u0022-s003",
+    "hb-c01-u0022-s004",
+    "hb-c01-u0022-s005",
+    "hb-c01-u0023-s001",
+    "hb-c01-u0023-s002",
+    "hb-c01-u0023-s003",
+    "hb-c01-u0023-s004",
+    "hb-c01-u0023-s005",
+    "hb-c01-u0023-s006",
+    "hb-c01-u0023-s007",
+    "hb-c01-u0027-s001",
+    "hb-c01-u0029-s001",
+    "hb-c01-u0029-s002",
+    "hb-c01-u0029-s003",
+    "hb-c01-u0030-s001",
+    "hb-c01-u0030-s002",
+    "hb-c01-u0030-s003",
+    "hb-c01-u0030-s004",
+    "hb-c01-u0030-s005",
+    "hb-c01-u0030-s006",
+    "hb-c01-u0031-s001",
+    "hb-c01-u0031-s002",
+    "hb-c01-u0031-s003",
+    "hb-c01-u0031-s004",
+    "hb-c01-u0032-s001",
+    "hb-c01-u0032-s008",
+    "hb-c01-u0032-s009",
+    "hb-c01-u0032-s003",
+    "hb-c01-u0032-s004",
+    "hb-c01-u0032-s005",
+    "hb-c01-u0032-s006",
+    "hb-c01-u0032-s007",
+    "hb-c01-u0033-s001",
+    "hb-c01-u0033-s002",
+    "hb-c01-u0033-s003",
+    "hb-c01-u0033-s004",
+    "hb-c01-u0033-s005",
+    "hb-c01-u0033-s006",
+    "hb-c01-u0034-s001",
+    "hb-c01-u0034-s002",
+    "hb-c01-u0034-s007",
+    "hb-c01-u0034-s008",
+    "hb-c01-u0034-s004",
+    "hb-c01-u0034-s005",
+    "hb-c01-u0034-s006",
+    "hb-c01-u0035-s001",
+    "hb-c01-u0035-s002",
+    "hb-c01-u0035-s003",
+    "hb-c01-u0035-s004",
+    "hb-c01-u0035-s005",
+    "hb-c01-u0035-s006",
+    "hb-c01-u0036-s001",
+    "hb-c01-u0036-s002",
+    "hb-c01-u0036-s003",
+    "hb-c01-u0036-s004",
+    "hb-c01-u0037-s001",
+    "hb-c01-u0037-s002",
+    "hb-c01-u0037-s003",
+    "hb-c01-u0037-s004",
+    "hb-c01-u0037-s005",
+    "hb-c01-u0038-s001",
+    "hb-c01-u0038-s002",
+    "hb-c01-u0038-s003",
+    "hb-c01-u0038-s004",
+    "hb-c01-u0039-s001",
+    "hb-c01-u0039-s002",
+    "hb-c01-u0039-s003",
+    "hb-c01-u0039-s004",
+    "hb-c01-u0040-s001",
+    "hb-c01-u0040-s002",
+    "hb-c01-u0041-s001",
+    "hb-c01-u0041-s002",
+    "hb-c01-u0041-s003",
+    "hb-c01-u0042-s001",
+    "hb-c01-u0042-s002",
+    "hb-c01-u0042-s003",
+    "hb-c01-u0043-s001",
+    "hb-c01-u0043-s002",
+    "hb-c01-u0043-s003",
+    "hb-c01-u0044-s001",
+    "hb-c01-u0044-s002",
+    "hb-c01-u0044-s003",
+    "hb-c01-u0045-s001",
+    "hb-c01-u0045-s002",
+    "hb-c01-u0046-s001",
+    "hb-c01-u0046-s002",
+    "hb-c01-u0046-s003",
+    "hb-c01-u0046-s004",
+    "hb-c01-u0047-s001",
+    "hb-c01-u0047-s002",
+    "hb-c01-u0047-s003",
+    "hb-c01-u0048-s001",
+    "hb-c01-u0048-s002",
+    "hb-c01-u0048-s003",
+    "hb-c01-u0048-s004",
+    "hb-c01-u0049-s001",
+    "hb-c01-u0049-s002",
+    "hb-c01-u0049-s003",
+    "hb-c01-u0049-s004",
+    "hb-c01-u0050-s001",
+    "hb-c01-u0050-s002",
+    "hb-c01-u0050-s003",
+    "hb-c01-u0051-s001",
+    "hb-c01-u0051-s002",
+    "hb-c01-u0051-s003",
+    "hb-c01-u0052-s001",
+    "hb-c01-u0052-s002",
+    "hb-c01-u0052-s003",
+    "hb-c01-u0052-s004",
+    "hb-c01-u0053-s001",
+    "hb-c01-u0053-s002",
+    "hb-c01-u0054-s001",
+    "hb-c01-u0054-s002",
+    "hb-c01-u0054-s003",
+    "hb-c01-u0054-s004",
+    "hb-c01-u0054-s005",
+    "hb-c01-u0064-s001",
+    "hb-c01-u0055-s001",
+    "hb-c01-u0055-s002",
+    "hb-c01-u0055-s003",
+    "hb-c01-u0056-s001",
+    "hb-c01-u0056-s002",
+    "hb-c01-u0057-s001",
+    "hb-c01-u0057-s002",
+    "hb-c01-u0057-s003",
+    "hb-c01-u0058-s001",
+    "hb-c01-u0058-s002",
+    "hb-c01-u0058-s003",
+    "hb-c01-u0058-s004",
+    "hb-c01-u0058-s005",
+    "hb-c01-u0058-s006",
+    "hb-c01-u0059-s001",
+    "hb-c01-u0059-s002",
+    "hb-c01-u0059-s003",
+    "hb-c01-u0060-s001",
+    "hb-c01-u0060-s002",
+    "hb-c01-u0060-s003",
+    "hb-c01-u0060-s004",
+    "hb-c01-u0060-s005",
+    "hb-c01-u0060-s006",
+    "hb-c01-u0061-s001",
+    "hb-c01-u0061-s002",
+    "hb-c01-u0062-s001",
+    "hb-c01-u0062-s002",
+    "hb-c01-u0062-s003",
+    "hb-c01-u0063-s001",
+    "hb-c01-u0063-s002",
+    "hb-c01-u0063-s003"
+  ],
+  "requested_counts": {
+    "CORE": 48,
+    "SUPPORTING": 29,
+    "SKIP": 136
+  },
+  "included_tiers": [
+    "CORE"
+  ],
+  "selected_count": 48,
+  "sentences": [
+    {
+      "sentence_id": "hb-c01-u0002-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's place in Northern Europe and the Nordic countries is useful national orientation and a plausible exam topic, with a direct question about Nordic membership. The geographic grouping is slow-changing; the earlier sentence gives the location but does not contain the Nordic-membership claim.",
+      "section_id": "hb-c01-lage",
+      "text": "Finland ligger i Nordeuropa och hör till Norden.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0002-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0002-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying the other Nordic countries supports understanding Finland's regional relationships and the Nordic mobility rules discussed later in the anthology. The preceding sentence supplies Finland as the excluded member; this list is repeated later in chapter 12, so this earlier occurrence remains the representative.",
+      "section_id": "hb-c01-lage",
+      "text": "De övriga nordiska länderna är Sverige, Norge, Danmark och Island.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0003-s005",
+        "hb-c01-u0003-s006"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Knowing Finland's neighbours is useful geographic orientation and a plausible exam topic. The paragraph includes Estonia across the Gulf of Finland, so the list must not be presented as a list of countries sharing a land border; neighbour relationships are slow-changing structural information.",
+      "section_id": "hb-c01-lage",
+      "text": "Finlands grannländer är Ryssland, Norge, Sverige och Estland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Russia's position on Finland's eastern land border is useful national orientation and directly supports a focused geography question. This slow-changing border relationship adds direction and border type beyond the earlier neighbour list; 'long' supplies no exact distance.",
+      "section_id": "hb-c01-lage",
+      "text": "Finland har en lång gemensam landgräns med Ryssland i öster.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Norway's position on Finland's northern border is a clear, useful geographic relationship and a plausible exam topic. It directly supports a direction-based question and adds information absent from the earlier list of neighbours; the border relationship is slow-changing.",
+      "section_id": "hb-c01-lage",
+      "text": "I norr delar Finland gräns med Norge.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Sweden's western position and both land and sea borders give useful geographic orientation and a plausible exam topic. A question should focus on direction or border types while preserving both types when relevant; this is slow-changing structural information rather than a repeat of the neighbour list.",
+      "section_id": "hb-c01-lage",
+      "text": "I väster har Finland en gemensam land- och sjögräns med Sverige.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0003-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Locating Estonia across the Gulf of Finland explains the maritime-neighbour relationship, useful for national and travel orientation. The paragraph supplies Finland as the viewpoint for 'south'; a focused question needs that viewpoint stated explicitly, and the country relationship is slow-changing.",
+      "section_id": "hb-c01-lage",
+      "text": "I söder på andra sidan Finska viken ligger Estland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0003-s006",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The explicit absence of a land border with Estonia clarifies a useful distinction between neighbours and land-border neighbours. It directly supports a defensible question retaining the negation; the preceding location across a gulf does not state this complete claim, and border relationships are slow-changing.",
+      "section_id": "hb-c01-lage",
+      "text": "Finland har ingen gemensam landgräns med Estland.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0011-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Southern Finland's population concentration is useful for understanding settlement and services and is a plausible exam topic. The ranking is clear but can change over time.",
+      "section_id": "hb-c01-regioner",
+      "text": "Södra Finland är Finlands mest tätbefolkade område.",
+      "score": 44,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0011-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0011-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying Helsinki as the capital is central national knowledge within a broader statement about large southern cities. Restore the southern location of 'there' and focus a question on the capital rather than implying Helsinki is the only large city.",
+      "section_id": "hb-c01-regioner",
+      "text": "Där ligger Finlands största städer, till exempel Finlands huvudstad Helsingfors.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0011-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The named capital-region municipalities are useful for navigating the metropolitan area and a plausible exam topic. The wording about surrounding Helsinki needs modest rephrasing to preserve that Helsinki itself is included; the grouping is structural information.",
+      "section_id": "hb-c01-regioner",
+      "text": "Helsingfors omges av huvudstadsregionen, som förutom Helsingfors inkluderar Esbo, Vanda och Grankulla.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0019-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Locating Lapland in Finland's far north is useful national orientation and a plausible exam topic. It supports a focused geographical question about a slow-changing regional identity.",
+      "section_id": "hb-c01-regioner",
+      "text": "Den nordligaste delen av Finland är Lappland.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0020-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Locating the Sami homeland in Lapland is useful context for indigenous institutions and rights and a plausible exam topic. The sentence locates the homeland without specifying its full boundaries or implying all Sami live there.",
+      "section_id": "hb-c01-regioner",
+      "text": "I Lappland ligger även samernas hembygdsområde.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0022-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0021-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying Aland as a major archipelago area provides useful national orientation and leads into its civic status. The southwestern archipelago context clarifies the grouping; no island count or size ranking is stated.",
+      "section_id": "hb-c01-regioner",
+      "text": "Ett av de stora skärgårdsområdena är Åland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0022-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Aland's autonomy within Finland is foundational knowledge about the country's territorial governance and a strong civic question candidate. Preserve both autonomy and inclusion in Finland; this is structural status rather than a detailed administrative procedure.",
+      "section_id": "hb-c01-regioner",
+      "text": "Åland har självstyre, men är en del av Finland.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0022-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Mariehamn as Aland's capital is a clear regional-government fact and a plausible exam topic. It directly supports a named-answer question about slow-changing institutional geography.",
+      "section_id": "hb-c01-regioner",
+      "text": "Ålands huvudstad är Mariehamn.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0022-s005",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0021-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Swedish as Aland's sole official language is foundational civic knowledge, combined here with a broader observation about Swedish-speaking archipelago communities. Separate these claims and restore the wider archipelago context; language status is slow-changing structural information.",
+      "section_id": "hb-c01-regioner",
+      "text": "Det enda officiella språket på Åland är svenska, och i övrigt är skärgården också delvis ett svenskspråkigt område.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0023-s007",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0023-s006"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Avoiding litter and understanding that it may lead to a fine have major practical value and plausible civic relevance. The Finnish context is implicit; separate social disapproval from the legal possibility of a fine, whose applicable rules need periodic checking.",
+      "section_id": "hb-c01-natur",
+      "text": "Att skräpa ner anses hänsynslöst och oartigt och man kan också bötfällas för det.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c01-u0029-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "number"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Four distinct seasons are basic national-climate knowledge with practical value and plausible exam relevance. The count is directly testable; the broad seasonal pattern is slow-changing.",
+      "section_id": "hb-c01-arstider",
+      "text": "Finland har fyra tydliga årstider.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0034-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0034-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Naming midnight sun gives a useful concept and a plausible exam question. The preceding sentence supplies the phenomenon; define it as the sun remaining above the horizon without importing that sentence's broad Lapland-and-summer scope.",
+      "section_id": "hb-c01-arstider",
+      "text": "Fenomenet kallas midnattssol.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0039-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "number"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's approximate population is useful national-scale knowledge and a plausible exam topic. The claim explicitly concerns 2023, so retain that year and approximation rather than treating the historical figure as a current statistic.",
+      "section_id": "hb-c01-befolkning",
+      "text": "År 2023 bodde det omkring 5,6 miljoner människor i Finland.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0039-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The concentration of people in or near cities helps explain society and service provision and is a plausible exam topic. Preserve the inclusion of areas near cities; it is broader than a statistic limited to urban residents and changes gradually.",
+      "section_id": "hb-c01-befolkning",
+      "text": "Största delen av befolkningen bor i städer eller nära städer.",
+      "score": 44,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0040-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Recognizing established minority groups supports understanding Finnish diversity and is plausible civic material. The list is explicitly illustrative and combines linguistic and cultural identities rather than defining an exhaustive or mutually exclusive classification.",
+      "section_id": "hb-c01-befolkning",
+      "text": "Minoriteter i Finland är till exempel finlandssvenskar, samer, romer, judar, tatarer, personer som talar ryska och personer som talar karelska.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0041-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The postwar 1950s urbanization turning point is useful social history and a plausible exam topic. It directly supports a period-based question, while the fixed historical timing has low change risk.",
+      "section_id": "hb-c01-befolkning",
+      "text": "Den snabba urbaniseringen började i Finland först efter andra världskriget på 1950-talet.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0044-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "number",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's two national languages are foundational civic knowledge and a strong question candidate. The names and status are explicit, and this slow-changing structural fact recurs later in chapter 5 rather than duplicating an earlier complete claim.",
+      "section_id": "hb-c01-sprak",
+      "text": "I Finland finns det två nationalspråk, finska och svenska.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0044-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "number",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The approximate Finnish mother-tongue share helps explain the country's language distribution and is a plausible exam topic. Retain the explicit 2023 date and distinguish mother tongue from language proficiency; the dated figure has low change risk.",
+      "section_id": "hb-c01-sprak",
+      "text": "Omkring 85 procent av finländarna hade år 2023 finska som modersmål.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0044-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "number",
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0044-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Swedish-speaking minority's approximate share is useful for understanding bilingual society. The preceding sentence supplies the 2023 statistical frame; retain that context instead of treating five percent as an undated current share.",
+      "section_id": "hb-c01-sprak",
+      "text": "De svenskspråkiga i Finland utgjorde omkring fem procent av befolkningen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0045-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying Finland Swedish gives useful language terminology and a plausible cultural exam topic. The named variety is clear and slow-changing; the sentence concerns language usage rather than the legal definition of a population group.",
+      "section_id": "hb-c01-sprak",
+      "text": "Svenskan som talas i Finland är finlandssvenska.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0046-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Long-established minority languages are useful for understanding linguistic diversity and a plausible civic topic. Preserve the plural Sami and sign languages and the non-exhaustive nature of the historical examples; the continuity claim is slow-changing.",
+      "section_id": "hb-c01-sprak",
+      "text": "Andra språk som använts länge i Finland är de samiska språken, den finländska romanin, karelska språket och teckenspråken.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0046-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "name",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Sami languages and their status in the homeland connect to foundational indigenous language rights. The sentence combines speakers, geography and a broad 'official languages' claim, so clarify its legal scope before question use and check the applicable rules periodically.",
+      "section_id": "hb-c01-sprak",
+      "text": "De samiska språken är de språk som talas av ursprungsbefolkningen i Lappland, och de är officiella språk inom samernas hembygdsområde.",
+      "score": 52,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c01-u0046-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 1,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Multilingualism is a useful civic theme with a clear general claim, though it names no languages or legal rights. The earlier Finnish-majority sentence includes an additional claim and is only a partial overlap, not a complete duplicate.",
+      "section_id": "hb-c01-sprak",
+      "text": "I Finland talas många olika språk.",
+      "score": 43,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0047-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The definition of Finland Swedes is useful for understanding a national language community and a plausible exam topic. It directly identifies mother tongue as the criterion without equating the group with citizens of Sweden; the concept is stable.",
+      "section_id": "hb-c01-sprak",
+      "text": "Finlandssvenskar är finländare som talar svenska som sitt modersmål.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0047-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The main areas of Finland-Swedish settlement are useful linguistic geography and a plausible exam topic. Preserve 'mainly' and the regional list rather than implying all speakers live there; settlement patterns change gradually.",
+      "section_id": "hb-c01-sprak",
+      "text": "Finlandssvenskarna bor i huvudsak i Nyland, Österbotten, Åboland och på Åland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0048-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's historical connection to Sweden is useful national history and a plausible exam topic. It directly supports the former-country relationship without supplying dates; the fixed historical claim has low change risk.",
+      "section_id": "hb-c01-sprak",
+      "text": "Det nuvarande Finlands område var länge en del av Sverige.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0050-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "name",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Sami indigenous status connects to foundational minority-rights knowledge and is a strong civic theme. The exclusive EU-wide recognition claim needs its recognition framework and territorial scope clarified before a defensible question; current recognition status requires periodic verification.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Samerna är den enda erkända ursprungsbefolkningen inom Europeiska unionen.",
+      "score": 52,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c01-u0050-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Understanding indigenous peoples is foundational for interpreting the rights discussed elsewhere and a plausible civic topic. This is an introductory definition centred on traditional territory and nature, so a question should not turn it into a complete legal eligibility test.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Ursprungsbefolkning avser en människogrupp med starka rötter i de områden som den traditionellt har befolkat och i naturen.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0051-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "number",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "The Roma community's long history is useful minority-history knowledge and a plausible topic. The approximate 'five hundred years ago' is relative to an unstated source date, so clarify that anchor instead of treating it as a newly verified arrival year.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "De första romerna kom till Finland för omkring femhundra år sedan.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c01-u0053-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Tatars' Turkic background and long-established Muslim community are useful minority-history knowledge and a plausible exam topic. Separate ethnic-linguistic origin from the community's historical ranking and retain the Finland-specific scope.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Tatarerna är ett turkfolk och det äldsta muslimska samfundet i Finland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0064-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Karelian's close linguistic relationship to Finnish is useful minority-language knowledge and a plausible exam topic. The source gives a directly testable relationship rather than implying the languages or their speakers are identical; the linguistic relationship is stable.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Karelska språket är det språk som är närmast besläktat med finskan.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0055-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Postwar resettlement of Karelian speakers connects minority history with territorial change and is a plausible civic-history topic. Preserve the language-group scope and causal link to former home areas becoming Soviet territory; the historical frame is fixed.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Personer som talade karelska placerades på olika håll i Finland efter andra världskriget, när deras gamla hembygder blev en del av Sovjetunionen till följd av kriget.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0055-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Karelian's use in Finland and Russia is useful cross-border language knowledge and a plausible topic. A focused question can identify the named countries without implying every resident speaks Karelian; language distribution is slow-changing.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Karelska talas numera i Finland och Ryssland.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0056-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The 1991 Soviet collapse and subsequent migration help explain Finnish population history and are plausible exam content. Separate the historical turning point from example motives, and retain the distinction between Russian nationality and Russian language.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Sovjetunionens fall år 1991 ökade inflyttningen betydligt, och både ryssar och ryskspråkiga flyttade till Finland på grund av till exempel arbete, studier eller familjen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0058-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Estonia's 2004 EU accession and subsequent work migration connect European integration to Finnish society and are plausible exam content. Separate the fixed accession date from the broad migration pattern and retain 'many' rather than implying all Estonian arrivals were workers.",
+      "section_id": "hb-c01-folkgrupper",
+      "text": "Efter att Estland anslöt sig till Europeiska unionen år 2004 har många ester flyttat till Finland för arbete.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0060-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "North America as a major nineteenth-century destination is useful migration history and a plausible exam topic. The fixed period and destination support a focused question while 'especially' prevents treating it as the only destination.",
+      "section_id": "hb-c01-flyttning",
+      "text": "På 1800-talet flyttade finländare i synnerhet till Nordamerika.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0060-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date",
+        "number",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Work migration to Sweden in the 1960s and 1970s is useful national social history and a plausible exam topic. Preserve 'at most' and the annual scale at peaks rather than applying tens of thousands to every year; the historical frame is fixed.",
+      "section_id": "hb-c01-flyttning",
+      "text": "På 1960- och 1970-talen flyttade som mest tiotusentals finländare till Sverige varje år för att få arbete.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0061-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Larger-scale immigration beginning in the early 1990s is a useful turning point in Finnish social history and a plausible exam topic. Preserve the scale qualifier so the sentence does not deny immigration before that period.",
+      "section_id": "hb-c01-flyttning",
+      "text": "En större invandring till Finland började egentligen först efter kalla krigets slut i början av 1990-talet.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0062-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Refugee arrivals first from Chile and then Vietnam illustrate Finnish humanitarian-migration history and are plausible exam content. Preserve the 1970s/1980s frame, sequence and qualitative small numbers rather than inventing exact counts.",
+      "section_id": "hb-c01-flyttning",
+      "text": "Finland tog emot små mängder flyktingar på 1970- och 1980-talen först från Chile och sedan från Vietnam.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c01-u0062-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c01-u0062-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Refugee arrivals linked to the 1990s Yugoslav wars are useful migration history and a plausible civic topic. The preceding sentence supplies Finland as the destination; the regional and historical scope must remain explicit.",
+      "section_id": "hb-c01-flyttning",
+      "text": "Till följd av krigen som ledde till Jugoslaviens upplösning på 1990-talet kom det flyktingar från Balkanländerna.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    }
+  ]
+}
