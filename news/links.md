@@ -424,3 +424,7 @@ These are direct or alternate URLs for documents and pages already monitored abo
 - Parliament response alternate PDF route (SV, RSv 86/2026 rd): https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-31561/pdf
 - Parliament letter alternate PDF route (SV, RSk 30/2026 rd): https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-37019/pdf
 - Parliament letter alternate document route (FI, EK 30/2026 vp): https://www.eduskunta.fi/valtiopaivaasiakirjat/EK+30/2026
+
+## Additional official source routes (discovered 2026-10-31)
+
+- Finance Committee report on the second supplementary budget, current direct PDF (FI, VaVM 19/2026 vp; revision 5.0, PDF regenerated 2026-10-06; discovered 2026-10-31): https://api.eduskunta.fi/documents/fi/7A73187A-1586-C79A-84FA-A110E7900000.pdf

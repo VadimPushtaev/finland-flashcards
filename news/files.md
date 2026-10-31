@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-10-29 (unless noted otherwise in filename).
+Download date: 2026-10-31 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
@@ -373,6 +373,7 @@ Download date: 2026-10-29 (unless noted otherwise in filename).
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
+| `news/files/eduskunta_vavm_19_2026_he_102_fi_2026-10-31.pdf` | FI: revised Finance Committee report VaVM 19/2026 vp on HE 102/2026 / HE 112/2026; revision 5.0, marked `Valmis`, PDF regenerated 2026-10-06. Status, layout and page-header changes; citizenship-test discussion in dissenting opinion 3 unchanged. — archived 2026-10-31 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016/pdf | `e393dce6139af72ddd2a82a16c6b33e0fca9e53d2c032959c0b071f87957546a` |
 | `news/files/finlex_he_102_2026_second_supplementary_budget_fi.pdf` | FI: Finlex generated PDF for HE 102/2026 (“Hallituksen esitys eduskunnalle vuoden 2026 toiseksi lisätalousarvioksi”); includes funding for the Citizenship Act amendment project / citizenship test | https://www.finlex.fi/api/media/government-proposal/1070564/mainPdf/main.pdf?timestamp=2026-06-04T06%3A36%3A51.000Z | `f83806305498b17e88f98196b5d1bb1cf3197d05c6702e591ed07655e9a2323a` |
 | `news/files/finlex_rp_102_2026_andra_tillaggsbudget_sv.pdf` | SV: Finlex generated PDF for RP 102/2026 (“Regeringens proposition till riksdagen om en andra tilläggsbudget för 2026”); includes funding for the Citizenship Act amendment project / citizenship test | https://www.finlex.fi/api/media/government-proposal/1070565/mainPdf/main.pdf?timestamp=2026-06-04T06%3A36%3A51.000Z | `1c454518d121f7ebcb17c72ea75e270b0da29fdc630e5d739db46ad42aa75649` |
 | `news/files/eduskunta_he_102_2026_second_supplementary_budget_fi.pdf` | FI: Eduskunta print/PDF version of submitted second supplementary budget proposal HE 102/2026 vp | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-33173/pdf | `c52a90b4c2e664bfbbb71596a2d7607bdf972d2fe8f934990cc24e3836530615` |
