@@ -16,8 +16,10 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `poetry run python data/infofinland/crawler.py -o data/infofinland/content`
 - Crawl English Yhteiskuntaorientaatio learning materials:
   - `poetry run python data/orientation/crawler.py -l en -o data/orientation/en`
-- Combine all decks into a single import file:
+- Combine decks into a single import file (excluding `cards/homebrew/`):
   - `make` (creates `cards/ALL.txt`)
+  - Homebrew decks stay separate; all `.txt` files under `cards/homebrew/`,
+    including subdirectories, are excluded from the combined file.
 - Export decks as Kahoot quizzes (XLSX):
   - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`; large decks are split into `__0001` chunks)
 

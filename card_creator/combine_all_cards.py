@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Combine all deck files under the repository's `cards/` directory into a single
-`cards/ALL.txt` file. The order of files is stable and deterministic, using a
-lexicographic sort of POSIX-style paths (akin to a sorted `find`).
+Combine deck files under the repository's `cards/` directory into a single
+`cards/ALL.txt` file, excluding `cards/homebrew/`. The order of files is stable
+and deterministic, using a lexicographic sort of POSIX-style paths (akin to a
+sorted `find`).
 
 Usage (from repo root):
     poetry run python card_creator/combine_all_cards.py
@@ -21,18 +22,24 @@ def list_card_files(cards_dir: Path) -> list[Path]:
     - Recurses under `cards_dir`.
     - Includes only `.txt` files.
     - Excludes the combined output file `ALL.txt`.
+    - Excludes all decks under `cards_dir/homebrew/`.
     - Sorted lexicographically by POSIX path for stability.
     """
     all_txt = list(cards_dir.rglob("*.txt"))
     out_path = cards_dir / "ALL.txt"
-    filtered = [p for p in all_txt if p.resolve() != out_path.resolve()]
+    filtered = [
+        p
+        for p in all_txt
+        if p.resolve() != out_path.resolve()
+        and p.relative_to(cards_dir).parts[0] != "homebrew"
+    ]
     # Stable, deterministic order similar to a sorted `find` listing
     filtered.sort(key=lambda p: p.as_posix())
     return filtered
 
 
 def combine_cards(repo_root: Path) -> Path:
-    """Combine all card files into `cards/ALL.txt` and return the output path."""
+    """Combine card files except Homebrew into `cards/ALL.txt` and return its path."""
     cards_dir = repo_root / "cards"
     cards_dir.mkdir(parents=True, exist_ok=True)
 
