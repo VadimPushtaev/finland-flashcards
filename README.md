@@ -30,6 +30,19 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - `make kahoot` (writes quizzes under `kahoot/` mirroring `cards/`; large decks are split into `__0001` chunks)
   - Combined `ALL.txt` decks are skipped by default. Use
     `make kahoot KAHOOT_ARGS=--include-all` to include them.
+- Show Homebrew progress by chapter:
+  - `poetry run python homebrew_status.py` prints a color-coded table with emoji
+    markers and totals for Russian text, cards, videos and Russian video audio.
+  - Each count is subchapters with that resource / total subchapters. Russian
+    text must pass the study reader's current review checks, including the chapter
+    heading. Cards require a nonempty subchapter deck; combined `ALL.txt` files
+    are excluded. A subchapter with cards need not cover every sentence.
+  - Media counts reflect nonempty local MP4 exports (or packaged HLS files).
+    Russian audio requires a matching video and `.ru.m4a` track (or packaged
+    Russian HLS audio). Credits and production plans alone do not count.
+  - The report is read-only and works from any working directory. Use `--plain`
+    for ASCII borders and markers, or `--color always` to retain ANSI colors when
+    piping. Automatic colors respect `NO_COLOR`.
 
 ## Homebrew study website
 
