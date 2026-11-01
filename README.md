@@ -43,6 +43,9 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
   - The report is read-only and works from any working directory. Use `--plain`
     for ASCII borders and markers, or `--color always` to retain ANSI colors when
     piping. Automatic colors respect `NO_COLOR`.
+  - Add `--card-counts` for a column such as `2+3+0 = 5`: one nonblank-row
+    count per subchapter in anthology order, including zeros, followed by the
+    chapter's total number of cards. The final row shows the total across chapters.
 
 ## Homebrew study website
 

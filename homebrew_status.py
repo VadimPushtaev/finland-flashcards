@@ -2,9 +2,11 @@
 from __future__ import annotations
 
 import argparse
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from itertools import zip_longest
 import os
 from pathlib import Path
+import re
 import shutil
 import sys
 import textwrap
@@ -30,6 +32,7 @@ class ChapterStatus:
     cards: int = 0
     videos: int = 0
     russian_audio: int = 0
+    card_counts: list[int] = field(default_factory=list)
 
 
 def read_yaml(path: Path):
@@ -84,7 +87,10 @@ def collect_status(root: Path) -> list[ChapterStatus]:
                 russian, section["id"], "sections", section_source(section), terms,
             )
             deck = root / "cards/homebrew" / chapter["id"] / f'{section["id"]}.txt'
-            row.cards += deck.is_file() and bool(deck.read_text(encoding="utf-8").strip())
+            count = sum(bool(line.strip()) for line in deck.read_text(encoding="utf-8").splitlines()) \
+                if deck.is_file() else 0
+            row.card_counts.append(count)
+            row.cards += count > 0
             slug = section["id"].removeprefix(chapter["id"] + "-")
             video = root / "videos/homebrew" / f'{chapter["id"]}-{number:02d}-{slug}.mp4'
             # The packager can replace an MP4 with one shared HLS video stream.
@@ -107,7 +113,7 @@ def display_width(text: str) -> int:
 
 
 def render_report(rows: list[ChapterStatus], *, color: bool = False,
-                  plain: bool = False, width: int = 120) -> str:
+                  plain: bool = False, width: int = 120, card_counts: bool = False) -> str:
     """Render a wrapping table with status markers that also work without ANSI."""
     color = color and not plain
 
@@ -121,6 +127,8 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
 
     total = ChapterStatus("Total", **{key: sum(getattr(row, key) for row in rows) for key in COUNTS})
     headers = ["Chapter", "Parts", "RU text", "Cards", "Videos", "RU audio"]
+    if card_counts:
+        headers.append("Card counts")
     cells = []
     styles = []
     for row in [*rows, total]:
@@ -130,10 +138,20 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
             symbol, code = marker(count, row.parts)
             values.append(f"{symbol} {count}/{row.parts}")
             codes.append(code)
+        if card_counts:
+            counts = row.card_counts
+            expression = "+".join(map(str, counts)) or "0"
+            values.append(str(sum(sum(chapter.card_counts) for chapter in rows)) if row is total
+                          else f"{expression} = {sum(counts)}")
+            codes.append("")
         cells.append(values)
         styles.append(codes)
     widths = [max(display_width(values[i]) for values in [headers, *cells]) for i in range(len(headers))]
-    widths[0] = max(14, min(widths[0], width - sum(widths[1:]) - 3 * len(headers) - 1))
+    minimum_title = len(headers[0]) if card_counts else 14
+    if card_counts:
+        available = width - sum(widths[1:-1]) - 3 * len(headers) - 1 - minimum_title
+        widths[-1] = max(len(headers[-1]), min(widths[-1], max(26, width // 3), available))
+    widths[0] = max(minimum_title, min(widths[0], width - sum(widths[1:]) - 3 * len(headers) - 1))
     vertical = "|" if plain else "\u2502"
 
     def border(kind):
@@ -153,7 +171,7 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
                 symbol, count = value.split(" ", 1)
                 padded = symbol + " " + padding + count
             else:
-                padded = value + padding if i == 0 else padding + value
+                padded = value + padding if i == 0 or (card_counts and i == len(headers) - 1) else padding + value
             style = ";".join(part for part in ("1" if bold else "", code) if part)
             columns.append(paint(padded, style) if style else padded)
         edge = paint(vertical, "36")
@@ -166,16 +184,25 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
         is_total = index == len(rows)
         if is_total:
             output.append(border("middle"))
-        lines = textwrap.wrap(values[0], width=widths[0]) or [""]
-        output.append(table_row([lines[0], *values[1:]], codes, bold=is_total))
-        for line in lines[1:]:
-            output.append(table_row([line, *([""] * (len(headers) - 1))], codes))
+        lines = [textwrap.wrap(values[0], width=widths[0]) or [""], *[[value] for value in values[1:]]]
+        if card_counts:
+            # Allow wrapping after '+' without breaking a card count across lines.
+            lines[-1] = [""]
+            for token in re.findall(r"\d+\+?| = \d+", values[-1]):
+                if len(lines[-1][-1]) + len(token) > widths[-1]:
+                    lines[-1].append(token.lstrip())
+                else:
+                    lines[-1][-1] += token
+        for line in zip_longest(*lines, fillvalue=""):
+            output.append(table_row(line, codes, bold=is_total))
     output.extend([border("bottom"), ""])
     labels = []
     for count, label in ((2, "complete"), (1, "some ready"), (0, "none yet")):
         symbol, code = marker(count, 2)
         labels.append(paint(f"{symbol} {label}", code))
     output.append("   ".join(labels))
+    if card_counts:
+        output.append("Card counts: one number per subchapter, in chapter order; then the chapter total.")
     output.extend([
         "RU text: reviewed and current. Cards: at least one card in the subchapter deck.",
         "Videos and RU audio: local files; RU audio requires a matching video.",
@@ -188,6 +215,8 @@ def main(argv=None) -> int:
     """Print the report without changing files or contacting a server."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--plain", action="store_true", help="Use ASCII borders and markers, without ANSI colors")
+    parser.add_argument("--card-counts", action="store_true",
+                        help="Add card counts in subchapter order, e.g. 2+3+0 = 5")
     parser.add_argument("--color", choices=("auto", "always", "never"), default="auto",
                         help="ANSI colors (default: auto; respects NO_COLOR)")
     args = parser.parse_args(argv)
@@ -200,7 +229,8 @@ def main(argv=None) -> int:
     except DATA_ERRORS as error:
         parser.exit(1, f"Homebrew status error: {error}\n")
     print(render_report(rows, color=color, plain=args.plain,
-                        width=shutil.get_terminal_size(fallback=(120, 24)).columns))
+                        width=shutil.get_terminal_size(fallback=(120, 24)).columns,
+                        card_counts=args.card_counts))
     return 0
 
 

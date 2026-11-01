@@ -86,7 +86,7 @@ class HomebrewStatusTests(unittest.TestCase):
         self.put("videos/homebrew/hb-c01-99-three.mp4", "Wrong section number")
         rows = status.collect_status(self.root)
         self.assertEqual(rows, [
-            status.ChapterStatus("1. First chapter", 3, 3, 1, 1, 1),
+            status.ChapterStatus("1. First chapter", 3, 3, 1, 1, 1, [2, 0, 0]),
             status.ChapterStatus("2. Empty chapter"),
         ])
 
