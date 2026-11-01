@@ -22,7 +22,10 @@ to existing source IDs. For a range, use source array order, not numeric ID
 suffixes: IDs are allocation labels. Ask about an ambiguous quotation or range
 only when the available context cannot resolve it. A chapter/section request
 covers every segmented body sentence, including list fragments. Headings supply
-context but do not receive assessment records.
+context but do not receive assessment records. Assess only the requested material
+needed for the task. Reading neighboring or related context does not authorize
+assessing additional sentences. Do not expand scope to achieve selection percentages
+or recalibrate card priorities; reuse current assessments outside the request.
 
 Use the bundled helper from the repository root, after resolving the targets:
 

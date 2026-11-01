@@ -81,6 +81,22 @@ These materials can serve as:
 
 See `card_progress.md` for detailed tracking of which data sources have been converted to cards.
 
+## Homebrew card selection
+
+Homebrew card selection uses permanent thresholds: **CORE >=41, SUPPORTING =40,
+SKIP <40**, with score `9 * exam_relevance + 6 * knowledge_value +
+4 * question_suitability + factual_specificity`. Normal generation assesses only
+the requested material needed for that task and selects CORE by default:
+
+```bash
+poetry run python card_creator/homebrew/score_sentences.py hb-c03
+```
+
+There is no automatic recalibration or percentage quota. The same score receives
+the same priority across chapters and runs. `--all-assessed` is an explicit
+collection report with the same fixed cutoffs. Existing saved reports document
+earlier generation policies; changing the policy does not regenerate those cards.
+
 ## Combined Homebrew chapter decks
 
 Subchapter files under `cards/homebrew/<chapter>/` are the editable card sources.

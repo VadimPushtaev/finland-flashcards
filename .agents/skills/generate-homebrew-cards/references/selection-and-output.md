@@ -17,29 +17,34 @@ Change risk and assessment confidence never subtract points or change tiers.
 Question suitability already has its explicit formula weight; there is no second
 penalty for it. Flags request review, not automatic exclusion from CORE.
 
-The initial reference cutoffs are CORE >=41, SUPPORTING =40, SKIP <40. On the
-213 Chapter 1 assessments these yield 48 / 29 / 136 sentences. These counts are
-historical calibration evidence, not quotas or assumptions about current files.
+The permanent thresholds are **CORE >=41, SUPPORTING =40, SKIP <40**.
+Use the same formula and cutoffs for every chapter and generation run, regardless
+of how much material has been assessed. Change these thresholds only when the
+user explicitly requests a policy change. Never fit percentages or quotas.
+The earlier approximate targets of 21% CORE and 14% SUPPORTING are historical
+reference proportions, not constraints on selection. Equal scores keep the same
+priority wherever and whenever they are assessed.
 
-As assessments grow, the default script recalibrates against all structurally
-valid, source-current assessed sentences across the collection. It tests integer
-cutoff pairs, minimizing the sum of absolute deviations from approximately 21%
-CORE and 14% SUPPORTING. Equal scores always stay together. Equally good fits
-prefer cutoffs closest to 41/40, then the stricter pair. No per-chapter or
-per-subchapter quotas, and no requirement to force exact percentages.
+Assess only requested sentences needed for the generation task. Reuse current
+assessments and complete missing or stale requested assessments under the
+assessment skill. Related source context and existing cards may be inspected for
+interpretation and duplicate checks without assessing unrelated sentences.
 
-For general calibrated thresholds, CORE is `score >= core_min`, SUPPORTING is
-`supporting_min <= score < core_min`, and SKIP is below `supporting_min`.
-An explicit `--cutoffs CORE_MIN SUPPORTING_MIN` pins a previous/global pair for
-reproduction or a user-specified policy; do not tune it to manufacture cards for
-a particular section. `--all-assessed --tiers CORE SUPPORTING SKIP` reports the
-entire current assessment population. Default output remains CORE only.
+The default script reads assessments for requested sections and scores only
+requested sentence IDs. `--all-assessed` explicitly requests a collection-wide
+report using the same fixed thresholds; it never initiates additional assessment.
+`--cutoffs CORE_MIN SUPPORTING_MIN` exists for reproducing older reports or an
+explicitly requested policy change, not for adjusting a particular chapter's
+card count. Do not use it during normal generation.
 
-The JSON report includes the formula, cutoffs, global and requested counts,
-assessment/source hashes, excluded invalid files, selected sentences, their
-original assessment fields, and derived review flags. Calibration counts are
-sentence counts, not card counts. One global report must govern the whole run;
-do not recalibrate independently for each generated section.
+The JSON report includes the formula, fixed cutoffs, requested counts,
+assessment/source hashes, selected sentences, their original assessment fields,
+and derived review flags. Its legacy `calibration` object uses mode
+`fixed_cutoffs` and scope `requested` by default; the counts describe that scope,
+not all chapters. Only `--all-assessed` loads the full assessed collection and
+reports invalid files excluded from that explicit report. Counts are sentence
+counts, not card counts. Save one report for the requested run and use it
+throughout generation.
 
 ## File layout and provenance
 
@@ -88,7 +93,8 @@ review notes, including dated primary-source verification when needed.
 
 When merging, preserve existing rows and their source records outside the
 requested revision. Previously generated cards may reference older reports;
-recalibration alone does not authorize deleting them. Check duplicate claims
+changing selection policy does not authorize regenerating or deleting them.
+Revise existing cards only within a requested generation or revision scope. Check duplicate claims
 across the current Homebrew collection and record reused cards in the completion
 summary. Report blocked selected candidates with reasons so a smaller card count
 does not silently hide unresolved material.

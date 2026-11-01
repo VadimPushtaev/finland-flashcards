@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 WEIGHTS = {'exam_relevance': 9, 'knowledge_value': 6,
            'question_suitability': 4, 'factual_specificity': 1}
 TIERS = ('CORE', 'SUPPORTING', 'SKIP')
-REFERENCE_CUTOFFS = (41, 40)
+DEFAULT_CUTOFFS = (41, 40)
 
 
 def score(scores):
@@ -44,29 +44,6 @@ def classify(value, core_min=41, supporting_min=40):
     return 'CORE' if value >= core_min else 'SUPPORTING' if value >= supporting_min else 'SKIP'
 
 
-def calibrate(values):
-    """Fit whole-collection 21% CORE / 14% SUPPORTING targets with intact ties."""
-    counts = Counter(values)
-    if not counts:
-        raise ValueError('No current assessments available for calibration')
-    for value in counts:
-        classify(value)
-    n = sum(counts.values())
-    at_least = {cut: sum(count for value, count in counts.items() if value >= cut)
-                for cut in range(62)}
-    candidates = []
-    for core_min in range(1, 62):
-        for supporting_min in range(core_min):
-            core = at_least[core_min]
-            supporting = at_least[supporting_min] - core
-            # Integer arithmetic avoids floating-point differences in tied fits.
-            error = abs(100 * core - 21 * n) + abs(100 * supporting - 14 * n)
-            reference_distance = abs(core_min - 41) + abs(supporting_min - 40)
-            candidates.append((error, reference_distance, -core_min, -supporting_min))
-    _, _, core_negative, supporting_negative = min(candidates)
-    return -core_negative, -supporting_negative
-
-
 def assessment_helper(root):
     """Load the existing assessment skill's source and validation implementation."""
     path = root / '.agents/skills/assess-homebrew-sentences/scripts/assessments.py'
@@ -76,10 +53,12 @@ def assessment_helper(root):
     return module
 
 
-def load_assessments(helper, sections, sentences, data_dir):
-    """Read all current records; report invalid files rather than calibrating on them."""
+def load_assessments(helper, sections, sentences, data_dir, section_ids=None):
+    """Read requested section assessments; scan the collection only when requested."""
     records, inputs, excluded = {}, {}, []
-    for path in sorted(data_dir.glob('*.yaml')):
+    paths = data_dir.glob('*.yaml') if section_ids is None else (
+        data_dir / f'{identity}.yaml' for identity in section_ids)
+    for path in sorted(paths):
         try:
             section_id = path.stem
             if section_id not in sections:
@@ -117,15 +96,16 @@ def distribution(values, cutoffs):
 
 def make_report(root, requested, *, all_assessed=False, tiers=('CORE',),
                 cutoffs=None, data_dir=None):
-    """Validate requested coverage before applying one global cutoff pair."""
+    """Score requested material with fixed cutoffs independent of other chapters."""
     helper = assessment_helper(root)
     sections, sentences, targets = helper.source_index(root)
+    selected = None if all_assessed else helper.resolve(requested, sentences, targets)
+    section_ids = None if all_assessed else {sentences[s]['section_id'] for s in selected}
     records, inputs, excluded = load_assessments(
-        helper, sections, sentences, data_dir or root / 'card_creator/homebrew/assessments')
+        helper, sections, sentences, data_dir or root / 'card_creator/homebrew/assessments',
+        section_ids=section_ids)
     if all_assessed:
         selected = [s for s in sentences if s in records]
-    else:
-        selected = helper.resolve(requested, sentences, targets)
     missing = [s for s in selected if s not in records]
     if missing:
         detail = '; '.join(f"{item['path']}: {item['error']}" for item in excluded)
@@ -133,10 +113,11 @@ def make_report(root, requested, *, all_assessed=False, tiers=('CORE',),
             'Missing or invalid requested assessments: ' + ', '.join(missing) +
             '. Use $assess-homebrew-sentences for these targets, then retry.' +
             (' Invalid files: ' + detail if detail else ''))
+    records = {s: records[s] for s in selected}
     values = {s: score(r['scores']) for s, r in records.items()}
     if not values:
         raise ValueError('No current assessments; use $assess-homebrew-sentences first')
-    effective = cutoffs or calibrate(values.values())
+    effective = DEFAULT_CUTOFFS if cutoffs is None else cutoffs
     validate_cutoffs(*effective)
     output = []
     for identity in selected:
@@ -154,8 +135,8 @@ def make_report(root, requested, *, all_assessed=False, tiers=('CORE',),
         'formula': '9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity',
         'score_range': [0, 60],
         'calibration': {
-            'mode': 'explicit_cutoffs' if cutoffs else 'global_tied_scores',
-            'targets_percent': {'CORE': 21, 'SUPPORTING': 14},
+            'mode': 'explicit_cutoffs' if cutoffs is not None else 'fixed_cutoffs',
+            'scope': 'all_assessed' if all_assessed else 'requested',
             'core_min': effective[0], 'supporting_min': effective[1],
             'assessed_sentences': len(records), 'assessed_sections': len(inputs),
             'counts': distribution(values.values(), effective),
@@ -177,7 +158,7 @@ def main():
     parser.add_argument('--all-assessed', action='store_true', help='Report all current assessed sentences')
     parser.add_argument('--tiers', choices=TIERS, nargs='+', default=['CORE'])
     parser.add_argument('--cutoffs', type=int, nargs=2, metavar=('CORE_MIN', 'SUPPORTING_MIN'),
-                        help='Explicit global cutoffs; default fits all current assessments')
+                        help='Explicit cutoffs for reproduction; default is permanently 41/40')
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--data-dir', type=Path, help='Alternative assessment directory')
     args = parser.parse_args()

@@ -29,18 +29,14 @@ class ScoringTests(unittest.TestCase):
             with self.subTest(invalid=invalid), self.assertRaises(ValueError):
                 scoring.score({**values, 'exam_relevance': invalid})
 
-    def test_reference_boundaries_and_global_calibration(self):
+    def test_fixed_boundaries_keep_equal_scores_together(self):
         self.assertEqual([scoring.classify(v) for v in (0, 39, 40, 41, 60)],
                          ['SKIP', 'SKIP', 'SUPPORTING', 'CORE', 'CORE'])
         values = [39] * 136 + [40] * 29 + [41] * 48
-        self.assertEqual(scoring.calibrate(values), (41, 40))
         self.assertEqual(scoring.distribution(values, (41, 40)),
                          {'CORE': 48, 'SUPPORTING': 29, 'SKIP': 136})
-        # Even a tiny/single-score population cannot be split to fill quotas.
-        cutoffs = scoring.calibrate([45] * 10)
-        self.assertIn(10, scoring.distribution([45] * 10, cutoffs).values())
-        with self.assertRaises(ValueError):
-            scoring.calibrate([])
+        self.assertEqual(scoring.distribution([45] * 10, scoring.DEFAULT_CUTOFFS),
+                         {'CORE': 10, 'SUPPORTING': 0, 'SKIP': 0})
         for cutoffs in ((40, 41), (41, 41), (62, 40), (41, -1)):
             with self.subTest(cutoffs=cutoffs), self.assertRaises(ValueError):
                 scoring.classify(45, *cutoffs)
@@ -82,7 +78,7 @@ class AssessmentIntegrationTests(unittest.TestCase):
 
     def test_core_default_explicit_supporting_and_read_only(self):
         before = self.path.read_bytes()
-        report = self.report(self.ids, cutoffs=(41, 40))
+        report = self.report(self.ids)
         self.assertEqual(report['selected_count'], 1)
         self.assertEqual(report['sentences'][0]['priority'], 'CORE')
         self.assertEqual(report['sentences'][0]['score'], 45)
@@ -92,11 +88,31 @@ class AssessmentIntegrationTests(unittest.TestCase):
         self.assertEqual(expanded['selected_count'], 2)
         self.assertEqual(self.path.read_bytes(), before)
 
-    def test_calibration_does_not_depend_on_requested_scope(self):
+    def test_single_sentence_request_scores_only_that_sentence(self):
         one = self.report(self.ids[:1])
         three = self.report(self.ids)
-        self.assertEqual(one['calibration'], three['calibration'])
-        self.assertEqual(one['calibration']['assessed_sentences'], 3)
+        self.assertEqual(one['sentences'], three['sentences'])
+        self.assertEqual(one['calibration']['mode'], 'fixed_cutoffs')
+        self.assertEqual(one['calibration']['assessed_sentences'], 1)
+        self.assertEqual(three['calibration']['assessed_sentences'], 3)
+        self.assertEqual(one['requested_counts'], {'CORE': 1, 'SUPPORTING': 0, 'SKIP': 0})
+
+    def test_unrelated_assessments_cannot_change_selection(self):
+        before = self.report(self.ids)
+        section_id = 'hb-c01-natur'
+        section = self.index[0][section_id]
+        record = {**self.document['assessments'][0],
+                  'sentence_id': next(iter(section['sentences'])),
+                  'scores': {key: 3 for key in self.document['assessments'][0]['scores']}}
+        document = {'schema_version': 1, 'section_id': section_id,
+                    'source_sha256': section['source_sha256'], 'assessments': [record]}
+        (self.data_dir / f'{section_id}.yaml').write_text(yaml.safe_dump(document))
+        self.assertEqual(self.report(self.ids), before)
+        all_assessed = self.report([], all_assessed=True)
+        self.assertEqual(all_assessed['calibration']['mode'], 'fixed_cutoffs')
+        self.assertEqual(all_assessed['calibration']['assessed_sentences'], 4)
+        self.assertEqual(all_assessed['calibration']['counts'],
+                         {'CORE': 2, 'SUPPORTING': 1, 'SKIP': 1})
 
     def test_missing_and_stale_assessments_fail(self):
         with self.assertRaisesRegex(ValueError, 'assess-homebrew-sentences'):
@@ -106,11 +122,13 @@ class AssessmentIntegrationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'stale source fingerprint'):
             self.report(self.ids)
 
-    def test_invalid_unrelated_file_is_reported_and_excluded(self):
+    def test_invalid_unrelated_file_is_reported_only_with_all_assessed(self):
         (self.data_dir / 'unknown-section.yaml').write_text('schema_version: 1\n')
         report = self.report(self.ids)
         self.assertEqual(report['calibration']['assessed_sentences'], 3)
-        self.assertEqual(len(report['excluded_invalid_files']), 1)
+        self.assertEqual(report['excluded_invalid_files'], [])
+        expanded = self.report([], all_assessed=True)
+        self.assertEqual(len(expanded['excluded_invalid_files']), 1)
 
 
 class CardExportTests(unittest.TestCase):

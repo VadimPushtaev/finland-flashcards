@@ -35,18 +35,26 @@ report genuinely blocked targets and continue unaffected ones.
 ## Select study priorities
 
 Read [references/selection-and-output.md](references/selection-and-output.md)
-for the formula, global calibration, and source-record format. Score the entire
+for the formula, permanent cutoffs, and source-record format. Assess only the
+requested material needed for generation, reusing current assessments. Score the
 requested scope once after its assessments are ready:
 
 ```sh
 poetry run python card_creator/homebrew/score_sentences.py hb-c01 > /tmp/hb-c01-card-selection.json
 ```
 
-The default report includes CORE candidates only, plus counts for all three
-tiers. Its thresholds are calibrated against **all current assessments in the
-collection**, never per subchapter. Use that one report throughout the run.
-Report exclusions of invalid unrelated files from calibration; they do not
-authorize assessing unrelated material. Missing requested assessments are errors.
+Use the permanent thresholds **CORE >=41, SUPPORTING =40, SKIP <40**.
+The scoring formula and thresholds stay the same for every chapter and run.
+Never recalibrate cutoffs or expand assessment scope to fit target percentages.
+The former 21% CORE / 14% SUPPORTING proportions are historical reference values,
+not quotas. Change the thresholds only on explicit user instruction.
+
+The default report includes requested CORE candidates only, plus requested-scope
+counts for all three tiers. It reads assessments for the requested sections;
+missing requested assessments are errors. Use that one report throughout the run.
+Read related passages and existing cards for context and duplicate checks without
+assessing or reclassifying unrelated material. Use `--all-assessed` only when the
+user asks for a collection-wide report, with the same permanent cutoffs.
 
 Only when explicitly requested, include additional tiers, for example:
 
