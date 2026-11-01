@@ -102,81 +102,114 @@ questions, four options, time limits and correct-answer indices matched the deck
 The combined chapter deck has 57 rows in anthology order and passes
 `make check-homebrew`; generated combined files are excluded from card counts.
 
-Homebrew chapter 3 (2026-11-01), **Kultur, värderingar och traditioner** (`hb-c03`):
-all **520 body sentences across 21 subchapters** were individually assessed;
-there were no existing Chapter 3 assessments or cards to reuse. Generated
-**61 new CORE cards in 18 subchapter decks**. Together with **one reused Chapter 2
-card**, these cover all **78 selected CORE sentences**. No selected candidates
-remain blocked. CORE is a study priority, not guaranteed exam coverage.
+Homebrew chapter 3 (2026-11-01, fixed-cutoff revision), **Kultur, värderingar och
+traditioner** (`hb-c03`): reused all **520 current sentence assessments across
+21 subchapters**. The permanent **CORE >=41, SUPPORTING =40, SKIP <40** policy
+selects **145 CORE, 63 SUPPORTING and 312 SKIP** sentences. No assessment scores
+were changed and no unrelated material was assessed or reclassified.
 
-The [saved Chapter 3 selection report](homebrew/selections/hb-c03-2026-11-01-core.json)
-calibrates once against all **1,054 current assessments in 42 sections**, with no
-invalid unrelated files excluded. Its cutoffs are **CORE >=45, SUPPORTING 41-44,
-SKIP <41**. Chapter 3 has **78 CORE, 67 SUPPORTING and 375 SKIP** sentences; the
-whole assessed collection has 208 / 113 / 733. These are sentence counts, not card
-counts. Earlier cards and their original selection reports remain intact.
+The [fixed-cutoff selection report](homebrew/selections/hb-c03-2026-11-01-fixed-core.json)
+contains only the requested Chapter 3 assessments and scores. It selects 67 more
+CORE sentences than the earlier report. Generation added **51 new cards**, revised
+**one existing Christmas-date question**, and kept **60 original cards and source
+records unchanged**. Chapter 3 now has **112 cards in all 21 subchapter decks**.
+Together with the existing Chapter 2 independence-date card, these cover all
+**145 selected CORE sentences**. No selected candidates remain blocked.
+CORE denotes study priority, not guaranteed exam coverage.
 
-| Chapter 3 subchapter | Selected CORE sentences | New cards |
-| --- | ---: | ---: |
-| Värderingar och olikheter | 7 | 7 |
-| Tillit, jämlikhet och självständighet | 3 | 1 |
-| Seder, personligt utrymme och samtal | 0 | 0 |
-| Hälsningar, punktlighet och besök | 2 | 1 |
-| Religioner och religionslöshet | 13 | 10 |
-| Religion i vardagen och högtiderna | 11 | 7 |
-| Högtider och flaggdagar | 0 | 0 |
-| Nyår, trettondag och vintertraditioner | 1 | 1 |
-| Påsk och Kristi himmelsfärdsdag | 2 | 2 |
-| Valborg, första maj och morsdag | 3 | 3 |
-| Midsommar | 3 | 2 |
-| Alla helgons dag och farsdag | 3 | 2 |
-| Självständighetsdagen och julen | 3 | 1 |
-| Runeberg, kvinnodagen och Minna Canths dag (19 mars) | 6 | 5 |
-| Årets andra traditioner | 0 | 0 |
-| Fester genom livet | 4 | 3 |
-| Matkultur och matvanor | 3 | 3 |
-| Vardagsmat och måltider | 4 | 4 |
-| Festmat och drycker | 4 | 3 |
-| Bastukultur | 4 | 4 |
-| Kulturliv | 2 | 2 |
-| **Total** | **78** | **61** |
+| Chapter 3 subchapter | Selected CORE sentences | Added cards | Total cards |
+| --- | ---: | ---: | ---: |
+| Värderingar och olikheter | 10 | 2 | 9 |
+| Tillit, jämlikhet och självständighet | 6 | 3 | 4 |
+| Seder, personligt utrymme och samtal | 7 | 6 | 6 |
+| Hälsningar, punktlighet och besök | 13 | 6 | 7 |
+| Religioner och religionslöshet | 20 | 6 | 16 |
+| Religion i vardagen och högtiderna | 15 | 2 | 9 |
+| Högtider och flaggdagar | 2 | 1 | 1 |
+| Nyår, trettondag och vintertraditioner | 3 | 2 | 3 |
+| Påsk och Kristi himmelsfärdsdag | 2 | 0 | 2 |
+| Valborg, första maj och morsdag | 3 | 0 | 3 |
+| Midsommar | 4 | 0 | 2 |
+| Alla helgons dag och farsdag | 4 | 1 | 3 |
+| Självständighetsdagen och julen | 4 | 0 | 1 |
+| Runeberg, kvinnodagen och Minna Canths dag (19 mars) | 7 | 1 | 6 |
+| Årets andra traditioner | 4 | 4 | 4 |
+| Fester genom livet | 10 | 5 | 8 |
+| Matkultur och matvanor | 6 | 3 | 6 |
+| Vardagsmat och måltider | 8 | 3 | 7 |
+| Festmat och drycker | 5 | 1 | 4 |
+| Bastukultur | 7 | 2 | 6 |
+| Kulturliv | 5 | 3 | 5 |
+| **Total** | **145** | **51** | **112** |
 
-The three subchapters with no CORE candidates have no empty placeholder deck.
-Related selected sentences share cards. The liberty and education-access claims
-in `hb-c03-tillit` are covered by cards in `hb-c03-varderingar`; the consecutive
-definitions of secularization share a card. The existing question
+Of the 67 newly eligible sentences, 64 are covered by the new questions (several
+related claims share a card). Two reuse questions already teaching those claims:
+`hb-c03-u0058-s002` is covered by the school Christmas-celebration question in
+`hb-c03-religiositet`, and `hb-c03-u0153-s001` by the bonfire-tradition question in
+`hb-c03-midsommar`. Bonfire location is incidental to that learning point and was
+not turned into a second question. The Christmas-date question was expanded to
+cover `hb-c03-u0082-s005` (usual gift-giving on Christmas Eve), retaining its date
+choices and answer position. Existing references to ordinary queues and to
+livsåskådningskunskap were supporting context in older cards; new questions now
+explicitly teach those newly eligible learning points rather than counting an
+incidental source reference as sufficient coverage.
+
+Cross-section coverage includes the liberty and education-access claims in
+`hb-c03-tillit` covered by cards in `hb-c03-varderingar`, privacy in `hb-c03-seder`
+covered by the privacy question in `hb-c03-tillit`, and personal belief despite
+limited participation in `hb-c03-religiositet` covered by the affiliation-and-belief
+question in `hb-c03-religion`. The two definitions of secularization share one
+existing card. The existing Chapter 2 question
 "Vilket datum förklarade sig Finland självständigt?" in
 [`hb-c02-sjalvstandighet.txt`](../cards/homebrew/hb-c02/hb-c02-sjalvstandighet.txt)
-covers `hb-c03-u0081-s001` and `hb-c03-u0081-s002`. Its source-record row hash is
+continues to cover `hb-c03-u0081-s001` and `hb-c03-u0081-s002`; its row hash remains
 `0f27b0515c8259aec00bedee3b4b76a906c30f6ff062a0c8f1a13486eb3243f2`.
-No duplicate independence-date question was added to Chapter 3.
+No duplicate independence-date card was added.
+
+The [original Chapter 3 report](homebrew/selections/hb-c03-2026-11-01-core.json)
+is retained as historical provenance for the unchanged cards: the first pass
+selected 78 sentences at a moving cutoff of 45 and created 61 cards in 18 decks.
+Those former cutoffs and collection-wide counts are not the current policy.
+New and revised rows reference the fixed-cutoff report; retained rows keep their
+original report and hashes.
 
 Outputs: [Chapter 3 decks and combined ALL.txt](../cards/homebrew/hb-c03/),
 [sentence assessments](homebrew/assessments/),
 [card source records](homebrew/card_sources/), and
-[18 Kahoot workbooks](../kahoot/homebrew/hb-c03/).
-Reviewed source context and all four choices for each question. Dated primary-source
-checks in the records resolve church membership and tax, diaconal access, clergy
-roles, state/church relations, registered-community founders, education, funerals,
-hunting, school meals, alcohol regulation and sanctions, and cultural institutions.
-Minority religious instruction retains legal conditions; religious teaching is
-distinguished from religious observance; higher-education eligibility means the
-right to apply rather than automatic admission. The hunting card allows hunting
-rights or permission instead of claiming every hunter needs the same license.
-The school-meal card is limited to basic education and does not promise a hot meal
-under every exceptional circumstance. Alcohol cards test supported policy and
-institutional principles without adding exact age, strength or criminal thresholds
-absent from the anthology. Membership comparisons retain the explicit 2023 frame.
+[21 Kahoot workbooks](../kahoot/homebrew/hb-c03/).
+Reviewed full source context and all four options for each new/revised question.
+Dated primary-source checks in the source records resolve registration and school
+religion, baptism costs, prayer during work breaks, school holidays, confirmation,
+Prometheus camps, daycare meals, drinking water, alcohol retail, pool-sauna rules,
+National Museum access and music enrollment/admission. Cards qualify cultural
+customs as common rather than compulsory or uniform. The ceremony-cost question
+uses the verified free church-baptism case without promising all ceremony-related
+services are free. Tap-water wording concerns normal public-network supply and
+retains local warnings; daycare wording concerns a usual full day; swimwear rules
+are qualified by venue. The National Museum card tests its cultural-history role
+without promising current admission while its building is closed. Music-course
+access retains enrollment conditions, and the entrance-test question is conditional
+because some music schools admit students without a test.
 
-Validation passed for all 520 assessments and all 61 cards, including exact
-categories, source links, current assessment/source hashes, selected CORE primary
-sentences and deck-row hashes. Coverage checks account for all 78 CORE candidates,
-including the reused card. Maximum question/answer lengths are **99/68** characters,
-within 120/70 limits. Correct-answer positions are balanced **16/15/15/15**.
-All 18 workbooks were reopened and their questions, four choices, 20-second limits
-and correct-answer indices matched the decks. All 13 Homebrew card/export/combiner
-tests passed; the combined chapter file has 61 rows in source order and the
-freshness check passed for all three generated chapters.
+The earlier reviews of constitutional equality, religious freedom, clergy, church
+tax and diaconal access remain in the retained records. Minority instruction keeps
+legal conditions; religious teaching is distinguished from observance. Higher
+education eligibility means the right to apply, not automatic admission. Hunting
+wording allows hunting rights or permission. School-meal wording remains limited
+to basic education. Alcohol questions do not import exact age or strength limits
+absent from the anthology. Church-membership comparisons retain their 2023 frame.
+
+Validation passed for all 520 reused assessments, all 112 card rows and exact
+categories, current assessment/source hashes, selected primary sentences, source
+references and row hashes. Coverage checks account for all 145 CORE sentences,
+including the reused Chapter 2 card. All 60 unchanged original rows and their
+provenance were compared against the pre-revision snapshot. Maximum question and
+answer lengths are **99/69** characters, within 120/70 limits. The 112 correct
+answers are balanced **28/28/28/28** across the four positions. All 21 exported
+workbooks were reopened and their questions, options, 20-second limits and correct
+answer indices matched the decks. All 14 card/export/combiner tests passed. The
+combined chapter deck contains 112 rows in source order and the freshness check
+passed for all three chapters with cards.
 
 ## 1. Main Textbook (PRIMARY SOURCE)
 
