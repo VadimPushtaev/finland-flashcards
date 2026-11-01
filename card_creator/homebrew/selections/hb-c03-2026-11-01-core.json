@@ -1,0 +1,2602 @@
+{
+  "schema_version": 1,
+  "formula": "9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity",
+  "score_range": [
+    0,
+    60
+  ],
+  "calibration": {
+    "mode": "global_tied_scores",
+    "targets_percent": {
+      "CORE": 21,
+      "SUPPORTING": 14
+    },
+    "core_min": 45,
+    "supporting_min": 41,
+    "assessed_sentences": 1054,
+    "assessed_sections": 42,
+    "counts": {
+      "CORE": 208,
+      "SUPPORTING": 113,
+      "SKIP": 733
+    }
+  },
+  "assessment_inputs": {
+    "hb-c01-arstider": {
+      "assessment_sha256": "763a4ffe51e60576ba2e9ebda8061c2ceb4e13c313273a8d0b19249d6d0f5444",
+      "source_sha256": "f4c33bc58f4005d5b435e81e1b881dd6f145a7a190751a23c3369bb1487c91f8"
+    },
+    "hb-c01-befolkning": {
+      "assessment_sha256": "31e61245bca1d305c1f46de0da16ce8fed95d47bcf8b3419094ff4028debc449",
+      "source_sha256": "d5059d6e6e9c876bf21dd0ed2541e41f671174ff2d5bca509988422cd3f1ea84"
+    },
+    "hb-c01-flyttning": {
+      "assessment_sha256": "3959c01e0acd4b4cab50c3c14d00d3e5f102364c64831acfb732b71b80ee5651",
+      "source_sha256": "5539fd6c649c6d0b4aa517d539f3117a11a470e3f135b6973c7b0dec4aad1087"
+    },
+    "hb-c01-folkgrupper": {
+      "assessment_sha256": "d96a75dd790991fe6ba861592486b000a66b5e8ef1d4a13952e474df261e8bd3",
+      "source_sha256": "3f716c4fd7e5c5f4355f18498d5a0000486c8e80ecae6b2cda43a7c647cdc139"
+    },
+    "hb-c01-lage": {
+      "assessment_sha256": "b21399bde6ec0ce60088176653fedb86ec4f1c284f0509791e638d7004a0b2cb",
+      "source_sha256": "1bd0782bc0deb460a81a7b54c4b6a17d5a75462981abbbdf07af3a50c195d246"
+    },
+    "hb-c01-natur": {
+      "assessment_sha256": "9a0079f6b2cb8a22e0b75ae594c601f1451e2bfee869feb4d22de8bf1a27f6e3",
+      "source_sha256": "86da6726a5b0f97e41d4335ed9bd75afea8949d2c461141a1f2721da37b03d48"
+    },
+    "hb-c01-regioner": {
+      "assessment_sha256": "71623682b3dae5b03881fddd72423d5f0ed5912d8363c1ee6295cd647bb7254d",
+      "source_sha256": "f04ce7d2d0170c871ae7a908b45608e986e3568e54a44b33e4a57def1b26ad0b"
+    },
+    "hb-c01-sprak": {
+      "assessment_sha256": "80682d49d1423a04f2fd38acf8aacccb523c07182ea0da1684c88ee38e07423e",
+      "source_sha256": "d563ede9d08262306727c4ddb8983e8d00d8fc0595b277ed2f9a61571057d0ff"
+    },
+    "hb-c02-ateruppbyggnad": {
+      "assessment_sha256": "e9e87e14dd71ae41c34f5dea7c57317d3db92fd2657f662ec652d8ae0536ffaf",
+      "source_sha256": "c3e9ea110daf41c649995ccd9278d86bd39b42efd3886f9b6dbe6e1d464fc5ab"
+    },
+    "hb-c02-autonomi": {
+      "assessment_sha256": "c9158663bfaca272b643b207a44bccb65c3e01beccd211680b3f2608cee27c33",
+      "source_sha256": "aa25beb5e27353463a339b041ceb6bd2e9ba1e45a3cfa4da3a6826ea70561c22"
+    },
+    "hb-c02-demokrati": {
+      "assessment_sha256": "d302b19faee9a296668600382eb40a97535afe0f53824c1b2b757236625b6180",
+      "source_sha256": "f4bc4e7a418729f65148a273bcf43d834a16c03eaceb34c7f71b74dc88f78300"
+    },
+    "hb-c02-eu-nato": {
+      "assessment_sha256": "a198e423f0be1196f896916ccecfeea1da670173efbe6f3e8aaa2de05b9a1887",
+      "source_sha256": "797cded1c68856ce6bc69441a522414f8fec8b10ce7ac36b4986beed653010c1"
+    },
+    "hb-c02-forhistoria": {
+      "assessment_sha256": "c2d57101186ba6d4209762657c04d29eb6080cf93e8f815efb122d43cb12a5cd",
+      "source_sha256": "227656ccd1085f989e9381922f4044a63642c8f342ff1d9046015c74e2231451"
+    },
+    "hb-c02-krigen": {
+      "assessment_sha256": "6a455f00145601af79c985ad94a0f5afc602d1bead3bdf20d12bf7d9ad17a771",
+      "source_sha256": "30b016a822b5ba8c0e5f99db098463a2434ab82a346a0fa761fea27faa9651bb"
+    },
+    "hb-c02-nationalitet": {
+      "assessment_sha256": "0e8e33f90ab280ecb2b481b84e3da303cdfc877e3bd85e7ea8ca8a5280fc2346",
+      "source_sha256": "e6038a2803859b664554a0c5a87c5f4897aa07a7a2a83caf314e5c015a928a49"
+    },
+    "hb-c02-omvandling": {
+      "assessment_sha256": "43f7e3479902aedd1e84a1e10f0092e88782a6e1827cdf24a3b18c1646ea8be6",
+      "source_sha256": "a171fc3d502569e0a6d17c66a61f95febc0cc8ae02af2aa9baaf2e1602988aaf"
+    },
+    "hb-c02-sjalvstandighet": {
+      "assessment_sha256": "3d7c1c19ed238ae7d9de0993b2c130966f05fb0f72c6c565b885f9b32b45c38f",
+      "source_sha256": "98129c8e451f0e5014dd9851026b7d464c2789990b145cfdbf35a58d60a1fcfd"
+    },
+    "hb-c02-sverige": {
+      "assessment_sha256": "8383a77522453cb7ffd32b25dbd5e057a9a12bcd905532432759913d39c54b25",
+      "source_sha256": "48f48dc6ea077f947c94f881939760b44f187affda2575baf0d0c1747d0dc51b"
+    },
+    "hb-c02-utbildning": {
+      "assessment_sha256": "f967d5134822d026e2e230bc78fb5d786ec7399a23efa2262cfa7359d4197b38",
+      "source_sha256": "fbc82a9e0f9195470418b4d409e583cbc91b1ab901decf5a2d040712ce3c7c6d"
+    },
+    "hb-c02-utmaningar": {
+      "assessment_sha256": "0c0e40eeb57970410485778e0096d80a59c294fb773681d3e8e2b47fc4cdb362",
+      "source_sha256": "f1838106f30622ad631cc1cd91735cd52fdcd02312b588d2d156fccbb0c65edc"
+    },
+    "hb-c02-valfard": {
+      "assessment_sha256": "58941da536451e334e9241808357435f0150f8dd21c4680a855107de881a3466",
+      "source_sha256": "684f7d5c7af2a521705451683c9d773634a933ae8774b25f54006d76f7215853"
+    },
+    "hb-c03-bastu": {
+      "assessment_sha256": "5f977be547ab832f9b853a3078b2da1da54d08cc15149ae03f0b3453b4696f03",
+      "source_sha256": "178d97b8c1a9a15d79b2910aaf5ae90b4ec5cb482cd7e26edf4e79c663877411"
+    },
+    "hb-c03-december": {
+      "assessment_sha256": "6e3711d0fa8a785b5f7b45e943fac9dd1885a3083f030d69b48568fb677ef9e6",
+      "source_sha256": "ab71cc61e1a07c5912a59f748ebb60badfd1a5bda19a6c4875675b502ae1abea"
+    },
+    "hb-c03-festmat": {
+      "assessment_sha256": "8ed80ffa22211f49a91e82295c7e7c5c0f657faaabc251ef1969d940f4ea8595",
+      "source_sha256": "6078bea2a4addc810c2d8abb01ce5768bda7e300726bef821537646ca47b4c1f"
+    },
+    "hb-c03-hostfester": {
+      "assessment_sha256": "b1d7a05d28f019a702c09f6f0101bf3a02953e5a521e11f524e5ed3ad3b7e91c",
+      "source_sha256": "b5f5dbabb867daae1f5fe5e570de30e15cef9e4a7ec00c38af51c887cbbeb887"
+    },
+    "hb-c03-kalender": {
+      "assessment_sha256": "727a5432a625d544c1f4037916f2e5282760092ce885d2aa7bf1ef48051f0e16",
+      "source_sha256": "8e9839e86815aa34592272ca52c540ad6d9b3e80e6e8c915c48fbe366b437a12"
+    },
+    "hb-c03-kulturdagar": {
+      "assessment_sha256": "82d7209f5f730728909ebaa08a303e17634a2b9f7215682db4c2f0a5aaddd27c",
+      "source_sha256": "be8b5de3db83bd0806d35fb6e91bda76449ed9c5181f36ce7f72e1b567d8240a"
+    },
+    "hb-c03-kulturliv": {
+      "assessment_sha256": "9c658bd7f24a5c98e482df11e6ff7bccd758917a05154e05e748f2ef1d793bad",
+      "source_sha256": "67dff8619aae4f45c5e151ca5f3252319dac2c7274f579b93060e5443875389b"
+    },
+    "hb-c03-livets-fester": {
+      "assessment_sha256": "3240ed492da67ebbd55e4bcb8c54f91617dfd87e43002a013a3d66b27b71f284",
+      "source_sha256": "a2c9a1edd8ab2633c6bd9c0e676496f234c383c63ed2d1bf77fb25c6cbba65c9"
+    },
+    "hb-c03-matkultur": {
+      "assessment_sha256": "d718a90aef03d3bf7fcbf2dc54f09d96fd4057f53271fa93c3d921e47b924232",
+      "source_sha256": "ee4bf190f5a42a11de19351e41dba7abb73462963697d323666d810b7f15e8d8"
+    },
+    "hb-c03-midsommar": {
+      "assessment_sha256": "643520d19d16adedadd83db34604ee3fbfffc094acd9cff007984cf73caa6a39",
+      "source_sha256": "8ef87456896dc9efd367ed681fcd53f1c1ef18eaa243f918d8dc6130d51cc10b"
+    },
+    "hb-c03-ovriga-fester": {
+      "assessment_sha256": "77fb9168c9afa7d1505694379fc072f43ed19f80819bf7e272534d665dfb9a4f",
+      "source_sha256": "6fae66d3683f6786135ecd14940c6f5f60cc3acb43d4ec8731ed6026b87281f8"
+    },
+    "hb-c03-pask": {
+      "assessment_sha256": "6168c9e908c04a632d83f0a257b3b47ab11366b6d00695087164dbf188b70365",
+      "source_sha256": "c529aa7c693901b84b23b3a65fc165f661f879e4b38b83c9615850349cd1bb15"
+    },
+    "hb-c03-religion": {
+      "assessment_sha256": "778b4efda4b0a0ec4e508f1ca2e74f20388b7c08a04f098119874bdde685f274",
+      "source_sha256": "805ab20ccff71d35dc3c5ec5ea7a148bdc63a9b9d9997e06a14075c59dc2c60a"
+    },
+    "hb-c03-religiositet": {
+      "assessment_sha256": "631cd548b5e90621e4273077e282cf1355daa8053808f7421d416b82e91657e3",
+      "source_sha256": "476cdfff916ec59dd0241ef207a98f321730cc451070e9d0f30bb1c616c16dbe"
+    },
+    "hb-c03-seder": {
+      "assessment_sha256": "850b1eb71cbe576ba7aee0aa497a97864c714bde90549f2db299408c494557fe",
+      "source_sha256": "cec58c0fd02beb493d7f6fd645c701acf9bb807b5f85269b473ee881e57a1097"
+    },
+    "hb-c03-tillit": {
+      "assessment_sha256": "ce0e7fea88209a52e26562a93b6a5f535185998b55a750076400bcd42ba53e8e",
+      "source_sha256": "19c5f1b292a182bf8d77079b85fb5bf5da5541a0459c73c5eed6b31b055c080f"
+    },
+    "hb-c03-umgange": {
+      "assessment_sha256": "7b12b5808b0569c16e961423f2e90d9793f27b98f061c2515c649c079e0e5def",
+      "source_sha256": "724727bbab58ef04b9405d98b4b6112421360778b8900332ce22b0dfac82ea18"
+    },
+    "hb-c03-valborg": {
+      "assessment_sha256": "ba5f71aed00ae60f45774f0838d0bdb44a0dd3dcec5cd1157b72dee75595c647",
+      "source_sha256": "066cf7a68017fc80ac7ae4e45e1c87ff1ec3e6d5e5a147fbecfc456daef70a81"
+    },
+    "hb-c03-vardagsmat": {
+      "assessment_sha256": "e50276330374cc37b4bb8a7eefb1d2a3e0808ebed8a5fc1c73ede7ff842b5108",
+      "source_sha256": "238379e956d4e84859e7becbd722e81aa0bc5baedd23709fae881a35bec33015"
+    },
+    "hb-c03-varderingar": {
+      "assessment_sha256": "cbda2c2f3b61ccf7f49839e5c1315429c62349135079b561a4ecaa507a044cd2",
+      "source_sha256": "1d1800184f11f665b847ce9cb846bdb79b98d82feea216c20bf7d83577249e62"
+    },
+    "hb-c03-vinterfester": {
+      "assessment_sha256": "8bce5f5e4d6624f2f3932d4d2b27baf83a9e3dfd4e878e362ba08eea9712e7fc",
+      "source_sha256": "51c0115f110988573e2fdda22edb61ed74f554e38309f04b2a398d71f687bfbb"
+    }
+  },
+  "excluded_invalid_files": [],
+  "requested_sentence_ids": [
+    "hb-c03-u0001-s001",
+    "hb-c03-u0001-s002",
+    "hb-c03-u0001-s003",
+    "hb-c03-u0001-s004",
+    "hb-c03-u0001-s005",
+    "hb-c03-u0001-s006",
+    "hb-c03-u0002-s001",
+    "hb-c03-u0002-s002",
+    "hb-c03-u0002-s003",
+    "hb-c03-u0002-s004",
+    "hb-c03-u0003-s001",
+    "hb-c03-u0003-s002",
+    "hb-c03-u0003-s003",
+    "hb-c03-u0003-s004",
+    "hb-c03-u0004-s001",
+    "hb-c03-u0004-s002",
+    "hb-c03-u0005-s001",
+    "hb-c03-u0005-s002",
+    "hb-c03-u0005-s003",
+    "hb-c03-u0006-s001",
+    "hb-c03-u0006-s002",
+    "hb-c03-u0006-s003",
+    "hb-c03-u0007-s001",
+    "hb-c03-u0007-s002",
+    "hb-c03-u0007-s003",
+    "hb-c03-u0007-s004",
+    "hb-c03-u0008-s001",
+    "hb-c03-u0008-s002",
+    "hb-c03-u0009-s001",
+    "hb-c03-u0009-s002",
+    "hb-c03-u0009-s003",
+    "hb-c03-u0010-s001",
+    "hb-c03-u0010-s002",
+    "hb-c03-u0011-s001",
+    "hb-c03-u0011-s002",
+    "hb-c03-u0012-s001",
+    "hb-c03-u0012-s002",
+    "hb-c03-u0012-s003",
+    "hb-c03-u0012-s004",
+    "hb-c03-u0013-s001",
+    "hb-c03-u0014-s001",
+    "hb-c03-u0014-s002",
+    "hb-c03-u0014-s003",
+    "hb-c03-u0014-s004",
+    "hb-c03-u0014-s005",
+    "hb-c03-u0014-s006",
+    "hb-c03-u0015-s001",
+    "hb-c03-u0015-s002",
+    "hb-c03-u0015-s003",
+    "hb-c03-u0016-s001",
+    "hb-c03-u0016-s002",
+    "hb-c03-u0017-s001",
+    "hb-c03-u0017-s002",
+    "hb-c03-u0017-s003",
+    "hb-c03-u0018-s001",
+    "hb-c03-u0018-s002",
+    "hb-c03-u0019-s001",
+    "hb-c03-u0019-s002",
+    "hb-c03-u0020-s001",
+    "hb-c03-u0020-s002",
+    "hb-c03-u0021-s001",
+    "hb-c03-u0021-s002",
+    "hb-c03-u0021-s003",
+    "hb-c03-u0022-s001",
+    "hb-c03-u0022-s002",
+    "hb-c03-u0023-s001",
+    "hb-c03-u0023-s002",
+    "hb-c03-u0023-s003",
+    "hb-c03-u0024-s001",
+    "hb-c03-u0024-s002",
+    "hb-c03-u0024-s003",
+    "hb-c03-u0025-s001",
+    "hb-c03-u0025-s002",
+    "hb-c03-u0026-s001",
+    "hb-c03-u0026-s002",
+    "hb-c03-u0027-s001",
+    "hb-c03-u0027-s002",
+    "hb-c03-u0028-s001",
+    "hb-c03-u0028-s002",
+    "hb-c03-u0028-s003",
+    "hb-c03-u0028-s004",
+    "hb-c03-u0028-s005",
+    "hb-c03-u0029-s001",
+    "hb-c03-u0029-s002",
+    "hb-c03-u0030-s001",
+    "hb-c03-u0030-s002",
+    "hb-c03-u0030-s003",
+    "hb-c03-u0031-s001",
+    "hb-c03-u0031-s002",
+    "hb-c03-u0031-s003",
+    "hb-c03-u0031-s004",
+    "hb-c03-u0032-s001",
+    "hb-c03-u0032-s002",
+    "hb-c03-u0032-s003",
+    "hb-c03-u0033-s001",
+    "hb-c03-u0033-s002",
+    "hb-c03-u0033-s003",
+    "hb-c03-u0033-s004",
+    "hb-c03-u0033-s005",
+    "hb-c03-u0033-s006",
+    "hb-c03-u0033-s007",
+    "hb-c03-u0034-s001",
+    "hb-c03-u0034-s002",
+    "hb-c03-u0034-s003",
+    "hb-c03-u0034-s004",
+    "hb-c03-u0034-s005",
+    "hb-c03-u0034-s006",
+    "hb-c03-u0034-s007",
+    "hb-c03-u0035-s001",
+    "hb-c03-u0035-s002",
+    "hb-c03-u0036-s001",
+    "hb-c03-u0036-s002",
+    "hb-c03-u0036-s003",
+    "hb-c03-u0036-s004",
+    "hb-c03-u0037-s001",
+    "hb-c03-u0037-s002",
+    "hb-c03-u0037-s003",
+    "hb-c03-u0037-s004",
+    "hb-c03-u0038-s001",
+    "hb-c03-u0038-s002",
+    "hb-c03-u0039-s001",
+    "hb-c03-u0039-s002",
+    "hb-c03-u0039-s003",
+    "hb-c03-u0040-s001",
+    "hb-c03-u0040-s002",
+    "hb-c03-u0040-s003",
+    "hb-c03-u0041-s001",
+    "hb-c03-u0041-s002",
+    "hb-c03-u0041-s003",
+    "hb-c03-u0041-s004",
+    "hb-c03-u0042-s001",
+    "hb-c03-u0042-s002",
+    "hb-c03-u0042-s003",
+    "hb-c03-u0043-s001",
+    "hb-c03-u0043-s002",
+    "hb-c03-u0043-s003",
+    "hb-c03-u0044-s001",
+    "hb-c03-u0044-s002",
+    "hb-c03-u0044-s003",
+    "hb-c03-u0045-s001",
+    "hb-c03-u0045-s002",
+    "hb-c03-u0046-s001",
+    "hb-c03-u0046-s002",
+    "hb-c03-u0046-s003",
+    "hb-c03-u0047-s001",
+    "hb-c03-u0048-s001",
+    "hb-c03-u0048-s002",
+    "hb-c03-u0048-s003",
+    "hb-c03-u0049-s001",
+    "hb-c03-u0050-s001",
+    "hb-c03-u0050-s002",
+    "hb-c03-u0051-s001",
+    "hb-c03-u0051-s002",
+    "hb-c03-u0051-s003",
+    "hb-c03-u0051-s004",
+    "hb-c03-u0051-s005",
+    "hb-c03-u0052-s001",
+    "hb-c03-u0052-s002",
+    "hb-c03-u0052-s003",
+    "hb-c03-u0052-s004",
+    "hb-c03-u0053-s001",
+    "hb-c03-u0053-s002",
+    "hb-c03-u0054-s001",
+    "hb-c03-u0054-s002",
+    "hb-c03-u0055-s001",
+    "hb-c03-u0055-s002",
+    "hb-c03-u0055-s003",
+    "hb-c03-u0056-s001",
+    "hb-c03-u0056-s002",
+    "hb-c03-u0056-s003",
+    "hb-c03-u0056-s004",
+    "hb-c03-u0057-s001",
+    "hb-c03-u0057-s002",
+    "hb-c03-u0057-s003",
+    "hb-c03-u0058-s001",
+    "hb-c03-u0058-s002",
+    "hb-c03-u0058-s003",
+    "hb-c03-u0058-s004",
+    "hb-c03-u0059-s001",
+    "hb-c03-u0059-s002",
+    "hb-c03-u0059-s003",
+    "hb-c03-u0060-s001",
+    "hb-c03-u0060-s002",
+    "hb-c03-u0060-s003",
+    "hb-c03-u0060-s004",
+    "hb-c03-u0061-s001",
+    "hb-c03-u0061-s002",
+    "hb-c03-u0061-s003",
+    "hb-c03-u0061-s004",
+    "hb-c03-u0061-s005",
+    "hb-c03-u0062-s001",
+    "hb-c03-u0062-s002",
+    "hb-c03-u0063-s001",
+    "hb-c03-u0063-s002",
+    "hb-c03-u0063-s003",
+    "hb-c03-u0064-s001",
+    "hb-c03-u0064-s002",
+    "hb-c03-u0065-s001",
+    "hb-c03-u0065-s002",
+    "hb-c03-u0065-s003",
+    "hb-c03-u0066-s001",
+    "hb-c03-u0066-s002",
+    "hb-c03-u0067-s001",
+    "hb-c03-u0067-s002",
+    "hb-c03-u0067-s003",
+    "hb-c03-u0067-s004",
+    "hb-c03-u0067-s005",
+    "hb-c03-u0067-s006",
+    "hb-c03-u0068-s001",
+    "hb-c03-u0068-s002",
+    "hb-c03-u0068-s003",
+    "hb-c03-u0069-s001",
+    "hb-c03-u0069-s002",
+    "hb-c03-u0069-s003",
+    "hb-c03-u0069-s004",
+    "hb-c03-u0070-s001",
+    "hb-c03-u0070-s002",
+    "hb-c03-u0071-s001",
+    "hb-c03-u0071-s002",
+    "hb-c03-u0072-s001",
+    "hb-c03-u0072-s002",
+    "hb-c03-u0073-s001",
+    "hb-c03-u0073-s002",
+    "hb-c03-u0073-s003",
+    "hb-c03-u0073-s004",
+    "hb-c03-u0074-s001",
+    "hb-c03-u0074-s002",
+    "hb-c03-u0074-s003",
+    "hb-c03-u0074-s004",
+    "hb-c03-u0075-s001",
+    "hb-c03-u0075-s002",
+    "hb-c03-u0151-s001",
+    "hb-c03-u0151-s002",
+    "hb-c03-u0076-s001",
+    "hb-c03-u0076-s002",
+    "hb-c03-u0076-s003",
+    "hb-c03-u0076-s004",
+    "hb-c03-u0076-s005",
+    "hb-c03-u0076-s006",
+    "hb-c03-u0076-s007",
+    "hb-c03-u0076-s008",
+    "hb-c03-u0077-s001",
+    "hb-c03-u0077-s002",
+    "hb-c03-u0078-s001",
+    "hb-c03-u0078-s002",
+    "hb-c03-u0078-s003",
+    "hb-c03-u0078-s004",
+    "hb-c03-u0078-s005",
+    "hb-c03-u0152-s001",
+    "hb-c03-u0152-s002",
+    "hb-c03-u0153-s001",
+    "hb-c03-u0153-s002",
+    "hb-c03-u0153-s003",
+    "hb-c03-u0153-s004",
+    "hb-c03-u0153-s005",
+    "hb-c03-u0079-s001",
+    "hb-c03-u0079-s002",
+    "hb-c03-u0079-s003",
+    "hb-c03-u0079-s004",
+    "hb-c03-u0079-s005",
+    "hb-c03-u0080-s001",
+    "hb-c03-u0080-s002",
+    "hb-c03-u0081-s001",
+    "hb-c03-u0081-s002",
+    "hb-c03-u0081-s003",
+    "hb-c03-u0082-s001",
+    "hb-c03-u0082-s002",
+    "hb-c03-u0082-s003",
+    "hb-c03-u0082-s004",
+    "hb-c03-u0082-s005",
+    "hb-c03-u0082-s006",
+    "hb-c03-u0082-s007",
+    "hb-c03-u0083-s001",
+    "hb-c03-u0083-s002",
+    "hb-c03-u0083-s003",
+    "hb-c03-u0083-s004",
+    "hb-c03-u0084-s001",
+    "hb-c03-u0084-s002",
+    "hb-c03-u0084-s003",
+    "hb-c03-u0085-s001",
+    "hb-c03-u0085-s002",
+    "hb-c03-u0085-s003",
+    "hb-c03-u0086-s001",
+    "hb-c03-u0086-s002",
+    "hb-c03-u0086-s003",
+    "hb-c03-u0086-s004",
+    "hb-c03-u0086-s005",
+    "hb-c03-u0086-s006",
+    "hb-c03-u0087-s001",
+    "hb-c03-u0087-s002",
+    "hb-c03-u0087-s003",
+    "hb-c03-u0087-s004",
+    "hb-c03-u0088-s001",
+    "hb-c03-u0088-s002",
+    "hb-c03-u0088-s003",
+    "hb-c03-u0088-s004",
+    "hb-c03-u0088-s005",
+    "hb-c03-u0089-s001",
+    "hb-c03-u0089-s002",
+    "hb-c03-u0090-s001",
+    "hb-c03-u0090-s002",
+    "hb-c03-u0090-s003",
+    "hb-c03-u0090-s004",
+    "hb-c03-u0090-s005",
+    "hb-c03-u0091-s001",
+    "hb-c03-u0091-s002",
+    "hb-c03-u0091-s003",
+    "hb-c03-u0091-s004",
+    "hb-c03-u0091-s005",
+    "hb-c03-u0092-s001",
+    "hb-c03-u0092-s002",
+    "hb-c03-u0092-s003",
+    "hb-c03-u0092-s004",
+    "hb-c03-u0093-s001",
+    "hb-c03-u0154-s001",
+    "hb-c03-u0094-s001",
+    "hb-c03-u0094-s002",
+    "hb-c03-u0095-s001",
+    "hb-c03-u0095-s002",
+    "hb-c03-u0095-s003",
+    "hb-c03-u0096-s001",
+    "hb-c03-u0096-s002",
+    "hb-c03-u0096-s003",
+    "hb-c03-u0096-s004",
+    "hb-c03-u0096-s005",
+    "hb-c03-u0097-s001",
+    "hb-c03-u0097-s002",
+    "hb-c03-u0097-s003",
+    "hb-c03-u0098-s001",
+    "hb-c03-u0098-s002",
+    "hb-c03-u0098-s003",
+    "hb-c03-u0098-s004",
+    "hb-c03-u0098-s005",
+    "hb-c03-u0098-s006",
+    "hb-c03-u0098-s007",
+    "hb-c03-u0099-s001",
+    "hb-c03-u0099-s002",
+    "hb-c03-u0099-s003",
+    "hb-c03-u0099-s004",
+    "hb-c03-u0099-s005",
+    "hb-c03-u0100-s001",
+    "hb-c03-u0100-s002",
+    "hb-c03-u0100-s003",
+    "hb-c03-u0100-s004",
+    "hb-c03-u0100-s005",
+    "hb-c03-u0155-s001",
+    "hb-c03-u0155-s002",
+    "hb-c03-u0155-s003",
+    "hb-c03-u0155-s004",
+    "hb-c03-u0155-s005",
+    "hb-c03-u0155-s006",
+    "hb-c03-u0155-s007",
+    "hb-c03-u0155-s008",
+    "hb-c03-u0101-s001",
+    "hb-c03-u0101-s002",
+    "hb-c03-u0101-s003",
+    "hb-c03-u0101-s004",
+    "hb-c03-u0101-s005",
+    "hb-c03-u0102-s001",
+    "hb-c03-u0102-s002",
+    "hb-c03-u0102-s003",
+    "hb-c03-u0103-s001",
+    "hb-c03-u0103-s002",
+    "hb-c03-u0103-s003",
+    "hb-c03-u0104-s001",
+    "hb-c03-u0104-s002",
+    "hb-c03-u0104-s003",
+    "hb-c03-u0105-s001",
+    "hb-c03-u0105-s002",
+    "hb-c03-u0106-s001",
+    "hb-c03-u0106-s002",
+    "hb-c03-u0106-s003",
+    "hb-c03-u0107-s001",
+    "hb-c03-u0107-s002",
+    "hb-c03-u0108-s001",
+    "hb-c03-u0108-s002",
+    "hb-c03-u0108-s003",
+    "hb-c03-u0108-s004",
+    "hb-c03-u0109-s001",
+    "hb-c03-u0109-s002",
+    "hb-c03-u0109-s003",
+    "hb-c03-u0109-s004",
+    "hb-c03-u0110-s001",
+    "hb-c03-u0110-s002",
+    "hb-c03-u0110-s003",
+    "hb-c03-u0111-s001",
+    "hb-c03-u0111-s002",
+    "hb-c03-u0111-s003",
+    "hb-c03-u0111-s004",
+    "hb-c03-u0112-s001",
+    "hb-c03-u0112-s002",
+    "hb-c03-u0113-s001",
+    "hb-c03-u0113-s002",
+    "hb-c03-u0113-s003",
+    "hb-c03-u0113-s004",
+    "hb-c03-u0114-s001",
+    "hb-c03-u0114-s002",
+    "hb-c03-u0114-s003",
+    "hb-c03-u0114-s004",
+    "hb-c03-u0115-s001",
+    "hb-c03-u0115-s002",
+    "hb-c03-u0115-s003",
+    "hb-c03-u0116-s001",
+    "hb-c03-u0116-s002",
+    "hb-c03-u0116-s003",
+    "hb-c03-u0116-s004",
+    "hb-c03-u0116-s005",
+    "hb-c03-u0116-s006",
+    "hb-c03-u0117-s001",
+    "hb-c03-u0117-s002",
+    "hb-c03-u0117-s003",
+    "hb-c03-u0117-s004",
+    "hb-c03-u0117-s005",
+    "hb-c03-u0118-s001",
+    "hb-c03-u0118-s002",
+    "hb-c03-u0118-s003",
+    "hb-c03-u0118-s004",
+    "hb-c03-u0118-s005",
+    "hb-c03-u0118-s006",
+    "hb-c03-u0118-s007",
+    "hb-c03-u0119-s001",
+    "hb-c03-u0120-s001",
+    "hb-c03-u0120-s002",
+    "hb-c03-u0120-s003",
+    "hb-c03-u0121-s001",
+    "hb-c03-u0121-s002",
+    "hb-c03-u0122-s001",
+    "hb-c03-u0122-s002",
+    "hb-c03-u0122-s003",
+    "hb-c03-u0122-s004",
+    "hb-c03-u0122-s005",
+    "hb-c03-u0123-s001",
+    "hb-c03-u0123-s002",
+    "hb-c03-u0123-s003",
+    "hb-c03-u0124-s001",
+    "hb-c03-u0124-s002",
+    "hb-c03-u0124-s003",
+    "hb-c03-u0124-s004",
+    "hb-c03-u0125-s001",
+    "hb-c03-u0125-s002",
+    "hb-c03-u0126-s001",
+    "hb-c03-u0126-s002",
+    "hb-c03-u0126-s003",
+    "hb-c03-u0126-s004",
+    "hb-c03-u0126-s005",
+    "hb-c03-u0126-s006",
+    "hb-c03-u0127-s001",
+    "hb-c03-u0127-s002",
+    "hb-c03-u0127-s003",
+    "hb-c03-u0127-s004",
+    "hb-c03-u0127-s005",
+    "hb-c03-u0128-s001",
+    "hb-c03-u0128-s002",
+    "hb-c03-u0128-s003",
+    "hb-c03-u0128-s004",
+    "hb-c03-u0128-s005",
+    "hb-c03-u0128-s006",
+    "hb-c03-u0129-s001",
+    "hb-c03-u0129-s002",
+    "hb-c03-u0156-s001",
+    "hb-c03-u0156-s002",
+    "hb-c03-u0156-s003",
+    "hb-c03-u0156-s004",
+    "hb-c03-u0130-s001",
+    "hb-c03-u0130-s002",
+    "hb-c03-u0130-s003",
+    "hb-c03-u0130-s004",
+    "hb-c03-u0131-s001",
+    "hb-c03-u0131-s002",
+    "hb-c03-u0131-s003",
+    "hb-c03-u0131-s004",
+    "hb-c03-u0132-s001",
+    "hb-c03-u0132-s002",
+    "hb-c03-u0132-s003",
+    "hb-c03-u0133-s001",
+    "hb-c03-u0133-s002",
+    "hb-c03-u0133-s003",
+    "hb-c03-u0133-s004",
+    "hb-c03-u0134-s001",
+    "hb-c03-u0134-s002",
+    "hb-c03-u0134-s003",
+    "hb-c03-u0134-s004",
+    "hb-c03-u0134-s005",
+    "hb-c03-u0135-s001",
+    "hb-c03-u0135-s002",
+    "hb-c03-u0135-s003",
+    "hb-c03-u0135-s004",
+    "hb-c03-u0135-s005",
+    "hb-c03-u0136-s001",
+    "hb-c03-u0136-s002",
+    "hb-c03-u0136-s003",
+    "hb-c03-u0136-s004",
+    "hb-c03-u0136-s005",
+    "hb-c03-u0137-s001",
+    "hb-c03-u0138-s001",
+    "hb-c03-u0138-s002",
+    "hb-c03-u0139-s001",
+    "hb-c03-u0139-s002",
+    "hb-c03-u0139-s003",
+    "hb-c03-u0140-s001",
+    "hb-c03-u0142-s001",
+    "hb-c03-u0143-s001",
+    "hb-c03-u0144-s001",
+    "hb-c03-u0144-s002",
+    "hb-c03-u0145-s001",
+    "hb-c03-u0146-s001",
+    "hb-c03-u0146-s002",
+    "hb-c03-u0146-s003",
+    "hb-c03-u0147-s001",
+    "hb-c03-u0147-s002",
+    "hb-c03-u0147-s003",
+    "hb-c03-u0148-s001",
+    "hb-c03-u0148-s002",
+    "hb-c03-u0148-s003",
+    "hb-c03-u0148-s004",
+    "hb-c03-u0149-s001",
+    "hb-c03-u0149-s002",
+    "hb-c03-u0149-s003",
+    "hb-c03-u0150-s001",
+    "hb-c03-u0150-s002"
+  ],
+  "requested_counts": {
+    "CORE": 78,
+    "SUPPORTING": 67,
+    "SKIP": 375
+  },
+  "included_tiers": [
+    "CORE"
+  ],
+  "selected_count": 78,
+  "sentences": [
+    {
+      "sentence_id": "hb-c03-u0001-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Defining values helps interpret civic choices; a clear general concept rather than Finland-specific trivia.",
+      "section_id": "hb-c03-varderingar",
+      "text": "Värderingar är något som människor eller människogrupper anser är viktiga och eftersträvar.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0004-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0004-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Justice institutions and national defense illustrate distinct public purposes; separate the two roles when questioning.",
+      "section_id": "hb-c03-varderingar",
+      "text": "Till exempel rättsväsendet upprätthåller värderingar likt jämställdhet och rättvisa och för armén är den nationella säkerheten en viktig värdering.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0005-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional liberty, human rights and equality are foundational civic principles with clear study value.",
+      "section_id": "hb-c03-varderingar",
+      "text": "De grundläggande värderingar i det finländska samhället som nämns i Finlands grundlag är frihet, mänskliga rättigheter och jämställdhet och jämlikhet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0005-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equal human worth is a foundational definition that directly supports a defensible question.",
+      "section_id": "hb-c03-varderingar",
+      "text": "Jämlikhet innebär att alla människor är lika mycket värda.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0005-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The prohibition of personal-ground discrimination is central rights knowledge; examples are not an exhaustive list.",
+      "section_id": "hb-c03-varderingar",
+      "text": "Ingen får diskrimineras av någon orsak som gäller hens person, till exempel nationellt ursprung, handikapp eller religion.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0006-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0005-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equal opportunities in care, education and work explain the practical purpose of equality; phrase as a goal.",
+      "section_id": "hb-c03-varderingar",
+      "text": "Målet är att alla människor ska ha möjlighet att få den vård de behöver, studera, få ett yrke och ha framgång i livet.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0007-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equality before the law is foundational and supports an unambiguous civic question.",
+      "section_id": "hb-c03-varderingar",
+      "text": "I Finland är alla lika inför lagen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0010-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0010-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Individual liberty connects culture to legal protections, though no particular law is identified here.",
+      "section_id": "hb-c03-tillit",
+      "text": "Individens frihet syns starkt i den finländska lagstiftningen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0014-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Education accessible to everyone is a major social principle with strong conceptual question potential.",
+      "section_id": "hb-c03-tillit",
+      "text": "I Finland värdesätts skola och utbildning samt att de är tillgängliga för alla.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0016-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0016-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Defines defense willingness as responsibility for shared safety, a useful concept beyond military service alone.",
+      "section_id": "hb-c03-tillit",
+      "text": "Försvarsvilja innebär en vilja att ta hand om och ta ansvar för den egna och den närmaste kretsens och det större samhällets säkerhet.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0034-s006",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "exception",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0034-s005",
+        "hb-c03-u0034-s007"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Emergency care departs from ordinary arrival order; urgency-based triage must be verified before a practical card.",
+      "section_id": "hb-c03-umgange",
+      "text": "Ett undantag är sjukhusens jour, där läkaren avgör i vilken ordning patienterna ska få vård.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0034-s007",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0034-s006"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Treatment priority by urgency is major practical health-service knowledge and supports a clear question.",
+      "section_id": "hb-c03-umgange",
+      "text": "De mest akuta fallen får vård snabbast.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0040-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Freedom to belong to a religious community and practise religion is foundational constitutional knowledge.",
+      "section_id": "hb-c03-religion",
+      "text": "Enligt Finlands grundlag har var och en rätt att höra till ett religiöst samfund och utöva sin egen religion.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0040-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0040-s001",
+        "hb-c03-u0041-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Joining and leaving communities is a major freedom; minors and procedures need qualification before questioning.",
+      "section_id": "hb-c03-religion",
+      "text": "Det är möjligt att valfritt ansluta sig till religiösa samfund och också utträda ur dem.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0041-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Freedom not to belong or practise religion is a foundational counterpart to positive religious freedom.",
+      "section_id": "hb-c03-religion",
+      "text": "Enligt lag har människorna också frihet att inte höra till något religiöst samfund och inte utöva någon religion.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0044-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "number",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Lutheran church's 2023 size and Christian identity are bounded historical information; avoid updating the date silently.",
+      "section_id": "hb-c03-religion",
+      "text": "Majoriteten av invånarna i Finland, omkring 3,6 miljoner människor år 2023, hör till den evangelisk-lutherska kyrkan i Finland, som är en protestantisk, kristen kyrka.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0044-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "number",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Orthodox membership in 2023 is a bounded comparison; focus on the church's position rather than incidental exact totals.",
+      "section_id": "hb-c03-religion",
+      "text": "Den näst största kristna kyrkan i Finland är den ortodoxa kyrkan, till vilken omkring 53 000 personer hörde år 2023.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0045-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule",
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The statutory church-tax position of the Lutheran and Orthodox churches is major practical institutional knowledge.",
+      "section_id": "hb-c03-religion",
+      "text": "Den lutherska och den ortodoxa kyrkan har i Finland en särställning som baseras på lagen och med stöd av vilken dessa kyrkor tar ut skatt av sina medlemmar.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0046-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0046-s003",
+        "hb-c03-u0047-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Access to many church services extends beyond members; scope must not imply every service is unconditional.",
+      "section_id": "hb-c03-religion",
+      "text": "Det är bra att veta att alla som bor i Finland har rätt att ta del av många av kyrkans tjänster.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0046-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0046-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Diaconal help is a useful support route beyond church members; verify access and assistance conditions.",
+      "section_id": "hb-c03-religion",
+      "text": "Vem som helst kan få hjälp genom kyrkans diakoniarbete, det vill säga hjälparbete, vid till exempel ekonomiska problem eller livskriser.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0049-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Women and men may hold Lutheran clergy roles; clear institutional equality knowledge needing current confirmation.",
+      "section_id": "hb-c03-religion",
+      "text": "Inom den lutherska kyrkan kan både kvinnor och män vara präster, kyrkoherdar och biskopar.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0050-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Religious neutrality and constitutional framing are foundational; verify the legal distinction from privileged church status.",
+      "section_id": "hb-c03-religion",
+      "text": "I Finland är staten religiöst neutral, och i landets grundlag hänvisas inte till exempel till det kristliga kulturarvet eller kristna värderingar.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0050-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0045-s001",
+        "hb-c03-u0050-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Separate state and church actors must be understood alongside statutory church privileges, avoiding overstatement.",
+      "section_id": "hb-c03-religion",
+      "text": "Staten och kyrkorna är separata aktörer.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0054-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "number",
+        "rule",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The minimum twenty adult founders is a precise registration requirement needing statutory verification.",
+      "section_id": "hb-c03-religion",
+      "text": "Minst 20 myndiga personer kan grunda ett religiöst samfund.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0054-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "rule",
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0054-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Religious activity does not require community registration; important distinction between freedom and formal legal status.",
+      "section_id": "hb-c03-religion",
+      "text": "Religiösa grupper måste inte registrera sig som samfund, utan de kan även verka utan att ha registrerat sig.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0056-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0056-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Defines secularization as declining religious significance in daily life and society.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Det betyder att religion har fått mindre betydelse i människors vardag och i samhället.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0056-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0056-s001"
+      ],
+      "duplicate_of": "hb-c03-u0056-s002",
+      "assessment_confidence": "medium",
+      "rationale": "This restates the preceding definition of secularization with the same scope.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Med det menas att religionens betydelse har minskat i samhället och individens liv.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0058-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "School and daycare celebrations connect traditions to public education; actual event content matters legally.",
+      "section_id": "hb-c03-religiositet",
+      "text": "I skolor och daghem firas högtidsdagar enligt kalendern, till exempel jul och påsk, som har ett delvis religiöst och kristet ursprung.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0063-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Religion and ethics are worldview subjects in schools, important practical education knowledge.",
+      "section_id": "hb-c03-religiositet",
+      "text": "I skolorna i Finland ordnas undervisning i åskådningsämnen, det vill säga religion eller livsåskådningskunskap.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0063-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Basic Education Act regulates these subjects; precise institutional knowledge requiring current verification.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Skolornas undervisning i religion och livsåskådningskunskap regleras i Finlands lag om grundläggande utbildning.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0063-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Religious education aims at general religious and worldview literacy, a substantive educational purpose.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Religionsundervisningens uppgift är att ge eleverna en bred allmänbildning i religion och livsåskådning.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0064-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Minority-religion instruction is a major right but the sentence omits legal pupil-count and participation conditions.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Också elever som hör till religiösa minoriteter såsom ortodoxer, katoliker, muslimer och judar har rätt att få undervisning i sin egen religion enligt lärokursen.",
+      "score": 52,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0065-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule",
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "School religious education is non-confessional and distinct from religious observance, a central practical distinction.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Religionsundervisningen i skolan är inte religionsutövande eller religiöst bindande.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0065-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0065-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Absence of ritual practice explains non-confessional teaching; should support the same card.",
+      "section_id": "hb-c03-religiositet",
+      "text": "På religionslektionerna utövar man inte religiösa ritualer eller till exempel ber.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0065-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Other beliefs and ethical reflection explain subject breadth without a separate procedural entitlement.",
+      "section_id": "hb-c03-religiositet",
+      "text": "I undervisningen lär man sig förutom om religionen som studeras också om andra religioner och övertygelser samt uppmuntrar eleverna att fundera över olika etiska frågor.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0066-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0063-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Ethics instruction for nonmembers is important, but parental choice and participation exceptions must be checked.",
+      "section_id": "hb-c03-religiositet",
+      "text": "Livsåskådningskunskap lärs ut till elever som inte hör till något registrerat religionssamfund.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0070-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Epiphany on 6 January is useful recognition of a Finnish holiday and its place in Christmas traditions.",
+      "section_id": "hb-c03-vinterfester",
+      "text": "Trettondagen den 6 januari är julens sista dag.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0073-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Easter's movable spring timing is useful calendar knowledge; avoid an oversimplified fixed-date rule.",
+      "section_id": "hb-c03-pask",
+      "text": "Påsken infaller vid olika tidpunkter, men oftast firas påsk i mars eller april.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0074-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0074-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Easter Monday extends the holiday calendar and is practically recognizable.",
+      "section_id": "hb-c03-pask",
+      "text": "Påskfirandet fortsätter ännu på måndagen som är annandag påsk.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0076-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "May Day's spring and workers' associations are substantive Finnish cultural-calendar knowledge.",
+      "section_id": "hb-c03-valborg",
+      "text": "Första maj är vårens och arbetarnas fest.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0076-s007",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule",
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0076-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "White student caps are a recognizable May Day tradition with a clear cultural association.",
+      "section_id": "hb-c03-valborg",
+      "text": "Studenterna tar på sig sina vita studentmössor.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0077-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Mother's Day on the second Sunday of May is useful Finnish calendar recognition.",
+      "section_id": "hb-c03-valborg",
+      "text": "I Finland firas morsdag den andra söndagen i maj.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0078-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Midsummer's late-June timing is an important seasonal cultural association.",
+      "section_id": "hb-c03-midsommar",
+      "text": "Midsommar firas i slutet av juni.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0078-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Proximity to the summer solstice explains Midsummer without saying it always falls on the solstice.",
+      "section_id": "hb-c03-midsommar",
+      "text": "Midsommar är en högtid som firas nära sommarsolståndet.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0078-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule",
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0078-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Bonfires are a distinctive Midsummer custom; current fire restrictions remain a separate legal issue.",
+      "section_id": "hb-c03-midsommar",
+      "text": "Stora midsommareldar hör till de finländska midsommartraditionerna.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0079-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "All Saints' Day in early November is recognizable Finnish calendar knowledge.",
+      "section_id": "hb-c03-hostfester",
+      "text": "Alla helgons dag firas i början av november.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0079-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0079-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Remembering the dead is the central meaning of All Saints' Day.",
+      "section_id": "hb-c03-hostfester",
+      "text": "Då minns man sina avlidna.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0080-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Father's Day on the second Sunday of November is specific Finnish calendar knowledge.",
+      "section_id": "hb-c03-hostfester",
+      "text": "Farsdag firas i Finland den andra söndagen i november.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0081-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Independence in 1917 is central historical civic knowledge; check whether an existing card already covers it.",
+      "section_id": "hb-c03-december",
+      "text": "Finland blev självständigt 1917.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0081-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0081-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Independence Day on 6 December is a central national calendar fact.",
+      "section_id": "hb-c03-december",
+      "text": "Det firas på självständighetsdagen den 6 december.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0082-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0082-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Christmas Eve on 24 December is the central Finnish celebration date, a clear cultural-calendar point.",
+      "section_id": "hb-c03-december",
+      "text": "Den egentliga dagen för firandet är julafton den 24 december.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0083-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Runeberg Day on 5 February is bounded national cultural-calendar knowledge.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "Den 5 februari firas Runebergsdagen.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0083-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0083-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Runeberg's authorship of the national anthem's words is important cultural knowledge; distinguish words from music.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "Då firas Finlands nationalskald Johan Ludvig Runeberg, som skrev orden till Finlands nationalsång som heter Vårt land.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0084-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "International Women's Day on 8 March connects the calendar to equality awareness.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "Den 8 mars firas den internationella kvinnodagen.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0085-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Minna Canth Day is also Equality Day, a meaningful civic-cultural link; only March is specified in this sentence.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "I mars firas Minna Canths dag, eller jämställdhetens dag.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0085-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0085-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Canth's role as writer and social advocate is concrete cultural background.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "Minna Canth var en finsk författare och samhällspåverkare.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0085-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0085-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Promoting women's position through girls' education explains Canth's civic importance.",
+      "section_id": "hb-c03-kulturdagar",
+      "text": "Hon främjade kvinnornas ställning i Finland bland annat genom att förbättra flickors möjligheter till utbildning.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0098-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Upper-secondary and matriculation certificates are distinct qualifications; current completion conditions require checking.",
+      "section_id": "hb-c03-livets-fester",
+      "text": "När en ung människa gått igenom gymnasiet och klarat studentskrivningarna får hon avgångsbetyg från gymnasiet och ett studentbetyg.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0098-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0098-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Eligibility to apply for higher education is important; distinguish application eligibility from guaranteed admission.",
+      "section_id": "hb-c03-livets-fester",
+      "text": "Med betyget kan hon ansöka om studieplats vid ett universitet eller en högskola.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0100-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Religious funerals are possible; actual arrangements must respect the deceased's wishes and applicable rules.",
+      "section_id": "hb-c03-livets-fester",
+      "text": "I Finland kan begravningen ordnas enligt den religion som den avlidne hörde till.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0100-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0100-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Secular funerals are a meaningful alternative; nonmembership should not be misread as the only eligibility route.",
+      "section_id": "hb-c03-livets-fester",
+      "text": "Begravningen kan också vara sekulär, om den avlidne inte hörde till något religiöst samfund.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0108-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A vegan diet excludes animal products, a clear definition useful in everyday dietary communication.",
+      "section_id": "hb-c03-matkultur",
+      "text": "En vegansk kost innehåller inga animaliska produkter.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0110-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Swedish influence in the west and Russian influence in the east is a clear regional cultural relationship.",
+      "section_id": "hb-c03-matkultur",
+      "text": "I västra Finland har matkulturen inspirerats mycket av den svenska matkulturen och i östra Finland av den ryska.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0113-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Harvest season links abundance and quality; a clear practical food-shopping concept.",
+      "section_id": "hb-c03-matkultur",
+      "text": "Skördesäsong betyder den tid då grönsaker, frukter och bär är som bäst och det finns mycket av dem.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0114-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Hunting requires authorization; important outdoor-law knowledge, but different permits and exemptions need verification.",
+      "section_id": "hb-c03-vardagsmat",
+      "text": "Man måste ha tillstånd för att få jaga i Finland.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0116-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free school meals are major education rights; check existing Homebrew coverage and the applicable education level.",
+      "section_id": "hb-c03-vardagsmat",
+      "text": "I skolan får barnen gratis skolmat, som består av en varm lunchrätt.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0117-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Rye bread variety is a recognizable feature of Finnish food culture with clear question potential.",
+      "section_id": "hb-c03-vardagsmat",
+      "text": "Karakteristiskt för den finländska brödkulturen är den stora mängden och variationen av rågbröd.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0120-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Tipping is voluntary, a clear practical service convention rather than a compulsory payment.",
+      "section_id": "hb-c03-vardagsmat",
+      "text": "Du behöver inte lämna dricks, men du kan göra det om du vill tacka för en speciellt bra service.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0132-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Alcohol's serious health and social harms are important practical knowledge requiring authoritative verification if questioned.",
+      "section_id": "hb-c03-festmat",
+      "text": "Alkohol orsakar varje år många allvarliga hälsoproblem, sociala problem och dödsfall.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0133-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Age limits on buying alcohol are important practical law, but the sentence gives no exact thresholds.",
+      "section_id": "hb-c03-festmat",
+      "text": "Alkoholdrycker är relativt dyra i Finland och köpet av dem begränsas med åldersgränser för unga personer.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0133-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Alko's role in stronger-alcohol retail is major practical knowledge requiring current exception checks.",
+      "section_id": "hb-c03-festmat",
+      "text": "Starka alkoholdrycker köper man i de statligt reglerade Alko-butikerna.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0133-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Drink-driving penalties are central safety law; avoid implying every trace of alcohol automatically meets criminal thresholds.",
+      "section_id": "hb-c03-festmat",
+      "text": "Att köra bil under alkoholpåverkan är förbjudet enligt lag och det kan ge ett hårt straff.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c03-u0134-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "UNESCO recognition identifies sauna as intangible heritage, important national cultural knowledge rather than a physical monument.",
+      "section_id": "hb-c03-bastu",
+      "text": "Bastutraditionen är en så viktig del av kulturen att den har upptagits på Unescos lista över mänsklighetens immateriella kulturarv.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0136-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c03-u0136-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A mixed sauna means women and men bathe together; a clear cultural-vocabulary definition.",
+      "section_id": "hb-c03-bastu",
+      "text": "I en blandbastu bastar män och kvinnor tillsammans.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0140-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A hot room or building with a sauna heater gives a clear cultural definition.",
+      "section_id": "hb-c03-bastu",
+      "text": "sauna (bastu): rum eller byggnad, där det finns en bastuugn eller ett bastuaggregat och som värms upp till en hög temperatur",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0143-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "name"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Loyly identifies steam from water on hot stones, useful sauna vocabulary with a clear answer.",
+      "section_id": "hb-c03-bastu",
+      "text": "löyly (bad): vattenångan som stiger upp från stenarna när man kastar bad",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0148-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "name",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Ateneum and EMMA are specific art institutions; useful cultural recognition needing affiliation checks if selected.",
+      "section_id": "hb-c03-kulturliv",
+      "text": "Finländsk konst presenteras till exempel i Ateneum som hör till Nationalgalleriet och Esbo moderna konstmuseum (EMMA).",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c03-u0149-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Adult education centers offer accessible music instruction, a useful participation route without universal price guarantees.",
+      "section_id": "hb-c03-kulturliv",
+      "text": "På många orter finns medborgarinstitut som ordnar förmånlig musikundervisning.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    }
+  ]
+}

@@ -102,6 +102,82 @@ questions, four options, time limits and correct-answer indices matched the deck
 The combined chapter deck has 57 rows in anthology order and passes
 `make check-homebrew`; generated combined files are excluded from card counts.
 
+Homebrew chapter 3 (2026-11-01), **Kultur, värderingar och traditioner** (`hb-c03`):
+all **520 body sentences across 21 subchapters** were individually assessed;
+there were no existing Chapter 3 assessments or cards to reuse. Generated
+**61 new CORE cards in 18 subchapter decks**. Together with **one reused Chapter 2
+card**, these cover all **78 selected CORE sentences**. No selected candidates
+remain blocked. CORE is a study priority, not guaranteed exam coverage.
+
+The [saved Chapter 3 selection report](homebrew/selections/hb-c03-2026-11-01-core.json)
+calibrates once against all **1,054 current assessments in 42 sections**, with no
+invalid unrelated files excluded. Its cutoffs are **CORE >=45, SUPPORTING 41-44,
+SKIP <41**. Chapter 3 has **78 CORE, 67 SUPPORTING and 375 SKIP** sentences; the
+whole assessed collection has 208 / 113 / 733. These are sentence counts, not card
+counts. Earlier cards and their original selection reports remain intact.
+
+| Chapter 3 subchapter | Selected CORE sentences | New cards |
+| --- | ---: | ---: |
+| Värderingar och olikheter | 7 | 7 |
+| Tillit, jämlikhet och självständighet | 3 | 1 |
+| Seder, personligt utrymme och samtal | 0 | 0 |
+| Hälsningar, punktlighet och besök | 2 | 1 |
+| Religioner och religionslöshet | 13 | 10 |
+| Religion i vardagen och högtiderna | 11 | 7 |
+| Högtider och flaggdagar | 0 | 0 |
+| Nyår, trettondag och vintertraditioner | 1 | 1 |
+| Påsk och Kristi himmelsfärdsdag | 2 | 2 |
+| Valborg, första maj och morsdag | 3 | 3 |
+| Midsommar | 3 | 2 |
+| Alla helgons dag och farsdag | 3 | 2 |
+| Självständighetsdagen och julen | 3 | 1 |
+| Runeberg, kvinnodagen och Minna Canths dag (19 mars) | 6 | 5 |
+| Årets andra traditioner | 0 | 0 |
+| Fester genom livet | 4 | 3 |
+| Matkultur och matvanor | 3 | 3 |
+| Vardagsmat och måltider | 4 | 4 |
+| Festmat och drycker | 4 | 3 |
+| Bastukultur | 4 | 4 |
+| Kulturliv | 2 | 2 |
+| **Total** | **78** | **61** |
+
+The three subchapters with no CORE candidates have no empty placeholder deck.
+Related selected sentences share cards. The liberty and education-access claims
+in `hb-c03-tillit` are covered by cards in `hb-c03-varderingar`; the consecutive
+definitions of secularization share a card. The existing question
+"Vilket datum förklarade sig Finland självständigt?" in
+[`hb-c02-sjalvstandighet.txt`](../cards/homebrew/hb-c02/hb-c02-sjalvstandighet.txt)
+covers `hb-c03-u0081-s001` and `hb-c03-u0081-s002`. Its source-record row hash is
+`0f27b0515c8259aec00bedee3b4b76a906c30f6ff062a0c8f1a13486eb3243f2`.
+No duplicate independence-date question was added to Chapter 3.
+
+Outputs: [Chapter 3 decks and combined ALL.txt](../cards/homebrew/hb-c03/),
+[sentence assessments](homebrew/assessments/),
+[card source records](homebrew/card_sources/), and
+[18 Kahoot workbooks](../kahoot/homebrew/hb-c03/).
+Reviewed source context and all four choices for each question. Dated primary-source
+checks in the records resolve church membership and tax, diaconal access, clergy
+roles, state/church relations, registered-community founders, education, funerals,
+hunting, school meals, alcohol regulation and sanctions, and cultural institutions.
+Minority religious instruction retains legal conditions; religious teaching is
+distinguished from religious observance; higher-education eligibility means the
+right to apply rather than automatic admission. The hunting card allows hunting
+rights or permission instead of claiming every hunter needs the same license.
+The school-meal card is limited to basic education and does not promise a hot meal
+under every exceptional circumstance. Alcohol cards test supported policy and
+institutional principles without adding exact age, strength or criminal thresholds
+absent from the anthology. Membership comparisons retain the explicit 2023 frame.
+
+Validation passed for all 520 assessments and all 61 cards, including exact
+categories, source links, current assessment/source hashes, selected CORE primary
+sentences and deck-row hashes. Coverage checks account for all 78 CORE candidates,
+including the reused card. Maximum question/answer lengths are **99/68** characters,
+within 120/70 limits. Correct-answer positions are balanced **16/15/15/15**.
+All 18 workbooks were reopened and their questions, four choices, 20-second limits
+and correct-answer indices matched the decks. All 13 Homebrew card/export/combiner
+tests passed; the combined chapter file has 61 rows in source order and the
+freshness check passed for all three generated chapters.
+
 ## 1. Main Textbook (PRIMARY SOURCE)
 
 **Source:** `data/orientation_guide.pdf`
