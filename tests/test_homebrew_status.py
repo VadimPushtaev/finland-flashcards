@@ -86,7 +86,7 @@ class HomebrewStatusTests(unittest.TestCase):
         self.put("videos/homebrew/hb-c01-99-three.mp4", "Wrong section number")
         rows = status.collect_status(self.root)
         self.assertEqual(rows, [
-            status.ChapterStatus("1. First chapter", 3, 3, 1, 1, 1, [2, 0, 0]),
+            status.ChapterStatus("1. First chapter", 3, 3, 1, 1, 1, [2, 0, 0], sentences=6),
             status.ChapterStatus("2. Empty chapter"),
         ])
 
@@ -135,8 +135,9 @@ class HomebrewStatusTests(unittest.TestCase):
         self.assertEqual((row.videos, row.russian_audio), (0, 0))
 
     def test_wrapping_totals_colors_and_plain_output(self):
-        rows = [status.ChapterStatus("1. A chapter title that needs wrapping " * 2, 8, 8, 4, 0, 0),
-                status.ChapterStatus("2. Another chapter", 2, 2, 1, 2, 0)]
+        rows = [status.ChapterStatus("1. A chapter title that needs wrapping " * 2,
+                                    8, 8, 4, 0, 0, sentences=123),
+                status.ChapterStatus("2. Another chapter", 2, 2, 1, 2, 0, sentences=45)]
         output = status.render_report(rows, color=True, width=80)
         self.assertIn("\033[32m", output)
         self.assertIn("\033[33m", output)
@@ -145,6 +146,8 @@ class HomebrewStatusTests(unittest.TestCase):
         table_lines = [line for line in clean.splitlines() if line.startswith(("\u2502", "\u256d", "\u251c", "\u2570"))]
         self.assertTrue(all(status.display_width(line) == 80 for line in table_lines))
         totals = next(line for line in table_lines if "Total" in line)
+        self.assertIn("Sentences", output)
+        self.assertIn("168", totals)
         for value in ("10/10", "5/10", "2/10", "0/10"):
             self.assertIn(value, totals)
         plain = status.render_report(rows, plain=True, color=True, width=80)

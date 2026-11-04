@@ -24,7 +24,7 @@ COUNTS = ("parts", "translations", "cards", "videos", "russian_audio")
 
 @dataclass
 class ChapterStatus:
-    """Count subchapters with each resource, rather than individual assets."""
+    """Summarize chapter sentences and subchapter resource coverage."""
 
     title: str
     parts: int = 0
@@ -33,6 +33,7 @@ class ChapterStatus:
     videos: int = 0
     russian_audio: int = 0
     card_counts: list[int] = field(default_factory=list)
+    sentences: int = 0
 
 
 def read_yaml(path: Path):
@@ -83,8 +84,10 @@ def collect_status(root: Path) -> list[ChapterStatus]:
             russian, chapter["id"], "headings", {chapter["id"]: chapter["title"]}, terms,
         )
         for number, section in enumerate(chapter["sections"], 1):
+            source = section_source(section)
+            row.sentences += len(source) - 1  # Exclude the section heading.
             row.translations += heading_available and translation_available(
-                russian, section["id"], "sections", section_source(section), terms,
+                russian, section["id"], "sections", source, terms,
             )
             deck = root / "cards/homebrew" / chapter["id"] / f'{section["id"]}.txt'
             count = sum(bool(line.strip()) for line in deck.read_text(encoding="utf-8").splitlines()) \
@@ -125,14 +128,15 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
         symbols = ("+", "~", "-") if plain else ("\U0001f7e2", "\U0001f7e1", "\u26aa")
         return symbols[state], ("32", "33", "90")[state]
 
-    total = ChapterStatus("Total", **{key: sum(getattr(row, key) for row in rows) for key in COUNTS})
-    headers = ["Chapter", "Parts", "RU text", "Cards", "Videos", "RU audio"]
+    total = ChapterStatus("Total", sentences=sum(row.sentences for row in rows),
+                          **{key: sum(getattr(row, key) for row in rows) for key in COUNTS})
+    headers = ["Chapter", "Parts", "Sentences", "RU text", "Cards", "Videos", "RU audio"]
     if card_counts:
         headers.append("Card counts")
     cells = []
     styles = []
     for row in [*rows, total]:
-        values, codes = [row.title, str(row.parts)], ["", ""]
+        values, codes = [row.title, str(row.parts), str(row.sentences)], ["", "", ""]
         for key in COUNTS[1:]:
             count = getattr(row, key)
             symbol, code = marker(count, row.parts)
@@ -204,6 +208,7 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
     if card_counts:
         output.append("Card counts: one number per subchapter, in chapter order; then the chapter total.")
     output.extend([
+        "Sentences: chapter total of source sentence segments, excluding headings.",
         "RU text: reviewed and current. Cards: at least one card in the subchapter deck.",
         "Videos and RU audio: local files; RU audio requires a matching video.",
         "",
