@@ -428,3 +428,15 @@ These are direct or alternate URLs for documents and pages already monitored abo
 ## Additional official source routes (discovered 2026-10-31)
 
 - Finance Committee report on the second supplementary budget, current direct PDF (FI, VaVM 19/2026 vp; revision 5.0, PDF regenerated 2026-10-06; discovered 2026-10-31): https://api.eduskunta.fi/documents/fi/7A73187A-1586-C79A-84FA-A110E7900000.pdf
+
+## Additional official source files (discovered 2026-11-04)
+
+These are historical publications or current URLs for files already archived; they do not announce new citizenship-test rules.
+
+- Finlex final act 552/2026, Swedish statute-collection PDF (published 2026-06-23): https://www.finlex.fi/api/media/statute/1072009/mainPdf/main.pdf?timestamp=2026-06-23T05%3A01%3A42.125Z
+- Finlex final act 553/2026, Swedish statute-collection PDF (published 2026-06-23): https://www.finlex.fi/api/media/statute/1072018/mainPdf/main.pdf?timestamp=2026-06-23T05%3A01%3A42.125Z
+- Finlex final act 554/2026, Swedish statute-collection PDF (published 2026-06-23): https://www.finlex.fi/api/media/statute/1072012/mainPdf/main.pdf?timestamp=2026-06-23T05%3A01%3A42.125Z
+- Finlex HE 54/2026 proposal PDF (FI; current media ID 1072435; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1072435/mainPdf/main.pdf?timestamp=2026-06-24T07%3A01%3A07.000Z
+- Finlex RP 54/2026 proposal PDF (SV; current media ID 1072434; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1072434/mainPdf/main.pdf?timestamp=2026-06-24T07%3A01%3A07.000Z
+- Finlex HE 102/2026 supplementary-budget proposal PDF (FI; current media ID 1073315; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1073315/mainPdf/main.pdf?timestamp=2026-07-01T10%3A33%3A15.000Z
+- Finlex RP 102/2026 supplementary-budget proposal PDF (SV; current media ID 1073314; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1073314/mainPdf/main.pdf?timestamp=2026-07-01T10%3A33%3A15.000Z
