@@ -1,0 +1,18 @@
+{
+  "section_id": "hb-c11-atervinning",
+  "stage": "verification-after-export",
+  "state": "studio/production/remaining/hb-c11-atervinning-verify-state.json",
+  "log": "studio/production/remaining/hb-c11-atervinning-verify.log",
+  "command": [
+    ".venv/bin/python",
+    "studio/production/remaining/verify_when_rendered.py",
+    "hb-c11-atervinning"
+  ],
+  "refuse_existing_outputs": [
+    "studio/episodes/hb-c11-atervinning/render-check.json"
+  ],
+  "expected_outputs": [
+    "studio/episodes/hb-c11-atervinning/render-check.json",
+    "studio/episodes/hb-c11-atervinning/production-handoff.json"
+  ]
+}

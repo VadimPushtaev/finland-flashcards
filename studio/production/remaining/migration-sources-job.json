@@ -1,0 +1,30 @@
+{
+  "section_id": "root-migration",
+  "stage": "sources",
+  "state": "studio/production/remaining/migration-sources-state.json",
+  "log": "studio/production/remaining/migration-sources.log",
+  "command": [
+    ".venv/bin/python",
+    "studio/production/remaining/prepare_selected_sources.py",
+    "hb-c12-tillstand",
+    "hb-c12-tillstandstyper",
+    "hb-c12-asyl",
+    "hb-c12-kvotflyktingar",
+    "hb-c12-tillfalligt-skydd",
+    "hb-c12-familjeband",
+    "hb-c12-beslut",
+    "hb-c12-utan-tillstand",
+    "hb-c12-medborgarskap"
+  ],
+  "expected_outputs": [
+    "studio/episodes/hb-c12-tillstand/foreground-assets.json",
+    "studio/episodes/hb-c12-tillstandstyper/foreground-assets.json",
+    "studio/episodes/hb-c12-asyl/foreground-assets.json",
+    "studio/episodes/hb-c12-kvotflyktingar/foreground-assets.json",
+    "studio/episodes/hb-c12-tillfalligt-skydd/foreground-assets.json",
+    "studio/episodes/hb-c12-familjeband/foreground-assets.json",
+    "studio/episodes/hb-c12-beslut/foreground-assets.json",
+    "studio/episodes/hb-c12-utan-tillstand/foreground-assets.json",
+    "studio/episodes/hb-c12-medborgarskap/foreground-assets.json"
+  ]
+}

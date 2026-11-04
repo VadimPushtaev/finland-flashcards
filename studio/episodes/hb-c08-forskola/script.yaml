@@ -1,0 +1,863 @@
+schema_version: 1
+section_id: hb-c08-forskola
+chapter_id: hb-c08
+title_sv: Förskoleundervisning
+title_ru: Подготовительное обучение
+source_path: data/homebrew/sv/chapters/08_utbildning_och_larande.yaml
+translation_path: data/homebrew/ru/sections/hb-c08-forskola.yaml
+example_only: false
+source_section_sha256: 455ae11fb48b057eaeb4f81adb286b84f493831b3423f563bdd109209dd30197
+translation_file_sha256: d23c2f709a955a5d20d595cff5960f597d36f926efad903615e34e3c1f0d6184
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive original source paragraphs/list items define topic scenes; exact wording and stored
+    order are retained. Sentence illustrations follow the individual source claim.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 24fps, Chapter 8 teal palette {''background'': ''#193b40'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#c0dce0'', ''highlight'': ''#e8c081'', ''separator'': ''#3f6d73''}. Liberation Sans
+    Bold48/Regular40 with right bilingual panel and fixed left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Hevoshaka kindergarten in Hakunila, Vantaa, Finland, 2021.jpg by Coen continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=2.1547619047619047. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Supertonic3/F1 Swedish,32steps,speed0.95,seed42,44100HzmonoPCM16,2ONNXthreads. Whole-video
+    listening and user acceptance pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Water Droplets on the River by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 104.829 seconds; prepared lossless stereo bed 301.667
+    seconds. Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: A distinct relevant source-based illustration for nearly every sentence slide, supplemented
+    by verified photographs where they clarify actual institutions or places. Distinct semantic compositions
+    show only the source statements. Aim at least90% measured body picture coverage and report unique-picture
+    ratio.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c08-u0031
+  description: När ett barn är sex år gammalt, det vill säga året innan läroplikten börjar, deltar hen
+    i förskoleundervisning.
+- id: hb-c08-u0032
+  description: Huvudansvaret för genomförandet av förskoleundervisningen ligger på lärarna, som vanligtvis
+    har en utbildning som lärare inom småbarnspedagogik eller som klasslärare.
+- id: hb-c08-u0033
+  description: Förskoleundervisningen är avgiftsfri, och under förskoledagen får barnen en avgiftsfri
+    varm måltid.
+- id: hb-c08-u0034
+  description: Inom förskoleundervisningen får barnet färdigheter som hen kan använda för att lära sig
+    nya saker.
+- id: hb-c08-u0035
+  description: Lärarna inom förskoleundervisningen beaktar barnets utvecklingsnivå.
+- id: hb-c08-u0036
+  description: I Finland ska barnen delta i förskoleundervisning under ett års tid innan läroplikten börjar.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: path / sex år / child / förskoleundervisning
+    / school'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-002
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: garden / växa / plant / utvecklas och lära
+    sig / book'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-003
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: year / ett år / calendar / innan skolan
+    börjar / school'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-004
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: obligation / delta / child / målen / target'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-005
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: conversation / förskoleundervisningen /
+    teacher / förskola / speech'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-006
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: qualification / lärarna / teacher / utbildning
+    / diploma'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-007
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: team / lärare / teacher / barnskötare eller
+    assistent / adult'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-008
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: meeting / förskolepersonalen / teacher
+    / föräldrarna och vårdnadshavarna / family'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-009
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: meal / avgiftsfri / coins / varm måltid
+    / meal'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-010
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: clock / fyra timmar / clock / per dag /
+    sun'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-011
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: materials / läromedlen / pencils / avgiftsfria
+    / coins'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-012
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: day / förskoleundervisningen / school /
+    på eftermiddagen / play'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-013
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: halfday / normal klientavgift / coins /
+    halva dagen / clock'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-014
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: tools / färdigheter / puzzle / lära sig
+    nya saker / book'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-015
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: social / sociala färdigheter / children
+    / självkänsla / child'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-016
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: language / positiva upplevelser / book
+    / språkliga utveckling / speech'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-017
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: discovery / leka / play / utforska tillsammans
+    / magnify'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-018
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: growth / barnets utvecklingsnivå / child
+    / lärarna / teacher'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-019
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: support / svårigheter / puzzle / förskoleundervisningen
+    / teacher'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-020
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: bridge / skolgång / school / stödjas ända
+    från början / hands'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-021
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: calendarpath / ett års tid / calendar /
+    innan läroplikten börjar / school'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-022
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: birthday / sex år / child / förskoleundervisningen
+    / book'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-023
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: municipality / kommunerna / town / kostnadsfri
+    / coins'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-024
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: qualification / högutbildade pedagoger
+    / teacher / förskoleundervisning / book'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-025
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: week / fyra timmar om dagen / clock / måndag
+    till fredag / calendar'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-026
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: day / förskoleundervisning / school / småbarnspedagogik
+    / play'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+sentences:
+- sentence_id: hb-c08-u0031-s001
+  sv: När ett barn är sex år gammalt, det vill säga året innan läroplikten börjar, deltar hen i förskoleundervisning.
+  ru: В шесть лет, то есть за год до начала обязательного обучения, ребёнок проходит подготовительное
+    обучение (förskoleundervisning).
+  scene_id: hb-c08-u0031
+  visual_cue: 'Verified relevant foreground photograph: Actual Finnish daycare building; contextual photograph
+    for the preschool stage, not proof of the particular photographed institution age rules. Exact bilingual
+    source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0031-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.072041
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-001.png
+- sentence_id: hb-c08-u0031-s002
+  sv: Syftet med förskoleundervisningen är att främja barnets förutsättningar att växa, utvecklas och
+    lära sig.
+  ru: Цель подготовительного обучения — способствовать созданию условий для роста, развития и обучения
+    ребёнка.
+  scene_id: hb-c08-u0031
+  visual_cue: 'Distinct source-based foreground illustration: garden / växa / plant / utvecklas och lära
+    sig / book'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0031-s002.wav
+  start_seconds: 14.833333
+  end_seconds: 24.237415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-002.png
+- sentence_id: hb-c08-u0031-s003
+  sv: Förskoleundervisningen pågår i ett år innan skolan börjar.
+  ru: Подготовительное обучение длится один год до начала учёбы в школе.
+  scene_id: hb-c08-u0031
+  visual_cue: 'Distinct source-based foreground illustration: year / ett år / calendar / innan skolan
+    börjar / school'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0031-s003.wav
+  start_seconds: 26.0
+  end_seconds: 31.433469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-003.png
+- sentence_id: hb-c08-u0031-s004
+  sv: Det är bindande att delta i förskoleundervisning eller annan verksamhet som uppnår målen för förskoleundervisningen.
+  ru: Участие в подготовительном обучении или в другой деятельности, обеспечивающей достижение целей подготовительного
+    обучения, обязательно.
+  scene_id: hb-c08-u0031
+  visual_cue: 'Distinct source-based foreground illustration: obligation / delta / child / målen / target'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0031-s004.wav
+  start_seconds: 33.208333
+  end_seconds: 42.891054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-004.png
+- sentence_id: hb-c08-u0031-s005
+  sv: I talspråk kallas förskoleundervisningen ofta för förskola.
+  ru: В разговорной речи подготовительное обучение часто называют «подготовительной группой» (förskola).
+  scene_id: hb-c08-u0031
+  visual_cue: 'Verified relevant foreground photograph: An accurately identified Finnish daycare exterior,
+    illustrative preschool setting; no claim about a particular class or timetable. Exact bilingual source
+    text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0031-s005.wav
+  start_seconds: 44.666667
+  end_seconds: 50.100136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-005.png
+- sentence_id: hb-c08-u0032-s001
+  sv: Huvudansvaret för genomförandet av förskoleundervisningen ligger på lärarna, som vanligtvis har
+    en utbildning som lärare inom småbarnspedagogik eller som klasslärare.
+  ru: Основная ответственность за проведение подготовительного обучения лежит на учителях, которые обычно
+    имеют образование педагога дошкольного воспитания и обучения или учителя начальных классов.
+  scene_id: hb-c08-u0032
+  visual_cue: 'Distinct source-based foreground illustration: qualification / lärarna / teacher / utbildning
+    / diploma'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0032-s001.wav
+  start_seconds: 52.583333
+  end_seconds: 67.002925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-006.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0032-s002
+  sv: I förskolegrupperna arbetar också en annan lärare, barnskötare eller assistent.
+  ru: В группах подготовительного обучения также работает ещё один учитель, работник по уходу за детьми
+    или помощник.
+  scene_id: hb-c08-u0032
+  visual_cue: 'Distinct source-based foreground illustration: team / lärare / teacher / barnskötare eller
+    assistent / adult'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0032-s002.wav
+  start_seconds: 69.791667
+  end_seconds: 76.966633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-007.png
+- sentence_id: hb-c08-u0032-s003
+  sv: Förskolepersonalen diskuterar regelbundet barnets fostran och utveckling tillsammans med föräldrarna
+    och vårdnadshavarna.
+  ru: Сотрудники подготовительных групп регулярно обсуждают воспитание и развитие ребёнка вместе с родителями
+    и опекунами.
+  scene_id: hb-c08-u0032
+  visual_cue: 'Distinct source-based foreground illustration: meeting / förskolepersonalen / teacher /
+    föräldrarna och vårdnadshavarna / family'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0032-s003.wav
+  start_seconds: 78.75
+  end_seconds: 89.19898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-008.png
+- sentence_id: hb-c08-u0033-s001
+  sv: Förskoleundervisningen är avgiftsfri, och under förskoledagen får barnen en avgiftsfri varm måltid.
+  ru: Подготовительное обучение бесплатно, а в течение учебного дня детям предоставляют бесплатное горячее
+    питание.
+  scene_id: hb-c08-u0033
+  visual_cue: 'Verified relevant foreground photograph: Actual warm school meal in Ylästö,Vantaa,2024.
+    Illustrative Finnish educational meal, not a claim about a particular preschool menu or its prices.
+    Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0033-s001.wav
+  start_seconds: 91.666667
+  end_seconds: 100.44381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-009.png
+- sentence_id: hb-c08-u0033-s002
+  sv: Undervisning ges i allmänhet fyra timmar per dag.
+  ru: Занятия обычно проводятся по четыре часа в день.
+  scene_id: hb-c08-u0033
+  visual_cue: 'Distinct source-based foreground illustration: clock / fyra timmar / clock / per dag /
+    sun'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0033-s002.wav
+  start_seconds: 102.208333
+  end_seconds: 106.596905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-010.png
+- sentence_id: hb-c08-u0033-s003
+  sv: Också läromedlen är avgiftsfria.
+  ru: Учебные материалы также бесплатны.
+  scene_id: hb-c08-u0033
+  visual_cue: 'Verified relevant foreground photograph: Actual colored pencils illustrate tangible learning
+    materials; no claim about brand provision or a particular institution. Exact bilingual source text
+    remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0033-s003.wav
+  start_seconds: 108.375
+  end_seconds: 111.718673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-011.png
+- sentence_id: hb-c08-u0033-s004
+  sv: Om föräldrarna arbetar, deltar barnet vanligtvis i småbarnspedagogik på eftermiddagen efter förskoleundervisningen.
+  ru: Если родители работают, то во второй половине дня после подготовительного обучения ребёнок обычно
+    участвует в программе дошкольного воспитания и обучения.
+  scene_id: hb-c08-u0033
+  visual_cue: 'Distinct source-based foreground illustration: day / förskoleundervisningen / school /
+    på eftermiddagen / play'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0033-s004.wav
+  start_seconds: 113.5
+  end_seconds: 123.94898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-012.png
+- sentence_id: hb-c08-u0033-s005
+  sv: Då betalar föräldrarna normal klientavgift för småbarnspedagogik för halva dagen.
+  ru: В таком случае родители вносят обычную плату за услуги дошкольного воспитания и обучения за половину
+    дня.
+  scene_id: hb-c08-u0033
+  visual_cue: 'Distinct source-based foreground illustration: halfday / normal klientavgift / coins /
+    halva dagen / clock'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0033-s005.wav
+  start_seconds: 125.708333
+  end_seconds: 132.883299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-013.png
+- sentence_id: hb-c08-u0034-s001
+  sv: Inom förskoleundervisningen får barnet färdigheter som hen kan använda för att lära sig nya saker.
+  ru: В ходе подготовительного обучения ребёнок приобретает навыки, которые может использовать для освоения
+    нового.
+  scene_id: hb-c08-u0034
+  visual_cue: 'Distinct source-based foreground illustration: tools / färdigheter / puzzle / lära sig
+    nya saker / book'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0034-s001.wav
+  start_seconds: 135.333333
+  end_seconds: 143.901497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-014.png
+- sentence_id: hb-c08-u0034-s002
+  sv: Förskoleundervisningen stärker barnets sociala färdigheter och självkänsla.
+  ru: Подготовительное обучение развивает социальные навыки ребёнка и укрепляет его самооценку.
+  scene_id: hb-c08-u0034
+  visual_cue: 'Verified relevant foreground photograph: Actual children playing at a Finnish daycare;
+    illustrates peer activity relevant to social development without identifying individual children.
+    Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0034-s002.wav
+  start_seconds: 145.666667
+  end_seconds: 152.632653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-015.png
+- sentence_id: hb-c08-u0034-s003
+  sv: Syftet är att ge barnen positiva upplevelser av lärande och främja deras språkliga utveckling.
+  ru: Цель — дать детям положительный опыт обучения и способствовать их речевому развитию.
+  scene_id: hb-c08-u0034
+  visual_cue: 'Distinct source-based foreground illustration: language / positiva upplevelser / book /
+    språkliga utveckling / speech'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0034-s003.wav
+  start_seconds: 154.416667
+  end_seconds: 162.98483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-016.png
+- sentence_id: hb-c08-u0034-s004
+  sv: Barnen lär sig genom att leka och utforska tillsammans och med hjälp av fantasin.
+  ru: Дети учатся, вместе играя, исследуя и используя воображение.
+  scene_id: hb-c08-u0034
+  visual_cue: 'Verified relevant foreground photograph: Actual children skiing in Finland; illustrative
+    learning through outdoor play, not an assertion that skiing is compulsory preschool curriculum. Exact
+    bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0034-s004.wav
+  start_seconds: 164.75
+  end_seconds: 171.855306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-017.png
+- sentence_id: hb-c08-u0035-s001
+  sv: Lärarna inom förskoleundervisningen beaktar barnets utvecklingsnivå.
+  ru: Педагоги подготовительных групп учитывают уровень развития ребёнка.
+  scene_id: hb-c08-u0035
+  visual_cue: 'Distinct source-based foreground illustration: growth / barnets utvecklingsnivå / child
+    / lärarna / teacher'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0035-s001.wav
+  start_seconds: 174.333333
+  end_seconds: 180.463401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-018.png
+- sentence_id: hb-c08-u0035-s002
+  sv: Om det finns svårigheter när det gäller barnets utveckling eller lärande upptäcks det ofta redan
+    i förskoleundervisningen.
+  ru: Если в развитии или обучении ребёнка есть трудности, их часто выявляют уже в ходе подготовительного
+    обучения.
+  scene_id: hb-c08-u0035
+  visual_cue: 'Distinct source-based foreground illustration: support / svårigheter / puzzle / förskoleundervisningen
+    / teacher'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0035-s002.wav
+  start_seconds: 182.25
+  end_seconds: 192.62932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-019.png
+- sentence_id: hb-c08-u0035-s003
+  sv: Barnets skolgång kan då stödjas ända från början.
+  ru: Тогда поддержку в школьном обучении ребёнку можно оказывать с самого начала.
+  scene_id: hb-c08-u0035
+  visual_cue: 'Distinct source-based foreground illustration: bridge / skolgång / school / stödjas ända
+    från början / hands'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0035-s003.wav
+  start_seconds: 194.416667
+  end_seconds: 199.014218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-020.png
+- sentence_id: hb-c08-u0036-s001
+  sv: I Finland ska barnen delta i förskoleundervisning under ett års tid innan läroplikten börjar.
+  ru: В Финляндии дети должны проходить подготовительное обучение в течение одного года до начала обязательного
+    обучения.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Distinct source-based foreground illustration: calendarpath / ett års tid / calendar /
+    innan läroplikten börjar / school'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s001.wav
+  start_seconds: 201.5
+  end_seconds: 209.650204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-021.png
+- sentence_id: hb-c08-u0036-s002
+  sv: Vanligtvis börjar förskoleundervisningen det år då barnet fyller sex år.
+  ru: Обычно подготовительное обучение начинается в том году, когда ребёнку исполняется шесть лет.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Distinct source-based foreground illustration: birthday / sex år / child / förskoleundervisningen
+    / book'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s002.wav
+  start_seconds: 211.416667
+  end_seconds: 218.104014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-022.png
+- sentence_id: hb-c08-u0036-s003
+  sv: Förskoleundervisningen ordnas av kommunerna och är kostnadsfri för familjen.
+  ru: Подготовительное обучение организуют муниципалитеты, и для семьи оно бесплатно.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Distinct source-based foreground illustration: municipality / kommunerna / town / kostnadsfri
+    / coins'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s003.wav
+  start_seconds: 219.875
+  end_seconds: 226.840986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-023.png
+- sentence_id: hb-c08-u0036-s004
+  sv: Förskoleundervisningen ges av högutbildade pedagoger inom småbarnspedagogik.
+  ru: Подготовительное обучение проводят специалисты по дошкольному воспитанию и обучению с высшим педагогическим
+    образованием.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Distinct source-based foreground illustration: qualification / högutbildade pedagoger /
+    teacher / förskoleundervisning / book'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s004.wav
+  start_seconds: 228.625
+  end_seconds: 235.660646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-024.png
+- sentence_id: hb-c08-u0036-s005
+  sv: Förskoleundervisning ges vanligtvis fyra timmar om dagen från måndag till fredag under skolans verksamhetstider.
+  ru: Подготовительное обучение обычно проводится по четыре часа в день с понедельника по пятницу в периоды
+    работы школ.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Distinct source-based foreground illustration: week / fyra timmar om dagen / clock / måndag
+    till fredag / calendar'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s005.wav
+  start_seconds: 237.416667
+  end_seconds: 247.029728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-025.png
+- sentence_id: hb-c08-u0036-s006
+  sv: Barnet kan utöver förskoleundervisning delta även i småbarnspedagogik.
+  ru: Помимо подготовительного обучения ребёнок может также участвовать в программе дошкольного воспитания
+    и обучения.
+  scene_id: hb-c08-u0036
+  visual_cue: 'Verified relevant foreground photograph: Verified Finnish daycare exterior; illustrative
+    additional early childhood education setting, not evidence about this institution specific hours.
+    Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-forskola/narration/hb-c08-u0036-s006.wav
+  start_seconds: 248.791667
+  end_seconds: 255.130714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-forskola/pictures/picture-026.png
+render:
+  music_path: studio/media/hb-c08-forskola/sources/music-bed.flac
+  background_image: studio/media/hb-c08-forskola/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.1547619047619047
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Hevoshaka kindergarten in Hakunila, Vantaa, Finland, 2021.jpg — Coen · CC BY-SA 4.0
+    - Water Droplets on the River — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian retained in source order.
+  - Original foreground illustrations depict source-stated objects and relationships; symbolic scenes
+    are not documentary photographs.
+  - Unique photographic background cropped,darkened,blurred and animated continuously.
+  - Music faded,ducked,+2dBadjusted and repeated with4second equal-power crossfades when needed.
+  palette:
+    background: '#193b40'
+    text: '#faf3e8'
+    secondary: '#c0dce0'
+    highlight: '#e8c081'
+    separator: '#3f6d73'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Hevoshaka_kindergarten_in_Hakunila,_Vantaa,_Finland,_2021.jpg
+    description: "Hevoshaka kindergarten (Hevoshaan päiväkoti) within the Kormuniitty to-be residential\
+      \ area in \nin Hakunila. Street address Hevoshaantie 17, 01200 Vantaa."
+    license: CC BY-SA 4.0

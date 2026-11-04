@@ -1,0 +1,1176 @@
+schema_version: 1
+section_id: hb-c09-samlevnad
+chapter_id: hb-c09
+title_sv: Civilstånd och samboförhållande
+title_ru: Семейное положение и совместная жизнь без брака
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-samlevnad.yaml
+example_only: false
+source_section_sha256: 54bb72f92521cfa4d0f9b8a866f1a86bc451f9961147bb86b3e82f7e6359f8e0
+translation_file_sha256: 49754a17768479d1bdc19f98283ec7991f31dcfc05656d20c8c15c814df65241
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Nykäsenranta Oulu 20220307.jpg by Estormiz continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=2.789285714285714. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Swimmey Texture by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 64.575 seconds; prepared lossless stereo bed 390.500 seconds.
+    Repeat count 6, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Civilstånd är en uppgift som införs i Finlands befolkningsdatasystem.
+- id: scene-2
+  description: I Finland är det vanligt att par inte ingår äktenskap, även om de är tillsammans i ett
+    stadigvarande förhållande.
+- id: scene-3
+  description: Inget skriftligt avtal ingås om ett samboförhållande.
+- id: scene-4
+  description: Barnets ställning är så gott som densamma oavsett om hens föräldrar är gifta eller inte.
+- id: scene-5
+  description: Ni kan ta ett gemensamt efternamn om
+- id: scene-6
+  description: ni har gemensamma barn eller
+- id: scene-7
+  description: om ni har bott tillsammans minst fem år.
+- id: scene-8
+  description: Om ni bor stadigvarande tillsammans i samma bostad, hör ni till samma hushåll.
+- id: scene-9
+  description: Ett samboförhållande upphör när parterna inte längre bor på samma adress.
+- id: scene-10
+  description: I ett samboförhållande behåller vardera part sin egen egendom.
+- id: scene-11
+  description: Om samborna förvärvar egendom tillsammans ska båda parterna antecknas som köpare och alla
+    kvitton sparas.
+- id: scene-12
+  description: Sambor kan ha sådan egendom om vars ägande de inte har en överenskommelse.
+- id: scene-13
+  description: I vissa fall kan den ena sambon få jämkning av den andra sambon när paret skiljer sig.
+- id: scene-14
+  description: Sambor kan dock upprätta ett testamente (testamentti) för det fall att någon avlider.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Civilstånd är en uppgift som införs i Finlands befolkningsdatasystem.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Civilståndet anger om en person officiellt är i ett parförhållande
+    eller inte.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: En persons civilstånd kan vara gift, ogift, skild, änka
+    eller änkling, eller i registrerat parförhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland är det vanligt att par inte ingår äktenskap,
+    även om de är tillsammans i ett stadigvarande förhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Om två makar inte är gifta men bor tillsammans, har de
+    ett samboförhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Då är de sambor med varandra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Samboförhållande är inte ett officiellt civilstånd, det
+    vill säga det anges inte i befolkningsdatasystemet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Inget skriftligt avtal ingås om ett samboförhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Inför lagen har sambor inte samma rättigheter och skyldigheter
+    som gifta par.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Sambor är inte underhållsskyldiga gentemot varandra, det
+    vill säga den ena maken behöver inte försörja den andra om hen till exempel blir arbetslös.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Om den ena maken dör, ärver inte den andra hen, om det
+    inte finns ett testamente över arvet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Samborna kommer tillsammans överens om hur de delar på
+    familjens inkomster och utgifter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets ställning är så gott som densamma oavsett om hens
+    föräldrar är gifta eller inte.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet kan få vilket som helst av föräldrarnas efternamn
+    och har rätt att ärva sina föräldrar och få familjepension om den ena föräldern dör.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Båda föräldrarna är skyldiga att försörja sitt barn, även
+    om de inte skulle vara gifta.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Ni kan ta ett gemensamt efternamn om'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: ni har gemensamma barn eller'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: om ni har bott tillsammans minst fem år.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Om ni bor stadigvarande tillsammans i samma bostad, hör
+    ni till samma hushåll.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Detta har betydelse om ni till exempel ansöker om bostadsbidrag
+    från FPA.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Ett samboförhållande upphör när parterna inte längre bor
+    på samma adress.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Upphörandet av samboförhållandet kan påverka till exempel
+    de stöd som FPA betalar och barnens dagvårdsavgifter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Du ska själv meddela att samboförhållandet har upphört.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: I ett samboförhållande behåller vardera part sin egen
+    egendom.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: När samboförhållandet upphör delas egendomen vanligtvis
+    så att båda parterna får sin egen egendom.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Om samborna förvärvar egendom tillsammans ska båda parterna
+    antecknas som köpare och alla kvitton sparas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Då delas denna egendom jämnt om samboförhållandet upphör.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Om bara en av parterna står som köpare är denne ägare
+    till egendomen när samboförhållandet upphör.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Sambor kan ha sådan egendom om vars ägande de inte har
+    en överenskommelse.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Då utgår man ifrån att båda äger en lika stor andel och
+    denna egendom delas på hälft.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: I vissa fall kan den ena sambon få jämkning av den andra
+    sambon när paret skiljer sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: En sambo kan få jämkning om han eller hon till exempel
+    genom arbete hjälpt den andra sambon att utöka sin egendom och för att det därför skulle vara orättvist
+    att fördela egendomen enbart baserat på ägarskapet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: Sambor kan dock upprätta ett testamente (testamentti)
+    för det fall att någon avlider.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: Genom testamente kan de säkerställa att en viss egendom,
+    till exempel den gemensamma bostaden, ärvs av sambon.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Sambor kan även upprätta ett skriftligt avtal om hur egendomen
+    ska fördelas om paret går isär.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: Om du vill upprätta ett avtal eller ett testamente för
+    fördelning av egendomen i ett samboförhållande, kan du be om råd till exempel vid rättshjälpsbyrån
+    eller av en jurist.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0062-s001
+  sv: Civilstånd är en uppgift som införs i Finlands befolkningsdatasystem.
+  ru: Семейное положение — это сведения, которые вносятся в систему информации о населении Финляндии.
+  scene_id: scene-1
+  visual_cue: A person record enters the population information registry. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - Civilstånd
+  - befolkningsdatasystem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0062-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.519388
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0062-s002
+  sv: Civilståndet anger om en person officiellt är i ett parförhållande eller inte.
+  ru: Семейное положение показывает, состоит ли человек официально в отношениях в паре.
+  scene_id: scene-1
+  visual_cue: An individual civil-status record and the relationship it describes. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - Civilståndet
+  - parförhållande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0062-s002.wav
+  start_seconds: 11.291667
+  end_seconds: 18.118333
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0062-s003
+  sv: En persons civilstånd kan vara gift, ogift, skild, änka eller änkling, eller i registrerat parförhållande.
+  ru: 'Семейное положение человека может быть следующим: состоит в браке, не состоит в браке, разведён
+    или разведена, вдова или вдовец либо состоит в зарегистрированном партнёрстве.'
+  scene_id: scene-1
+  visual_cue: Three pictured examples from the source enumeration, without suggesting an exhaustive visual
+    list. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - skild
+  - änka eller änkling
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0062-s003.wav
+  start_seconds: 19.875
+  end_seconds: 29.209422
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0063-s001
+  sv: I Finland är det vanligt att par inte ingår äktenskap, även om de är tillsammans i ett stadigvarande
+    förhållande.
+  ru: В Финляндии пары часто не вступают в брак, даже если находятся в постоянных отношениях.
+  scene_id: scene-2
+  visual_cue: A couple shares a stable domestic setting without using wedding imagery. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - stadigvarande förhållande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0063-s001.wav
+  start_seconds: 31.666667
+  end_seconds: 41.697687
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0063-s002
+  sv: Om två makar inte är gifta men bor tillsammans, har de ett samboförhållande.
+  ru: Если два партнёра не состоят в браке, но живут вместе, это совместная жизнь без брака (samboförhållande).
+  scene_id: scene-2
+  visual_cue: Two partners and one shared dwelling depict cohabitation. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - två makar
+  - bor tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0063-s002.wav
+  start_seconds: 43.458333
+  end_seconds: 50.14568
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0063-s003
+  sv: Då är de sambor med varandra.
+  ru: В таком случае они являются партнёрами, живущими вместе без брака (sambor).
+  scene_id: scene-2
+  visual_cue: Two adults linked as partners; no rings or marriage contract. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - sambor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0063-s003.wav
+  start_seconds: 51.916667
+  end_seconds: 54.842381
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0063-s004
+  sv: Samboförhållande är inte ett officiellt civilstånd, det vill säga det anges inte i befolkningsdatasystemet.
+  ru: Совместная жизнь без брака не является официальным семейным положением, то есть не указывается в
+    системе информации о населении.
+  scene_id: scene-2
+  visual_cue: A home-sharing relationship is not a registered civil-status entry; block only the registry
+    connection. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - Samboförhållande
+  - befolkningsdatasystemet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0063-s004.wav
+  start_seconds: 56.625
+  end_seconds: 65.820102
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0064-s001
+  sv: Inget skriftligt avtal ingås om ett samboförhållande.
+  ru: Для совместной жизни без брака письменное соглашение не заключается.
+  scene_id: scene-3
+  visual_cue: No mandatory written cohabitation contract is represented; no additional obligations are
+    implied. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - samboförhållande
+  - skriftligt avtal
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0064-s001.wav
+  start_seconds: 68.291667
+  end_seconds: 73.237517
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0064-s002
+  sv: Inför lagen har sambor inte samma rättigheter och skyldigheter som gifta par.
+  ru: По закону у партнёров, живущих вместе без брака, не такие же права и обязанности, как у супружеских
+    пар.
+  scene_id: scene-3
+  visual_cue: Cohabiting and married relationship symbols shown side by side with visually separate legal
+    frames. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - sambor
+  - gifta par
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0064-s002.wav
+  start_seconds: 75.0
+  end_seconds: 81.617687
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0064-s003
+  sv: Sambor är inte underhållsskyldiga gentemot varandra, det vill säga den ena maken behöver inte försörja
+    den andra om hen till exempel blir arbetslös.
+  ru: Партнёры, живущие вместе без брака, не обязаны содержать друг друга, то есть один партнёр не обязан
+    обеспечивать другого, если тот, например, станет безработным.
+  scene_id: scene-3
+  visual_cue: The pictured transfer of partner support is crossed out to explain absence of a duty in
+    this archived sentence. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - den ena maken
+  - försörja den andra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0064-s003.wav
+  start_seconds: 83.375
+  end_seconds: 96.122755
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0064-s004
+  sv: Om den ena maken dör, ärver inte den andra hen, om det inte finns ett testamente över arvet.
+  ru: Если один партнёр умирает, другой не наследует его имущество, если нет завещания об этом наследстве.
+  scene_id: scene-3
+  visual_cue: A will is explicitly interposed between the deceased partner and the surviving partner;
+    it is the source condition for inheritance. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - den ena maken
+  - testamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0064-s004.wav
+  start_seconds: 98.875
+  end_seconds: 106.885884
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0064-s005
+  sv: Samborna kommer tillsammans överens om hur de delar på familjens inkomster och utgifter.
+  ru: Партнёры вместе договариваются о том, как распределять доходы и расходы семьи.
+  scene_id: scene-3
+  visual_cue: Two partners jointly arrange their household budget; no currency amounts are invented. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - Samborna
+  - inkomster och utgifter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0064-s005.wav
+  start_seconds: 108.666667
+  end_seconds: 116.398912
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0065-s001
+  sv: Barnets ställning är så gott som densamma oavsett om hens föräldrar är gifta eller inte.
+  ru: Положение ребёнка практически одинаково независимо от того, состоят его родители в браке или нет.
+  scene_id: scene-4
+  visual_cue: A child is central alongside the parental pair; no marriage requirement is drawn. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - Barnets ställning
+  - föräldrar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0065-s001.wav
+  start_seconds: 118.875
+  end_seconds: 126.537585
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0065-s002
+  sv: Barnet kan få vilket som helst av föräldrarnas efternamn och har rätt att ärva sina föräldrar och
+    få familjepension om den ena föräldern dör.
+  ru: Ребёнок может получить фамилию любого из родителей и имеет право наследовать после родителей и получать
+    семейную пенсию в случае смерти одного из них.
+  scene_id: scene-4
+  visual_cue: The child and source-stated inheritance and survivor benefit objects are shown without implying
+    amounts. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - Barnet
+  - familjepension
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0065-s002.wav
+  start_seconds: 128.291667
+  end_seconds: 140.482143
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0065-s003
+  sv: Båda föräldrarna är skyldiga att försörja sitt barn, även om de inte skulle vara gifta.
+  ru: Оба родителя обязаны содержать своего ребёнка, даже если они не состоят в браке.
+  scene_id: scene-4
+  visual_cue: Both parents provide care and support toward the child regardless of marriage. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - Båda föräldrarna
+  - sitt barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0065-s003.wav
+  start_seconds: 143.25
+  end_seconds: 151.191224
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0066-s001
+  sv: Ni kan ta ett gemensamt efternamn om
+  ru: Вы можете взять общую фамилию, если
+  scene_id: scene-5
+  visual_cue: Both partners point to a shared surname document; following source fragments supply the
+    conditions. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - gemensamt efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0066-s001.wav
+  start_seconds: 153.666667
+  end_seconds: 157.21932
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0067-s001
+  sv: ni har gemensamma barn eller
+  ru: у вас есть общие дети или
+  scene_id: scene-6
+  visual_cue: The source first alternative condition is a shared child, represented by parents and child.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - gemensamma barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0067-s001.wav
+  start_seconds: 159.708333
+  end_seconds: 162.564388
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0069-s001
+  sv: om ni har bott tillsammans minst fem år.
+  ru: если вы прожили вместе не менее пяти лет.
+  scene_id: scene-7
+  visual_cue: A shared dwelling and calendar show the second source alternative, labelled with the exact
+    five-year threshold. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - bott tillsammans
+  - minst fem år
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0069-s001.wav
+  start_seconds: 165.041667
+  end_seconds: 168.872959
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0070-s001
+  sv: Om ni bor stadigvarande tillsammans i samma bostad, hör ni till samma hushåll.
+  ru: Если вы постоянно живёте вместе в одном жилье, вы относитесь к одному домохозяйству.
+  scene_id: scene-8
+  visual_cue: Partners in one residence are represented as one household. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - samma hushåll
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0070-s001.wav
+  start_seconds: 171.333333
+  end_seconds: 178.577959
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0070-s002
+  sv: Detta har betydelse om ni till exempel ansöker om bostadsbidrag från FPA.
+  ru: Это имеет значение, например, если вы подаёте заявление на жилищное пособие в Ведомство социального
+    обеспечения (FPA).
+  scene_id: scene-8
+  visual_cue: Household housing and the FPA benefit application are linked without adding eligibility
+    claims. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - bostadsbidrag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0070-s002.wav
+  start_seconds: 180.333333
+  end_seconds: 187.22966
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0071-s001
+  sv: Ett samboförhållande upphör när parterna inte längre bor på samma adress.
+  ru: Совместная жизнь без брака прекращается, когда партнёры больше не живут по одному адресу.
+  scene_id: scene-9
+  visual_cue: A separated residence/branch symbol depicts the end of sharing an address. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - samma adress
+  - upphör
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0071-s001.wav
+  start_seconds: 189.708333
+  end_seconds: 196.186701
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0071-s002
+  sv: Upphörandet av samboförhållandet kan påverka till exempel de stöd som FPA betalar och barnens dagvårdsavgifter.
+  ru: Прекращение совместной жизни без брака может повлиять, например, на пособия, выплачиваемые FPA,
+    и плату за дневной уход за детьми.
+  scene_id: scene-9
+  visual_cue: Changed cohabitation points to source-stated benefit and daycare-fee consequences. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - Upphörandet
+  - dagvårdsavgifter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0071-s002.wav
+  start_seconds: 197.958333
+  end_seconds: 208.407313
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0071-s003
+  sv: Du ska själv meddela att samboförhållandet har upphört.
+  ru: Вы должны сами сообщить о прекращении совместной жизни без брака.
+  scene_id: scene-9
+  visual_cue: The individual submits an end-of-cohabitation notice; no automatic registration is implied.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - meddela
+  - samboförhållandet har upphört
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0071-s003.wav
+  start_seconds: 210.166667
+  end_seconds: 215.251837
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0072-s001
+  sv: I ett samboförhållande behåller vardera part sin egen egendom.
+  ru: При совместной жизни без брака каждая сторона сохраняет своё имущество.
+  scene_id: scene-10
+  visual_cue: A person and property key stay in one personal ownership frame. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - vardera part
+  - sin egen egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0072-s001.wav
+  start_seconds: 217.708333
+  end_seconds: 223.141803
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0072-s002
+  sv: När samboförhållandet upphör delas egendomen vanligtvis så att båda parterna får sin egen egendom.
+  ru: После прекращения совместной жизни без брака имущество обычно делят так, что каждая сторона получает
+    своё имущество.
+  scene_id: scene-10
+  visual_cue: After separation, each party keeps their own property; no equal division of all property
+    is implied. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - upphör
+  - båda parterna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0072-s002.wav
+  start_seconds: 224.916667
+  end_seconds: 233.27585
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0073-s001
+  sv: Om samborna förvärvar egendom tillsammans ska båda parterna antecknas som köpare och alla kvitton
+    sparas.
+  ru: Если партнёры приобретают имущество вместе, обе стороны должны быть указаны как покупатели, а все
+    чеки должны сохраняться.
+  scene_id: scene-11
+  visual_cue: Both buyers link to the retained joint purchase receipt. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - båda parterna
+  - alla kvitton
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0073-s001.wav
+  start_seconds: 235.75
+  end_seconds: 245.432721
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0073-s002
+  sv: Då delas denna egendom jämnt om samboförhållandet upphör.
+  ru: Тогда при прекращении совместной жизни без брака это имущество делится поровну.
+  scene_id: scene-11
+  visual_cue: The jointly purchased property is divided equally, with balanced scales and no monetary
+    amounts. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - denna egendom
+  - jämnt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0073-s002.wav
+  start_seconds: 247.208333
+  end_seconds: 252.363163
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0073-s003
+  sv: Om bara en av parterna står som köpare är denne ägare till egendomen när samboförhållandet upphör.
+  ru: Если покупателем указана только одна из сторон, после прекращения совместной жизни без брака собственником
+    имущества является именно она.
+  scene_id: scene-11
+  visual_cue: A purchase document in one party name points to that owner. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - bara en av parterna
+  - ägare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0073-s003.wav
+  start_seconds: 254.125
+  end_seconds: 262.971803
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0074-s001
+  sv: Sambor kan ha sådan egendom om vars ägande de inte har en överenskommelse.
+  ru: У партнёров может быть имущество, о принадлежности которого они не договорились.
+  scene_id: scene-12
+  visual_cue: Partners and disputed ownership are separated from the absent agreement; no court outcome
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - Sambor
+  - egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0074-s001.wav
+  start_seconds: 265.458333
+  end_seconds: 272.006361
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0074-s002
+  sv: Då utgår man ifrån att båda äger en lika stor andel och denna egendom delas på hälft.
+  ru: Тогда предполагается, что обеим сторонам принадлежат равные доли, и это имущество делится пополам.
+  scene_id: scene-12
+  visual_cue: For the source case of unclear ownership, the property is pictured with balanced half division.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - denna egendom
+  - delas på hälft
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0074-s002.wav
+  start_seconds: 273.791667
+  end_seconds: 280.896973
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0075-s001
+  sv: I vissa fall kan den ena sambon få jämkning av den andra sambon när paret skiljer sig.
+  ru: В некоторых случаях при расставании один партнёр может получить от другого компенсацию.
+  scene_id: scene-13
+  visual_cue: A discretionary adjustment is represented by scales between the two former partners. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - den ena sambon
+  - jämkning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0075-s001.wav
+  start_seconds: 283.375
+  end_seconds: 290.828605
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0075-s002
+  sv: En sambo kan få jämkning om han eller hon till exempel genom arbete hjälpt den andra sambon att
+    utöka sin egendom och för att det därför skulle vara orättvist att fördela egendomen enbart baserat
+    på ägarskapet.
+  ru: Партнёр может получить компенсацию, если, например, своим трудом помог другому партнёру приумножить
+    имущество и поэтому было бы несправедливо делить имущество исключительно исходя из права собственности.
+  scene_id: scene-13
+  visual_cue: Labour contribution increases the other partner property; fairness scales mark the stated
+    adjustment rationale, without guaranteeing a result. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - genom arbete
+  - utöka sin egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0075-s002.wav
+  start_seconds: 292.583333
+  end_seconds: 309.58034
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0076-s001
+  sv: Sambor kan dock upprätta ett testamente (testamentti) för det fall att någon avlider.
+  ru: Однако партнёры могут составить завещание (testamentti) на случай смерти одного из них.
+  scene_id: scene-14
+  visual_cue: Partners may create a will for a death contingency; optionality remains in the exact bilingual
+    text. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - Sambor
+  - testamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0076-s001.wav
+  start_seconds: 312.333333
+  end_seconds: 319.647619
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0076-s002
+  sv: Genom testamente kan de säkerställa att en viss egendom, till exempel den gemensamma bostaden, ärvs
+    av sambon.
+  ru: С помощью завещания они могут обеспечить переход определённого имущества, например общего жилья,
+    по наследству к партнёру.
+  scene_id: scene-14
+  visual_cue: The will links the shared home to the surviving partner, exactly as the source example.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - Genom testamente
+  - den gemensamma bostaden
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0076-s002.wav
+  start_seconds: 321.416667
+  end_seconds: 331.099388
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0076-s003
+  sv: Sambor kan även upprätta ett skriftligt avtal om hur egendomen ska fördelas om paret går isär.
+  ru: Партнёры могут также составить письменное соглашение о том, как будет разделено имущество, если
+    они расстанутся.
+  scene_id: scene-14
+  visual_cue: An optional written property agreement links partners to a possible future separation. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - Sambor
+  - skriftligt avtal
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0076-s003.wav
+  start_seconds: 332.875
+  end_seconds: 341.512823
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0076-s004
+  sv: Om du vill upprätta ett avtal eller ett testamente för fördelning av egendomen i ett samboförhållande,
+    kan du be om råd till exempel vid rättshjälpsbyrån eller av en jurist.
+  ru: Если вы хотите составить соглашение или завещание о распределении имущества при совместной жизни
+    без брака, вы можете обратиться за советом, например, в бюро юридической помощи или к юристу.
+  scene_id: scene-14
+  visual_cue: A draft will or agreement leads to legal advice at a legal aid office; no additional entitlement
+    is claimed. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - testamente
+  - rättshjälpsbyrån
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-samlevnad/narration/hb-c09-u0076-s004.wav
+  start_seconds: 343.291667
+  end_seconds: 357.989898
+  display_segments: []
+  render_image: studio/media/hb-c09-samlevnad/pictures/picture_036.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-samlevnad/sources/music-bed.flac
+  background_image: studio/media/hb-c09-samlevnad/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.789285714285714
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Nykäsenranta Oulu 20220307.jpg — Estormiz · CC0
+    - Swimmey Texture — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Nyk%C3%A4senranta_Oulu_20220307.jpg
+    description: Residential buildings in the Nykäsenranta neighbourhood in the Kirkkokangas district
+      of Oulu.
+    license: CC0

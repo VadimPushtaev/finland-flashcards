@@ -1,0 +1,876 @@
+{
+  "contact_now": {
+    "id": "contact_now",
+    "composition": "flow",
+    "description": "If unable to pay, contact bill sender directly.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inte kan betala",
+        "icon": "coins"
+      },
+      {
+        "label": "kontakta avsändaren direkt",
+        "icon": "phone"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0173-s001"
+    ]
+  },
+  "extension": {
+    "id": "extension",
+    "composition": "object",
+    "description": "Payment time can often be extended, not guaranteed.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "betalningstiden förlängd",
+        "icon": "calendar"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "Ofta",
+        "node_indices": [
+          0
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0173-s002"
+    ]
+  },
+  "late_fee": {
+    "id": "late_fee",
+    "composition": "pair",
+    "description": "Extension usually adds a small late fee; no amount invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "räkningen",
+        "icon": "document"
+      },
+      {
+        "label": "liten förseningsavgift",
+        "icon": "coins"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "vanligtvis",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0173-s003"
+    ]
+  },
+  "collection_costs": {
+    "id": "collection_costs",
+    "composition": "group",
+    "description": "Unpaid/unextended bill may require reminder costs, collection costs and late interest; exact main text retains full trigger.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "påminnelse- och inkassokostnader",
+        "icon": "document"
+      },
+      {
+        "label": "dröjsmålsränta",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0174-s001"
+    ]
+  },
+  "reminder": {
+    "id": "reminder",
+    "composition": "flow",
+    "description": "Bill unpaid by due date leads to reminder.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "förfallodagen",
+        "icon": "calendar"
+      },
+      {
+        "label": "betalningspåminnelse",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0175-s001"
+    ]
+  },
+  "agency": {
+    "id": "agency",
+    "composition": "flow",
+    "description": "After one or two reminders the bill may go to a collection agency.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "en eller två påminnelser",
+        "icon": "document"
+      },
+      {
+        "label": "inkassobyrå",
+        "icon": "shop"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0175-s002"
+    ]
+  },
+  "demand": {
+    "id": "demand",
+    "composition": "flow",
+    "description": "Agency sends a payment demand.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Inkassobyrån",
+        "icon": "shop"
+      },
+      {
+        "label": "betalningskrav",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0175-s003"
+    ]
+  },
+  "payment_plan": {
+    "id": "payment_plan",
+    "composition": "flow",
+    "description": "If unable to pay at once, contact agency to agree a plan.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "kontakta inkassobyrån",
+        "icon": "phone"
+      },
+      {
+        "label": "betalningsplan",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0175-s004"
+    ]
+  },
+  "enforcement": {
+    "id": "enforcement",
+    "composition": "flow",
+    "description": "No payment or plan can ultimately lead to enforcement; main source condition intact.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "skulden",
+        "icon": "document"
+      },
+      {
+        "label": "utmätning",
+        "icon": "court"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0176-s001"
+    ]
+  },
+  "income_share": {
+    "id": "income_share",
+    "composition": "flow",
+    "description": "Enforcement authority can take part of income; no percentage invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "en del av dina inkomster",
+        "icon": "coins"
+      },
+      {
+        "label": "betalning av skulder",
+        "icon": "court"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0176-s002"
+    ]
+  },
+  "property_sale": {
+    "id": "property_sale",
+    "composition": "flow",
+    "description": "Authority may sell valuable property to pay debt; no complete asset seizure implied.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "värdefull egendom",
+        "icon": "house"
+      },
+      {
+        "label": "betala skulden",
+        "icon": "coins"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "kan även sälja",
+        "node_indices": [
+          0
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0176-s003"
+    ]
+  },
+  "court_often": {
+    "id": "court_often",
+    "composition": "pair",
+    "description": "Court decision is often needed for enforcement, not always.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "domstolsbeslut",
+        "icon": "court"
+      },
+      {
+        "label": "utmätning",
+        "icon": "document"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "Ofta",
+        "node_indices": [
+          0
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0177-s001"
+    ]
+  },
+  "direct_exception": {
+    "id": "direct_exception",
+    "composition": "flow",
+    "description": "Some payments go directly to enforcement, preserving the exception.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Vissa betalningar",
+        "icon": "document"
+      },
+      {
+        "label": "direkt till utmätning",
+        "icon": "court"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0177-s002"
+    ]
+  },
+  "direct_examples": {
+    "id": "direct_examples",
+    "composition": "group",
+    "description": "Source examples of direct-enforcement fees, no complete list invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "skatter",
+        "icon": "coins"
+      },
+      {
+        "label": "hälsocentralsavgifter",
+        "icon": "hospital"
+      },
+      {
+        "label": "dagvårdsavgifter",
+        "icon": "child"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0177-s003"
+    ]
+  },
+  "credit_record": {
+    "id": "credit_record",
+    "composition": "flow",
+    "description": "Nonpayment can lead to a credit-default entry; no automatic threshold invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inte betalar",
+        "icon": "document"
+      },
+      {
+        "label": "kreditupplysningsregistret",
+        "icon": "database"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "kan du få",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0178-s001"
+    ]
+  },
+  "difficulties": {
+    "id": "difficulties",
+    "composition": "object",
+    "description": "Warn of difficulties without inventing a specific consequence on this short continuation.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "många svårigheter",
+        "icon": "warning"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0178-s002"
+    ]
+  },
+  "record_checks": {
+    "id": "record_checks",
+    "composition": "merge",
+    "description": "Landlords and banks often check credit data.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Hyresvärdar",
+        "icon": "house"
+      },
+      {
+        "label": "banker",
+        "icon": "bank"
+      },
+      {
+        "label": "kredituppgifterna",
+        "icon": "database"
+      }
+    ],
+    "connective": "och",
+    "source_sentence_ids": [
+      "hb-c11-u0178-s003"
+    ]
+  },
+  "credit_barriers": {
+    "id": "credit_barriers",
+    "composition": "group",
+    "description": "A default can hinder rental housing, bank loan or credit card; no universal denial.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hyresbostad",
+        "icon": "house"
+      },
+      {
+        "label": "banklån",
+        "icon": "bank"
+      },
+      {
+        "label": "kreditkort",
+        "icon": "document"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "inte nödvändigtvis",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0178-s004"
+    ]
+  },
+  "employer_cases": {
+    "id": "employer_cases",
+    "composition": "pair",
+    "description": "Employers may require no defaults in some situations; not a universal employment ban.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "arbetsgivaren",
+        "icon": "work"
+      },
+      {
+        "label": "inte har betalningsanmärkningar",
+        "icon": "database"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "i vissa situationer",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0178-s005"
+    ]
+  },
+  "lease_rescission": {
+    "id": "lease_rescission",
+    "composition": "flow",
+    "description": "Nonpayment permits landlord to rescind the lease; distinguish later court eviction.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inte betalar din hyra",
+        "icon": "coins"
+      },
+      {
+        "label": "häva hyresavtalet",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0179-s001"
+    ]
+  },
+  "notify_tenant": {
+    "id": "notify_tenant",
+    "composition": "flow",
+    "description": "Landlord must notify tenant of rescission.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Hyresvärden",
+        "icon": "person"
+      },
+      {
+        "label": "meddela hyresgästen",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0179-s002"
+    ]
+  },
+  "still_agree": {
+    "id": "still_agree",
+    "composition": "pair",
+    "description": "Usually still possible to agree rent payment at this stage; no guaranteed recovery.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "komma överens",
+        "icon": "document"
+      },
+      {
+        "label": "hyresbetalningen",
+        "icon": "coins"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "vanligtvis",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0179-s003"
+    ]
+  },
+  "court_eviction": {
+    "id": "court_eviction",
+    "composition": "flow",
+    "description": "Landlord can apply to court for eviction when rent unpaid; no private forcible eviction implied.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hyresvärden",
+        "icon": "house"
+      },
+      {
+        "label": "avhysningsbeslut i domstol",
+        "icon": "court"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0179-s004"
+    ]
+  },
+  "leave_pay": {
+    "id": "leave_pay",
+    "composition": "split",
+    "description": "Eviction means moving out AND paying unpaid rent.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Det",
+        "icon": "court"
+      },
+      {
+        "label": "flytta ut ur bostaden",
+        "icon": "key"
+      },
+      {
+        "label": "betala de obetalda hyrorna",
+        "icon": "coins"
+      }
+    ],
+    "connective": "och",
+    "source_sentence_ids": [
+      "hb-c11-u0179-s005"
+    ]
+  },
+  "rent_contact": {
+    "id": "rent_contact",
+    "composition": "flow",
+    "description": "Rent difficulties: contact landlord.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "svårigheter att betala hyran",
+        "icon": "house"
+      },
+      {
+        "label": "kontakt med hyresvärden",
+        "icon": "phone"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0180-s001"
+    ]
+  },
+  "rent_extension": {
+    "id": "rent_extension",
+    "composition": "pair",
+    "description": "Try to agree a postponed due date with landlord.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "komma överens",
+        "icon": "document"
+      },
+      {
+        "label": "flytta fram förfallodagen",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0181-s001"
+    ]
+  },
+  "social_advice": {
+    "id": "social_advice",
+    "composition": "flow",
+    "description": "Local social services can provide advice.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "be om råd",
+        "icon": "phone"
+      },
+      {
+        "label": "socialservicen",
+        "icon": "people"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0181-s002"
+    ]
+  },
+  "check_benefits": {
+    "id": "check_benefits",
+    "composition": "branch",
+    "description": "Check possible housing allowance OR income support entitlement, no automatic award.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Kontrollera",
+        "icon": "document"
+      },
+      {
+        "label": "bostadsbidrag",
+        "icon": "house"
+      },
+      {
+        "label": "utkomststöd",
+        "icon": "coins"
+      }
+    ],
+    "connective": "eller",
+    "source_sentence_ids": [
+      "hb-c11-u0181-s003"
+    ]
+  },
+  "kela_rights": {
+    "id": "kela_rights",
+    "composition": "flow",
+    "description": "Ask FPA about benefit rights; no person labelled a recipient.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "rätt till bostadsbidrag och utkomststöd",
+        "icon": "document"
+      },
+      {
+        "label": "FPA",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0181-s004"
+    ]
+  },
+  "debt_counselling": {
+    "id": "debt_counselling",
+    "composition": "flow",
+    "description": "Contact legal-aid financial/debt counselling for bill and debt problems.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "problem med att betala",
+        "icon": "coins"
+      },
+      {
+        "label": "ekonomi- och skuldrådgivning",
+        "icon": "phone"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0182-s001"
+    ]
+  },
+  "free_state": {
+    "id": "free_state",
+    "composition": "pair",
+    "description": "Counselling is free and state-organized.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "kostnadsfri",
+        "icon": "coins",
+        "crossed": true
+      },
+      {
+        "label": "staten",
+        "icon": "court"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0182-s002"
+    ]
+  },
+  "adviser": {
+    "id": "adviser",
+    "composition": "object",
+    "description": "Introduce adviser before the following verbatim list fragments.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Ekonomi- och skuldrådgivaren",
+        "icon": "person"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0183-s001"
+    ]
+  },
+  "assess_together": {
+    "id": "assess_together",
+    "composition": "pair",
+    "description": "Adviser assesses finances together with the person; not independently taking control.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "ekonomiska situation",
+        "icon": "document"
+      },
+      {
+        "label": "med dig",
+        "icon": "people"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0184-s001"
+    ]
+  },
+  "consider_options": {
+    "id": "consider_options",
+    "composition": "branch",
+    "description": "Consider different options together without adding a particular solution to this fragment.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "överväga",
+        "icon": "person"
+      },
+      {
+        "label": "olika lösningsalternativ",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0186-s001"
+    ]
+  },
+  "agreements": {
+    "id": "agreements",
+    "composition": "pair",
+    "description": "Help draw up payment agreements.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hjälper",
+        "icon": "person"
+      },
+      {
+        "label": "betalningsavtal",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0187-s001"
+    ]
+  },
+  "restructuring_advice": {
+    "id": "restructuring_advice",
+    "composition": "branch",
+    "description": "Advice on applying for restructuring loan and debt restructuring; no guarantee of admission.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "råd",
+        "icon": "phone"
+      },
+      {
+        "label": "skuldsaneringslån",
+        "icon": "bank"
+      },
+      {
+        "label": "skuldsanering",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0188-s001"
+    ]
+  },
+  "foundation_help": {
+    "id": "foundation_help",
+    "composition": "flow",
+    "description": "Takuusäätiö provides help/advice on debt payment.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Takuusäätiö",
+        "icon": "shield"
+      },
+      {
+        "label": "hjälp med och råd",
+        "icon": "phone"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0189-s001"
+    ]
+  },
+  "combine_loans": {
+    "id": "combine_loans",
+    "composition": "merge",
+    "description": "Foundation can help combine debts into one loan; no interest rate added.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "dina skulder",
+        "icon": "document"
+      },
+      {
+        "label": "ett lån",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0189-s002"
+    ]
+  },
+  "foundation_guarantee": {
+    "id": "foundation_guarantee",
+    "composition": "flow",
+    "description": "Apply for a foundation loan guarantee when needing a bank loan to repay debts.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lånegaranti",
+        "icon": "shield"
+      },
+      {
+        "label": "banklån",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0189-s003"
+    ]
+  },
+  "small_oneoff": {
+    "id": "small_oneoff",
+    "composition": "group",
+    "description": "Representative one-off small-loan expenses; no recurring-income claim, approval or amount.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hushållsmaskin",
+        "icon": "washing_machine"
+      },
+      {
+        "label": "hyresdeposition",
+        "icon": "key"
+      },
+      {
+        "label": "glasögon",
+        "icon": "glasses"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "utgift av engångskaraktär",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0189-s004"
+    ]
+  }
+}

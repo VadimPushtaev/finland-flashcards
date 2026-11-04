@@ -1,0 +1,60 @@
+{
+  "supervisor_pid": 273977,
+  "section_id": "hb-c08-yrkesutbildning",
+  "status": "launched",
+  "started_at": "2026-11-03T08:35:12.785385+00:00",
+  "expected_predecessor_supervisor": 264562,
+  "heartbeat_at": "2026-11-03T08:35:12.785925+00:00",
+  "export_supervisor_pid": 274368,
+  "launched_at": "2026-11-03T08:35:51.566237+00:00",
+  "predecessor": {
+    "section_id": "hb-c11-agarbostad",
+    "stage": "render",
+    "status": "finished",
+    "supervisor_pid": 264562,
+    "command": [
+      "studio/runtime/.venv/bin/python",
+      "studio/tools/render.py",
+      "hb-c11-agarbostad"
+    ],
+    "started_at": "2026-11-03T08:15:06.912963+00:00",
+    "log": "studio/production/remaining/hb-c11-agarbostad-render.log",
+    "pid": 264566,
+    "heartbeat_at": "2026-11-03T08:35:42.503526+00:00",
+    "returncode": 0,
+    "finished_at": "2026-11-03T08:35:48.079748+00:00",
+    "missing_outputs": []
+  },
+  "prior_full_renderers": [
+    "264816  264815 studio/runtime/.venv/bin/python studio/tools/render.py hb-c09-forandring"
+  ],
+  "max_full_encoders": 2,
+  "frozen_inputs": {
+    "section_id": "hb-c08-yrkesutbildning",
+    "frozen_at": "2026-11-03T08:26:51.539958+00:00",
+    "seconds": 721.375,
+    "input_snapshots": {
+      "script": {
+        "path": "studio/episodes/hb-c08-yrkesutbildning/script.yaml",
+        "sha256": "0648e112093473fc848b42842a23d513fd1539c2be0345e3814d4320299cb627",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c08-yrkesutbildning/script-0648e112093473fc848b42842a23d513fd1539c2be0345e3814d4320299cb627.yaml"
+      },
+      "assets": {
+        "path": "studio/episodes/hb-c08-yrkesutbildning/assets.yaml",
+        "sha256": "44be9765751190e207cbea0f5b81e923d700d83d6b4d7b57b7d7c8867c5a51ef",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c08-yrkesutbildning/assets-44be9765751190e207cbea0f5b81e923d700d83d6b4d7b57b7d7c8867c5a51ef.yaml"
+      },
+      "timeline": {
+        "path": "studio/media/hb-c08-yrkesutbildning/render/timeline.json",
+        "sha256": "f5b95c6ef12fe56383e4a209ad1f9b4263587fb3539059acf77cf47fe0ea9601",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c08-yrkesutbildning/timeline-f5b95c6ef12fe56383e4a209ad1f9b4263587fb3539059acf77cf47fe0ea9601.json"
+      },
+      "producer_preflight": {
+        "path": "studio/episodes/hb-c08-yrkesutbildning/producer-preflight-review.json",
+        "sha256": "75a0aa7f9dd217aa50a730148e0492dc71ae73029128286ee3468b463b32488e",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c08-yrkesutbildning/producer_preflight-75a0aa7f9dd217aa50a730148e0492dc71ae73029128286ee3468b463b32488e.json"
+      }
+    },
+    "authorization": "Prepared immutable review-input snapshot only; full encoder launch still requires centrally assigned slot and live-process check."
+  }
+}

@@ -138,3 +138,53 @@ reduced resize time from 0.108s to 0.068s/frame under concurrent load, with a me
 pixel difference of 0.071/255 and a maximum of 2/255 versus bicubic. This is an
 optional recorded production setting; bicubic remains the default. Both methods
 use the same floating-point crop path and require exported motion checks.
+
+## Long sentences with manually aligned display segments
+
+When the whole bilingual pair exceeds the panel even at the permitted minimum
+font sizes, split its display into manually aligned Swedish/Russian chunks in
+`display_segments`. Joining the chunks must reproduce each complete source
+sentence exactly, in order. Keep the single original narration WAV unchanged.
+
+After final narration is measured, give each chunk a `speech_offset_seconds`:
+the first is `0`, and later offsets are explicit boundaries relative to the
+beginning of that sentence's speech. Select boundaries using the actual clip and
+record the alignment evidence and any unverified listening limitations. The
+renderer rejects missing, nonincreasing or out-of-clip offsets; it does not guess
+them from text lengths. The first chunk includes the text lead, the final chunk
+includes the reading pause, and all chunks share the original foreground image.
+
+The batch helper `studio/production/remaining/align_display_segments.py` can
+propose measured offsets once selected narration exists. It compares local
+Whisper word timestamps with and without a source prompt, requires unique
+three-word anchors on both sides and agreement within 120 milliseconds, and
+saves evidence bound to the WAV checksum. Use the media runtime, the section ID
+and an explicitly allocated `--threads` value; `--apply` writes only the offsets
+for an unexported script after these checks pass. Failed or ambiguous anchors
+require review instead of guessed timing. Inspect every resulting segment
+still; automated word alignment does not establish pronunciation acceptance.
+
+There remains one timeline item and one complete audio placement per source
+sentence. Nested `display_segments` record the frame intervals; rendering fills
+each script chunk's absolute display `start_seconds` and `end_seconds`. Every
+chunk gets a still and an exported verification frame named, for example,
+`frame-04-segment-01.png` and `export-frame-04-segment-01.png`. Inspect them all.
+Verification rejects gaps, overlaps, stale bilingual chunks or missing segment
+evidence; the chapter audit requires current segment checks as well.
+
+## Opaque-background compositing optimization
+
+The renderer retains its existing floating-point background crop and resampler.
+It composites the active foreground card by pasting its cached RGB image through
+its cached alpha mask onto that opaque RGB background. Only the active card's
+cache is retained; the original RGBA cards still supply the six-frame foreground
+transitions. This avoids the previous full-frame RGBA conversion/compositing/RGB
+roundtrip. Text, foreground coordinates, motion and audio placement are unchanged.
+
+The controlled 240-frame comparison improved encoded throughput from 8.34 to
+12.16 fps (45.8%) and produced identical complete MP4 bytes. Full-cycle samples,
+all Hux cards/transitions, random alpha pixels and an AAC fixture were also byte
+identical. The integrated segmented-export fixture retained identical MP4 bytes
+after the change. See `production/render-fast/` and
+`production/remaining/segment-cache-smoke.json`; actual throughput depends on
+concurrent local work. Existing canonical previews are retained unchanged.

@@ -1,0 +1,70 @@
+2026-11-03T11:32:29.068739+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:33:02.653987+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:33:36.303480+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:34:09.833144+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:34:43.421502+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:35:17.002800+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:35:50.637867+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:36:24.176305+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:36:57.845724+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:37:31.428120+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:38:04.928409+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:38:38.626087+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+2026-11-03T11:39:12.104679+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-utan-tillstand
+hb-c12-utan-tillstand 15 current-take hashes checked; 2 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-utan-tillstand
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+music_bed 2 files verified
+narration 15 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-utan-tillstand --save-frames
+2026-11-03T11:39:45.741766+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+{
+  "background_boundary_max_mean_pixel_change": 1.120262622833252,
+  "full_decode": "passed",
+  "decoded_video_frames": 4773,
+  "decoded_audio_seconds": 198.875,
+  "decoded_audio_peak": 0.6265601515769958,
+  "frame_exports": 18,
+  "source_sentences": 15,
+  "output": "videos/homebrew/hb-c12-18-utan-tillstand.mp4",
+  "sha256": "5add9e72c9085cdcb555e3acd0644ab84ae2ef36041e10c689a6939d5efe6d4b",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 10.059798240661621,
+    "10.0": 15.76684856414795
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998468824883882,
+    "relative_rms_error": 0.017543444642398168,
+    "mix_sha256": "e6d7185851d3274ead4d0bf7cac1fe44aafbb8a4edbfa97f63ffc4b67ba05b96"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-utan-tillstand --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-utan-tillstand --ready
+PASS: 15 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-utan-tillstand --require-target
+hb-c12-utan-tillstand: 100.0% of body duration; 15/15 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-utan-tillstand
+hb-c12-utan-tillstand: 15 distinct picture sources / 15 sentence slides; 15 pictured slides
+2026-11-03T11:40:15.742785+00:00 hb-c12-utan-tillstand verify: PID 361600 running
+{"section_id": "hb-c12-utan-tillstand", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-18-utan-tillstand.mp4", "sha256": "5add9e72c9085cdcb555e3acd0644ab84ae2ef36041e10c689a6939d5efe6d4b", "seconds": 198.875, "source_sentences": 15, "source_section_sha256": "46bb4bd357b23e383633ddee028a81da5c45aeaea0fd775b0dd4c883497aa14b", "translation_file_sha256": "6427401da16afb86d94044e169a8d29321224c82e469ebb524dde2d0fa1b1947", "picture_fraction": 1.0, "distinct_picture_sources": 15, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-utan-tillstand", "stage": "verify", "status": "finished", "supervisor_pid": 361599, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-utan-tillstand"], "started_at": "2026-11-03T11:31:55.479318+00:00", "log": "studio/production/remaining/hb-c12-utan-tillstand-verify.log", "pid": 361600, "heartbeat_at": "2026-11-03T11:40:15.742002+00:00", "returncode": 0, "finished_at": "2026-11-03T11:40:15.858462+00:00", "missing_outputs": []}

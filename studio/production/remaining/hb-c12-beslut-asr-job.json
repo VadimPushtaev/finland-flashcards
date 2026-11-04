@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c12-beslut",
+  "stage": "asr",
+  "state": "studio/production/remaining/hb-c12-beslut-asr-state.json",
+  "log": "studio/production/remaining/hb-c12-beslut-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c12-beslut/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--threads",
+    "2",
+    "--resume"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c12-beslut/narration/asr.json"
+  ]
+}

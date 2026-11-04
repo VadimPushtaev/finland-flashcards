@@ -1,0 +1,814 @@
+schema_version: 1
+section_id: hb-c12-hemkommun
+chapter_id: hb-c12
+title_sv: Hemkommun och offentliga tjänster
+title_ru: Муниципалитет проживания и общественные услуги
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-hemkommun.yaml
+example_only: false
+source_section_sha256: 3a7dcbd07d7dc787be8e7be1c3c9d6e6520fb59c9f743615c436e98361995b93
+translation_file_sha256: 0e86dff36559039f6190ffc55f6510a133fdc223bafd6cfe89ae192ab2f45242
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source paragraphs/list items define consecutive topic scenes. Sentence-specific objects
+    and source relationships are planned individually; no added spoken transitions or current-law updates.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter12 violet palette {''background'': ''#352e49'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d7cce7'', ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Liberation Sans
+    Bold48/Regular40 with a fixed right bilingual panel and relevant left foreground pictures.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Mustasaari municipal border sign 20190603.jpg by Santeri Viinamäki continuously as
+    decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=2.05. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPyseed42 per invocation,44100HzmonoPCM16;
+    initial2ONNXthreads shared with Chapter8 allocation. Exact synthesis inputs and actual seed scope
+    are retained; whole-video listening remains pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Daytime TV Theme by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 48.483 seconds; prepared lossless stereo bed 287.000 seconds.
+    Repeat count 6, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Distinct relevant picture for nearly every body sentence slide: actual places/objects where
+    identity and license are verified, plus original pictorial diagrams for source-stated eligibility,
+    administrative steps and personal-data protections. Avoid real personal identifiers and invented legal
+    rules.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0100
+  description: Kommunerna tillhandahåller många tjänster för sina invånare.
+- id: hb-c12-u0101
+  description: Det lönar sig för dig att utreda om du och de andra medlemmarna i din familj har rätt till
+    en hemkommun i Finland.
+- id: hb-c12-u0102
+  description: För att få en hemkommun i Finland måste du flytta till Finland och bo här minst ett år.
+- id: hb-c12-u0103
+  description: När du har fått en hemkommun har du samma rättigheter, tjänster och skyldigheter som personer
+    som bor stadigvarande i Finland.
+- id: hb-c12-u0104
+  description: 'Du har möjlighet att få en hemkommun i Finland om:'
+- id: hb-c12-u0105
+  description: du är medborgare i Finland eller något annat nordiskt land
+- id: hb-c12-u0107
+  description: du är medborgare i EU, Schweiz eller Liechtenstein och du har registrerat din uppehållsrätt
+    hos Migrationsverket (Maahanmuuttovirasto)
+- id: hb-c12-u0108
+  description: du har permanent (P) eller kontinuerligt (A) uppehållstillstånd som är i kraft
+- id: hb-c12-u0109
+  description: du är familjemedlem till en person som har en hemkommun i Finland
+- id: hb-c12-u0110
+  description: Om du har ett tillfälligt uppehållstillstånd (B-tillstånd) som är i kraft minst ett år,
+    kan du få en hemkommun om du kan påvisa att det är din avsikt att bo stadigvarande i Finland.
+- id: hb-c12-u0111
+  description: 'Stadigvarande boende kan påvisas till exempel genom följande omständigheter:'
+- id: hb-c12-u0112
+  description: du har en arbetsplats i Finland och ditt arbetskontrakt är i kraft minst två år
+- id: hb-c12-u0114
+  description: du studerar i Finland och dina studier räcker minst två år
+- id: hb-c12-u0115
+  description: du har tidigare haft en hemkommun i Finland
+- id: hb-c12-u0116
+  description: du har varit fortlöpande bosatt i Finland under minst ett års tid
+- id: hb-c12-u0117
+  description: du är av finländsk härkomst.
+- id: hb-c12-u0118
+  description: Din hemkommun är vanligen den kommun du bor i.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Source-specific pictorial composition municipality: Kommunerna / invånare. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-002
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: hemkommun / tjänsterna. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-003
+  kind: foreground
+  description: 'Source-specific pictorial composition family: familj / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-004
+  kind: foreground
+  description: 'Source-specific pictorial composition obligation: Rätten / hemkommunslagen. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-005
+  kind: foreground
+  description: 'Source-specific pictorial composition conversation: Myndigheten för digitalisering / hemkommun.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-006
+  kind: foreground
+  description: 'Source-specific pictorial composition year: flytta till Finland / minst ett år. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-007
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: tillfälligt / inte få. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-008
+  kind: foreground
+  description: 'Source-specific pictorial composition balance: samma rättigheter / stadigvarande. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-009
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: möjlighet / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-010
+  kind: foreground
+  description: 'Source-specific pictorial composition globe: Finland / nordiskt land. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-011
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: EU, Schweiz eller Liechtenstein /
+    registrerat. Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-012
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: permanent (P) / kontinuerligt (A). Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-013
+  kind: foreground
+  description: 'Source-specific pictorial composition family: familjemedlem / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-014
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: tillfälligt uppehållstillstånd /
+    bo stadigvarande. Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-015
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: Stadigvarande boende / omständigheter.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-016
+  kind: foreground
+  description: 'Source-specific pictorial composition year: arbetskontrakt / minst två år. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-017
+  kind: foreground
+  description: 'Source-specific pictorial composition year: studier / minst två år. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-018
+  kind: foreground
+  description: 'Source-specific pictorial composition continuous: tidigare / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-019
+  kind: foreground
+  description: 'Source-specific pictorial composition year: fortlöpande bosatt / minst ett års tid. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-020
+  kind: foreground
+  description: 'Source-specific pictorial composition family: finländsk härkomst / du. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-021
+  kind: foreground
+  description: 'Source-specific pictorial composition municipality: hemkommun / bor. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-022
+  kind: foreground
+  description: 'Source-specific pictorial composition family: familjeförhållanden / arbetsplats. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+sentences:
+- sentence_id: hb-c12-u0100-s001
+  sv: Kommunerna tillhandahåller många tjänster för sina invånare.
+  ru: Муниципалитеты предоставляют своим жителям много услуг.
+  scene_id: hb-c12-u0100
+  visual_cue: 'Verified relevant foreground photograph: Actual Helsinki city-hall exterior seen from the
+    harbour, illustrating the municipal institution. Does not assert the current availability of a particular
+    service or any individual entitlement. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0100-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.753129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-001.png
+- sentence_id: hb-c12-u0100-s002
+  sv: Om du har en hemkommun (kotikunta) i Finland, har du vanligtvis rätt att använda tjänsterna som
+    välfärdsområdet, staden eller kommunen tillhandahåller.
+  ru: Если у вас есть муниципалитет проживания (kotikunta) в Финляндии, вы обычно имеете право пользоваться
+    услугами, которые предоставляет регион по обеспечению благополучия населения, город или муниципалитет.
+  scene_id: hb-c12-u0100
+  visual_cue: 'Source-specific pictorial composition rights: hemkommun / tjänsterna. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0100-s002.wav
+  start_seconds: 10.541667
+  end_seconds: 23.568061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-002.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0101-s001
+  sv: Det lönar sig för dig att utreda om du och de andra medlemmarna i din familj har rätt till en hemkommun
+    i Finland.
+  ru: Вам стоит выяснить, имеете ли вы и другие члены вашей семьи право на муниципалитет проживания в
+    Финляндии.
+  scene_id: hb-c12-u0101
+  visual_cue: 'Source-specific pictorial composition family: familj / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0101-s001.wav
+  start_seconds: 26.333333
+  end_seconds: 35.876735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-003.png
+- sentence_id: hb-c12-u0101-s002
+  sv: Rätten till en hemkommun i Finland bestäms enligt hemkommunslagen.
+  ru: Право на муниципалитет проживания в Финляндии определяется Законом о муниципалитете проживания (hemkommunslagen).
+  scene_id: hb-c12-u0101
+  visual_cue: 'Source-specific pictorial composition obligation: Rätten / hemkommunslagen. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0101-s002.wav
+  start_seconds: 37.666667
+  end_seconds: 43.448435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-004.png
+- sentence_id: hb-c12-u0101-s003
+  sv: Du kan fråga hos Myndigheten för digitalisering och befolkningsdata (Digi- ja väestötietovirasto)
+    om du har rätt till hemkommun i Finland.
+  ru: Вы можете узнать в Агентстве цифровой информации и учёта населения (Myndigheten för digitalisering
+    och befolkningsdata; Digi- ja väestötietovirasto), имеете ли вы право на муниципалитет проживания
+    в Финляндии.
+  scene_id: hb-c12-u0101
+  visual_cue: 'Source-specific pictorial composition conversation: Myndigheten för digitalisering / hemkommun.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0101-s003.wav
+  start_seconds: 45.208333
+  end_seconds: 57.32915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-005.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0102-s001
+  sv: För att få en hemkommun i Finland måste du flytta till Finland och bo här minst ett år.
+  ru: Чтобы получить муниципалитет проживания в Финляндии, вы должны переехать жить в Финляндию на срок
+    не менее года.
+  scene_id: hb-c12-u0102
+  visual_cue: 'Source-specific pictorial composition year: flytta till Finland / minst ett år. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0102-s001.wav
+  start_seconds: 60.083333
+  end_seconds: 67.467279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-006.png
+- sentence_id: hb-c12-u0102-s002
+  sv: Om du bor i Finland tillfälligt, om du till exempel flyttar till Finland för studier eller jobb
+    för en kortare tid än ett år, kan du vanligtvis inte få en hemkommun i Finland.
+  ru: Если вы живёте в Финляндии временно, например переезжаете в Финляндию для учёбы или работы на срок
+    менее года, вы обычно не можете получить муниципалитет проживания в Финляндии.
+  scene_id: hb-c12-u0102
+  visual_cue: 'Source-specific pictorial composition contrast: tillfälligt / inte få. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0102-s002.wav
+  start_seconds: 69.25
+  end_seconds: 84.087551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-007.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0103-s001
+  sv: När du har fått en hemkommun har du samma rättigheter, tjänster och skyldigheter som personer som
+    bor stadigvarande i Finland.
+  ru: Получив муниципалитет проживания, вы имеете те же права, доступ к услугам и обязанности, что и люди,
+    постоянно проживающие в Финляндии.
+  scene_id: hb-c12-u0103
+  visual_cue: 'Source-specific pictorial composition balance: samma rättigheter / stadigvarande. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0103-s001.wav
+  start_seconds: 86.875
+  end_seconds: 97.602619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-008.png
+- sentence_id: hb-c12-u0104-s001
+  sv: 'Du har möjlighet att få en hemkommun i Finland om:'
+  ru: 'Вы можете получить муниципалитет проживания в Финляндии, если:'
+  scene_id: hb-c12-u0104
+  visual_cue: 'Source-specific pictorial composition choice: möjlighet / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0104-s001.wav
+  start_seconds: 100.083333
+  end_seconds: 104.611224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-009.png
+- sentence_id: hb-c12-u0105-s001
+  sv: du är medborgare i Finland eller något annat nordiskt land
+  ru: вы являетесь гражданином Финляндии или какой-либо другой Северной страны
+  scene_id: hb-c12-u0105
+  visual_cue: 'Source-specific pictorial composition globe: Finland / nordiskt land. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0105-s001.wav
+  start_seconds: 107.083333
+  end_seconds: 112.377483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-010.png
+- sentence_id: hb-c12-u0107-s001
+  sv: du är medborgare i EU, Schweiz eller Liechtenstein och du har registrerat din uppehållsrätt hos
+    Migrationsverket (Maahanmuuttovirasto)
+  ru: вы являетесь гражданином страны Европейского союза (EU), Швейцарии или Лихтенштейна и зарегистрировали
+    своё право на пребывание в Миграционной службе (Migrationsverket; Maahanmuuttovirasto)
+  scene_id: hb-c12-u0107
+  visual_cue: 'Source-specific pictorial composition qualification: EU, Schweiz eller Liechtenstein /
+    registrerat. Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0107-s001.wav
+  start_seconds: 114.833333
+  end_seconds: 127.790068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-011.png
+- sentence_id: hb-c12-u0108-s001
+  sv: du har permanent (P) eller kontinuerligt (A) uppehållstillstånd som är i kraft
+  ru: у вас есть действующий постоянный (P) или длительный (A) вид на жительство
+  scene_id: hb-c12-u0108
+  visual_cue: 'Source-specific pictorial composition contrast: permanent (P) / kontinuerligt (A). Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0108-s001.wav
+  start_seconds: 130.25
+  end_seconds: 137.424966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-012.png
+- sentence_id: hb-c12-u0109-s001
+  sv: du är familjemedlem till en person som har en hemkommun i Finland
+  ru: вы являетесь членом семьи человека, у которого есть муниципалитет проживания в Финляндии
+  scene_id: hb-c12-u0109
+  visual_cue: 'Source-specific pictorial composition family: familjemedlem / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0109-s001.wav
+  start_seconds: 139.875
+  end_seconds: 145.656769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-013.png
+- sentence_id: hb-c12-u0110-s001
+  sv: Om du har ett tillfälligt uppehållstillstånd (B-tillstånd) som är i kraft minst ett år, kan du få
+    en hemkommun om du kan påvisa att det är din avsikt att bo stadigvarande i Finland.
+  ru: Если у вас есть временный вид на жительство (категории B) сроком действия не менее года, вы можете
+    получить муниципалитет проживания, если докажете, что намерены постоянно жить в Финляндии.
+  scene_id: hb-c12-u0110
+  visual_cue: 'Source-specific pictorial composition qualification: tillfälligt uppehållstillstånd / bo
+    stadigvarande. Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0110-s001.wav
+  start_seconds: 148.125
+  end_seconds: 163.51983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-014.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0111-s001
+  sv: 'Stadigvarande boende kan påvisas till exempel genom följande omständigheter:'
+  ru: 'Постоянное проживание можно подтвердить, например, следующими обстоятельствами:'
+  scene_id: hb-c12-u0111
+  visual_cue: 'Source-specific pictorial composition qualification: Stadigvarande boende / omständigheter.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0111-s001.wav
+  start_seconds: 166.291667
+  end_seconds: 173.466633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-015.png
+- sentence_id: hb-c12-u0112-s001
+  sv: du har en arbetsplats i Finland och ditt arbetskontrakt är i kraft minst två år
+  ru: у вас есть работа в Финляндии и срок действия вашего трудового договора составляет не менее двух
+    лет
+  scene_id: hb-c12-u0112
+  visual_cue: 'Source-specific pictorial composition year: arbetskontrakt / minst två år. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0112-s001.wav
+  start_seconds: 175.916667
+  end_seconds: 182.882653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-016.png
+- sentence_id: hb-c12-u0114-s001
+  sv: du studerar i Finland och dina studier räcker minst två år
+  ru: вы учитесь в Финляндии и ваше обучение длится не менее двух лет
+  scene_id: hb-c12-u0114
+  visual_cue: 'Source-specific pictorial composition year: studier / minst två år. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0114-s001.wav
+  start_seconds: 185.333333
+  end_seconds: 190.766803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-017.png
+- sentence_id: hb-c12-u0115-s001
+  sv: du har tidigare haft en hemkommun i Finland
+  ru: у вас ранее был муниципалитет проживания в Финляндии
+  scene_id: hb-c12-u0115
+  visual_cue: 'Source-specific pictorial composition continuous: tidigare / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0115-s001.wav
+  start_seconds: 193.25
+  end_seconds: 197.150952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-018.png
+- sentence_id: hb-c12-u0116-s001
+  sv: du har varit fortlöpande bosatt i Finland under minst ett års tid
+  ru: вы непрерывно прожили в Финляндии не менее года
+  scene_id: hb-c12-u0116
+  visual_cue: 'Source-specific pictorial composition year: fortlöpande bosatt / minst ett års tid. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0116-s001.wav
+  start_seconds: 199.625
+  end_seconds: 205.476429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-019.png
+- sentence_id: hb-c12-u0117-s001
+  sv: du är av finländsk härkomst.
+  ru: вы имеете финское происхождение.
+  scene_id: hb-c12-u0117
+  visual_cue: 'Source-specific pictorial composition family: finländsk härkomst / du. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0117-s001.wav
+  start_seconds: 207.958333
+  end_seconds: 211.162687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-020.png
+- sentence_id: hb-c12-u0118-s001
+  sv: Din hemkommun är vanligen den kommun du bor i.
+  ru: Вашим муниципалитетом проживания обычно является тот муниципалитет, в котором вы живёте.
+  scene_id: hb-c12-u0118
+  visual_cue: 'Verified relevant foreground photograph: Actual Mustasaari/Korsholm municipal boundary
+    sign,2021, illustrating the municipality in which a person lives. No individual residence is identified.
+    Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0118-s001.wav
+  start_seconds: 213.625
+  end_seconds: 217.665272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-021.png
+- sentence_id: hb-c12-u0118-s002
+  sv: Om du inte har en bostad eller om du har bostäder på flera kommuners område är din hemkommun den
+    kommun som du själv uppfattar som din hemkommun och som du har någon fast förbindelse till, till exempel
+    genom familjeförhållanden eller arbetsplats.
+  ru: Если у вас нет жилья или есть жильё на территории нескольких муниципалитетов, вашим муниципалитетом
+    проживания является тот муниципалитет, который вы сами считаете своим муниципалитетом проживания и
+    с которым у вас есть устойчивая связь, например благодаря семейным отношениям или месту работы.
+  scene_id: hb-c12-u0118
+  visual_cue: 'Source-specific pictorial composition family: familjeförhållanden / arbetsplats. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-hemkommun/narration/hb-c12-u0118-s002.wav
+  start_seconds: 219.416667
+  end_seconds: 239.478707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-hemkommun/pictures/picture-022.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+render:
+  music_path: studio/media/hb-c12-hemkommun/sources/music-bed.flac
+  background_image: studio/media/hb-c12-hemkommun/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.05
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Mustasaari municipal border sign 20190603.jpg — Santeri Viinamäki · CC BY-SA 4.0
+    - Daytime TV Theme — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no current-law claims added.
+  - Original foreground illustrations represent source-stated administrative steps and relationships;
+    no real or fabricated personal identifiers.
+  - Distinct background photograph cropped,darkened,blurred and animated continuously; original photo
+    license retained.
+  - Instrumental music faded,ducked,+2dBadjusted and repeated using4second equal-power crossfades when
+    necessary.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Mustasaari_municipal_border_sign_20190603.jpg
+    description: Mustasaari municipal border sign.
+    license: CC BY-SA 4.0

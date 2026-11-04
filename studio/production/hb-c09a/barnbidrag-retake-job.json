@@ -1,0 +1,29 @@
+{
+  "section_id": "hb-c09-barnbidrag",
+  "stage": "eligibility_pronunciation_retake",
+  "state": "studio/production/hb-c09a/barnbidrag-retake-host-state.json",
+  "log": "studio/production/hb-c09a/barnbidrag-retake-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c09-barnbidrag",
+    "--indices",
+    "7",
+    "--output",
+    "studio/media/hb-c09-barnbidrag/retake-parent-singular"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c09-barnbidrag/retake-parent-singular/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c09-barnbidrag/retake-parent-singular/metrics.json"
+  ]
+}

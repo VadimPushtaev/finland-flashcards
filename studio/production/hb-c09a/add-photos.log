@@ -1,0 +1,27 @@
+hb-c09-aktenskap 33 File:Lascar Temppeliaukio Church (4548628589).jpg CC BY 2.0 acquired
+hb-c09-forandring 48 File:Suomen Tekstiilitehdas (Finska Textilfabriken) 1911 (HK8304-7.7).tif CC BY 4.0 acquired
+hb-c09-forandring 44 File:Dairy maids by a "river sauna" in Alajoki, Ilmajoki, 1920s 01.png Public domain acquired
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/add_photos.py", line 43, in <module>
+    with ThreadPoolExecutor(max_workers=3) as ex:list(ex.map(run,choices))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/add_photos.py", line 37, in run
+    r=requests.get(url,headers={'User-Agent':'HomebrewStudyStudio/1.0'},timeout=150);r.raise_for_status();raw.write_bytes(r.content)
+                                                                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/models.py", line 1026, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests (015d12c) for url: https://upload.wikimedia.org/wikipedia/commons/4/43/Gold_and_diamond_engagement_ring.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled

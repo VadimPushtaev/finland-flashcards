@@ -1,0 +1,78 @@
+2026-11-03T11:08:12.955951+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:08:46.542976+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:09:20.149128+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:09:53.736861+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:10:23.738410+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:10:57.376592+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:11:30.884757+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:12:04.474393+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:12:38.130318+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:13:11.644079+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:13:45.253240+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:14:18.816627+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:14:52.401908+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:15:25.984682+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:15:59.572512+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:16:33.159616+00:00 hb-c12-familjeband verify: PID 349541 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-familjeband
+hb-c12-familjeband 19 current-take hashes checked; 1 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-familjeband
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+picture-016 1 files verified
+picture-017 1 files verified
+picture-018 1 files verified
+picture-019 1 files verified
+music_bed 2 files verified
+narration 19 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-familjeband --save-frames
+2026-11-03T11:17:06.754263+00:00 hb-c12-familjeband verify: PID 349541 running
+2026-11-03T11:17:40.334654+00:00 hb-c12-familjeband verify: PID 349541 running
+{
+  "background_boundary_max_mean_pixel_change": 1.2134040594100952,
+  "full_decode": "passed",
+  "decoded_video_frames": 5960,
+  "decoded_audio_seconds": 248.333,
+  "decoded_audio_peak": 0.7266719937324524,
+  "frame_exports": 22,
+  "source_sentences": 19,
+  "output": "videos/homebrew/hb-c12-16-familjeband.mp4",
+  "sha256": "972d5049cafb82f16bf9500d43d49e60de4a9f93f6c4c4d23b7816da6a7d0da5",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 21.323122024536133,
+    "10.0": 32.23324203491211
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998325488151956,
+    "relative_rms_error": 0.018347990806708125,
+    "mix_sha256": "4d306461cf35cf848871b5477c63677f733c40b86e5dfb2b2bd718606d541c97"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-familjeband --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-familjeband --ready
+2026-11-03T11:18:10.336361+00:00 hb-c12-familjeband verify: PID 349541 running
+PASS: 19 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-familjeband --require-target
+hb-c12-familjeband: 100.0% of body duration; 19/19 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-familjeband
+hb-c12-familjeband: 19 distinct picture sources / 19 sentence slides; 19 pictured slides
+{"section_id": "hb-c12-familjeband", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-16-familjeband.mp4", "sha256": "972d5049cafb82f16bf9500d43d49e60de4a9f93f6c4c4d23b7816da6a7d0da5", "seconds": 248.33333333333334, "source_sentences": 19, "source_section_sha256": "2c760c98bf0b78a350dd78af074628b75d0f2ec537d53179ea94c43c4559d6c4", "translation_file_sha256": "ba22ddfea37f48fa89e3cb5b93675fce6512dc9f3d5212c7252254e2e1b831c7", "picture_fraction": 1.0, "distinct_picture_sources": 19, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-familjeband", "stage": "verify", "status": "finished", "supervisor_pid": 349540, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-familjeband"], "started_at": "2026-11-03T11:07:39.375606+00:00", "log": "studio/production/remaining/hb-c12-familjeband-verify.log", "pid": 349541, "heartbeat_at": "2026-11-03T11:18:10.334976+00:00", "returncode": 0, "finished_at": "2026-11-03T11:18:16.564133+00:00", "missing_outputs": []}

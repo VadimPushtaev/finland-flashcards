@@ -13,6 +13,44 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 
 
+def check_display_segments(row, item, fps):
+    """Reject missing, stale, reordered, overlapping or gapped display chunks."""
+    planned = row.get('display_segments', [])
+    displayed = item.get('display_segments', [])
+    if len(planned) != len(displayed):
+        raise ValueError('Export lost display segments: ' + row['sentence_id'])
+    for language in ('sv', 'ru'):
+        if any(not s[language].strip() for s in planned):
+            raise ValueError('Empty bilingual display segment: ' + row['sentence_id'])
+        if planned and (' '.join(s[language] for s in planned).split() != row[language].split()):
+            raise ValueError('Display segments change source text: ' + row['sentence_id'])
+    cursor = item['start_frame']
+    previous_offset = None
+    for index, (source, timing) in enumerate(zip(planned, displayed)):
+        if timing['index'] != index or any(timing[language] != source[language] for language in ('sv', 'ru')):
+            raise ValueError('Export display text differs from script: ' + row['sentence_id'])
+        if timing['start_frame'] != cursor or type(timing['frames']) is not int or timing['frames'] <= 0:
+            raise ValueError('Display segment gap, overlap or empty interval: ' + row['sentence_id'])
+        offset = source.get('speech_offset_seconds')
+        duration = item['speech_end_seconds'] - item['speech_start_seconds']
+        if type(offset) not in (int, float) or not 0 <= offset < duration or timing.get('speech_offset_seconds') != offset:
+            raise ValueError('Stale display segment speech offset: ' + row['sentence_id'])
+        if previous_offset is not None and round(offset*fps) <= round(previous_offset*fps):
+            raise ValueError('Display segment speech offsets do not increase: ' + row['sentence_id'])
+        previous_offset = offset
+        expected = item['start_frame'] if index == 0 else round((item['speech_start_seconds'] + offset) * fps)
+        if (index == 0 and offset != 0) or timing['start_frame'] != expected:
+            raise ValueError('Display segment boundary differs from speech offset: ' + row['sentence_id'])
+        cursor += timing['frames']
+        for key, value in [('start_seconds', timing['start_frame']/fps), ('end_seconds', cursor/fps)]:
+            actual = source.get(key)
+            if type(actual) not in (int, float) or abs(actual-value) > .000001:
+                raise ValueError('Script and export display timings disagree: ' + row['sentence_id'])
+    if displayed and cursor != item['start_frame'] + item['frames']:
+        raise ValueError('Display segments do not cover the complete sentence: ' + row['sentence_id'])
+    return len(displayed)
+
+
 def verify(section, save_frames=False):
     episode = ROOT / 'studio/episodes' / section
     report = json.loads((episode / 'render.json').read_text())
@@ -23,6 +61,7 @@ def verify(section, save_frames=False):
     speech = [t for t in report['timeline'] if t['kind'] == 'sentence']
     if [t['sentence_id'] for t in speech] != [r['sentence_id'] for r in script['sentences']]:
         raise ValueError('Timeline changed source order or lost sentences')
+    segments_checked = 0
     for item, row in zip(speech, script['sentences']):
         for key, timeline_key in [('start_seconds', 'speech_start_seconds'), ('end_seconds', 'speech_end_seconds')]:
             if abs(row[key] - item[timeline_key]) > .000001:
@@ -31,11 +70,18 @@ def verify(section, save_frames=False):
             raise ValueError('Narration precedes its text')
         if item['speech_end_seconds'] > (item['start_frame'] + item['frames']) / report['fps']:
             raise ValueError('Narration extends beyond its displayed text')
+        segments_checked += check_display_segments(row, item, report['fps'])
     scratch = ROOT / 'studio/media' / section / 'render'
     if save_frames:
         scratch.mkdir(parents=True, exist_ok=True)
-    targets = {item['start_frame'] + item['frames'] // 2: i for i, item in enumerate(report['timeline'])}
+    targets = {}
+    for index, item in enumerate(report['timeline']):
+        targets.setdefault(item['start_frame'] + item['frames']//2, []).append(f'{index:02d}')
+        for segment in item.get('display_segments', []):
+            label = f'{index:02d}-segment-{segment["index"]:02d}'
+            targets.setdefault(segment['start_frame'] + segment['frames']//2, []).append(label)
     boundaries = {t['start_frame'] for t in report['timeline'][1:]}
+    boundaries.update(segment['start_frame'] for item in speech for segment in item.get('display_segments', [])[1:])
     background_patches = {}
     opening_background = {}
     mix_path = scratch / 'mix.wav'
@@ -59,8 +105,9 @@ def verify(section, save_frames=False):
                 last_pts = frame.pts
                 if save_frames and count in targets:
                     image = frame.to_image()
-                    image.save(scratch / f'export-frame-{targets[count]:02d}.png')
-                    if targets[count] == 3:
+                    for label in targets[count]:
+                        image.save(scratch / f'export-frame-{label}.png')
+                    if '03' in targets[count]:
                         image.resize((960, 540)).save(scratch / 'phone-preview.png')
                 if script['render'].get('background_image') and (count in boundaries or count + 1 in boundaries):
                     background_patches[count] = np.asarray(frame.to_image().crop((0, 200, 55, 800)), dtype=np.float32)
@@ -108,8 +155,9 @@ def verify(section, save_frames=False):
         if max(opening_change.values()) < .05:
             raise ValueError('Decorative background appears static over the opening ten seconds')
     result = dict(background_boundary_max_mean_pixel_change=boundary_change, full_decode='passed', decoded_video_frames=count, decoded_audio_seconds=samples / 48000,
-                  decoded_audio_peak=peak, frame_exports=len(targets) if save_frames else 0,
+                  decoded_audio_peak=peak, frame_exports=sum(map(len, targets.values())) if save_frames else 0,
                   source_sentences=len(speech), output=report['output'], sha256=report['sha256'],
+                  display_segments_checked=segments_checked,
                   opening_background_mean_pixel_change=opening_change,
                   encoded_audio_matches_mix=audio_reference_check,
                   listening_review='Review as part of the complete video; no standalone approval gate.')

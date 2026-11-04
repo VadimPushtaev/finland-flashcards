@@ -1,0 +1,23 @@
+{
+  "section_id": "hb-c09-barnbidrag-and-aktenskap",
+  "stage": "asr",
+  "state": "studio/production/hb-c09a/asr-barnbidrag-aktenskap-host-state.json",
+  "log": "studio/production/hb-c09a/asr-barnbidrag-aktenskap-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c09-barnbidrag/narration",
+    "studio/media/hb-c09-aktenskap/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c09-barnbidrag/narration/asr.json",
+    "studio/media/hb-c09-aktenskap/narration/asr.json"
+  ]
+}

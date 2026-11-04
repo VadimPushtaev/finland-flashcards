@@ -1,0 +1,54 @@
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-flerfaldigt
+episode_background 1 files verified
+picture_multiple 1 files verified
+picture_different_rules 1 files verified
+picture_check_first 1 files verified
+picture_possible_loss 1 files verified
+picture_balance 1 files verified
+picture_military 1 files verified
+picture_moving 1 files verified
+picture_child 1 files verified
+picture_child_condition 1 files verified
+picture_mission 1 files verified
+picture_loss_intro 1 files verified
+picture_age22 1 files verified
+picture_false_info 1 files verified
+picture_paternity 1 files verified
+picture_maternity 1 files verified
+music_bed 2 files verified
+narration 15 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-flerfaldigt --save-frames
+2026-11-03T02:22:59.810081+00:00 hb-c12-flerfaldigt verification: PID 81017 running
+{
+  "background_boundary_max_mean_pixel_change": 1.0808080434799194,
+  "full_decode": "passed",
+  "decoded_video_frames": 4699,
+  "decoded_audio_seconds": 195.791,
+  "decoded_audio_peak": 0.7037450671195984,
+  "frame_exports": 18,
+  "source_sentences": 15,
+  "output": "videos/homebrew/hb-c12-20-flerfaldigt.mp4",
+  "sha256": "5d640edec3d82e9b6b55670f6f7df4cb58329b5d88b93a48490b0740ce5446b2",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 13.329383850097656,
+    "10.0": 16.510665893554688
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998429716209448,
+    "relative_rms_error": 0.017769378724055537,
+    "mix_sha256": "c0ec4f65f5f120bc1e03e6a4803ae1bc2822a38232f22582a3fa2a1bff6473a6"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-flerfaldigt --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-flerfaldigt --ready
+PASS: 15 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-flerfaldigt --require-target
+hb-c12-flerfaldigt: 100.0% of body duration; 15/15 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-flerfaldigt
+hb-c12-flerfaldigt: 15 distinct picture sources / 15 sentence slides; 15 pictured slides
+{"section_id": "hb-c12-flerfaldigt", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-20-flerfaldigt.mp4", "sha256": "5d640edec3d82e9b6b55670f6f7df4cb58329b5d88b93a48490b0740ce5446b2", "seconds": 195.79166666666666, "source_sentences": 15, "source_section_sha256": "e863c2617b601b820efffe60cb4372dd82e8265353d50510df377f61973eaa23", "translation_file_sha256": "1bce017253625b2ebe4c8861f0f1d69908a60b1a8470803d15522e9e9248550a", "picture_fraction": 1.0, "distinct_picture_sources": 15, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-flerfaldigt", "stage": "verification", "status": "finished", "supervisor_pid": 81015, "command": [".venv/bin/python", "studio/production/remaining/verify_episode.py", "hb-c12-flerfaldigt"], "started_at": "2026-11-03T02:22:26.212301+00:00", "log": "studio/production/remaining/hb-c12-flerfaldigt-verify.log", "pid": 81017, "heartbeat_at": "2026-11-03T02:22:59.809541+00:00", "returncode": 0, "finished_at": "2026-11-03T02:23:33.289226+00:00", "missing_outputs": []}

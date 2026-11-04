@@ -1,0 +1,109 @@
+schema_version: 1
+section_id: hb-c03-midsommar
+provenance_path: data/homebrew/metadata/03_provenance.yaml
+units:
+  hb-c03-u0078:
+    source_path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    source_block: b0026
+    locator: html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)
+      > div:nth-of-type(6) > p:nth-of-type(21)
+    source_kind: p
+    source_role: content
+    heading: Evangelisk-lutherska kyrkan i Finland
+    source_range:
+      start: 0
+      end: 270
+    range_basis: normalized_html_block
+    extracted_passage: Midsommar firas i slutet av juni. Midsommar är en högtid som firas nära sommarsolståndet.
+      Många finländare åker gärna till stugan på midsommaren. Stora midsommareldar hör till de finländska
+      midsommartraditionerna. I södra Finland reser man ibland också midsommarstången.
+    normalization: whitespace_only
+    repairs: []
+    selection: Complete source paragraph or list item.
+  hb-c03-u0152:
+    source_path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    pdf_page: 19
+    printed_page: 18
+    source_range:
+      start: 730
+      end: 925
+    range_basis: raw_pdf_page
+    extracted_passage: "I den kristna kalendern är midsommaren Johannes döparens födelsedag, men\
+      \ festen är mycket äldre \nän kristendomen. Redan för länge sedan firades ljusets och sommarens\
+      \ fest på årets längsta dag.  \n"
+    normalization: whitespace_only
+    repairs: []
+    selection: Preserve additional cultural explanation; complete contiguous sentences, omit only
+      neighbouring undated statistic or duplicate narrative.
+  hb-c03-u0153:
+    source_path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    pdf_page: 19
+    printed_page: 18
+    source_range:
+      start: 925
+      end: 1286
+    range_basis: raw_pdf_page
+    extracted_passage: "På midsommaren tänds stora brasor på stränder och klippor. Brasorna är en\
+      \ gammal tradition som \nursprungligen var till för att avvärja ondska. På midsommaren pryds\
+      \ dörrposterna med små björkar. \nMänniskor sysslar också lekfullt med midsommartrolldom. Syftet\
+      \ med den var tidigare att trygga en \ngod skörd och ta reda på vem man skulle gifta sig med\
+      \ och när.    \n"
+    normalization: whitespace_only
+    repairs: []
+    selection: Preserve additional cultural explanation; complete contiguous sentences, omit only
+      neighbouring undated statistic or duplicate narrative.
+sources:
+- source:
+    path: data/infofinland/content/information-about-finland/finnish-holidays.html
+    sha256: 57fb7343a7271fbbe46e32eaa9098057bcca243e382efbb1a8052acce175f539
+    bytes: 13168
+    extraction: html-whitespace-normalized-v1
+    source_group: infofinland
+    attribution_record: infofinland
+    title: Finländska högtidsdagar
+    source_url: https://www.infofinland.fi/sv/information-about-finland/finnish-holidays
+    visible_dates:
+    - 08.08.2025
+  attribution:
+    title: InfoFinland.fi
+    credit: InfoFinland.fi
+    url: https://www.infofinland.fi/sv
+    local_notice: data/infofinland/content/open-data.html
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    scope: Text only; images excluded by the archived notice.
+    changes: Selection, rearrangement, new Swedish headings, list/paragraph formatting and whitespace
+      normalization. One complete legal-protection sentence selected from interview coaching. No
+      substantive rewriting.
+    publication_note: Carry this attribution, source/article links, license link and change statement
+      with distributed/rendered content; no endorsement implied.
+    local_notice_sha256: b9b683d1af2066cdb4086620cb0a4acfea66bab858d36908fafc284f2485489c
+- source:
+    path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    bytes: 1608084
+    extraction: pypdf-default-page-text-v1
+    source_group: textbook
+    attribution_record: textbook
+    pdf_metadata:
+      /Author: Lill Rasilainen
+      /Creator: Microsoft® Word Office 365:lle
+      /CreationDate: D:20190614140433+03'00'
+      /ModDate: D:20190614140433+03'00'
+      /Producer: Microsoft® Word Office 365:lle
+  attribution:
+    title: Finland – Lärobok i samhällsorientering
+    credit: © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    local_notice: data/orientation_guide.pdf
+    notice_pdf_page: 4
+    license: Foreword permits free use; no standardized redistribution license inferred
+    notice_excerpt: Det här läromedlet är avsett som handbok för utbildaren, men kan också användas
+      fritt av andra.
+    changes: Two complete paragraphs selected, rearranged under new headings; PDF line whitespace
+      normalized. No word or punctuation repairs.
+    publication_note: Preserve the original credit and notice; do not label source text MIT or CC
+      BY.
+    local_notice_sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f

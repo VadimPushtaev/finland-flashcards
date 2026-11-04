@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c11-fritid",
+  "stage": "asr",
+  "state": "studio/production/hb-c11-safety/hb-c11-fritid-asr-state.json",
+  "log": "studio/production/hb-c11-safety/hb-c11-fritid-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c11-fritid/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-fritid/narration/asr.json"
+  ]
+}

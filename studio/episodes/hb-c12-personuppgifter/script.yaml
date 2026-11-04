@@ -1,0 +1,1626 @@
+schema_version: 1
+section_id: hb-c12-personuppgifter
+chapter_id: hb-c12
+title_sv: Personbeteckning och personuppgifter
+title_ru: Личный идентификационный код и персональные данные
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-personuppgifter.yaml
+example_only: false
+source_section_sha256: 1643d6b41a8034ed047e6ad15cab373398b5f765b7645652ffee93aa303d8dc9
+translation_file_sha256: 4c951e36f7d76d60346e8a45da02f99bcf6184eac7e73768d1e9b80a4de18c07
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source paragraphs/list items define consecutive topic scenes. Sentence-specific objects
+    and source relationships are planned individually; no added spoken transitions or current-law updates.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter12 violet palette {''background'': ''#352e49'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d7cce7'', ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Liberation Sans
+    Bold48/Regular40 with a fixed right bilingual panel and relevant left foreground pictures.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Kuopion kasarmialue - Maistraatti - tiilirakennus vuodelta 1915 - Puistokatu 29 -
+    Hatsala - Kuopio.jpg by Paju~commonswiki continuously as decorative background, darkened 42% and blurred
+    2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=4.52797619047619. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPyseed42 per invocation,44100HzmonoPCM16;
+    initial2ONNXthreads shared with Chapter8 allocation. Exact synthesis inputs and actual seed scope
+    are retained; whole-video listening remains pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use New Direction by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 679.549 seconds; prepared lossless stereo bed 633.917 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Distinct relevant picture for nearly every body sentence slide: actual places/objects where
+    identity and license are verified, plus original pictorial diagrams for source-stated eligibility,
+    administrative steps and personal-data protections. Avoid real personal identifiers and invented legal
+    rules.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0081
+  description: Personbeteckningen är en individuell kod som ges till alla människor som registreras i
+    Finlands befolkningsdatasystem.
+- id: hb-c12-u0082
+  description: Två personer kan aldrig ha samma personbeteckning.
+- id: hb-c12-u0083
+  description: Personbeteckningen är mycket viktig i Finland, och en sådan krävs i så gott som alla myndighetsärenden.
+- id: hb-c12-u0084
+  description: Befolkningsdatasystemet som upprätthålls av Myndigheten för digitalisering och befolkningsdata
+    är ett basregister som används av Finlands myndigheter.
+- id: hb-c12-u0085
+  description: I annat fall beror det på situationen vilka uppgifter myndigheterna kan få om en person
+    från andra myndigheter.
+- id: hb-c12-u0086
+  description: En myndighet har alltid rätt att få tillgång till endast sådana uppgifter om en person
+    som den har laglig grund för att få.
+- id: hb-c12-u0087
+  description: När du får en personbeteckning blir du inte automatiskt registrerad som invånare i en viss
+    kommun.
+- id: hb-c12-u0088
+  description: Du kan få en personbeteckning om du lagligt vistas i Finland.
+- id: hb-c12-u0089
+  description: Du behöver en personbeteckning för arbete, studier eller en motsvarande orsak som äger
+    rum i Finland.
+- id: hb-c12-u0091
+  description: Din familjemedlem har redan en registrerad adress i Finland.
+- id: hb-c12-u0092
+  description: Migrationsverket har beviljat dig ett uppehållstillstånd eller uppehållskort eller registrerat
+    din uppehållsrätt för EU-medborgare i Finland.
+- id: hb-c12-u0093
+  description: När dina personuppgifter registreras sparas samtidigt också en adress för dig.
+- id: hb-c12-u0094
+  description: En tillfällig adress gäller tillfälligt och du har blivit registrerad som invånare på adressen
+    för en viss tidsperiod.
+- id: hb-c12-u0095
+  description: När Myndigheten för digitalisering och befolkningsdata registrerar dig en permanent adress,
+    registrerar den dig som invånare på adressen tills vidare.
+- id: hb-c12-u0096
+  description: Till kommunens tjänster hör till exempel skolorna, småbarnspedagogiken, sysselsättningstjänsterna
+    (työllisyyspalvelut) och integrationstjänsterna (kotoutumispalvelut) för invandrare.
+- id: hb-c12-u0097
+  description: Det är bra att ta reda på om du och de andra medlemmarna i din familj har rätt till en
+    hemkommun i Finland.
+- id: hb-c12-u0098
+  description: Om en postadress registreras för dig registreras du inte som invånare på adressen i fråga.
+- id: hb-c12-u0099
+  description: Myndigheten för digitalisering och befolkningsdata registrerar dina uppgifter i det finländska
+    befolkningsdatasystemet.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: individuell kod / befolkningsdatasystem.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-002
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: bor i Finland / medborgarskap. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-003
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: Två personer / aldrig ha samma. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-004
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: personbeteckningen / samma namn
+    och födelsedatum. Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-005
+  kind: foreground
+  description: 'Source-specific pictorial composition continuous: personbeteckning / alltid densamma.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-006
+  kind: foreground
+  description: 'Source-specific pictorial composition globe: utomlands / personbeteckningen densamma.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-007
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: uppgifter / rätt person. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-008
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: banker / identifiera. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-009
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: överföringen / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-010
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: Personbeteckningen / myndighetsärenden.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-011
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: hyra en bostad / bankkonto. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-012
+  kind: foreground
+  description: 'Source-specific pictorial composition security: inte i onödan / okända. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-013
+  kind: foreground
+  description: 'Source-specific pictorial composition database: Befolkningsdatasystemet / myndigheter.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-014
+  kind: foreground
+  description: 'Source-specific pictorial composition database: namn, adress och hemkommun / befolkningsdatasystemet.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-015
+  kind: foreground
+  description: 'Source-specific pictorial composition family: barn / vårdnadshavare. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-016
+  kind: foreground
+  description: 'Source-specific pictorial composition database: bankerna / basuppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-017
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: situationen / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-018
+  kind: foreground
+  description: 'Source-specific pictorial composition obligation: personuppgifter / lagstiftningen. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-019
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: nödvändiga / beslut. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-020
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: FPA / arbetssökning. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-021
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: samtycke / utlämnande. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-022
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: laglig grund / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-023
+  kind: foreground
+  description: 'Source-specific pictorial composition confidential: tjänsteman / nödvändiga för hens arbete.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-024
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: personbeteckning / inte automatiskt registrerad.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-025
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: bostadsadress / Myndigheten för digitalisering.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-026
+  kind: foreground
+  description: 'Source-specific pictorial composition path: adress och hemkommun / kommunala tjänsterna.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-027
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: personbeteckning / lagligt vistas. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-028
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: uppehållstillstånd / visum. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-029
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: villkor / uppfylls. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-030
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: arbete / studier. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-031
+  kind: foreground
+  description: 'Source-specific pictorial composition family: familjemedlem / registrerad adress. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-032
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: Migrationsverket / uppehållstillstånd.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-033
+  kind: foreground
+  description: 'Source-specific pictorial composition database: personuppgifter / adress. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-034
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: tillfällig / permanent. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-035
+  kind: foreground
+  description: 'Source-specific pictorial composition year: tillfällig adress / tidsperiod. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-036
+  kind: foreground
+  description: 'Source-specific pictorial composition year: ett år i taget / tillfällig adress. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-037
+  kind: foreground
+  description: 'Source-specific pictorial composition continuous: permanent adress / tills vidare. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-038
+  kind: foreground
+  description: 'Source-specific pictorial composition continuous: Adressen / flyttanmälan. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-039
+  kind: foreground
+  description: 'Source-specific pictorial composition database: sparas / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-040
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: stor stad / liten kommun. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-041
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: hemkommun / tjänsterna. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-042
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: skolorna / sysselsättningstjänsterna.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-043
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: hälsovården / socialtjänsterna. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-044
+  kind: foreground
+  description: 'Source-specific pictorial composition family: familj / rätt till en hemkommun. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-045
+  kind: foreground
+  description: 'Source-specific pictorial composition obligation: Rätten / hemkommunslagen. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-046
+  kind: foreground
+  description: 'Source-specific pictorial composition conversation: Myndigheten för digitalisering / hemkommun.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-047
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: postadress / inte som invånare. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-048
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: hotell / postkontoret. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-049
+  kind: foreground
+  description: 'Source-specific pictorial composition database: Myndigheten för digitalisering / befolkningsdatasystemet.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-050
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: namn, födelsedatum / modersmål och
+    adress. Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+sentences:
+- sentence_id: hb-c12-u0081-s001
+  sv: Personbeteckningen är en individuell kod som ges till alla människor som registreras i Finlands
+    befolkningsdatasystem.
+  ru: Личный идентификационный код — это индивидуальный код, который присваивается всем людям, зарегистрированным
+    в системе информации о населении Финляндии.
+  scene_id: hb-c12-u0081
+  visual_cue: 'Source-specific pictorial composition identification: individuell kod / befolkningsdatasystem.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0081-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.49
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-001.png
+- sentence_id: hb-c12-u0081-s002
+  sv: Registreringen baserar sig i allmänhet på att man bor i Finland eller har finskt medborgarskap.
+  ru: Основанием для регистрации обычно служит проживание в Финляндии или наличие финского гражданства.
+  scene_id: hb-c12-u0081
+  visual_cue: 'Source-specific pictorial composition qualification: bor i Finland / medborgarskap. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0081-s002.wav
+  start_seconds: 15.25
+  end_seconds: 23.330544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-002.png
+- sentence_id: hb-c12-u0082-s001
+  sv: Två personer kan aldrig ha samma personbeteckning.
+  ru: У двух людей никогда не может быть одинакового личного идентификационного кода.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition contrast: Två personer / aldrig ha samma. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s001.wav
+  start_seconds: 25.791667
+  end_seconds: 30.319558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-003.png
+- sentence_id: hb-c12-u0082-s002
+  sv: Med hjälp av personbeteckningen kan människor alltså identifieras, även om de skulle ha exakt samma
+    namn och födelsedatum.
+  ru: Таким образом, с помощью личного идентификационного кода можно установить личность человека, даже
+    если у него точно такие же имя и дата рождения, как у другого.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition identification: personbeteckningen / samma namn och
+    födelsedatum. Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s002.wav
+  start_seconds: 32.083333
+  end_seconds: 42.950272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-004.png
+- sentence_id: hb-c12-u0082-s003
+  sv: När man en gång har fått en personbeteckning förblir den för alltid densamma, förutom i vissa undantagsfall.
+  ru: Однажды полученный личный идентификационный код остаётся неизменным навсегда, за исключением отдельных
+    особых случаев.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition continuous: personbeteckning / alltid densamma. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s003.wav
+  start_seconds: 44.708333
+  end_seconds: 53.903435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-005.png
+- sentence_id: hb-c12-u0082-s004
+  sv: Även om man skulle flytta från Finland och bo utomlands i flera år eller årtionden, förblir personbeteckningen
+    densamma.
+  ru: Даже если человек уедет из Финляндии и будет жить за границей несколько лет или десятилетий, личный
+    идентификационный код останется прежним.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition globe: utomlands / personbeteckningen densamma. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s004.wav
+  start_seconds: 55.666667
+  end_seconds: 65.837007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-006.png
+- sentence_id: hb-c12-u0082-s005
+  sv: Med hjälp av personbeteckningen kan myndigheterna säkerställa att uppgifter kopplas till rätt person.
+  ru: С помощью личного идентификационного кода органы власти могут обеспечить привязку сведений к нужному
+    человеку.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition identification: uppgifter / rätt person. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s005.wav
+  start_seconds: 67.625
+  end_seconds: 76.471803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-007.png
+- sentence_id: hb-c12-u0082-s006
+  sv: Också många privata aktörer såsom banker använder personbeteckningen för att identifiera människor.
+  ru: Многие представители частного сектора, например банки, также используют личный идентификационный
+    код для установления личности людей.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Verified relevant foreground photograph: Archival Finnish bank/customer-service photograph,1951,
+    illustrating the banking institution named as an example. No depicted document is used to assert an
+    actual person’s identifier or current banking procedure. Exact bilingual source text remains on the
+    fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s006.wav
+  start_seconds: 78.25
+  end_seconds: 86.957483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-008.png
+- sentence_id: hb-c12-u0082-s007
+  sv: Det underlättar överföringen av uppgifter mellan olika myndigheter och aktörer.
+  ru: Это облегчает передачу сведений между различными органами власти и другими участниками взаимодействия.
+  scene_id: hb-c12-u0082
+  visual_cue: 'Source-specific pictorial composition digital: överföringen / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0082-s007.wav
+  start_seconds: 88.708333
+  end_seconds: 95.60466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-009.png
+- sentence_id: hb-c12-u0083-s001
+  sv: Personbeteckningen är mycket viktig i Finland, och en sådan krävs i så gott som alla myndighetsärenden.
+  ru: Личный идентификационный код очень важен в Финляндии и требуется практически при любом обращении
+    в органы власти.
+  scene_id: hb-c12-u0083
+  visual_cue: 'Source-specific pictorial composition qualification: Personbeteckningen / myndighetsärenden.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0083-s001.wav
+  start_seconds: 98.083333
+  end_seconds: 106.860476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-010.png
+- sentence_id: hb-c12-u0083-s002
+  sv: Ofta krävs en personbeteckning också till exempel för att hyra en bostad, skaffa ett telefonabonnemang
+    och öppna ett bankkonto.
+  ru: Личный идентификационный код также часто требуется, например, чтобы арендовать жильё, подключить
+    телефонную связь и открыть банковский счёт.
+  scene_id: hb-c12-u0083
+  visual_cue: 'Source-specific pictorial composition subjects: hyra en bostad / bankkonto. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0083-s002.wav
+  start_seconds: 108.625
+  end_seconds: 119.213299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-011.png
+- sentence_id: hb-c12-u0083-s003
+  sv: Man ska inte i onödan ge ut sin personbeteckning till okända, eftersom det kan vara möjligt för
+    kriminella att till exempel ansöka om lån i en annan persons namn med hjälp av personbeteckningen.
+  ru: Не следует без необходимости сообщать свой личный идентификационный код незнакомым людям, поскольку
+    преступники могут с его помощью, например, подать заявление на кредит на имя другого человека.
+  scene_id: hb-c12-u0083
+  visual_cue: 'Source-specific pictorial composition security: inte i onödan / okända. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0083-s003.wav
+  start_seconds: 121.0
+  end_seconds: 137.091429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-012.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0084-s001
+  sv: Befolkningsdatasystemet som upprätthålls av Myndigheten för digitalisering och befolkningsdata är
+    ett basregister som används av Finlands myndigheter.
+  ru: Система информации о населении, которую ведёт Агентство цифровой информации и учёта населения (Myndigheten
+    för digitalisering och befolkningsdata), является базовым реестром, используемым органами власти Финляндии.
+  scene_id: hb-c12-u0084
+  visual_cue: 'Source-specific pictorial composition database: Befolkningsdatasystemet / myndigheter.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0084-s001.wav
+  start_seconds: 139.875
+  end_seconds: 153.040714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-013.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0084-s002
+  sv: Myndigheterna får i allmänhet basuppgifter, det vill säga namn, adress och hemkommun, om en person
+    direkt från befolkningsdatasystemet.
+  ru: Органы власти обычно получают основные сведения о человеке, то есть имя, адрес и муниципалитет проживания,
+    непосредственно из системы информации о населении.
+  scene_id: hb-c12-u0084
+  visual_cue: 'Source-specific pictorial composition database: namn, adress och hemkommun / befolkningsdatasystemet.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0084-s002.wav
+  start_seconds: 155.791667
+  end_seconds: 167.424864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-014.png
+- sentence_id: hb-c12-u0084-s003
+  sv: När det gäller barn får myndigheterna i allmänhet uppgifter om vem eller vilka som är barnets vårdnadshavare.
+  ru: В отношении детей органы власти обычно получают сведения о том, кто является опекуном или опекунами
+    ребёнка.
+  scene_id: hb-c12-u0084
+  visual_cue: 'Source-specific pictorial composition family: barn / vårdnadshavare. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0084-s003.wav
+  start_seconds: 169.208333
+  end_seconds: 178.682075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-015.png
+- sentence_id: hb-c12-u0084-s004
+  sv: Också till exempel bankerna får dessa basuppgifter direkt från befolkningsdatasystemet.
+  ru: Например, банки также получают эти основные сведения непосредственно из системы информации о населении.
+  scene_id: hb-c12-u0084
+  visual_cue: 'Source-specific pictorial composition database: bankerna / basuppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0084-s004.wav
+  start_seconds: 180.458333
+  end_seconds: 188.051259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-016.png
+- sentence_id: hb-c12-u0085-s001
+  sv: I annat fall beror det på situationen vilka uppgifter myndigheterna kan få om en person från andra
+    myndigheter.
+  ru: В остальных случаях то, какие сведения о человеке органы власти могут получить от других органов
+    власти, зависит от ситуации.
+  scene_id: hb-c12-u0085
+  visual_cue: 'Source-specific pictorial composition choice: situationen / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0085-s001.wav
+  start_seconds: 190.541667
+  end_seconds: 200.085068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-017.png
+- sentence_id: hb-c12-u0085-s002
+  sv: Behandlingen av personuppgifter och tillgången till information baserar sig alltid på lagstiftningen
+    och myndighetens uppdrag.
+  ru: Обработка персональных данных и доступ к информации всегда основываются на законодательстве и задачах
+    органа власти.
+  scene_id: hb-c12-u0085
+  visual_cue: 'Source-specific pictorial composition obligation: personuppgifter / lagstiftningen. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0085-s002.wav
+  start_seconds: 201.875
+  end_seconds: 212.393639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-018.png
+- sentence_id: hb-c12-u0085-s003
+  sv: En myndighet har i allmänhet rätt att utan kundens separata samtycke få tillgång till sådana uppgifter
+    som är nödvändiga för att fatta ett beslut i kundens ärende.
+  ru: Орган власти, как правило, вправе без отдельного согласия клиента получать доступ к сведениям, необходимым
+    для принятия решения по его делу.
+  scene_id: hb-c12-u0085
+  visual_cue: 'Source-specific pictorial composition qualification: nödvändiga / beslut. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0085-s003.wav
+  start_seconds: 214.166667
+  end_seconds: 227.75034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-019.png
+- sentence_id: hb-c12-u0085-s004
+  sv: Till exempel FPA kan från sysselsättningstjänsterna få information om kundens arbetssökning om hen
+    har ansökt om arbetslöshetsförmåner.
+  ru: Например, Ведомство социального обеспечения (FPA) может получить от служб занятости информацию о
+    поиске работы клиентом, если тот подал заявление на пособие по безработице.
+  scene_id: hb-c12-u0085
+  visual_cue: 'Source-specific pictorial composition digital: FPA / arbetssökning. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0085-s004.wav
+  start_seconds: 229.541667
+  end_seconds: 242.150102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-020.png
+- sentence_id: hb-c12-u0085-s005
+  sv: I andra fall måste myndigheten först be om kundens samtycke till utlämnande av uppgifterna.
+  ru: В других случаях орган власти должен сначала запросить согласие клиента на передачу сведений.
+  scene_id: hb-c12-u0085
+  visual_cue: 'Source-specific pictorial composition qualification: samtycke / utlämnande. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0085-s005.wav
+  start_seconds: 243.916667
+  end_seconds: 251.927551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-021.png
+- sentence_id: hb-c12-u0086-s001
+  sv: En myndighet har alltid rätt att få tillgång till endast sådana uppgifter om en person som den har
+    laglig grund för att få.
+  ru: Орган власти всегда вправе получать доступ только к тем сведениям о человеке, для получения которых
+    у него есть законное основание.
+  scene_id: hb-c12-u0086
+  visual_cue: 'Source-specific pictorial composition rights: laglig grund / uppgifter. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0086-s001.wav
+  start_seconds: 254.416667
+  end_seconds: 264.656667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-022.png
+- sentence_id: hb-c12-u0086-s002
+  sv: Även om en enskild tjänsteman skulle ha tillgång till uppgifterna om en person i myndighetens system,
+    kan hen titta på dem endast om uppgifterna är nödvändiga för hens arbete.
+  ru: Даже если у конкретного служащего есть доступ к сведениям о человеке в системе органа власти, просматривать
+    их он может только в том случае, если эти сведения необходимы для его работы.
+  scene_id: hb-c12-u0086
+  visual_cue: 'Source-specific pictorial composition confidential: tjänsteman / nödvändiga för hens arbete.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0086-s002.wav
+  start_seconds: 266.416667
+  end_seconds: 281.184558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-023.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0087-s001
+  sv: När du får en personbeteckning blir du inte automatiskt registrerad som invånare i en viss kommun.
+  ru: Получение личного идентификационного кода не означает автоматической регистрации в качестве жителя
+    определённого муниципалитета.
+  scene_id: hb-c12-u0087
+  visual_cue: 'Source-specific pictorial composition contrast: personbeteckning / inte automatiskt registrerad.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0087-s001.wav
+  start_seconds: 283.958333
+  end_seconds: 292.735476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-024.png
+- sentence_id: hb-c12-u0087-s002
+  sv: Om du har fått personbeteckningen hos Migrationsverket (Maahanmuuttovirasto) eller skatteförvaltningen
+    (Vero), måste du vanligtvis också registrera en tillfällig eller stadigvarande bostadsadress hos Myndigheten
+    för digitalisering och befolkningsdata (Digi- ja väestötietovirasto).
+  ru: Если вы получили личный идентификационный код в Миграционной службе (Migrationsverket; Maahanmuuttovirasto)
+    или Налоговом управлении (Skatteförvaltningen; Vero), вам обычно нужно также зарегистрировать временный
+    или постоянный адрес проживания в Агентстве цифровой информации и учёта населения (Digi- ja väestötietovirasto).
+  scene_id: hb-c12-u0087
+  visual_cue: 'Source-specific pictorial composition qualification: bostadsadress / Myndigheten för digitalisering.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0087-s002.wav
+  start_seconds: 294.5
+  end_seconds: 318.671973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-025.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c12-u0087-s003
+  sv: När du registrerar en stadigvarande adress och hemkommun, får du till exempel använda de kommunala
+    tjänsterna.
+  ru: После регистрации постоянного адреса и муниципалитета проживания вы можете, например, пользоваться
+    муниципальными услугами.
+  scene_id: hb-c12-u0087
+  visual_cue: 'Source-specific pictorial composition path: adress och hemkommun / kommunala tjänsterna.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0087-s003.wav
+  start_seconds: 321.458333
+  end_seconds: 331.419694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-026.png
+- sentence_id: hb-c12-u0088-s001
+  sv: Du kan få en personbeteckning om du lagligt vistas i Finland.
+  ru: Вы можете получить личный идентификационный код, если законно пребываете в Финляндии.
+  scene_id: hb-c12-u0088
+  visual_cue: 'Source-specific pictorial composition rights: personbeteckning / lagligt vistas. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0088-s001.wav
+  start_seconds: 333.875
+  end_seconds: 339.308469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-027.png
+- sentence_id: hb-c12-u0088-s002
+  sv: En laglig vistelse kan grunda sig på till exempel ett uppehållstillstånd, fri rörlighet för EU-medborgare,
+    ett visum eller visumfrihet.
+  ru: Основанием для законного пребывания могут служить, например, вид на жительство, свобода передвижения
+    граждан ЕС, виза или безвизовый режим.
+  scene_id: hb-c12-u0088
+  visual_cue: 'Source-specific pictorial composition choice: uppehållstillstånd / visum. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0088-s002.wav
+  start_seconds: 341.083333
+  end_seconds: 353.06483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-028.png
+- sentence_id: hb-c12-u0088-s003
+  sv: 'Dessutom krävs det att ett av följande villkor uppfylls:'
+  ru: 'Кроме того, должно выполняться одно из следующих условий:'
+  scene_id: hb-c12-u0088
+  visual_cue: 'Source-specific pictorial composition choice: villkor / uppfylls. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0088-s003.wav
+  start_seconds: 354.833333
+  end_seconds: 360.336463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-029.png
+- sentence_id: hb-c12-u0089-s001
+  sv: Du behöver en personbeteckning för arbete, studier eller en motsvarande orsak som äger rum i Finland.
+  ru: Личный идентификационный код нужен вам для работы, учёбы или других аналогичных целей в Финляндии.
+  scene_id: hb-c12-u0089
+  visual_cue: 'Source-specific pictorial composition subjects: arbete / studier. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0089-s001.wav
+  start_seconds: 362.791667
+  end_seconds: 371.49915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-030.png
+- sentence_id: hb-c12-u0091-s001
+  sv: Din familjemedlem har redan en registrerad adress i Finland.
+  ru: У члена вашей семьи уже есть зарегистрированный адрес в Финляндии.
+  scene_id: hb-c12-u0091
+  visual_cue: 'Source-specific pictorial composition family: familjemedlem / registrerad adress. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0091-s001.wav
+  start_seconds: 373.958333
+  end_seconds: 379.391803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-031.png
+- sentence_id: hb-c12-u0092-s001
+  sv: Migrationsverket har beviljat dig ett uppehållstillstånd eller uppehållskort eller registrerat din
+    uppehållsrätt för EU-medborgare i Finland.
+  ru: Миграционная служба выдала вам вид на жительство или карту пребывания (uppehållskort) либо зарегистрировала
+    ваше право на пребывание в Финляндии как гражданина ЕС.
+  scene_id: hb-c12-u0092
+  visual_cue: 'Source-specific pictorial composition qualification: Migrationsverket / uppehållstillstånd.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0092-s001.wav
+  start_seconds: 381.875
+  end_seconds: 394.344116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-032.png
+- sentence_id: hb-c12-u0093-s001
+  sv: När dina personuppgifter registreras sparas samtidigt också en adress för dig.
+  ru: При регистрации ваших персональных данных одновременно вносится и ваш адрес.
+  scene_id: hb-c12-u0093
+  visual_cue: 'Source-specific pictorial composition database: personuppgifter / adress. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0093-s001.wav
+  start_seconds: 396.833333
+  end_seconds: 404.008299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-033.png
+- sentence_id: hb-c12-u0093-s002
+  sv: Adressen kan vara tillfällig, permanent eller enbart postadress.
+  ru: Адрес может быть временным, постоянным или только почтовым.
+  scene_id: hb-c12-u0093
+  visual_cue: 'Source-specific pictorial composition contrast: tillfällig / permanent. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0093-s002.wav
+  start_seconds: 405.791667
+  end_seconds: 411.643095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-034.png
+- sentence_id: hb-c12-u0094-s001
+  sv: En tillfällig adress gäller tillfälligt och du har blivit registrerad som invånare på adressen för
+    en viss tidsperiod.
+  ru: Временный адрес действует ограниченное время, и вы зарегистрированы как проживающий по этому адресу
+    на определённый срок.
+  scene_id: hb-c12-u0094
+  visual_cue: 'Source-specific pictorial composition year: tillfällig adress / tidsperiod. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0094-s001.wav
+  start_seconds: 414.125
+  end_seconds: 424.43466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-035.png
+- sentence_id: hb-c12-u0094-s002
+  sv: En tillfällig adress gäller vanligtvis ett år i taget.
+  ru: Временный адрес обычно регистрируется на один год за раз.
+  scene_id: hb-c12-u0094
+  visual_cue: 'Source-specific pictorial composition year: ett år i taget / tillfällig adress. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0094-s002.wav
+  start_seconds: 426.208333
+  end_seconds: 431.154184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-036.png
+- sentence_id: hb-c12-u0095-s001
+  sv: När Myndigheten för digitalisering och befolkningsdata registrerar dig en permanent adress, registrerar
+    den dig som invånare på adressen tills vidare.
+  ru: Регистрируя вам постоянный адрес, Агентство цифровой информации и учёта населения регистрирует ваше
+    проживание по нему на неопределённый срок.
+  scene_id: hb-c12-u0095
+  visual_cue: 'Source-specific pictorial composition continuous: permanent adress / tills vidare. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0095-s001.wav
+  start_seconds: 433.625
+  end_seconds: 446.721054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-037.png
+- sentence_id: hb-c12-u0095-s002
+  sv: Adressen gäller tills du gör en flyttanmälan till en annan adress.
+  ru: Адрес действует до тех пор, пока вы не подадите уведомление о переезде на другой адрес.
+  scene_id: hb-c12-u0095
+  visual_cue: 'Source-specific pictorial composition continuous: Adressen / flyttanmälan. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0095-s002.wav
+  start_seconds: 448.5
+  end_seconds: 454.351429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-038.png
+- sentence_id: hb-c12-u0095-s003
+  sv: Samtidigt sparas för dig även en hemkommun i Finland.
+  ru: Одновременно для вас также регистрируется муниципалитет проживания в Финляндии.
+  scene_id: hb-c12-u0095
+  visual_cue: 'Source-specific pictorial composition database: sparas / hemkommun. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-039
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0095-s003.wav
+  start_seconds: 456.125
+  end_seconds: 461.07085
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-039.png
+- sentence_id: hb-c12-u0095-s004
+  sv: Hemkommunen kan vara en stor stad eller en liten kommun.
+  ru: Муниципалитетом проживания может быть большой город или небольшой муниципалитет.
+  scene_id: hb-c12-u0095
+  visual_cue: 'Verified relevant foreground photograph: Actual Helsinki city hall as one concrete large-city
+    municipality example,November2021. It does not determine any viewer’s municipality of residence. Exact
+    bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0095-s004.wav
+  start_seconds: 462.833333
+  end_seconds: 467.779184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-040.png
+- sentence_id: hb-c12-u0095-s005
+  sv: Du behöver en hemkommun för att kunna använda tjänsterna som välfärdsområdet (hyvinvointialue) staden
+    eller kommunen tillhandahåller.
+  ru: Муниципалитет проживания необходим, чтобы пользоваться услугами, которые предоставляет регион по
+    обеспечению благополучия населения (hyvinvointialue), город или муниципалитет.
+  scene_id: hb-c12-u0095
+  visual_cue: 'Source-specific pictorial composition rights: hemkommun / tjänsterna. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-041
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0095-s005.wav
+  start_seconds: 469.541667
+  end_seconds: 480.826565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-041.png
+- sentence_id: hb-c12-u0096-s001
+  sv: Till kommunens tjänster hör till exempel skolorna, småbarnspedagogiken, sysselsättningstjänsterna
+    (työllisyyspalvelut) och integrationstjänsterna (kotoutumispalvelut) för invandrare.
+  ru: К муниципальным услугам относятся, например, школы, дошкольное воспитание и обучение, службы занятости
+    (työllisyyspalvelut) и услуги по содействию интеграции для иммигрантов (kotoutumispalvelut).
+  scene_id: hb-c12-u0096
+  visual_cue: 'Source-specific pictorial composition subjects: skolorna / sysselsättningstjänsterna. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-042
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0096-s001.wav
+  start_seconds: 483.291667
+  end_seconds: 499.174116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-042.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0096-s002
+  sv: Till välfärdsområdets tjänster hör hälsovården och socialtjänsterna.
+  ru: К услугам региона по обеспечению благополучия населения относятся медицинская помощь и социальные
+    услуги.
+  scene_id: hb-c12-u0096
+  visual_cue: 'Source-specific pictorial composition subjects: hälsovården / socialtjänsterna. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-043
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0096-s002.wav
+  start_seconds: 501.958333
+  end_seconds: 508.297381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-043.png
+- sentence_id: hb-c12-u0097-s001
+  sv: Det är bra att ta reda på om du och de andra medlemmarna i din familj har rätt till en hemkommun
+    i Finland.
+  ru: Стоит выяснить, имеете ли вы и другие члены вашей семьи право на муниципалитет проживания в Финляндии.
+  scene_id: hb-c12-u0097
+  visual_cue: 'Source-specific pictorial composition family: familj / rätt till en hemkommun. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-044
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0097-s001.wav
+  start_seconds: 510.75
+  end_seconds: 519.805782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-044.png
+- sentence_id: hb-c12-u0097-s002
+  sv: Rätten till en hemkommun i Finland bestäms enligt hemkommunslagen.
+  ru: Право на муниципалитет проживания в Финляндии определяется Законом о муниципалитете проживания (hemkommunslagen).
+  scene_id: hb-c12-u0097
+  visual_cue: 'Source-specific pictorial composition obligation: Rätten / hemkommunslagen. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-045
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0097-s002.wav
+  start_seconds: 521.583333
+  end_seconds: 527.365102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-045.png
+- sentence_id: hb-c12-u0097-s003
+  sv: Vid Myndigheten för digitalisering och befolkningsdata kan du ta reda på om du har rätt till en
+    hemkommun i Finland.
+  ru: В Агентстве цифровой информации и учёта населения вы можете выяснить, имеете ли вы право на муниципалитет
+    проживания в Финляндии.
+  scene_id: hb-c12-u0097
+  visual_cue: 'Source-specific pictorial composition conversation: Myndigheten för digitalisering / hemkommun.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-046
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0097-s003.wav
+  start_seconds: 529.125
+  end_seconds: 539.22568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-046.png
+- sentence_id: hb-c12-u0098-s001
+  sv: Om en postadress registreras för dig registreras du inte som invånare på adressen i fråga.
+  ru: Если для вас регистрируется почтовый адрес, это не означает регистрации вашего проживания по этому
+    адресу.
+  scene_id: hb-c12-u0098
+  visual_cue: 'Source-specific pictorial composition contrast: postadress / inte som invånare. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-047
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0098-s001.wav
+  start_seconds: 541.708333
+  end_seconds: 550.067517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-047.png
+- sentence_id: hb-c12-u0098-s002
+  sv: Postadress kan användas om du inte har en permanent bostadsadress, du bor på hotell eller du vill
+    hämta din post från postkontoret.
+  ru: Почтовый адрес можно использовать, если у вас нет постоянного адреса проживания, вы живёте в гостинице
+    или хотите забирать почту в почтовом отделении.
+  scene_id: hb-c12-u0098
+  visual_cue: 'Verified relevant foreground photograph: Actual Finnish postal-service object in Utsjoki,
+    illustrating a postal address alternative. No private home address or invented personal identifier
+    is added. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-048
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0098-s002.wav
+  start_seconds: 551.833333
+  end_seconds: 562.978912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-048.png
+- sentence_id: hb-c12-u0099-s001
+  sv: Myndigheten för digitalisering och befolkningsdata registrerar dina uppgifter i det finländska befolkningsdatasystemet.
+  ru: Агентство цифровой информации и учёта населения регистрирует ваши сведения в финской системе информации
+    о населении.
+  scene_id: hb-c12-u0099
+  visual_cue: 'Source-specific pictorial composition database: Myndigheten för digitalisering / befolkningsdatasystemet.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-049
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0099-s001.wav
+  start_seconds: 565.458333
+  end_seconds: 575.837653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-049.png
+- sentence_id: hb-c12-u0099-s002
+  sv: Dessa uppgifter är bland annat namn, födelsedatum, kön, medborgarskap, födelseplats, modersmål och
+    adress.
+  ru: К этим сведениям относятся, в частности, имя, дата рождения, пол, гражданство, место рождения, родной
+    язык и адрес.
+  scene_id: hb-c12-u0099
+  visual_cue: 'Source-specific pictorial composition identification: namn, födelsedatum / modersmål och
+    adress. Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-050
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-personuppgifter/narration/hb-c12-u0099-s002.wav
+  start_seconds: 577.625
+  end_seconds: 587.377381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-personuppgifter/pictures/picture-050.png
+render:
+  music_path: studio/media/hb-c12-personuppgifter/sources/music-bed.flac
+  background_image: studio/media/hb-c12-personuppgifter/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.52797619047619
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Kuopion kasarmialue - Maistraatti - tiilirakennus vuodelta 1915 - Puistokatu 29 - Hatsala - Kuopio.jpg
+      — Paju~commonswiki · CC BY-SA 4.0
+    - New Direction — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no current-law claims added.
+  - Original foreground illustrations represent source-stated administrative steps and relationships;
+    no real or fabricated personal identifiers.
+  - Distinct background photograph cropped,darkened,blurred and animated continuously; original photo
+    license retained.
+  - Instrumental music faded,ducked,+2dBadjusted and repeated using4second equal-power crossfades when
+    necessary.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Kuopion_kasarmialue_-_Maistraatti_-_tiilirakennus_vuodelta_1915_-_Puistokatu_29_-_Hatsala_-_Kuopio.jpg
+    description: 'This is a photo of a monument in Finland identified by the ID ''Kuopio Barracks'' (Q30141592)
+      -  RKY: 4126'
+    license: CC BY-SA 4.0

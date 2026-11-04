@@ -1,0 +1,1070 @@
+schema_version: 1
+section_id: hb-c09-arv
+chapter_id: hb-c09
+title_sv: Arv, testamente och bouppteckning
+title_ru: Наследство, завещание и составление описи наследства
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-arv.yaml
+example_only: false
+source_section_sha256: 6563865e31d1d09aa7269d7984266d2a516694e1aa5760b5ec7c37c244324409
+translation_file_sha256: acae3b91a8a57d4c54e3b10634e82e8e8f19c383056d6bb142505dafb27672b4
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Pieni puutalo kerrostalojen keskellä Kylänvanhimmankujalla Oulunkylän Patolassa 1970
+    (200825;+ser091325).tif by Eeva Rista continuously as decorative background, darkened 42% and blurred
+    2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.424404761904762. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: 'Use Cello Suite #1 in G - Prelude by Kevin MacLeod (incompetech.com), CC BY 4.0, as this
+    subchapter’s distinct instrumental track. Original master 128.904 seconds; prepared lossless stereo
+    bed 339.417 seconds. Repeat count 2, using 4-second equal-power crossfades when needed. Retain the
+    accepted +2 dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full
+    attribution accompanies the video.'
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: När en människa avlider, lämnar hen ofta efter sig egendom, till exempel pengar eller en
+    bostad.
+- id: scene-2
+  description: Före sin död kan en människa också upprätta ett testamente, där hen förordnar hur hens
+    egendom ska delas.
+- id: scene-3
+  description: I Finland har det funnits lika arvsrätt sedan år 1878.
+- id: scene-4
+  description: När ett arv delas ordnas en bouppteckning.
+- id: scene-5
+  description: Vid bouppteckningen gör man upp en förteckning över den avlidnes egendom, det vill säga
+    dödsboet.
+- id: scene-6
+  description: Arvingarna ansvarar inte för skulder som den avlidne lämnar efter sig, så länge som skulderna
+    är korrekt antecknade i bouppteckningen.
+- id: scene-7
+  description: Vem som ärver egendom efter en avliden person fastställs i lagen.
+- id: scene-8
+  description: I Finland finns det två arvsskatteklasser.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: När en människa avlider, lämnar hen ofta efter sig egendom,
+    till exempel pengar eller en bostad.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Den avlidnes egendom kallas arv.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt lagen delas arvet mellan arvingarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Arvingar är enligt lagen i första hand den avlidnes barn,
+    eller om något av barnet har dött, barnbarnen, deras barn och så vidare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Om den avlidne inte har några barn, är maken eller makan,
+    föräldrarna, syskonen, syskonens barn, far- och morföräldrarna eller i sista hand mostrar och fastrar,
+    morbröder och farbröder arvingar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Den avlidnes kusiner är inte arvingar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Före sin död kan en människa också upprätta ett testamente,
+    där hen förordnar hur hens egendom ska delas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Finlands lag förskriver ändå att den avlidnes barn har
+    rätt till åtminstone hälften av det belopp som de enligt lag skulle få om det inte fanns något testamente.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Detta är fallet även om den avlidne genom testamente skulle
+    förordna sin egendom till någon annan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland har det funnits lika arvsrätt sedan år 1878.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Lika arvsrätt betyder att kvinnor och män har samma rätt
+    till arv.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Om en avliden person inte har några arvingar och inte
+    har upprättat något testamente, går hens egendom till staten.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: När ett arv delas ordnas en bouppteckning.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: En bouppteckning är en tillställning där man utreder den
+    avlidnes tillgångar och skulder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Tillställningen ordnas vanligtvis av den avlidnes änka
+    eller änkling eller barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Den måste ordnas inom tre månader efter dödsfallet och
+    samtliga av den avlidnes arvingar ska bjudas in till den.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Vid bouppteckningen gör man upp en förteckning över den
+    avlidnes egendom, det vill säga dödsboet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Förteckningen över den avlidnes egendom kallas för en
+    bouppteckningshandling.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Handlingen kan upprättas av en anställd person, till exempel
+    en advokat, eller någon av arvingarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: I bouppteckningshandlingen antecknas den avlidnes förmögenhet
+    och skulder, uppgifter om hens arvingar och innehållet i testamentet, om ett sådant finns.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Arvingarna ansvarar inte för skulder som den avlidne lämnar
+    efter sig, så länge som skulderna är korrekt antecknade i bouppteckningen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Vem som ärver egendom efter en avliden person fastställs
+    i lagen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan även själv påverka till vilka personer din egendom
+    fördelas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan skriva ett testamente, som är en skriftlig redogörelse
+    över vem som ärver dina ägodelar efter din bortgång.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Ett testamente ska innehålla vissa punkter och det ska
+    alltid undertecknas av två ojäviga vittnen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Annars är testamentet inte legitimt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Det är alltså tillrådligt att ta hjälp av en jurist när
+    du ska skriva testamente.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland finns det två arvsskatteklasser.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Den avlidnes närmaste släktingar, till exempel barn, barnbarn
+    och make eller maka, betalar mindre skatt på sina respektive arv.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Om arvingen är mer avlägset släkt eller inte alls släkt
+    med den avlidne, är skatten högre.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Skatteprocenten är också högre ju större arvet är.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0411-s001
+  sv: När en människa avlider, lämnar hen ofta efter sig egendom, till exempel pengar eller en bostad.
+  ru: Когда человек умирает, после него часто остаётся имущество, например деньги или жильё.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: pengar, en bostad. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - pengar
+  - en bostad
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.609184
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0411-s002
+  sv: Den avlidnes egendom kallas arv.
+  ru: Имущество умершего называется наследством.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: egendom, arv. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s002.wav
+  start_seconds: 13.375
+  end_seconds: 16.579354
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0411-s003
+  sv: Enligt lagen delas arvet mellan arvingarna.
+  ru: По закону наследство распределяется между наследниками.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: lagen, delas, arvingarna. Only the archived source
+    relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance
+    hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - lagen
+  - delas
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s003.wav
+  start_seconds: 18.333333
+  end_seconds: 22.303946
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0411-s004
+  sv: Arvingar är enligt lagen i första hand den avlidnes barn, eller om något av barnet har dött, barnbarnen,
+    deras barn och så vidare.
+  ru: По закону наследниками в первую очередь являются дети умершего, а если кто-либо из детей умер —
+    внуки, их дети и так далее.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: den avlidnes barn, om något av barnet har dött, barnbarnen,
+    deras barn. Only the archived source relationships and qualifiers are illustrated; no monetary amounts,
+    tax rates or additional inheritance hierarchy is invented. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - den avlidnes barn
+  - om något av barnet har dött
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s004.wav
+  start_seconds: 24.083333
+  end_seconds: 35.159252
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0411-s005
+  sv: Om den avlidne inte har några barn, är maken eller makan, föräldrarna, syskonen, syskonens barn,
+    far- och morföräldrarna eller i sista hand mostrar och fastrar, morbröder och farbröder arvingar.
+  ru: Если у умершего нет детей, наследниками являются супруг или супруга, родители, братья и сёстры,
+    их дети, дедушки и бабушки по отцовской и материнской линии либо, в последнюю очередь, тёти и дяди
+    по материнской и отцовской линии.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: maken eller makan, föräldrarna, syskonen. Only the
+    archived source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - maken eller makan
+  - föräldrarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s005.wav
+  start_seconds: 36.916667
+  end_seconds: 53.426054
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_005.png
+  render_caption: false
+  text_style:
+    sv_size: 46
+    ru_size: 38
+- sentence_id: hb-c09-u0411-s006
+  sv: Den avlidnes kusiner är inte arvingar.
+  ru: Двоюродные братья и сёстры умершего не являются наследниками.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: kusiner, arvingar. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - kusiner
+  - arvingar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0411-s006.wav
+  start_seconds: 56.208333
+  end_seconds: 59.760986
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0412-s001
+  sv: Före sin död kan en människa också upprätta ett testamente, där hen förordnar hur hens egendom ska
+    delas.
+  ru: При жизни человек также может составить завещание, в котором распорядится, как распределить его
+    имущество.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based composition: en människa, ett testamente, egendom. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - en människa
+  - ett testamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0412-s001.wav
+  start_seconds: 62.25
+  end_seconds: 71.166463
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0412-s002
+  sv: Finlands lag förskriver ändå att den avlidnes barn har rätt till åtminstone hälften av det belopp
+    som de enligt lag skulle få om det inte fanns något testamente.
+  ru: Однако закон Финляндии устанавливает, что дети умершего имеют право как минимум на половину той
+    суммы, которую они получили бы по закону при отсутствии завещания.
+  scene_id: scene-2
+  visual_cue: The protected minimum is at least half of the child statutory share without a will, not
+    automatically half of the entire estate. The hypothetical no-will baseline and exact source qualifiers
+    are explicit in the diagram. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - den avlidnes barn
+  - om det inte fanns något testamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0412-s002.wav
+  start_seconds: 72.916667
+  end_seconds: 86.012721
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0412-s003
+  sv: Detta är fallet även om den avlidne genom testamente skulle förordna sin egendom till någon annan.
+  ru: Это действует и в том случае, если умерший завещал своё имущество кому-либо другому.
+  scene_id: scene-2
+  visual_cue: The child protected share from the preceding source sentence remains relevant even where
+    a will names someone else. No new share or inheritance ranking is added. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - testamente
+  - någon annan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0412-s003.wav
+  start_seconds: 88.791667
+  end_seconds: 97.08119
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0413-s001
+  sv: I Finland har det funnits lika arvsrätt sedan år 1878.
+  ru: Равное право наследования существует в Финляндии с 1878 года.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based composition: 1878, lika arvsrätt. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - lika arvsrätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0413-s001.wav
+  start_seconds: 99.541667
+  end_seconds: 106.159354
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0413-s002
+  sv: Lika arvsrätt betyder att kvinnor och män har samma rätt till arv.
+  ru: Равное право наследования означает, что женщины и мужчины имеют одинаковое право на наследство.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based composition: kvinnor och män, samma rätt, arv. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - kvinnor och män
+  - samma rätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0413-s002.wav
+  start_seconds: 107.916667
+  end_seconds: 113.977075
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0413-s003
+  sv: Om en avliden person inte har några arvingar och inte har upprättat något testamente, går hens egendom
+    till staten.
+  ru: Если у умершего человека нет наследников и он не составил завещания, его имущество переходит государству.
+  scene_id: scene-3
+  visual_cue: 'Both conditions are visible: no heirs and no will. Only under that archived source condition
+    does the property point toward the state. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - inte har upprättat något testamente
+  - egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0413-s003.wav
+  start_seconds: 115.75
+  end_seconds: 125.432721
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0414-s001
+  sv: När ett arv delas ordnas en bouppteckning.
+  ru: При разделе наследства проводится процедура составления описи наследства (bouppteckning).
+  scene_id: scene-4
+  visual_cue: 'Individual source-based composition: ett arv, bouppteckning. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - ett arv
+  - bouppteckning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0414-s001.wav
+  start_seconds: 127.916667
+  end_seconds: 132.096259
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0414-s002
+  sv: En bouppteckning är en tillställning där man utreder den avlidnes tillgångar och skulder.
+  ru: Составление описи наследства — это мероприятие, на котором выясняют, какие активы и долги остались
+    у умершего.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based composition: En bouppteckning, tillgångar, skulder. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - En bouppteckning
+  - tillgångar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0414-s002.wav
+  start_seconds: 133.875
+  end_seconds: 141.328605
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0414-s003
+  sv: Tillställningen ordnas vanligtvis av den avlidnes änka eller änkling eller barn.
+  ru: Это мероприятие обычно организуют вдова, вдовец или дети умершего.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based composition: änka eller änkling, barn. Only the archived source
+    relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance
+    hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - änka eller änkling
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0414-s003.wav
+  start_seconds: 143.083333
+  end_seconds: 150.11898
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0414-s004
+  sv: Den måste ordnas inom tre månader efter dödsfallet och samtliga av den avlidnes arvingar ska bjudas
+    in till den.
+  ru: Его необходимо провести в течение трёх месяцев после смерти, пригласив всех наследников умершего.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based composition: inom tre månader, samtliga av den avlidnes arvingar,
+    bjudas in. Only the archived source relationships and qualifiers are illustrated; no monetary amounts,
+    tax rates or additional inheritance hierarchy is invented. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - inom tre månader
+  - samtliga av den avlidnes arvingar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0414-s004.wav
+  start_seconds: 151.875
+  end_seconds: 161.488061
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0415-s001
+  sv: Vid bouppteckningen gör man upp en förteckning över den avlidnes egendom, det vill säga dödsboet.
+  ru: В ходе этой процедуры составляют перечень имущества умершего, то есть наследственной массы.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based composition: den avlidnes egendom, en förteckning. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - den avlidnes egendom
+  - en förteckning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0415-s001.wav
+  start_seconds: 163.958333
+  end_seconds: 172.178197
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0415-s002
+  sv: Förteckningen över den avlidnes egendom kallas för en bouppteckningshandling.
+  ru: Перечень имущества умершего называется актом описи наследства (bouppteckningshandling).
+  scene_id: scene-5
+  visual_cue: 'Individual source-based composition: Förteckningen, bouppteckningshandling. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - Förteckningen
+  - bouppteckningshandling
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0415-s002.wav
+  start_seconds: 173.958333
+  end_seconds: 180.57602
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0415-s003
+  sv: Handlingen kan upprättas av en anställd person, till exempel en advokat, eller någon av arvingarna.
+  ru: Документ может составить нанятый для этого человек, например адвокат, или кто-либо из наследников.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based composition: en advokat, någon av arvingarna, Handlingen. Only
+    the archived source relationships and qualifiers are illustrated; no monetary amounts, tax rates or
+    additional inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - en advokat
+  - någon av arvingarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0415-s003.wav
+  start_seconds: 182.333333
+  end_seconds: 191.458776
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0415-s004
+  sv: I bouppteckningshandlingen antecknas den avlidnes förmögenhet och skulder, uppgifter om hens arvingar
+    och innehållet i testamentet, om ett sådant finns.
+  ru: В акт описи наследства вносят имущество и долги умершего, сведения о его наследниках и содержание
+    завещания, если оно есть.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based composition: förmögenhet och skulder, arvingar, testamentet. Only
+    the archived source relationships and qualifiers are illustrated; no monetary amounts, tax rates or
+    additional inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - förmögenhet och skulder
+  - arvingar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0415-s004.wav
+  start_seconds: 193.25
+  end_seconds: 205.788776
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0416-s001
+  sv: Arvingarna ansvarar inte för skulder som den avlidne lämnar efter sig, så länge som skulderna är
+    korrekt antecknade i bouppteckningen.
+  ru: Наследники не отвечают по долгам, оставшимся после умершего, при условии, что долги надлежащим образом
+    указаны в описи наследства.
+  scene_id: scene-6
+  visual_cue: Heirs-to-debt liability is blocked only with the source condition that debts are correctly
+    entered in the estate inventory. The debt-to-inventory documentation connection remains open. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - Arvingarna
+  - skulder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0416-s001.wav
+  start_seconds: 208.25
+  end_seconds: 219.395578
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s001
+  sv: Vem som ärver egendom efter en avliden person fastställs i lagen.
+  ru: Закон определяет, кто наследует имущество умершего человека.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: lagen, Vem som ärver, egendom. Only the archived source
+    relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance
+    hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - lagen
+  - Vem som ärver
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s001.wav
+  start_seconds: 221.875
+  end_seconds: 227.796088
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s002
+  sv: Du kan även själv påverka till vilka personer din egendom fördelas.
+  ru: Вы также можете сами повлиять на то, между кем будет распределено ваше имущество.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: Du, till vilka personer, din egendom. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - till vilka personer
+  - din egendom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s002.wav
+  start_seconds: 229.583333
+  end_seconds: 235.643741
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s003
+  sv: Du kan skriva ett testamente, som är en skriftlig redogörelse över vem som ärver dina ägodelar efter
+    din bortgång.
+  ru: Вы можете написать завещание — письменный документ о том, кто унаследует ваше имущество после вашей
+    смерти.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: Du, ett testamente, vem som ärver. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - ett testamente
+  - vem som ärver
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s003.wav
+  start_seconds: 237.416667
+  end_seconds: 247.099388
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s004
+  sv: Ett testamente ska innehålla vissa punkter och det ska alltid undertecknas av två ojäviga vittnen.
+  ru: Завещание должно содержать определённые пункты, и его всегда должны подписывать два свидетеля, в
+    отношении которых нет оснований для отвода.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: Ett testamente, två ojäviga vittnen. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - Ett testamente
+  - två ojäviga vittnen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s004.wav
+  start_seconds: 248.875
+  end_seconds: 257.443163
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s005
+  sv: Annars är testamentet inte legitimt.
+  ru: В противном случае завещание недействительно.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: testamentet, inte legitimt. Only the archived source
+    relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance
+    hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - testamentet
+  - inte legitimt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s005.wav
+  start_seconds: 259.208333
+  end_seconds: 262.691327
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0417-s006
+  sv: Det är alltså tillrådligt att ta hjälp av en jurist när du ska skriva testamente.
+  ru: Поэтому при составлении завещания рекомендуется обратиться за помощью к юристу.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: en jurist, testamente. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - en jurist
+  - testamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0417-s006.wav
+  start_seconds: 264.458333
+  end_seconds: 271.563639
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0418-s001
+  sv: I Finland finns det två arvsskatteklasser.
+  ru: В Финляндии существуют две категории налогообложения наследства.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: två, arvsskatteklasser. Only the archived source relationships
+    and qualifiers are illustrated; no monetary amounts, tax rates or additional inheritance hierarchy
+    is invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - arvsskatteklasser
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0418-s001.wav
+  start_seconds: 274.041667
+  end_seconds: 278.151599
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0418-s002
+  sv: Den avlidnes närmaste släktingar, till exempel barn, barnbarn och make eller maka, betalar mindre
+    skatt på sina respektive arv.
+  ru: Ближайшие родственники умершего, например дети, внуки и супруг или супруга, платят меньший налог
+    каждый со своей доли наследства.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: närmaste släktingar, mindre skatt. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - närmaste släktingar
+  - mindre skatt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0418-s002.wav
+  start_seconds: 279.916667
+  end_seconds: 290.853265
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0418-s003
+  sv: Om arvingen är mer avlägset släkt eller inte alls släkt med den avlidne, är skatten högre.
+  ru: Если наследник приходится умершему более дальним родственником или вовсе не состоит с ним в родстве,
+    налог выше.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: mer avlägset släkt, skatten högre. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - mer avlägset släkt
+  - skatten högre
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0418-s003.wav
+  start_seconds: 292.625
+  end_seconds: 300.566224
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0418-s004
+  sv: Skatteprocenten är också högre ju större arvet är.
+  ru: Кроме того, чем больше наследство, тем выше налоговая ставка.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: större arvet, Skatteprocenten, högre. Only the archived
+    source relationships and qualifiers are illustrated; no monetary amounts, tax rates or additional
+    inheritance hierarchy is invented. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - större arvet
+  - högre
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-arv/narration/hb-c09-u0418-s004.wav
+  start_seconds: 302.333333
+  end_seconds: 307.209524
+  display_segments: []
+  render_image: studio/media/hb-c09-arv/pictures/picture_031.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-arv/sources/music-bed.flac
+  background_image: studio/media/hb-c09-arv/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.424404761904762
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Pieni puutalo kerrostalojen keskellä Kylänvanhimmankujalla Oulunkylän Patolassa 1970 (200825;+ser091325).tif
+      — Eeva Rista · PDM-owner
+    - 'Cello Suite #1 in G - Prelude — Kevin MacLeod (incompetech.com)'
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Pieni_puutalo_kerrostalojen_keskell%C3%A4_Kyl%C3%A4nvanhimmankujalla_Oulunkyl%C3%A4n_Patolassa_1970_(200825;%2Bser091325).tif
+    description: Pieni puutalo kerrostalojen keskellä Kylänvanhimmankujalla Oulunkylän Patolassa. Kuva
+      otettu Mäkitorpantieltä. Vasemmalla Mäkitorpantie 33, oikealla Mäkitorpantie 29-31, taustalla puutalon
+      takana Kylänvanhimmankuja 3. Talojen välissä pysäköity auto, Opel Olympia Rekord Caravan.
+    license: PDM-owner

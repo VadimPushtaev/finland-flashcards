@@ -1,0 +1,29 @@
+{
+  "allocation_threads": 2,
+  "simultaneous_heavy_jobs": 1,
+  "prefix": [
+    "hb-c10-tillgang",
+    "hb-c10-lakemedel",
+    "hb-c11-bibliotek",
+    "hb-c11-fritid"
+  ],
+  "appended": [
+    "hb-c10-sjukdom",
+    "hb-c10-sexuell",
+    "hb-c10-psykisk",
+    "hb-c10-pension",
+    "hb-c10-aldre"
+  ],
+  "prefix_supervisor": 106030,
+  "extension_job": "studio/production/hb-c10/narration-queue-extension-job.json",
+  "control": "studio/production/hb-c10/narration-queue-control.json",
+  "partial_tts_failure": "Stop; preserve existing complete takes and recover only missing clips manually.",
+  "no_extra_allocation": true,
+  "final_after_appended": [
+    "hb-c11-trafik",
+    "hb-c11-nodsituationer",
+    "hb-c11-brandsakerhet",
+    "hb-c10-funktionsnedsattning"
+  ],
+  "final_job": "studio/production/hb-c10/narration-queue-final-job.json"
+}

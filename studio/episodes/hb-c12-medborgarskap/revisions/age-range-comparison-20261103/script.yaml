@@ -1,0 +1,729 @@
+schema_version: 1
+section_id: hb-c12-medborgarskap
+chapter_id: hb-c12
+title_sv: Medborgarskapets innebörd och förvärv
+title_ru: Значение гражданства и его приобретение
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-medborgarskap.yaml
+example_only: false
+source_section_sha256: d7f452c55535ca86abe813a5265759cdd0ed65b0e32dbb509dd08558c085dc03
+translation_file_sha256: 11cce448feec7efc3274a816d758c0170494c6e29df5d4bd15a0d00d3f328f6d
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source/list-fragment order with individually planned legal relationships. Preserve every
+    MAY versus automatic distinction,cumulative AND gates,alternative OR routes,shared list conditions
+    and explicit source dates. Context photos do not assign status to real people.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Berlin - Botschaft von Finnland 20191028-01.jpg by Pymouss continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.568452380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Resignation by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 54.073 seconds; prepared lossless stereo bed 219.583 seconds.
+    Repeat count 4, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0246
+  description: Du kan ansöka om finskt medborgarskap om du har bott i Finland tillräckligt länge och bland
+    annat lärt dig ett lokalt språk.
+- id: hb-c12-u0247
+  description: I vissa situationer kan man få medborgarskap även genom anmälan.
+- id: hb-c12-u0248
+  description: Finskt medborgarskap är inte samma sak som uppehållstillstånd.
+- id: hb-c12-u0249
+  description: 'Barnet får automatiskt finskt medborgarskap vid födseln i följande fall:'
+- id: hb-c12-u0250
+  description: barnets mor är finsk medborgare,
+- id: hb-c12-u0252
+  description: barnets far är finsk medborgare och gift med barnets mor,
+- id: hb-c12-u0253
+  description: barnet föds i Finland, barnets far är finsk medborgare och faderskapet har bekräftats eller
+- id: hb-c12-u0254
+  description: barnet föds i Finland, barnets mor som inte har fött barnet är finsk medborgare och den
+    icke-födande moderns moderskap har bekräftats 1.4.2019 eller senare.
+- id: hb-c12-u0255
+  description: Barnet kan få finskt medborgarskap genom anmälan om barnet föds utomlands, har en finsk
+    far eller en finsk mor som inte har fött barnet och föräldrarna inte är gifta med varandra.
+- id: hb-c12-u0256
+  description: Också ett barn till utländska föräldrar som föds i Finland kan få finskt medborgarskap,
+    om hen inte får medborgarskap i något annat land av sina föräldrar.
+- id: hb-c12-u0257
+  description: 'Följande personer kan få finskt medborgarskap snabbare och förmånligare genom medborgarskapsanmälan:'
+- id: hb-c12-u0258
+  description: tidigare finsk medborgare
+- id: hb-c12-u0260
+  description: ett barn som föds utomlands utom äktenskapet till en finsk far eller till en finsk mor
+    som inte har fött barnet
+- id: hb-c12-u0261
+  description: 18–22 år gamla personer som har bott i Finland flera år
+- id: hb-c12-u0262
+  description: 12–17 år gammalt adoptivbarn till en finsk medborgare
+- id: hb-c12-u0263
+  description: medborgare i ett nordiskt land som har bott i Finland de senaste fem åren.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative/civic setting; decorative context,not proof of
+    a current legal rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Resignation — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: May APPLY after sufficient residence AND, among other things, learning a local language.
+    Non-exhaustive criteria; no years count, level or automatic citizenship invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: May acquire through a Finnish-citizen parent; later case list supplies exact parentage/location
+    qualifiers.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: IN CERTAIN situations through notification; no universal notification route.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: Only SOME EXCEPTIONAL cases based on birth in Finland; do not depict general birthplace
+    citizenship.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Citizenship and residence permit are distinct legal concepts, not superior/inferior document
+    versions.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: 'Header: AUTOMATIC citizenship AT BIRTH applies only to the following alternative cases.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: 'Automatic-at-birth case: child mother is Finnish citizen. Inherit source-6 scope.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: 'Automatic-at-birth case: father is Finnish citizen AND married to child mother. Citizenship
+    alone is not this complete case.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: 'Automatic-at-birth case: child born IN FINLAND AND father Finnish citizen AND paternity
+    CONFIRMED. All three cumulative gates. Source final OR introduces next independent case.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: 'Automatic-at-birth case: born IN FINLAND AND NON-BIRTH mother Finnish citizen AND that
+    non-birth maternity CONFIRMED ON/AFTER 1 APRIL 2019. The date qualifies maternity confirmation, not
+    birth date or parent citizenship. All conditions cumulative.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: 'NOT automatic: child MAY get via NOTIFICATION IF born ABROAD AND (Finnish father OR Finnish
+    NON-BIRTH mother) AND parents NOT MARRIED. Parent alternatives are inside the shared abroad/unmarried
+    gates.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Child of FOREIGN parents, born IN FINLAND, MAY receive citizenship IF no citizenship from
+    any other country through parents. Birth in Finland alone does not suffice.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Header introduces cases that MAY use faster/cheaper NOTIFICATION route. No automatic grant
+    or numeric price invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Former Finnish citizen; inherits possible notification route, not automatic restoration.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Child born ABROAD OUTSIDE MARRIAGE AND (Finnish father OR Finnish NON-BIRTH mother). Notification-route
+    list item. Do not collapse to any Finnish parent.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Age 18–22 AND several years residence in Finland; source does not specify a numeric residence
+    count.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: ADOPTED child aged 12–17 AND adopter Finnish citizen. Keep adopted status and both age
+    bounds.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-018
+  kind: foreground
+  description: Citizen of a NORDIC country AND residence in Finland during the LAST FIVE YEARS. Not EU
+    citizenship, not cumulative historic five years.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0246-s001
+  sv: Du kan ansöka om finskt medborgarskap om du har bott i Finland tillräckligt länge och bland annat
+    lärt dig ett lokalt språk.
+  ru: Вы можете подать заявление на получение гражданства Финляндии, если прожили в Финляндии достаточно
+    долго и, помимо прочего, выучили один из местных языков.
+  scene_id: hb-c12-u0246
+  visual_cue: May APPLY after sufficient residence AND, among other things, learning a local language.
+    Non-exhaustive criteria; no years count, level or automatic citizenship invented.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0246-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0246-s002
+  sv: Du kan även få medborgarskapet av en förälder som är finsk medborgare.
+  ru: Гражданство можно также получить от родителя, являющегося гражданином Финляндии.
+  scene_id: hb-c12-u0246
+  visual_cue: May acquire through a Finnish-citizen parent; later case list supplies exact parentage/location
+    qualifiers.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0246-s002.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0247-s001
+  sv: I vissa situationer kan man få medborgarskap även genom anmälan.
+  ru: В некоторых ситуациях гражданство можно также получить путём подачи извещения о принятии гражданства
+    (medborgarskapsanmälan).
+  scene_id: hb-c12-u0247
+  visual_cue: IN CERTAIN situations through notification; no universal notification route.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0247-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0247-s002
+  sv: I vissa undantagsfall kan man dessutom få medborgarskap på grundval av att man är född i Finland.
+  ru: Кроме того, в некоторых исключительных случаях гражданство можно получить на основании рождения
+    в Финляндии.
+  scene_id: hb-c12-u0247
+  visual_cue: Only SOME EXCEPTIONAL cases based on birth in Finland; do not depict general birthplace
+    citizenship.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0247-s002.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0248-s001
+  sv: Finskt medborgarskap är inte samma sak som uppehållstillstånd.
+  ru: Гражданство Финляндии и вид на жительство — не одно и то же.
+  scene_id: hb-c12-u0248
+  visual_cue: Citizenship and residence permit are distinct legal concepts, not superior/inferior document
+    versions.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0248-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0249-s001
+  sv: 'Barnet får automatiskt finskt medborgarskap vid födseln i följande fall:'
+  ru: 'Ребёнок автоматически получает гражданство Финляндии при рождении в следующих случаях:'
+  scene_id: hb-c12-u0249
+  visual_cue: 'Header: AUTOMATIC citizenship AT BIRTH applies only to the following alternative cases.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0249-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0250-s001
+  sv: barnets mor är finsk medborgare,
+  ru: мать ребёнка является гражданкой Финляндии,
+  scene_id: hb-c12-u0250
+  visual_cue: 'Automatic-at-birth case: child mother is Finnish citizen. Inherit source-6 scope.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0250-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0252-s001
+  sv: barnets far är finsk medborgare och gift med barnets mor,
+  ru: отец ребёнка является гражданином Финляндии и состоит в браке с матерью ребёнка,
+  scene_id: hb-c12-u0252
+  visual_cue: 'Automatic-at-birth case: father is Finnish citizen AND married to child mother. Citizenship
+    alone is not this complete case.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0252-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0253-s001
+  sv: barnet föds i Finland, barnets far är finsk medborgare och faderskapet har bekräftats eller
+  ru: ребёнок рождается в Финляндии, его отец является гражданином Финляндии и отцовство подтверждено,
+    или
+  scene_id: hb-c12-u0253
+  visual_cue: 'Automatic-at-birth case: child born IN FINLAND AND father Finnish citizen AND paternity
+    CONFIRMED. All three cumulative gates. Source final OR introduces next independent case.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0253-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0254-s001
+  sv: barnet föds i Finland, barnets mor som inte har fött barnet är finsk medborgare och den icke-födande
+    moderns moderskap har bekräftats 1.4.2019 eller senare.
+  ru: ребёнок рождается в Финляндии, его мать, которая не родила ребёнка, является гражданкой Финляндии
+    и материнство этой матери подтверждено 1 апреля 2019 года или позднее.
+  scene_id: hb-c12-u0254
+  visual_cue: 'Automatic-at-birth case: born IN FINLAND AND NON-BIRTH mother Finnish citizen AND that
+    non-birth maternity CONFIRMED ON/AFTER 1 APRIL 2019. The date qualifies maternity confirmation, not
+    birth date or parent citizenship. All conditions cumulative.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: barnet föds i Finland, barnets mor som inte har fött barnet är finsk medborgare och den icke-födande
+      moderns moderskap har bekräftats den första april tvåtusennitton eller senare.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0254-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0255-s001
+  sv: Barnet kan få finskt medborgarskap genom anmälan om barnet föds utomlands, har en finsk far eller
+    en finsk mor som inte har fött barnet och föräldrarna inte är gifta med varandra.
+  ru: Ребёнок может получить гражданство Финляндии путём подачи извещения, если он рождается за границей,
+    его отец или мать, которая не родила ребёнка, имеет гражданство Финляндии, а родители не состоят в
+    браке друг с другом.
+  scene_id: hb-c12-u0255
+  visual_cue: 'NOT automatic: child MAY get via NOTIFICATION IF born ABROAD AND (Finnish father OR Finnish
+    NON-BIRTH mother) AND parents NOT MARRIED. Parent alternatives are inside the shared abroad/unmarried
+    gates.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0255-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0256-s001
+  sv: Också ett barn till utländska föräldrar som föds i Finland kan få finskt medborgarskap, om hen inte
+    får medborgarskap i något annat land av sina föräldrar.
+  ru: Ребёнок иностранных родителей, родившийся в Финляндии, также может получить гражданство Финляндии,
+    если он не получает от своих родителей гражданства какой-либо другой страны.
+  scene_id: hb-c12-u0256
+  visual_cue: Child of FOREIGN parents, born IN FINLAND, MAY receive citizenship IF no citizenship from
+    any other country through parents. Birth in Finland alone does not suffice.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0256-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0257-s001
+  sv: 'Följande personer kan få finskt medborgarskap snabbare och förmånligare genom medborgarskapsanmälan:'
+  ru: 'Следующие лица могут получить гражданство Финляндии быстрее и с меньшими затратами путём подачи
+    извещения о принятии гражданства:'
+  scene_id: hb-c12-u0257
+  visual_cue: Header introduces cases that MAY use faster/cheaper NOTIFICATION route. No automatic grant
+    or numeric price invented.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0257-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0258-s001
+  sv: tidigare finsk medborgare
+  ru: бывший гражданин Финляндии
+  scene_id: hb-c12-u0258
+  visual_cue: Former Finnish citizen; inherits possible notification route, not automatic restoration.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0258-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0260-s001
+  sv: ett barn som föds utomlands utom äktenskapet till en finsk far eller till en finsk mor som inte
+    har fött barnet
+  ru: ребёнок, родившийся за границей вне брака, у которого отец является гражданином Финляндии или мать,
+    которая его не родила, является гражданкой Финляндии
+  scene_id: hb-c12-u0260
+  visual_cue: Child born ABROAD OUTSIDE MARRIAGE AND (Finnish father OR Finnish NON-BIRTH mother). Notification-route
+    list item. Do not collapse to any Finnish parent.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0260-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0261-s001
+  sv: 18–22 år gamla personer som har bott i Finland flera år
+  ru: лица в возрасте 18–22 лет, прожившие в Финляндии несколько лет
+  scene_id: hb-c12-u0261
+  visual_cue: Age 18–22 AND several years residence in Finland; source does not specify a numeric residence
+    count.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0261-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0262-s001
+  sv: 12–17 år gammalt adoptivbarn till en finsk medborgare
+  ru: усыновлённый гражданином Финляндии ребёнок в возрасте 12–17 лет
+  scene_id: hb-c12-u0262
+  visual_cue: ADOPTED child aged 12–17 AND adopter Finnish citizen. Keep adopted status and both age bounds.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0262-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0263-s001
+  sv: medborgare i ett nordiskt land som har bott i Finland de senaste fem åren.
+  ru: гражданин одной из Северных стран, проживший в Финляндии последние пять лет.
+  scene_id: hb-c12-u0263
+  visual_cue: Citizen of a NORDIC country AND residence in Finland during the LAST FIVE YEARS. Not EU
+    citizenship, not cumulative historic five years.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-medborgarskap/narration/hb-c12-u0263-s001.wav
+  start_seconds: null
+  end_seconds: null
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-medborgarskap/pictures/picture-018.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-medborgarskap/sources/music-bed.flac
+  background_image: studio/media/hb-c12-medborgarskap/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.568452380952381
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Berlin - Botschaft von Finnland 20191028-01.jpg — Pymouss · CC BY-SA 4.0
+    - Resignation — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_-_Botschaft_von_Finnland_20191028-01.jpg
+    description: Botschaft von Finnland in Berlin, Rauchstraße 1.
+    license: CC BY-SA 4.0

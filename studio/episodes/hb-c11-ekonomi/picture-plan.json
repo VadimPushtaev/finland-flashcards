@@ -1,0 +1,947 @@
+{
+  "balance": {
+    "id": "balance",
+    "composition": "contrast",
+    "description": "Expenses must not exceed income; qualitative comparison, no invented amounts.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "utgifterna",
+        "icon": "coins"
+      },
+      {
+        "label": "inkomsterna",
+        "icon": "work"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "inte överstiger",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0162-s001"
+    ]
+  },
+  "save_after": {
+    "id": "save_after",
+    "composition": "flow",
+    "description": "Set savings aside after paying expenses, preserving the source goal rather than a guarantee.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "alla utgifter är betalda",
+        "icon": "document"
+      },
+      {
+        "label": "sätta undan pengar",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0162-s002"
+    ]
+  },
+  "buffer": {
+    "id": "buffer",
+    "composition": "protect",
+    "description": "Savings buffer against temporarily lower income, no emergency-fund amount invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Besparingarna",
+        "icon": "bank"
+      },
+      {
+        "label": "inkomsterna tillfälligt blir lägre",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0162-s003"
+    ]
+  },
+  "large_purchase": {
+    "id": "large_purchase",
+    "composition": "flow",
+    "description": "Savings permit paying one larger purchase at once.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "besparingarna",
+        "icon": "bank"
+      },
+      {
+        "label": "större anskaffning",
+        "icon": "shop"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0162-s004"
+    ]
+  },
+  "budget": {
+    "id": "budget",
+    "composition": "merge",
+    "description": "Budgeting brings income and expenses together without a fictional worked example.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inkomster",
+        "icon": "coins"
+      },
+      {
+        "label": "utgifter",
+        "icon": "document"
+      },
+      {
+        "label": "budgetering",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s001"
+    ]
+  },
+  "available_money": {
+    "id": "available_money",
+    "composition": "pair",
+    "description": "Count available funds for the stated month or week alternatives.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "pengar",
+        "icon": "coins"
+      },
+      {
+        "label": "en månad eller en vecka",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s002"
+    ]
+  },
+  "allocate": {
+    "id": "allocate",
+    "composition": "split",
+    "description": "Divide the available sum among expenses; two representative blank categories, no percentages.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "beloppet",
+        "icon": "coins"
+      },
+      {
+        "label": "olika typer av utgifter",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s003"
+    ]
+  },
+  "necessities": {
+    "id": "necessities",
+    "composition": "group",
+    "description": "Named essential costs: rent, medicines and necessary bills.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hyra",
+        "icon": "house"
+      },
+      {
+        "label": "läkemedel",
+        "icon": "medicine"
+      },
+      {
+        "label": "nödvändiga fakturor",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s004"
+    ]
+  },
+  "remainder": {
+    "id": "remainder",
+    "composition": "flow",
+    "description": "Only the remaining sum goes toward other expenses.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "resterande beloppet",
+        "icon": "coins"
+      },
+      {
+        "label": "övriga utgifter",
+        "icon": "shop"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s005"
+    ]
+  },
+  "food_leisure": {
+    "id": "food_leisure",
+    "composition": "branch",
+    "description": "Budget reveals monthly food/leisure spending capacity, not a prescribed allocation.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "en månad",
+        "icon": "calendar"
+      },
+      {
+        "label": "mat",
+        "icon": "food"
+      },
+      {
+        "label": "fritidsaktiviteter",
+        "icon": "ball"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0163-s006"
+    ]
+  },
+  "review_changes": {
+    "id": "review_changes",
+    "composition": "merge",
+    "description": "Review consumption whenever income OR expenses change.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inkomsterna",
+        "icon": "coins"
+      },
+      {
+        "label": "utgifterna förändras",
+        "icon": "document"
+      },
+      {
+        "label": "se över sin konsumtion",
+        "icon": "shop"
+      }
+    ],
+    "connective": "eller",
+    "source_sentence_ids": [
+      "hb-c11-u0164-s001"
+    ]
+  },
+  "childcare_fee": {
+    "id": "childcare_fee",
+    "composition": "flow",
+    "description": "Income increase can raise childcare fees after a possible low-income exemption; do not promise exemption.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "inkomsterna ökar",
+        "icon": "coins"
+      },
+      {
+        "label": "höjs också avgifterna",
+        "icon": "child"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0164-s002"
+    ]
+  },
+  "revise_budget": {
+    "id": "revise_budget",
+    "composition": "pair",
+    "description": "The preceding change triggers another budget review.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "se över",
+        "icon": "document"
+      },
+      {
+        "label": "budget",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0164-s003"
+    ]
+  },
+  "borrow_cost": {
+    "id": "borrow_cost",
+    "composition": "pair",
+    "description": "Borrowing has a cost; no interest-free claim.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lånade pengar",
+        "icon": "bank"
+      },
+      {
+        "label": "inte är gratis",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s001"
+    ]
+  },
+  "repay_interest": {
+    "id": "repay_interest",
+    "composition": "split",
+    "description": "Borrowing entails future payments and often interest; qualify interest with ofta.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "tar lån",
+        "icon": "bank"
+      },
+      {
+        "label": "kommande betalningarna",
+        "icon": "calendar"
+      },
+      {
+        "label": "ofta också om att betala ränta",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s002"
+    ]
+  },
+  "interest_price": {
+    "id": "interest_price",
+    "composition": "pair",
+    "description": "Interest is the price of borrowed money.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Räntan",
+        "icon": "coins"
+      },
+      {
+        "label": "lånade pengarna",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s003"
+    ]
+  },
+  "purchase_choices": {
+    "id": "purchase_choices",
+    "composition": "branch",
+    "description": "Sometimes a loan or instalments may be justified for a larger purchase; no recommendation for a specific product.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "större anskaffning",
+        "icon": "shop"
+      },
+      {
+        "label": "ta lån",
+        "icon": "bank"
+      },
+      {
+        "label": "avbetalning",
+        "icon": "calendar"
+      }
+    ],
+    "connective": "eller",
+    "conditions": [
+      {
+        "label": "Ibland",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s004"
+    ]
+  },
+  "consider": {
+    "id": "consider",
+    "composition": "protect",
+    "description": "Consider the decision carefully; no automatic green approval sign.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "väl övervägt beslut",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s005"
+    ]
+  },
+  "loan_terms": {
+    "id": "loan_terms",
+    "composition": "pair",
+    "description": "Check both contract terms and ability to repay before borrowing.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "villkoren för lånet",
+        "icon": "document"
+      },
+      {
+        "label": "betala tillbaka",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0165-s006"
+    ]
+  },
+  "repayment_horizon": {
+    "id": "repayment_horizon",
+    "composition": "pair",
+    "description": "Assess payment sizes throughout the entire repayment period; no invented monthly amount.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "återbetalningsbeloppen",
+        "icon": "coins"
+      },
+      {
+        "label": "hela återbetalningstiden",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s001"
+    ]
+  },
+  "future_consumption": {
+    "id": "future_consumption",
+    "composition": "flow",
+    "description": "Credit purchases affect future consumption without inventing a proportion.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Anskaffningar på kredit",
+        "icon": "shop"
+      },
+      {
+        "label": "framtida konsumtionen",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s002"
+    ]
+  },
+  "check_rate": {
+    "id": "check_rate",
+    "composition": "pair",
+    "description": "Check the interest rate in the terms; no fabricated numeric rate.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "kontrollera",
+        "icon": "document"
+      },
+      {
+        "label": "räntan",
+        "icon": "coins"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s003"
+    ]
+  },
+  "high_interest": {
+    "id": "high_interest",
+    "composition": "flow",
+    "description": "High interest can make a loan costly; conditional, qualitative relationship.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "räntan är hög",
+        "icon": "coins"
+      },
+      {
+        "label": "mycket dyrt",
+        "icon": "bank"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s004"
+    ]
+  },
+  "loan_duration": {
+    "id": "loan_duration",
+    "composition": "object",
+    "description": "Choose and consider the loan duration, with no preferred duration.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lång lånetid",
+        "icon": "calendar"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s005"
+    ]
+  },
+  "longer_cost": {
+    "id": "longer_cost",
+    "composition": "split",
+    "description": "Long term means smaller instalments but higher total cost due to interest; qualitative labels only.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lång lånetid",
+        "icon": "calendar"
+      },
+      {
+        "label": "mindre delbetalningar",
+        "icon": "coins"
+      },
+      {
+        "label": "totalpriset högre",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0166-s006"
+    ]
+  },
+  "private_loan": {
+    "id": "private_loan",
+    "composition": "merge",
+    "description": "Written agreement about repayment and terms when lending to a friend or relative.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "kompis eller en släkting",
+        "icon": "people"
+      },
+      {
+        "label": "återbetalningen",
+        "icon": "coins"
+      },
+      {
+        "label": "skriftligt komma överens",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0167-s001"
+    ]
+  },
+  "considered_loans": {
+    "id": "considered_loans",
+    "composition": "protect",
+    "description": "Source describes well-considered, grounded borrowing as common in Finland; not an instruction to borrow.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "väl övervägt och välgrundat",
+        "icon": "document"
+      },
+      {
+        "label": "ta lån i Finland",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0168-s001"
+    ]
+  },
+  "mortgage": {
+    "id": "mortgage",
+    "composition": "pair",
+    "description": "Homes are expensive and few can buy without a mortgage; no invented house price.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "bostäderna",
+        "icon": "house"
+      },
+      {
+        "label": "bostadslån",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0168-s002"
+    ]
+  },
+  "car_loan": {
+    "id": "car_loan",
+    "composition": "pair",
+    "description": "A car is the source loan example; no payment plan or model recommendation.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lån",
+        "icon": "bank"
+      },
+      {
+        "label": "bil",
+        "icon": "car"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0168-s003"
+    ]
+  },
+  "sustainable_payment": {
+    "id": "sustainable_payment",
+    "composition": "protect",
+    "description": "Repayment ability and manageable impact condition a nonproblematic loan; retain both.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "betala tillbaka",
+        "icon": "coins"
+      },
+      {
+        "label": "ekonomin",
+        "icon": "bank"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "inte påfrestar ekonomin för mycket",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0168-s004"
+    ]
+  },
+  "rollover": {
+    "id": "rollover",
+    "composition": "blocked_flow",
+    "description": "New borrowing to repay old loans is not sustainable in the long run.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "nytt lån",
+        "icon": "bank"
+      },
+      {
+        "label": "gamla lån",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0169-s001"
+    ],
+    "conditions": [
+      {
+        "label": "på lång sikt ingen hållbar lösning",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ]
+  },
+  "consolidation": {
+    "id": "consolidation",
+    "composition": "branch",
+    "description": "Where there are several high-interest consumer loans, investigate a reasonable bank loan OR social credit; no automatic approval.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "flera konsumtionskrediter med hög ränta",
+        "icon": "document"
+      },
+      {
+        "label": "banklån med rimlig ränta",
+        "icon": "bank"
+      },
+      {
+        "label": "social kredit",
+        "icon": "coins"
+      }
+    ],
+    "connective": "eller",
+    "source_sentence_ids": [
+      "hb-c11-u0169-s002"
+    ],
+    "conditions": [
+      {
+        "label": "ta reda på om det är möjligt",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ]
+  },
+  "social_credit": {
+    "id": "social_credit",
+    "composition": "flow",
+    "description": "Apply to own wellbeing-services county for social credit.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "social kredit",
+        "icon": "document"
+      },
+      {
+        "label": "egna välfärdsområdet",
+        "icon": "hospital"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0169-s003"
+    ]
+  },
+  "guarantee": {
+    "id": "guarantee",
+    "composition": "flow",
+    "description": "Foundation may guarantee a reasonable-rate bank loan in certain cases; retain both qualifications.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "Garantistiftelsen",
+        "icon": "shield"
+      },
+      {
+        "label": "banklån med rimlig ränta",
+        "icon": "bank"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "i vissa fall",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0169-s004"
+    ]
+  },
+  "bill_shortfall": {
+    "id": "bill_shortfall",
+    "composition": "pair",
+    "description": "A bill deadline can approach while the account lacks funds; no invented date or balance.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "förfallodagen",
+        "icon": "calendar"
+      },
+      {
+        "label": "inte tillräckligt med pengar",
+        "icon": "bank"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0170-s001"
+    ]
+  },
+  "contact_sender": {
+    "id": "contact_sender",
+    "composition": "flow",
+    "description": "Contact the bill sender promptly; an electricity supplier is the source example.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "genast kontakta",
+        "icon": "phone"
+      },
+      {
+        "label": "elbolaget",
+        "icon": "plug"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0170-s002"
+    ]
+  },
+  "extra_time": {
+    "id": "extra_time",
+    "composition": "flow",
+    "description": "Explaining the situation usually permits extra payment time, not guaranteed forgiveness.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "förklarar situationen",
+        "icon": "phone"
+      },
+      {
+        "label": "extra tid",
+        "icon": "calendar"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "vanligtvis möjligt",
+        "node_indices": [
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0170-s003"
+    ]
+  },
+  "instalment_agreement": {
+    "id": "instalment_agreement",
+    "composition": "pair",
+    "description": "Paying in parts may be agreed; no entitlement or schedule invented.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "avtala",
+        "icon": "document"
+      },
+      {
+        "label": "betala fakturan i delar",
+        "icon": "coins"
+      }
+    ],
+    "conditions": [
+      {
+        "label": "möjligt",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0170-s004"
+    ]
+  },
+  "prioritize": {
+    "id": "prioritize",
+    "composition": "group",
+    "description": "When money is short, prioritize important bills without an invented order here.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "lite pengar",
+        "icon": "coins"
+      },
+      {
+        "label": "fakturor som är viktigast",
+        "icon": "document"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0171-s001"
+    ]
+  },
+  "housing_first": {
+    "id": "housing_first",
+    "composition": "flow",
+    "description": "Pay housing first; rent debt can cause home loss, with the source conditional can.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "hyresskuld",
+        "icon": "document"
+      },
+      {
+        "label": "kan leda till att man förlorar sitt hem",
+        "icon": "house",
+        "crossed": true
+      }
+    ],
+    "conditions": [
+      {
+        "label": "Utgifter för boende betalas alltid först",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0171-s002"
+    ]
+  },
+  "electricity_cut": {
+    "id": "electricity_cut",
+    "composition": "flow",
+    "description": "Unpaid electricity bills can lead to disconnection; no invented notice period.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "elräkningarna inte betalas",
+        "icon": "document"
+      },
+      {
+        "label": "elen kan stängas av",
+        "icon": "plug",
+        "crossed": true
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0171-s003"
+    ]
+  },
+  "ask_help": {
+    "id": "ask_help",
+    "composition": "flow",
+    "description": "Act and ask for help promptly when needed.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "vara aktiv",
+        "icon": "person"
+      },
+      {
+        "label": "be om hjälp genast",
+        "icon": "phone"
+      }
+    ],
+    "source_sentence_ids": [
+      "hb-c11-u0172-s001"
+    ]
+  },
+  "worsening": {
+    "id": "worsening",
+    "composition": "merge",
+    "description": "Ignoring bills OR taking high-interest consumer credit can worsen small difficulties; no automatic prediction.",
+    "visual_type": "diagram",
+    "nodes": [
+      {
+        "label": "låter bli att betala",
+        "icon": "document"
+      },
+      {
+        "label": "konsumtionskrediter med hög ränta",
+        "icon": "bank"
+      },
+      {
+        "label": "små svårigheter blir stora",
+        "icon": "warning"
+      }
+    ],
+    "connective": "eller",
+    "source_sentence_ids": [
+      "hb-c11-u0172-s002"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "section_id": "hb-c09-durable-asr",
+  "stage": "asr",
+  "state": "studio/production/hb-c09a/asr-durable-host-state.json",
+  "log": "studio/production/hb-c09a/asr-durable-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/production/hb-c09a/durable_asr.py"
+  ],
+  "expected_outputs": [
+    "studio/production/hb-c09a/durable-asr-progress.json"
+  ],
+  "completion_evidence_note": "Supervisor tracks clean queue execution, including intentional checkpoints. Final whole-queue completion remains separately recorded by the driver completion marker and every episode handoff."
+}

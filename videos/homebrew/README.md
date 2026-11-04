@@ -218,3 +218,137 @@ review is pending.
 Its [credits](hb-c01-01-lage.CREDITS.md) cover the Russian voice and reused music.
 The study Docker build adds a Swedish/Russian selector with one shared video
 stream; there is no separate Russian MP4.
+
+<!-- remaining-batch-summary -->
+## Chapters 8–12 production batch
+
+All **88 remaining subchapter videos** are available as local previews: **11:45:12** total, covering **3,730 exact Swedish/Russian body pairs**. Every narrated body pair has a relevant foreground picture. Conservative review counts **93.4% distinct visible compositions within episodes**, ignoring filenames, labels, colour and small layout changes. Verified source photographs and original source-based diagrams are used; relevant recurring compositions and cross-episode photo reuse are recorded honestly. Each episode has its own background source and music track.
+
+All five chapter audits, current source/audio/asset checks, full decode, timing, audio-to-mix comparison, motion, credits and actual exported-card visual reviews passed. Whole-video listening, physical-device playback and user acceptance remain pending; status stays `preview_ready`.
+
+See the [current export evidence](../../studio/production/remaining/batch-export-evidence.json), [picture integrity audit](../../studio/production/remaining/batch-picture-identity-audit.json), and [conservative diversity report](../../studio/production/remaining/batch-visible-diversity.json). Videos and matching credits are linked by chapter below.
+
+<!-- /remaining-batch-summary -->
+
+## Chapter 8 — Utbildning och lärande
+
+All local previews are available. Whole-video listening, physical-device playback and user acceptance remain pending.
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [8.1 Utbildningssystemets utveckling](hb-c08-01-utveckling.mp4) · [credits](hb-c08-01-utveckling.CREDITS.md) | 8:15 | 100%; 42/42 slides | Ready for whole-video review |
+| [8.2 Småbarnspedagogik](hb-c08-02-smabarn.mp4) · [credits](hb-c08-02-smabarn.CREDITS.md) | 7:49 | 100%; 50/50 slides | Ready for whole-video review |
+| [8.3 Förskoleundervisning](hb-c08-03-forskola.mp4) · [credits](hb-c08-03-forskola.CREDITS.md) | 5:02 | 100%; 26/26 slides | Ready for whole-video review |
+| [8.4 Läroplikt och grundläggande utbildning](hb-c08-04-grundskola.mp4) · [credits](hb-c08-04-grundskola.CREDITS.md) | 12:58 | 100%; 69/69 slides | Ready for whole-video review |
+| [8.5 Elevens rättigheter och stöd](hb-c08-05-stod.mp4) · [credits](hb-c08-05-stod.CREDITS.md) | 22:54 | 100%; 133/133 slides | Ready for whole-video review |
+| [8.6 Gymnasium och studentexamen](hb-c08-06-gymnasium.mp4) · [credits](hb-c08-06-gymnasium.CREDITS.md) | 6:37 | 100%; 34/34 slides | Ready for whole-video review |
+| [8.7 Yrkesutbildning och lärande på arbetsplatsen](hb-c08-07-yrkesutbildning.mp4) · [credits](hb-c08-07-yrkesutbildning.CREDITS.md) | 12:01 | 100%; 60/60 slides | Ready for whole-video review |
+| [8.8 Utbildning som handleder för examensutbildning](hb-c08-08-hux.mp4) · [credits](hb-c08-08-hux.CREDITS.md) | 2:16 | 100%; 8/8 slides | Ready for whole-video review |
+| [8.9 Högskolor](hb-c08-09-hogskolor.mp4) · [credits](hb-c08-09-hogskolor.CREDITS.md) | 9:29 | 100%; 45/45 slides | Ready for whole-video review |
+| [8.10 Vuxenutbildning och fritt bildningsarbete](hb-c08-10-vuxna.mp4) · [credits](hb-c08-10-vuxna.CREDITS.md) | 12:56 | 100%; 63/63 slides | Ready for whole-video review |
+| [8.11 Finansiering av studier](hb-c08-11-finansiering.mp4) · [credits](hb-c08-11-finansiering.CREDITS.md) | 10:40 | 100%; 63/63 slides | Ready for whole-video review |
+
+## Chapter 9 — Familj, barn och relationer
+
+All local previews are available. Whole-video listening, physical-device playback and user acceptance remain pending.
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [9.1 Familjer förr och nu](hb-c09-01-forandring.mp4) · [credits](hb-c09-01-forandring.CREDITS.md) | 16:14 | 100%; 88/88 slides | Ready for whole-video review |
+| [9.2 Olika familjeformer](hb-c09-02-familjeformer.mp4) · [credits](hb-c09-02-familjeformer.CREDITS.md) | 10:59 | 100%; 64/64 slides | Ready for whole-video review |
+| [9.3 Jämställdhet i familjens vardag](hb-c09-03-kon.mp4) · [credits](hb-c09-03-kon.CREDITS.md) | 11:52 | 100%; 66/66 slides | Ready for whole-video review |
+| [9.4 Civilstånd och samboförhållande](hb-c09-04-samlevnad.mp4) · [credits](hb-c09-04-samlevnad.CREDITS.md) | 6:30 | 100%; 36/36 slides | Ready for whole-video review |
+| [9.5 Äktenskap och vigsel](hb-c09-05-aktenskap.mp4) · [credits](hb-c09-05-aktenskap.CREDITS.md) | 7:09 | 100%; 45/45 slides | Ready for whole-video review |
+| [9.6 Makars rättigheter, egendom och skulder](hb-c09-06-makar.mp4) · [credits](hb-c09-06-makar.CREDITS.md) | 6:40 | 100%; 38/38 slides | Ready for whole-video review |
+| [9.7 Skilsmässa och bodelning](hb-c09-07-skilsmassa.mp4) · [credits](hb-c09-07-skilsmassa.CREDITS.md) | 9:04 | 100%; 53/53 slides | Ready for whole-video review |
+| [9.8 Barnets boende, vårdnad och umgänge](hb-c09-08-vardnad.mp4) · [credits](hb-c09-08-vardnad.CREDITS.md) | 6:56 | 100%; 47/47 slides | Ready for whole-video review |
+| [9.9 Barnets underhåll](hb-c09-09-underhall.mp4) · [credits](hb-c09-09-underhall.CREDITS.md) | 4:52 | 100%; 23/23 slides | Ready for whole-video review |
+| [9.10 Föräldraskap och registrering vid födseln](hb-c09-10-foraldraskap.mp4) · [credits](hb-c09-10-foraldraskap.CREDITS.md) | 11:34 | 100%; 69/69 slides | Ready for whole-video review |
+| [9.11 Barnets bästa, uppfostran och självständighet](hb-c09-11-uppfostran.mp4) · [credits](hb-c09-11-uppfostran.CREDITS.md) | 14:36 | 100%; 87/87 slides | Ready for whole-video review |
+| [9.12 Barnets rättigheter vid tolv års ålder](hb-c09-12-tolv.mp4) · [credits](hb-c09-12-tolv.CREDITS.md) | 2:29 | 100%; 14/14 slides | Ready for whole-video review |
+| [9.13 Familjens roller och barnets språk](hb-c09-13-flersprakighet.mp4) · [credits](hb-c09-13-flersprakighet.CREDITS.md) | 6:44 | 100%; 37/37 slides | Ready for whole-video review |
+| [9.14 Rådgivning och stöd när familjen får barn](hb-c09-14-radgivning.mp4) · [credits](hb-c09-14-radgivning.CREDITS.md) | 6:10 | 100%; 36/36 slides | Ready for whole-video review |
+| [9.15 Graviditetsledighet och föräldraledighet](hb-c09-15-foraldraledighet.mp4) · [credits](hb-c09-15-foraldraledighet.CREDITS.md) | 5:36 | 100%; 32/32 slides | Ready for whole-video review |
+| [9.16 Vårdledighet och stöd för vård i hemmet](hb-c09-16-vardledighet.mp4) · [credits](hb-c09-16-vardledighet.CREDITS.md) | 5:12 | 100%; 33/33 slides | Ready for whole-video review |
+| [9.17 Barnbidrag](hb-c09-17-barnbidrag.mp4) · [credits](hb-c09-17-barnbidrag.CREDITS.md) | 1:42 | 100%; 8/8 slides | Ready for whole-video review |
+| [9.18 Förebyggande tjänster och hemservice](hb-c09-18-familjetjanster.mp4) · [credits](hb-c09-18-familjetjanster.CREDITS.md) | 7:29 | 100%; 42/42 slides | Ready for whole-video review |
+| [9.19 Barnskydd och vård utom hemmet](hb-c09-19-barnskydd.mp4) · [credits](hb-c09-19-barnskydd.CREDITS.md) | 7:48 | 100%; 41/41 slides | Ready for whole-video review |
+| [9.20 Våld i nära relationer](hb-c09-20-vald.mp4) · [credits](hb-c09-20-vald.CREDITS.md) | 7:20 | 100%; 44/44 slides | Ready for whole-video review |
+| [9.21 Hedersrelaterat våld och tvångsäktenskap](hb-c09-21-heder.mp4) · [credits](hb-c09-21-heder.CREDITS.md) | 6:07 | 100%; 30/30 slides | Ready for whole-video review |
+| [9.22 Skydd, hjälp och besöksförbud](hb-c09-22-skydd.mp4) · [credits](hb-c09-22-skydd.CREDITS.md) | 6:01 | 100%; 38/38 slides | Ready for whole-video review |
+| [9.23 Dödsfall, obduktion och organdonation](hb-c09-23-dodsfall.mp4) · [credits](hb-c09-23-dodsfall.CREDITS.md) | 6:11 | 100%; 35/35 slides | Ready for whole-video review |
+| [9.24 Begravning och stöd efter dödsfall](hb-c09-24-begravning.mp4) · [credits](hb-c09-24-begravning.CREDITS.md) | 9:04 | 100%; 46/46 slides | Ready for whole-video review |
+| [9.25 Arv, testamente och bouppteckning](hb-c09-25-arv.mp4) · [credits](hb-c09-25-arv.CREDITS.md) | 5:39 | 100%; 31/31 slides | Ready for whole-video review |
+
+## Chapter 10 — Hälsa, social trygghet och åldrande
+
+All local previews are available. Whole-video listening, physical-device playback and user acceptance remain pending.
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [10.1 Välfärd och social trygghet](hb-c10-01-valfard.mp4) · [credits](hb-c10-01-valfard.CREDITS.md) | 9:37 | 100%; 43/43 slides | Ready for whole-video review |
+| [10.2 Utkomststöd](hb-c10-02-utkomststod.mp4) · [credits](hb-c10-02-utkomststod.CREDITS.md) | 3:07 | 100%; 10/10 slides | Ready for whole-video review |
+| [10.3 Hälsa och förebyggande arbete](hb-c10-03-folkhalsa.mp4) · [credits](hb-c10-03-folkhalsa.CREDITS.md) | 11:15 | 100%; 58/58 slides | Ready for whole-video review |
+| [10.4 Offentlig och privat hälsovård](hb-c10-04-vard.mp4) · [credits](hb-c10-04-vard.CREDITS.md) | 10:55 | 100%; 51/51 slides | Ready for whole-video review |
+| [10.5 Tillgång till vård och patientens rättigheter](hb-c10-05-tillgang.mp4) · [credits](hb-c10-05-tillgang.CREDITS.md) | 6:49 | 100%; 32/32 slides | Ready for whole-video review |
+| [10.6 Läkemedel och munhälsovård](hb-c10-06-lakemedel.mp4) · [credits](hb-c10-06-lakemedel.CREDITS.md) | 9:59 | 100%; 46/46 slides | Ready for whole-video review |
+| [10.7 Psykisk hälsa och stöd vid beroende](hb-c10-07-psykisk.mp4) · [credits](hb-c10-07-psykisk.CREDITS.md) | 15:45 | 100%; 79/79 slides | Ready for whole-video review |
+| [10.8 Sexuell och reproduktiv hälsa](hb-c10-08-sexuell.mp4) · [credits](hb-c10-08-sexuell.CREDITS.md) | 12:36 | 100%; 65/65 slides | Ready for whole-video review |
+| [10.9 Kvinnlig könsstympning: följder och vård](hb-c10-09-konsstympning.mp4) · [credits](hb-c10-09-konsstympning.CREDITS.md) | 2:42 | 100%; 11/11 slides | Ready for whole-video review |
+| [10.10 Funktionshinderservice och delaktighet](hb-c10-10-funktionsnedsattning.mp4) · [credits](hb-c10-10-funktionsnedsattning.CREDITS.md) | 15:59 | 100%; 67/67 slides | Ready for whole-video review |
+| [10.11 Stöd vid sjukdom och funktionsnedsättning](hb-c10-11-sjukdom.mp4) · [credits](hb-c10-11-sjukdom.CREDITS.md) | 9:25 | 100%; 43/43 slides | Ready for whole-video review |
+| [10.12 Pensioner](hb-c10-12-pension.mp4) · [credits](hb-c10-12-pension.CREDITS.md) | 17:34 | 100%; 94/94 slides | Ready for whole-video review |
+| [10.13 Äldreomsorg och ett självständigt liv](hb-c10-13-aldre.mp4) · [credits](hb-c10-13-aldre.CREDITS.md) | 15:27 | 100%; 86/86 slides | Ready for whole-video review |
+
+## Chapter 11 — Boende, vardag och miljö
+
+All local previews are available. Whole-video listening, physical-device playback and user acceptance remain pending.
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [11.1 Boendeformer](hb-c11-01-boendeformer.mp4) · [credits](hb-c11-01-boendeformer.CREDITS.md) | 9:43 | 100%; 58/58 slides | Ready for whole-video review |
+| [11.2 Hyresavtal och boendekostnader](hb-c11-02-hyresavtal.mp4) · [credits](hb-c11-02-hyresavtal.CREDITS.md) | 8:57 | 100%; 52/52 slides | Ready for whole-video review |
+| [11.3 Hyresgästens rättigheter och skyldigheter](hb-c11-03-hyresgast.mp4) · [credits](hb-c11-03-hyresgast.CREDITS.md) | 9:09 | 100%; 59/59 slides | Ready for whole-video review |
+| [11.4 Ägarbostad och bostadsbolag](hb-c11-04-agarbostad.mp4) · [credits](hb-c11-04-agarbostad.CREDITS.md) | 7:54 | 100%; 42/42 slides | Ready for whole-video review |
+| [11.5 Flyttning, grannar och bostadsproblem](hb-c11-05-boendeproblem.mp4) · [credits](hb-c11-05-boendeproblem.CREDITS.md) | 8:54 | 100%; 49/49 slides | Ready for whole-video review |
+| [11.6 Bostadsbidrag](hb-c11-06-bostadsbidrag.mp4) · [credits](hb-c11-06-bostadsbidrag.CREDITS.md) | 8:31 | 100%; 58/58 slides | Ready for whole-video review |
+| [11.7 Den egna ekonomin och lån](hb-c11-07-ekonomi.mp4) · [credits](hb-c11-07-ekonomi.CREDITS.md) | 7:53 | 100%; 43/43 slides | Ready for whole-video review |
+| [11.8 Betalningssvårigheter och skuldrådgivning](hb-c11-08-skulder.mp4) · [credits](hb-c11-08-skulder.CREDITS.md) | 6:56 | 100%; 40/40 slides | Ready for whole-video review |
+| [11.9 Konsumentskydd](hb-c11-09-konsumentskydd.mp4) · [credits](hb-c11-09-konsumentskydd.CREDITS.md) | 1:25 | 100%; 6/6 slides | Ready for whole-video review |
+| [11.10 Miljöansvar och naturskydd](hb-c11-10-miljo.mp4) · [credits](hb-c11-10-miljo.CREDITS.md) | 4:34 | 100%; 24/24 slides | Ready for whole-video review |
+| [11.11 Avfall och återvinning](hb-c11-11-atervinning.mp4) · [credits](hb-c11-11-atervinning.CREDITS.md) | 9:26 | 100%; 57/57 slides | Ready for whole-video review |
+| [11.12 Allemansrätten](hb-c11-12-allemansratten.mp4) · [credits](hb-c11-12-allemansratten.CREDITS.md) | 5:29 | 100%; 21/21 slides | Ready for whole-video review |
+| [11.13 Säkerhet vid vatten och på is](hb-c11-13-naturens-sakerhet.mp4) · [credits](hb-c11-13-naturens-sakerhet.CREDITS.md) | 3:14 | 100%; 15/15 slides | Ready for whole-video review |
+| [11.14 Trafikregler och trafiksäkerhet](hb-c11-14-trafik.mp4) · [credits](hb-c11-14-trafik.CREDITS.md) | 8:09 | 100%; 49/49 slides | Ready for whole-video review |
+| [11.15 Flyttsaker och bil från utlandet](hb-c11-15-flyttsaker.mp4) · [credits](hb-c11-15-flyttsaker.CREDITS.md) | 2:29 | 100%; 10/10 slides | Ready for whole-video review |
+| [11.16 Brandsäkerhet och trygghet i hemmet](hb-c11-16-brandsakerhet.mp4) · [credits](hb-c11-16-brandsakerhet.CREDITS.md) | 9:25 | 100%; 55/55 slides | Ready for whole-video review |
+| [11.17 Nödsituationer och 112](hb-c11-17-nodsituationer.mp4) · [credits](hb-c11-17-nodsituationer.CREDITS.md) | 7:00 | 100%; 49/49 slides | Ready for whole-video review |
+| [11.18 Bibliotek](hb-c11-18-bibliotek.mp4) · [credits](hb-c11-18-bibliotek.CREDITS.md) | 5:50 | 100%; 28/28 slides | Ready for whole-video review |
+| [11.19 Offentliga fritidstjänster](hb-c11-19-fritid.mp4) · [credits](hb-c11-19-fritid.CREDITS.md) | 12:28 | 100%; 51/51 slides | Ready for whole-video review |
+
+## Chapter 12 — Integration, uppehåll och medborgarskap
+
+All local previews are available. Whole-video listening, physical-device playback and user acceptance remain pending.
+
+| Video and credits | Duration | Foreground pictures | Status |
+|---|---:|---:|---|
+| [12.1 Integration och delaktighet](hb-c12-01-integration.mp4) · [credits](hb-c12-01-integration.CREDITS.md) | 7:48 | 100%; 40/40 slides | Ready for whole-video review |
+| [12.2 Integrationstjänster och integrationsplan](hb-c12-02-tjanster.mp4) · [credits](hb-c12-02-tjanster.CREDITS.md) | 12:06 | 100%; 56/56 slides | Ready for whole-video review |
+| [12.3 Integrationsspråk och språkliga rättigheter](hb-c12-03-sprak.mp4) · [credits](hb-c12-03-sprak.CREDITS.md) | 4:09 | 100%; 17/17 slides | Ready for whole-video review |
+| [12.4 Tolkning och sekretess](hb-c12-04-tolkning.mp4) · [credits](hb-c12-04-tolkning.CREDITS.md) | 4:45 | 100%; 25/25 slides | Ready for whole-video review |
+| [12.5 Myndigheter och deras uppgifter](hb-c12-05-myndigheter.mp4) · [credits](hb-c12-05-myndigheter.CREDITS.md) | 10:38 | 100%; 49/49 slides | Ready for whole-video review |
+| [12.6 Att sköta egna ärenden](hb-c12-06-egna-arenden.mp4) · [credits](hb-c12-06-egna-arenden.CREDITS.md) | 6:59 | 100%; 33/33 slides | Ready for whole-video review |
+| [12.7 Personbeteckning och personuppgifter](hb-c12-07-personuppgifter.mp4) · [credits](hb-c12-07-personuppgifter.CREDITS.md) | 10:34 | 100%; 50/50 slides | Ready for whole-video review |
+| [12.8 Hemkommun och offentliga tjänster](hb-c12-08-hemkommun.mp4) · [credits](hb-c12-08-hemkommun.CREDITS.md) | 4:47 | 100%; 22/22 slides | Ready for whole-video review |
+| [12.9 Elektroniska tjänster och identifiering](hb-c12-09-e-tjanster.mp4) · [credits](hb-c12-09-e-tjanster.CREDITS.md) | 5:15 | 100%; 25/25 slides | Ready for whole-video review |
+| [12.10 Nordiska medborgare och EU-medborgare](hb-c12-10-norden-eu.mp4) · [credits](hb-c12-10-norden-eu.CREDITS.md) | 6:35 | 100%; 28/28 slides | Ready for whole-video review |
+| [12.11 Grunder för uppehållstillstånd](hb-c12-11-tillstand.mp4) · [credits](hb-c12-11-tillstand.CREDITS.md) | 9:08 | 100%; 47/47 slides | Ready for whole-video review |
+| [12.12 Tillståndstyper och fortsatt vistelse](hb-c12-12-tillstandstyper.mp4) · [credits](hb-c12-12-tillstandstyper.CREDITS.md) | 6:03 | 100%; 28/28 slides | Ready for whole-video review |
+| [12.13 Asyl och internationellt skydd](hb-c12-13-asyl.mp4) · [credits](hb-c12-13-asyl.CREDITS.md) | 8:37 | 100%; 51/51 slides | Ready for whole-video review |
+| [12.14 Kvotflyktingar](hb-c12-14-kvotflyktingar.mp4) · [credits](hb-c12-14-kvotflyktingar.CREDITS.md) | 3:35 | 100%; 17/17 slides | Ready for whole-video review |
+| [12.15 Tillfälligt skydd](hb-c12-15-tillfalligt-skydd.mp4) · [credits](hb-c12-15-tillfalligt-skydd.CREDITS.md) | 3:58 | 100%; 17/17 slides | Ready for whole-video review |
+| [12.16 Ändrade familjeband och skydd vid utnyttjande](hb-c12-16-familjeband.mp4) · [credits](hb-c12-16-familjeband.CREDITS.md) | 4:08 | 100%; 19/19 slides | Ready for whole-video review |
+| [12.17 Negativa beslut, rättsskydd och återvändande](hb-c12-17-beslut.mp4) · [credits](hb-c12-17-beslut.CREDITS.md) | 6:19 | 100%; 31/31 slides | Ready for whole-video review |
+| [12.18 Rättigheter utan uppehållstillstånd](hb-c12-18-utan-tillstand.mp4) · [credits](hb-c12-18-utan-tillstand.CREDITS.md) | 3:19 | 100%; 15/15 slides | Ready for whole-video review |
+| [12.19 Medborgarskapets innebörd och förvärv](hb-c12-19-medborgarskap.mp4) · [credits](hb-c12-19-medborgarskap.CREDITS.md) | 3:39 | 100%; 18/18 slides | Ready for whole-video review |
+| [12.20 Flerfaldigt medborgarskap och förlust av medborgarskap](hb-c12-20-flerfaldigt.mp4) · [credits](hb-c12-20-flerfaldigt.CREDITS.md) | 3:16 | 100%; 15/15 slides | Ready for whole-video review |

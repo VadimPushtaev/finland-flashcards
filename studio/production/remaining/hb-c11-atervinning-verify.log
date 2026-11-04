@@ -1,0 +1,103 @@
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c11-atervinning
+hb-c11-atervinning 57 current-take hashes checked; 3 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c11-atervinning
+episode_background 1 files verified
+home_sort 1 files verified
+material_examples 1 files verified
+new_products 1 files verified
+local_instructions 1 files verified
+bin_labels 1 files verified
+ask_contact 1 files verified
+no_dumping 1 files verified
+by_material 1 files verified
+not_drain 1 files verified
+hazard_collection 1 files verified
+available_bins 1 files verified
+not_other_house 1 files verified
+not_business 1 files verified
+resources 1 files verified
+collection_transport 1 files verified
+reuse_savings 1 files verified
+less_landfill 1 files verified
+bad_sorting_costs 1 files verified
+shared_costs 1 files verified
+housing_extra 1 files verified
+housing_charges 1 files verified
+biowaste_examples 1 files verified
+compost_soil 1 files verified
+cardboard_types 1 files verified
+rinse_dry 1 files verified
+flatten 1 files verified
+cardboard_reuse 1 files verified
+paper_types 1 files verified
+paper_reuse 1 files verified
+plastic_packages 1 files verified
+empty_clean 1 files verified
+plastic_reuse 1 files verified
+glass_packages 1 files verified
+excluded_glass 1 files verified
+glass_reuse 1 files verified
+metal_types 1 files verified
+metal_exclusions 1 files verified
+metal_reuse 1 files verified
+mixed_definition 1 files verified
+energy_recovery 1 files verified
+heat_power 1 files verified
+hazard_separate 1 files verified
+toxic_risk 1 files verified
+hazard_examples 1 files verified
+hazard_destinations 1 files verified
+retail_returns 1 files verified
+electronics_separate 1 files verified
+electronics_shop 1 files verified
+medicines 1 files verified
+medicine_bag 1 files verified
+empty_medicine 1 files verified
+give_sell 1 files verified
+usable_goods 1 files verified
+donate 1 files verified
+deposit 1 files verified
+deposit_return 1 files verified
+deposit_reuse 1 files verified
+music_bed 2 files verified
+narration 57 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c11-atervinning --save-frames
+2026-11-03T04:23:51.695225+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+2026-11-03T04:24:25.259354+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+2026-11-03T04:24:58.849324+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+2026-11-03T04:25:32.447656+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+2026-11-03T04:26:06.017941+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+2026-11-03T04:26:39.606942+00:00 hb-c11-atervinning verification-after-export: PID 144542 running
+{
+  "background_boundary_max_mean_pixel_change": 1.519292950630188,
+  "full_decode": "passed",
+  "decoded_video_frames": 13590,
+  "decoded_audio_seconds": 566.25,
+  "decoded_audio_peak": 0.7069194316864014,
+  "frame_exports": 60,
+  "source_sentences": 57,
+  "output": "videos/homebrew/hb-c11-11-atervinning.mp4",
+  "sha256": "ca76bb0e9bb23f0d3dcf19a683c34ccfb248fcf27d1e2a75fe6878d6f7f379bd",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 37.757564544677734,
+    "10.0": 39.31915283203125
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.999839016094573,
+    "relative_rms_error": 0.01799566112970486,
+    "mix_sha256": "4c675620b0215fb7abef869cf08f06752b84c46dc306a95d26a8b04adc5af66a"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c11-atervinning --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c11-atervinning --ready
+PASS: 57 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c11-atervinning --require-target
+hb-c11-atervinning: 100.0% of body duration; 57/57 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c11-atervinning
+hb-c11-atervinning: 57 distinct picture sources / 57 sentence slides; 57 pictured slides
+{"section_id": "hb-c11-atervinning", "production_status": "preview_ready", "output": "videos/homebrew/hb-c11-11-atervinning.mp4", "sha256": "ca76bb0e9bb23f0d3dcf19a683c34ccfb248fcf27d1e2a75fe6878d6f7f379bd", "seconds": 566.25, "source_sentences": 57, "source_section_sha256": "791a6822423a8abae44369cb387c1ce71e2424c7762ae8d7559c27087bd31fb5", "translation_file_sha256": "bd4ef1358658c4b301b3927ae4a57568d876ae7704495cc90b3a2190678ee7a4", "picture_fraction": 1.0, "distinct_picture_sources": 57, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c11-atervinning", "stage": "verification-after-export", "status": "finished", "supervisor_pid": 144538, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c11-atervinning"], "started_at": "2026-11-03T04:23:21.669032+00:00", "log": "studio/production/remaining/hb-c11-atervinning-verify.log", "pid": 144542, "heartbeat_at": "2026-11-03T04:26:39.605471+00:00", "returncode": 0, "finished_at": "2026-11-03T04:27:11.257766+00:00", "missing_outputs": []}

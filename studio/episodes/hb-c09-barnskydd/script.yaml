@@ -1,0 +1,1388 @@
+schema_version: 1
+section_id: hb-c09-barnskydd
+chapter_id: hb-c09
+title_sv: Barnskydd och vård utom hemmet
+title_ru: Защита детей и устройство ребёнка вне семьи
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-barnskydd.yaml
+example_only: false
+source_section_sha256: c8b38a3478f5967703913591f5cdd25ed3af47793e087165910bd67b8215d62a
+translation_file_sha256: 48d063dea8737e7caecfb88e7cc1b61ffc3f93c8755d08960d42a420831d7fc4
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Source child interests and notifications lead into investigation, voluntary support, temporary
+    placement and last-resort custody. Preserve the distinction between placement and custody; no real
+    child or home is identified as being in care.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Pikkukadun puutalo, Vaasa.jpg by Jani Hakomäki continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=3.344642857142857. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Night on the Docks - Piano by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 174.080 seconds; prepared lossless stereo bed 468.250
+    seconds. Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: I Finland föreskriver barnskyddslagen hurdant barnskyddet ska vara.
+- id: scene-2
+  description: Utgångspunkten för barnskyddet är alltid barnets intresse.
+- id: scene-3
+  description: Om en familj behöver hjälp i en svår livssituation, kan den själv be om hjälp hos barnskyddet.
+- id: scene-4
+  description: Om det ser ut att finnas allvarliga problem i en familj och ett barns välbefinnande är
+    i fara, kan också en person utanför familjen göra en barnskyddsanmälan.
+- id: scene-5
+  description: Till exempel anställda inom småbarnspedagogiken och skolan är skyldiga att göra en barnskyddsanmälan
+    om de misstänker att ett barn behöver hjälp eller om någon måste ingripa i en situation.
+- id: scene-6
+  description: Anmälningar till barnskyddet görs till exempel om ett barn använder rusmedel, är självdestruktivt,
+    kontinuerligt missköter skolan eller om det finns en misstanke om att barnet till exempel blir slaget.
+- id: scene-7
+  description: Om en barnskyddsanmälan har gjorts om en familj, är den sociala myndigheten skyldig att
+    utreda huruvida barnet eller den unga behöver skydd, hjälp eller stöd.
+- id: scene-8
+  description: Utifrån samtalen bedömer myndigheterna huruvida familjen behöver stöd.
+- id: scene-9
+  description: Vård utom hemmet betyder att ett barn placeras tillfälligt att bo någon annanstans än hos
+    sina föräldrar eller vårdnadshavare.
+- id: scene-10
+  description: En placering betyder inte nödvändigtvis omhändertagande.
+- id: scene-11
+  description: Om ett barn placeras utanför hemmet, tar välfärdsområdets barnskyddsmyndigheter hand om
+    hen.
+- id: scene-12
+  description: Målet för barnskyddet är alltid att barnet ska kunna bo hemma hos sina föräldrar.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland föreskriver barnskyddslagen hurdant barnskyddet
+    ska vara.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Syftet med barnskyddet är att säkerställa att barn har
+    en trygg uppväxtmiljö och kan växa upp på ett harmoniskt sätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Barnskyddslagen gäller alla barn som bor i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Barnskyddsmyndigheterna är experter på socialarbete, och
+    deras arbete baserar sig på lagen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Utgångspunkten för barnskyddet är alltid barnets intresse.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Det betyder att de anställda i alla beslut som gäller
+    barnet ska bedöma vilken den bästa lösningen är för just det här barnet i den här livssituationen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Om en familj behöver hjälp i en svår livssituation, kan
+    den själv be om hjälp hos barnskyddet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Likaså ska man be om hjälp om någon skadar ett barn allvarligt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Barnskyddet har skyldighet att ingripa också på eget initiativ,
+    om föräldrarna inte kan ta hand om sitt barn eller om barnet på något sätt är hotat.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Om det ser ut att finnas allvarliga problem i en familj
+    och ett barns välbefinnande är i fara, kan också en person utanför familjen göra en barnskyddsanmälan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Anmälan görs till välfärdsområdets socialvårdstjänster
+    och kan göras per telefon, skriftligt eller genom att besöka byrån.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Till exempel anställda inom småbarnspedagogiken och skolan
+    är skyldiga att göra en barnskyddsanmälan om de misstänker att ett barn behöver hjälp eller om någon
+    måste ingripa i en situation.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Dessutom kan vem som helst göra en barnskyddsanmälan till
+    de sociala myndigheterna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Anmälan kan också göras anonymt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Anmälningar till barnskyddet görs till exempel om ett
+    barn använder rusmedel, är självdestruktivt, kontinuerligt missköter skolan eller om det finns en
+    misstanke om att barnet till exempel blir slaget.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Om en barnskyddsanmälan har gjorts om en familj, är den
+    sociala myndigheten skyldig att utreda huruvida barnet eller den unga behöver skydd, hjälp eller stöd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: I allmänhet diskuterar myndigheterna saken först med familjen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: I samtalet kan en tolk användas som hjälp.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: En socialarbetare träffar också barnet utan föräldrarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Utifrån samtalen bedömer myndigheterna huruvida familjen
+    behöver stöd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: De gör tillsammans upp en plan för barnet och familjen
+    där man skriver in vad familjen behöver hjälp med och hur hjälpen ser ut.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Den kan bestå av till exempel rådgivning, handledning
+    och samtalshjälp.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: En stödperson eller stödfamilj kan utses för familjen
+    som kan tillbringa tid med familjens barn och på så sätt stödja både barnen och föräldrarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Inom barnskyddsarbetet är det i de flesta fall fråga om
+    öppenvårdstjänster, det vill säga barnet kan fortsätta att bo hemma hos föräldrarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Vård utom hemmet betyder att ett barn placeras tillfälligt
+    att bo någon annanstans än hos sina föräldrar eller vårdnadshavare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Om barnet är i omedelbar fara, kan hen placeras brådskande
+    utanför hemmet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Orsaker till placeringen kan vara till exempel allvarlig
+    utmattning hos föräldrarna, allvarliga utmaningar med uppfostran, en allvarlig långtidssjukdom eller
+    mentala problem i familjen, problematisk användning av rusmedel eller familjevåld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: En placering betyder inte nödvändigtvis omhändertagande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Ett omhändertagande kan göras om ingenting annat hjälper.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Det innebär att myndigheterna övertar ansvaret för omsorgen
+    om och uppfostran av barnet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Omhändertagande är myndigheternas sista alternativ för
+    att skydda ett barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Om ett barn placeras utanför hemmet, tar välfärdsområdets
+    barnskyddsmyndigheter hand om hen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet placeras att bo i ett familjehem eller på ett barn-
+    eller ungdomshem.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: En placering är alltid tillfällig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Myndigheterna utvärderar regelbundet huruvida barnet kan
+    återvända hem till sin familj.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: Om situationen hemma lugnar sig snabbt, kan vården utom
+    hemmet bli kortvarig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_037
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland är ändå familjens problem långvariga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_038
+  kind: foreground
+  description: 'A source-bound illustration of: Då kan vården utom hemmet eller omhändertagandet fortsätta
+    tills barnet blir myndigt och flyttar till en egen bostad.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_039
+  kind: foreground
+  description: 'A source-bound illustration of: Målet för barnskyddet är alltid att barnet ska kunna bo
+    hemma hos sina föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_040
+  kind: foreground
+  description: 'A source-bound illustration of: Också under vård utom hemmet eller ett omhändertagande
+    arbetar barnskyddsmyndigheterna tillsammans med familjen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_041
+  kind: foreground
+  description: 'A source-bound illustration of: Tanken är att hjälpa familjen så att det är tryggt för
+    barnet att återvända hem.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0342-s001
+  sv: I Finland föreskriver barnskyddslagen hurdant barnskyddet ska vara.
+  ru: В Финляндии закон о защите детей определяет, какой должна быть защита детей.
+  scene_id: scene-1
+  visual_cue: 'Exact-source pictorial relationship: Finland, barnskyddslagen, barnskyddet. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - Finland
+  - barnskyddslagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0342-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.310408
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0342-s002
+  sv: Syftet med barnskyddet är att säkerställa att barn har en trygg uppväxtmiljö och kan växa upp på
+    ett harmoniskt sätt.
+  ru: Цель защиты детей — обеспечить им безопасную среду для взросления и возможность гармонично развиваться.
+  scene_id: scene-1
+  visual_cue: Verified public playground illustrates a concrete safe play environment as a general upbringing
+    setting. No child, park user or home is identified as being in child-protection care. The complete
+    source photograph is shown with its source-identity caption; no sensitive personal attributes are
+    inferred.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - trygg uppväxtmiljö
+  - växa upp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0342-s002.wav
+  start_seconds: 11.083333
+  end_seconds: 21.323333
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0342-s003
+  sv: Barnskyddslagen gäller alla barn som bor i Finland.
+  ru: Закон о защите детей распространяется на всех детей, живущих в Финляндии.
+  scene_id: scene-1
+  visual_cue: 'Exact-source pictorial relationship: Barnskyddslagen, alla barn, Finland. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - Barnskyddslagen
+  - alla barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0342-s003.wav
+  start_seconds: 23.083333
+  end_seconds: 27.750544
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0342-s004
+  sv: Barnskyddsmyndigheterna är experter på socialarbete, och deras arbete baserar sig på lagen.
+  ru: Представители органов защиты детей — специалисты по социальной работе, и их деятельность основана
+    на законе.
+  scene_id: scene-1
+  visual_cue: 'Exact-source pictorial relationship: Barnskyddsmyndigheterna, experter på socialarbete,
+    lagen. Distinguish source conditions and actual legal roles; all figures are symbolic and do not identify
+    a real parent, client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - Barnskyddsmyndigheterna
+  - experter på socialarbete
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0342-s004.wav
+  start_seconds: 29.541667
+  end_seconds: 37.552551
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0343-s001
+  sv: Utgångspunkten för barnskyddet är alltid barnets intresse.
+  ru: Защита детей всегда исходит из интересов ребёнка.
+  scene_id: scene-2
+  visual_cue: 'Exact-source pictorial relationship: barnskyddet, barnets intresse. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - barnskyddet
+  - barnets intresse
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0343-s001.wav
+  start_seconds: 40.041667
+  end_seconds: 45.266156
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0343-s002
+  sv: Det betyder att de anställda i alla beslut som gäller barnet ska bedöma vilken den bästa lösningen
+    är för just det här barnet i den här livssituationen.
+  ru: Это означает, что при принятии любых решений, касающихся ребёнка, сотрудники должны оценивать, какое
+    решение будет лучшим именно для этого ребёнка в его нынешней жизненной ситуации.
+  scene_id: scene-2
+  visual_cue: 'Exact-source pictorial relationship: de anställda, alla beslut, just det här barnet. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - de anställda
+  - alla beslut
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0343-s002.wav
+  start_seconds: 47.041667
+  end_seconds: 59.371463
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0344-s001
+  sv: Om en familj behöver hjälp i en svår livssituation, kan den själv be om hjälp hos barnskyddet.
+  ru: Если семье нужна помощь в трудной жизненной ситуации, она может сама обратиться за ней в службу
+    защиты детей.
+  scene_id: scene-3
+  visual_cue: 'Exact-source pictorial relationship: en familj, själv be om hjälp, barnskyddet. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - en familj
+  - själv be om hjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0344-s001.wav
+  start_seconds: 62.125
+  end_seconds: 70.971803
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0344-s002
+  sv: Likaså ska man be om hjälp om någon skadar ett barn allvarligt.
+  ru: Также следует обращаться за помощью, если кто-то причиняет ребёнку серьёзный вред.
+  scene_id: scene-3
+  visual_cue: 'Exact-source pictorial relationship: be om hjälp, ett barn, skadar. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Harm/danger/violence is shown with a non-graphic warning, not a protection
+    approval symbol. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - be om hjälp
+  - ett barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0344-s002.wav
+  start_seconds: 72.75
+  end_seconds: 78.740748
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0344-s003
+  sv: Barnskyddet har skyldighet att ingripa också på eget initiativ, om föräldrarna inte kan ta hand
+    om sitt barn eller om barnet på något sätt är hotat.
+  ru: Служба защиты детей обязана вмешаться и по собственной инициативе, если родители не могут заботиться
+    о ребёнке или ему что-либо угрожает.
+  scene_id: scene-3
+  visual_cue: 'Exact-source pictorial relationship: Barnskyddet, föräldrarna, barnet. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - Barnskyddet
+  - föräldrarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0344-s003.wav
+  start_seconds: 80.5
+  end_seconds: 93.108435
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0345-s001
+  sv: Om det ser ut att finnas allvarliga problem i en familj och ett barns välbefinnande är i fara, kan
+    också en person utanför familjen göra en barnskyddsanmälan.
+  ru: Если кажется, что в семье есть серьёзные проблемы и благополучие ребёнка под угрозой, уведомление
+    в службу защиты детей может подать и человек, не входящий в семью.
+  scene_id: scene-4
+  visual_cue: 'Exact-source pictorial relationship: en person utanför familjen, ett barns välbefinnande,
+    barnskyddsanmälan. Distinguish source conditions and actual legal roles; all figures are symbolic
+    and do not identify a real parent, client, victim or child in care. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - en person utanför familjen
+  - ett barns välbefinnande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0345-s001.wav
+  start_seconds: 95.875
+  end_seconds: 109.458673
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0345-s002
+  sv: Anmälan görs till välfärdsområdets socialvårdstjänster och kan göras per telefon, skriftligt eller
+    genom att besöka byrån.
+  ru: Уведомление направляют в социальные службы региона по обеспечению благополучия населения — по телефону,
+    письменно или при личном посещении учреждения.
+  scene_id: scene-4
+  visual_cue: 'Exact-source pictorial relationship: telefon, skriftligt, besöka byrån. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - telefon
+  - skriftligt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0345-s002.wav
+  start_seconds: 112.25
+  end_seconds: 122.69898
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0346-s001
+  sv: Till exempel anställda inom småbarnspedagogiken och skolan är skyldiga att göra en barnskyddsanmälan
+    om de misstänker att ett barn behöver hjälp eller om någon måste ingripa i en situation.
+  ru: Например, сотрудники сферы дошкольного воспитания и обучения и школ обязаны подать уведомление в
+    службу защиты детей, если подозревают, что ребёнку нужна помощь или что кто-то должен вмешаться в
+    ситуацию.
+  scene_id: scene-5
+  visual_cue: Verified actual daycare exterior illustrates the source institutional category subject to
+    reporting duties. No specific notification, violation or child is inferred. The complete source photograph
+    is shown with its source-identity caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - skolan
+  - barnskyddsanmälan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0346-s001.wav
+  start_seconds: 125.166667
+  end_seconds: 141.258095
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0346-s002
+  sv: Dessutom kan vem som helst göra en barnskyddsanmälan till de sociala myndigheterna.
+  ru: Кроме того, любой человек может подать уведомление о необходимости защиты ребёнка в органы социальной
+    защиты.
+  scene_id: scene-5
+  visual_cue: 'Exact-source pictorial relationship: vem som helst, barnskyddsanmälan, sociala myndigheterna.
+    Distinguish source conditions and actual legal roles; all figures are symbolic and do not identify
+    a real parent, client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - vem som helst
+  - barnskyddsanmälan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0346-s002.wav
+  start_seconds: 144.041667
+  end_seconds: 151.216633
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0346-s003
+  sv: Anmälan kan också göras anonymt.
+  ru: Уведомление можно подать и анонимно.
+  scene_id: scene-5
+  visual_cue: 'Exact-source pictorial relationship: Anmälan, anonymt. Distinguish source conditions and
+    actual legal roles; all figures are symbolic and do not identify a real parent, client, victim or
+    child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - Anmälan
+  - anonymt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0346-s003.wav
+  start_seconds: 153.0
+  end_seconds: 156.204354
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0347-s001
+  sv: Anmälningar till barnskyddet görs till exempel om ett barn använder rusmedel, är självdestruktivt,
+    kontinuerligt missköter skolan eller om det finns en misstanke om att barnet till exempel blir slaget.
+  ru: Уведомления в службу защиты детей подают, например, если ребёнок употребляет психоактивные вещества,
+    склонен причинять себе вред, постоянно пренебрегает учёбой или есть подозрение, что его, например,
+    бьют.
+  scene_id: scene-6
+  visual_cue: 'Exact-source pictorial relationship: Anmälningar, ett barn, missköter skolan. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - Anmälningar
+  - ett barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0347-s001.wav
+  start_seconds: 158.666667
+  end_seconds: 175.245714
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0348-s001
+  sv: Om en barnskyddsanmälan har gjorts om en familj, är den sociala myndigheten skyldig att utreda huruvida
+    barnet eller den unga behöver skydd, hjälp eller stöd.
+  ru: Если в отношении семьи подано уведомление в службу защиты детей, орган социальной защиты обязан
+    выяснить, нуждается ли ребёнок или молодой человек в защите, помощи или поддержке.
+  scene_id: scene-7
+  visual_cue: 'Exact-source pictorial relationship: barnskyddsanmälan, sociala myndigheten, skydd, hjälp
+    eller stöd. Distinguish source conditions and actual legal roles; all figures are symbolic and do
+    not identify a real parent, client, victim or child in care. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - barnskyddsanmälan
+  - sociala myndigheten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0348-s001.wav
+  start_seconds: 178.0
+  end_seconds: 191.374694
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0348-s002
+  sv: I allmänhet diskuterar myndigheterna saken först med familjen.
+  ru: Обычно органы власти сначала обсуждают ситуацию с семьёй.
+  scene_id: scene-7
+  visual_cue: 'Exact-source pictorial relationship: myndigheterna, diskuterar, familjen. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - myndigheterna
+  - diskuterar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0348-s002.wav
+  start_seconds: 194.125
+  end_seconds: 199.628129
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0348-s003
+  sv: I samtalet kan en tolk användas som hjälp.
+  ru: При беседе можно воспользоваться помощью устного переводчика.
+  scene_id: scene-7
+  visual_cue: 'Exact-source pictorial relationship: samtalet, tolk, hjälp. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - samtalet
+  - hjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0348-s003.wav
+  start_seconds: 201.416667
+  end_seconds: 205.456939
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0348-s004
+  sv: En socialarbetare träffar också barnet utan föräldrarna.
+  ru: Социальный работник также встречается с ребёнком без родителей.
+  scene_id: scene-7
+  visual_cue: 'Exact-source pictorial relationship: En socialarbetare, barnet, utan föräldrarna. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - En socialarbetare
+  - barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0348-s004.wav
+  start_seconds: 207.208333
+  end_seconds: 212.572143
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0349-s001
+  sv: Utifrån samtalen bedömer myndigheterna huruvida familjen behöver stöd.
+  ru: На основании бесед органы власти оценивают, нужна ли семье поддержка.
+  scene_id: scene-8
+  visual_cue: 'Exact-source pictorial relationship: samtalen, myndigheterna, familjen. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - samtalen
+  - myndigheterna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0349-s001.wav
+  start_seconds: 215.041667
+  end_seconds: 221.241395
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0349-s002
+  sv: De gör tillsammans upp en plan för barnet och familjen där man skriver in vad familjen behöver hjälp
+    med och hur hjälpen ser ut.
+  ru: Вместе они составляют план для ребёнка и семьи, в котором записывают, в чём семье нужна помощь и
+    какой она будет.
+  scene_id: scene-8
+  visual_cue: 'Exact-source pictorial relationship: en plan, barnet, familjen. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - en plan
+  - barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0349-s002.wav
+  start_seconds: 223.0
+  end_seconds: 233.588299
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0349-s003
+  sv: Den kan bestå av till exempel rådgivning, handledning och samtalshjälp.
+  ru: Помощь может включать, например, консультации, рекомендации и поддержку через беседы.
+  scene_id: scene-8
+  visual_cue: 'Exact-source pictorial relationship: rådgivning, handledning, samtalshjälp. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - rådgivning
+  - handledning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0349-s003.wav
+  start_seconds: 235.375
+  end_seconds: 241.644388
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0349-s004
+  sv: En stödperson eller stödfamilj kan utses för familjen som kan tillbringa tid med familjens barn
+    och på så sätt stödja både barnen och föräldrarna.
+  ru: Для семьи могут назначить наставника или опорную семью, которые смогут проводить время с её детьми
+    и таким образом поддерживать и детей, и родителей.
+  scene_id: scene-8
+  visual_cue: 'Exact-source pictorial relationship: stödperson, stödfamilj, barn. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - stödperson
+  - stödfamilj
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0349-s004.wav
+  start_seconds: 243.416667
+  end_seconds: 256.025102
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0349-s005
+  sv: Inom barnskyddsarbetet är det i de flesta fall fråga om öppenvårdstjänster, det vill säga barnet
+    kan fortsätta att bo hemma hos föräldrarna.
+  ru: В большинстве случаев работа по защите детей заключается в предоставлении услуг амбулаторной социальной
+    поддержки (öppenvårdstjänster), то есть ребёнок может продолжать жить дома с родителями.
+  scene_id: scene-8
+  visual_cue: 'Exact-source pictorial relationship: barnskyddsarbetet, hemma, föräldrarna. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - barnskyddsarbetet
+  - hemma
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0349-s005.wav
+  start_seconds: 258.791667
+  end_seconds: 270.773163
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0350-s001
+  sv: Vård utom hemmet betyder att ett barn placeras tillfälligt att bo någon annanstans än hos sina föräldrar
+    eller vårdnadshavare.
+  ru: Устройство ребёнка вне семьи (vård utom hemmet) означает, что его временно поселяют в другом месте,
+    а не с родителями или опекунами.
+  scene_id: scene-9
+  visual_cue: 'Exact-source pictorial relationship: ett barn, tillfälligt, någon annanstans. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - ett barn
+  - tillfälligt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0350-s001.wav
+  start_seconds: 273.541667
+  end_seconds: 284.199626
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0350-s002
+  sv: Om barnet är i omedelbar fara, kan hen placeras brådskande utanför hemmet.
+  ru: Если ребёнок находится в непосредственной опасности, его могут срочно устроить вне дома.
+  scene_id: scene-9
+  visual_cue: 'Exact-source pictorial relationship: barnet, omedelbar fara, utanför hemmet. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Harm/danger/violence is shown with a non-graphic warning, not a protection
+    approval symbol. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - barnet
+  - omedelbar fara
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0350-s002.wav
+  start_seconds: 285.958333
+  end_seconds: 292.64568
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0350-s003
+  sv: Orsaker till placeringen kan vara till exempel allvarlig utmattning hos föräldrarna, allvarliga
+    utmaningar med uppfostran, en allvarlig långtidssjukdom eller mentala problem i familjen, problematisk
+    användning av rusmedel eller familjevåld.
+  ru: Причинами устройства ребёнка вне дома могут быть, например, сильное истощение родителей, серьёзные
+    трудности в воспитании, тяжёлая длительная болезнь или проблемы с психическим здоровьем в семье, проблемное
+    употребление психоактивных веществ либо семейное насилие.
+  scene_id: scene-9
+  visual_cue: 'Exact-source pictorial relationship: föräldrarna, långtidssjukdom, familjevåld. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Harm/danger/violence is shown with a non-graphic warning, not a protection
+    approval symbol. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - föräldrarna
+  - långtidssjukdom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0350-s003.wav
+  start_seconds: 294.416667
+  end_seconds: 314.409048
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_027.png
+  render_caption: false
+  text_style:
+    sv_size: 42
+    ru_size: 34
+- sentence_id: hb-c09-u0351-s001
+  sv: En placering betyder inte nödvändigtvis omhändertagande.
+  ru: Устройство ребёнка вне дома не обязательно означает его изъятие из семьи (omhändertagande).
+  scene_id: scene-10
+  visual_cue: 'Exact-source pictorial relationship: placering, inte nödvändigtvis, omhändertagande. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - placering
+  - inte nödvändigtvis
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0351-s001.wav
+  start_seconds: 317.166667
+  end_seconds: 322.182177
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0351-s002
+  sv: Ett omhändertagande kan göras om ingenting annat hjälper.
+  ru: Ребёнка могут изъять из семьи, если ничто другое не помогает.
+  scene_id: scene-10
+  visual_cue: 'Exact-source pictorial relationship: omhändertagande, ingenting annat hjälper. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - omhändertagande
+  - ingenting annat hjälper
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0351-s002.wav
+  start_seconds: 323.958333
+  end_seconds: 329.113163
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0351-s003
+  sv: Det innebär att myndigheterna övertar ansvaret för omsorgen om och uppfostran av barnet.
+  ru: Это означает, что органы власти берут на себя ответственность за заботу о ребёнке и его воспитание.
+  scene_id: scene-10
+  visual_cue: 'Exact-source pictorial relationship: myndigheterna, omsorgen, barnet. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - myndigheterna
+  - omsorgen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0351-s003.wav
+  start_seconds: 330.875
+  end_seconds: 338.676905
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0351-s004
+  sv: Omhändertagande är myndigheternas sista alternativ för att skydda ett barn.
+  ru: Изъятие ребёнка из семьи — крайняя мера, к которой прибегают органы власти для его защиты.
+  scene_id: scene-10
+  visual_cue: 'Exact-source pictorial relationship: Omhändertagande, sista alternativ, ett barn. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - Omhändertagande
+  - sista alternativ
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0351-s004.wav
+  start_seconds: 340.458333
+  end_seconds: 347.285
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s001
+  sv: Om ett barn placeras utanför hemmet, tar välfärdsområdets barnskyddsmyndigheter hand om hen.
+  ru: Если ребёнка устраивают вне дома, о нём заботятся органы защиты детей региона по обеспечению благополучия
+    населения.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: barn, utanför hemmet, barnskyddsmyndigheter. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - utanför hemmet
+  - barnskyddsmyndigheter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s001.wav
+  start_seconds: 349.75
+  end_seconds: 357.969864
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s002
+  sv: Barnet placeras att bo i ett familjehem eller på ett barn- eller ungdomshem.
+  ru: Ребёнка помещают в приёмную семью, детский дом или учреждение для проживания молодёжи.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: Barnet, familjehem, barn- eller ungdomshem. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - Barnet
+  - familjehem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s002.wav
+  start_seconds: 359.75
+  end_seconds: 366.228367
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s003
+  sv: En placering är alltid tillfällig.
+  ru: Устройство ребёнка вне дома всегда временно.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: placering, tillfällig. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - placering
+  - tillfällig
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s003.wav
+  start_seconds: 368.0
+  end_seconds: 371.343673
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s004
+  sv: Myndigheterna utvärderar regelbundet huruvida barnet kan återvända hem till sin familj.
+  ru: Органы власти регулярно оценивают, может ли ребёнок вернуться домой к своей семье.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: Myndigheterna, regelbundet, återvända hem. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - Myndigheterna
+  - regelbundet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s004.wav
+  start_seconds: 373.125
+  end_seconds: 380.787585
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s005
+  sv: Om situationen hemma lugnar sig snabbt, kan vården utom hemmet bli kortvarig.
+  ru: Если обстановка дома быстро успокаивается, пребывание ребёнка вне семьи может оказаться недолгим.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: hemma, snabbt, kortvarig. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - hemma
+  - snabbt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s005.wav
+  start_seconds: 382.541667
+  end_seconds: 389.368333
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_036.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s006
+  sv: Ibland är ändå familjens problem långvariga.
+  ru: Но иногда проблемы семьи сохраняются надолго.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: familjens, långvariga. Distinguish source conditions
+    and actual legal roles; all figures are symbolic and do not identify a real parent, client, victim
+    or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_037
+  text_highlights:
+  - familjens
+  - långvariga
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s006.wav
+  start_seconds: 391.125
+  end_seconds: 395.443912
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_037.png
+  render_caption: false
+- sentence_id: hb-c09-u0352-s007
+  sv: Då kan vården utom hemmet eller omhändertagandet fortsätta tills barnet blir myndigt och flyttar
+    till en egen bostad.
+  ru: Тогда пребывание ребёнка вне семьи в рамках устройства вне дома или изъятия может продолжаться до
+    его совершеннолетия и переезда в отдельное жильё.
+  scene_id: scene-11
+  visual_cue: 'Exact-source pictorial relationship: omhändertagandet, myndigt, egen bostad. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_038
+  text_highlights:
+  - omhändertagandet
+  - myndigt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0352-s007.wav
+  start_seconds: 397.208333
+  end_seconds: 406.751735
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_038.png
+  render_caption: false
+- sentence_id: hb-c09-u0353-s001
+  sv: Målet för barnskyddet är alltid att barnet ska kunna bo hemma hos sina föräldrar.
+  ru: Цель защиты детей всегда состоит в том, чтобы ребёнок мог жить дома со своими родителями.
+  scene_id: scene-12
+  visual_cue: 'Exact-source pictorial relationship: barnskyddet, barnet, hemma hos sina föräldrar. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_039
+  text_highlights:
+  - barnskyddet
+  - barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0353-s001.wav
+  start_seconds: 409.208333
+  end_seconds: 416.17432
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_039.png
+  render_caption: false
+- sentence_id: hb-c09-u0353-s002
+  sv: Också under vård utom hemmet eller ett omhändertagande arbetar barnskyddsmyndigheterna tillsammans
+    med familjen.
+  ru: Органы защиты детей сотрудничают с семьёй и в период, когда ребёнок устроен вне семьи или изъят
+    из неё.
+  scene_id: scene-12
+  visual_cue: 'Exact-source pictorial relationship: barnskyddsmyndigheterna, tillsammans, familjen. Distinguish
+    source conditions and actual legal roles; all figures are symbolic and do not identify a real parent,
+    client, victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_040
+  text_highlights:
+  - barnskyddsmyndigheterna
+  - tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0353-s002.wav
+  start_seconds: 417.958333
+  end_seconds: 427.362415
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_040.png
+  render_caption: false
+- sentence_id: hb-c09-u0353-s003
+  sv: Tanken är att hjälpa familjen så att det är tryggt för barnet att återvända hem.
+  ru: Задача — помочь семье, чтобы ребёнок мог безопасно вернуться домой.
+  scene_id: scene-12
+  visual_cue: 'Exact-source pictorial relationship: familjen, tryggt, återvända hem. Distinguish source
+    conditions and actual legal roles; all figures are symbolic and do not identify a real parent, client,
+    victim or child in care. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_041
+  text_highlights:
+  - familjen
+  - tryggt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnskydd/narration/hb-c09-u0353-s003.wav
+  start_seconds: 429.125
+  end_seconds: 436.021327
+  display_segments: []
+  render_image: studio/media/hb-c09-barnskydd/pictures/picture_041.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-barnskydd/sources/music-bed.flac
+  background_image: studio/media/hb-c09-barnskydd/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.344642857142857
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Pikkukadun puutalo, Vaasa.jpg — Jani Hakomäki · CC BY-SA 4.0
+    - Night on the Docks - Piano — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Pikkukadun_puutalo,_Vaasa.jpg
+    description: Puutalo Pikkukadulla, kuvattu raiteiden puolelta kevyen liikenteen polulla.
+    license: CC BY-SA 4.0

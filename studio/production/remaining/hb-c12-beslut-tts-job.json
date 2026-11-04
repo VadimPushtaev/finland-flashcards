@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c12-beslut",
+  "stage": "tts",
+  "state": "studio/production/remaining/hb-c12-beslut-tts-state.json",
+  "log": "studio/production/remaining/hb-c12-beslut-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c12-beslut",
+    "--all",
+    "--output",
+    "studio/media/hb-c12-beslut/narration"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c12-beslut/narration/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c12-beslut/narration/metrics.json"
+  ]
+}

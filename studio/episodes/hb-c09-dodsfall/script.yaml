@@ -1,0 +1,1186 @@
+schema_version: 1
+section_id: hb-c09-dodsfall
+chapter_id: hb-c09
+title_sv: Dödsfall, obduktion och organdonation
+title_ru: Смерть, вскрытие и донорство органов
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-dodsfall.yaml
+example_only: false
+source_section_sha256: fb07120662eae2fa056fe961c15e68e3ceefdae83e59404bbe6d2f5251e1b842
+translation_file_sha256: bb2443bbd5b9af7ea290039655e44daaf4ab2f4a34f0d55e525d8c692df3cf51
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Calm non-graphic administration sequence distinguishes death confirmation, funeral permission
+    and death certificate; medical versus forensic consent and donation opt-out/recorded wishes stay explicit.
+    No body or clinical procedure is pictured.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Vanha venäläinen hautausmaa Helsinki 2022-09-19 01.jpg by Leonhard Lenz continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=2.648511904761905. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Music for Funeral Home - Part 11 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this
+    subchapter’s distinct instrumental track. Original master 453.329 seconds; prepared lossless stereo
+    bed 370.792 seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the
+    accepted +2 dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full
+    attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: När en människa avlider måste familjen och släkten trots sorgen ta itu med många olika
+    saker.
+- id: scene-2
+  description: Dödsfall konstateras alltid av läkare.
+- id: scene-3
+  description: En dödsattest är ett dokument som anger orsaken till ett dödsfall.
+- id: scene-4
+  description: Om dödsorsaken inte är klar, ska den avlidne obduceras.
+- id: scene-5
+  description: En medicinsk utredning av dödsorsak utförs av en läkare.
+- id: scene-6
+  description: Polisen ansvarar för rättsmedicinska utredningar av dödsorsak.
+- id: scene-7
+  description: Organdonation innebär att en människa ger organen och vävnaderna i sin kropp till andra
+    människor efter sin död.
+- id: scene-8
+  description: Enligt finsk lag är varje människa organdonator om hen inte har motsatt sig det medan hen
+    levde.
+- id: scene-9
+  description: Man kan också testamentera sin kropp till medicinsk forskning.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: När en människa avlider måste familjen och släkten trots
+    sorgen ta itu med många olika saker.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Om dödsfallet har inträffat hemma, ska man i allmänhet
+    ringa nödcentralen, som hänvisar ärendet till en läkare eller till polisen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Läkaren konstaterar dödsfallet och avgör om orsaken till
+    det är klar eller om en obduktion ska göras av den avlidne.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Om dödsfallet är plötsligt eller inträffar på natten eller
+    på en helg, meddelar man i allmänhet polisen om det.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Dödsfall konstateras alltid av läkare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Läkaren ger familjen begravningstillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Läkaren skickar också information om dödsfallet till befolkningsdatasystemet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Myndigheterna, såsom FPA, och till exempel den avlidnes
+    bank och arbetspensionsförsäkringsbolag får informationen från befolkningsdatasystemet, men ofta är
+    det ändå bra att kontakta dessa aktörer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: De närstående ska meddela om dödsfallet till den avlidnes
+    eventuella arbetsgivare, till husbolagets disponent och hyresvärden och till bland annat elbolaget
+    och telefonbolaget.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: En dödsattest är ett dokument som anger orsaken till ett
+    dödsfall.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland skriver läkaren dödsattesten först månader efter
+    dödsfallet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Familjen behöver inte dödsattesten när de uträttar ärenden
+    hos olika myndigheter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Dödsattesten behövs närmast om familjen måste sköta livförsäkringsärenden
+    för den avlidne.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Om dödsorsaken inte är klar, ska den avlidne obduceras.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Vid en obduktion tar läkaren reda på varför personen dog.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Kroppen kan inte begravas innan dödsorsaken har utretts.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: En obduktion kan vara medicinsk eller rättsmedicinsk.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: En medicinsk utredning av dödsorsak utförs av en läkare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: En sådan görs om en människas död beror på en sjukdom.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Då är en utredning av dödsorsaken till allmän nytta för
+    hälso- och sjukvården.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Familjen måste ge sitt tillstånd till medicinsk obduktion.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Den kan inte göras utan tillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Polisen ansvarar för rättsmedicinska utredningar av dödsorsak.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Polisen beordrar att en rättsmedicinsk obduktion ska utföras
+    om ett dödsfall inte beror på en sjukdom, om det har inträffat plötsligt eller om dödsfallet har inträffat
+    i samband med en olycka, ett brott eller självmord.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Polisen behöver inte familjens tillstånd och familjen
+    kan inte vägra obduktionen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Organdonation innebär att en människa ger organen och
+    vävnaderna i sin kropp till andra människor efter sin död.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: De donerade organen kan rädda en annan människas liv eller
+    förbättra någons hälsa.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt finsk lag är varje människa organdonator om hen
+    inte har motsatt sig det medan hen levde.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Om man överväger organdonation, försöker läkaren ta reda
+    på vad den avlidnes vilja skulle ha varit i frågan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Man antar ändå att personen skulle ha samtyckt till organdonation
+    om man inte känner till att hen varit emot det.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Om en person vill kan hen göra upp ett organdonationstestamente
+    före sin död.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Av det framgår personens vilja tydligt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: Familjen kan inte vägra organdonation om personen själv
+    har önskat donera sina organ.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan också testamentera sin kropp till medicinsk forskning.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Då måste man underteckna ett avtal där man förbinder sig
+    att ge sin kropp till undervisningsbruk efter döden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0387-s001
+  sv: När en människa avlider måste familjen och släkten trots sorgen ta itu med många olika saker.
+  ru: Когда человек умирает, семье и родственникам, несмотря на горе, приходится заниматься множеством
+    разных дел.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of familjen, sorgen, många olika saker. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - familjen
+  - sorgen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0387-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.400204
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0387-s002
+  sv: Om dödsfallet har inträffat hemma, ska man i allmänhet ringa nödcentralen, som hänvisar ärendet
+    till en läkare eller till polisen.
+  ru: Если смерть наступила дома, обычно нужно позвонить в центр экстренной помощи, который передаст дело
+    врачу или полиции.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of hemma, nödcentralen, en läkare. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - hemma
+  - nödcentralen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0387-s002.wav
+  start_seconds: 13.166667
+  end_seconds: 24.312245
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0387-s003
+  sv: Läkaren konstaterar dödsfallet och avgör om orsaken till det är klar eller om en obduktion ska göras
+    av den avlidne.
+  ru: Врач констатирует смерть и определяет, ясна ли её причина или необходимо провести вскрытие тела
+    умершего.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of Läkaren, dödsfallet, obduktion. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - Läkaren
+  - dödsfallet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0387-s003.wav
+  start_seconds: 26.083333
+  end_seconds: 36.392993
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0387-s004
+  sv: Om dödsfallet är plötsligt eller inträffar på natten eller på en helg, meddelar man i allmänhet
+    polisen om det.
+  ru: Если смерть наступила внезапно, ночью или в выходные, о ней обычно сообщают полиции.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of plötsligt, en helg, polisen. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - plötsligt
+  - en helg
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0387-s004.wav
+  start_seconds: 38.166667
+  end_seconds: 47.779728
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0388-s001
+  sv: Dödsfall konstateras alltid av läkare.
+  ru: Смерть всегда констатирует врач.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of Dödsfall, läkare. All source conditions remain
+    in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical procedure,
+    national stereotype or invented number. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - Dödsfall
+  - läkare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0388-s001.wav
+  start_seconds: 50.25
+  end_seconds: 54.290272
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0388-s002
+  sv: Läkaren ger familjen begravningstillstånd.
+  ru: Врач выдаёт семье разрешение на похороны.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of Läkaren, begravningstillstånd, familjen. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - Läkaren
+  - begravningstillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0388-s002.wav
+  start_seconds: 56.041667
+  end_seconds: 59.942619
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0388-s003
+  sv: Läkaren skickar också information om dödsfallet till befolkningsdatasystemet.
+  ru: Врач также передаёт сведения о смерти в систему информации о населении.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of Läkaren, dödsfallet, befolkningsdatasystemet.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - Läkaren
+  - dödsfallet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0388-s003.wav
+  start_seconds: 61.708333
+  end_seconds: 68.67432
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0388-s004
+  sv: Myndigheterna, såsom FPA, och till exempel den avlidnes bank och arbetspensionsförsäkringsbolag
+    får informationen från befolkningsdatasystemet, men ofta är det ändå bra att kontakta dessa aktörer.
+  ru: Органы власти, такие как Ведомство социального обеспечения (FPA), а также, например, банк умершего
+    и его страховая компания по трудовому пенсионному страхованию получают эти сведения из системы информации
+    о населении, но часто всё же полезно связаться с этими организациями.
+  scene_id: scene-2
+  visual_cue: Verified Kela office illustrates the source institutional recipient of population-system
+    information. No death, person, office opening or case is inferred. The complete source photograph
+    is shown with its source-identity caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - befolkningsdatasystemet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0388-s004.wav
+  start_seconds: 70.458333
+  end_seconds: 87.38568
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_008.png
+  render_caption: false
+  text_style:
+    sv_size: 46
+    ru_size: 38
+- sentence_id: hb-c09-u0388-s005
+  sv: De närstående ska meddela om dödsfallet till den avlidnes eventuella arbetsgivare, till husbolagets
+    disponent och hyresvärden och till bland annat elbolaget och telefonbolaget.
+  ru: Близкие должны сообщить о смерти работодателю умершего, если он был, управляющему жилищной компании
+    и арендодателю, а также, среди прочих, электроснабжающей и телефонной компаниям.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of De närstående, arbetsgivare, hyresvärden. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - De närstående
+  - arbetsgivare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0388-s005.wav
+  start_seconds: 90.166667
+  end_seconds: 104.795238
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0389-s001
+  sv: En dödsattest är ett dokument som anger orsaken till ett dödsfall.
+  ru: Медицинское свидетельство о смерти — это документ, в котором указана причина смерти.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of dödsattest, orsaken. All source conditions remain
+    in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical procedure,
+    national stereotype or invented number. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - dödsattest
+  - orsaken
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0389-s001.wav
+  start_seconds: 107.583333
+  end_seconds: 113.434762
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0389-s002
+  sv: Ibland skriver läkaren dödsattesten först månader efter dödsfallet.
+  ru: Иногда врач оформляет медицинское свидетельство о смерти лишь спустя месяцы после смерти.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of läkaren, dödsattesten, månader efter dödsfallet.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - läkaren
+  - dödsattesten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0389-s002.wav
+  start_seconds: 115.208333
+  end_seconds: 121.199082
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0389-s003
+  sv: Familjen behöver inte dödsattesten när de uträttar ärenden hos olika myndigheter.
+  ru: Семье не требуется медицинское свидетельство о смерти для ведения дел в различных органах власти.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of Familjen, dödsattesten, myndigheter. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - Familjen
+  - dödsattesten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0389-s003.wav
+  start_seconds: 122.958333
+  end_seconds: 129.99398
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0389-s004
+  sv: Dödsattesten behövs närmast om familjen måste sköta livförsäkringsärenden för den avlidne.
+  ru: Медицинское свидетельство о смерти требуется главным образом в том случае, если семье необходимо
+    решить вопросы, связанные со страхованием жизни умершего.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of familjen, Dödsattesten, livförsäkringsärenden.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - familjen
+  - Dödsattesten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0389-s004.wav
+  start_seconds: 131.75
+  end_seconds: 139.760884
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0390-s001
+  sv: Om dödsorsaken inte är klar, ska den avlidne obduceras.
+  ru: Если причина смерти неясна, необходимо провести вскрытие тела умершего.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of dödsorsaken inte är klar, obduceras. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - dödsorsaken inte är klar
+  - obduceras
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0390-s001.wav
+  start_seconds: 142.25
+  end_seconds: 147.54415
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0390-s002
+  sv: Vid en obduktion tar läkaren reda på varför personen dog.
+  ru: При вскрытии врач выясняет, почему человек умер.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of obduktion, läkaren, varför personen dog. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - obduktion
+  - läkaren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0390-s002.wav
+  start_seconds: 149.333333
+  end_seconds: 154.488163
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0390-s003
+  sv: Kroppen kan inte begravas innan dödsorsaken har utretts.
+  ru: Тело нельзя похоронить, пока причина смерти не установлена.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of begravas, innan dödsorsaken har utretts. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - begravas
+  - innan dödsorsaken har utretts
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0390-s003.wav
+  start_seconds: 156.25
+  end_seconds: 161.33517
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0390-s004
+  sv: En obduktion kan vara medicinsk eller rättsmedicinsk.
+  ru: Вскрытие может быть медицинским или судебно-медицинским.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of medicinsk, rättsmedicinsk, obduktion. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - medicinsk
+  - rättsmedicinsk
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0390-s004.wav
+  start_seconds: 163.125
+  end_seconds: 168.07085
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0391-s001
+  sv: En medicinsk utredning av dödsorsak utförs av en läkare.
+  ru: Медицинское установление причины смерти проводит врач.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of medicinsk utredning, läkare. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - medicinsk utredning
+  - läkare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0391-s001.wav
+  start_seconds: 170.541667
+  end_seconds: 175.905476
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0391-s002
+  sv: En sådan görs om en människas död beror på en sjukdom.
+  ru: Оно проводится, если смерть человека вызвана заболеванием.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of en människa, sjukdom. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - en människa
+  - sjukdom
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0391-s002.wav
+  start_seconds: 177.666667
+  end_seconds: 182.821497
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0391-s003
+  sv: Då är en utredning av dödsorsaken till allmän nytta för hälso- och sjukvården.
+  ru: В таком случае установление причины смерти приносит пользу здравоохранению в целом.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of utredning av dödsorsaken, hälso- och sjukvården.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - utredning av dödsorsaken
+  - hälso- och sjukvården
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0391-s003.wav
+  start_seconds: 184.583333
+  end_seconds: 191.54932
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0391-s004
+  sv: Familjen måste ge sitt tillstånd till medicinsk obduktion.
+  ru: Семья должна дать согласие на медицинское вскрытие.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of Familjen, tillstånd, medicinsk obduktion. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - Familjen
+  - tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0391-s004.wav
+  start_seconds: 193.333333
+  end_seconds: 198.557823
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0391-s005
+  sv: Den kan inte göras utan tillstånd.
+  ru: Без согласия его проводить нельзя.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of Den, utan tillstånd. All source conditions remain
+    in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical procedure,
+    national stereotype or invented number. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - utan tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0391-s005.wav
+  start_seconds: 200.333333
+  end_seconds: 203.537687
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0392-s001
+  sv: Polisen ansvarar för rättsmedicinska utredningar av dödsorsak.
+  ru: За судебно-медицинское установление причин смерти отвечает полиция.
+  scene_id: scene-6
+  visual_cue: Verified Finnish police station illustrates the named institutional responsibility for forensic
+    death investigation. No photographed deceased person or actual incident is inferred. The complete
+    source photograph is shown with its source-identity caption; no sensitive personal attributes are
+    inferred.
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - Polisen
+  - rättsmedicinska utredningar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0392-s001.wav
+  start_seconds: 206.0
+  end_seconds: 211.921088
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0392-s002
+  sv: Polisen beordrar att en rättsmedicinsk obduktion ska utföras om ett dödsfall inte beror på en sjukdom,
+    om det har inträffat plötsligt eller om dödsfallet har inträffat i samband med en olycka, ett brott
+    eller självmord.
+  ru: Полиция назначает судебно-медицинское вскрытие, если смерть не вызвана заболеванием, если она наступила
+    внезапно или в связи с несчастным случаем, преступлением либо самоубийством.
+  scene_id: scene-6
+  visual_cue: Individually composed source explanation of Polisen, rättsmedicinsk obduktion, plötsligt.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - Polisen
+  - rättsmedicinsk obduktion
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0392-s002.wav
+  start_seconds: 213.708333
+  end_seconds: 232.028878
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0392-s003
+  sv: Polisen behöver inte familjens tillstånd och familjen kan inte vägra obduktionen.
+  ru: Полиции не требуется согласие семьи, и семья не может отказаться от вскрытия.
+  scene_id: scene-6
+  visual_cue: Individually composed source explanation of Polisen, familjens tillstånd. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - Polisen
+  - familjens tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0392-s003.wav
+  start_seconds: 234.791667
+  end_seconds: 241.757653
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0393-s001
+  sv: Organdonation innebär att en människa ger organen och vävnaderna i sin kropp till andra människor
+    efter sin död.
+  ru: Донорство органов означает, что после смерти человек передаёт органы и ткани своего тела другим
+    людям.
+  scene_id: scene-7
+  visual_cue: Individually composed source explanation of en människa, organen och vävnaderna, andra människor.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - en människa
+  - organen och vävnaderna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0393-s001.wav
+  start_seconds: 244.208333
+  end_seconds: 253.821395
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0393-s002
+  sv: De donerade organen kan rädda en annan människas liv eller förbättra någons hälsa.
+  ru: Пожертвованные органы могут спасти жизнь другого человека или улучшить чьё-то здоровье.
+  scene_id: scene-7
+  visual_cue: Individually composed source explanation of donerade organen, liv, annan människa. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - donerade organen
+  - annan människa
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0393-s002.wav
+  start_seconds: 255.583333
+  end_seconds: 262.758299
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s001
+  sv: Enligt finsk lag är varje människa organdonator om hen inte har motsatt sig det medan hen levde.
+  ru: По финскому закону каждый человек является донором органов, если при жизни он не возражал против
+    этого.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of finsk lag, organdonator, inte har motsatt sig.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - finsk lag
+  - organdonator
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s001.wav
+  start_seconds: 265.208333
+  end_seconds: 273.219218
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s002
+  sv: Om man överväger organdonation, försöker läkaren ta reda på vad den avlidnes vilja skulle ha varit
+    i frågan.
+  ru: Если рассматривается возможность донорства органов, врач пытается выяснить, какова была бы воля
+    умершего по этому вопросу.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of läkaren, den avlidnes vilja, organdonation.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - läkaren
+  - den avlidnes vilja
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s002.wav
+  start_seconds: 275.0
+  end_seconds: 284.682721
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s003
+  sv: Man antar ändå att personen skulle ha samtyckt till organdonation om man inte känner till att hen
+    varit emot det.
+  ru: Тем не менее предполагается, что человек согласился бы на донорство органов, если неизвестно, что
+    он был против.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of personen, samtyckt, organdonation. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - personen
+  - samtyckt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s003.wav
+  start_seconds: 286.458333
+  end_seconds: 295.862415
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s004
+  sv: Om en person vill kan hen göra upp ett organdonationstestamente före sin död.
+  ru: При желании человек может ещё при жизни составить завещание о донорстве органов (organdonationstestamente).
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of en person, organdonationstestamente. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - en person
+  - organdonationstestamente
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s004.wav
+  start_seconds: 297.625
+  end_seconds: 304.521327
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s005
+  sv: Av det framgår personens vilja tydligt.
+  ru: В нём ясно выражена воля человека.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of Av det, personens vilja. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - Av det
+  - personens vilja
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s005.wav
+  start_seconds: 306.291667
+  end_seconds: 310.122959
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0394-s006
+  sv: Familjen kan inte vägra organdonation om personen själv har önskat donera sina organ.
+  ru: Семья не может отказаться от донорства органов, если сам человек хотел пожертвовать свои органы.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of Familjen, kan inte vägra, organdonation. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - Familjen
+  - kan inte vägra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0394-s006.wav
+  start_seconds: 311.875
+  end_seconds: 319.676905
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0395-s001
+  sv: Man kan också testamentera sin kropp till medicinsk forskning.
+  ru: Можно также завещать своё тело для медицинских исследований.
+  scene_id: scene-9
+  visual_cue: Individually composed source explanation of testamentera, sin kropp, medicinsk forskning.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - testamentera
+  - sin kropp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0395-s001.wav
+  start_seconds: 322.166667
+  end_seconds: 327.739456
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0395-s002
+  sv: Då måste man underteckna ett avtal där man förbinder sig att ge sin kropp till undervisningsbruk
+    efter döden.
+  ru: Тогда необходимо подписать договор, в котором человек обязуется передать своё тело после смерти
+    для использования в учебных целях.
+  scene_id: scene-9
+  visual_cue: Individually composed source explanation of underteckna ett avtal, sin kropp, undervisningsbruk.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - underteckna ett avtal
+  - sin kropp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-dodsfall/narration/hb-c09-u0395-s002.wav
+  start_seconds: 329.5
+  end_seconds: 338.555782
+  display_segments: []
+  render_image: studio/media/hb-c09-dodsfall/pictures/picture_035.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-dodsfall/sources/music-bed.flac
+  background_image: studio/media/hb-c09-dodsfall/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.648511904761905
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Finland – Lärobok i samhällsorientering
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Vanha venäläinen hautausmaa Helsinki 2022-09-19 01.jpg — Leonhard Lenz · CC0
+    - Music for Funeral Home - Part 11 — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Vanha_ven%C3%A4l%C3%A4inen_hautausmaa_Helsinki_2022-09-19_01.jpg
+    description: Vanha venäläinen hautausmaa park in Helsinki.
+    license: CC0

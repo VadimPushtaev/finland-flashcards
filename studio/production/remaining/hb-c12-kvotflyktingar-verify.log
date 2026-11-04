@@ -1,0 +1,72 @@
+2026-11-03T10:51:20.318125+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:51:53.846034+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:52:27.436621+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:52:57.438194+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:53:31.022911+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:54:04.608363+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:54:38.193564+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:55:11.792743+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:55:41.794636+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:56:19.642743+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:56:53.233320+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:57:26.856277+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+2026-11-03T10:58:00.421264+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-kvotflyktingar
+hb-c12-kvotflyktingar 17 current-take hashes checked; 2 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-kvotflyktingar
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+picture-016 1 files verified
+picture-017 1 files verified
+music_bed 2 files verified
+narration 17 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-kvotflyktingar --save-frames
+2026-11-03T10:58:33.994330+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+{
+  "background_boundary_max_mean_pixel_change": 1.4212929010391235,
+  "full_decode": "passed",
+  "decoded_video_frames": 5152,
+  "decoded_audio_seconds": 214.666,
+  "decoded_audio_peak": 0.6897542476654053,
+  "frame_exports": 20,
+  "source_sentences": 17,
+  "output": "videos/homebrew/hb-c12-14-kvotflyktingar.mp4",
+  "sha256": "d228e15169a9d12fa75cafe3f0d525f496431bc020dfb7fc97f8aefc0e754afa",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 17.75864601135254,
+    "10.0": 23.26102066040039
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998414333973966,
+    "relative_rms_error": 0.017856911032169378,
+    "mix_sha256": "6a7c1c82ca345b3536e34b247667eb49a599cecc9ea13df2af2b4ab2406742b1"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-kvotflyktingar --ready
+2026-11-03T10:59:03.996276+00:00 hb-c12-kvotflyktingar verify: PID 341002 running
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-kvotflyktingar --ready
+PASS: 17 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-kvotflyktingar --require-target
+hb-c12-kvotflyktingar: 100.0% of body duration; 17/17 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-kvotflyktingar
+hb-c12-kvotflyktingar: 17 distinct picture sources / 17 sentence slides; 17 pictured slides
+{"section_id": "hb-c12-kvotflyktingar", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-14-kvotflyktingar.mp4", "sha256": "d228e15169a9d12fa75cafe3f0d525f496431bc020dfb7fc97f8aefc0e754afa", "seconds": 214.66666666666666, "source_sentences": 17, "source_section_sha256": "5d77d0519097b736a912221466826d60765745b184e2b3fc6b37a042fd1f7ad6", "translation_file_sha256": "0885745677fc8c7a4d117856eb86aa1969b9570d8068c0c020fe05bb7503eb71", "picture_fraction": 1.0, "distinct_picture_sources": 17, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-kvotflyktingar", "stage": "verify", "status": "finished", "supervisor_pid": 341001, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-kvotflyktingar"], "started_at": "2026-11-03T10:50:46.671065+00:00", "log": "studio/production/remaining/hb-c12-kvotflyktingar-verify.log", "pid": 341002, "heartbeat_at": "2026-11-03T10:59:03.994594+00:00", "returncode": 0, "finished_at": "2026-11-03T10:59:14.631521+00:00", "missing_outputs": []}

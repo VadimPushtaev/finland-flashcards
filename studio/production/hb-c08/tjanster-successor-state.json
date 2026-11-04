@@ -1,0 +1,83 @@
+{
+  "supervisor_pid": 302859,
+  "section_id": "hb-c12-tjanster",
+  "status": "launched",
+  "started_at": "2026-11-03T09:36:25.295618+00:00",
+  "expected_predecessor_supervisor": 290200,
+  "heartbeat_at": "2026-11-03T09:41:37.588917+00:00",
+  "export_supervisor_pid": 306005,
+  "launched_at": "2026-11-03T09:42:16.282484+00:00",
+  "predecessor": {
+    "section_id": "hb-c08-vuxna",
+    "supervisor_pid": 290200,
+    "started_at": "2026-11-03T09:10:31.998552+00:00",
+    "status": "running",
+    "stages": {
+      "assets-validate": {
+        "status": "complete",
+        "pid": 290201,
+        "log": "studio/production/hb-c08/hb-c08-vuxna-assets-validate.log",
+        "started_at": "2026-11-03T09:10:31.999961+00:00",
+        "exit_code": 0,
+        "completed_at": "2026-11-03T09:10:35.875837+00:00"
+      },
+      "render": {
+        "status": "complete",
+        "pid": 290256,
+        "log": "studio/production/hb-c08/hb-c08-vuxna-render.log",
+        "started_at": "2026-11-03T09:10:35.878019+00:00",
+        "exit_code": 0,
+        "completed_at": "2026-11-03T09:41:45.697234+00:00"
+      },
+      "verify": {
+        "status": "running",
+        "pid": 305705,
+        "log": "studio/production/hb-c08/hb-c08-vuxna-verify.log",
+        "started_at": "2026-11-03T09:41:45.704102+00:00"
+      }
+    }
+  },
+  "prior_full_renderers": [
+    "293112  293111 studio/runtime/.venv/bin/python studio/tools/render.py hb-c10-psykisk",
+    "299674  299673 studio/runtime/.venv/bin/python studio/tools/render.py hb-c11-bostadsbidrag",
+    "302948  302947 studio/runtime/.venv/bin/python studio/tools/render.py hb-c11-fritid",
+    "304625  304623 studio/runtime/.venv/bin/python studio/tools/render.py hb-c09-kon"
+  ],
+  "max_full_encoders": 5,
+  "frozen_inputs": {
+    "section_id": "hb-c12-tjanster",
+    "frozen_at": "2026-11-03T08:56:41.200855+00:00",
+    "seconds": 725.7916666666666,
+    "input_snapshots": {
+      "script": {
+        "path": "studio/episodes/hb-c12-tjanster/script.yaml",
+        "sha256": "e3b7e5f4ca2b5429404d28ec3e019bef76a0141c965d1a9ada68ecb2e5a56af7",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c12-tjanster/script-e3b7e5f4ca2b5429404d28ec3e019bef76a0141c965d1a9ada68ecb2e5a56af7.yaml"
+      },
+      "assets": {
+        "path": "studio/episodes/hb-c12-tjanster/assets.yaml",
+        "sha256": "4f4bdb135f308418537b5b811dfb1dd843c115df2f241b60a1cec1a7a2c95f21",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c12-tjanster/assets-4f4bdb135f308418537b5b811dfb1dd843c115df2f241b60a1cec1a7a2c95f21.yaml"
+      },
+      "timeline": {
+        "path": "studio/media/hb-c12-tjanster/render/timeline.json",
+        "sha256": "280888125107e949f823157de73268c431cd706efbc4c21576802b27865edd2c",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c12-tjanster/timeline-280888125107e949f823157de73268c431cd706efbc4c21576802b27865edd2c.json"
+      },
+      "producer_preflight": {
+        "path": "studio/episodes/hb-c12-tjanster/producer-preflight-review.json",
+        "sha256": "06261f7d9953523cbd0bf3807706344b056d9a880a952a365696cdc4622de5e8",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c12-tjanster/producer_preflight-06261f7d9953523cbd0bf3807706344b056d9a880a952a365696cdc4622de5e8.json"
+      }
+    },
+    "authorization": "Reviewed immutable inputs only; central assigned slot/live budget check required before full export.",
+    "prior_metadata_bound_preflight": [
+      {
+        "path": "studio/episodes/hb-c12-tjanster/producer-preflight-review.json",
+        "sha256": "9642aa4625ab8b75f2af3bbe08d6e3f4467b23eb850653f636f8e8b7fcd09c90",
+        "snapshot": "studio/production/hb-c08/freezes/hb-c12-tjanster/producer_preflight-9642aa4625ab8b75f2af3bbe08d6e3f4467b23eb850653f636f8e8b7fcd09c90.json"
+      }
+    ],
+    "metadata_amendment_proof": "studio/production/remaining/source-note-correction.json"
+  }
+}

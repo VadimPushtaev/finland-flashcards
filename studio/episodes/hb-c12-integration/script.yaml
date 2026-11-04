@@ -1,0 +1,1303 @@
+schema_version: 1
+section_id: hb-c12-integration
+chapter_id: hb-c12
+title_sv: Integration och delaktighet
+title_ru: Интеграция и включённость
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-integration.yaml
+example_only: false
+source_section_sha256: 3ceefc4b5bb26dcce12c1b4446c776a4a78ddc1a1fe333518b448029bddc5ce6
+translation_file_sha256: 1f81c92d4d10fcd35d8dfb7ff9091792ddf0d563da8e9e1d07a7bd34433fc414
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source paragraphs/list items define consecutive topic scenes. Sentence-specific objects
+    and source relationships are planned individually; no added spoken transitions or current-law updates.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter12 violet palette {''background'': ''#352e49'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d7cce7'', ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Liberation Sans
+    Bold48/Regular40 with a fixed right bilingual panel and relevant left foreground pictures.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Rauhanasema 2023 (202327;+G72587).jpg by Tuula Sipilä; Helsingin kaupunginmuseo /
+    Helsinki City Museum (archival source) continuously as decorative background, darkened 42% and blurred
+    2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=3.344642857142857. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPyseed42 per invocation,44100HzmonoPCM16;
+    initial2ONNXthreads shared with Chapter8 allocation. Exact synthesis inputs and actual seed scope
+    are retained; whole-video listening remains pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use The Forest and the Trees by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 94.248 seconds; prepared lossless stereo bed 468.250
+    seconds. Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Distinct relevant picture for nearly every body sentence slide: actual places/objects where
+    identity and license are verified, plus original pictorial diagrams for source-stated eligibility,
+    administrative steps and personal-data protections. Avoid real personal identifiers and invented legal
+    rules.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0001
+  description: Integration betyder att en människa vänjer sig vid sitt nya hemland.
+- id: hb-c12-u0002
+  description: Integration förutsätter att den nyanlända är aktiv.
+- id: hb-c12-u0003
+  description: I takt med att tiden i det nya landet går vänjer sig personen vid de nya sederna och börjar
+    förstå dem.
+- id: hb-c12-u0004
+  description: Integration betyder till exempel att en person lär sig landets språk tillräckligt bra.
+- id: hb-c12-u0005
+  description: När man i Finland pratar om integration betonar man ofta betydelsen av att få ett arbete.
+- id: hb-c12-u0006
+  description: En viktig del av integrationen är att lära känna andra människor som bor i Finland.
+- id: hb-c12-u0007
+  description: Integration innebär också att den nyanlända deltar i samhällets verksamhet på sätt som
+    passar hen själv och känner sig delaktig i det finländska samhället.
+- id: hb-c12-u0008
+  description: Till integrationen hör att den nyanlända har kännedom om det finländska samhället och den
+    finländska kulturen.
+- id: hb-c12-u0009
+  description: Integration betyder också att personen betraktar Finland som en viktig del av sitt liv
+    och sin framtid och känner samhörighet med finländarna.
+- id: hb-c12-u0010
+  description: Också det omgivande samhällets mottaglighet har betydelse för känslan av delaktighet.
+- id: hb-c12-u0011
+  description: Integration i Finland kräver att den nyanlända anpassar sig och tar till sig nya kunskaper
+    och färdigheter.
+- id: hb-c12-u0012
+  description: Invandringen till Finland var länge liten, och fortfarande bor det i Finland färre människor
+    som flyttat hit från andra länder än i många andra länder i Västeuropa.
+- id: hb-c12-u0013
+  description: Att främja mottaglighet innebär till exempel att man identifierar de strukturer i samhället
+    som skapar ojämlikhet och aktivt strävar efter att avveckla dem.
+- id: hb-c12-u0014
+  description: Finska statens målsättning är att den som flyttat till Finland känner sig som en del av
+    det finska samhället och är med och utvecklar det.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Source-specific pictorial composition association: människa / nya hemland. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-002
+  kind: foreground
+  description: 'Source-specific pictorial composition path: språket / arbete eller en studieplats. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-003
+  kind: foreground
+  description: 'Source-specific pictorial composition growth: nyanlända / aktiv. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-004
+  kind: foreground
+  description: 'Source-specific pictorial composition tools: lära sig språket / egen ansträngning. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-005
+  kind: foreground
+  description: 'Source-specific pictorial composition social: Finland / del av det finländska samhället.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-006
+  kind: foreground
+  description: 'Source-specific pictorial composition continuous: tiden / nya sederna. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-007
+  kind: foreground
+  description: 'Source-specific pictorial composition association: leva / nya miljön. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-008
+  kind: foreground
+  description: 'Source-specific pictorial composition balance: balans / båda kulturerna. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-009
+  kind: foreground
+  description: 'Source-specific pictorial composition association: viktiga / tidigare levt. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-010
+  kind: foreground
+  description: 'Source-specific pictorial composition growth: nya tankar / nya kulturen. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-011
+  kind: foreground
+  description: 'Source-specific pictorial composition language: landets språk / tillräckligt bra. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-012
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: sociala relationer / studera eller arbeta.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-013
+  kind: foreground
+  description: 'Source-specific pictorial composition target: integration / arbete. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-014
+  kind: foreground
+  description: 'Source-specific pictorial composition influence: arbete / integration. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-015
+  kind: foreground
+  description: 'Source-specific pictorial composition social: arbetet / andra människor. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-016
+  kind: foreground
+  description: 'Source-specific pictorial composition materials: ekonomiska / förbättras. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-017
+  kind: foreground
+  description: 'Source-specific pictorial composition path: studier / arbete i framtiden. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-018
+  kind: foreground
+  description: 'Source-specific pictorial composition social: lära känna / andra människor. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-019
+  kind: foreground
+  description: 'Source-specific pictorial composition association: Sociala nätverk / välbefinnande. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-020
+  kind: foreground
+  description: 'Source-specific pictorial composition support: andra länder / kamratstöd. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-021
+  kind: foreground
+  description: 'Source-specific pictorial composition social: deltar / delaktig. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-022
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: påverka / sitt liv. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-023
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: gemensam verksamhet / gemensamt beslutsfattande.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-024
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: finländska samhället / finländska kulturen.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-025
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: rättigheter / skyldigheter. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-026
+  kind: foreground
+  description: 'Source-specific pictorial composition subjects: Finlands historia / lagar och seder. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-027
+  kind: foreground
+  description: 'Source-specific pictorial composition social: Finland / samhörighet. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-028
+  kind: foreground
+  description: 'Source-specific pictorial composition social: plats i samhället / sociala nätverk. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-029
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: gemenskaper / politiken. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-030
+  kind: foreground
+  description: 'Source-specific pictorial composition support: samhällets mottaglighet / delaktighet.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-031
+  kind: foreground
+  description: 'Source-specific pictorial composition growth: nyanlända / kunskaper och färdigheter. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-032
+  kind: foreground
+  description: 'Source-specific pictorial composition growth: bor i Finland / lära sig. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-033
+  kind: foreground
+  description: 'Source-specific pictorial composition twoway: dubbelriktad integration / samhällets mottaglighet.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-034
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: Finland / Västeuropa. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-035
+  kind: foreground
+  description: 'Source-specific pictorial composition prohibited: fördomar / nyanlända. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-036
+  kind: foreground
+  description: 'Source-specific pictorial composition balance: ojämlikhet / avveckla. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-037
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: lika möjligheter / delta. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-038
+  kind: foreground
+  description: 'Source-specific pictorial composition prohibited: bekämpa rasism / dubbelriktad integration.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-039
+  kind: foreground
+  description: 'Source-specific pictorial composition target: målsättning / finska samhället. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-040
+  kind: foreground
+  description: 'Source-specific pictorial composition globe: eget språk / fosterlandet. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+sentences:
+- sentence_id: hb-c12-u0001-s001
+  sv: Integration betyder att en människa vänjer sig vid sitt nya hemland.
+  ru: Интеграция означает, что человек привыкает к своей новой родине.
+  scene_id: hb-c12-u0001
+  visual_cue: 'Source-specific pictorial composition association: människa / nya hemland. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.171088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-001.png
+- sentence_id: hb-c12-u0001-s002
+  sv: Hen lär sig språket och hittar ett arbete eller en studieplats och sin plats i samhället.
+  ru: Он учит язык, находит работу или место учёбы и своё место в обществе.
+  scene_id: hb-c12-u0001
+  visual_cue: 'Source-specific pictorial composition path: språket / arbete eller en studieplats. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0001-s002.wav
+  start_seconds: 10.958333
+  end_seconds: 18.481599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-002.png
+- sentence_id: hb-c12-u0002-s001
+  sv: Integration förutsätter att den nyanlända är aktiv.
+  ru: Интеграция предполагает активность со стороны недавно приехавшего человека.
+  scene_id: hb-c12-u0002
+  visual_cue: 'Source-specific pictorial composition growth: nyanlända / aktiv. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0002-s001.wav
+  start_seconds: 20.958333
+  end_seconds: 25.834524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-003.png
+- sentence_id: hb-c12-u0002-s002
+  sv: Att till exempel lära sig språket och hitta arbete kräver mycket egen ansträngning.
+  ru: Например, изучение языка и трудоустройство требуют значительных личных усилий.
+  scene_id: hb-c12-u0002
+  visual_cue: 'Source-specific pictorial composition tools: lära sig språket / egen ansträngning. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0002-s002.wav
+  start_seconds: 27.625
+  end_seconds: 34.730306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-004.png
+- sentence_id: hb-c12-u0002-s003
+  sv: En person som integrerat sig i Finland känner sig som en del av det finländska samhället och bidrar
+    till att forma det på sätt som passar hen själv.
+  ru: Человек, интегрировавшийся в Финляндии, чувствует себя частью финского общества и участвует в его
+    формировании подходящими для себя способами.
+  scene_id: hb-c12-u0002
+  visual_cue: 'Source-specific pictorial composition social: Finland / del av det finländska samhället.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0002-s003.wav
+  start_seconds: 36.5
+  end_seconds: 49.108435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-005.png
+- sentence_id: hb-c12-u0003-s001
+  sv: I takt med att tiden i det nya landet går vänjer sig personen vid de nya sederna och börjar förstå
+    dem.
+  ru: Со временем человек привыкает к новым обычаям в новой стране и начинает их понимать.
+  scene_id: hb-c12-u0003
+  visual_cue: 'Source-specific pictorial composition continuous: tiden / nya sederna. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0003-s001.wav
+  start_seconds: 51.583333
+  end_seconds: 60.430136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-006.png
+- sentence_id: hb-c12-u0003-s002
+  sv: Efter det är det lättare att leva i den nya miljön.
+  ru: После этого жить в новой среде становится легче.
+  scene_id: hb-c12-u0003
+  visual_cue: 'Source-specific pictorial composition association: leva / nya miljön. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0003-s002.wav
+  start_seconds: 62.208333
+  end_seconds: 66.875544
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-007.png
+- sentence_id: hb-c12-u0003-s003
+  sv: Till slut är det möjligt att hitta en balans mellan de båda kulturerna.
+  ru: В конце концов можно найти равновесие между обеими культурами.
+  scene_id: hb-c12-u0003
+  visual_cue: 'Source-specific pictorial composition balance: balans / båda kulturerna. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0003-s003.wav
+  start_seconds: 68.666667
+  end_seconds: 74.796735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-008.png
+- sentence_id: hb-c12-u0003-s004
+  sv: Vanligtvis håller människan fast vid de saker som var viktiga för hen i den kultur som hen tidigare
+    levt i.
+  ru: Обычно человек сохраняет то, что было важно для него в культуре, в которой он жил раньше.
+  scene_id: hb-c12-u0003
+  visual_cue: 'Source-specific pictorial composition association: viktiga / tidigare levt. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0003-s004.wav
+  start_seconds: 76.583333
+  end_seconds: 85.917755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-009.png
+- sentence_id: hb-c12-u0003-s005
+  sv: Samtidigt tillägnar hen sig nya tankar och tillvägagångssätt i den nya kulturen.
+  ru: Одновременно он усваивает новые идеи и способы действий, принятые в новой культуре.
+  scene_id: hb-c12-u0003
+  visual_cue: 'Source-specific pictorial composition growth: nya tankar / nya kulturen. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0003-s005.wav
+  start_seconds: 87.708333
+  end_seconds: 94.952959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-010.png
+- sentence_id: hb-c12-u0004-s001
+  sv: Integration betyder till exempel att en person lär sig landets språk tillräckligt bra.
+  ru: Интеграция означает, например, что человек достаточно хорошо овладевает языком страны.
+  scene_id: hb-c12-u0004
+  visual_cue: 'Source-specific pictorial composition language: landets språk / tillräckligt bra. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0004-s001.wav
+  start_seconds: 97.416667
+  end_seconds: 104.730952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-011.png
+- sentence_id: hb-c12-u0004-s002
+  sv: Då kan hen skapa sociala relationer, studera eller arbeta på språket.
+  ru: Тогда он может устанавливать социальные связи, учиться или работать на этом языке.
+  scene_id: hb-c12-u0004
+  visual_cue: 'Source-specific pictorial composition subjects: sociala relationer / studera eller arbeta.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0004-s002.wav
+  start_seconds: 106.5
+  end_seconds: 112.699728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-012.png
+- sentence_id: hb-c12-u0005-s001
+  sv: När man i Finland pratar om integration betonar man ofta betydelsen av att få ett arbete.
+  ru: Когда в Финляндии говорят об интеграции, часто подчёркивают важность трудоустройства.
+  scene_id: hb-c12-u0005
+  visual_cue: 'Source-specific pictorial composition target: integration / arbete. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0005-s001.wav
+  start_seconds: 115.166667
+  end_seconds: 123.177551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-013.png
+- sentence_id: hb-c12-u0005-s002
+  sv: Man anser att ett arbete å ena sidan är ett mål för integrationen och å andra sidan främjar personens
+    integration i Finland.
+  ru: Считается, что работа, с одной стороны, является целью интеграции, а с другой — способствует интеграции
+    человека в Финляндии.
+  scene_id: hb-c12-u0005
+  visual_cue: 'Source-specific pictorial composition influence: arbete / integration. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0005-s002.wav
+  start_seconds: 124.958333
+  end_seconds: 135.685952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-014.png
+- sentence_id: hb-c12-u0005-s003
+  sv: Genom arbetet blir personen en del av samhället och lär känna andra människor.
+  ru: Благодаря работе человек становится частью общества и знакомится с другими людьми.
+  scene_id: hb-c12-u0005
+  visual_cue: 'Source-specific pictorial composition social: arbetet / andra människor. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0005-s003.wav
+  start_seconds: 137.458333
+  end_seconds: 144.42432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-015.png
+- sentence_id: hb-c12-u0005-s004
+  sv: Hens ekonomiska situation förbättras.
+  ru: Его материальное положение улучшается.
+  scene_id: hb-c12-u0005
+  visual_cue: 'Source-specific pictorial composition materials: ekonomiska / förbättras. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0005-s004.wav
+  start_seconds: 146.208333
+  end_seconds: 149.900306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-016.png
+- sentence_id: hb-c12-u0005-s005
+  sv: Också studier främjar integrationen och hjälper personen att hitta ett arbete i framtiden.
+  ru: Учёба также способствует интеграции и помогает человеку найти работу в будущем.
+  scene_id: hb-c12-u0005
+  visual_cue: 'Source-specific pictorial composition path: studier / arbete i framtiden. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0005-s005.wav
+  start_seconds: 151.666667
+  end_seconds: 159.398912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-017.png
+- sentence_id: hb-c12-u0006-s001
+  sv: En viktig del av integrationen är att lära känna andra människor som bor i Finland.
+  ru: Важная часть интеграции — знакомство с другими людьми, живущими в Финляндии.
+  scene_id: hb-c12-u0006
+  visual_cue: 'Verified relevant foreground photograph: Actual Helsinki outdoor cafe,2012, illustrating
+    a setting where people meet. No pictured person is identified as a migrant or integration-service
+    recipient. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0006-s001.wav
+  start_seconds: 161.875
+  end_seconds: 169.398265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-018.png
+- sentence_id: hb-c12-u0006-s002
+  sv: Sociala nätverk är viktiga för människans välbefinnande.
+  ru: Социальные связи важны для благополучия человека.
+  scene_id: hb-c12-u0006
+  visual_cue: 'Source-specific pictorial composition association: Sociala nätverk / välbefinnande. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0006-s002.wav
+  start_seconds: 171.166667
+  end_seconds: 176.460816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-019.png
+- sentence_id: hb-c12-u0006-s003
+  sv: Det kan vara till nytta att lära känna andra människor som flyttat till Finland från andra länder,
+    eftersom de kan ge kamratstöd för integrationen.
+  ru: Может быть полезно познакомиться с другими людьми, переехавшими в Финляндию из других стран, поскольку
+    они могут оказать взаимную поддержку в процессе интеграции.
+  scene_id: hb-c12-u0006
+  visual_cue: 'Source-specific pictorial composition support: andra länder / kamratstöd. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0006-s003.wav
+  start_seconds: 178.25
+  end_seconds: 190.788776
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-020.png
+- sentence_id: hb-c12-u0007-s001
+  sv: Integration innebär också att den nyanlända deltar i samhällets verksamhet på sätt som passar hen
+    själv och känner sig delaktig i det finländska samhället.
+  ru: Интеграция также означает, что недавно приехавший человек участвует в жизни общества подходящими
+    для себя способами и ощущает свою включённость в финское общество.
+  scene_id: hb-c12-u0007
+  visual_cue: 'Source-specific pictorial composition social: deltar / delaktig. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0007-s001.wav
+  start_seconds: 193.25
+  end_seconds: 206.415714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-021.png
+- sentence_id: hb-c12-u0007-s002
+  sv: Delaktighet innebär att personen kan påverka sitt liv och de saker som är viktiga för hen i hens
+    gemenskap och omgivning.
+  ru: Включённость означает, что человек может влиять на свою жизнь и на важные для него вопросы в своём
+    сообществе и окружении.
+  scene_id: hb-c12-u0007
+  visual_cue: 'Source-specific pictorial composition rights: påverka / sitt liv. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0007-s002.wav
+  start_seconds: 208.166667
+  end_seconds: 217.919048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-022.png
+- sentence_id: hb-c12-u0007-s003
+  sv: Om personen vill kan hen delta i gemensam verksamhet och gemensamt beslutsfattande.
+  ru: При желании человек может участвовать в совместной деятельности и совместном принятии решений.
+  scene_id: hb-c12-u0007
+  visual_cue: 'Source-specific pictorial composition choice: gemensam verksamhet / gemensamt beslutsfattande.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0007-s003.wav
+  start_seconds: 219.708333
+  end_seconds: 226.813639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-023.png
+- sentence_id: hb-c12-u0008-s001
+  sv: Till integrationen hör att den nyanlända har kännedom om det finländska samhället och den finländska
+    kulturen.
+  ru: Часть интеграции — знакомство недавно приехавшего человека с финским обществом и финской культурой.
+  scene_id: hb-c12-u0008
+  visual_cue: 'Source-specific pictorial composition subjects: finländska samhället / finländska kulturen.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0008-s001.wav
+  start_seconds: 229.291667
+  end_seconds: 238.765408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-024.png
+- sentence_id: hb-c12-u0008-s002
+  sv: Det är viktigt att personen känner till sina rättigheter och skyldigheter i Finland.
+  ru: Важно, чтобы человек знал свои права и обязанности в Финляндии.
+  scene_id: hb-c12-u0008
+  visual_cue: 'Source-specific pictorial composition rights: rättigheter / skyldigheter. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0008-s002.wav
+  start_seconds: 240.541667
+  end_seconds: 247.577313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-025.png
+- sentence_id: hb-c12-u0008-s003
+  sv: Det är också bra att känna till Finlands historia och veta hurdana lagar och seder det finns i Finland
+    och varför.
+  ru: Также полезно знать историю Финляндии и понимать, какие законы и обычаи существуют в Финляндии и
+    почему.
+  scene_id: hb-c12-u0008
+  visual_cue: 'Source-specific pictorial composition subjects: Finlands historia / lagar och seder. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0008-s003.wav
+  start_seconds: 249.333333
+  end_seconds: 258.946395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-026.png
+- sentence_id: hb-c12-u0009-s001
+  sv: Integration betyder också att personen betraktar Finland som en viktig del av sitt liv och sin framtid
+    och känner samhörighet med finländarna.
+  ru: Интеграция также означает, что человек воспринимает Финляндию как важную часть своей жизни и своего
+    будущего и чувствует общность с жителями Финляндии.
+  scene_id: hb-c12-u0009
+  visual_cue: 'Source-specific pictorial composition social: Finland / samhörighet. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0009-s001.wav
+  start_seconds: 261.416667
+  end_seconds: 273.189184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-027.png
+- sentence_id: hb-c12-u0009-s002
+  sv: Hen har hittat sin plats i samhället och har byggt sociala nätverk.
+  ru: Он нашёл своё место в обществе и установил социальные связи.
+  scene_id: hb-c12-u0009
+  visual_cue: 'Verified relevant foreground photograph: Actual Helsinki cafe as contextual social meeting
+    place. No claim about the legal status or personal social networks of customers. Exact bilingual source
+    text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0009-s002.wav
+  start_seconds: 274.958333
+  end_seconds: 280.809762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-028.png
+- sentence_id: hb-c12-u0009-s003
+  sv: Om personen vill kan hen vara aktiv i sina gemenskaper eller till exempel inom politiken.
+  ru: При желании человек может активно участвовать в жизни своих сообществ или, например, в политике.
+  scene_id: hb-c12-u0009
+  visual_cue: 'Source-specific pictorial composition choice: gemenskaper / politiken. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0009-s003.wav
+  start_seconds: 282.583333
+  end_seconds: 290.594218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-029.png
+- sentence_id: hb-c12-u0010-s001
+  sv: Också det omgivande samhällets mottaglighet har betydelse för känslan av delaktighet.
+  ru: Открытость окружающего общества также имеет значение для ощущения включённости.
+  scene_id: hb-c12-u0010
+  visual_cue: 'Verified relevant foreground photograph: Actual Helsinki city hall displaying Pride flags,
+    as a concrete public expression of inclusion and welcome. No claim is made about the beliefs or status
+    of any pictured individual. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0010-s001.wav
+  start_seconds: 293.083333
+  end_seconds: 300.258299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-030.png
+- sentence_id: hb-c12-u0011-s001
+  sv: Integration i Finland kräver att den nyanlända anpassar sig och tar till sig nya kunskaper och färdigheter.
+  ru: Интеграция в Финляндии требует от недавно приехавшего человека адаптации и усвоения новых знаний
+    и навыков.
+  scene_id: hb-c12-u0011
+  visual_cue: 'Source-specific pictorial composition growth: nyanlända / kunskaper och färdigheter. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0011-s001.wav
+  start_seconds: 302.708333
+  end_seconds: 312.182075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-031.png
+- sentence_id: hb-c12-u0011-s002
+  sv: Samtidigt måste också de som bor i Finland sedan tidigare anpassa sig, lära sig och ge akt på sina
+    attityder.
+  ru: В то же время люди, которые жили в Финляндии ещё до приезда новых жителей, тоже должны адаптироваться,
+    учиться и обращать внимание на свои установки.
+  scene_id: hb-c12-u0011
+  visual_cue: 'Source-specific pictorial composition growth: bor i Finland / lära sig. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0011-s002.wav
+  start_seconds: 313.958333
+  end_seconds: 323.571395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-032.png
+- sentence_id: hb-c12-u0011-s003
+  sv: Det är fråga om så kallad dubbelriktad integration och samhällets mottaglighet.
+  ru: Речь идёт о так называемой двусторонней интеграции и открытости общества.
+  scene_id: hb-c12-u0011
+  visual_cue: 'Source-specific pictorial composition twoway: dubbelriktad integration / samhällets mottaglighet.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0011-s003.wav
+  start_seconds: 325.333333
+  end_seconds: 332.16
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-033.png
+- sentence_id: hb-c12-u0012-s001
+  sv: Invandringen till Finland var länge liten, och fortfarande bor det i Finland färre människor som
+    flyttat hit från andra länder än i många andra länder i Västeuropa.
+  ru: Долгое время иммиграция в Финляндию была незначительной, и до сих пор в Финляндии живёт меньше людей,
+    переехавших сюда из других стран, чем во многих других странах Западной Европы.
+  scene_id: hb-c12-u0012
+  visual_cue: 'Source-specific pictorial composition contrast: Finland / Västeuropa. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0012-s001.wav
+  start_seconds: 334.625
+  end_seconds: 348.696293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-034.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0012-s002
+  sv: Tyvärr är alla i Finland inte alltid lika positiva till nyanlända, utan en del kan ha fördomar mot
+    invandringen.
+  ru: 'К сожалению, не все в Финляндии всегда одинаково положительно относятся к недавно приехавшим людям:
+    у некоторых могут быть предубеждения против иммиграции.'
+  scene_id: hb-c12-u0012
+  visual_cue: 'Source-specific pictorial composition prohibited: fördomar / nyanlända. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0012-s002.wav
+  start_seconds: 351.458333
+  end_seconds: 361.628673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-035.png
+- sentence_id: hb-c12-u0013-s001
+  sv: Att främja mottaglighet innebär till exempel att man identifierar de strukturer i samhället som
+    skapar ojämlikhet och aktivt strävar efter att avveckla dem.
+  ru: Развивать открытость общества означает, например, выявлять общественные структуры, создающие неравенство,
+    и активно стремиться к их устранению.
+  scene_id: hb-c12-u0013
+  visual_cue: 'Source-specific pictorial composition balance: ojämlikhet / avveckla. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0013-s001.wav
+  start_seconds: 364.083333
+  end_seconds: 377.109728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-036.png
+- sentence_id: hb-c12-u0013-s002
+  sv: På så sätt bidrar man till att alla faktiskt har lika möjligheter att delta i samhället.
+  ru: Это способствует тому, чтобы у всех действительно были равные возможности участвовать в жизни общества.
+  scene_id: hb-c12-u0013
+  visual_cue: 'Source-specific pictorial composition rights: lika möjligheter / delta. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0013-s002.wav
+  start_seconds: 378.875
+  end_seconds: 386.258946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-037.png
+- sentence_id: hb-c12-u0013-s003
+  sv: Därför är till exempel att identifiera och bekämpa rasism en viktig del av att främja dubbelriktad
+    integration
+  ru: Поэтому, например, выявление расизма и борьба с ним — важная часть содействия двусторонней интеграции.
+  scene_id: hb-c12-u0013
+  visual_cue: 'Source-specific pictorial composition prohibited: bekämpa rasism / dubbelriktad integration.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0013-s003.wav
+  start_seconds: 388.041667
+  end_seconds: 398.212007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-038.png
+- sentence_id: hb-c12-u0014-s001
+  sv: Finska statens målsättning är att den som flyttat till Finland känner sig som en del av det finska
+    samhället och är med och utvecklar det.
+  ru: Цель финского государства — чтобы человек, переехавший в Финляндию, чувствовал себя частью финского
+    общества и участвовал в его развитии.
+  scene_id: hb-c12-u0014
+  visual_cue: 'Source-specific pictorial composition target: målsättning / finska samhället. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-039
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0014-s001.wav
+  start_seconds: 400.666667
+  end_seconds: 412.230204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-039.png
+- sentence_id: hb-c12-u0014-s002
+  sv: Samtidigt kan personen bevara sitt eget språk och sin kultur och banden till fosterlandet.
+  ru: При этом человек может сохранять свой язык, свою культуру и связи с родиной.
+  scene_id: hb-c12-u0014
+  visual_cue: 'Source-specific pictorial composition globe: eget språk / fosterlandet. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-integration/narration/hb-c12-u0014-s002.wav
+  start_seconds: 414.0
+  end_seconds: 421.732245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-integration/pictures/picture-040.png
+render:
+  music_path: studio/media/hb-c12-integration/sources/music-bed.flac
+  background_image: studio/media/hb-c12-integration/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.344642857142857
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finland – Lärobok i samhällsorientering
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Rauhanasema 2023 (202327;+G72587).jpg — Tuula Sipilä; Helsingin kaupunginmuseo / Helsinki City Museum
+      (archival source) · CC BY 4.0
+    - The Forest and the Trees — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no current-law claims added.
+  - Original foreground illustrations represent source-stated administrative steps and relationships;
+    no real or fabricated personal identifiers.
+  - Distinct background photograph cropped,darkened,blurred and animated continuously; original photo
+    license retained.
+  - Instrumental music faded,ducked,+2dBadjusted and repeated using4second equal-power crossfades when
+    necessary.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Rauhanasema_2023_(202327;%2BG72587).jpg
+    description: Nykyään Rauhanasemana tunnettu puutalo rakennettiin alunperin vuonna 1915 Vammeljoen
+      rautatieasemaksi Kannakselle. Talo siirrettiin Pasilaan 1920-luvulla. Se siirrettiin uudelleen uuden
+      rautatieaseman tieltä nykyiselle paikalleen. Rauhanaseman omistaa nykyisin Suomen Rauhanliitto,
+      ja sen tiloissa toimii useita kansalaisjärjestöjä. Taustalla Pasilan virastotalo ja Mall of Tripla
+      sekä Pasilan rautatieasema.
+    license: CC BY 4.0

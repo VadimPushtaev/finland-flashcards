@@ -1,0 +1,32 @@
+"""Acquire identifiable aids,planning objects and verified accessible public places."""
+from pathlib import Path
+import json,re,subprocess,shutil
+R=Path(__file__).resolve().parents[3];P=Path(__file__).resolve().parent;SID='hb-c10-funktionsnedsattning';E=R/'studio/episodes'/SID;S=R/'studio/media'/SID/'sources';S.mkdir(parents=True,exist_ok=True);selected={}
+choices={
+3:('disability-objects-verified.json','File:Notebook.jpg','Primary description notebook andfolder ontable. Anonymous planning-material object only,not real officialclientplan or personalrecord;inspect for private visiblewriting beforeselection.'),
+5:('disability-centre-research.json','File:Tipotien sosiaali- ja terveysasema in 2024.jpg','Primary source identifies public Tipotie social/healthcentre,Tampere,December2024. Category of generally available regionalservices,not everyservice entitlement,currentcounter or namedsite availabilitypromise.'),
+7:('disability-ramp-research.json','File:Lieksa railway station with wheelchair ramp.jpg','Primary description actual Lieksa station,Finland,August2025,with wheelchairramp. Public-accessibility category,not diagnosis/benefitstatus for any photographedperson,currentaccesscondition or guarantee of every required adaptation.'),
+17:('disability-objects-verified.json','File:Wheelchair.jpg','Primary title identifies actual wheelchair. Aidobject only,no productrecommendation,patientdiagnosis,loanapproval,retailreimbursement or guarantee of chosen model.'),
+18:('health-object-guidedog-research.json','File:Guide dog user on the tube Euston Square 16 November 2012.jpg','Primary title identifies actual guide-dog user on London Underground2012. One actual guide-dog example from source aidlist,not ordinarypet substitution. No additional diagnosis,Finlandlocation,immigration/serviceeligibility assigned to photographedpeople.'),
+21:('disability-parking-research.json','File:Disabled parking sign.jpg','Primary Commons categories identify carparks inFinland andphoto17June2016;actual wheelchair-marked parking sign. Source PERMIT-car condition retained,no picturedvehicle assignedpermitstatus or violation,no newdistance.'),
+55:('disability-objects-verified.json','File:Notebooks.jpg','Actual notebook objects. Generic planningmaterial for required rehabilitationplan,not an officialform,real medicalrecord,finishedplan or approval.'),
+56:('disability-centre-research.json','File:Lievestuoreen terveysasema 2.jpg','Primary description Lievestuore healthcentre,Liepeentie45,Laukaa,Finland. Publichealthcentre category for contact,not current localhours,referralresult or guaranteed rehabilitationcoverage.'),
+64:('disability-craft-research.json','File:Knitting needles and yarn.jpg','Actual knittingneedles andyarn objects. Illustration of source lightworkactivity category,no employment/wage/medicaltreatment or prescribed techniqueclaim.')}
+for i,(metadata,title,context)in choices.items():
+ p=next(p for p in json.loads((P/metadata).read_text())['query']['pages'].values()if p['title']==title);pi=p['imageinfo'][0];artist=re.sub('<[^>]+>','',pi['extmetadata'].get('Artist',{}).get('value','')).strip();assert artist and len(artist)<200,(title,artist);url=pi.get('thumburl',pi['url']).replace('https://thumb.wikimedia.org/','https://upload.wikimedia.org/').split('?')[0];dest=S/f'foreground-{i+1:02}.jpg';subprocess.run([str(R/'.venv/bin/python'),'studio/production/remaining/download.py','--url',url,'--output',str(dest),'--timeout','300'],cwd=R,check=True);selected[str(i)]=dict(title=title,imageinfo=pi,path=str(dest.relative_to(R)),download_url=url,context=context);(E/'selected-photos.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2)+'\n');print(i,title,flush=True)
+reuse={
+12:('hb-c10-folkhalsa',16,'Actual varied vegetables inParis grocery store. Shopping/food category illustrates one of the source assistant-task examples;no pictured person assigned assistant/client role,disability,benefitstatus or guarantee of service.'),
+24:('hb-c10-sjukdom',28,'Actual verified KelaSello office,LeppavaaraEspoo2011. FPAapplication category,not an invented bookinginterface,currentcounter or eligibilityapproval. Meaningful prior verified source reuse.'),
+27:('hb-c10-tillgang',29,'Actual ordinary Polycom desktelephone. Callerbooks neededinterpreter context,not officialphone endpoint,inventedservice number or newbookingprocedure.'),
+33:('hb-c10-pension',7,'Actual empty homeoffice,WashingtonDC. Work/everydaysetting for rehabilitationGOAL,no occupantdiagnosis,guaranteedcure,mandatory profession orFinnishlocationclaim.'),
+36:('hb-c11-fritid',5,'Actual Oulu theatre exterior. One culturalvenue example,not allEUcountry acceptance,currentfreeentry,venuepolicy or disabilitycardrecognition guarantee.'),
+47:('hb-c10-vard',33,'Actual Vantaa taxi2008. Transportmode object for source work/study/leisuretrip purposes,not namedcountycontractor,availability,freefare or wheelchair-accessibility promise.'),
+53:('hb-c10-aldre',80,'Actual standardrollator withbasket,tray,wheels/brakes. Everydayaid object illustrating rehabilitationGOAL,not wheelchair substitute,cureguarantee,brandrecommendation or automaticloan entitlement.'),
+57:('hb-c10-pension',59,'Verified Helsinki apartmentbuilding2020. Private-domestic-home category,not a namedfamilycareinstitution or a photographedresident assignedcare,disability,benefit,tenancy or immigrationstatus.'),
+63:('hb-c11-fritid',1,'Actual paintingmaterials/equipment. Neutral activity/workshop objects for regionarrangedwork/dayactivity,no photographedparticipant assigneddisability andno salariedemploymentclaim.'),
+66:('hb-c11-fritid',0,'Actual HelsinkiEsplanadi park2022. Outdoors is one source MAYEXAMPLEdayactivity,no picturedvisitor assigneddisability,programme participation or guarantee of namedlocalactivity.')}
+for i,(sid,index,context)in reuse.items():
+ p=json.loads((R/'studio/episodes'/sid/'selected-photos.json').read_text())[str(index)].copy();raw=R/p['path'];dest=S/f'foreground-{i+1:02}.jpg'
+ if not dest.exists():shutil.copyfile(raw,dest)
+ assert dest.read_bytes()==raw.read_bytes();p.update(path=str(dest.relative_to(R)),context=context,retained_source_episode=sid);selected[str(i)]=p
+(E/'selected-photos.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2)+'\n');(E/'retained-photo-assets.json').write_text('{}\n');print('Acquired',len(selected),'actualsources;rawinspectionrequired.',flush=True)

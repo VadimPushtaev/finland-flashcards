@@ -1,0 +1,65 @@
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c11-miljo
+episode_background 1 files verified
+energy 1 files verified
+bills 1 files verified
+environment 1 files verified
+home_water 1 files verified
+climate_protection 1 files verified
+temperature 1 files verified
+life 1 files verified
+agriculture 1 files verified
+extremes 1 files verified
+danger 1 files verified
+species_loss 1 files verified
+conservation 1 files verified
+biodiversity 1 files verified
+human_effects 1 files verified
+law 1 files verified
+protection_sources 1 files verified
+ministry_1983 1 files verified
+sustainability 1 files verified
+animal_categories 1 files verified
+animal_welfare 1 files verified
+care_conditions 1 files verified
+livestock 1 files verified
+pets 1 files verified
+city_country 1 files verified
+music_bed 2 files verified
+narration 24 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c11-miljo --save-frames
+2026-11-03T03:02:59.086505+00:00 hb-c11-miljo verification: PID 102262 running
+2026-11-03T03:03:32.636537+00:00 hb-c11-miljo verification: PID 102262 running
+2026-11-03T03:04:06.220130+00:00 hb-c11-miljo verification: PID 102262 running
+{
+  "background_boundary_max_mean_pixel_change": 1.0720303058624268,
+  "full_decode": "passed",
+  "decoded_video_frames": 6581,
+  "decoded_audio_seconds": 274.208,
+  "decoded_audio_peak": 0.698906660079956,
+  "frame_exports": 27,
+  "source_sentences": 24,
+  "output": "videos/homebrew/hb-c11-10-miljo.mp4",
+  "sha256": "fe5d2ae5752d242e5f2efa608ee8dcbdc7e9fa9c3c33822cfd4a09677d6a1865",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 11.501333236694336,
+    "10.0": 12.334757804870605
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998722019150209,
+    "relative_rms_error": 0.01603165655646672,
+    "mix_sha256": "37e609cd88b0b995dc0338d95e72fc9967879dd73af476869e99169c2f51e99b"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c11-miljo --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c11-miljo --ready
+PASS: 24 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c11-miljo --require-target
+hb-c11-miljo: 100.0% of body duration; 24/24 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c11-miljo
+hb-c11-miljo: 24 distinct picture sources / 24 sentence slides; 24 pictured slides
+{"section_id": "hb-c11-miljo", "production_status": "preview_ready", "output": "videos/homebrew/hb-c11-10-miljo.mp4", "sha256": "fe5d2ae5752d242e5f2efa608ee8dcbdc7e9fa9c3c33822cfd4a09677d6a1865", "seconds": 274.2083333333333, "source_sentences": 24, "source_section_sha256": "598b5815910985f8ce3b5e61e849e70e52903926db64c89837c2b2c8c0823e89", "translation_file_sha256": "3d81b0ca89d2facddc384e83c36a7a4af53e322235603e23b75c4981cd395e15", "picture_fraction": 1.0, "distinct_picture_sources": 24, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c11-miljo", "stage": "verification", "status": "finished", "supervisor_pid": 102260, "command": [".venv/bin/python", "studio/production/remaining/verify_episode.py", "hb-c11-miljo"], "started_at": "2026-11-03T03:02:25.446883+00:00", "log": "studio/production/remaining/hb-c11-miljo-verify.log", "pid": 102262, "heartbeat_at": "2026-11-03T03:04:06.219458+00:00", "returncode": 0, "finished_at": "2026-11-03T03:04:34.412240+00:00", "missing_outputs": []}

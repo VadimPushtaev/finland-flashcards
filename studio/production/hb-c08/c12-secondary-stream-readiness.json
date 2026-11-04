@@ -1,0 +1,48 @@
+{
+  "prepared_at": "2026-11-03T11:10:32.255711+00:00",
+  "primary_queue": [
+    "hb-c12-integration",
+    "hb-c12-tolkning",
+    "hb-c12-myndigheter",
+    "hb-c12-egna-arenden",
+    "hb-c12-hemkommun",
+    "hb-c12-e-tjanster",
+    "hb-c12-norden-eu"
+  ],
+  "secondary_queue": [
+    "hb-c12-personuppgifter",
+    "hb-c11-trafik"
+  ],
+  "disjoint": true,
+  "controller_path": "studio/production/hb-c08/c12_secondary_stream.py",
+  "controller_sha256": "42d4b0de316c646f922030efd9bfe1dbb8dd349e029da533cf6d73b02761bbdc",
+  "syntax_check": "passed",
+  "controller_started": false,
+  "required_fire_predecessor_supervisor": 347528,
+  "current_fire_state": {
+    "section_id": "hb-c11-brandsakerhet",
+    "stage": "render",
+    "status": "running",
+    "supervisor_pid": 347528,
+    "command": [
+      "studio/runtime/.venv/bin/python",
+      "studio/tools/render.py",
+      "hb-c11-brandsakerhet"
+    ],
+    "started_at": "2026-11-03T11:03:07.843593+00:00",
+    "log": "studio/production/hb-c11-safety/hb-c11-brandsakerhet-render.log",
+    "pid": 347529,
+    "heartbeat_at": "2026-11-03T11:10:20.944083+00:00"
+  },
+  "guarded_candidates": {
+    "hb-c12-personuppgifter": {
+      "current4_frozen_inputs_match": true,
+      "selected_wav_asr_hashes_match": 50
+    },
+    "hb-c11-trafik": {
+      "current4_frozen_inputs_match": true,
+      "selected_wav_asr_hashes_match": 49
+    }
+  },
+  "authorization": "Root explicit second stream replaces Fire only after exact finished0/no missing/currentcanonicalSHA and livecount<central6; primary Egna unchanged."
+}

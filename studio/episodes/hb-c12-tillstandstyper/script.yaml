@@ -1,0 +1,1016 @@
+schema_version: 1
+section_id: hb-c12-tillstandstyper
+chapter_id: hb-c12
+title_sv: Tillståndstyper och fortsatt vistelse
+title_ru: Категории видов на жительство и дальнейшее пребывание
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-tillstandstyper.yaml
+example_only: false
+source_section_sha256: b57467a78dea1716c3809550c4f5d463b7a5af56ede0a387070e91b316c61213
+translation_file_sha256: 8b1c752396753779c4398e640963c98cb49a8a50eb0456e246d8d89abbcbfc96
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Follow exact archived source order including every list fragment. Preserve permit categories,conditions,qualifiers
+    and attributed year-specific figures. Photographs contextualize places or objects; no photographed
+    person assigned immigration status. All legal relationships are the source statements,not updated
+    advice.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Finlands ambassad 2008.jpg by Holger.Ellgaard continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=2.592857142857143. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Universal by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 270.054 seconds; prepared lossless stereo bed 363.000 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0161
+  description: Det finns olika typer av uppehållstillstånd.
+- id: hb-c12-u0162
+  description: Det första uppehållstillståndet är alltid tidsbegränsat.
+- id: hb-c12-u0163
+  description: Utgångspunkten är att man får kontinuerligt uppehållstillstånd om flytten till Finland
+    betraktas som permanent.
+- id: hb-c12-u0164
+  description: En person kan få permanent uppehållstillstånd, som anges med bokstavskoden P på uppehållstillståndskortet,
+    när hen har bott tillräckligt länge i Finland med ett kontinuerligt uppehållstillstånd.
+- id: hb-c12-u0165
+  description: Om giltighetstiden för ditt uppehållstillstånd snart går ut och du vill förlänga din vistelse
+    i Finland behöver du ett nytt uppehållstillstånd.
+- id: hb-c12-u0166
+  description: Om ditt tidigare uppehållstillstånd går ut under behandlingen av din ansökan får du uppehålla
+    dig i Finland och vanligtvis har du även rätt att arbeta under den tid som ansökan behandlas.
+- id: hb-c12-u0167
+  description: Migrationsverket (Maahanmuuttovirasto) beviljar dig fortsatt tillstånd om grunden för det
+    tidigare uppehållstillståndet fortfarande existerar.
+- id: hb-c12-u0168
+  description: Observera att ändringar i din livssituation också kan påverka ditt uppehållstillstånd.
+- id: hb-c12-u0169
+  description: Om du har ett tillfälligt uppehållstillstånd (A- eller B-tillstånd) och orsaken för din
+    vistelse i Finland ändras måste du ansöka om ett nytt uppehållstillstånd på den nya grunden.
+- id: hb-c12-u0170
+  description: Det är bra att komma ihåg att grunden för uppehållstillståndet kan påverka vilka rättigheter
+    du har i Finland.
+- id: hb-c12-u0171
+  description: Ett permanent uppehållstillstånd gäller tills vidare.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative setting or landscape; decorative context,not proof
+    of a current migration rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Universal — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: Introduce permit categories with distinct blank document objects, no invented card numbers.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Time-limited versus permanent as broad categories; continuous A is not equated with permanent
+    P.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: First permit is time-limited as archived source states, no specific duration added.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: One year is an example of a fixed duration, not every permit universal validity.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Within time-limited permits, distinguish continuous A from temporary B; code labels attached,
+    no personal specimen data.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Permanent-intent move contextualizes continuous permit, not automatic permanent-P entitlement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Municipality-of-residence consequence in preceding continuous-permit context; no actual
+    municipality assigned.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Temporary permit can also support municipality in some cases, not automatic entitlement
+    or absolute exclusion.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Sufficient continuous-permit residence may lead to permanent P; source gives no numeric
+    residence period, so invent none.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: Permanent-permit ground generally same as earlier continuous ground, examples only; no
+    all-grounds requirement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Underlying ground must remain valid; no extra current-law criteria added.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Permanent application may use a new ground; distinguish applying from guaranteed grant.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: New permit needed to extend stay as current validity approaches end; no invented application
+    opening date.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Continuation application before prior permit expires, no fabricated due date or grace period.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Continuation application only while in Finland, generic location context without invented
+    travel restriction beyond source.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Pending continuation allows stay and usually work if prior permit expires during processing;
+    do not conflate first-application work rule.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Late continuation application can lead to refusal; no automatic guaranteed refusal, fine
+    or deportation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-018
+  kind: foreground
+  description: Continuation granted when prior ground persists as stated; no hidden new requirement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-019
+  kind: foreground
+  description: Continuation may rely on another ground than first permit; no requirement to keep old ground
+    forever.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-020
+  kind: foreground
+  description: Must satisfy conditions of the actual requested category, not merely any prior permit.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-021
+  kind: foreground
+  description: Life changes can affect permit; no real person assigned a negative immigration outcome.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-022
+  kind: foreground
+  description: Time-limited permit can be revoked if original grounds lapse; possible consequence, no
+    automatic immediate removal.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-023
+  kind: foreground
+  description: Changed reason with A/B time-limited permit needs new permit on new ground. Preserve archived
+    wording without falsely equating continuous A with temporary-B category.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-024
+  kind: foreground
+  description: P permit need not change ground when reason for stay changes; cross change requirement,
+    not permit or right to remain.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-025
+  kind: foreground
+  description: Permit basis affects rights; no invented complete rights list or legal hierarchy.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-026
+  kind: foreground
+  description: Compare work-right scope for family versus study permits without inventing hours, sectors
+    or universal exceptions.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-027
+  kind: foreground
+  description: Permanent permit continues indefinitely, distinct from unrevocable or unconditional status.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-028
+  kind: foreground
+  description: 'Alternative withdrawal grounds: permanent departure, continuous foreign stay at least
+    two years, or false application details. Do not join them as simultaneous requirements.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0161-s001
+  sv: Det finns olika typer av uppehållstillstånd.
+  ru: Существуют разные типы видов на жительство.
+  scene_id: hb-c12-u0161
+  visual_cue: Introduce permit categories with distinct blank document objects, no invented card numbers.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0161-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.429592
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0161-s002
+  sv: Ett tillstånd kan vara tidsbegränsat eller permanent.
+  ru: Вид на жительство может выдаваться на определённый срок или быть постоянным.
+  scene_id: hb-c12-u0161
+  visual_cue: Time-limited versus permanent as broad categories; continuous A is not equated with permanent
+    P.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0161-s002.wav
+  start_seconds: 9.416667
+  end_seconds: 14.292857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0162-s001
+  sv: Det första uppehållstillståndet är alltid tidsbegränsat.
+  ru: Первый вид на жительство всегда выдаётся на определённый срок.
+  scene_id: hb-c12-u0162
+  visual_cue: First permit is time-limited as archived source states, no specific duration added.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0162-s001.wav
+  start_seconds: 16.75
+  end_seconds: 21.83517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0162-s002
+  sv: Tidsbegränsat tillstånd betyder att det gäller för en viss tid, till exempel ett år.
+  ru: Вид на жительство на определённый срок означает, что он действует в течение установленного времени,
+    например одного года.
+  scene_id: hb-c12-u0162
+  visual_cue: One year is an example of a fixed duration, not every permit universal validity.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0162-s002.wav
+  start_seconds: 23.791667
+  end_seconds: 31.036293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0162-s003
+  sv: 'Det finns två typer av tidsbegränsade tillstånd: kontinuerligt tillstånd, med bokstavskoden A på
+    uppehållstillståndskortet, och tillfälligt tillstånd, med bokstavskoden B på uppehållstillståndskortet.'
+  ru: 'Есть два типа видов на жительство на определённый срок: длительный (kontinuerligt tillstånd), обозначаемый
+    буквой A на карточке вида на жительство, и временный (tillfälligt tillstånd), обозначаемый на карточке
+    буквой B.'
+  scene_id: hb-c12-u0162
+  visual_cue: Within time-limited permits, distinguish continuous A from temporary B; code labels attached,
+    no personal specimen data.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0162-s003.wav
+  start_seconds: 33.0
+  end_seconds: 50.972245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0163-s001
+  sv: Utgångspunkten är att man får kontinuerligt uppehållstillstånd om flytten till Finland betraktas
+    som permanent.
+  ru: Как правило, длительный вид на жительство выдают, если переезд в Финляндию рассматривается как постоянный.
+  scene_id: hb-c12-u0163
+  visual_cue: Permanent-intent move contextualizes continuous permit, not automatic permanent-P entitlement.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0163-s001.wav
+  start_seconds: 53.75
+  end_seconds: 63.432721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0163-s002
+  sv: Då får personen en hemkommun i Finland.
+  ru: В этом случае человек получает муниципалитет проживания в Финляндии.
+  scene_id: hb-c12-u0163
+  visual_cue: Municipality-of-residence consequence in preceding continuous-permit context; no actual
+    municipality assigned.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0163-s002.wav
+  start_seconds: 65.416667
+  end_seconds: 68.89966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0163-s003
+  sv: I vissa fall kan man få en hemkommun också med ett tillfälligt uppehållstillstånd.
+  ru: В некоторых случаях муниципалитет проживания можно получить и с временным видом на жительство.
+  scene_id: hb-c12-u0163
+  visual_cue: Temporary permit can also support municipality in some cases, not automatic entitlement
+    or absolute exclusion.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0163-s003.wav
+  start_seconds: 70.875
+  end_seconds: 77.910646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0164-s001
+  sv: En person kan få permanent uppehållstillstånd, som anges med bokstavskoden P på uppehållstillståndskortet,
+    när hen har bott tillräckligt länge i Finland med ett kontinuerligt uppehållstillstånd.
+  ru: Человек может получить постоянный вид на жительство, обозначаемый буквой P на карточке вида на жительство,
+    если он достаточно долго прожил в Финляндии с длительным видом на жительство.
+  scene_id: hb-c12-u0164
+  visual_cue: Sufficient continuous-permit residence may lead to permanent P; source gives no numeric
+    residence period, so invent none.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0164-s001.wav
+  start_seconds: 80.375
+  end_seconds: 96.466429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0164-s002
+  sv: I allmänhet är grunden densamma som grunden för det föregående, kontinuerliga uppehållstillståndet,
+    till exempel familjeband eller arbete.
+  ru: Обычно основание остаётся тем же, что и для предыдущего длительного вида на жительство, например
+    семейные связи или работа.
+  scene_id: hb-c12-u0164
+  visual_cue: Permanent-permit ground generally same as earlier continuous ground, examples only; no all-grounds
+    requirement.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0164-s002.wav
+  start_seconds: 99.25
+  end_seconds: 111.022517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0164-s003
+  sv: Grunden ska fortfarande gälla.
+  ru: Это основание должно по-прежнему оставаться в силе.
+  scene_id: hb-c12-u0164
+  visual_cue: Underlying ground must remain valid; no extra current-law criteria added.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0164-s003.wav
+  start_seconds: 113.0
+  end_seconds: 116.274014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0164-s004
+  sv: Man kan ansöka om permanent tillstånd också på en ny grund.
+  ru: Заявление на постоянный вид на жительство можно подать и на новом основании.
+  scene_id: hb-c12-u0164
+  visual_cue: Permanent application may use a new ground; distinguish applying from guaranteed grant.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0164-s004.wav
+  start_seconds: 118.25
+  end_seconds: 123.753129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0165-s001
+  sv: Om giltighetstiden för ditt uppehållstillstånd snart går ut och du vill förlänga din vistelse i
+    Finland behöver du ett nytt uppehållstillstånd.
+  ru: Если срок действия вашего вида на жительство скоро истекает и вы хотите продлить своё пребывание
+    в Финляндии, вам нужен новый вид на жительство.
+  scene_id: hb-c12-u0165
+  visual_cue: New permit needed to extend stay as current validity approaches end; no invented application
+    opening date.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0165-s001.wav
+  start_seconds: 126.208333
+  end_seconds: 138.468469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0165-s002
+  sv: Det är viktigt att du ansöker om fortsatt tillstånd innan ditt tidigare uppehållstillstånd går ut.
+  ru: Важно подать заявление на продление вида на жительство (fortsatt tillstånd) до истечения срока действия
+    предыдущего вида на жительство.
+  scene_id: hb-c12-u0165
+  visual_cue: Continuation application before prior permit expires, no fabricated due date or grace period.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0165-s002.wav
+  start_seconds: 140.458333
+  end_seconds: 149.026497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0165-s003
+  sv: Du kan endast ansöka om fortsatt tillstånd om du befinner dig i Finland.
+  ru: Подать заявление на продление вида на жительство можно только находясь в Финляндии.
+  scene_id: hb-c12-u0165
+  visual_cue: Continuation application only while in Finland, generic location context without invented
+    travel restriction beyond source.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0165-s003.wav
+  start_seconds: 151.0
+  end_seconds: 157.478367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0166-s001
+  sv: Om ditt tidigare uppehållstillstånd går ut under behandlingen av din ansökan får du uppehålla dig
+    i Finland och vanligtvis har du även rätt att arbeta under den tid som ansökan behandlas.
+  ru: Если срок действия предыдущего вида на жительство истечёт во время рассмотрения вашего заявления,
+    вы можете пребывать в Финляндии и обычно также имеете право работать, пока заявление рассматривается.
+  scene_id: hb-c12-u0166
+  visual_cue: Pending continuation allows stay and usually work if prior permit expires during processing;
+    do not conflate first-application work rule.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0166-s001.wav
+  start_seconds: 159.958333
+  end_seconds: 175.562143
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0166-s002
+  sv: Du kan få ett negativt beslut om du ansöker om fortsatt tillstånd först efter att ditt föregående
+    uppehållstillstånd gått ut.
+  ru: Вы можете получить отказ, если подадите заявление на продление вида на жительство лишь после того,
+    как истечёт срок действия предыдущего.
+  scene_id: hb-c12-u0166
+  visual_cue: Late continuation application can lead to refusal; no automatic guaranteed refusal, fine
+    or deportation.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0166-s002.wav
+  start_seconds: 178.333333
+  end_seconds: 188.921633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0167-s001
+  sv: Migrationsverket (Maahanmuuttovirasto) beviljar dig fortsatt tillstånd om grunden för det tidigare
+    uppehållstillståndet fortfarande existerar.
+  ru: Миграционная служба (Migrationsverket; Maahanmuuttovirasto) продлит ваш вид на жительство, если
+    основание для предыдущего вида на жительство по-прежнему существует.
+  scene_id: hb-c12-u0167
+  visual_cue: Continuation granted when prior ground persists as stated; no hidden new requirement.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0167-s001.wav
+  start_seconds: 191.375
+  end_seconds: 204.122755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-018.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0167-s002
+  sv: Du kan även ansöka om fortsatt tillstånd på någon annan grund än det första tillståndet.
+  ru: Вы также можете подать заявление на продление вида на жительство на ином основании, чем при получении
+    первого.
+  scene_id: hb-c12-u0167
+  visual_cue: Continuation may rely on another ground than first permit; no requirement to keep old ground
+    forever.
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0167-s002.wav
+  start_seconds: 206.083333
+  end_seconds: 213.815578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-019.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0167-s003
+  sv: Kom ihåg att du måste uppfylla villkoren för det aktuella uppehållstillståndet.
+  ru: Помните, что необходимо выполнять условия выдачи данного вида на жительство.
+  scene_id: hb-c12-u0167
+  visual_cue: Must satisfy conditions of the actual requested category, not merely any prior permit.
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0167-s003.wav
+  start_seconds: 215.791667
+  end_seconds: 222.618333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-020.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0168-s001
+  sv: Observera att ändringar i din livssituation också kan påverka ditt uppehållstillstånd.
+  ru: Обратите внимание, что изменения вашей жизненной ситуации также могут повлиять на ваш вид на жительство.
+  scene_id: hb-c12-u0168
+  visual_cue: Life changes can affect permit; no real person assigned a negative immigration outcome.
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0168-s001.wav
+  start_seconds: 225.083333
+  end_seconds: 232.815578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-021.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0168-s002
+  sv: Ett tidsbegränsat uppehållstillstånd kan återkallas om de grunder på vilka tillståndet beviljades
+    inte längre gäller.
+  ru: Вид на жительство, выданный на определённый срок, может быть аннулирован, если основания, по которым
+    он был выдан, больше не действуют.
+  scene_id: hb-c12-u0168
+  visual_cue: Time-limited permit can be revoked if original grounds lapse; possible consequence, no automatic
+    immediate removal.
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0168-s002.wav
+  start_seconds: 234.791667
+  end_seconds: 244.683367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-022.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0169-s001
+  sv: Om du har ett tillfälligt uppehållstillstånd (A- eller B-tillstånd) och orsaken för din vistelse
+    i Finland ändras måste du ansöka om ett nytt uppehållstillstånd på den nya grunden.
+  ru: Если у вас есть вид на жительство на определённый срок (категории A или B) и причина вашего пребывания
+    в Финляндии меняется, вы должны подать заявление на новый вид на жительство на новом основании.
+  scene_id: hb-c12-u0169
+  visual_cue: Changed reason with A/B time-limited permit needs new permit on new ground. Preserve archived
+    wording without falsely equating continuous A with temporary-B category.
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0169-s001.wav
+  start_seconds: 247.166667
+  end_seconds: 262.979456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-023.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0169-s002
+  sv: Om du har ett permanent uppehållstillstånd (P) i Finland behöver du inte ändra grunden för ditt
+    uppehållstillstånd även om orsaken till din vistelse ändras.
+  ru: Если у вас есть постоянный вид на жительство (P) в Финляндии, вам не нужно менять его основание,
+    даже если причина вашего пребывания меняется.
+  scene_id: hb-c12-u0169
+  visual_cue: P permit need not change ground when reason for stay changes; cross change requirement,
+    not permit or right to remain.
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0169-s002.wav
+  start_seconds: 265.75
+  end_seconds: 279.333673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-024.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0170-s001
+  sv: Det är bra att komma ihåg att grunden för uppehållstillståndet kan påverka vilka rättigheter du
+    har i Finland.
+  ru: Стоит помнить, что основание для вида на жительство может влиять на то, какие права у вас есть в
+    Финляндии.
+  scene_id: hb-c12-u0170
+  visual_cue: Permit basis affects rights; no invented complete rights list or legal hierarchy.
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0170-s001.wav
+  start_seconds: 281.791667
+  end_seconds: 290.917109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-025.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0170-s002
+  sv: Till exempel ger ett uppehållstillstånd på grund av familjeband mer omfattande rätt att arbeta än
+    ett tillstånd som beviljats på grund av studier.
+  ru: Например, вид на жительство на основании семейных связей даёт более широкое право на работу, чем
+    вид на жительство, выданный на основании учёбы.
+  scene_id: hb-c12-u0170
+  visual_cue: Compare work-right scope for family versus study permits without inventing hours, sectors
+    or universal exceptions.
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0170-s002.wav
+  start_seconds: 292.875
+  end_seconds: 305.831735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-026.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0171-s001
+  sv: Ett permanent uppehållstillstånd gäller tills vidare.
+  ru: Постоянный вид на жительство действует бессрочно.
+  scene_id: hb-c12-u0171
+  visual_cue: Permanent permit continues indefinitely, distinct from unrevocable or unconditional status.
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0171-s001.wav
+  start_seconds: 308.291667
+  end_seconds: 313.098197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-027.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0171-s002
+  sv: Tillståndet kan dock dras tillbaka om du lämnar Finland permanent, uppehåller dig utomlands kontinuerligt
+    i minst två år eller har lämnat felaktiga uppgifter då du ansökt om tillståndet.
+  ru: Однако вид на жительство может быть аннулирован, если вы уезжаете из Финляндии навсегда, непрерывно
+    пребываете за границей не менее двух лет или сообщили неверные сведения при подаче заявления на вид
+    на жительство.
+  scene_id: hb-c12-u0171
+  visual_cue: 'Alternative withdrawal grounds: permanent departure, continuous foreign stay at least two
+    years, or false application details. Do not join them as simultaneous requirements.'
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillstandstyper/narration/hb-c12-u0171-s002.wav
+  start_seconds: 315.083333
+  end_seconds: 330.478163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillstandstyper/pictures/picture-028.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-tillstandstyper/sources/music-bed.flac
+  background_image: studio/media/hb-c12-tillstandstyper/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.592857142857143
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Finlands ambassad 2008.jpg — Holger.Ellgaard · CC BY-SA 3.0
+    - Universal — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Finlands_ambassad_2008.jpg
+    description: Embassy of Finland in Stockholm
+    license: CC BY-SA 3.0

@@ -1,0 +1,83 @@
+{
+  "supervisor_pid": 367763,
+  "status": "all_assigned_successors_launched",
+  "predecessor": {
+    "section_id": "hb-c08-stod",
+    "supervisor_pid": 369014
+  },
+  "launched": [
+    {
+      "section_id": "hb-c08-stod",
+      "supervisor_pid": 369014,
+      "launched_at": "2026-11-03T11:47:19.649448+00:00",
+      "predecessor": {
+        "section_id": "hb-c12-medborgarskap",
+        "supervisor_pid": 365183
+      },
+      "predecessor_release": {
+        "state": {
+          "section_id": "hb-c12-medborgarskap",
+          "stage": "render",
+          "status": "finished",
+          "supervisor_pid": 365183,
+          "command": [
+            "studio/runtime/.venv/bin/python",
+            "studio/tools/render.py",
+            "hb-c12-medborgarskap"
+          ],
+          "started_at": "2026-11-03T11:39:27.494446+00:00",
+          "log": "studio/production/remaining/hb-c12-medborgarskap-render.log",
+          "pid": 365184,
+          "heartbeat_at": "2026-11-03T11:47:14.161573+00:00",
+          "returncode": 0,
+          "finished_at": "2026-11-03T11:47:14.950835+00:00",
+          "missing_outputs": []
+        },
+        "canonical_output": "videos/homebrew/hb-c12-19-medborgarskap.mp4",
+        "canonical_sha256": "0c522fedfc083ce3bb6726844b0af34638a194ac4df2b87792e90bb4061b108a"
+      },
+      "current_frozen_inputs": {
+        "section_id": "hb-c08-stod",
+        "frozen_at": "2026-11-03T11:25:00.243861+00:00",
+        "seconds": 1374.4166666666667,
+        "input_snapshots": {
+          "script": {
+            "path": "studio/episodes/hb-c08-stod/script.yaml",
+            "sha256": "20ce03bec385e80afaec771738d38f9f0308d1864bedba762c1afe32d47df060",
+            "snapshot": "studio/production/hb-c08/freezes/hb-c08-stod/script-20ce03bec385e80afaec771738d38f9f0308d1864bedba762c1afe32d47df060.yaml"
+          },
+          "assets": {
+            "path": "studio/episodes/hb-c08-stod/assets.yaml",
+            "sha256": "0a3877d6d0010a6cadf6b566490eabd1c995a139963618f2b8e0d707233ff71c",
+            "snapshot": "studio/production/hb-c08/freezes/hb-c08-stod/assets-0a3877d6d0010a6cadf6b566490eabd1c995a139963618f2b8e0d707233ff71c.yaml"
+          },
+          "timeline": {
+            "path": "studio/media/hb-c08-stod/render/timeline.json",
+            "sha256": "104338ba3456c22d19647c26a18762c2a263ee2d1f79ed604d2a4e559422f3e3",
+            "snapshot": "studio/production/hb-c08/freezes/hb-c08-stod/timeline-104338ba3456c22d19647c26a18762c2a263ee2d1f79ed604d2a4e559422f3e3.json"
+          },
+          "producer_preflight": {
+            "path": "studio/episodes/hb-c08-stod/producer-preflight-review.json",
+            "sha256": "d8ca8964c613e505bc1b5e2c8c65e971cf8d08053417fedebb0020ff91acdb0c",
+            "snapshot": "studio/production/hb-c08/freezes/hb-c08-stod/producer_preflight-d8ca8964c613e505bc1b5e2c8c65e971cf8d08053417fedebb0020ff91acdb0c.json"
+          }
+        },
+        "repair_proof": "studio/production/hb-c08/stod-negative-context-repair.json",
+        "authorization": "Ready frozen repair candidate only; root may allocate released migration lane after Citizenship. No new/seventhencoder permitted.",
+        "independent_peer_review": "studio/production/hb-c10/peer-review-hb-c08-stod-repair.json"
+      },
+      "selected_wav_asr_hash_checks": "all current exact matches",
+      "prior_full_renderers": [
+        "357691  357634 /home/vadim/finland-flashcards/studio/runtime/.venv/bin/python studio/tools/render.py hb-c12-personuppgifter",
+        "358129  358128 studio/runtime/.venv/bin/python studio/tools/render.py hb-c09-uppfostran",
+        "359554  359553 studio/runtime/.venv/bin/python studio/tools/render.py hb-c09-skilsmassa",
+        "365127  365114 /home/vadim/finland-flashcards/studio/runtime/.venv/bin/python studio/tools/render.py hb-c12-norden-eu",
+        "365738  365727 studio/runtime/.venv/bin/python studio/tools/render.py hb-c09-foraldraskap"
+      ],
+      "max_full_encoders": 6
+    }
+  ],
+  "started_at": "2026-11-03T11:44:44.927378+00:00",
+  "heartbeat_at": "2026-11-03T11:47:19.650622+00:00",
+  "completed_at": "2026-11-03T11:47:58.198462+00:00"
+}

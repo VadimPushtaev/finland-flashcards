@@ -1,0 +1,654 @@
+schema_version: 1
+section_id: hb-c12-sprak
+chapter_id: hb-c12
+title_sv: Integrationsspråk och språkliga rättigheter
+title_ru: Языки интеграции и языковые права
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-sprak.yaml
+example_only: false
+source_section_sha256: 241c27edd87bcc94305c31afe2306889445cc3f0698a1767c802681a282b6827
+translation_file_sha256: 3760f7bc69af77fa5a70070ae246f818e3b77ba8e2088ea7050316d795b59155
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source paragraphs/list items define consecutive topic scenes. Sentence-specific objects
+    and source relationships are planned individually; no added spoken transitions or current-law updates.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter12 violet palette {''background'': ''#352e49'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d7cce7'', ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Liberation Sans
+    Bold48/Regular40 with a fixed right bilingual panel and relevant left foreground pictures.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Bilingual street sign of John Stenbergin ranta in Helsinki, Finland, 2021.jpg by
+    Coen continuously as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal
+    pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting
+    in motion, with no sentence resets. Total cycles=1.7755952380952382. Foreground and bilingual text
+    remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPyseed42 per invocation,44100HzmonoPCM16;
+    initial2ONNXthreads shared with Chapter8 allocation. Exact synthesis inputs and actual seed scope
+    are retained; whole-video listening remains pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Senbazuru by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 94.067 seconds; prepared lossless stereo bed 248.583 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Distinct relevant picture for nearly every body sentence slide: actual places/objects where
+    identity and license are verified, plus original pictorial diagrams for source-stated eligibility,
+    administrative steps and personal-data protections. Avoid real personal identifiers and invented legal
+    rules.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0040
+  description: I Finland är det möjligt att integrera sig på antingen finska eller svenska.
+- id: hb-c12-u0041
+  description: Att integrera sig på svenska kan vara ett bra alternativ om man bor i en kommun med många
+    svensktalande invånare eller där det finns svenskspråkiga arbetsplatser, eller om familj och vänner
+    talar svenska.
+- id: hb-c12-u0042
+  description: Svenska språket är släkt med till exempel tyskan och engelskan.
+- id: hb-c12-u0043
+  description: I integrationsplanen kommer man överens om det primära integrationsspråket.
+- id: hb-c12-u0044
+  description: I en del kommuner kan du delta i integrationsutbildning på svenska.
+- id: hb-c12-u0045
+  description: I Finland garanterar språklagen rätt för alla att använda finska eller svenska hos nationella
+    myndigheter.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: finska / svenska. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-002
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: Valet av språk / situation. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-003
+  kind: foreground
+  description: 'Source-specific pictorial composition association: finska / arbetsplatserna. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-004
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: tvåspråkiga / svenska. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-005
+  kind: foreground
+  description: 'Source-specific pictorial composition association: svenska / familj och vänner. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-006
+  kind: foreground
+  description: 'Source-specific pictorial composition family: samma integrationsspråk / barnens skolgång.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-007
+  kind: foreground
+  description: 'Source-specific pictorial composition language: Svenska språket / tyskan och engelskan.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-008
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: svenska / finska. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-009
+  kind: foreground
+  description: 'Source-specific pictorial composition work: finska och svenska / arbetsplatser. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-010
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: integrationsplanen / integrationsspråket.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-011
+  kind: foreground
+  description: 'Source-specific pictorial composition class: integrationsutbildning / svenska. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-012
+  kind: foreground
+  description: 'Source-specific pictorial composition support: frivilliga studier / integrationsplan.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-013
+  kind: foreground
+  description: 'Source-specific pictorial composition conversation: Fråga / integrationsplan. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-014
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: rätt att välja / finska eller svenska. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-015
+  kind: foreground
+  description: 'Source-specific pictorial composition rights: språklagen / nationella myndigheter. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-016
+  kind: foreground
+  description: 'Source-specific pictorial composition municipality: tvåspråkiga kommuner / finska eller
+    svenska. Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-017
+  kind: foreground
+  description: 'Source-specific pictorial composition conversation: myndigheter / engelska. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+sentences:
+- sentence_id: hb-c12-u0040-s001
+  sv: I Finland är det möjligt att integrera sig på antingen finska eller svenska.
+  ru: В Финляндии можно интегрироваться на финском или на шведском языке.
+  scene_id: hb-c12-u0040
+  visual_cue: 'Verified relevant foreground photograph: Actual Finnish/Swedish bilingual street-name sign
+    in Helsinki. Its visible languages illustrate the two named integration-language alternatives. Exact
+    bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0040-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.937347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-001.png
+- sentence_id: hb-c12-u0040-s002
+  sv: Valet av språk för integrationen beror på den nyanländas situation.
+  ru: Выбор языка интеграции зависит от ситуации недавно приехавшего человека.
+  scene_id: hb-c12-u0040
+  visual_cue: 'Source-specific pictorial composition choice: Valet av språk / situation. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0040-s002.wav
+  start_seconds: 11.708333
+  end_seconds: 17.977721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-002.png
+- sentence_id: hb-c12-u0040-s003
+  sv: I största delen av Finland talar majoriteten av människorna finska och största delen av arbetsplatserna
+    är finskspråkiga.
+  ru: На большей части территории Финляндии большинство людей говорит по-фински, и на большинстве рабочих
+    мест рабочим языком является финский.
+  scene_id: hb-c12-u0040
+  visual_cue: 'Source-specific pictorial composition association: finska / arbetsplatserna. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0040-s003.wav
+  start_seconds: 19.75
+  end_seconds: 30.965238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-003.png
+- sentence_id: hb-c12-u0040-s004
+  sv: En del kommuner är tvåspråkiga och i en del kommuner talar majoriteten svenska.
+  ru: Некоторые муниципалитеты двуязычные, а в некоторых большинство населения говорит по-шведски.
+  scene_id: hb-c12-u0040
+  visual_cue: 'Verified relevant foreground photograph: Actual bilingual Mustasaari/Korsholm municipal
+    sign,July2019, illustrating a real bilingual municipality. Does not establish individual language-course
+    availability. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0040-s004.wav
+  start_seconds: 32.75
+  end_seconds: 39.785646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-004.png
+- sentence_id: hb-c12-u0041-s001
+  sv: Att integrera sig på svenska kan vara ett bra alternativ om man bor i en kommun med många svensktalande
+    invånare eller där det finns svenskspråkiga arbetsplatser, eller om familj och vänner talar svenska.
+  ru: Интеграция на шведском языке может быть хорошим вариантом, если вы живёте в муниципалитете, где
+    много шведоязычных жителей или есть рабочие места со шведским рабочим языком, либо если ваша семья
+    и друзья говорят по-шведски.
+  scene_id: hb-c12-u0041
+  visual_cue: 'Source-specific pictorial composition association: svenska / familj och vänner. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0041-s001.wav
+  start_seconds: 42.25
+  end_seconds: 59.455986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-005.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0041-s002
+  sv: Det kan vara bra att hela familjen väljer samma integrationsspråk, så att det till exempel är lättare
+    för föräldrarna att stödja barnens skolgång.
+  ru: 'Может быть полезно, чтобы вся семья выбрала один и тот же язык интеграции: так родителям, например,
+    будет легче поддерживать детей в школьной учёбе.'
+  scene_id: hb-c12-u0041
+  visual_cue: 'Source-specific pictorial composition family: samma integrationsspråk / barnens skolgång.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0041-s002.wav
+  start_seconds: 62.208333
+  end_seconds: 74.538129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-006.png
+- sentence_id: hb-c12-u0042-s001
+  sv: Svenska språket är släkt med till exempel tyskan och engelskan.
+  ru: Шведский язык родственен, например, немецкому и английскому.
+  scene_id: hb-c12-u0042
+  visual_cue: 'Source-specific pictorial composition language: Svenska språket / tyskan och engelskan.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0042-s001.wav
+  start_seconds: 77.0
+  end_seconds: 82.712109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-007.png
+- sentence_id: hb-c12-u0042-s002
+  sv: Därför kan en del som redan kan dessa språk bra uppleva att det är lättare att lära sig svenska
+    än finska.
+  ru: Поэтому некоторым из тех, кто уже хорошо владеет этими языками, может казаться, что выучить шведский
+    легче, чем финский.
+  scene_id: hb-c12-u0042
+  visual_cue: 'Source-specific pictorial composition choice: svenska / finska. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0042-s002.wav
+  start_seconds: 84.5
+  end_seconds: 93.764762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-008.png
+- sentence_id: hb-c12-u0042-s003
+  sv: På många arbetsplatser behövs kunskaper i både finska och svenska, och ibland kan det vara nödvändigt
+    att lära sig båda språken.
+  ru: На многих рабочих местах нужно знание и финского, и шведского языка, а иногда может потребоваться
+    выучить оба языка.
+  scene_id: hb-c12-u0042
+  visual_cue: 'Source-specific pictorial composition work: finska och svenska / arbetsplatser. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0042-s003.wav
+  start_seconds: 95.541667
+  end_seconds: 106.478265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-009.png
+- sentence_id: hb-c12-u0043-s001
+  sv: I integrationsplanen kommer man överens om det primära integrationsspråket.
+  ru: Основной язык интеграции согласовывается в плане интеграции.
+  scene_id: hb-c12-u0043
+  visual_cue: 'Source-specific pictorial composition qualification: integrationsplanen / integrationsspråket.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0043-s001.wav
+  start_seconds: 108.958333
+  end_seconds: 115.785
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-010.png
+- sentence_id: hb-c12-u0044-s001
+  sv: I en del kommuner kan du delta i integrationsutbildning på svenska.
+  ru: В некоторых муниципалитетах вы можете пройти интеграционное обучение на шведском языке.
+  scene_id: hb-c12-u0044
+  visual_cue: 'Source-specific pictorial composition class: integrationsutbildning / svenska. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0044-s001.wav
+  start_seconds: 118.25
+  end_seconds: 124.310408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-011.png
+- sentence_id: hb-c12-u0044-s002
+  sv: Om du inte blir antagen till integrationsutbildning på svenska kan du i vissa fall få stöd för frivilliga
+    studier i svenska, om detta har avtalats i din integrationsplan (kotoutumissuunnitelma).
+  ru: Если вас не приняли на интеграционное обучение на шведском языке, в некоторых случаях вы можете
+    получить поддержку для изучения шведского по собственной инициативе, если это согласовано в вашем
+    плане интеграции (kotoutumissuunnitelma).
+  scene_id: hb-c12-u0044
+  visual_cue: 'Source-specific pictorial composition support: frivilliga studier / integrationsplan. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0044-s002.wav
+  start_seconds: 126.083333
+  end_seconds: 142.871361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-012.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0044-s003
+  sv: Fråga om integration på svenska när din bedömning av kompetens och behovet av integrationstjänster
+    (kotoutumisen palvelutarpeen ja osaamisen arviointi) och integrationsplan upprättas.
+  ru: Спросите об интеграции на шведском языке, когда для вас будут проводить оценку компетенций и потребности
+    в услугах по содействию интеграции (kotoutumisen palvelutarpeen ja osaamisen arviointi) и составлять
+    план интеграции.
+  scene_id: hb-c12-u0044
+  visual_cue: 'Source-specific pictorial composition conversation: Fråga / integrationsplan. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0044-s003.wav
+  start_seconds: 145.625
+  end_seconds: 161.507449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-013.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0044-s004
+  sv: Enligt lag har du rätt att välja antingen finska eller svenska som integrationsspråk.
+  ru: По закону вы имеете право выбрать в качестве языка интеграции либо финский, либо шведский.
+  scene_id: hb-c12-u0044
+  visual_cue: 'Source-specific pictorial composition rights: rätt att välja / finska eller svenska. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0044-s004.wav
+  start_seconds: 164.291667
+  end_seconds: 171.745272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-014.png
+- sentence_id: hb-c12-u0045-s001
+  sv: I Finland garanterar språklagen rätt för alla att använda finska eller svenska hos nationella myndigheter.
+  ru: В Финляндии Закон о языках (språklagen) гарантирует каждому право пользоваться финским или шведским
+    языком при обращении в общегосударственные органы власти.
+  scene_id: hb-c12-u0045
+  visual_cue: 'Source-specific pictorial composition rights: språklagen / nationella myndigheter. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0045-s001.wav
+  start_seconds: 174.208333
+  end_seconds: 183.612415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-015.png
+- sentence_id: hb-c12-u0045-s002
+  sv: Hos lokala myndigheter har man rätt att använda finska eller svenska i tvåspråkiga kommuner eller
+    välfärdsområden.
+  ru: В двуязычных муниципалитетах или регионах по обеспечению благополучия населения при обращении в
+    местные органы власти вы имеете право пользоваться финским или шведским языком.
+  scene_id: hb-c12-u0045
+  visual_cue: 'Source-specific pictorial composition municipality: tvåspråkiga kommuner / finska eller
+    svenska. Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0045-s002.wav
+  start_seconds: 185.375
+  end_seconds: 195.47568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-016.png
+- sentence_id: hb-c12-u0045-s003
+  sv: Många myndigheter erbjuder service också på engelska.
+  ru: Многие органы власти предоставляют услуги также на английском языке.
+  scene_id: hb-c12-u0045
+  visual_cue: 'Source-specific pictorial composition conversation: myndigheter / engelska. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-sprak/narration/hb-c12-u0045-s003.wav
+  start_seconds: 197.25
+  end_seconds: 202.056531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-sprak/pictures/picture-017.png
+render:
+  music_path: studio/media/hb-c12-sprak/sources/music-bed.flac
+  background_image: studio/media/hb-c12-sprak/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.7755952380952382
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Bilingual street sign of John Stenbergin ranta in Helsinki, Finland, 2021.jpg — Coen · CC BY-SA
+      4.0
+    - Senbazuru — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no current-law claims added.
+  - Original foreground illustrations represent source-stated administrative steps and relationships;
+    no real or fabricated personal identifiers.
+  - Distinct background photograph cropped,darkened,blurred and animated continuously; original photo
+    license retained.
+  - Instrumental music faded,ducked,+2dBadjusted and repeated using4second equal-power crossfades when
+    necessary.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Bilingual_street_sign_of_John_Stenbergin_ranta_in_Helsinki,_Finland,_2021.jpg
+    description: Finnish-Swedish sign at John Stenbergin ranta / John Stenbergs strand, located in Siltasaari,
+      Helsinki.
+    license: CC BY-SA 4.0

@@ -22,7 +22,8 @@ def require(condition, message):
 
 def read(path):
     """Load a local YAML document."""
-    return yaml.safe_load(path.read_text(encoding='utf-8'))
+    return yaml.load(path.read_text(encoding='utf-8'),
+                     Loader=getattr(yaml, 'CSafeLoader', yaml.SafeLoader))
 
 
 def write(path, document):

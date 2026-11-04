@@ -1,0 +1,76 @@
+2026-11-03T10:58:50.551892+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T10:59:24.171287+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T10:59:57.716115+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:00:31.323411+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:01:04.912180+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:01:38.496819+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:02:12.083952+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:02:45.670403+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:03:15.672529+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:03:49.301990+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:04:22.912120+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:04:56.498809+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:05:30.066893+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:06:03.610723+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:06:37.187970+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:07:10.780818+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+2026-11-03T11:07:44.368087+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-tillfalligt-skydd
+hb-c12-tillfalligt-skydd 17 current-take hashes checked; 3 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-tillfalligt-skydd
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+picture-016 1 files verified
+picture-017 1 files verified
+music_bed 2 files verified
+narration 17 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-tillfalligt-skydd --save-frames
+2026-11-03T11:08:17.947718+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+{
+  "background_boundary_max_mean_pixel_change": 0.8543434143066406,
+  "full_decode": "passed",
+  "decoded_video_frames": 5705,
+  "decoded_audio_seconds": 237.708,
+  "decoded_audio_peak": 0.6826577186584473,
+  "frame_exports": 20,
+  "source_sentences": 17,
+  "output": "videos/homebrew/hb-c12-15-tillfalligt-skydd.mp4",
+  "sha256": "e020db2a85e7179d4b7e29c7220d26eb89aa31cb318a47957f50e40828cca55c",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 10.824596405029297,
+    "10.0": 22.511253356933594
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998337022045259,
+    "relative_rms_error": 0.018289433295212817,
+    "mix_sha256": "c5997dfc5dc56b1bb58edd687d541cc370c9b41e8a233b20d34a6698323b7cb3"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-tillfalligt-skydd --ready
+2026-11-03T11:08:51.536007+00:00 hb-c12-tillfalligt-skydd verify: PID 344872 running
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-tillfalligt-skydd --ready
+PASS: 17 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-tillfalligt-skydd --require-target
+hb-c12-tillfalligt-skydd: 100.0% of body duration; 17/17 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-tillfalligt-skydd
+hb-c12-tillfalligt-skydd: 17 distinct picture sources / 17 sentence slides; 17 pictured slides
+{"section_id": "hb-c12-tillfalligt-skydd", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-15-tillfalligt-skydd.mp4", "sha256": "e020db2a85e7179d4b7e29c7220d26eb89aa31cb318a47957f50e40828cca55c", "seconds": 237.70833333333334, "source_sentences": 17, "source_section_sha256": "09551f72686838a645fce9d7b8cd783080c161f8a8a44149e2c6a583969e0c02", "translation_file_sha256": "b1f88bfd03f79ef72f5ba60365560f07c54df4989d1eeae59b75911acf8030c1", "picture_fraction": 1.0, "distinct_picture_sources": 17, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-tillfalligt-skydd", "stage": "verify", "status": "finished", "supervisor_pid": 344871, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-tillfalligt-skydd"], "started_at": "2026-11-03T10:58:16.961267+00:00", "log": "studio/production/remaining/hb-c12-tillfalligt-skydd-verify.log", "pid": 344872, "heartbeat_at": "2026-11-03T11:08:51.535206+00:00", "returncode": 0, "finished_at": "2026-11-03T11:08:59.118090+00:00", "missing_outputs": []}

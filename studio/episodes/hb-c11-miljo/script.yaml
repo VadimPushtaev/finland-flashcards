@@ -1,0 +1,809 @@
+schema_version: 1
+section_id: hb-c11-miljo
+chapter_id: hb-c11
+title_sv: Miljöansvar och naturskydd
+title_ru: Экологическая ответственность и охрана природы
+source_path: data/homebrew/sv/chapters/11_boende_vardag_och_miljo.yaml
+translation_path: data/homebrew/ru/sections/hb-c11-miljo.yaml
+example_only: false
+source_section_sha256: 598b5815910985f8ce3b5e61e849e70e52903926db64c89837c2b2c8c0823e89
+translation_file_sha256: 3d81b0ca89d2facddc384e83c36a7a4af53e322235603e23b75c4981cd395e15
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: 'Exact consecutive source topics: household saving,climate consequences,biodiversity,environmental
+    institutions and ethical animal care. Every source sentence appears once in stored order.'
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#243c32'', ''text'': ''#faf3e8'', ''secondary'': ''#c5dfce'',
+    ''highlight'': ''#e3c58c'', ''separator'': ''#4d7560''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Nuuksio National Park 8-2022 49.jpg by Stephan van Helden continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.9586309523809526. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Comfortable Mystery 2 by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 53.917 seconds; prepared lossless stereo bed 274.208
+    seconds. Repeat count 5, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c11-u0192
+  description: I Finland är det viktigt att spara energi.
+- id: hb-c11-u0193
+  description: Klimatförändringen innebär att temperaturen på jorden gradvis ökar.
+- id: hb-c11-u0194
+  description: Sjukdomar sprider sig, och djurarter dör ut.
+- id: hb-c11-u0195
+  description: Naturen skyddas för att man vill bevara djur- och växtarter och skydda naturens mångfald
+    mot påverkan från mänsklig verksamhet.
+- id: hb-c11-u0196
+  description: I Finland skyddas naturen av finsk lag, EU-lagstiftning, statliga myndigheter och olika
+    frivilligorganisationer.
+- id: hb-c11-u0197
+  description: I Finland ska både vilda djur, husdjur och sällskapsdjur behandlas etiskt och korrekt.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified Finnish national-park landscape photograph,continuous decorative
+    natural context.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Comfortable Mystery 2 — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: energy
+  kind: foreground
+  description: 'Actual LED bulb or original bulb illustration: an energy-saving object, without an invented
+    saving percentage.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: bills
+  kind: foreground
+  description: Energy and water saving jointly reduce bills; two inputs converge on a bill/coin object
+    rather than implying energy causes water.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: environment
+  kind: foreground
+  description: Energy saving supports environmental protection; only the source-stated relationship.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: home_water
+  kind: foreground
+  description: Actual running tap as a concrete household water-use object; no claim about its precise
+    consumption.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: climate_protection
+  kind: foreground
+  description: Less energy use supports protection of Earth from climate change, without numerical trends.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: temperature
+  kind: foreground
+  description: Earth and a thermometer depict gradual warming qualitatively; no invented temperature value.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: life
+  kind: foreground
+  description: Human and animal life across Earth; no pictured individual is labelled as a climate victim.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: agriculture
+  kind: foreground
+  description: Warmer conditions and agricultural difficulty shown with a thermometer and field; no fabricated
+    crop-loss figures.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: extremes
+  kind: foreground
+  description: Contrasting dry/hot and wet/cold conditions, preserving the source contrast without attributing
+    a particular event.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: danger
+  kind: foreground
+  description: Warning over human life and habitat, expressing only the stated danger.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: species_loss
+  kind: foreground
+  description: Two parallel source consequences, disease spread and species loss; no arrow claiming one
+    directly causes the other.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: conservation
+  kind: foreground
+  description: Accurately identified Finnish protected forest photograph or biodiversity still life, not
+    a fabricated species inventory.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: biodiversity
+  kind: foreground
+  description: Different organism categories illustrate biodiversity without counts or named species not
+    in the source.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: human_effects
+  kind: foreground
+  description: Litter and pollution pictorial examples; no invented chemical,spill location or quantitative
+    pollution data.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: law
+  kind: foreground
+  description: Source-named environmental law protects the depicted natural environment; no additional
+    legal rule.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: protection_sources
+  kind: foreground
+  description: Finnish and EU legal protection shown with accurate flags, alongside natural habitat; no
+    invented borders or member list.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: ministry_1983
+  kind: foreground
+  description: The named ministry and its exact source founding year; generic institutional icon rather
+    than an unverified building identity.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: sustainability
+  kind: foreground
+  description: Natural resources and biodiversity as the two explicit monitoring subjects, without new
+    sustainability thresholds.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: animal_categories
+  kind: foreground
+  description: Wild,domestic and companion animal categories under the stated ethical-treatment principle;
+    no invented husbandry conditions.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: animal_welfare
+  kind: foreground
+  description: Animal-welfare law and protected animal symbol, avoiding graphic anatomy or claims about
+    a photographed animal.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: care_conditions
+  kind: foreground
+  description: Animal care and conditions shown schematically; no particular enclosure dimension is asserted.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: livestock
+  kind: foreground
+  description: Actual identified cattle photograph or an authority/animal supervision diagram, without
+    identifying a photographed farmer status.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: pets
+  kind: foreground
+  description: Actual dog-and-cat photograph, correctly identified as companion-animal context.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: city_country
+  kind: foreground
+  description: City and countryside pet settings; no inference about the ownership or residence of a pictured
+    individual.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c11-u0192-s001
+  sv: I Finland är det viktigt att spara energi.
+  ru: В Финляндии важно экономить энергию.
+  scene_id: hb-c11-u0192
+  visual_cue: 'Actual LED bulb or original bulb illustration: an energy-saving object, without an invented
+    saving percentage.'
+  asset_ids:
+  - episode_background
+  - energy
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0192-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.359932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/energy.png
+- sentence_id: hb-c11-u0192-s002
+  sv: Genom att spara energi och vatten sparar man pengar, eftersom el- och vattenräkningarna blir lägre.
+  ru: Экономя энергию и воду, люди экономят деньги, поскольку счета за электричество и воду становятся
+    меньше.
+  scene_id: hb-c11-u0192
+  visual_cue: Energy and water saving jointly reduce bills; two inputs converge on a bill/coin object
+    rather than implying energy causes water.
+  asset_ids:
+  - episode_background
+  - bills
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0192-s002.wav
+  start_seconds: 9.333333
+  end_seconds: 18.040816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/bills.png
+- sentence_id: hb-c11-u0192-s003
+  sv: Genom att spara energi skyddar människorna också miljön.
+  ru: Экономя энергию, люди также защищают окружающую среду.
+  scene_id: hb-c11-u0192
+  visual_cue: Energy saving supports environmental protection; only the source-stated relationship.
+  asset_ids:
+  - episode_background
+  - environment
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0192-s003.wav
+  start_seconds: 20.0
+  end_seconds: 25.29415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/environment.png
+- sentence_id: hb-c11-u0192-s004
+  sv: Tanken är att alla människor ska använda el, energi och vatten sparsamt hemma.
+  ru: Идея заключается в том, чтобы все люди бережно расходовали дома электричество, энергию и воду.
+  scene_id: hb-c11-u0192
+  visual_cue: Actual running tap as a concrete household water-use object; no claim about its precise
+    consumption.
+  asset_ids:
+  - episode_background
+  - home_water
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0192-s004.wav
+  start_seconds: 27.25
+  end_seconds: 34.285646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/home_water.png
+- sentence_id: hb-c11-u0192-s005
+  sv: Ju mindre energi som förbrukas, desto bättre kan vi skydda jorden mot klimatförändringen.
+  ru: Чем меньше энергии расходуется, тем лучше мы можем защитить Землю от изменения климата.
+  scene_id: hb-c11-u0192
+  visual_cue: Less energy use supports protection of Earth from climate change, without numerical trends.
+  asset_ids:
+  - episode_background
+  - climate_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0192-s005.wav
+  start_seconds: 36.25
+  end_seconds: 43.982245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/climate_protection.png
+- sentence_id: hb-c11-u0193-s001
+  sv: Klimatförändringen innebär att temperaturen på jorden gradvis ökar.
+  ru: Изменение климата означает, что температура на Земле постепенно повышается.
+  scene_id: hb-c11-u0193
+  visual_cue: Earth and a thermometer depict gradual warming qualitatively; no invented temperature value.
+  asset_ids:
+  - episode_background
+  - temperature
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0193-s001.wav
+  start_seconds: 46.458333
+  end_seconds: 52.449082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/temperature.png
+- sentence_id: hb-c11-u0193-s002
+  sv: Klimatförändringen har många allvarliga konsekvenser för människornas och djurens liv på hela jordklotet.
+  ru: Изменение климата имеет множество серьёзных последствий для жизни людей и животных на всём земном
+    шаре.
+  scene_id: hb-c11-u0193
+  visual_cue: Human and animal life across Earth; no pictured individual is labelled as a climate victim.
+  asset_ids:
+  - episode_background
+  - life
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0193-s002.wav
+  start_seconds: 54.416667
+  end_seconds: 63.402789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/life.png
+- sentence_id: hb-c11-u0193-s003
+  sv: När temperaturen på jorden ökar blir det svårare och svårare att bedriva jordbruk.
+  ru: С повышением температуры на Земле заниматься сельским хозяйством становится всё труднее.
+  scene_id: hb-c11-u0193
+  visual_cue: Warmer conditions and agricultural difficulty shown with a thermometer and field; no fabricated
+    crop-loss figures.
+  asset_ids:
+  - episode_background
+  - agriculture
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0193-s003.wav
+  start_seconds: 65.375
+  end_seconds: 72.898265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/agriculture.png
+- sentence_id: hb-c11-u0193-s004
+  sv: De extrema väderfenomenen blir kraftigare, vilket innebär att det på torra platser blir allt torrare
+    och varmare och på andra platser fuktigare eller kallare.
+  ru: Экстремальные погодные явления усиливаются, а это означает, что в сухих местах становится всё суше
+    и теплее, а в других — влажнее или холоднее.
+  scene_id: hb-c11-u0193
+  visual_cue: Contrasting dry/hot and wet/cold conditions, preserving the source contrast without attributing
+    a particular event.
+  asset_ids:
+  - episode_background
+  - extremes
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0193-s004.wav
+  start_seconds: 74.875
+  end_seconds: 88.110374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/extremes.png
+- sentence_id: hb-c11-u0193-s005
+  sv: Förändringarna orsakar fara för både människorna, djuren och hela vår livsmiljö.
+  ru: Эти изменения создают опасность для людей, животных и всей нашей среды обитания.
+  scene_id: hb-c11-u0193
+  visual_cue: Warning over human life and habitat, expressing only the stated danger.
+  asset_ids:
+  - episode_background
+  - danger
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0193-s005.wav
+  start_seconds: 90.083333
+  end_seconds: 97.397619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/danger.png
+- sentence_id: hb-c11-u0194-s001
+  sv: Sjukdomar sprider sig, och djurarter dör ut.
+  ru: Болезни распространяются, а виды животных вымирают.
+  scene_id: hb-c11-u0194
+  visual_cue: Two parallel source consequences, disease spread and species loss; no arrow claiming one
+    directly causes the other.
+  asset_ids:
+  - episode_background
+  - species_loss
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0194-s001.wav
+  start_seconds: 99.875
+  end_seconds: 104.263571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/species_loss.png
+- sentence_id: hb-c11-u0195-s001
+  sv: Naturen skyddas för att man vill bevara djur- och växtarter och skydda naturens mångfald mot påverkan
+    från mänsklig verksamhet.
+  ru: Природу охраняют, чтобы сохранить виды животных и растений и защитить биологическое разнообразие
+    от воздействия человеческой деятельности.
+  scene_id: hb-c11-u0195
+  visual_cue: Accurately identified Finnish protected forest photograph or biodiversity still life, not
+    a fabricated species inventory.
+  asset_ids:
+  - episode_background
+  - conservation
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0195-s001.wav
+  start_seconds: 106.75
+  end_seconds: 117.547279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/conservation.png
+- sentence_id: hb-c11-u0195-s002
+  sv: Mångfald i naturen betyder att det finns så många olika arter av djur, växter och andra organismer
+    som möjligt.
+  ru: Биологическое разнообразие означает, что в природе существует как можно больше различных видов животных,
+    растений и других организмов.
+  scene_id: hb-c11-u0195
+  visual_cue: Different organism categories illustrate biodiversity without counts or named species not
+    in the source.
+  asset_ids:
+  - episode_background
+  - biodiversity
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0195-s002.wav
+  start_seconds: 119.5
+  end_seconds: 129.182721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/biodiversity.png
+- sentence_id: hb-c11-u0195-s003
+  sv: Människans verksamhet orsakar förändringar i den naturliga miljön; förstöring, förorening, nedskräpning
+    och övergödning samt utrotning av arter.
+  ru: 'Деятельность человека вызывает изменения в природной среде: разрушение, загрязнение, засорение
+    мусором и эвтрофикацию, а также истребление видов.'
+  scene_id: hb-c11-u0195
+  visual_cue: Litter and pollution pictorial examples; no invented chemical,spill location or quantitative
+    pollution data.
+  asset_ids:
+  - episode_background
+  - human_effects
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0195-s003.wav
+  start_seconds: 131.166667
+  end_seconds: 143.566122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/human_effects.png
+- sentence_id: hb-c11-u0195-s004
+  sv: Miljöskyddslagen förebygger förstöring av natur och miljö och motverkar miljöskador.
+  ru: Закон об охране окружающей среды (Miljöskyddslagen) предотвращает разрушение природы и окружающей
+    среды и противодействует причинению вреда окружающей среде.
+  scene_id: hb-c11-u0195
+  visual_cue: Source-named environmental law protects the depicted natural environment; no additional
+    legal rule.
+  asset_ids:
+  - episode_background
+  - law
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0195-s004.wav
+  start_seconds: 145.541667
+  end_seconds: 153.064932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/law.png
+- sentence_id: hb-c11-u0196-s001
+  sv: I Finland skyddas naturen av finsk lag, EU-lagstiftning, statliga myndigheter och olika frivilligorganisationer.
+  ru: В Финляндии природу защищают финские законы, законодательство ЕС, государственные органы и различные
+    добровольные организации.
+  scene_id: hb-c11-u0196
+  visual_cue: Finnish and EU legal protection shown with accurate flags, alongside natural habitat; no
+    invented borders or member list.
+  asset_ids:
+  - episode_background
+  - protection_sources
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: I Finland skyddas naturen av finsk lag, E U-lagstiftning, statliga myndigheter och olika frivilligorganisationer.
+    reason: Speech-only separation of Swedish EU letter names; source meaning and display preserved.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0196-s001.wav
+  start_seconds: 155.541667
+  end_seconds: 166.060306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/protection_sources.png
+- sentence_id: hb-c11-u0196-s002
+  sv: Miljöministeriet grundades i Finland redan år 1983.
+  ru: Министерство окружающей среды (Miljöministeriet) было создано в Финляндии ещё в 1983 году.
+  scene_id: hb-c11-u0196
+  visual_cue: The named ministry and its exact source founding year; generic institutional icon rather
+    than an unverified building identity.
+  asset_ids:
+  - episode_background
+  - ministry_1983
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Miljöministeriet grundades i Finland redan år nittonhundraåttiotre.
+    reason: Expand the exact source year into its Swedish spoken form only. Display remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0196-s002.wav
+  start_seconds: 168.041667
+  end_seconds: 174.241395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/ministry_1983.png
+- sentence_id: hb-c11-u0196-s003
+  sv: Det övervakar bland annat att naturresurserna utnyttjas hållbart och att naturens mångfald bevaras.
+  ru: Оно, в частности, следит за тем, чтобы природные ресурсы использовались на принципах устойчивости,
+    а биологическое разнообразие сохранялось.
+  scene_id: hb-c11-u0196
+  visual_cue: Natural resources and biodiversity as the two explicit monitoring subjects, without new
+    sustainability thresholds.
+  asset_ids:
+  - episode_background
+  - sustainability
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0196-s003.wav
+  start_seconds: 176.208333
+  end_seconds: 184.706837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/sustainability.png
+- sentence_id: hb-c11-u0197-s001
+  sv: I Finland ska både vilda djur, husdjur och sällskapsdjur behandlas etiskt och korrekt.
+  ru: В Финляндии с дикими животными, одомашненными животными и домашними питомцами следует обращаться
+    этично и надлежащим образом.
+  scene_id: hb-c11-u0197
+  visual_cue: Wild,domestic and companion animal categories under the stated ethical-treatment principle;
+    no invented husbandry conditions.
+  asset_ids:
+  - episode_background
+  - animal_categories
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s001.wav
+  start_seconds: 187.166667
+  end_seconds: 194.898912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/animal_categories.png
+- sentence_id: hb-c11-u0197-s002
+  sv: Djurskyddslagen främjar djurens välmående och en bra behandling av djuren i Finland.
+  ru: Закон о защите животных (Djurskyddslagen) способствует благополучию животных и хорошему обращению
+    с ними в Финляндии.
+  scene_id: hb-c11-u0197
+  visual_cue: Animal-welfare law and protected animal symbol, avoiding graphic anatomy or claims about
+    a photographed animal.
+  asset_ids:
+  - episode_background
+  - animal_welfare
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s002.wav
+  start_seconds: 196.875
+  end_seconds: 204.258946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/animal_welfare.png
+- sentence_id: hb-c11-u0197-s003
+  sv: I lagen fastslås bland annat hur djur ska skötas, uppfödas och slaktas och i hurudana omständigheter
+    djuren inte får hållas.
+  ru: В законе, в частности, установлено, как следует ухаживать за животными, разводить их и забивать
+    и в каких условиях животных содержать нельзя.
+  scene_id: hb-c11-u0197
+  visual_cue: Animal care and conditions shown schematically; no particular enclosure dimension is asserted.
+  asset_ids:
+  - episode_background
+  - care_conditions
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s003.wav
+  start_seconds: 206.25
+  end_seconds: 217.116939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/care_conditions.png
+- sentence_id: hb-c11-u0197-s004
+  sv: Myndigheterna övervakar uppfödningen av produktionsdjur, alltså till exempel kor, svin och höns.
+  ru: Органы власти контролируют разведение сельскохозяйственных животных, то есть, например, коров, свиней
+    и кур.
+  scene_id: hb-c11-u0197
+  visual_cue: Actual identified cattle photograph or an authority/animal supervision diagram, without
+    identifying a photographed farmer status.
+  asset_ids:
+  - episode_background
+  - livestock
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s004.wav
+  start_seconds: 219.083333
+  end_seconds: 227.930136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/livestock.png
+- sentence_id: hb-c11-u0197-s005
+  sv: I Finland hör hundar och katter till de vanligaste sällskapsdjuren.
+  ru: В Финляндии собаки и кошки относятся к самым распространённым домашним питомцам.
+  scene_id: hb-c11-u0197
+  visual_cue: Actual dog-and-cat photograph, correctly identified as companion-animal context.
+  asset_ids:
+  - episode_background
+  - pets
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s005.wav
+  start_seconds: 229.916667
+  end_seconds: 235.977075
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/pets.png
+- sentence_id: hb-c11-u0197-s006
+  sv: Både människor i städer och på landet har sådana.
+  ru: Их держат люди и в городах, и в сельской местности.
+  scene_id: hb-c11-u0197
+  visual_cue: City and countryside pet settings; no inference about the ownership or residence of a pictured
+    individual.
+  asset_ids:
+  - episode_background
+  - city_country
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-miljo/narration/hb-c11-u0197-s006.wav
+  start_seconds: 237.958333
+  end_seconds: 242.486224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-miljo/pictures/city_country.png
+render:
+  music_path: studio/media/hb-c11-miljo/sources/music-bed.flac
+  background_image: studio/media/hb-c11-miljo/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.9586309523809526
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Nuuksio National Park 8-2022 49.jpg — Stephan van Helden · CC BY-SA 4.0
+    - Comfortable Mystery 2 — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#243c32'
+    text: '#faf3e8'
+    secondary: '#c5dfce'
+    highlight: '#e3c58c'
+    separator: '#4d7560'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Nuuksio_National_Park_8-2022_49.jpg
+    description: In Nuuksio National Park, August 2022
+    license: CC BY-SA 4.0

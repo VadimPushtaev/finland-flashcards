@@ -126,6 +126,35 @@ def text_block(draw, text, xy, face, width, fill, leading, highlights=()):
     return y
 
 
+def segment_timeline(row, item, duration):
+    """Fit manually aligned bilingual chunks inside one unchanged audio interval."""
+    segments = row.get('display_segments', [])
+    if not segments:
+        return []
+    for language in ('sv', 'ru'):
+        if any(not segment[language].strip() for segment in segments):
+            raise ValueError('Empty bilingual display segment: ' + row['sentence_id'])
+        if (' '.join(segment[language] for segment in segments).split()
+                != row[language].split()):
+            raise ValueError('Display segments change source text: ' + row['sentence_id'])
+    offsets = [segment.get('speech_offset_seconds') for segment in segments]
+    if any(type(offset) not in (int, float) or not math.isfinite(offset)
+           for offset in offsets):
+        raise ValueError('Display segments require measured speech_offset_seconds: ' + row['sentence_id'])
+    if offsets[0] != 0 or any(not 0 <= offset < duration for offset in offsets):
+        raise ValueError('Display segment offset outside narration: ' + row['sentence_id'])
+    if any(round(right*FPS) <= round(left*FPS) for left, right in zip(offsets, offsets[1:])):
+        raise ValueError('Display segment speech offsets must increase by at least one frame: ' + row['sentence_id'])
+    starts = [item['start_frame']] + [round((item['speech_start_seconds'] + offset) * FPS)
+                                    for offset in offsets[1:]]
+    ends = starts[1:] + [item['start_frame'] + item['frames']]
+    if any(end <= start for start, end in zip(starts, ends)):
+        raise ValueError('Display segment boundaries must increase by at least one frame: ' + row['sentence_id'])
+    return [dict(index=index, start_frame=start, frames=end-start,
+                 sv=segment['sv'], ru=segment['ru'], speech_offset_seconds=offset)
+            for index, (segment, offset, start, end) in enumerate(zip(segments, offsets, starts, ends))]
+
+
 def build_timeline(script):
     timeline = [{'kind': 'title', 'frames': 3 * FPS}]
     cursor = 3 * FPS
@@ -133,9 +162,13 @@ def build_timeline(script):
         info = sf.info(ROOT / row['audio_path'])
         lead = 6  # 250 ms at 24 fps
         frames = math.ceil((info.duration + row['pause_after_seconds']) * FPS) + lead
-        timeline.append(dict(kind='sentence', sentence_id=row['sentence_id'], start_frame=cursor,
-                             frames=frames, speech_start_seconds=(cursor + lead) / FPS,
-                             speech_end_seconds=(cursor + lead) / FPS + info.duration))
+        item = dict(kind='sentence', sentence_id=row['sentence_id'], start_frame=cursor,
+                    frames=frames, speech_start_seconds=(cursor + lead) / FPS,
+                    speech_end_seconds=(cursor + lead) / FPS + info.duration)
+        segments = segment_timeline(row, item, info.duration)
+        if segments:
+            item['display_segments'] = segments
+        timeline.append(item)
         cursor += frames
     for index in range(len(script['render']['credits'])):
         timeline.append(dict(kind='credits', index=index, start_frame=cursor, frames=15 * FPS))
@@ -225,15 +258,23 @@ def prepare_background(image, style):
     return Image.blend(base, Image.new('RGB', base.size, BG), style['darken'])
 
 
-def background_frame(base, progress, style):
+def background_frame(base, progress, style, mode='RGBA'):
     # Pillow's separable resize keeps fractional crop coordinates while avoiding
     # the slower general-purpose per-pixel transform for this scale-only mapping.
     samplers = {'bicubic': Image.Resampling.BICUBIC, 'bilinear': Image.Resampling.BILINEAR}
     sampler = style.get('resampling', 'bicubic')
     if sampler not in samplers:
         raise ValueError('Unknown background resampling: ' + sampler)
-    return base.resize((W, H), resample=samplers[sampler],
-                       box=background_extent(base.size, progress, style)).convert('RGBA')
+    frame = base.resize((W, H), resample=samplers[sampler],
+                        box=background_extent(base.size, progress, style))
+    return frame if frame.mode == mode else frame.convert(mode)
+
+
+def composite_rgb_frame(base, progress, style, card_rgb, card_alpha):
+    """Composite onto an opaque background without redundant RGBA conversions."""
+    frame = background_frame(base, progress, style, mode='RGB')
+    frame.paste(card_rgb, (0, 0), card_alpha)
+    return frame
 
 
 def make_card(script, item, rows, images):
@@ -259,6 +300,9 @@ def make_card(script, item, rows, images):
     draw.rounded_rectangle((890, 165, 1860, 980), radius=20, fill=(*ImageColor.getrgb(BG), 225))
     row = rows[item['sentence_id']]
     index = script['sentences'].index(row)
+    if 'segment_index' in item:
+        segment = row['display_segments'][item['segment_index']]
+        row = {**row, 'sv': segment['sv'], 'ru': segment['ru']}
     draw.text((90, 65), script['title_sv'], font=fitted_font(script['title_sv'], 30, 1550, True), fill=MUTED)
     draw.text((1740, 65), f'{index + 1:02d} / {len(rows):02d}', font=font(27), fill=MUTED)
     draw.line((90, 125, 1830, 125), fill=SEPARATOR, width=2)
@@ -347,10 +391,21 @@ def main():
     backdrop = prepare_background(images[script['render']['background_image']], style)
     cards = []
     for i, item in enumerate(timeline):
-        card, photo = make_card(script, item, rows, images)
-        still = Image.alpha_composite(background_frame(backdrop, (item['start_frame'] + item['frames'] / 2) / (frames - 1), style), card)
-        still.convert('RGB').save(output / f'frame-{i:02d}.png')
-        cards.append((card, photo))
+        variants = []
+        chunks = item.get('display_segments') or [item]
+        for j, chunk in enumerate(chunks):
+            displayed = {**item, **chunk}
+            if item.get('display_segments'):
+                displayed['segment_index'] = j
+            card, photo = make_card(script, displayed, rows, images)
+            still = composite_rgb_frame(backdrop, (displayed['start_frame'] + displayed['frames'] / 2) / (frames - 1), style,
+                                        card.convert('RGB'), card.getchannel('A'))
+            if j == 0:
+                still.save(output / f'frame-{i:02d}.png')
+            if item.get('display_segments'):
+                still.save(output / f'frame-{i:02d}-segment-{j:02d}.png')
+            variants.append((card, photo, displayed['start_frame']))
+        cards.append(variants)
     (output / 'timeline.json').write_text(json.dumps(timeline, indent=2) + '\n')
     if args.stills_only:
         print('All text fits; review frames saved to', output)
@@ -364,16 +419,29 @@ def main():
         process = subprocess.Popen(command, stdin=subprocess.PIPE, stderr=log)
         try:
             previous = None
-            for i, (item, (card, photo)) in enumerate(zip(timeline, cards)):
+            cached_card = cached_rgb = cached_alpha = None
+            for i, (item, variants) in enumerate(zip(timeline, cards)):
+                variant_index = 0
                 for frame in range(item['frames']):
+                    absolute_frame = item['start_frame'] + frame
+                    if variant_index + 1 < len(variants) and absolute_frame >= variants[variant_index + 1][2]:
+                        variant_index += 1
+                    card, photo, _ = variants[variant_index]
                     overlay = card
                     if previous is not None and item['kind'] == 'sentence' and timeline[i - 1]['kind'] == 'sentence' and frame < 6:
                         overlay = card.copy()
                         overlay.paste(Image.blend(previous.crop((90, 180, 850, 900)), card.crop((90, 180, 850, 900)), (frame + 1) / 6), (90, 180))
+                    if overlay is card:
+                        if cached_card is not card:
+                            cached_card = card
+                            cached_rgb, cached_alpha = card.convert('RGB'), card.getchannel('A')
+                        card_rgb, card_alpha = cached_rgb, cached_alpha
+                    else:
+                        card_rgb, card_alpha = overlay.convert('RGB'), overlay.getchannel('A')
                     progress = (item['start_frame'] + frame) / max(1, frames - 1)
-                    current = Image.alpha_composite(background_frame(backdrop, progress, style), overlay)
-                    process.stdin.write(current.convert('RGB').tobytes())
-                previous = card
+                    current = composite_rgb_frame(backdrop, progress, style, card_rgb, card_alpha)
+                    process.stdin.write(current.tobytes())
+                previous = variants[-1][0]
                 print(f'Encoded {i + 1}/{len(cards)}: {item.get("sentence_id", item["kind"])}', flush=True)
             process.stdin.close()
             if process.wait() != 0:
@@ -387,6 +455,10 @@ def main():
         if item['kind'] == 'sentence':
             rows[item['sentence_id']]['start_seconds'] = round(item['speech_start_seconds'], 6)
             rows[item['sentence_id']]['end_seconds'] = round(item['speech_end_seconds'], 6)
+            for segment, timing in zip(rows[item['sentence_id']].get('display_segments', []),
+                                       item.get('display_segments', [])):
+                segment['start_seconds'] = round(timing['start_frame'] / FPS, 6)
+                segment['end_seconds'] = round((timing['start_frame'] + timing['frames']) / FPS, 6)
     (episode / 'script.yaml').write_text(yaml.safe_dump(script, sort_keys=False, allow_unicode=True, width=100))
     report = dict(output=str(destination.relative_to(ROOT)), sha256=hashlib.sha256(destination.read_bytes()).hexdigest(), width=W, height=H, fps=FPS, frames=frames, seconds=frames/FPS, audio=mix, timeline=timeline, review_status='preview; user audiovisual review pending')
     (episode / 'render.json').write_text(json.dumps(report, indent=2) + '\n')

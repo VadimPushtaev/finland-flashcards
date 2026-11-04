@@ -1,0 +1,11 @@
+"""Fetch exact licensed concrete subjects for public-health illustrations."""
+from pathlib import Path
+import json,subprocess
+ROOT=Path(__file__).resolve().parents[3];PROD=Path(__file__).resolve().parent;SID='hb-c10-folkhalsa';EP=ROOT/'studio/episodes'/SID;S=ROOT/'studio/media'/SID/'sources';S.mkdir(parents=True,exist_ok=True)
+choices={13:('exercise-research.json','File:Joggers 02.jpg','Two actual joggers illustrate a healthy everyday practice, without a diagnosis or claim that they are photographed in Finland.'),16:('groceries-research.json','File:Vegetables in a grocery store, Paris.JPG','Visible varied vegetables illustrate the exact source nutrition fragment; this is an illustrative food-object photograph from Paris, not a Finnish shop claim.'),17:('exercise-research.json','File:Morning Jog.jpg','Actual jogging illustrates the source physical-activity fragment; no personal medical status or Finnish location is inferred.'),18:('sleep-and-sign-research.json','File:Bed.jpg','A real sleeping bed illustrates sleep and rest; no personal bedroom identity or medical claim.'),20:('housing-research.json','File:Portal through apartment building of Tripla in Keski-Pasila, Helsinki, Finland, 2022 May - 2.jpg','Accurately identified Finnish residential-building setting illustrates housing; no legal adequacy judgment about a particular household.'),37:('examination-room-research.json',"File:A typical examination room and exam table in a doctor's office. 01.jpg",'An actual unoccupied examination room illustrates medical examination, not a named Finnish clinic or a particular screening procedure.')}
+records={}
+for idx,(file,title,context) in choices.items():
+    x=json.loads((PROD/file).read_text());p=next(p for p in x['query']['pages'].values() if p['title']==title);pi=p['imageinfo'][0];url=pi.get('thumburl',pi['url']).replace('https://thumb.wikimedia.org/','https://upload.wikimedia.org/').split('?')[0];dest=S/f'foreground-{idx+1:02}.jpg'
+    subprocess.run([str(ROOT/'.venv/bin/python'),str(ROOT/'studio/production/remaining/download.py'),'--url',url,'--output',str(dest),'--timeout','180'],check=True)
+    records[str(idx)]=dict(title=title,imageinfo=pi,path=str(dest.relative_to(ROOT)),download_url=url,context=context)
+(EP/'selected-photos.json').write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')

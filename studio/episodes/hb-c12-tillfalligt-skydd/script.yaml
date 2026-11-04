@@ -1,0 +1,708 @@
+schema_version: 1
+section_id: hb-c12-tillfalligt-skydd
+chapter_id: hb-c12
+title_sv: Tillfälligt skydd
+title_ru: Временная защита
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-tillfalligt-skydd.yaml
+example_only: false
+source_section_sha256: 09551f72686838a645fce9d7b8cd783080c161f8a8a44149e2c6a583969e0c02
+translation_file_sha256: b1f88bfd03f79ef72f5ba60365560f07c54df4989d1eeae59b75911acf8030c1
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Follow exact archived source order including every list fragment. Preserve permit categories,conditions,qualifiers
+    and attributed year-specific figures. Photographs contextualize places or objects; no photographed
+    person assigned immigration status. All legal relationships are the source statements,not updated
+    advice.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Robert Huberin tien vastaanottokeskus.jpg by Hezzu continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.6979166666666667. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Jellyfish in Space by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 391.262 seconds; prepared lossless stereo bed 237.708
+    seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0195
+  description: Tillfälligt skydd kan ges i situationer där ett stort antal människor har varit tvungna
+    att fly samtidigt till följd av till exempel krig.
+- id: hb-c12-u0196
+  description: Du kan få uppehållstillstånd på grund av tillfälligt skydd om du är
+- id: hb-c12-u0197
+  description: ukrainsk medborgare och inte kan återvända till Ukraina på grund av det ryska anfallet
+- id: hb-c12-u0199
+  description: medborgare i ett land utanför EU och har fått internationellt skydd i Ukraina eller bott
+    i Ukraina med ett permanent uppehållstillstånd, och inte kan återvända till ditt hemland
+- id: hb-c12-u0200
+  description: familjemedlem till ovan nämnda personer, om familjebandet bildades i Ukraina före 24.2.2022.
+- id: hb-c12-u0201
+  description: I övriga fall ska du kontrollera på Migrationsverkets webbplats om du har rätt att få tillfälligt
+    skydd i Finland.
+- id: hb-c12-u0202
+  description: När du har ansökt om tillfälligt skydd kan du bo i ett mottagningscenter och få mottagningscentrets
+    tjänster.
+- id: hb-c12-u0203
+  description: Du har rätt att arbeta och studera i Finland omedelbart efter att du har ansökt om tillfälligt
+    skydd.
+- id: hb-c12-u0204
+  description: Du kan få rätt till FPA:s förmåner om du arbetar i Finland eller har bott i Finland minst
+    ett år.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative setting or landscape; decorative context,not proof
+    of a current migration rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Jellyfish in Space — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: Temporary protection for simultaneous mass displacement, for example war; no invented nationality
+    list or emergency trigger.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Source-dated Ukraine-war context from2022, no invented current eligibility deadline or
+    conflict map.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: Temporary-protection process simpler/faster than asylum as stated; no guaranteed processing
+    deadline or automatic personal approval.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: EU regulatory origin, no specific directive number or current extension date added.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Introduce following eligible categories as conditional list, not universal grant.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Ukrainian nationality AND inability to return due to Russian attack; no real photographed
+    person assigned either condition.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Non-EU national with Ukrainian international protection OR permanent Ukrainian residence,
+    AND unable to return home. Do not require Ukrainian nationality or all alternatives simultaneously.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Family link must have formed in Ukraine before exact source date24February2022; not any
+    later relationship or every family member globally.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Other cases require checking official source, no invented eligibility determination or
+    URL.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: After application may use reception-centre accommodation/services, without current vacancy
+    or compulsory-centre inference.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Reception-service right continues even after protection-based permit grant, not automatically
+    ending at decision.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Work and study rights immediately after temporary-protection application, clearly distinct
+    from other permit-route waiting rules.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Unrestricted industry scope of work right, no invented occupational licence exemption or
+    job guarantee.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Municipal unemployment/employment services after permit grant, distinct from immediate
+    post-application work right.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Possible FPA entitlement from Finnish work OR residence for at least one year; alternatives,
+    not both required or automatic award of every benefit.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Reception services before preceding FPA-entitlement circumstances; no invented no-support
+    gap.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Reception allowance when applicant/family income and assets insufficient for necessities;
+    no zero-asset requirement or invented payment rate.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0195-s001
+  sv: Tillfälligt skydd kan ges i situationer där ett stort antal människor har varit tvungna att fly
+    samtidigt till följd av till exempel krig.
+  ru: Временная защита может предоставляться в ситуациях, когда большое число людей одновременно было
+    вынуждено бежать, например, из-за войны.
+  scene_id: hb-c12-u0195
+  visual_cue: Temporary protection for simultaneous mass displacement, for example war; no invented nationality
+    list or emergency trigger.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0195-s001.wav
+  start_seconds: 3.25
+  end_seconds: 15.231497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0195-s002
+  sv: Tillfälligt skydd har i Finland beviljats personer som flytt kriget i Ukraina, som startade år 2022.
+  ru: В Финляндии временная защита предоставлена людям, бежавшим от войны в Украине, начавшейся в 2022
+    году.
+  scene_id: hb-c12-u0195
+  visual_cue: Source-dated Ukraine-war context from2022, no invented current eligibility deadline or conflict
+    map.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0195-s002.wav
+  start_seconds: 17.208333
+  end_seconds: 27.239354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0195-s003
+  sv: Beviljande av tillfälligt skydd gör det möjligt att erbjuda ett begränsat antal människor skydd
+    genom en snabb process som är enklare än asylförfarandet.
+  ru: Предоставление временной защиты позволяет обеспечить защиту ограниченному числу людей посредством
+    быстрой процедуры, которая проще процедуры предоставления убежища.
+  scene_id: hb-c12-u0195
+  visual_cue: Temporary-protection process simpler/faster than asylum as stated; no guaranteed processing
+    deadline or automatic personal approval.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0195-s003.wav
+  start_seconds: 29.208333
+  end_seconds: 42.304388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0195-s004
+  sv: Det har ursprungligen reglerats på EU-nivå.
+  ru: Изначально это было урегулировано на уровне Европейского союза (EU).
+  scene_id: hb-c12-u0195
+  visual_cue: EU regulatory origin, no specific directive number or current extension date added.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Det har ursprungligen reglerats på E U-nivå.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0195-s004.wav
+  start_seconds: 44.291667
+  end_seconds: 48.471259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0196-s001
+  sv: Du kan få uppehållstillstånd på grund av tillfälligt skydd om du är
+  ru: Вы можете получить вид на жительство на основании временной защиты, если вы
+  scene_id: hb-c12-u0196
+  visual_cue: Introduce following eligible categories as conditional list, not universal grant.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0196-s001.wav
+  start_seconds: 50.958333
+  end_seconds: 57.088401
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0197-s001
+  sv: ukrainsk medborgare och inte kan återvända till Ukraina på grund av det ryska anfallet
+  ru: являетесь гражданином Украины и не можете вернуться в Украину из-за российского нападения
+  scene_id: hb-c12-u0197
+  visual_cue: Ukrainian nationality AND inability to return due to Russian attack; no real photographed
+    person assigned either condition.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0197-s001.wav
+  start_seconds: 59.541667
+  end_seconds: 67.413231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0199-s001
+  sv: medborgare i ett land utanför EU och har fått internationellt skydd i Ukraina eller bott i Ukraina
+    med ett permanent uppehållstillstånd, och inte kan återvända till ditt hemland
+  ru: являетесь гражданином страны, не входящей в ЕС, не можете вернуться на родину и либо получили международную
+    защиту в Украине, либо жили в Украине с постоянным видом на жительство
+  scene_id: hb-c12-u0199
+  visual_cue: Non-EU national with Ukrainian international protection OR permanent Ukrainian residence,
+    AND unable to return home. Do not require Ukrainian nationality or all alternatives simultaneously.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: medborgare i ett land utanför E U och har fått internationellt skydd i Ukraina eller bott i
+      Ukraina med ett permanent uppehållstillstånd, och inte kan återvända till ditt hemland
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0199-s001.wav
+  start_seconds: 69.875
+  end_seconds: 85.47881
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0200-s001
+  sv: familjemedlem till ovan nämnda personer, om familjebandet bildades i Ukraina före 24.2.2022.
+  ru: являетесь членом семьи указанных выше лиц, если семейная связь возникла в Украине до 24 февраля
+    2022 года.
+  scene_id: hb-c12-u0200
+  visual_cue: Family link must have formed in Ukraine before exact source date24February2022; not any
+    later relationship or every family member globally.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: familjemedlem till ovan nämnda personer, om familjebandet bildades i Ukraina före den tjugofjärde
+      februari tvåtusentjugotvå.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0200-s001.wav
+  start_seconds: 88.25
+  end_seconds: 99.395578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0201-s001
+  sv: I övriga fall ska du kontrollera på Migrationsverkets webbplats om du har rätt att få tillfälligt
+    skydd i Finland.
+  ru: В остальных случаях проверьте на сайте Миграционной службы (Migrationsverket), имеете ли вы право
+    на временную защиту в Финляндии.
+  scene_id: hb-c12-u0201
+  visual_cue: Other cases require checking official source, no invented eligibility determination or URL.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0201-s001.wav
+  start_seconds: 101.875
+  end_seconds: 111.836361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0202-s001
+  sv: När du har ansökt om tillfälligt skydd kan du bo i ett mottagningscenter och få mottagningscentrets
+    tjänster.
+  ru: После подачи заявления о предоставлении временной защиты вы можете жить в приёмном центре и получать
+    его услуги.
+  scene_id: hb-c12-u0202
+  visual_cue: After application may use reception-centre accommodation/services, without current vacancy
+    or compulsory-centre inference.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0202-s001.wav
+  start_seconds: 114.291667
+  end_seconds: 123.556429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0202-s002
+  sv: Du har rätt att ta emot mottagningstjänster även efter att du har beviljats uppehållstillstånd på
+    grund av tillfälligt skydd.
+  ru: Вы имеете право получать услуги системы приёма и после выдачи вам вида на жительство на основании
+    временной защиты.
+  scene_id: hb-c12-u0202
+  visual_cue: Reception-service right continues even after protection-based permit grant, not automatically
+    ending at decision.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0202-s002.wav
+  start_seconds: 125.541667
+  end_seconds: 136.060306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0203-s001
+  sv: Du har rätt att arbeta och studera i Finland omedelbart efter att du har ansökt om tillfälligt skydd.
+  ru: Вы имеете право работать и учиться в Финляндии сразу после подачи заявления о предоставлении временной
+    защиты.
+  scene_id: hb-c12-u0203
+  visual_cue: Work and study rights immediately after temporary-protection application, clearly distinct
+    from other permit-route waiting rules.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0203-s001.wav
+  start_seconds: 138.541667
+  end_seconds: 147.17949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0203-s002
+  sv: Du får arbeta utan några begränsningar, alltså i vilken bransch som helst.
+  ru: Вы можете работать без каких-либо ограничений, то есть в любой отрасли.
+  scene_id: hb-c12-u0203
+  visual_cue: Unrestricted industry scope of work right, no invented occupational licence exemption or
+    job guarantee.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0203-s002.wav
+  start_seconds: 149.166667
+  end_seconds: 155.714694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0203-s003
+  sv: När du har fått uppehållstillstånd har du också rätt att ta del av tjänsterna för arbetslösa vid
+    sysselsättningstjänsterna (työllisyyspalvelut) i din kommun.
+  ru: После получения вида на жительство вы также имеете право пользоваться услугами для безработных в
+    службе занятости (työllisyyspalvelut) своего муниципалитета.
+  scene_id: hb-c12-u0203
+  visual_cue: Municipal unemployment/employment services after permit grant, distinct from immediate post-application
+    work right.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0203-s003.wav
+  start_seconds: 157.666667
+  end_seconds: 171.32
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0204-s001
+  sv: Du kan få rätt till FPA:s förmåner om du arbetar i Finland eller har bott i Finland minst ett år.
+  ru: Вы можете получить право на пособия Ведомства социального обеспечения (FPA), если работаете в Финляндии
+    или прожили в Финляндии не менее года.
+  scene_id: hb-c12-u0204
+  visual_cue: Possible FPA entitlement from Finnish work OR residence for at least one year; alternatives,
+    not both required or automatic award of every benefit.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Du kan få rätt till F P A:s förmåner om du arbetar i Finland eller har bott i Finland minst
+      ett år.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0204-s001.wav
+  start_seconds: 173.791667
+  end_seconds: 182.847449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0204-s002
+  sv: Före detta har du rätt till mottagningscentrets tjänster.
+  ru: До этого вы имеете право на услуги приёмного центра.
+  scene_id: hb-c12-u0204
+  visual_cue: Reception services before preceding FPA-entitlement circumstances; no invented no-support
+    gap.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0204-s002.wav
+  start_seconds: 184.833333
+  end_seconds: 189.988163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0204-s003
+  sv: Du kan få mottagningspenning om dina eller dina familjemedlemmars inkomster och tillgångar inte
+    räcker till den nödvändiga försörjningen, såsom mat och kläder.
+  ru: Вы можете получать приёмное пособие, если ваших доходов и имущества или доходов и имущества членов
+    вашей семьи недостаточно для обеспечения основных жизненных потребностей, например в еде и одежде.
+  scene_id: hb-c12-u0204
+  visual_cue: Reception allowance when applicant/family income and assets insufficient for necessities;
+    no zero-asset requirement or invented payment rate.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-tillfalligt-skydd/narration/hb-c12-u0204-s003.wav
+  start_seconds: 191.958333
+  end_seconds: 205.193707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-tillfalligt-skydd/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-tillfalligt-skydd/sources/music-bed.flac
+  background_image: studio/media/hb-c12-tillfalligt-skydd/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.6979166666666667
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Robert Huberin tien vastaanottokeskus.jpg — Hezzu · CC BY-SA 4.0
+    - Jellyfish in Space — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Robert_Huberin_tien_vastaanottokeskus.jpg
+    description: Robert Huberin tien vastaanottokeskus on yksityisen Luona Oy:n ylläpitämä turvapaikanhakijoiden
+      vastaanottokeskus Vantaalla.
+    license: CC BY-SA 4.0

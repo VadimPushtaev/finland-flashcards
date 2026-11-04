@@ -1,0 +1,1762 @@
+schema_version: 1
+section_id: hb-c10-folkhalsa
+chapter_id: hb-c10
+title_sv: Hälsa och förebyggande arbete
+title_ru: Здоровье и профилактика
+source_path: data/homebrew/sv/chapters/10_halsa_social_trygghet_och_aldrande.yaml
+translation_path: data/homebrew/ru/sections/hb-c10-folkhalsa.yaml
+example_only: false
+source_section_sha256: 6f48ff99b1c822f748dfc5549da2c6beea408f9dbe83e3db5fe7dba82420e57a
+translation_file_sha256: 0e1dd8786f53e02bd149eba073adf30cdeeb9166550ea9bf0f774ac61d66a904
+episode_decisions:
+- id: fidelity
+  decision: Exact body sentences and list fragments once, source order, current reviewed Russian; heading
+    unspoken. No added medical/legal claims.
+  status: proposed
+  resolve_during: script
+- id: visuals
+  decision: Relevant foreground pictures cover every body sentence. Fifty-three distinct pictures for58slides;
+    five closely related source continuations deliberately retain their relevant picture. Photographs
+    show concrete objects/settings; individually composed diagrams show source relationships without fabricated
+    data, anatomy or eligibility rules.
+  status: proposed
+  resolve_during: script
+- id: voice
+  decision: LocalSwedishSupertonic3F1,32steps,speed.95,NumPyseed42,44100HzmonoPCM16; pronunciation remains
+    whole-video listening priority.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: 3secondtitle,.25secondtextlead,measured fullspeech,1.5secondpause and2.2attopicends;2.5forlongpairs.
+    Do not accelerate to targetlength.
+  status: proposed
+  resolve_during: script
+- id: background
+  decision: A distinct licensed topic-related photograph with42%darken,2.5pxblur,15%relativezoom and continuous140secondglobalcyclicpan;
+    exact source pending asset resolution, Chapter10oceanpalette.
+  status: proposed
+  resolve_during: assets
+- id: music
+  decision: Distinct centrally reserved calm instrumental track with+2dBbedadjustment,duckingandfades;
+    exact selected source pending asset resolution.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Actual source attribution derived from sources.yaml,15secondreadablecreditcards and fullmatching
+    sidecar.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Fysiskt, psykiskt och socialt
+- id: scene-2
+  description: Meningsfullt liv
+- id: scene-3
+  description: Akut och kortvarigt
+- id: scene-4
+  description: Faktorer som påverkar hälsan
+- id: scene-5
+  description: Hälsa och välbefinnande
+- id: scene-6
+  description: Mångsidig kost
+- id: scene-7
+  description: Motion
+- id: scene-8
+  description: Sömn och vila
+- id: scene-9
+  description: Tillräcklig utkomst
+- id: scene-10
+  description: Boendeförhållanden
+- id: scene-11
+  description: Sociala relationer
+- id: scene-12
+  description: Fred
+- id: scene-13
+  description: Rättvist demokratiskt samhälle
+- id: scene-14
+  description: Utbildning
+- id: scene-15
+  description: Arbete och verksamhet
+- id: scene-16
+  description: Välfärdssamhället
+- id: scene-17
+  description: Forskningsdata
+- id: scene-18
+  description: Hälsoorganisationer
+- id: scene-19
+  description: Hälsokunskap
+- id: scene-20
+  description: Screeningar
+- id: scene-21
+  description: Hälsoinformation
+- id: scene-22
+  description: Vaccinationer för barn
+- id: scene-23
+  description: Vaccinationsprogrammet
+- id: scene-24
+  description: Influensariskgrupp
+- id: scene-25
+  description: Kontrollera vad som saknas
+- id: scene-26
+  description: Minderårig eller gravid
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified licensed Finnish healthcare-topic photograph; exact identity resolved
+    during assets.
+  fallback: Another source-verified distinct topical photograph; never reuse another episode background.
+- id: music_bed
+  kind: music
+  description: Distinct centrally reserved calm instrumental music; exact source/terms resolved during
+    assets.
+  fallback: Another centrally reserved distinct calm instrumental master with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One full exact local Swedish F1clip per sentence/listfragment.
+  fallback: Diagnostic-led bounded targeted retake preserving originaltakes and settings.
+- id: picture-001
+  kind: foreground
+  description: Three clearly differentiated human-wellbeing domains; no diagnosis. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-002
+  kind: foreground
+  description: Everyday practical activity, non-stigmatizing and illustrative. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-003
+  kind: foreground
+  description: Whole-person wellbeing alongside medical-care symbol, not a binary healthy/sick rating.
+    Individually composed source relationship/object illustration; no invented diagnosis, numerical dataset,
+    dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-004
+  kind: foreground
+  description: A distinct ordinary daily task performed independently. Individually composed source relationship/object
+    illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-005
+  kind: foreground
+  description: Study, hobby or social activity showing an actual source example. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-006
+  kind: foreground
+  description: Activity interruption due to illness/injury; no graphic wound or identified patient. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-007
+  kind: foreground
+  description: Ability and wellbeing remain possible alongside a chronic condition; no promised outcome.
+    Individually composed source relationship/object illustration; no invented diagnosis, numerical dataset,
+    dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-008
+  kind: foreground
+  description: Medical treatment context, no identifiable patient condition inferred. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-010
+  kind: foreground
+  description: Thermometer/medical objects, no pathogen identity invented. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-011
+  kind: foreground
+  description: Distinct long unnumbered timeline, no invented duration. Individually composed source relationship/object
+    illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-012
+  kind: foreground
+  description: Multiple contributing factors surrounding a person, no causal weights. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-013
+  kind: foreground
+  description: Verified actual Tornio health centre illustrates access to healthcare, not a named treatment
+    or current service guarantee.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-014
+  kind: foreground
+  description: Two actual joggers illustrate a healthy everyday practice, without a diagnosis or claim
+    that they are photographed in Finland.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-015
+  kind: foreground
+  description: Examination followed by treatment, no guaranteed screening outcome. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-016
+  kind: foreground
+  description: Overview of the following source-listed support domains. Individually composed source relationship/object
+    illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-017
+  kind: foreground
+  description: Visible varied vegetables illustrate the exact source nutrition fragment; this is an illustrative
+    food-object photograph from Paris, not a Finnish shop claim.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-018
+  kind: foreground
+  description: Actual physical activity; no performance or health inference about a person. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-019
+  kind: foreground
+  description: A real sleeping bed illustrates sleep and rest; no personal bedroom identity or medical
+    claim.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-020
+  kind: foreground
+  description: Resources enabling basic daily needs, no invented amounts. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-021
+  kind: foreground
+  description: Accurately identified Finnish residential-building setting illustrates housing; no legal
+    adequacy judgment about a particular household.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-022
+  kind: foreground
+  description: Actual Oodi community digital workshop illustrates social interaction; nobody is identified
+    as a patient or benefit recipient.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-023
+  kind: foreground
+  description: Peace-related public setting without implying a particular historical event. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-024
+  kind: foreground
+  description: Actual Finnish2019voting booth illustrates democratic participation, not a current ballot
+    or party endorsement.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-025
+  kind: foreground
+  description: Actual Vantaankoski classroom2010 illustrates education; no claim this is a current classroom
+    or particular health lesson.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-026
+  kind: foreground
+  description: Verified Ylimuonio community voluntary work illustrates useful activity, without attributing
+    a medical condition.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-027
+  kind: foreground
+  description: Distinct public-services and resident-health relationship. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-028
+  kind: foreground
+  description: Law book with health symbol, no fabricated statute identifier. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-029
+  kind: foreground
+  description: Actual no-smoking sign in a public setting. Individually composed source relationship/object
+    illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-030
+  kind: foreground
+  description: Smoke exposure affecting smoker and bystander, no invented risk percentages. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-031
+  kind: foreground
+  description: Health observations collected into research records, no fabricated dataset. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-032
+  kind: foreground
+  description: Research information leading to program planning, no invented program name. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-033
+  kind: foreground
+  description: Two accurately labeled source example domains, non-graphic. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-034
+  kind: foreground
+  description: Verified Finnish Red Cross Blood Service premises illustrate a real health-related organization,
+    without endorsement.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-035
+  kind: foreground
+  description: Patient and close relation connected to peer support/information; no particular diagnosis
+    inferred. Individually composed source relationship/object illustration; no invented diagnosis, numerical
+    dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-036
+  kind: foreground
+  description: Classroom/educational materials relevant to school health education. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-037
+  kind: foreground
+  description: School learning linked to health, wellbeing and safety. Individually composed source relationship/object
+    illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-038
+  kind: foreground
+  description: An actual unoccupied examination room illustrates medical examination, not a named Finnish
+    clinic or a particular screening procedure.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-040
+  kind: foreground
+  description: Cervical, breast and colorectal cancer labels with neutral medical symbols, no anatomical
+    invention. Individually composed source relationship/object illustration; no invented diagnosis, numerical
+    dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-041
+  kind: foreground
+  description: Unnumbered detection-to-treatment timeline, no outcome statistic. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-042
+  kind: foreground
+  description: Verified Helsinki Central Library Oodi photograph illustrates a source-listed information
+    resource, without current opening-hour claims.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-043
+  kind: foreground
+  description: Distinct healthcare/exercise/culture source example, accurate location. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-045
+  kind: foreground
+  description: Actual school environment, no identifiable child medical status. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-046
+  kind: foreground
+  description: Neutral medical syringe represents vaccination context without implying a particular vaccine,
+    injection technique or universal administration route.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-047
+  kind: foreground
+  description: Verified Jäkärlä health centre and neuvola illustrates a source child-health clinic setting,
+    not a guarantee about particular current services.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-048
+  kind: foreground
+  description: Vaccination programme with no patient charge; no invented product or eligibility conditions.
+    Individually composed source relationship/object illustration; no invented diagnosis, numerical dataset,
+    dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-049
+  kind: foreground
+  description: Clearly voluntary yes/no choice; neither option stigmatized. Individually composed source
+    relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-050
+  kind: foreground
+  description: Children and vaccination programme, no invented coverage percentage. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-051
+  kind: foreground
+  description: Vaccination record passed to health nurse; no real personal record exposed. Individually
+    composed source relationship/object illustration; no invented diagnosis, numerical dataset, dose or
+    eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-052
+  kind: foreground
+  description: Unnumbered offer-of-vaccination schedule, no invented ages or doses. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-054
+  kind: foreground
+  description: Risk-group eligibility and vaccination offer; no invented risk criteria. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-056
+  kind: foreground
+  description: Compare own vaccination record with programme, no real personal record. Individually composed
+    source relationship/object illustration; no invented diagnosis, numerical dataset, dose or eligibility
+    rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-057
+  kind: foreground
+  description: Permanent move and missing programme vaccinations; preserve exact source qualification.
+    Individually composed source relationship/object illustration; no invented diagnosis, numerical dataset,
+    dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+- id: picture-058
+  kind: foreground
+  description: Asylum/temporary protection plus the two source conditions; no extra eligibility rules.
+    Individually composed source relationship/object illustration; no invented diagnosis, numerical dataset,
+    dose or eligibility rule.
+  fallback: Accurate source-specific pictorial explanation; omit only with documented relevance/license
+    reason.
+sentences:
+- sentence_id: hb-c10-u0026-s001
+  sv: En frisk människa mår bra fysiskt, psykiskt och socialt.
+  ru: Здоровый человек хорошо чувствует себя физически, психологически и в отношениях с окружающими.
+  scene_id: scene-1
+  visual_cue: Three clearly differentiated human-wellbeing domains; no diagnosis.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0026-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.61381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-01.png
+- sentence_id: hb-c10-u0026-s002
+  sv: Hen klarar av uppgifterna och utmaningarna i det dagliga livet.
+  ru: Он справляется с задачами и трудностями повседневной жизни.
+  scene_id: scene-1
+  visual_cue: Everyday practical activity, non-stigmatizing and illustrative.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0026-s002.wav
+  start_seconds: 10.375
+  end_seconds: 16.226429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-02.png
+- sentence_id: hb-c10-u0026-s003
+  sv: Hälsa betyder inte bara att en människa inte har någon sjukdom.
+  ru: Здоровье означает не только отсутствие у человека какого-либо заболевания.
+  scene_id: scene-1
+  visual_cue: Whole-person wellbeing alongside medical-care symbol, not a binary healthy/sick rating.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0026-s003.wav
+  start_seconds: 18.0
+  end_seconds: 23.572789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-03.png
+- sentence_id: hb-c10-u0026-s004
+  sv: Det är människans förmåga att fungera i vardagen.
+  ru: Это способность человека справляться с повседневной жизнью.
+  scene_id: scene-1
+  visual_cue: A distinct ordinary daily task performed independently.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0026-s004.wav
+  start_seconds: 25.333333
+  end_seconds: 29.861224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-04.png
+- sentence_id: hb-c10-u0027-s001
+  sv: En frisk människa klarar av att göra sådant i sitt liv som är meningsfullt för hen, till exempel
+    studera, utöva hobbyer, arbeta eller ha ett socialt liv.
+  ru: Здоровый человек способен заниматься тем, что для него значимо, например учиться, увлекаться чем-либо,
+    работать или общаться с другими людьми.
+  scene_id: scene-2
+  visual_cue: Study, hobby or social activity showing an actual source example.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0027-s001.wav
+  start_seconds: 32.333333
+  end_seconds: 45.290068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-05.png
+- sentence_id: hb-c10-u0027-s002
+  sv: Om en människa blir sjuk eller skadar sig allvarligt kan hen ofta bli tvungen att ge upp sådant
+    som är viktigt för hen.
+  ru: Если человек заболевает или получает серьёзную травму, он нередко может оказаться вынужденным отказаться
+    от того, что для него важно.
+  scene_id: scene-2
+  visual_cue: Activity interruption due to illness/injury; no graphic wound or identified patient.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0027-s002.wav
+  start_seconds: 47.041667
+  end_seconds: 57.212007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-06.png
+- sentence_id: hb-c10-u0027-s003
+  sv: En människa kan ändå uppleva att hen är handlingskraftig och välmående, trots att hen har en långvarig
+    sjukdom.
+  ru: Несмотря на длительное заболевание, человек всё же может чувствовать себя хорошо и ощущать, что
+    способен действовать.
+  scene_id: scene-2
+  visual_cue: Ability and wellbeing remain possible alongside a chronic condition; no promised outcome.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0027-s003.wav
+  start_seconds: 59.0
+  end_seconds: 68.404082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-07.png
+- sentence_id: hb-c10-u0027-s004
+  sv: Om sjukdomen behandlas, kan människan leva ett gott liv trots sjukdomen.
+  ru: Если заболевание лечат, человек может жить хорошо, несмотря на него.
+  scene_id: scene-2
+  visual_cue: Medical treatment context, no identifiable patient condition inferred.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0027-s004.wav
+  start_seconds: 70.166667
+  end_seconds: 76.923673
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-08.png
+- sentence_id: hb-c10-u0028-s001
+  sv: En del sjukdomar, skador och åkommor är akuta, det vill säga plötsliga, och kortvariga.
+  ru: Некоторые заболевания, травмы и недомогания бывают острыми, то есть внезапными, и кратковременными.
+  scene_id: scene-3
+  visual_cue: 'Retain the preceding/paired relevant picture across this source continuation: Unnumbered
+    short timeline, source distinction only.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0028-s001.wav
+  start_seconds: 79.375
+  end_seconds: 87.385884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-10.png
+- sentence_id: hb-c10-u0028-s002
+  sv: Sådana är till exempel många inflammationer, influensor och skador.
+  ru: К ним относятся, например, многие воспаления, случаи гриппа и травмы.
+  scene_id: scene-3
+  visual_cue: Thermometer/medical objects, no pathogen identity invented.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0028-s002.wav
+  start_seconds: 89.166667
+  end_seconds: 95.366395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-10.png
+- sentence_id: hb-c10-u0028-s003
+  sv: En del sjukdomar är kroniska, det vill säga långvariga eller bestående.
+  ru: Некоторые заболевания бывают хроническими, то есть длительными или постоянными.
+  scene_id: scene-3
+  visual_cue: Distinct long unnumbered timeline, no invented duration.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0028-s003.wav
+  start_seconds: 97.125
+  end_seconds: 103.673027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-11.png
+- sentence_id: hb-c10-u0029-s001
+  sv: Många olika faktorer påverkar en människas hälsa.
+  ru: На здоровье человека влияет множество разных факторов.
+  scene_id: scene-4
+  visual_cue: Multiple contributing factors surrounding a person, no causal weights.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0029-s001.wav
+  start_seconds: 106.125
+  end_seconds: 110.792211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-12.png
+- sentence_id: hb-c10-u0029-s002
+  sv: Det är lättare för hen att hålla sig frisk om hen har tillgång till goda hälsovårdstjänster.
+  ru: Ему легче оставаться здоровым, если у него есть доступ к качественным медицинским услугам.
+  scene_id: scene-4
+  visual_cue: Verified actual Finnish health-centre building.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0029-s002.wav
+  start_seconds: 112.583333
+  end_seconds: 120.385238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-13.png
+- sentence_id: hb-c10-u0029-s003
+  sv: Tjänsterna hjälper människor att ha ett sunt levnadssätt.
+  ru: Эти услуги помогают людям вести здоровый образ жизни.
+  scene_id: scene-4
+  visual_cue: A distinct healthy daily practice from the source context.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0029-s003.wav
+  start_seconds: 122.166667
+  end_seconds: 127.460816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-14.png
+- sentence_id: hb-c10-u0029-s004
+  sv: Med hjälp av tjänsterna kan många sjukdomar konstateras i ett tidigt skede och då bättre behandlas.
+  ru: Благодаря этим услугам многие заболевания можно выявить на ранней стадии и затем лечить более эффективно.
+  scene_id: scene-4
+  visual_cue: Examination followed by treatment, no guaranteed screening outcome.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0029-s004.wav
+  start_seconds: 129.25
+  end_seconds: 138.096803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-15.png
+- sentence_id: hb-c10-u0030-s001
+  sv: Hälsa och välbefinnande främjas också på många andra sätt, till exempel
+  ru: Укреплению здоровья и благополучия способствуют и многие другие факторы, например
+  scene_id: scene-5
+  visual_cue: Overview of the following source-listed support domains.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0030-s001.wav
+  start_seconds: 140.583333
+  end_seconds: 147.131361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-16.png
+- sentence_id: hb-c10-u0031-s001
+  sv: en mångsidig och näringsrik kost
+  ru: разнообразное питание, богатое питательными веществами
+  scene_id: scene-6
+  visual_cue: Visible varied foods without prescriptive nutrient quantities.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0031-s001.wav
+  start_seconds: 149.583333
+  end_seconds: 152.857347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-17.png
+- sentence_id: hb-c10-u0033-s001
+  sv: fysisk aktivitet och motion
+  ru: физическая активность и занятия физкультурой
+  scene_id: scene-7
+  visual_cue: Actual physical activity; no performance or health inference about a person.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0033-s001.wav
+  start_seconds: 155.333333
+  end_seconds: 158.328707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-18.png
+- sentence_id: hb-c10-u0034-s001
+  sv: tillräckligt med sömn och vila
+  ru: достаточное количество сна и отдыха
+  scene_id: scene-8
+  visual_cue: Empty restful bedroom or sleep-related object.
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0034-s001.wav
+  start_seconds: 160.791667
+  end_seconds: 163.99602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-19.png
+- sentence_id: hb-c10-u0035-s001
+  sv: tillräcklig utkomst
+  ru: достаточные средства к существованию
+  scene_id: scene-9
+  visual_cue: Resources enabling basic daily needs, no invented amounts.
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0035-s001.wav
+  start_seconds: 166.458333
+  end_seconds: 168.966088
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-20.png
+- sentence_id: hb-c10-u0036-s001
+  sv: skäliga boendeförhållanden
+  ru: приемлемые жилищные условия
+  scene_id: scene-10
+  visual_cue: Actual suitable housing context, not a legal housing standard.
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0036-s001.wav
+  start_seconds: 171.416667
+  end_seconds: 174.272721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-21.png
+- sentence_id: hb-c10-u0037-s001
+  sv: goda sociala relationer
+  ru: хорошие отношения с окружающими
+  scene_id: scene-11
+  visual_cue: Supportive social interaction, not identified patients.
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0037-s001.wav
+  start_seconds: 176.75
+  end_seconds: 179.466735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-22.png
+- sentence_id: hb-c10-u0038-s001
+  sv: fred i samhället
+  ru: мир в обществе
+  scene_id: scene-12
+  visual_cue: Peace-related public setting without implying a particular historical event.
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0038-s001.wav
+  start_seconds: 181.958333
+  end_seconds: 184.257109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-23.png
+- sentence_id: hb-c10-u0039-s001
+  sv: ett rättvist och demokratiskt samhälle
+  ru: справедливое и демократическое общество
+  scene_id: scene-13
+  visual_cue: Verified Finnish democratic institution, source concept only.
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0039-s001.wav
+  start_seconds: 186.708333
+  end_seconds: 190.539626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-24.png
+- sentence_id: hb-c10-u0040-s001
+  sv: tillräcklig utbildning
+  ru: достаточный уровень образования
+  scene_id: scene-14
+  visual_cue: Verified school/classroom or study materials.
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0040-s001.wav
+  start_seconds: 193.0
+  end_seconds: 195.577415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-25.png
+- sentence_id: hb-c10-u0041-s001
+  sv: möjlighet att arbeta eller bedriva annan nyttig verksamhet i samhället.
+  ru: возможность работать или заниматься другой полезной деятельностью в обществе.
+  scene_id: scene-15
+  visual_cue: Actual productive work or volunteering, accurate context.
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0041-s001.wav
+  start_seconds: 198.041667
+  end_seconds: 204.311054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-26.png
+- sentence_id: hb-c10-u0042-s001
+  sv: Det finländska välfärdssamhället ser på många sätt till att människor håller sig så friska som möjligt.
+  ru: Финляндское общество всеобщего благосостояния разными способами заботится о том, чтобы люди оставались
+    как можно более здоровыми.
+  scene_id: scene-16
+  visual_cue: Distinct public-services and resident-health relationship.
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0042-s001.wav
+  start_seconds: 206.791667
+  end_seconds: 215.49915
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-27.png
+- sentence_id: hb-c10-u0042-s002
+  sv: För det har det stiftats lagar i syfte att främja medborgarnas hälsa.
+  ru: Для этого приняты законы, направленные на укрепление здоровья граждан.
+  scene_id: scene-16
+  visual_cue: Law book with health symbol, no fabricated statute identifier.
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0042-s002.wav
+  start_seconds: 217.25
+  end_seconds: 223.449728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-28.png
+- sentence_id: hb-c10-u0042-s003
+  sv: Ett exempel är tobakslagen, som begränsar tobaksrökning på offentliga platser.
+  ru: Один из примеров — закон о табаке, который ограничивает курение табака в общественных местах.
+  scene_id: scene-16
+  visual_cue: Actual no-smoking sign in a public setting.
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0042-s003.wav
+  start_seconds: 225.208333
+  end_seconds: 232.313639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-29.png
+- sentence_id: hb-c10-u0042-s004
+  sv: Rökning är ohälsosam och orsakar sjukdomar för rökarna själva och för dem som är tvungna att andas
+    in tobaksröken.
+  ru: Курение вредно для здоровья и вызывает заболевания как у самих курильщиков, так и у тех, кто вынужден
+    вдыхать табачный дым.
+  scene_id: scene-16
+  visual_cue: Smoke exposure affecting smoker and bystander, no invented risk percentages.
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0042-s004.wav
+  start_seconds: 234.083333
+  end_seconds: 244.462653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-30.png
+- sentence_id: hb-c10-u0043-s001
+  sv: I Finland samlar man hela tiden in forskningsdata om människors hälsa och sjukdomar.
+  ru: В Финляндии постоянно собирают исследовательские данные о здоровье и заболеваниях людей.
+  scene_id: scene-17
+  visual_cue: Health observations collected into research records, no fabricated dataset.
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0043-s001.wav
+  start_seconds: 246.916667
+  end_seconds: 254.579252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-31.png
+- sentence_id: hb-c10-u0043-s002
+  sv: Med hjälp av informationen kan man i samhället planera och genomföra program som främjar hälsan.
+  ru: Эта информация позволяет планировать и осуществлять в обществе программы, укрепляющие здоровье.
+  scene_id: scene-17
+  visual_cue: Research information leading to program planning, no invented program name.
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0043-s002.wav
+  start_seconds: 256.333333
+  end_seconds: 264.901497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-32.png
+- sentence_id: hb-c10-u0043-s003
+  sv: Programmen kan gälla till exempel hjärt- och kärlsjukdomar eller cancersjukdomar.
+  ru: Программы могут касаться, например, сердечно-сосудистых или онкологических заболеваний.
+  scene_id: scene-17
+  visual_cue: Two accurately labeled source example domains, non-graphic.
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0043-s003.wav
+  start_seconds: 266.666667
+  end_seconds: 273.911293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-33.png
+- sentence_id: hb-c10-u0044-s001
+  sv: I Finland arbetar också olika organisationer mycket för att främja hälsa.
+  ru: Различные организации в Финляндии тоже многое делают для укрепления здоровья.
+  scene_id: scene-18
+  visual_cue: Accurately identified Finnish health-support organization building/sign.
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0044-s001.wav
+  start_seconds: 276.375
+  end_seconds: 283.201667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-34.png
+- sentence_id: hb-c10-u0044-s002
+  sv: För många långtidssjuka finns egna föreningar som kan ge de sjuka och deras närstående stöd och
+    information.
+  ru: Для многих людей с длительными заболеваниями существуют отдельные объединения, которые могут предоставлять
+    больным и их близким поддержку и информацию.
+  scene_id: scene-18
+  visual_cue: Patient and close relation connected to peer support/information; no particular diagnosis
+    inferred.
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0044-s002.wav
+  start_seconds: 284.958333
+  end_seconds: 294.362415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-35.png
+- sentence_id: hb-c10-u0045-s001
+  sv: Inom den grundläggande utbildningen för barn är hälsokunskap ett separat läroämne.
+  ru: В рамках основного общего образования детей основы здоровья являются отдельным учебным предметом.
+  scene_id: scene-19
+  visual_cue: Classroom/educational materials relevant to school health education.
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0045-s001.wav
+  start_seconds: 296.833333
+  end_seconds: 303.86898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-36.png
+- sentence_id: hb-c10-u0045-s002
+  sv: Syftet med undervisningen i hälsokunskap är att främja elevernas kunskaper om hälsa, välbefinnande
+    och säkerhet.
+  ru: Цель преподавания основ здоровья — развивать знания учащихся о здоровье, благополучии и безопасности.
+  scene_id: scene-19
+  visual_cue: School learning linked to health, wellbeing and safety.
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0045-s002.wav
+  start_seconds: 305.625
+  end_seconds: 315.516701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-37.png
+- sentence_id: hb-c10-u0046-s001
+  sv: Människornas hälsa observeras också med hjälp av screeningar.
+  ru: За здоровьем людей следят также с помощью скрининговых обследований.
+  scene_id: scene-20
+  visual_cue: Non-identifying examination equipment or empty screening room.
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0046-s001.wav
+  start_seconds: 318.0
+  end_seconds: 323.851429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-38.png
+- sentence_id: hb-c10-u0046-s002
+  sv: En screening är en undersökning där man letar efter tecken på allvarlig sjukdom.
+  ru: Скрининг — это обследование, при котором ищут признаки серьёзного заболевания.
+  scene_id: scene-20
+  visual_cue: 'Retain the preceding/paired relevant picture across this source continuation: Examination
+    detects possible signs; no diagnosis/accuracy claim.'
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0046-s002.wav
+  start_seconds: 325.625
+  end_seconds: 332.521327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-38.png
+- sentence_id: hb-c10-u0046-s003
+  sv: Exempel på sådana sjukdomar kan vara till exempel livmoderhalscancer, bröstcancer eller tarmcancer.
+  ru: Примерами таких заболеваний могут быть рак шейки матки, рак молочной железы или рак кишечника.
+  scene_id: scene-20
+  visual_cue: Cervical, breast and colorectal cancer labels with neutral medical symbols, no anatomical
+    invention.
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0046-s003.wav
+  start_seconds: 334.291667
+  end_seconds: 343.277789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-40.png
+- sentence_id: hb-c10-u0046-s004
+  sv: Behandlingsresultaten blir bättre när sjukdomar upptäcks i ett tidigt skede.
+  ru: Результаты лечения улучшаются, когда заболевания выявляют на ранней стадии.
+  scene_id: scene-20
+  visual_cue: Unnumbered detection-to-treatment timeline, no outcome statistic.
+  asset_ids:
+  - episode_background
+  - picture-041
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0046-s004.wav
+  start_seconds: 345.041667
+  end_seconds: 351.729014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-41.png
+- sentence_id: hb-c10-u0047-s001
+  sv: I Finland är det lätt att hitta information om hur man främjar sin hälsa och sitt välbefinnande
+    till exempel på internet, biblioteken, hos läkaren eller olika hälsoorganisationer.
+  ru: В Финляндии легко найти информацию о том, как укреплять своё здоровье и благополучие, например в
+    интернете, библиотеках, у врача или в различных организациях, занимающихся вопросами здоровья.
+  scene_id: scene-21
+  visual_cue: Verified actual library or healthcare-information resource, no fabricated web page.
+  asset_ids:
+  - episode_background
+  - picture-042
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0047-s001.wav
+  start_seconds: 354.208333
+  end_seconds: 369.324524
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-42.png
+- sentence_id: hb-c10-u0047-s002
+  sv: Dessutom erbjuder välfärdsområdena och olika organisationer och företag många olika slags vårdtjänster,
+    motionsgrenar, välbefinnanderådgivning och kostrådgivning samt olika kulturtjänster.
+  ru: Кроме того, регионы по обеспечению благополучия населения (välfärdsområden), различные организации
+    и предприятия предлагают разнообразные услуги по уходу и лечению, занятия разными видами физической
+    активности, консультации по вопросам благополучия и питания, а также различные культурные услуги.
+  scene_id: scene-21
+  visual_cue: Distinct healthcare/exercise/culture source example, accurate location.
+  asset_ids:
+  - episode_background
+  - picture-043
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0047-s002.wav
+  start_seconds: 371.083333
+  end_seconds: 387.105102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-43.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c10-u0047-s003
+  sv: De hjälper folk att hålla sig friska och må bra.
+  ru: Они помогают людям оставаться здоровыми и хорошо себя чувствовать.
+  scene_id: scene-21
+  visual_cue: 'Retain the preceding/paired relevant picture across this source continuation: Supportive
+    meaningful daily activity distinct from earlier pictures.'
+  asset_ids:
+  - episode_background
+  - picture-043
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0047-s003.wav
+  start_seconds: 389.875
+  end_seconds: 394.193912
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-43.png
+- sentence_id: hb-c10-u0047-s004
+  sv: För barn är skolan en viktig uppväxtmiljö som ger deras vardag struktur och där de också lär sig
+    att främja hälsa och välbefinnande.
+  ru: Для детей школа — важная среда взросления, которая упорядочивает их повседневную жизнь и где они
+    также учатся укреплять здоровье и благополучие.
+  scene_id: scene-21
+  visual_cue: Actual school environment, no identifiable child medical status.
+  asset_ids:
+  - episode_background
+  - picture-045
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0047-s004.wav
+  start_seconds: 395.958333
+  end_seconds: 407.452211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-45.png
+- sentence_id: hb-c10-u0048-s001
+  sv: I Finland kan barnen vaccineras (rokotus) mot många smittsamma sjukdomar.
+  ru: В Финляндии детям можно делать прививки (rokotus) от многих инфекционных заболеваний.
+  scene_id: scene-22
+  visual_cue: Vaccination equipment or non-identifying vaccination setting; no injection technique guidance.
+  asset_ids:
+  - episode_background
+  - picture-046
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s001.wav
+  start_seconds: 409.916667
+  end_seconds: 416.604014
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-46.png
+- sentence_id: hb-c10-u0048-s002
+  sv: Vaccinationerna ges på barnrådgivningen (lastenneuvola) och inom skolhälsovården.
+  ru: Прививки делают в детской консультации (lastenneuvola) и в рамках школьного медицинского обслуживания.
+  scene_id: scene-22
+  visual_cue: Two actual source service settings connected to vaccination access.
+  asset_ids:
+  - episode_background
+  - picture-047
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s002.wav
+  start_seconds: 418.375
+  end_seconds: 425.619626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-47.png
+- sentence_id: hb-c10-u0048-s003
+  sv: De vaccinationer som ingår i vaccinationsprogrammet är avgiftsfria för familjen.
+  ru: Прививки, входящие в программу вакцинации, бесплатны для семьи.
+  scene_id: scene-22
+  visual_cue: Vaccination programme with no patient charge; no invented product or eligibility conditions.
+  asset_ids:
+  - episode_background
+  - picture-048
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s003.wav
+  start_seconds: 427.375
+  end_seconds: 434.549966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-48.png
+- sentence_id: hb-c10-u0048-s004
+  sv: Vaccinationerna är frivilliga.
+  ru: Вакцинация добровольна.
+  scene_id: scene-22
+  visual_cue: Clearly voluntary yes/no choice; neither option stigmatized.
+  asset_ids:
+  - episode_background
+  - picture-049
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s004.wav
+  start_seconds: 436.333333
+  end_seconds: 439.607347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-49.png
+- sentence_id: hb-c10-u0048-s005
+  sv: De flesta barn i Finland får de vaccinationer som ingår i vaccinationsprogrammet.
+  ru: Большинство детей в Финляндии получают прививки, входящие в программу вакцинации.
+  scene_id: scene-22
+  visual_cue: Children and vaccination programme, no invented coverage percentage.
+  asset_ids:
+  - episode_background
+  - picture-050
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s005.wav
+  start_seconds: 441.375
+  end_seconds: 448.619626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-50.png
+- sentence_id: hb-c10-u0048-s006
+  sv: Berätta för hälsovårdaren vilka vaccinationer ditt barn har fått innan ni kom till Finland.
+  ru: Расскажите медсестре, какие прививки ваш ребёнок получил до вашего приезда в Финляндию.
+  scene_id: scene-22
+  visual_cue: Vaccination record passed to health nurse; no real personal record exposed.
+  asset_ids:
+  - episode_background
+  - picture-051
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0048-s006.wav
+  start_seconds: 450.375
+  end_seconds: 458.316224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-51.png
+- sentence_id: hb-c10-u0049-s001
+  sv: I Finland finns ett vaccinationsprogram, enligt vilket alla barn erbjuds kostnadsfria vaccinationer
+    mot fler livsfarliga sjukdomar.
+  ru: В Финляндии действует программа вакцинации, в рамках которой всем детям предлагают бесплатные прививки
+    от ряда опасных для жизни заболеваний.
+  scene_id: scene-23
+  visual_cue: Unnumbered offer-of-vaccination schedule, no invented ages or doses.
+  asset_ids:
+  - episode_background
+  - picture-052
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0049-s001.wav
+  start_seconds: 460.791667
+  end_seconds: 472.424864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-52.png
+- sentence_id: hb-c10-u0049-s002
+  sv: Vaccinationer erbjuds mot bland annat polio, stelkramp, difteri, kikhosta, mässling och påssjuka.
+  ru: Предлагаются прививки, в частности, от полиомиелита, столбняка, дифтерии, коклюша, кори и эпидемического
+    паротита.
+  scene_id: scene-23
+  visual_cue: 'Retain the preceding/paired relevant picture across this source continuation: Source disease
+    names with neutral shield imagery, no invented clinical details.'
+  asset_ids:
+  - episode_background
+  - picture-052
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0049-s002.wav
+  start_seconds: 474.208333
+  end_seconds: 482.985476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-52.png
+- sentence_id: hb-c10-u0050-s001
+  sv: Om du ingår i en riskgrupp för influensa, kan du också få en kostnadsfri vaccination mot influensa.
+  ru: Если вы относитесь к группе риска по гриппу, вы также можете бесплатно сделать прививку от гриппа.
+  scene_id: scene-24
+  visual_cue: Risk-group eligibility and vaccination offer; no invented risk criteria.
+  asset_ids:
+  - episode_background
+  - picture-054
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0050-s001.wav
+  start_seconds: 485.458333
+  end_seconds: 494.235476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-54.png
+- sentence_id: hb-c10-u0050-s002
+  sv: Detta gäller för både vuxna och barn.
+  ru: Это касается и взрослых, и детей.
+  scene_id: scene-24
+  visual_cue: 'Retain the preceding/paired relevant picture across this source continuation: Distinct
+    adult and child silhouettes under the same source offer.'
+  asset_ids:
+  - episode_background
+  - picture-054
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0050-s002.wav
+  start_seconds: 496.0
+  end_seconds: 499.482993
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-54.png
+- sentence_id: hb-c10-u0051-s001
+  sv: När du flyttar till Finland ska du ta reda på vilka vaccinationer enligt vaccinationsprogrammet
+    du saknar.
+  ru: При переезде в Финляндию выясните, каких прививок, предусмотренных программой вакцинации, у вас
+    нет.
+  scene_id: scene-25
+  visual_cue: Compare own vaccination record with programme, no real personal record.
+  asset_ids:
+  - episode_background
+  - picture-056
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0051-s001.wav
+  start_seconds: 501.958333
+  end_seconds: 511.292755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-56.png
+- sentence_id: hb-c10-u0051-s002
+  sv: Om du inte har fått alla vaccinationer enligt vaccinationsprogrammet kan du få dem kostnadsfritt
+    om du flyttar till Finland stadigvarande.
+  ru: Если вы получили не все прививки, предусмотренные программой вакцинации, вы можете сделать недостающие
+    прививки бесплатно, если переезжаете в Финляндию на постоянное жительство.
+  scene_id: scene-25
+  visual_cue: Permanent move and missing programme vaccinations; preserve exact source qualification.
+  asset_ids:
+  - episode_background
+  - picture-057
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0051-s002.wav
+  start_seconds: 513.083333
+  end_seconds: 525.06483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-57.png
+- sentence_id: hb-c10-u0052-s001
+  sv: Om du har ansökt om asyl eller tillfälligt skydd i Finland kan du få vaccinationerna om du är minderårig
+    eller gravid.
+  ru: Если вы подали заявление об убежище или временной защите в Финляндии, вы можете получить прививки,
+    если вы не достигли совершеннолетия или беременны.
+  scene_id: scene-26
+  visual_cue: Asylum/temporary protection plus the two source conditions; no extra eligibility rules.
+  asset_ids:
+  - episode_background
+  - picture-058
+  text_highlights: []
+  pronunciation_notes:
+  - Swedish compounds, Finnish service names,abbreviations and numbers require whole-video listening;
+    ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-folkhalsa/narration/hb-c10-u0052-s001.wav
+  start_seconds: 527.541667
+  end_seconds: 538.129966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c10-folkhalsa/pictures/sentence-58.png
+render:
+  music_path: studio/media/hb-c10-folkhalsa/sources/music-bed.flac
+  background_image: studio/media/hb-c10-folkhalsa/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    resampling: bilinear
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 4.823809523809524
+  music_gain_adjustment_db: 2.0
+  music_loop_crossfade_seconds: 4
+  palette:
+    background: '#233c50'
+    text: '#faf3e8'
+    secondary: '#c6d9e8'
+    highlight: '#e6c28b'
+    separator: '#4b6e85'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio - Hälsa och sjukdom
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Yhteiskuntaorientaatio - Att ta hand om sin hälsa och sitt välbefinnande
+    - Barns hälsa
+    - InfoFinland.fi
+    - Vaccinationer
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - 2023 Stetoskop.jpg — Jacek Halicki · CC BY-SA 4.0
+    - Almost New — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Health centre in Tornio 20230521 001.jpg — Methem (Mikko J. Putkonen) · CC BY 4.0; '
+    - 'Joggers 02.jpg — James Moore200 · CC BY-SA 4.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Vegetables in a grocery store, Paris.JPG — Daderot · Public domain '
+    - 'Bed.jpg — Gausanchennai · CC BY-SA 4.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Portal through apartment building of Tripla in Keski-Pasila, Helsinki, Finland, 2022 May - 2.jpg
+      — Ximonic (Simo Räsänen) · CC BY-SA 4.0 '
+    - 'All Digital Week Oodi 26.3.2019 2.jpg — Zache · CC BY-SA 3.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Valb%C3%A5s med riksdagskandiidater Finland 2019.jpg — LPfi · Public domain; '
+    - 'Elementary school classroom in Vantaankoski school in Vantaa, Finland, 2010.jpg — Leo-setä · CC
+      BY 2.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Talkoot Ylimuonio.JPG — Jvuollo at fi.wikipedia · CC BY-SA 3.0 '
+    - 'SPR Veripalvelu, Kivihaka, Helsinki.jpg — Abc10 · CC BY-SA 4.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'A typical examination room and exam table in a doctor%27s office. 01.jpg — Harrison Keely · CC
+      BY 4.0 '
+    - 'Helsinki Central Library Oodi, 2019 (01).jpg — Bahnfrend · CC BY-SA 4.0; '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - 'Syringe.jpg — Photograph by Erich Schulz, Brisbane · Public domain '
+    - 'J%C3%A4k%C3%A4rl%C3%A4n terveyskeskus ja neuvola.jpg — Samuli Lintula · CC BY 3.0 '
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i CREDITS.md.
+  adaptation_notes:
+  - 'Foreground picture adaptation: 14 licensed photographic assets; 39 original source-based diagrams.
+    Individual source wording and media retain the terms recorded above.'
+  - Exact archived Swedish and current reviewed Russian shown together.
+  - Decorative background cropped, darkened, blurred and continuously panned/zoomed; retain source license.
+  - Music faded, ducked, +2dB adjustment, repeated with4second equal-power crossfades only if needed.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:2023_Stetoskop.jpg
+    description: Stethoscope
+    license: CC BY-SA 4.0

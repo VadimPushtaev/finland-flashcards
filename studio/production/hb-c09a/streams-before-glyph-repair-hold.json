@@ -1,0 +1,562 @@
+{
+  "kon-parental-heder": {
+    "state": {
+      "section_id": "hb-c09-kon-parental-heder",
+      "stage": "succession",
+      "status": "running",
+      "supervisor_pid": 323303,
+      "command": [
+        ".venv/bin/python",
+        "studio/production/hb-c09a/kon_parental_heder_queue.py"
+      ],
+      "started_at": "2026-11-03T10:17:02.725174+00:00",
+      "log": "studio/production/hb-c09a/kon-parental-heder-queue.log",
+      "pid": 323314,
+      "heartbeat_at": "2026-11-03T10:43:44.134623+00:00"
+    },
+    "progress": {
+      "budget": 6,
+      "episodes": {
+        "kon": {
+          "render_supervisor": 304623,
+          "finished_render": {
+            "section_id": "hb-c09-kon",
+            "stage": "render",
+            "status": "finished",
+            "supervisor_pid": 304623,
+            "command": [
+              "studio/runtime/.venv/bin/python",
+              "studio/tools/render.py",
+              "hb-c09-kon"
+            ],
+            "started_at": "2026-11-03T09:39:54.602900+00:00",
+            "log": "studio/production/hb-c09a/kon-render-host.log",
+            "pid": 304625,
+            "heartbeat_at": "2026-11-03T10:07:09.639967+00:00",
+            "returncode": 0,
+            "finished_at": "2026-11-03T10:07:31.046857+00:00",
+            "missing_outputs": []
+          },
+          "host_at_release": [
+            {
+              "pid": 306074,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tjanster"
+              ]
+            },
+            {
+              "pid": 310984,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-ekonomi"
+              ]
+            },
+            {
+              "pid": 312523,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tillstand"
+              ]
+            },
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            }
+          ],
+          "verify_supervisor": 318474
+        },
+        "foraldraledighet": {
+          "render_supervisor": 318488,
+          "frozen": {
+            "script_sha256": "f82c41dbcf991cbdab464cccc06551896b96fc7e77293e0d6f7e443e6823683b",
+            "assets_sha256": "fcf7d8ba10825ebba849e7e46e7d199258bcfcfc4a57019ef8c609b310a8664e",
+            "narration_metrics_sha256": "945efcc9a72fa2da3c7b6fb09e1ccfbb5cecc2e5e55fb421c7f4ad237156a83c",
+            "preflight_review_sha256": "817ad3b1b71f5b789528b30e7da6028c464c71fcf1938fab41da470af67c2ba0"
+          },
+          "host_before_launch": [
+            {
+              "pid": 306074,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tjanster"
+              ]
+            },
+            {
+              "pid": 310984,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-ekonomi"
+              ]
+            },
+            {
+              "pid": 312523,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tillstand"
+              ]
+            },
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            }
+          ],
+          "launched_at": 1793700453.6295815,
+          "finished_render": {
+            "section_id": "hb-c09-foraldraledighet",
+            "stage": "render",
+            "status": "finished",
+            "supervisor_pid": 318488,
+            "command": [
+              "studio/runtime/.venv/bin/python",
+              "studio/tools/render.py",
+              "hb-c09-foraldraledighet"
+            ],
+            "started_at": "2026-11-03T10:07:33.689835+00:00",
+            "log": "studio/production/hb-c09a/foraldraledighet-render-host.log",
+            "pid": 318489,
+            "heartbeat_at": "2026-11-03T10:17:34.655486+00:00",
+            "returncode": 0,
+            "finished_at": "2026-11-03T10:18:01.920164+00:00",
+            "missing_outputs": []
+          },
+          "host_at_release": [
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            },
+            {
+              "pid": 319722,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-integration"
+              ]
+            },
+            {
+              "pid": 321508,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-skulder"
+              ]
+            },
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 323176,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tillstandstyper"
+              ]
+            }
+          ],
+          "verify_supervisor": 323827
+        },
+        "heder": {
+          "render_supervisor": 323841,
+          "frozen": {
+            "script_sha256": "c3c47ab1939412a70c26a5577bcdfddd8fdb8f7e88dc010462d4a84021e6c0a4",
+            "assets_sha256": "08daecf07637695d3a50676e12c25d62fe4b83f0bb9584eb098a879fbc2d8e21",
+            "narration_metrics_sha256": "4adc8454bede88db655020c9497ce26ad05dd627234f32119c4d03dabe976f62",
+            "preflight_review_sha256": "a8ba8530bf02269cd4cb6aa85a4bc507d55cf8d5f73232927726a79786861f00"
+          },
+          "host_before_launch": [
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            },
+            {
+              "pid": 319722,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-integration"
+              ]
+            },
+            {
+              "pid": 321508,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-skulder"
+              ]
+            },
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 323176,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tillstandstyper"
+              ]
+            }
+          ],
+          "launched_at": 1793701090.9190063,
+          "finished_render": {
+            "section_id": "hb-c09-heder",
+            "stage": "render",
+            "status": "finished",
+            "supervisor_pid": 323841,
+            "command": [
+              "studio/runtime/.venv/bin/python",
+              "studio/tools/render.py",
+              "hb-c09-heder"
+            ],
+            "started_at": "2026-11-03T10:18:11.009701+00:00",
+            "log": "studio/production/hb-c09a/heder-render-host.log",
+            "pid": 323842,
+            "heartbeat_at": "2026-11-03T10:30:59.893979+00:00",
+            "returncode": 0,
+            "finished_at": "2026-11-03T10:31:06.914910+00:00",
+            "missing_outputs": []
+          },
+          "host_at_release": [
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            },
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 327947,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tolkning"
+              ]
+            },
+            {
+              "pid": 329556,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c09-skydd"
+              ]
+            },
+            {
+              "pid": 330086,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-asyl"
+              ]
+            }
+          ],
+          "verify_supervisor": 330506
+        },
+        "nodsituationer": {
+          "render_supervisor": 330544,
+          "frozen": {
+            "script_sha256": "7dabc60005a6ede29a4fad033c23c7ffced5c506fedac155c08155948b8495f6",
+            "assets_sha256": "7f5c420e8563dce07081da2176aa53096614a57abd563c5a4a184871ab4d5b63",
+            "narration_metrics_sha256": "71dd9c784d23f674b055ec31a240dbe90073fa9782183d490c2703d8fd5a6889",
+            "preflight_review_sha256": "db3ccf1384f5cf1c26249beba6b7352bbcba90767922306e1ee7717884c2147f"
+          },
+          "host_before_launch": [
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            },
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 327947,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tolkning"
+              ]
+            },
+            {
+              "pid": 329556,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c09-skydd"
+              ]
+            },
+            {
+              "pid": 330086,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-asyl"
+              ]
+            }
+          ],
+          "launched_at": 1793701895.2338512
+        }
+      },
+      "allocation": "Single root-approved stream; read current control and central budget before each launch."
+    }
+  },
+  "second-render-stream": {
+    "state": {
+      "section_id": "hb-c09-second-stream",
+      "stage": "succession",
+      "status": "running",
+      "supervisor_pid": 329544,
+      "command": [
+        ".venv/bin/python",
+        "studio/production/hb-c09a/second_render_stream.py"
+      ],
+      "started_at": "2026-11-03T10:29:53.583079+00:00",
+      "log": "studio/production/hb-c09a/second-render-stream.log",
+      "pid": 329545,
+      "heartbeat_at": "2026-11-03T10:43:46.089389+00:00"
+    },
+    "progress": {
+      "episodes": {
+        "skydd": {
+          "render_supervisor": 329555,
+          "frozen": {
+            "script_sha256": "546663752492de0d6d3284fc5844c0d63c1716e4ba1dd090e8f9e428e87784e8",
+            "assets_sha256": "80f1be2c7cccb57000a24b51b95303e13ac0a3489a454f25300eb8631b2f0ccb",
+            "narration_metrics_sha256": "4914b44c8fe11763446ab15ca2720d7a7e146b1069fe3a2d14da74bb09381e0c",
+            "preflight_review_sha256": "f5925a9a95c30c2f67ea2f1dcdc2bc5341eaccb4cf135a36fa35ef4a68bf921c"
+          },
+          "host_before_launch": [
+            {
+              "pid": 313407,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-pension"
+              ]
+            },
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 323176,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tillstandstyper"
+              ]
+            },
+            {
+              "pid": 323842,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c09-heder"
+              ]
+            },
+            {
+              "pid": 327947,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-tolkning"
+              ]
+            }
+          ],
+          "launched_at": 1793701794.6212916,
+          "finished_render": {
+            "section_id": "hb-c09-skydd",
+            "stage": "render",
+            "status": "finished",
+            "supervisor_pid": 329555,
+            "command": [
+              "studio/runtime/.venv/bin/python",
+              "studio/tools/render.py",
+              "hb-c09-skydd"
+            ],
+            "started_at": "2026-11-03T10:29:54.603322+00:00",
+            "log": "studio/production/hb-c09a/skydd-render-host.log",
+            "pid": 329556,
+            "heartbeat_at": "2026-11-03T10:43:13.515188+00:00",
+            "returncode": 0,
+            "finished_at": "2026-11-03T10:43:45.247335+00:00",
+            "missing_outputs": []
+          },
+          "host_at_release": [
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 330086,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-asyl"
+              ]
+            },
+            {
+              "pid": 330545,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-nodsituationer"
+              ]
+            },
+            {
+              "pid": 332564,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-sexuell"
+              ]
+            },
+            {
+              "pid": 333238,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-myndigheter"
+              ]
+            }
+          ],
+          "verify_supervisor": 336193
+        },
+        "vardnad": {
+          "render_supervisor": 336208,
+          "frozen": {
+            "script_sha256": "f5ff78f8935564fe6b7cbc613f9acc2c9c5d27d2cbd4bd13fa2440562feb2fc2",
+            "assets_sha256": "7caf94ed59a087afa4a563a072d812cbecb8ed253f045e610c275726d1a4b723",
+            "narration_metrics_sha256": "740fdb06eb725f60ec4c4b22fd93aa624f2f3bd31ef8af3ed6bcab7f86db76a5",
+            "preflight_review_sha256": "642a4055047b173bcad3e350a619399e47f6db150cc9cf4d79f699cdd2c0bb66"
+          },
+          "host_before_launch": [
+            {
+              "pid": 322370,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-aldre"
+              ]
+            },
+            {
+              "pid": 330086,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-asyl"
+              ]
+            },
+            {
+              "pid": 330545,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c11-nodsituationer"
+              ]
+            },
+            {
+              "pid": 332564,
+              "args": [
+                "studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c10-sexuell"
+              ]
+            },
+            {
+              "pid": 333238,
+              "args": [
+                "/home/vadim/finland-flashcards/studio/runtime/.venv/bin/python",
+                "studio/tools/render.py",
+                "hb-c12-myndigheter"
+              ]
+            }
+          ],
+          "launched_at": 1793702628.4613914
+        }
+      },
+      "allocation": "Single root-approved stream; read current control and central budget before each launch.",
+      "external_release": {
+        "state_path": "studio/production/remaining/hb-c11-skulder-render-state.json",
+        "state": {
+          "section_id": "hb-c11-skulder",
+          "stage": "render",
+          "status": "finished",
+          "supervisor_pid": 321506,
+          "command": [
+            "studio/runtime/.venv/bin/python",
+            "studio/tools/render.py",
+            "hb-c11-skulder"
+          ],
+          "started_at": "2026-11-03T10:13:39.182242+00:00",
+          "log": "studio/production/remaining/hb-c11-skulder-render.log",
+          "pid": 321508,
+          "heartbeat_at": "2026-11-03T10:29:12.436900+00:00",
+          "returncode": 0,
+          "finished_at": "2026-11-03T10:29:20.467096+00:00",
+          "missing_outputs": []
+        },
+        "canonical_path": "videos/homebrew/hb-c11-08-skulder.mp4",
+        "canonical_sha256": "130114b3cb690eb73fd251d7226a483c5825e3494e8d070ee8e2f9fd3c5c332f",
+        "render_record_sha256": "66b4c12ec839dcf7c2b0fbfa3f6fe9187836b882555d5d9b0f21203dd1db6c15",
+        "checked_at": 1793701793.8525736
+      },
+      "budget": 6
+    }
+  }
+}

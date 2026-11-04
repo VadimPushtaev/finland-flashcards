@@ -1,0 +1,118 @@
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/audit_c9_checkpoint.py", line 9, in <module>
+    p=json.loads((ep/'producer-preflight-review.json').read_text());assert p['script_sha256']==sha(ep/'script.yaml') and p['assets_sha256']==sha(ep/'assets.yaml')
+                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "failed", "supervisor_pid": 309292, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T09:48:51.183394+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 309299, "returncode": 1, "finished_at": "2026-11-03T09:48:52.386253+00:00", "missing_outputs": ["studio/production/hb-c09a/chapter-current-readiness-audit.json"]}
+hb-c09-aktenskap audit passed
+hb-c09-arv audit passed
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/audit_c9_checkpoint.py", line 12, in <module>
+    row={'status':b['production_status'],'selected_current_wav_asr':len(m),'all_timed_preflight_frames_reviewed':len(p['preflight_frames_inspected']),'conservative_composition_audit':v,'planned_picture_duration_fraction':c['picture_fraction'],'whole_video_listening':'pending','user_acceptance':False}
+                                                                                                                     ~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'preflight_frames_inspected'
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "failed", "supervisor_pid": 310122, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T09:50:30.195321+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 310127, "returncode": 1, "finished_at": "2026-11-03T09:50:31.792614+00:00", "missing_outputs": ["studio/production/hb-c09a/chapter-current-readiness-audit.json"]}
+hb-c09-aktenskap audit passed
+hb-c09-arv audit passed
+hb-c09-barnbidrag audit passed
+hb-c09-barnskydd audit passed
+hb-c09-begravning audit passed
+hb-c09-dodsfall audit passed
+hb-c09-familjeformer audit passed
+hb-c09-familjetjanster audit passed
+hb-c09-flersprakighet audit passed
+hb-c09-foraldraledighet audit passed
+hb-c09-foraldraskap audit passed
+hb-c09-forandring audit passed
+hb-c09-heder audit passed
+hb-c09-kon audit passed
+hb-c09-makar audit passed
+hb-c09-radgivning audit passed
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/audit_c9_checkpoint.py", line 9, in <module>
+    p=json.loads((ep/'producer-preflight-review.json').read_text())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/vadim/finland-flashcards/studio/episodes/hb-c09-samlevnad/producer-preflight-review.json'
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "failed", "supervisor_pid": 311079, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T09:52:18.023898+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 311081, "returncode": 1, "finished_at": "2026-11-03T09:52:28.982454+00:00", "missing_outputs": ["studio/production/hb-c09a/chapter-current-readiness-audit.json"]}
+hb-c09-aktenskap audit passed
+hb-c09-arv audit passed
+hb-c09-barnbidrag audit passed
+hb-c09-barnskydd audit passed
+hb-c09-begravning audit passed
+hb-c09-dodsfall audit passed
+hb-c09-familjeformer audit passed
+hb-c09-familjetjanster audit passed
+hb-c09-flersprakighet audit passed
+hb-c09-foraldraledighet audit passed
+hb-c09-foraldraskap audit passed
+hb-c09-forandring audit passed
+hb-c09-heder audit passed
+hb-c09-kon audit passed
+hb-c09-makar audit passed
+hb-c09-radgivning audit passed
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/audit_c9_checkpoint.py", line 14, in <module>
+    h=json.loads((ep/'production-handoff.json').read_text());r=json.loads((ep/'render.json').read_text());ck=json.loads((ep/'render-check.json').read_text());rv=json.loads((ep/'producer-export-review.json').read_text());assert h['export_sha256']==r['sha256']==ck['sha256']==rv['export_sha256'];assert rv['script_sha256']==sha(ep/'script.yaml') and rv['assets_sha256']==sha(ep/'assets.yaml'),sid+' current final review';assert len(rv['actual_export_frames_inspected'])==len(s['sentences'])+3;row.update(export_sha256=r['sha256'],full_decode=ck['full_decode'],actual_export_frames_reviewed=len(rv['actual_export_frames_inspected']),measured_export_picture_fraction=json.loads((ep/'picture-coverage.json').read_text())['picture_fraction'])
+                                                                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "failed", "supervisor_pid": 312379, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T09:54:25.693978+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 312380, "returncode": 1, "finished_at": "2026-11-03T09:54:40.473053+00:00", "missing_outputs": ["studio/production/hb-c09a/chapter-current-readiness-audit.json"]}
+hb-c09-aktenskap audit passed
+hb-c09-arv audit passed
+hb-c09-barnbidrag audit passed
+hb-c09-barnskydd audit passed
+hb-c09-begravning audit passed
+hb-c09-dodsfall audit passed
+hb-c09-familjeformer audit passed
+hb-c09-familjetjanster audit passed
+hb-c09-flersprakighet audit passed
+hb-c09-foraldraledighet audit passed
+hb-c09-foraldraskap audit passed
+hb-c09-forandring audit passed
+hb-c09-heder audit passed
+hb-c09-kon audit passed
+hb-c09-makar audit passed
+hb-c09-radgivning audit passed
+hb-c09-samlevnad audit passed
+hb-c09-skilsmassa audit passed
+hb-c09-skydd audit passed
+hb-c09-tolv audit passed
+hb-c09-underhall audit passed
+hb-c09-uppfostran audit passed
+hb-c09-vald audit passed
+hb-c09-vardledighet audit passed
+hb-c09-vardnad audit passed
+CURRENT 11 previews, 14 ready,1083 clips
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "finished", "supervisor_pid": 314259, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T09:58:12.462003+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 314261, "returncode": 0, "finished_at": "2026-11-03T09:58:29.527490+00:00", "missing_outputs": []}
+hb-c09-aktenskap audit passed
+hb-c09-arv audit passed
+hb-c09-barnbidrag audit passed
+hb-c09-barnskydd audit passed
+hb-c09-begravning audit passed
+hb-c09-dodsfall audit passed
+hb-c09-familjeformer audit passed
+hb-c09-familjetjanster audit passed
+hb-c09-flersprakighet audit passed
+hb-c09-foraldraledighet audit passed
+hb-c09-foraldraskap audit passed
+hb-c09-forandring audit passed
+hb-c09-heder audit passed
+hb-c09-kon audit passed
+hb-c09-makar audit passed
+hb-c09-radgivning audit passed
+hb-c09-samlevnad audit passed
+hb-c09-skilsmassa audit passed
+hb-c09-skydd audit passed
+hb-c09-tolv audit passed
+hb-c09-underhall audit passed
+hb-c09-uppfostran audit passed
+hb-c09-vald audit passed
+hb-c09-vardledighet audit passed
+hb-c09-vardnad audit passed
+CURRENT 13 previews, 12 ready,1083 clips
+{"section_id": "hb-c09-checkpoint-audit", "stage": "audit", "status": "finished", "supervisor_pid": 358201, "command": [".venv/bin/python", "studio/production/hb-c09a/audit_c9_checkpoint.py"], "started_at": "2026-11-03T11:25:14.053241+00:00", "log": "studio/production/hb-c09a/chapter-audit.log", "pid": 358202, "returncode": 0, "finished_at": "2026-11-03T11:25:37.677498+00:00", "missing_outputs": []}

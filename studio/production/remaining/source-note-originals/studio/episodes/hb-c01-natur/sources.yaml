@@ -1,0 +1,92 @@
+schema_version: 1
+section_id: hb-c01-natur
+provenance_path: data/homebrew/metadata/01_provenance.yaml
+units:
+  hb-c01-u0023:
+    source_path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    pdf_page: 6
+    printed_page: 5
+    source_range:
+      start: 54
+      end: 545
+    range_basis: raw_pdf_page
+    extracted_passage: "Finland är ett glesbebyggt land med mycket skogar och sjöar samt orörd natur.\
+      \ Finländarna uppskattar \nnaturen och vistas gärna i den. Många människor gillar till exempel\
+      \ fiske, terrängcykling, \nvinterbadande och vandring. Det är inte långt till skogen ens i\
+      \ huvudstaden. Städerna har också många \nparker och andra grönområden där man kan vistas.\
+      \ För finländarna är en snygg och ren natur och \nmiljö viktiga. Att skräpa ner anses hänsynslöst\
+      \ och oartigt och man kan också bötfällas för det. \n"
+    normalization: whitespace_only
+    repairs: []
+    selection: Additive complete textbook paragraph; preserve substantive wording and normalize whitespace
+      only.
+  hb-c01-u0027:
+    source_path: data/infofinland/content/information-about-finland/key-facts-about-finland.html
+    sha256: da7da10a5090002d9b5ec8bcde0d8cb18495b8c53c356afd673364c98ded14c0
+    source_block: b0054
+    locator: html:nth-of-type(1) > body:nth-of-type(1) > main:nth-of-type(1) > div:nth-of-type(1)
+      > div:nth-of-type(9) > ul:nth-of-type(1) > li:nth-of-type(5)
+    source_kind: li
+    source_role: content
+    heading: Andra intressanta fakta om Finland
+    source_range:
+      start: 0
+      end: 33
+    range_basis: normalized_html_block
+    extracted_passage: Finlands nationaldjur är björnen.
+    normalization: whitespace_only
+    repairs: []
+    selection: Complete source paragraph or list item.
+sources:
+- source:
+    path: data/orientation_guide.pdf
+    sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+    bytes: 1608084
+    extraction: pypdf-default-page-text-v1
+    source_group: textbook
+    attribution_record: textbook
+    pdf_metadata:
+      /Author: Lill Rasilainen
+      /Creator: Microsoft® Word Office 365:lle
+      /CreationDate: D:20190614140433+03'00'
+      /ModDate: D:20190614140433+03'00'
+      /Producer: Microsoft® Word Office 365:lle
+  attribution:
+    title: Finland – Lärobok i samhällsorientering
+    credit: © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    local_notice: data/orientation_guide.pdf
+    notice_pdf_page: 4
+    license: Foreword permits free use; no standardized redistribution license inferred
+    notice_excerpt: Det här läromedlet är avsett som handbok för utbildaren, men kan också användas
+      fritt av andra.
+    changes: Two complete paragraphs selected, rearranged under new headings; PDF line whitespace
+      normalized. No word or punctuation repairs.
+    publication_note: Preserve the original credit and notice; do not label source text MIT or CC
+      BY.
+    local_notice_sha256: 4710f62fe7b7264272d50a46cd35ec3f2a2836d17669ae376c2ec12f5175048f
+- source:
+    path: data/infofinland/content/information-about-finland/key-facts-about-finland.html
+    sha256: da7da10a5090002d9b5ec8bcde0d8cb18495b8c53c356afd673364c98ded14c0
+    bytes: 16863
+    extraction: html-whitespace-normalized-v1
+    source_group: infofinland
+    attribution_record: infofinland
+    title: Grundläggande information om Finland
+    source_url: https://www.infofinland.fi/sv/information-about-finland/key-facts-about-finland
+    visible_dates:
+    - 17.06.2025
+  attribution:
+    title: InfoFinland.fi
+    credit: InfoFinland.fi
+    url: https://www.infofinland.fi/sv
+    local_notice: data/infofinland/content/open-data.html
+    license: CC BY 4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    scope: Text only; images excluded by the archived notice.
+    changes: Selection, rearrangement, new Swedish headings, list/paragraph formatting and whitespace
+      normalization. One complete legal-protection sentence selected from interview coaching. No
+      substantive rewriting.
+    publication_note: Carry this attribution, source/article links, license link and change statement
+      with distributed/rendered content; no endorsement implied.
+    local_notice_sha256: b9b683d1af2066cdb4086620cb0a4acfea66bab858d36908fafc284f2485489c

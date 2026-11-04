@@ -1,0 +1,1756 @@
+schema_version: 1
+section_id: hb-c11-hyresavtal
+chapter_id: hb-c11
+title_sv: Hyresavtal och boendekostnader
+title_ru: Договор аренды и расходы на жильё
+source_path: data/homebrew/sv/chapters/11_boende_vardag_och_miljo.yaml
+translation_path: data/homebrew/ru/sections/hb-c11-hyresavtal.yaml
+example_only: false
+source_section_sha256: 5a83eeb799dd80d264f93fec51119eff960705f814520a001198a71544e460f8
+translation_file_sha256: 13c5bb44417edb6f5a603bfca6b7fd1af3e8eb865ceeaf3b5992fe24934e15bc
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: 'Exact consecutive rental-contract source paragraphs: agreement terms,duration,notice and
+    the given March/April example,deposits and conditional return/retention,costs and housing services.
+    No automatic eviction,eligibility or legal update added.'
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#243c32'', ''text'': ''#faf3e8'', ''secondary'': ''#c5dfce'',
+    ''highlight'': ''#e3c58c'', ''separator'': ''#4d7560''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Eol apartment house Helsinki.jpg by Jeff Reuben continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=3.8336309523809518. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Night on the Docks - Trumpet by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 174.080 seconds; prepared lossless stereo bed 536.708
+    seconds. Repeat count 3, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c11-u0026
+  description: När en person flyttar in i en hyresbostad ska hen ingå ett skriftligt hyresavtal om bostaden
+    med hyresvärden.
+- id: hb-c11-u0027
+  description: Ett tidsbegränsat hyresavtal gäller för en viss tid, till exempel ett år.
+- id: hb-c11-u0028
+  description: Ett hyresavtal som gäller tills vidare fortsätter tills den boende eller hyresvärden säger
+    upp det.
+- id: hb-c11-u0029
+  description: Uppsägningstid betyder den tidsperiod som hyresgästen ännu får bo i bostaden efter att
+    hyresavtalet har sagts upp.
+- id: hb-c11-u0030
+  description: Det är bra att veta att uppsägningstiden oftast börjar räknas från slutet av den kalendermånad
+    då avtalet sägs upp.
+- id: hb-c11-u0031
+  description: Det är bra att använda en standardmall för hyresavtal.
+- id: hb-c11-u0032
+  description: personuppgifter och adresser för bostadens ägare och hyresgästen
+- id: hb-c11-u0034
+  description: bostadens adress, typ, storlek, skick och utrustning (det vill säga vilka saker som finns
+    i bostaden)
+- id: hb-c11-u0035
+  description: när hyresavtalet börjar gälla och när det upphör
+- id: hb-c11-u0036
+  description: beloppet av hyran och garantihyran i euro
+- id: hb-c11-u0037
+  description: när hyran ska betalas och till vilket bankkonto
+- id: hb-c11-u0038
+  description: vad som ingår i hyran och vad man måste betala extra för (till exempel vatten, el eller
+    bilplats)
+- id: hb-c11-u0039
+  description: villkoren för hyreshöjning, det vill säga på vilka villkor bostadens ägare kan höja hyran
+    en gång per år.
+- id: hb-c11-u0040
+  description: I allmänhet måste man betala en hyresgaranti för bostaden innan man flyttar in.
+- id: hb-c11-u0041
+  description: Garantin betalas tillbaka när man flyttar ut, om bostaden är i bra skick och den boende
+    har betalat hyrorna i tid.
+- id: hb-c11-u0042
+  description: Om hyresgästen avsiktligen eller på grund av ovarsamt beteende har orsakat skador i bostaden
+    som det kostar mer att reparera än vad garantin täcker, kan hyresvärden kräva extra ersättning.
+- id: hb-c11-u0043
+  description: Hyresgarantin kan inte användas för att betala hyran för de sista månaderna.
+- id: hb-c11-u0044
+  description: Ofta ska du betala en vattenavgift för bostaden.
+- id: hb-c11-u0045
+  description: Ofta ska du själv ingå ett elavtal.
+- id: hb-c11-u0046
+  description: Om bostaden har centralvärme, ingår uppvärmningen i allmänhet i hyran.
+- id: hb-c11-u0047
+  description: Det kostar i allmänhet att använda husbolagets bastu, tvättstuga och bilplatser.
+- id: hb-c11-u0048
+  description: Om du bor på hyra i ett egnahemshus, ska du ofta betala för uppvärmningen och avfallshanteringen.
+- id: hb-c11-u0049
+  description: I Finland bor många människor i hyresbostäder.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish apartment-building photograph; contextual residential setting
+    only,not a claim about lease terms or the depicted residents.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Night on the Docks - Trumpet — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: Dwelling and landlord meet at a written lease; no real signatures or personal data.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Two alternative lease durations, fixed end versus continuing agreement; avoid a false sequential
+    arrow.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: Fixed duration with one-year example clearly marked as example, not universal minimum.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: Fixed lease runs to automatic endpoint. Block mid-period termination only with the source
+    usual qualification, not absolute prohibition.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Fixed term can continue indefinitely if stipulated in the agreement; condition must remain
+    visible.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Either resident or landlord may end an indefinite lease by notice; two alternatives, no
+    ownership transfer.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Resident termination paired with one-month notice, without adding the landlord rule.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Owner termination paired with the source three-to-six-month range; do not invent which
+    duration applies.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Earliest-notice clause may exist, twelve months only an example; do not generalize it to
+    every indefinite lease.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: Notice delivered, followed by permitted continued residence during notice period; no immediate
+    eviction image.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Rent obligation continues through the notice period.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Written termination notice may be email; retain a document/written-communication form,
+    without inventing recipient details.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Evidence of successful delivery protected in a record, not proof of merely drafting or
+    sending a message.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Read-confirmation receipt follows the email; no fabricated message contents or personal
+    address.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Notice calculation is anchored to end of notice month, preserving often qualification;
+    no arbitrary day or year.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Exact source March-to-April example; show month names without invented dates/year and attach
+    rent to April.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Early and late notice within same month share the same source-stated result; no longer
+    charge inferred from earlier date.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-018
+  kind: foreground
+  description: Blank standard lease template with housing context; no fake official form or legal endorsement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-019
+  kind: foreground
+  description: Online template introduces the following required-information list; avoid mock personal
+    information.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-020
+  kind: foreground
+  description: Two party identity/address categories as empty field objects; no actual or invented identifiers
+    or addresses.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-021
+  kind: foreground
+  description: Housing property details and equipment, without fabricated square metres or a claimed real
+    listing.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-022
+  kind: foreground
+  description: Agreement start and end markers, no made-up calendar dates.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-023
+  kind: foreground
+  description: Recurring rent and guarantee amount are separate financial fields; no fabricated euro value.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-024
+  kind: foreground
+  description: Payment timing and destination account; use blank field bars, no account number or real
+    banking UI.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-025
+  kind: foreground
+  description: Three actual source examples of possible extra charges; do not imply all are always included
+    or always additional.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-026
+  kind: foreground
+  description: Yearly rent-increase conditions contained in the agreement; do not show an unconditional
+    annual increase or invent percentage.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-027
+  kind: foreground
+  description: Guarantee generally paid before moving in; guarantee is distinct from first rent.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-028
+  kind: foreground
+  description: Advance guarantee goes to landlord in the described arrangement, no invented special account
+    requirement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-029
+  kind: foreground
+  description: Usual private-landlord guarantee equivalent to a couple of months, distinct from the legal
+    maximum on next slide.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-030
+  kind: foreground
+  description: A clear upper cap of three months; do not draw an exact mandatory three-month payment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-031
+  kind: foreground
+  description: Companies with many dwellings often request smaller guarantee; no numeric discount or universal
+    rule.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-032
+  kind: foreground
+  description: Guarantee returns on move-out only with both good condition and timely-rent conditions;
+    show both labels visibly.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-033
+  kind: foreground
+  description: Possible partial or complete retention arises from unpaid rent or repair need; preserve
+    the OR conditions, no automatic total confiscation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-034
+  kind: foreground
+  description: Normal wear does not justify keeping guarantee; block the retention action rather than
+    prohibit normal living.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-035
+  kind: foreground
+  description: Extra compensation only for intentional/negligent damage with repair cost exceeding guarantee;
+    no punishment for normal wear or automatic criminal accusation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-036
+  kind: foreground
+  description: Block using the guarantee as final-month rent; do not imply the tenant can skip those months
+    payment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-037
+  kind: foreground
+  description: Actual water-use object beside home, with often qualifier retained.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-038
+  kind: foreground
+  description: Water charge paid alongside rent to landlord/company account, without fictitious due date
+    or account number.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-039
+  kind: foreground
+  description: Occupant count often determines charge; no invented per-person rate or fixed household
+    size.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-040
+  kind: foreground
+  description: Where a meter exists, measured consumption determines charge. Prefer real water-meter photograph;
+    gear is only a fallback meter-object proxy.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-041
+  kind: foreground
+  description: Resident often arranges an electricity agreement separately; do not imply all leases exclude
+    electricity.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-042
+  kind: foreground
+  description: Call electricity company and supply name/new address; show blank labels, no real customer
+    identity or phone number.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-043
+  kind: foreground
+  description: Compare providers and prices without fabricated tariffs or ranking an actual provider.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-044
+  kind: foreground
+  description: Central heating is generally included in rent; inclusion relationship, not an additional
+    payment arrow.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-045
+  kind: foreground
+  description: Alternative heating systems can sometimes have separate charges; do not make additional
+    payment universal.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-046
+  kind: foreground
+  description: Three shared amenities have generally separate fees. Prefer real sauna/laundry objects;
+    generic water/shirt are clearly fallback symbols only.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-047
+  kind: foreground
+  description: These amenity fees generally go directly to the housing company; no invented landlord intermediary.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-048
+  kind: foreground
+  description: Detached rental home often involves heating and waste costs; no numeric bill or universal
+    inclusion rule.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-049
+  kind: foreground
+  description: Rental housing is common; population/home picture without unsupported count, share or map.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-050
+  kind: foreground
+  description: Moving between rentals without sale/purchase; crossed transaction emphasis must not suggest
+    a ban on buying a home.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-051
+  kind: foreground
+  description: Landlord may terminate only with acceptable reason; reason condition visibly attached,
+    no immediate eviction or extra grounds.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-052
+  kind: foreground
+  description: Move-out consequence following the preceding lawful termination, without depicting forcible
+    removal or inventing a timetable.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c11-u0026-s001
+  sv: När en person flyttar in i en hyresbostad ska hen ingå ett skriftligt hyresavtal om bostaden med
+    hyresvärden.
+  ru: При въезде в съёмное жильё человек должен заключить с арендодателем письменный договор аренды этого
+    жилья.
+  scene_id: hb-c11-u0026
+  visual_cue: Dwelling and landlord meet at a written lease; no real signatures or personal data.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0026-s001.wav
+  start_seconds: 3.25
+  end_seconds: 12.723741
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0026-s002
+  sv: Hyresavtalet kan vara tidsbegränsat eller gälla tills vidare.
+  ru: Договор аренды может быть срочным или бессрочным.
+  scene_id: hb-c11-u0026
+  visual_cue: Two alternative lease durations, fixed end versus continuing agreement; avoid a false sequential
+    arrow.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0026-s002.wav
+  start_seconds: 14.708333
+  end_seconds: 20.211463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0027-s001
+  sv: Ett tidsbegränsat hyresavtal gäller för en viss tid, till exempel ett år.
+  ru: Срочный договор аренды действует определённое время, например один год.
+  scene_id: hb-c11-u0027
+  visual_cue: Fixed duration with one-year example clearly marked as example, not universal minimum.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0027-s001.wav
+  start_seconds: 22.666667
+  end_seconds: 29.145034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0027-s002
+  sv: Det upphör automatiskt och kan vanligtvis inte sägas upp mitt under avtalsperioden.
+  ru: Он прекращает действовать автоматически, и обычно его нельзя расторгнуть до окончания срока действия.
+  scene_id: hb-c11-u0027
+  visual_cue: Fixed lease runs to automatic endpoint. Block mid-period termination only with the source
+    usual qualification, not absolute prohibition.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0027-s002.wav
+  start_seconds: 31.125
+  end_seconds: 38.299966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0027-s003
+  sv: Det kan anges i avtalet att avtalet efter den bestämda tidsperioden fortsätter att gälla tills vidare.
+  ru: В договоре может быть указано, что после определённого срока он продолжает действовать бессрочно.
+  scene_id: hb-c11-u0027
+  visual_cue: Fixed term can continue indefinitely if stipulated in the agreement; condition must remain
+    visible.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0027-s003.wav
+  start_seconds: 40.25
+  end_seconds: 48.887823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0028-s001
+  sv: Ett hyresavtal som gäller tills vidare fortsätter tills den boende eller hyresvärden säger upp det.
+  ru: Бессрочный договор аренды действует до тех пор, пока жилец или арендодатель не расторгнет его, подав
+    уведомление.
+  scene_id: hb-c11-u0028
+  visual_cue: Either resident or landlord may end an indefinite lease by notice; two alternatives, no
+    ownership transfer.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0028-s001.wav
+  start_seconds: 51.375
+  end_seconds: 59.734184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0028-s002
+  sv: Om den boende säger upp avtalet är uppsägningstiden en månad.
+  ru: Если о расторжении договора уведомляет жилец, срок уведомления составляет один месяц.
+  scene_id: hb-c11-u0028
+  visual_cue: Resident termination paired with one-month notice, without adding the landlord rule.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0028-s002.wav
+  start_seconds: 61.708333
+  end_seconds: 67.350782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0028-s003
+  sv: Om bostadens ägare säger upp avtalet är uppsägningstiden 3–6 månader.
+  ru: Если о расторжении договора уведомляет владелец жилья, срок уведомления составляет 3–6 месяцев.
+  scene_id: hb-c11-u0028
+  visual_cue: Owner termination paired with the source three-to-six-month range; do not invent which duration
+    applies.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0028-s003.wav
+  start_seconds: 69.333333
+  end_seconds: 76.856599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0028-s004
+  sv: Ofta anges det i tillsvidareavtal att avtalet kan sägas upp tidigast efter en viss tid, till exempel
+    tolv månader.
+  ru: В бессрочном договоре часто указывают, что уведомить о его расторжении можно не раньше чем через
+    определённое время, например через двенадцать месяцев.
+  scene_id: hb-c11-u0028
+  visual_cue: Earliest-notice clause may exist, twelve months only an example; do not generalize it to
+    every indefinite lease.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0028-s004.wav
+  start_seconds: 78.833333
+  end_seconds: 88.725034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0029-s001
+  sv: Uppsägningstid betyder den tidsperiod som hyresgästen ännu får bo i bostaden efter att hyresavtalet
+    har sagts upp.
+  ru: Срок уведомления о расторжении — это период, в течение которого арендатор ещё имеет право проживать
+    в снимаемом жилье после уведомления о расторжении договора аренды.
+  scene_id: hb-c11-u0029
+  visual_cue: Notice delivered, followed by permitted continued residence during notice period; no immediate
+    eviction image.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0029-s001.wav
+  start_seconds: 91.208333
+  end_seconds: 100.960714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0029-s002
+  sv: Hyresgästen måste betala hyra för uppsägningstiden.
+  ru: Арендатор должен вносить арендную плату за период уведомления.
+  scene_id: hb-c11-u0029
+  visual_cue: Rent obligation continues through the notice period.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0029-s002.wav
+  start_seconds: 102.916667
+  end_seconds: 107.583878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0029-s003
+  sv: Meddelandet om uppsägning ska alltid göras skriftligt, till exempel per e-post.
+  ru: Уведомление о расторжении всегда необходимо направлять письменно, например по электронной почте.
+  scene_id: hb-c11-u0029
+  visual_cue: Written termination notice may be email; retain a document/written-communication form, without
+    inventing recipient details.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0029-s003.wav
+  start_seconds: 109.541667
+  end_seconds: 116.786293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0029-s004
+  sv: Vid en eventuell tvist måste man kunna bevisa att meddelandet har levererats.
+  ru: Если возникнет спор, нужно суметь доказать, что уведомление было доставлено.
+  scene_id: hb-c11-u0029
+  visual_cue: Evidence of successful delivery protected in a record, not proof of merely drafting or sending
+    a message.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0029-s004.wav
+  start_seconds: 118.75
+  end_seconds: 125.437347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0029-s005
+  sv: Därför är det bra att begära ett kvitto på e-postmeddelandet som bekräftar att det har blivit läst.
+  ru: Поэтому стоит запросить подтверждение прочтения электронного письма.
+  scene_id: hb-c11-u0029
+  visual_cue: Read-confirmation receipt follows the email; no fabricated message contents or personal
+    address.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0029-s005.wav
+  start_seconds: 127.416667
+  end_seconds: 135.77585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0030-s001
+  sv: Det är bra att veta att uppsägningstiden oftast börjar räknas från slutet av den kalendermånad då
+    avtalet sägs upp.
+  ru: Полезно знать, что срок уведомления обычно начинает исчисляться с конца календарного месяца, в котором
+    было подано уведомление о расторжении договора.
+  scene_id: hb-c11-u0030
+  visual_cue: Notice calculation is anchored to end of notice month, preserving often qualification; no
+    arbitrary day or year.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0030-s001.wav
+  start_seconds: 138.25
+  end_seconds: 148.211361
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0030-s002
+  sv: Det betyder att om hyresgästen säger upp hyresavtalet under mars månad, måste hen betala hyra ännu
+    för april.
+  ru: Это означает, что если арендатор уведомляет о расторжении договора аренды в марте, он должен внести
+    арендную плату ещё и за апрель.
+  scene_id: hb-c11-u0030
+  visual_cue: Exact source March-to-April example; show month names without invented dates/year and attach
+    rent to April.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0030-s002.wav
+  start_seconds: 150.166667
+  end_seconds: 159.222449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0030-s003
+  sv: Så här är det oavsett om meddelandet om uppsägning skickas i början eller slutet av månaden.
+  ru: Это действует независимо от того, отправлено уведомление о расторжении в начале или в конце месяца.
+  scene_id: hb-c11-u0030
+  visual_cue: Early and late notice within same month share the same source-stated result; no longer charge
+    inferred from earlier date.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0030-s003.wav
+  start_seconds: 161.208333
+  end_seconds: 169.497857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0031-s001
+  sv: Det är bra att använda en standardmall för hyresavtal.
+  ru: Стоит использовать типовой шаблон договора аренды.
+  scene_id: hb-c11-u0031
+  visual_cue: Blank standard lease template with housing context; no fake official form or legal endorsement.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0031-s001.wav
+  start_seconds: 171.958333
+  end_seconds: 176.973844
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-018.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0031-s002
+  sv: 'En sådan är lätt att hitta på internet och innehåller åtminstone följande:'
+  ru: 'Такой шаблон легко найти в интернете, и он содержит как минимум следующее:'
+  scene_id: hb-c11-u0031
+  visual_cue: Online template introduces the following required-information list; avoid mock personal
+    information.
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0031-s002.wav
+  start_seconds: 178.958333
+  end_seconds: 185.57602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-019.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0032-s001
+  sv: personuppgifter och adresser för bostadens ägare och hyresgästen
+  ru: персональные данные и адреса владельца жилья и арендатора
+  scene_id: hb-c11-u0032
+  visual_cue: Two party identity/address categories as empty field objects; no actual or invented identifiers
+    or addresses.
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0032-s001.wav
+  start_seconds: 188.041667
+  end_seconds: 193.893095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-020.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0034-s001
+  sv: bostadens adress, typ, storlek, skick och utrustning (det vill säga vilka saker som finns i bostaden)
+  ru: адрес, тип, размер, состояние и оснащение жилья (то есть какие вещи в нём имеются)
+  scene_id: hb-c11-u0034
+  visual_cue: Housing property details and equipment, without fabricated square metres or a claimed real
+    listing.
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0034-s001.wav
+  start_seconds: 196.375
+  end_seconds: 205.709422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-021.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0035-s001
+  sv: när hyresavtalet börjar gälla och när det upphör
+  ru: когда договор аренды вступает в силу и когда прекращает действовать
+  scene_id: hb-c11-u0035
+  visual_cue: Agreement start and end markers, no made-up calendar dates.
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0035-s001.wav
+  start_seconds: 208.166667
+  end_seconds: 212.764218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-022.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0036-s001
+  sv: beloppet av hyran och garantihyran i euro
+  ru: размер арендной платы и гарантийного депозита в евро
+  scene_id: hb-c11-u0036
+  visual_cue: Recurring rent and guarantee amount are separate financial fields; no fabricated euro value.
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0036-s001.wav
+  start_seconds: 215.25
+  end_seconds: 219.359932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-023.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0037-s001
+  sv: när hyran ska betalas och till vilket bankkonto
+  ru: когда и на какой банковский счёт необходимо вносить арендную плату
+  scene_id: hb-c11-u0037
+  visual_cue: Payment timing and destination account; use blank field bars, no account number or real
+    banking UI.
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0037-s001.wav
+  start_seconds: 221.833333
+  end_seconds: 226.221905
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-024.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0038-s001
+  sv: vad som ingår i hyran och vad man måste betala extra för (till exempel vatten, el eller bilplats)
+  ru: что входит в арендную плату и за что нужно платить дополнительно (например, за воду, электричество
+    или парковочное место)
+  scene_id: hb-c11-u0038
+  visual_cue: Three actual source examples of possible extra charges; do not imply all are always included
+    or always additional.
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0038-s001.wav
+  start_seconds: 228.708333
+  end_seconds: 237.764116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-025.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0039-s001
+  sv: villkoren för hyreshöjning, det vill säga på vilka villkor bostadens ägare kan höja hyran en gång
+    per år.
+  ru: условия повышения арендной платы, то есть при каких условиях владелец жилья может повышать её раз
+    в год.
+  scene_id: hb-c11-u0039
+  visual_cue: Yearly rent-increase conditions contained in the agreement; do not show an unconditional
+    annual increase or invent percentage.
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0039-s001.wav
+  start_seconds: 240.25
+  end_seconds: 249.236122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-026.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0040-s001
+  sv: I allmänhet måste man betala en hyresgaranti för bostaden innan man flyttar in.
+  ru: Как правило, до въезда нужно внести за жильё гарантийный депозит.
+  scene_id: hb-c11-u0040
+  visual_cue: Guarantee generally paid before moving in; guarantee is distinct from first rent.
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0040-s001.wav
+  start_seconds: 251.708333
+  end_seconds: 258.46534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-027.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0040-s002
+  sv: Hyresgaranti betyder att den som hyr bostaden betalar extra pengar i förväg till hyresvärden.
+  ru: Гарантийный депозит означает, что снимающий жильё заранее вносит арендодателю дополнительные деньги.
+  scene_id: hb-c11-u0040
+  visual_cue: Advance guarantee goes to landlord in the described arrangement, no invented special account
+    requirement.
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0040-s002.wav
+  start_seconds: 260.416667
+  end_seconds: 268.636531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-028.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0040-s003
+  sv: För bostäder som ägs av privata hyresvärdar motsvarar garantin i allmänhet ett par månaders hyra.
+  ru: Для жилья, принадлежащего частным арендодателям, депозит обычно соответствует арендной плате за
+    пару месяцев.
+  scene_id: hb-c11-u0040
+  visual_cue: Usual private-landlord guarantee equivalent to a couple of months, distinct from the legal
+    maximum on next slide.
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0040-s003.wav
+  start_seconds: 270.625
+  end_seconds: 279.471803
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-029.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0040-s004
+  sv: Hyresgarantin får inte vara större än tre månaders hyra.
+  ru: Гарантийный депозит не может превышать арендную плату за три месяца.
+  scene_id: hb-c11-u0040
+  visual_cue: A clear upper cap of three months; do not draw an exact mandatory three-month payment.
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0040-s004.wav
+  start_seconds: 281.458333
+  end_seconds: 286.543503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-030.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0040-s005
+  sv: Företag som äger många bostäder kräver ofta en mindre garanti.
+  ru: Компании, владеющие многими жилыми помещениями, часто требуют меньший депозит.
+  scene_id: hb-c11-u0040
+  visual_cue: Companies with many dwellings often request smaller guarantee; no numeric discount or universal
+    rule.
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0040-s005.wav
+  start_seconds: 288.5
+  end_seconds: 294.212109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-031.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0041-s001
+  sv: Garantin betalas tillbaka när man flyttar ut, om bostaden är i bra skick och den boende har betalat
+    hyrorna i tid.
+  ru: При выезде депозит возвращают, если жильё находится в хорошем состоянии и жилец вовремя вносил арендную
+    плату.
+  scene_id: hb-c11-u0041
+  visual_cue: Guarantee returns on move-out only with both good condition and timely-rent conditions;
+    show both labels visibly.
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0041-s001.wav
+  start_seconds: 296.666667
+  end_seconds: 306.349388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-032.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0041-s002
+  sv: Om den boende inte betalar sin hyra eller om det krävs reparationer i bostaden, kan hyresvärden
+    behålla en del av eller hela garantin.
+  ru: Если жилец не вносит арендную плату или жилью требуется ремонт, арендодатель может оставить себе
+    часть депозита или весь депозит.
+  scene_id: hb-c11-u0041
+  visual_cue: Possible partial or complete retention arises from unpaid rent or repair need; preserve
+    the OR conditions, no automatic total confiscation.
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0041-s002.wav
+  start_seconds: 308.333333
+  end_seconds: 319.896871
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-033.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0041-s003
+  sv: Hyresvärden kan inte behålla garantin för sådana spår efter den boende som beror på normalt slitage.
+  ru: Арендодатель не может удержать депозит за следы проживания жильца, вызванные обычным износом.
+  scene_id: hb-c11-u0041
+  visual_cue: Normal wear does not justify keeping guarantee; block the retention action rather than prohibit
+    normal living.
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0041-s003.wav
+  start_seconds: 321.875
+  end_seconds: 330.443163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-034.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0042-s001
+  sv: Om hyresgästen avsiktligen eller på grund av ovarsamt beteende har orsakat skador i bostaden som
+    det kostar mer att reparera än vad garantin täcker, kan hyresvärden kräva extra ersättning.
+  ru: Если арендатор намеренно или по неосторожности причинил жилью ущерб, стоимость устранения которого
+    превышает сумму депозита, арендодатель может потребовать дополнительное возмещение.
+  scene_id: hb-c11-u0042
+  visual_cue: Extra compensation only for intentional/negligent damage with repair cost exceeding guarantee;
+    no punishment for normal wear or automatic criminal accusation.
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0042-s001.wav
+  start_seconds: 332.916667
+  end_seconds: 349.077755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-035.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0043-s001
+  sv: Hyresgarantin kan inte användas för att betala hyran för de sista månaderna.
+  ru: Гарантийный депозит нельзя использовать для внесения арендной платы за последние месяцы.
+  scene_id: hb-c11-u0043
+  visual_cue: Block using the guarantee as final-month rent; do not imply the tenant can skip those months
+    payment.
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0043-s001.wav
+  start_seconds: 351.833333
+  end_seconds: 358.59034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-036.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0044-s001
+  sv: Ofta ska du betala en vattenavgift för bostaden.
+  ru: Часто за жильё нужно вносить плату за воду.
+  scene_id: hb-c11-u0044
+  visual_cue: Actual water-use object beside home, with often qualifier retained.
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0044-s001.wav
+  start_seconds: 361.041667
+  end_seconds: 365.499898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-037.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0044-s002
+  sv: Betala vattenavgiften till hyresvärdens eller husbolagets konto på samma gång som du betalar hyra.
+  ru: Вносите плату за воду на счёт арендодателя или жилищной компании одновременно с арендной платой.
+  scene_id: hb-c11-u0044
+  visual_cue: Water charge paid alongside rent to landlord/company account, without fictitious due date
+    or account number.
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0044-s002.wav
+  start_seconds: 367.458333
+  end_seconds: 375.747857
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-038.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0044-s003
+  sv: Beloppet på vattenavgiften beror ofta på det antal personer som bor i bostaden.
+  ru: Размер платы за воду часто зависит от числа людей, проживающих в жилье.
+  scene_id: hb-c11-u0044
+  visual_cue: Occupant count often determines charge; no invented per-person rate or fixed household size.
+  asset_ids:
+  - episode_background
+  - picture-039
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0044-s003.wav
+  start_seconds: 377.708333
+  end_seconds: 384.46534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-039.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0044-s004
+  sv: Om det finns en vattenmätare i bostaden, fastställs vattenavgiften enligt vattenkonsumtionen.
+  ru: Если в жилье есть счётчик воды, плата за воду определяется по её потреблению.
+  scene_id: hb-c11-u0044
+  visual_cue: Where a meter exists, measured consumption determines charge. Prefer real water-meter photograph;
+    gear is only a fallback meter-object proxy.
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0044-s004.wav
+  start_seconds: 386.416667
+  end_seconds: 394.636531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-040.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0045-s001
+  sv: Ofta ska du själv ingå ett elavtal.
+  ru: Договор на электроснабжение часто нужно заключать самостоятельно.
+  scene_id: hb-c11-u0045
+  visual_cue: Resident often arranges an electricity agreement separately; do not imply all leases exclude
+    electricity.
+  asset_ids:
+  - episode_background
+  - picture-041
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0045-s001.wav
+  start_seconds: 397.125
+  end_seconds: 400.816973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-041.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0045-s002
+  sv: Du ingår ett elavtal genom att ringa ett elbolag och uppge ditt namn och din nya adress.
+  ru: Чтобы заключить договор на электроснабжение, позвоните в электроснабжающую компанию и сообщите своё
+    имя и новый адрес.
+  scene_id: hb-c11-u0045
+  visual_cue: Call electricity company and supply name/new address; show blank labels, no real customer
+    identity or phone number.
+  asset_ids:
+  - episode_background
+  - picture-042
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0045-s002.wav
+  start_seconds: 402.791667
+  end_seconds: 410.245272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-042.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0045-s003
+  sv: Om du vill hitta det förmånligaste priset, kan du jämföra olika elbolags priser.
+  ru: Если вы хотите найти самую выгодную цену, можно сравнить цены разных электроснабжающих компаний.
+  scene_id: hb-c11-u0045
+  visual_cue: Compare providers and prices without fabricated tariffs or ranking an actual provider.
+  asset_ids:
+  - episode_background
+  - picture-043
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0045-s003.wav
+  start_seconds: 412.208333
+  end_seconds: 419.661939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-043.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0046-s001
+  sv: Om bostaden har centralvärme, ingår uppvärmningen i allmänhet i hyran.
+  ru: Если в жилье центральное отопление, его стоимость, как правило, входит в арендную плату.
+  scene_id: hb-c11-u0046
+  visual_cue: Central heating is generally included in rent; inclusion relationship, not an additional
+    payment arrow.
+  asset_ids:
+  - episode_background
+  - picture-044
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0046-s001.wav
+  start_seconds: 422.125
+  end_seconds: 428.673027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-044.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0046-s002
+  sv: Om bostaden har oljevärme eller elvärme, ska avgiften ibland betalas separat.
+  ru: Если жильё отапливается жидким топливом или электричеством, иногда за это нужно платить отдельно.
+  scene_id: hb-c11-u0046
+  visual_cue: Alternative heating systems can sometimes have separate charges; do not make additional
+    payment universal.
+  asset_ids:
+  - episode_background
+  - picture-045
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0046-s002.wav
+  start_seconds: 430.625
+  end_seconds: 437.799966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-045.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0047-s001
+  sv: Det kostar i allmänhet att använda husbolagets bastu, tvättstuga och bilplatser.
+  ru: За пользование сауной, общей прачечной и парковочными местами жилищной компании обычно нужно платить.
+  scene_id: hb-c11-u0047
+  visual_cue: Three shared amenities have generally separate fees. Prefer real sauna/laundry objects;
+    generic water/shirt are clearly fallback symbols only.
+  asset_ids:
+  - episode_background
+  - picture-046
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0047-s001.wav
+  start_seconds: 440.25
+  end_seconds: 447.355306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-046.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0047-s002
+  sv: I allmänhet ska dessa avgifter betalas direkt till husbolaget.
+  ru: Как правило, эти платежи нужно вносить непосредственно жилищной компании.
+  scene_id: hb-c11-u0047
+  visual_cue: These amenity fees generally go directly to the housing company; no invented landlord intermediary.
+  asset_ids:
+  - episode_background
+  - picture-047
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0047-s002.wav
+  start_seconds: 449.333333
+  end_seconds: 454.975782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-047.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0048-s001
+  sv: Om du bor på hyra i ett egnahemshus, ska du ofta betala för uppvärmningen och avfallshanteringen.
+  ru: Если вы снимаете индивидуальный жилой дом, часто нужно платить за отопление и услуги по обращению
+    с отходами.
+  scene_id: hb-c11-u0048
+  visual_cue: Detached rental home often involves heating and waste costs; no numeric bill or universal
+    inclusion rule.
+  asset_ids:
+  - episode_background
+  - picture-048
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0048-s001.wav
+  start_seconds: 457.458333
+  end_seconds: 466.026497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-048.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0049-s001
+  sv: I Finland bor många människor i hyresbostäder.
+  ru: В Финляндии многие люди живут в съёмном жилье.
+  scene_id: hb-c11-u0049
+  visual_cue: Rental housing is common; population/home picture without unsupported count, share or map.
+  asset_ids:
+  - episode_background
+  - picture-049
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0049-s001.wav
+  start_seconds: 468.5
+  end_seconds: 472.888571
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-049.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0049-s002
+  sv: Det som är bra med en hyresbostad är att det är lätt att byta bostad, eftersom du inte behöver sälja
+    och köpa bostaden.
+  ru: Преимущество съёмного жилья в том, что его легко сменить, поскольку вам не нужно продавать и покупать
+    жильё.
+  scene_id: hb-c11-u0049
+  visual_cue: Moving between rentals without sale/purchase; crossed transaction emphasis must not suggest
+    a ban on buying a home.
+  asset_ids:
+  - episode_background
+  - picture-050
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0049-s002.wav
+  start_seconds: 474.875
+  end_seconds: 485.04534
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-050.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0049-s003
+  sv: Men å andra sidan kan hyresvärden bestämma sig för att säga upp hyresavtalet, om han eller hon har
+    en godtagbar anledning.
+  ru: Но, с другой стороны, арендодатель может решить расторгнуть договор аренды, если у него есть приемлемое
+    основание.
+  scene_id: hb-c11-u0049
+  visual_cue: Landlord may terminate only with acceptable reason; reason condition visibly attached, no
+    immediate eviction or extra grounds.
+  asset_ids:
+  - episode_background
+  - picture-051
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0049-s003.wav
+  start_seconds: 487.0
+  end_seconds: 497.37932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-051.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0049-s004
+  sv: Då måste du flytta från hyresbostaden, även om du inte vill det.
+  ru: Тогда вам придётся съехать из съёмного жилья, даже если вы этого не хотите.
+  scene_id: hb-c11-u0049
+  visual_cue: Move-out consequence following the preceding lawful termination, without depicting forcible
+    removal or inventing a timetable.
+  asset_ids:
+  - episode_background
+  - picture-052
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-hyresavtal/narration/hb-c11-u0049-s004.wav
+  start_seconds: 499.333333
+  end_seconds: 504.975782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-hyresavtal/pictures/picture-052.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c11-hyresavtal/sources/music-bed.flac
+  background_image: studio/media/hb-c11-hyresavtal/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.8336309523809518
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Eol apartment house Helsinki.jpg — Jeff Reuben · CC BY-SA 4.0
+    - Night on the Docks - Trumpet — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#243c32'
+    text: '#faf3e8'
+    secondary: '#c5dfce'
+    highlight: '#e3c58c'
+    separator: '#4d7560'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Eol_apartment_house_Helsinki.jpg
+    description: Finnish architects Herman Gesellius, Armas Lindgren, and Eliel Saarinen designed the
+      five-story Eol apartment house, which forms part of a cohesive district of Finnish Art Nouveau buildings
+      in Katajanokka, Helsinki. It is located at Luotsikatu 5 (Lotsgatan 5) / Katajanokankatu 6 (Skatuddsgatan
+      6).
+    license: CC BY-SA 4.0

@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c12-familjeband",
+  "stage": "asr",
+  "state": "studio/production/remaining/hb-c12-familjeband-asr-state.json",
+  "log": "studio/production/remaining/hb-c12-familjeband-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c12-familjeband/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--threads",
+    "2",
+    "--resume"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c12-familjeband/narration/asr.json"
+  ]
+}

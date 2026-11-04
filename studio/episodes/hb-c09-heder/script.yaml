@@ -1,0 +1,1044 @@
+schema_version: 1
+section_id: hb-c09-heder
+chapter_id: hb-c09
+title_sv: Hedersrelaterat våld och tvångsäktenskap
+title_ru: Насилие во имя чести и браки по принуждению
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-heder.yaml
+example_only: false
+source_section_sha256: 1f9f8211233d1b8815e47c68417149d86b23a875621e85bc8aa3d78e0c849f1b
+translation_file_sha256: 1632b9a11dd713603e688a18b323c030258a31880c85e9102bbe175c224f0e5e
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Länsi-Uudenmaan käräjäoikeus Tammisaaressa.JPG by MKFI continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=2.6223214285714285. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Trio for Piano Violin and Viola by Kevin MacLeod (incompetech.com), CC BY 4.0, as this
+    subchapter’s distinct instrumental track. Original master 84.872 seconds; prepared lossless stereo
+    bed 367.125 seconds. Repeat count 4, using 4-second equal-power crossfades when needed. Retain the
+    accepted +2 dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full
+    attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Hedersrelaterat våld är våld som i allmänhet sker inom den egna familjen, släkten eller
+    gemenskapen.
+- id: scene-2
+  description: Ofta är hedersrelaterat våld förknippat med situationer där en familj eller släkt upplever
+    att någon i familjen har brutit mot normerna i gemenskapen.
+- id: scene-3
+  description: Hedersrelaterat våld förekommer först och främst i gemenskapsorienterade kulturer och samfund,
+    där män har mycket mer makt än kvinnor.
+- id: scene-4
+  description: Hedersrelaterat våld kan vara psykiskt eller fysiskt.
+- id: scene-5
+  description: Enligt Finlands lag är hedersrelaterat våld ett brott.
+- id: scene-6
+  description: Med tvångsäktenskap avses en situation där den ena eller båda makarna inte fritt har kunnat
+    påverka äktenskapet eller ingåendet av en äktenskapsliknande relation eller valet av make.
+- id: scene-7
+  description: I synnerhet flickor och kvinnor blir tvingade att gifta sig, men också pojkar och män.
+- id: scene-8
+  description: Att tvinga någon in i äktenskap är ett brott i Finland.
+- id: scene-9
+  description: Hjälpsystemet för offer för människohandel ger stöd till offer för tvångsäktenskap och
+    information om tvångsäktenskap och andra former av människohandel.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Hedersrelaterat våld är våld som i allmänhet sker inom
+    den egna familjen, släkten eller gemenskapen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Det hänger samman med ett försvar av familjens eller gemenskapens
+    heder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Att bevara hedern innebär att en människa får respekt
+    från andra och inte behöver skämmas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Släkten, familjen eller gemenskapen upplever att hedern
+    är hela familjens eller släktens angelägenhet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: När en individs gärningar bryter mot gemenskapens regler
+    och seder försöker de övriga att återställa hedern genom att bruka våld eller hota med våld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Ofta är hedersrelaterat våld förknippat med situationer
+    där en familj eller släkt upplever att någon i familjen har brutit mot normerna i gemenskapen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: En sådan situation kan vara till exempel om en ung person
+    tillbringar tid med kompisar som familjen inte tycker att är lämpliga eller som klär sig på ett sätt
+    som familjen inte godkänner.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Hedersrelaterat våld förekommer först och främst i gemenskapsorienterade
+    kulturer och samfund, där män har mycket mer makt än kvinnor.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Det förekommer också i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Det är ofta flickor och kvinnor och personer som hör till
+    sexuella minoriteter eller könsminoriteter som faller offer för våldet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Också pojkar och män kan utsättas för hedersrelaterat
+    våld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: De kan också till exempel pressas att använda våld mot
+    andra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Hedersrelaterat våld kan vara psykiskt eller fysiskt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan vara att offret till exempel blir utsatt för påtryckningar,
+    tvingas att gifta sig, inte får röra sig eller klä sig som hen vill, eller att man styr vem hen sällskapar
+    med eller vilka hobbyer hen har.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Andra former av våld kan vara hot om att skicka personen
+    tillbaka till det gamla hemlandet och andra hot, samt könsstympning av flickor och kvinnor eller förhindrande
+    av skilsmässa.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt Finlands lag är hedersrelaterat våld ett brott.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland är det svårt för offret att känna igen våldet i
+    synnerhet i det inledande skedet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Till exempel kanske påtryckningar till en början inte
+    känns som våld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Det är ändå bra att söka hjälp redan när situationen ännu
+    inte är så allvarlig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Med tvångsäktenskap avses en situation där den ena eller
+    båda makarna inte fritt har kunnat påverka äktenskapet eller ingåendet av en äktenskapsliknande relation
+    eller valet av make.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan tvinga någon in i äktenskap genom att till exempel
+    utöva påtryckningar eller utpressning, utöva våld eller hota med våld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan också hota med uteslutning från familjen eller
+    gemenskapen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: I synnerhet flickor och kvinnor blir tvingade att gifta
+    sig, men också pojkar och män.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Ofta är den ena eller båda personerna som tvingas in i
+    äktenskap minderåriga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Personer under 18 år kan inte officiellt ingå äktenskap
+    i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Ett barn kan dock föras till ett annat land för att ingå
+    äktenskap, eller så kan äktenskapet ingås endast med hjälp av religiösa ceremonier utan någon officiell
+    vigsel.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Att tvinga någon in i äktenskap är ett brott i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt finsk lagstiftning är tvångsäktenskap en form av
+    människohandel.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Om barnets vårdnadshavare inte försöker förhindra ett
+    tvångsäktenskap för sitt barn kan också de dömas för brott.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Hjälpsystemet för offer för människohandel ger stöd till
+    offer för tvångsäktenskap och information om tvångsäktenskap och andra former av människohandel.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0367-s001
+  sv: Hedersrelaterat våld är våld som i allmänhet sker inom den egna familjen, släkten eller gemenskapen.
+  ru: Насилие во имя чести — это насилие, которое обычно происходит внутри собственной семьи, рода или
+    сообщества.
+  scene_id: scene-1
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - familjen
+  - släkten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0367-s001.wav
+  start_seconds: 3.25
+  end_seconds: 11.887823
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0367-s002
+  sv: Det hänger samman med ett försvar av familjens eller gemenskapens heder.
+  ru: Оно связано с защитой чести семьи или сообщества.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: familjens, heder. Only anonymous neutral figures and
+    protective/authority symbols are used; no ethnicity, religion or real person is identified as a perpetrator
+    or victim. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - familjens
+  - heder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0367-s002.wav
+  start_seconds: 13.666667
+  end_seconds: 19.866395
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0367-s003
+  sv: Att bevara hedern innebär att en människa får respekt från andra och inte behöver skämmas.
+  ru: Сохранение чести означает, что человек пользуется уважением других и ему не приходится стыдиться.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: en människa, respekt från andra. Only anonymous neutral
+    figures and protective/authority symbols are used; no ethnicity, religion or real person is identified
+    as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - en människa
+  - respekt från andra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0367-s003.wav
+  start_seconds: 21.625
+  end_seconds: 29.217925
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0367-s004
+  sv: Släkten, familjen eller gemenskapen upplever att hedern är hela familjens eller släktens angelägenhet.
+  ru: Род, семья или сообщество воспринимают честь как дело всей семьи или всего рода.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based composition: Släkten, hela familjens, angelägenhet. Only anonymous
+    neutral figures and protective/authority symbols are used; no ethnicity, religion or real person is
+    identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - Släkten
+  - hela familjens
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0367-s004.wav
+  start_seconds: 31.0
+  end_seconds: 39.568163
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0367-s005
+  sv: När en individs gärningar bryter mot gemenskapens regler och seder försöker de övriga att återställa
+    hedern genom att bruka våld eller hota med våld.
+  ru: Когда поступки отдельного человека нарушают правила и обычаи сообщества, остальные пытаются восстановить
+    честь, применяя насилие или угрожая им.
+  scene_id: scene-1
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - en individs gärningar
+  - regler och seder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0367-s005.wav
+  start_seconds: 41.333333
+  end_seconds: 53.663129
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0368-s001
+  sv: Ofta är hedersrelaterat våld förknippat med situationer där en familj eller släkt upplever att någon
+    i familjen har brutit mot normerna i gemenskapen.
+  ru: Насилие во имя чести часто связано с ситуациями, когда семья или род считают, что кто-то в семье
+    нарушил нормы сообщества.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based composition: en familj, släkt, normerna i gemenskapen. Only anonymous
+    neutral figures and protective/authority symbols are used; no ethnicity, religion or real person is
+    identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - en familj
+  - släkt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0368-s001.wav
+  start_seconds: 56.416667
+  end_seconds: 68.885782
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0368-s002
+  sv: En sådan situation kan vara till exempel om en ung person tillbringar tid med kompisar som familjen
+    inte tycker att är lämpliga eller som klär sig på ett sätt som familjen inte godkänner.
+  ru: Такая ситуация может возникнуть, например, когда молодой человек проводит время с друзьями, которых
+    семья считает неподходящими или которые одеваются так, как семья не одобряет.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based composition: en ung person, kompisar, klär sig. Only anonymous
+    neutral figures and protective/authority symbols are used; no ethnicity, religion or real person is
+    identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - en ung person
+  - kompisar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0368-s002.wav
+  start_seconds: 70.666667
+  end_seconds: 86.409796
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0369-s001
+  sv: Hedersrelaterat våld förekommer först och främst i gemenskapsorienterade kulturer och samfund, där
+    män har mycket mer makt än kvinnor.
+  ru: Насилие во имя чести встречается прежде всего в культурах и сообществах, ориентированных на коллектив,
+    где мужчины обладают гораздо большей властью, чем женщины.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based composition: gemenskapsorienterade kulturer, män, mycket mer makt
+    än kvinnor. Only anonymous neutral figures and protective/authority symbols are used; no ethnicity,
+    religion or real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - gemenskapsorienterade kulturer
+  - mycket mer makt än kvinnor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0369-s001.wav
+  start_seconds: 89.166667
+  end_seconds: 100.521224
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0369-s002
+  sv: Det förekommer också i Finland.
+  ru: Оно встречается и в Финляндии.
+  scene_id: scene-3
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - Finland
+  - Det förekommer också
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0369-s002.wav
+  start_seconds: 103.291667
+  end_seconds: 106.356701
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0369-s003
+  sv: Det är ofta flickor och kvinnor och personer som hör till sexuella minoriteter eller könsminoriteter
+    som faller offer för våldet.
+  ru: Жертвами такого насилия часто становятся девочки, женщины и представители сексуальных или гендерных
+    меньшинств.
+  scene_id: scene-3
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - flickor och kvinnor
+  - sexuella minoriteter eller könsminoriteter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0369-s003.wav
+  start_seconds: 108.125
+  end_seconds: 118.852619
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0369-s004
+  sv: Också pojkar och män kan utsättas för hedersrelaterat våld.
+  ru: Мальчики и мужчины тоже могут подвергаться насилию во имя чести.
+  scene_id: scene-3
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - pojkar och män
+  - hedersrelaterat våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0369-s004.wav
+  start_seconds: 120.625
+  end_seconds: 126.128129
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0369-s005
+  sv: De kan också till exempel pressas att använda våld mot andra.
+  ru: На них также могут, например, оказывать давление, чтобы они применяли насилие к другим.
+  scene_id: scene-3
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - pressas
+  - våld mot andra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0369-s005.wav
+  start_seconds: 127.916667
+  end_seconds: 133.559116
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0370-s001
+  sv: Hedersrelaterat våld kan vara psykiskt eller fysiskt.
+  ru: Насилие во имя чести может быть психологическим или физическим.
+  scene_id: scene-4
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - psykiskt
+  - fysiskt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0370-s001.wav
+  start_seconds: 136.041667
+  end_seconds: 140.987517
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0370-s002
+  sv: Det kan vara att offret till exempel blir utsatt för påtryckningar, tvingas att gifta sig, inte
+    får röra sig eller klä sig som hen vill, eller att man styr vem hen sällskapar med eller vilka hobbyer
+    hen har.
+  ru: Оно может выражаться, например, в том, что на жертву оказывают давление, её принуждают вступить
+    в брак, не позволяют передвигаться или одеваться так, как она хочет, либо контролируют, с кем она
+    встречается или чем увлекается.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based composition: tvingas att gifta sig, klä sig som hen vill, vem hen
+    sällskapar med. Only anonymous neutral figures and protective/authority symbols are used; no ethnicity,
+    religion or real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - tvingas att gifta sig
+  - klä sig som hen vill
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0370-s002.wav
+  start_seconds: 142.75
+  end_seconds: 158.771769
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_014.png
+  render_caption: false
+  text_style:
+    sv_size: 46
+    ru_size: 38
+- sentence_id: hb-c09-u0370-s003
+  sv: Andra former av våld kan vara hot om att skicka personen tillbaka till det gamla hemlandet och andra
+    hot, samt könsstympning av flickor och kvinnor eller förhindrande av skilsmässa.
+  ru: Другими формами насилия могут быть угрозы отправить человека обратно на прежнюю родину и другие
+    угрозы, а также калечащие операции на половых органах девочек и женщин или препятствование разводу.
+  scene_id: scene-4
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - det gamla hemlandet
+  - andra hot
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0370-s003.wav
+  start_seconds: 161.541667
+  end_seconds: 176.448878
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0371-s001
+  sv: Enligt Finlands lag är hedersrelaterat våld ett brott.
+  ru: По закону Финляндии насилие во имя чести является преступлением.
+  scene_id: scene-5
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - Finlands lag
+  - hedersrelaterat våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0371-s001.wav
+  start_seconds: 179.208333
+  end_seconds: 184.014864
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0371-s002
+  sv: Ibland är det svårt för offret att känna igen våldet i synnerhet i det inledande skedet.
+  ru: Иногда жертве трудно распознать насилие, особенно на начальном этапе.
+  scene_id: scene-5
+  visual_cue: Eye represents recognizing violence without a safety/approval symbol. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - offret
+  - känna igen våldet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0371-s002.wav
+  start_seconds: 185.791667
+  end_seconds: 193.523912
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0371-s003
+  sv: Till exempel kanske påtryckningar till en början inte känns som våld.
+  ru: Например, поначалу давление может не восприниматься как насилие.
+  scene_id: scene-5
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - påtryckningar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0371-s003.wav
+  start_seconds: 195.291667
+  end_seconds: 201.421735
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0371-s004
+  sv: Det är ändå bra att söka hjälp redan när situationen ännu inte är så allvarlig.
+  ru: И всё же стоит обращаться за помощью уже тогда, когда ситуация ещё не настолько серьёзна.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based composition: söka hjälp, situationen ännu inte är så allvarlig.
+    Only anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion or
+    real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - söka hjälp
+  - situationen ännu inte är så allvarlig
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0371-s004.wav
+  start_seconds: 203.208333
+  end_seconds: 210.10466
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0372-s001
+  sv: Med tvångsäktenskap avses en situation där den ena eller båda makarna inte fritt har kunnat påverka
+    äktenskapet eller ingåendet av en äktenskapsliknande relation eller valet av make.
+  ru: Под браком по принуждению понимается ситуация, в которой один или оба супруга не могли свободно
+    влиять на свой брак, вступление в отношения, подобные браку, или выбор супруга.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based composition: den ena eller båda makarna, inte fritt, valet av make.
+    Only anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion or
+    real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - den ena eller båda makarna
+  - inte fritt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0372-s001.wav
+  start_seconds: 212.583333
+  end_seconds: 227.838844
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0372-s002
+  sv: Man kan tvinga någon in i äktenskap genom att till exempel utöva påtryckningar eller utpressning,
+    utöva våld eller hota med våld.
+  ru: Человека могут принудить к браку, например, с помощью давления или шантажа, применения насилия или
+    угроз насилием.
+  scene_id: scene-6
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - påtryckningar eller utpressning
+  - våld eller hota med våld
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0372-s002.wav
+  start_seconds: 230.625
+  end_seconds: 241.631259
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0372-s003
+  sv: Man kan också hota med uteslutning från familjen eller gemenskapen.
+  ru: Могут также угрожать исключением из семьи или сообщества.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based composition: hota, familjen, gemenskapen. Only anonymous neutral
+    figures and protective/authority symbols are used; no ethnicity, religion or real person is identified
+    as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - familjen
+  - gemenskapen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0372-s003.wav
+  start_seconds: 243.416667
+  end_seconds: 249.198435
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0373-s001
+  sv: I synnerhet flickor och kvinnor blir tvingade att gifta sig, men också pojkar och män.
+  ru: К браку принуждают прежде всего девочек и женщин, но также мальчиков и мужчин.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: flickor och kvinnor, pojkar och män, tvingade att
+    gifta sig. Only anonymous neutral figures and protective/authority symbols are used; no ethnicity,
+    religion or real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - flickor och kvinnor
+  - pojkar och män
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0373-s001.wav
+  start_seconds: 251.666667
+  end_seconds: 259.050612
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0373-s002
+  sv: Ofta är den ena eller båda personerna som tvingas in i äktenskap minderåriga.
+  ru: Нередко один или оба человека, которых принуждают вступить в брак, несовершеннолетние.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: den ena eller båda personerna, minderåriga. Only anonymous
+    neutral figures and protective/authority symbols are used; no ethnicity, religion or real person is
+    identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - den ena eller båda personerna
+  - minderåriga
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0373-s002.wav
+  start_seconds: 260.833333
+  end_seconds: 267.66
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0373-s003
+  sv: Personer under 18 år kan inte officiellt ingå äktenskap i Finland.
+  ru: Лица младше 18 лет не могут официально вступать в брак в Финляндии.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: Personer under 18 år, inte officiellt ingå äktenskap,
+    Finland. Only anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion
+    or real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - Personer under 18 år
+  - inte officiellt ingå äktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0373-s003.wav
+  start_seconds: 269.416667
+  end_seconds: 275.825374
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0373-s004
+  sv: Ett barn kan dock föras till ett annat land för att ingå äktenskap, eller så kan äktenskapet ingås
+    endast med hjälp av religiösa ceremonier utan någon officiell vigsel.
+  ru: Однако ребёнка могут вывезти в другую страну для вступления в брак либо заключить брак только посредством
+    религиозных церемоний, без официального бракосочетания.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based composition: Ett barn, ett annat land, utan någon officiell vigsel.
+    Only anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion or
+    real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - Ett barn
+  - ett annat land
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0373-s004.wav
+  start_seconds: 277.583333
+  end_seconds: 291.515306
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0374-s001
+  sv: Att tvinga någon in i äktenskap är ett brott i Finland.
+  ru: Принуждение человека к браку является преступлением в Финляндии.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: tvinga någon in i äktenskap, brott, Finland. Only
+    anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion or real
+    person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - tvinga någon in i äktenskap
+  - brott
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0374-s001.wav
+  start_seconds: 294.291667
+  end_seconds: 299.376837
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0374-s002
+  sv: Enligt finsk lagstiftning är tvångsäktenskap en form av människohandel.
+  ru: По финскому законодательству брак по принуждению является формой торговли людьми.
+  scene_id: scene-8
+  visual_cue: A non-graphic warning represents harmful violence, threats or exploitation. Full exact source
+    conditions remain in the paired text; no real victim is identified. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - finsk lagstiftning
+  - tvångsäktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0374-s002.wav
+  start_seconds: 301.166667
+  end_seconds: 307.436054
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0374-s003
+  sv: Om barnets vårdnadshavare inte försöker förhindra ett tvångsäktenskap för sitt barn kan också de
+    dömas för brott.
+  ru: Если опекуны ребёнка не пытаются предотвратить его брак по принуждению, их тоже могут осудить за
+    преступление.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based composition: barnets vårdnadshavare, sitt barn, dömas för brott.
+    Only anonymous neutral figures and protective/authority symbols are used; no ethnicity, religion or
+    real person is identified as a perpetrator or victim. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - barnets vårdnadshavare
+  - sitt barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0374-s003.wav
+  start_seconds: 309.208333
+  end_seconds: 319.030374
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0375-s001
+  sv: Hjälpsystemet för offer för människohandel ger stöd till offer för tvångsäktenskap och information
+    om tvångsäktenskap och andra former av människohandel.
+  ru: Система помощи жертвам торговли людьми (Hjälpsystemet för offer för människohandel) поддерживает
+    жертв браков по принуждению и предоставляет информацию о таких браках и других формах торговли людьми.
+  scene_id: scene-9
+  visual_cue: 'Individual source-based composition: Hjälpsystemet för offer för människohandel, offer
+    för tvångsäktenskap, information. Only anonymous neutral figures and protective/authority symbols
+    are used; no ethnicity, religion or real person is identified as a perpetrator or victim. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.'
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - Hjälpsystemet för offer för människohandel
+  - offer för tvångsäktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-heder/narration/hb-c09-u0375-s001.wav
+  start_seconds: 321.5
+  end_seconds: 334.596054
+  display_segments: []
+  render_image: studio/media/hb-c09-heder/pictures/picture_030.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-heder/sources/music-bed.flac
+  background_image: studio/media/hb-c09-heder/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.6223214285714285
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Länsi-Uudenmaan käräjäoikeus Tammisaaressa.JPG — MKFI · Public domain
+    - Trio for Piano Violin and Viola — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A4nsi-Uudenmaan_k%C3%A4r%C3%A4j%C3%A4oikeus_Tammisaaressa.JPG
+    description: Länsi-Uudenmaan (Western Uusimaa) district court (käräjäoikeus) in Ekenäs.
+    license: Public domain

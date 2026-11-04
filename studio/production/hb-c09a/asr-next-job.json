@@ -1,0 +1,27 @@
+{
+  "section_id": "hb-c09-diagnostic-batch",
+  "stage": "asr",
+  "state": "studio/production/hb-c09a/asr-next-host-state.json",
+  "log": "studio/production/hb-c09a/asr-next-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c09-tolv/narration",
+    "studio/media/hb-c09-underhall/narration",
+    "studio/media/hb-c09-familjeformer/narration",
+    "studio/media/hb-c09-kon/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c09-tolv/narration/asr.json",
+    "studio/media/hb-c09-underhall/narration/asr.json",
+    "studio/media/hb-c09-familjeformer/narration/asr.json",
+    "studio/media/hb-c09-kon/narration/asr.json"
+  ]
+}

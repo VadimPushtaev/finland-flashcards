@@ -1,0 +1,1418 @@
+schema_version: 1
+section_id: hb-c09-aktenskap
+chapter_id: hb-c09
+title_sv: Äktenskap och vigsel
+title_ru: Брак и церемония его заключения
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-aktenskap.yaml
+example_only: false
+source_section_sha256: 7e2c3ecf33d09532b6b3bd73ad10eef2912a7efddcdde159f40524bc7d83c59c
+translation_file_sha256: 83d28b7a5327bec4d8adc4dcdbecb2c7b5563b0b5b8d45d0282395890e7eedea
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Triple wedding in Porvoo 1965 (JOKAÖN3A B04-1).tif by Photographer unrecorded; Borgåbladet
+    / JOKA Journalistinen kuva-arkisto / Museovirasto continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=3.063095238095238.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Canon in D for Autoharp by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s
+    distinct instrumental track. Original master 339.618 seconds; prepared lossless stereo bed 428.833
+    seconds. Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2
+    dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution
+    accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: År 2023 var uppemot två miljoner av invånarna i Finland gifta.
+- id: scene-2
+  description: 'Du kan gifta dig om du:'
+- id: scene-3
+  description: är minst 18 år gammal
+- id: scene-4
+  description: inte är gift eller i registrerat parförhållande sedan tidigare.
+- id: scene-5
+  description: Även samkönade par kan gifta sig i Finland.
+- id: scene-6
+  description: Nära släktingar får inte gifta sig enligt Finlands lag.
+- id: scene-7
+  description: Äktenskapet är alltid ett frivilligt val som ingen kan tvingas till.
+- id: scene-8
+  description: I Finland kan kvinnor och män själva besluta vem de ska gifta sig med.
+- id: scene-9
+  description: Det har gjorts ändringar i Finlands äktenskapslag genom tiderna.
+- id: scene-10
+  description: Enligt lag kan en person gifta sig om det inte finns något hinder för hen att ingå äktenskap.
+- id: scene-11
+  description: Förlovning är ett frivilligt och fritt avtal om att ett par senare ska gifta sig.
+- id: scene-12
+  description: Par kan fritt bryta en förlovning om den ena eller båda parterna vill det.
+- id: scene-13
+  description: En borgerlig vigsel kan ske antingen på ett verksamhetsställe för Myndigheten för digitalisering
+    och befolkningsdata eller i en tingsrätt.
+- id: scene-14
+  description: En kyrklig vigsel kan förrättas av en präst inom den evangelisk-lutherska eller den ortodoxa
+    kyrkan.
+- id: scene-15
+  description: Båda makarna måste vara på plats vid vigseltillfället.
+- id: scene-16
+  description: Alla har rätt till borgerlig vigsel, även de som tillhör ett trossamfund.
+- id: scene-17
+  description: När ett par gifter sig kan de om de vill ta ett gemensamt efternamn.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: År 2023 var uppemot två miljoner av invånarna i Finland
+    gifta.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: De hade alltså ingått äktenskap och var varandras makar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Äktenskap är ett förhållande mellan två människor som
+    regleras i lag.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt lagen har makar rättigheter och skyldigheter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Makarna är jämlika i äktenskapet, det vill säga de har
+    samma rättigheter och skyldigheter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan gifta dig om du:'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: är minst 18 år gammal'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: inte är gift eller i registrerat parförhållande sedan
+    tidigare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Även samkönade par kan gifta sig i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Nära släktingar får inte gifta sig enligt Finlands lag.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Äktenskapet är alltid ett frivilligt val som ingen kan
+    tvingas till.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Till exempel föräldrarna får inte tvinga sitt barn att
+    gifta sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Att tvinga någon till äktenskap är ett brott i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland kan kvinnor och män själva besluta vem de ska
+    gifta sig med.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Man behöver inte be om tillstånd från till exempel släktingar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Det har gjorts ändringar i Finlands äktenskapslag genom
+    tiderna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Sedan 2017 är äktenskapslagen i Finland jämlik.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Det betyder att också par av samma kön kan ingå äktenskap.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Innan det här kunde manliga par och kvinnliga par bara
+    registrera sitt parförhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Ett registrerat partnerskap var ett äktenskapslikt avtal
+    där makarna ändå inte hade alla de rättigheter som makarna i ett äktenskap hade.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt lag kan en person gifta sig om det inte finns något
+    hinder för hen att ingå äktenskap.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Innan ett par kan gifta sig utreder en myndighet om det
+    finns hinder för äktenskapet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Om det inte finns några hinder, får paret ett intyg om
+    hindersprövning.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Förlovning är ett frivilligt och fritt avtal om att ett
+    par senare ska gifta sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: En förlovning är inte ett juridiskt avtal och förpliktar
+    inte någon till någonting inför lagen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Lagen kräver inte att en förlovning har en viss längd
+    före äktenskapet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Som tecken på förlovningen skaffar par ofta förlovningsringar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Par kan fritt bryta en förlovning om den ena eller båda
+    parterna vill det.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Man behöver inte meddela myndigheterna om att man bryter
+    förlovningen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: En borgerlig vigsel kan ske antingen på ett verksamhetsställe
+    för Myndigheten för digitalisering och befolkningsdata eller i en tingsrätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Paret vigs av en tjänsteman med vigselrätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Tjänstemannen kan komma för att viga par också på andra
+    ställen, men det är avgiftsbelagt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: En kyrklig vigsel kan förrättas av en präst inom den evangelisk-lutherska
+    eller den ortodoxa kyrkan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: En kyrklig vigsel kan förrättas också av en annan representant
+    för ett religiöst samfund registrerat i Finland som Myndigheten för digitalisering och befolkningsdata
+    har beviljat vigselrätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Ett äktenskap som ingåtts inom ett religiöst samfund är
+    officiellt endast om paret vigs av en person med officiell vigselrätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: Dessutom måste en prövning av hinder för äktenskapet ha
+    gjorts före vigseln.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_037
+  kind: foreground
+  description: 'A source-bound illustration of: Båda makarna måste vara på plats vid vigseltillfället.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_038
+  kind: foreground
+  description: 'A source-bound illustration of: Dessutom ska minst två vittnen som har fyllt 15 år vara
+    på plats.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_039
+  kind: foreground
+  description: 'A source-bound illustration of: Alla har rätt till borgerlig vigsel, även de som tillhör
+    ett trossamfund.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_040
+  kind: foreground
+  description: 'A source-bound illustration of: När ett par gifter sig kan de om de vill ta ett gemensamt
+    efternamn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_041
+  kind: foreground
+  description: 'A source-bound illustration of: Det var länge vanligt att kvinnan tog mannens efternamn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_042
+  kind: foreground
+  description: 'A source-bound illustration of: Namnlagen, som var i kraft från år 1930 till år 1986,
+    gjorde detta obligatoriskt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_043
+  kind: foreground
+  description: 'A source-bound illustration of: I dag är det möjligt för mannen att ta kvinnans efternamn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_044
+  kind: foreground
+  description: 'A source-bound illustration of: Båda kan också behålla sina efternamn, eller så kan paret
+    ta ett helt nytt, gemensamt efternamn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_045
+  kind: foreground
+  description: 'A source-bound illustration of: Om de vill kan den ena eller båda makarna kombinera sitt
+    eget namn med den andras namn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0077-s001
+  sv: År 2023 var uppemot två miljoner av invånarna i Finland gifta.
+  ru: В 2023 году в браке состояли почти два миллиона жителей Финляндии.
+  scene_id: scene-1
+  visual_cue: The source historical year and approximate married population are labelled exactly; no pictogram
+    count represents a population ratio. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - två miljoner
+  - gifta
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0077-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.146327
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0077-s002
+  sv: De hade alltså ingått äktenskap och var varandras makar.
+  ru: То есть они заключили брак и состояли друг с другом в супружеских отношениях.
+  scene_id: scene-1
+  visual_cue: Two spouses and joined rings depict marriage. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - varandras makar
+  - äktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0077-s002.wav
+  start_seconds: 11.916667
+  end_seconds: 16.932177
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0077-s003
+  sv: Äktenskap är ett förhållande mellan två människor som regleras i lag.
+  ru: Брак — это отношения между двумя людьми, регулируемые законом.
+  scene_id: scene-1
+  visual_cue: The relationship between two people is linked to law. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - två människor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0077-s003.wav
+  start_seconds: 18.708333
+  end_seconds: 24.768741
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0077-s004
+  sv: Enligt lagen har makar rättigheter och skyldigheter.
+  ru: По закону у супругов есть права и обязанности.
+  scene_id: scene-1
+  visual_cue: Partners are linked to balanced rights and responsibilities. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - makar
+  - rättigheter och skyldigheter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0077-s004.wav
+  start_seconds: 26.541667
+  end_seconds: 30.999898
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0077-s005
+  sv: Makarna är jämlika i äktenskapet, det vill säga de har samma rättigheter och skyldigheter.
+  ru: Супруги в браке равноправны, то есть у них одинаковые права и обязанности.
+  scene_id: scene-1
+  visual_cue: The two partners stand with equal rights in marriage; balanced scales visualize equality.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - Makarna
+  - jämlika
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0077-s005.wav
+  start_seconds: 32.75
+  end_seconds: 40.621565
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0078-s001
+  sv: 'Du kan gifta dig om du:'
+  ru: 'Вы можете вступить в брак, если вы:'
+  scene_id: scene-2
+  visual_cue: An individual approaches marriage subject to conditions in the following exact source fragments.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - gifta dig
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0078-s001.wav
+  start_seconds: 43.083333
+  end_seconds: 45.591088
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0079-s001
+  sv: är minst 18 år gammal
+  ru: не моложе 18 лет
+  scene_id: scene-3
+  visual_cue: An adult silhouette carries only the exact minimum-age label; no invented birthdate. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - minst 18 år gammal
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0079-s001.wav
+  start_seconds: 48.041667
+  end_seconds: 51.24602
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0081-s001
+  sv: inte är gift eller i registrerat parförhållande sedan tidigare.
+  ru: не состоите в ранее заключённом браке или зарегистрированном партнёрстве.
+  scene_id: scene-4
+  visual_cue: Existing marriage or registered partnership is a barrier; diagram blocks the existing-status
+    connection. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - inte är gift
+  - sedan tidigare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0081-s001.wav
+  start_seconds: 53.708333
+  end_seconds: 59.420442
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0082-s001
+  sv: Även samkönade par kan gifta sig i Finland.
+  ru: В Финляндии однополые пары тоже могут вступать в брак.
+  scene_id: scene-5
+  visual_cue: Gender-neutral equal partner silhouettes link to marriage without restricting depicted gender.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - samkönade par
+  - gifta sig
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0082-s001.wav
+  start_seconds: 61.875
+  end_seconds: 65.984932
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0083-s001
+  sv: Nära släktingar får inte gifta sig enligt Finlands lag.
+  ru: По закону Финляндии близкие родственники не могут вступать в брак друг с другом.
+  scene_id: scene-6
+  visual_cue: Close relatives are separated from marriage by a prohibition marker, without inventing a
+    prohibited-degree chart. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - Nära släktingar
+  - gifta sig
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0083-s001.wav
+  start_seconds: 68.458333
+  end_seconds: 73.543503
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0084-s001
+  sv: Äktenskapet är alltid ett frivilligt val som ingen kan tvingas till.
+  ru: Вступление в брак — всегда добровольный выбор, к которому никого нельзя принуждать.
+  scene_id: scene-7
+  visual_cue: A freely choosing person approaches the marriage symbol; no coercion shown. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - frivilligt val
+  - Äktenskapet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0084-s001.wav
+  start_seconds: 76.0
+  end_seconds: 82.060408
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0084-s002
+  sv: Till exempel föräldrarna får inte tvinga sitt barn att gifta sig.
+  ru: Например, родители не имеют права принуждать своего ребёнка к вступлению в брак.
+  scene_id: scene-7
+  visual_cue: Parental coercion toward a child marriage is blocked with protective separation; no explicit
+    harmful imagery. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - föräldrarna
+  - sitt barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0084-s002.wav
+  start_seconds: 83.833333
+  end_seconds: 89.754422
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0084-s003
+  sv: Att tvinga någon till äktenskap är ett brott i Finland.
+  ru: Принуждение кого-либо к вступлению в брак является преступлением в Финляндии.
+  scene_id: scene-7
+  visual_cue: Justice and marriage symbols mark forced marriage as the source-stated crime. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - äktenskap
+  - brott
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0084-s003.wav
+  start_seconds: 91.541667
+  end_seconds: 96.557177
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0085-s001
+  sv: I Finland kan kvinnor och män själva besluta vem de ska gifta sig med.
+  ru: В Финляндии женщины и мужчины могут сами решать, с кем вступать в брак.
+  scene_id: scene-8
+  visual_cue: Individuals make their own choice of partner; no family approval gate shown. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - kvinnor och män
+  - själva besluta
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0085-s001.wav
+  start_seconds: 99.041667
+  end_seconds: 105.311054
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0085-s002
+  sv: Man behöver inte be om tillstånd från till exempel släktingar.
+  ru: Спрашивать разрешения, например, у родственников не требуется.
+  scene_id: scene-8
+  visual_cue: A relatives-permission document is crossed out for the source statement that permission
+    is unnecessary. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - släktingar
+  - tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0085-s002.wav
+  start_seconds: 107.083333
+  end_seconds: 112.795442
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0086-s001
+  sv: Det har gjorts ändringar i Finlands äktenskapslag genom tiderna.
+  ru: Со временем в закон о браке Финляндии вносились изменения.
+  scene_id: scene-9
+  visual_cue: A timeline calendar and legal book illustrate changes over time without adding dates. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - genom tiderna
+  - äktenskapslag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0086-s001.wav
+  start_seconds: 115.25
+  end_seconds: 120.892449
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0086-s002
+  sv: Sedan 2017 är äktenskapslagen i Finland jämlik.
+  ru: С 2017 года в Финляндии действует закон о равноправном браке.
+  scene_id: scene-9
+  visual_cue: The exact2017year links to equal marriage legislation. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - jämlik
+  - äktenskapslagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0086-s002.wav
+  start_seconds: 122.666667
+  end_seconds: 128.239456
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0086-s003
+  sv: Det betyder att också par av samma kön kan ingå äktenskap.
+  ru: Это означает, что пары одного пола тоже могут заключать брак.
+  scene_id: scene-9
+  visual_cue: Equal partner silhouettes may enter marriage; no additional eligibility rules added. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - par av samma kön
+  - ingå äktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0086-s003.wav
+  start_seconds: 130.0
+  end_seconds: 135.15483
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0086-s004
+  sv: Innan det här kunde manliga par och kvinnliga par bara registrera sitt parförhållande.
+  ru: До этого пары из двух мужчин или двух женщин могли лишь регистрировать своё партнёрство.
+  scene_id: scene-9
+  visual_cue: The earlier registration form is pictured distinctly from marriage and the exact text preserves
+    the earlier timeframe. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - manliga par och kvinnliga par
+  - registrera sitt parförhållande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0086-s004.wav
+  start_seconds: 136.916667
+  end_seconds: 144.439932
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0086-s005
+  sv: Ett registrerat partnerskap var ett äktenskapslikt avtal där makarna ändå inte hade alla de rättigheter
+    som makarna i ett äktenskap hade.
+  ru: Зарегистрированное партнёрство представляло собой соглашение, подобное браку, однако его участники
+    не имели всех тех прав, которыми обладали супруги в браке.
+  scene_id: scene-9
+  visual_cue: Registered partnership and marriage are contrasted around differing rights without implying
+    identical legal status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - registrerat partnerskap
+  - inte hade alla de rättigheter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0086-s005.wav
+  start_seconds: 146.208333
+  end_seconds: 157.702211
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0087-s001
+  sv: Enligt lag kan en person gifta sig om det inte finns något hinder för hen att ingå äktenskap.
+  ru: По закону человек может вступить в брак, если для него нет препятствий к заключению брака.
+  scene_id: scene-10
+  visual_cue: A person reaches marriage after the absence of impediments, shown by a cleared protective
+    check. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - en person
+  - inte finns något hinder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0087-s001.wav
+  start_seconds: 160.458333
+  end_seconds: 167.981599
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0087-s002
+  sv: Innan ett par kan gifta sig utreder en myndighet om det finns hinder för äktenskapet.
+  ru: Прежде чем пара сможет вступить в брак, орган власти проверяет, есть ли препятствия к его заключению.
+  scene_id: scene-10
+  visual_cue: The authority examines marriage impediments; institution remains schematic. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - en myndighet
+  - hinder för äktenskapet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0087-s002.wav
+  start_seconds: 169.75
+  end_seconds: 176.785646
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0087-s003
+  sv: Om det inte finns några hinder, får paret ett intyg om hindersprövning.
+  ru: Если препятствий нет, пара получает справку о результатах проверки наличия препятствий к заключению
+    брака.
+  scene_id: scene-10
+  visual_cue: The couple receives the stated impediment-check certificate when conditions are met. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - paret
+  - intyg om hindersprövning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0087-s003.wav
+  start_seconds: 178.541667
+  end_seconds: 184.811054
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0088-s001
+  sv: Förlovning är ett frivilligt och fritt avtal om att ett par senare ska gifta sig.
+  ru: Помолвка — это добровольная договорённость в свободной форме о том, что пара впоследствии вступит
+    в брак.
+  scene_id: scene-11
+  visual_cue: Engagement ring; illustrative object photograph, no claim about any particular couple. The
+    complete source photograph is shown with its source-identity caption; no sensitive personal attributes
+    are inferred.
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - ett par
+  - Förlovning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0088-s001.wav
+  start_seconds: 187.291667
+  end_seconds: 194.466633
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0088-s002
+  sv: En förlovning är inte ett juridiskt avtal och förpliktar inte någon till någonting inför lagen.
+  ru: Помолвка не является юридическим соглашением и не создаёт ни для кого никаких обязательств перед
+    законом.
+  scene_id: scene-11
+  visual_cue: Engagement is separated from a binding legal contract; no binding duties are drawn. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - förlovning
+  - juridiskt avtal
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0088-s002.wav
+  start_seconds: 196.25
+  end_seconds: 204.330544
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0088-s003
+  sv: Lagen kräver inte att en förlovning har en viss längd före äktenskapet.
+  ru: Закон не устанавливает, сколько должна длиться помолвка до вступления в брак.
+  scene_id: scene-11
+  visual_cue: A clock is shown as unconstrained by a statutory engagement length; no required period is
+    invented. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - viss längd
+  - förlovning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0088-s003.wav
+  start_seconds: 206.083333
+  end_seconds: 212.143741
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0088-s004
+  sv: Som tecken på förlovningen skaffar par ofta förlovningsringar.
+  ru: В знак помолвки пары часто приобретают помолвочные кольца.
+  scene_id: scene-11
+  visual_cue: Engagement rings, the physical objects explicitly stated by this sentence. The complete
+    source photograph is shown with its source-identity caption; no sensitive personal attributes are
+    inferred.
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - förlovningsringar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0088-s004.wav
+  start_seconds: 213.916667
+  end_seconds: 219.559116
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0089-s001
+  sv: Par kan fritt bryta en förlovning om den ena eller båda parterna vill det.
+  ru: Пара может свободно расторгнуть помолвку, если этого хочет один или оба партнёра.
+  scene_id: scene-12
+  visual_cue: Either or both partners may end engagement, represented by an open branch instead of broken
+    people. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - bryta en förlovning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0089-s001.wav
+  start_seconds: 222.041667
+  end_seconds: 228.380714
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0089-s002
+  sv: Man behöver inte meddela myndigheterna om att man bryter förlovningen.
+  ru: Сообщать органам власти о расторжении помолвки не требуется.
+  scene_id: scene-12
+  visual_cue: Ending engagement has no authority-notification requirement in the source statement. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - bryter förlovningen
+  - meddela myndigheterna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0089-s002.wav
+  start_seconds: 230.166667
+  end_seconds: 236.227075
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0090-s001
+  sv: En borgerlig vigsel kan ske antingen på ett verksamhetsställe för Myndigheten för digitalisering
+    och befolkningsdata eller i en tingsrätt.
+  ru: Гражданская церемония заключения брака может проходить в отделении Агентства цифровой информации
+    и учёта населения (Myndigheten för digitalisering och befolkningsdata) или в уездном суде (tingsrätt).
+  scene_id: scene-13
+  visual_cue: The two official civil ceremony venues are illustrated as distinct institutional possibilities.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - tingsrätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0090-s001.wav
+  start_seconds: 238.708333
+  end_seconds: 250.271871
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0090-s002
+  sv: Paret vigs av en tjänsteman med vigselrätt.
+  ru: Пару сочетает браком должностное лицо, имеющее право проводить такую церемонию.
+  scene_id: scene-13
+  visual_cue: An authorized official conducts the couple ceremony; no real person identity implied. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - en tjänsteman
+  - Paret
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0090-s002.wav
+  start_seconds: 253.041667
+  end_seconds: 257.290918
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0090-s003
+  sv: Tjänstemannen kan komma för att viga par också på andra ställen, men det är avgiftsbelagt.
+  ru: Должностное лицо может приехать для регистрации брака и в другое место, но эта услуга платная.
+  scene_id: scene-13
+  visual_cue: The official can travel to another venue for a fee; no price invented. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - Tjänstemannen
+  - andra ställen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0090-s003.wav
+  start_seconds: 259.041667
+  end_seconds: 266.913231
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0091-s001
+  sv: En kyrklig vigsel kan förrättas av en präst inom den evangelisk-lutherska eller den ortodoxa kyrkan.
+  ru: Церковное бракосочетание может провести священник евангелическо-лютеранской или православной церкви.
+  scene_id: scene-14
+  visual_cue: Actual Temppeliaukio Lutheran church architecture in Helsinki, one of the source-named traditions.
+    Not evidence of a particular ceremony or official authorization. The complete source photograph is
+    shown with its source-identity caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - evangelisk-lutherska
+  - ortodoxa kyrkan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0091-s001.wav
+  start_seconds: 269.375
+  end_seconds: 278.361122
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0091-s002
+  sv: En kyrklig vigsel kan förrättas också av en annan representant för ett religiöst samfund registrerat
+    i Finland som Myndigheten för digitalisering och befolkningsdata har beviljat vigselrätt.
+  ru: Церковное бракосочетание может провести и другой представитель зарегистрированной в Финляндии религиозной
+    общины, которому Агентство цифровой информации и учёта населения предоставило право проводить церемонию
+    заключения брака.
+  scene_id: scene-14
+  visual_cue: A religious community representative requires the source authority-granted ceremony right.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - representant
+  - registrerat i Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0091-s002.wav
+  start_seconds: 280.125
+  end_seconds: 296.355748
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0091-s003
+  sv: Ett äktenskap som ingåtts inom ett religiöst samfund är officiellt endast om paret vigs av en person
+    med officiell vigselrätt.
+  ru: Брак, заключённый в религиозной общине, является официальным только в том случае, если пару сочетает
+    браком человек, имеющий официальное право проводить эту церемонию.
+  scene_id: scene-14
+  visual_cue: An authorized officiant makes the religious ceremony official; no unregistered ceremony
+    is labelled valid. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - officiell vigselrätt
+  - äktenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0091-s003.wav
+  start_seconds: 299.125
+  end_seconds: 310.131259
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0091-s004
+  sv: Dessutom måste en prövning av hinder för äktenskapet ha gjorts före vigseln.
+  ru: Кроме того, до церемонии должна быть проведена проверка наличия препятствий к заключению брака.
+  scene_id: scene-14
+  visual_cue: The impediment check precedes ceremony; exact chronology is shown. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - prövning av hinder
+  - före vigseln
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0091-s004.wav
+  start_seconds: 312.916667
+  end_seconds: 319.534354
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_036.png
+  render_caption: false
+- sentence_id: hb-c09-u0092-s001
+  sv: Båda makarna måste vara på plats vid vigseltillfället.
+  ru: На церемонии заключения брака должны присутствовать оба будущих супруга.
+  scene_id: scene-15
+  visual_cue: Both partners are physically present together at the ceremony. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_037
+  text_highlights:
+  - Båda makarna
+  - vigseltillfället
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0092-s001.wav
+  start_seconds: 322.0
+  end_seconds: 327.01551
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_037.png
+  render_caption: false
+- sentence_id: hb-c09-u0092-s002
+  sv: Dessutom ska minst två vittnen som har fyllt 15 år vara på plats.
+  ru: Кроме того, должны присутствовать как минимум два свидетеля, которым исполнилось 15 лет.
+  scene_id: scene-15
+  visual_cue: At least two witnesses have reached the exact source15-yearthreshold; no extra witness requirements.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_038
+  text_highlights:
+  - minst två vittnen
+  - 15 år
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0092-s002.wav
+  start_seconds: 328.791667
+  end_seconds: 335.130714
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_038.png
+  render_caption: false
+- sentence_id: hb-c09-u0093-s001
+  sv: Alla har rätt till borgerlig vigsel, även de som tillhör ett trossamfund.
+  ru: Каждый имеет право на гражданскую церемонию заключения брака, в том числе члены религиозных общин.
+  scene_id: scene-16
+  visual_cue: Civil ceremony remains available alongside religious affiliation; no forced choice of belief.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_039
+  text_highlights:
+  - borgerlig vigsel
+  - trossamfund
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0093-s001.wav
+  start_seconds: 337.583333
+  end_seconds: 343.922381
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_039.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s001
+  sv: När ett par gifter sig kan de om de vill ta ett gemensamt efternamn.
+  ru: При вступлении в брак партнёры могут по желанию взять общую фамилию.
+  scene_id: scene-17
+  visual_cue: A married pair can optionally choose a shared surname. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_040
+  text_highlights:
+  - ett par
+  - gemensamt efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s001.wav
+  start_seconds: 346.375
+  end_seconds: 352.226429
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_040.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s002
+  sv: Det var länge vanligt att kvinnan tog mannens efternamn.
+  ru: Долгое время было принято, чтобы женщина брала фамилию мужчины.
+  scene_id: scene-17
+  visual_cue: The historical source custom of the woman taking the man surname is shown as a past practice.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_041
+  text_highlights:
+  - kvinnan
+  - mannens efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s002.wav
+  start_seconds: 354.0
+  end_seconds: 358.736871
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_041.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s003
+  sv: Namnlagen, som var i kraft från år 1930 till år 1986, gjorde detta obligatoriskt.
+  ru: Закон об именах, действовавший с 1930 по 1986 год, делал это обязательным.
+  scene_id: scene-17
+  visual_cue: The exact historical1930–1986span accompanies the source surname law, without suggesting
+    current obligation. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_042
+  text_highlights:
+  - Namnlagen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s003.wav
+  start_seconds: 360.5
+  end_seconds: 370.87932
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_042.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s004
+  sv: I dag är det möjligt för mannen att ta kvinnans efternamn.
+  ru: Сегодня мужчина может взять фамилию женщины.
+  scene_id: scene-17
+  visual_cue: A man may take the woman surname under the source present-day option. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_043
+  text_highlights:
+  - mannen
+  - kvinnans efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s004.wav
+  start_seconds: 372.666667
+  end_seconds: 377.682177
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_043.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s005
+  sv: Båda kan också behålla sina efternamn, eller så kan paret ta ett helt nytt, gemensamt efternamn.
+  ru: Оба могут также сохранить свои фамилии или взять совершенно новую общую фамилию.
+  scene_id: scene-17
+  visual_cue: Retaining personal surnames and taking an entirely new joint name are distinct source options.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_044
+  text_highlights:
+  - sina efternamn
+  - helt nytt, gemensamt efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s005.wav
+  start_seconds: 379.458333
+  end_seconds: 387.399558
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_044.png
+  render_caption: false
+- sentence_id: hb-c09-u0094-s006
+  sv: Om de vill kan den ena eller båda makarna kombinera sitt eget namn med den andras namn.
+  ru: По желанию один или оба супруга могут соединить свою фамилию с фамилией другого.
+  scene_id: scene-17
+  visual_cue: Partners may combine personal and other partner names; symbolic pages contain no invented
+    personal names. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_045
+  text_highlights:
+  - sitt eget namn
+  - den andras namn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-aktenskap/narration/hb-c09-u0094-s006.wav
+  start_seconds: 389.166667
+  end_seconds: 396.620272
+  display_segments: []
+  render_image: studio/media/hb-c09-aktenskap/pictures/picture_045.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-aktenskap/sources/music-bed.flac
+  background_image: studio/media/hb-c09-aktenskap/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.063095238095238
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Finland – Lärobok i samhällsorientering
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Triple wedding in Porvoo 1965 (JOKAÖN3A B04-1).tif — Photographer unrecorded; Borgåbladet / JOKA
+      Journalistinen kuva-arkisto / Museovirasto · CC BY 4.0
+    - Canon in D for Autoharp — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Triple_wedding_in_Porvoo_1965_(JOKA%C3%96N3A_B04-1).tif
+    description: 'Triple wedding in Porvoo Dome church 1965. From left to right: Margot Ingelin and Åke
+      Stjernvall, Maija-Liisa Grönlund and Stig-Göran Ingelin and Christine Brändal and Håkan Stjernvall.'
+    license: CC BY 4.0

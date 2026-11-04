@@ -1,0 +1,84 @@
+filetype:bitmap engagement ring box ['File:Burial Objects from the Grave of a Young Woman - Altes Museum, Berlin (52670852116).jpg', 'File:Burial Objects from the Grave of a Young Woman - Altes Museum, Berlin (52671353823).jpg', 'File:Engagement rings photo by Ygor Oliveira.jpg', 'File:Gold and diamond engagement ring.jpg', 'File:Planetary nebula BD+303639 (noao-01g01r).jpg', 'File:Promise ring in casket.JPG']
+filetype:bitmap Helsinki orthodox cathedral exterior ['File:Saint Petersburg, Russia (31630910718).jpg', 'File:Tallinn Landmarks 07B.jpg', 'File:Tallinn Landmarks 07C.jpg']
+filetype:bitmap Helsinki lutheran church exterior ['File:Helsingin Tuomiokirkko (=Nikolainkirkko, Suurkirkko) - XLVIII-565 - hkm.HKMS000005-km0000ma6q.jpg', 'File:Helsinki-02-Dom-1975-gje.jpg', 'File:Helsinki Cathedral seen from a closed Christmas market on an evening in November 2024.jpg', 'File:Kampin kappeli 20141222.jpg', 'File:Lascar Temppeliaukio Church (4548628589).jpg', 'File:Lascar Temppeliaukio Church (4548706525).jpg', 'File:Lascar Temppeliaukio Church (4549343556).jpg', 'File:VappuHelsinki1975.JPG']
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7424fe33b7a0>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&format=json&generator=search&gsrsearch=filetype%3Abitmap+wedding+rings+close&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1200 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7424fe33b7a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/research_wedding.py", line 11, in <module>
+    with ThreadPoolExecutor(max_workers=3) as ex:list(ex.map(run,queries))
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/studio/production/hb-c09a/research_wedding.py", line 10, in run
+    r=requests.get('https://commons.wikimedia.org/w/api.php',params=dict(action='query',format='json',generator='search',gsrsearch=q,gsrnamespace=6,gsrlimit=8,prop='imageinfo',iiprop='url|extmetadata',iiurlwidth=1200),headers={'User-Agent':'HomebrewStudyStudio/1.0'},timeout=90);r.raise_for_status();d=r.json();p.write_text(json.dumps(d,ensure_ascii=False,indent=2));print(q,[v['title'] for v in d.get('query',{}).get('pages',{}).values()],flush=True)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/.venv/lib/python3.12/site-packages/requests/adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='commons.wikimedia.org', port=443): Max retries exceeded with url: /w/api.php?action=query&format=json&generator=search&gsrsearch=filetype%3Abitmap+wedding+rings+close&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1200 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7424fe33b7a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))

@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c10-sexuell",
+  "stage": "asr",
+  "state": "studio/production/hb-c10/hb-c10-sexuell-asr-state.json",
+  "log": "studio/production/hb-c10/hb-c10-sexuell-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c10-sexuell/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c10-sexuell/narration/asr.json"
+  ]
+}

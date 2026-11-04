@@ -1,0 +1,871 @@
+schema_version: 1
+section_id: hb-c12-e-tjanster
+chapter_id: hb-c12
+title_sv: Elektroniska tjänster och identifiering
+title_ru: Электронные услуги и идентификация
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-e-tjanster.yaml
+example_only: false
+source_section_sha256: 0bf29a0fc7e5ca216f69cae6a09f5acb958f277420aa927eda36900c3c3db2d4
+translation_file_sha256: 3e20d96848c28fc3571d94fe79d0d99da85178e993c402449db7c08262a15d53
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source paragraphs/list items define consecutive topic scenes. Sentence-specific objects
+    and source relationships are planned individually; no added spoken transitions or current-law updates.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 at24fps; Chapter12 violet palette {''background'': ''#352e49'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#d7cce7'', ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Liberation Sans
+    Bold48/Regular40 with a fixed right bilingual panel and relevant left foreground pictures.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Computer keyboard.jpg by Joe lope continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=2.248511904761905.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,NumPyseed42 per invocation,44100HzmonoPCM16;
+    initial2ONNXthreads shared with Chapter8 allocation. Exact synthesis inputs and actual seed scope
+    are retained; whole-video listening remains pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Overheat by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 423.340 seconds; prepared lossless stereo bed 314.792 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: 'Distinct relevant picture for nearly every body sentence slide: actual places/objects where
+    identity and license are verified, plus original pictorial diagrams for source-stated eligibility,
+    administrative steps and personal-data protections. Avoid real personal identifiers and invented legal
+    rules.'
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0119
+  description: I Finland har myndigheterna alltmer övergått till elektronisk ärendehantering.
+- id: hb-c12-u0120
+  description: Suomi.fi är en webbplats som administreras av finska staten.
+- id: hb-c12-u0121
+  description: Många kommuner har kundtjänster som erbjuder digitalt stöd och där man kan få hjälp med
+    att till exempel använda olika myndigheters e-tjänster.
+- id: hb-c12-u0122
+  description: Om man inte kan eller vill använda e-tjänster kan man vanligtvis uträtta sina ärenden också
+    genom att besöka myndigheten eller ett kundtjänstställe, eller genom att ringa.
+- id: hb-c12-u0123
+  description: För elektronisk ärendehantering krävs i Finland i allmänhet stark autentisering.
+- id: hb-c12-u0124
+  description: Stark autentisering sker med nätbankskoder, ett mobilcertifikat eller ett chipförsett identitetskort.
+- id: hb-c12-u0125
+  description: Man ansöker om nätbankskoder hos sin egen bank.
+- id: hb-c12-u0126
+  description: Nätbankskoder och andra verktyg för stark autentisering är alltid personliga.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: myndigheterna / elektronisk ärendehantering.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-002
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: självständigt / internet. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-003
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: besöka myndigheten / ringa kundtjänsten.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-004
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: Suomi.fi / finska staten. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-005
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: meddelandetjänsten / e-tjänster. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-006
+  kind: foreground
+  description: 'Source-specific pictorial composition support: digitalt stöd / e-tjänster. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-007
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: besöka / ringa. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-008
+  kind: foreground
+  description: 'Source-specific pictorial composition calendar: besöka / boka tid. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-009
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: inte uträttas på nätet / själv besöka.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-010
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: personbeteckning / identitetskort.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-011
+  kind: foreground
+  description: 'Source-specific pictorial composition security: elektronisk / stark autentisering. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-012
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: identitet / e-tjänster. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-013
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: identitetsbevis / kundtjänstställe.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-014
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: stark autentisering / personbeteckning.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-015
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: nätbankskoder / mobilcertifikat. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-016
+  kind: foreground
+  description: 'Source-specific pictorial composition digital: kortläsare / dator. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-017
+  kind: foreground
+  description: 'Source-specific pictorial composition security: nätbankskoder / elektroniskt. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-018
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: nätbankskoder / egen bank. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-019
+  kind: foreground
+  description: 'Source-specific pictorial composition materials: koderna / bankkonto. Show only source-stated
+    relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-020
+  kind: foreground
+  description: 'Source-specific pictorial composition contrast: nätbankskoder / öppna ett konto. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-021
+  kind: foreground
+  description: 'Source-specific pictorial composition choice: inte bevilja nätbankskoder / öppna ett konto.
+    Show only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-022
+  kind: foreground
+  description: 'Source-specific pictorial composition identification: identitetskort / polisen. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-023
+  kind: foreground
+  description: 'Source-specific pictorial composition security: stark autentisering / personliga. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-024
+  kind: foreground
+  description: 'Source-specific pictorial composition prohibited: aldrig lämnas ut / annan. Show only
+    source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+- id: picture-025
+  kind: foreground
+  description: 'Source-specific pictorial composition qualification: lika bindande / underskrift. Show
+    only source-stated relations, no fabricated personal data.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photo; omit honestly
+    and document a genuine shortfall if neither is accurate.
+sentences:
+- sentence_id: hb-c12-u0119-s001
+  sv: I Finland har myndigheterna alltmer övergått till elektronisk ärendehantering.
+  ru: В Финляндии органы власти всё больше переходят к электронному обслуживанию.
+  scene_id: hb-c12-u0119
+  visual_cue: 'Source-specific pictorial composition digital: myndigheterna / elektronisk ärendehantering.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0119-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.076667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-001.png
+- sentence_id: hb-c12-u0119-s002
+  sv: Elektronisk ärendehantering betyder att kunden kan sköta sina ärenden självständigt på internet.
+  ru: Электронное обслуживание означает, что клиент может самостоятельно решать свои вопросы через интернет.
+  scene_id: hb-c12-u0119
+  visual_cue: 'Verified relevant foreground photograph: Actual contextual photograph of adults using a
+    laptop together. They are not identified as Finnish authority customers and no real service transaction
+    is inferred. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0119-s002.wav
+  start_seconds: 11.833333
+  end_seconds: 20.053197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-002.png
+- sentence_id: hb-c12-u0119-s003
+  sv: Hen måste alltså inte besöka myndigheten eller ringa kundtjänsten.
+  ru: Таким образом, ему не нужно посещать орган власти или звонить в службу обслуживания клиентов.
+  scene_id: hb-c12-u0119
+  visual_cue: 'Source-specific pictorial composition choice: besöka myndigheten / ringa kundtjänsten.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0119-s003.wav
+  start_seconds: 21.833333
+  end_seconds: 27.545442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-003.png
+- sentence_id: hb-c12-u0120-s001
+  sv: Suomi.fi är en webbplats som administreras av finska staten.
+  ru: Suomi.fi — это сайт, которым управляет финское государство.
+  scene_id: hb-c12-u0120
+  visual_cue: 'Source-specific pictorial composition digital: Suomi.fi / finska staten. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0120-s001.wav
+  start_seconds: 30.0
+  end_seconds: 35.851429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-004.png
+- sentence_id: hb-c12-u0120-s002
+  sv: På webbplatsen finns förutom meddelandetjänsten också länkar till olika myndigheters e-tjänster
+    och mycket information om olika myndigheters tjänster i Finland.
+  ru: Помимо сервиса сообщений, на сайте есть также ссылки на электронные услуги различных органов власти
+    и много информации об услугах разных органов власти в Финляндии.
+  scene_id: hb-c12-u0120
+  visual_cue: 'Source-specific pictorial composition digital: meddelandetjänsten / e-tjänster. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0120-s002.wav
+  start_seconds: 37.625
+  end_seconds: 51.278333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-005.png
+- sentence_id: hb-c12-u0121-s001
+  sv: Många kommuner har kundtjänster som erbjuder digitalt stöd och där man kan få hjälp med att till
+    exempel använda olika myndigheters e-tjänster.
+  ru: Во многих муниципалитетах есть службы обслуживания клиентов, которые оказывают помощь с цифровыми
+    технологиями и где можно получить помощь, например, в использовании электронных услуг различных органов
+    власти.
+  scene_id: hb-c12-u0121
+  visual_cue: 'Source-specific pictorial composition support: digitalt stöd / e-tjänster. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0121-s001.wav
+  start_seconds: 53.75
+  end_seconds: 66.010136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-006.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0122-s001
+  sv: Om man inte kan eller vill använda e-tjänster kan man vanligtvis uträtta sina ärenden också genom
+    att besöka myndigheten eller ett kundtjänstställe, eller genom att ringa.
+  ru: Если вы не можете или не хотите пользоваться электронными услугами, то обычно можете решить свои
+    вопросы также при посещении органа власти или пункта обслуживания клиентов либо по телефону.
+  scene_id: hb-c12-u0122
+  visual_cue: 'Source-specific pictorial composition choice: besöka / ringa. Show only source-stated relations,
+    no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0122-s001.wav
+  start_seconds: 68.791667
+  end_seconds: 83.071939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-007.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0122-s002
+  sv: Om man vill besöka en myndighet för att uträtta ett ärende måste man ofta boka tid.
+  ru: Если вы хотите посетить орган власти для решения какого-либо вопроса, часто нужно заранее записаться
+    на приём.
+  scene_id: hb-c12-u0122
+  visual_cue: 'Source-specific pictorial composition calendar: besöka / boka tid. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0122-s002.wav
+  start_seconds: 85.833333
+  end_seconds: 93.077959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-008.png
+- sentence_id: hb-c12-u0122-s003
+  sv: Ibland kan ett ärende inte uträttas på nätet eller per telefon, utan man måste själv besöka myndigheten.
+  ru: Иногда вопрос нельзя решить через интернет или по телефону, и тогда нужно лично посетить орган власти.
+  scene_id: hb-c12-u0122
+  visual_cue: 'Source-specific pictorial composition contrast: inte uträttas på nätet / själv besöka.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0122-s003.wav
+  start_seconds: 94.833333
+  end_seconds: 103.889116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-009.png
+- sentence_id: hb-c12-u0122-s004
+  sv: Så är det till exempel när man första gången ansöker om en finländsk personbeteckning eller ett
+    finländskt identitetskort.
+  ru: Так бывает, например, когда вы впервые подаёте заявление на финский личный идентификационный код
+    или финское удостоверение личности.
+  scene_id: hb-c12-u0122
+  visual_cue: 'Source-specific pictorial composition identification: personbeteckning / identitetskort.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0122-s004.wav
+  start_seconds: 105.666667
+  end_seconds: 116.115646
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-010.png
+- sentence_id: hb-c12-u0123-s001
+  sv: För elektronisk ärendehantering krävs i Finland i allmänhet stark autentisering.
+  ru: Для электронного обслуживания в Финляндии обычно требуется усиленная аутентификация (stark autentisering).
+  scene_id: hb-c12-u0123
+  visual_cue: 'Source-specific pictorial composition security: elektronisk / stark autentisering. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0123-s001.wav
+  start_seconds: 118.583333
+  end_seconds: 125.827959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-011.png
+- sentence_id: hb-c12-u0123-s002
+  sv: Stark autentisering betyder att en person på ett tillförlitligt sätt styrker sin identitet när hen
+    använder e-tjänster.
+  ru: Усиленная аутентификация означает, что человек надёжным способом подтверждает свою личность при
+    использовании электронных услуг.
+  scene_id: hb-c12-u0123
+  visual_cue: 'Source-specific pictorial composition identification: identitet / e-tjänster. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0123-s002.wav
+  start_seconds: 127.583333
+  end_seconds: 137.614354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-012.png
+- sentence_id: hb-c12-u0123-s003
+  sv: Det är samma ska som när en person visar sitt identitetsbevis när hen uträttar ärenden genom att
+    fysiskt besöka ett kundtjänstställe.
+  ru: Это то же самое, что предъявление удостоверения личности при решении вопросов во время личного посещения
+    пункта обслуживания клиентов.
+  scene_id: hb-c12-u0123
+  visual_cue: 'Source-specific pictorial composition identification: identitetsbevis / kundtjänstställe.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0123-s003.wav
+  start_seconds: 139.375
+  end_seconds: 150.520578
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-013.png
+- sentence_id: hb-c12-u0123-s004
+  sv: För att använda stark autentisering krävs i allmänhet en finländsk personbeteckning.
+  ru: Для использования усиленной аутентификации обычно требуется финский личный идентификационный код.
+  scene_id: hb-c12-u0123
+  visual_cue: 'Source-specific pictorial composition identification: stark autentisering / personbeteckning.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0123-s004.wav
+  start_seconds: 152.291667
+  end_seconds: 159.814932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-014.png
+- sentence_id: hb-c12-u0124-s001
+  sv: Stark autentisering sker med nätbankskoder, ett mobilcertifikat eller ett chipförsett identitetskort.
+  ru: Усиленная аутентификация осуществляется с помощью кодов доступа к интернет-банку, мобильного сертификата
+    или удостоверения личности с чипом.
+  scene_id: hb-c12-u0124
+  visual_cue: 'Source-specific pictorial composition choice: nätbankskoder / mobilcertifikat. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0124-s001.wav
+  start_seconds: 162.291667
+  end_seconds: 171.06881
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-015.png
+- sentence_id: hb-c12-u0124-s002
+  sv: Att använda ett chipförsett identitetskort för elektronisk ärendehantering kräver en särskild programvara
+    och en kortläsare som kopplas till en dator.
+  ru: Для использования удостоверения личности с чипом при электронном обслуживании нужны специальная
+    программа и устройство для чтения карт, подключаемое к компьютеру.
+  scene_id: hb-c12-u0124
+  visual_cue: 'Verified relevant foreground photograph: Actual external contact smart-card reader device,illustrating
+    the source’s requirement for a reader with chip-card e-services. No claim that this exact model has
+    been tested with Finnish ID cards. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0124-s002.wav
+  start_seconds: 172.833333
+  end_seconds: 185.720408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-016.png
+- sentence_id: hb-c12-u0124-s003
+  sv: De flesta använder nätbankskoder för att uträtta ärenden elektroniskt.
+  ru: Большинство людей используют коды доступа к интернет-банку, чтобы решать свои вопросы в электронном
+    виде.
+  scene_id: hb-c12-u0124
+  visual_cue: 'Source-specific pictorial composition security: nätbankskoder / elektroniskt. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0124-s003.wav
+  start_seconds: 187.5
+  end_seconds: 193.769388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-017.png
+- sentence_id: hb-c12-u0125-s001
+  sv: Man ansöker om nätbankskoder hos sin egen bank.
+  ru: За кодами доступа к интернет-банку обращаются в свой банк.
+  scene_id: hb-c12-u0125
+  visual_cue: 'Source-specific pictorial composition qualification: nätbankskoder / egen bank. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0125-s001.wav
+  start_seconds: 196.25
+  end_seconds: 200.708231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-018.png
+- sentence_id: hb-c12-u0125-s002
+  sv: I allmänhet är det värt att fråga efter koderna när man öppnar ett bankkonto.
+  ru: Обычно стоит попросить эти коды при открытии банковского счёта.
+  scene_id: hb-c12-u0125
+  visual_cue: 'Source-specific pictorial composition materials: koderna / bankkonto. Show only source-stated
+    relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0125-s002.wav
+  start_seconds: 202.458333
+  end_seconds: 209.07602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-019.png
+- sentence_id: hb-c12-u0125-s003
+  sv: Det ställs ändå högre krav på nätbankskoder än på att öppna ett konto.
+  ru: Однако для получения кодов доступа к интернет-банку предъявляются более высокие требования, чем
+    для открытия счёта.
+  scene_id: hb-c12-u0125
+  visual_cue: 'Source-specific pictorial composition contrast: nätbankskoder / öppna ett konto. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0125-s003.wav
+  start_seconds: 210.833333
+  end_seconds: 217.033061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-020.png
+- sentence_id: hb-c12-u0125-s004
+  sv: Ibland kan banken inte bevilja nätbankskoder, även om man får öppna ett konto.
+  ru: Иногда банк не может выдать коды доступа к интернет-банку, даже если вам разрешено открыть счёт.
+  scene_id: hb-c12-u0125
+  visual_cue: 'Source-specific pictorial composition choice: inte bevilja nätbankskoder / öppna ett konto.
+    Show only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0125-s004.wav
+  start_seconds: 218.791667
+  end_seconds: 225.827313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-021.png
+- sentence_id: hb-c12-u0125-s005
+  sv: Banken kan till exempel kräva att man har ett identitetskort som utfärdats av polisen i Finland.
+  ru: Банк может, например, потребовать, чтобы у вас было удостоверение личности, выданное полицией Финляндии.
+  scene_id: hb-c12-u0125
+  visual_cue: 'Source-specific pictorial composition identification: identitetskort / polisen. Show only
+    source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0125-s005.wav
+  start_seconds: 227.583333
+  end_seconds: 236.221156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-022.png
+- sentence_id: hb-c12-u0126-s001
+  sv: Nätbankskoder och andra verktyg för stark autentisering är alltid personliga.
+  ru: Коды доступа к интернет-банку и другие средства усиленной аутентификации всегда являются личными.
+  scene_id: hb-c12-u0126
+  visual_cue: 'Source-specific pictorial composition security: stark autentisering / personliga. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0126-s001.wav
+  start_seconds: 238.708333
+  end_seconds: 245.67432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-023.png
+- sentence_id: hb-c12-u0126-s002
+  sv: De får aldrig lämnas ut till någon annan.
+  ru: Их никогда нельзя передавать другому человеку.
+  scene_id: hb-c12-u0126
+  visual_cue: 'Verified relevant foreground photograph: Actual built-in smart-card-reader slot on a laptop.
+    Illustrates a physical personal identification tool; no card number or login credential displayed.
+    Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0126-s002.wav
+  start_seconds: 247.458333
+  end_seconds: 251.150306
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-024.png
+- sentence_id: hb-c12-u0126-s003
+  sv: Uppgifter som lämnats och avtal som ingåtts medan man varit inloggad genom stark autentisering är
+    lika bindande som sådana som bekräftats personligen med en underskrift.
+  ru: Сведения, которые вы предоставляете, и договоры, которые вы заключаете, находясь в системе после
+    входа с помощью усиленной аутентификации, имеют такую же обязательную силу, как и подтверждённые лично
+    подписью.
+  scene_id: hb-c12-u0126
+  visual_cue: 'Source-specific pictorial composition qualification: lika bindande / underskrift. Show
+    only source-stated relations, no fabricated personal data.'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Whole-video listening priorities include Swedish compounds,Finnish agency names,numerals and abbreviations.
+    ASR diagnostics do not establish correct pronunciation.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-e-tjanster/narration/hb-c12-u0126-s003.wav
+  start_seconds: 252.916667
+  end_seconds: 267.266599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-e-tjanster/pictures/picture-025.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+render:
+  music_path: studio/media/hb-c12-e-tjanster/sources/music-bed.flac
+  background_image: studio/media/hb-c12-e-tjanster/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.248511904761905
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Computer keyboard.jpg — Joe lope · CC BY-SA 4.0
+    - Overheat — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no current-law claims added.
+  - Original foreground illustrations represent source-stated administrative steps and relationships;
+    no real or fabricated personal identifiers.
+  - Distinct background photograph cropped,darkened,blurred and animated continuously; original photo
+    license retained.
+  - Instrumental music faded,ducked,+2dBadjusted and repeated using4second equal-power crossfades when
+    necessary.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Computer_keyboard.jpg
+    description: Black keyboard of a computer
+    license: CC BY-SA 4.0

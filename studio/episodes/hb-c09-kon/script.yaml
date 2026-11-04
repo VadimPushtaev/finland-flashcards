@@ -1,0 +1,2135 @@
+schema_version: 1
+section_id: hb-c09-kon
+chapter_id: hb-c09
+title_sv: Jämställdhet i familjens vardag
+title_ru: Гендерное равенство в повседневной жизни семьи
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-kon.yaml
+example_only: false
+source_section_sha256: ec7c10b4c7c10b61a6da5563d7e57e28453028ff8fe1a2c3701ac7f8d4e2bd6f
+translation_file_sha256: 1ef3b216acdd2c0db004b4304b171159e1ab85df5386606a1f1e9179c2b311b6
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Skatudden helsinki - tove jansson parc - playground 2.jpg by Sinikka Halme continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=5.088392857142857. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Farm by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 292.323 seconds; prepared lossless stereo bed 712.375 seconds. Repeat count
+    2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Familjerna har en viktig roll när det gäller att öka jämställdheten.
+- id: scene-2
+  description: Med stereotyp avses en förenklad och generaliserande uppfattning om hurdana vissa personer
+    eller fenomen är.
+- id: scene-3
+  description: Stereotyper om kön är mycket vanliga och syns inom många områden av livet.
+- id: scene-4
+  description: Utifrån stereotyper och andra föreställningar skapas normer i samhället.
+- id: scene-5
+  description: En stereotyp om kvinnor kan vara ett antagande om att alla kvinnor är intresserade av sitt
+    utseende och använder smink för att se vackrare ut.
+- id: scene-6
+  description: Könsnormer skapar oskrivna regler för hur kvinnor och män ska bete sig.
+- id: scene-7
+  description: Det finns ändå fortfarande många könsstereotyper och könsnormer i Finland som påverkar
+    människors beteende.
+- id: scene-8
+  description: Könsstereotyper och könsnormer förändras över tid.
+- id: scene-9
+  description: Enligt en traditionell könsstereotyp tar kvinnorna hand om hushållsarbetet och barnen,
+    medan männen försörjer familjen genom att arbeta utanför hemmet.
+- id: scene-10
+  description: Statistiken visar att kvinnor fortfarande ägnar mer tid åt hushållsarbete än män.
+- id: scene-11
+  description: Många familjer strävar efter att dela lika på hushållsarbetet och barnskötseln.
+- id: scene-12
+  description: Könsstereotyper och könsnormer när det gäller arbetsfördelning är numera mindre starka
+    än tidigare.
+- id: scene-13
+  description: Barn tillägnar sig könsstereotyper och könsnormer redan när de är små.
+- id: scene-14
+  description: En jämställd barnuppfostran kräver att de vuxna ägnar uppmärksamhet åt sitt beteende och
+    sina attityder.
+- id: scene-15
+  description: Barns tankesätt påverkas av om de vuxna delar in vissa lekar, leksaker och kläder som typiska
+    för flickor eller pojkar.
+- id: scene-16
+  description: Det är också skadligt för ett barns välbefinnande om hen upplever att hen är fel på något
+    sätt.
+- id: scene-17
+  description: Det är ganska enkelt för vuxna att märka om de erbjuder barn leksaker utifrån deras kön.
+- id: scene-18
+  description: När vuxna förväntar sig olika beteende av flickor och pojkar stärker de könsnormerna.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Familjerna har en viktig roll när det gäller att öka jämställdheten.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Den interna arbetsfördelningen i familjerna är i sig en
+    jämställdhetsfråga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Dessutom har den betydelse för till exempel könens ställning
+    på arbetsmarknaden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Å andra sidan har det stor betydelse för jämställdheten
+    hur barnen uppfostras och huruvida flickor och pojkar behandlas på samma sätt i familjerna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: De attityder och handlingsmönster som människor lärt sig
+    som barn påverkar hur de agerar senare i livet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Med stereotyp avses en förenklad och generaliserande uppfattning
+    om hurdana vissa personer eller fenomen är.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: En stereotyp fokuserar på en viss egenskap, till exempel
+    könet, nationaliteten eller åldern, hos en person.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: En stereotyp är alltså en generalisering av hurdana till
+    exempel alla kvinnor, alla finländare eller alla tonåringar är.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Stereotyper om kön är mycket vanliga och syns inom många
+    områden av livet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Människor har generaliserande uppfattningar om hurdana
+    kvinnor och män är till sin natur och hur de beter sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Stereotyper kan också gälla till exempel hurdana kläder
+    kvinnor och män använder eller hurdana filmer de tycker om.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Utifrån stereotyper och andra föreställningar skapas normer
+    i samhället.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Normer är förväntningar om hurdana människor ska vara
+    och hur de ska bete sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Den könsnorm som råder i ett samhälle bestämmer alltså
+    hurdant beteende som anses vara lämpligt för kvinnor och män.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: En stereotyp om kvinnor kan vara ett antagande om att
+    alla kvinnor är intresserade av sitt utseende och använder smink för att se vackrare ut.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: På motsvarande sätt kan en könsnorm bestämma att en kvinna
+    måste använda smink och ta hand om sitt utseende.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Då accepteras hon i samhället som en kvinna som följer
+    normen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Könsnormer skapar oskrivna regler för hur kvinnor och
+    män ska bete sig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Brott mot dessa regler åtföljs ofta av någon form av socialt
+    straff.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Straffet kan vara lindrigt, till exempel förvåning, skratt
+    eller ogillande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan också vara strängare, till exempel skymf, diskriminering,
+    utestängning från gemenskapen eller i extremfall till och med våld.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Därför försöker människor i allmänhet agera i enlighet
+    med normen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Det finns ändå fortfarande många könsstereotyper och könsnormer
+    i Finland som påverkar människors beteende.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: De har ofta negativa följder som försämrar människornas
+    välbefinnande och utgör hinder för jämställdheten i praktiken.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Könsstereotyper och könsnormer förändras över tid.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: De kan också vara olika i olika gemenskaper i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Hur allvarliga de sociala straffen för brott mot normerna
+    är varierar också.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Många gånger upplever människor till exempel att det är
+    lättare att bryta mot normer i de stora städerna än på små orter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Enligt en traditionell könsstereotyp tar kvinnorna hand
+    om hushållsarbetet och barnen, medan männen försörjer familjen genom att arbeta utanför hemmet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Dessa stereotyper påverkar fortfarande arbetsfördelningen
+    i familjerna också i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Arbetsfördelningen har ändå blivit mer jämställd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Statistiken visar att kvinnor fortfarande ägnar mer tid
+    åt hushållsarbete än män.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: Männen i sin tur ägnar fortfarande mer tid åt förvärvsarbete
+    än kvinnor.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: Kvinnorna ägnar ändå mindre tid åt hushållsarbete nuförtiden
+    än för 30 år sedan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Männen i sin tur ägnar i dag mer tid åt hushållsarbete,
+    i synnerhet barnskötsel och matlagning.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: Många familjer strävar efter att dela lika på hushållsarbetet
+    och barnskötseln.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_037
+  kind: foreground
+  description: 'A source-bound illustration of: Det främjar familjens välbefinnande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_038
+  kind: foreground
+  description: 'A source-bound illustration of: Å andra sidan anser man också att båda makarna ansvarar
+    för att försörja familjen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_039
+  kind: foreground
+  description: 'A source-bound illustration of: På så vis klarar sig familjens ekonomi bättre om den ena
+    maken skulle bli arbetslös eller sjuk.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_040
+  kind: foreground
+  description: 'A source-bound illustration of: Både kvinnor och män känner mindre press när de inte ensamma
+    ansvarar för å ena sidan hushållsarbetet och å andra sidan för att försörja familjen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_041
+  kind: foreground
+  description: 'A source-bound illustration of: Könsstereotyper och könsnormer när det gäller arbetsfördelning
+    är numera mindre starka än tidigare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_042
+  kind: foreground
+  description: 'A source-bound illustration of: Många anser i dag att också män kan vara omvårdande och
+    att också kvinnor kan vara ambitiösa i sina karriärer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_043
+  kind: foreground
+  description: 'A source-bound illustration of: De könsnormer som gäller arbetsfördelningen inom familjerna
+    syns ändå i dag till exempel i det att många fortfarande anser att det framför allt är mammans uppgift
+    att ta hand om alldeles små spädbarn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_044
+  kind: foreground
+  description: 'A source-bound illustration of: Barn tillägnar sig könsstereotyper och könsnormer redan
+    när de är små.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_045
+  kind: foreground
+  description: 'A source-bound illustration of: De attityder som en person tillägnat sig som barn har
+    stor betydelse för vad hen anser om kön och jämställdhet som vuxen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_046
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland strävar man efter att fostra barn i jämställdhet
+    till exempel inom småbarnspedagogiken och i skolan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_047
+  kind: foreground
+  description: 'A source-bound illustration of: Ett barns kön ska inte definiera hurdan hen får vara och
+    vad hen kan göra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_048
+  kind: foreground
+  description: 'A source-bound illustration of: En jämställd barnuppfostran kräver att de vuxna ägnar
+    uppmärksamhet åt sitt beteende och sina attityder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_049
+  kind: foreground
+  description: 'A source-bound illustration of: Vuxna styr ofta obemärkt barn att bete sig enligt könsstereotyper
+    och könsnormer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_050
+  kind: foreground
+  description: 'A source-bound illustration of: De kanske ger en flicka en docka och en pojke en leksaksbil
+    utan att de tänker på det.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_051
+  kind: foreground
+  description: 'A source-bound illustration of: På så sätt lär sig barnen att tänka att vissa saker av
+    naturen hör till kvinnor och andra till män.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_052
+  kind: foreground
+  description: 'A source-bound illustration of: Barns tankesätt påverkas av om de vuxna delar in vissa
+    lekar, leksaker och kläder som typiska för flickor eller pojkar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_053
+  kind: foreground
+  description: 'A source-bound illustration of: En sådan indelning styr barnen att tillägna sig de könsstereotyper
+    och könsnormer som människorna i samhället delar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_054
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan i sin tur påverka till exempel vilket yrke de
+    börjar studera till i framtiden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_055
+  kind: foreground
+  description: 'A source-bound illustration of: Det är också skadligt för ett barns välbefinnande om hen
+    upplever att hen är fel på något sätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_056
+  kind: foreground
+  description: 'A source-bound illustration of: Vuxna kanske säger till en pojke att det inte är passande
+    för honom att klä sig i en prinsessklänning.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_057
+  kind: foreground
+  description: 'A source-bound illustration of: Nuförtiden strävar man i Finland till exempel inom småbarnspedagogiken
+    efter att barnen fritt ska få uttrycka sig och prova på olika roller.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_058
+  kind: foreground
+  description: 'A source-bound illustration of: Barnen måste få uppleva att de får vara precis som de
+    är och tycka om precis de saker de tycker om.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_059
+  kind: foreground
+  description: 'A source-bound illustration of: Det är ganska enkelt för vuxna att märka om de erbjuder
+    barn leksaker utifrån deras kön.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_060
+  kind: foreground
+  description: 'A source-bound illustration of: Det finns ändå också beteenden som det är svårare att
+    lägga märke till.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_061
+  kind: foreground
+  description: 'A source-bound illustration of: Vuxna kan till exempel oftare be flickor att hjälpa till
+    med hushållssysslorna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_062
+  kind: foreground
+  description: 'A source-bound illustration of: De kanske låter pojkar springa och skrika, men uppmanar
+    flickor att lugna ner sig och bete sig behärskat.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_063
+  kind: foreground
+  description: 'A source-bound illustration of: När vuxna förväntar sig olika beteende av flickor och
+    pojkar stärker de könsnormerna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_064
+  kind: foreground
+  description: 'A source-bound illustration of: Ofta lär sig flickorna ända från små att ta mer hänsyn
+    till andra och ge andra mer utrymme.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_065
+  kind: foreground
+  description: 'A source-bound illustration of: Pojkar i sin tur lär sig att ta risker och vara självsäkra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_066
+  kind: foreground
+  description: 'A source-bound illustration of: Dessa beteendemönster som man lär sig i barndomen inverkar
+    på jämställdheten mellan könen i årtionden framöver.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0044-s001
+  sv: Familjerna har en viktig roll när det gäller att öka jämställdheten.
+  ru: Семьи играют важную роль в укреплении гендерного равенства.
+  scene_id: scene-1
+  visual_cue: 'Source-specific pictorial composition: Familjerna, jämställdheten. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - Familjerna
+  - jämställdheten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0044-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.171088
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0044-s002
+  sv: Den interna arbetsfördelningen i familjerna är i sig en jämställdhetsfråga.
+  ru: Само по себе распределение обязанностей внутри семьи — это вопрос гендерного равенства.
+  scene_id: scene-1
+  visual_cue: 'Source-specific pictorial composition: arbetsfördelningen, familjerna, jämställdhetsfråga.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - arbetsfördelningen
+  - familjerna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0044-s002.wav
+  start_seconds: 10.958333
+  end_seconds: 17.57602
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0044-s003
+  sv: Dessutom har den betydelse för till exempel könens ställning på arbetsmarknaden.
+  ru: Кроме того, оно имеет значение, например, для положения представителей разных полов на рынке труда.
+  scene_id: scene-1
+  visual_cue: 'Source-specific pictorial composition: den, arbetsmarknaden, könens ställning. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - arbetsmarknaden
+  - könens ställning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0044-s003.wav
+  start_seconds: 19.333333
+  end_seconds: 26.16
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0044-s004
+  sv: Å andra sidan har det stor betydelse för jämställdheten hur barnen uppfostras och huruvida flickor
+    och pojkar behandlas på samma sätt i familjerna.
+  ru: С другой стороны, для гендерного равенства очень важно, как воспитывают детей и одинаково ли в семьях
+    обращаются с девочками и мальчиками.
+  scene_id: scene-1
+  visual_cue: 'Source-specific pictorial composition: familjerna, flickor och pojkar, samma sätt. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - familjerna
+  - flickor och pojkar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0044-s004.wav
+  start_seconds: 27.916667
+  end_seconds: 40.037483
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0044-s005
+  sv: De attityder och handlingsmönster som människor lärt sig som barn påverkar hur de agerar senare
+    i livet.
+  ru: Усвоенные в детстве установки и модели поведения влияют на то, как люди действуют в дальнейшей жизни.
+  scene_id: scene-1
+  visual_cue: 'Source-specific pictorial composition: som barn, senare i livet. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - som barn
+  - senare i livet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0044-s005.wav
+  start_seconds: 42.791667
+  end_seconds: 51.56881
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0045-s001
+  sv: Med stereotyp avses en förenklad och generaliserande uppfattning om hurdana vissa personer eller
+    fenomen är.
+  ru: Под стереотипом понимается упрощённое и обобщающее представление о том, каковы определённые люди
+    или явления.
+  scene_id: scene-2
+  visual_cue: 'Source-specific pictorial composition: förenklad och generaliserande uppfattning, personer.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - förenklad och generaliserande uppfattning
+  - personer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0045-s001.wav
+  start_seconds: 54.041667
+  end_seconds: 63.515408
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0045-s002
+  sv: En stereotyp fokuserar på en viss egenskap, till exempel könet, nationaliteten eller åldern, hos
+    en person.
+  ru: Стереотип сосредоточен на определённом признаке человека, например на поле, национальности или возрасте.
+  scene_id: scene-2
+  visual_cue: 'Source-specific pictorial composition: en person, könet, nationaliteten, åldern. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - en person
+  - könet, nationaliteten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0045-s002.wav
+  start_seconds: 65.291667
+  end_seconds: 74.486769
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0045-s003
+  sv: En stereotyp är alltså en generalisering av hurdana till exempel alla kvinnor, alla finländare eller
+    alla tonåringar är.
+  ru: Таким образом, стереотип — это обобщение о том, каковы, например, все женщины, все финляндцы или
+    все подростки.
+  scene_id: scene-2
+  visual_cue: 'Source-specific pictorial composition: generalisering, alla kvinnor, alla tonåringar. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - generalisering
+  - alla kvinnor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0045-s003.wav
+  start_seconds: 76.25
+  end_seconds: 86.977619
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0046-s001
+  sv: Stereotyper om kön är mycket vanliga och syns inom många områden av livet.
+  ru: Гендерные стереотипы очень распространены и проявляются во многих сферах жизни.
+  scene_id: scene-3
+  visual_cue: 'Source-specific pictorial composition: Stereotyper om kön, många områden av livet. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - Stereotyper om kön
+  - många områden av livet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0046-s001.wav
+  start_seconds: 89.458333
+  end_seconds: 96.285
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0046-s002
+  sv: Människor har generaliserande uppfattningar om hurdana kvinnor och män är till sin natur och hur
+    de beter sig.
+  ru: У людей есть обобщающие представления о том, каковы женщины и мужчины по своей природе и как они
+    себя ведут.
+  scene_id: scene-3
+  visual_cue: 'Source-specific pictorial composition: generaliserande uppfattningar, kvinnor och män.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - generaliserande uppfattningar
+  - kvinnor och män
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0046-s002.wav
+  start_seconds: 98.041667
+  end_seconds: 107.515408
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0046-s003
+  sv: Stereotyper kan också gälla till exempel hurdana kläder kvinnor och män använder eller hurdana filmer
+    de tycker om.
+  ru: Стереотипы могут также касаться, например, того, какую одежду носят женщины и мужчины или какие
+    фильмы им нравятся.
+  scene_id: scene-3
+  visual_cue: 'Source-specific pictorial composition: kläder, Stereotyper, filmer. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - kläder
+  - Stereotyper
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0046-s003.wav
+  start_seconds: 109.291667
+  end_seconds: 119.183367
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0047-s001
+  sv: Utifrån stereotyper och andra föreställningar skapas normer i samhället.
+  ru: На основе стереотипов и других представлений в обществе формируются нормы.
+  scene_id: scene-4
+  visual_cue: 'Source-specific pictorial composition: stereotyper, normer. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - stereotyper
+  - normer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0047-s001.wav
+  start_seconds: 121.666667
+  end_seconds: 128.145034
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0047-s002
+  sv: Normer är förväntningar om hurdana människor ska vara och hur de ska bete sig.
+  ru: Нормы — это ожидания относительно того, какими должны быть люди и как они должны себя вести.
+  scene_id: scene-4
+  visual_cue: 'Source-specific pictorial composition: förväntningar, människor. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - förväntningar
+  - människor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0047-s002.wav
+  start_seconds: 129.916667
+  end_seconds: 137.021973
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0047-s003
+  sv: Den könsnorm som råder i ett samhälle bestämmer alltså hurdant beteende som anses vara lämpligt
+    för kvinnor och män.
+  ru: Таким образом, господствующая в обществе гендерная норма определяет, какое поведение считается подходящим
+    для женщин и мужчин.
+  scene_id: scene-4
+  visual_cue: 'Source-specific pictorial composition: könsnorm, kvinnor och män. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - könsnorm
+  - kvinnor och män
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0047-s003.wav
+  start_seconds: 138.791667
+  end_seconds: 148.474388
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0048-s001
+  sv: En stereotyp om kvinnor kan vara ett antagande om att alla kvinnor är intresserade av sitt utseende
+    och använder smink för att se vackrare ut.
+  ru: Примером стереотипа о женщинах может быть предположение, что все женщины интересуются своей внешностью
+    и пользуются косметикой, чтобы выглядеть красивее.
+  scene_id: scene-5
+  visual_cue: 'Source-specific pictorial composition: stereotyp, kvinnor, utseende. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - stereotyp
+  - kvinnor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0048-s001.wav
+  start_seconds: 150.958333
+  end_seconds: 163.288129
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0048-s002
+  sv: På motsvarande sätt kan en könsnorm bestämma att en kvinna måste använda smink och ta hand om sitt
+    utseende.
+  ru: Подобным образом гендерная норма может предписывать женщине пользоваться косметикой и заботиться
+    о своей внешности.
+  scene_id: scene-5
+  visual_cue: 'Source-specific pictorial composition: könsnorm, en kvinna, utseende. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - könsnorm
+  - en kvinna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0048-s002.wav
+  start_seconds: 166.041667
+  end_seconds: 175.445748
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0048-s003
+  sv: Då accepteras hon i samhället som en kvinna som följer normen.
+  ru: Тогда общество принимает её как женщину, которая соблюдает норму.
+  scene_id: scene-5
+  visual_cue: 'Source-specific pictorial composition: hon, accepteras, normen. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - accepteras
+  - normen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0048-s003.wav
+  start_seconds: 177.208333
+  end_seconds: 182.711463
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0049-s001
+  sv: Könsnormer skapar oskrivna regler för hur kvinnor och män ska bete sig.
+  ru: Гендерные нормы создают неписаные правила того, как должны вести себя женщины и мужчины.
+  scene_id: scene-6
+  visual_cue: 'Source-specific pictorial composition: oskrivna regler, kvinnor och män. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - oskrivna regler
+  - kvinnor och män
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0049-s001.wav
+  start_seconds: 185.166667
+  end_seconds: 191.436054
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0049-s002
+  sv: Brott mot dessa regler åtföljs ofta av någon form av socialt straff.
+  ru: За нарушением этих правил часто следует та или иная форма социального наказания.
+  scene_id: scene-6
+  visual_cue: 'Source-specific pictorial composition: dessa regler, socialt straff. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - dessa regler
+  - socialt straff
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0049-s002.wav
+  start_seconds: 193.208333
+  end_seconds: 199.547381
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0049-s003
+  sv: Straffet kan vara lindrigt, till exempel förvåning, skratt eller ogillande.
+  ru: 'Наказание может быть мягким: например, удивление, смех или неодобрение.'
+  scene_id: scene-6
+  visual_cue: 'Source-specific pictorial composition: förvåning, skratt, ogillande. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - förvåning
+  - skratt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0049-s003.wav
+  start_seconds: 201.333333
+  end_seconds: 208.09034
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0049-s004
+  sv: Det kan också vara strängare, till exempel skymf, diskriminering, utestängning från gemenskapen
+    eller i extremfall till och med våld.
+  ru: 'Оно может быть и более суровым: например, оскорбление, дискриминация, исключение из сообщества
+    или, в крайних случаях, даже насилие.'
+  scene_id: scene-6
+  visual_cue: 'Source-specific pictorial composition: våld, utestängning, gemenskapen. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - utestängning
+  - gemenskapen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0049-s004.wav
+  start_seconds: 209.875
+  end_seconds: 221.020578
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0049-s005
+  sv: Därför försöker människor i allmänhet agera i enlighet med normen.
+  ru: Поэтому люди обычно стараются действовать в соответствии с нормой.
+  scene_id: scene-6
+  visual_cue: 'Source-specific pictorial composition: människor, normen. When the sentence discusses stereotypes
+    or norms, speech/document symbols denote social expectations being described, not innate truths or
+    endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - människor
+  - normen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0049-s005.wav
+  start_seconds: 222.791667
+  end_seconds: 228.712755
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0050-s001
+  sv: Det finns ändå fortfarande många könsstereotyper och könsnormer i Finland som påverkar människors
+    beteende.
+  ru: Тем не менее в Финляндии по-прежнему существует много гендерных стереотипов и норм, которые влияют
+    на поведение людей.
+  scene_id: scene-7
+  visual_cue: 'Source-specific pictorial composition: könsstereotyper, könsnormer, människors beteende.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - könsstereotyper
+  - könsnormer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0050-s001.wav
+  start_seconds: 231.166667
+  end_seconds: 240.222449
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0050-s002
+  sv: De har ofta negativa följder som försämrar människornas välbefinnande och utgör hinder för jämställdheten
+    i praktiken.
+  ru: Они часто имеют отрицательные последствия, которые ухудшают благополучие людей и препятствуют гендерному
+    равенству на практике.
+  scene_id: scene-7
+  visual_cue: 'Source-specific pictorial composition: välbefinnande, jämställdheten. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - välbefinnande
+  - jämställdheten
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0050-s002.wav
+  start_seconds: 242.0
+  end_seconds: 252.17034
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0051-s001
+  sv: Könsstereotyper och könsnormer förändras över tid.
+  ru: Гендерные стереотипы и нормы меняются со временем.
+  scene_id: scene-8
+  visual_cue: 'Source-specific pictorial composition: över tid, Könsstereotyper, könsnormer. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - över tid
+  - Könsstereotyper
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0051-s001.wav
+  start_seconds: 254.625
+  end_seconds: 259.361871
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0051-s002
+  sv: De kan också vara olika i olika gemenskaper i Finland.
+  ru: Они также могут различаться в разных сообществах в Финляндии.
+  scene_id: scene-8
+  visual_cue: 'Source-specific pictorial composition: olika gemenskaper, olika. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - olika gemenskaper
+  - olika
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0051-s002.wav
+  start_seconds: 261.125
+  end_seconds: 266.14051
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0051-s003
+  sv: Hur allvarliga de sociala straffen för brott mot normerna är varierar också.
+  ru: Различается и суровость социальных наказаний за нарушение норм.
+  scene_id: scene-8
+  visual_cue: 'Source-specific pictorial composition: Hur allvarliga, normerna, sociala straffen. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - Hur allvarliga
+  - normerna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0051-s003.wav
+  start_seconds: 267.916667
+  end_seconds: 274.673673
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0051-s004
+  sv: Många gånger upplever människor till exempel att det är lättare att bryta mot normer i de stora
+    städerna än på små orter.
+  ru: Например, людям нередко кажется, что в больших городах нарушать нормы легче, чем в небольших населённых
+    пунктах.
+  scene_id: scene-8
+  visual_cue: 'Source-specific pictorial composition: stora städerna, små orter. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - stora städerna
+  - små orter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0051-s004.wav
+  start_seconds: 276.458333
+  end_seconds: 286.767993
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0052-s001
+  sv: Enligt en traditionell könsstereotyp tar kvinnorna hand om hushållsarbetet och barnen, medan männen
+    försörjer familjen genom att arbeta utanför hemmet.
+  ru: Согласно традиционному гендерному стереотипу, женщины занимаются домашними делами и детьми, а мужчины
+    содержат семью, работая вне дома.
+  scene_id: scene-9
+  visual_cue: 'Source-specific pictorial composition: hushållsarbetet, barnen, arbeta utanför hemmet.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - hushållsarbetet
+  - barnen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0052-s001.wav
+  start_seconds: 289.25
+  end_seconds: 301.788776
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0052-s002
+  sv: Dessa stereotyper påverkar fortfarande arbetsfördelningen i familjerna också i Finland.
+  ru: Эти стереотипы по-прежнему влияют на распределение обязанностей в семьях, в том числе и в Финляндии.
+  scene_id: scene-9
+  visual_cue: 'Source-specific pictorial composition: stereotyper, arbetsfördelningen. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - stereotyper
+  - arbetsfördelningen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0052-s002.wav
+  start_seconds: 304.541667
+  end_seconds: 312.204252
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0052-s003
+  sv: Arbetsfördelningen har ändå blivit mer jämställd.
+  ru: Однако распределение обязанностей стало более равноправным.
+  scene_id: scene-9
+  visual_cue: 'Source-specific pictorial composition: Arbetsfördelningen, mer jämställd. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - Arbetsfördelningen
+  - mer jämställd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0052-s003.wav
+  start_seconds: 313.958333
+  end_seconds: 318.486224
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0053-s001
+  sv: Statistiken visar att kvinnor fortfarande ägnar mer tid åt hushållsarbete än män.
+  ru: Статистика показывает, что женщины по-прежнему уделяют домашней работе больше времени, чем мужчины.
+  scene_id: scene-10
+  visual_cue: 'Source-specific pictorial composition: kvinnor, mer tid, hushållsarbete. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - kvinnor
+  - mer tid
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0053-s001.wav
+  start_seconds: 320.958333
+  end_seconds: 328.133299
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0053-s002
+  sv: Männen i sin tur ägnar fortfarande mer tid åt förvärvsarbete än kvinnor.
+  ru: Мужчины, в свою очередь, по-прежнему уделяют оплачиваемой работе больше времени, чем женщины.
+  scene_id: scene-10
+  visual_cue: 'Source-specific pictorial composition: Männen, mer tid, förvärvsarbete. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - Männen
+  - mer tid
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0053-s002.wav
+  start_seconds: 329.916667
+  end_seconds: 336.395034
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0053-s003
+  sv: Kvinnorna ägnar ändå mindre tid åt hushållsarbete nuförtiden än för 30 år sedan.
+  ru: Однако сейчас женщины уделяют домашней работе меньше времени, чем 30 лет назад.
+  scene_id: scene-10
+  visual_cue: 'Source-specific pictorial composition: Kvinnorna, hushållsarbete, 30 år sedan. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - Kvinnorna
+  - hushållsarbete
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0053-s003.wav
+  start_seconds: 338.166667
+  end_seconds: 345.620272
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0053-s004
+  sv: Männen i sin tur ägnar i dag mer tid åt hushållsarbete, i synnerhet barnskötsel och matlagning.
+  ru: Мужчины, в свою очередь, сегодня уделяют больше времени домашней работе, особенно уходу за детьми
+    и приготовлению пищи.
+  scene_id: scene-10
+  visual_cue: Illustrative father cooking scene for the explicit source discussion of men cooking; photo
+    is not asserted to depict Finland. The complete source photograph is shown with its source-identity
+    caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - Männen
+  - barnskötsel
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0053-s004.wav
+  start_seconds: 347.375
+  end_seconds: 355.525204
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0054-s001
+  sv: Många familjer strävar efter att dela lika på hushållsarbetet och barnskötseln.
+  ru: Многие семьи стремятся поровну делить домашнюю работу и уход за детьми.
+  scene_id: scene-11
+  visual_cue: 'Source-specific pictorial composition: Många familjer, hushållsarbetet, barnskötseln. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - Många familjer
+  - hushållsarbetet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0054-s001.wav
+  start_seconds: 358.0
+  end_seconds: 364.896327
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_036.png
+  render_caption: false
+- sentence_id: hb-c09-u0054-s002
+  sv: Det främjar familjens välbefinnande.
+  ru: Это способствует благополучию семьи.
+  scene_id: scene-11
+  visual_cue: 'Source-specific pictorial composition: familjens, välbefinnande. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_037
+  text_highlights:
+  - familjens
+  - välbefinnande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0054-s002.wav
+  start_seconds: 366.666667
+  end_seconds: 370.08
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_037.png
+  render_caption: false
+- sentence_id: hb-c09-u0054-s003
+  sv: Å andra sidan anser man också att båda makarna ansvarar för att försörja familjen.
+  ru: С другой стороны, считается также, что оба супруга отвечают за содержание семьи.
+  scene_id: scene-11
+  visual_cue: 'Source-specific pictorial composition: båda makarna, försörja familjen. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_038
+  text_highlights:
+  - båda makarna
+  - försörja familjen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0054-s003.wav
+  start_seconds: 371.833333
+  end_seconds: 379.217279
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_038.png
+  render_caption: false
+- sentence_id: hb-c09-u0054-s004
+  sv: På så vis klarar sig familjens ekonomi bättre om den ena maken skulle bli arbetslös eller sjuk.
+  ru: Так семье легче справиться с финансовой ситуацией, если один из супругов потеряет работу или заболеет.
+  scene_id: scene-11
+  visual_cue: 'Source-specific pictorial composition: familjens ekonomi, arbetslös, sjuk. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_039
+  text_highlights:
+  - familjens ekonomi
+  - arbetslös
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0054-s004.wav
+  start_seconds: 381.0
+  end_seconds: 389.289524
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_039.png
+  render_caption: false
+- sentence_id: hb-c09-u0054-s005
+  sv: Både kvinnor och män känner mindre press när de inte ensamma ansvarar för å ena sidan hushållsarbetet
+    och å andra sidan för att försörja familjen.
+  ru: И женщины, и мужчины ощущают меньше давления, когда им не приходится в одиночку отвечать, с одной
+    стороны, за домашнюю работу, а с другой — за содержание семьи.
+  scene_id: scene-11
+  visual_cue: 'Source-specific pictorial composition: kvinnor och män, hushållsarbetet, försörja familjen.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_040
+  text_highlights:
+  - kvinnor och män
+  - hushållsarbetet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0054-s005.wav
+  start_seconds: 391.041667
+  end_seconds: 403.441122
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_040.png
+  render_caption: false
+- sentence_id: hb-c09-u0055-s001
+  sv: Könsstereotyper och könsnormer när det gäller arbetsfördelning är numera mindre starka än tidigare.
+  ru: Гендерные стереотипы и нормы, касающиеся распределения обязанностей, сейчас слабее, чем раньше.
+  scene_id: scene-12
+  visual_cue: 'Source-specific pictorial composition: Könsstereotyper, mindre starka, arbetsfördelning.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_041
+  text_highlights:
+  - Könsstereotyper
+  - mindre starka
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0055-s001.wav
+  start_seconds: 406.208333
+  end_seconds: 414.706837
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_041.png
+  render_caption: false
+- sentence_id: hb-c09-u0055-s002
+  sv: Många anser i dag att också män kan vara omvårdande och att också kvinnor kan vara ambitiösa i sina
+    karriärer.
+  ru: Сегодня многие считают, что мужчины тоже могут быть заботливыми, а женщины — амбициозными в своей
+    карьере.
+  scene_id: scene-12
+  visual_cue: 'Source-specific pictorial composition: män, omvårdande, kvinnor. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_042
+  text_highlights:
+  - omvårdande
+  - kvinnor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0055-s002.wav
+  start_seconds: 416.458333
+  end_seconds: 426.280374
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_042.png
+  render_caption: false
+- sentence_id: hb-c09-u0055-s003
+  sv: De könsnormer som gäller arbetsfördelningen inom familjerna syns ändå i dag till exempel i det att
+    många fortfarande anser att det framför allt är mammans uppgift att ta hand om alldeles små spädbarn.
+  ru: 'Тем не менее гендерные нормы, касающиеся распределения обязанностей в семье, проявляются и сегодня:
+    например, многие по-прежнему считают уход за совсем маленькими младенцами прежде всего задачей матери.'
+  scene_id: scene-12
+  visual_cue: 'Source-specific pictorial composition: många fortfarande anser, mammans uppgift, små spädbarn.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_043
+  text_highlights:
+  - många fortfarande anser
+  - mammans uppgift
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0055-s003.wav
+  start_seconds: 428.041667
+  end_seconds: 444.690374
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_043.png
+  render_caption: false
+  text_style:
+    sv_size: 46
+    ru_size: 38
+- sentence_id: hb-c09-u0056-s001
+  sv: Barn tillägnar sig könsstereotyper och könsnormer redan när de är små.
+  ru: Дети усваивают гендерные стереотипы и нормы уже в раннем возрасте.
+  scene_id: scene-13
+  visual_cue: 'Source-specific pictorial composition: Barn, könsstereotyper, könsnormer. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_044
+  text_highlights:
+  - könsstereotyper
+  - könsnormer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0056-s001.wav
+  start_seconds: 447.458333
+  end_seconds: 453.588401
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_044.png
+  render_caption: false
+- sentence_id: hb-c09-u0056-s002
+  sv: De attityder som en person tillägnat sig som barn har stor betydelse för vad hen anser om kön och
+    jämställdhet som vuxen.
+  ru: Установки, усвоенные человеком в детстве, очень важны для его представлений о поле и гендерном равенстве
+    во взрослом возрасте.
+  scene_id: scene-13
+  visual_cue: 'Source-specific pictorial composition: som barn, som vuxen, jämställdhet. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_045
+  text_highlights:
+  - som barn
+  - som vuxen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0056-s002.wav
+  start_seconds: 455.375
+  end_seconds: 465.54534
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_045.png
+  render_caption: false
+- sentence_id: hb-c09-u0056-s003
+  sv: I Finland strävar man efter att fostra barn i jämställdhet till exempel inom småbarnspedagogiken
+    och i skolan.
+  ru: В Финляндии стараются воспитывать детей в духе гендерного равенства, например в системе дошкольного
+    воспитания и обучения и в школе.
+  scene_id: scene-13
+  visual_cue: 'Source-specific pictorial composition: barn, skolan, jämställdhet. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_046
+  text_highlights:
+  - skolan
+  - jämställdhet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0056-s003.wav
+  start_seconds: 467.333333
+  end_seconds: 477.155374
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_046.png
+  render_caption: false
+- sentence_id: hb-c09-u0056-s004
+  sv: Ett barns kön ska inte definiera hurdan hen får vara och vad hen kan göra.
+  ru: Пол ребёнка не должен определять, каким ему позволено быть и что он может делать.
+  scene_id: scene-13
+  visual_cue: 'Source-specific pictorial composition: Ett barns, vad hen kan göra. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_047
+  text_highlights:
+  - Ett barns
+  - vad hen kan göra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0056-s004.wav
+  start_seconds: 478.916667
+  end_seconds: 485.186054
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_047.png
+  render_caption: false
+- sentence_id: hb-c09-u0057-s001
+  sv: En jämställd barnuppfostran kräver att de vuxna ägnar uppmärksamhet åt sitt beteende och sina attityder.
+  ru: Воспитание детей на основе гендерного равенства требует от взрослых внимания к собственному поведению
+    и установкам.
+  scene_id: scene-14
+  visual_cue: 'Source-specific pictorial composition: de vuxna, uppmärksamhet, barnuppfostran. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_048
+  text_highlights:
+  - de vuxna
+  - uppmärksamhet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0057-s001.wav
+  start_seconds: 487.666667
+  end_seconds: 496.722449
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_048.png
+  render_caption: false
+- sentence_id: hb-c09-u0057-s002
+  sv: Vuxna styr ofta obemärkt barn att bete sig enligt könsstereotyper och könsnormer.
+  ru: Взрослые часто незаметно побуждают детей вести себя в соответствии с гендерными стереотипами и нормами.
+  scene_id: scene-14
+  visual_cue: 'Source-specific pictorial composition: Vuxna, barn, könsstereotyper. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_049
+  text_highlights:
+  - Vuxna
+  - könsstereotyper
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0057-s002.wav
+  start_seconds: 498.5
+  end_seconds: 505.465986
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_049.png
+  render_caption: false
+- sentence_id: hb-c09-u0057-s003
+  sv: De kanske ger en flicka en docka och en pojke en leksaksbil utan att de tänker på det.
+  ru: Они могут, не задумываясь, дать девочке куклу, а мальчику — игрушечную машинку.
+  scene_id: scene-14
+  visual_cue: Actual toy car, the source explicit example of a toy; does not prescribe which gender should
+    use it. The complete source photograph is shown with its source-identity caption; no sensitive personal
+    attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_050
+  text_highlights:
+  - en docka
+  - en leksaksbil
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0057-s003.wav
+  start_seconds: 507.25
+  end_seconds: 514.285646
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_050.png
+  render_caption: false
+- sentence_id: hb-c09-u0057-s004
+  sv: På så sätt lär sig barnen att tänka att vissa saker av naturen hör till kvinnor och andra till män.
+  ru: Так дети учатся думать, что некоторые вещи по природе свойственны женщинам, а другие — мужчинам.
+  scene_id: scene-14
+  visual_cue: 'Source-specific pictorial composition: barnen, vissa saker, kvinnor och andra till män.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_051
+  text_highlights:
+  - barnen
+  - vissa saker
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0057-s004.wav
+  start_seconds: 516.041667
+  end_seconds: 524.60983
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_051.png
+  render_caption: false
+- sentence_id: hb-c09-u0058-s001
+  sv: Barns tankesätt påverkas av om de vuxna delar in vissa lekar, leksaker och kläder som typiska för
+    flickor eller pojkar.
+  ru: На образ мышления детей влияет то, относят ли взрослые определённые игры, игрушки и одежду к типичным
+    для девочек или для мальчиков.
+  scene_id: scene-15
+  visual_cue: Visible museum doll, a physical toy illustrating the source discussion of assigning toys
+    by gender; does not prescribe a normative gender assignment. The complete source photograph is shown
+    with its source-identity caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_052
+  text_highlights:
+  - leksaker
+  - kläder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0058-s001.wav
+  start_seconds: 527.083333
+  end_seconds: 537.671633
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_052.png
+  render_caption: false
+- sentence_id: hb-c09-u0058-s002
+  sv: En sådan indelning styr barnen att tillägna sig de könsstereotyper och könsnormer som människorna
+    i samhället delar.
+  ru: Такое разделение побуждает детей усваивать гендерные стереотипы и нормы, которые разделяют люди
+    в обществе.
+  scene_id: scene-15
+  visual_cue: 'Source-specific pictorial composition: barnen, könsstereotyper, könsnormer. When the sentence
+    discusses stereotypes or norms, speech/document symbols denote social expectations being described,
+    not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_053
+  text_highlights:
+  - barnen
+  - könsstereotyper
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0058-s002.wav
+  start_seconds: 539.458333
+  end_seconds: 549.210714
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_053.png
+  render_caption: false
+- sentence_id: hb-c09-u0058-s003
+  sv: Det kan i sin tur påverka till exempel vilket yrke de börjar studera till i framtiden.
+  ru: Это, в свою очередь, может повлиять, например, на то, какой профессии они начнут обучаться в будущем.
+  scene_id: scene-15
+  visual_cue: 'Source-specific pictorial composition: de, studera, yrke. When the sentence discusses stereotypes
+    or norms, speech/document symbols denote social expectations being described, not innate truths or
+    endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_054
+  text_highlights:
+  - studera
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0058-s003.wav
+  start_seconds: 551.0
+  end_seconds: 558.244626
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_054.png
+  render_caption: false
+- sentence_id: hb-c09-u0059-s001
+  sv: Det är också skadligt för ett barns välbefinnande om hen upplever att hen är fel på något sätt.
+  ru: Ощущение, что с ним что-то не так, тоже вредит благополучию ребёнка.
+  scene_id: scene-16
+  visual_cue: 'Source-specific pictorial composition: ett barns, välbefinnande. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_055
+  text_highlights:
+  - ett barns
+  - skadligt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0059-s001.wav
+  start_seconds: 560.708333
+  end_seconds: 568.649558
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_055.png
+  render_caption: false
+- sentence_id: hb-c09-u0059-s002
+  sv: Vuxna kanske säger till en pojke att det inte är passande för honom att klä sig i en prinsessklänning.
+  ru: Взрослые могут сказать мальчику, что ему не подобает надевать платье принцессы.
+  scene_id: scene-16
+  visual_cue: 'Source-specific pictorial composition: en pojke, en prinsessklänning, inte är passande.
+    When the sentence discusses stereotypes or norms, speech/document symbols denote social expectations
+    being described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_056
+  text_highlights:
+  - en pojke
+  - en prinsessklänning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0059-s002.wav
+  start_seconds: 570.416667
+  end_seconds: 579.19381
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_056.png
+  render_caption: false
+- sentence_id: hb-c09-u0059-s003
+  sv: Nuförtiden strävar man i Finland till exempel inom småbarnspedagogiken efter att barnen fritt ska
+    få uttrycka sig och prova på olika roller.
+  ru: Сейчас в Финляндии, например в системе дошкольного воспитания и обучения, стремятся к тому, чтобы
+    дети могли свободно выражать себя и пробовать разные роли.
+  scene_id: scene-16
+  visual_cue: 'Source-specific pictorial composition: småbarnspedagogiken, barnen, olika roller. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_057
+  text_highlights:
+  - småbarnspedagogiken
+  - barnen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0059-s003.wav
+  start_seconds: 580.958333
+  end_seconds: 593.00949
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_057.png
+  render_caption: false
+- sentence_id: hb-c09-u0059-s004
+  sv: Barnen måste få uppleva att de får vara precis som de är och tycka om precis de saker de tycker
+    om.
+  ru: Дети должны чувствовать, что им можно быть именно такими, какие они есть, и любить именно то, что
+    им нравится.
+  scene_id: scene-16
+  visual_cue: 'Source-specific pictorial composition: Barnen, precis som de är. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_058
+  text_highlights:
+  - Barnen
+  - precis som de är
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0059-s004.wav
+  start_seconds: 595.791667
+  end_seconds: 604.22051
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_058.png
+  render_caption: false
+- sentence_id: hb-c09-u0060-s001
+  sv: Det är ganska enkelt för vuxna att märka om de erbjuder barn leksaker utifrån deras kön.
+  ru: Взрослым довольно легко заметить, предлагают ли они детям игрушки в зависимости от их пола.
+  scene_id: scene-17
+  visual_cue: 'Source-specific pictorial composition: vuxna, leksaker, barn. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_059
+  text_highlights:
+  - vuxna
+  - leksaker
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0060-s001.wav
+  start_seconds: 606.708333
+  end_seconds: 614.301259
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_059.png
+  render_caption: false
+- sentence_id: hb-c09-u0060-s002
+  sv: Det finns ändå också beteenden som det är svårare att lägga märke till.
+  ru: Однако есть и такое поведение, которое заметить труднее.
+  scene_id: scene-17
+  visual_cue: 'Source-specific pictorial composition: beteenden, svårare att lägga märke till. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_060
+  text_highlights:
+  - beteenden
+  - svårare att lägga märke till
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0060-s002.wav
+  start_seconds: 616.083333
+  end_seconds: 622.213401
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_060.png
+  render_caption: false
+- sentence_id: hb-c09-u0060-s003
+  sv: Vuxna kan till exempel oftare be flickor att hjälpa till med hushållssysslorna.
+  ru: Например, взрослые могут чаще просить девочек помогать с домашними делами.
+  scene_id: scene-17
+  visual_cue: Illustrative laundry objects and household work; does not identify any person as bearing
+    a gender-defined duty. The complete source photograph is shown with its source-identity caption; no
+    sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_061
+  text_highlights:
+  - flickor
+  - hushållssysslorna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0060-s003.wav
+  start_seconds: 624.0
+  end_seconds: 631.105306
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_061.png
+  render_caption: false
+- sentence_id: hb-c09-u0060-s004
+  sv: De kanske låter pojkar springa och skrika, men uppmanar flickor att lugna ner sig och bete sig behärskat.
+  ru: Они могут позволять мальчикам бегать и кричать, а девочек призывать успокоиться и вести себя сдержанно.
+  scene_id: scene-17
+  visual_cue: 'Source-specific pictorial composition: pojkar, skrika, flickor. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_062
+  text_highlights:
+  - pojkar
+  - skrika
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0060-s004.wav
+  start_seconds: 632.875
+  end_seconds: 641.652143
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_062.png
+  render_caption: false
+- sentence_id: hb-c09-u0061-s001
+  sv: När vuxna förväntar sig olika beteende av flickor och pojkar stärker de könsnormerna.
+  ru: Ожидая разного поведения от девочек и мальчиков, взрослые укрепляют гендерные нормы.
+  scene_id: scene-18
+  visual_cue: 'Source-specific pictorial composition: vuxna, flickor och pojkar, könsnormerna. When the
+    sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_063
+  text_highlights:
+  - vuxna
+  - flickor och pojkar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0061-s001.wav
+  start_seconds: 644.125
+  end_seconds: 652.135884
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_063.png
+  render_caption: false
+- sentence_id: hb-c09-u0061-s002
+  sv: Ofta lär sig flickorna ända från små att ta mer hänsyn till andra och ge andra mer utrymme.
+  ru: Девочки часто с самого раннего возраста учатся больше считаться с другими и давать другим больше
+    пространства.
+  scene_id: scene-18
+  visual_cue: 'Source-specific pictorial composition: flickorna, andra, utrymme. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_064
+  text_highlights:
+  - flickorna
+  - andra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0061-s002.wav
+  start_seconds: 653.916667
+  end_seconds: 661.648912
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_064.png
+  render_caption: false
+- sentence_id: hb-c09-u0061-s003
+  sv: Pojkar i sin tur lär sig att ta risker och vara självsäkra.
+  ru: Мальчики, в свою очередь, учатся рисковать и быть уверенными в себе.
+  scene_id: scene-18
+  visual_cue: 'Source-specific pictorial composition: Pojkar, självsäkra. When the sentence discusses
+    stereotypes or norms, speech/document symbols denote social expectations being described, not innate
+    truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady. Picture labels repeat
+    exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_065
+  text_highlights:
+  - Pojkar
+  - självsäkra
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0061-s003.wav
+  start_seconds: 663.416667
+  end_seconds: 669.059116
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_065.png
+  render_caption: false
+- sentence_id: hb-c09-u0061-s004
+  sv: Dessa beteendemönster som man lär sig i barndomen inverkar på jämställdheten mellan könen i årtionden
+    framöver.
+  ru: Эти модели поведения, усвоенные в детстве, влияют на равенство полов на протяжении последующих десятилетий.
+  scene_id: scene-18
+  visual_cue: 'Source-specific pictorial composition: barndomen, årtionden framöver, jämställdheten. When
+    the sentence discusses stereotypes or norms, speech/document symbols denote social expectations being
+    described, not innate truths or endorsed gender rules. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_066
+  text_highlights:
+  - barndomen
+  - årtionden framöver
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-kon/narration/hb-c09-u0061-s004.wav
+  start_seconds: 670.833333
+  end_seconds: 680.167755
+  display_segments: []
+  render_image: studio/media/hb-c09-kon/pictures/picture_066.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-kon/sources/music-bed.flac
+  background_image: studio/media/hb-c09-kon/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 5.088392857142857
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Skatudden helsinki - tove jansson parc - playground 2.jpg — Sinikka Halme · CC BY-SA 4.0
+    - Farm — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Skatudden_helsinki_-_tove_jansson_parc_-_playground_2.jpg
+    description: Tove Janssons park, fram till 2014 kallad på Skatuddens park, på Skatudden i Helsingfors.
+      Lekplatsen i den övre delen av parken, gränsande till Myntgatan, Rahapajankatu.
+    license: CC BY-SA 4.0

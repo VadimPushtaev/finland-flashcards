@@ -91,7 +91,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('section')
     parser.add_argument('--planned', action='store_true', help='Use measured still-render timeline before export')
-    parser.add_argument('--require-target', action='store_true', help='Fail below 50%; exceptions require documented review')
+    parser.add_argument('--require-target', action='store_true', help='Fail below 50%%; exceptions require documented review')
     args = parser.parse_args()
     report = build_report(args.section, args.planned)
     suffix = 'picture-coverage-planned.json' if args.planned else 'picture-coverage.json'

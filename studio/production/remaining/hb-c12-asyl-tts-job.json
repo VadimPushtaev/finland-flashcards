@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c12-asyl",
+  "stage": "tts",
+  "state": "studio/production/remaining/hb-c12-asyl-tts-state.json",
+  "log": "studio/production/remaining/hb-c12-asyl-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c12-asyl",
+    "--all",
+    "--output",
+    "studio/media/hb-c12-asyl/narration"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c12-asyl/narration/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c12-asyl/narration/metrics.json"
+  ]
+}

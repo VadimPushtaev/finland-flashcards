@@ -1,0 +1,2041 @@
+schema_version: 1
+section_id: hb-c09-familjeformer
+chapter_id: hb-c09
+title_sv: Olika familjeformer
+title_ru: Разные формы семьи
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-familjeformer.yaml
+example_only: false
+source_section_sha256: fe88683aadd7ccf6e7708a3acc45db86c51005b43935870e754918e180e4b482
+translation_file_sha256: c5f3217a02b856ace8b56896775a7a3bba87ee842430a7e7c04d7e4c9aa16a5b
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Laivateollisuus housing by Erik Bryggman.jpg by Kotivalo continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=4.70952380952381. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Almost Bliss by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 316.578 seconds; prepared lossless stereo bed 659.333 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Den vanligaste typen av barnfamilj i Finland är kärnfamiljen, det vill säga två föräldrar
+    och deras gemensamma barn.
+- id: scene-2
+  description: När man pratar om familjer tänker man ofta på barnfamiljer.
+- id: scene-3
+  description: En del par får inga barn, även om de skulle vilja.
+- id: scene-4
+  description: Man kan erbjuda ett barn eller en ung person ett hem också genom att bli familjehemsförälder.
+- id: scene-5
+  description: När det finns barn i en familj men bara en vuxen, pratar man om en familj med en förälder.
+- id: scene-6
+  description: I familjer med en förälder bor en förälder med barnen utan make eller maka.
+- id: scene-7
+  description: Det kan vara utmanande för en ensamförsörjare att kombinera barnomsorg och förvärvsarbete.
+- id: scene-8
+  description: I Finland är det vanligt att människor som skilt sig hittar en ny partner, flyttar ihop
+    och ofta också gifter sig på nytt.
+- id: scene-9
+  description: I Finland kallas familjer med personer som hör till en sexuell minoritet eller en könsminoritet
+    för regnbågsfamiljer.
+- id: scene-10
+  description: Regnbågsfamiljer får barn på olika sätt.
+- id: scene-11
+  description: I Finland har det länge arbetats för att sexuella minoriteter och regnbågsfamiljer ska
+    ha samma rättigheter som familjer som består av en man och en kvinna.
+- id: scene-12
+  description: Föräldrapartnerskap innebär att två personer beslutar sig för att bli föräldrar tillsammans
+    utan att vara i ett parförhållande.
+- id: scene-13
+  description: Ibland har föräldrapartnerna varit vänner redan innan de bestämmer sig för att bli föräldrar
+    tillsammans.
+- id: scene-14
+  description: Det är vanligt att till exempel studerande bor själva i små enrummare.
+- id: scene-15
+  description: Förutom unga bor också vuxna som inte har någon partner eller hemmaboende barn ensamma.
+- id: scene-16
+  description: Gifta makar av samma kön har rätt att adoptera ett barn och rätt till adoption inom familjen.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Den vanligaste typen av barnfamilj i Finland är kärnfamiljen,
+    det vill säga två föräldrar och deras gemensamma barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Av föräldrarna i barnfamiljerna är största delen gifta
+    med varandra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Andelen familjer där föräldrarna inte är gifta har ändå
+    ökat i jämn takt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Endast en mycket liten del av människorna i Finland lever
+    i familjer som består av fler än två generationer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Det innebär en familj där minst en far- eller morförälder
+    bor tillsammans med sina barn och barnbarn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: När man pratar om familjer tänker man ofta på barnfamiljer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Det är ändå vanligt att en familj består av bara två vuxna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Alla par vill inte ha barn, och många är nöjda med sitt
+    liv utan barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: En del par får inga barn, även om de skulle vilja.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: För dem finns det fertilitetsbehandlingar som ökar sannolikheten
+    att bli gravid och få barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Par kan också överväga att adoptera ett barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Ett adoptivbarn är biologiskt sett någon annans barn,
+    men genom adoption, det vill säga att personen blir att betrakta som barn till de som adopterar, får
+    hen nya föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland adopteras barn ofta från utlandet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Adoptionsprocessen är fastställd i lag.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Den börjar med en lagstadgad adoptionsrådgivning, där
+    familjens livssituation kartläggs.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan erbjuda ett barn eller en ung person ett hem också
+    genom att bli familjehemsförälder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: En familjehemsförälder öppnar sitt hem för ett barn som
+    det av någon orsak inte är tryggt för att bo hos sina föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet tas om hand av familjehemsföräldrarna tills vidare,
+    ibland tills hen blir myndig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: När det finns barn i en familj men bara en vuxen, pratar
+    man om en familj med en förälder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: En ensamförsörjare är i allmänhet skild, änka eller änkling.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland har ensamförsörjaren skaffat barn på egen hand,
+    det vill säga familjen har alltid bestått av bara en förälder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Kvinnor som bor ensamma kan i Finland få fertilitetsbehandling
+    med spermier utan make.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: I familjer med en förälder bor en förälder med barnen
+    utan make eller maka.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Föräldern kan då ha antingen ensam eller gemensam vårdnad
+    om barnet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Som ensamstående förälder har man själv ansvaret för fostran
+    av barnet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Om föräldrarna däremot har gemensam vårdnad (yhteishuoltaja)
+    kommer föräldrarna tillsammans överens om barnets angelägenheter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan vara utmanande för en ensamförsörjare att kombinera
+    barnomsorg och förvärvsarbete.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Den ekonomiska situationen kan vara tuff, och det kan
+    ibland vara psykiskt tungt att ensam ta hand om ett barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: Finska staten stöder ensamförsörjare, så att familjerna
+    med en förälder inte ska vara i en svagare ställning än andra.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Till exempel en del av FPA:s stöd innehåller ett ensamförsörjartillägg,
+    det vill säga stödet för familjer med en förälder är lite högre än för familjer med två föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland är det vanligt att människor som skilt sig hittar
+    en ny partner, flyttar ihop och ofta också gifter sig på nytt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Med bonusfamilj avses en familj där det finns barn från
+    den ena eller båda föräldrarnas tidigare förhållanden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: I en bonusfamilj kan det också finnas gemensamma barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: Ofta kan barnen i en bonusfamilj ha två hem.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Då bor barnen hos den andra föräldern en del av tiden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland kallas familjer med personer som hör till en
+    sexuell minoritet eller en könsminoritet för regnbågsfamiljer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_037
+  kind: foreground
+  description: 'A source-bound illustration of: Regnbågen är en symbol för sexuella minoriteter och könsminoriteter.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_038
+  kind: foreground
+  description: 'A source-bound illustration of: Det finns olika slags regnbågsfamiljer.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_039
+  kind: foreground
+  description: 'A source-bound illustration of: I en familj kan det finnas till exempel två mammor och
+    barn.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_040
+  kind: foreground
+  description: 'A source-bound illustration of: Regnbågsfamiljer får barn på olika sätt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_041
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland kan också lesbiska par få fertilitetsbehandlingar
+    med donerade spermier.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_042
+  kind: foreground
+  description: 'A source-bound illustration of: Den ena makan kan ha barn från ett tidigare förhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_043
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan också få barn med till exempel en vän eller ett
+    annat par så att fler än två vuxna deltar i barnets uppfostran.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_044
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland har det länge arbetats för att sexuella minoriteter
+    och regnbågsfamiljer ska ha samma rättigheter som familjer som består av en man och en kvinna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_045
+  kind: foreground
+  description: 'A source-bound illustration of: Människornas attityder har så småningom blivit mer accepterande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_046
+  kind: foreground
+  description: 'A source-bound illustration of: Den jämställda äktenskapslagen som trädde i kraft år 2017
+    har förbättrat rättigheterna för regnbågsfamiljer och de barn som lever i sådana inför lagen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_047
+  kind: foreground
+  description: 'A source-bound illustration of: Föräldrapartnerskap innebär att två personer beslutar
+    sig för att bli föräldrar tillsammans utan att vara i ett parförhållande.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_048
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet bor ofta turvist hos båda föräldrarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_049
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland har föräldrapartnerna varit vänner redan innan
+    de bestämmer sig för att bli föräldrar tillsammans.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_050
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland söker personer som bor ensamma och som vill ha
+    barn å andra sidan avsiktligt efter en annan person i samma situation.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_051
+  kind: foreground
+  description: 'A source-bound illustration of: Tanken är inte att hitta en romantisk partner, utan endast
+    att uppfostra ett barn tillsammans.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_052
+  kind: foreground
+  description: 'A source-bound illustration of: Föräldrapartnerskap är ännu ganska ovanligt, men en familjeform
+    som blivit lite vanligare på senare tid.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_053
+  kind: foreground
+  description: 'A source-bound illustration of: Det är vanligt att till exempel studerande bor själva
+    i små enrummare.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_054
+  kind: foreground
+  description: 'A source-bound illustration of: Förut var det vanligare att studerande bodde i gemensamma
+    bostäder, där de delade kök och badrum med andra boende.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_055
+  kind: foreground
+  description: 'A source-bound illustration of: En del väljer ändå att flytta ihop med kompisar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_056
+  kind: foreground
+  description: 'A source-bound illustration of: Att dela lägenhet kan till exempel göra det möjligt att
+    bo i ett bostadsområde där det skulle vara för dyrt att bo på egen hand.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_057
+  kind: foreground
+  description: 'A source-bound illustration of: Det ger också de boende en känsla av gemenskap.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_058
+  kind: foreground
+  description: 'A source-bound illustration of: Förutom unga bor också vuxna som inte har någon partner
+    eller hemmaboende barn ensamma.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_059
+  kind: foreground
+  description: 'A source-bound illustration of: I synnerhet äldre kvinnor bor ofta själva efter att deras
+    make dött.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_060
+  kind: foreground
+  description: 'A source-bound illustration of: Även om en person bor ensam, har hen i allmänhet närstående,
+    till exempel föräldrar, vuxna barn, andra släktingar eller viktiga vänner.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_061
+  kind: foreground
+  description: 'A source-bound illustration of: Att bo själv kan också vara förknippat med ensamhet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_062
+  kind: foreground
+  description: 'A source-bound illustration of: Gifta makar av samma kön har rätt att adoptera ett barn
+    och rätt till adoption inom familjen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_063
+  kind: foreground
+  description: 'A source-bound illustration of: Adoption inom familjen betyder att makan/maken adopterar
+    sin makas/makes barn och blir officiellt barnets andra förälder.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_064
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland kan ett barn ha högst två juridiska föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0028-s001
+  sv: Den vanligaste typen av barnfamilj i Finland är kärnfamiljen, det vill säga två föräldrar och deras
+    gemensamma barn.
+  ru: Самый распространённый тип семьи с детьми в Финляндии — нуклеарная семья, то есть двое родителей
+    и их общие дети.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based family-form composition: två föräldrar och deras gemensamma barn.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - två föräldrar och deras gemensamma barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0028-s001.wav
+  start_seconds: 3.25
+  end_seconds: 13.49
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0028-s002
+  sv: Av föräldrarna i barnfamiljerna är största delen gifta med varandra.
+  ru: Большинство родителей в семьях с детьми состоят в браке друг с другом.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based family-form composition: föräldrarna, gifta. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - föräldrarna
+  - gifta
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0028-s002.wav
+  start_seconds: 15.25
+  end_seconds: 21.798027
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0028-s003
+  sv: Andelen familjer där föräldrarna inte är gifta har ändå ökat i jämn takt.
+  ru: Однако доля семей, в которых родители не состоят в браке, неуклонно росла.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based family-form composition: föräldrarna, inte är gifta. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - föräldrarna
+  - inte är gifta
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0028-s003.wav
+  start_seconds: 23.583333
+  end_seconds: 29.992041
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0028-s004
+  sv: Endast en mycket liten del av människorna i Finland lever i familjer som består av fler än två generationer.
+  ru: Лишь очень небольшая часть людей в Финляндии живёт в семьях, состоящих более чем из двух поколений.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based family-form composition: fler än två generationer. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - fler än två generationer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0028-s004.wav
+  start_seconds: 31.75
+  end_seconds: 41.293401
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0028-s005
+  sv: Det innebär en familj där minst en far- eller morförälder bor tillsammans med sina barn och barnbarn.
+  ru: Это семья, в которой хотя бы одна бабушка или один дедушка со стороны отца или матери живёт вместе
+    со своими детьми и внуками.
+  scene_id: scene-1
+  visual_cue: 'Individual source-based family-form composition: far- eller morförälder, bor tillsammans.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - far- eller morförälder
+  - bor tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0028-s005.wav
+  start_seconds: 43.083333
+  end_seconds: 51.581837
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0029-s001
+  sv: När man pratar om familjer tänker man ofta på barnfamiljer.
+  ru: Когда говорят о семьях, часто имеют в виду семьи с детьми.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based family-form composition: barnfamiljer. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - barnfamiljer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0029-s001.wav
+  start_seconds: 54.041667
+  end_seconds: 59.614456
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0029-s002
+  sv: Det är ändå vanligt att en familj består av bara två vuxna.
+  ru: Однако нередко семья состоит всего из двух взрослых.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based family-form composition: bara två vuxna. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - bara två vuxna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0029-s002.wav
+  start_seconds: 61.375
+  end_seconds: 66.947789
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0029-s003
+  sv: Alla par vill inte ha barn, och många är nöjda med sitt liv utan barn.
+  ru: Не все пары хотят иметь детей, и многие довольны своей жизнью без детей.
+  scene_id: scene-2
+  visual_cue: 'Individual source-based family-form composition: Alla par, nöjda med sitt liv utan barn.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - Alla par
+  - nöjda med sitt liv utan barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0029-s003.wav
+  start_seconds: 68.708333
+  end_seconds: 74.838401
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s001
+  sv: En del par får inga barn, även om de skulle vilja.
+  ru: У некоторых пар детей не появляется, хотя они и хотели бы их иметь.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: En del par, även om de skulle vilja. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - En del par
+  - även om de skulle vilja
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s001.wav
+  start_seconds: 77.291667
+  end_seconds: 81.958878
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s002
+  sv: För dem finns det fertilitetsbehandlingar som ökar sannolikheten att bli gravid och få barn.
+  ru: Для них существуют методы лечения бесплодия, повышающие вероятность наступления беременности и рождения
+    ребёнка.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: fertilitetsbehandlingar, få barn. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - fertilitetsbehandlingar
+  - få barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s002.wav
+  start_seconds: 83.75
+  end_seconds: 91.621565
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s003
+  sv: Par kan också överväga att adoptera ett barn.
+  ru: Пары могут также подумать об усыновлении ребёнка.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: Par, adoptera ett barn. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - adoptera ett barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s003.wav
+  start_seconds: 93.375
+  end_seconds: 97.693912
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s004
+  sv: Ett adoptivbarn är biologiskt sett någon annans barn, men genom adoption, det vill säga att personen
+    blir att betrakta som barn till de som adopterar, får hen nya föräldrar.
+  ru: Усыновлённый ребёнок с биологической точки зрения является ребёнком других людей, но благодаря усыновлению,
+    то есть признанию его ребёнком усыновителей, у него появляются новые родители.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: Ett adoptivbarn, adoption, nya föräldrar.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - Ett adoptivbarn
+  - adoption
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s004.wav
+  start_seconds: 99.458333
+  end_seconds: 113.877925
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s005
+  sv: I Finland adopteras barn ofta från utlandet.
+  ru: В Финляндии часто усыновляют детей из-за границы.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: barn, utlandet. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - utlandet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s005.wav
+  start_seconds: 116.666667
+  end_seconds: 120.846259
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s006
+  sv: Adoptionsprocessen är fastställd i lag.
+  ru: Порядок усыновления установлен законом.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: Adoptionsprocessen, lag. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - Adoptionsprocessen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s006.wav
+  start_seconds: 122.625
+  end_seconds: 126.595612
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0030-s007
+  sv: Den börjar med en lagstadgad adoptionsrådgivning, där familjens livssituation kartläggs.
+  ru: Он начинается с предусмотренного законом консультирования по вопросам усыновления, в ходе которого
+    изучают жизненную ситуацию семьи.
+  scene_id: scene-3
+  visual_cue: 'Individual source-based family-form composition: adoptionsrådgivning, familjens livssituation.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - adoptionsrådgivning
+  - familjens livssituation
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0030-s007.wav
+  start_seconds: 128.375
+  end_seconds: 136.246565
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0031-s001
+  sv: Man kan erbjuda ett barn eller en ung person ett hem också genom att bli familjehemsförälder.
+  ru: Можно также дать дом ребёнку или молодому человеку, став приёмным родителем.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based family-form composition: familjehemsförälder, ett hem, ett barn
+    eller en ung person. Neutral schematic people depict only the source relationships; no real person
+    is assigned a sensitive personal or family status. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - familjehemsförälder
+  - ett hem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0031-s001.wav
+  start_seconds: 138.708333
+  end_seconds: 146.649558
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0031-s002
+  sv: En familjehemsförälder öppnar sitt hem för ett barn som det av någon orsak inte är tryggt för att
+    bo hos sina föräldrar.
+  ru: Приёмный родитель принимает в свой дом ребёнка, которому по какой-либо причине небезопасно жить
+    со своими родителями.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based family-form composition: En familjehemsförälder, sitt hem, tryggt.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - En familjehemsförälder
+  - sitt hem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0031-s002.wav
+  start_seconds: 148.416667
+  end_seconds: 158.726327
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0031-s003
+  sv: Barnet tas om hand av familjehemsföräldrarna tills vidare, ibland tills hen blir myndig.
+  ru: Приёмные родители заботятся о ребёнке в течение неопределённого срока, иногда до его совершеннолетия.
+  scene_id: scene-4
+  visual_cue: 'Individual source-based family-form composition: familjehemsföräldrarna, Barnet, tills
+    vidare. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - familjehemsföräldrarna
+  - Barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0031-s003.wav
+  start_seconds: 160.5
+  end_seconds: 168.441224
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0032-s001
+  sv: När det finns barn i en familj men bara en vuxen, pratar man om en familj med en förälder.
+  ru: Когда в семье есть дети, но только один взрослый, говорят о семье с одним родителем.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based family-form composition: bara en vuxen. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - bara en vuxen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0032-s001.wav
+  start_seconds: 170.916667
+  end_seconds: 178.997211
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0032-s002
+  sv: En ensamförsörjare är i allmänhet skild, änka eller änkling.
+  ru: Одинокий родитель обычно находится в разводе, является вдовой или вдовцом.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based family-form composition: En ensamförsörjare, skild, änka eller
+    änkling. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - En ensamförsörjare
+  - skild
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0032-s002.wav
+  start_seconds: 180.75
+  end_seconds: 186.392449
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0032-s003
+  sv: Ibland har ensamförsörjaren skaffat barn på egen hand, det vill säga familjen har alltid bestått
+    av bara en förälder.
+  ru: Иногда одинокий родитель заводит ребёнка самостоятельно, то есть в семье всегда был только один
+    родитель.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based family-form composition: bara en förälder. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - bara en förälder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0032-s003.wav
+  start_seconds: 188.166667
+  end_seconds: 198.406667
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0032-s004
+  sv: Kvinnor som bor ensamma kan i Finland få fertilitetsbehandling med spermier utan make.
+  ru: В Финляндии женщины, живущие одни, могут пройти лечение бесплодия с использованием спермы, не имея
+    супруга.
+  scene_id: scene-5
+  visual_cue: 'Individual source-based family-form composition: Kvinnor, fertilitetsbehandling, utan make.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - Kvinnor
+  - fertilitetsbehandling
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0032-s004.wav
+  start_seconds: 200.166667
+  end_seconds: 207.620272
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0033-s001
+  sv: I familjer med en förälder bor en förälder med barnen utan make eller maka.
+  ru: В семьях с одним родителем родитель живёт с детьми без мужа или жены.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based family-form composition: en förälder med barnen, bor. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - en förälder med barnen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0033-s001.wav
+  start_seconds: 210.083333
+  end_seconds: 216.492041
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0033-s002
+  sv: Föräldern kan då ha antingen ensam eller gemensam vårdnad om barnet.
+  ru: При этом родитель может осуществлять как единоличную, так и совместную опеку над ребёнком.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based family-form composition: Föräldern, ensam eller gemensam vårdnad,
+    barnet. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - Föräldern
+  - ensam eller gemensam vårdnad
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0033-s002.wav
+  start_seconds: 218.25
+  end_seconds: 224.310408
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0033-s003
+  sv: Som ensamstående förälder har man själv ansvaret för fostran av barnet.
+  ru: Одинокий родитель самостоятельно отвечает за воспитание ребёнка.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based family-form composition: ensamstående förälder, fostran av barnet.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - ensamstående förälder
+  - fostran av barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0033-s003.wav
+  start_seconds: 226.083333
+  end_seconds: 232.91
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0033-s004
+  sv: Om föräldrarna däremot har gemensam vårdnad (yhteishuoltaja) kommer föräldrarna tillsammans överens
+    om barnets angelägenheter.
+  ru: Если же родители осуществляют совместную опеку (yhteishuoltaja), они вместе договариваются о делах
+    ребёнка.
+  scene_id: scene-6
+  visual_cue: 'Individual source-based family-form composition: föräldrarna, tillsammans överens, barnets
+    angelägenheter. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - föräldrarna
+  - tillsammans överens
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0033-s004.wav
+  start_seconds: 234.666667
+  end_seconds: 245.951565
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0034-s001
+  sv: Det kan vara utmanande för en ensamförsörjare att kombinera barnomsorg och förvärvsarbete.
+  ru: Одинокому родителю бывает трудно совмещать уход за ребёнком с оплачиваемой работой.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based family-form composition: ensamförsörjare, barnomsorg, förvärvsarbete.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - ensamförsörjare
+  - barnomsorg
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0034-s001.wav
+  start_seconds: 248.416667
+  end_seconds: 256.288231
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0034-s002
+  sv: Den ekonomiska situationen kan vara tuff, och det kan ibland vara psykiskt tungt att ensam ta hand
+    om ett barn.
+  ru: Материальное положение может быть трудным, а заботиться о ребёнке в одиночку иногда бывает психологически
+    тяжело.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based family-form composition: ekonomiska situationen, ensam ta hand
+    om ett barn. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - ekonomiska situationen
+  - ensam ta hand om ett barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0034-s002.wav
+  start_seconds: 258.041667
+  end_seconds: 267.585068
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0034-s003
+  sv: Finska staten stöder ensamförsörjare, så att familjerna med en förälder inte ska vara i en svagare
+    ställning än andra.
+  ru: Финское государство поддерживает одиноких родителей, чтобы семьи с одним родителем не оказывались
+    в менее благоприятном положении, чем другие.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based family-form composition: Finska staten, ensamförsörjare. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - Finska staten
+  - ensamförsörjare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0034-s003.wav
+  start_seconds: 269.375
+  end_seconds: 280.032959
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_029.png
+  render_caption: false
+- sentence_id: hb-c09-u0034-s004
+  sv: Till exempel en del av FPA:s stöd innehåller ett ensamförsörjartillägg, det vill säga stödet för
+    familjer med en förälder är lite högre än för familjer med två föräldrar.
+  ru: Например, некоторые пособия Ведомства социального обеспечения (FPA) включают надбавку для одинокого
+    родителя, то есть размер пособия для семей с одним родителем немного выше, чем для семей с двумя родителями.
+  scene_id: scene-7
+  visual_cue: 'Individual source-based family-form composition: FPA, ensamförsörjartillägg, familjer med
+    en förälder. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - ensamförsörjartillägg
+  - familjer med en förälder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0034-s004.wav
+  start_seconds: 281.791667
+  end_seconds: 297.395476
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0035-s001
+  sv: I Finland är det vanligt att människor som skilt sig hittar en ny partner, flyttar ihop och ofta
+    också gifter sig på nytt.
+  ru: В Финляндии люди после развода часто находят нового партнёра, съезжаются и нередко снова вступают
+    в брак.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based family-form composition: skilt sig, en ny partner, gifter sig på
+    nytt. Neutral schematic people depict only the source relationships; no real person is assigned a
+    sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights:
+  - skilt sig
+  - en ny partner
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0035-s001.wav
+  start_seconds: 300.166667
+  end_seconds: 310.685306
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0035-s002
+  sv: Med bonusfamilj avses en familj där det finns barn från den ena eller båda föräldrarnas tidigare
+    förhållanden.
+  ru: Под смешанной семьёй (bonusfamilj) понимается семья, в которой есть дети от предыдущих отношений
+    одного или обоих родителей.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based family-form composition: bonusfamilj, tidigare förhållanden. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - bonusfamilj
+  - tidigare förhållanden
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0035-s002.wav
+  start_seconds: 312.458333
+  end_seconds: 322.141054
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0035-s003
+  sv: I en bonusfamilj kan det också finnas gemensamma barn.
+  ru: В смешанной семье могут быть и общие дети.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based family-form composition: bonusfamilj, gemensamma barn. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - bonusfamilj
+  - gemensamma barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0035-s003.wav
+  start_seconds: 323.916667
+  end_seconds: 328.792857
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0035-s004
+  sv: Ofta kan barnen i en bonusfamilj ha två hem.
+  ru: У детей в смешанной семье нередко может быть два дома.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based family-form composition: barnen, två hem, bonusfamilj. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - barnen
+  - två hem
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0035-s004.wav
+  start_seconds: 330.583333
+  end_seconds: 334.553946
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0035-s005
+  sv: Då bor barnen hos den andra föräldern en del av tiden.
+  ru: В таком случае часть времени дети живут у другого родителя.
+  scene_id: scene-8
+  visual_cue: 'Individual source-based family-form composition: barnen, den andra föräldern, en del av
+    tiden. Neutral schematic people depict only the source relationships; no real person is assigned a
+    sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - barnen
+  - den andra föräldern
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0035-s005.wav
+  start_seconds: 336.333333
+  end_seconds: 341.139864
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0036-s001
+  sv: I Finland kallas familjer med personer som hör till en sexuell minoritet eller en könsminoritet
+    för regnbågsfamiljer.
+  ru: В Финляндии семьи, в которых есть люди, принадлежащие к сексуальному или гендерному меньшинству,
+    называют радужными семьями.
+  scene_id: scene-9
+  visual_cue: 'Individual source-based family-form composition: regnbågsfamiljer. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - regnbågsfamiljer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0036-s001.wav
+  start_seconds: 343.625
+  end_seconds: 353.79534
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_036.png
+  render_caption: false
+- sentence_id: hb-c09-u0036-s002
+  sv: Regnbågen är en symbol för sexuella minoriteter och könsminoriteter.
+  ru: Радуга — символ сексуальных и гендерных меньшинств.
+  scene_id: scene-9
+  visual_cue: 'Individual source-based family-form composition: Regnbågen. Neutral schematic people depict
+    only the source relationships; no real person is assigned a sensitive personal or family status. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_037
+  text_highlights:
+  - Regnbågen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0036-s002.wav
+  start_seconds: 355.583333
+  end_seconds: 361.783061
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_037.png
+  render_caption: false
+- sentence_id: hb-c09-u0036-s003
+  sv: Det finns olika slags regnbågsfamiljer.
+  ru: Радужные семьи бывают разными.
+  scene_id: scene-9
+  visual_cue: 'Individual source-based family-form composition: olika slags regnbågsfamiljer. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_038
+  text_highlights:
+  - olika slags regnbågsfamiljer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0036-s003.wav
+  start_seconds: 363.541667
+  end_seconds: 367.16398
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_038.png
+  render_caption: false
+- sentence_id: hb-c09-u0036-s004
+  sv: I en familj kan det finnas till exempel två mammor och barn.
+  ru: Например, в семье могут быть две мамы и дети.
+  scene_id: scene-9
+  visual_cue: 'Individual source-based family-form composition: två mammor, barn. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    The two mothers stand separately; the picture does not require a romantic relationship. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.'
+  asset_ids:
+  - episode_background
+  - picture_039
+  text_highlights:
+  - två mammor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0036-s004.wav
+  start_seconds: 368.916667
+  end_seconds: 374.210816
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_039.png
+  render_caption: false
+- sentence_id: hb-c09-u0037-s001
+  sv: Regnbågsfamiljer får barn på olika sätt.
+  ru: Дети в радужных семьях появляются разными путями.
+  scene_id: scene-10
+  visual_cue: 'Individual source-based family-form composition: Regnbågsfamiljer, barn på olika sätt.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_040
+  text_highlights:
+  - Regnbågsfamiljer
+  - barn på olika sätt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0037-s001.wav
+  start_seconds: 376.666667
+  end_seconds: 380.497959
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_040.png
+  render_caption: false
+- sentence_id: hb-c09-u0037-s002
+  sv: I Finland kan också lesbiska par få fertilitetsbehandlingar med donerade spermier.
+  ru: В Финляндии лесбийские пары также могут пройти лечение бесплодия с использованием донорской спермы.
+  scene_id: scene-10
+  visual_cue: 'Individual source-based family-form composition: lesbiska par, fertilitetsbehandlingar.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_041
+  text_highlights:
+  - lesbiska par
+  - fertilitetsbehandlingar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0037-s002.wav
+  start_seconds: 382.25
+  end_seconds: 389.564286
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_041.png
+  render_caption: false
+- sentence_id: hb-c09-u0037-s003
+  sv: Den ena makan kan ha barn från ett tidigare förhållande.
+  ru: У одной из супруг могут быть дети от предыдущих отношений.
+  scene_id: scene-10
+  visual_cue: 'Individual source-based family-form composition: Den ena makan, barn från ett tidigare
+    förhållande. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_042
+  text_highlights:
+  - Den ena makan
+  - barn från ett tidigare förhållande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0037-s003.wav
+  start_seconds: 391.333333
+  end_seconds: 396.209524
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_042.png
+  render_caption: false
+- sentence_id: hb-c09-u0037-s004
+  sv: Man kan också få barn med till exempel en vän eller ett annat par så att fler än två vuxna deltar
+    i barnets uppfostran.
+  ru: Можно также завести ребёнка, например, вместе с другом или другой парой, так что в воспитании ребёнка
+    будут участвовать больше двух взрослых.
+  scene_id: scene-10
+  visual_cue: 'Individual source-based family-form composition: en vän eller ett annat par, barnets uppfostran,
+    fler än två vuxna. Neutral schematic people depict only the source relationships; no real person is
+    assigned a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_043
+  text_highlights:
+  - en vän eller ett annat par
+  - barnets uppfostran
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0037-s004.wav
+  start_seconds: 398.0
+  end_seconds: 408.17034
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_043.png
+  render_caption: false
+- sentence_id: hb-c09-u0038-s001
+  sv: I Finland har det länge arbetats för att sexuella minoriteter och regnbågsfamiljer ska ha samma
+    rättigheter som familjer som består av en man och en kvinna.
+  ru: В Финляндии уже давно добиваются того, чтобы сексуальные меньшинства и радужные семьи имели те же
+    права, что и семьи, состоящие из мужчины и женщины.
+  scene_id: scene-11
+  visual_cue: 'Individual source-based family-form composition: regnbågsfamiljer, samma rättigheter, en
+    man och en kvinna. Neutral schematic people depict only the source relationships; no real person is
+    assigned a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture
+    labels repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_044
+  text_highlights:
+  - regnbågsfamiljer
+  - samma rättigheter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0038-s001.wav
+  start_seconds: 410.625
+  end_seconds: 423.930034
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_044.png
+  render_caption: false
+- sentence_id: hb-c09-u0038-s002
+  sv: Människornas attityder har så småningom blivit mer accepterande.
+  ru: Люди постепенно стали относиться к этому с большим принятием.
+  scene_id: scene-11
+  visual_cue: 'Individual source-based family-form composition: attityder, mer accepterande. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_045
+  text_highlights:
+  - attityder
+  - mer accepterande
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0038-s002.wav
+  start_seconds: 426.708333
+  end_seconds: 432.490102
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_045.png
+  render_caption: false
+- sentence_id: hb-c09-u0038-s003
+  sv: Den jämställda äktenskapslagen som trädde i kraft år 2017 har förbättrat rättigheterna för regnbågsfamiljer
+    och de barn som lever i sådana inför lagen.
+  ru: Закон о равноправном браке, вступивший в силу в 2017 году, улучшил правовое положение радужных семей
+    и живущих в них детей.
+  scene_id: scene-11
+  visual_cue: 'Individual source-based family-form composition: 2017, rättigheterna, regnbågsfamiljer.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_046
+  text_highlights:
+  - rättigheterna
+  - regnbågsfamiljer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0038-s003.wav
+  start_seconds: 434.25
+  end_seconds: 448.530272
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_046.png
+  render_caption: false
+- sentence_id: hb-c09-u0039-s001
+  sv: Föräldrapartnerskap innebär att två personer beslutar sig för att bli föräldrar tillsammans utan
+    att vara i ett parförhållande.
+  ru: Совместное родительство без отношений в паре (föräldrapartnerskap) означает, что два человека решают
+    вместе стать родителями, не состоя в отношениях друг с другом.
+  scene_id: scene-12
+  visual_cue: 'Individual source-based family-form composition: två personer, föräldrar tillsammans. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_047
+  text_highlights:
+  - två personer
+  - föräldrar tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0039-s001.wav
+  start_seconds: 451.0
+  end_seconds: 462.006259
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_047.png
+  render_caption: false
+- sentence_id: hb-c09-u0039-s002
+  sv: Barnet bor ofta turvist hos båda föräldrarna.
+  ru: Ребёнок часто живёт поочерёдно у обоих родителей.
+  scene_id: scene-12
+  visual_cue: 'Individual source-based family-form composition: Barnet, båda föräldrarna, turvist. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_048
+  text_highlights:
+  - Barnet
+  - båda föräldrarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0039-s002.wav
+  start_seconds: 464.791667
+  end_seconds: 469.040918
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_048.png
+  render_caption: false
+- sentence_id: hb-c09-u0040-s001
+  sv: Ibland har föräldrapartnerna varit vänner redan innan de bestämmer sig för att bli föräldrar tillsammans.
+  ru: Иногда участники такого родительского партнёрства дружат ещё до того, как решают вместе стать родителями.
+  scene_id: scene-13
+  visual_cue: 'Individual source-based family-form composition: vänner, föräldrar tillsammans. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_049
+  text_highlights:
+  - vänner
+  - föräldrar tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0040-s001.wav
+  start_seconds: 471.5
+  end_seconds: 480.695102
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_049.png
+  render_caption: false
+- sentence_id: hb-c09-u0040-s002
+  sv: Ibland söker personer som bor ensamma och som vill ha barn å andra sidan avsiktligt efter en annan
+    person i samma situation.
+  ru: А иногда люди, живущие одни и желающие иметь детей, целенаправленно ищут другого человека в такой
+    же ситуации.
+  scene_id: scene-13
+  visual_cue: 'Individual source-based family-form composition: personer som bor ensamma, en annan person,
+    vill ha barn. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_050
+  text_highlights:
+  - personer som bor ensamma
+  - en annan person
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0040-s002.wav
+  start_seconds: 482.458333
+  end_seconds: 493.185952
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_050.png
+  render_caption: false
+- sentence_id: hb-c09-u0040-s003
+  sv: Tanken är inte att hitta en romantisk partner, utan endast att uppfostra ett barn tillsammans.
+  ru: Цель не в том, чтобы найти романтического партнёра, а только в том, чтобы вместе воспитывать ребёнка.
+  scene_id: scene-13
+  visual_cue: 'Individual source-based family-form composition: endast, uppfostra ett barn tillsammans.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_051
+  text_highlights:
+  - endast
+  - uppfostra ett barn tillsammans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0040-s003.wav
+  start_seconds: 494.958333
+  end_seconds: 503.247857
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_051.png
+  render_caption: false
+- sentence_id: hb-c09-u0040-s004
+  sv: Föräldrapartnerskap är ännu ganska ovanligt, men en familjeform som blivit lite vanligare på senare
+    tid.
+  ru: Совместное родительство без отношений в паре пока встречается довольно редко, но в последнее время
+    эта форма семьи стала немного более распространённой.
+  scene_id: scene-13
+  visual_cue: 'Individual source-based family-form composition: Föräldrapartnerskap, en familjeform. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_052
+  text_highlights:
+  - Föräldrapartnerskap
+  - en familjeform
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0040-s004.wav
+  start_seconds: 505.0
+  end_seconds: 514.264762
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_052.png
+  render_caption: false
+- sentence_id: hb-c09-u0041-s001
+  sv: Det är vanligt att till exempel studerande bor själva i små enrummare.
+  ru: Например, студенты часто живут одни в небольших однокомнатных квартирах.
+  scene_id: scene-14
+  visual_cue: 'Individual source-based family-form composition: studerande, små enrummare. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_053
+  text_highlights:
+  - studerande
+  - små enrummare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0041-s001.wav
+  start_seconds: 516.75
+  end_seconds: 523.019388
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_053.png
+  render_caption: false
+- sentence_id: hb-c09-u0041-s002
+  sv: Förut var det vanligare att studerande bodde i gemensamma bostäder, där de delade kök och badrum
+    med andra boende.
+  ru: Раньше студенты чаще жили в общем жилье, где делили кухню и ванную комнату с другими жильцами.
+  scene_id: scene-14
+  visual_cue: 'Individual source-based family-form composition: gemensamma bostäder, kök, badrum. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_054
+  text_highlights:
+  - gemensamma bostäder
+  - badrum
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0041-s002.wav
+  start_seconds: 524.791667
+  end_seconds: 534.544048
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_054.png
+  render_caption: false
+- sentence_id: hb-c09-u0041-s003
+  sv: En del väljer ändå att flytta ihop med kompisar.
+  ru: Однако некоторые всё же решают съехаться с друзьями.
+  scene_id: scene-14
+  visual_cue: 'Individual source-based family-form composition: kompisar, flytta ihop. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_055
+  text_highlights:
+  - kompisar
+  - flytta ihop
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0041-s003.wav
+  start_seconds: 536.333333
+  end_seconds: 540.721905
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_055.png
+  render_caption: false
+- sentence_id: hb-c09-u0041-s004
+  sv: Att dela lägenhet kan till exempel göra det möjligt att bo i ett bostadsområde där det skulle vara
+    för dyrt att bo på egen hand.
+  ru: Например, совместное проживание в квартире может позволить жить в районе, где жить одному было бы
+    слишком дорого.
+  scene_id: scene-14
+  visual_cue: Actual apartment building in Oulu as housing context; no claim about its prices, residents
+    or shared apartment arrangements. The complete source photograph is shown with its source-identity
+    caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_056
+  text_highlights:
+  - Att dela lägenhet
+  - för dyrt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0041-s004.wav
+  start_seconds: 542.5
+  end_seconds: 552.87932
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_056.png
+  render_caption: false
+- sentence_id: hb-c09-u0041-s005
+  sv: Det ger också de boende en känsla av gemenskap.
+  ru: Это также даёт жильцам чувство общности.
+  scene_id: scene-14
+  visual_cue: 'Individual source-based family-form composition: de boende, gemenskap. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_057
+  text_highlights:
+  - de boende
+  - gemenskap
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0041-s005.wav
+  start_seconds: 554.666667
+  end_seconds: 558.985578
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_057.png
+  render_caption: false
+- sentence_id: hb-c09-u0042-s001
+  sv: Förutom unga bor också vuxna som inte har någon partner eller hemmaboende barn ensamma.
+  ru: Кроме молодёжи, одни живут и взрослые, у которых нет ни партнёра, ни живущих с ними детей.
+  scene_id: scene-15
+  visual_cue: 'Individual source-based family-form composition: vuxna, ensamma. Neutral schematic people
+    depict only the source relationships; no real person is assigned a sensitive personal or family status.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_058
+  text_highlights:
+  - vuxna
+  - ensamma
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0042-s001.wav
+  start_seconds: 561.458333
+  end_seconds: 568.981599
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_058.png
+  render_caption: false
+- sentence_id: hb-c09-u0042-s002
+  sv: I synnerhet äldre kvinnor bor ofta själva efter att deras make dött.
+  ru: Особенно часто одни живут пожилые женщины после смерти мужа.
+  scene_id: scene-15
+  visual_cue: 'Individual source-based family-form composition: äldre kvinnor, bor ofta själva. Neutral
+    schematic people depict only the source relationships; no real person is assigned a sensitive personal
+    or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_059
+  text_highlights:
+  - äldre kvinnor
+  - bor ofta själva
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0042-s002.wav
+  start_seconds: 570.75
+  end_seconds: 576.880068
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_059.png
+  render_caption: false
+- sentence_id: hb-c09-u0042-s003
+  sv: Även om en person bor ensam, har hen i allmänhet närstående, till exempel föräldrar, vuxna barn,
+    andra släktingar eller viktiga vänner.
+  ru: Даже если человек живёт один, у него обычно есть близкие, например родители, взрослые дети, другие
+    родственники или дорогие ему друзья.
+  scene_id: scene-15
+  visual_cue: 'Individual source-based family-form composition: bor ensam, andra släktingar, viktiga vänner.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_060
+  text_highlights:
+  - bor ensam
+  - andra släktingar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0042-s003.wav
+  start_seconds: 578.666667
+  end_seconds: 590.439184
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_060.png
+  render_caption: false
+- sentence_id: hb-c09-u0042-s004
+  sv: Att bo själv kan också vara förknippat med ensamhet.
+  ru: Жизнь в одиночку может также быть связана с чувством одиночества.
+  scene_id: scene-15
+  visual_cue: 'Individual source-based family-form composition: bo själv, ensamhet. Neutral schematic
+    people depict only the source relationships; no real person is assigned a sensitive personal or family
+    status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_061
+  text_highlights:
+  - bo själv
+  - ensamhet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0042-s004.wav
+  start_seconds: 592.208333
+  end_seconds: 597.293503
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_061.png
+  render_caption: false
+- sentence_id: hb-c09-u0043-s001
+  sv: Gifta makar av samma kön har rätt att adoptera ett barn och rätt till adoption inom familjen.
+  ru: Супруги одного пола имеют право усыновить ребёнка, а также право на внутрисемейное усыновление.
+  scene_id: scene-16
+  visual_cue: 'Individual source-based family-form composition: Gifta makar av samma kön, adoptera ett
+    barn. Neutral schematic people depict only the source relationships; no real person is assigned a
+    sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_062
+  text_highlights:
+  - Gifta makar av samma kön
+  - adoptera ett barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0043-s001.wav
+  start_seconds: 599.75
+  end_seconds: 608.039524
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_062.png
+  render_caption: false
+- sentence_id: hb-c09-u0043-s002
+  sv: Adoption inom familjen betyder att makan/maken adopterar sin makas/makes barn och blir officiellt
+    barnets andra förälder.
+  ru: Внутрисемейное усыновление означает, что один из супругов усыновляет ребёнка другого и официально
+    становится вторым родителем ребёнка.
+  scene_id: scene-16
+  visual_cue: 'Individual source-based family-form composition: makan/maken, sin makas/makes barn, barnets
+    andra förälder. Neutral schematic people depict only the source relationships; no real person is assigned
+    a sensitive personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_063
+  text_highlights:
+  - makan/maken
+  - sin makas/makes barn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0043-s002.wav
+  start_seconds: 609.791667
+  end_seconds: 620.101327
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_063.png
+  render_caption: false
+- sentence_id: hb-c09-u0043-s003
+  sv: I Finland kan ett barn ha högst två juridiska föräldrar.
+  ru: В Финляндии у ребёнка может быть не более двух юридически признанных родителей.
+  scene_id: scene-16
+  visual_cue: 'Individual source-based family-form composition: ett barn, högst två juridiska föräldrar.
+    Neutral schematic people depict only the source relationships; no real person is assigned a sensitive
+    personal or family status. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact
+    Swedish source substrings; no separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_064
+  text_highlights:
+  - ett barn
+  - högst två juridiska föräldrar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-familjeformer/narration/hb-c09-u0043-s003.wav
+  start_seconds: 621.875
+  end_seconds: 627.09949
+  display_segments: []
+  render_image: studio/media/hb-c09-familjeformer/pictures/picture_064.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-familjeformer/sources/music-bed.flac
+  background_image: studio/media/hb-c09-familjeformer/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 4.70952380952381
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Laivateollisuus housing by Erik Bryggman.jpg — Kotivalo · CC BY-SA 3.0
+    - Almost Bliss — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Laivateollisuus_housing_by_Erik_Bryggman.jpg
+    description: Wooden houses designed by Erik Bryggman, Pansio, Turku, Finland, August 2013.
+    license: CC BY-SA 3.0

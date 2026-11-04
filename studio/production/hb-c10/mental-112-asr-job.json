@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c10-psykisk",
+  "stage": "asr-retake-112",
+  "state": "studio/production/hb-c10/mental-112-asr-state.json",
+  "log": "studio/production/hb-c10/logs/mental-112-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c10-psykisk/narration-retakes/emergency112",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c10-psykisk/narration-retakes/emergency112/asr.json"
+  ]
+}

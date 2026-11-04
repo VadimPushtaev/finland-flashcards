@@ -71,6 +71,7 @@ def audit(chapter_id, require_pictures=False):
         scripts.require(digest(video) == report['sha256'], 'Changed export: ' + section)
         check = json.loads((episode / 'render-check.json').read_text())
         scripts.require(check['full_decode'] == 'passed' and check['decoded_video_frames'] == report['frames'] and check['source_sentences'] == len(script['sentences']), 'Missing full decode evidence: ' + section)
+        scripts.require(check.get('display_segments_checked', 0) == sum(len(row.get('display_segments', [])) for row in script['sentences']), 'Missing display segment verification: ' + section)
         scripts.require(check['sha256'] == report['sha256'] and check['output'] == report['output'],
                         'Decode evidence refers to a different export: ' + section)
         if entry['production_status'] != 'complete':
@@ -105,6 +106,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('chapter_id')
     parser.add_argument('--require-pictures', action='store_true',
-                        help='Require current coverage reports meeting the 50% picture target')
+                        help='Require current coverage reports meeting the 50%% picture target')
     args = parser.parse_args()
     print(json.dumps(audit(args.chapter_id, args.require_pictures), ensure_ascii=False, indent=2))

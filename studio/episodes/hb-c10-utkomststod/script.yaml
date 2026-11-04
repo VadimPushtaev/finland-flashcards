@@ -1,0 +1,402 @@
+schema_version: 1
+section_id: hb-c10-utkomststod
+chapter_id: hb-c10
+title_sv: Utkomststöd
+title_ru: Социальное пособие
+source_path: data/homebrew/sv/chapters/10_halsa_social_trygghet_och_aldrande.yaml
+translation_path: data/homebrew/ru/sections/hb-c10-utkomststod.yaml
+example_only: false
+source_section_sha256: 114dc035bea46396ee4dc4f3ed37c5934ce6ba285e416ba10f125700ba9ce9d7
+translation_file_sha256: dd22e3e42378bb546020fc392e27e516eabee6a9ad4d1f61372681a9595d58f9
+episode_decisions:
+- id: opening
+  decision: Unspoken exact Swedish/Russian heading, 3 seconds; no added narration.
+  status: proposed
+  resolve_during: script
+- id: source
+  decision: Read every exact source sentence once in stored order with reviewed Russian display.
+  status: proposed
+  resolve_during: script
+- id: visuals
+  decision: 'Ten distinct relevant foreground pictures: licensed groceries and Finnish housing photographs
+    plus eight individually composed pictorial source-specific diagrams for applications/calculations/temporary
+    support. Fixed left area; fixed bilingual panel right. No invented sums,dates or legal conditions.'
+  status: proposed
+  resolve_during: script
+- id: voice
+  decision: Local Supertonic 3 F1, Swedish, 32 steps, speed .95, NumPy seed42, PCM16 44100Hz mono; listening
+    pending complete-video review.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Text appears .25s before full measured speech, pause1.5s ordinarily and2.2s at topic ends;
+    longer sentence gets2.5s.
+  status: proposed
+  resolve_during: script
+- id: background
+  decision: Distinct source-identified Kela office photograph, ocean palette, darkened42%,blur2.5px; continuous
+    global140s cyclic pan/zoom, no reset. Final metadata resolved during assets.
+  status: proposed
+  resolve_during: assets
+- id: music
+  decision: Distinct reserved Organic Meditations One (Kevin MacLeod), USUAN1100760, CC BY4.0; +2dB bed
+    adjustment with speech ducking and fades, crossfade loop only if needed.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: 15 seconds for each readable credit card and full attribution sidecar.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: necessities
+  description: Behov, utgifter och stadigvarande boende
+- id: calculation
+  description: Inkomster och andra bidrag i beräkningen
+- id: temporary
+  description: Tillfällig hjälp när inkomster inte räcker
+- id: additional
+  description: Välfärdsområdets kompletterande stöd
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Kela office photograph; decorative social-assistance setting.
+  fallback: Another distinct licensed accurately identified Finnish social-services building.
+- id: music_bed
+  kind: music
+  description: Organic Meditations One by Kevin MacLeod, distinct reserved source USUAN1100760.
+  fallback: Another distinct calm source-verified licensed instrumental track.
+- id: narration
+  kind: narration
+  description: One exact local Swedish F1 clip per source sentence.
+  fallback: Diagnostic-led targeted meaning-preserving retake, retain original metrics.
+- id: picture-01
+  kind: foreground
+  description: Family and insufficient means lead to an application to FPA; no eligibility guarantee.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-02
+  kind: foreground
+  description: Food photograph illustrates one of the necessary expense categories. The photograph is
+    illustrative, not evidence of all expenses or benefit eligibility.
+  fallback: Retain original source-based diagram if this exact licensed photograph cannot be restored.
+- id: picture-03
+  kind: foreground
+  description: Accurately identified Helsinki residential building illustrates living in Finland; it is
+    not a legal definition of permanent residence.
+  fallback: Retain original source-based diagram if this exact licensed photograph cannot be restored.
+- id: picture-04
+  kind: foreground
+  description: Income and assets enter the same calculation; no invented monetary thresholds.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-05
+  kind: foreground
+  description: Separate benefit sources enter the calculation, without double-counting or invented amounts.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-06
+  kind: foreground
+  description: 'Source priority: apply for other entitled benefits before social assistance.'
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-07
+  kind: foreground
+  description: Hourglass and limited calendar segment show temporary support without implying a fixed
+    deadline.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-08
+  kind: foreground
+  description: A schematic shortfall between resources and necessary expenses, without invented sums.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-09
+  kind: foreground
+  description: Separate path to wellbeing services county when special expenses are outside basic support.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+- id: picture-10
+  kind: foreground
+  description: A house under a protective umbrella and a declining income line show the two examples from
+    source.
+  fallback: Leave foreground open and document why if the schematic misrepresents source meaning.
+sentences:
+- sentence_id: hb-c10-u0021-s001
+  sv: Om du eller din familj inte har tillräckliga inkomster eller tillgångar för den nödvändiga dagliga
+    försörjningen kan du söka grundläggande utkomststöd hos FPA.
+  ru: Если у вас или вашей семьи недостаточно доходов или имущества для покрытия необходимых повседневных
+    расходов, вы можете подать заявление на базовое социальное пособие в Ведомство социального обеспечения
+    (FPA).
+  scene_id: necessities
+  visual_cue: Family and insufficient means lead to an application to FPA; no eligibility guarantee.
+  asset_ids:
+  - episode_background
+  - picture-01
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override:
+    text: Om du eller din familj inte har tillräckliga inkomster eller tillgångar för den nödvändiga dagliga
+      försörjningen kan du söka grundläggande utkomststöd hos F P A.
+    reason: Speak Swedish initial letters distinctly without changing display or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0021-s001.wav
+  start_seconds: 3.25
+  end_seconds: 17.321293
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-01.png
+  render_caption: false
+- sentence_id: hb-c10-u0021-s002
+  sv: Med den nödvändiga dagliga försörjningen avses skäliga utgifter till exempel för mat, kläder, hälsovård
+    och boende.
+  ru: Под необходимыми повседневными расходами понимаются разумные затраты, например, на питание, одежду,
+    медицинское обслуживание и жильё.
+  scene_id: necessities
+  visual_cue: Food photograph illustrates one of the necessary expense categories. The photograph is illustrative,
+    not evidence of all expenses or benefit eligibility.
+  asset_ids:
+  - episode_background
+  - picture-02
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0021-s002.wav
+  start_seconds: 19.083333
+  end_seconds: 29.392993
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/photo-02.png
+  render_caption: false
+- sentence_id: hb-c10-u0021-s003
+  sv: Du kan ansöka om stöd om du är stadigvarande bosatt i Finland.
+  ru: Вы можете подать заявление на пособие, если постоянно проживаете в Финляндии.
+  scene_id: necessities
+  visual_cue: Accurately identified Helsinki residential building illustrates living in Finland; it is
+    not a legal definition of permanent residence.
+  asset_ids:
+  - episode_background
+  - picture-03
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0021-s003.wav
+  start_seconds: 31.166667
+  end_seconds: 37.087755
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/photo-03.png
+  render_caption: false
+- sentence_id: hb-c10-u0022-s001
+  sv: Betalningen av utkomststöd påverkas av alla dina inkomster och tillgångar.
+  ru: На выплату социального пособия влияют все ваши доходы и имущество.
+  scene_id: calculation
+  visual_cue: Income and assets enter the same calculation; no invented monetary thresholds.
+  asset_ids:
+  - episode_background
+  - picture-04
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0022-s001.wav
+  start_seconds: 39.541667
+  end_seconds: 46.368333
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-04.png
+  render_caption: false
+- sentence_id: hb-c10-u0022-s002
+  sv: I kalkylen beaktas även de sociala förmåner som du får till exempel av FPA, en arbetspensionsförsäkring
+    eller arbetslöshetskassan.
+  ru: При расчёте также учитываются социальные выплаты, которые вы получаете, например, от FPA, по трудовому
+    пенсионному страхованию или из кассы по безработице.
+  scene_id: calculation
+  visual_cue: Separate benefit sources enter the calculation, without double-counting or invented amounts.
+  asset_ids:
+  - episode_background
+  - picture-05
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override:
+    text: I kalkylen beaktas även de sociala förmåner som du får till exempel av F P A, en arbetspensionsförsäkring
+      eller arbetslöshetskassan.
+    reason: Speak Swedish initial letters distinctly without changing display or meaning.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0022-s002.wav
+  start_seconds: 48.125
+  end_seconds: 60.176156
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-05.png
+  render_caption: false
+- sentence_id: hb-c10-u0023-s001
+  sv: Innan du ansöker om utkomststöd ska du ansöka om de andra bidragen som du har rätt till (till exempel
+    arbetslöshetsförsäkring, bostadsbidrag, pension, studiestöd, föräldradagpenning, sjukdagpenning, hemvårdsstöd
+    eller underhållsstöd).
+  ru: Прежде чем подавать заявление на социальное пособие, необходимо обратиться за другими пособиями,
+    на которые вы имеете право (например, пособием по страхованию от безработицы, жилищным пособием, пенсией,
+    финансовой помощью на обучение, родительским дневным пособием, пособием по болезни, пособием по уходу
+    за ребёнком на дому или пособием на содержание ребёнка).
+  scene_id: calculation
+  visual_cue: 'Source priority: apply for other entitled benefits before social assistance.'
+  asset_ids:
+  - episode_background
+  - picture-06
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0023-s001.wav
+  start_seconds: 61.958333
+  end_seconds: 81.881054
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-06.png
+  render_caption: false
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c10-u0024-s001
+  sv: Utkomststödet är avsett som en tillfällig hjälp.
+  ru: Социальное пособие предназначено для оказания временной помощи.
+  scene_id: temporary
+  visual_cue: Hourglass and limited calendar segment show temporary support without implying a fixed deadline.
+  asset_ids:
+  - episode_background
+  - picture-07
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0024-s001.wav
+  start_seconds: 84.666667
+  end_seconds: 89.333878
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-07.png
+  render_caption: false
+- sentence_id: hb-c10-u0024-s002
+  sv: Utkomststöd betalas endast om du inte kan få några andra inkomster och bidrag eller om dina övriga
+    inkomster inte räcker till för de nödvändiga utgifterna.
+  ru: Социальное пособие выплачивается только в том случае, если вы не можете получать никаких других
+    доходов и пособий или если ваших остальных доходов недостаточно для необходимых расходов.
+  scene_id: temporary
+  visual_cue: A schematic shortfall between resources and necessary expenses, without invented sums.
+  asset_ids:
+  - episode_background
+  - picture-08
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0024-s002.wav
+  start_seconds: 91.125
+  end_seconds: 104.569354
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-08.png
+  render_caption: false
+- sentence_id: hb-c10-u0025-s001
+  sv: Om du eller din familj har särskilda utgifter, för vilka du inte kan få grundläggande utkomststöd,
+    kan välfärdsområdet bevilja kompletterande och förebyggande utkomststöd (täydentävä ja ehkäisevä toimeentulotuki).
+  ru: Если у вас или вашей семьи есть особые расходы, на которые нельзя получить базовое социальное пособие,
+    регион по обеспечению благополучия населения (välfärdsområde) может назначить дополнительное и профилактическое
+    социальное пособие (täydentävä ja ehkäisevä toimeentulotuki).
+  scene_id: additional
+  visual_cue: Separate path to wellbeing services county when special expenses are outside basic support.
+  asset_ids:
+  - episode_background
+  - picture-09
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0025-s001.wav
+  start_seconds: 107.041667
+  end_seconds: 125.153231
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-09.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c10-u0025-s002
+  sv: Du kan få kompletterande utkomststöd till exempel för att trygga ditt boende eller om din ekonomiska
+    situation plötsligt har försämrats.
+  ru: Дополнительное социальное пособие можно получить, например, для обеспечения жильём или в случае
+    внезапного ухудшения вашего материального положения.
+  scene_id: additional
+  visual_cue: A house under a protective umbrella and a declining income line show the two examples from
+    source.
+  asset_ids:
+  - episode_background
+  - picture-10
+  text_highlights: []
+  pronunciation_notes:
+  - FPA and Finnish benefit names require whole-video listening; automated ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c10-utkomststod/narration/hb-c10-u0025-s002.wav
+  start_seconds: 127.916667
+  end_seconds: 139.480204
+  display_segments: []
+  render_image: studio/media/hb-c10-utkomststod/pictures/sentence-10.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c10-utkomststod/sources/music-bed.flac
+  background_image: studio/media/hb-c10-utkomststod/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    resampling: bilinear
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    motion_cycles: 1.3336309523809524
+  music_gain_adjustment_db: 2.0
+  music_loop_crossfade_seconds: 4
+  palette:
+    background: '#233c50'
+    text: '#faf3e8'
+    secondary: '#c6d9e8'
+    highlight: '#e6c28b'
+    separator: '#4b6e85'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Ekonomiska problem
+    - InfoFinland.fi
+    - Fullständiga källor, licenser och ändringar i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Kela building in Ivalo.jpg — Kimberli Mäkäräinen · CC BY-SA 4.0
+    - Organic Meditations One — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Healthy Grocery Shopping (Unsplash).jpg — leonie wise leoniewise · CC0
+    - Helsinginkatu 20 apartment building in Kallio, Helsinki, Finland, 2020.jpg — Sanna Granbacka · CC
+      BY-SA 4.0
+    - 'Original schematisk grafik: Homebrew video studio.'
+    - Fullständiga källor och licenser i medföljande CREDITS.md.
+  adaptation_notes:
+  - 'Foreground picture adaptation: 2 licensed photographic assets; 8 original source-based diagrams.
+    Individual source wording and media retain the terms recorded above.'
+  - Exact archived Swedish and current reviewed Russian shown together.
+  - Decorative background cropped, darkened, blurred and continuously panned/zoomed; retain source license.
+  - Music faded, ducked, +2dB adjustment, repeated with4second equal-power crossfades only if needed.
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Kela_building_in_Ivalo.jpg
+    description: Kela building in Ivalo
+    license: CC BY-SA 4.0

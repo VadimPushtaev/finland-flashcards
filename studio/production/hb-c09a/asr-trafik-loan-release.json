@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-03T08:52:50.438180+00:00",
+  "status": "owned_idle_allocation_checkpointed_and_released",
+  "controller_exit_code": 0,
+  "controller_finished_at": "2026-11-03T08:50:51.952138+00:00",
+  "active_owned_asr_jobs": [],
+  "host_state_preserved": {
+    "section_id": "hb-c09-durable-asr",
+    "stage": "asr",
+    "status": "failed",
+    "supervisor_pid": 131645,
+    "command": [
+      "studio/runtime/.venv/bin/python",
+      "studio/production/hb-c09a/durable_asr.py"
+    ],
+    "started_at": "2026-11-03T03:58:09.312325+00:00",
+    "log": "studio/production/hb-c09a/asr-durable-host.log",
+    "pid": 131646,
+    "heartbeat_at": "2026-11-03T08:50:25.069921+00:00",
+    "returncode": 0,
+    "finished_at": "2026-11-03T08:50:51.952138+00:00",
+    "missing_outputs": [
+      "studio/production/hb-c09a/asr-durable-completed.json"
+    ]
+  },
+  "expected_missing_final_marker_reason": "Intentional pause before Uppfostran; whole-queue completion is not claimed. Old supervisor expected final marker and therefore reports missing output despite clean return0.",
+  "allocation": "Two threads temporarily available to root-assigned C10 Trafik; no C9 ASR restart until explicit return."
+}

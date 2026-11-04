@@ -1,0 +1,14 @@
+{
+  "section_id": "hb-c09-owned-batch",
+  "stage": "retained_chunk_narration",
+  "state": "studio/production/hb-c09a/durable-tts-host-state.json",
+  "log": "studio/production/hb-c09a/durable-tts-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/production/hb-c09a/durable_tts.py"
+  ],
+  "expected_outputs": [
+    "studio/production/hb-c09a/durable-tts-progress.json"
+  ],
+  "completion_evidence_note": "Supervisor tracks clean queue execution, including intentional checkpoints. Final whole-queue completion remains separately recorded by the driver completion marker and every episode handoff."
+}

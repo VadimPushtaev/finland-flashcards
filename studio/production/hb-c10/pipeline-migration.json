@@ -1,0 +1,21 @@
+{
+  "updated_at": "2026-11-03T07:46:35.062411+00:00",
+  "reason": "Coordinator authorized independent two-thread TTS and ASR pipelines;old wrappers serially waited for diagnostics.",
+  "preserved_current_tts_supervisor": 248594,
+  "preserved_current_tts_child": 248595,
+  "selected_complete_psykisk_takes": 79,
+  "psykisk_asr_supervisor": 234978,
+  "events": [
+    {
+      "pid": 135512,
+      "command": ".venv/bin/python studio/production/hb-c10/narration_queue_extension.py ",
+      "action": "SIGTERM exact lightweight queue controller;durable narration/ASR children are separate and retained"
+    },
+    {
+      "pid": 155770,
+      "command": ".venv/bin/python studio/production/hb-c10/narration_queue_final.py ",
+      "action": "SIGTERM exact lightweight queue controller;durable narration/ASR children are separate and retained"
+    }
+  ],
+  "whole_video_listening": false
+}

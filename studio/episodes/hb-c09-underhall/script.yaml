@@ -1,0 +1,855 @@
+schema_version: 1
+section_id: hb-c09-underhall
+chapter_id: hb-c09
+title_sv: Barnets underhåll
+title_ru: Содержание ребёнка
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-underhall.yaml
+example_only: false
+source_section_sha256: 27011e6a05864a404cf6ef1dbdc460a7fe4eee429b60c3616ac7fd253628f71e
+translation_file_sha256: 9a0ff486077d9e7d17e0e11f32f671fadab2700efb1a6454dc3a2e84f2cc8c8d
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Office building of Ojahaanrinne 4 or Vaskivuorentie 25 in Myyrmäki, Vantaa, Finland,
+    2022 April.jpg by Ximonic (Simo Räsänen) continuously as decorative background, darkened 42% and blurred
+    2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219, 140 seconds
+    per motion cycle, starting in motion, with no sentence resets. Total cycles=2.0892857142857144. Foreground
+    and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Pepper's Theme by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 239.543 seconds; prepared lossless stereo bed 292.500 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Barnets underhåll (elatus) innebär att föräldern tillgodoser de behov som ett barn under
+    18 år har samt ser till att barnet får den vård och utbildning som det behöver.
+- id: scene-2
+  description: Om barnet har två föräldrar, bär båda föräldrarna ansvaret för barnets underhåll, även
+    om de inte bor tillsammans.
+- id: scene-3
+  description: Underhållsbidragets belopp beräknas utifrån barnets underhållsbehov och föräldrarnas underhållsförmåga.
+- id: scene-4
+  description: Ibland betalar den andra föräldern underhållsbidrag, även om barnet bor lika mycket eller
+    nästa lika mycket med båda sina föräldrar.
+- id: scene-5
+  description: I vissa situationer kan den förälder som bor med barnet ansöka om underhållsstöd från FPA.
+- id: scene-6
+  description: 'Du kan ansöka om underhållsstöd från FPA i följande situationer:'
+- id: scene-7
+  description: Du har rätt att få underhållsbidrag från den andra föräldern, men hen har inte betalat
+    det.
+- id: scene-8
+  description: Inget underhållsbidrag har fastställts, eftersom den andra föräldern har små inkomster.
+- id: scene-9
+  description: Underhållsbidraget har inte kunnat bekräftas samtidigt som föräldraskapet bekräftades.
+- id: scene-10
+  description: Det fastställda underhållsbidraget är mindre än underhållsstödet, eftersom den andra föräldern
+    har små inkomster.
+- id: scene-11
+  description: Du har adopterat ett barn ensam.
+- id: scene-12
+  description: Barnet har fötts utom äktenskapet, fadern har inte fastställts och barnet har inte två
+    underhållsskyldiga föräldrar.
+- id: scene-13
+  description: Du kan få underhållsstöd om ditt barn är stadigvarande bosatt i Finland eller vistas tillfälligt
+    utomlands i högst sex månader.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets underhåll (elatus) innebär att föräldern tillgodoser
+    de behov som ett barn under 18 år har samt ser till att barnet får den vård och utbildning som det
+    behöver.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Om barnet har två föräldrar, bär båda föräldrarna ansvaret
+    för barnets underhåll, även om de inte bor tillsammans.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: När föräldrarna skiljer sig måste de komma överens om
+    barnets underhåll samt om eventuellt underhållsbidrag (elatusapu).'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Den förälder som inte bor med barnet betalar underhållsbidrag
+    till den förälder hos vilken barnet bor.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Underhållsbidragets belopp beräknas utifrån barnets underhållsbehov
+    och föräldrarnas underhållsförmåga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Med barnets underhållsbehov avses det penningbelopp som
+    försörjningen av barnet kostar varje månad.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: I beloppet ingår till exempel utgifter för mat och kläder
+    samt eventuella avgifter för småbarnspedagogik.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets underhållsbehov delas mellan föräldrarna enligt
+    deras underhållsförmåga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Underhållsförmågan beräknas genom att dra av skatter och
+    övriga obligatoriska utgifter av inkomsterna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan be barnatillsyningsmannen (lastenvalvoja) om hjälp
+    med att beräkna underhållsbidraget.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland betalar den andra föräldern underhållsbidrag, även
+    om barnet bor lika mycket eller nästa lika mycket med båda sina föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan till exempel handla om en situation där den andra
+    föräldern har en bättre underhållsförmåga eller hen betalar en mindre del av barnets levnadskostnader.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: I vissa situationer kan den förälder som bor med barnet
+    ansöka om underhållsstöd från FPA.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan ansöka om underhållsstöd från FPA i följande situationer:'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: Du har rätt att få underhållsbidrag från den andra föräldern,
+    men hen har inte betalat det.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: Inget underhållsbidrag har fastställts, eftersom den andra
+    föräldern har små inkomster.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Underhållsbidraget har inte kunnat bekräftas samtidigt
+    som föräldraskapet bekräftades.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Det fastställda underhållsbidraget är mindre än underhållsstödet,
+    eftersom den andra föräldern har små inkomster.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: Du har adopterat ett barn ensam.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet har fötts utom äktenskapet, fadern har inte fastställts
+    och barnet har inte två underhållsskyldiga föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan få underhållsstöd om ditt barn är stadigvarande
+    bosatt i Finland eller vistas tillfälligt utomlands i högst sex månader.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan även få underhållsstöd om du har flyttat till Finland
+    från ett annat EU- eller EES-land eller Schweiz för att arbeta.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Då måste barnet vara med dig i Finland och bo med dig.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0164-s001
+  sv: Barnets underhåll (elatus) innebär att föräldern tillgodoser de behov som ett barn under 18 år har
+    samt ser till att barnet får den vård och utbildning som det behöver.
+  ru: Содержание ребёнка (elatus) означает, что родитель удовлетворяет потребности ребёнка младше 18 лет
+    и обеспечивает ему необходимый уход и образование.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of föräldern, ett barn under 18 år, vård och utbildning.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - föräldern
+  - ett barn under 18 år
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0164-s001.wav
+  start_seconds: 3.25
+  end_seconds: 17.530272
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0165-s001
+  sv: Om barnet har två föräldrar, bär båda föräldrarna ansvaret för barnets underhåll, även om de inte
+    bor tillsammans.
+  ru: Если у ребёнка двое родителей, оба отвечают за его содержание, даже если не живут вместе.
+  scene_id: scene-2
+  visual_cue: Exact-source pictorial explanation of båda föräldrarna, barnets underhåll. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - båda föräldrarna
+  - barnets underhåll
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0165-s001.wav
+  start_seconds: 20.291667
+  end_seconds: 30.462007
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0165-s002
+  sv: När föräldrarna skiljer sig måste de komma överens om barnets underhåll samt om eventuellt underhållsbidrag
+    (elatusapu).
+  ru: При разводе родители должны договориться о содержании ребёнка, а также о возможных алиментах (elatusapu).
+  scene_id: scene-2
+  visual_cue: Exact-source pictorial explanation of föräldrarna skiljer sig, komma överens, barnets underhåll.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - föräldrarna skiljer sig
+  - komma överens
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0165-s002.wav
+  start_seconds: 32.25
+  end_seconds: 42.838299
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0165-s003
+  sv: Den förälder som inte bor med barnet betalar underhållsbidrag till den förälder hos vilken barnet
+    bor.
+  ru: Родитель, который не живёт с ребёнком, платит алименты тому родителю, с которым ребёнок живёт.
+  scene_id: scene-2
+  visual_cue: Exact-source pictorial explanation of Den förälder som inte bor med barnet, underhållsbidrag,
+    den förälder hos vilken barnet bor. Every source qualifier remains in the bilingual text; no invented
+    benefit amount,country membership,deadline or entitlement. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - Den förälder som inte bor med barnet
+  - underhållsbidrag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0165-s003.wav
+  start_seconds: 44.625
+  end_seconds: 53.053844
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s001
+  sv: Underhållsbidragets belopp beräknas utifrån barnets underhållsbehov och föräldrarnas underhållsförmåga.
+  ru: Размер алиментов рассчитывают исходя из потребностей ребёнка в содержании и возможностей родителей
+    его содержать.
+  scene_id: scene-3
+  visual_cue: Exact-source pictorial explanation of barnets underhållsbehov, belopp, föräldrarnas underhållsförmåga.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - barnets underhållsbehov
+  - belopp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s001.wav
+  start_seconds: 55.541667
+  end_seconds: 64.527789
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s002
+  sv: Med barnets underhållsbehov avses det penningbelopp som försörjningen av barnet kostar varje månad.
+  ru: Под потребностями ребёнка в содержании понимается сумма денег, в которую ежемесячно обходится его
+    содержание.
+  scene_id: scene-3
+  visual_cue: Exact-source pictorial explanation of barnet, penningbelopp, varje månad. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - barnet
+  - penningbelopp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s002.wav
+  start_seconds: 66.291667
+  end_seconds: 74.92949
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s003
+  sv: I beloppet ingår till exempel utgifter för mat och kläder samt eventuella avgifter för småbarnspedagogik.
+  ru: В эту сумму входят, например, расходы на еду и одежду, а также возможная плата за дошкольное воспитание
+    и обучение.
+  scene_id: scene-3
+  visual_cue: Actual Annala daycare exterior illustrates the explicitly mentioned early-childhood-education
+    expense category. No fee amount, family situation or current admission/service claim is inferred.
+    The complete source photograph is shown with its source-identity caption; no sensitive personal attributes
+    are inferred.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - kläder
+  - småbarnspedagogik
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s003.wav
+  start_seconds: 76.708333
+  end_seconds: 85.833776
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s004
+  sv: Barnets underhållsbehov delas mellan föräldrarna enligt deras underhållsförmåga.
+  ru: Расходы на удовлетворение потребностей ребёнка в содержании распределяются между родителями в соответствии
+    с их возможностями его содержать.
+  scene_id: scene-3
+  visual_cue: Exact-source pictorial explanation of föräldrarna, Barnets underhållsbehov. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - föräldrarna
+  - Barnets underhållsbehov
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s004.wav
+  start_seconds: 87.625
+  end_seconds: 94.660646
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s005
+  sv: Underhållsförmågan beräknas genom att dra av skatter och övriga obligatoriska utgifter av inkomsterna.
+  ru: Возможности содержать ребёнка определяют, вычитая из доходов налоги и прочие обязательные расходы.
+  scene_id: scene-3
+  visual_cue: Income minus taxes and mandatory expenses equals the assessed support capacity. The source
+    subtraction is visualized without invented amounts or rates. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - inkomsterna
+  - skatter och övriga obligatoriska utgifter
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s005.wav
+  start_seconds: 96.416667
+  end_seconds: 105.751088
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0166-s006
+  sv: Du kan be barnatillsyningsmannen (lastenvalvoja) om hjälp med att beräkna underhållsbidraget.
+  ru: Вы можете попросить инспектора по вопросам защиты детей (barnatillsyningsman, lastenvalvoja) помочь
+    рассчитать алименты.
+  scene_id: scene-3
+  visual_cue: Exact-source pictorial explanation of Du, hjälp, beräkna underhållsbidraget. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - hjälp
+  - beräkna underhållsbidraget
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0166-s006.wav
+  start_seconds: 107.541667
+  end_seconds: 115.761531
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0167-s001
+  sv: Ibland betalar den andra föräldern underhållsbidrag, även om barnet bor lika mycket eller nästa
+    lika mycket med båda sina föräldrar.
+  ru: Иногда один из родителей платит алименты, даже если ребёнок живёт у обоих родителей одинаковое или
+    почти одинаковое количество времени.
+  scene_id: scene-4
+  visual_cue: Exact-source pictorial explanation of båda sina föräldrar, barnet, underhållsbidrag. Every
+    source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - båda sina föräldrar
+  - barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0167-s001.wav
+  start_seconds: 118.25
+  end_seconds: 129.674218
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0167-s002
+  sv: Det kan till exempel handla om en situation där den andra föräldern har en bättre underhållsförmåga
+    eller hen betalar en mindre del av barnets levnadskostnader.
+  ru: Например, это может быть ситуация, когда у одного из родителей больше возможностей содержать ребёнка
+    или этот родитель оплачивает меньшую часть расходов на жизнь ребёнка.
+  scene_id: scene-4
+  visual_cue: Exact-source pictorial explanation of den andra föräldern, underhållsförmåga, barnets levnadskostnader.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - den andra föräldern
+  - underhållsförmåga
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0167-s002.wav
+  start_seconds: 131.458333
+  end_seconds: 144.902687
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0168-s001
+  sv: I vissa situationer kan den förälder som bor med barnet ansöka om underhållsstöd från FPA.
+  ru: В некоторых ситуациях родитель, живущий с ребёнком, может подать в Ведомство социального обеспечения
+    (FPA) заявление на пособие на содержание ребёнка.
+  scene_id: scene-5
+  visual_cue: Actual regional Kela office in Seinäjoki provides institution context for applying to FPA
+    for maintenance support. No current service availability or individual benefit decision is claimed.
+    The complete source photograph is shown with its source-identity caption; no sensitive personal attributes
+    are inferred.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - den förälder som bor med barnet
+  - ansöka om
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0168-s001.wav
+  start_seconds: 147.666667
+  end_seconds: 156.09551
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0169-s001
+  sv: 'Du kan ansöka om underhållsstöd från FPA i följande situationer:'
+  ru: 'Вы можете подать заявление на пособие на содержание ребёнка от FPA в следующих ситуациях:'
+  scene_id: scene-6
+  visual_cue: Exact-source pictorial explanation of Du, ansöka om, FPA. Every source qualifier remains
+    in the bilingual text; no invented benefit amount,country membership,deadline or entitlement. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - ansöka om
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0169-s001.wav
+  start_seconds: 158.583333
+  end_seconds: 165.131361
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0170-s001
+  sv: Du har rätt att få underhållsbidrag från den andra föräldern, men hen har inte betalat det.
+  ru: Вы имеете право получать алименты от другого родителя, но он их не выплатил.
+  scene_id: scene-7
+  visual_cue: Exact-source pictorial explanation of den andra föräldern, underhållsbidrag. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - den andra föräldern
+  - underhållsbidrag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0170-s001.wav
+  start_seconds: 167.583333
+  end_seconds: 175.036939
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0172-s001
+  sv: Inget underhållsbidrag har fastställts, eftersom den andra föräldern har små inkomster.
+  ru: Алименты не назначены, поскольку у другого родителя низкие доходы.
+  scene_id: scene-8
+  visual_cue: Exact-source pictorial explanation of små inkomster, Inget underhållsbidrag. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - små inkomster
+  - Inget underhållsbidrag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0172-s001.wav
+  start_seconds: 177.5
+  end_seconds: 185.162585
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0173-s001
+  sv: Underhållsbidraget har inte kunnat bekräftas samtidigt som föräldraskapet bekräftades.
+  ru: Алименты не удалось утвердить одновременно с установлением отцовства или материнства.
+  scene_id: scene-9
+  visual_cue: Exact-source pictorial explanation of Underhållsbidraget, föräldraskapet. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - Underhållsbidraget
+  - föräldraskapet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0173-s001.wav
+  start_seconds: 187.625
+  end_seconds: 195.148265
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0174-s001
+  sv: Det fastställda underhållsbidraget är mindre än underhållsstödet, eftersom den andra föräldern har
+    små inkomster.
+  ru: Установленный размер алиментов меньше пособия на содержание ребёнка, поскольку у другого родителя
+    низкие доходы.
+  scene_id: scene-10
+  visual_cue: Exact-source pictorial explanation of små inkomster, mindre än underhållsstödet. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - små inkomster
+  - mindre än underhållsstödet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0174-s001.wav
+  start_seconds: 197.625
+  end_seconds: 207.377381
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0175-s001
+  sv: Du har adopterat ett barn ensam.
+  ru: Вы усыновили ребёнка в одиночку.
+  scene_id: scene-11
+  visual_cue: Exact-source pictorial explanation of Du, adopterat ett barn ensam. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - adopterat ett barn ensam
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0175-s001.wav
+  start_seconds: 209.833333
+  end_seconds: 212.828707
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0176-s001
+  sv: Barnet har fötts utom äktenskapet, fadern har inte fastställts och barnet har inte två underhållsskyldiga
+    föräldrar.
+  ru: Ребёнок родился вне брака, отцовство не установлено и у ребёнка нет двух родителей, обязанных его
+    содержать.
+  scene_id: scene-12
+  visual_cue: Exact-source pictorial explanation of Barnet, fadern har inte fastställts, inte två underhållsskyldiga
+    föräldrar. Every source qualifier remains in the bilingual text; no invented benefit amount,country
+    membership,deadline or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - Barnet
+  - fadern har inte fastställts
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0176-s001.wav
+  start_seconds: 215.291667
+  end_seconds: 224.904728
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0177-s001
+  sv: Du kan få underhållsstöd om ditt barn är stadigvarande bosatt i Finland eller vistas tillfälligt
+    utomlands i högst sex månader.
+  ru: Вы можете получать пособие на содержание ребёнка, если ваш ребёнок постоянно проживает в Финляндии
+    или временно находится за границей не более шести месяцев.
+  scene_id: scene-13
+  visual_cue: Exact-source pictorial explanation of stadigvarande bosatt i Finland, tillfälligt utomlands,
+    högst sex månader. Every source qualifier remains in the bilingual text; no invented benefit amount,country
+    membership,deadline or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - stadigvarande bosatt i Finland
+  - tillfälligt utomlands
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0177-s001.wav
+  start_seconds: 227.375
+  end_seconds: 238.450918
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0177-s002
+  sv: Du kan även få underhållsstöd om du har flyttat till Finland från ett annat EU- eller EES-land eller
+    Schweiz för att arbeta.
+  ru: Вы также можете получать пособие на содержание ребёнка, если переехали в Финляндию для работы из
+    другой страны Европейского союза (EU) или Европейской экономической зоны (EES) либо из Швейцарии.
+  scene_id: scene-13
+  visual_cue: Exact-source pictorial explanation of EU- eller EES-land eller Schweiz, Finland, för att
+    arbeta. Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - EU- eller EES-land eller Schweiz
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0177-s002.wav
+  start_seconds: 241.208333
+  end_seconds: 252.771871
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0177-s003
+  sv: Då måste barnet vara med dig i Finland och bo med dig.
+  ru: В таком случае ребёнок должен находиться с вами в Финляндии и жить с вами.
+  scene_id: scene-13
+  visual_cue: Exact-source pictorial explanation of barnet, i Finland, bo med dig. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - barnet
+  - i Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-underhall/narration/hb-c09-u0177-s003.wav
+  start_seconds: 255.541667
+  end_seconds: 260.278537
+  display_segments: []
+  render_image: studio/media/hb-c09-underhall/pictures/picture_023.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-underhall/sources/music-bed.flac
+  background_image: studio/media/hb-c09-underhall/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.0892857142857144
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Office building of Ojahaanrinne 4 or Vaskivuorentie 25 in Myyrmäki, Vantaa, Finland, 2022 April.jpg
+      — Ximonic (Simo Räsänen) · CC BY 4.0
+    - Pepper's Theme — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Office_building_of_Ojahaanrinne_4_or_Vaskivuorentie_25_in_Myyrm%C3%A4ki,_Vantaa,_Finland,_2022_April.jpg
+    description: The office building with the addresses Ojahaanrinne 4 and Vaskivuorentie 25 in Myyrmäki,
+      Vantaa, Finland in 2022 April. The building was completed in 1992. It accommodates companies such
+      as Vantaan työvoimatoimisto Myyrmäki, Maahanmuuttajanuorten tuki ry, Myyrmäen huolto and Kela.
+    license: CC BY 4.0

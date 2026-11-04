@@ -1,0 +1,378 @@
+schema_version: 1
+section_id: hb-c09-barnbidrag
+chapter_id: hb-c09
+title_sv: Barnbidrag
+title_ru: Пособие на ребёнка
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-barnbidrag.yaml
+example_only: false
+source_section_sha256: 3316e7b3ef33c2fc492bb39393e6e4822787c8fbce85c5880c9162d24e639520
+translation_file_sha256: 8c324117a8f739e0441fc6ef20d763af2e48857a81a5c4c302267543dc3876f4
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Kela welfare authority palace in Seinäjoki Finland.jpg by Kotivalo continuously as
+    decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=0.7267857142857143. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Melodie Victoria by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 240.953 seconds; prepared lossless stereo bed 101.750 seconds.
+    Repeat count 0, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: FPA betalar ut barnbidrag för alla barn varje månad.
+- id: scene-2
+  description: FPA betalar ut barnbidrag för varje barn som bor stadigvarande i Finland.
+- id: scene-3
+  description: En förälder som bor ensam med ett eller flera barn kan få förhöjt barnbidrag.
+- id: scene-4
+  description: På barnbidraget betalas ingen skatt.
+- id: scene-5
+  description: I vissa situationer kan barnbidrag också betalas om familjen vistas utomlands.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: FPA betalar ut barnbidrag för alla barn varje månad.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Syftet med barnbidraget är att stödja familjens ekonomi.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: FPA betalar ut barnbidrag fram till slutet av den månad
+    då barnet fyller 17 år.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: FPA betalar ut barnbidrag för varje barn som bor stadigvarande
+    i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: En förälder som bor ensam med ett eller flera barn kan
+    få förhöjt barnbidrag.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: På barnbidraget betalas ingen skatt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: I vissa situationer kan barnbidrag också betalas om familjen
+    vistas utomlands.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Det kan också betalas för ett barn som är bosatt utomlands
+    (om barnets förälder arbetar i Finland).'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0325-s001
+  sv: FPA betalar ut barnbidrag för alla barn varje månad.
+  ru: Ведомство социального обеспечения (FPA) ежемесячно выплачивает пособие на всех детей.
+  scene_id: scene-1
+  visual_cue: Actual Myyrmäki office building documented as accommodating Kela among other organizations
+    in 2022. Used only as institution context for the FPA child-benefit sentence, not evidence of a payment
+    or current service availability. The complete source photograph is shown with its source-identity
+    caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - alla barn
+  - varje månad
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0325-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.33517
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0325-s002
+  sv: Syftet med barnbidraget är att stödja familjens ekonomi.
+  ru: Пособие на ребёнка предназначено для поддержки семейного бюджета.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of barnbidraget, familjens ekonomi. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - barnbidraget
+  - familjens ekonomi
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0325-s002.wav
+  start_seconds: 10.125
+  end_seconds: 15.48881
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0325-s003
+  sv: FPA betalar ut barnbidrag fram till slutet av den månad då barnet fyller 17 år.
+  ru: FPA выплачивает пособие на ребёнка до конца того месяца, в котором ему исполняется 17 лет.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of FPA, slutet av den månad, 17 år. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - slutet av den månad
+  - 17 år
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0325-s003.wav
+  start_seconds: 17.25
+  end_seconds: 25.121565
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0326-s001
+  sv: FPA betalar ut barnbidrag för varje barn som bor stadigvarande i Finland.
+  ru: FPA выплачивает пособие на каждого ребёнка, постоянно проживающего в Финляндии.
+  scene_id: scene-2
+  visual_cue: Exact-source pictorial explanation of FPA, varje barn, stadigvarande i Finland. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - varje barn
+  - stadigvarande i Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0326-s001.wav
+  start_seconds: 27.583333
+  end_seconds: 34.54932
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0327-s001
+  sv: En förälder som bor ensam med ett eller flera barn kan få förhöjt barnbidrag.
+  ru: Родитель, который живёт один с ребёнком или несколькими детьми, может получать повышенное пособие
+    на ребёнка.
+  scene_id: scene-3
+  visual_cue: Exact-source pictorial explanation of En förälder som bor ensam, förhöjt barnbidrag. Every
+    source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - En förälder som bor ensam
+  - förhöjt barnbidrag
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0327-s001.wav
+  start_seconds: 37.0
+  end_seconds: 43.687347
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0328-s001
+  sv: På barnbidraget betalas ingen skatt.
+  ru: Пособие на ребёнка не облагается налогом.
+  scene_id: scene-4
+  visual_cue: Exact-source pictorial explanation of barnbidraget, ingen skatt. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - barnbidraget
+  - ingen skatt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0328-s001.wav
+  start_seconds: 46.166667
+  end_seconds: 49.58
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0329-s001
+  sv: I vissa situationer kan barnbidrag också betalas om familjen vistas utomlands.
+  ru: В некоторых ситуациях пособие на ребёнка может выплачиваться и в том случае, если семья находится
+    за границей.
+  scene_id: scene-5
+  visual_cue: Exact-source pictorial explanation of familjen, utomlands, barnbidrag. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - familjen
+  - utomlands
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0329-s001.wav
+  start_seconds: 52.041667
+  end_seconds: 59.286293
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0329-s002
+  sv: Det kan också betalas för ett barn som är bosatt utomlands (om barnets förälder arbetar i Finland).
+  ru: Оно также может выплачиваться на ребёнка, проживающего за границей (если его родитель работает в
+    Финляндии).
+  scene_id: scene-5
+  visual_cue: Exact-source pictorial explanation of bosatt utomlands, barnets förälder, arbetar i Finland.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - bosatt utomlands
+  - barnets förälder
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-barnbidrag/narration/hb-c09-u0329-s002.wav
+  start_seconds: 61.041667
+  end_seconds: 69.54017
+  display_segments: []
+  render_image: studio/media/hb-c09-barnbidrag/pictures/picture_008.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-barnbidrag/sources/music-bed.flac
+  background_image: studio/media/hb-c09-barnbidrag/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 0.7267857142857143
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Kela welfare authority palace in Seinäjoki Finland.jpg — Kotivalo · CC BY-SA 4.0
+    - Melodie Victoria — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Kela_welfare_authority_palace_in_Sein%C3%A4joki_Finland.jpg
+    description: Regional office of KELA, the Finnish social insurance institution, in Seinäjoki, Finland.
+      Clad in yellow marble. Architect Aarne Ehojoki.
+    license: CC BY-SA 4.0

@@ -49,6 +49,26 @@ Chapter 7 uses a muted olive work palette: panel/background tint `#30371f`,
 Swedish text `#faf3e8`, Russian text and secondary labels `#d2d9b7`, highlights
 `#e7bf78`, and separators `#636e42`. Carry it through all Chapter 7 episodes.
 
+Chapter 8 uses a muted teal education palette: background `#193b40`, Swedish
+`#faf3e8`, Russian/secondary `#c0dce0`, highlights `#e8c081`, separators `#3f6d73`.
+Chapter 9 uses a muted terracotta family palette: background `#442d30`, Swedish
+`#faf3e8`, Russian/secondary `#e5c5be`, highlights `#e6c384`, separators `#80575a`.
+Chapter 10 uses a muted ocean health palette: background `#233c50`, Swedish
+`#faf3e8`, Russian/secondary `#c6d9e8`, highlights `#e6c28b`, separators `#4b6e85`.
+Chapter 11 uses a muted moss everyday-life palette: background `#243c32`, Swedish
+`#faf3e8`, Russian/secondary `#c5dfce`, highlights `#e3c58c`, separators `#4d7560`.
+Chapter 12 uses a muted violet integration palette: background `#352e49`, Swedish
+`#faf3e8`, Russian/secondary `#d7cce7`, highlights `#e2c58b`, separators `#685881`.
+Keep each chapter's palette consistent across its subchapters.
+
+For the remaining Chapters 8–12 production requested on 2026-11-03, aim for a
+distinct relevant foreground picture on nearly every sentence slide. Track
+distinct source identities as well as measured picture duration: a new crop of
+one photograph does not count as a new picture. Prefer actual photographs and
+use source-based pictorial diagrams where they explain relationships better.
+Record passages requiring image reuse or an open foreground and the reason;
+never add misleading filler to reach the target.
+
 Choose a new, distinct decorative background photograph for every subchapter,
 related to its topic. Do not reuse another subchapter's background by merely
 changing its crop or tint. Record the chosen image in the episode script and its

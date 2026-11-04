@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c09-barnbidrag",
+  "stage": "eligibility_retake_asr",
+  "state": "studio/production/hb-c09a/barnbidrag-retake-asr-host-state.json",
+  "log": "studio/production/hb-c09a/barnbidrag-retake-asr-host.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c09-barnbidrag/retake-parent-singular",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c09-barnbidrag/retake-parent-singular/asr.json"
+  ]
+}

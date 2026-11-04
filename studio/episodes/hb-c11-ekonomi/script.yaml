@@ -1,0 +1,1407 @@
+schema_version: 1
+section_id: hb-c11-ekonomi
+chapter_id: hb-c11
+title_sv: Den egna ekonomin och lån
+title_ru: Личные финансы и займы
+source_path: data/homebrew/sv/chapters/11_boende_vardag_och_miljo.yaml
+translation_path: data/homebrew/ru/sections/hb-c11-ekonomi.yaml
+example_only: false
+source_section_sha256: aac54655a39948faa508ec9f43a66b40b7c7b09592dd64d7e2a74d3a49fcd992
+translation_file_sha256: 9f779c72be14b10a8e45b556093052c498fb7e2a3f9589ed34f390d7e779e683
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: 'Follow source order: balanced budget,savings,loan costs and deliberation,limited consolidation
+    possibilities,then prompt contact and priority bills. Qualitative figures only; no invented personal
+    financial advice,amounts,rates or thresholds.'
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#243c32'', ''text'': ''#faf3e8'', ''secondary'': ''#c5dfce'',
+    ''highlight'': ''#e3c58c'', ''separator'': ''#4d7560''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Nordea head office in May 2024.jpg by JIP continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=3.3782738095238094. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Dreamer by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct instrumental
+    track. Original master 204.069 seconds; prepared lossless stereo bed 472.958 seconds. Repeat count
+    2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music adjustment,
+    ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c11-u0162
+  description: En persons ekonomi är i balans när utgifterna inte överstiger inkomsterna.
+- id: hb-c11-u0163
+  description: Ett bra sätt att balansera inkomster och utgifter är med hjälp av budgetering.
+- id: hb-c11-u0164
+  description: Det är viktigt att se över sin konsumtion alltid när inkomsterna eller utgifterna förändras.
+- id: hb-c11-u0165
+  description: När man fattar beslut är det viktigt att komma ihåg att lånade pengar inte är gratis.
+- id: hb-c11-u0166
+  description: När man funderar på att ta ett lån ska man fundera över åtminstone hur stora återbetalningsbeloppen
+    är och om man klarar av att betala dem under hela återbetalningstiden.
+- id: hb-c11-u0167
+  description: Om man lånar pengar till exempelvis en kompis eller en släkting är det bra att skriftligt
+    komma överens om återbetalningen av lånet och de övriga villkoren för det.
+- id: hb-c11-u0168
+  description: Det är vanligt att ta lån i Finland när det är väl övervägt och välgrundat.
+- id: hb-c11-u0169
+  description: Att ta ett nytt lån för att betala gamla lån är på lång sikt ingen hållbar lösning.
+- id: hb-c11-u0170
+  description: Ibland kan det hända att förfallodagen för en faktura närmar sig, men det finns inte tillräckligt
+    med pengar på kontot för att betala den.
+- id: hb-c11-u0171
+  description: Om man har lite pengar är det bra att börja med att betala de fakturor som är viktigast.
+- id: hb-c11-u0172
+  description: När det gäller att hantera sin ekonomi är det bra att vara aktiv och be om hjälp genast
+    när man behöver det.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Unique relevant Finnish banking/street photograph; contextual setting only.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Dreamer — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: balance
+  kind: foreground
+  description: Expenses must not exceed income; qualitative comparison, no invented amounts.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: save_after
+  kind: foreground
+  description: Set savings aside after paying expenses, preserving the source goal rather than a guarantee.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: buffer
+  kind: foreground
+  description: Savings buffer against temporarily lower income, no emergency-fund amount invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: large_purchase
+  kind: foreground
+  description: Savings permit paying one larger purchase at once.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: budget
+  kind: foreground
+  description: Budgeting brings income and expenses together without a fictional worked example.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: available_money
+  kind: foreground
+  description: Count available funds for the stated month or week alternatives.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: allocate
+  kind: foreground
+  description: Divide the available sum among expenses; two representative blank categories, no percentages.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: necessities
+  kind: foreground
+  description: 'Named essential costs: rent, medicines and necessary bills.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: remainder
+  kind: foreground
+  description: Only the remaining sum goes toward other expenses.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: food_leisure
+  kind: foreground
+  description: Budget reveals monthly food/leisure spending capacity, not a prescribed allocation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: review_changes
+  kind: foreground
+  description: Review consumption whenever income OR expenses change.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: childcare_fee
+  kind: foreground
+  description: Income increase can raise childcare fees after a possible low-income exemption; do not
+    promise exemption.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: revise_budget
+  kind: foreground
+  description: The preceding change triggers another budget review.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: borrow_cost
+  kind: foreground
+  description: Borrowing has a cost; no interest-free claim.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: repay_interest
+  kind: foreground
+  description: Borrowing entails future payments and often interest; qualify interest with ofta.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: interest_price
+  kind: foreground
+  description: Interest is the price of borrowed money.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: purchase_choices
+  kind: foreground
+  description: Sometimes a loan or instalments may be justified for a larger purchase; no recommendation
+    for a specific product.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: consider
+  kind: foreground
+  description: Consider the decision carefully; no automatic green approval sign.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: loan_terms
+  kind: foreground
+  description: Check both contract terms and ability to repay before borrowing.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: repayment_horizon
+  kind: foreground
+  description: Assess payment sizes throughout the entire repayment period; no invented monthly amount.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: future_consumption
+  kind: foreground
+  description: Credit purchases affect future consumption without inventing a proportion.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: check_rate
+  kind: foreground
+  description: Check the interest rate in the terms; no fabricated numeric rate.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: high_interest
+  kind: foreground
+  description: High interest can make a loan costly; conditional, qualitative relationship.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: loan_duration
+  kind: foreground
+  description: Choose and consider the loan duration, with no preferred duration.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: longer_cost
+  kind: foreground
+  description: Long term means smaller instalments but higher total cost due to interest; qualitative
+    labels only.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: private_loan
+  kind: foreground
+  description: Written agreement about repayment and terms when lending to a friend or relative.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: considered_loans
+  kind: foreground
+  description: Source describes well-considered, grounded borrowing as common in Finland; not an instruction
+    to borrow.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: mortgage
+  kind: foreground
+  description: Homes are expensive and few can buy without a mortgage; no invented house price.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: car_loan
+  kind: foreground
+  description: A car is the source loan example; no payment plan or model recommendation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: sustainable_payment
+  kind: foreground
+  description: Repayment ability and manageable impact condition a nonproblematic loan; retain both.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: rollover
+  kind: foreground
+  description: New borrowing to repay old loans is not sustainable in the long run.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: consolidation
+  kind: foreground
+  description: Where there are several high-interest consumer loans, investigate a reasonable bank loan
+    OR social credit; no automatic approval.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: social_credit
+  kind: foreground
+  description: Apply to own wellbeing-services county for social credit.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: guarantee
+  kind: foreground
+  description: Foundation may guarantee a reasonable-rate bank loan in certain cases; retain both qualifications.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: bill_shortfall
+  kind: foreground
+  description: A bill deadline can approach while the account lacks funds; no invented date or balance.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: contact_sender
+  kind: foreground
+  description: Contact the bill sender promptly; an electricity supplier is the source example.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: extra_time
+  kind: foreground
+  description: Explaining the situation usually permits extra payment time, not guaranteed forgiveness.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: instalment_agreement
+  kind: foreground
+  description: Paying in parts may be agreed; no entitlement or schedule invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: prioritize
+  kind: foreground
+  description: When money is short, prioritize important bills without an invented order here.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: housing_first
+  kind: foreground
+  description: Pay housing first; rent debt can cause home loss, with the source conditional can.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: electricity_cut
+  kind: foreground
+  description: Unpaid electricity bills can lead to disconnection; no invented notice period.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: ask_help
+  kind: foreground
+  description: Act and ask for help promptly when needed.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: worsening
+  kind: foreground
+  description: Ignoring bills OR taking high-interest consumer credit can worsen small difficulties; no
+    automatic prediction.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c11-u0162-s001
+  sv: En persons ekonomi är i balans när utgifterna inte överstiger inkomsterna.
+  ru: Финансы человека находятся в равновесии, когда расходы не превышают доходов.
+  scene_id: hb-c11-u0162
+  visual_cue: Expenses must not exceed income; qualitative comparison, no invented amounts.
+  asset_ids:
+  - episode_background
+  - balance
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0162-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.007007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/balance.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0162-s002
+  sv: Det skulle vara bra att ha som mål att också kunna sätta undan pengar efter att alla utgifter är
+    betalda.
+  ru: Хорошо бы поставить себе цель также откладывать деньги после оплаты всех расходов.
+  scene_id: hb-c11-u0162
+  visual_cue: Set savings aside after paying expenses, preserving the source goal rather than a guarantee.
+  asset_ids:
+  - episode_background
+  - save_after
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0162-s002.wav
+  start_seconds: 11.958333
+  end_seconds: 20.874796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/save_after.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0162-s003
+  sv: Besparingarna fungerar som en buffert om inkomsterna tillfälligt blir lägre än vanligt.
+  ru: Сбережения служат финансовым резервом, если доходы временно становятся ниже обычного.
+  scene_id: hb-c11-u0162
+  visual_cue: Savings buffer against temporarily lower income, no emergency-fund amount invented.
+  asset_ids:
+  - episode_background
+  - buffer
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0162-s003.wav
+  start_seconds: 22.833333
+  end_seconds: 30.426259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/buffer.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0162-s004
+  sv: Dessutom gör besparingarna det möjligt att man i framtiden kan betala en större anskaffning på en
+    gång.
+  ru: Кроме того, сбережения позволяют в будущем сразу оплатить крупную покупку.
+  scene_id: hb-c11-u0162
+  visual_cue: Savings permit paying one larger purchase at once.
+  asset_ids:
+  - episode_background
+  - large_purchase
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0162-s004.wav
+  start_seconds: 32.416667
+  end_seconds: 41.05449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/large_purchase.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s001
+  sv: Ett bra sätt att balansera inkomster och utgifter är med hjälp av budgetering.
+  ru: Хороший способ сбалансировать доходы и расходы — планирование бюджета.
+  scene_id: hb-c11-u0163
+  visual_cue: Budgeting brings income and expenses together without a fictional worked example.
+  asset_ids:
+  - episode_background
+  - budget
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s001.wav
+  start_seconds: 43.541667
+  end_seconds: 50.507653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/budget.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s002
+  sv: Först räknar man hur mycket pengar man har till sitt förfogande till exempel under en månad eller
+    en vecka.
+  ru: Сначала подсчитывают, сколько денег имеется в распоряжении, например на месяц или неделю.
+  scene_id: hb-c11-u0163
+  visual_cue: Count available funds for the stated month or week alternatives.
+  asset_ids:
+  - episode_background
+  - available_money
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s002.wav
+  start_seconds: 52.458333
+  end_seconds: 61.374796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/available_money.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s003
+  sv: Efter det fördelar man beloppet mellan olika typer av utgifter.
+  ru: Затем эту сумму распределяют между разными видами расходов.
+  scene_id: hb-c11-u0163
+  visual_cue: Divide the available sum among expenses; two representative blank categories, no percentages.
+  asset_ids:
+  - episode_background
+  - allocate
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s003.wav
+  start_seconds: 63.333333
+  end_seconds: 68.906122
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/allocate.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s004
+  sv: Först drar man av alla fasta, nödvändiga utgifter såsom hyra, läkemedel och nödvändiga fakturor.
+  ru: Сначала вычитают все постоянные необходимые расходы, такие как арендная плата, лекарства и обязательные
+    счета.
+  scene_id: hb-c11-u0163
+  visual_cue: 'Named essential costs: rent, medicines and necessary bills.'
+  asset_ids:
+  - episode_background
+  - necessities
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s004.wav
+  start_seconds: 70.875
+  end_seconds: 79.791463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/necessities.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s005
+  sv: Det resterande beloppet fördelas mellan övriga utgifter.
+  ru: Оставшуюся сумму распределяют между остальными расходами.
+  scene_id: hb-c11-u0163
+  visual_cue: Only the remaining sum goes toward other expenses.
+  asset_ids:
+  - episode_background
+  - remainder
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s005.wav
+  start_seconds: 81.75
+  end_seconds: 86.76551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/remainder.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0163-s006
+  sv: På så vis ser man hur mycket man kan spendera på en månad på till exempel mat och fritidsaktiviteter.
+  ru: Так можно увидеть, сколько за месяц можно потратить, например, на еду и досуг.
+  scene_id: hb-c11-u0163
+  visual_cue: Budget reveals monthly food/leisure spending capacity, not a prescribed allocation.
+  asset_ids:
+  - episode_background
+  - food_leisure
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0163-s006.wav
+  start_seconds: 88.75
+  end_seconds: 97.248503
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/food_leisure.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0164-s001
+  sv: Det är viktigt att se över sin konsumtion alltid när inkomsterna eller utgifterna förändras.
+  ru: Важно пересматривать свои потребительские расходы всякий раз, когда доходы или расходы меняются.
+  scene_id: hb-c11-u0164
+  visual_cue: Review consumption whenever income OR expenses change.
+  asset_ids:
+  - episode_background
+  - review_changes
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0164-s001.wav
+  start_seconds: 99.708333
+  end_seconds: 107.719218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/review_changes.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0164-s002
+  sv: Till exempel en låginkomsttagare kan bli befriad från barnens avgifter för småbarnspedagogik, men
+    när inkomsterna ökar höjs också avgifterna.
+  ru: Например, человек с низким доходом может быть освобождён от платы за дошкольное воспитание и обучение
+    детей, но при росте доходов плата тоже повышается.
+  scene_id: hb-c11-u0164
+  visual_cue: Income increase can raise childcare fees after a possible low-income exemption; do not promise
+    exemption.
+  asset_ids:
+  - episode_background
+  - childcare_fee
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0164-s002.wav
+  start_seconds: 109.708333
+  end_seconds: 122.038129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/childcare_fee.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0164-s003
+  sv: Då är man tvungen att se över sin budget.
+  ru: Тогда приходится пересматривать свой бюджет.
+  scene_id: hb-c11-u0164
+  visual_cue: The preceding change triggers another budget review.
+  asset_ids:
+  - episode_background
+  - revise_budget
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0164-s003.wav
+  start_seconds: 124.0
+  end_seconds: 127.691973
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/revise_budget.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s001
+  sv: När man fattar beslut är det viktigt att komma ihåg att lånade pengar inte är gratis.
+  ru: Принимая решения, важно помнить, что заёмные деньги не бесплатны.
+  scene_id: hb-c11-u0165
+  visual_cue: Borrowing has a cost; no interest-free claim.
+  asset_ids:
+  - episode_background
+  - borrow_cost
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s001.wav
+  start_seconds: 130.166667
+  end_seconds: 137.550612
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/borrow_cost.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s002
+  sv: När man tar lån lovar man att sköta om de kommande betalningarna och ofta också om att betala ränta.
+  ru: Беря заём, человек обещает выполнять предстоящие платёжные обязательства, а часто и платить проценты.
+  scene_id: hb-c11-u0165
+  visual_cue: Borrowing entails future payments and often interest; qualify interest with ofta.
+  asset_ids:
+  - episode_background
+  - repay_interest
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s002.wav
+  start_seconds: 139.541667
+  end_seconds: 148.388469
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/repay_interest.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s003
+  sv: Räntan är priset för de lånade pengarna.
+  ru: Проценты — это плата за взятые взаймы деньги.
+  scene_id: hb-c11-u0165
+  visual_cue: Interest is the price of borrowed money.
+  asset_ids:
+  - episode_background
+  - interest_price
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s003.wav
+  start_seconds: 150.375
+  end_seconds: 154.206293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/interest_price.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s004
+  sv: Ibland kan det vara motiverat att ta lån för en större anskaffning eller köpa en produkt på avbetalning.
+  ru: Иногда бывает оправданно взять заём на крупную покупку или купить товар в рассрочку.
+  scene_id: hb-c11-u0165
+  visual_cue: Sometimes a loan or instalments may be justified for a larger purchase; no recommendation
+    for a specific product.
+  asset_ids:
+  - episode_background
+  - purchase_choices
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s004.wav
+  start_seconds: 156.166667
+  end_seconds: 164.94381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/purchase_choices.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s005
+  sv: Det ska ändå alltid vara ett väl övervägt beslut.
+  ru: Тем не менее это всегда должно быть хорошо обдуманное решение.
+  scene_id: hb-c11-u0165
+  visual_cue: Consider the decision carefully; no automatic green approval sign.
+  asset_ids:
+  - episode_background
+  - consider
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s005.wav
+  start_seconds: 166.916667
+  end_seconds: 171.583878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/consider.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0165-s006
+  sv: Innan man tar ett lån ska man alltid noggrant ta reda på villkoren för lånet och fundera över om
+    man säkert kan betala tillbaka det.
+  ru: Прежде чем брать заём, всегда нужно внимательно выяснить его условия и подумать, сможете ли вы наверняка
+    его вернуть.
+  scene_id: hb-c11-u0165
+  visual_cue: Check both contract terms and ability to repay before borrowing.
+  asset_ids:
+  - episode_background
+  - loan_terms
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0165-s006.wav
+  start_seconds: 173.541667
+  end_seconds: 184.338946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/loan_terms.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s001
+  sv: När man funderar på att ta ett lån ska man fundera över åtminstone hur stora återbetalningsbeloppen
+    är och om man klarar av att betala dem under hela återbetalningstiden.
+  ru: Размышляя о том, брать ли заём, следует как минимум обдумать, каковы будут суммы выплат и сможете
+    ли вы вносить их в течение всего срока погашения.
+  scene_id: hb-c11-u0166
+  visual_cue: Assess payment sizes throughout the entire repayment period; no invented monthly amount.
+  asset_ids:
+  - episode_background
+  - repayment_horizon
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s001.wav
+  start_seconds: 186.791667
+  end_seconds: 200.932619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/repayment_horizon.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s002
+  sv: Anskaffningar på kredit påverkar alltid den framtida konsumtionen.
+  ru: Покупки в кредит всегда влияют на будущие потребительские расходы.
+  scene_id: hb-c11-u0166
+  visual_cue: Credit purchases affect future consumption without inventing a proportion.
+  asset_ids:
+  - episode_background
+  - future_consumption
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s002.wav
+  start_seconds: 202.916667
+  end_seconds: 208.698435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/future_consumption.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s003
+  sv: Dessutom är det bra att kontrollera vad räntan på lånet är.
+  ru: Кроме того, стоит проверить, какова процентная ставка по займу.
+  scene_id: hb-c11-u0166
+  visual_cue: Check the interest rate in the terms; no fabricated numeric rate.
+  asset_ids:
+  - episode_background
+  - check_rate
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s003.wav
+  start_seconds: 210.666667
+  end_seconds: 216.030476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/check_rate.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s004
+  sv: Om räntan är hög kan lånet i verkligheten bli mycket dyrt.
+  ru: Если процентная ставка высокая, заём на деле может оказаться очень дорогим.
+  scene_id: hb-c11-u0166
+  visual_cue: High interest can make a loan costly; conditional, qualitative relationship.
+  asset_ids:
+  - episode_background
+  - high_interest
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s004.wav
+  start_seconds: 218.0
+  end_seconds: 223.29415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/high_interest.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s005
+  sv: Man ska också fundera på hur lång lånetid man väljer.
+  ru: Также следует подумать, на какой срок брать заём.
+  scene_id: hb-c11-u0166
+  visual_cue: Choose and consider the loan duration, with no preferred duration.
+  asset_ids:
+  - episode_background
+  - loan_duration
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s005.wav
+  start_seconds: 225.25
+  end_seconds: 230.056531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/loan_duration.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0166-s006
+  sv: En lång lånetid betyder mindre delbetalningar, men på grund av räntan blir totalpriset högre.
+  ru: Длительный срок займа означает меньшие отдельные платежи, но из-за процентов общая стоимость оказывается
+    выше.
+  scene_id: hb-c11-u0166
+  visual_cue: Long term means smaller instalments but higher total cost due to interest; qualitative labels
+    only.
+  asset_ids:
+  - episode_background
+  - longer_cost
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0166-s006.wav
+  start_seconds: 232.041667
+  end_seconds: 239.913231
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/longer_cost.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0167-s001
+  sv: Om man lånar pengar till exempelvis en kompis eller en släkting är det bra att skriftligt komma
+    överens om återbetalningen av lånet och de övriga villkoren för det.
+  ru: Если вы даёте деньги взаймы, например другу или родственнику, стоит письменно договориться о возврате
+    займа и остальных его условиях.
+  scene_id: hb-c11-u0167
+  visual_cue: Written agreement about repayment and terms when lending to a friend or relative.
+  asset_ids:
+  - episode_background
+  - private_loan
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0167-s001.wav
+  start_seconds: 242.375
+  end_seconds: 256.237313
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/private_loan.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0168-s001
+  sv: Det är vanligt att ta lån i Finland när det är väl övervägt och välgrundat.
+  ru: В Финляндии брать заём — обычное дело, если решение хорошо обдумано и обосновано.
+  scene_id: hb-c11-u0168
+  visual_cue: Source describes well-considered, grounded borrowing as common in Finland; not an instruction
+    to borrow.
+  asset_ids:
+  - episode_background
+  - considered_loans
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0168-s001.wav
+  start_seconds: 258.708333
+  end_seconds: 265.186701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/considered_loans.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0168-s002
+  sv: Till exempel bostäderna i Finland är så dyra att endast få kan köpa en bostad utan bostadslån.
+  ru: Например, жильё в Финляндии настолько дорогое, что лишь немногие могут купить его без жилищного
+    кредита.
+  scene_id: hb-c11-u0168
+  visual_cue: Homes are expensive and few can buy without a mortgage; no invented house price.
+  asset_ids:
+  - episode_background
+  - mortgage
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0168-s002.wav
+  start_seconds: 267.166667
+  end_seconds: 275.66517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/mortgage.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0168-s003
+  sv: Likaså tar människor ofta lån för att till exempel köpa en bil.
+  ru: Люди также часто берут заём, чтобы, например, купить автомобиль.
+  scene_id: hb-c11-u0168
+  visual_cue: A car is the source loan example; no payment plan or model recommendation.
+  asset_ids:
+  - episode_background
+  - car_loan
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0168-s003.wav
+  start_seconds: 277.625
+  end_seconds: 283.406769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/car_loan.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0168-s004
+  sv: Ett lån är inte ett problem om man kan betala tillbaka det och återbetalningen inte påfrestar ekonomin
+    för mycket.
+  ru: Заём не представляет проблемы, если его можно вернуть и выплаты не создают чрезмерной нагрузки на
+    личные финансы.
+  scene_id: hb-c11-u0168
+  visual_cue: Repayment ability and manageable impact condition a nonproblematic loan; retain both.
+  asset_ids:
+  - episode_background
+  - sustainable_payment
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0168-s004.wav
+  start_seconds: 285.375
+  end_seconds: 294.779082
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/sustainable_payment.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0169-s001
+  sv: Att ta ett nytt lån för att betala gamla lån är på lång sikt ingen hållbar lösning.
+  ru: Брать новый заём для погашения старых — не выход в долгосрочной перспективе.
+  scene_id: hb-c11-u0169
+  visual_cue: New borrowing to repay old loans is not sustainable in the long run.
+  asset_ids:
+  - episode_background
+  - rollover
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0169-s001.wav
+  start_seconds: 297.25
+  end_seconds: 304.007007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/rollover.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0169-s002
+  sv: Om skulderna består av flera konsumtionskrediter med hög ränta kan det ändå vara bra att ta reda
+    på om det är möjligt att få ett banklån med rimlig ränta eller en social kredit för att betala skulderna.
+  ru: Однако, если задолженность складывается из нескольких потребительских кредитов с высокой процентной
+    ставкой, может быть полезно выяснить, можно ли получить банковский кредит под умеренные проценты или
+    социальный кредит для погашения долгов.
+  scene_id: hb-c11-u0169
+  visual_cue: Where there are several high-interest consumer loans, investigate a reasonable bank loan
+    OR social credit; no automatic approval.
+  asset_ids:
+  - episode_background
+  - consolidation
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0169-s002.wav
+  start_seconds: 305.958333
+  end_seconds: 322.676701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/consolidation.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c11-u0169-s003
+  sv: Man ansöker om social kredit hos det egna välfärdsområdet.
+  ru: Заявление на социальный кредит подают в свой регион по обеспечению благополучия населения.
+  scene_id: hb-c11-u0169
+  visual_cue: Apply to own wellbeing-services county for social credit.
+  asset_ids:
+  - episode_background
+  - social_credit
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0169-s003.wav
+  start_seconds: 325.458333
+  end_seconds: 330.961463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/social_credit.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0169-s004
+  sv: Garantistiftelsen i sin tur kan i vissa fall gå i borgen för banklån med rimlig ränta.
+  ru: Гарантийный фонд (Garantistiftelsen), в свою очередь, в определённых случаях может выступить поручителем
+    по банковскому кредиту с умеренной процентной ставкой.
+  scene_id: hb-c11-u0169
+  visual_cue: Foundation may guarantee a reasonable-rate bank loan in certain cases; retain both qualifications.
+  asset_ids:
+  - episode_background
+  - guarantee
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0169-s004.wav
+  start_seconds: 332.916667
+  end_seconds: 340.370272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/guarantee.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0170-s001
+  sv: Ibland kan det hända att förfallodagen för en faktura närmar sig, men det finns inte tillräckligt
+    med pengar på kontot för att betala den.
+  ru: Иногда бывает так, что срок оплаты счёта приближается, а денег на банковском счёте для его оплаты
+    не хватает.
+  scene_id: hb-c11-u0170
+  visual_cue: A bill deadline can approach while the account lacks funds; no invented date or balance.
+  asset_ids:
+  - episode_background
+  - bill_shortfall
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0170-s001.wav
+  start_seconds: 342.833333
+  end_seconds: 354.187891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/bill_shortfall.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0170-s002
+  sv: Då är det bra att genast kontakta den som skickat fakturan, till exempel elbolaget.
+  ru: Тогда стоит сразу связаться с отправителем счёта, например с энергокомпанией.
+  scene_id: hb-c11-u0170
+  visual_cue: Contact the bill sender promptly; an electricity supplier is the source example.
+  asset_ids:
+  - episode_background
+  - contact_sender
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0170-s002.wav
+  start_seconds: 356.166667
+  end_seconds: 363.341633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/contact_sender.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0170-s003
+  sv: När man förklarar situationen för bolaget är det vanligtvis möjligt att få extra tid på sig att
+    betala.
+  ru: Если объяснить компании ситуацию, обычно можно получить дополнительное время на оплату.
+  scene_id: hb-c11-u0170
+  visual_cue: Explaining the situation usually permits extra payment time, not guaranteed forgiveness.
+  asset_ids:
+  - episode_background
+  - extra_time
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0170-s003.wav
+  start_seconds: 365.291667
+  end_seconds: 374.277789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/extra_time.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0170-s004
+  sv: Det kan också vara möjligt att avtala om att betala fakturan i delar.
+  ru: Возможно, удастся также договориться об оплате счёта частями.
+  scene_id: hb-c11-u0170
+  visual_cue: Paying in parts may be agreed; no entitlement or schedule invented.
+  asset_ids:
+  - episode_background
+  - instalment_agreement
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0170-s004.wav
+  start_seconds: 376.25
+  end_seconds: 382.519388
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/instalment_agreement.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0171-s001
+  sv: Om man har lite pengar är det bra att börja med att betala de fakturor som är viktigast.
+  ru: Если денег мало, стоит начать с оплаты самых важных счетов.
+  scene_id: hb-c11-u0171
+  visual_cue: When money is short, prioritize important bills without an invented order here.
+  asset_ids:
+  - episode_background
+  - prioritize
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0171-s001.wav
+  start_seconds: 385.0
+  end_seconds: 392.871565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/prioritize.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0171-s002
+  sv: Utgifter för boende betalas alltid först, eftersom en hyresskuld kan leda till att man förlorar
+    sitt hem.
+  ru: Расходы на жильё всегда оплачивают в первую очередь, поскольку задолженность по аренде может привести
+    к потере дома.
+  scene_id: hb-c11-u0171
+  visual_cue: Pay housing first; rent debt can cause home loss, with the source conditional can.
+  asset_ids:
+  - episode_background
+  - housing_first
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0171-s002.wav
+  start_seconds: 394.833333
+  end_seconds: 403.819456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/housing_first.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0171-s003
+  sv: Också elen kan stängas av om elräkningarna inte betalas.
+  ru: Электричество тоже могут отключить, если счета за него не оплачены.
+  scene_id: hb-c11-u0171
+  visual_cue: Unpaid electricity bills can lead to disconnection; no invented notice period.
+  asset_ids:
+  - episode_background
+  - electricity_cut
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0171-s003.wav
+  start_seconds: 405.791667
+  end_seconds: 411.294796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/electricity_cut.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0172-s001
+  sv: När det gäller att hantera sin ekonomi är det bra att vara aktiv och be om hjälp genast när man
+    behöver det.
+  ru: В управлении личными финансами стоит проявлять инициативу и обращаться за помощью сразу, как только
+    она понадобится.
+  scene_id: hb-c11-u0172
+  visual_cue: Act and ask for help promptly when needed.
+  asset_ids:
+  - episode_background
+  - ask_help
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0172-s001.wav
+  start_seconds: 413.75
+  end_seconds: 423.084422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/ask_help.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0172-s002
+  sv: Det är mycket mer sannolikt att små svårigheter blir stora om man bara låter bli att betala en faktura
+    eller försöker åtgärda situationen genom att ta konsumtionskrediter med hög ränta.
+  ru: Вероятность того, что небольшие трудности станут большими, значительно выше, если просто не оплачивать
+    счёт или пытаться исправить ситуацию, беря потребительские кредиты под высокие проценты.
+  scene_id: hb-c11-u0172
+  visual_cue: Ignoring bills OR taking high-interest consumer credit can worsen small difficulties; no
+    automatic prediction.
+  asset_ids:
+  - episode_background
+  - worsening
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-ekonomi/narration/hb-c11-u0172-s002.wav
+  start_seconds: 425.041667
+  end_seconds: 440.436497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-ekonomi/pictures/worsening.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c11-ekonomi/sources/music-bed.flac
+  background_image: studio/media/hb-c11-ekonomi/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.3782738095238094
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Nordea head office in May 2024.jpg — JIP · CC BY-SA 4.0
+    - Dreamer — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#243c32'
+    text: '#faf3e8'
+    secondary: '#c5dfce'
+    highlight: '#e3c58c'
+    separator: '#4d7560'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Nordea_head_office_in_May_2024.jpg
+    description: An exterior view of the head office of the Nordea bank in Vallila, Helsinki, Finland
+      on an evening in May 2024.
+    license: CC BY-SA 4.0

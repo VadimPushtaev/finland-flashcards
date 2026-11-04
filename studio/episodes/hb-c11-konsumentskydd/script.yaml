@@ -1,0 +1,299 @@
+schema_version: 1
+section_id: hb-c11-konsumentskydd
+chapter_id: hb-c11
+title_sv: Konsumentskydd
+title_ru: Защита прав потребителей
+source_path: data/homebrew/sv/chapters/11_boende_vardag_och_miljo.yaml
+translation_path: data/homebrew/ru/sections/hb-c11-konsumentskydd.yaml
+example_only: false
+source_section_sha256: 8d0e5421fb7dad4bea7c8d75d51dc583855c972c206063620f58906c5c067868
+translation_file_sha256: 0b2627d610dd7d8c686aedbb862c301b179132e128bd8b2e46e126d0661de17d
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual title for3seconds; no additional speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Six consecutive source sentences cover consumer identity,protection,defects,remedies and escalation;
+    each has its own relevant foreground picture.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: Liberation Sans48/40 Swedish above reviewed Russian in stable right panel, chapter11 moss
+    palette,1920x1080/24fps.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Measured local narration;0.25seconds text lead and1.7seconds pause,2.2seconds after final
+    sentence.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1 steps32 speed0.95 seed42,44100HzmonoPCM16,2ONNXthreads; whole-video
+    listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: 'Six distinct foreground pictures: actual Ratina shopping-centre photograph plus five original
+    source-based pictorial diagrams for legal protection,defects,remedies,seller contact and advice. No
+    additional legal rules or monetary amounts.'
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Interior of Columbus shopping centre.jpg by JIP continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=0.606845238095238. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Canon in D for Two Renaissance Harps by Kevin MacLeod (incompetech.com), CC BY 4.0, as
+    this subchapter’s distinct instrumental track. Original master 339.618 seconds; prepared lossless
+    stereo bed 84.958 seconds. Repeat count 0, using 4-second equal-power crossfades when needed. Retain
+    the accepted +2 dB music adjustment, ducking under speech, 2-second fade-in and 3-second fade-out.
+    Full attribution accompanies the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits plus matching canonical sidecar; no spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Archived source typo kontakt is retained verbatim in narration/display; no silent
+    source correction.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: Konsumenter och köp av varor och tjänster
+- id: scene-2
+  description: Lagen skyddar konsumenten
+- id: scene-3
+  description: Fel som konsumenten inte orsakat
+- id: scene-4
+  description: Felfri vara eller pengarna tillbaka
+- id: scene-5
+  description: Kontakta först säljaren
+- id: scene-6
+  description: Konsumentrådgivning om tvisten kvarstår
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Actual Finnish shopping-centre interior, source-verified and distinct.
+  fallback: Another distinct correctly identified shopping interior with verified reusable license.
+- id: music_bed
+  kind: music
+  description: Canon in D for Two Renaissance Harps, composer licensed instrumental.
+  fallback: Another unique verified calm instrumental.
+- id: narration
+  kind: narration
+  description: Every Swedish source sentence read once in order by local F1.
+  fallback: Specific diagnostic-led separate retakes preserving wording.
+- id: picture_buying
+  kind: foreground
+  description: Konsumenter och köp av varor och tjänster; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+- id: picture_protection
+  kind: foreground
+  description: Lagen skyddar konsumenten; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+- id: picture_defect
+  kind: foreground
+  description: Fel som konsumenten inte orsakat; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+- id: picture_remedies
+  kind: foreground
+  description: Felfri vara eller pengarna tillbaka; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+- id: picture_seller
+  kind: foreground
+  description: Kontakta först säljaren; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+- id: picture_advice
+  kind: foreground
+  description: Konsumentrådgivning om tvisten kvarstår; original pictorial schematic.
+  fallback: A distinct verified relevant photograph; omit honestly if neither can be accurate.
+sentences:
+- sentence_id: hb-c11-u0190-s001
+  sv: Alla som köper varor och tjänster är konsumenter.
+  ru: Все, кто покупает товары и услуги, являются потребителями.
+  scene_id: scene-1
+  visual_cue: Konsumenter och köp av varor och tjänster; original source-based pictorial illustration
+    on left, exact bilingual sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_buying
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0190-s001.wav
+  start_seconds: 3.25
+  end_seconds: 7.986871
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/buying.png
+- sentence_id: hb-c11-u0190-s002
+  sv: Konsumentskyddslagen tryggar konsumentens rättigheter i Finland.
+  ru: Закон о защите прав потребителей (Konsumentskyddslagen) защищает права потребителя в Финляндии.
+  scene_id: scene-2
+  visual_cue: Lagen skyddar konsumenten; original source-based pictorial illustration on left, exact bilingual
+    sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_protection
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0190-s002.wav
+  start_seconds: 9.958333
+  end_seconds: 15.740102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/protection.png
+- sentence_id: hb-c11-u0190-s003
+  sv: Du har rätt till gottgörelse till exempel då varan som du köpt har fel som inte du har orsakat.
+  ru: Вы имеете право на компенсацию, например, если у купленного вами товара есть дефекты, возникшие
+    не по вашей вине.
+  scene_id: scene-3
+  visual_cue: Fel som konsumenten inte orsakat; original source-based pictorial illustration on left,
+    exact bilingual sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_defect
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0190-s003.wav
+  start_seconds: 17.708333
+  end_seconds: 25.719218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/defect.png
+- sentence_id: hb-c11-u0190-s004
+  sv: Du kan till exempel ersättas med en felfri vara eller få dina pengar tillbaka.
+  ru: Вам могут, например, предоставить взамен товар без дефектов или вернуть деньги.
+  scene_id: scene-4
+  visual_cue: Felfri vara eller pengarna tillbaka; original source-based pictorial illustration on left,
+    exact bilingual sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_remedies
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0190-s004.wav
+  start_seconds: 27.708333
+  end_seconds: 34.535
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/remedies.png
+- sentence_id: hb-c11-u0191-s001
+  sv: Om en vara som du köpt har brister ska du först kontakt säljaren.
+  ru: Если у купленного вами товара есть недостатки, сначала следует обратиться к продавцу.
+  scene_id: scene-5
+  visual_cue: Kontakta först säljaren; original source-based pictorial illustration on left, exact bilingual
+    sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_seller
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0191-s001.wav
+  start_seconds: 36.5
+  end_seconds: 42.630068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/seller.png
+- sentence_id: hb-c11-u0191-s002
+  sv: Om du inte kan komma överens om saken med säljaren, ta då kontakt med konsumentrådgivningen.
+  ru: Если договориться с продавцом по этому вопросу не удаётся, обратитесь в Службу консультирования
+    потребителей (Konsumentrådgivningen).
+  scene_id: scene-6
+  visual_cue: Konsumentrådgivning om tvisten kvarstår; original source-based pictorial illustration on
+    left, exact bilingual sentence on right.
+  asset_ids:
+  - episode_background
+  - picture_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Preserve exact source wording; compounds and archival grammatical typo remain whole-video listening
+    priorities.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-konsumentskydd/narration/hb-c11-u0191-s002.wav
+  start_seconds: 44.583333
+  end_seconds: 52.733537
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-konsumentskydd/pictures/advice.png
+render:
+  music_path: studio/media/hb-c11-konsumentskydd/sources/music-bed.flac
+  background_image: studio/media/hb-c11-konsumentskydd/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 0.606845238095238
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - 'Svensk källtext: InfoFinland.fi — Vardagslivet i Finland.'
+    - InfoFinland.fi · www.infofinland.fi/sv.
+    - 'Textkälla: CC BY4.0 · creativecommons.org/licenses/by/4.0'
+    - Granskad rysk översättning; exakta källmeningar återges.
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Interior of Columbus shopping centre.jpg — JIP · CC BY-SA 4.0
+    - Canon in D for Two Renaissance Harps — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Swedish and reviewed Russian exact source text retained; source grammatical typo preserved.
+  - One verified shopping-centre photograph and five distinct original pictorial diagrams visualize source-stated
+    concepts; source licenses retained.
+  - Decorative background proportionally cropped,softened,darkened and continuously panned/zoomed; original
+    license retained.
+  - Music faded,ducked,+2dBgain and repeated using4second equal-power crossfades as needed.
+  palette:
+    background: '#243c32'
+    text: '#faf3e8'
+    secondary: '#c5dfce'
+    highlight: '#e3c58c'
+    separator: '#4d7560'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Interior_of_Columbus_shopping_centre.jpg
+    description: Interior of the Columbus shopping centre in Vuosaari, Helsinki, Finland.
+    license: CC BY-SA 4.0

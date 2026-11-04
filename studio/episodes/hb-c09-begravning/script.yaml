@@ -1,0 +1,1557 @@
+schema_version: 1
+section_id: hb-c09-begravning
+chapter_id: hb-c09
+title_sv: Begravning och stöd efter dödsfall
+title_ru: Похороны и поддержка после смерти близкого
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-begravning.yaml
+example_only: false
+source_section_sha256: 237f3665fbe16c3907088983087120a843b70f1e475d69efdaba3cf8c9acf941
+translation_file_sha256: 1fdece0df23d35b5130b40dc9e08b1ff57a21ac891d70cf6cdae59a06a67ef44
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Respectful object photographs and diagrams distinguish coffin burial, cremation and urn placement,
+    permission for third-party land, cross-border arrangements, bereavement support and conditional survivor
+    benefits. No identifiable deceased person appears.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Läntinen hautausmaa, Vanha luterilainen hautausmaa (= Hietaniemen hautausmaa). -
+    N213 (hkm.HKMS000005-00000123).jpg by Signe Brander continuously as decorative background, darkened
+    42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative zoom 1.06→1.219,
+    140 seconds per motion cycle, starting in motion, with no sentence resets. Total cycles=3.882142857142857.
+    Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Sad Trio by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 251.559 seconds; prepared lossless stereo bed 543.500 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: I Finland är det vanligt att begravningar ordnas först flera veckor efter ett dödsfall.
+- id: scene-2
+  description: Var och en får ordna en sådan begravning som den vill för den anhörige, men i mån av möjlighet
+    ska den avlidnes önskemål uppfyllas.
+- id: scene-3
+  description: I Finland bestämmer den avlidne själv eller familjen vad som ska hända med kroppen efter
+    döden.
+- id: scene-4
+  description: Kremering har blivit vanligare de senaste årtiondena.
+- id: scene-5
+  description: Om den avlidne eller den avlidnes familj vill kan askan också spridas någon annanstans,
+    till exempel på familjens egen mark eller i havet.
+- id: scene-6
+  description: I Finland är majoriteten av begravningsplatserna begravningsplatser som upprätthålls av
+    den evangelisk-lutherska kyrkan.
+- id: scene-7
+  description: Kommunerna kan också ha egna begravningsplatser för olika religiösa samfund, till exempel
+    en ortodox, muslimsk eller judisk begravningsplats.
+- id: scene-8
+  description: Om en utlänning avlider i Finland och familjen vill transportera den avlidnes kropp eller
+    aska till ett annat land för att begravas, ska de kontakta destinationslandets ambassad i Finland.
+- id: scene-9
+  description: När en närstående person avlider, kan du få hjälp och stöd i sorgen vid social- och hälsocentralen
+    (sosiaali- ja terveyskeskus) eller familjerådgivningen (perheneuvola) i ditt område, i MIELI ry:s
+    kristelefon eller hos församlingarna.
+- id: scene-10
+  description: Du får hjälp på finska och svenska och på de flesta ställena även på engelska.
+- id: scene-11
+  description: När en person som är medborgare i något annat land avlider i Finland utreds dödsorsaken
+    enligt finsk lag.
+- id: scene-12
+  description: Om ingen nära anhörig ser till att den avlidna personen blir begraven, kremerad eller transporterad
+    till hemlandet kan beskickningen kontakta de lokala myndigheterna.
+- id: scene-13
+  description: Ibland kan en avliden person ha rätt till begravningsbidrag baserat på sin sista anställning
+    eller sitt medlemskap i ett fackförbund.
+- id: scene-14
+  description: Efter en persons bortgång kan maka/make och barn få familjepension.
+- id: scene-15
+  description: Om en person har bott eller arbetat länge i ett annat land innan hen flyttade till Finland
+    kan änkan/änklingen och barnen ha rätt till familjepension även från detta land.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland är det vanligt att begravningar ordnas först
+    flera veckor efter ett dödsfall.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Det tar tid att ta hand om alla praktiska arrangemang
+    och ordna med begravningen, och dessutom kan det vara rusning på begravningsplatserna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Den avlidne, det vill säga den som dött, kan dock begravas
+    också snabbare, om dödsorsaken har utretts och en läkare har gett begravningstillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Var och en får ordna en sådan begravning som den vill
+    för den anhörige, men i mån av möjlighet ska den avlidnes önskemål uppfyllas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Människor som hör till olika religioner har olika begravningstraditioner.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland finns det många olika begravningsbyråer som
+    erbjuder hjälp.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Begravningsbyråer är företag som ordnar begravningar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Man kan också själv ordna begravningen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland bestämmer den avlidne själv eller familjen vad
+    som ska hända med kroppen efter döden.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Den avlidne kan begravas i en kista eller så kan kroppen
+    brännas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: Kistbegravningar är vanliga i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: I en kista får en människa begravas endast på begravningsplatser
+    som har behörigt tillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: Kremering har blivit vanligare de senaste årtiondena.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Det är det förmånligaste begravningssättet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_015
+  kind: foreground
+  description: 'A source-bound illustration of: När den avlidne har kremerats, förs askan i ett särskilt
+    kärl, en askurna, till en begravningsplats för att begravas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_016
+  kind: foreground
+  description: 'A source-bound illustration of: På begravningsplatser finns ett särskilt område, en urnlund,
+    där urnan kan begravas eller askan spridas på marken.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_017
+  kind: foreground
+  description: 'A source-bound illustration of: Om den avlidne eller den avlidnes familj vill kan askan
+    också spridas någon annanstans, till exempel på familjens egen mark eller i havet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_018
+  kind: foreground
+  description: 'A source-bound illustration of: Om familjen vill sprida askan på någon annans mark eller
+    vattenområde, måste man be om tillstånd av den som äger marken eller vattenområdet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_019
+  kind: foreground
+  description: 'A source-bound illustration of: All aska måste dessutom spridas på ett och samma ställe,
+    man får med andra ord inte dela på den.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_020
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland är majoriteten av begravningsplatserna begravningsplatser
+    som upprätthålls av den evangelisk-lutherska kyrkan.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_021
+  kind: foreground
+  description: 'A source-bound illustration of: På dem får dock också personer som hör till andra trossamfund
+    begravas.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_022
+  kind: foreground
+  description: 'A source-bound illustration of: På de flesta begravningsplatser finns det separata områden
+    för avlidna som har varit medlemmar i något annat trossamfund eller inte varit medlemmar i något samfund
+    alls.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_023
+  kind: foreground
+  description: 'A source-bound illustration of: Kommunerna kan också ha egna begravningsplatser för olika
+    religiösa samfund, till exempel en ortodox, muslimsk eller judisk begravningsplats.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_024
+  kind: foreground
+  description: 'A source-bound illustration of: Olika religiösa eller icke-religiösa samfund kan ha egna
+    privata begravningsplatser.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_025
+  kind: foreground
+  description: 'A source-bound illustration of: Det egna religiösa samfundet eller begravningsbyråerna
+    ger information om begravningsplatser och de praktiska arrangemangen.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_026
+  kind: foreground
+  description: 'A source-bound illustration of: Om en utlänning avlider i Finland och familjen vill transportera
+    den avlidnes kropp eller aska till ett annat land för att begravas, ska de kontakta destinationslandets
+    ambassad i Finland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_027
+  kind: foreground
+  description: 'A source-bound illustration of: En del länders ambassader hjälper familjer att transportera
+    avlidna anhöriga.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_028
+  kind: foreground
+  description: 'A source-bound illustration of: Familjen betalar själv transporten.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_029
+  kind: foreground
+  description: 'A source-bound illustration of: När en närstående person avlider, kan du få hjälp och
+    stöd i sorgen vid social- och hälsocentralen (sosiaali- ja terveyskeskus) eller familjerådgivningen
+    (perheneuvola) i ditt område, i MIELI ry:s kristelefon eller hos församlingarna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_030
+  kind: foreground
+  description: 'A source-bound illustration of: Du får hjälp på finska och svenska och på de flesta ställena
+    även på engelska.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_031
+  kind: foreground
+  description: 'A source-bound illustration of: Du kan även ta hjälp av en tolk.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_032
+  kind: foreground
+  description: 'A source-bound illustration of: Mieli ry:s kristelefon betjänar på finska, svenska, engelska,
+    ukrainska och ryska.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_033
+  kind: foreground
+  description: 'A source-bound illustration of: När en person som är medborgare i något annat land avlider
+    i Finland utreds dödsorsaken enligt finsk lag.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_034
+  kind: foreground
+  description: 'A source-bound illustration of: En myndighet eller ett sjukhus anmäler dödsfallet till
+    beskickningen i den avlidnes ursprungsland.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_035
+  kind: foreground
+  description: 'A source-bound illustration of: Beskickningen eller utrikesministeriet i den avlidnes
+    ursprungsland meddelar informationen till den avlidnes närstående.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_036
+  kind: foreground
+  description: 'A source-bound illustration of: Om ingen nära anhörig ser till att den avlidna personen
+    blir begraven, kremerad eller transporterad till hemlandet kan beskickningen kontakta de lokala myndigheterna.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_037
+  kind: foreground
+  description: 'A source-bound illustration of: I detta fall begravs eller kremeras kroppen enligt finsk
+    praxis.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_038
+  kind: foreground
+  description: 'A source-bound illustration of: Ibland kan en avliden person ha rätt till begravningsbidrag
+    baserat på sin sista anställning eller sitt medlemskap i ett fackförbund.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_039
+  kind: foreground
+  description: 'A source-bound illustration of: Fråga den sista arbetsgivaren eller fackförbundet om detta.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_040
+  kind: foreground
+  description: 'A source-bound illustration of: För begravningskostnaderna för en medellös person kan
+    du ansöka om utkomststöd (toimeentulotuki) hos FPA och socialtjänsterna i ditt område.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_041
+  kind: foreground
+  description: 'A source-bound illustration of: Efter en persons bortgång kan maka/make och barn få familjepension.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_042
+  kind: foreground
+  description: 'A source-bound illustration of: Syftet med familjepensionen är att trygga änkans/änklingens
+    och barnens uppehälle.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_043
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland finns två olika familjepensioner: FPA:s familjepension
+    och familjepensionen från arbetspensionssystemet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_044
+  kind: foreground
+  description: 'A source-bound illustration of: Om den avlidna har arbetat som anställd eller företagare
+    i Finland kan änkan/änklingen och barnen få familjepension från arbetspensionssystemet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_045
+  kind: foreground
+  description: 'A source-bound illustration of: Om en person har bott eller arbetat länge i ett annat
+    land innan hen flyttade till Finland kan änkan/änklingen och barnen ha rätt till familjepension även
+    från detta land.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_046
+  kind: foreground
+  description: 'A source-bound illustration of: Ta reda på villkoren för familjepension från Finland eller
+    ursprungslandet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0396-s001
+  sv: I Finland är det vanligt att begravningar ordnas först flera veckor efter ett dödsfall.
+  ru: В Финляндии похороны обычно проводят лишь через несколько недель после смерти.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of Finland, flera veckor, begravningar. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - Finland
+  - flera veckor
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0396-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.842925
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0396-s002
+  sv: Det tar tid att ta hand om alla praktiska arrangemang och ordna med begravningen, och dessutom kan
+    det vara rusning på begravningsplatserna.
+  ru: Решение всех практических вопросов и организация похорон требуют времени, а кроме того, кладбища
+    могут быть загружены.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of tid, praktiska arrangemang, begravningsplatserna.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - praktiska arrangemang
+  - begravningsplatserna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0396-s002.wav
+  start_seconds: 12.625
+  end_seconds: 24.327857
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0396-s003
+  sv: Den avlidne, det vill säga den som dött, kan dock begravas också snabbare, om dödsorsaken har utretts
+    och en läkare har gett begravningstillstånd.
+  ru: Однако покойного, то есть умершего человека, можно похоронить и раньше, если причина смерти установлена
+    и врач выдал разрешение на похороны.
+  scene_id: scene-1
+  visual_cue: Individually composed source explanation of begravas, dödsorsaken har utretts, begravningstillstånd.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - begravas
+  - dödsorsaken har utretts
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0396-s003.wav
+  start_seconds: 26.083333
+  end_seconds: 38.20415
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0397-s001
+  sv: Var och en får ordna en sådan begravning som den vill för den anhörige, men i mån av möjlighet ska
+    den avlidnes önskemål uppfyllas.
+  ru: Каждый может организовать похороны своего близкого так, как считает нужным, но по возможности следует
+    выполнить пожелания умершего.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of Var och en, begravning, den avlidnes önskemål.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - Var och en
+  - begravning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0397-s001.wav
+  start_seconds: 40.958333
+  end_seconds: 51.894932
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0397-s002
+  sv: Människor som hör till olika religioner har olika begravningstraditioner.
+  ru: У людей разных религий разные похоронные традиции.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of olika religioner, olika begravningstraditioner.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - olika religioner
+  - olika begravningstraditioner
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0397-s002.wav
+  start_seconds: 53.666667
+  end_seconds: 60.354014
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0397-s003
+  sv: I Finland finns det många olika begravningsbyråer som erbjuder hjälp.
+  ru: В Финляндии есть много различных похоронных бюро, которые предлагают помощь.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of begravningsbyråer, hjälp, Finland. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - begravningsbyråer
+  - hjälp
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0397-s003.wav
+  start_seconds: 62.125
+  end_seconds: 68.255068
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0397-s004
+  sv: Begravningsbyråer är företag som ordnar begravningar.
+  ru: Похоронные бюро — это предприятия, которые организуют похороны.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of Begravningsbyråer, begravningar. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - Begravningsbyråer
+  - begravningar
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0397-s004.wav
+  start_seconds: 70.041667
+  end_seconds: 74.917857
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0397-s005
+  sv: Man kan också själv ordna begravningen.
+  ru: Похороны можно организовать и самостоятельно.
+  scene_id: scene-2
+  visual_cue: Individually composed source explanation of själv, ordna begravningen. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - själv
+  - ordna begravningen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0397-s005.wav
+  start_seconds: 76.708333
+  end_seconds: 80.678946
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0398-s001
+  sv: I Finland bestämmer den avlidne själv eller familjen vad som ska hända med kroppen efter döden.
+  ru: В Финляндии то, что произойдёт с телом после смерти, определяет сам человек или его семья.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of den avlidne själv, familjen, bestämmer. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - den avlidne själv
+  - familjen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0398-s001.wav
+  start_seconds: 83.166667
+  end_seconds: 91.52585
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0398-s002
+  sv: Den avlidne kan begravas i en kista eller så kan kroppen brännas.
+  ru: Умершего можно похоронить в гробу или кремировать его тело.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of kista, brännas. All source conditions remain
+    in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical procedure,
+    national stereotype or invented number. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - kista
+  - brännas
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0398-s002.wav
+  start_seconds: 93.291667
+  end_seconds: 99.003776
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0398-s003
+  sv: Kistbegravningar är vanliga i Finland.
+  ru: Захоронение в гробу широко распространено в Финляндии.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of Kistbegravningar, Finland. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - Kistbegravningar
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0398-s003.wav
+  start_seconds: 100.791667
+  end_seconds: 104.622959
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0398-s004
+  sv: I en kista får en människa begravas endast på begravningsplatser som har behörigt tillstånd.
+  ru: Хоронить человека в гробу разрешается только на кладбищах, имеющих надлежащее разрешение.
+  scene_id: scene-3
+  visual_cue: Individually composed source explanation of kista, begravningsplatser, behörigt tillstånd.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - kista
+  - begravningsplatser
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0398-s004.wav
+  start_seconds: 106.375
+  end_seconds: 114.385884
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0399-s001
+  sv: Kremering har blivit vanligare de senaste årtiondena.
+  ru: В последние десятилетия кремация стала более распространённой.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of Kremering, vanligare, de senaste årtiondena.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - Kremering
+  - vanligare
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0399-s001.wav
+  start_seconds: 116.875
+  end_seconds: 121.75119
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0399-s002
+  sv: Det är det förmånligaste begravningssättet.
+  ru: Это самый дешёвый способ погребения.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of förmånligaste, begravningssättet. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - förmånligaste
+  - begravningssättet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0399-s002.wav
+  start_seconds: 123.541667
+  end_seconds: 127.581939
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_014.png
+  render_caption: false
+- sentence_id: hb-c09-u0399-s003
+  sv: När den avlidne har kremerats, förs askan i ett särskilt kärl, en askurna, till en begravningsplats
+    för att begravas.
+  ru: После кремации умершего прах в специальном сосуде — урне для праха — доставляют на кладбище для
+    захоронения.
+  scene_id: scene-4
+  visual_cue: Individually composed source explanation of askurna, begravningsplats. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_015
+  text_highlights:
+  - askurna
+  - begravningsplats
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0399-s003.wav
+  start_seconds: 129.333333
+  end_seconds: 139.642993
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_015.png
+  render_caption: false
+- sentence_id: hb-c09-u0399-s004
+  sv: På begravningsplatser finns ett särskilt område, en urnlund, där urnan kan begravas eller askan
+    spridas på marken.
+  ru: На кладбищах есть специальный участок для захоронения урн (urnlund), где можно захоронить урну или
+    развеять прах на земле.
+  scene_id: scene-4
+  visual_cue: Commons specifically identifies the pictured grave as lying in Hietaniemi urn grove, a concrete
+    example of the named cemetery area. No new claim about burial procedure, religion or the deceased
+    person is made. The complete source photograph is shown with its source-identity caption; no sensitive
+    personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_016
+  text_highlights:
+  - urnlund
+  - urnan
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0399-s004.wav
+  start_seconds: 141.416667
+  end_seconds: 151.238707
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_016.png
+  render_caption: false
+- sentence_id: hb-c09-u0400-s001
+  sv: Om den avlidne eller den avlidnes familj vill kan askan också spridas någon annanstans, till exempel
+    på familjens egen mark eller i havet.
+  ru: По желанию умершего или его семьи прах также можно развеять в другом месте, например на собственной
+    земле семьи или в море.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of familj, egen mark, havet. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_017
+  text_highlights:
+  - familj
+  - egen mark
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0400-s001.wav
+  start_seconds: 153.708333
+  end_seconds: 165.48085
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_017.png
+  render_caption: false
+- sentence_id: hb-c09-u0400-s002
+  sv: Om familjen vill sprida askan på någon annans mark eller vattenområde, måste man be om tillstånd
+    av den som äger marken eller vattenområdet.
+  ru: Если семья хочет развеять прах на чужой земле или акватории, нужно запросить разрешение у владельца
+    этой земли или акватории.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of någon annans mark, tillstånd, den som äger.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_018
+  text_highlights:
+  - någon annans mark
+  - tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0400-s002.wav
+  start_seconds: 167.25
+  end_seconds: 179.301156
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_018.png
+  render_caption: false
+- sentence_id: hb-c09-u0400-s003
+  sv: All aska måste dessutom spridas på ett och samma ställe, man får med andra ord inte dela på den.
+  ru: Кроме того, весь прах необходимо развеять в одном и том же месте, то есть разделять его нельзя.
+  scene_id: scene-5
+  visual_cue: Individually composed source explanation of All aska, ett och samma ställe, inte dela. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_019
+  text_highlights:
+  - All aska
+  - ett och samma ställe
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0400-s003.wav
+  start_seconds: 181.083333
+  end_seconds: 189.372857
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_019.png
+  render_caption: false
+- sentence_id: hb-c09-u0401-s001
+  sv: I Finland är majoriteten av begravningsplatserna begravningsplatser som upprätthålls av den evangelisk-lutherska
+    kyrkan.
+  ru: В Финляндии большинство кладбищ содержится евангелическо-лютеранской церковью.
+  scene_id: scene-6
+  visual_cue: Individually composed source explanation of Finland, majoriteten av begravningsplatserna,
+    evangelisk-lutherska kyrkan. All source conditions remain in the exact bilingual text. Neutral symbolic
+    people, no identifiable deceased person, clinical procedure, national stereotype or invented number.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_020
+  text_highlights:
+  - Finland
+  - majoriteten av begravningsplatserna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0401-s001.wav
+  start_seconds: 191.833333
+  end_seconds: 202.700272
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_020.png
+  render_caption: false
+- sentence_id: hb-c09-u0401-s002
+  sv: På dem får dock också personer som hör till andra trossamfund begravas.
+  ru: Однако на них разрешено хоронить и людей, принадлежащих к другим религиозным общинам.
+  scene_id: scene-6
+  visual_cue: Individually composed source explanation of dem, personer, andra trossamfund. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_021
+  text_highlights:
+  - personer
+  - andra trossamfund
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0401-s002.wav
+  start_seconds: 204.458333
+  end_seconds: 210.727721
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_021.png
+  render_caption: false
+- sentence_id: hb-c09-u0401-s003
+  sv: På de flesta begravningsplatser finns det separata områden för avlidna som har varit medlemmar i
+    något annat trossamfund eller inte varit medlemmar i något samfund alls.
+  ru: На большинстве кладбищ есть отдельные участки для умерших, которые принадлежали к другой религиозной
+    общине или вообще не состояли ни в какой общине.
+  scene_id: scene-6
+  visual_cue: Individually composed source explanation of begravningsplatser, separata områden, inte varit
+    medlemmar. All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_022
+  text_highlights:
+  - begravningsplatser
+  - separata områden
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0401-s003.wav
+  start_seconds: 212.5
+  end_seconds: 226.431973
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_022.png
+  render_caption: false
+- sentence_id: hb-c09-u0402-s001
+  sv: Kommunerna kan också ha egna begravningsplatser för olika religiösa samfund, till exempel en ortodox,
+    muslimsk eller judisk begravningsplats.
+  ru: У муниципалитетов также могут быть собственные кладбища для разных религиозных общин, например православное,
+    мусульманское или иудейское кладбище.
+  scene_id: scene-7
+  visual_cue: Individually composed source explanation of Kommunerna, begravningsplatser, olika religiösa
+    samfund. All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_023
+  text_highlights:
+  - Kommunerna
+  - begravningsplatser
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0402-s001.wav
+  start_seconds: 229.208333
+  end_seconds: 241.538129
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_023.png
+  render_caption: false
+- sentence_id: hb-c09-u0402-s002
+  sv: Olika religiösa eller icke-religiösa samfund kan ha egna privata begravningsplatser.
+  ru: Различные религиозные или нерелигиозные общины могут иметь собственные частные кладбища.
+  scene_id: scene-7
+  visual_cue: Individually composed source explanation of religiösa eller icke-religiösa samfund, privata
+    begravningsplatser. All source conditions remain in the exact bilingual text. Neutral symbolic people,
+    no identifiable deceased person, clinical procedure, national stereotype or invented number. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_024
+  text_highlights:
+  - religiösa eller icke-religiösa samfund
+  - privata begravningsplatser
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0402-s002.wav
+  start_seconds: 244.291667
+  end_seconds: 252.023912
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_024.png
+  render_caption: false
+- sentence_id: hb-c09-u0402-s003
+  sv: Det egna religiösa samfundet eller begravningsbyråerna ger information om begravningsplatser och
+    de praktiska arrangemangen.
+  ru: Сведения о кладбищах и практических вопросах организации похорон можно получить в своей религиозной
+    общине или в похоронных бюро.
+  scene_id: scene-7
+  visual_cue: Individually composed source explanation of religiösa samfundet, begravningsbyråerna, information.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_025
+  text_highlights:
+  - religiösa samfundet
+  - begravningsbyråerna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0402-s003.wav
+  start_seconds: 253.791667
+  end_seconds: 264.310306
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_025.png
+  render_caption: false
+- sentence_id: hb-c09-u0403-s001
+  sv: Om en utlänning avlider i Finland och familjen vill transportera den avlidnes kropp eller aska till
+    ett annat land för att begravas, ska de kontakta destinationslandets ambassad i Finland.
+  ru: Если иностранец умирает в Финляндии и семья хочет перевезти его тело или прах в другую страну для
+    погребения, ей следует обратиться в посольство страны назначения в Финляндии.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of kropp eller aska, ett annat land, ambassad.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_026
+  text_highlights:
+  - kropp eller aska
+  - ett annat land
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0403-s001.wav
+  start_seconds: 266.791667
+  end_seconds: 282.743776
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_026.png
+  render_caption: false
+- sentence_id: hb-c09-u0403-s002
+  sv: En del länders ambassader hjälper familjer att transportera avlidna anhöriga.
+  ru: Посольства некоторых стран помогают семьям с перевозкой умерших родственников.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of ambassader, familjer, avlidna anhöriga. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_027
+  text_highlights:
+  - ambassader
+  - familjer
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0403-s002.wav
+  start_seconds: 285.5
+  end_seconds: 292.605306
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_027.png
+  render_caption: false
+- sentence_id: hb-c09-u0403-s003
+  sv: Familjen betalar själv transporten.
+  ru: Семья сама оплачивает перевозку.
+  scene_id: scene-8
+  visual_cue: Individually composed source explanation of Familjen, betalar själv, transporten. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_028
+  text_highlights:
+  - Familjen
+  - betalar själv
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0403-s003.wav
+  start_seconds: 294.375
+  end_seconds: 298.066973
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_028.png
+  render_caption: false
+- sentence_id: hb-c09-u0404-s001
+  sv: När en närstående person avlider, kan du få hjälp och stöd i sorgen vid social- och hälsocentralen
+    (sosiaali- ja terveyskeskus) eller familjerådgivningen (perheneuvola) i ditt område, i MIELI ry:s
+    kristelefon eller hos församlingarna.
+  ru: Когда умирает близкий человек, помощь и поддержку в переживании горя можно получить в центре социального
+    обслуживания и здравоохранения (sosiaali- ja terveyskeskus) или в семейной консультации (perheneuvola)
+    своего района, по кризисной линии MIELI ry или в церковных приходах.
+  scene_id: scene-9
+  visual_cue: Individually composed source explanation of social- och hälsocentralen, MIELI ry:s kristelefon,
+    församlingarna. All source conditions remain in the exact bilingual text. Neutral symbolic people,
+    no identifiable deceased person, clinical procedure, national stereotype or invented number. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_029
+  text_highlights:
+  - social- och hälsocentralen
+  - MIELI ry:s kristelefon
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0404-s001.wav
+  start_seconds: 300.541667
+  end_seconds: 320.952007
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_029.png
+  render_caption: false
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c09-u0405-s001
+  sv: Du får hjälp på finska och svenska och på de flesta ställena även på engelska.
+  ru: Помощь предоставляется на финском и шведском языках, а в большинстве мест — также на английском.
+  scene_id: scene-10
+  visual_cue: Individually composed source explanation of finska, svenska, engelska. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_030
+  text_highlights:
+  - finska
+  - svenska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0405-s001.wav
+  start_seconds: 323.708333
+  end_seconds: 330.46534
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_030.png
+  render_caption: false
+- sentence_id: hb-c09-u0405-s002
+  sv: Du kan även ta hjälp av en tolk.
+  ru: Можно также воспользоваться помощью устного переводчика.
+  scene_id: scene-10
+  visual_cue: Individually composed source explanation of Du, tolk. All source conditions remain in the
+    exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical procedure,
+    national stereotype or invented number. Fixed bilingual panel; foreground stays steady. Picture labels
+    repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_031
+  text_highlights: []
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0405-s002.wav
+  start_seconds: 332.25
+  end_seconds: 335.454354
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_031.png
+  render_caption: false
+- sentence_id: hb-c09-u0405-s003
+  sv: Mieli ry:s kristelefon betjänar på finska, svenska, engelska, ukrainska och ryska.
+  ru: Кризисная телефонная линия Mieli ry обслуживает на финском, шведском, английском, украинском и русском
+    языках.
+  scene_id: scene-10
+  visual_cue: Individually composed source explanation of Mieli ry:s kristelefon, ukrainska, ryska. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_032
+  text_highlights:
+  - Mieli ry:s kristelefon
+  - ukrainska
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0405-s003.wav
+  start_seconds: 337.208333
+  end_seconds: 345.149558
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_032.png
+  render_caption: false
+- sentence_id: hb-c09-u0406-s001
+  sv: När en person som är medborgare i något annat land avlider i Finland utreds dödsorsaken enligt finsk
+    lag.
+  ru: Когда в Финляндии умирает гражданин другой страны, причину смерти устанавливают в соответствии с
+    финским законодательством.
+  scene_id: scene-11
+  visual_cue: Individually composed source explanation of medborgare, Finland, finsk lag. All source conditions
+    remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person, clinical
+    procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays steady.
+    Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_033
+  text_highlights:
+  - medborgare
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0406-s001.wav
+  start_seconds: 347.625
+  end_seconds: 356.820102
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_033.png
+  render_caption: false
+- sentence_id: hb-c09-u0406-s002
+  sv: En myndighet eller ett sjukhus anmäler dödsfallet till beskickningen i den avlidnes ursprungsland.
+  ru: Орган власти или больница сообщает о смерти в дипломатическое представительство страны происхождения
+    умершего.
+  scene_id: scene-11
+  visual_cue: Individually composed source explanation of sjukhus, dödsfallet, beskickningen. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_034
+  text_highlights:
+  - sjukhus
+  - dödsfallet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0406-s002.wav
+  start_seconds: 358.583333
+  end_seconds: 366.942517
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_034.png
+  render_caption: false
+- sentence_id: hb-c09-u0406-s003
+  sv: Beskickningen eller utrikesministeriet i den avlidnes ursprungsland meddelar informationen till
+    den avlidnes närstående.
+  ru: Дипломатическое представительство или министерство иностранных дел страны происхождения умершего
+    передаёт эту информацию его близким.
+  scene_id: scene-11
+  visual_cue: Individually composed source explanation of Beskickningen, informationen, närstående. All
+    source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased
+    person, clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground
+    stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_035
+  text_highlights:
+  - Beskickningen
+  - informationen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0406-s003.wav
+  start_seconds: 368.708333
+  end_seconds: 378.948333
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_035.png
+  render_caption: false
+- sentence_id: hb-c09-u0407-s001
+  sv: Om ingen nära anhörig ser till att den avlidna personen blir begraven, kremerad eller transporterad
+    till hemlandet kan beskickningen kontakta de lokala myndigheterna.
+  ru: Если никто из близких родственников не позаботится о погребении, кремации или перевозке умершего
+    на родину, дипломатическое представительство может обратиться к местным властям.
+  scene_id: scene-12
+  visual_cue: Individually composed source explanation of begraven, beskickningen, lokala myndigheterna.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_036
+  text_highlights:
+  - begraven
+  - beskickningen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0407-s001.wav
+  start_seconds: 381.416667
+  end_seconds: 395.13966
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_036.png
+  render_caption: false
+- sentence_id: hb-c09-u0407-s002
+  sv: I detta fall begravs eller kremeras kroppen enligt finsk praxis.
+  ru: В таком случае тело хоронят или кремируют по принятой в Финляндии практике.
+  scene_id: scene-12
+  visual_cue: Individually composed source explanation of begravs, kremeras, finsk praxis. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_037
+  text_highlights:
+  - begravs
+  - kremeras
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0407-s002.wav
+  start_seconds: 397.916667
+  end_seconds: 403.628776
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_037.png
+  render_caption: false
+- sentence_id: hb-c09-u0408-s001
+  sv: Ibland kan en avliden person ha rätt till begravningsbidrag baserat på sin sista anställning eller
+    sitt medlemskap i ett fackförbund.
+  ru: Иногда в связи со смертью человека может возникать право на пособие на погребение на основании его
+    последнего места работы или членства в профсоюзе.
+  scene_id: scene-13
+  visual_cue: Individually composed source explanation of begravningsbidrag, sista anställning, fackförbund.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_038
+  text_highlights:
+  - begravningsbidrag
+  - sista anställning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0408-s001.wav
+  start_seconds: 406.083333
+  end_seconds: 417.298571
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_038.png
+  render_caption: false
+- sentence_id: hb-c09-u0408-s002
+  sv: Fråga den sista arbetsgivaren eller fackförbundet om detta.
+  ru: Узнайте об этом у последнего работодателя умершего или в профсоюзе.
+  scene_id: scene-13
+  visual_cue: Individually composed source explanation of Fråga, arbetsgivaren, fackförbundet. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_039
+  text_highlights:
+  - Fråga
+  - arbetsgivaren
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0408-s002.wav
+  start_seconds: 420.083333
+  end_seconds: 425.656122
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_039.png
+  render_caption: false
+- sentence_id: hb-c09-u0408-s003
+  sv: För begravningskostnaderna för en medellös person kan du ansöka om utkomststöd (toimeentulotuki)
+    hos FPA och socialtjänsterna i ditt område.
+  ru: Для покрытия расходов на похороны человека, не имеющего средств, вы можете подать заявление на социальное
+    пособие (toimeentulotuki) в Ведомство социального обеспечения (FPA) и социальные службы своего района.
+  scene_id: scene-13
+  visual_cue: Verified Kela office supports the source conditional application for funeral-cost assistance;
+    no entitlement, current payment amount or particular applicant is inferred. The complete source photograph
+    is shown with its source-identity caption; no sensitive personal attributes are inferred.
+  asset_ids:
+  - episode_background
+  - picture_040
+  text_highlights:
+  - begravningskostnaderna
+  - ansöka om utkomststöd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0408-s003.wav
+  start_seconds: 427.416667
+  end_seconds: 440.234082
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_040.png
+  render_caption: false
+- sentence_id: hb-c09-u0409-s001
+  sv: Efter en persons bortgång kan maka/make och barn få familjepension.
+  ru: После смерти человека его супруг или супруга и дети могут получать пенсию по потере кормильца.
+  scene_id: scene-14
+  visual_cue: Individually composed source explanation of familjepension, maka/make, barn. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_041
+  text_highlights:
+  - familjepension
+  - maka/make
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0409-s001.wav
+  start_seconds: 443.0
+  end_seconds: 448.642449
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_041.png
+  render_caption: false
+- sentence_id: hb-c09-u0409-s002
+  sv: Syftet med familjepensionen är att trygga änkans/änklingens och barnens uppehälle.
+  ru: Цель пенсии по потере кормильца — обеспечить средства к существованию вдове или вдовцу и детям.
+  scene_id: scene-14
+  visual_cue: Individually composed source explanation of familjepensionen, änkans/änklingens, barnens
+    uppehälle. All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_042
+  text_highlights:
+  - familjepensionen
+  - änkans/änklingens
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0409-s002.wav
+  start_seconds: 450.416667
+  end_seconds: 457.521973
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_042.png
+  render_caption: false
+- sentence_id: hb-c09-u0409-s003
+  sv: 'I Finland finns två olika familjepensioner: FPA:s familjepension och familjepensionen från arbetspensionssystemet.'
+  ru: 'В Финляндии есть два вида пенсии по потере кормильца: пенсия от FPA и пенсия из системы трудовых
+    пенсий.'
+  scene_id: scene-14
+  visual_cue: Individually composed source explanation of FPA, två olika familjepensioner, arbetspensionssystemet.
+    All source conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable
+    deceased person, clinical procedure, national stereotype or invented number. Fixed bilingual panel;
+    foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_043
+  text_highlights:
+  - två olika familjepensioner
+  - arbetspensionssystemet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0409-s003.wav
+  start_seconds: 459.291667
+  end_seconds: 470.855204
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_043.png
+  render_caption: false
+- sentence_id: hb-c09-u0409-s004
+  sv: Om den avlidna har arbetat som anställd eller företagare i Finland kan änkan/änklingen och barnen
+    få familjepension från arbetspensionssystemet.
+  ru: Если умерший работал по найму или был предпринимателем в Финляндии, вдова или вдовец и дети могут
+    получать пенсию по потере кормильца из системы трудовых пенсий.
+  scene_id: scene-14
+  visual_cue: Individually composed source explanation of arbetat som anställd eller företagare, Finland,
+    familjepension. All source conditions remain in the exact bilingual text. Neutral symbolic people,
+    no identifiable deceased person, clinical procedure, national stereotype or invented number. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.
+  asset_ids:
+  - episode_background
+  - picture_044
+  text_highlights:
+  - arbetat som anställd eller företagare
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0409-s004.wav
+  start_seconds: 472.625
+  end_seconds: 485.024456
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_044.png
+  render_caption: false
+- sentence_id: hb-c09-u0410-s001
+  sv: Om en person har bott eller arbetat länge i ett annat land innan hen flyttade till Finland kan änkan/änklingen
+    och barnen ha rätt till familjepension även från detta land.
+  ru: Если человек до переезда в Финляндию долго жил или работал в другой стране, вдова или вдовец и дети
+    могут иметь право на пенсию по потере кормильца и из этой страны.
+  scene_id: scene-15
+  visual_cue: Individually composed source explanation of annat land, länge, familjepension. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_045
+  text_highlights:
+  - annat land
+  - länge
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0410-s001.wav
+  start_seconds: 487.791667
+  end_seconds: 501.793299
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_045.png
+  render_caption: false
+- sentence_id: hb-c09-u0410-s002
+  sv: Ta reda på villkoren för familjepension från Finland eller ursprungslandet.
+  ru: Выясните условия получения пенсии по потере кормильца из Финляндии или страны происхождения.
+  scene_id: scene-15
+  visual_cue: Individually composed source explanation of villkoren, Finland, ursprungslandet. All source
+    conditions remain in the exact bilingual text. Neutral symbolic people, no identifiable deceased person,
+    clinical procedure, national stereotype or invented number. Fixed bilingual panel; foreground stays
+    steady. Picture labels repeat exact Swedish source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_046
+  text_highlights:
+  - villkoren
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-begravning/narration/hb-c09-u0410-s002.wav
+  start_seconds: 504.583333
+  end_seconds: 511.27068
+  display_segments: []
+  render_image: studio/media/hb-c09-begravning/pictures/picture_046.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-begravning/sources/music-bed.flac
+  background_image: studio/media/hb-c09-begravning/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.882142857142857
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Läntinen hautausmaa, Vanha luterilainen hautausmaa (= Hietaniemen hautausmaa). - N213 (hkm.HKMS000005-00000123).jpg
+      — Signe Brander · CC BY 4.0
+    - Sad Trio — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A4ntinen_hautausmaa,_Vanha_luterilainen_hautausmaa_(%3D_Hietaniemen_hautausmaa)._-_N213_(hkm.HKMS000005-00000123).jpg
+    description: Läntinen hautausmaa, Vanha luterilainen hautausmaa (= Hietaniemen hautausmaa).; negatiivi
+      ja vedos, lasi paperi pahvi, mv
+    license: CC BY 4.0

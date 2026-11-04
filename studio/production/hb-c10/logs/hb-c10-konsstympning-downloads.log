@@ -1,0 +1,12 @@
+{"path": "studio/media/hb-c10-konsstympning/sources/background.jpg", "bytes": 110937, "sha256": "2cd9543611ba7962f06fd67afeccff1df4eedbeda5d2908689771acb8dbac95e", "url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Jorvi.jpg"}
+Download failed: HTTP200; curl: (28) Operation timed out after 50001 milliseconds with 16439749 out of 49126839 bytes received
+
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c10/fetch_konsstympning.py", line 10, in <module>
+    track=next(t for t in json.loads(Path('/tmp/c07-employment-music-catalogue.json').read_text()) if t.get('isrc')=='USUAN1900005');fetch('https://incompetech.com/music/royalty-free/mp3-royaltyfree/'+urllib.parse.quote(track['filename']),S/'music.mp3')
+                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/studio/production/hb-c10/fetch_konsstympning.py", line 7, in fetch
+    subprocess.run([str(ROOT/'.venv/bin/python'),str(ROOT/'studio/production/remaining/download.py'),'--url',url,'--output',str(path)],check=True)
+  File "/home/vadim/.pyenv/versions/3.12.5/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/vadim/finland-flashcards/.venv/bin/python', '/home/vadim/finland-flashcards/studio/production/remaining/download.py', '--url', 'https://incompetech.com/music/royalty-free/mp3-royaltyfree/River%20Flute.mp3', '--output', '/home/vadim/finland-flashcards/studio/media/hb-c10-konsstympning/sources/music.mp3']' returned non-zero exit status 1.

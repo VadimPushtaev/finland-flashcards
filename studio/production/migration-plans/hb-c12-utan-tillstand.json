@@ -1,0 +1,564 @@
+[
+  {
+    "id": "picture-001",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Finland",
+        "icon": "flag_fi"
+      },
+      {
+        "label": "visum eller uppehållstillstånd",
+        "icon": "document"
+      },
+      {
+        "label": "illegal",
+        "icon": "warning"
+      }
+    ],
+    "description": "Needs visa OR residence permit AND lacks it -> stay MAY be illegal. Do not label all people without a permit unlawful.",
+    "required_logic": "Needs visa OR residence permit AND lacks it -> stay MAY be illegal. Do not label all people without a permit unlawful.",
+    "source_sentence_ids": [
+      "hb-c12-u0234-s001"
+    ],
+    "source_text": "Om du behöver visum eller uppehållstillstånd för att vistas i Finland, men inte har det, kan din vistelse i Finland vara illegal.",
+    "reviewed_translation": "Если для пребывания в Финляндии вам нужна виза или вид на жительство, но у вас их нет, ваше пребывание в Финляндии может быть незаконным.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "Om",
+      "men inte har det",
+      "kan"
+    ]
+  },
+  {
+    "id": "picture-002",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "asylansökan",
+        "icon": "document"
+      },
+      {
+        "label": "handläggningen",
+        "icon": "clock"
+      },
+      {
+        "label": "rätt att vistas i Finland",
+        "icon": "flag_fi"
+      }
+    ],
+    "description": "Asylum applicant may stay without visa/permit WHILE asylum application processing is ongoing. This is a lawful-stay exception, not an expiry graphic.",
+    "required_logic": "Asylum applicant may stay without visa/permit WHILE asylum application processing is ongoing. This is a lawful-stay exception, not an expiry graphic.",
+    "source_sentence_ids": [
+      "hb-c12-u0235-s001"
+    ],
+    "source_text": "Om du är asylsökande har du rätt att vistas i Finland utan visum eller uppehållstillstånd så länge som handläggningen av din asylansökan pågår.",
+    "reviewed_translation": "Если вы являетесь просителем убежища, вы имеете право находиться в Финляндии без визы или вида на жительство, пока рассматривается ваше заявление о предоставлении убежища.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "så länge som handläggningen av din asylansökan pågår",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "Om du är asylsökande",
+      "så länge som"
+    ]
+  },
+  {
+    "id": "picture-003",
+    "visual_type": "diagram",
+    "composition": "timeline",
+    "nodes": [
+      {
+        "label": "kommit lagligt till Finland",
+        "icon": "flag_fi"
+      },
+      {
+        "label": "senare",
+        "icon": "clock"
+      },
+      {
+        "label": "olaglig",
+        "icon": "warning"
+      }
+    ],
+    "description": "Lawful arrival MAY later become unlawful stay; timeline must retain possibility rather than inevitability.",
+    "required_logic": "Lawful arrival MAY later become unlawful stay; timeline must retain possibility rather than inevitability.",
+    "source_sentence_ids": [
+      "hb-c12-u0236-s001"
+    ],
+    "source_text": "Även om du skulle ha kommit lagligt till Finland kan din vistelse i landet senare bli olaglig.",
+    "reviewed_translation": "Даже если вы приехали в Финляндию законно, впоследствии ваше пребывание в стране может стать незаконным.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "Även om",
+      "kan"
+    ]
+  },
+  {
+    "id": "picture-004",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "följande situationer",
+        "icon": "document"
+      },
+      {
+        "label": "Detta kan hända",
+        "icon": "warning"
+      }
+    ],
+    "description": "Introduces non-exhaustive possible situations; inherit source 3 MAY, no instant removal implied.",
+    "required_logic": "Introduces non-exhaustive possible situations; inherit source 3 MAY, no instant removal implied.",
+    "source_sentence_ids": [
+      "hb-c12-u0236-s002"
+    ],
+    "source_text": "Detta kan hända till exempel i följande situationer:",
+    "reviewed_translation": "Это может произойти, например, в следующих ситуациях:",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "till exempel",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "till exempel"
+    ]
+  },
+  {
+    "id": "picture-005",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "uppehållstillstånd",
+        "icon": "document"
+      },
+      {
+        "label": "asylansökan",
+        "icon": "document"
+      },
+      {
+        "label": "negativt beslut",
+        "icon": "prohibited"
+      }
+    ],
+    "description": "Refusal of permit OR asylum is one possible source-listed case, not an immediate-removal date claim.",
+    "required_logic": "Refusal of permit OR asylum is one possible source-listed case, not an immediate-removal date claim.",
+    "source_sentence_ids": [
+      "hb-c12-u0237-s001",
+      "hb-c12-u0236-s001"
+    ],
+    "source_text": "du får ett negativt beslut på din ansökan om uppehållstillstånd eller asylansökan",
+    "reviewed_translation": "вы получаете отказ по заявлению на вид на жительство или заявлению о предоставлении убежища",
+    "advisory_only": true
+  },
+  {
+    "id": "picture-006",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "uppehållstillstånd",
+        "icon": "document"
+      },
+      {
+        "label": "går ut",
+        "icon": "clock"
+      },
+      {
+        "label": "ansöker inte om fortsatt tillstånd i tid",
+        "icon": "paper"
+      }
+    ],
+    "description": "Permit expires AND continued permit not applied for in time. Never portray expiry alone as this full two-part condition.",
+    "required_logic": "Permit expires AND continued permit not applied for in time. Never portray expiry alone as this full two-part condition.",
+    "source_sentence_ids": [
+      "hb-c12-u0239-s001",
+      "hb-c12-u0236-s001"
+    ],
+    "source_text": "ditt uppehållstillstånd går ut och du ansöker inte om fortsatt tillstånd i tid eller",
+    "reviewed_translation": "срок действия вашего вида на жительство истекает, а вы не подаёте вовремя заявление на его продление, или",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "och",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "och",
+      "eller"
+    ]
+  },
+  {
+    "id": "picture-007",
+    "visual_type": "diagram",
+    "composition": "timeline",
+    "nodes": [
+      {
+        "label": "visum",
+        "icon": "document"
+      },
+      {
+        "label": "går ut",
+        "icon": "clock"
+      }
+    ],
+    "description": "Entered with visa AND visa expires; another list alternative.",
+    "required_logic": "Entered with visa AND visa expires; another list alternative.",
+    "source_sentence_ids": [
+      "hb-c12-u0240-s001",
+      "hb-c12-u0236-s001"
+    ],
+    "source_text": "du har rest in i landet med visum och ditt visum går ut eller",
+    "reviewed_translation": "вы въехали в страну по визе и срок действия вашей визы истекает, или",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "eller",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "eller"
+    ]
+  },
+  {
+    "id": "picture-008",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "vistelsetiden utan visum har gått ut",
+        "icon": "clock"
+      },
+      {
+        "label": "inte längre har någon laglig grund",
+        "icon": "document"
+      }
+    ],
+    "description": "Visa-free period expired OR no longer any lawful ground. Preserve both alternatives without country/day assumptions.",
+    "required_logic": "Visa-free period expired OR no longer any lawful ground. Preserve both alternatives without country/day assumptions.",
+    "source_sentence_ids": [
+      "hb-c12-u0241-s001",
+      "hb-c12-u0236-s001"
+    ],
+    "source_text": "vistelsetiden utan visum har gått ut eller du inte längre har någon laglig grund för vistelsen.",
+    "reviewed_translation": "срок безвизового пребывания истёк или у вас больше нет законного основания для пребывания.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "eller",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "eller"
+    ]
+  },
+  {
+    "id": "picture-009",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "nödinkvartering",
+        "icon": "house"
+      },
+      {
+        "label": "mathjälp",
+        "icon": "food"
+      },
+      {
+        "label": "inte har pengar till mat",
+        "icon": "coins"
+      }
+    ],
+    "description": "Emergency accommodation/food help is conditional on lacking food money/place to sleep as literally worded. Russian is reviewed data, not authority to silently rewrite Swedish connective scope.",
+    "required_logic": "Emergency accommodation/food help is conditional on lacking food money/place to sleep as literally worded. Russian is reviewed data, not authority to silently rewrite Swedish connective scope.",
+    "source_sentence_ids": [
+      "hb-c12-u0242-s001"
+    ],
+    "source_text": "Du har rätt till nödinkvartering och mathjälp om du inte har pengar till mat eller någonstans att övernatta.",
+    "reviewed_translation": "Вы имеете право на временный кров и продовольственную помощь, если у вас нет ни денег на еду, ни места для ночлега.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "om du inte har pengar till mat eller någonstans att övernatta",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "om du inte har pengar till mat eller någonstans att övernatta"
+    ]
+  },
+  {
+    "id": "picture-010",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Kommuner",
+        "icon": "court"
+      },
+      {
+        "label": "församlingar",
+        "icon": "house"
+      },
+      {
+        "label": "vissa organisationer",
+        "icon": "people"
+      }
+    ],
+    "description": "Municipalities, parishes and some organisations arrange emergency accommodation; no current site or bed availability promised.",
+    "required_logic": "Municipalities, parishes and some organisations arrange emergency accommodation; no current site or bed availability promised.",
+    "source_sentence_ids": [
+      "hb-c12-u0242-s002"
+    ],
+    "source_text": "Kommuner, församlingar och vissa organisationer ordnar nödinkvartering.",
+    "reviewed_translation": "Временный кров предоставляют муниципалитеты, церковные приходы и некоторые организации.",
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified actual public institution exterior/sign or blank administrative/document object relevant to this exact source; no named applicant, citizen, victim or personal record.",
+      "acquisition_status": "Advisory request only; no source acquired or license claimed.",
+      "fallback": "This individually authored exact-source diagram."
+    }
+  },
+  {
+    "id": "picture-011",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "jurist",
+        "icon": "person"
+      },
+      {
+        "label": "Flyktingrådgivningen",
+        "icon": "shield"
+      },
+      {
+        "label": "juridisk rådgivning",
+        "icon": "paper"
+      }
+    ],
+    "description": "Legal advice on undocumented status by refugee-advice lawyer; no photographed person assigned a status.",
+    "required_logic": "Legal advice on undocumented status by refugee-advice lawyer; no photographed person assigned a status.",
+    "source_sentence_ids": [
+      "hb-c12-u0243-s001"
+    ],
+    "source_text": "Du kan få juridisk rådgivning i frågor kring papperslöshet av en jurist vid Flyktingrådgivningen (Pakolaisneuvonta).",
+    "reviewed_translation": "Вы можете получить юридическую консультацию по вопросам пребывания без необходимых документов у юриста организации по оказанию правовой помощи беженцам Flyktingrådgivningen (Pakolaisneuvonta).",
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified actual public institution exterior/sign or blank administrative/document object relevant to this exact source; no named applicant, citizen, victim or personal record.",
+      "acquisition_status": "Advisory request only; no source acquired or license claimed.",
+      "fallback": "This individually authored exact-source diagram."
+    }
+  },
+  {
+    "id": "picture-012",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Rådgivningen",
+        "icon": "paper"
+      },
+      {
+        "label": "kostnadsfri",
+        "icon": "coins"
+      }
+    ],
+    "description": "Previous legal advice is free; do not apply free-of-charge claim to all care/services in later sentences.",
+    "required_logic": "Previous legal advice is free; do not apply free-of-charge claim to all care/services in later sentences.",
+    "source_sentence_ids": [
+      "hb-c12-u0243-s002",
+      "hb-c12-u0243-s001"
+    ],
+    "source_text": "Rådgivningen är kostnadsfri.",
+    "reviewed_translation": "Консультации бесплатны.",
+    "advisory_only": true
+  },
+  {
+    "id": "picture-013",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "brådskande och nödvändig vård",
+        "icon": "hospital"
+      },
+      {
+        "label": "hälsostation",
+        "icon": "hospital"
+      },
+      {
+        "label": "sjukhus",
+        "icon": "hospital"
+      }
+    ],
+    "description": "IF sick or injured -> urgent AND necessary PUBLIC care. Do not broaden to all elective care or assert free treatment.",
+    "required_logic": "IF sick or injured -> urgent AND necessary PUBLIC care. Do not broaden to all elective care or assert free treatment.",
+    "source_sentence_ids": [
+      "hb-c12-u0244-s001"
+    ],
+    "source_text": "Om du blir sjuk eller skadas, har du rätt till brådskande och nödvändig vård inom den offentliga hälso- och sjukvården, till exempel på en hälsostation eller ett sjukhus.",
+    "reviewed_translation": "Если вы заболеете или получите травму, вы имеете право на срочную и необходимую медицинскую помощь в государственной системе здравоохранения, например в медицинском центре или больнице.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "Om du blir sjuk eller skadas",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "Om du blir sjuk eller skadas",
+      "brådskande och nödvändig"
+    ],
+    "photo_request": {
+      "subject": "Verified actual public institution exterior/sign or blank administrative/document object relevant to this exact source; no named applicant, citizen, victim or personal record.",
+      "acquisition_status": "Advisory request only; no source acquired or license claimed.",
+      "fallback": "This individually authored exact-source diagram."
+    }
+  },
+  {
+    "id": "picture-014",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Offentliga hälsovårdstjänster",
+        "icon": "hospital"
+      },
+      {
+        "label": "välfärdsområdena",
+        "icon": "court"
+      },
+      {
+        "label": "Finland",
+        "icon": "flag_fi"
+      }
+    ],
+    "description": "Wellbeing services counties organise public care; no exact site promise.",
+    "required_logic": "Wellbeing services counties organise public care; no exact site promise.",
+    "source_sentence_ids": [
+      "hb-c12-u0245-s001"
+    ],
+    "source_text": "Offentliga hälsovårdstjänster ordnas av välfärdsområdena (hyvinvointialueet) runtom i Finland.",
+    "reviewed_translation": "Государственные услуги здравоохранения организуют регионы по обеспечению благополучия населения (välfärdsområden; hyvinvointialueet) по всей Финляндии.",
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified actual public institution exterior/sign or blank administrative/document object relevant to this exact source; no named applicant, citizen, victim or personal record.",
+      "acquisition_status": "Advisory request only; no source acquired or license claimed.",
+      "fallback": "This individually authored exact-source diagram."
+    }
+  },
+  {
+    "id": "picture-015",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "du",
+        "icon": "person"
+      },
+      {
+        "label": "kontakta",
+        "icon": "phone"
+      },
+      {
+        "label": "social- och hälsocentralen",
+        "icon": "hospital"
+      }
+    ],
+    "description": "If needs health services -> contact nearest local social/health centre. No emergency number or fee invented.",
+    "required_logic": "If needs health services -> contact nearest local social/health centre. No emergency number or fee invented.",
+    "source_sentence_ids": [
+      "hb-c12-u0245-s002"
+    ],
+    "source_text": "Om du behöver hälso- och sjukvårdstjänster ska du kontakta den närmaste social- och hälsocentralen (sosiaali- ja terveyskeskus) på din hemort.",
+    "reviewed_translation": "Если вам нужны услуги здравоохранения, обратитесь в ближайший центр социального обслуживания и здравоохранения (social- och hälsocentral; sosiaali- ja terveyskeskus) в вашем населённом пункте.",
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "Om du behöver hälso- och sjukvårdstjänster",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "One displayed bar avoids overlapping qualifier boxes. Source modifiers and required_logic preserve every further gate; inspect actual wrapping before render.",
+    "source_modifiers": [
+      "Om du behöver hälso- och sjukvårdstjänster"
+    ],
+    "photo_request": {
+      "subject": "Verified actual public institution exterior/sign or blank administrative/document object relevant to this exact source; no named applicant, citizen, victim or personal record.",
+      "acquisition_status": "Advisory request only; no source acquired or license claimed.",
+      "fallback": "This individually authored exact-source diagram."
+    }
+  }
+]

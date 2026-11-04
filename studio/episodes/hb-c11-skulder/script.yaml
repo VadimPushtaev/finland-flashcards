@@ -1,0 +1,1327 @@
+schema_version: 1
+section_id: hb-c11-skulder
+chapter_id: hb-c11
+title_sv: Betalningssvårigheter och skuldrådgivning
+title_ru: Трудности с платежами и консультации по долговым вопросам
+source_path: data/homebrew/sv/chapters/11_boende_vardag_och_miljo.yaml
+translation_path: data/homebrew/ru/sections/hb-c11-skulder.yaml
+example_only: false
+source_section_sha256: 32c4fe4b2dd5f673cbbdbe42bc8d93e8755cff41dc9f25e9b4d0b7ec99a75e33
+translation_file_sha256: 5637ab8d6dda01d1049effd94ba276a4370b3af0f862168bec5f9e8202790695
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Follow exact source and list-fragment order through contact,reminders,collection,enforcement,credit
+    records,rent difficulties and free debt counselling. Keep conditional can/often,specific exceptions
+    and court versus landlord roles explicit.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#243c32'', ''text'': ''#faf3e8'', ''secondary'': ''#c5dfce'',
+    ''highlight'': ''#e3c58c'', ''separator'': ''#4d7560''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Entrance to District Court of Helsinki.jpg by JIP continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=2.9735119047619047. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Lobby Time by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 193.202 seconds; prepared lossless stereo bed 416.292 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c11-u0173
+  description: Om du har en räkning som du inte kan betala, kontakta avsändaren direkt.
+- id: hb-c11-u0174
+  description: Om du inte betalar räkningen senast på förfallodagen eller inte har kommit överens om att
+    förlänga betalningstiden, måste du betala påminnelse- och inkassokostnader samt dröjsmålsränta.
+- id: hb-c11-u0175
+  description: Om du inte har betalat en räkning senast på förfallodagen får du en betalningspåminnelse.
+- id: hb-c11-u0176
+  description: Om du inte betalar räkningen eller kommer överens om en betalningsplan kan skulden slutligen
+    gå till utmätning (ulosotto).
+- id: hb-c11-u0177
+  description: Ofta behövs ett domstolsbeslut för utmätning.
+- id: hb-c11-u0178
+  description: Om du inte betalar en räkning eller en skuld, kan du få en betalningsanmärkning (maksuhäiriömerkintä)
+    i kreditupplysningsregistret.
+- id: hb-c11-u0179
+  description: Hyresvärden har rätt att häva hyresavtalet om du inte betalar din hyra.
+- id: hb-c11-u0180
+  description: Om du har svårigheter att betala hyran för din bostad ska du ta kontakt med hyresvärden.
+- id: hb-c11-u0181
+  description: Försök att komma överens om att flytta fram förfallodagen med din hyresvärd.
+- id: hb-c11-u0182
+  description: Om du har problem med att betala räkningar och skulder, kontakta rättshjälpsbyråns ekonomi-
+    och skuldrådgivning (talous- ja velkaneuvonta).
+- id: hb-c11-u0183
+  description: 'Ekonomi- och skuldrådgivaren:'
+- id: hb-c11-u0184
+  description: utreder din ekonomiska situation med dig,
+- id: hb-c11-u0186
+  description: hjälper till att överväga olika lösningsalternativ och
+- id: hb-c11-u0187
+  description: hjälper till att utarbeta betalningsavtal.
+- id: hb-c11-u0188
+  description: Dessutom kan ekonomi- och skuldrådgivaren ge dig råd om hur du ansöker om ett skuldsaneringslån
+    och skuldsanering.
+- id: hb-c11-u0189
+  description: Hos Takuusäätiö kan du också få hjälp med och råd om betalningen av skulder.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Unique verified Finnish legal-aid/courthouse exterior; no individual assigned debt or default
+    status.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Lobby Time — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: contact_now
+  kind: foreground
+  description: If unable to pay, contact bill sender directly.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: extension
+  kind: foreground
+  description: Payment time can often be extended, not guaranteed.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: late_fee
+  kind: foreground
+  description: Extension usually adds a small late fee; no amount invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: collection_costs
+  kind: foreground
+  description: Unpaid/unextended bill may require reminder costs, collection costs and late interest;
+    exact main text retains full trigger.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: reminder
+  kind: foreground
+  description: Bill unpaid by due date leads to reminder.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: agency
+  kind: foreground
+  description: After one or two reminders the bill may go to a collection agency.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: demand
+  kind: foreground
+  description: Agency sends a payment demand.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: payment_plan
+  kind: foreground
+  description: If unable to pay at once, contact agency to agree a plan.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: enforcement
+  kind: foreground
+  description: No payment or plan can ultimately lead to enforcement; main source condition intact.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: income_share
+  kind: foreground
+  description: Enforcement authority can take part of income; no percentage invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: property_sale
+  kind: foreground
+  description: Authority may sell valuable property to pay debt; no complete asset seizure implied.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: court_often
+  kind: foreground
+  description: Court decision is often needed for enforcement, not always.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: direct_exception
+  kind: foreground
+  description: Some payments go directly to enforcement, preserving the exception.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: direct_examples
+  kind: foreground
+  description: Source examples of direct-enforcement fees, no complete list invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: credit_record
+  kind: foreground
+  description: Nonpayment can lead to a credit-default entry; no automatic threshold invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: difficulties
+  kind: foreground
+  description: Warn of difficulties without inventing a specific consequence on this short continuation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: record_checks
+  kind: foreground
+  description: Landlords and banks often check credit data.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: credit_barriers
+  kind: foreground
+  description: A default can hinder rental housing, bank loan or credit card; no universal denial.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: employer_cases
+  kind: foreground
+  description: Employers may require no defaults in some situations; not a universal employment ban.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: lease_rescission
+  kind: foreground
+  description: Nonpayment permits landlord to rescind the lease; distinguish later court eviction.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: notify_tenant
+  kind: foreground
+  description: Landlord must notify tenant of rescission.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: still_agree
+  kind: foreground
+  description: Usually still possible to agree rent payment at this stage; no guaranteed recovery.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: court_eviction
+  kind: foreground
+  description: Landlord can apply to court for eviction when rent unpaid; no private forcible eviction
+    implied.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: leave_pay
+  kind: foreground
+  description: Eviction means moving out AND paying unpaid rent.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: rent_contact
+  kind: foreground
+  description: 'Rent difficulties: contact landlord.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: rent_extension
+  kind: foreground
+  description: Try to agree a postponed due date with landlord.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: social_advice
+  kind: foreground
+  description: Local social services can provide advice.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: check_benefits
+  kind: foreground
+  description: Check possible housing allowance OR income support entitlement, no automatic award.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: kela_rights
+  kind: foreground
+  description: Ask FPA about benefit rights; no person labelled a recipient.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: debt_counselling
+  kind: foreground
+  description: Contact legal-aid financial/debt counselling for bill and debt problems.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: free_state
+  kind: foreground
+  description: Counselling is free and state-organized.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: adviser
+  kind: foreground
+  description: Introduce adviser before the following verbatim list fragments.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: assess_together
+  kind: foreground
+  description: Adviser assesses finances together with the person; not independently taking control.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: consider_options
+  kind: foreground
+  description: Consider different options together without adding a particular solution to this fragment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: agreements
+  kind: foreground
+  description: Help draw up payment agreements.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: restructuring_advice
+  kind: foreground
+  description: Advice on applying for restructuring loan and debt restructuring; no guarantee of admission.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: foundation_help
+  kind: foreground
+  description: Takuusäätiö provides help/advice on debt payment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: combine_loans
+  kind: foreground
+  description: Foundation can help combine debts into one loan; no interest rate added.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: foundation_guarantee
+  kind: foreground
+  description: Apply for a foundation loan guarantee when needing a bank loan to repay debts.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: small_oneoff
+  kind: foreground
+  description: Representative one-off small-loan expenses; no recurring-income claim, approval or amount.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c11-u0173-s001
+  sv: Om du har en räkning som du inte kan betala, kontakta avsändaren direkt.
+  ru: Если у вас есть счёт, который вы не можете оплатить, сразу свяжитесь с его отправителем.
+  scene_id: hb-c11-u0173
+  visual_cue: If unable to pay, contact bill sender directly.
+  asset_ids:
+  - episode_background
+  - contact_now
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0173-s001.wav
+  start_seconds: 3.25
+  end_seconds: 9.798027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/contact_now.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0173-s002
+  sv: Ofta kan du få betalningstiden förlängd.
+  ru: Часто можно получить продление срока оплаты.
+  scene_id: hb-c11-u0173
+  visual_cue: Payment time can often be extended, not guaranteed.
+  asset_ids:
+  - episode_background
+  - extension
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0173-s002.wav
+  start_seconds: 11.75
+  end_seconds: 15.511633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/extension.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0173-s003
+  sv: Då läggs vanligtvis en liten förseningsavgift på räkningen.
+  ru: В таком случае к сумме счёта обычно добавляется небольшой сбор за просрочку.
+  scene_id: hb-c11-u0173
+  visual_cue: Extension usually adds a small late fee; no amount invented.
+  asset_ids:
+  - episode_background
+  - late_fee
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0173-s003.wav
+  start_seconds: 17.5
+  end_seconds: 22.65483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/late_fee.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0174-s001
+  sv: Om du inte betalar räkningen senast på förfallodagen eller inte har kommit överens om att förlänga
+    betalningstiden, måste du betala påminnelse- och inkassokostnader samt dröjsmålsränta.
+  ru: Если вы не оплачиваете счёт к установленному сроку или не договорились о продлении срока оплаты,
+    вы должны оплатить расходы на напоминания и взыскание задолженности, а также проценты за просрочку
+    платежа.
+  scene_id: hb-c11-u0174
+  visual_cue: Unpaid/unextended bill may require reminder costs, collection costs and late interest; exact
+    main text retains full trigger.
+  asset_ids:
+  - episode_background
+  - collection_costs
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0174-s001.wav
+  start_seconds: 25.125
+  end_seconds: 40.58949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/collection_costs.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0175-s001
+  sv: Om du inte har betalat en räkning senast på förfallodagen får du en betalningspåminnelse.
+  ru: Если вы не оплатили счёт к установленному сроку, вы получите напоминание об оплате.
+  scene_id: hb-c11-u0175
+  visual_cue: Bill unpaid by due date leads to reminder.
+  asset_ids:
+  - episode_background
+  - reminder
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0175-s001.wav
+  start_seconds: 43.375
+  end_seconds: 51.037585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/reminder.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0175-s002
+  sv: Efter en eller två påminnelser kan räkningen övergå till en inkassobyrå.
+  ru: После одного или двух напоминаний счёт могут передать в коллекторское агентство.
+  scene_id: hb-c11-u0175
+  visual_cue: After one or two reminders the bill may go to a collection agency.
+  asset_ids:
+  - episode_background
+  - agency
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0175-s002.wav
+  start_seconds: 53.0
+  end_seconds: 59.060408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/agency.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0175-s003
+  sv: Inkassobyrån skickar dig genast ett betalningskrav.
+  ru: Коллекторское агентство сразу направит вам требование об оплате.
+  scene_id: hb-c11-u0175
+  visual_cue: Agency sends a payment demand.
+  asset_ids:
+  - episode_background
+  - demand
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0175-s003.wav
+  start_seconds: 61.041667
+  end_seconds: 65.708878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/demand.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0175-s004
+  sv: Om du inte kan betala räkningen på en gång, ska du kontakta inkassobyrån och komma överens om en
+    betalningsplan för räkningen.
+  ru: Если вы не можете оплатить счёт сразу целиком, необходимо связаться с коллекторским агентством и
+    договориться о графике оплаты этого счёта.
+  scene_id: hb-c11-u0175
+  visual_cue: If unable to pay at once, contact agency to agree a plan.
+  asset_ids:
+  - episode_background
+  - payment_plan
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0175-s004.wav
+  start_seconds: 67.666667
+  end_seconds: 78.394286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/payment_plan.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0176-s001
+  sv: Om du inte betalar räkningen eller kommer överens om en betalningsplan kan skulden slutligen gå
+    till utmätning (ulosotto).
+  ru: Если вы не оплатите счёт и не договоритесь о графике платежей, долг в конечном счёте может быть
+    передан на принудительное взыскание (ulosotto).
+  scene_id: hb-c11-u0176
+  visual_cue: No payment or plan can ultimately lead to enforcement; main source condition intact.
+  asset_ids:
+  - episode_background
+  - enforcement
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0176-s001.wav
+  start_seconds: 80.875
+  end_seconds: 91.25432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/enforcement.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0176-s002
+  sv: Utmätning betyder att myndigheten har rätt att ta en del av dina inkomster för betalning av skulder.
+  ru: Принудительное взыскание означает, что орган власти имеет право изымать часть ваших доходов для
+    погашения долгов.
+  scene_id: hb-c11-u0176
+  visual_cue: Enforcement authority can take part of income; no percentage invented.
+  asset_ids:
+  - episode_background
+  - income_share
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0176-s002.wav
+  start_seconds: 93.208333
+  end_seconds: 101.637177
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/income_share.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0176-s003
+  sv: Utmätningsmyndigheten kan även sälja värdefull egendom som du har för att betala skulden.
+  ru: Орган принудительного взыскания также может продать имеющееся у вас ценное имущество, чтобы погасить
+    долг.
+  scene_id: hb-c11-u0176
+  visual_cue: Authority may sell valuable property to pay debt; no complete asset seizure implied.
+  asset_ids:
+  - episode_background
+  - property_sale
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0176-s003.wav
+  start_seconds: 103.625
+  end_seconds: 111.357245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/property_sale.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0177-s001
+  sv: Ofta behövs ett domstolsbeslut för utmätning.
+  ru: Для принудительного взыскания часто требуется судебное решение.
+  scene_id: hb-c11-u0177
+  visual_cue: Court decision is often needed for enforcement, not always.
+  asset_ids:
+  - episode_background
+  - court_often
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0177-s001.wav
+  start_seconds: 113.833333
+  end_seconds: 117.943265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/court_often.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0177-s002
+  sv: Vissa betalningar går emellertid direkt till utmätning.
+  ru: Однако некоторые платежи передаются на принудительное взыскание напрямую.
+  scene_id: hb-c11-u0177
+  visual_cue: Some payments go directly to enforcement, preserving the exception.
+  asset_ids:
+  - episode_background
+  - direct_exception
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0177-s002.wav
+  start_seconds: 119.916667
+  end_seconds: 124.932177
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/direct_exception.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0177-s003
+  sv: Sådana betalningar är till exempel skatter, hälsocentralsavgifter och dagvårdsavgifter.
+  ru: К таким платежам относятся, например, налоги, плата за услуги медицинского центра и плата за дневной
+    уход за детьми.
+  scene_id: hb-c11-u0177
+  visual_cue: Source examples of direct-enforcement fees, no complete list invented.
+  asset_ids:
+  - episode_background
+  - direct_examples
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0177-s003.wav
+  start_seconds: 126.916667
+  end_seconds: 134.927551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/direct_examples.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0178-s001
+  sv: Om du inte betalar en räkning eller en skuld, kan du få en betalningsanmärkning (maksuhäiriömerkintä)
+    i kreditupplysningsregistret.
+  ru: Если вы не оплачиваете счёт или долг, в реестре кредитных историй у вас может появиться отметка
+    о неуплате (maksuhäiriömerkintä).
+  scene_id: hb-c11-u0178
+  visual_cue: Nonpayment can lead to a credit-default entry; no automatic threshold invented.
+  asset_ids:
+  - episode_background
+  - credit_record
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0178-s001.wav
+  start_seconds: 137.416667
+  end_seconds: 148.840884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/credit_record.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0178-s002
+  sv: Detta orsakar många svårigheter för dig.
+  ru: Это создаёт для вас много трудностей.
+  scene_id: hb-c11-u0178
+  visual_cue: Warn of difficulties without inventing a specific consequence on this short continuation.
+  asset_ids:
+  - episode_background
+  - difficulties
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0178-s002.wav
+  start_seconds: 150.791667
+  end_seconds: 154.692619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/difficulties.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0178-s003
+  sv: Hyresvärdar och banker kontrollerar ofta kredituppgifterna i kreditupplysningsregistret.
+  ru: Арендодатели и банки часто проверяют кредитные данные в реестре кредитных историй.
+  scene_id: hb-c11-u0178
+  visual_cue: Landlords and banks often check credit data.
+  asset_ids:
+  - episode_background
+  - record_checks
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0178-s003.wav
+  start_seconds: 156.666667
+  end_seconds: 164.677551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/record_checks.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0178-s004
+  sv: Om du har en betalningsanmärkning, får du inte nödvändigtvis en hyresbostad, ett banklån eller ett
+    kreditkort.
+  ru: Если у вас есть отметка о неуплате, вам могут отказать в предоставлении съёмного жилья, банковского
+    кредита или кредитной карты.
+  scene_id: hb-c11-u0178
+  visual_cue: A default can hinder rental housing, bank loan or credit card; no universal denial.
+  asset_ids:
+  - episode_background
+  - credit_barriers
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0178-s004.wav
+  start_seconds: 166.666667
+  end_seconds: 176.140408
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/credit_barriers.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0178-s005
+  sv: Även arbetsgivaren kan i vissa situationer förutsätta att arbetstagaren inte har betalningsanmärkningar.
+  ru: Работодатель также может в определённых ситуациях требовать, чтобы у работника не было отметок о
+    неуплате.
+  scene_id: hb-c11-u0178
+  visual_cue: Employers may require no defaults in some situations; not a universal employment ban.
+  asset_ids:
+  - episode_background
+  - employer_cases
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0178-s005.wav
+  start_seconds: 178.125
+  end_seconds: 187.250442
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/employer_cases.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0179-s001
+  sv: Hyresvärden har rätt att häva hyresavtalet om du inte betalar din hyra.
+  ru: Арендодатель имеет право немедленно расторгнуть договор аренды, если вы не вносите арендную плату.
+  scene_id: hb-c11-u0179
+  visual_cue: Nonpayment permits landlord to rescind the lease; distinguish later court eviction.
+  asset_ids:
+  - episode_background
+  - lease_rescission
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0179-s001.wav
+  start_seconds: 189.708333
+  end_seconds: 196.047381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/lease_rescission.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0179-s002
+  sv: Hyresvärden ska meddela hyresgästen om hävandet.
+  ru: Арендодатель должен сообщить арендатору о расторжении договора.
+  scene_id: hb-c11-u0179
+  visual_cue: Landlord must notify tenant of rescission.
+  asset_ids:
+  - episode_background
+  - notify_tenant
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0179-s002.wav
+  start_seconds: 198.0
+  end_seconds: 202.597551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/notify_tenant.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0179-s003
+  sv: I detta skede finns det vanligtvis ännu en möjlighet att komma överens om hyresbetalningen med hyresvärden.
+  ru: На этом этапе обычно ещё можно договориться с арендодателем об оплате аренды.
+  scene_id: hb-c11-u0179
+  visual_cue: Usually still possible to agree rent payment at this stage; no guaranteed recovery.
+  asset_ids:
+  - episode_background
+  - still_agree
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0179-s003.wav
+  start_seconds: 204.583333
+  end_seconds: 213.639116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/still_agree.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0179-s004
+  sv: Om du inte betalar din hyra kan hyresvärden söka ett avhysningsbeslut i domstol.
+  ru: Если вы не вносите арендную плату, арендодатель может обратиться в суд за решением о выселении.
+  scene_id: hb-c11-u0179
+  visual_cue: Landlord can apply to court for eviction when rent unpaid; no private forcible eviction
+    implied.
+  asset_ids:
+  - episode_background
+  - court_eviction
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0179-s004.wav
+  start_seconds: 215.625
+  end_seconds: 222.799966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/court_eviction.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0179-s005
+  sv: Det innebär att du måste flytta ut ur bostaden och betala de obetalda hyrorna.
+  ru: Это означает, что вы должны выехать из жилья и оплатить задолженность по аренде.
+  scene_id: hb-c11-u0179
+  visual_cue: Eviction means moving out AND paying unpaid rent.
+  asset_ids:
+  - episode_background
+  - leave_pay
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0179-s005.wav
+  start_seconds: 224.75
+  end_seconds: 231.367687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/leave_pay.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0180-s001
+  sv: Om du har svårigheter att betala hyran för din bostad ska du ta kontakt med hyresvärden.
+  ru: Если у вас возникли трудности с оплатой аренды жилья, необходимо связаться с арендодателем.
+  scene_id: hb-c11-u0180
+  visual_cue: 'Rent difficulties: contact landlord.'
+  asset_ids:
+  - episode_background
+  - rent_contact
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0180-s001.wav
+  start_seconds: 233.833333
+  end_seconds: 241.635238
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/rent_contact.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0181-s001
+  sv: Försök att komma överens om att flytta fram förfallodagen med din hyresvärd.
+  ru: Попытайтесь договориться с арендодателем о переносе срока оплаты на более позднюю дату.
+  scene_id: hb-c11-u0181
+  visual_cue: Try to agree a postponed due date with landlord.
+  asset_ids:
+  - episode_background
+  - rent_extension
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0181-s001.wav
+  start_seconds: 244.125
+  end_seconds: 251.021327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/rent_extension.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0181-s002
+  sv: Du kan även be om råd hos socialservicen på din ort.
+  ru: Вы также можете обратиться за советом в социальную службу по месту жительства.
+  scene_id: hb-c11-u0181
+  visual_cue: Local social services can provide advice.
+  asset_ids:
+  - episode_background
+  - social_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0181-s002.wav
+  start_seconds: 253.0
+  end_seconds: 257.806531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/social_advice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0181-s003
+  sv: Kontrollera också om du till exempel har rätt till bostadsbidrag eller utkomststöd.
+  ru: Также проверьте, имеете ли вы право, например, на жилищное или социальное пособие.
+  scene_id: hb-c11-u0181
+  visual_cue: Check possible housing allowance OR income support entitlement, no automatic award.
+  asset_ids:
+  - episode_background
+  - check_benefits
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0181-s003.wav
+  start_seconds: 259.791667
+  end_seconds: 267.384592
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/check_benefits.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0181-s004
+  sv: Din rätt till bostadsbidrag och utkomststöd kan du få reda på hos FPA.
+  ru: Узнать, имеете ли вы право на жилищное и социальное пособия, можно в Ведомстве социального обеспечения
+    (FPA).
+  scene_id: hb-c11-u0181
+  visual_cue: Ask FPA about benefit rights; no person labelled a recipient.
+  asset_ids:
+  - episode_background
+  - kela_rights
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Din rätt till bostadsbidrag och utkomststöd kan du få reda på hos F P A.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0181-s004.wav
+  start_seconds: 269.375
+  end_seconds: 275.923027
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/kela_rights.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0182-s001
+  sv: Om du har problem med att betala räkningar och skulder, kontakta rättshjälpsbyråns ekonomi- och
+    skuldrådgivning (talous- ja velkaneuvonta).
+  ru: Если у вас возникли трудности с оплатой счетов и долгов, обратитесь в консультационную службу по
+    финансовым и долговым вопросам при бюро юридической помощи (по-фински talous- ja velkaneuvonta).
+  scene_id: hb-c11-u0182
+  visual_cue: Contact legal-aid financial/debt counselling for bill and debt problems.
+  asset_ids:
+  - episode_background
+  - debt_counselling
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0182-s001.wav
+  start_seconds: 278.375
+  end_seconds: 290.356497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/debt_counselling.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0182-s002
+  sv: Rådgivningen är kostnadsfri och ordnas av staten.
+  ru: Эти консультации бесплатны, их организует государство.
+  scene_id: hb-c11-u0182
+  visual_cue: Counselling is free and state-organized.
+  asset_ids:
+  - episode_background
+  - free_state
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0182-s002.wav
+  start_seconds: 293.125
+  end_seconds: 297.931531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/free_state.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0183-s001
+  sv: 'Ekonomi- och skuldrådgivaren:'
+  ru: 'Консультант по финансовым и долговым вопросам:'
+  scene_id: hb-c11-u0183
+  visual_cue: Introduce adviser before the following verbatim list fragments.
+  asset_ids:
+  - episode_background
+  - adviser
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0183-s001.wav
+  start_seconds: 300.416667
+  end_seconds: 303.62102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/adviser.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0184-s001
+  sv: utreder din ekonomiska situation med dig,
+  ru: разбирается вместе с вами в вашем финансовом положении,
+  scene_id: hb-c11-u0184
+  visual_cue: Adviser assesses finances together with the person; not independently taking control.
+  asset_ids:
+  - episode_background
+  - assess_together
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0184-s001.wav
+  start_seconds: 306.083333
+  end_seconds: 310.193265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/assess_together.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0186-s001
+  sv: hjälper till att överväga olika lösningsalternativ och
+  ru: помогает рассмотреть различные варианты решения и
+  scene_id: hb-c11-u0186
+  visual_cue: Consider different options together without adding a particular solution to this fragment.
+  asset_ids:
+  - episode_background
+  - consider_options
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0186-s001.wav
+  start_seconds: 312.666667
+  end_seconds: 318.100136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/consider_options.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0187-s001
+  sv: hjälper till att utarbeta betalningsavtal.
+  ru: помогает составить соглашения об оплате.
+  scene_id: hb-c11-u0187
+  visual_cue: Help draw up payment agreements.
+  asset_ids:
+  - episode_background
+  - agreements
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0187-s001.wav
+  start_seconds: 320.583333
+  end_seconds: 324.693265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/agreements.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0188-s001
+  sv: Dessutom kan ekonomi- och skuldrådgivaren ge dig råd om hur du ansöker om ett skuldsaneringslån
+    och skuldsanering.
+  ru: Кроме того, консультант по финансовым и долговым вопросам может подсказать, как подать заявление
+    на кредит на рефинансирование долгов и на реструктуризацию долгов.
+  scene_id: hb-c11-u0188
+  visual_cue: Advice on applying for restructuring loan and debt restructuring; no guarantee of admission.
+  asset_ids:
+  - episode_background
+  - restructuring_advice
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0188-s001.wav
+  start_seconds: 327.166667
+  end_seconds: 337.058367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/restructuring_advice.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0189-s001
+  sv: Hos Takuusäätiö kan du också få hjälp med och råd om betalningen av skulder.
+  ru: В Гарантийном фонде (Takuusäätiö) также можно получить помощь и советы по выплате долгов.
+  scene_id: hb-c11-u0189
+  visual_cue: Takuusäätiö provides help/advice on debt payment.
+  asset_ids:
+  - episode_background
+  - foundation_help
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0189-s001.wav
+  start_seconds: 339.541667
+  end_seconds: 346.507653
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/foundation_help.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0189-s002
+  sv: Stiftelsen kan hjälpa dig att slå ihop dina skulder till ett lån.
+  ru: Фонд может помочь вам объединить ваши долги в один кредит.
+  scene_id: hb-c11-u0189
+  visual_cue: Foundation can help combine debts into one loan; no interest rate added.
+  asset_ids:
+  - episode_background
+  - combine_loans
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0189-s002.wav
+  start_seconds: 348.458333
+  end_seconds: 354.240102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/combine_loans.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0189-s003
+  sv: Du kan ansöka om lånegaranti vid Takuusäätiö om du behöver ett banklån för att betala dina skulder.
+  ru: Если вам нужен банковский кредит для погашения долгов, вы можете обратиться в Гарантийный фонд за
+    гарантией по кредиту.
+  scene_id: hb-c11-u0189
+  visual_cue: Apply for a foundation loan guarantee when needing a bank loan to repay debts.
+  asset_ids:
+  - episode_background
+  - foundation_guarantee
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0189-s003.wav
+  start_seconds: 356.208333
+  end_seconds: 365.055136
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/foundation_guarantee.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c11-u0189-s004
+  sv: Vid Takuusäätiö kan du även ansöka om ett litet lån, om du behöver pengar för en utgift av engångskaraktär,
+    såsom en hushållsmaskin, möbler, hyresdeposition, reparation av bilen eller glasögon.
+  ru: В Гарантийном фонде также можно подать заявление на небольшой кредит, если вам нужны деньги на разовые
+    расходы, например на бытовую технику, мебель, гарантийный депозит за жильё, ремонт автомобиля или
+    очки.
+  scene_id: hb-c11-u0189
+  visual_cue: Representative one-off small-loan expenses; no recurring-income claim, approval or amount.
+  asset_ids:
+  - episode_background
+  - small_oneoff
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c11-skulder/narration/hb-c11-u0189-s004.wav
+  start_seconds: 367.041667
+  end_seconds: 383.760034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c11-skulder/pictures/small_oneoff.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+render:
+  music_path: studio/media/hb-c11-skulder/sources/music-bed.flac
+  background_image: studio/media/hb-c11-skulder/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.9735119047619047
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Entrance to District Court of Helsinki.jpg — JIP · CC BY-SA 4.0
+    - Lobby Time — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#243c32'
+    text: '#faf3e8'
+    secondary: '#c5dfce'
+    highlight: '#e3c58c'
+    separator: '#4d7560'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Entrance_to_District_Court_of_Helsinki.jpg
+    description: The main entrance to the main building of the District Court of Helsinki in Salmisaari,
+      Helsinki, Finland.
+    license: CC BY-SA 4.0

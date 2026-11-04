@@ -147,3 +147,18 @@ shared runtime checks, source reservations, inventory and chapter audits remain
 centrally coordinated. Every episode aims for relevant foreground pictures during
 at least half its body timeline. Generated media remain local and ignored.
 Production checks do not imply whole-video listening or user acceptance.
+
+## Remaining chapters production — 2026-11-03
+
+The user requested every remaining chapter and distinct pictures for almost all
+slides. Existing Chapters 1–7 exports are preserved. Chapters 8–12 comprise
+88 new episodes; source translation files exist and must pass current review
+checks before production. Their distinct chapter palettes are in DIRECTING.md.
+Workers own exclusive episode batches; the coordinator owns shared records and
+reserves background/music identities across the entire series. The new foreground
+target is both high measured coverage and distinct relevant pictures for most
+sentence slides, with honest documented exceptions. Existing local F1 narration,
+Liberation Sans layout and export conventions continue. Required F1 and Whisper
+model files passed checksum verification in production/remaining/runtime-check.json.
+Generated media stay local and ignored; whole-video acceptance and commit/upload
+authorization are not implied by this production request.

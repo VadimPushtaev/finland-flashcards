@@ -1,0 +1,545 @@
+schema_version: 1
+section_id: hb-c09-tolv
+chapter_id: hb-c09
+title_sv: Barnets rättigheter vid tolv års ålder
+title_ru: Права ребёнка в возрасте двенадцати лет
+source_path: data/homebrew/sv/chapters/09_familj_barn_och_relationer.yaml
+translation_path: data/homebrew/ru/sections/hb-c09-tolv.yaml
+example_only: false
+source_section_sha256: 1d3cbf1ecb9011238900d0f6ef52aee8e5bbe0b814b1e2f557ace3886aec14e1
+translation_file_sha256: 1699d975505efe1658db6c27fe48387bc73f59a68eb4d377b9dd70a017d55464
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual heading for three seconds, then every archived body sentence and
+    list fragment once in stored order.
+  status: proposed
+  resolve_during: script
+- id: layout
+  decision: Fixed right bilingual panel at 1920x1080/24 fps with Liberation Sans, Swedish48 and Russian40;
+    Chapter9 terracotta palette. Foreground remains steady while decorative background moves continuously.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Paragraph and source-list groups retain their original progression. Source-specific illustrations
+    explain the exact relationships without adding contemporary law or statistics.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1, steps32, speed0.95, seed42, 44100Hz mono PCM16; initial ONNX
+    threads2. Full-video pronunciation and user listening review remain pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: A distinct source-bound foreground picture is planned for almost every sentence. Physical
+    objects/institutions prioritize verified photography; legal and familial relationships use original
+    explicit pictorial diagrams. No repeated generic image or text-only quota filler.
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show sentence pair0.25s before narration, retain through measured full speech and 1.5s regular
+    pause;2.2s at source-topic ends and2.5s for long pairs. No arbitrary runtime target.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki-traffic-park-1958.jpg by Okänd fotograf / Lehtikuva continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.0654761904761907. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Somewhere Sunny by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 59.481 seconds; prepared lossless stereo bed 149.167 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credit cards and complete accompanying source and reuse notices.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No source wording, reviewed Russian text, ordering or IDs are changed; foreground scarcity
+    will be explicitly documented instead of irrelevant filler.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: scene-1
+  description: 'Rättighet: Barnets för- eller efternamn kan inte bytas utan barnets tillstånd.'
+- id: scene-2
+  description: Det är fråga om barnkapning när
+- id: scene-3
+  description: ett barn under 16 år som är bosatt i Finland förs utomlands utan vårdnadshavarens tillstånd
+- id: scene-4
+  description: ett barn som förts utomlands inte har lämnats tillbaka till Finland vid avtalad tidpunkt.
+- id: scene-5
+  description: I Finland är barnkapning ett brott.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct source-verified topic-related photograph reserved centrally.
+  fallback: Select another verified licensed image and update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Distinct reserved licensed calm instrumental.
+  fallback: Select another centrally reserved instrumental with verified reuse terms.
+- id: narration
+  kind: narration
+  description: One exact full-source local SwedishF1clip per sentence.
+  fallback: Diagnostic-driven targeted retake in separate folder; retain original takes and metrics.
+- id: picture_001
+  kind: foreground
+  description: 'A source-bound illustration of: Rättighet: Barnets för- eller efternamn kan inte bytas
+    utan barnets tillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_002
+  kind: foreground
+  description: 'A source-bound illustration of: Barnet kan inte anslutas till ett trossamfund utan barnets
+    tillstånd.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_003
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets tillstånd behövs också för utträde ur ett trossamfund.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_004
+  kind: foreground
+  description: 'A source-bound illustration of: Om barnets föräldrar skiljer sig, har barnet rätt att
+    träffa båda sina föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_005
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets åsikt ska beaktas senast när barnet ät tolv år
+    gammalt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_006
+  kind: foreground
+  description: 'A source-bound illustration of: Om barnet inte vill träffa någon av föräldrarna har hen
+    rätt att säga sin åsikt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_007
+  kind: foreground
+  description: 'A source-bound illustration of: Barnets åsikt ska beaktas också när man fattar beslut
+    om hos vilken förälder barnet ska bo.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_008
+  kind: foreground
+  description: 'A source-bound illustration of: Om det finns problem i familjen kan barnet själv be om
+    vård utom hemmet.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_009
+  kind: foreground
+  description: 'A source-bound illustration of: Vård utom hemmet betyder att barnet bor någon annanstans
+    än hos sina föräldrar.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_010
+  kind: foreground
+  description: 'A source-bound illustration of: Det är fråga om barnkapning när'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_011
+  kind: foreground
+  description: 'A source-bound illustration of: ett barn under 16 år som är bosatt i Finland förs utomlands
+    utan vårdnadshavarens tillstånd'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_012
+  kind: foreground
+  description: 'A source-bound illustration of: ett barn som förts utomlands inte har lämnats tillbaka
+    till Finland vid avtalad tidpunkt.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_013
+  kind: foreground
+  description: 'A source-bound illustration of: I Finland är barnkapning ett brott.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+- id: picture_014
+  kind: foreground
+  description: 'A source-bound illustration of: Ta kontakt med polisen på din hemort.'
+  fallback: Verified relevant photograph or explanatory source-based diagram; record any genuinely unsuitable
+    sentence and leave foreground empty rather than invent information.
+sentences:
+- sentence_id: hb-c09-u0234-s001
+  sv: 'Rättighet: Barnets för- eller efternamn kan inte bytas utan barnets tillstånd.'
+  ru: 'Право: имя или фамилию ребёнка нельзя менять без его согласия.'
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of Barnets, för- eller efternamn, barnets tillstånd.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_001
+  text_highlights:
+  - Barnets
+  - för- eller efternamn
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.285646
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_001.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s002
+  sv: Barnet kan inte anslutas till ett trossamfund utan barnets tillstånd.
+  ru: Ребёнок не может быть принят в религиозную общину без его согласия.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of Barnet, trossamfund, barnets tillstånd. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_002
+  text_highlights:
+  - Barnet
+  - trossamfund
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s002.wav
+  start_seconds: 12.041667
+  end_seconds: 18.171735
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_002.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s003
+  sv: Barnets tillstånd behövs också för utträde ur ett trossamfund.
+  ru: Согласие ребёнка необходимо также для выхода из религиозной общины.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of Barnets, tillstånd, utträde ur ett trossamfund. Every
+    source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_003
+  text_highlights:
+  - Barnets
+  - tillstånd
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s003.wav
+  start_seconds: 19.958333
+  end_seconds: 25.600782
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_003.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s004
+  sv: Om barnets föräldrar skiljer sig, har barnet rätt att träffa båda sina föräldrar.
+  ru: Если родители ребёнка разводятся, он имеет право встречаться с обоими родителями.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of föräldrar skiljer sig, barnet, båda sina föräldrar.
+    Every source qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline
+    or entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish
+    source substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_004
+  text_highlights:
+  - föräldrar skiljer sig
+  - barnet
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s004.wav
+  start_seconds: 27.375
+  end_seconds: 34.758946
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_004.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s005
+  sv: Barnets åsikt ska beaktas senast när barnet ät tolv år gammalt.
+  ru: Мнение ребёнка должно учитываться не позднее достижения им двенадцатилетнего возраста.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of barnet, Barnets åsikt, tolv år gammalt. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_005
+  text_highlights:
+  - barnet
+  - Barnets åsikt
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s005.wav
+  start_seconds: 36.541667
+  end_seconds: 42.253776
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_005.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s006
+  sv: Om barnet inte vill träffa någon av föräldrarna har hen rätt att säga sin åsikt.
+  ru: Если ребёнок не хочет встречаться с кем-либо из родителей, он имеет право высказать своё мнение.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of barnet, någon av föräldrarna, sin åsikt. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_006
+  text_highlights:
+  - barnet
+  - någon av föräldrarna
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s006.wav
+  start_seconds: 44.041667
+  end_seconds: 51.425612
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_006.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s007
+  sv: Barnets åsikt ska beaktas också när man fattar beslut om hos vilken förälder barnet ska bo.
+  ru: Мнение ребёнка должно учитываться и при принятии решения о том, с кем из родителей он будет жить.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of Barnets åsikt, beslut, barnet ska bo. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_007
+  text_highlights:
+  - Barnets åsikt
+  - beslut
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s007.wav
+  start_seconds: 53.208333
+  end_seconds: 61.079898
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_007.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s008
+  sv: Om det finns problem i familjen kan barnet själv be om vård utom hemmet.
+  ru: Если в семье есть проблемы, ребёнок может сам попросить об устройстве вне семьи.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of barnet, själv be om, vård utom hemmet. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_008
+  text_highlights:
+  - barnet
+  - själv be om
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s008.wav
+  start_seconds: 62.833333
+  end_seconds: 69.52068
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_008.png
+  render_caption: false
+- sentence_id: hb-c09-u0234-s009
+  sv: Vård utom hemmet betyder att barnet bor någon annanstans än hos sina föräldrar.
+  ru: Устройство ребёнка вне семьи означает, что он живёт в другом месте, а не со своими родителями.
+  scene_id: scene-1
+  visual_cue: Exact-source pictorial explanation of barnet, någon annanstans, sina föräldrar. Every source
+    qualifier remains in the bilingual text; no invented benefit amount,country membership,deadline or
+    entitlement. Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source
+    substrings; no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_009
+  text_highlights:
+  - barnet
+  - någon annanstans
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0234-s009.wav
+  start_seconds: 71.291667
+  end_seconds: 78.118333
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_009.png
+  render_caption: false
+- sentence_id: hb-c09-u0236-s001
+  sv: Det är fråga om barnkapning när
+  ru: Речь идёт о похищении ребёнка, когда
+  scene_id: scene-2
+  visual_cue: Exact-source pictorial explanation of barnkapning, Det är fråga om. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_010
+  text_highlights:
+  - barnkapning
+  - Det är fråga om
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0236-s001.wav
+  start_seconds: 80.583333
+  end_seconds: 83.718027
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_010.png
+  render_caption: false
+- sentence_id: hb-c09-u0237-s001
+  sv: ett barn under 16 år som är bosatt i Finland förs utomlands utan vårdnadshavarens tillstånd
+  ru: ребёнка младше 16 лет, проживающего в Финляндии, вывозят за границу без разрешения его опекуна
+  scene_id: scene-3
+  visual_cue: 'All source conditions remain explicit: child under16, resident in Finland, taken abroad
+    without guardian permission. Neutral symbols identify no actual child or country of destination. Fixed
+    bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no
+    separate caption.'
+  asset_ids:
+  - episode_background
+  - picture_011
+  text_highlights:
+  - ett barn under 16 år
+  - utomlands
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0237-s001.wav
+  start_seconds: 86.208333
+  end_seconds: 95.473095
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_011.png
+  render_caption: false
+- sentence_id: hb-c09-u0239-s001
+  sv: ett barn som förts utomlands inte har lämnats tillbaka till Finland vid avtalad tidpunkt.
+  ru: ребёнка, вывезенного за границу, не вернули в Финляндию в оговорённое время.
+  scene_id: scene-4
+  visual_cue: 'The missed return deadline is explicit: a child taken abroad has not been returned to Finland
+    at the agreed time. A crossed clock denotes the missed deadline, without an invented date. Fixed bilingual
+    panel; foreground stays steady. Picture labels repeat exact Swedish source substrings; no separate
+    caption.'
+  asset_ids:
+  - episode_background
+  - picture_012
+  text_highlights:
+  - ett barn
+  - Finland
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0239-s001.wav
+  start_seconds: 97.958333
+  end_seconds: 105.899558
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_012.png
+  render_caption: false
+- sentence_id: hb-c09-u0240-s001
+  sv: I Finland är barnkapning ett brott.
+  ru: В Финляндии похищение ребёнка является преступлением.
+  scene_id: scene-5
+  visual_cue: Exact-source pictorial explanation of Finland, barnkapning, brott. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_013
+  text_highlights:
+  - Finland
+  - barnkapning
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0240-s001.wav
+  start_seconds: 108.375
+  end_seconds: 111.788333
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_013.png
+  render_caption: false
+- sentence_id: hb-c09-u0240-s002
+  sv: Ta kontakt med polisen på din hemort.
+  ru: Обратитесь в полицию по месту жительства.
+  scene_id: scene-5
+  visual_cue: Exact-source pictorial explanation of Ta kontakt, polisen, din hemort. Every source qualifier
+    remains in the bilingual text; no invented benefit amount,country membership,deadline or entitlement.
+    Fixed bilingual panel; foreground stays steady. Picture labels repeat exact Swedish source substrings;
+    no separate caption.
+  asset_ids:
+  - episode_background
+  - picture_014
+  text_highlights:
+  - Ta kontakt
+  - polisen
+  pronunciation_notes: []
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c09-tolv/narration/hb-c09-u0240-s002.wav
+  start_seconds: 113.541667
+  end_seconds: 116.955
+  display_segments: []
+  render_image: studio/media/hb-c09-tolv/pictures/picture_014.png
+  render_caption: false
+render:
+  music_path: studio/media/hb-c09-tolv/sources/music-bed.flac
+  background_image: studio/media/hb-c09-tolv/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.0654761904761907
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artikelkällor och villkor i medföljande CREDITS.md.
+  - paragraphs:
+    - Helsinki-traffic-park-1958.jpg — Okänd fotograf / Lehtikuva · Public domain
+    - Somewhere Sunny — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+    heading: Bild, musik & röst · Изображения, музыка и голос
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian source pairs retained; no new current-law advice.
+  - Source-based pictorial diagrams repeat only source relationships; photograph identities verified.
+  - Background cropped,darkened,blurred and moved continuously; photo license retained.
+  - Music excerpted,faded,ducked,level-adjusted and repeated with4-second equal-power crossfades where
+    needed.
+  palette:
+    background: '#442d30'
+    text: '#faf3e8'
+    secondary: '#e5c5be'
+    highlight: '#e6c384'
+    separator: '#80575a'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki-traffic-park-1958.jpg
+    description: Photograph of Helsinki traffic park on the opening day.
+    license: Public domain

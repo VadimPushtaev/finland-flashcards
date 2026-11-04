@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c11-skulder",
+  "stage": "asr",
+  "state": "studio/production/remaining/hb-c11-skulder-asr-state.json",
+  "log": "studio/production/remaining/hb-c11-skulder-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c11-skulder/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--threads",
+    "2",
+    "--resume"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-skulder/narration/asr.json"
+  ]
+}

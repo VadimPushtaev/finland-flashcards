@@ -1,0 +1,326 @@
+{
+  "accepted_at": "2026-11-03T09:30:03.742560+00:00",
+  "owner": "/root/chapter08",
+  "previous_owner": "/root/chapter10",
+  "source_checkpoint": "studio/production/hb-c10/traffic-emergency-transfer-checkpoint.json",
+  "transfer": {
+    "section_id": "hb-c11-trafik",
+    "new_owner": "/root/chapter08",
+    "transferred_at": "2026-11-03T09:24:20.794638+00:00",
+    "previous_owner": "/root/chapter10",
+    "picture_preparation_running": false,
+    "previous_owner_will_no_longer_write_episode_or_media_outside_narration": true,
+    "source_ready": true,
+    "source_picture_plan": "studio/episodes/hb-c11-trafik/picture-plan.json",
+    "script_sha256": "d0c1ed612572c33c2eb140cc49a7a409ebb8d63e696dde649c6d02d51188702c",
+    "assets_register_exists": false,
+    "selected_clips": 49,
+    "tts_state": {
+      "section_id": "hb-c11-trafik",
+      "stage": "tts",
+      "status": "finished",
+      "supervisor_pid": 262143,
+      "command": [
+        "studio/runtime/.venv/bin/python",
+        "studio/tools/audition.py",
+        "supertonic",
+        "--voice",
+        "F1",
+        "--speed",
+        ".95",
+        "--threads",
+        "2",
+        "--section",
+        "hb-c11-trafik",
+        "--all",
+        "--output",
+        "studio/media/hb-c11-trafik/narration"
+      ],
+      "started_at": "2026-11-03T08:10:08.965831+00:00",
+      "log": "studio/production/hb-c11-safety/hb-c11-trafik-tts.log",
+      "pid": 262144,
+      "heartbeat_at": "2026-11-03T08:30:07.298571+00:00",
+      "returncode": 0,
+      "finished_at": "2026-11-03T08:30:37.426661+00:00",
+      "missing_outputs": []
+    },
+    "asr_state": {
+      "section_id": "hb-c11-trafik",
+      "stage": "asr",
+      "status": "finished",
+      "supervisor_pid": 283347,
+      "command": [
+        "studio/runtime/.venv/bin/python",
+        "studio/tools/check_audio.py",
+        "studio/media/hb-c11-trafik/narration",
+        "--language",
+        "sv",
+        "--pattern",
+        "hb-*.wav",
+        "--resume",
+        "--threads",
+        "2"
+      ],
+      "started_at": "2026-11-03T08:55:20.236049+00:00",
+      "log": "studio/production/hb-c11-safety/hb-c11-trafik-asr.log",
+      "pid": 283348,
+      "heartbeat_at": "2026-11-03T09:03:40.285675+00:00",
+      "returncode": 0,
+      "finished_at": "2026-11-03T09:04:04.407478+00:00",
+      "missing_outputs": []
+    },
+    "narration_exclusion": "Previous owner keeps only narration subdirectory and its exact ASR state/log/job until diagnostics complete;never rewrites selected WAVs.",
+    "selected_takes": [
+      {
+        "sentence_id": "hb-c11-u0246-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0246-s001.wav",
+        "sha256": "72d7b37bc706f1ee24745909b59afa27af518d6fa9bac1f17705e79c3bb081d2"
+      },
+      {
+        "sentence_id": "hb-c11-u0247-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0247-s001.wav",
+        "sha256": "92af465fb54a0be4851b7d559fbe6103dfb6d42c7567d035c5eae4a69f86dfd3"
+      },
+      {
+        "sentence_id": "hb-c11-u0247-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0247-s002.wav",
+        "sha256": "bb25d3dd44cc6859324d4f99390e4d80a5a0e221f53577b7050ee33cb2cf950a"
+      },
+      {
+        "sentence_id": "hb-c11-u0247-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0247-s003.wav",
+        "sha256": "ec4a12831d9125c9208069315fb01e37ba2f60c27d7d0cc05e0738f84296d3fb"
+      },
+      {
+        "sentence_id": "hb-c11-u0247-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0247-s004.wav",
+        "sha256": "902079092406aec9c331bb26c9d161d1610d264407cee1661787bba036b4d779"
+      },
+      {
+        "sentence_id": "hb-c11-u0247-s005",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0247-s005.wav",
+        "sha256": "0f281a2e890ff61e51d139310c9d41accad0e8908b389ec13368d46efd910a1a"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s001.wav",
+        "sha256": "d35474dd5c3ca92a48a4fc12866740be1571ae7c45769e1818524212707bf97e"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s002.wav",
+        "sha256": "82abc7346d0023d449f6ff7898b6a07710976c32f47860e55061268fbe9f0bbc"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s003.wav",
+        "sha256": "333a84e4f0706128e2de03c45df9400785af9fc4cc44dd42b8ebc84a359046e5"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s004.wav",
+        "sha256": "7c9fb11fb1d9a4cd4f4993f9e5c1d467e8b909f44bb89bfdbea9dd9b2415ca4b"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s005",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s005.wav",
+        "sha256": "454142fe496aa23cf586b60d717431f56c2603853c174c32cdf8ab132d4e969c"
+      },
+      {
+        "sentence_id": "hb-c11-u0248-s006",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0248-s006.wav",
+        "sha256": "0fac465c362d9df7ba6d00cfa956657c49c4ecf1d412fbea1914052ee9eaa374"
+      },
+      {
+        "sentence_id": "hb-c11-u0249-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0249-s001.wav",
+        "sha256": "e1c1e6fc057fd8e1308d5aee6cba998d7b2b33ca6193cd083d2137b1bbcade82"
+      },
+      {
+        "sentence_id": "hb-c11-u0249-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0249-s002.wav",
+        "sha256": "46c1c0854ef3d96263def12626b93ef7398ddd3faa493b11af3a90f8ecee9c0f"
+      },
+      {
+        "sentence_id": "hb-c11-u0249-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0249-s003.wav",
+        "sha256": "c6b1365da1f448db518fe71f1d34b9c8a236ff0f5b993b74008039a1213207f8"
+      },
+      {
+        "sentence_id": "hb-c11-u0249-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0249-s004.wav",
+        "sha256": "704ca74bec4a84fa56331a1372af99c8f7c2f5d73aab1ad20cbb17828f89fc2f"
+      },
+      {
+        "sentence_id": "hb-c11-u0250-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0250-s001.wav",
+        "sha256": "b2085ae389bcfcd1dfae9c6ab92b5a550e4c32aa99e3988a9e7b095ed391008a"
+      },
+      {
+        "sentence_id": "hb-c11-u0250-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0250-s002.wav",
+        "sha256": "0da49f126a958504b67d629e4ba719be08d41fd72d19d62322df37e97ac1cf34"
+      },
+      {
+        "sentence_id": "hb-c11-u0251-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0251-s001.wav",
+        "sha256": "fdd72293ae10d2fff08b931ea9bf96c151dcf59647a976076662c9903f2306ad"
+      },
+      {
+        "sentence_id": "hb-c11-u0251-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0251-s002.wav",
+        "sha256": "8d8868db4869c4297c518e1667e9d934c6f7f12bbd873480a465aa964bc5b23f"
+      },
+      {
+        "sentence_id": "hb-c11-u0251-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0251-s003.wav",
+        "sha256": "e594067d8dcc788eddba9b1bc49041389623343bf5927a9a5362474e40c3166e"
+      },
+      {
+        "sentence_id": "hb-c11-u0252-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0252-s001.wav",
+        "sha256": "b2602f1cb9dd4a5efd24ad0efefad02f18bed42f94b846240dd925022b1bdd99"
+      },
+      {
+        "sentence_id": "hb-c11-u0252-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0252-s002.wav",
+        "sha256": "c4d29bbd5db4270b198c75330e098f60fcc2160f1cc3fd75daffbc9f0ddefae1"
+      },
+      {
+        "sentence_id": "hb-c11-u0252-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0252-s003.wav",
+        "sha256": "927648289bba61038433e4d1c2c8fe7731b3f3cef3054a5155da4a8494bc5f92"
+      },
+      {
+        "sentence_id": "hb-c11-u0252-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0252-s004.wav",
+        "sha256": "9df667175d46777ce85e704c9dec7bc0708e74cecbcb3d2b03b15becafdaeae5"
+      },
+      {
+        "sentence_id": "hb-c11-u0253-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0253-s001.wav",
+        "sha256": "f1e5b1996d1b6d6e36d884fc6c15dfccc85e80ff885ff0ccf54730ed8012f3cf"
+      },
+      {
+        "sentence_id": "hb-c11-u0253-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0253-s002.wav",
+        "sha256": "1a3d28663c8ac099a1aba6016cabfe3604e70f0d0b8685238aedca1a3093f93f"
+      },
+      {
+        "sentence_id": "hb-c11-u0254-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0254-s001.wav",
+        "sha256": "e685b99603f4aa71b4305aae382f369df0d2aad95a331ece3538ef9eb21b8469"
+      },
+      {
+        "sentence_id": "hb-c11-u0254-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0254-s002.wav",
+        "sha256": "00a2a98e68b1b3a248993821817a6341aca3ba6f86d92f836469087923f4f200"
+      },
+      {
+        "sentence_id": "hb-c11-u0254-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0254-s003.wav",
+        "sha256": "af860bb1e3579f66ed20508df783c4332c795c843d9dc850e3fa4f5453970274"
+      },
+      {
+        "sentence_id": "hb-c11-u0254-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0254-s004.wav",
+        "sha256": "bb52e5703759b27bfa8f9f31be3d6b926e750e6f4313fb6d7fa48d8eaebe559e"
+      },
+      {
+        "sentence_id": "hb-c11-u0255-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0255-s001.wav",
+        "sha256": "0c69ea36ca39d7e32508f1af1da2af67def5c2313c087c8a318629e75c96e336"
+      },
+      {
+        "sentence_id": "hb-c11-u0256-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0256-s001.wav",
+        "sha256": "637bb60e68eb0b127526db0e2940151b6921ddc4804db9226bd84c40c10bef71"
+      },
+      {
+        "sentence_id": "hb-c11-u0256-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0256-s002.wav",
+        "sha256": "a961860220c292261963f6fbaa66430e940b5ba52e69dcc8f34efe42be55d25a"
+      },
+      {
+        "sentence_id": "hb-c11-u0257-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0257-s001.wav",
+        "sha256": "947fd9cc97e3430ca2273f8e86994f788cd2c3a62a4bbbc02e33bf41f16c19a1"
+      },
+      {
+        "sentence_id": "hb-c11-u0257-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0257-s002.wav",
+        "sha256": "c8c71b2fbfc44ddc2f2e7d15150f3e590e866dcdcd1738314cc4cdd159a53713"
+      },
+      {
+        "sentence_id": "hb-c11-u0258-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0258-s001.wav",
+        "sha256": "950ddbb24ee826974a3a3780582f77b610a314af25b1b72095bb94b55a713ec8"
+      },
+      {
+        "sentence_id": "hb-c11-u0258-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0258-s002.wav",
+        "sha256": "9ab1663c7fa5a46f7c9c450e77b4e9760d915f0d75398cb950431ec96d141136"
+      },
+      {
+        "sentence_id": "hb-c11-u0258-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0258-s003.wav",
+        "sha256": "49cd72cbcd4b5debd096739ed7fb712965656ec3bb568eb1f3342f485cb1d84e"
+      },
+      {
+        "sentence_id": "hb-c11-u0258-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0258-s004.wav",
+        "sha256": "ce04c913c438b02464d15f64dbd79526e830228c03546e1a1cb89e4f71bd86ee"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s001.wav",
+        "sha256": "34d309ddea5aa7a6d6101d5b3a2a3cacdccd0d757c053a8569ee76fc2aae33b8"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s002.wav",
+        "sha256": "51069350a407e025a613774163c61c990b8a80cda6947a8cad8548711d6344e1"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s003",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s003.wav",
+        "sha256": "dc546446fa66be16d97eb95589d7fd1367f72253a09cc1a1684ef0651b4a140a"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s004",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s004.wav",
+        "sha256": "3fec51e34fb149623f84afbc56ef65a66628ef765398a1203e6f2711fa0b8509"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s005",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s005.wav",
+        "sha256": "199a3d6172046299e0cd8851182c35df7a2c5fe2485874f95937195166518ca2"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s006",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s006.wav",
+        "sha256": "ad007141775327b6e0ced4d390d90a51dad01e2e6b36a56c8b9dfaab6700b20b"
+      },
+      {
+        "sentence_id": "hb-c11-u0259-s007",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0259-s007.wav",
+        "sha256": "5be9f77861efe6f6e7d69cccf84f368e830a85451b1ed17b18a47d10b199a22b"
+      },
+      {
+        "sentence_id": "hb-c11-u0260-s001",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0260-s001.wav",
+        "sha256": "6e289e5286d158aa4fa905049cc824cf76b535f131a8fb08463e3be9b2e961e3"
+      },
+      {
+        "sentence_id": "hb-c11-u0260-s002",
+        "path": "studio/media/hb-c11-trafik/narration/hb-c11-u0260-s002.wav",
+        "sha256": "297cd2de5c7a0b7949b52ddc718d53b3e3df86ae62fcbd155bb67bad1d7d360f"
+      }
+    ],
+    "background_music": "Already source-identity reserved/acquired and inspected. Do not replace sources without root reservation.",
+    "picture_assets_status": "No foreground picture generator/selected photo or render exists yet;researchmetadata available read-only in hb-c11-safety.",
+    "research": "studio/production/hb-c11-safety/{traffic-*,emergency-*,safety-research*,traffic-more-research*};shared completed research files are read-only. New helpers/research/manifests go into new owner production dir.",
+    "no_listening_or_export": true
+  },
+  "narration_policy": "Read-only selected full49WAVs and existing metrics/ASR; no resynthesis authorized or needed."
+}

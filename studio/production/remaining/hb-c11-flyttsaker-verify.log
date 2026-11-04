@@ -1,0 +1,49 @@
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c11-flyttsaker
+episode_background 1 files verified
+picture_belongings 1 files verified
+picture_declaration 1 files verified
+picture_deadline 1 files verified
+picture_inside 1 files verified
+picture_car_outside 1 files verified
+picture_car_inside 1 files verified
+picture_before_drive 1 files verified
+picture_permit 1 files verified
+picture_insurance 1 files verified
+picture_notification 1 files verified
+music_bed 2 files verified
+narration 10 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c11-flyttsaker --save-frames
+2026-11-03T02:05:06.001860+00:00 hb-c11-flyttsaker verification: PID 70216 running
+{
+  "background_boundary_max_mean_pixel_change": 0.7973131537437439,
+  "full_decode": "passed",
+  "decoded_video_frames": 3569,
+  "decoded_audio_seconds": 148.708,
+  "decoded_audio_peak": 0.6971879601478577,
+  "frame_exports": 13,
+  "source_sentences": 10,
+  "output": "videos/homebrew/hb-c11-15-flyttsaker.mp4",
+  "sha256": "95a75e32f45ee0d6c601e48560a259114e7f238649494d0623fcde01cfd89485",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 9.406484603881836,
+    "10.0": 12.051212310791016
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.999867486705217,
+    "relative_rms_error": 0.016317149959569507,
+    "mix_sha256": "a4ec54a571b1f5ca7eb9172c0fc15922f4240daec7008a611f33168577b00bc0"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c11-flyttsaker --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c11-flyttsaker --ready
+PASS: 10 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c11-flyttsaker --require-target
+hb-c11-flyttsaker: 100.0% of body duration; 10/10 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c11-flyttsaker
+hb-c11-flyttsaker: 10 distinct picture sources / 10 sentence slides; 10 pictured slides
+{"section_id": "hb-c11-flyttsaker", "production_status": "preview_ready", "output": "videos/homebrew/hb-c11-15-flyttsaker.mp4", "sha256": "95a75e32f45ee0d6c601e48560a259114e7f238649494d0623fcde01cfd89485", "seconds": 148.70833333333334, "source_sentences": 10, "source_section_sha256": "1b02c52508f6a170779b7f2406e8f3b94b477bf40fd7eacc0c8419d03023e899", "translation_file_sha256": "82b2ea43b95cd095c519954b7082f31c17e5494471fae9239623426a8e5c3d8f", "picture_fraction": 1.0, "distinct_picture_sources": 10, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c11-flyttsaker", "stage": "verification", "status": "finished", "supervisor_pid": 70215, "command": [".venv/bin/python", "studio/production/remaining/verify_episode.py", "hb-c11-flyttsaker"], "started_at": "2026-11-03T02:04:32.412019+00:00", "log": "studio/production/remaining/hb-c11-flyttsaker-verify.log", "pid": 70216, "heartbeat_at": "2026-11-03T02:05:06.000945+00:00", "returncode": 0, "finished_at": "2026-11-03T02:05:26.260040+00:00", "missing_outputs": []}

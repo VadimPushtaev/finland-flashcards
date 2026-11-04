@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c11-hyresavtal",
+  "stage": "asr",
+  "state": "studio/production/remaining/hb-c11-hyresavtal-asr-state.json",
+  "log": "studio/production/remaining/hb-c11-hyresavtal-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c11-hyresavtal/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--threads",
+    "2",
+    "--resume"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-hyresavtal/narration/asr.json"
+  ]
+}

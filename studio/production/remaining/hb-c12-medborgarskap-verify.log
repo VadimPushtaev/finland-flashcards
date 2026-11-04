@@ -1,0 +1,74 @@
+2026-11-03T11:40:01.401710+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:40:34.936154+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:41:08.619951+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:41:42.106542+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:42:15.728837+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:42:49.273282+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:43:22.913637+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:43:56.514565+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:44:26.519062+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:45:00.036953+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:45:33.623651+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:46:07.207765+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:46:40.793665+00:00 hb-c12-medborgarskap verify: PID 365198 running
+2026-11-03T11:47:14.432233+00:00 hb-c12-medborgarskap verify: PID 365198 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-medborgarskap
+hb-c12-medborgarskap 18 current-take hashes checked; 4 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-medborgarskap
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+picture-016 1 files verified
+picture-017 1 files verified
+picture-018 1 files verified
+music_bed 2 files verified
+narration 18 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-medborgarskap --save-frames
+2026-11-03T11:47:47.968617+00:00 hb-c12-medborgarskap verify: PID 365198 running
+{
+  "background_boundary_max_mean_pixel_change": 1.2212121486663818,
+  "full_decode": "passed",
+  "decoded_video_frames": 5257,
+  "decoded_audio_seconds": 219.041,
+  "decoded_audio_peak": 0.6561536192893982,
+  "frame_exports": 21,
+  "source_sentences": 18,
+  "output": "videos/homebrew/hb-c12-19-medborgarskap.mp4",
+  "sha256": "0c522fedfc083ce3bb6726844b0af34638a194ac4df2b87792e90bb4061b108a",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 32.16259765625,
+    "10.0": 79.67784881591797
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998351084832728,
+    "relative_rms_error": 0.018211215043825706,
+    "mix_sha256": "bb1e3a9d92c3cdaee545298023f5bc7a0ecafde545175d2077f3fc4b57dfdc40"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-medborgarskap --ready
+2026-11-03T11:48:21.552789+00:00 hb-c12-medborgarskap verify: PID 365198 running
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-medborgarskap --ready
+PASS: 18 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-medborgarskap --require-target
+hb-c12-medborgarskap: 100.0% of body duration; 18/18 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-medborgarskap
+hb-c12-medborgarskap: 18 distinct picture sources / 18 sentence slides; 18 pictured slides
+{"section_id": "hb-c12-medborgarskap", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-19-medborgarskap.mp4", "sha256": "0c522fedfc083ce3bb6726844b0af34638a194ac4df2b87792e90bb4061b108a", "seconds": 219.04166666666666, "source_sentences": 18, "source_section_sha256": "d7f452c55535ca86abe813a5265759cdd0ed65b0e32dbb509dd08558c085dc03", "translation_file_sha256": "11cce448feec7efc3274a816d758c0170494c6e29df5d4bd15a0d00d3f328f6d", "picture_fraction": 1.0, "distinct_picture_sources": 18, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-medborgarskap", "stage": "verify", "status": "finished", "supervisor_pid": 365197, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-medborgarskap"], "started_at": "2026-11-03T11:39:27.753276+00:00", "log": "studio/production/remaining/hb-c12-medborgarskap-verify.log", "pid": 365198, "heartbeat_at": "2026-11-03T11:48:21.551062+00:00", "returncode": 0, "finished_at": "2026-11-03T11:48:30.160142+00:00", "missing_outputs": []}

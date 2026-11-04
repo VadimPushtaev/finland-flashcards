@@ -1,0 +1,68 @@
+"""Exact-source individual emergency compositions, resumed after ownership transfer."""
+from pathlib import Path
+import json,yaml
+R=Path(__file__).resolve().parents[3];ep=R/'studio/episodes/hb-c11-nodsituationer';s=yaml.safe_load((ep/'script.yaml').read_text());p=[]
+def add(objects,reason,**kw):p.append(dict(objects=objects,reason=reason,**kw))
+add([['finland','Finland'],['phone','nödnumret'],['digits112','112']],'Finnish emergency number as physical phone/digits; no active interface.')
+add([['alert','akut nödsituation'],['phone','ringa nödnumret']],'Only acute-emergency gate visibly precedes calling.',relation='flow',title='bara om det är fråga om en akut nödsituation')
+add([['person','liv'],['heart','hälsa'],['house','egendom'],['tree','omgivning']],'Four alternative danger categories; no invented incident.',title='om någons liv, hälsa, egendom eller omgivning är i fara')
+add([['hospital','en ambulans']],'Actual Finnish ambulance photograph illustrates one explicitly named possible responder; no all-services promise.')
+add([['headset','Nödcentralen'],['question','huruvida hjälp behövs'],['court','vilken myndighet']],'Emergency centre separately assesses WHETHER help and WHICH authority.',layout='tree',relation='flow')
+add([['phone','ringa nödnumret'],['coins','ingenting']],'Real telephone object contextualizes free calling; no price invented.')
+add([['phone','ringa nödnumret'],['document','Anvisningar']],'Unnumbered source introduction to the call instructions.',relation='none')
+add([['person','Berätta'],['speech','vad som hänt']],'Caller describes what happened without a fictional event.',relation='flow')
+add([['headset','frågorna'],['speech','Svara']],'Distinct operator/question and caller-answer figures; no invented answer.',relation='together')
+add([['address','den exakta adressen'],['city','kommunen/staden']],'Real source-identified Oulu building/address photograph; bilingual text explicitly requires BOTH address and municipality.',relation='together')
+add([['headset','anvisningarna'],['check','Följ']],'Follow operator guidance without inventing medical procedures.',relation='flow')
+add([['end_call','Avsluta inte samtalet'],['certificate','får lov']],'Permission is required before ending the call.',relation='blocked',title='innan du får lov att göra det')
+add([['phone','ringer'],['address','från vilken adress'],['headset','nödcentralen']],'Caller supplies own calling address as exactly as possible.',relations=['flow','flow'])
+add([['address','rätt ställe'],['support_vehicle','hjälpen']],'Location lets help reach the right place; anonymous generic assistance vehicle.',relation='flow')
+add([['trace','spåra samtalet'],['apartment','vilken bostad i ett höghus'],['question','operatören vet inte']],'Tracing does not reveal the particular apartment; no invented unit/address.',relations=['none','none'],title='operatören vet inte')
+add([['person','själv'],['speech','berätta']],'Caller must give the missing apartment detail; separate clear caller-speech composition.',relation='flow')
+add([['headset','Nödcentralen'],['languages','en tolk']],'Interpreter is possible when needed, not promised unconditionally.',relation='flow',title='kan vid behov använda en tolk')
+add([['clock','i början av samtalet'],['speech','vilket språk'],['languages','tolkas']],'If an interpreter is needed, name the language clearly at the beginning.',relations=['flow','flow'],title='Om man behöver en tolk')
+add([['phone','samtalet'],['headset','nödcentralsoperatören'],['languages','tolktjänsten']],'Stay on call while operator connects interpretation; not a ban on translation.',title='Man får inte avsluta samtalet',relations=['together','flow'])
+add([['no_phone','ringa nödnumret'],['question','i onödan']],'Unnecessary emergency calling is prohibited.',relation='none')
+add([['no_phone','Ring inte nödnumret']],'Source negative heading explicitly governs following list.')
+add([['sad_face','influensa'],['no_phone','vanligt sjukdomsfall']],'Ordinary illness example belongs under the preceding no-emergency-call heading; no new severity rule.',source_context_ids=['hb-c11-u0308-s001'])
+add([['hospital','hälsovårdscentralen']],'Actual named Finnish health-centre building as an example setting, no new number or local recommendation.')
+add([['hospital','sjukvården'],['traffic','trafiken'],['fire','brandsäkerheten']],'Three general-information examples, separate from acute emergency requests.',title='när du vill fråga någonting allmänt')
+add([['no_phone','ringa nödnumret'],['alert','inte fråga om något nödfall']],'No emergency call for preceding general questions.',relation='none')
+add([['plug','ett elavbrott'],['traffic','en trafikstockning'],['no_phone','om ingen är i fara']],'Power outage OR traffic queue excludes emergency calling only IF nobody is in danger.',relations=['or','none'],title='om ingen är i fara')
+add([['headset','Nödcentralen'],['document','sådana ärenden']],'Centre responsibility excludes those preceding no-danger matters.',relation='blocked',title='ansvarar inte',source_context_ids=['hb-c11-u0312-s001'])
+add([['clock','inte är brådskande'],['no_phone','Ring inte nödnumret']],'Nonurgent matter precedes no-call restriction.',relation='flow')
+add([['hospital','vanliga sjukdomsfall'],['no_phone','Du ska inte ringa nödnumret']],'Ordinary illness restriction, no invented medical cutoffs.',relation='blocked')
+add([['court','polisen (poliisi)'],['document','ett tillståndsärende'],['no_phone','Du ska inte heller ringa nödnumret']],'Verified police institution photograph represents general permit questions, no assumed availability or new contact.',relations=['none','none'])
+add([['no_phone','Onödiga samtal'],['clock','för sent'],['alert','verkliga nödsituationer']],'Unnecessary calls MAY delay help during actual emergencies.',relations=['flow','flow'],title='kan orsaka')
+add([['phone','missbrukat nödnumret'],['court','straffas']],'Possible penalty for misuse; no invented fine or inevitability.',relation='flow',title='Du kan straffas')
+add([['book','utbildad'],['headset','nödcentraloperatör']],'Trained operator answers, shown as anonymous headset and training book.',relation='together')
+add([['headset','Han eller hon'],['question','ställer dig frågor'],['scales','bedömer hjälpbehovet']],'Operator asks questions and assesses need; no automatic dispatch.',relations=['flow','flow'])
+add([['headset','han eller hon'],['support_vehicle','hjälp']],'Then operator alerts help as source continuation; anonymous assistance.',relation='flow',title='Därefter')
+add([['headset','Operatören'],['speech','berättar'],['person','vad du ska göra']],'Operator explains what caller should do without invented instructions.',relations=['flow','flow'])
+add([['headset','Operatören'],['switch','kopplar inte samtalet vidare'],['speech','besvara frågorna noga']],'Operator does not forward the call; caller answers carefully.',relations=['none','none'])
+add([['phone','alla telefoner'],['coins','gratis'],['check','Du kan ringa nödnumret']],'All-telephone free-call statement, no tariff or brand advice.',relations=['together','none'])
+add([['no_prefix','riktnummer'],['check','inget']],'No area code needed; crossed prefix represents prefix exclusion, not a ban on emergency calling.',relation='none')
+add([['globe','ett utländskt mobilabonnemang'],['phone','ringa nödnumret'],['dial_prefix','utan riktnummer']],'Foreign mobile subscription still needs no area code.',relations=['flow','none'])
+add([['digits112','112'],['eu','alla EU-länder']],'Exact112 and EU symbol, no fabricated geographic boundary.',relation='together')
+add([['headset','Nödcentralen'],['languages','finska, svenska och engelska']],'Three source service languages, no extra availability claim.',relation='none')
+add([['languages','dessa språk'],['phone','en telefontolk']],'If none of listed languages known, telephone interpretation is possible.',relation='flow',title='Om du inte kan något av dessa språk')
+add([['speech','Börja'],['languages','vilket språk du talar']],'Start by stating the spoken language.',relation='flow')
+add([['clock','Vänta'],['headset','nödcentralsoperatören'],['languages','en tolk']],'Wait while operator connects interpreter; no promised wait duration.',relations=['none','flow'])
+add([['finland','Finland'],['shield','ett tryggt land'],['alert','allvarliga kriser eller störningar']],'Usually safe, explicitly qualified rather than asserting crises never happen.',relations=['together','none'],title='vanligen')
+add([['clock','sedan länge'],['document','förberedd'],['question','oväntade situationer']],'Longstanding preparedness habit for unforeseen situations, no invented checklist.',relations=['none','none'],title='för säkerhets skull')
+add([['plug','elavbrott'],['tap','avbrott i vattentjänsterna'],['weather','stormar'],['flood','översvämningar'],['fire','terrängbränder'],['microscope','pandemier']],'Six literal examples of disruptions; no new preparedness quantities or health instructions.',title='kan till exempel vara')
+add([['document','förberedd'],['check','vet du hur du ska göra'],['question','om något oväntat inträffar']],'Preparedness supports action if something unexpected happens.',relations=['flow','none'])
+# Refined visible negative/permission/language semantics after the complete first timed review.
+p[11].update(objects=[['headset','får lov'],['phone','Avsluta']],relation='flow',title='Avsluta inte samtalet innan du får lov att göra det.')
+p[37]['objects'][1][0]='no_coins';p[39]['objects'][2][0]='no_prefix';p[41]['objects'][1][0]='service_languages';p[42]['objects'][0][0]='service_languages';p[45]['objects'][2][0]='no_alert'
+assert len(p)==len(s['sentences'])==49
+for i,(row,spec) in enumerate(zip(s['sentences'],p),1):
+ for _,label in spec['objects']:assert label in row['sv'],(i,label,row['sv'])
+ if spec.get('title'):assert spec['title'] in row['sv'],(i,spec['title'])
+ row['asset_ids']=[v.replace('picture-','picture_') for v in row['asset_ids']]
+ row['render_image']=f'studio/media/hb-c11-nodsituationer/pictures/picture-{i:03d}.png'
+ if spec.get('layout')=='tree':spec['tree_edge_start_y']=350
+ row['text_highlights']=[label for _,label in spec['objects'] if 5<=len(label)<=44][:2]
+(ep/'visual-plan.json').write_text(json.dumps(p,ensure_ascii=False,indent=2)+'\n')
+(ep/'script.yaml').write_text(yaml.safe_dump(s,allow_unicode=True,sort_keys=False,width=100))
+print('49 exact-source individual plans written')

@@ -24,7 +24,8 @@ def require(condition, message):
 
 def read(path):
     """Read a YAML file without executing YAML tags."""
-    return yaml.safe_load(path.read_text(encoding='utf-8'))
+    return yaml.load(path.read_text(encoding='utf-8'),
+                     Loader=getattr(yaml, 'CSafeLoader', yaml.SafeLoader))
 
 
 def digest(text):

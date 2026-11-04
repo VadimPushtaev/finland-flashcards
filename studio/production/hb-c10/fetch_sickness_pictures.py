@@ -1,0 +1,21 @@
+"""Retain concrete illness-benefit object/institution photographs and pinned prior masters."""
+from pathlib import Path
+import json,subprocess,shutil,hashlib
+R=Path(__file__).resolve().parents[3];P=Path(__file__).resolve().parent;SID='hb-c10-sjukdom';E=R/'studio/episodes'/SID;S=R/'studio/media'/SID/'sources';S.mkdir(parents=True,exist_ok=True)
+choices={
+14:('health-object-money-research.json','File:Euro coins and banknotes.jpg','Actual euro coins/notes illustrate money as an object; visible denominations are NOT an allowance amount,formula or guaranteed wage replacement.'),
+19:('health-object-stethoscope-research.json','File:Littmann Stethoscope.jpg','Actual stethoscope illustrates physician assessment role,no brand endorsement,patient diagnosis,treatment instruction or assertion about a specific occupational-health provider.'),
+26:('sjukdom-phone-research.json','File:Panasonic KX-TG2226B 2.4GHz cordless phone with answering machine.jpg','Actual ordinary telephone object illustrates asking regional services for advice. No pictured screen digit is offered as an official contact number or new application procedure.'),
+28:('sjukdom-kela-verified-metadata.json','File:KelaKonttoriSello.jpg','Primary source identifies actual Kela office in Leppävaara,Espoo,photographed2011. Institutional illustration only,no current site-specific opening,contact or benefit-approval claim.'),
+39:('health-object-rollator-research.json','File:Rollator 2.jpg','Actual empty rollator illustrates one kind of functional-support object. Not an eligibility criterion,universal pensioner need,medical diagnosis or product endorsement.'),
+42:('sjukdom-kela-verified-metadata.json','File:Kela welfare authority palace in Seinäjoki Finland.jpg','Primary source identifies actual regional Kela office,Seinäjoki,2014. Distinct social-security institution illustration,no current office opening,address recommendation or grant guarantee.')};selected={}
+for i,(metadata,title,context) in choices.items():
+    p=next(q for q in json.loads((P/metadata).read_text())['query']['pages'].values() if q.get('title')==title);pi=p['imageinfo'][0];assert pi['extmetadata'].get('Artist',{}).get('value');url=pi.get('thumburl',pi['url']).replace('https://thumb.wikimedia.org/','https://upload.wikimedia.org/').split('?')[0];dest=S/f'foreground-{i+1:02}.jpg';subprocess.run([str(R/'.venv/bin/python'),str(R/'studio/production/remaining/download.py'),'--url',url,'--output',str(dest),'--timeout','300'],cwd=R,check=True);selected[str(i)]=dict(title=title,imageinfo=pi,path=str(dest.relative_to(R)),download_url=url,context=context);(E/'selected-photos.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2)+'\n');print(i,title,flush=True)
+previous=json.loads((R/'studio/episodes/hb-c10-tillgang/selected-photos.json').read_text())['19'];dest=S/'foreground-35.jpg';raw=R/previous['path']
+if dest.exists():assert hashlib.sha256(dest.read_bytes()).hexdigest()==hashlib.sha256(raw.read_bytes()).hexdigest()
+else:shutil.copyfile(raw,dest)
+selected['34']={**previous,'path':str(dest.relative_to(R)),'context':'Verified actual University Medical Center New Orleans examination room. Non-identifying clinical-room illustration,no photographed child/parent/patient,no Finnish location or current particular-site care promise. Previously used as a patient-room category in Tillgång; meaningful source reuse is explicit.'};(E/'selected-photos.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2)+'\n')
+previous=json.loads((R/'studio/episodes/hb-c10-tillgang/retained-photo-assets.json').read_text())['7'];dest=S/'workplace.jpg';raw=R/previous['path']
+if dest.exists():assert hashlib.sha256(dest.read_bytes()).hexdigest()==hashlib.sha256(raw.read_bytes()).hexdigest()
+else:shutil.copyfile(raw,dest)
+old={'17':{**previous,'path':str(dest.relative_to(R)),'context':'Verified actual HTC Keilaniemi office buildings,Espoo. Illustrates workplace/return-to-work goal,no actual employee assigned illness or allowance-recipient status. Previous meaningful work-category source in Tillgång; reuse explicit.'}};(E/'retained-photo-assets.json').write_text(json.dumps(old,ensure_ascii=False,indent=2)+'\n');print('Retained8actual objects/places;6new sources+2explicit meaningful existing-source reuses.',flush=True)

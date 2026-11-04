@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c10-pension",
+  "stage": "tts",
+  "state": "studio/production/hb-c10/hb-c10-pension-tts-state.json",
+  "log": "studio/production/hb-c10/hb-c10-pension-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c10-pension",
+    "--all",
+    "--output",
+    "studio/media/hb-c10-pension/narration"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c10-pension/narration/metrics.json"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c10-pension/narration/metrics.json"
+  ]
+}

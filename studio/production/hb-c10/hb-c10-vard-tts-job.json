@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c10-vard",
+  "stage": "tts",
+  "state": "studio/production/hb-c10/hb-c10-vard-tts-state.json",
+  "log": "studio/production/hb-c10/logs/hb-c10-vard-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c10-vard",
+    "--all",
+    "--output",
+    "studio/media/hb-c10-vard/narration"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c10-vard/narration/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c10-vard/narration/metrics.json"
+  ]
+}

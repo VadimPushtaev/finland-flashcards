@@ -1,0 +1,698 @@
+schema_version: 1
+section_id: hb-c12-kvotflyktingar
+chapter_id: hb-c12
+title_sv: Kvotflyktingar
+title_ru: Беженцы, принимаемые по квоте
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-kvotflyktingar.yaml
+example_only: false
+source_section_sha256: 5d77d0519097b736a912221466826d60765745b184e2b3fc6b37a042fd1f7ad6
+translation_file_sha256: 0885745677fc8c7a4d117856eb86aa1969b9570d8068c0c020fe05bb7503eb71
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Follow exact archived source order including every list fragment. Preserve permit categories,conditions,qualifiers
+    and attributed year-specific figures. Photographs contextualize places or objects; no photographed
+    person assigned immigration status. All legal relationships are the source statements,not updated
+    advice.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Avenue de France, UNHCR Building, Geneva - panoramio.jpg by HunNomad continuously
+    as decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=1.5333333333333332. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Space X-plorers by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 102.217 seconds; prepared lossless stereo bed 214.667 seconds.
+    Repeat count 2, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0188
+  description: Dessutom tar Finland varje år emot ett visst antal flyktingar som FN:s flyktingorgan UNHCR
+    har erkänt som flyktingar.
+- id: hb-c12-u0189
+  description: Man kan inte ansöka om att bli kvotflykting via myndigheterna i Finland.
+- id: hb-c12-u0190
+  description: Finland tar som kvotflyktingar emot personer som har flyktingstatus enligt Förenta nationernas
+    flyktingorganisation UNHCR.
+- id: hb-c12-u0191
+  description: Riksdagen i Finland bestämmer hur många flyktingar som tas emot i landet.
+- id: hb-c12-u0192
+  description: Kommunen och välfärdsområdet ordnar nödvändiga lokala tjänster för kvotflyktingarna.
+- id: hb-c12-u0193
+  description: Dessutom är Finlands Röda Kors (FRK) frivilliga involverade i mottagningen av flyktingar
+    i kommunerna och ger stöd för integrationen.
+- id: hb-c12-u0194
+  description: Flyktingar kan be om hjälp och rådgivning i rättsliga frågor bland annat hos Flyktingrådgivningen
+    rf eller hos rättshjälpsbyråerna.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative setting or landscape; decorative context,not proof
+    of a current migration rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Space X-plorers — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: UNHCR-recognized refugees received annually in Finland; no pictured person assigned refugee
+    status or invented annual count.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Quota is the number received; no current-year amount before dated source example.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: No personal quota-refugee application through Finnish authorities; do not imply ordinary
+    asylum is unavailable.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: No private nomination of relative/friend into quota route; different from family-reunification
+    route.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: UNHCR refugee-status recognition for source quota group; no automatic Finnish residence
+    decision inferred.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Selections come from UNHCR proposals to Finland, distinct from self-application or family
+    nomination.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Finnish authorities interview refugees, no fabricated questionnaire or promised result.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Selection follows interviews; no guaranteed acceptance for every interviewee.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Interviews usually where refugees are staying, camps or UNHCR premises; no invented transit
+    route or claim all camps are outside cities.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: Parliament decides quota count; no current number invented or individual selection authority
+    wrongly assigned.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Explicitly dated archived2025quota500, never presented as current2026quota or converted
+    into a misleading map.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Three named ministries jointly decide origin countries; no arbitrary flags, source-country
+    list or decision by an individual refugee.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Municipality and wellbeing area jointly arrange necessary local services; no guaranteed
+    specific vacant housing.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Source service examples, not an exhaustive list or automatic ordinary-benefit entitlement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Red Cross volunteers support reception/integration. Do not use protected red-cross emblem
+    as generic medical decoration or assign photographed people refugee status.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Volunteer activities,housing help and friendship activities as examples; no compulsory
+    participation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Alternative legal-advice contacts; no NGO/authority conflation or unconditional free-service
+    claim.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0188-s001
+  sv: Dessutom tar Finland varje år emot ett visst antal flyktingar som FN:s flyktingorgan UNHCR har erkänt
+    som flyktingar.
+  ru: Кроме того, Финляндия ежегодно принимает определённое число беженцев, признанных беженцами Управлением
+    Верховного комиссара Организации Объединённых Наций (FN) по делам беженцев (UNHCR).
+  scene_id: hb-c12-u0188
+  visual_cue: UNHCR-recognized refugees received annually in Finland; no pictured person assigned refugee
+    status or invented annual count.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Dessutom tar Finland varje år emot ett visst antal flyktingar som FN:s flyktingorgan U N H C
+      R har erkänt som flyktingar.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0188-s001.wav
+  start_seconds: 3.25
+  end_seconds: 14.743878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0188-s002
+  sv: Detta antal kallas för flyktingkvot.
+  ru: Это число называется квотой на приём беженцев.
+  scene_id: hb-c12-u0188
+  visual_cue: Quota is the number received; no current-year amount before dated source example.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0188-s002.wav
+  start_seconds: 16.708333
+  end_seconds: 20.121667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0189-s001
+  sv: Man kan inte ansöka om att bli kvotflykting via myndigheterna i Finland.
+  ru: Нельзя подать через органы власти Финляндии заявление о приёме в качестве беженца по квоте.
+  scene_id: hb-c12-u0189
+  visual_cue: No personal quota-refugee application through Finnish authorities; do not imply ordinary
+    asylum is unavailable.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0189-s001.wav
+  start_seconds: 22.583333
+  end_seconds: 29.061701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0189-s002
+  sv: Man kan inte heller föreslå en annan person, till exempel en släkting eller vän, som kvotflykting.
+  ru: Нельзя также предложить принять по квоте другого человека, например родственника или друга.
+  scene_id: hb-c12-u0189
+  visual_cue: No private nomination of relative/friend into quota route; different from family-reunification
+    route.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0189-s002.wav
+  start_seconds: 31.041667
+  end_seconds: 39.47051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0190-s001
+  sv: Finland tar som kvotflyktingar emot personer som har flyktingstatus enligt Förenta nationernas flyktingorganisation
+    UNHCR.
+  ru: Финляндия принимает по квоте людей, признаваемых беженцами агентством Организации Объединённых Наций
+    по делам беженцев UNHCR.
+  scene_id: hb-c12-u0190
+  visual_cue: UNHCR refugee-status recognition for source quota group; no automatic Finnish residence
+    decision inferred.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Finland tar som kvotflyktingar emot personer som har flyktingstatus enligt Förenta nationernas
+      flyktingorganisation U N H C R.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0190-s001.wav
+  start_seconds: 41.958333
+  end_seconds: 53.382551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0190-s002
+  sv: Kvotflyktingarna väljs bland de personer som UNHCR föreslår till Finland.
+  ru: Беженцев, принимаемых по квоте, выбирают из числа людей, которых UNHCR предлагает Финляндии.
+  scene_id: hb-c12-u0190
+  visual_cue: Selections come from UNHCR proposals to Finland, distinct from self-application or family
+    nomination.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Kvotflyktingarna väljs bland de personer som U N H C R föreslår till Finland.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0190-s002.wav
+  start_seconds: 55.333333
+  end_seconds: 62.926259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0190-s003
+  sv: De finländska myndigheterna intervjuar dessa flyktingar.
+  ru: Финские органы власти проводят собеседования с этими беженцами.
+  scene_id: hb-c12-u0190
+  visual_cue: Finnish authorities interview refugees, no fabricated questionnaire or promised result.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0190-s003.wav
+  start_seconds: 64.916667
+  end_seconds: 70.001837
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0190-s004
+  sv: Utgående från intervjuerna väljer man de flyktingar som tas emot till Finland.
+  ru: На основании собеседований выбирают беженцев, которые будут приняты в Финляндию.
+  scene_id: hb-c12-u0190
+  visual_cue: Selection follows interviews; no guaranteed acceptance for every interviewee.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0190-s004.wav
+  start_seconds: 71.958333
+  end_seconds: 78.785
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0190-s005
+  sv: Intervjuerna görs i de länder där flyktingarna vistas, vanligen i flyktingläger eller i UNHCR:s
+    lokaler.
+  ru: Собеседования проводятся в странах пребывания беженцев, обычно в лагерях для беженцев или в помещениях
+    UNHCR.
+  scene_id: hb-c12-u0190
+  visual_cue: Interviews usually where refugees are staying, camps or UNHCR premises; no invented transit
+    route or claim all camps are outside cities.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Intervjuerna görs i de länder där flyktingarna vistas, vanligen i flyktingläger eller i U N
+      H C R:s lokaler.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0190-s005.wav
+  start_seconds: 80.75
+  end_seconds: 90.85068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0191-s001
+  sv: Riksdagen i Finland bestämmer hur många flyktingar som tas emot i landet.
+  ru: Парламент Финляндии решает, сколько беженцев будет принято в страну.
+  scene_id: hb-c12-u0191
+  visual_cue: Parliament decides quota count; no current number invented or individual selection authority
+    wrongly assigned.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0191-s001.wav
+  start_seconds: 93.333333
+  end_seconds: 99.811701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0191-s002
+  sv: År 2025 är Finlands flyktingkvot 500 personer.
+  ru: В 2025 году квота Финляндии на приём беженцев составляет 500 человек.
+  scene_id: hb-c12-u0191
+  visual_cue: Explicitly dated archived2025quota500, never presented as current2026quota or converted
+    into a misleading map.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0191-s002.wav
+  start_seconds: 101.791667
+  end_seconds: 107.643095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0191-s003
+  sv: Inrikesministeriet bestämmer tillsammans med utrikesministeriet och arbets- och näringsministeriet
+    från vilka länder kvotflyktingar tas emot.
+  ru: Министерство внутренних дел совместно с Министерством иностранных дел и Министерством труда и экономического
+    развития определяет, из каких стран принимаются беженцы по квоте.
+  scene_id: hb-c12-u0191
+  visual_cue: Three named ministries jointly decide origin countries; no arbitrary flags, source-country
+    list or decision by an individual refugee.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0191-s003.wav
+  start_seconds: 109.625
+  end_seconds: 121.676156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0192-s001
+  sv: Kommunen och välfärdsområdet ordnar nödvändiga lokala tjänster för kvotflyktingarna.
+  ru: Муниципалитет и регион по обеспечению благополучия населения организуют необходимые местные услуги
+    для беженцев, принимаемых по квоте.
+  scene_id: hb-c12-u0192
+  visual_cue: Municipality and wellbeing area jointly arrange necessary local services; no guaranteed
+    specific vacant housing.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0192-s001.wav
+  start_seconds: 124.166667
+  end_seconds: 131.689932
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0192-s002
+  sv: Kvotflyktingarna får exempelvis rådgivning och vägledning, integrationstjänster samt social- och
+    hälsovårdstjänster.
+  ru: Беженцы, принимаемые по квоте, получают, например, консультации и рекомендации, услуги по интеграции,
+    а также социальные и медицинские услуги.
+  scene_id: hb-c12-u0192
+  visual_cue: Source service examples, not an exhaustive list or automatic ordinary-benefit entitlement.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0192-s002.wav
+  start_seconds: 133.666667
+  end_seconds: 143.767347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0193-s001
+  sv: Dessutom är Finlands Röda Kors (FRK) frivilliga involverade i mottagningen av flyktingar i kommunerna
+    och ger stöd för integrationen.
+  ru: Кроме того, волонтёры Финского Красного Креста (Finlands Röda Kors, FRK) участвуют в приёме беженцев
+    в муниципалитетах и оказывают поддержку их интеграции.
+  scene_id: hb-c12-u0193
+  visual_cue: Red Cross volunteers support reception/integration. Do not use protected red-cross emblem
+    as generic medical decoration or assign photographed people refugee status.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Dessutom är Finlands Röda Kors (F R K) frivilliga involverade i mottagningen av flyktingar i
+      kommunerna och ger stöd för integrationen.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0193-s001.wav
+  start_seconds: 146.25
+  end_seconds: 158.579796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0193-s002
+  sv: De ordnar bland annat gemensamma aktiviteter, hjälper till med boendeärenden och ordnar vänverksamhet.
+  ru: Они, в частности, организуют совместные мероприятия, помогают решать жилищные вопросы и проводят
+    программы дружеской поддержки (vänverksamhet).
+  scene_id: hb-c12-u0193
+  visual_cue: Volunteer activities,housing help and friendship activities as examples; no compulsory participation.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0193-s002.wav
+  start_seconds: 160.541667
+  end_seconds: 169.31881
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0194-s001
+  sv: Flyktingar kan be om hjälp och rådgivning i rättsliga frågor bland annat hos Flyktingrådgivningen
+    rf eller hos rättshjälpsbyråerna.
+  ru: Беженцы могут обратиться за помощью и консультацией по правовым вопросам, в частности, в организацию
+    Flyktingrådgivningen rf или в бюро юридической помощи.
+  scene_id: hb-c12-u0194
+  visual_cue: Alternative legal-advice contacts; no NGO/authority conflation or unconditional free-service
+    claim.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-kvotflyktingar/narration/hb-c12-u0194-s001.wav
+  start_seconds: 171.791667
+  end_seconds: 182.937245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-kvotflyktingar/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-kvotflyktingar/sources/music-bed.flac
+  background_image: studio/media/hb-c12-kvotflyktingar/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.5333333333333332
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Avenue de France, UNHCR Building, Geneva - panoramio.jpg — HunNomad · CC BY-SA 3.0
+    - Space X-plorers — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Avenue_de_France,_UNHCR_Building,_Geneva_-_panoramio.jpg
+    description: Avenue de France, UNHRC Building, Geneva
+    license: CC BY-SA 3.0

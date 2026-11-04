@@ -1,0 +1,10 @@
+hb-c12-integration 40 card variants fit
+Traceback (most recent call last):
+  File "/home/vadim/finland-flashcards/studio/production/hb-c12a/preflight.py", line 13, in <module>
+    card,_=render.make_card(s,item,rows,images);frame=Image.alpha_composite(render.background_frame(back,i/max(1,len(rows)-1),s['render']['background_style']),card).convert('RGB');dest=out/(f'frame-{i:03d}-segment-{j:02d}.png');frame.save(dest);checks.append(dict(sentence_id=row['sentence_id'],segment=j,path=str(dest.relative_to(ROOT)),sha256=hashlib.sha256(dest.read_bytes()).hexdigest()))
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/home/vadim/finland-flashcards/studio/tools/render.py", line 314, in make_card
+    sv_lines = wrap(row['sv'], font(sv_size, True), 900)
+  File "/home/vadim/finland-flashcards/studio/tools/render.py", line 105, in wrap
+    raise ValueError('Wrapping changed source text')
+ValueError: Wrapping changed source text

@@ -1,0 +1,736 @@
+schema_version: 1
+section_id: hb-c12-familjeband
+chapter_id: hb-c12
+title_sv: Ändrade familjeband och skydd vid utnyttjande
+title_ru: Изменение семейных связей и защита при эксплуатации
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-familjeband.yaml
+example_only: false
+source_section_sha256: 2c760c98bf0b78a350dd78af074628b75d0f2ec537d53179ea94c43c4559d6c4
+translation_file_sha256: ba22ddfea37f48fa89e3cb5b93675fce6512dc9f3d5212c7252254e2e1b831c7
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source/list-fragment order with individually planned legal relationships. Preserve every
+    MAY versus automatic distinction,cumulative AND gates,alternative OR routes,shared list conditions
+    and explicit source dates. Context photos do not assign status to real people.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Helsinki City Hall by night.png by Susannaanas continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=1.773809523809524. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Groove Grove by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 205.767 seconds; prepared lossless stereo bed 248.333 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0205
+  description: Om du har ett tidsbestämt uppehållstillstånd med familjeband som grund kan det faktum att
+    äktenskapet eller det registrerade parförhållandet upphör påverka uppehållstillståndet.
+- id: hb-c12-u0206
+  description: Om familjebandet inte längre existerar kan det hända att uppehållstillståndet inte förlängs.
+- id: hb-c12-u0207
+  description: Uppehållstillståndet kan dock förlängas om det vore oskäligt att vägra det och du fortsättningsvis
+    har starka band till Finland.
+- id: hb-c12-u0208
+  description: barn eller andra familjemedlemmar i Finland
+- id: hb-c12-u0210
+  description: arbetsplats eller eget företag i Finland
+- id: hb-c12-u0211
+  description: studieplats i Finland
+- id: hb-c12-u0212
+  description: Om du skiljer dig från din make/maka eftersom han/hon varit våldsam mot dig eller ditt
+    barn, kan ditt uppehållstillstånd förlängas trots skilsmässan.
+- id: hb-c12-u0213
+  description: Om du redan har uppehållstillstånd i Finland och du har fallit offer för arbetsgivarens
+    utnyttjande, kan du ansöka om fortsatt tillstånd eller intyg om utvidgad rätt att arbeta på grund
+    av arbetsgivarens utnyttjande.
+- id: hb-c12-u0214
+  description: Om du har blivit offer för människohandel eller om det finns motiverade skäl att misstänka
+    det, kan du beviljas uppehållstillstånd i Finland.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative/civic setting; decorative context,not proof of
+    a current legal rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Groove Grove — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: Fixed-term permit AND family-ties basis. Relationship ending MAY affect it; never automatic
+    revocation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Death MAY affect the permit IF this relative was the person who applied for family reunification
+    in Finland.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: Family relationship no longer exists -> possible non-extension, not a certain outcome.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: Existing permit MAY be revoked; inherit family-ties context from preceding source.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Possible extension IF refusal would be unreasonable AND strong ties to Finland persist.
+    Both gates are cumulative.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Only introduces examples of strong ties; no independent entitlement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Example of strong ties; inherits cumulative source-5 conditions, not automatic extension.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Work OR own enterprise is one strong-ties example; source-5 gates still apply.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Study place is an example; source-5 gates still apply.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: Divorce BECAUSE spouse was violent to applicant OR applicant child -> permit MAY be extended
+    despite divorce. No victim photograph.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Required supporting report; medical certificate OR family-counselling statement are examples,
+    not an exhaustive or simultaneous demand.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Also attach applicant own account to the permit application; no medical/victim record is
+    fabricated.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Already has permit in Finland AND employer exploitation -> may APPLY for extension OR extended-work-right
+    certificate. Do not show either automatically granted.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Extension route IF current permit is expiring AND no new employer. Both conditions are
+    cumulative.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Certificate route IF existing permit remains valid AND a new employer exists. Distinct
+    from preceding extension route.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Any-industry work is supported by either certificate OR continued permit; source context
+    must remain.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Human-trafficking victim OR justified suspicion -> permit MAY be granted. Do not imply
+    certainty or require confirmed victim status in the suspicion branch.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-018
+  kind: foreground
+  description: Must be in Finland to APPLY through trafficking-victim route. No automatic grant.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-019
+  kind: foreground
+  description: Especially vulnerable situation -> MAY get continuous permit; this remains the preceding
+    trafficking context.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0205-s001
+  sv: Om du har ett tidsbestämt uppehållstillstånd med familjeband som grund kan det faktum att äktenskapet
+    eller det registrerade parförhållandet upphör påverka uppehållstillståndet.
+  ru: Если у вас есть вид на жительство на определённый срок, выданный на основании семейных связей, прекращение
+    брака или зарегистрированного партнёрства может повлиять на этот вид на жительство.
+  scene_id: hb-c12-u0205
+  visual_cue: Fixed-term permit AND family-ties basis. Relationship ending MAY affect it; never automatic
+    revocation.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0205-s001.wav
+  start_seconds: 3.25
+  end_seconds: 18.36619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0205-s002
+  sv: Också familjemedlemmens bortgång kan påverka uppehållstillståndet, om denna familjemedlem var den
+    person som ansökte om familjeförening i Finland.
+  ru: Смерть члена семьи также может повлиять на вид на жительство, если именно этот член семьи подавал
+    заявление о воссоединении семьи в Финляндии.
+  scene_id: hb-c12-u0205
+  visual_cue: Death MAY affect the permit IF this relative was the person who applied for family reunification
+    in Finland.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0205-s002.wav
+  start_seconds: 21.125
+  end_seconds: 33.454796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0206-s001
+  sv: Om familjebandet inte längre existerar kan det hända att uppehållstillståndet inte förlängs.
+  ru: Если семейная связь больше не существует, вид на жительство могут не продлить.
+  scene_id: hb-c12-u0206
+  visual_cue: Family relationship no longer exists -> possible non-extension, not a certain outcome.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0206-s001.wav
+  start_seconds: 35.916667
+  end_seconds: 44.066871
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0206-s002
+  sv: Det är även möjligt att ett existerande tillstånd upphävs.
+  ru: Возможно также аннулирование уже имеющегося вида на жительство.
+  scene_id: hb-c12-u0206
+  visual_cue: Existing permit MAY be revoked; inherit family-ties context from preceding source.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0206-s002.wav
+  start_seconds: 46.041667
+  end_seconds: 51.196497
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0207-s001
+  sv: Uppehållstillståndet kan dock förlängas om det vore oskäligt att vägra det och du fortsättningsvis
+    har starka band till Finland.
+  ru: Однако вид на жительство могут продлить, если отказ был бы неоправданным и у вас по-прежнему есть
+    тесные связи с Финляндией.
+  scene_id: hb-c12-u0207
+  visual_cue: Possible extension IF refusal would be unreasonable AND strong ties to Finland persist.
+    Both gates are cumulative.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0207-s001.wav
+  start_seconds: 53.666667
+  end_seconds: 64.742585
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0207-s002
+  sv: 'Exempel på sådana är:'
+  ru: 'Примеры таких связей:'
+  scene_id: hb-c12-u0207
+  visual_cue: Only introduces examples of strong ties; no independent entitlement.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0207-s002.wav
+  start_seconds: 66.708333
+  end_seconds: 69.425068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0208-s001
+  sv: barn eller andra familjemedlemmar i Finland
+  ru: дети или другие члены семьи в Финляндии
+  scene_id: hb-c12-u0208
+  visual_cue: Example of strong ties; inherits cumulative source-5 conditions, not automatic extension.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0208-s001.wav
+  start_seconds: 71.916667
+  end_seconds: 76.026599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0210-s001
+  sv: arbetsplats eller eget företag i Finland
+  ru: место работы или собственное предприятие в Финляндии
+  scene_id: hb-c12-u0210
+  visual_cue: Work OR own enterprise is one strong-ties example; source-5 gates still apply.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0210-s001.wav
+  start_seconds: 78.5
+  end_seconds: 82.470612
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0211-s001
+  sv: studieplats i Finland
+  ru: место учёбы в Финляндии
+  scene_id: hb-c12-u0211
+  visual_cue: Study place is an example; source-5 gates still apply.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0211-s001.wav
+  start_seconds: 84.958333
+  end_seconds: 87.535748
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0212-s001
+  sv: Om du skiljer dig från din make/maka eftersom han/hon varit våldsam mot dig eller ditt barn, kan
+    ditt uppehållstillstånd förlängas trots skilsmässan.
+  ru: Если вы разводитесь с супругом или супругой из-за того, что этот человек применял насилие к вам
+    или вашему ребёнку, ваш вид на жительство могут продлить, несмотря на развод.
+  scene_id: hb-c12-u0212
+  visual_cue: Divorce BECAUSE spouse was violent to applicant OR applicant child -> permit MAY be extended
+    despite divorce. No victim photograph.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0212-s001.wav
+  start_seconds: 90.0
+  end_seconds: 102.608435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0212-s002
+  sv: Du ska lämna in en redovisning, exempelvis läkarintyg eller utlåtande från familjerådgivning.
+  ru: Вы должны предоставить подтверждение, например медицинскую справку или заключение консультации по
+    вопросам семьи.
+  scene_id: hb-c12-u0212
+  visual_cue: Required supporting report; medical certificate OR family-counselling statement are examples,
+    not an exhaustive or simultaneous demand.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0212-s002.wav
+  start_seconds: 104.583333
+  end_seconds: 112.524558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0212-s003
+  sv: Bifoga även till ansökan om uppehållstillstånd din egen redovisning av situationen.
+  ru: Приложите к заявлению на вид на жительство также собственное пояснение о ситуации.
+  scene_id: hb-c12-u0212
+  visual_cue: Also attach applicant own account to the permit application; no medical/victim record is
+    fabricated.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0212-s003.wav
+  start_seconds: 114.5
+  end_seconds: 122.092925
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0213-s001
+  sv: Om du redan har uppehållstillstånd i Finland och du har fallit offer för arbetsgivarens utnyttjande,
+    kan du ansöka om fortsatt tillstånd eller intyg om utvidgad rätt att arbeta på grund av arbetsgivarens
+    utnyttjande.
+  ru: Если у вас уже есть вид на жительство в Финляндии и вы стали жертвой эксплуатации со стороны работодателя,
+    вы можете подать заявление на продление вида на жительство или получение справки о расширенном праве
+    на работу на основании эксплуатации со стороны работодателя.
+  scene_id: hb-c12-u0213
+  visual_cue: Already has permit in Finland AND employer exploitation -> may APPLY for extension OR extended-work-right
+    certificate. Do not show either automatically granted.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0213-s001.wav
+  start_seconds: 124.583333
+  end_seconds: 142.694898
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-013.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c12-u0213-s002
+  sv: Ansök om fortsatt tillstånd på grund av arbetsgivarens utnyttjande, om ditt nuvarande uppehållstillstånd
+    ska utgå och du inte har en ny arbetsgivare.
+  ru: Подайте заявление на продление вида на жительство на основании эксплуатации со стороны работодателя,
+    если срок действия вашего нынешнего вида на жительство истекает и у вас нет нового работодателя.
+  scene_id: hb-c12-u0213
+  visual_cue: Extension route IF current permit is expiring AND no new employer. Both conditions are cumulative.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0213-s002.wav
+  start_seconds: 145.458333
+  end_seconds: 158.484728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0213-s003
+  sv: Ansök om intyg på grund av arbetsgivarens utnyttjande om du har ett giltigt uppehållstillstånd och
+    en ny arbetsgivare.
+  ru: Подайте заявление на получение справки на основании эксплуатации со стороны работодателя, если у
+    вас есть действующий вид на жительство и новый работодатель.
+  scene_id: hb-c12-u0213
+  visual_cue: Certificate route IF existing permit remains valid AND a new employer exists. Distinct from
+    preceding extension route.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0213-s003.wav
+  start_seconds: 161.25
+  end_seconds: 171.55966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0213-s004
+  sv: Med hjälp av intyget eller det fortsatta tillståndet kan du arbeta inom vilken bransch som helst.
+  ru: Со справкой или продлённым видом на жительство вы можете работать в любой отрасли.
+  scene_id: hb-c12-u0213
+  visual_cue: Any-industry work is supported by either certificate OR continued permit; source context
+    must remain.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0213-s004.wav
+  start_seconds: 173.541667
+  end_seconds: 181.761531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0214-s001
+  sv: Om du har blivit offer för människohandel eller om det finns motiverade skäl att misstänka det,
+    kan du beviljas uppehållstillstånd i Finland.
+  ru: Если вы стали жертвой торговли людьми или есть обоснованные причины это подозревать, вам могут предоставить
+    вид на жительство в Финляндии.
+  scene_id: hb-c12-u0214
+  visual_cue: Human-trafficking victim OR justified suspicion -> permit MAY be granted. Do not imply certainty
+    or require confirmed victim status in the suspicion branch.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0214-s001.wav
+  start_seconds: 184.25
+  end_seconds: 196.370816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0214-s002
+  sv: Du måste vara i Finland för att kunna ansöka om uppehållstillstånd som människohandelns offer.
+  ru: Чтобы подать заявление на вид на жительство в качестве жертвы торговли людьми, вы должны находиться
+    в Финляндии.
+  scene_id: hb-c12-u0214
+  visual_cue: Must be in Finland to APPLY through trafficking-victim route. No automatic grant.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0214-s002.wav
+  start_seconds: 198.333333
+  end_seconds: 206.692517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-018.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0214-s003
+  sv: Om du är i en speciellt sårbar ställning, kan du få ett kontinuerligt uppehållstillstånd.
+  ru: Если вы находитесь в особо уязвимом положении, вы можете получить длительный вид на жительство.
+  scene_id: hb-c12-u0214
+  visual_cue: Especially vulnerable situation -> MAY get continuous permit; this remains the preceding
+    trafficking context.
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-familjeband/narration/hb-c12-u0214-s003.wav
+  start_seconds: 208.666667
+  end_seconds: 216.607891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-familjeband/pictures/picture-019.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-familjeband/sources/music-bed.flac
+  background_image: studio/media/hb-c12-familjeband/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.773809523809524
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Helsinki City Hall by night.png — Susannaanas · CC BY 4.0
+    - Groove Grove — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Helsinki_City_Hall_by_night.png
+    description: Helsinki City Hall by night
+    license: CC BY 4.0

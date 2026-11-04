@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c11-naturens-sakerhet",
+  "stage": "tts",
+  "state": "studio/production/hb-c11-safety/hb-c11-naturens-sakerhet-tts-state.json",
+  "log": "studio/production/hb-c11-safety/hb-c11-naturens-sakerhet-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c11-naturens-sakerhet",
+    "--all",
+    "--output",
+    "studio/media/hb-c11-naturens-sakerhet/narration"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c11-naturens-sakerhet/narration/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-naturens-sakerhet/narration/metrics.json"
+  ]
+}

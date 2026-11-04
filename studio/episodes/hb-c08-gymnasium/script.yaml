@@ -1,0 +1,1105 @@
+schema_version: 1
+section_id: hb-c08-gymnasium
+chapter_id: hb-c08
+title_sv: Gymnasium och studentexamen
+title_ru: Гимназия и выпускной экзамен (studentexamen)
+source_path: data/homebrew/sv/chapters/08_utbildning_och_larande.yaml
+translation_path: data/homebrew/ru/sections/hb-c08-gymnasium.yaml
+example_only: false
+source_section_sha256: b10a80889f674ac52290e306bfec854ad1d0bb56867f6c9d986366cb8e450d18
+translation_file_sha256: 543372d3775bc8eb9e99c3c82026452597ed47f0e2fad133874efc0b94ce5627
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive original source paragraphs/list items define topic scenes; exact wording and stored
+    order are retained. Sentence illustrations follow the individual source claim.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 24fps, Chapter 8 teal palette {''background'': ''#193b40'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#c0dce0'', ''highlight'': ''#e8c081'', ''separator'': ''#3f6d73''}. Liberation Sans
+    Bold48/Regular40 with right bilingual panel and fixed left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Tölö gymnasium ”Lönkan” 01.png by Sofia Ek continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=2.835714285714286. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Supertonic3/F1 Swedish,32steps,speed0.95,seed42,44100HzmonoPCM16,2ONNXthreads. Whole-video
+    listening and user acceptance pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Reaching Out by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 61.176 seconds; prepared lossless stereo bed 397.000 seconds.
+    Repeat count 6, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: A distinct relevant source-based illustration for nearly every sentence slide, supplemented
+    by verified photographs where they clarify actual institutions or places. Distinct semantic compositions
+    show only the source statements. Aim at least90% measured body picture coverage and report unique-picture
+    ratio.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c08-u0097
+  description: Efter grundskolan fortsätter de unga sina studier på en utbildning på andra stadiet, det
+    vill säga ett gymnasium eller en yrkesläroanstalt.
+- id: hb-c08-u0098
+  description: Med ett avgångsbetyg från gymnasiet och ett studentexamensbetyg kan man söka till många
+    olika slags fortsatta studier vid en högskola.
+- id: hb-c08-u0099
+  description: Gymnasiets läsår följer i allmänhet samma tidsplan som grundskolans.
+- id: hb-c08-u0100
+  description: Vanligtvis tar gymnasiestudierna tre år, men man kan också avlägga dess lärokurs långsammare
+    eller snabbare.
+- id: hb-c08-u0101
+  description: I gymnasiet studerar man många olika läroämnen, till exempel modersmål och främmande språk,
+    finska eller svenska som andraspråk, matematik, fysik, kemi, biologi, historia, religion eller livsåskådningskunskap,
+    samhällslära, gymnastik, musik och bildkonst.
+- id: hb-c08-u0102
+  description: I gymnasiet får de studerande siffervitsord för de studieperioder de avlägger.
+- id: hb-c08-u0103
+  description: Under gymnasiet avlägger de studerande studentexamen.
+- id: hb-c08-u0104
+  description: Studentexamen ordnas två gånger per år, varje vår och höst.
+- id: hb-c08-u0105
+  description: För studentexamensproven får den studerande vitsord med bokstäver som härstammar från latinska
+    vitsord.
+- id: hb-c08-u0106
+  description: På gymnasiet finns inga terminsavgifter.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Efter grundskolan fortsätter de unga sina
+    studier på en utbildning på andra stadiet, det vill säga ett gymnasium eller en yrkesläroanstalt.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-002
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Gymnasiestudierna är allmänbildande och
+    ger de studerande färdigheter att inleda studier som leder till en högskoleexamen vid ett universitet
+    eller en yrkeshögskola.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-003
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Syftet med gymnasieutbildningen är bland
+    annat att ge de studerande kunskaper och färdigheter som är nödvändiga för arbete och hobbyer.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-004
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Utbildningen ger de studerande färdigheter
+    för livslångt lärande och kontinuerlig utveckling av sig själva.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-005
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Med ett avgångsbetyg från gymnasiet och
+    ett studentexamensbetyg kan man söka till många olika slags fortsatta studier vid en högskola.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-006
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I Finland är det möjligt att avlägga också
+    en IB-examen på engelska, det vill säga en internationell studentexamen, varefter man kan söka till
+    högskolor i Finland och många andra länder.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-007
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Gymnasiets läsår följer i allmänhet samma
+    tidsplan som grundskolans.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-008
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I gymnasiet studerar man i varierande studerandegrupper.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-009
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Studierna är indelade i studieperioder,
+    och de studerande kan själva planera sin läsordning.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-010
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Största delen av studierna är obligatoriska.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-011
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Dessutom väljer den studerande studier
+    enligt sina egna intressen.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-012
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Vanligtvis tar gymnasiestudierna tre år,
+    men man kan också avlägga dess lärokurs långsammare eller snabbare.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-013
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Studierna får i allmänhet inte ta mer än
+    fyra år.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-014
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I gymnasiet studerar man många olika läroämnen,
+    till exempel modersmål och främmande språk, finska eller svenska som andraspråk, matematik, fysik,
+    kemi, biologi, historia, religion eller livsåskådningskunskap, samhällslära, gymnastik, musik och
+    bildkonst.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-015
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I gymnasiet får de studerande siffervitsord
+    för de studieperioder de avlägger.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-016
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Vitsordet visar hur väl den studerande
+    har gått framåt under studieperioden och lärt sig nya saker.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-017
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det högsta vitsordet är 10 och det lägsta
+    4.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-018
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Den studerande har rätt att försöka höja
+    sina vitsord genom att göra om prov eller uppgifter.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-019
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: När den studerande har avlagt gymnasiets
+    hela lärokurs får hen ett avgångsbetyg från gymnasiet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-020
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Under gymnasiet avlägger de studerande
+    studentexamen.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-021
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Studentexamen är densamma i hela Finland.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-022
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I den ingår prov i modersmål och litteratur,
+    det andra inhemska språket, främmande språk, matematik och naturvetenskapliga och humanistisk-samhälleliga
+    läroämnen, det vill säga realämnen.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-023
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Realämnen är till exempel historia, fysik,
+    biologi, psykologi, religion, filosofi, geografi och hälsokunskap.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-024
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Istället för provet i modersmål kan den
+    studerande också avlägga ett prov i läroämnet finska eller svenska som andraspråk.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-025
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Studentexamen ordnas två gånger per år,
+    varje vår och höst.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-026
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: När en studerande avlägger studentexamen
+    ska hen avlägga åtminstone fem prov.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-027
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det går också att avlägga fler.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-028
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: För studentexamensproven får den studerande
+    vitsord med bokstäver som härstammar från latinska vitsord.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-029
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Bokstäverna från det högsta vitsordet till
+    det lägsta är L, E, M, C, B och A och I för underkänt.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-030
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Den studerande får ett studentexamensbetyg
+    när hen har avlagt gymnasiets hela lärokurs och dessutom studentexamensproven.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-031
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: På gymnasiet finns inga terminsavgifter.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-032
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Utbildningen är alltså gratis.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-033
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Du får skolböckerna eller digitala läromedel
+    från skolan.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-034
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Du får också låna en bärbar dator.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+sentences:
+- sentence_id: hb-c08-u0097-s001
+  sv: Efter grundskolan fortsätter de unga sina studier på en utbildning på andra stadiet, det vill säga
+    ett gymnasium eller en yrkesläroanstalt.
+  ru: После общеобразовательной школы молодые люди продолжают учёбу на второй ступени образования, то
+    есть в гимназии или профессиональном учебном заведении.
+  scene_id: hb-c08-u0097
+  visual_cue: 'Verified relevant foreground photograph: Actual Tölö upper-secondary school. Concrete institution
+    at the educational level discussed; no claim about enrollment of a depicted individual. Exact bilingual
+    source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0097-s001.wav
+  start_seconds: 3.25
+  end_seconds: 14.883197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-001.png
+- sentence_id: hb-c08-u0097-s002
+  sv: Gymnasiestudierna är allmänbildande och ger de studerande färdigheter att inleda studier som leder
+    till en högskoleexamen vid ett universitet eller en yrkeshögskola.
+  ru: Обучение в гимназии носит общеобразовательный характер и даёт учащимся навыки для начала обучения,
+    ведущего к получению диплома о высшем образовании в университете или университете прикладных наук
+    (yrkeshögskola).
+  scene_id: hb-c08-u0097
+  visual_cue: 'Original source-specific pictorial composition path: Gymnasiestudierna / högskoleexamen.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0097-s002.wav
+  start_seconds: 16.666667
+  end_seconds: 30.668299
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-002.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0097-s003
+  sv: Syftet med gymnasieutbildningen är bland annat att ge de studerande kunskaper och färdigheter som
+    är nödvändiga för arbete och hobbyer.
+  ru: Цель гимназического образования — в том числе дать учащимся знания и навыки, необходимые для работы
+    и занятий по интересам.
+  scene_id: hb-c08-u0097
+  visual_cue: 'Original source-specific pictorial composition tools: arbete / hobbyer. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0097-s003.wav
+  start_seconds: 33.458333
+  end_seconds: 44.952211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-003.png
+- sentence_id: hb-c08-u0097-s004
+  sv: Utbildningen ger de studerande färdigheter för livslångt lärande och kontinuerlig utveckling av
+    sig själva.
+  ru: Это образование даёт учащимся навыки для обучения на протяжении всей жизни и постоянного саморазвития.
+  scene_id: hb-c08-u0097
+  visual_cue: 'Original source-specific pictorial composition continuous: livslångt lärande / utveckling.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0097-s004.wav
+  start_seconds: 46.708333
+  end_seconds: 55.833776
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-004.png
+- sentence_id: hb-c08-u0098-s001
+  sv: Med ett avgångsbetyg från gymnasiet och ett studentexamensbetyg kan man söka till många olika slags
+    fortsatta studier vid en högskola.
+  ru: С аттестатом об окончании гимназии и свидетельством о сдаче выпускного экзамена можно подавать документы
+    для дальнейшего обучения по многим различным программам в высшем учебном заведении.
+  scene_id: hb-c08-u0098
+  visual_cue: 'Original source-specific pictorial composition qualification: avgångsbetyg / högskola.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0098-s001.wav
+  start_seconds: 58.291667
+  end_seconds: 69.646224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-005.png
+- sentence_id: hb-c08-u0098-s002
+  sv: I Finland är det möjligt att avlägga också en IB-examen på engelska, det vill säga en internationell
+    studentexamen, varefter man kan söka till högskolor i Finland och många andra länder.
+  ru: В Финляндии можно также сдать на английском языке экзамен IB, то есть международный выпускной экзамен,
+    после чего можно подавать документы в высшие учебные заведения Финляндии и многих других стран.
+  scene_id: hb-c08-u0098
+  visual_cue: 'Original source-specific pictorial composition globe: IB-examen / engelska. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: I Finland är det möjligt att avlägga också en i be-examen på engelska, det vill säga en internationell
+      studentexamen, varefter man kan söka till högskolor i Finland och många andra länder.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0098-s002.wav
+  start_seconds: 71.416667
+  end_seconds: 87.159796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-006.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0099-s001
+  sv: Gymnasiets läsår följer i allmänhet samma tidsplan som grundskolans.
+  ru: Учебный год в гимназии, как правило, проходит по тому же календарному графику, что и в общеобразовательной
+    школе.
+  scene_id: hb-c08-u0099
+  visual_cue: 'Original source-specific pictorial composition year: Gymnasiets läsår / grundskolans. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0099-s001.wav
+  start_seconds: 89.916667
+  end_seconds: 96.325374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-007.png
+- sentence_id: hb-c08-u0099-s002
+  sv: I gymnasiet studerar man i varierande studerandegrupper.
+  ru: В гимназии учатся в группах, состав которых меняется.
+  scene_id: hb-c08-u0099
+  visual_cue: 'Original source-specific pictorial composition class: varierande / studerandegrupper. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0099-s002.wav
+  start_seconds: 98.083333
+  end_seconds: 103.238163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-008.png
+- sentence_id: hb-c08-u0099-s003
+  sv: Studierna är indelade i studieperioder, och de studerande kan själva planera sin läsordning.
+  ru: Обучение разделено на учебные периоды, и учащиеся могут сами планировать своё расписание.
+  scene_id: hb-c08-u0099
+  visual_cue: 'Original source-specific pictorial composition week: studieperioder / läsordning. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0099-s003.wav
+  start_seconds: 105.0
+  end_seconds: 113.568163
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-009.png
+- sentence_id: hb-c08-u0099-s004
+  sv: Största delen av studierna är obligatoriska.
+  ru: Большая часть учебной программы обязательна.
+  scene_id: hb-c08-u0099
+  visual_cue: 'Original source-specific pictorial composition obligation: Största delen / obligatoriska.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0099-s004.wav
+  start_seconds: 115.333333
+  end_seconds: 120.070204
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-010.png
+- sentence_id: hb-c08-u0099-s005
+  sv: Dessutom väljer den studerande studier enligt sina egna intressen.
+  ru: Кроме того, учащиеся выбирают занятия в соответствии со своими интересами.
+  scene_id: hb-c08-u0099
+  visual_cue: 'Original source-specific pictorial composition choice: väljer / egna intressen. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0099-s005.wav
+  start_seconds: 121.833333
+  end_seconds: 127.684762
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-011.png
+- sentence_id: hb-c08-u0100-s001
+  sv: Vanligtvis tar gymnasiestudierna tre år, men man kan också avlägga dess lärokurs långsammare eller
+    snabbare.
+  ru: Обычно обучение в гимназии занимает три года, но её программу можно также пройти медленнее или быстрее.
+  scene_id: hb-c08-u0100
+  visual_cue: 'Original source-specific pictorial composition year: tre år / långsammare eller snabbare.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0100-s001.wav
+  start_seconds: 130.166667
+  end_seconds: 139.710068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-012.png
+- sentence_id: hb-c08-u0100-s002
+  sv: Studierna får i allmänhet inte ta mer än fyra år.
+  ru: Как правило, обучение не должно занимать более четырёх лет.
+  scene_id: hb-c08-u0100
+  visual_cue: 'Original source-specific pictorial composition year: fyra år / Studierna. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0100-s002.wav
+  start_seconds: 141.5
+  end_seconds: 146.097551
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-013.png
+- sentence_id: hb-c08-u0101-s001
+  sv: I gymnasiet studerar man många olika läroämnen, till exempel modersmål och främmande språk, finska
+    eller svenska som andraspråk, matematik, fysik, kemi, biologi, historia, religion eller livsåskådningskunskap,
+    samhällslära, gymnastik, musik och bildkonst.
+  ru: В гимназии изучают много разных предметов, например родной язык и иностранные языки, финский или
+    шведский как второй язык, математику, физику, химию, биологию, историю, религию или «Мировоззрение
+    и этику», обществознание, физкультуру, музыку и изобразительное искусство.
+  scene_id: hb-c08-u0101
+  visual_cue: 'Original source-specific pictorial composition subjects: matematik / musik och bildkonst.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0101-s001.wav
+  start_seconds: 148.583333
+  end_seconds: 169.690272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-014.png
+  text_style:
+    sv_size: 40
+    ru_size: 34
+- sentence_id: hb-c08-u0102-s001
+  sv: I gymnasiet får de studerande siffervitsord för de studieperioder de avlägger.
+  ru: В гимназии учащиеся получают числовые оценки за пройденные учебные периоды.
+  scene_id: hb-c08-u0102
+  visual_cue: 'Original source-specific pictorial composition grade: siffervitsord / studieperioder. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0102-s001.wav
+  start_seconds: 172.458333
+  end_seconds: 179.35466
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-015.png
+- sentence_id: hb-c08-u0102-s002
+  sv: Vitsordet visar hur väl den studerande har gått framåt under studieperioden och lärt sig nya saker.
+  ru: Оценка показывает, насколько успешно учащийся продвинулся за учебный период и усвоил новое.
+  scene_id: hb-c08-u0102
+  visual_cue: 'Original source-specific pictorial composition growth: Vitsordet / lärt sig nya saker.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0102-s002.wav
+  start_seconds: 181.125
+  end_seconds: 189.762823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-016.png
+- sentence_id: hb-c08-u0102-s003
+  sv: Det högsta vitsordet är 10 och det lägsta 4.
+  ru: Самая высокая оценка — 10, а самая низкая — 4.
+  scene_id: hb-c08-u0102
+  visual_cue: 'Original source-specific pictorial composition scale: 10 / 4. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0102-s003.wav
+  start_seconds: 191.541667
+  end_seconds: 196.348197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-017.png
+- sentence_id: hb-c08-u0102-s004
+  sv: Den studerande har rätt att försöka höja sina vitsord genom att göra om prov eller uppgifter.
+  ru: Учащиеся имеют право попытаться повысить свои оценки, пересдав контрольные работы или заново выполнив
+    задания.
+  scene_id: hb-c08-u0102
+  visual_cue: 'Original source-specific pictorial composition continuous: höja sina vitsord / prov eller
+    uppgifter. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0102-s004.wav
+  start_seconds: 198.125
+  end_seconds: 206.344864
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-018.png
+- sentence_id: hb-c08-u0102-s005
+  sv: När den studerande har avlagt gymnasiets hela lärokurs får hen ett avgångsbetyg från gymnasiet.
+  ru: После прохождения всей программы гимназии учащиеся получают аттестат о её окончании.
+  scene_id: hb-c08-u0102
+  visual_cue: 'Original source-specific pictorial composition qualification: hela lärokurs / avgångsbetyg.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0102-s005.wav
+  start_seconds: 208.125
+  end_seconds: 216.066224
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-019.png
+- sentence_id: hb-c08-u0103-s001
+  sv: Under gymnasiet avlägger de studerande studentexamen.
+  ru: Во время обучения в гимназии учащиеся сдают выпускной экзамен.
+  scene_id: hb-c08-u0103
+  visual_cue: 'Original source-specific pictorial composition exam: gymnasiet / studentexamen. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0103-s001.wav
+  start_seconds: 218.541667
+  end_seconds: 223.348197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-020.png
+- sentence_id: hb-c08-u0103-s002
+  sv: Studentexamen är densamma i hela Finland.
+  ru: Выпускной экзамен един для всей Финляндии.
+  scene_id: hb-c08-u0103
+  visual_cue: 'Original source-specific pictorial composition team: densamma / hela Finland. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0103-s002.wav
+  start_seconds: 225.125
+  end_seconds: 229.165272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-021.png
+- sentence_id: hb-c08-u0103-s003
+  sv: I den ingår prov i modersmål och litteratur, det andra inhemska språket, främmande språk, matematik
+    och naturvetenskapliga och humanistisk-samhälleliga läroämnen, det vill säga realämnen.
+  ru: В него входят экзамены по родному языку и литературе, второму государственному языку, иностранным
+    языкам, математике и естественнонаучным и гуманитарно-общественным предметам, то есть предметам естественнонаучного
+    и гуманитарно-общественного цикла (realämnen).
+  scene_id: hb-c08-u0103
+  visual_cue: 'Original source-specific pictorial composition subjects: modersmål och litteratur / matematik.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0103-s003.wav
+  start_seconds: 230.916667
+  end_seconds: 246.799116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-022.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0103-s004
+  sv: Realämnen är till exempel historia, fysik, biologi, psykologi, religion, filosofi, geografi och
+    hälsokunskap.
+  ru: К предметам этой группы относятся, например, история, физика, биология, психология, религия, философия,
+    география и основы здоровья.
+  scene_id: hb-c08-u0103
+  visual_cue: 'Original source-specific pictorial composition subjects: historia / fysik. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0103-s004.wav
+  start_seconds: 249.583333
+  end_seconds: 259.405374
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-023.png
+- sentence_id: hb-c08-u0103-s005
+  sv: Istället för provet i modersmål kan den studerande också avlägga ett prov i läroämnet finska eller
+    svenska som andraspråk.
+  ru: Вместо экзамена по родному языку учащиеся могут также сдать экзамен по финскому или шведскому как
+    второму языку.
+  scene_id: hb-c08-u0103
+  visual_cue: 'Original source-specific pictorial composition language: modersmål / andraspråk. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0103-s005.wav
+  start_seconds: 261.166667
+  end_seconds: 271.754966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-024.png
+- sentence_id: hb-c08-u0104-s001
+  sv: Studentexamen ordnas två gånger per år, varje vår och höst.
+  ru: Выпускной экзамен проводится два раза в год, каждую весну и осень.
+  scene_id: hb-c08-u0104
+  visual_cue: 'Original source-specific pictorial composition year: vår / höst. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0104-s001.wav
+  start_seconds: 274.208333
+  end_seconds: 279.711463
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-025.png
+- sentence_id: hb-c08-u0104-s002
+  sv: När en studerande avlägger studentexamen ska hen avlägga åtminstone fem prov.
+  ru: Чтобы сдать выпускной экзамен, учащиеся должны сдать не менее пяти отдельных экзаменов.
+  scene_id: hb-c08-u0104
+  visual_cue: 'Original source-specific pictorial composition exam: åtminstone fem prov / studentexamen.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0104-s002.wav
+  start_seconds: 281.5
+  end_seconds: 288.396327
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-026.png
+- sentence_id: hb-c08-u0104-s003
+  sv: Det går också att avlägga fler.
+  ru: Можно сдать и больше.
+  scene_id: hb-c08-u0104
+  visual_cue: 'Original source-specific pictorial composition exam: fler / avlägga. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0104-s003.wav
+  start_seconds: 290.166667
+  end_seconds: 293.231701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-027.png
+- sentence_id: hb-c08-u0105-s001
+  sv: För studentexamensproven får den studerande vitsord med bokstäver som härstammar från latinska vitsord.
+  ru: За экзамены, входящие в выпускной экзамен, учащиеся получают буквенные оценки, обозначения которых
+    происходят от латинских названий оценок.
+  scene_id: hb-c08-u0105
+  visual_cue: 'Original source-specific pictorial composition grade: bokstäver / latinska vitsord. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0105-s001.wav
+  start_seconds: 295.708333
+  end_seconds: 304.903435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-028.png
+- sentence_id: hb-c08-u0105-s002
+  sv: Bokstäverna från det högsta vitsordet till det lägsta är L, E, M, C, B och A och I för underkänt.
+  ru: Буквы от самой высокой оценки до самой низкой — L, E, M, C, B и A, а I означает неудовлетворительный
+    результат.
+  scene_id: hb-c08-u0105
+  visual_cue: 'Original source-specific pictorial composition gradeletters: L, E, M, C, B och A / I för
+    underkänt. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Bokstäverna från det högsta vitsordet till det lägsta är ell, e, emm, se, be och a och i för
+      underkänt.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0105-s002.wav
+  start_seconds: 306.666667
+  end_seconds: 315.44381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-029.png
+- sentence_id: hb-c08-u0105-s003
+  sv: Den studerande får ett studentexamensbetyg när hen har avlagt gymnasiets hela lärokurs och dessutom
+    studentexamensproven.
+  ru: Учащиеся получают свидетельство о сдаче выпускного экзамена, когда проходят всю программу гимназии,
+    а также сдают экзамены, входящие в выпускной экзамен.
+  scene_id: hb-c08-u0105
+  visual_cue: 'Original source-specific pictorial composition qualification: hela lärokurs / studentexamensbetyg.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0105-s003.wav
+  start_seconds: 317.208333
+  end_seconds: 327.448333
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-030.png
+- sentence_id: hb-c08-u0106-s001
+  sv: På gymnasiet finns inga terminsavgifter.
+  ru: В гимназии не взимается плата за учебный семестр.
+  scene_id: hb-c08-u0106
+  visual_cue: 'Original source-specific pictorial composition materials: gymnasiet / inga terminsavgifter.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0106-s001.wav
+  start_seconds: 329.916667
+  end_seconds: 333.608639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-031.png
+- sentence_id: hb-c08-u0106-s002
+  sv: Utbildningen är alltså gratis.
+  ru: Таким образом, обучение бесплатное.
+  scene_id: hb-c08-u0106
+  visual_cue: 'Original source-specific pictorial composition materials: Utbildningen / gratis. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0106-s002.wav
+  start_seconds: 335.375
+  end_seconds: 338.440034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-032.png
+- sentence_id: hb-c08-u0106-s003
+  sv: Du får skolböckerna eller digitala läromedel från skolan.
+  ru: В школе вам выдают учебники или электронные учебные материалы.
+  scene_id: hb-c08-u0106
+  visual_cue: 'Original source-specific pictorial composition materials: skolböckerna / digitala läromedel.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0106-s003.wav
+  start_seconds: 340.208333
+  end_seconds: 345.432823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-033.png
+- sentence_id: hb-c08-u0106-s004
+  sv: Du får också låna en bärbar dator.
+  ru: Вам также дают ноутбук во временное пользование.
+  scene_id: hb-c08-u0106
+  visual_cue: 'Verified relevant foreground photograph: Actual laptop computer on a desk, illustrating
+    the physical device that the source says students may borrow. No claim that this exact computer is
+    school-issued or any particular Finnish school’s model. Exact bilingual source text remains on the
+    fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-gymnasium/narration/hb-c08-u0106-s004.wav
+  start_seconds: 347.208333
+  end_seconds: 350.482347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-gymnasium/pictures/picture-034.png
+render:
+  music_path: studio/media/hb-c08-gymnasium/sources/music-bed.flac
+  background_image: studio/media/hb-c08-gymnasium/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 2.835714285714286
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - InfoFinland.fi
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Tölö gymnasium ”Lönkan” 01.png — Sofia Ek · CC BY-SA 4.0
+    - Reaching Out — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian retained in source order.
+  - Original foreground illustrations depict source-stated objects and relationships; symbolic scenes
+    are not documentary photographs.
+  - Unique photographic background cropped,darkened,blurred and animated continuously.
+  - Music faded,ducked,+2dBadjusted and repeated with4second equal-power crossfades when needed.
+  palette:
+    background: '#193b40'
+    text: '#faf3e8'
+    secondary: '#c0dce0'
+    highlight: '#e8c081'
+    separator: '#3f6d73'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:T%C3%B6l%C3%B6_gymnasium_%E2%80%9DL%C3%B6nkan%E2%80%9D_01.png
+    description: Tölö gymnasium ”Lönkan” på Sandelsgatan. F.d. Nya svenska samskolan / Lönnbeckska gymnasiet
+      1888-1977.
+    license: CC BY-SA 4.0

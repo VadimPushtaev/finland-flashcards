@@ -1,0 +1,35 @@
+{
+  "section_id": "hb-c10-valfard",
+  "stage": "asr",
+  "state": "studio/production/hb-c10/hb-c10-valfard-asr-state.json",
+  "log": "studio/production/hb-c10/logs/hb-c10-valfard-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c10-valfard/narration",
+    "studio/media/hb-c10-valfard/narration-resume-1",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-01",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-02",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-03",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-04",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-05",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-06",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--resume",
+    "--threads",
+    "2"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c10-valfard/narration/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-1/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-01/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-02/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-03/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-04/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-05/asr.json",
+    "studio/media/hb-c10-valfard/narration-resume-chunk-06/asr.json"
+  ]
+}

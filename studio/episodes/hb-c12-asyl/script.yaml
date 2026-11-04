@@ -1,0 +1,1701 @@
+schema_version: 1
+section_id: hb-c12-asyl
+chapter_id: hb-c12
+title_sv: Asyl och internationellt skydd
+title_ru: Убежище и международная защита
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-asyl.yaml
+example_only: false
+source_section_sha256: 566ac073430e6533590496799c0eed381824556eca3debee511d3ca245a55deb
+translation_file_sha256: 130a78dc24681d24fc153d213b60bf2198f36fb5e5bcafe427bf92151698a46e
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Follow exact archived source order including every list fragment. Preserve permit categories,conditions,qualifiers
+    and attributed year-specific figures. Photographs contextualize places or objects; no photographed
+    person assigned immigration status. All legal relationships are the source statements,not updated
+    advice.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Nihtisillan vastaanottokeskus.jpg by Hezzu continuously as decorative background,
+    darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and 15% relative
+    zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets. Total
+    cycles=3.695535714285714. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Sincerely by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 375.484 seconds; prepared lossless stereo bed 517.375 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0172
+  description: I allmänhet måste man ansöka om uppehållstillstånd innan man flyttar till Finland.
+- id: hb-c12-u0173
+  description: Med internationellt skydd avses i Finland flyktingstatus eller status som alternativt skyddsbehövande.
+- id: hb-c12-u0174
+  description: Man kan ansöka om internationellt skydd genom att lämna in en asylansökan.
+- id: hb-c12-u0175
+  description: En person kan få alternativt skydd om hen löper risk att utsättas för någon annan verklig
+    och allvarlig fara än den förföljelse som ligger till grund för asyl.
+- id: hb-c12-u0176
+  description: Du kan söka asyl i Finland om du har välgrundad fruktan för förföljelse i ditt hemland.
+- id: hb-c12-u0177
+  description: När myndigheten har mottagit din asylansökan, hänvisas du till ett mottagningscenter.
+- id: hb-c12-u0178
+  description: I vissa situationer kan gränsmyndigheten lämna över din asylansökan till gränsförfarandet.
+- id: hb-c12-u0179
+  description: Gränsmyndigheten hänvisar dig till ett mottagningscenter.
+- id: hb-c12-u0180
+  description: Om du är under 18 år gammal och kommer till Finland som asylsökande utan vårdnadshavare,
+    förordnas du ett ombud.
+- id: hb-c12-u0181
+  description: Migrationsverket handlägger din ansökan och fattar ett beslut.
+- id: hb-c12-u0182
+  description: Det är vanligt att behandlingen av ansökan tar flera månader.
+- id: hb-c12-u0183
+  description: Som asylsökande har du rätt att använda ett rättsbiträde under samtalet.
+- id: hb-c12-u0184
+  description: Under tiden då din ansökan behandlas kan du få rådgivning och rättshjälp vid den offentliga
+    rättshjälpsbyrån.
+- id: hb-c12-u0185
+  description: Du kan även få rådgivning hos Flyktingrådgivningen rf (Pakolaisneuvonta ry).
+- id: hb-c12-u0186
+  description: Asylsökande har inte rätt till den sociala tryggheten i Finland.
+- id: hb-c12-u0187
+  description: Förläggningen betalar ut mottagningspenning till dig.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative setting or landscape; decorative context,not proof
+    of a current migration rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Sincerely — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: General prior-application rule, retain in-general qualifier and following asylum exception.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: 'Asylum exception: apply only in Finland. No embassy/online-abroad application route invented.'
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: Granted asylum yields refugee-based permit; filing application alone is not grant.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: Other possible residence grounds through asylum application, without equating all with
+    refugee status or automatic alternative grant.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Two international-protection statuses, distinct categories rather than sequential upgrades.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Statutory grounds/procedure context, no invented current legal clause or new exception.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Submit asylum application as route to request protection, not a guaranteed approval.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Authority examines entitlement; applicant nationality/appearance is not presented as deciding
+    outcome.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Refugee-based permit only if asylum conditions met; explicit eligibility condition attached.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: If asylum conditions not met, examine subsidiary protection; do not show automatic grant
+    or automatic removal.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Other real serious danger distinct from asylum persecution; no invented risk score or unsupported
+    individual diagnosis.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Non-graphic warning/justice objects name possible dangers; no execution/torture imagery
+    or methods.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: Serious personal danger from armed conflict, no graphic violence, weapon instruction or
+    assumption every national automatically qualifies.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Well-founded fear of home-country persecution as stated; no stereotyped nationality/religion
+    or real person labelled victim.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: Examples of persecution grounds from full source; neutral equal-status symbols, not ethnic/religious
+    caricatures or exhaustive list.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-016
+  kind: foreground
+  description: Application received before referral to reception centre; no implication a centre itself
+    grants asylum.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-017
+  kind: foreground
+  description: Reception accommodation available during application processing, no invented length or
+    current vacancy.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-018
+  kind: foreground
+  description: Alternative accommodation at own expense; distinguish ordinary asylum reception from later
+    border-procedure restrictions.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-019
+  kind: foreground
+  description: Border authority may transfer application in specified situations, not every asylum application
+    automatically routed there.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-020
+  kind: foreground
+  description: Border-procedure transfer always needs lawful basis; no extra invented grounds.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-021
+  kind: foreground
+  description: Border procedure may involve accelerated examination or inadmissibility decision; alternatives,
+    not automatic refusal or physical removal.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-022
+  kind: foreground
+  description: Act defines when procedure is permitted; do not fabricate a complete statutory condition
+    list.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-023
+  kind: foreground
+  description: Border authority refers to reception centre; no claimed current institution address or
+    vacancy.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-024
+  kind: foreground
+  description: Residence requirement lasts during border procedure; do not extend restriction to all ordinary
+    reception accommodation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-025
+  kind: foreground
+  description: In preceding border-procedure context, leaving area needs permission; cross unpermitted
+    leaving action, no prison/barbed-wire trope.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-026
+  kind: foreground
+  description: Same advice/legal-help entitlement as other asylum applicants; no new claim all services
+    are unconditional/free.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-027
+  kind: foreground
+  description: Unaccompanied applicant under18 receives representative; both age and unaccompanied conditions,
+    no replacement-parent/adoption inference.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-028
+  kind: foreground
+  description: Representative helps during application, not the person deciding asylum.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-029
+  kind: foreground
+  description: Representative accompanies meetings with authorities; no invented court hearing requirement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-030
+  kind: foreground
+  description: Representative explores possible family reunification, not a guaranteed result.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-031
+  kind: foreground
+  description: Housing,food,health rights in the preceding unaccompanied-minor context; no fabricated
+    benefit amount or institutional confinement.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-032
+  kind: foreground
+  description: School right in preceding minor context; no real child assigned asylum/guardian status.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-033
+  kind: foreground
+  description: Application handling and decision by authority; no outcome predetermined.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-034
+  kind: foreground
+  description: Identity and travel-route assessment, without invented travel map, personal identifiers
+    or instructions to conceal facts.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-035
+  kind: foreground
+  description: Processing often takes several months; no exact promised deadline or fabricated duration
+    range.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-036
+  kind: foreground
+  description: Stay permitted during pending application; no final residence permit implied.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-037
+  kind: foreground
+  description: Travel abroad prohibited in pending-application context; not a blanket lifetime travel
+    ban.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-038
+  kind: foreground
+  description: Travel may cause application to cease; possible authority decision, not automatically every
+    journey or permanent loss of all rights.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-039
+  kind: foreground
+  description: Right to legal counsel during interview, no false promise a court-appointed lawyer attends
+    every stage.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-040
+  kind: foreground
+  description: Counsel attends interview at own discretion, distinct from applicant entitlement to use
+    counsel.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-041
+  kind: foreground
+  description: Advice/legal aid from public legal-aid office while application pending; no invented fee-waiver
+    or income condition.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-042
+  kind: foreground
+  description: Contact legal-aid office if counsel wanted, no fabricated number, website or appointment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-043
+  kind: foreground
+  description: Reception centre helps if needed, not universal legal representation by reception staff.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-044
+  kind: foreground
+  description: Legal-aid office may refer to private lawyer or firm, no guaranteed free private representation.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-045
+  kind: foreground
+  description: Separate named NGO advice option, no authority/NGO conflation or invented contact details.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-046
+  kind: foreground
+  description: NGO also advises people without residence permit; do not imply no-permit status removes
+    all advice rights.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-047
+  kind: foreground
+  description: Source exclusion from ordinary social security, distinct from reception assistance and
+    preceding service rights; never cross out a person.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-048
+  kind: foreground
+  description: Cross FPA-benefit entitlement object, keeping exact Swedish possessive intact; do not imply
+    reception allowance is also unavailable.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-049
+  kind: foreground
+  description: Reception centre pays reception allowance, distinct from FPA social-insurance benefit.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-050
+  kind: foreground
+  description: Payment period tied to pending asylum application, no invented maximum number of months.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-051
+  kind: foreground
+  description: Small amount for necessary expenses, no fabricated euro rate, percentage or promise to
+    cover all actual costs.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0172-s001
+  sv: I allmänhet måste man ansöka om uppehållstillstånd innan man flyttar till Finland.
+  ru: Как правило, заявление на вид на жительство нужно подать до переезда в Финляндию.
+  scene_id: hb-c12-u0172
+  visual_cue: General prior-application rule, retain in-general qualifier and following asylum exception.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0172-s001.wav
+  start_seconds: 3.25
+  end_seconds: 10.494626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0172-s002
+  sv: Ett undantag är ändå ansökan om asyl, eftersom man kan ansöka om asyl endast i Finland.
+  ru: Однако исключением является заявление о предоставлении убежища, поскольку попросить убежище можно
+    только в Финляндии.
+  scene_id: hb-c12-u0172
+  visual_cue: 'Asylum exception: apply only in Finland. No embassy/online-abroad application route invented.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0172-s002.wav
+  start_seconds: 12.458333
+  end_seconds: 20.538878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0172-s003
+  sv: Om en person beviljas asyl, får hen uppehållstillstånd på basis av sin flyktingstatus.
+  ru: Если человеку предоставляют убежище, он получает вид на жительство на основании своего статуса беженца.
+  scene_id: hb-c12-u0172
+  visual_cue: Granted asylum yields refugee-based permit; filing application alone is not grant.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0172-s003.wav
+  start_seconds: 22.5
+  end_seconds: 30.371565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0172-s004
+  sv: Med en asylansökan kan man också få uppehållstillstånd på grund av alternativt skydd eller till
+    exempel individuella mänskliga orsaker.
+  ru: По заявлению о предоставлении убежища можно также получить вид на жительство в связи с предоставлением
+    дополнительной защиты или, например, по индивидуальным гуманитарным основаниям.
+  scene_id: hb-c12-u0172
+  visual_cue: Other possible residence grounds through asylum application, without equating all with refugee
+    status or automatic alternative grant.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0172-s004.wav
+  start_seconds: 32.333333
+  end_seconds: 44.38449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0173-s001
+  sv: Med internationellt skydd avses i Finland flyktingstatus eller status som alternativt skyddsbehövande.
+  ru: Под международной защитой в Финляндии понимают статус беженца или статус лица, нуждающегося в дополнительной
+    защите.
+  scene_id: hb-c12-u0173
+  visual_cue: Two international-protection statuses, distinct categories rather than sequential upgrades.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0173-s001.wav
+  start_seconds: 46.875
+  end_seconds: 55.930782
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0173-s002
+  sv: I utlänningslagen finns bestämmelser om grunderna och förfarandena enligt vilka internationellt
+    skydd ges.
+  ru: В Законе об иностранцах (Utlänningslagen) содержатся положения об основаниях и процедурах предоставления
+    международной защиты.
+  scene_id: hb-c12-u0173
+  visual_cue: Statutory grounds/procedure context, no invented current legal clause or new exception.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0173-s002.wav
+  start_seconds: 57.916667
+  end_seconds: 67.111769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0174-s001
+  sv: Man kan ansöka om internationellt skydd genom att lämna in en asylansökan.
+  ru: Обратиться за международной защитой можно, подав заявление о предоставлении убежища.
+  scene_id: hb-c12-u0174
+  visual_cue: Submit asylum application as route to request protection, not a guaranteed approval.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0174-s001.wav
+  start_seconds: 69.583333
+  end_seconds: 76.27068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0174-s002
+  sv: Migrationsverket utreder om en person har rätt till asyl.
+  ru: Миграционная служба (Migrationsverket) выясняет, имеет ли человек право на убежище.
+  scene_id: hb-c12-u0174
+  visual_cue: Authority examines entitlement; applicant nationality/appearance is not presented as deciding
+    outcome.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0174-s002.wav
+  start_seconds: 78.25
+  end_seconds: 83.54415
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0174-s003
+  sv: Om förutsättningarna för att få asyl uppfylls, beviljas personen uppehållstillstånd på grund av
+    flyktingstatus.
+  ru: Если условия для получения убежища выполнены, человеку предоставляют вид на жительство на основании
+    статуса беженца.
+  scene_id: hb-c12-u0174
+  visual_cue: Refugee-based permit only if asylum conditions met; explicit eligibility condition attached.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0174-s003.wav
+  start_seconds: 85.5
+  end_seconds: 95.67034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0174-s004
+  sv: Om förutsättningarna för att få asyl inte uppfylls, utreder man om personen har rätt till skydd
+    i Finland enligt principen om alternativt skydd.
+  ru: Если условия для получения убежища не выполнены, выясняют, имеет ли человек право на защиту в Финляндии
+    по принципу дополнительной защиты.
+  scene_id: hb-c12-u0174
+  visual_cue: If asylum conditions not met, examine subsidiary protection; do not show automatic grant
+    or automatic removal.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0174-s004.wav
+  start_seconds: 97.625
+  end_seconds: 110.303095
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0175-s001
+  sv: En person kan få alternativt skydd om hen löper risk att utsättas för någon annan verklig och allvarlig
+    fara än den förföljelse som ligger till grund för asyl.
+  ru: Человек может получить дополнительную защиту, если ему угрожает реальная и серьёзная опасность иного
+    рода, чем преследование, служащее основанием для предоставления убежища.
+  scene_id: hb-c12-u0175
+  visual_cue: Other real serious danger distinct from asylum persecution; no invented risk score or unsupported
+    individual diagnosis.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0175-s001.wav
+  start_seconds: 112.791667
+  end_seconds: 126.30568
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0175-s002
+  sv: En orsak till det kan vara hot om dödsstraff eller tortyr.
+  ru: Одной из причин может быть угроза смертной казни или пыток.
+  scene_id: hb-c12-u0175
+  visual_cue: Non-graphic warning/justice objects name possible dangers; no execution/torture imagery
+    or methods.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0175-s002.wav
+  start_seconds: 129.083333
+  end_seconds: 134.307823
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0175-s003
+  sv: En orsak kan också vara att personen utsätts för en allvarlig och personlig fara på grund av en
+    väpnad konflikt.
+  ru: Причиной может также быть серьёзная опасность, угрожающая лично человеку из-за вооружённого конфликта.
+  scene_id: hb-c12-u0175
+  visual_cue: Serious personal danger from armed conflict, no graphic violence, weapon instruction or
+    assumption every national automatically qualifies.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0175-s003.wav
+  start_seconds: 136.291667
+  end_seconds: 146.044048
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0176-s001
+  sv: Du kan söka asyl i Finland om du har välgrundad fruktan för förföljelse i ditt hemland.
+  ru: Вы можете попросить убежище в Финляндии, если у вас есть обоснованные опасения подвергнуться преследованию
+    на родине.
+  scene_id: hb-c12-u0176
+  visual_cue: Well-founded fear of home-country persecution as stated; no stereotyped nationality/religion
+    or real person labelled victim.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0176-s001.wav
+  start_seconds: 148.5
+  end_seconds: 156.232245
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0176-s002
+  sv: Orsaker till förföljelse kan vara etniskt ursprung, religion, medborgarskap, tillhörighet till en
+    viss grupp i samhället eller politiska åsikter.
+  ru: Причинами преследования могут быть этническое происхождение, религия, гражданство, принадлежность
+    к определённой группе в обществе или политические взгляды.
+  scene_id: hb-c12-u0176
+  visual_cue: Examples of persecution grounds from full source; neutral equal-status symbols, not ethnic/religious
+    caricatures or exhaustive list.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0176-s002.wav
+  start_seconds: 158.208333
+  end_seconds: 170.607789
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0177-s001
+  sv: När myndigheten har mottagit din asylansökan, hänvisas du till ett mottagningscenter.
+  ru: После того как орган власти получит ваше заявление о предоставлении убежища, вас направят в приёмный
+    центр.
+  scene_id: hb-c12-u0177
+  visual_cue: Application received before referral to reception centre; no implication a centre itself
+    grants asylum.
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0177-s001.wav
+  start_seconds: 173.083333
+  end_seconds: 180.536939
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-016.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0177-s002
+  sv: Där kan du bo under tiden då Migrationsverket behandlar din ansökan.
+  ru: Там вы можете жить, пока Миграционная служба рассматривает ваше заявление.
+  scene_id: hb-c12-u0177
+  visual_cue: Reception accommodation available during application processing, no invented length or current
+    vacancy.
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0177-s002.wav
+  start_seconds: 182.5
+  end_seconds: 188.351429
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-017.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0177-s003
+  sv: Du kan även bo någon annanstans, men då måste du själv bekosta boendet.
+  ru: Вы также можете жить в другом месте, но тогда вам придётся самостоятельно оплачивать проживание.
+  scene_id: hb-c12-u0177
+  visual_cue: Alternative accommodation at own expense; distinguish ordinary asylum reception from later
+    border-procedure restrictions.
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0177-s003.wav
+  start_seconds: 190.333333
+  end_seconds: 196.533061
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-018.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0178-s001
+  sv: I vissa situationer kan gränsmyndigheten lämna över din asylansökan till gränsförfarandet.
+  ru: В определённых случаях пограничный орган может передать ваше заявление о предоставлении убежища
+    на рассмотрение в рамках пограничной процедуры.
+  scene_id: hb-c12-u0178
+  visual_cue: Border authority may transfer application in specified situations, not every asylum application
+    automatically routed there.
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0178-s001.wav
+  start_seconds: 199.0
+  end_seconds: 207.010884
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-019.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0178-s002
+  sv: För detta måste det alltid finnas en laglig grund.
+  ru: Для этого всегда должно быть законное основание.
+  scene_id: hb-c12-u0178
+  visual_cue: Border-procedure transfer always needs lawful basis; no extra invented grounds.
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0178-s002.wav
+  start_seconds: 209.0
+  end_seconds: 213.527891
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-020.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0178-s003
+  sv: Gränsförfarandet(rajamenettely) innebär att Migrationsverket behandlar ansökan vid ett påskyndat
+    förfarande eller fattar beslut om att avvisa ansökan utan prövning.
+  ru: Пограничная процедура (rajamenettely) означает, что Миграционная служба рассматривает заявление
+    в ускоренном порядке или принимает решение оставить его без рассмотрения.
+  scene_id: hb-c12-u0178
+  visual_cue: Border procedure may involve accelerated examination or inadmissibility decision; alternatives,
+    not automatic refusal or physical removal.
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0178-s003.wav
+  start_seconds: 215.5
+  end_seconds: 229.501633
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-021.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0178-s004
+  sv: I utlänningslagen (ulkomaalaislaki) definieras i vilka situationer Migrationsverket kan göra så.
+  ru: В Законе об иностранцах (ulkomaalaislaki) определено, в каких случаях Миграционная служба может
+    так поступить.
+  scene_id: hb-c12-u0178
+  visual_cue: Act defines when procedure is permitted; do not fabricate a complete statutory condition
+    list.
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0178-s004.wav
+  start_seconds: 232.291667
+  end_seconds: 240.92949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-022.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0179-s001
+  sv: Gränsmyndigheten hänvisar dig till ett mottagningscenter.
+  ru: Пограничный орган направляет вас в приёмный центр.
+  scene_id: hb-c12-u0179
+  visual_cue: Border authority refers to reception centre; no claimed current institution address or vacancy.
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0179-s001.wav
+  start_seconds: 243.416667
+  end_seconds: 248.641156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-023.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0179-s002
+  sv: Du måste bo där under den tid som gränsförfarandet pågår.
+  ru: Вы должны жить там всё время, пока идёт пограничная процедура.
+  scene_id: hb-c12-u0179
+  visual_cue: Residence requirement lasts during border procedure; do not extend restriction to all ordinary
+    reception accommodation.
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0179-s002.wav
+  start_seconds: 250.625
+  end_seconds: 255.71017
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-024.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0179-s003
+  sv: Du får inte lämna mottagningscentrets område utan tillstånd.
+  ru: Вы не можете покидать территорию приёмного центра без разрешения.
+  scene_id: hb-c12-u0179
+  visual_cue: In preceding border-procedure context, leaving area needs permission; cross unpermitted
+    leaving action, no prison/barbed-wire trope.
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0179-s003.wav
+  start_seconds: 257.666667
+  end_seconds: 262.960816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-025.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0179-s004
+  sv: Vid gränsförfarandet har du samma rätt till rådgivning och juridisk hjälp som andra asylsökanden.
+  ru: При пограничной процедуре вы имеете такое же право на консультации и юридическую помощь, как и другие
+    просители убежища.
+  scene_id: hb-c12-u0179
+  visual_cue: Same advice/legal-help entitlement as other asylum applicants; no new claim all services
+    are unconditional/free.
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0179-s004.wav
+  start_seconds: 264.916667
+  end_seconds: 273.55449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-026.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s001
+  sv: Om du är under 18 år gammal och kommer till Finland som asylsökande utan vårdnadshavare, förordnas
+    du ett ombud.
+  ru: Если вам меньше 18 лет и вы прибываете в Финляндию как проситель убежища без лица, осуществляющего
+    опеку над вами, вам назначают представителя.
+  scene_id: hb-c12-u0180
+  visual_cue: Unaccompanied applicant under18 receives representative; both age and unaccompanied conditions,
+    no replacement-parent/adoption inference.
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s001.wav
+  start_seconds: 276.041667
+  end_seconds: 286.838946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-027.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s002
+  sv: Ombudet är en pålitlig vuxen person som hjälper dig med olika ärenden under tiden då Migrationsverket
+    behandlar din ansökan.
+  ru: Представитель — это надёжный взрослый человек, который помогает вам в различных делах, пока Миграционная
+    служба рассматривает ваше заявление.
+  scene_id: hb-c12-u0180
+  visual_cue: Representative helps during application, not the person deciding asylum.
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s002.wav
+  start_seconds: 288.791667
+  end_seconds: 299.449626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-028.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s003
+  sv: Ombudet följer med dig när du ska prata med myndigheter.
+  ru: Представитель сопровождает вас, когда вам предстоит беседовать с представителями органов власти.
+  scene_id: hb-c12-u0180
+  visual_cue: Representative accompanies meetings with authorities; no invented court hearing requirement.
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s003.wav
+  start_seconds: 301.416667
+  end_seconds: 306.432177
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-029.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s004
+  sv: Dessutom utreder ditt ombud om du kan återförenas med din familj.
+  ru: Кроме того, ваш представитель выясняет, возможно ли ваше воссоединение с семьёй.
+  scene_id: hb-c12-u0180
+  visual_cue: Representative explores possible family reunification, not a guaranteed result.
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s004.wav
+  start_seconds: 308.416667
+  end_seconds: 314.337755
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-030.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s005
+  sv: Du har rätt till boende, mat och hälsovård.
+  ru: Вы имеете право на жильё, питание и медицинскую помощь.
+  scene_id: hb-c12-u0180
+  visual_cue: Housing,food,health rights in the preceding unaccompanied-minor context; no fabricated benefit
+    amount or institutional confinement.
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s005.wav
+  start_seconds: 316.291667
+  end_seconds: 320.122959
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-031.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0180-s006
+  sv: Du har även rätt att gå i skola.
+  ru: Вы также имеете право ходить в школу.
+  scene_id: hb-c12-u0180
+  visual_cue: School right in preceding minor context; no real child assigned asylum/guardian status.
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0180-s006.wav
+  start_seconds: 322.083333
+  end_seconds: 325.148367
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-032.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0181-s001
+  sv: Migrationsverket handlägger din ansökan och fattar ett beslut.
+  ru: Миграционная служба рассматривает ваше заявление и принимает решение.
+  scene_id: hb-c12-u0181
+  visual_cue: Application handling and decision by authority; no outcome predetermined.
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0181-s001.wav
+  start_seconds: 327.625
+  end_seconds: 333.128129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-033.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0181-s002
+  sv: Migrationsverket utreder din identitet och resväg till Finland och bedömer om du kan beviljas asyl
+    i Finland.
+  ru: Миграционная служба устанавливает вашу личность и маршрут поездки в Финляндию и оценивает, можно
+    ли предоставить вам убежище в Финляндии.
+  scene_id: hb-c12-u0181
+  visual_cue: Identity and travel-route assessment, without invented travel map, personal identifiers
+    or instructions to conceal facts.
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0181-s002.wav
+  start_seconds: 335.083333
+  end_seconds: 344.835714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-034.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0182-s001
+  sv: Det är vanligt att behandlingen av ansökan tar flera månader.
+  ru: Рассмотрение заявления обычно занимает несколько месяцев.
+  scene_id: hb-c12-u0182
+  visual_cue: Processing often takes several months; no exact promised deadline or fabricated duration
+    range.
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0182-s001.wav
+  start_seconds: 347.291667
+  end_seconds: 352.655476
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-035.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0182-s002
+  sv: När du har sökt asyl har du rätt att vistas i Finland medan din ansökan behandlas.
+  ru: После подачи заявления о предоставлении убежища вы имеете право находиться в Финляндии, пока ваше
+    заявление рассматривается.
+  scene_id: hb-c12-u0182
+  visual_cue: Stay permitted during pending application; no final residence permit implied.
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0182-s002.wav
+  start_seconds: 354.625
+  end_seconds: 361.939286
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-036.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0182-s003
+  sv: Under denna tid kan du inte resa utomlands.
+  ru: В это время вы не можете выезжать за границу.
+  scene_id: hb-c12-u0182
+  visual_cue: Travel abroad prohibited in pending-application context; not a blanket lifetime travel ban.
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0182-s003.wav
+  start_seconds: 363.916667
+  end_seconds: 367.817619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-037.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0182-s004
+  sv: Om du reser kan myndigheterna besluta att din ansökan inte längre gäller.
+  ru: Если вы уедете, органы власти могут решить, что ваше заявление больше не действует.
+  scene_id: hb-c12-u0182
+  visual_cue: Travel may cause application to cease; possible authority decision, not automatically every
+    journey or permanent loss of all rights.
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0182-s004.wav
+  start_seconds: 369.791667
+  end_seconds: 376.270034
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-038.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0183-s001
+  sv: Som asylsökande har du rätt att använda ett rättsbiträde under samtalet.
+  ru: Как проситель убежища вы имеете право воспользоваться помощью юридического представителя на собеседовании
+    по вопросу предоставления убежища.
+  scene_id: hb-c12-u0183
+  visual_cue: Right to legal counsel during interview, no false promise a court-appointed lawyer attends
+    every stage.
+  asset_ids:
+  - episode_background
+  - picture-039
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0183-s001.wav
+  start_seconds: 378.75
+  end_seconds: 385.367687
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-039.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0183-s002
+  sv: Biträdet deltar i asylsamtalet efter sitt eget omdöme.
+  ru: Представитель участвует в собеседовании по вопросу предоставления убежища по своему усмотрению.
+  scene_id: hb-c12-u0183
+  visual_cue: Counsel attends interview at own discretion, distinct from applicant entitlement to use
+    counsel.
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0183-s002.wav
+  start_seconds: 387.333333
+  end_seconds: 392.279184
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-040.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0184-s001
+  sv: Under tiden då din ansökan behandlas kan du få rådgivning och rättshjälp vid den offentliga rättshjälpsbyrån.
+  ru: Пока ваше заявление рассматривается, вы можете получать консультации и юридическую помощь в государственном
+    бюро юридической помощи.
+  scene_id: hb-c12-u0184
+  visual_cue: Advice/legal aid from public legal-aid office while application pending; no invented fee-waiver
+    or income condition.
+  asset_ids:
+  - episode_background
+  - picture-041
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0184-s001.wav
+  start_seconds: 394.75
+  end_seconds: 403.945102
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-041.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0184-s002
+  sv: Kontakta rättshjälpsbyrån om du vill ha ett rättsbiträde.
+  ru: Обратитесь в бюро юридической помощи, если хотите воспользоваться помощью юридического представителя.
+  scene_id: hb-c12-u0184
+  visual_cue: Contact legal-aid office if counsel wanted, no fabricated number, website or appointment.
+  asset_ids:
+  - episode_background
+  - picture-042
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0184-s002.wav
+  start_seconds: 405.916667
+  end_seconds: 411.419796
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-042.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0184-s003
+  sv: Vid behov hjälper mottagningscentret dig.
+  ru: При необходимости приёмный центр вам поможет.
+  scene_id: hb-c12-u0184
+  visual_cue: Reception centre helps if needed, not universal legal representation by reception staff.
+  asset_ids:
+  - episode_background
+  - picture-043
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0184-s003.wav
+  start_seconds: 413.375
+  end_seconds: 417.275952
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-043.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0184-s004
+  sv: Rättshjälpsbyrån (oikeusaputoimisto) kan även hänvisa dig till en privat jurist eller en privat
+    juristbyrå.
+  ru: Бюро юридической помощи (oikeusaputoimisto) также может направить вас к частному юристу или в частное
+    юридическое бюро.
+  scene_id: hb-c12-u0184
+  visual_cue: Legal-aid office may refer to private lawyer or firm, no guaranteed free private representation.
+  asset_ids:
+  - episode_background
+  - picture-044
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0184-s004.wav
+  start_seconds: 419.25
+  end_seconds: 429.002381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-044.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0185-s001
+  sv: Du kan även få rådgivning hos Flyktingrådgivningen rf (Pakolaisneuvonta ry).
+  ru: Вы также можете получить консультации в организации по оказанию правовой помощи беженцам Flyktingrådgivningen
+    rf (Pakolaisneuvonta ry).
+  scene_id: hb-c12-u0185
+  visual_cue: Separate named NGO advice option, no authority/NGO conflation or invented contact details.
+  asset_ids:
+  - episode_background
+  - picture-045
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0185-s001.wav
+  start_seconds: 431.458333
+  end_seconds: 438.07602
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-045.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0185-s002
+  sv: Flyktingrådgivningen ger rådgivning även till personer som vistas i Finland utan uppehållstillstånd.
+  ru: Flyktingrådgivningen консультирует также людей, которые находятся в Финляндии без вида на жительство.
+  scene_id: hb-c12-u0185
+  visual_cue: NGO also advises people without residence permit; do not imply no-permit status removes
+    all advice rights.
+  asset_ids:
+  - episode_background
+  - picture-046
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0185-s002.wav
+  start_seconds: 440.041667
+  end_seconds: 448.67949
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-046.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0186-s001
+  sv: Asylsökande har inte rätt till den sociala tryggheten i Finland.
+  ru: Просители убежища не имеют права на социальное обеспечение в Финляндии.
+  scene_id: hb-c12-u0186
+  visual_cue: Source exclusion from ordinary social security, distinct from reception assistance and preceding
+    service rights; never cross out a person.
+  asset_ids:
+  - episode_background
+  - picture-047
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0186-s001.wav
+  start_seconds: 451.166667
+  end_seconds: 456.809116
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-047.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0186-s002
+  sv: Det innebär att du inte kan få FPA:s förmåner.
+  ru: Это означает, что вы не можете получать пособия Ведомства социального обеспечения (FPA).
+  scene_id: hb-c12-u0186
+  visual_cue: Cross FPA-benefit entitlement object, keeping exact Swedish possessive intact; do not imply
+    reception allowance is also unavailable.
+  asset_ids:
+  - episode_background
+  - picture-048
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override:
+    text: Det innebär att du inte kan få F P A:s förmåner.
+    reason: Speech-only Swedish letter-name spacing and unambiguous calendar-date expansion; displayed
+      archived Swedish/Russian,values and conditions remain unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0186-s002.wav
+  start_seconds: 458.791667
+  end_seconds: 463.389218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-048.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0187-s001
+  sv: Förläggningen betalar ut mottagningspenning till dig.
+  ru: Приёмный центр выплачивает вам приёмное пособие.
+  scene_id: hb-c12-u0187
+  visual_cue: Reception centre pays reception allowance, distinct from FPA social-insurance benefit.
+  asset_ids:
+  - episode_background
+  - picture-049
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0187-s001.wav
+  start_seconds: 465.875
+  end_seconds: 470.542211
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-049.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0187-s002
+  sv: Den betalas under den tid då din asylansökan behandlas.
+  ru: Его выплачивают, пока рассматривается ваше заявление о предоставлении убежища.
+  scene_id: hb-c12-u0187
+  visual_cue: Payment period tied to pending asylum application, no invented maximum number of months.
+  asset_ids:
+  - episode_background
+  - picture-050
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0187-s002.wav
+  start_seconds: 472.5
+  end_seconds: 477.37619
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-050.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0187-s003
+  sv: Mottagningspenningen är ett litet belopp avsett för nödvändiga utgifter.
+  ru: Приёмное пособие — это небольшая сумма, предназначенная для необходимых расходов.
+  scene_id: hb-c12-u0187
+  visual_cue: Small amount for necessary expenses, no fabricated euro rate, percentage or promise to cover
+    all actual costs.
+  asset_ids:
+  - episode_background
+  - picture-051
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-asyl/narration/hb-c12-u0187-s003.wav
+  start_seconds: 479.333333
+  end_seconds: 485.672381
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-asyl/pictures/picture-051.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-asyl/sources/music-bed.flac
+  background_image: studio/media/hb-c12-asyl/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.695535714285714
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Nihtisillan vastaanottokeskus.jpg — Hezzu · CC BY-SA 4.0
+    - Sincerely — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Nihtisillan_vastaanottokeskus.jpg
+    description: Nihtisillan vastaanottokeskus on yksityisen Luona Oy:n ylläpitämä aikuisten turvapaikanhakijoiden
+      vastaanottokeskus Espoon Kilossa, osoitteessa Kutojantie 10.
+    license: CC BY-SA 4.0

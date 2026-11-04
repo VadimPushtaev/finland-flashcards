@@ -1,0 +1,1353 @@
+schema_version: 1
+section_id: hb-c08-utveckling
+chapter_id: hb-c08
+title_sv: Utbildningssystemets utveckling
+title_ru: Развитие системы образования
+source_path: data/homebrew/sv/chapters/08_utbildning_och_larande.yaml
+translation_path: data/homebrew/ru/sections/hb-c08-utveckling.yaml
+example_only: false
+source_section_sha256: 62f981c18fca4e2d12f387bda355c1598d003bb259056ed8947638c877bb6e50
+translation_file_sha256: e00689497c2fa68c7c3afaa0e3df7bb2cfcbaaaa735d4fa5676b23105abb32ed
+episode_decisions:
+- id: opening
+  decision: Exact bilingual unspoken3-second heading. Continuous decorative background motion starts immediately.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Consecutive original source paragraphs/list items define topic scenes; exact wording and stored
+    order are retained. Sentence illustrations follow the individual source claim.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080 24fps, Chapter 8 teal palette {''background'': ''#193b40'', ''text'': ''#faf3e8'',
+    ''secondary'': ''#c0dce0'', ''highlight'': ''#e8c081'', ''separator'': ''#3f6d73''}. Liberation Sans
+    Bold48/Regular40 with right bilingual panel and fixed left foreground.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Show both texts0.25seconds before narration; use full measured clips,1.5second regular pause,2.2at
+    scene ends and2.5for longer pairs. Do not accelerate to a target runtime.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Heinatori School Oulu pre1911.jpg by Unknown authorUnknown author continuously as
+    decorative background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85)
+    and 15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence
+    resets. Total cycles=3.5339285714285715. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: voice_selection
+  decision: Local Supertonic3/F1 Swedish,32steps,speed0.95,seed42,44100HzmonoPCM16,2ONNXthreads. Whole-video
+    listening and user acceptance pending.
+  status: proposed
+  resolve_during: script
+- id: music_selection
+  decision: Use Smoother Move by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 278.073 seconds; prepared lossless stereo bed 494.750 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: foreground_selection
+  decision: A distinct relevant source-based illustration for nearly every sentence slide, supplemented
+    by verified photographs where they clarify actual institutions or places. Distinct semantic compositions
+    show only the source statements. Aim at least90% measured body picture coverage and report unique-picture
+    ratio.
+  status: proposed
+  resolve_during: script
+- id: closing
+  decision: Source and media credits followed by foreground attribution,15seconds each, with full URLs/licenses
+    and original notices in canonical sidecar.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception to shared direction. Preserve exact archived source,reviewed Russian,sourceorder
+    and IDs.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c08-u0001
+  description: Samhälleliga förändringar sker alltid av någon orsak.
+- id: hb-c08-u0002
+  description: I många europeiska länder började reformationen på 1500-talet.
+- id: hb-c08-u0003
+  description: I början av 1800-talet blev Finland en autonom del av Ryssland, vilket ändrade Finlands
+    ställning.
+- id: hb-c08-u0004
+  description: I och med industrialiseringen skildes skolan från kyrkan.
+- id: hb-c08-u0005
+  description: Kommunerna började grunda folkskolor separat från kyrkan och dessa skolor spreds småningom
+    till hela landet.
+- id: hb-c08-u0006
+  description: Vid sidan av folkskolorna fanns också läroverk, av vilka många var privata.
+- id: hb-c08-u0007
+  description: Först på 1900-talets sida började större delen av befolkningen stöda folkskolan och 1921
+    stiftades en lag om läroplikt i Finland.
+- id: hb-c08-u0008
+  description: Gymnasieutbildning och studentexamen blev vanligare särskilt på 1950- och 1960-talet.
+- id: hb-c08-u0009
+  description: Utvecklingen av utbildningssystemet var en viktig del av uppbyggnaden av välfärdssamhället
+    i Finland.
+- id: hb-c08-u0010
+  description: I Finland kan man få en utbildning enligt utbildningssystemet på finska eller svenska.
+- id: hb-c08-u0011
+  description: Bakgrunden till det finländska utbildningssystemet är en idé om kontinuerligt lärande.
+- id: hb-c08-u0012
+  description: Lärandet och studierna upphör inte när en person avlägger sin examen eller blir myndig.
+- id: hb-c08-u0013
+  description: Lärande och utbildning hjälper människor att klara sig både i det föränderliga arbetslivet
+    och i en värld som blir alltmer internationell.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Reserved distinct photograph related to this episode.
+  fallback: Another accurately identified reusable topic-related photo; update central identity reservation.
+- id: music_bed
+  kind: music
+  description: Centrally reserved unique calm instrumental music.
+  fallback: Another unique source-verified calm track; keep music throughout.
+- id: narration
+  kind: narration
+  description: One full local Swedish F1clip per exact source sentence in stored order.
+  fallback: Diagnostic-led bounded speech-only retake in separate folder, preserving meaning.
+- id: picture-001
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Samhälleliga förändringar sker alltid av
+    någon orsak.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-002
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Vanligen ligger det ett behov eller en
+    ideologi bakom dem.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-003
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det finländska utbildningssystemets uppkomst
+    och utveckling har också påverkats av samhälleliga behov och ideologier.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-004
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: De första skolorna grundades i Finland
+    för över 700 år sedan i anslutning till den katolska kyrkan.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-005
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Då bodde nästan alla finländare på landsbygden
+    och under en lång tid var skolgång möjlig endast för ett fåtal pojkar ur den övre samhällsklassen.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-006
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: De utbildades främst till präster.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-007
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I många europeiska länder började reformationen
+    på 1500-talet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-008
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Nya kyrkosamfund, till exempel det lutherska,
+    separerade från den katolska kyrkan.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-009
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Även Finland var tidigare ett katolskt
+    land som i och med reformationen gick över till lutherdom.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-010
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Reformationen ledde småningom till en ändrad
+    syn på utbildning, eftersom den lutherska kyrkan betonade folkspråk och läskunnighet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-011
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Tanken var att alla i församlingen skulle
+    må bra av att själv kunna läsa Bibeln.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-012
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I början av 1800-talet blev Finland en
+    autonom del av Ryssland, vilket ändrade Finlands ställning.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-013
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det var ändå fortfarande kyrkan som skötte
+    folkets utbildning ända till mitten av 1800-talet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-014
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Efter det började det finländska samhället
+    ändras i allt snabbare takt.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-015
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I och med industrialiseringen skildes skolan
+    från kyrkan.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-016
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Arbetande föräldrar kunde inte längre sköta
+    sina barn på dagtid, så det uppstod ett behov av att utveckla skolsystemet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-017
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Kommunerna började grunda folkskolor separat
+    från kyrkan och dessa skolor spreds småningom till hela landet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-018
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Vid sidan av folkskolorna fanns också läroverk,
+    av vilka många var privata.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-019
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I dem gick främst rikare familjers barn.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-020
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det tog flera tiotals år innan hela befolkningen
+    omfattades av utbildningen, för särskilt på landsbygden var det många som inte förstod vikten av utbildning
+    och som ställde sig misstroget till att skicka sina barn till skolan.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-021
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Först på 1900-talets sida började större
+    delen av befolkningen stöda folkskolan och 1921 stiftades en lag om läroplikt i Finland.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-022
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det betydde att skolgång blev obligatoriskt
+    för alla.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-023
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Folkskolan utvidgades till att omfatta
+    hela åldersklassen på 1920- och 1930-talet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-024
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Gymnasieutbildning och studentexamen blev
+    vanligare särskilt på 1950- och 1960-talet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-025
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I Finland började man eftersträva samhällelig
+    jämlikhet och ekonomisk utveckling genom att bygga en välfärdsstat.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-026
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Samtidigt föddes tanken på en enhetlig
+    9-årig grundskola.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-027
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Under 1970-talet övergick man i hela landet
+    från det gamla systemet med separat folkskola och läroverk till en grundskola som var gemensam för
+    alla.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-028
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Utvecklingen av utbildningssystemet var
+    en viktig del av uppbyggnaden av välfärdssamhället i Finland.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-029
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Höjningen av medborgarnas utbildningsnivå
+    under de senaste hundra åren har bidragit till landets ekonomiska utveckling och uppkomsten av ett
+    mer jämställt samhälle.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-030
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I Finland kan man få en utbildning enligt
+    utbildningssystemet på finska eller svenska.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-031
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I de svenskspråkiga skolorna studerar man
+    också finska.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-032
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Studierna i finska inleds ofta redan i
+    årskurs ett.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-033
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: I de finskspråkiga skolorna studerar man
+    svenska oftast från och med årskurs sex.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-034
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Bakgrunden till det finländska utbildningssystemet
+    är en idé om kontinuerligt lärande.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-035
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Med kontinuerligt lärande avses allt lärande
+    som sker genom hela livet och som syftar till att utveckla individens kunskaper, färdigheter och förmågor
+    i både det personliga livet och arbetslivet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-036
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Människan lär sig såväl i skolan som i
+    livet, till exempel i vardagen och hobbyer.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-037
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Lärandet och studierna upphör inte när
+    en person avlägger sin examen eller blir myndig.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-038
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Det är bra att utveckla sig själv under
+    hela livet, eftersom det omgivande samhället och arbetslivet hela tiden förändras.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-039
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Med hjälp av utbildning kan vem som helst
+    ha möjlighet att få en bättre ställning i samhället.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-040
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Lärande och bildning är viktiga och användbara
+    för det egna välbefinnandet.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-041
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Lärande och utbildning hjälper människor
+    att klara sig både i det föränderliga arbetslivet och i en värld som blir alltmer internationell.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+- id: picture-042
+  kind: foreground
+  description: 'Distinct source-based foreground illustration: Finland klarar sig bättre i den internationella
+    konkurrensen om samhället satsar på att utbilda befolkningen.'
+  fallback: Use another accurate source-based pictorial composition or verified relevant photograph; record
+    a justified omission if an honest illustration is infeasible.
+sentences:
+- sentence_id: hb-c08-u0001-s001
+  sv: Samhälleliga förändringar sker alltid av någon orsak.
+  ru: Общественные изменения всегда происходят по какой-либо причине.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition cause: förändringar / orsak. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s001.wav
+  start_seconds: 3.25
+  end_seconds: 8.47449
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-001.png
+- sentence_id: hb-c08-u0001-s002
+  sv: Vanligen ligger det ett behov eller en ideologi bakom dem.
+  ru: Обычно за ними стоит какая-либо потребность или идеология.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition cause: behov / ideologi. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s002.wav
+  start_seconds: 10.25
+  end_seconds: 15.40483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-002.png
+- sentence_id: hb-c08-u0001-s003
+  sv: Det finländska utbildningssystemets uppkomst och utveckling har också påverkats av samhälleliga
+    behov och ideologier.
+  ru: На возникновение и развитие финляндской системы образования также повлияли общественные потребности
+    и идеологии.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition bridge: utbildningssystemets / samhälleliga
+    behov. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s003.wav
+  start_seconds: 17.166667
+  end_seconds: 26.988707
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-003.png
+- sentence_id: hb-c08-u0001-s004
+  sv: De första skolorna grundades i Finland för över 700 år sedan i anslutning till den katolska kyrkan.
+  ru: Первые школы в Финляндии были основаны более 700 лет назад при католической церкви.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition path: skolorna / katolska kyrkan. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s004.wav
+  start_seconds: 28.75
+  end_seconds: 38.432721
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-004.png
+- sentence_id: hb-c08-u0001-s005
+  sv: Då bodde nästan alla finländare på landsbygden och under en lång tid var skolgång möjlig endast
+    för ett fåtal pojkar ur den övre samhällsklassen.
+  ru: Тогда почти все финляндцы жили в сельской местности, и на протяжении долгого времени обучение в
+    школе было доступно лишь немногим мальчикам из высшего общественного класса.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition contrast: landsbygden / pojkar. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s005.wav
+  start_seconds: 40.208333
+  end_seconds: 52.18983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-005.png
+- sentence_id: hb-c08-u0001-s006
+  sv: De utbildades främst till präster.
+  ru: Их готовили главным образом в священники.
+  scene_id: hb-c08-u0001
+  visual_cue: 'Original source-specific pictorial composition qualification: utbildades / präster. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0001-s006.wav
+  start_seconds: 53.958333
+  end_seconds: 57.302007
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-006.png
+- sentence_id: hb-c08-u0002-s001
+  sv: I många europeiska länder började reformationen på 1500-talet.
+  ru: Во многих европейских странах Реформация началась в XVI веке.
+  scene_id: hb-c08-u0002
+  visual_cue: 'Original source-specific pictorial composition year: reformationen / 1500-talet. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: I många europeiska länder började reformationen på femtonhundratalet.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0002-s001.wav
+  start_seconds: 59.791667
+  end_seconds: 65.991395
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-007.png
+- sentence_id: hb-c08-u0002-s002
+  sv: Nya kyrkosamfund, till exempel det lutherska, separerade från den katolska kyrkan.
+  ru: От католической церкви отделились новые церковные общины, например лютеранская.
+  scene_id: hb-c08-u0002
+  visual_cue: 'Original source-specific pictorial composition split: lutherska / katolska kyrkan. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0002-s002.wav
+  start_seconds: 67.75
+  end_seconds: 75.203605
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-008.png
+- sentence_id: hb-c08-u0002-s003
+  sv: Även Finland var tidigare ett katolskt land som i och med reformationen gick över till lutherdom.
+  ru: Финляндия тоже прежде была католической страной, которая в ходе Реформации перешла к лютеранству.
+  scene_id: hb-c08-u0002
+  visual_cue: 'Original source-specific pictorial composition path: katolskt / lutherdom. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0002-s003.wav
+  start_seconds: 76.958333
+  end_seconds: 85.317517
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-009.png
+- sentence_id: hb-c08-u0002-s004
+  sv: Reformationen ledde småningom till en ändrad syn på utbildning, eftersom den lutherska kyrkan betonade
+    folkspråk och läskunnighet.
+  ru: Реформация постепенно привела к изменению взглядов на образование, поскольку лютеранская церковь
+    подчёркивала значение народных языков и умения читать.
+  scene_id: hb-c08-u0002
+  visual_cue: 'Verified relevant foreground photograph: Actual front page of Agricola’s1543Abckiria. A
+    primary artifact of Finnish vernacular literacy during the Reformation; not presented as a photograph
+    of a teaching event. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0002-s004.wav
+  start_seconds: 87.083333
+  end_seconds: 98.159252
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-010.png
+- sentence_id: hb-c08-u0002-s005
+  sv: Tanken var att alla i församlingen skulle må bra av att själv kunna läsa Bibeln.
+  ru: Идея заключалась в том, что каждому члену прихода было бы полезно уметь самостоятельно читать Библию.
+  scene_id: hb-c08-u0002
+  visual_cue: 'Original source-specific pictorial composition book: läsa / Bibeln. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0002-s005.wav
+  start_seconds: 99.916667
+  end_seconds: 107.370272
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-011.png
+- sentence_id: hb-c08-u0003-s001
+  sv: I början av 1800-talet blev Finland en autonom del av Ryssland, vilket ändrade Finlands ställning.
+  ru: В начале XIX века Финляндия стала автономной частью России, что изменило её положение.
+  scene_id: hb-c08-u0003
+  visual_cue: 'Original source-specific pictorial composition autonomy: Finland / autonom del av Ryssland.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: I början av artonhundratalet blev Finland en autonom del av Ryssland, vilket ändrade Finlands
+      ställning.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0003-s001.wav
+  start_seconds: 109.833333
+  end_seconds: 119.376735
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-012.png
+- sentence_id: hb-c08-u0003-s002
+  sv: Det var ändå fortfarande kyrkan som skötte folkets utbildning ända till mitten av 1800-talet.
+  ru: Однако вплоть до середины XIX века образованием народа по-прежнему занималась церковь.
+  scene_id: hb-c08-u0003
+  visual_cue: 'Original source-specific pictorial composition qualification: kyrkan / utbildning. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Det var ändå fortfarande kyrkan som skötte folkets utbildning ända till mitten av artonhundratalet.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0003-s002.wav
+  start_seconds: 121.166667
+  end_seconds: 129.73483
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-013.png
+- sentence_id: hb-c08-u0003-s003
+  sv: Efter det började det finländska samhället ändras i allt snabbare takt.
+  ru: После этого финляндское общество стало меняться всё быстрее.
+  scene_id: hb-c08-u0003
+  visual_cue: 'Original source-specific pictorial composition change: samhället / snabbare takt. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0003-s003.wav
+  start_seconds: 131.5
+  end_seconds: 137.699728
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-014.png
+- sentence_id: hb-c08-u0004-s001
+  sv: I och med industrialiseringen skildes skolan från kyrkan.
+  ru: В ходе индустриализации школа была отделена от церкви.
+  scene_id: hb-c08-u0004
+  visual_cue: 'Original source-specific pictorial composition split: skolan / kyrkan. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0004-s001.wav
+  start_seconds: 140.166667
+  end_seconds: 145.391156
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-015.png
+- sentence_id: hb-c08-u0004-s002
+  sv: Arbetande föräldrar kunde inte längre sköta sina barn på dagtid, så det uppstod ett behov av att
+    utveckla skolsystemet.
+  ru: Работающие родители больше не могли заботиться о своих детях днём, поэтому возникла необходимость
+    развивать школьную систему.
+  scene_id: hb-c08-u0004
+  visual_cue: 'Original source-specific pictorial composition meeting: Arbetande föräldrar / barn. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-016
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0004-s002.wav
+  start_seconds: 147.166667
+  end_seconds: 157.267347
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-016.png
+- sentence_id: hb-c08-u0005-s001
+  sv: Kommunerna började grunda folkskolor separat från kyrkan och dessa skolor spreds småningom till
+    hela landet.
+  ru: Муниципалитеты стали создавать народные школы (folkskola) отдельно от церкви, и постепенно такие
+    школы распространились по всей стране.
+  scene_id: hb-c08-u0005
+  visual_cue: 'Verified relevant foreground photograph: Actual Nuuksio elementary school in1952; a historical
+    example of the folk-school network, not an assertion that the nineteenth-century founding occurred
+    in1952. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-017
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0005-s001.wav
+  start_seconds: 159.75
+  end_seconds: 169.084422
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-017.png
+- sentence_id: hb-c08-u0006-s001
+  sv: Vid sidan av folkskolorna fanns också läroverk, av vilka många var privata.
+  ru: Наряду с народными школами существовали и средние учебные заведения (läroverk), многие из которых
+    были частными.
+  scene_id: hb-c08-u0006
+  visual_cue: 'Verified relevant foreground photograph: Actual drawing room of LisaHagman’s private school;
+    accurately identified private educational institution. No assertion about the wealth of individual
+    depicted pupils. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-018
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0006-s001.wav
+  start_seconds: 171.541667
+  end_seconds: 178.786293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-018.png
+- sentence_id: hb-c08-u0006-s002
+  sv: I dem gick främst rikare familjers barn.
+  ru: В них учились главным образом дети из более богатых семей.
+  scene_id: hb-c08-u0006
+  visual_cue: 'Original source-specific pictorial composition family: rikare familjers / barn. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-019
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0006-s002.wav
+  start_seconds: 180.541667
+  end_seconds: 184.233639
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-019.png
+- sentence_id: hb-c08-u0006-s003
+  sv: Det tog flera tiotals år innan hela befolkningen omfattades av utbildningen, för särskilt på landsbygden
+    var det många som inte förstod vikten av utbildning och som ställde sig misstroget till att skicka
+    sina barn till skolan.
+  ru: Потребовалось несколько десятилетий, прежде чем образование охватило всё население, поскольку особенно
+    в сельской местности многие не понимали важности образования и с недоверием относились к тому, чтобы
+    отправлять своих детей в школу.
+  scene_id: hb-c08-u0006
+  visual_cue: 'Verified relevant foreground photograph: Actual Karjala folk-school pupils circa1920. Illustrative
+    historical pupils, not evidence of their families’ attitudes toward schooling. Exact bilingual source
+    text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-020
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0006-s003.wav
+  start_seconds: 186.0
+  end_seconds: 204.111565
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-020.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0007-s001
+  sv: Först på 1900-talets sida började större delen av befolkningen stöda folkskolan och 1921 stiftades
+    en lag om läroplikt i Finland.
+  ru: Лишь после наступления XX века большинство населения стало поддерживать народную школу, а в 1921
+    году в Финляндии был принят закон об обязательном обучении.
+  scene_id: hb-c08-u0007
+  visual_cue: 'Original source-specific pictorial composition obligation: 1921 / läroplikt. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-021
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Först på nittonhundratalets sida började större delen av befolkningen stöda folkskolan och nittonhundratjugoett
+      stiftades en lag om läroplikt i Finland.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0007-s001.wav
+  start_seconds: 206.875
+  end_seconds: 219.971054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-021.png
+- sentence_id: hb-c08-u0007-s002
+  sv: Det betydde att skolgång blev obligatoriskt för alla.
+  ru: Это означало, что посещение школы стало обязательным для всех.
+  scene_id: hb-c08-u0007
+  visual_cue: 'Verified relevant foreground photograph: Actual1950Finnish elementary class portrait illustrates
+    school participation; not used as proof of exact legislative coverage or the1921act. Exact bilingual
+    source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-022
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0007-s002.wav
+  start_seconds: 221.75
+  end_seconds: 226.556531
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-022.png
+- sentence_id: hb-c08-u0007-s003
+  sv: Folkskolan utvidgades till att omfatta hela åldersklassen på 1920- och 1930-talet.
+  ru: В 1920-е и 1930-е годы народная школа расширилась и охватила всю возрастную группу.
+  scene_id: hb-c08-u0007
+  visual_cue: 'Original source-specific pictorial composition class: hela åldersklassen / 1920- och 1930-talet.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-023
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Folkskolan utvidgades till att omfatta hela åldersklassen på nittonhundratjugotalet och nittonhundratrettiotalet.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0007-s003.wav
+  start_seconds: 228.333333
+  end_seconds: 238.016054
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-023.png
+- sentence_id: hb-c08-u0008-s001
+  sv: Gymnasieutbildning och studentexamen blev vanligare särskilt på 1950- och 1960-talet.
+  ru: Обучение в гимназии и выпускной экзамен (studentexamen) стали более распространёнными, особенно
+    в 1950-е и 1960-е годы.
+  scene_id: hb-c08-u0008
+  visual_cue: 'Verified relevant foreground photograph: Actual music class inPuotinharju school,1969.
+    Historical educational context within the source’s1950s–1960sexpansion period; not an examination
+    ceremony. Exact bilingual source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-024
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Gymnasieutbildning och studentexamen blev vanligare särskilt på nittonhundrafemtiotalet och
+      nittonhundrasextiotalet.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0008-s001.wav
+  start_seconds: 240.5
+  end_seconds: 250.80966
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-024.png
+- sentence_id: hb-c08-u0008-s002
+  sv: I Finland började man eftersträva samhällelig jämlikhet och ekonomisk utveckling genom att bygga
+    en välfärdsstat.
+  ru: В Финляндии стали стремиться к общественному равенству и экономическому развитию путём построения
+    государства всеобщего благосостояния.
+  scene_id: hb-c08-u0008
+  visual_cue: 'Original source-specific pictorial composition balance: jämlikhet / välfärdsstat. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-025
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0008-s002.wav
+  start_seconds: 252.583333
+  end_seconds: 262.335714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-025.png
+- sentence_id: hb-c08-u0008-s003
+  sv: Samtidigt föddes tanken på en enhetlig 9-årig grundskola.
+  ru: Одновременно возникла идея единой девятилетней общеобразовательной школы (grundskola).
+  scene_id: hb-c08-u0008
+  visual_cue: 'Original source-specific pictorial composition year: 9-årig / grundskola. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-026
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Samtidigt föddes tanken på en enhetlig nioårig grundskola.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0008-s003.wav
+  start_seconds: 264.125
+  end_seconds: 269.27983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-026.png
+- sentence_id: hb-c08-u0008-s004
+  sv: Under 1970-talet övergick man i hela landet från det gamla systemet med separat folkskola och läroverk
+    till en grundskola som var gemensam för alla.
+  ru: В 1970-е годы по всей стране перешли от старой системы, в которой народная школа и средние учебные
+    заведения существовали отдельно, к единой для всех общеобразовательной школе.
+  scene_id: hb-c08-u0008
+  visual_cue: 'Original source-specific pictorial composition merge: folkskola och läroverk / grundskola.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-027
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override:
+    text: Under nittonhundrasjuttiotalet övergick man i hela landet från det gamla systemet med separat
+      folkskola och läroverk till en grundskola som var gemensam för alla.
+    reason: Meaning-preserving speech-only expansion of Swedish years, numeral range or letter names;
+      exact display source remains unchanged.
+    review_status: pending
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0008-s004.wav
+  start_seconds: 271.041667
+  end_seconds: 284.346701
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-027.png
+- sentence_id: hb-c08-u0009-s001
+  sv: Utvecklingen av utbildningssystemet var en viktig del av uppbyggnaden av välfärdssamhället i Finland.
+  ru: Развитие системы образования было важной частью построения общества всеобщего благосостояния в Финляндии.
+  scene_id: hb-c08-u0009
+  visual_cue: 'Original source-specific pictorial composition bridge: utbildningssystemet / välfärdssamhället.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-028
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0009-s001.wav
+  start_seconds: 286.833333
+  end_seconds: 296.028435
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-028.png
+- sentence_id: hb-c08-u0009-s002
+  sv: Höjningen av medborgarnas utbildningsnivå under de senaste hundra åren har bidragit till landets
+    ekonomiska utveckling och uppkomsten av ett mer jämställt samhälle.
+  ru: Повышение уровня образования граждан за последние сто лет способствовало экономическому развитию
+    страны и формированию общества, в котором женщины и мужчины более равноправны.
+  scene_id: hb-c08-u0009
+  visual_cue: 'Original source-specific pictorial composition balance: utbildningsnivå / jämställt samhälle.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-029
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0009-s002.wav
+  start_seconds: 297.791667
+  end_seconds: 311.58432
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-029.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0010-s001
+  sv: I Finland kan man få en utbildning enligt utbildningssystemet på finska eller svenska.
+  ru: В Финляндии можно получить образование в рамках системы образования на финском или шведском языке.
+  scene_id: hb-c08-u0010
+  visual_cue: 'Original source-specific pictorial composition language: finska / svenska. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-030
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0010-s001.wav
+  start_seconds: 314.375
+  end_seconds: 321.758946
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-030.png
+- sentence_id: hb-c08-u0010-s002
+  sv: I de svenskspråkiga skolorna studerar man också finska.
+  ru: В шведоязычных школах также изучают финский язык.
+  scene_id: hb-c08-u0010
+  visual_cue: 'Original source-specific pictorial composition language: svenskspråkiga skolorna / finska.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-031
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0010-s002.wav
+  start_seconds: 323.541667
+  end_seconds: 328.835816
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-031.png
+- sentence_id: hb-c08-u0010-s003
+  sv: Studierna i finska inleds ofta redan i årskurs ett.
+  ru: Изучение финского языка часто начинается уже в первом классе.
+  scene_id: hb-c08-u0010
+  visual_cue: 'Original source-specific pictorial composition year: finska / årskurs ett. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-032
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0010-s003.wav
+  start_seconds: 330.625
+  end_seconds: 335.57085
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-032.png
+- sentence_id: hb-c08-u0010-s004
+  sv: I de finskspråkiga skolorna studerar man svenska oftast från och med årskurs sex.
+  ru: В финноязычных школах шведский язык чаще всего изучают начиная с шестого класса.
+  scene_id: hb-c08-u0010
+  visual_cue: 'Original source-specific pictorial composition year: svenska / årskurs sex. No new historical
+    claims.'
+  asset_ids:
+  - episode_background
+  - picture-033
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0010-s004.wav
+  start_seconds: 337.333333
+  end_seconds: 344.717279
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-033.png
+- sentence_id: hb-c08-u0011-s001
+  sv: Bakgrunden till det finländska utbildningssystemet är en idé om kontinuerligt lärande.
+  ru: В основе финляндской системы образования лежит идея непрерывного обучения.
+  scene_id: hb-c08-u0011
+  visual_cue: 'Original source-specific pictorial composition continuous: utbildningssystemet / kontinuerligt
+    lärande. No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-034
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0011-s001.wav
+  start_seconds: 347.208333
+  end_seconds: 354.731599
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-034.png
+- sentence_id: hb-c08-u0011-s002
+  sv: Med kontinuerligt lärande avses allt lärande som sker genom hela livet och som syftar till att utveckla
+    individens kunskaper, färdigheter och förmågor i både det personliga livet och arbetslivet.
+  ru: Под непрерывным обучением понимается любое обучение, которое происходит на протяжении всей жизни
+    и направлено на развитие знаний, навыков и способностей человека как в личной, так и в трудовой жизни.
+  scene_id: hb-c08-u0011
+  visual_cue: 'Original source-specific pictorial composition lifelong: hela livet / arbetslivet. No new
+    historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-035
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0011-s002.wav
+  start_seconds: 356.5
+  end_seconds: 372.521769
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-035.png
+  text_style:
+    sv_size: 44
+    ru_size: 36
+- sentence_id: hb-c08-u0011-s003
+  sv: Människan lär sig såväl i skolan som i livet, till exempel i vardagen och hobbyer.
+  ru: Человек учится как в школе, так и в жизни, например в повседневных делах и занимаясь своими увлечениями.
+  scene_id: hb-c08-u0011
+  visual_cue: 'Verified relevant foreground photograph: Actual music classroom inFinland illustrates learning
+    through school and hobbies, without claiming the depicted students’ individual activities. Exact bilingual
+    source text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-036
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0011-s003.wav
+  start_seconds: 375.291667
+  end_seconds: 382.536293
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-036.png
+- sentence_id: hb-c08-u0012-s001
+  sv: Lärandet och studierna upphör inte när en person avlägger sin examen eller blir myndig.
+  ru: Обучение и учёба не прекращаются, когда человек получает диплом или достигает совершеннолетия.
+  scene_id: hb-c08-u0012
+  visual_cue: 'Verified relevant foreground photograph: Actual adult education atKuggom,1970. Historical
+    example supporting the concept of continued learning after initial schooling. Exact bilingual source
+    text remains on the fixed right panel.'
+  asset_ids:
+  - episode_background
+  - picture-037
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0012-s001.wav
+  start_seconds: 385.0
+  end_seconds: 392.523265
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-037.png
+- sentence_id: hb-c08-u0012-s002
+  sv: Det är bra att utveckla sig själv under hela livet, eftersom det omgivande samhället och arbetslivet
+    hela tiden förändras.
+  ru: Полезно развиваться на протяжении всей жизни, поскольку окружающее общество и трудовая жизнь постоянно
+    меняются.
+  scene_id: hb-c08-u0012
+  visual_cue: 'Original source-specific pictorial composition change: utveckla sig själv / arbetslivet.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-038
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0012-s002.wav
+  start_seconds: 394.291667
+  end_seconds: 404.670986
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-038.png
+- sentence_id: hb-c08-u0012-s003
+  sv: Med hjälp av utbildning kan vem som helst ha möjlighet att få en bättre ställning i samhället.
+  ru: Благодаря образованию у любого человека может появиться возможность занять более высокое положение
+    в обществе.
+  scene_id: hb-c08-u0012
+  visual_cue: 'Original source-specific pictorial composition path: utbildning / bättre ställning. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-039
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0012-s003.wav
+  start_seconds: 406.458333
+  end_seconds: 414.399558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-039.png
+- sentence_id: hb-c08-u0012-s004
+  sv: Lärande och bildning är viktiga och användbara för det egna välbefinnandet.
+  ru: Обучение и образованность важны и полезны для собственного благополучия.
+  scene_id: hb-c08-u0012
+  visual_cue: 'Original source-specific pictorial composition growth: Lärande och bildning / välbefinnandet.
+    No new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-040
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0012-s004.wav
+  start_seconds: 416.166667
+  end_seconds: 422.784354
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-040.png
+- sentence_id: hb-c08-u0013-s001
+  sv: Lärande och utbildning hjälper människor att klara sig både i det föränderliga arbetslivet och i
+    en värld som blir alltmer internationell.
+  ru: Обучение и образование помогают людям успешно действовать как в меняющейся трудовой жизни, так и
+    в мире, который становится всё более интернациональным.
+  scene_id: hb-c08-u0013
+  visual_cue: 'Original source-specific pictorial composition globe: arbetslivet / internationell. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-041
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0013-s001.wav
+  start_seconds: 425.25
+  end_seconds: 436.883197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-041.png
+- sentence_id: hb-c08-u0013-s002
+  sv: Finland klarar sig bättre i den internationella konkurrensen om samhället satsar på att utbilda
+    befolkningen.
+  ru: Финляндия успешнее выдерживает международную конкуренцию, если общество вкладывает силы и средства
+    в образование населения.
+  scene_id: hb-c08-u0013
+  visual_cue: 'Original source-specific pictorial composition globe: Finland / utbilda befolkningen. No
+    new historical claims.'
+  asset_ids:
+  - episode_background
+  - picture-042
+  text_highlights: []
+  pronunciation_notes:
+  - Review compounds, Finnish terms and source numerals in whole-video listening; ASR is diagnostic only.
+  speech_override: null
+  pause_after_seconds: 1.5
+  audio_path: studio/media/hb-c08-utveckling/narration/hb-c08-u0013-s002.wav
+  start_seconds: 438.666667
+  end_seconds: 448.210068
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c08-utveckling/pictures/picture-042.png
+render:
+  music_path: studio/media/hb-c08-utveckling/sources/music-bed.flac
+  background_image: studio/media/hb-c08-utveckling/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 3.5339285714285715
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - Finland – Lärobok i samhällsorientering
+    - Yhteiskuntaorientaatio.fi, Swedish learning materials
+    - © Finlands Flyktinghjälp rf; redigerad av Helsingin Aikuisopisto
+    - Finlands Flyktinghjälp; Utbildningsstyrelsen; UF-centret
+    - Fullständiga källor och villkor i medföljande CREDITS.md.
+  - heading: Bild, musik & röst · Изображения, музыка и голос
+    paragraphs:
+    - Heinatori School Oulu pre1911.jpg — Unknown authorUnknown author · Public domain
+    - Smoother Move — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  - heading: Förgrundsbilder · Изображения
+    paragraphs:
+    - Verifierade fotografier från Wikimedia Commons.
+    - Varje upphovsperson, länk och licens finns i CREDITS.md.
+    - 'Original källbaserad illustrationsgrafik: Homebrew video studio.'
+  adaptation_notes:
+  - Exact source Swedish and reviewed Russian retained in source order.
+  - Original foreground illustrations depict source-stated objects and relationships; symbolic scenes
+    are not documentary photographs.
+  - Unique photographic background cropped,darkened,blurred and animated continuously.
+  - Music faded,ducked,+2dBadjusted and repeated with4second equal-power crossfades when needed.
+  palette:
+    background: '#193b40'
+    text: '#faf3e8'
+    secondary: '#c0dce0'
+    highlight: '#e8c081'
+    separator: '#3f6d73'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Heinatori_School_Oulu_pre1911.jpg
+    description: Heinätori school in Oulu before 1911.
+    license: Public domain

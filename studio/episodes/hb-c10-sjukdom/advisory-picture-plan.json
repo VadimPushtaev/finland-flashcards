@@ -1,0 +1,1441 @@
+[
+  {
+    "id": "picture-001",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "sjuk",
+        "icon": "hospital"
+      },
+      {
+        "label": "olycka",
+        "icon": "warning"
+      },
+      {
+        "label": "stanna hemma från arbetet",
+        "icon": "house"
+      }
+    ],
+    "description": "IF sick OR accident -> source right to stay home from work. No duration or automatic sick-pay claim.",
+    "required_logic": "IF sick OR accident -> source right to stay home from work. No duration or automatic sick-pay claim.",
+    "source_text": "Om du blir sjuk eller råkar ut för en olycka har du rätt att stanna hemma från arbetet.",
+    "reviewed_translation": "Если вы заболели или с вами произошёл несчастный случай, вы имеете право остаться дома и не выходить на работу.",
+    "source_sentence_ids": [
+      "hb-c10-u0197-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "Om",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-002",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "finländska sjukförsäkringen",
+        "icon": "shield"
+      },
+      {
+        "label": "efter en självrisktid",
+        "icon": "clock"
+      },
+      {
+        "label": "söka sjukdagpenning",
+        "icon": "document"
+      }
+    ],
+    "description": "Covered by FINNISH HEALTH INSURANCE AND AFTER waiting period -> right to APPLY for sickness allowance. Not immediate or automatic payment.",
+    "required_logic": "Covered by FINNISH HEALTH INSURANCE AND AFTER waiting period -> right to APPLY for sickness allowance. Not immediate or automatic payment.",
+    "source_text": "Om du omfattas av den finländska sjukförsäkringen (sairausvakuutus) har du efter en självrisktid (omavastuuaika) rätt att söka sjukdagpenning (sairauspäiväraha) hos FPA (Kela).",
+    "reviewed_translation": "Если на вас распространяется финляндское медицинское страхование (sairausvakuutus), по истечении периода ожидания выплаты пособия (omavastuuaika) вы имеете право подать в Ведомство социального обеспечения (FPA, Kela) заявление на пособие по болезни (sairauspäiväraha).",
+    "source_sentence_ids": [
+      "hb-c10-u0197-s002"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "efter en självrisktid",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-003",
+    "visual_type": "diagram",
+    "composition": "timeline",
+    "nodes": [
+      {
+        "label": "den dag då du insjuknade",
+        "icon": "calendar"
+      },
+      {
+        "label": "följande nio vardagar",
+        "icon": "calendar"
+      }
+    ],
+    "description": "USUALLY illness day PLUS following NINE WEEKDAYS; not nine calendar days or total nine including illness day.",
+    "required_logic": "USUALLY illness day PLUS following NINE WEEKDAYS; not nine calendar days or total nine including illness day.",
+    "source_text": "Självrisktiden är vanligen den dag då du insjuknade och därpå följande nio vardagar.",
+    "reviewed_translation": "Период ожидания выплаты пособия обычно включает день заболевания и следующие за ним девять будних дней.",
+    "source_sentence_ids": [
+      "hb-c10-u0198-s001",
+      "hb-c10-u0197-s002"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "vanligen",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-004",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "över en månad",
+        "icon": "calendar"
+      },
+      {
+        "label": "din arbetsgivare",
+        "icon": "work"
+      },
+      {
+        "label": "full lön för självrisktiden",
+        "icon": "coins"
+      }
+    ],
+    "description": "Employment lasted MORE THAN ONE MONTH before illness -> employer full salary DURING waiting period. Not every worker or all sickness time.",
+    "required_logic": "Employment lasted MORE THAN ONE MONTH before illness -> employer full salary DURING waiting period. Not every worker or all sickness time.",
+    "source_text": "Om din anställning har varat över en månad före insjuknandet betalar din arbetsgivare full lön för självrisktiden.",
+    "reviewed_translation": "Если до заболевания ваши трудовые отношения длились больше месяца, работодатель выплачивает вам полную заработную плату за период ожидания.",
+    "source_sentence_ids": [
+      "hb-c10-u0198-s002"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "Om",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-005",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Sjukdagpenning",
+        "icon": "coins"
+      },
+      {
+        "label": "högst 300 vardagar",
+        "icon": "calendar"
+      }
+    ],
+    "description": "MAXIMUM 300 WEEKDAYS, not calendar days or a guarantee of the maximum.",
+    "required_logic": "MAXIMUM 300 WEEKDAYS, not calendar days or a guarantee of the maximum.",
+    "source_text": "Sjukdagpenning betalas för högst 300 vardagar.",
+    "reviewed_translation": "Пособие по болезни выплачивается не более чем за 300 будних дней.",
+    "source_sentence_ids": [
+      "hb-c10-u0198-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "högst",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-006",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "sökas",
+        "icon": "document"
+      },
+      {
+        "label": "inom två månader efter insjuknandet",
+        "icon": "calendar"
+      }
+    ],
+    "description": "Apply WITHIN TWO MONTHS AFTER illness began; do not invent an absolute date.",
+    "required_logic": "Apply WITHIN TWO MONTHS AFTER illness began; do not invent an absolute date.",
+    "source_text": "Den ska sökas inom två månader efter insjuknandet.",
+    "reviewed_translation": "Заявление на него необходимо подать в течение двух месяцев после начала болезни.",
+    "source_sentence_ids": [
+      "hb-c10-u0198-s004",
+      "hb-c10-u0198-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "inom två månader efter insjuknandet",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit.",
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-007",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "ansöka om sjukdagpenning",
+        "icon": "document"
+      },
+      {
+        "label": "om du",
+        "icon": "shield"
+      }
+    ],
+    "description": "Introduces cumulative eligibility list; right to apply, not granted benefit.",
+    "required_logic": "Introduces cumulative eligibility list; right to apply, not granted benefit.",
+    "source_text": "Du kan ansöka om sjukdagpenning om du:",
+    "reviewed_translation": "Вы можете подать заявление на пособие по болезни, если вы:",
+    "source_sentence_ids": [
+      "hb-c10-u0199-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan ansöka",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-008",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "den finländska sjukförsäkringen",
+        "icon": "shield"
+      }
+    ],
+    "description": "Finnish health-insurance coverage is one list condition, not sufficient by itself.",
+    "required_logic": "Finnish health-insurance coverage is one list condition, not sufficient by itself.",
+    "source_text": "omfattas av den finländska sjukförsäkringen",
+    "reviewed_translation": "охвачены финляндским медицинским страхованием",
+    "source_sentence_ids": [
+      "hb-c10-u0200-s001",
+      "hb-c10-u0199-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-009",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "18–67 år gammal",
+        "icon": "person"
+      }
+    ],
+    "description": "Age 18 THROUGH 67, alongside the other list conditions.",
+    "required_logic": "Age 18 THROUGH 67, alongside the other list conditions.",
+    "source_text": "är 18–67 år gammal",
+    "reviewed_translation": "находитесь в возрасте от 18 до 67 лет",
+    "source_sentence_ids": [
+      "hb-c10-u0202-s001",
+      "hb-c10-u0199-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-010",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "arbetsoförmögen",
+        "icon": "prohibited"
+      },
+      {
+        "label": "sjukdom",
+        "icon": "hospital"
+      }
+    ],
+    "description": "Unable to work BECAUSE of illness; do not equate any diagnosis with work incapacity.",
+    "required_logic": "Unable to work BECAUSE of illness; do not equate any diagnosis with work incapacity.",
+    "source_text": "är arbetsoförmögen på grund av en sjukdom",
+    "reviewed_translation": "нетрудоспособны из-за болезни",
+    "source_sentence_ids": [
+      "hb-c10-u0203-s001",
+      "hb-c10-u0199-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-011",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "arbetstagare",
+        "icon": "work"
+      },
+      {
+        "label": "företagare",
+        "icon": "shop"
+      },
+      {
+        "label": "studerar på heltid",
+        "icon": "book_pages"
+      }
+    ],
+    "description": "Listed employment/study/job-seeking/own-household statuses are ALTERNATIVES within this item; not all simultaneously required.",
+    "required_logic": "Listed employment/study/job-seeking/own-household statuses are ALTERNATIVES within this item; not all simultaneously required.",
+    "source_text": "är arbetstagare, företagare, yrkesutövare, studerar på heltid eller arbetslös arbetssökande eller om du sköter din egen ekonomi.",
+    "reviewed_translation": "являетесь наёмным работником, предпринимателем, самостоятельно практикующим специалистом, учитесь с полной учебной нагрузкой, являетесь безработным соискателем работы или ведёте собственные финансовые дела.",
+    "source_sentence_ids": [
+      "hb-c10-u0204-s001",
+      "hb-c10-u0199-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "eller",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-012",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "din arbetsgivare",
+        "icon": "work"
+      },
+      {
+        "label": "ansöker",
+        "icon": "document"
+      },
+      {
+        "label": "sjukdagpenningen",
+        "icon": "coins"
+      }
+    ],
+    "description": "IF salary paid during sick leave, EMPLOYER applies for sickness allowance.",
+    "required_logic": "IF salary paid during sick leave, EMPLOYER applies for sickness allowance.",
+    "source_text": "Om du får lön under sjukledigheten, ansöker din arbetsgivare om sjukdagpenningen.",
+    "reviewed_translation": "Если во время отпуска по болезни вы получаете заработную плату, заявление на пособие по болезни подаёт ваш работодатель.",
+    "source_sentence_ids": [
+      "hb-c10-u0205-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "Om du får lön under sjukledigheten",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit.",
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-013",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "sjukdagpenningen",
+        "icon": "coins"
+      },
+      {
+        "label": "din arbetsgivare",
+        "icon": "work"
+      }
+    ],
+    "description": "Payment to employer ONLY in preceding salary-paid case. Never show all benefits automatically going to employer.",
+    "required_logic": "Payment to employer ONLY in preceding salary-paid case. Never show all benefits automatically going to employer.",
+    "source_text": "Då betalas sjukdagpenningen till din arbetsgivare.",
+    "reviewed_translation": "В таком случае пособие по болезни выплачивается вашему работодателю.",
+    "source_sentence_ids": [
+      "hb-c10-u0205-s002",
+      "hb-c10-u0205-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-014",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "FPA",
+        "icon": "court"
+      },
+      {
+        "label": "sjukdagpenningen",
+        "icon": "coins"
+      },
+      {
+        "label": "dig",
+        "icon": "person"
+      }
+    ],
+    "description": "Long illness AND employer no longer pays sick-leave salary -> Kela pays APPLICANT. Both gates required.",
+    "required_logic": "Long illness AND employer no longer pays sick-leave salary -> Kela pays APPLICANT. Both gates required.",
+    "source_text": "Om du är sjuk en lång tid och din arbetsgivare inte längre betalar din lön under sjukledigheten, betalar FPA sjukdagpenningen till dig.",
+    "reviewed_translation": "Если вы болеете долго и работодатель больше не выплачивает вам заработную плату за время отпуска по болезни, FPA выплачивает пособие по болезни вам.",
+    "source_sentence_ids": [
+      "hb-c10-u0205-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "och",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-015",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Sjukdagpenningens belopp",
+        "icon": "coins"
+      },
+      {
+        "label": "inkomsterna",
+        "icon": "work"
+      }
+    ],
+    "description": "Amount depends on earnings; no invented rate or guaranteed full wage replacement.",
+    "required_logic": "Amount depends on earnings; no invented rate or guaranteed full wage replacement.",
+    "source_text": "Sjukdagpenningens belopp beror på inkomsterna.",
+    "reviewed_translation": "Размер пособия по болезни зависит от доходов.",
+    "source_sentence_ids": [
+      "hb-c10-u0205-s004"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-016",
+    "visual_type": "diagram",
+    "composition": "merge",
+    "nodes": [
+      {
+        "label": "ansökan",
+        "icon": "document"
+      },
+      {
+        "label": "läkarintyg om arbetsoförmåga",
+        "icon": "document"
+      },
+      {
+        "label": "bifoga",
+        "icon": "paper"
+      }
+    ],
+    "description": "Attach medical work-incapacity certificate to allowance application, not a generic prescription.",
+    "required_logic": "Attach medical work-incapacity certificate to allowance application, not a generic prescription.",
+    "source_text": "När du söker sjukdagpenning ska du till ansökan bifoga ett läkarintyg om arbetsoförmåga.",
+    "reviewed_translation": "При подаче заявления на пособие по болезни необходимо приложить к заявлению врачебную справку о нетрудоспособности.",
+    "source_sentence_ids": [
+      "hb-c10-u0205-s005"
+    ],
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-017",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "18–67-åriga",
+        "icon": "person"
+      },
+      {
+        "label": "heltidsarbetande anställda eller företagare",
+        "icon": "work"
+      },
+      {
+        "label": "sociala tryggheten i Finland",
+        "icon": "shield"
+      }
+    ],
+    "description": "PARTIAL sickness allowance: age 18–67 AND full-time employee OR entrepreneur AND Finnish social-security coverage. Do not use adult disability-benefit 16–64 range.",
+    "required_logic": "PARTIAL sickness allowance: age 18–67 AND full-time employee OR entrepreneur AND Finnish social-security coverage. Do not use adult disability-benefit 16–64 range.",
+    "source_text": "Den partiella sjukdagpenningen (osasairauspäiväraha) är avsedd för 18–67-åriga heltidsarbetande anställda eller företagare som omfattas av den sociala tryggheten i Finland .",
+    "reviewed_translation": "Частичное пособие по болезни (osasairauspäiväraha) предназначено для работающих полный рабочий день наёмных работников или предпринимателей в возрасте от 18 до 67 лет, охваченных системой социального обеспечения Финляндии.",
+    "source_sentence_ids": [
+      "hb-c10-u0206-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "omfattas av den sociala tryggheten i Finland",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-018",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "sjuk",
+        "icon": "medicine"
+      },
+      {
+        "label": "fortsätta att arbeta",
+        "icon": "work"
+      },
+      {
+        "label": "återgå till arbetet",
+        "icon": "work"
+      }
+    ],
+    "description": "Purpose is continued/returned work despite illness; no claim everyone should work while sick.",
+    "required_logic": "Purpose is continued/returned work despite illness; no claim everyone should work while sick.",
+    "source_text": "Syftet med den partiella sjukdagpenningen är att du kan fortsätta att arbeta eller att återgå till arbetet trots att du har blivit sjuk.",
+    "reviewed_translation": "Цель частичного пособия по болезни — дать вам возможность продолжать работать или вернуться к работе, несмотря на болезнь.",
+    "source_sentence_ids": [
+      "hb-c10-u0206-s002"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-019",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "din läkare",
+        "icon": "person"
+      },
+      {
+        "label": "din arbetsgivare",
+        "icon": "work"
+      },
+      {
+        "label": "partiell sjukdagpenning",
+        "icon": "document"
+      }
+    ],
+    "description": "Discuss FIRST with occupational physician AND employer about applying; no unilateral work instruction.",
+    "required_logic": "Discuss FIRST with occupational physician AND employer about applying; no unilateral work instruction.",
+    "source_text": "Diskutera först med din läkare inom företagshälsovården och din arbetsgivare om möjligheten att söka partiell sjukdagpenning.",
+    "reviewed_translation": "Сначала обсудите возможность подать заявление на частичное пособие по болезни с вашим врачом службы медицинского обслуживания на работе и с работодателем.",
+    "source_sentence_ids": [
+      "hb-c10-u0206-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "först",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit.",
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-020",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Företagshälsovårdsläkaren",
+        "icon": "person"
+      },
+      {
+        "label": "deltidsarbeta",
+        "icon": "work"
+      },
+      {
+        "label": "sjuk",
+        "icon": "hospital"
+      }
+    ],
+    "description": "Occupational physician determines whether part-time work is possible during illness.",
+    "required_logic": "Occupational physician determines whether part-time work is possible during illness.",
+    "source_text": "Företagshälsovårdsläkaren avgör om du kan deltidsarbeta medan du är sjuk.",
+    "reviewed_translation": "Врач службы медицинского обслуживания на работе определяет, можете ли вы работать неполный рабочий день во время болезни.",
+    "source_sentence_ids": [
+      "hb-c10-u0206-s004"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-021",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "funktionsnedsättning eller en sjukdom",
+        "icon": "warning"
+      },
+      {
+        "label": "minst ett år",
+        "icon": "calendar"
+      },
+      {
+        "label": "handikappbidrag",
+        "icon": "coins"
+      }
+    ],
+    "description": "Disability OR illness impairs functioning CONTINUOUSLY for AT LEAST ONE YEAR -> MAY get disability allowance. Distinct from pensioner TOTAL year in source 40.",
+    "required_logic": "Disability OR illness impairs functioning CONTINUOUSLY for AT LEAST ONE YEAR -> MAY get disability allowance. Distinct from pensioner TOTAL year in source 40.",
+    "source_text": "Om du har en funktionsnedsättning eller en sjukdom som försämrar din funktionsförmåga sammanhängande under minst ett år, kan du få handikappbidrag.",
+    "reviewed_translation": "Если у вас есть инвалидность или заболевание, из-за которых ваши функциональные способности остаются сниженными непрерывно в течение как минимум года, вы можете получать пособие по инвалидности.",
+    "source_sentence_ids": [
+      "hb-c10-u0207-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "sammanhängande under minst ett år",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-022",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "läkarintyg",
+        "icon": "document"
+      },
+      {
+        "label": "ansöka om handikappbidrag",
+        "icon": "document"
+      }
+    ],
+    "description": "Medical certificate REQUIRED to APPLY; still no guarantee of grant.",
+    "required_logic": "Medical certificate REQUIRED to APPLY; still no guarantee of grant.",
+    "source_text": "Du måste ha ett läkarintyg för att ansöka om handikappbidrag.",
+    "reviewed_translation": "Для подачи заявления на пособие по инвалидности необходима врачебная справка.",
+    "source_sentence_ids": [
+      "hb-c10-u0207-s002"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "måste",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit.",
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-023",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "rätt till FPA:s förmåner",
+        "icon": "coins"
+      },
+      {
+        "label": "minst tre år",
+        "icon": "calendar"
+      },
+      {
+        "label": "Finland eller i något annat EU- eller EES-land eller i Schweiz",
+        "icon": "globe"
+      }
+    ],
+    "description": "Entitled to Kela benefits AND AT LEAST THREE YEARS residence in Finland OR other EU/EEA country OR Switzerland. Country alternatives do not replace shared entitlement/time gates.",
+    "required_logic": "Entitled to Kela benefits AND AT LEAST THREE YEARS residence in Finland OR other EU/EEA country OR Switzerland. Country alternatives do not replace shared entitlement/time gates.",
+    "source_text": "Villkoret är att du har rätt till FPA:s förmåner och att du har bott minst tre år i Finland eller i något annat EU- eller EES-land eller i Schweiz.",
+    "reviewed_translation": "Условием является наличие права на пособия FPA и проживание не менее трёх лет в Финляндии, другой стране ЕС или ЕЭЗ либо в Швейцарии.",
+    "source_sentence_ids": [
+      "hb-c10-u0207-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "och",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-024",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Handikappbidrag för vuxna",
+        "icon": "coins"
+      },
+      {
+        "label": "16–64-åringar",
+        "icon": "person"
+      }
+    ],
+    "description": "Adult DISABILITY allowance source age 16–64; separate from sickness/partial-sickness source age 18–67. Preserve archived wording.",
+    "required_logic": "Adult DISABILITY allowance source age 16–64; separate from sickness/partial-sickness source age 18–67. Preserve archived wording.",
+    "source_text": "Handikappbidrag för vuxna betalas till 16–64-åringar.",
+    "reviewed_translation": "Пособие по инвалидности для взрослых выплачивается людям в возрасте от 16 до 64 лет.",
+    "source_sentence_ids": [
+      "hb-c10-u0207-s004",
+      "hb-c10-u0207-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-025",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "olägenhet",
+        "icon": "warning"
+      },
+      {
+        "label": "hjälp och handledning",
+        "icon": "people"
+      },
+      {
+        "label": "Handikappbidragets storlek",
+        "icon": "coins"
+      }
+    ],
+    "description": "Amount depends on impact and need for help/guidance; no invented payment bands.",
+    "required_logic": "Amount depends on impact and need for help/guidance; no invented payment bands.",
+    "source_text": "Handikappbidragets storlek beror på hur stor olägenhet din sjukdom eller funktionsnedsättning orsakar dig och hur mycket hjälp och handledning du behöver.",
+    "reviewed_translation": "Размер пособия по инвалидности зависит от того, насколько большие затруднения причиняет вам заболевание или инвалидность и сколько помощи и наставнической поддержки вам требуется.",
+    "source_sentence_ids": [
+      "hb-c10-u0207-s005"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-026",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "i hemmet",
+        "icon": "house"
+      },
+      {
+        "label": "en närstående med funktionsnedsättning",
+        "icon": "people"
+      },
+      {
+        "label": "stöd för närståendevård",
+        "icon": "coins"
+      }
+    ],
+    "description": "IF caring AT HOME for close person with disability, MAY receive informal-care support from OWN WELLBEING AREA, not automatically Kela.",
+    "required_logic": "IF caring AT HOME for close person with disability, MAY receive informal-care support from OWN WELLBEING AREA, not automatically Kela.",
+    "source_text": "Om du vårdar en närstående med funktionsnedsättning i hemmet kan du få stöd för närståendevård (omaishoidontuki) från ditt välfärdsområde.",
+    "reviewed_translation": "Если вы ухаживаете дома за близким человеком с инвалидностью, вы можете получать пособие по уходу за близким человеком (omaishoidontuki) от своего региона по обеспечению благополучия населения (välfärdsområde).",
+    "source_sentence_ids": [
+      "hb-c10-u0208-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-027",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "funktionshinderservicen",
+        "icon": "people"
+      },
+      {
+        "label": "rådgivningen om närståendevård",
+        "icon": "document"
+      }
+    ],
+    "description": "Picture only the exact source concepts and relationships. No diagnosis, invented eligibility, treatment guarantee, dosage, administration instruction or identifiable patient status.",
+    "required_logic": "Picture only the exact source concepts and relationships. No diagnosis, invented eligibility, treatment guarantee, dosage, administration instruction or identifiable patient status.",
+    "source_text": "Fråga mer hos funktionshinderservicen (vammaispalvelut) eller rådgivningen om närståendevård (omaishoito) i ditt område.",
+    "reviewed_translation": "Узнайте подробнее в службе помощи людям с инвалидностью (vammaispalvelut) или в консультации по уходу за близкими (omaishoito) в вашем регионе.",
+    "source_sentence_ids": [
+      "hb-c10-u0208-s002"
+    ],
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-028",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "under 16 år",
+        "icon": "child"
+      },
+      {
+        "label": "minst sex månaders tid",
+        "icon": "calendar"
+      },
+      {
+        "label": "handikappförmån",
+        "icon": "coins"
+      }
+    ],
+    "description": "Child UNDER 16 AND due to illness/disability needs REGULAR care, attention and rehabilitation for AT LEAST SIX MONTHS -> MAY receive benefit. Preserve all gates.",
+    "required_logic": "Child UNDER 16 AND due to illness/disability needs REGULAR care, attention and rehabilitation for AT LEAST SIX MONTHS -> MAY receive benefit. Preserve all gates.",
+    "source_text": "Ett barn under 16 år kan få handikappförmån (vammaistuki) om hen på grund av sin funktionsnedsättning eller sin sjukdom behöver regelbunden vård, omsorg och rehabilitering under minst sex månaders tid.",
+    "reviewed_translation": "Ребёнок младше 16 лет может получать пособие по инвалидности (vammaistuki), если из-за инвалидности или заболевания ему в течение как минимум шести месяцев требуются регулярное лечение, уход и реабилитация.",
+    "source_sentence_ids": [
+      "hb-c10-u0209-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "regelbunden vård, omsorg och rehabilitering",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-029",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "ansöker",
+        "icon": "document"
+      },
+      {
+        "label": "barn under 16 år",
+        "icon": "child"
+      },
+      {
+        "label": "FPA",
+        "icon": "court"
+      }
+    ],
+    "description": "Application at Kela, child UNDER 16; not automatic payment.",
+    "required_logic": "Application at Kela, child UNDER 16; not automatic payment.",
+    "source_text": "Du ansöker om handikappförmån för barn under 16 år vid FPA.",
+    "reviewed_translation": "Заявление на пособие по инвалидности для ребёнка младше 16 лет подают в FPA.",
+    "source_sentence_ids": [
+      "hb-c10-u0209-s002"
+    ],
+    "advisory_only": true,
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  },
+  {
+    "id": "picture-030",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Handikappförmånet",
+        "icon": "coins"
+      },
+      {
+        "label": "bestämd period",
+        "icon": "calendar"
+      }
+    ],
+    "description": "USUALLY fixed period; preserve literal archived Handikappförmånet spelling.",
+    "required_logic": "USUALLY fixed period; preserve literal archived Handikappförmånet spelling.",
+    "source_text": "Handikappförmånet beviljas vanligtvis för en bestämd period.",
+    "reviewed_translation": "Пособие по инвалидности обычно назначают на определённый срок.",
+    "source_sentence_ids": [
+      "hb-c10-u0209-s003",
+      "hb-c10-u0209-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "vanligtvis",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-031",
+    "visual_type": "diagram",
+    "composition": "timeline",
+    "nodes": [
+      {
+        "label": "perioden har gått",
+        "icon": "calendar"
+      },
+      {
+        "label": "ansöka om förlängning",
+        "icon": "document"
+      }
+    ],
+    "description": "When that period ends, MAY APPLY for extension. No automatic renewal.",
+    "required_logic": "When that period ends, MAY APPLY for extension. No automatic renewal.",
+    "source_text": "När perioden har gått kan man ansöka om förlängning för bidraget.",
+    "reviewed_translation": "По истечении этого срока можно подать заявление о продлении выплаты пособия.",
+    "source_sentence_ids": [
+      "hb-c10-u0209-s004",
+      "hb-c10-u0209-s003"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan man ansöka",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-032",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "ett barn",
+        "icon": "child"
+      },
+      {
+        "label": "vård eller rehabilitering",
+        "icon": "hospital"
+      },
+      {
+        "label": "kan inte arbeta",
+        "icon": "prohibited"
+      }
+    ],
+    "description": "Must participate in care/rehabilitation of severely ill/disabled child AND cannot work BECAUSE OF THAT -> MAY APPLY for special-care allowance.",
+    "required_logic": "Must participate in care/rehabilitation of severely ill/disabled child AND cannot work BECAUSE OF THAT -> MAY APPLY for special-care allowance.",
+    "source_text": "Du kan ansöka om specialvårdspenning om du måste delta i vård eller rehabilitering av ett barn med en svår sjukdom eller en funktionsnedsättning och kan inte arbeta på grund av det.",
+    "reviewed_translation": "Вы можете подать заявление на специальное пособие по уходу, если вам необходимо участвовать в уходе за ребёнком с тяжёлым заболеванием или инвалидностью либо в его реабилитации и из-за этого вы не можете работать.",
+    "source_sentence_ids": [
+      "hb-c10-u0272-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "och kan inte arbeta på grund av det",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-033",
+    "visual_type": "diagram",
+    "composition": "contrast",
+    "nodes": [
+      {
+        "label": "specialvårdspenning",
+        "icon": "coins"
+      },
+      {
+        "label": "rehabiliteringspenning",
+        "icon": "coins"
+      }
+    ],
+    "description": "Rehabilitation allowance is an ALTERNATIVE during child rehabilitation, not an additional simultaneous identical payment.",
+    "required_logic": "Rehabilitation allowance is an ALTERNATIVE during child rehabilitation, not an additional simultaneous identical payment.",
+    "source_text": "Som alternativ för specialvårdspenning har du rätt till rehabiliteringspenning under rehabilitering av barnet.",
+    "reviewed_translation": "Вместо специального пособия по уходу вы имеете право на пособие на период реабилитации ребёнка.",
+    "source_sentence_ids": [
+      "hb-c10-u0272-s002"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "under rehabilitering av barnet",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-034",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "specialvårdspenning",
+        "icon": "coins"
+      },
+      {
+        "label": "FPA",
+        "icon": "court"
+      }
+    ],
+    "description": "Header: MAY get special-care allowance IF one of following source-listed situations; preserve preceding inability-to-work context.",
+    "required_logic": "Header: MAY get special-care allowance IF one of following source-listed situations; preserve preceding inability-to-work context.",
+    "source_text": "Du kan få specialvårdspenning från FPA om du",
+    "reviewed_translation": "Вы можете получать специальное пособие по уходу от FPA, если вы",
+    "source_sentence_ids": [
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "om du",
+        "node_indices": [
+          0,
+          1
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-035",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "under 7 år",
+        "icon": "child"
+      },
+      {
+        "label": "sjukhus- eller poliklinikvården",
+        "icon": "hospital"
+      }
+    ],
+    "description": "Participating in hospital OR outpatient care of child UNDER 7. Do not silently add the explicit severe-illness qualifier from next age case to this literal item.",
+    "required_logic": "Participating in hospital OR outpatient care of child UNDER 7. Do not silently add the explicit severe-illness qualifier from next age case to this literal item.",
+    "source_text": "deltar i sjukhus- eller poliklinikvården av ditt barn som är under 7 år",
+    "reviewed_translation": "участвуете в уходе за своим ребёнком младше 7 лет во время его стационарного или амбулаторного лечения",
+    "source_sentence_ids": [
+      "hb-c10-u0211-s001",
+      "hb-c10-u0272-s001",
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-036",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "7–15 år",
+        "icon": "child"
+      },
+      {
+        "label": "sjukhus- eller poliklinikvården",
+        "icon": "hospital"
+      },
+      {
+        "label": "svår sjukdom",
+        "icon": "warning"
+      }
+    ],
+    "description": "Participating in hospital OR outpatient care of child age 7–15 WITH SEVERE illness; severity belongs to this case.",
+    "required_logic": "Participating in hospital OR outpatient care of child age 7–15 WITH SEVERE illness; severity belongs to this case.",
+    "source_text": "deltar i sjukhus- eller poliklinikvården av ditt barn i åldern 7–15 år som har en svår sjukdom",
+    "reviewed_translation": "участвуете в уходе за своим ребёнком в возрасте 7–15 лет с тяжёлым заболеванием во время его стационарного или амбулаторного лечения",
+    "source_sentence_ids": [
+      "hb-c10-u0213-s001",
+      "hb-c10-u0272-s001",
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "som har en svår sjukdom",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-037",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "0–15 år",
+        "icon": "child"
+      },
+      {
+        "label": "rehabiliteringen",
+        "icon": "hospital"
+      }
+    ],
+    "description": "Participating in rehabilitation of child age 0–15; not child under 7 only.",
+    "required_logic": "Participating in rehabilitation of child age 0–15; not child under 7 only.",
+    "source_text": "deltar i rehabiliteringen av ditt barn i åldern 0–15 år",
+    "reviewed_translation": "участвуете в реабилитации своего ребёнка в возрасте 0–15 лет",
+    "source_sentence_ids": [
+      "hb-c10-u0214-s001",
+      "hb-c10-u0272-s001",
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-038",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "under 16 år",
+        "icon": "child"
+      },
+      {
+        "label": "hemma",
+        "icon": "house"
+      },
+      {
+        "label": "kopplad till barnets sjukhus- eller poliklinikvård",
+        "icon": "hospital"
+      }
+    ],
+    "description": "Child UNDER 16 WITH SEVERE illness AND HOME care LINKED to hospital/outpatient care. All cumulative, no unconditional home-care benefit.",
+    "required_logic": "Child UNDER 16 WITH SEVERE illness AND HOME care LINKED to hospital/outpatient care. All cumulative, no unconditional home-care benefit.",
+    "source_text": "vårdar ditt barn under 16 år som har en svår sjukdom hemma och att hemvården är kopplad till barnets sjukhus- eller poliklinikvård",
+    "reviewed_translation": "ухаживаете дома за своим ребёнком младше 16 лет с тяжёлым заболеванием и этот уход связан со стационарным или амбулаторным лечением ребёнка",
+    "source_sentence_ids": [
+      "hb-c10-u0215-s001",
+      "hb-c10-u0272-s001",
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "som har en svår sjukdom",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-039",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "i beredskap",
+        "icon": "clock"
+      },
+      {
+        "label": "skol- eller dagvårdsförsök",
+        "icon": "house"
+      },
+      {
+        "label": "svår sjukdom",
+        "icon": "warning"
+      }
+    ],
+    "description": "On standby during SCHOOL/DAYCARE TRIAL associated with severe illness. Not general standby for any school day.",
+    "required_logic": "On standby during SCHOOL/DAYCARE TRIAL associated with severe illness. Not general standby for any school day.",
+    "source_text": "finns i beredskap under barnets skol- eller dagvårdsförsök i anslutning till en svår sjukdom.",
+    "reviewed_translation": "остаётесь наготове во время пробного посещения ребёнком школы или учреждения дневного ухода в связи с тяжёлым заболеванием.",
+    "source_sentence_ids": [
+      "hb-c10-u0216-s001",
+      "hb-c10-u0272-s001",
+      "hb-c10-u0210-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "i anslutning till en svår sjukdom",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-040",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "En pensionär",
+        "icon": "person"
+      },
+      {
+        "label": "sammanlagt minst ett år",
+        "icon": "calendar"
+      },
+      {
+        "label": "vårdbidrag för pensionstagare",
+        "icon": "coins"
+      }
+    ],
+    "description": "PENSIONER whose functioning impaired due to illness/injury for a TOTAL of AT LEAST ONE YEAR -> MAY get pensioner care allowance. Total is not continuous source-21 requirement.",
+    "required_logic": "PENSIONER whose functioning impaired due to illness/injury for a TOTAL of AT LEAST ONE YEAR -> MAY get pensioner care allowance. Total is not continuous source-21 requirement.",
+    "source_text": "En pensionär vars funktionsförmåga försämrats under sammanlagt minst ett år på grund av sjukdom eller skada kan få vårdbidrag för pensionstagare.",
+    "reviewed_translation": "Пенсионер, чьи функциональные способности снижены из-за заболевания или травмы в общей сложности не менее года, может получать пособие по уходу для пенсионеров.",
+    "source_sentence_ids": [
+      "hb-c10-u0217-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "sammanlagt minst ett år",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-041",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "regelbunden hjälp",
+        "icon": "people"
+      },
+      {
+        "label": "handledning och övervakning",
+        "icon": "shield"
+      },
+      {
+        "label": "stöd",
+        "icon": "coins"
+      }
+    ],
+    "description": "IF due to disability/illness needs regular help OR guidance AND supervision as source phrased; preserve wording without silently simplifying conjunction scope.",
+    "required_logic": "IF due to disability/illness needs regular help OR guidance AND supervision as source phrased; preserve wording without silently simplifying conjunction scope.",
+    "source_text": "Du kan få stöd om du på grund av ditt handikapp eller din sjukdom behöver regelbunden hjälp eller handledning och övervakning.",
+    "reviewed_translation": "Вы можете получать пособие, если из-за инвалидности или заболевания вам регулярно необходима помощь либо наставническая поддержка и наблюдение.",
+    "source_sentence_ids": [
+      "hb-c10-u0217-s002",
+      "hb-c10-u0217-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "om",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit."
+  },
+  {
+    "id": "picture-042",
+    "visual_type": "diagram",
+    "composition": "group",
+    "nodes": [
+      {
+        "label": "Hur stort stöd",
+        "icon": "coins"
+      },
+      {
+        "label": "hur mycket hjälp",
+        "icon": "people"
+      }
+    ],
+    "description": "Amount depends on help needed, not income necessarily; no invented values.",
+    "required_logic": "Amount depends on help needed, not income necessarily; no invented values.",
+    "source_text": "Hur stort stöd du får beror på hur mycket hjälp du behöver.",
+    "reviewed_translation": "Размер получаемого пособия зависит от того, сколько помощи вам требуется.",
+    "source_sentence_ids": [
+      "hb-c10-u0217-s003",
+      "hb-c10-u0217-s001"
+    ],
+    "advisory_only": true
+  },
+  {
+    "id": "picture-043",
+    "visual_type": "diagram",
+    "composition": "flow",
+    "nodes": [
+      {
+        "label": "Du",
+        "icon": "person"
+      },
+      {
+        "label": "ansöka",
+        "icon": "document"
+      },
+      {
+        "label": "FPA",
+        "icon": "court"
+      }
+    ],
+    "description": "PENSIONER care-allowance application to Kela; no conflation with adult/child disability allowance.",
+    "required_logic": "PENSIONER care-allowance application to Kela; no conflation with adult/child disability allowance.",
+    "source_text": "Du kan ansöka om vårdbidrag för pensionstagare hos FPA.",
+    "reviewed_translation": "Вы можете подать заявление на пособие по уходу для пенсионеров в FPA.",
+    "source_sentence_ids": [
+      "hb-c10-u0217-s004",
+      "hb-c10-u0217-s001"
+    ],
+    "advisory_only": true,
+    "conditions": [
+      {
+        "label": "kan ansöka",
+        "node_indices": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "condition_layout_advisory": "Inspect the single literal bar at final font/size; every further gate remains explicit in required_logic and full bilingual source. Do not drop qualifications to fit.",
+    "photo_request": {
+      "subject": "Verified neutral institution exterior/sign or isolated unbranded source object relevant to this exact row. No identifiable patient, diagnosis, addiction, migration status, sexual activity or medical record.",
+      "acquisition_status": "Advisory request only; identity/rights/credit must be researched by C10 owner.",
+      "fallback": "Source-specific original pictorial composition; custom physical-object requests must be fulfilled rather than silently substituted with an unrelated icon."
+    }
+  }
+]

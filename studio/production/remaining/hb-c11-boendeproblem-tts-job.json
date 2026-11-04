@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c11-boendeproblem",
+  "stage": "tts",
+  "state": "studio/production/remaining/hb-c11-boendeproblem-tts-state.json",
+  "log": "studio/production/remaining/hb-c11-boendeproblem-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c11-boendeproblem",
+    "--all",
+    "--output",
+    "studio/media/hb-c11-boendeproblem/narration"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c11-boendeproblem/narration/metrics.json"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-boendeproblem/narration/metrics.json"
+  ]
+}

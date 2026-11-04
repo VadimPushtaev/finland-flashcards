@@ -1,0 +1,101 @@
+2026-11-03T11:17:34.168261+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:18:07.749436+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:18:41.340611+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:19:14.922372+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:19:48.582265+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:20:22.164002+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:20:55.712197+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:21:29.383344+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:22:02.855168+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:22:36.438626+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:23:10.026681+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:23:43.608947+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:24:17.280919+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:24:50.778662+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:25:20.780884+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:25:54.491735+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:26:27.988346+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:27:01.575600+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:27:35.161358+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:28:08.744127+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:28:42.332245+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:29:15.917522+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:29:49.564694+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:30:23.085837+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:30:56.693194+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:31:30.255760+00:00 hb-c12-beslut verify: PID 354241 running
+Checking: .venv/bin/python studio/production/remaining/audio_diagnostics.py hb-c12-beslut
+hb-c12-beslut 31 current-take hashes checked; 4 unconfirmed diagnostic listening priorities
+Checking: studio/runtime/.venv/bin/python studio/tools/validate_assets.py hb-c12-beslut
+episode_background 1 files verified
+picture-001 1 files verified
+picture-002 1 files verified
+picture-003 1 files verified
+picture-004 1 files verified
+picture-005 1 files verified
+picture-006 1 files verified
+picture-007 1 files verified
+picture-008 1 files verified
+picture-009 1 files verified
+picture-010 1 files verified
+picture-011 1 files verified
+picture-012 1 files verified
+picture-013 1 files verified
+picture-014 1 files verified
+picture-015 1 files verified
+picture-016 1 files verified
+picture-017 1 files verified
+picture-018 1 files verified
+picture-019 1 files verified
+picture-020 1 files verified
+picture-021 1 files verified
+picture-022 1 files verified
+picture-023 1 files verified
+picture-024 1 files verified
+picture-025 1 files verified
+picture-026 1 files verified
+picture-027 1 files verified
+picture-028 1 files verified
+picture-029 1 files verified
+picture-030 1 files verified
+picture-031 1 files verified
+music_bed 2 files verified
+narration 31 files verified
+File integrity passed. Review narration and mix together in the complete video.
+Checking: studio/runtime/.venv/bin/python studio/tools/verify_render.py hb-c12-beslut --save-frames
+2026-11-03T11:32:03.842140+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:32:37.429499+00:00 hb-c12-beslut verify: PID 354241 running
+2026-11-03T11:33:07.430442+00:00 hb-c12-beslut verify: PID 354241 running
+{
+  "background_boundary_max_mean_pixel_change": 1.6975454092025757,
+  "full_decode": "passed",
+  "decoded_video_frames": 9104,
+  "decoded_audio_seconds": 379.333,
+  "decoded_audio_peak": 0.7036340236663818,
+  "frame_exports": 34,
+  "source_sentences": 31,
+  "output": "videos/homebrew/hb-c12-17-beslut.mp4",
+  "sha256": "d9a8fe233dcafb4768845c4534e2255604a95e36857214da8e98ee78c9e93c3b",
+  "display_segments_checked": 0,
+  "opening_background_mean_pixel_change": {
+    "5.0": 40.9508171081543,
+    "10.0": 27.8375244140625
+  },
+  "encoded_audio_matches_mix": {
+    "correlation": 0.9998432948466087,
+    "relative_rms_error": 0.017758837125810764,
+    "mix_sha256": "265f79bf4706991044682f1215de10b6000b19a7bc01083fcd89a51d8d349f7d"
+  },
+  "listening_review": "Review as part of the complete video; no standalone approval gate."
+}
+Checking: .venv/bin/python studio/tools/script.py review hb-c12-beslut --ready
+Updated SCRIPT.md from script.yaml.
+Checking: .venv/bin/python studio/tools/script.py validate hb-c12-beslut --ready
+2026-11-03T11:33:41.079770+00:00 hb-c12-beslut verify: PID 354241 running
+PASS: 31 sentences; source, translations, reviews, credits, references, and readable script match. User approval is separate.
+Checking: .venv/bin/python studio/tools/picture_coverage.py hb-c12-beslut --require-target
+hb-c12-beslut: 100.0% of body duration; 31/31 sentences with pictures
+Checking: .venv/bin/python studio/production/remaining/picture_diversity.py hb-c12-beslut
+hb-c12-beslut: 31 distinct picture sources / 31 sentence slides; 31 pictured slides
+{"section_id": "hb-c12-beslut", "production_status": "preview_ready", "output": "videos/homebrew/hb-c12-17-beslut.mp4", "sha256": "d9a8fe233dcafb4768845c4534e2255604a95e36857214da8e98ee78c9e93c3b", "seconds": 379.3333333333333, "source_sentences": 31, "source_section_sha256": "b36173cf2634805f59baaf4cffec8572a56c1c70f6ed93a712d341f78d5bf0c0", "translation_file_sha256": "bae36ca8d190ae52d402675b138586af65ae7eeb9e84ca46f4a298bf7cd43636", "picture_fraction": 1.0, "distinct_picture_sources": 31, "technical_checks": "Asset integrity,current diagnostic hashes,full decode,current mix,motion,exact bilingual source/timing,and measured picture coverage passed.", "actual_exported_frame_review": "Separate producer/peer evidence required", "whole_video_listening": false, "physical_device_playback": false, "user_acceptance": false}
+{"section_id": "hb-c12-beslut", "stage": "verify", "status": "finished", "supervisor_pid": 354229, "command": [".venv/bin/python", "studio/production/remaining/verify_when_rendered.py", "hb-c12-beslut"], "started_at": "2026-11-03T11:17:04.160203+00:00", "log": "studio/production/remaining/hb-c12-beslut-verify.log", "pid": 354241, "heartbeat_at": "2026-11-03T11:33:41.078920+00:00", "returncode": 0, "finished_at": "2026-11-03T11:33:50.329125+00:00", "missing_outputs": []}

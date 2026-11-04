@@ -1,0 +1,21 @@
+{
+  "section_id": "hb-c12-tillstand",
+  "stage": "asr",
+  "state": "studio/production/remaining/hb-c12-tillstand-asr-state.json",
+  "log": "studio/production/remaining/hb-c12-tillstand-asr.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/check_audio.py",
+    "studio/media/hb-c12-tillstand/narration",
+    "--language",
+    "sv",
+    "--pattern",
+    "hb-*.wav",
+    "--threads",
+    "2",
+    "--resume"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c12-tillstand/narration/asr.json"
+  ]
+}

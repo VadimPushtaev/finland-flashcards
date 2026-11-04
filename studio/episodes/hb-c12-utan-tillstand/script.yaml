@@ -1,0 +1,624 @@
+schema_version: 1
+section_id: hb-c12-utan-tillstand
+chapter_id: hb-c12
+title_sv: Rättigheter utan uppehållstillstånd
+title_ru: Права при отсутствии вида на жительство
+source_path: data/homebrew/sv/chapters/12_integration_uppehall_och_medborgarskap.yaml
+translation_path: data/homebrew/ru/sections/hb-c12-utan-tillstand.yaml
+example_only: false
+source_section_sha256: 46bb4bd357b23e383633ddee028a81da5c45aeaea0fd775b0dd4c883497aa14b
+translation_file_sha256: 6427401da16afb86d94044e169a8d29321224c82e469ebb524dde2d0fa1b1947
+episode_decisions:
+- id: opening
+  decision: Exact unspoken bilingual source heading,3seconds; no added speech.
+  status: proposed
+  resolve_during: script
+- id: story_structure
+  decision: Exact source/list-fragment order with individually planned legal relationships. Preserve every
+    MAY versus automatic distinction,cumulative AND gates,alternative OR routes,shared list conditions
+    and explicit source dates. Context photos do not assign status to real people.
+  status: proposed
+  resolve_during: script
+- id: text_and_layout
+  decision: '1920x1080/24fps; Liberation Sans48/40, stable right bilingual panel and fixed left foreground.
+    Chapter palette: {''background'': ''#352e49'', ''text'': ''#faf3e8'', ''secondary'': ''#d7cce7'',
+    ''highlight'': ''#e2c58b'', ''separator'': ''#685881''}. Use permitted44/36 or40/34 only if necessary;
+    manually segment oversized pairs.'
+  status: proposed
+  resolve_during: script
+- id: pace
+  decision: Full measured local narration once per source sentence/list fragment,0.25second text lead,1.7second
+    ordinary pauses and2.2seconds at source-paragraph boundaries; longer pairs2.5seconds.
+  status: proposed
+  resolve_during: script
+- id: voice_selection
+  decision: Local Swedish Supertonic3/F1,32steps,speed0.95,seed42,44100HzmonoPCM16. Initial allocation2ONNXthreads;
+    metrics record actual per-invocation settings and retained takes. Whole-video listening pending.
+  status: proposed
+  resolve_during: script
+- id: foreground_selection
+  decision: Individually authored source-specific pictures for almost every body slide. Actual object/place
+    photographs where useful; original diagrams visualize only stated relationships. Inspect every picture;
+    do not use irrelevant filler.
+  status: proposed
+  resolve_during: script
+- id: visual_motion
+  decision: Use File:Tipotien sosiaali- ja terveysasema in 2024.jpg by Warpfrz continuously as decorative
+    background, darkened 42% and blurred 2.5 px. Smooth cyclic diagonal pan (0.15,0.15)→(0.85,0.85) and
+    15% relative zoom 1.06→1.219, 140 seconds per motion cycle, starting in motion, with no sentence resets.
+    Total cycles=1.4205357142857142. Foreground and bilingual text remain fixed.
+  status: proposed
+  resolve_during: assets
+- id: music_selection
+  decision: Use Porch Blues by Kevin MacLeod (incompetech.com), CC BY 4.0, as this subchapter’s distinct
+    instrumental track. Original master 115.618 seconds; prepared lossless stereo bed 198.875 seconds.
+    Repeat count 1, using 4-second equal-power crossfades when needed. Retain the accepted +2 dB music
+    adjustment, ducking under speech, 2-second fade-in and 3-second fade-out. Full attribution accompanies
+    the video.
+  status: proposed
+  resolve_during: assets
+- id: closing
+  decision: Readable source/media credits and matching canonical sidecar,derived from this episode actual
+    sources.yaml and media sources. No spoken credits.
+  status: proposed
+  resolve_during: script
+- id: exceptions
+  decision: No exception. Exact archived wording and current reviewed Russian remain unchanged. Record
+    source typos/pronunciation diagnostics for whole-video review.
+  status: proposed
+  resolve_during: script
+scenes:
+- id: hb-c12-u0234
+  description: Om du behöver visum eller uppehållstillstånd för att vistas i Finland, men inte har det,
+    kan din vistelse i Finland vara illegal.
+- id: hb-c12-u0235
+  description: Om du är asylsökande har du rätt att vistas i Finland utan visum eller uppehållstillstånd
+    så länge som handläggningen av din asylansökan pågår.
+- id: hb-c12-u0236
+  description: Även om du skulle ha kommit lagligt till Finland kan din vistelse i landet senare bli olaglig.
+- id: hb-c12-u0237
+  description: du får ett negativt beslut på din ansökan om uppehållstillstånd eller asylansökan
+- id: hb-c12-u0239
+  description: ditt uppehållstillstånd går ut och du ansöker inte om fortsatt tillstånd i tid eller
+- id: hb-c12-u0240
+  description: du har rest in i landet med visum och ditt visum går ut eller
+- id: hb-c12-u0241
+  description: vistelsetiden utan visum har gått ut eller du inte längre har någon laglig grund för vistelsen.
+- id: hb-c12-u0242
+  description: Du har rätt till nödinkvartering och mathjälp om du inte har pengar till mat eller någonstans
+    att övernatta.
+- id: hb-c12-u0243
+  description: Du kan få juridisk rådgivning i frågor kring papperslöshet av en jurist vid Flyktingrådgivningen
+    (Pakolaisneuvonta).
+- id: hb-c12-u0244
+  description: Om du blir sjuk eller skadas, har du rätt till brådskande och nödvändig vård inom den offentliga
+    hälso- och sjukvården, till exempel på en hälsostation eller ett sjukhus.
+- id: hb-c12-u0245
+  description: Offentliga hälsovårdstjänster ordnas av välfärdsområdena (hyvinvointialueet) runtom i Finland.
+asset_requests:
+- id: episode_background
+  kind: background
+  description: Distinct verified Finnish administrative/civic setting; decorative context,not proof of
+    a current legal rule.
+  fallback: Another distinct verified relevant photograph; revise central reservation before use.
+- id: music_bed
+  kind: music
+  description: Porch Blues — Kevin MacLeod,CC BY4.0
+  fallback: Another unique licensed gentle instrumental; retain music throughout.
+- id: narration
+  kind: narration
+  description: One complete local Swedish F1clip per source sentence in stored order.
+  fallback: Only diagnostic-led bounded retakes in a separate folder,retaining existing takes/metrics.
+- id: picture-001
+  kind: foreground
+  description: Needs visa OR residence permit AND lacks it -> stay MAY be illegal. Do not label all people
+    without a permit unlawful.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-002
+  kind: foreground
+  description: Asylum applicant may stay without visa/permit WHILE asylum application processing is ongoing.
+    This is a lawful-stay exception, not an expiry graphic.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-003
+  kind: foreground
+  description: Lawful arrival MAY later become unlawful stay; timeline must retain possibility rather
+    than inevitability.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-004
+  kind: foreground
+  description: Introduces non-exhaustive possible situations; inherit source 3 MAY, no instant removal
+    implied.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-005
+  kind: foreground
+  description: Refusal of permit OR asylum is one possible source-listed case, not an immediate-removal
+    date claim.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-006
+  kind: foreground
+  description: Permit expires AND continued permit not applied for in time. Never portray expiry alone
+    as this full two-part condition.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-007
+  kind: foreground
+  description: Entered with visa AND visa expires; another list alternative.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-008
+  kind: foreground
+  description: Visa-free period expired OR no longer any lawful ground. Preserve both alternatives without
+    country/day assumptions.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-009
+  kind: foreground
+  description: Emergency accommodation/food help is conditional on lacking food money/place to sleep as
+    literally worded. Russian is reviewed data, not authority to silently rewrite Swedish connective scope.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-010
+  kind: foreground
+  description: Municipalities, parishes and some organisations arrange emergency accommodation; no current
+    site or bed availability promised.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-011
+  kind: foreground
+  description: Legal advice on undocumented status by refugee-advice lawyer; no photographed person assigned
+    a status.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-012
+  kind: foreground
+  description: Previous legal advice is free; do not apply free-of-charge claim to all care/services in
+    later sentences.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-013
+  kind: foreground
+  description: IF sick or injured -> urgent AND necessary PUBLIC care. Do not broaden to all elective
+    care or assert free treatment.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-014
+  kind: foreground
+  description: Wellbeing services counties organise public care; no exact site promise.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+- id: picture-015
+  kind: foreground
+  description: If needs health services -> contact nearest local social/health centre. No emergency number
+    or fee invented.
+  fallback: Another accurate source-based pictorial composition or verified relevant photograph; document
+    any genuinely necessary omission.
+sentences:
+- sentence_id: hb-c12-u0234-s001
+  sv: Om du behöver visum eller uppehållstillstånd för att vistas i Finland, men inte har det, kan din
+    vistelse i Finland vara illegal.
+  ru: Если для пребывания в Финляндии вам нужна виза или вид на жительство, но у вас их нет, ваше пребывание
+    в Финляндии может быть незаконным.
+  scene_id: hb-c12-u0234
+  visual_cue: Needs visa OR residence permit AND lacks it -> stay MAY be illegal. Do not label all people
+    without a permit unlawful.
+  asset_ids:
+  - episode_background
+  - picture-001
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0234-s001.wav
+  start_seconds: 3.25
+  end_seconds: 14.604558
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-001.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0235-s001
+  sv: Om du är asylsökande har du rätt att vistas i Finland utan visum eller uppehållstillstånd så länge
+    som handläggningen av din asylansökan pågår.
+  ru: Если вы являетесь просителем убежища, вы имеете право находиться в Финляндии без визы или вида на
+    жительство, пока рассматривается ваше заявление о предоставлении убежища.
+  scene_id: hb-c12-u0235
+  visual_cue: Asylum applicant may stay without visa/permit WHILE asylum application processing is ongoing.
+    This is a lawful-stay exception, not an expiry graphic.
+  asset_ids:
+  - episode_background
+  - picture-002
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0235-s001.wav
+  start_seconds: 17.083333
+  end_seconds: 29.622109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-002.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0236-s001
+  sv: Även om du skulle ha kommit lagligt till Finland kan din vistelse i landet senare bli olaglig.
+  ru: Даже если вы приехали в Финляндию законно, впоследствии ваше пребывание в стране может стать незаконным.
+  scene_id: hb-c12-u0236
+  visual_cue: Lawful arrival MAY later become unlawful stay; timeline must retain possibility rather than
+    inevitability.
+  asset_ids:
+  - episode_background
+  - picture-003
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0236-s001.wav
+  start_seconds: 32.083333
+  end_seconds: 40.163878
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-003.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0236-s002
+  sv: 'Detta kan hända till exempel i följande situationer:'
+  ru: 'Это может произойти, например, в следующих ситуациях:'
+  scene_id: hb-c12-u0236
+  visual_cue: Introduces non-exhaustive possible situations; inherit source 3 MAY, no instant removal
+    implied.
+  asset_ids:
+  - episode_background
+  - picture-004
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0236-s002.wav
+  start_seconds: 42.125
+  end_seconds: 47.14051
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-004.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0237-s001
+  sv: du får ett negativt beslut på din ansökan om uppehållstillstånd eller asylansökan
+  ru: вы получаете отказ по заявлению на вид на жительство или заявлению о предоставлении убежища
+  scene_id: hb-c12-u0237
+  visual_cue: Refusal of permit OR asylum is one possible source-listed case, not an immediate-removal
+    date claim.
+  asset_ids:
+  - episode_background
+  - picture-005
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0237-s001.wav
+  start_seconds: 49.625
+  end_seconds: 56.869626
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-005.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0239-s001
+  sv: ditt uppehållstillstånd går ut och du ansöker inte om fortsatt tillstånd i tid eller
+  ru: срок действия вашего вида на жительство истекает, а вы не подаёте вовремя заявление на его продление,
+    или
+  scene_id: hb-c12-u0239
+  visual_cue: Permit expires AND continued permit not applied for in time. Never portray expiry alone
+    as this full two-part condition.
+  asset_ids:
+  - episode_background
+  - picture-006
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0239-s001.wav
+  start_seconds: 59.333333
+  end_seconds: 66.926259
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-006.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0240-s001
+  sv: du har rest in i landet med visum och ditt visum går ut eller
+  ru: вы въехали в страну по визе и срок действия вашей визы истекает, или
+  scene_id: hb-c12-u0240
+  visual_cue: Entered with visa AND visa expires; another list alternative.
+  asset_ids:
+  - episode_background
+  - picture-007
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0240-s001.wav
+  start_seconds: 69.416667
+  end_seconds: 74.989456
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-007.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0241-s001
+  sv: vistelsetiden utan visum har gått ut eller du inte längre har någon laglig grund för vistelsen.
+  ru: срок безвизового пребывания истёк или у вас больше нет законного основания для пребывания.
+  scene_id: hb-c12-u0241
+  visual_cue: Visa-free period expired OR no longer any lawful ground. Preserve both alternatives without
+    country/day assumptions.
+  asset_ids:
+  - episode_background
+  - picture-008
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0241-s001.wav
+  start_seconds: 77.458333
+  end_seconds: 85.678197
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-008.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0242-s001
+  sv: Du har rätt till nödinkvartering och mathjälp om du inte har pengar till mat eller någonstans att
+    övernatta.
+  ru: Вы имеете право на временный кров и продовольственную помощь, если у вас нет ни денег на еду, ни
+    места для ночлега.
+  scene_id: hb-c12-u0242
+  visual_cue: Emergency accommodation/food help is conditional on lacking food money/place to sleep as
+    literally worded. Russian is reviewed data, not authority to silently rewrite Swedish connective scope.
+  asset_ids:
+  - episode_background
+  - picture-009
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0242-s001.wav
+  start_seconds: 88.166667
+  end_seconds: 97.083129
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-009.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0242-s002
+  sv: Kommuner, församlingar och vissa organisationer ordnar nödinkvartering.
+  ru: Временный кров предоставляют муниципалитеты, церковные приходы и некоторые организации.
+  scene_id: hb-c12-u0242
+  visual_cue: Municipalities, parishes and some organisations arrange emergency accommodation; no current
+    site or bed availability promised.
+  asset_ids:
+  - episode_background
+  - picture-010
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0242-s002.wav
+  start_seconds: 99.041667
+  end_seconds: 105.589694
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-010.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0243-s001
+  sv: Du kan få juridisk rådgivning i frågor kring papperslöshet av en jurist vid Flyktingrådgivningen
+    (Pakolaisneuvonta).
+  ru: Вы можете получить юридическую консультацию по вопросам пребывания без необходимых документов у
+    юриста организации по оказанию правовой помощи беженцам Flyktingrådgivningen (Pakolaisneuvonta).
+  scene_id: hb-c12-u0243
+  visual_cue: Legal advice on undocumented status by refugee-advice lawyer; no photographed person assigned
+    a status.
+  asset_ids:
+  - episode_background
+  - picture-011
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0243-s001.wav
+  start_seconds: 108.041667
+  end_seconds: 118.281667
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-011.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0243-s002
+  sv: Rådgivningen är kostnadsfri.
+  ru: Консультации бесплатны.
+  scene_id: hb-c12-u0243
+  visual_cue: Previous legal advice is free; do not apply free-of-charge claim to all care/services in
+    later sentences.
+  asset_ids:
+  - episode_background
+  - picture-012
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.2
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0243-s002.wav
+  start_seconds: 120.25
+  end_seconds: 123.175714
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-012.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0244-s001
+  sv: Om du blir sjuk eller skadas, har du rätt till brådskande och nödvändig vård inom den offentliga
+    hälso- och sjukvården, till exempel på en hälsostation eller ett sjukhus.
+  ru: Если вы заболеете или получите травму, вы имеете право на срочную и необходимую медицинскую помощь
+    в государственной системе здравоохранения, например в медицинском центре или больнице.
+  scene_id: hb-c12-u0244
+  visual_cue: IF sick or injured -> urgent AND necessary PUBLIC care. Do not broaden to all elective care
+    or assert free treatment.
+  asset_ids:
+  - episode_background
+  - picture-013
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0244-s001.wav
+  start_seconds: 125.666667
+  end_seconds: 140.504218
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-013.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0245-s001
+  sv: Offentliga hälsovårdstjänster ordnas av välfärdsområdena (hyvinvointialueet) runtom i Finland.
+  ru: Государственные услуги здравоохранения организуют регионы по обеспечению благополучия населения
+    (välfärdsområden; hyvinvointialueet) по всей Финляндии.
+  scene_id: hb-c12-u0245
+  visual_cue: Wellbeing services counties organise public care; no exact site promise.
+  asset_ids:
+  - episode_background
+  - picture-014
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 1.7
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0245-s001.wav
+  start_seconds: 143.291667
+  end_seconds: 151.85983
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-014.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+- sentence_id: hb-c12-u0245-s002
+  sv: Om du behöver hälso- och sjukvårdstjänster ska du kontakta den närmaste social- och hälsocentralen
+    (sosiaali- ja terveyskeskus) på din hemort.
+  ru: Если вам нужны услуги здравоохранения, обратитесь в ближайший центр социального обслуживания и здравоохранения
+    (social- och hälsocentral; sosiaali- ja terveyskeskus) в вашем населённом пункте.
+  scene_id: hb-c12-u0245
+  visual_cue: If needs health services -> contact nearest local social/health centre. No emergency number
+    or fee invented.
+  asset_ids:
+  - episode_background
+  - picture-015
+  text_highlights: []
+  pronunciation_notes:
+  - Names,source numerals,compounds and any archived typos require whole-video listening; ASR is diagnostic
+    only.
+  speech_override: null
+  pause_after_seconds: 2.5
+  audio_path: studio/media/hb-c12-utan-tillstand/narration/hb-c12-u0245-s002.wav
+  start_seconds: 153.833333
+  end_seconds: 166.372109
+  display_segments: []
+  render_caption: false
+  render_image: studio/media/hb-c12-utan-tillstand/pictures/picture-015.png
+  text_style:
+    sv_size: 48
+    ru_size: 40
+render:
+  music_path: studio/media/hb-c12-utan-tillstand/sources/music-bed.flac
+  background_image: studio/media/hb-c12-utan-tillstand/sources/background.jpg
+  background_style:
+    darken: 0.42
+    blur_pixels: 2.5
+    zoom_start: 1.06
+    zoom_end: 1.219
+    pan_start:
+    - 0.15
+    - 0.15
+    pan_end:
+    - 0.85
+    - 0.85
+    motion: smooth full-timeline cyclic diagonal pan and 15% relative zoom, 140 seconds per cycle, starts
+      in motion without resets
+    resampling: bilinear
+    motion_cycles: 1.4205357142857142
+  music_gain_adjustment_db: 2.0
+  credits:
+  - heading: Källor · Источники
+    paragraphs:
+    - Svensk källtext med granskad rysk översättning.
+    - InfoFinland.fi
+    - Fullständiga artiklar,bokpassager,licenser och ändringar i CREDITS.md.
+  - heading: Bild,musik & röst · Изображения,музыка и голос
+    paragraphs:
+    - Tipotien sosiaali- ja terveysasema in 2024.jpg — Warpfrz · CC BY-SA 4.0
+    - Porch Blues — Kevin MacLeod (incompetech.com)
+    - 'Musik: CC BY 4.0 · creativecommons.org/licenses/by/4.0'
+    - 'Svensk lokal berättarröst: Supertonic 3 · F1.'
+    - 'Textgrafik: exakta ord och tal ur källtexten. Bildkällor och licenser: videons CREDITS-fil.'
+  adaptation_notes:
+  - Exact archived Swedish and reviewed Russian retained in source order; no added narration.
+  - Individual source-specific original diagrams and verified photographs; contextual photos do not prove
+    a rule or a pictured person status.
+  - Background cropped,darkened,softened and animated continuously; source license retained.
+  - Music faded,ducked,+2dB adjusted and repeated with4second crossfades when needed.
+  palette:
+    background: '#352e49'
+    text: '#faf3e8'
+    secondary: '#d7cce7'
+    highlight: '#e2c58b'
+    separator: '#685881'
+  font_files:
+    regular: /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+    bold: /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+  music_loop_crossfade_seconds: 4
+  background_identity:
+    source_url: https://commons.wikimedia.org/wiki/File:Tipotien_sosiaali-_ja_terveysasema_in_2024.jpg
+    description: Tipotien sosiaali- ja terveysasema, Tampere, shot in December 2024
+    license: CC BY-SA 4.0

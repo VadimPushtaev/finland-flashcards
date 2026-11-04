@@ -32,7 +32,7 @@ CC BY 4.0
 
 Carry this attribution, source/article links, license link and change statement with distributed/rendered content; no endorsement implied.
 
-Source preparation: Selection, rearrangement, new Swedish headings, list/paragraph formatting and whitespace normalization. One complete legal-protection sentence selected from interview coaching. No substantive rewriting.
+Source preparation: Selection, rearrangement, new Swedish headings, list/paragraph formatting and whitespace normalization. No substantive rewriting.
 
 [License](https://creativecommons.org/licenses/by/4.0/)
 

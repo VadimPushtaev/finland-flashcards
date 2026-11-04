@@ -1,0 +1,28 @@
+{
+  "section_id": "hb-c11-fritid",
+  "stage": "tts",
+  "state": "studio/production/hb-c11-safety/hb-c11-fritid-tts-state.json",
+  "log": "studio/production/hb-c11-safety/hb-c11-fritid-tts.log",
+  "command": [
+    "studio/runtime/.venv/bin/python",
+    "studio/tools/audition.py",
+    "supertonic",
+    "--voice",
+    "F1",
+    "--speed",
+    ".95",
+    "--threads",
+    "2",
+    "--section",
+    "hb-c11-fritid",
+    "--all",
+    "--output",
+    "studio/media/hb-c11-fritid/narration"
+  ],
+  "expected_outputs": [
+    "studio/media/hb-c11-fritid/narration/metrics.json"
+  ],
+  "refuse_existing_outputs": [
+    "studio/media/hb-c11-fritid/narration/metrics.json"
+  ]
+}
