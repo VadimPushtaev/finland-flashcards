@@ -1,0 +1,3627 @@
+{
+  "schema_version": 1,
+  "formula": "9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity",
+  "score_range": [
+    0,
+    60
+  ],
+  "calibration": {
+    "mode": "fixed_cutoffs",
+    "scope": "requested",
+    "core_min": 41,
+    "supporting_min": 40,
+    "assessed_sentences": 753,
+    "assessed_sections": 15,
+    "counts": {
+      "CORE": 110,
+      "SUPPORTING": 69,
+      "SKIP": 574
+    }
+  },
+  "assessment_inputs": {
+    "hb-c04-demokrati": {
+      "assessment_sha256": "76cb04e3b88b3442b60320033d34ec24d93e1219216d2453c00515808673cad5",
+      "source_sha256": "440413a00b88f123d5cf6724f56997da6c0840821b325b04427dd8041a163863"
+    },
+    "hb-c04-foreningar": {
+      "assessment_sha256": "b854b9846996c87815dcb6e210aef4a6157dd59a43407bfee03df27cb039759e",
+      "source_sha256": "0c81d826a9249325bda5e88b0cb2e661831b49fc1b043f49a5d78da56e9e03f4"
+    },
+    "hb-c04-internationellt": {
+      "assessment_sha256": "2040f14269ac780e19f4c36b75bd6c2ea9fd019861cfd68f62610f02f3128bb7",
+      "source_sha256": "9fdba9cd26efbe77f12f0891b962f2c437e45e7ebf202a2cf4d1f4f744d6b581"
+    },
+    "hb-c04-kallkritik": {
+      "assessment_sha256": "f44f6d10ca671401788eac291915050878e588a38eb6d50b21e1191ff8c541c3",
+      "source_sha256": "e8ee3724b1843c6de6b15b60865b2f075542046aadab820ba506eaad30bf1e89"
+    },
+    "hb-c04-lokalforvaltning": {
+      "assessment_sha256": "8b8fc95476a70ce75b34f12839b12c19931003b5deae9063648c36b4ee592ba8",
+      "source_sha256": "0c6862045757cd5ec8e2756268f81dc08388b94311d01659c18ff6594eb32190"
+    },
+    "hb-c04-maktfordelning": {
+      "assessment_sha256": "5693860270bd4dee08dfb583469925e7b797146a9eaf0194f3a966b53b3cd9ad",
+      "source_sha256": "99d09a0f8ba9b531c79f73d30c890f9c2bcbc8d6a8afcd371c7897859448a671"
+    },
+    "hb-c04-medier": {
+      "assessment_sha256": "7c25f13aaf8c573e39f96fb675327f6acfb8e4fb5f221bf0375870c466e4880e",
+      "source_sha256": "bdd5cedd07a249285e94fc83f3cd5ee54623327149c38647c77b169d26e50326"
+    },
+    "hb-c04-partier": {
+      "assessment_sha256": "e0a354dc75e553e8d0092388975d9edbd4a4be0553b79b0b4f9b77015bbbe5db",
+      "source_sha256": "1ca27dadfc7e1f8258f04d11aec511b3eeacdd9e647d25b0f394e8de5bb66fed"
+    },
+    "hb-c04-partisystem": {
+      "assessment_sha256": "f8c4ab44d31c35dc684cee57697b77499803be5077acea5c9857adf4edc6aae0",
+      "source_sha256": "6cb52521dcb77c5d1dd96c6de462bfeb961c2e0fa8e0d1bc83d26fdf80daef71"
+    },
+    "hb-c04-paverkan": {
+      "assessment_sha256": "bb45620d5204f538cee1298acafb9b878ff07d5b6346edcafaf986ce68a19395",
+      "source_sha256": "e248f370f42dc14745d10d0ce23ed14776b553d0ce120151e764ab2112be1ab1"
+    },
+    "hb-c04-presidenten": {
+      "assessment_sha256": "f2f93c2be523eb2ed36e3db85b48e8935491d4a421265976c9d99897aeab291b",
+      "source_sha256": "39632c6a102b54cfc843402f7fe6e0a345607d22d27f621153a0782d1d7374d2"
+    },
+    "hb-c04-regeringen": {
+      "assessment_sha256": "6913cdda977ae66955ea7e9f55fb402ed000bd9d3375e2afe837bcb95c82fecf",
+      "source_sha256": "d422f8718dd0bec68b6e6fd13979e309c86f49468bf568043b23dd3e85b03412"
+    },
+    "hb-c04-riksdagen": {
+      "assessment_sha256": "57a77dccfbf3ae39125b19eb9c754c890b1ef9c5c5123bef67fc3ff487d39ff8",
+      "source_sha256": "cc0aab8cdb18b81d59480e0c1a08bc04222b98847d720c3e3969e806f687e668"
+    },
+    "hb-c04-rostratt": {
+      "assessment_sha256": "2d02884b994fadb3824eb1e9f095abe4c109f4e874385b117d8fe093033157c3",
+      "source_sha256": "3f6a753aea762bc9877b8d56b9a97480012b299e0bb368750424f0e84514c46a"
+    },
+    "hb-c04-valsystemet": {
+      "assessment_sha256": "1acb7604c70515ee1687e33ddc5fb06da010a7d160bef62ae0af6bdb15e48253",
+      "source_sha256": "60081bf39ce2a2801b8d5111a051354fc924e57746d375f87b7f7f6de4186c0c"
+    }
+  },
+  "excluded_invalid_files": [],
+  "requested_sentence_ids": [
+    "hb-c04-u0001-s001",
+    "hb-c04-u0001-s002",
+    "hb-c04-u0001-s003",
+    "hb-c04-u0001-s004",
+    "hb-c04-u0001-s005",
+    "hb-c04-u0002-s001",
+    "hb-c04-u0002-s002",
+    "hb-c04-u0003-s001",
+    "hb-c04-u0003-s002",
+    "hb-c04-u0004-s001",
+    "hb-c04-u0004-s002",
+    "hb-c04-u0004-s003",
+    "hb-c04-u0004-s004",
+    "hb-c04-u0004-s005",
+    "hb-c04-u0005-s001",
+    "hb-c04-u0005-s002",
+    "hb-c04-u0005-s003",
+    "hb-c04-u0005-s004",
+    "hb-c04-u0006-s001",
+    "hb-c04-u0006-s002",
+    "hb-c04-u0006-s003",
+    "hb-c04-u0007-s001",
+    "hb-c04-u0007-s002",
+    "hb-c04-u0007-s003",
+    "hb-c04-u0007-s004",
+    "hb-c04-u0008-s001",
+    "hb-c04-u0008-s002",
+    "hb-c04-u0008-s003",
+    "hb-c04-u0008-s004",
+    "hb-c04-u0009-s001",
+    "hb-c04-u0009-s002",
+    "hb-c04-u0010-s001",
+    "hb-c04-u0010-s002",
+    "hb-c04-u0010-s003",
+    "hb-c04-u0010-s004",
+    "hb-c04-u0011-s001",
+    "hb-c04-u0011-s002",
+    "hb-c04-u0011-s003",
+    "hb-c04-u0011-s004",
+    "hb-c04-u0012-s001",
+    "hb-c04-u0012-s002",
+    "hb-c04-u0012-s003",
+    "hb-c04-u0012-s004",
+    "hb-c04-u0013-s001",
+    "hb-c04-u0013-s002",
+    "hb-c04-u0014-s001",
+    "hb-c04-u0014-s002",
+    "hb-c04-u0014-s003",
+    "hb-c04-u0014-s004",
+    "hb-c04-u0015-s001",
+    "hb-c04-u0015-s002",
+    "hb-c04-u0015-s003",
+    "hb-c04-u0015-s004",
+    "hb-c04-u0015-s005",
+    "hb-c04-u0015-s006",
+    "hb-c04-u0016-s001",
+    "hb-c04-u0016-s002",
+    "hb-c04-u0017-s001",
+    "hb-c04-u0017-s002",
+    "hb-c04-u0017-s003",
+    "hb-c04-u0018-s001",
+    "hb-c04-u0018-s002",
+    "hb-c04-u0019-s001",
+    "hb-c04-u0019-s002",
+    "hb-c04-u0019-s003",
+    "hb-c04-u0019-s004",
+    "hb-c04-u0019-s005",
+    "hb-c04-u0020-s001",
+    "hb-c04-u0021-s001",
+    "hb-c04-u0021-s002",
+    "hb-c04-u0021-s003",
+    "hb-c04-u0022-s001",
+    "hb-c04-u0023-s001",
+    "hb-c04-u0025-s001",
+    "hb-c04-u0026-s001",
+    "hb-c04-u0027-s001",
+    "hb-c04-u0028-s001",
+    "hb-c04-u0028-s002",
+    "hb-c04-u0028-s003",
+    "hb-c04-u0029-s001",
+    "hb-c04-u0029-s002",
+    "hb-c04-u0029-s003",
+    "hb-c04-u0029-s004",
+    "hb-c04-u0029-s005",
+    "hb-c04-u0030-s001",
+    "hb-c04-u0030-s002",
+    "hb-c04-u0030-s003",
+    "hb-c04-u0030-s004",
+    "hb-c04-u0031-s001",
+    "hb-c04-u0031-s002",
+    "hb-c04-u0031-s003",
+    "hb-c04-u0031-s004",
+    "hb-c04-u0032-s001",
+    "hb-c04-u0032-s002",
+    "hb-c04-u0032-s003",
+    "hb-c04-u0032-s004",
+    "hb-c04-u0033-s001",
+    "hb-c04-u0033-s002",
+    "hb-c04-u0033-s003",
+    "hb-c04-u0033-s004",
+    "hb-c04-u0033-s005",
+    "hb-c04-u0034-s001",
+    "hb-c04-u0034-s002",
+    "hb-c04-u0034-s003",
+    "hb-c04-u0034-s004",
+    "hb-c04-u0035-s001",
+    "hb-c04-u0035-s002",
+    "hb-c04-u0035-s003",
+    "hb-c04-u0035-s004",
+    "hb-c04-u0035-s005",
+    "hb-c04-u0035-s006",
+    "hb-c04-u0036-s001",
+    "hb-c04-u0036-s002",
+    "hb-c04-u0036-s003",
+    "hb-c04-u0036-s004",
+    "hb-c04-u0036-s005",
+    "hb-c04-u0037-s001",
+    "hb-c04-u0037-s002",
+    "hb-c04-u0037-s003",
+    "hb-c04-u0037-s004",
+    "hb-c04-u0038-s001",
+    "hb-c04-u0038-s002",
+    "hb-c04-u0038-s003",
+    "hb-c04-u0038-s004",
+    "hb-c04-u0038-s005",
+    "hb-c04-u0038-s006",
+    "hb-c04-u0039-s001",
+    "hb-c04-u0039-s002",
+    "hb-c04-u0039-s003",
+    "hb-c04-u0040-s001",
+    "hb-c04-u0040-s002",
+    "hb-c04-u0040-s003",
+    "hb-c04-u0041-s001",
+    "hb-c04-u0041-s002",
+    "hb-c04-u0042-s001",
+    "hb-c04-u0042-s002",
+    "hb-c04-u0042-s003",
+    "hb-c04-u0042-s004",
+    "hb-c04-u0043-s001",
+    "hb-c04-u0044-s001",
+    "hb-c04-u0046-s001",
+    "hb-c04-u0047-s001",
+    "hb-c04-u0048-s001",
+    "hb-c04-u0049-s001",
+    "hb-c04-u0049-s002",
+    "hb-c04-u0050-s001",
+    "hb-c04-u0051-s001",
+    "hb-c04-u0051-s002",
+    "hb-c04-u0052-s001",
+    "hb-c04-u0052-s002",
+    "hb-c04-u0052-s003",
+    "hb-c04-u0053-s001",
+    "hb-c04-u0053-s002",
+    "hb-c04-u0053-s003",
+    "hb-c04-u0054-s001",
+    "hb-c04-u0054-s002",
+    "hb-c04-u0054-s003",
+    "hb-c04-u0054-s004",
+    "hb-c04-u0055-s001",
+    "hb-c04-u0055-s002",
+    "hb-c04-u0055-s003",
+    "hb-c04-u0055-s004",
+    "hb-c04-u0056-s001",
+    "hb-c04-u0056-s002",
+    "hb-c04-u0056-s003",
+    "hb-c04-u0057-s001",
+    "hb-c04-u0057-s002",
+    "hb-c04-u0057-s003",
+    "hb-c04-u0057-s004",
+    "hb-c04-u0058-s001",
+    "hb-c04-u0059-s001",
+    "hb-c04-u0059-s002",
+    "hb-c04-u0059-s003",
+    "hb-c04-u0059-s004",
+    "hb-c04-u0059-s005",
+    "hb-c04-u0060-s001",
+    "hb-c04-u0061-s001",
+    "hb-c04-u0061-s002",
+    "hb-c04-u0061-s003",
+    "hb-c04-u0061-s004",
+    "hb-c04-u0061-s005",
+    "hb-c04-u0061-s006",
+    "hb-c04-u0062-s001",
+    "hb-c04-u0062-s002",
+    "hb-c04-u0062-s003",
+    "hb-c04-u0062-s004",
+    "hb-c04-u0062-s005",
+    "hb-c04-u0062-s006",
+    "hb-c04-u0062-s007",
+    "hb-c04-u0063-s001",
+    "hb-c04-u0063-s002",
+    "hb-c04-u0063-s003",
+    "hb-c04-u0063-s004",
+    "hb-c04-u0064-s001",
+    "hb-c04-u0064-s002",
+    "hb-c04-u0064-s003",
+    "hb-c04-u0064-s004",
+    "hb-c04-u0065-s001",
+    "hb-c04-u0065-s002",
+    "hb-c04-u0065-s003",
+    "hb-c04-u0065-s004",
+    "hb-c04-u0066-s001",
+    "hb-c04-u0066-s002",
+    "hb-c04-u0066-s003",
+    "hb-c04-u0066-s004",
+    "hb-c04-u0066-s005",
+    "hb-c04-u0067-s001",
+    "hb-c04-u0067-s002",
+    "hb-c04-u0067-s003",
+    "hb-c04-u0068-s001",
+    "hb-c04-u0068-s002",
+    "hb-c04-u0068-s003",
+    "hb-c04-u0069-s001",
+    "hb-c04-u0070-s001",
+    "hb-c04-u0072-s001",
+    "hb-c04-u0073-s001",
+    "hb-c04-u0074-s001",
+    "hb-c04-u0075-s001",
+    "hb-c04-u0075-s002",
+    "hb-c04-u0076-s001",
+    "hb-c04-u0076-s002",
+    "hb-c04-u0076-s003",
+    "hb-c04-u0077-s001",
+    "hb-c04-u0078-s001",
+    "hb-c04-u0078-s002",
+    "hb-c04-u0078-s003",
+    "hb-c04-u0078-s004",
+    "hb-c04-u0079-s001",
+    "hb-c04-u0079-s002",
+    "hb-c04-u0080-s001",
+    "hb-c04-u0081-s001",
+    "hb-c04-u0081-s002",
+    "hb-c04-u0081-s003",
+    "hb-c04-u0081-s004",
+    "hb-c04-u0082-s001",
+    "hb-c04-u0082-s002",
+    "hb-c04-u0083-s001",
+    "hb-c04-u0083-s002",
+    "hb-c04-u0083-s003",
+    "hb-c04-u0083-s004",
+    "hb-c04-u0083-s005",
+    "hb-c04-u0084-s001",
+    "hb-c04-u0084-s002",
+    "hb-c04-u0084-s003",
+    "hb-c04-u0085-s001",
+    "hb-c04-u0085-s002",
+    "hb-c04-u0085-s003",
+    "hb-c04-u0085-s004",
+    "hb-c04-u0086-s001",
+    "hb-c04-u0086-s002",
+    "hb-c04-u0087-s001",
+    "hb-c04-u0087-s002",
+    "hb-c04-u0087-s003",
+    "hb-c04-u0087-s004",
+    "hb-c04-u0087-s005",
+    "hb-c04-u0087-s006",
+    "hb-c04-u0088-s001",
+    "hb-c04-u0088-s002",
+    "hb-c04-u0089-s001",
+    "hb-c04-u0089-s002",
+    "hb-c04-u0090-s001",
+    "hb-c04-u0090-s002",
+    "hb-c04-u0091-s001",
+    "hb-c04-u0091-s002",
+    "hb-c04-u0091-s003",
+    "hb-c04-u0092-s001",
+    "hb-c04-u0092-s002",
+    "hb-c04-u0092-s003",
+    "hb-c04-u0092-s004",
+    "hb-c04-u0093-s001",
+    "hb-c04-u0093-s002",
+    "hb-c04-u0093-s003",
+    "hb-c04-u0094-s001",
+    "hb-c04-u0094-s002",
+    "hb-c04-u0095-s001",
+    "hb-c04-u0097-s001",
+    "hb-c04-u0098-s001",
+    "hb-c04-u0098-s002",
+    "hb-c04-u0098-s003",
+    "hb-c04-u0099-s001",
+    "hb-c04-u0099-s002",
+    "hb-c04-u0100-s001",
+    "hb-c04-u0102-s001",
+    "hb-c04-u0103-s001",
+    "hb-c04-u0104-s001",
+    "hb-c04-u0104-s002",
+    "hb-c04-u0105-s001",
+    "hb-c04-u0105-s002",
+    "hb-c04-u0105-s003",
+    "hb-c04-u0106-s001",
+    "hb-c04-u0106-s002",
+    "hb-c04-u0106-s003",
+    "hb-c04-u0106-s004",
+    "hb-c04-u0107-s001",
+    "hb-c04-u0107-s002",
+    "hb-c04-u0107-s003",
+    "hb-c04-u0108-s001",
+    "hb-c04-u0108-s002",
+    "hb-c04-u0108-s003",
+    "hb-c04-u0108-s004",
+    "hb-c04-u0109-s001",
+    "hb-c04-u0109-s002",
+    "hb-c04-u0109-s003",
+    "hb-c04-u0110-s001",
+    "hb-c04-u0110-s002",
+    "hb-c04-u0111-s001",
+    "hb-c04-u0111-s002",
+    "hb-c04-u0111-s003",
+    "hb-c04-u0112-s001",
+    "hb-c04-u0112-s002",
+    "hb-c04-u0112-s003",
+    "hb-c04-u0112-s004",
+    "hb-c04-u0113-s001",
+    "hb-c04-u0113-s002",
+    "hb-c04-u0114-s001",
+    "hb-c04-u0114-s002",
+    "hb-c04-u0115-s001",
+    "hb-c04-u0115-s002",
+    "hb-c04-u0115-s003",
+    "hb-c04-u0115-s004",
+    "hb-c04-u0115-s005",
+    "hb-c04-u0115-s006",
+    "hb-c04-u0116-s001",
+    "hb-c04-u0117-s001",
+    "hb-c04-u0119-s001",
+    "hb-c04-u0119-s002",
+    "hb-c04-u0119-s003",
+    "hb-c04-u0119-s004",
+    "hb-c04-u0120-s001",
+    "hb-c04-u0121-s001",
+    "hb-c04-u0121-s002",
+    "hb-c04-u0121-s003",
+    "hb-c04-u0121-s004",
+    "hb-c04-u0122-s001",
+    "hb-c04-u0122-s002",
+    "hb-c04-u0123-s001",
+    "hb-c04-u0123-s002",
+    "hb-c04-u0123-s003",
+    "hb-c04-u0124-s001",
+    "hb-c04-u0124-s002",
+    "hb-c04-u0124-s003",
+    "hb-c04-u0124-s004",
+    "hb-c04-u0125-s001",
+    "hb-c04-u0125-s002",
+    "hb-c04-u0125-s003",
+    "hb-c04-u0125-s004",
+    "hb-c04-u0125-s005",
+    "hb-c04-u0126-s001",
+    "hb-c04-u0126-s002",
+    "hb-c04-u0126-s003",
+    "hb-c04-u0126-s004",
+    "hb-c04-u0126-s005",
+    "hb-c04-u0127-s001",
+    "hb-c04-u0127-s002",
+    "hb-c04-u0127-s003",
+    "hb-c04-u0128-s001",
+    "hb-c04-u0128-s002",
+    "hb-c04-u0128-s003",
+    "hb-c04-u0128-s004",
+    "hb-c04-u0128-s005",
+    "hb-c04-u0129-s001",
+    "hb-c04-u0129-s002",
+    "hb-c04-u0129-s003",
+    "hb-c04-u0129-s004",
+    "hb-c04-u0129-s005",
+    "hb-c04-u0130-s001",
+    "hb-c04-u0130-s002",
+    "hb-c04-u0130-s003",
+    "hb-c04-u0131-s001",
+    "hb-c04-u0131-s002",
+    "hb-c04-u0131-s003",
+    "hb-c04-u0131-s004",
+    "hb-c04-u0132-s001",
+    "hb-c04-u0132-s002",
+    "hb-c04-u0132-s003",
+    "hb-c04-u0132-s004",
+    "hb-c04-u0132-s005",
+    "hb-c04-u0133-s001",
+    "hb-c04-u0133-s002",
+    "hb-c04-u0133-s003",
+    "hb-c04-u0133-s004",
+    "hb-c04-u0134-s001",
+    "hb-c04-u0134-s002",
+    "hb-c04-u0135-s001",
+    "hb-c04-u0135-s002",
+    "hb-c04-u0136-s001",
+    "hb-c04-u0136-s002",
+    "hb-c04-u0137-s001",
+    "hb-c04-u0137-s002",
+    "hb-c04-u0138-s001",
+    "hb-c04-u0138-s002",
+    "hb-c04-u0138-s003",
+    "hb-c04-u0138-s004",
+    "hb-c04-u0139-s001",
+    "hb-c04-u0139-s002",
+    "hb-c04-u0139-s003",
+    "hb-c04-u0139-s004",
+    "hb-c04-u0139-s005",
+    "hb-c04-u0139-s006",
+    "hb-c04-u0140-s001",
+    "hb-c04-u0140-s002",
+    "hb-c04-u0140-s003",
+    "hb-c04-u0140-s004",
+    "hb-c04-u0140-s005",
+    "hb-c04-u0141-s001",
+    "hb-c04-u0141-s002",
+    "hb-c04-u0141-s003",
+    "hb-c04-u0142-s001",
+    "hb-c04-u0142-s002",
+    "hb-c04-u0142-s003",
+    "hb-c04-u0142-s004",
+    "hb-c04-u0143-s001",
+    "hb-c04-u0143-s002",
+    "hb-c04-u0143-s003",
+    "hb-c04-u0143-s004",
+    "hb-c04-u0143-s005",
+    "hb-c04-u0143-s006",
+    "hb-c04-u0143-s007",
+    "hb-c04-u0144-s001",
+    "hb-c04-u0144-s002",
+    "hb-c04-u0144-s003",
+    "hb-c04-u0144-s004",
+    "hb-c04-u0145-s001",
+    "hb-c04-u0145-s002",
+    "hb-c04-u0145-s003",
+    "hb-c04-u0146-s001",
+    "hb-c04-u0146-s002",
+    "hb-c04-u0146-s003",
+    "hb-c04-u0147-s001",
+    "hb-c04-u0147-s002",
+    "hb-c04-u0147-s003",
+    "hb-c04-u0147-s004",
+    "hb-c04-u0148-s001",
+    "hb-c04-u0148-s002",
+    "hb-c04-u0148-s003",
+    "hb-c04-u0148-s004",
+    "hb-c04-u0149-s001",
+    "hb-c04-u0149-s002",
+    "hb-c04-u0149-s003",
+    "hb-c04-u0149-s004",
+    "hb-c04-u0150-s001",
+    "hb-c04-u0150-s002",
+    "hb-c04-u0150-s003",
+    "hb-c04-u0150-s004",
+    "hb-c04-u0150-s005",
+    "hb-c04-u0150-s006",
+    "hb-c04-u0151-s001",
+    "hb-c04-u0151-s002",
+    "hb-c04-u0151-s003",
+    "hb-c04-u0151-s004",
+    "hb-c04-u0151-s005",
+    "hb-c04-u0152-s001",
+    "hb-c04-u0152-s002",
+    "hb-c04-u0152-s003",
+    "hb-c04-u0152-s004",
+    "hb-c04-u0152-s005",
+    "hb-c04-u0153-s001",
+    "hb-c04-u0153-s002",
+    "hb-c04-u0153-s003",
+    "hb-c04-u0153-s004",
+    "hb-c04-u0154-s001",
+    "hb-c04-u0154-s002",
+    "hb-c04-u0154-s003",
+    "hb-c04-u0154-s004",
+    "hb-c04-u0154-s005",
+    "hb-c04-u0155-s001",
+    "hb-c04-u0155-s002",
+    "hb-c04-u0155-s003",
+    "hb-c04-u0156-s001",
+    "hb-c04-u0156-s002",
+    "hb-c04-u0156-s003",
+    "hb-c04-u0157-s001",
+    "hb-c04-u0157-s002",
+    "hb-c04-u0157-s003",
+    "hb-c04-u0157-s004",
+    "hb-c04-u0158-s001",
+    "hb-c04-u0158-s002",
+    "hb-c04-u0158-s003",
+    "hb-c04-u0158-s004",
+    "hb-c04-u0158-s005",
+    "hb-c04-u0159-s001",
+    "hb-c04-u0159-s002",
+    "hb-c04-u0159-s003",
+    "hb-c04-u0160-s001",
+    "hb-c04-u0160-s002",
+    "hb-c04-u0160-s003",
+    "hb-c04-u0160-s004",
+    "hb-c04-u0161-s001",
+    "hb-c04-u0161-s002",
+    "hb-c04-u0161-s003",
+    "hb-c04-u0161-s004",
+    "hb-c04-u0162-s001",
+    "hb-c04-u0162-s002",
+    "hb-c04-u0162-s003",
+    "hb-c04-u0163-s001",
+    "hb-c04-u0163-s002",
+    "hb-c04-u0163-s003",
+    "hb-c04-u0164-s001",
+    "hb-c04-u0164-s002",
+    "hb-c04-u0164-s003",
+    "hb-c04-u0164-s004",
+    "hb-c04-u0165-s001",
+    "hb-c04-u0165-s002",
+    "hb-c04-u0166-s001",
+    "hb-c04-u0166-s002",
+    "hb-c04-u0166-s003",
+    "hb-c04-u0166-s004",
+    "hb-c04-u0166-s005",
+    "hb-c04-u0167-s001",
+    "hb-c04-u0167-s002",
+    "hb-c04-u0167-s003",
+    "hb-c04-u0167-s004",
+    "hb-c04-u0167-s005",
+    "hb-c04-u0168-s001",
+    "hb-c04-u0168-s002",
+    "hb-c04-u0168-s003",
+    "hb-c04-u0168-s004",
+    "hb-c04-u0169-s001",
+    "hb-c04-u0169-s002",
+    "hb-c04-u0169-s003",
+    "hb-c04-u0169-s004",
+    "hb-c04-u0169-s005",
+    "hb-c04-u0170-s001",
+    "hb-c04-u0170-s002",
+    "hb-c04-u0170-s003",
+    "hb-c04-u0170-s004",
+    "hb-c04-u0171-s001",
+    "hb-c04-u0171-s002",
+    "hb-c04-u0171-s003",
+    "hb-c04-u0171-s004",
+    "hb-c04-u0171-s005",
+    "hb-c04-u0172-s001",
+    "hb-c04-u0172-s002",
+    "hb-c04-u0172-s003",
+    "hb-c04-u0172-s004",
+    "hb-c04-u0173-s001",
+    "hb-c04-u0173-s002",
+    "hb-c04-u0174-s001",
+    "hb-c04-u0174-s002",
+    "hb-c04-u0174-s003",
+    "hb-c04-u0174-s004",
+    "hb-c04-u0175-s001",
+    "hb-c04-u0175-s002",
+    "hb-c04-u0175-s003",
+    "hb-c04-u0176-s001",
+    "hb-c04-u0176-s002",
+    "hb-c04-u0176-s003",
+    "hb-c04-u0177-s001",
+    "hb-c04-u0177-s002",
+    "hb-c04-u0177-s003",
+    "hb-c04-u0177-s004",
+    "hb-c04-u0177-s005",
+    "hb-c04-u0178-s001",
+    "hb-c04-u0178-s002",
+    "hb-c04-u0178-s003",
+    "hb-c04-u0179-s001",
+    "hb-c04-u0179-s002",
+    "hb-c04-u0180-s001",
+    "hb-c04-u0180-s002",
+    "hb-c04-u0180-s003",
+    "hb-c04-u0180-s004",
+    "hb-c04-u0180-s005",
+    "hb-c04-u0181-s001",
+    "hb-c04-u0181-s002",
+    "hb-c04-u0181-s003",
+    "hb-c04-u0181-s004",
+    "hb-c04-u0182-s001",
+    "hb-c04-u0182-s002",
+    "hb-c04-u0182-s003",
+    "hb-c04-u0182-s004",
+    "hb-c04-u0183-s001",
+    "hb-c04-u0183-s002",
+    "hb-c04-u0183-s003",
+    "hb-c04-u0184-s001",
+    "hb-c04-u0184-s002",
+    "hb-c04-u0184-s003",
+    "hb-c04-u0185-s001",
+    "hb-c04-u0185-s002",
+    "hb-c04-u0185-s003",
+    "hb-c04-u0186-s001",
+    "hb-c04-u0186-s002",
+    "hb-c04-u0186-s003",
+    "hb-c04-u0186-s004",
+    "hb-c04-u0187-s001",
+    "hb-c04-u0187-s002",
+    "hb-c04-u0187-s003",
+    "hb-c04-u0187-s004",
+    "hb-c04-u0187-s005",
+    "hb-c04-u0188-s001",
+    "hb-c04-u0188-s002",
+    "hb-c04-u0188-s003",
+    "hb-c04-u0189-s001",
+    "hb-c04-u0190-s001",
+    "hb-c04-u0192-s001",
+    "hb-c04-u0193-s001",
+    "hb-c04-u0194-s001",
+    "hb-c04-u0195-s001",
+    "hb-c04-u0196-s001",
+    "hb-c04-u0197-s001",
+    "hb-c04-u0198-s001",
+    "hb-c04-u0199-s001",
+    "hb-c04-u0200-s001",
+    "hb-c04-u0200-s002",
+    "hb-c04-u0200-s003",
+    "hb-c04-u0201-s001",
+    "hb-c04-u0201-s002",
+    "hb-c04-u0201-s003",
+    "hb-c04-u0201-s004",
+    "hb-c04-u0202-s001",
+    "hb-c04-u0202-s002",
+    "hb-c04-u0203-s001",
+    "hb-c04-u0204-s001",
+    "hb-c04-u0204-s002",
+    "hb-c04-u0204-s003",
+    "hb-c04-u0205-s001",
+    "hb-c04-u0205-s002",
+    "hb-c04-u0206-s001",
+    "hb-c04-u0206-s002",
+    "hb-c04-u0206-s003",
+    "hb-c04-u0206-s004",
+    "hb-c04-u0207-s001",
+    "hb-c04-u0208-s001",
+    "hb-c04-u0208-s002",
+    "hb-c04-u0209-s001",
+    "hb-c04-u0209-s002",
+    "hb-c04-u0209-s003",
+    "hb-c04-u0210-s001",
+    "hb-c04-u0210-s002",
+    "hb-c04-u0210-s003",
+    "hb-c04-u0210-s004",
+    "hb-c04-u0210-s005",
+    "hb-c04-u0210-s006",
+    "hb-c04-u0211-s001",
+    "hb-c04-u0211-s002",
+    "hb-c04-u0212-s001",
+    "hb-c04-u0212-s002",
+    "hb-c04-u0212-s003",
+    "hb-c04-u0212-s004",
+    "hb-c04-u0213-s001",
+    "hb-c04-u0213-s002",
+    "hb-c04-u0213-s003",
+    "hb-c04-u0213-s004",
+    "hb-c04-u0214-s001",
+    "hb-c04-u0214-s002",
+    "hb-c04-u0214-s003",
+    "hb-c04-u0214-s004",
+    "hb-c04-u0215-s001",
+    "hb-c04-u0215-s002",
+    "hb-c04-u0215-s003",
+    "hb-c04-u0216-s001",
+    "hb-c04-u0216-s002",
+    "hb-c04-u0216-s003",
+    "hb-c04-u0216-s004",
+    "hb-c04-u0216-s005",
+    "hb-c04-u0217-s001",
+    "hb-c04-u0217-s002",
+    "hb-c04-u0218-s001",
+    "hb-c04-u0218-s002",
+    "hb-c04-u0218-s003",
+    "hb-c04-u0218-s004",
+    "hb-c04-u0218-s005",
+    "hb-c04-u0219-s001",
+    "hb-c04-u0219-s002",
+    "hb-c04-u0219-s003",
+    "hb-c04-u0220-s001",
+    "hb-c04-u0220-s002",
+    "hb-c04-u0220-s003",
+    "hb-c04-u0220-s004",
+    "hb-c04-u0221-s001",
+    "hb-c04-u0221-s002",
+    "hb-c04-u0221-s003",
+    "hb-c04-u0221-s004",
+    "hb-c04-u0221-s005",
+    "hb-c04-u0222-s001",
+    "hb-c04-u0222-s002",
+    "hb-c04-u0222-s003",
+    "hb-c04-u0222-s004",
+    "hb-c04-u0223-s001",
+    "hb-c04-u0223-s002",
+    "hb-c04-u0224-s001",
+    "hb-c04-u0224-s002",
+    "hb-c04-u0224-s003",
+    "hb-c04-u0224-s004",
+    "hb-c04-u0225-s001",
+    "hb-c04-u0225-s002",
+    "hb-c04-u0225-s003",
+    "hb-c04-u0225-s004",
+    "hb-c04-u0226-s001",
+    "hb-c04-u0226-s002",
+    "hb-c04-u0226-s003",
+    "hb-c04-u0226-s004",
+    "hb-c04-u0226-s005",
+    "hb-c04-u0227-s001",
+    "hb-c04-u0227-s002",
+    "hb-c04-u0227-s003",
+    "hb-c04-u0227-s004",
+    "hb-c04-u0228-s001",
+    "hb-c04-u0228-s002",
+    "hb-c04-u0228-s003",
+    "hb-c04-u0228-s004",
+    "hb-c04-u0228-s005",
+    "hb-c04-u0229-s001",
+    "hb-c04-u0229-s002",
+    "hb-c04-u0229-s003",
+    "hb-c04-u0230-s001",
+    "hb-c04-u0230-s002",
+    "hb-c04-u0230-s003",
+    "hb-c04-u0230-s004",
+    "hb-c04-u0230-s005",
+    "hb-c04-u0231-s001",
+    "hb-c04-u0231-s002",
+    "hb-c04-u0231-s003",
+    "hb-c04-u0232-s001",
+    "hb-c04-u0232-s002",
+    "hb-c04-u0232-s003",
+    "hb-c04-u0233-s001",
+    "hb-c04-u0233-s002",
+    "hb-c04-u0233-s003",
+    "hb-c04-u0233-s004",
+    "hb-c04-u0233-s005",
+    "hb-c04-u0234-s001",
+    "hb-c04-u0234-s002",
+    "hb-c04-u0234-s003",
+    "hb-c04-u0235-s001",
+    "hb-c04-u0235-s002",
+    "hb-c04-u0236-s001",
+    "hb-c04-u0236-s002",
+    "hb-c04-u0236-s003",
+    "hb-c04-u0236-s004",
+    "hb-c04-u0237-s001",
+    "hb-c04-u0237-s002",
+    "hb-c04-u0237-s003",
+    "hb-c04-u0238-s001",
+    "hb-c04-u0239-s001",
+    "hb-c04-u0239-s002",
+    "hb-c04-u0239-s003",
+    "hb-c04-u0240-s001",
+    "hb-c04-u0241-s001",
+    "hb-c04-u0241-s002",
+    "hb-c04-u0243-s001",
+    "hb-c04-u0243-s002",
+    "hb-c04-u0243-s003",
+    "hb-c04-u0243-s004",
+    "hb-c04-u0244-s001",
+    "hb-c04-u0244-s002",
+    "hb-c04-u0244-s003",
+    "hb-c04-u0245-s001",
+    "hb-c04-u0245-s002",
+    "hb-c04-u0245-s003",
+    "hb-c04-u0246-s001",
+    "hb-c04-u0246-s002",
+    "hb-c04-u0246-s003",
+    "hb-c04-u0246-s004"
+  ],
+  "requested_counts": {
+    "CORE": 110,
+    "SUPPORTING": 69,
+    "SKIP": 574
+  },
+  "included_tiers": [
+    "CORE"
+  ],
+  "selected_count": 110,
+  "sentences": [
+    {
+      "sentence_id": "hb-c04-u0001-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0001-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Popular sovereignty is a central constitutional idea about who holds legitimate state power.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Det betyder att folket i Finland har makt att bestämma hur staten ska styras.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0001-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Choosing representatives who decide on citizens' behalf is a foundational description of Finnish democracy.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Demokratin i Finland är en representativ demokrati, det vill säga medborgarna väljer representanter för sig själva som fattar beslut för dem.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0001-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0001-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free and fair elections are a major democratic safeguard, not an incidental example of election practice.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Representanterna väljs i rättvisa och fria val.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0008-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Identifying the parliamentary, municipal and county elected assemblies is central practical institutional knowledge.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Med hjälp av val väljer finländarna till exempel medlemmar i riksdagen, det vill säga riksdagsledamöter, ledamöter i kommunfullmäktige, som fattar beslut i kommunerna, och ledamöter i välfärdsområdesfullmäktige, som fattar beslut i välfärdsområdena.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0014-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0014-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Minority protection is a central limit on majority rule and a major democratic right.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Det betyder ändå inte att majoriteten fram till nästa val skulle ha rätt att diskriminera eller förtrycka minoriteten, det vill säga dem som är av en annan åsikt än majoriteten.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0014-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Fundamental rights constrain public power, making this a foundational constitutional relationship.",
+      "section_id": "hb-c04-demokrati",
+      "text": "I ett samhälle och en rättsstat som representerar en liberal demokrati ska makten användas på ett sådant sätt att de grundläggande och mänskliga rättigheterna och individens friheter tas i beaktande.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0014-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional equality is a major right, not a general etiquette or personal-preference statement.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Alla människor ska behandlas jämlikt och i enlighet med de grundläggande rättigheter som föreskrivs i grundlagen.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0015-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Freedom to criticize political power is a concrete central application of expression freedom.",
+      "section_id": "hb-c04-demokrati",
+      "text": "Yttrandefrihet innebär till exempel att en person kan kritisera politiska beslutsfattare och makthavare om hen inte är nöjd med deras arbete.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0018-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The constitution's authority over law and public power is foundational legal knowledge.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "Grundlagen är grunden för all lagstiftning och allt utövande av offentlig makt i Finland.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0018-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0018-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional organization and allocation of powers explain a central state framework.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "I grundlagen föreskrivs om hur staten är organiserad, vilken makt som hör till vilken aktör i Finland och hur till exempel lagar stiftas i landet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0019-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The legislative, executive and judicial distinction is a central organizing concept.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "I Finland är makten indelad i lagstiftande makt, verkställande makt och domsrätt.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0019-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Parliament's legislative authority is a foundational allocation of state power.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "Den lagstiftande makten, det vill säga makten att stifta lagar, utövas av riksdagen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0019-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The president and government exercise executive authority within their legal competences.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "Den verkställande makten, det vill säga makten att tillämpa lagar i praktiken, utövas av presidenten och regeringen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0019-s005",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Courts' judicial authority is a central distinction from political decision-making.",
+      "section_id": "hb-c04-maktfordelning",
+      "text": "Domsrätten, det vill säga makten att bedöma huruvida någon har agerat i enlighet med lagen i ett enskilt fall, verkställs av domstolarna.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0021-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "name",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Naming Finland's parliament is basic institutional identification with a clear defensible answer.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Finlands parlament kallas riksdag.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0021-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "number",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The 200-member elected parliament is a central constitutional fact rather than incidental numerical trivia.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Riksdagen har 200 riksdagsledamöter, som utses genom val.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0023-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0022-s001"
+      ],
+      "duplicate_of": "hb-c04-u0019-s002",
+      "assessment_confidence": "medium",
+      "rationale": "Law-making remains a foundational parliamentary function even when repeated in a list.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "stifta Finlands lagar",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0025-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0022-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Approval of the state budget is one of parliament's main constitutional powers.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "besluta om statens budget",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0027-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0022-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Government oversight is central to parliamentary accountability.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "övervaka regeringens och ministrarnas arbete.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0028-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c04-u0019-s002",
+      "assessment_confidence": "medium",
+      "rationale": "This repeats the same foundational parliamentary legislative power; duplication is recorded separately.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Riksdagen stiftar lagarna i Finland.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0028-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The ordinary government-bill route is important to understanding who prepares laws for parliament.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Vanligtvis lämnar regeringen förslag till nya lagar till riksdagen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0030-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The government-proposal detail preserves parliament's central authority to approve the budget.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Riksdagen godkänner också regeringens förslag till statens budget.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0030-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A public budget's revenue-and-spending definition is useful bounded civic vocabulary.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Budgeten är en plan över hur statens skattepengar och övriga intäkter ska användas.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0030-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Annual government preparation is a concrete role in the central state-budget process.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Regeringen förhandlar om budgeten varje år och gör ett budgetförslag till riksdagen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0031-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Binding EU-law obligations are a foundational consequence of Finland's membership.",
+      "section_id": "hb-c04-riksdagen",
+      "text": "Finland måste ta EU:s rättsakter i beaktande, eftersom Finland är medlem i EU.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0032-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The prime minister and other ministers form the government, a central institutional definition.",
+      "section_id": "hb-c04-regeringen",
+      "text": "Statsministern och de övriga ministrarna bildar Finlands statsråd.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0034-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Parliament elects the prime minister; this is a central constitutional appointment step.",
+      "section_id": "hb-c04-regeringen",
+      "text": "När regeringsprogrammet är färdigt utser riksdagen officiellt en statsminister genom omröstning.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0034-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0034-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Presidential formal appointment is a concrete central step distinct from parliament's election of the prime minister.",
+      "section_id": "hb-c04-regeringen",
+      "text": "När statsministern och övriga ministrar har utsetts utnämner presidenten dem för deras uppgifter.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0035-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Ministers' leadership of ministries is a clear basic governmental responsibility.",
+      "section_id": "hb-c04-regeringen",
+      "text": "Ministrarna leder ministeriernas arbete.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0037-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Government implementation of parliamentary decisions is a foundational executive responsibility.",
+      "section_id": "hb-c04-regeringen",
+      "text": "När riksdagen beslutar någonting, verkställer regeringen beslutet.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0038-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Government and ministers must enjoy parliament's confidence, a foundational accountability rule.",
+      "section_id": "hb-c04-regeringen",
+      "text": "Regeringen ansvarar för sitt arbete inför riksdagen, det vill säga regeringen och ministrarna måste ha riksdagens förtroende.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0038-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0038-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Loss of confidence has a major consequence for government tenure and accountability.",
+      "section_id": "hb-c04-regeringen",
+      "text": "Om riksdagen inte är övertygad om det, kan hela regeringen falla.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0039-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Opposition means parliamentary parties outside government, a useful core institutional distinction.",
+      "section_id": "hb-c04-regeringen",
+      "text": "De riksdagspartier som inte ingår i regeringen bildar opposition.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0041-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's constitutional republican form is foundational national civic knowledge.",
+      "section_id": "hb-c04-presidenten",
+      "text": "Finland är till sitt statsskick en konstitutionell republik.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0041-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The elected president is the head of state, a central institutional distinction.",
+      "section_id": "hb-c04-presidenten",
+      "text": "Finlands statsöverhuvud är republikens president, som utses genom val.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0044-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0043-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Co-leadership of foreign policy with government is a principal presidential responsibility.",
+      "section_id": "hb-c04-presidenten",
+      "text": "leda Finlands utrikespolitik i samarbete med statsrådet",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0048-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0043-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The president's supreme military command is a clear important institutional responsibility.",
+      "section_id": "hb-c04-presidenten",
+      "text": "vara överbefälhavare för Finlands försvarsmakt.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0052-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "County responsibility for social care, health care and rescue services is central practical civic knowledge.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Välfärdsområdena ansvarar för social- och hälsovårdstjänsterna och räddningsväsendet i sina respektive områden.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0052-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Helsinki's separate service arrangement is a material practical exception affecting a major population centre.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Helsingfors hör inte till något välfärdsområde, utan producerar själv sina social- och hälsovårdstjänster och räddningsväsendets tjänster.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0053-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The elected county council is central to regional democratic decision-making.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "I ett välfärdsområde fattas besluten av välfärdsområdesfullmäktige.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0053-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0053-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "County councillors' election gives a clear basic mechanism for regional representation.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Ledamöterna i välfärdsområdesfullmäktige utses genom val.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0054-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Municipal self-government is a major civic principle covering local affairs and finances.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Kommunerna beslutar i mycket hög grad själva om sina angelägenheter och sin ekonomi.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0054-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Municipal taxation is a concrete local public-finance power.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Kommunerna har rätt att ta ut skatt av invånarna.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0055-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Schools, early education and libraries are central practical municipal responsibilities.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Kommunen ansvarar för till exempel skolorna, småbarnspedagogiken, biblioteken och olika motions- och idrottstjänster.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0056-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The municipal council is the central local democratic decision-making body.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "I en kommun fattas besluten demokratiskt i kommunfullmäktige.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0056-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0056-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Municipal elections select council members, a core local representation mechanism.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "Ledamöterna i kommunfullmäktige utses i ett kommunalval.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0058-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Helsinki and Åland's absence from county elections is a material exception to general electoral coverage.",
+      "section_id": "hb-c04-lokalforvaltning",
+      "text": "I Helsingfors och på Åland ordnas inget välfärdsområdesval, eftersom Helsingfors stad och Åland ordnar tjänsterna själva.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0059-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The EU's political and economic nature is a foundational international institutional concept.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Europeiska unionen (EU) är en politisk och ekonomisk sammanslutning av stater.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0059-s005",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0059-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Compliance with binding EU law is a central consequence of membership, within treaty competences.",
+      "section_id": "hb-c04-internationellt",
+      "text": "De måste ändå följa unionens beslut och bestämmelser.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0060-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "EU democracy, rights and rule-of-law values are foundational civic principles rather than incidental policy details.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Europeiska unionens grundläggande värden är respekt för människans värdighet och de mänskliga rättigheterna, frihet, demokrati, jämställdhet och rättsstatsprincipen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0061-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c02-u0079-s003",
+      "assessment_confidence": "medium",
+      "rationale": "Finland's EU accession year is a major national historical milestone, already represented in Chapter 2.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Finland blev medlem i EU år 1995.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0061-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free movement is a major practical EU right but requires its legal conditions.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Inom EU får människor, varor och tjänster röra sig fritt.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0062-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Direct election of the European Parliament is a concrete major participation mechanism.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Medlemmarna i Europaparlamentet väljs genom val i varje medlemsland.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0062-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0062-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Representation of EU citizens distinguishes Parliament's role from national government representation.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Parlamentet representerar därför EU-ländernas medborgare.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0062-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "National ministers' Council membership is useful basic EU institutional knowledge.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Ministerrådet i sin tur består av ministrar från EU:s medlemsländer.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0062-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0062-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Council represents national governments, a precise institutional distinction from Parliament.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Det representerar därför de nationella regeringarna.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0063-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Commission legislative and budget proposals are concrete important EU institutional responsibilities.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Kommissionen gör lagförslag och förslag till EU:s budget.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0064-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 2,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's EU, NATO and UN memberships are basic national international-position knowledge.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Utöver Europeiska unionen hör Finland också till Nato och Förenta nationerna (FN).",
+      "score": 49,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0065-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "date"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c02-u0082-s001",
+      "assessment_confidence": "medium",
+      "rationale": "Finland's NATO accession is a major fixed national milestone, already present in Chapter 2.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Finland blev medlem i Nordatlantiska fördragsorganisationen Nato år 2023.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0065-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "NATO's political-military alliance identity is a useful basic distinction from economic cooperation.",
+      "section_id": "hb-c04-internationellt",
+      "text": "Nato är en politisk och militär allians med målet att främja säkerhet och frihet i sina medlemsländer.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0070-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0069-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The normal four-year parliamentary cycle is a central national election fact.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "riksdagsval vart fjärde år",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0072-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0069-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The local and county four-year cycle is an important basic electoral rule, subject to territorial arrangements.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "välfärdsområdes- och kommunalval vart fjärde år",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0073-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0069-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The six-year presidential term is a central constitutional election fact.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "presidentval vart sjätte år",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0074-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0069-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The five-year European Parliament cycle is basic voting-system knowledge.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Europaparlamentsval vart femte år.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0076-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Adult citizens' voting rights are foundational, but the all-elections wording needs territorial and legal qualifications.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Finska medborgare som är permanent bosatta i Finland och som senast på valdagen fyller 18 år kan rösta i alla val i Finland.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0077-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Noncitizens' conditional voting rights are a major practical entitlement; the unspecified conditions require substantial reconstruction.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Medborgare i andra länder som är permanent bosatta i Finland kan på vissa villkor rösta i välfärdsområdes- och kommunalval och Europaparlamentsval.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0078-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Advance or election-day voting is a basic practical way to exercise suffrage.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "I val kan man rösta antingen på den egentliga valdagen eller på förhand.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0079-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0078-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Casting one ballot per election is a major electoral responsibility, including after advance voting.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Man kan inte rösta på valdagen om man redan röstat på förhand.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0081-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Ballot secrecy is a foundational protection of free electoral choice.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "I Finland råder valhemlighet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0081-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0081-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Freedom from compulsory disclosure precisely explains the major right of ballot secrecy.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Det betyder att man inte behöver berätta för någon vilken kandidat man röstar på.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c04-u0087-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Proportional electoral representation is a central system distinction; the Åland exception needs context.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "I Finland tillämpas ett proportionellt valsätt vid riksdagsval, välfärdsområdes- och kommunalval och Europaparlamentsval.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0087-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0087-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Linking seat shares to vote shares is foundational understanding of proportional representation, with allocation qualifications.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Det innebär att i varje valkrets blir det antal kandidater från varje parti valt som motsvarar partiets andel av alla avgivna röster i valkretsen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0088-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A candidate vote's effect on party strength is major practical understanding of Finland's open-list system.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "När man röstar på en kandidat för ett parti, går rösten i första hand till partiet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0091-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Voluntary voting is a central distinction: citizens are entitled but not compelled to vote.",
+      "section_id": "hb-c04-valsystemet",
+      "text": "Det är viktigt men frivilligt att rösta.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0094-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0094-s002",
+        "hb-c04-u0095-s001",
+        "hb-c04-u0097-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The municipal voting age is a basic civic entitlement, read with the following nationality and residence conditions.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du kan rösta i kommunalval om du fyller 18 år senast på valdagen.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0095-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0094-s001",
+        "hb-c04-u0094-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The named citizenship route with home-municipality residence is a substantive practical local voting rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är medborgare i Finland, ett annat EU-land, Island eller Norge och har en hemkommun i Finland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0097-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0094-s001",
+        "hb-c04-u0094-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The two-year residence route for other nationals is an important practical local suffrage condition.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är medborgare i ett annat land och din hemkommun har varit i Finland i minst två år.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0099-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0099-s002",
+        "hb-c04-u0100-s001",
+        "hb-c04-u0102-s001",
+        "hb-c04-u0103-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The county voting age is a basic entitlement, conditional on residence and the listed nationality routes.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du kan rösta i välfärdsområdesval om du fyller 18 år senast på valdagen.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0100-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0099-s001",
+        "hb-c04-u0103-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The local nationality route matters equally in county voting, with county-residence and territorial conditions.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är medborgare i Finland, ett annat EU-land, Island eller Norge och har en hemkommun i Finland.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0102-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0099-s001",
+        "hb-c04-u0103-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The two-year foreign-national residence route is a substantive county-election eligibility condition.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är medborgare i ett annat land och din hemkommun har varit i Finland i minst två år.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0104-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Adult Finnish citizenship is the foundational national parliamentary suffrage rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du kan rösta i riksdagsval om du är finsk medborgare och fyller 18 år senast på valdagen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0105-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Adult citizenship for parliamentary candidates is a concrete basic eligibility distinction, subject to statutory exclusions.",
+      "section_id": "hb-c04-rostratt",
+      "text": "I riksdagsval måste en kandidat också vara en myndig finsk medborgare.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0108-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c04-u0056-s001",
+      "assessment_confidence": "medium",
+      "rationale": "The council's local decision-making responsibility is central even when repeated later in the chapter.",
+      "section_id": "hb-c04-rostratt",
+      "text": "I kommunfullmäktige beslutar man om kommunala frågor.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0108-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0108-s001"
+      ],
+      "duplicate_of": "hb-c04-u0056-s002",
+      "assessment_confidence": "medium",
+      "rationale": "Election of municipal councillors repeats a central local representation mechanism.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Ledamöterna i kommunfullmäktige väljs i ett kommunalval.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0111-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Election rather than inheritance of the presidency is a basic republican selection mechanism.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Presidenten väljs i presidentval.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0111-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c04-u0073-s001",
+      "assessment_confidence": "medium",
+      "rationale": "The six-year cycle repeats the same central presidential term rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Presidentval förrättas vart sjätte år.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0111-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule",
+        "number"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The two-consecutive-term limit is a concrete important safeguard defining the presidential mandate.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Samma person kan väljas till president för högst två mandatperioder i följd.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0112-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A runoff when no candidate wins a majority is an important presidential selection rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Om ingen av kandidaterna får mer än hälften av de givna rösterna vid första valomgången, förrättas en andra valomgång.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0112-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0112-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The top two advance to the runoff, a precise main element of the presidential election mechanism.",
+      "section_id": "hb-c04-rostratt",
+      "text": "I den andra valomgången kandiderar de två kandidater som fick flest röster vid första valomgången.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0113-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Adult Finnish citizenship is the foundational national presidential suffrage rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du kan rösta i presidentval om du är finsk medborgare och fyller 18 år senast på valdagen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0114-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Citizenship from birth is a specific important requirement for Finland's head of state, distinct from birthplace.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Republikens president ska vara infödd finsk medborgare.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0115-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition",
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Representation of EU citizens is a basic European Parliament role, repeated from its earlier explanation.",
+      "section_id": "hb-c04-rostratt",
+      "text": "EU-parlamentet är Europeiska unionens representativa organ.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0115-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c04-u0062-s002",
+      "assessment_confidence": "medium",
+      "rationale": "Election by citizens in member states repeats the important European parliamentary selection mechanism.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Ledamöterna i EU-parlamentet är representanter som utsetts genom val i medlemsländerna.",
+      "score": 45,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0117-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0116-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finnish citizens' adulthood condition is a basic European voting entitlement, with the one-country rule.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är finsk medborgare och fyller 18 år senast på valdagen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0119-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0119-s002",
+        "hb-c04-u0119-s003",
+        "hb-c04-u0119-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Other adult EU citizens' access is an important participation right, conditional on residence and registration.",
+      "section_id": "hb-c04-rostratt",
+      "text": "Du är medborgare i ett annat EU-land och fyller 18 år senast på valdagen.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0120-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Voting in one member state per European election is an important electoral responsibility.",
+      "section_id": "hb-c04-rostratt",
+      "text": "I samma val kan du rösta i endast ett EU-land.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0125-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Protection from political discrimination in employment is a major practical right, with lawful exceptions.",
+      "section_id": "hb-c04-partisystem",
+      "text": "Medlemskap i ett parti får inte vara en grund för att till exempel som arbetssökande inte bli vald till en anställning.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0126-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Finland's multiparty structure is a concrete basic feature of its representative system.",
+      "section_id": "hb-c04-partisystem",
+      "text": "Finland har ett flerpartisystem, det vill säga det finns många olika partier.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0157-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Expression, assembly and association are central rights enabling civic participation.",
+      "section_id": "hb-c04-paverkan",
+      "text": "I Finland garanterar bland annat yttrandefriheten och mötes- och föreningsfriheten mångsidiga möjligheter för alla att delta och påverka.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0169-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "procedure",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Permission-free demonstration is an important practical freedom; notification conditions require careful wording and current verification.",
+      "section_id": "hb-c04-paverkan",
+      "text": "Det behövs inget tillstånd för en demonstration, men polisen ska informeras om den senast 24 timmar i förväg.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0171-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Citizen initiatives provide a concrete route for proposing legislation, a central participation mechanism.",
+      "section_id": "hb-c04-paverkan",
+      "text": "Ett medborgarinitiativ kan innehålla ett lagförslag eller ett förslag till lagberedning.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0172-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Residents' right to initiate matters within municipal functions is a direct practical participation right.",
+      "section_id": "hb-c04-paverkan",
+      "text": "Enligt lagen kan varje kommuninvånare väcka ett initiativ om en aktuell fråga eller ett aktuellt problem som gäller kommunens verksamhet.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0177-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Same-sex couples' ability to marry is an important concrete civil right.",
+      "section_id": "hb-c04-paverkan",
+      "text": "I och med den nya äktenskapslagen kan också par av samma kön gifta sig.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0184-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Assembly and association freedoms are fundamental rights applying to everyone.",
+      "section_id": "hb-c04-foreningar",
+      "text": "I Finland har alla människor mötes- och föreningsfrihet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0184-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0184-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Joining, participating in and forming associations gives essential practical meaning to association freedom.",
+      "section_id": "hb-c04-foreningar",
+      "text": "Det betyder att alla har rätt att höra till föreningar, delta i föreningars verksamhet och bilda föreningar.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0209-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional protection of expression is a foundational individual freedom.",
+      "section_id": "hb-c04-medier",
+      "text": "I Finland ger grundlagen människor yttrandefrihet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0209-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c04-u0209-s001",
+        "hb-c04-u0209-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Universal scope and application to media are important parts of the expression guarantee. The antecedent follows both expression and opinion freedom, so preserve both context sentences.",
+      "section_id": "hb-c04-medier",
+      "text": "Alla människor har denna frihet och också medierna, det vill säga tv, radio, tidningar, internettjänster och andra massmedier.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0217-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Expression for individuals and media is a foundational civic freedom.",
+      "section_id": "hb-c04-medier",
+      "text": "I Finland har enskilda individer och medierna yttrandefrihet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0218-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional protection of honour and private life is a fundamental personal right.",
+      "section_id": "hb-c04-medier",
+      "text": "Grundlagen tryggar varje individs ära och privatliv.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c04-u0222-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Yle's public-service identity is a concrete central media institution; the law title is secondary.",
+      "section_id": "hb-c04-medier",
+      "text": "Rundradion, eller Yle, är ett mediebolag som bedriver allmännyttig verksamhet i Finland och vars verksamhet regleras av lagen om Rundradion Ab.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    }
+  ]
+}

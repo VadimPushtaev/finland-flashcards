@@ -211,6 +211,207 @@ answer indices matched the decks. All 14 card/export/combiner tests passed. The
 combined chapter deck contains 112 rows in source order and the freshness check
 passed for all three chapters with cards.
 
+Homebrew chapter 4 replacement generation (2026-11-03), **Demokrati, förvaltning
+och påverkan** (`hb-c04`): deleted all **239 earlier chapter questions** and
+generated **75 new CORE cards in 13 subchapters**, as explicitly requested.
+Reused all **753 current sentence assessments without changing any assessment
+file**. The fixed **CORE >=41, SUPPORTING =40, SKIP <40** cutoffs still select
+**110 CORE (14.6%), 69 SUPPORTING and 574 SKIP** sentences.
+
+The new cards cover **105 selected sentences**; **four unchanged equivalent
+questions in Chapters 2 and 3 cover the remaining five**, for coverage of all
+110 CORE sentences. Repeated legislative powers, election cycles, municipal and
+EU representation, and expression rights share questions. Broad sentences listing
+several institutions, branches, freedoms or voting conditions can be covered
+jointly by several focused questions. There are **no blocked CORE candidates**.
+
+| Chapter 4 subchapter | Replacement cards |
+| --- | ---: |
+| Demokrati och folkstyre | 4 |
+| Grundlagen och maktfördelningen | 4 |
+| Riksdagens uppgifter | 6 |
+| Regeringen och parlamentarismen | 7 |
+| Republikens president | 4 |
+| Kommuner och välfärdsområden | 10 |
+| EU och internationellt samarbete | 8 |
+| Val, valhemlighet och proportionellt valsätt | 12 |
+| Rösträtt och valbarhet | 9 |
+| Politiska partier och ideologier | 2 |
+| Partierna i riksdagsvalet 2023 | 0 |
+| Medborgarengagemang och påverkan | 4 |
+| Föreningar och frivilligverksamhet | 2 |
+| Medier, pressfrihet och publicistiskt ansvar | 3 |
+| Källkritik och mediekunnighet | 0 |
+| **Total** | **75** |
+
+The two sections without CORE candidates have no deck, source-map placeholder or
+Kahoot workbook; their old outputs were removed. The other 13 decks and source
+maps were replaced in full. No earlier Chapter 4 row was retained. The combined
+[chapter ALL.txt](../cards/homebrew/hb-c04/ALL.txt) now contains 75 rows in anthology
+order. See the [generation selection](homebrew/selections/hb-c04-2026-11-03-core-redo.json)
+and [coverage and verification review](homebrew/reviews/hb-c04-2026-11-03-core-redo.json).
+
+Reviewed Swedish context and all four options for every card. Dated primary-source
+checks resolve current institutional responsibilities, voting conditions,
+demonstration notification, association and expression rights, privacy,
+initiatives, political discrimination, same-sex marriage and Yle's public-service
+identity. Questions preserve age/citizenship/residence qualifications, the
+mainland scope of proportional parliamentary elections, approximate seat
+proportionality, citizenship from birth rather than birthplace, and notification
+rather than permission for demonstrations. Incidental numerical and procedural
+details do not become extra questions merely because their sentence is CORE.
+
+All **14 existing card/export/combiner tests passed**. Validated all 75 actual
+deck rows and source records, including exact categories, 120/70 character limits,
+source ordering, CORE primaries, scores, row hashes and current selection/source
+fingerprints. Maximum question/answer lengths are **110/66** characters. Correct
+positions are balanced **19/19/19/18**. All **13 real Kahoot workbooks** were
+reopened and their questions, options, 20-second limits and correct answers matched
+the decks. Combined-deck freshness checks passed for all four chapters with cards.
+Hash comparison confirmed **631 unrequested files**, including all 15 Chapter 4
+assessment files, unchanged. No commit or push was requested for this replacement.
+
+Homebrew chapter 4 strict reassessment (2026-11-03), **Demokrati, förvaltning och
+påverkan** (`hb-c04`): reviewed all **753 body sentences in 15 subchapters** again
+at the user's request. Current assessments yield **110 CORE (14.6%), 69 SUPPORTING
+and 574 SKIP**, below the requested chapter-specific ceiling of 15% (at most 112
+sentences). The permanent formula and cutoffs remain **CORE >=41, SUPPORTING =40,
+SKIP <40**. No other chapter was assessed or recalibrated.
+
+The first full strict pass yielded 114 CORE sentences. A second review of
+borderline concepts treated government-programme and majority-government
+terminology as secondary, and direct-democracy examples and the broad purpose of
+parties as supporting context. Central institutions, major rights and essential
+voting rules retain priority; general advice, examples, party profiles and
+association administration usually do not. Checklist questions remain source
+guidance prompts rather than factual answers supplied by the text. Exam relevance
+is an editorial estimate, not verified exam coverage. Risk and confidence remain
+independent review flags.
+
+See the [current fixed-cutoff selection](homebrew/selections/hb-c04-2026-11-03-strict-reassessment.json)
+and [reassessment review](homebrew/reviews/hb-c04-2026-11-03-strict-reassessment.json).
+Validation passed for all 753 requested sentences, including schema, source
+freshness, ordering and references. Hash checks confirmed **664 unrequested files**
+unchanged. All 753 assessments were individually reviewed; none was reused without
+review.
+
+At this assessment stage, the 239 existing cards and Kahoot exports were preserved;
+the replacement generation above subsequently removed and regenerated them. Their
+original selection describes the earlier generation below. Its exact
+assessment files are preserved in the
+[historical assessment archive](homebrew/reviews/hb-c04-2026-11-03-before-reassessment/)
+so their recorded hashes remain auditable. The older generation validation is
+historical and does not imply those cards use the current assessment selections.
+
+Homebrew chapter 4 initial generation (2026-11-03), **Demokrati, förvaltning och påverkan** (`hb-c04`):
+individually assessed all **753 body sentences in 15 subchapters**; there were no
+existing Chapter 4 assessments or decks to reuse. All unrequested source,
+assessment and card files remain unchanged. The permanent **CORE >=41,
+SUPPORTING =40, SKIP <40** thresholds yield **403 CORE, 127 SUPPORTING and
+223 SKIP** sentences. No collection-wide recalibration or percentage quota was used.
+
+The [saved selection](homebrew/selections/hb-c04-2026-11-03-core.json) records the
+requested scope, original five ratings and source/assessment fingerprints.
+Generated **239 new CORE cards across all 15 subchapters** and reused **four
+existing cards**. Related claims and genuine repetitions share questions rather
+than becoming paraphrase duplicates. These cover **401 selected CORE sentences**:
+397 through the new cards and four through existing cards. **Two CORE candidates
+remain blocked** for source correction; neither was silently dropped or demoted.
+CORE is a study priority, not a promise of exam coverage.
+
+| Chapter 4 subchapter | Selected CORE sentences | New cards |
+| --- | ---: | ---: |
+| Demokrati och folkstyre | 31 | 17 |
+| Grundlagen och maktfördelningen | 7 | 5 |
+| Riksdagens uppgifter | 20 | 12 |
+| Regeringen och parlamentarismen | 24 | 12 |
+| Republikens president | 8 | 7 |
+| Kommuner och välfärdsområden | 22 | 16 |
+| EU och internationellt samarbete | 32 | 22 |
+| Val, valhemlighet och proportionellt valsätt | 44 | 28 |
+| Rösträtt och valbarhet | 51 | 28 |
+| Politiska partier och ideologier | 20 | 15 |
+| Partierna i riksdagsvalet 2023 | 9 | 8 |
+| Medborgarengagemang och påverkan | 38 | 22 |
+| Föreningar och frivilligverksamhet | 20 | 15 |
+| Medier, pressfrihet och publicistiskt ansvar | 45 | 18 |
+| Källkritik och mediekunnighet | 32 | 14 |
+| **Total** | **403** | **239** |
+
+The [coverage and review record](homebrew/reviews/hb-c04-2026-11-03-core.json)
+links every covered CORE ID to actual deck-row hashes and records reused rows and
+blocked sentences. Reused cards are:
+
+- `hb-c04-u0014-s004`: Chapter 3's constitutional equality question,
+  "Vad innebär likhet inför lagen i Finland?"
+- `hb-c04-u0031-s004`: Chapter 2's binding EU-law question,
+  "Hur påverkar EU-medlemskapet Finlands lagstiftning?"
+- `hb-c04-u0061-s001`: Chapter 2's EU-accession-year question (1995).
+- `hb-c04-u0065-s001`: Chapter 2's NATO-accession-year question (2023).
+
+The two accession assessments also identify their earlier Chapter 2 sentence
+representatives. Reused decks and source records were preserved byte for byte.
+
+Blocked CORE candidates, both score **42**:
+
+- **`hb-c04-u0031-s003`** says Finnish and EU law cannot conflict. This absolute
+  formulation cannot be taught as a factual guarantee: legal conflicts can arise,
+  and the applicable EU-law primacy rules address them. The source does not state
+  a precise primacy rule from which to build an honest source-based question.
+  The separate, supported obligation to respect EU law is covered by the reused
+  Chapter 2 question. Checked 2026-11-03 against
+  [EUR-Lex's explanation of primacy](https://eur-lex.europa.eu/EN/legal-content/glossary/primacy-of-eu-law-precedence-supremacy.html).
+- **`hb-c04-u0246-s004`** limits advertising-identification rules to content
+  produced in Finland. KKV explicitly states that marketing directed to Finnish
+  consumers is covered regardless of where the content was made. The supported
+  principle that commercial content must be recognizable has its own card; the
+  opposite jurisdiction assertion remains blocked. Checked 2026-11-03 against
+  [KKV's influencer-marketing guidance, section 1.3](https://www.kkv.fi/sv/konsumentarenden/information-och-anvisningar-till-foretag/konsumentombudsmannens-riktlinjer/influerarmarknadsforing-i-sociala-medier/).
+
+Dated primary-source checks are stored in the source records. Important wording
+qualifications include free parliamentary mandates, presidential confirmation
+rather than an absolute veto, government confidence rather than a second
+ministerial appointment, EU co-legislation rather than every EU decision,
+municipal versus county duties, Helsinki/Åland exceptions, lawful voting
+assistance, one-country EU voting, nationality/residence/register cutoffs,
+statutory candidacy exclusions, and the single-member Åland constituency.
+Municipal counts and undated demographic voting trends were not added as extra
+questions. Dated EU/NATO/MEP figures keep their actual historical or term frame.
+
+Initiatives distinguish proposals from binding decisions. Citizen initiative
+wording does not claim one person can formally launch an initiative alone;
+current guidance requires at least five responsible voting-age Finnish citizens.
+EU initiatives retain national signature minima as well as the million/seven-state
+threshold. A municipal youth council may be an equivalent participation group.
+Demonstrations require notification rather than political permission, with the
+ordinary 24-hour rule and statutory exceptions. Association cards distinguish
+legal personality from officers' own liability, membership authority from board
+management, and chair domicile exceptions from the source's overbroad vice-chair
+claim. Unemployment guidance is framed as seeking case-specific advice, not a
+universal prior-permission requirement for volunteering.
+
+Media cards preserve editorial independence, distinguish ONM ethics from court
+punishments, protect privacy without exempting all public figures, and do not
+portray Yle taxation as an unrestricted all-persons rule. Media literacy covers
+independent corroboration, evidence, motives, dates and misleading image/video
+context; realistic synthetic content is possible without claiming every fake is
+undetectable. Each question and all four choices were reviewed for a single
+supported answer; three redundant draft questions were merged into focused cards.
+
+Outputs: [subchapter decks and combined ALL.txt](../cards/homebrew/hb-c04/),
+[assessments](homebrew/assessments/), [source records](homebrew/card_sources/), and
+[15 Kahoot workbooks](../kahoot/homebrew/hb-c04/). Validation passed for all
+753 assessments and all 239 cards, including exact Swedish categories, source
+links, current fingerprints, selected CORE primaries, source-order and row hashes.
+All 403 selected sentences have an explicit covered/reused/blocked disposition.
+Maximum question/answer lengths are **109/70** characters, within 120/70 limits.
+Correct positions are distributed **60/60/60/59** and shuffled in source order.
+All 15 actual workbooks were reopened: every question, four choices, 20-second
+limit and answer index matched its TXT row. All **14 card/export/combiner tests**
+passed. Combined Chapter 4 has 239 rows in anthology order; freshness checks passed
+for all four chapters with cards. Hash comparison confirmed **582 unrelated files**
+unchanged. Generation did not request a commit or push.
+
 ## 1. Main Textbook (PRIMARY SOURCE)
 
 **Source:** `data/orientation_guide.pdf`
