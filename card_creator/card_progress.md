@@ -412,6 +412,82 @@ passed. Combined Chapter 4 has 239 rows in anthology order; freshness checks pas
 for all four chapters with cards. Hash comparison confirmed **582 unrelated files**
 unchanged. Generation did not request a commit or push.
 
+Homebrew chapter 5 (2026-11-04), **Grundläggande rättigheter, jämlikhet och
+skyldigheter** (`hb-c05`): individually assessed all **469 body sentences in 15
+subchapters**. No Chapter 5 assessments or decks existed to reuse. With the fixed
+**CORE >=41, SUPPORTING =40, SKIP <40** thresholds, the requested scope contains
+**164 CORE, 36 SUPPORTING and 269 SKIP** sentences. No percentage quota or
+collection-wide recalibration was used. Exam relevance remains an editorial
+estimate, not a claim of guaranteed exam coverage.
+
+Generated **79 new CORE cards across all 15 subchapters** and reused **14 unchanged
+equivalent questions from Chapters 1–4**. Together these cover **162 selected CORE
+sentences**; two source claims remain blocked for correction. New cards link to
+135 selected sentences and reused cards to 28, with one sentence jointly covered
+by both. Lists of rights can be covered jointly by focused questions; source
+sentence counts are distinct from card counts.
+
+| Chapter 5 subchapter | New cards |
+| --- | ---: |
+| Grundläggande och mänskliga rättigheter | 3 |
+| Grundläggande friheter och rättigheter | 12 |
+| Jämställdhet mellan könen | 8 |
+| Likabehandling och diskriminering | 3 |
+| Rasism och hatbrott | 2 |
+| Hjälp vid diskriminering | 1 |
+| Språkliga minoriteter och urfolk | 5 |
+| Rättigheter för personer med funktionsnedsättning | 4 |
+| Barns rättigheter | 8 |
+| Religionsfrihet och barnets religion | 2 |
+| Sexuella rättigheter och kroppslig integritet | 11 |
+| Självbestämmande och reproduktiv hälsa | 3 |
+| Individens skyldigheter | 5 |
+| Rättigheter och skyldigheter som följer av medborgarskap | 8 |
+| Försvarsplikt, beväringstjänst och civiltjänst | 4 |
+| **Total** | **79** |
+
+The [saved selection](homebrew/selections/hb-c05-2026-11-04-core.json) preserves
+all assessment fields and source/assessment fingerprints. The
+[coverage and verification review](homebrew/reviews/hb-c05-2026-11-04-core.json)
+identifies every new or reused question and both blocked candidates:
+
+- **`hb-c05-u0076-s001`** names Regionförvaltningsverket as a current supervisory
+  contact. The former agencies ceased operating on 1 January 2026. The source
+  needs a current authority reference before this specific claim can be taught.
+- **`hb-c05-u0198-s001`** gives a conscription age range of 18–60. The current
+  statutory upper limit is 65, subject to transitional rules. The archived range
+  has no historical date permitting a faithful dated question. General defence
+  and service obligations are covered separately; this range is not taught.
+
+Both retain their CORE scores. Swedish source text and unrequested assessments
+were preserved. Repeated equality, religion, expression, privacy, assembly,
+association, same-sex marriage, national-language and Åland claims reuse existing
+questions. Consent examples, bodily autonomy, child voice, care duties and
+capacity-based access to abortion and contraception are consolidated. The EU
+citizenship sentence supports two materially different new questions: electoral
+participation and access to work.
+
+Primary-source checks dated 2026-11-04 preserve current qualifications on lawful
+movement, public-document secrecy, social-service eligibility, indirect
+discrimination, pregnancy and parenthood, reasonable accommodation, child consent
+to religious affiliation, minors' capacity and privacy, sexual-offence thresholds,
+genital-mutilation safeguards, abortion on request, witness privileges and
+conscription. Forced marriage is not described as requiring a separately named
+criminal offence. Government proposal HE 129/2026 is used for its description of
+current equality law, not as evidence that proposed amendments are enacted.
+
+Validated all 469 assessments and 79 actual cards/source records, including exact
+categories, selected CORE primaries, scores, source/selection fingerprints,
+source order, distinct answer choices and row hashes. Maximum question/answer
+lengths are **115/70** characters; correct positions are balanced **20/20/20/19**.
+All **15 real Kahoot workbooks** were reopened and their questions, options,
+20-second limits and correct answers matched the TXT decks. All **14 existing
+card/export/combiner tests passed**. The combined
+[chapter ALL.txt](../cards/homebrew/hb-c05/ALL.txt) contains 79 rows in anthology
+order. Hash comparison confirmed **700 unrequested files unchanged**, and the
+15 new assessment files stayed unchanged after selection. Generation did not
+request a commit or push.
+
 ## 1. Main Textbook (PRIMARY SOURCE)
 
 **Source:** `data/orientation_guide.pdf`
