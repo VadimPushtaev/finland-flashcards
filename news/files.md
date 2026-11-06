@@ -2,7 +2,7 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-11-04 (unless noted otherwise in filename).
+Download date: 2026-11-06 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
@@ -405,6 +405,7 @@ Download date: 2026-11-04 (unless noted otherwise in filename).
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
+| `news/files/eduskunta_ptk_71_2026_2_fi_2026-11-06.pdf` | FI: revised Parliament protocol item PTK 71/2026 vp, item 2 (second supplementary budget final handling, 2026-06-23); revision 4.0, marked `Tarkistettu`, PDF regenerated 2026-10-08, with minor transcript corrections. No change to the recorded budget decision. — archived 2026-11-06 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849/pdf | `fbf4bd5b49a193b4c22e8824d9bf048b363243ad1d4ada06f242e6286753151c` |
 | `news/files/eduskunta_pr_71_2026_2_sv_2026-10-29.pdf` | SV: revised Parliament protocol item PR 71/2026 rd, item 2 (second supplementary budget final handling, 2026-06-23); revision 4.0, marked `Granskats`, PDF regenerated 2026-10-08, with minor transcript corrections. No change to the recorded budget decision. — archived 2026-10-29 | https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883/pdf | `9b0e8845459a8fd5c680f0c2043cfac1ae9c288a2d4c07561231a90eed8c14ae` |
 | `news/files/eduskunta_ptk_41_2026_5_fi.pdf` | FI: Parliament protocol item print/PDF version, PTK 41/2026 vp item 5 (referral debate on HE 54/2026, 2026-04-23) | https://www.eduskunta.fi/pdf/PTK+41/2026+5 | `f18d1bf1da62465ef70ee627c6b38a9bd7211d822e8d6d03c276ba646ac00f07` |
 | `news/files/eduskunta_pr_41_2026_5_sv.pdf` | SV: Parliament protocol item print/PDF version, PR 41/2026 rd item 5 (referral debate on RP 54/2026, 2026-04-23) | https://www.eduskunta.fi/pdf/PR+41/2026+5 | `b6db8990098e927deebcdda4b73b09a28aa25e340204d200f767994ec5f38c81` |

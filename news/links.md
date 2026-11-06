@@ -244,7 +244,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Parliament protocol item print/PDF version for second supplementary budget committee-report tabling (SV, PR 70/2026 rd, item 3): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37758/pdf
 - Parliament protocol item for second supplementary budget final handling / Parliament letter delivery (FI, PTK 71/2026 vp / EDK-2026-AK-37849, item 2, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849
 - Parliament protocol item for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd / EDK-2026-AK-37883, item 2, 2026-06-23): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883
-- Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (FI, PTK 71/2026 vp, item 2): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849/pdf
+- Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (FI, PTK 71/2026 vp, item 2; revision 4.0, marked Tarkistettu, PDF regenerated 2026-10-08): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37849/pdf
 - Parliament protocol item print/PDF version for second supplementary budget final handling / Parliament letter delivery (SV, PR 71/2026 rd, item 2; revision 4.0, marked Granskats, PDF regenerated 2026-10-08): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37883/pdf
 - Parliament Finance Committee report for second supplementary budget (FI, VaVM 19/2026 vp / EDK-2026-AK-37016, 2026-06-22): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016
 - Parliament Finance Committee report for second supplementary budget PDF (FI, VaVM 19/2026 vp): https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-37016/pdf
@@ -440,3 +440,26 @@ These are historical publications or current URLs for files already archived; th
 - Finlex RP 54/2026 proposal PDF (SV; current media ID 1072434; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1072434/mainPdf/main.pdf?timestamp=2026-06-24T07%3A01%3A07.000Z
 - Finlex HE 102/2026 supplementary-budget proposal PDF (FI; current media ID 1073315; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1073315/mainPdf/main.pdf?timestamp=2026-07-01T10%3A33%3A15.000Z
 - Finlex RP 102/2026 supplementary-budget proposal PDF (SV; current media ID 1073314; same SHA256 as archived proposal): https://www.finlex.fi/api/media/government-proposal/1073314/mainPdf/main.pdf?timestamp=2026-07-01T10%3A33%3A15.000Z
+
+## Additional official source routes (discovered 2026-11-06)
+
+- Parliament protocol item alternate document route (SV, PR 41/2026 rd, item 5) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-22864
+- Parliament Administrative Committee report PDF (SV, FvUB 10/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/5D181660-3351-CBDF-8547-9E69FAB00000.pdf
+- Parliament protocol item alternate document route (SV, PR 58/2026 rd, item 10) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-32323
+- Parliament protocol item print/PDF version (FI, PTK 59/2026 vp, item 10; current revision 4.0 archived 2026-08-29) — current direct URL: https://api.eduskunta.fi/documents/fi/5C1E5405-05C2-C0B6-86A2-A04855300000.pdf
+- Parliament protocol item alternate document route (SV, PR 59/2026 rd, item 10) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-33270
+- Parliament protocol item alternate document route (SV, PR 62/2026 rd, item 9) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-34657
+- Parliament protocol item print/PDF version (FI, PTK 63/2026 vp, item 4) — current direct URL: https://api.eduskunta.fi/documents/fi/53B7DD18-48B2-4291-9123-E7EEDC4658D0.pdf
+- Parliament protocol item alternate document route (SV, PR 63/2026 rd, item 4) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-35082
+- Parliament response PDF (SV, RSv 86/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/7560BA83-91A5-C964-845D-9EB14B500000.pdf
+- Parliament Administrative Committee expert statement — Julie Breton, Moniheli ry (HaV 2026-05-11) — current direct URL: https://api.eduskunta.fi/documents/fi/68646A06-4274-4A2B-AA30-40C089840420.pdf
+- Parliament Administrative Committee expert-statement attachment — Julie Breton, Moniheli ry presentation (HaV 2026-05-11) — current direct URL: https://api.eduskunta.fi/documents/fi/1A88A5F2-B7F1-4CE3-88CE-543EFA960016.pdf
+- Parliament handling page for second supplementary budget proposal (FI, HE 102/2026; current page records the enacted budget as 570/2026) — current direct URL: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/HE%20102%2F2026%20vp
+- Eduskunta submitted second supplementary budget print/PDF (SV, RP 102/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/B88E9168-A35C-4A83-B4ED-6CAFD26B3089.pdf
+- Parliament protocol item alternate document route for continued second supplementary budget referral debate (SV, PR 63/2026 rd, item 17) — current direct URL: https://www.eduskunta.fi/sv/arenden-och-omrostningar/riksdagsarenden/handlingar/edktunnus/EDK-2026-AK-35281
+- Parliament protocol item print/PDF version for second supplementary budget final handling (FI, PTK 71/2026 vp, item 2; revision 4.0, marked Tarkistettu, PDF regenerated 2026-10-08) — current direct URL: https://api.eduskunta.fi/documents/fi/1ACE0408-06C3-CB23-970D-A11B80100000.pdf
+- Parliament Finance Committee report for second supplementary budget PDF (SV, FiUB 19/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/D6FBA925-66A5-C445-8519-9EF0E2700000.pdf
+- Working-group report direct PDF (same file already archived in `news/files.md`) — current direct URL: https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/24376a1a-8fcc-40da-8685-cf92097421cb/content
+- Parliament plenary protocol main page (FI, PTK 59/2026 vp) — current direct URL: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-32721
+- Parliament plenary protocol main page (FI, PTK 62/2026 vp) — current direct URL: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34462
+- Press releases (FI; discovered through Migri site search): https://migri.fi/lehdistotiedotteet
