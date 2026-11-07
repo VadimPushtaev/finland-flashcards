@@ -1,6 +1,7 @@
 import { ReaderBreadcrumbs } from './ReaderBreadcrumbs';
+import { ReaderChrome } from './ReaderChrome';
 import { VideoPlayer, type VideoSource } from './VideoPlayer';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState, type ReactNode } from 'react';
 import { useAccount, type Progress } from './Account';
 import { TranslationPanel, TranslationText, type Selection, type TranslationData } from './Translation';
 
@@ -83,6 +84,14 @@ export default function App() {
   const openChapter = (chapter: Summary) => chapterLink(chapter.id, progress.last?.chapter === chapter.id && chapter.sections.some(s => s.id === progress.last?.section) ? progress.last.section : chapter.sections.find(s => !progress.completed.includes(s.id))?.id || chapter.sections[0].id);
   const resume = library?.chapters.find(c => c.id === progress.last?.chapter) || library?.chapters[0];
 
+  const topbar = <header className="topbar">
+    <button ref={menuButtonRef} className="btn icon-button mobile-menu" onClick={() => setMenu(true)} aria-label="Öppna menyn" aria-expanded={menu}><Icon name="list" /></button>
+    <form className="search-form" role="search" onSubmit={event => { event.preventDefault(); if (query.trim().length >= 2) location.hash = `/search/${encodeURIComponent(query.trim())}`; }}>
+      <Icon name="search" /><input className="form-control" type="search" aria-label="Sök i materialet" placeholder="Sök i alla kapitel…" value={query} minLength={2} maxLength={120} onChange={event => setQuery(event.target.value)} /><button className="search-submit" type="submit" aria-label="Sök"><Icon name="arrow-return-left" /></button>
+    </form>
+    <div className="topbar-tools"><div className="account-controls">{account.username ? <><span className="account-name" title={account.username}>{account.username}</span><button className="btn btn-sm" onClick={() => void account.logout()}>Logga ut</button></> : <button className="btn btn-sm" onClick={account.openLogin} disabled={!account.ready}>Logga in</button>}</div><span className="language-label"><span className="finland-flag" /> Svenska</span><button className="btn icon-button" aria-label={progress.dark ? 'Aktivera ljust tema' : 'Aktivera mörkt tema'} onClick={() => changeProgress({ dark: !progress.dark })}><Icon name={progress.dark ? 'sun' : 'moon'} /></button></div>
+  </header>;
+
   return <div className={`app-shell ${route.page === 'chapter' ? 'reader-mode' : ''}`}>
     <a className="skip-link" href="#main-content" onClick={e => { e.preventDefault(); document.getElementById('main-content')?.focus(); }}>Till innehållet</a>
     {menu && <button className="sidebar-backdrop" aria-label="Stäng menyn" onClick={() => setMenu(false)} />}
@@ -102,17 +111,11 @@ export default function App() {
       <div className="sidebar-bottom"><div className="d-flex justify-content-between mb-2"><span>Din läsning</span><strong>{overall}%</strong></div><Meter value={overall} /><small>{completed} av {allSections.length || 187} avsnitt lästa</small><a href="#/about"><Icon name="info-circle" /> Om materialet</a></div>
     </aside>
     <div className="workspace">
-      <header className="topbar">
-        <button ref={menuButtonRef} className="btn icon-button mobile-menu" onClick={() => setMenu(true)} aria-label="Öppna menyn" aria-expanded={menu}><Icon name="list" /></button>
-        <form className="search-form" role="search" onSubmit={event => { event.preventDefault(); if (query.trim().length >= 2) location.hash = `/search/${encodeURIComponent(query.trim())}`; }}>
-          <Icon name="search" /><input className="form-control" type="search" aria-label="Sök i materialet" placeholder="Sök i alla kapitel…" value={query} minLength={2} maxLength={120} onChange={event => setQuery(event.target.value)} /><button className="search-submit" type="submit" aria-label="Sök"><Icon name="arrow-return-left" /></button>
-        </form>
-        <div className="topbar-tools"><div className="account-controls">{account.username ? <><span className="account-name" title={account.username}>{account.username}</span><button className="btn btn-sm" onClick={() => void account.logout()}>Logga ut</button></> : <button className="btn btn-sm" onClick={account.openLogin} disabled={!account.ready}>Logga in</button>}</div><span className="language-label"><span className="finland-flag" /> Svenska</span><button className="btn icon-button" aria-label={progress.dark ? 'Aktivera ljust tema' : 'Aktivera mörkt tema'} onClick={() => changeProgress({ dark: !progress.dark })}><Icon name={progress.dark ? 'sun' : 'moon'} /></button></div>
-      </header>
+      {!(route.page === 'chapter' && library && account.ready && !error) && topbar}
       <main id="main-content" tabIndex={-1}>
         {account.saveError && <div className="alert alert-warning m-3" role="alert">{account.saveError}</div>}
         {error ? <div className="page"><ErrorMessage message={error} /></div> : !library || !account.ready ? <Loading /> : route.page === 'chapter' ?
-          <Reader key={route.chapter} library={library} route={route} progress={progress} changeProgress={changeProgress} toggleCompleted={toggleCompleted} toggleBookmark={toggleBookmark} /> :
+          <Reader key={route.chapter} topbar={topbar} library={library} route={route} progress={progress} changeProgress={changeProgress} toggleCompleted={toggleCompleted} toggleBookmark={toggleBookmark} /> :
           route.page === 'search' ? <Search key={route.query} query={route.query || ''} /> : route.page === 'saved' ? <Saved ids={progress.bookmarks} toggleBookmark={toggleBookmark} /> : route.page === 'about' ? <About /> :
           <div className="page overview">
             <div className="eyebrow"><span className="status-dot" /> DIN STUDIEPLATS</div>
@@ -135,7 +138,7 @@ export default function App() {
   </div>;
 }
 
-function Reader({ library, route, progress, changeProgress, toggleCompleted, toggleBookmark }: { library: Library; route: Route; progress: Progress; changeProgress: (p: Partial<Progress>) => void; toggleCompleted: (id: string) => void; toggleBookmark: (id: string) => void }) {
+function Reader({ topbar, library, route, progress, changeProgress, toggleCompleted, toggleBookmark }: { topbar: ReactNode; library: Library; route: Route; progress: Progress; changeProgress: (p: Partial<Progress>) => void; toggleCompleted: (id: string) => void; toggleBookmark: (id: string) => void }) {
   const [chapter, setChapter] = useState<Chapter | null>(null);
   const [error, setError] = useState('');
   const [sources, setSources] = useState<Record<string, Source>>({});
@@ -168,8 +171,8 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
     return () => document.removeEventListener('keydown', listener);
   }, [selection]);
   useEffect(() => { if (route.unit && chapter && section) { const timer = window.setTimeout(() => document.getElementById(route.unit!)?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100); return () => clearTimeout(timer); } }, [route.unit, chapter, section]);
-  if (error) return <div className="page"><ErrorMessage message={error} /></div>;
-  if (!chapter || !section) return <Loading />;
+  if (error) return <>{topbar}<div className="page"><ErrorMessage message={error} /></div></>;
+  if (!chapter || !section) return <>{topbar}<Loading /></>;
   const next = chapter.sections[sectionIndex + 1];
   const previous = chapter.sections[sectionIndex - 1];
   const nextChapter = library.chapters.find(c => c.order === chapter.order + 1);
@@ -200,11 +203,11 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
     return <>{result}{chars.slice(end).join('')}</>;
   };
   const renderUnit = (unit: Unit) => <div className={`reader-unit ${route.unit === unit.id ? 'target-unit' : ''}`} id={unit.id} key={unit.id}><span>{unitText(unit)}</span><button className={`unit-bookmark btn icon-button ${progress.bookmarks.includes(unit.id) ? 'is-saved' : ''}`} aria-label={progress.bookmarks.includes(unit.id) ? 'Ta bort bokmärke' : 'Spara textstycke'} aria-pressed={progress.bookmarks.includes(unit.id)} onClick={() => toggleBookmark(unit.id)}><Icon name={progress.bookmarks.includes(unit.id) ? 'bookmark-fill' : 'bookmark-plus'} /></button></div>;
-  return <div className="reader-page">
+  return <ReaderChrome sectionId={section.id} navigation={<>{topbar}
     <div className="reader-toolbar">
       <ReaderBreadcrumbs chapters={library.chapters} chapter={chapter} section={section} completed={progress.completed} />
       <div className="reading-tools" role="group" aria-label="Läsinställningar"><button className="btn" onClick={() => changeProgress({ serif: !progress.serif })} aria-label="Byt typsnitt" aria-pressed={progress.serif}>Aa</button><button className="btn" onClick={() => changeProgress({ size: Math.max(18, progress.size - 2) })} disabled={progress.size === 18} aria-label="Minska textstorleken">A−</button><button className="btn" onClick={() => changeProgress({ size: Math.min(24, progress.size + 2) })} disabled={progress.size === 24} aria-label="Öka textstorleken">A+</button></div>
-    </div>
+    </div></>}>
     <div className={`reader-layout ${selection ? 'has-translation' : ''}`}>
       <article className="reading-column" ref={textPane} aria-label="Svensk lästext" tabIndex={0}>
         <div className="reader-chapter-title">{translatedText(chapter.id, chapter.title)}</div>
@@ -219,7 +222,7 @@ function Reader({ library, route, progress, changeProgress, toggleCompleted, tog
       </article>
       {selection && <TranslationPanel selection={selection} onClose={closeTranslation} />}
     </div>
-  </div>;
+  </ReaderChrome>;
 }
 
 function PassageCard({ passage, query = '', remove }: { passage: Passage; query?: string; remove?: () => void }) {

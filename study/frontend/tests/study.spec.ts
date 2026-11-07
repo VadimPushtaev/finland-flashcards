@@ -1,5 +1,58 @@
 import { test, expect } from './account.fixture';
 
+test('reader navigation collapses downwards and returns on an upward scroll', async ({ page }) => {
+  await page.goto('/#/chapter/hb-c05/hb-c05-barn');
+  const pane = page.locator('.reading-column');
+  const header = page.locator('.reader-header');
+  await expect(page.locator('.reader-text')).toBeVisible();
+  const initial = (await pane.boundingBox())!;
+  const headerHeight = (await header.boundingBox())!.height;
+  await pane.hover();
+  await page.mouse.wheel(0, 350);
+  await expect(header).toHaveClass(/is-hidden/);
+  await expect.poll(async () => (await pane.boundingBox())!.y).toBeLessThan(1);
+  expect((await pane.boundingBox())!.height).toBeGreaterThan(initial.height + headerHeight - 2);
+  await page.mouse.wheel(0, -40);
+  await expect(header).not.toHaveClass(/is-hidden/);
+  await expect.poll(async () => (await pane.boundingBox())!.y).toBeCloseTo(initial.y, 0);
+  await page.getByRole('button', { name: 'Välj avsnitt' }).click();
+  await expect(page.locator('.breadcrumb-dropdown')).toBeVisible();
+  // An open destination menu must remain available while the article moves.
+  const box = (await pane.boundingBox())!;
+  await page.mouse.move(box.x + 10, box.y + box.height - 10);
+  await page.mouse.wheel(0, 120);
+  await expect(header).not.toHaveClass(/is-hidden/);
+  await page.locator('.breadcrumb-dropdown a').first().click();
+  await expect(header).not.toHaveClass(/is-hidden/);
+  await expect.poll(() => pane.evaluate(el => el.scrollTop)).toBe(0);
+});
+
+test('collapsed navigation gives translations more room and remains keyboard accessible', async ({ page }) => {
+  await page.goto('/#/chapter/hb-c01/hb-c01-lage');
+  const pane = page.locator('.reading-column');
+  const header = page.locator('.reader-header');
+  await page.locator('#hb-c01-u0001 .translation-word').filter({ hasText: /^skogar$/ }).click();
+  const panel = page.locator('.translation-panel');
+  await expect(panel).toBeVisible();
+  await expect(header).not.toHaveClass(/is-hidden/);
+  const initial = (await pane.boundingBox())!.height + (await panel.boundingBox())!.height;
+  await pane.hover();
+  await page.mouse.wheel(0, 400);
+  await expect(header).toHaveClass(/is-hidden/);
+  await expect.poll(async () => (await pane.boundingBox())!.y).toBeLessThan(1);
+  expect((await pane.boundingBox())!.height + (await panel.boundingBox())!.height).toBeGreaterThan(initial);
+  await expect(panel).toContainText('леса и озёра');
+  // Scrolling the independent translation pane does not change navigation.
+  await panel.evaluate(el => { el.scrollTop = 100; });
+  await expect(header).toHaveClass(/is-hidden/);
+  await pane.focus();
+  await page.keyboard.press('Shift+Tab');
+  await expect(header).not.toHaveClass(/is-hidden/);
+  await expect(page.getByRole('button', { name: 'Öka textstorleken' })).toBeFocused();
+  await pane.evaluate(el => { el.scrollTop = 0; });
+  await expect(header).not.toHaveClass(/is-hidden/);
+});
+
 test('read, save, complete and resume a section across reloads', async ({ page, context, account }, testInfo) => {
   await context.addCookies([{ name: 'homebrew_session', value: account.token, url: 'http://127.0.0.1:18745' }]);
   await page.goto('/');

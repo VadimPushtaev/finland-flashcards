@@ -272,6 +272,9 @@ main navigation behind the menu button. Desktop and landscape phones place the
 translation beside the reader; portrait phones place it below. Both panes scroll
 independently, and closing the translation restores the full reading area.
 Keyboard users can select words with Enter/Space and close with Escape.
+While reading, scrolling down hides the search bar and chapter navigation to
+free up space. A short upward scroll restores both; keyboard focus also reveals
+the controls, and choosing a new section starts with navigation visible.
 
 Only reviewed translations are displayed. The Russian translation scope covers
 chapters 1–6: 86 sections and their chapter headings. Chapters 7–12 are deferred.
