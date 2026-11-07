@@ -1,0 +1,5050 @@
+{
+  "schema_version": 1,
+  "formula": "9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity",
+  "score_range": [
+    0,
+    60
+  ],
+  "calibration": {
+    "mode": "fixed_cutoffs",
+    "scope": "requested",
+    "core_min": 41,
+    "supporting_min": 40,
+    "assessed_sentences": 342,
+    "assessed_sections": 14,
+    "counts": {
+      "CORE": 189,
+      "SUPPORTING": 64,
+      "SKIP": 89
+    }
+  },
+  "assessment_inputs": {
+    "hb-c06-brott": {
+      "assessment_sha256": "1e7894b003e6c4ef6f8c5b742cc89fce289f8036da79cfd8cbeee557bd1726e6",
+      "source_sha256": "00937f671218ad7765b84ba17dfc0935bb8baedd6f7dfa80ed9d1453341ca779"
+    },
+    "hb-c06-brottsoffer": {
+      "assessment_sha256": "6ce0631272f34d4304b9d6f9bc56e7a02fd3cdcc65176fb0bd02ab1da316c360",
+      "source_sha256": "062cd26c16e38733b3daa73381c3d636c7a49725ad28877f152cfc77b16d60b0"
+    },
+    "hb-c06-domstolar": {
+      "assessment_sha256": "8cc15c22948fbab7668066c93b21c015be054456d0f23a41e10caf489716b601",
+      "source_sha256": "6a6998dbf008b790d277f8b5e9d55055d1e24b883e6a59f202e24275e1d1abe7"
+    },
+    "hb-c06-forundersokning": {
+      "assessment_sha256": "b1e0bbb3c51c17f9e3011519740992ff1e6218881415530206eab60440913f46",
+      "source_sha256": "0c8b034ce3ea32ceae838f22cac776510fa228ecff9054ef15e758a99483504d"
+    },
+    "hb-c06-god-forvaltning": {
+      "assessment_sha256": "8126cca0362898ae8879d437560f08f1ab1c42b647ff9950983ce76d3ce678c1",
+      "source_sha256": "37f36369857d0b6086794d1bb48f68306d586f84133fd28182c34fd162d03f00"
+    },
+    "hb-c06-manniskohandel": {
+      "assessment_sha256": "c137556174e5ba5b13a6df9a90e0c25f15b3b6804628f97192287fd84b4b122d",
+      "source_sha256": "5b1a266a4b7ef9baf8565a0f6e5703c93e93b3573b7e74c1ff641a3818291a3d"
+    },
+    "hb-c06-overklagande": {
+      "assessment_sha256": "fb7d779acb19d70a250c09aa84bc7ec3f0e979a1d4ffbb5cb0a55caca7ecccd2",
+      "source_sha256": "267da569355f7b8cb4f3c9ad91b7fa2750826b20bc9f06f7590d0a643b6a0bee"
+    },
+    "hb-c06-polis": {
+      "assessment_sha256": "60c36a5cc8f846734429e58ee8b9e049a3f59e0f8e72cb4333e46bbf032a2f30",
+      "source_sha256": "e5bdc7fd40b595aedc10b7fdd83b2c778beb56289a04d771a7979b4d84eeb6e0"
+    },
+    "hb-c06-rattshjalp": {
+      "assessment_sha256": "0621f1fac87e3c359d6c4b11b7eefc69c2ecb3c0b1d0453808bba02bdcb687da",
+      "source_sha256": "a31fa930afa4700cc3612a0aea63e2823525ab5ac88e3c909ee06a51702e5c18"
+    },
+    "hb-c06-rattsskydd": {
+      "assessment_sha256": "d533fc62b2c8d1823d77e20c0a9ccffa38be7868c5788e8f89aa0bb75194e38c",
+      "source_sha256": "43ff1c706b9db5bc94622093075ec7c049bc6146cf201e54dfd9440658074a2e"
+    },
+    "hb-c06-rattsstat": {
+      "assessment_sha256": "fd9a4b60af03367ae9c0dd02422c4857ea308c025df1542bcd4ada63855b549d",
+      "source_sha256": "7fbd9551ec2edccfb2a1bd921dfaffbaa2ec2fac9dca16485d78a24da310f0e5"
+    },
+    "hb-c06-straff": {
+      "assessment_sha256": "0bbad595fa91529d3e651d84f14d0b1fb7656821442c6a9c297e9cf8dc78eec3",
+      "source_sha256": "07e38548d90025b8f54248734d12ba5db907e90c85e08bdbec17ab507669795f"
+    },
+    "hb-c06-unga": {
+      "assessment_sha256": "c01233b5b3086f4edafbe7b2cf4592c1f9d0afcd0dbfe139b309b1017c8bbce3",
+      "source_sha256": "8490f76459ab1eb6e2cdd53466fd05b9984070022d5ed09f4abc8f09949d262b"
+    },
+    "hb-c06-vald": {
+      "assessment_sha256": "b1f11168807fb5b7d2143edcd5562e1511bf4b940f57f68b70d6b54c7da3e7ba",
+      "source_sha256": "bd4dab869766e34c6b51924eec6de2a3e1d9e36d556a20bfe4b755b203ad0ac3"
+    }
+  },
+  "excluded_invalid_files": [],
+  "requested_sentence_ids": [
+    "hb-c06-u0001-s001",
+    "hb-c06-u0001-s002",
+    "hb-c06-u0001-s003",
+    "hb-c06-u0001-s004",
+    "hb-c06-u0001-s005",
+    "hb-c06-u0001-s006",
+    "hb-c06-u0002-s001",
+    "hb-c06-u0002-s002",
+    "hb-c06-u0002-s003",
+    "hb-c06-u0003-s001",
+    "hb-c06-u0003-s002",
+    "hb-c06-u0003-s003",
+    "hb-c06-u0003-s004",
+    "hb-c06-u0004-s001",
+    "hb-c06-u0004-s002",
+    "hb-c06-u0004-s003",
+    "hb-c06-u0004-s004",
+    "hb-c06-u0005-s001",
+    "hb-c06-u0005-s002",
+    "hb-c06-u0005-s003",
+    "hb-c06-u0005-s004",
+    "hb-c06-u0006-s001",
+    "hb-c06-u0006-s002",
+    "hb-c06-u0006-s003",
+    "hb-c06-u0007-s001",
+    "hb-c06-u0007-s002",
+    "hb-c06-u0007-s003",
+    "hb-c06-u0007-s004",
+    "hb-c06-u0008-s001",
+    "hb-c06-u0008-s002",
+    "hb-c06-u0008-s003",
+    "hb-c06-u0009-s001",
+    "hb-c06-u0009-s002",
+    "hb-c06-u0010-s001",
+    "hb-c06-u0010-s002",
+    "hb-c06-u0010-s003",
+    "hb-c06-u0011-s001",
+    "hb-c06-u0011-s002",
+    "hb-c06-u0011-s003",
+    "hb-c06-u0011-s004",
+    "hb-c06-u0012-s001",
+    "hb-c06-u0012-s002",
+    "hb-c06-u0012-s003",
+    "hb-c06-u0013-s001",
+    "hb-c06-u0013-s002",
+    "hb-c06-u0013-s003",
+    "hb-c06-u0013-s004",
+    "hb-c06-u0014-s001",
+    "hb-c06-u0014-s002",
+    "hb-c06-u0014-s003",
+    "hb-c06-u0015-s001",
+    "hb-c06-u0015-s002",
+    "hb-c06-u0015-s003",
+    "hb-c06-u0015-s004",
+    "hb-c06-u0015-s005",
+    "hb-c06-u0016-s001",
+    "hb-c06-u0016-s002",
+    "hb-c06-u0016-s003",
+    "hb-c06-u0016-s004",
+    "hb-c06-u0017-s001",
+    "hb-c06-u0017-s002",
+    "hb-c06-u0017-s003",
+    "hb-c06-u0017-s004",
+    "hb-c06-u0018-s001",
+    "hb-c06-u0018-s002",
+    "hb-c06-u0018-s003",
+    "hb-c06-u0019-s001",
+    "hb-c06-u0019-s002",
+    "hb-c06-u0021-s001",
+    "hb-c06-u0021-s002",
+    "hb-c06-u0022-s001",
+    "hb-c06-u0022-s002",
+    "hb-c06-u0023-s001",
+    "hb-c06-u0023-s002",
+    "hb-c06-u0024-s001",
+    "hb-c06-u0024-s002",
+    "hb-c06-u0025-s001",
+    "hb-c06-u0025-s002",
+    "hb-c06-u0026-s001",
+    "hb-c06-u0026-s002",
+    "hb-c06-u0026-s003",
+    "hb-c06-u0027-s001",
+    "hb-c06-u0027-s002",
+    "hb-c06-u0028-s001",
+    "hb-c06-u0028-s002",
+    "hb-c06-u0028-s003",
+    "hb-c06-u0029-s001",
+    "hb-c06-u0029-s002",
+    "hb-c06-u0029-s003",
+    "hb-c06-u0029-s004",
+    "hb-c06-u0030-s001",
+    "hb-c06-u0030-s002",
+    "hb-c06-u0031-s001",
+    "hb-c06-u0031-s002",
+    "hb-c06-u0031-s003",
+    "hb-c06-u0031-s004",
+    "hb-c06-u0031-s005",
+    "hb-c06-u0032-s001",
+    "hb-c06-u0032-s002",
+    "hb-c06-u0032-s003",
+    "hb-c06-u0033-s001",
+    "hb-c06-u0033-s002",
+    "hb-c06-u0033-s003",
+    "hb-c06-u0034-s001",
+    "hb-c06-u0034-s002",
+    "hb-c06-u0035-s001",
+    "hb-c06-u0035-s002",
+    "hb-c06-u0035-s003",
+    "hb-c06-u0035-s004",
+    "hb-c06-u0035-s005",
+    "hb-c06-u0035-s006",
+    "hb-c06-u0036-s001",
+    "hb-c06-u0036-s002",
+    "hb-c06-u0037-s001",
+    "hb-c06-u0037-s002",
+    "hb-c06-u0037-s003",
+    "hb-c06-u0037-s004",
+    "hb-c06-u0037-s005",
+    "hb-c06-u0038-s001",
+    "hb-c06-u0038-s002",
+    "hb-c06-u0038-s003",
+    "hb-c06-u0038-s004",
+    "hb-c06-u0038-s005",
+    "hb-c06-u0039-s001",
+    "hb-c06-u0039-s002",
+    "hb-c06-u0039-s003",
+    "hb-c06-u0039-s004",
+    "hb-c06-u0040-s001",
+    "hb-c06-u0040-s002",
+    "hb-c06-u0040-s003",
+    "hb-c06-u0040-s004",
+    "hb-c06-u0041-s001",
+    "hb-c06-u0041-s002",
+    "hb-c06-u0041-s003",
+    "hb-c06-u0042-s001",
+    "hb-c06-u0042-s002",
+    "hb-c06-u0043-s001",
+    "hb-c06-u0043-s002",
+    "hb-c06-u0043-s003",
+    "hb-c06-u0044-s001",
+    "hb-c06-u0044-s002",
+    "hb-c06-u0044-s003",
+    "hb-c06-u0044-s004",
+    "hb-c06-u0045-s001",
+    "hb-c06-u0046-s001",
+    "hb-c06-u0046-s002",
+    "hb-c06-u0046-s003",
+    "hb-c06-u0048-s001",
+    "hb-c06-u0048-s002",
+    "hb-c06-u0048-s003",
+    "hb-c06-u0049-s001",
+    "hb-c06-u0049-s002",
+    "hb-c06-u0049-s003",
+    "hb-c06-u0049-s004",
+    "hb-c06-u0050-s001",
+    "hb-c06-u0050-s002",
+    "hb-c06-u0050-s003",
+    "hb-c06-u0051-s001",
+    "hb-c06-u0051-s002",
+    "hb-c06-u0051-s003",
+    "hb-c06-u0052-s001",
+    "hb-c06-u0052-s002",
+    "hb-c06-u0052-s003",
+    "hb-c06-u0053-s001",
+    "hb-c06-u0053-s002",
+    "hb-c06-u0053-s003",
+    "hb-c06-u0055-s001",
+    "hb-c06-u0055-s002",
+    "hb-c06-u0056-s001",
+    "hb-c06-u0057-s001",
+    "hb-c06-u0057-s002",
+    "hb-c06-u0058-s001",
+    "hb-c06-u0058-s002",
+    "hb-c06-u0059-s001",
+    "hb-c06-u0059-s002",
+    "hb-c06-u0059-s003",
+    "hb-c06-u0059-s004",
+    "hb-c06-u0059-s005",
+    "hb-c06-u0060-s001",
+    "hb-c06-u0060-s002",
+    "hb-c06-u0060-s003",
+    "hb-c06-u0061-s001",
+    "hb-c06-u0061-s002",
+    "hb-c06-u0062-s001",
+    "hb-c06-u0062-s002",
+    "hb-c06-u0063-s001",
+    "hb-c06-u0064-s001",
+    "hb-c06-u0064-s002",
+    "hb-c06-u0064-s003",
+    "hb-c06-u0064-s004",
+    "hb-c06-u0065-s001",
+    "hb-c06-u0065-s002",
+    "hb-c06-u0065-s003",
+    "hb-c06-u0065-s004",
+    "hb-c06-u0065-s005",
+    "hb-c06-u0066-s001",
+    "hb-c06-u0066-s002",
+    "hb-c06-u0066-s003",
+    "hb-c06-u0066-s004",
+    "hb-c06-u0066-s005",
+    "hb-c06-u0067-s001",
+    "hb-c06-u0067-s002",
+    "hb-c06-u0068-s001",
+    "hb-c06-u0070-s001",
+    "hb-c06-u0071-s001",
+    "hb-c06-u0072-s001",
+    "hb-c06-u0073-s001",
+    "hb-c06-u0074-s001",
+    "hb-c06-u0076-s001",
+    "hb-c06-u0077-s001",
+    "hb-c06-u0078-s001",
+    "hb-c06-u0079-s001",
+    "hb-c06-u0080-s001",
+    "hb-c06-u0080-s002",
+    "hb-c06-u0081-s001",
+    "hb-c06-u0081-s002",
+    "hb-c06-u0081-s003",
+    "hb-c06-u0082-s001",
+    "hb-c06-u0082-s002",
+    "hb-c06-u0082-s003",
+    "hb-c06-u0083-s001",
+    "hb-c06-u0083-s002",
+    "hb-c06-u0084-s001",
+    "hb-c06-u0084-s002",
+    "hb-c06-u0084-s003",
+    "hb-c06-u0085-s001",
+    "hb-c06-u0085-s002",
+    "hb-c06-u0086-s001",
+    "hb-c06-u0086-s002",
+    "hb-c06-u0086-s003",
+    "hb-c06-u0086-s004",
+    "hb-c06-u0087-s001",
+    "hb-c06-u0088-s001",
+    "hb-c06-u0088-s002",
+    "hb-c06-u0088-s003",
+    "hb-c06-u0089-s001",
+    "hb-c06-u0091-s001",
+    "hb-c06-u0091-s002",
+    "hb-c06-u0091-s003",
+    "hb-c06-u0092-s001",
+    "hb-c06-u0092-s002",
+    "hb-c06-u0092-s003",
+    "hb-c06-u0092-s004",
+    "hb-c06-u0093-s001",
+    "hb-c06-u0093-s002",
+    "hb-c06-u0094-s001",
+    "hb-c06-u0094-s002",
+    "hb-c06-u0095-s001",
+    "hb-c06-u0095-s002",
+    "hb-c06-u0095-s003",
+    "hb-c06-u0095-s004",
+    "hb-c06-u0095-s005",
+    "hb-c06-u0096-s001",
+    "hb-c06-u0096-s002",
+    "hb-c06-u0096-s003",
+    "hb-c06-u0097-s001",
+    "hb-c06-u0097-s002",
+    "hb-c06-u0097-s003",
+    "hb-c06-u0097-s004",
+    "hb-c06-u0098-s001",
+    "hb-c06-u0098-s002",
+    "hb-c06-u0098-s003",
+    "hb-c06-u0098-s004",
+    "hb-c06-u0098-s005",
+    "hb-c06-u0098-s006",
+    "hb-c06-u0099-s001",
+    "hb-c06-u0099-s002",
+    "hb-c06-u0100-s001",
+    "hb-c06-u0100-s002",
+    "hb-c06-u0100-s003",
+    "hb-c06-u0101-s001",
+    "hb-c06-u0101-s002",
+    "hb-c06-u0101-s003",
+    "hb-c06-u0102-s001",
+    "hb-c06-u0102-s002",
+    "hb-c06-u0102-s003",
+    "hb-c06-u0103-s001",
+    "hb-c06-u0103-s002",
+    "hb-c06-u0103-s003",
+    "hb-c06-u0104-s001",
+    "hb-c06-u0104-s002",
+    "hb-c06-u0104-s003",
+    "hb-c06-u0104-s004",
+    "hb-c06-u0105-s001",
+    "hb-c06-u0105-s002",
+    "hb-c06-u0105-s003",
+    "hb-c06-u0106-s001",
+    "hb-c06-u0106-s002",
+    "hb-c06-u0107-s001",
+    "hb-c06-u0108-s001",
+    "hb-c06-u0108-s002",
+    "hb-c06-u0108-s003",
+    "hb-c06-u0109-s001",
+    "hb-c06-u0109-s002",
+    "hb-c06-u0110-s001",
+    "hb-c06-u0110-s002",
+    "hb-c06-u0111-s001",
+    "hb-c06-u0111-s002",
+    "hb-c06-u0111-s003",
+    "hb-c06-u0111-s004",
+    "hb-c06-u0111-s005",
+    "hb-c06-u0112-s001",
+    "hb-c06-u0112-s002",
+    "hb-c06-u0112-s003",
+    "hb-c06-u0113-s001",
+    "hb-c06-u0114-s001",
+    "hb-c06-u0114-s002",
+    "hb-c06-u0114-s003",
+    "hb-c06-u0115-s001",
+    "hb-c06-u0115-s002",
+    "hb-c06-u0116-s001",
+    "hb-c06-u0116-s002",
+    "hb-c06-u0116-s003",
+    "hb-c06-u0116-s004",
+    "hb-c06-u0117-s001",
+    "hb-c06-u0117-s002",
+    "hb-c06-u0117-s003",
+    "hb-c06-u0117-s004",
+    "hb-c06-u0117-s005",
+    "hb-c06-u0117-s006",
+    "hb-c06-u0118-s001",
+    "hb-c06-u0118-s002",
+    "hb-c06-u0118-s003",
+    "hb-c06-u0118-s004",
+    "hb-c06-u0118-s005",
+    "hb-c06-u0119-s001",
+    "hb-c06-u0119-s002",
+    "hb-c06-u0119-s003",
+    "hb-c06-u0119-s004",
+    "hb-c06-u0120-s001",
+    "hb-c06-u0120-s002",
+    "hb-c06-u0120-s003",
+    "hb-c06-u0121-s001",
+    "hb-c06-u0121-s002",
+    "hb-c06-u0121-s003",
+    "hb-c06-u0121-s004",
+    "hb-c06-u0122-s001",
+    "hb-c06-u0122-s002",
+    "hb-c06-u0122-s003",
+    "hb-c06-u0123-s001",
+    "hb-c06-u0123-s002",
+    "hb-c06-u0124-s001"
+  ],
+  "requested_counts": {
+    "CORE": 189,
+    "SUPPORTING": 64,
+    "SKIP": 89
+  },
+  "included_tiers": [
+    "CORE"
+  ],
+  "selected_count": 189,
+  "sentences": [
+    {
+      "sentence_id": "hb-c06-u0001-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Basic rule-of-law identification; the following definition supplies its civic meaning.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Finland är en rättsstat.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0001-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0001-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Legality of public power is a foundational constitutional principle.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Det betyder att den offentliga makten baserar sig på lagen.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0001-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0001-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Distribution of authority prevents excessive concentration; overlaps earlier democracy material.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Makten i samhället är fördelad mellan olika aktörer så att den inte koncentreras för mycket till en aktör.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0001-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0001-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The three separated powers are central institutional knowledge already treated in chapter four.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Enligt den tredelade maktfördelningsläran har den lagstiftande makten, den verkställande makten och den dömande makten skilts från varandra.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0002-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Constitutional supremacy is essential to understanding the hierarchy of laws.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Grundlagen har en högre ställning än övriga lagar.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0002-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0002-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Parliament must respect the constitution when legislating; supports constitutional supremacy.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "När riksdagen stiftar lagar ska den säkerställa att övriga lagar inte står i strid med grundlagen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0002-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0002-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Judicial priority for the constitution requires retaining the manifest-conflict condition.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Om en annan lag uppenbart står i strid med grundlagen, ska domstolar i ärenden som behandlas ge grundlagens bestämmelser företräde.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0003-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Republican constitutional form is important but duplicates earlier institutional coverage.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Enligt grundlagen är Finland en republik.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0003-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0003-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Popular sovereignty is foundational civic knowledge already covered in democracy material.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Makten att bestämma om landets angelägenheter ligger hos folket.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0004-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0004-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Impartial treatment without unjustified delay is a central procedural right.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Rättssäkerhet betyder att alla har lika rätt att få sin sak behandlad på behörigt sätt och utan ogrundat dröjsmål av en opartisk domstol eller någon annan myndighet.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0004-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0004-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Lawful equal judicial treatment reinforces the preceding legal-protection definition.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Alla ärenden behandlas i domstol enligt lagen, jämlikt och likvärdigt.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0004-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0004-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Presumption of innocence is a foundational protection for accused people.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Enligt finsk lagstiftning ska en människa betraktas som oskyldig tills hens skuld har lagligen fastställts.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0005-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0005-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Institutional inventory combines several different functions and needs current structural checking.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Rättsväsendet omfattar domstolarna, statens rättshjälpsbyråer, Åklagarmyndigheten, Utsökningsverket, ekonomi- och skuldrådgivning, allmän intressebevakning samt Brottspåföljdsmyndigheten.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0005-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0005-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Investigation and public safety distinguish investigating authorities from courts.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Förundersökningsmyndigheterna utreder brott och säkerställer att medborgarna kan leva i fred och säkerhet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0006-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Duty to obey Finnish law applies to everyone and overlaps chapter-five duties.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "I Finland måste alla följa finsk lag.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0011-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Secular statehood is a significant distinction between law and religion.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Finland är ett världsligt, det vill säga sekulärt, land.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0011-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0011-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Absence of direct religious grounding explains secular legislation.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Finlands lagar baserar sig inte direkt på någon religion.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0012-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Direct applicability distinguishes EU regulations from directives.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Europeiska unionens förordningar är direkt tillämplig lagstiftning i Finland.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0012-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0012-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "National implementation distinguishes directives; wording simplifies their binding-result character.",
+      "section_id": "hb-c06-rattsstat",
+      "text": "Ett direktiv är en anvisning om en lag som EU:s medlemsländer måste stifta nationellt.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0013-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0013-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Objectivity and proportionality are central standards governing public administration.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "God förvaltning betyder att samhället fungerar smidigt och är jämlikt och att myndigheterna verkar objektivt och i proportion till det eftersträvade målet.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0014-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Bribability describes corruption but does not exhaust its forms.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Korruption betyder att myndigheter kan mutas och inte alltid följer regler eller lagar i sitt arbete.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0014-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0014-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Improper benefits illustrate corruption and contextualize the general definition.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Korruption är till exempel om någon ger eller får en gentjänst för pengar eller andra förmåner som hen inte har laglig rätt till.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0014-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0014-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Favoritism and conflicting financial interests illustrate impartiality risks.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Korruption är också till exempel att favorisera släktingar eller vänner i beslutsfattande eller att en politiker deltar i beslutsfattande som direkt gynnar ett företag som hen äger.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0016-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "General administrative-law framework is substantive but scope and statutory exceptions need care.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "I Finland regleras alla myndigheters verksamhet av förvaltningslagen som allmän lag.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0016-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0016-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Competence defines the matters an authority may decide.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Med behörighet avses de frågor som den aktuella myndigheten har makt att fatta beslut i.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0017-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0017-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equal and lawful decisions explain procedural constraints.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Syftet är att alla ska behandlas lika och att myndigheternas beslut ska följa lagen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0019-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0018-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Equal consistent nondiscriminatory treatment is a fundamental administrative protection.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "ska myndigheternas verksamhet vara rättvis, det vill säga en myndighet ska behandla alla människor jämlikt, konsekvent och utan att diskriminera någon.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0021-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0018-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Objectivity is a central administrative principle; retain the authority context.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "ska verksamheten vara objektiv.",
+      "score": 55,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0022-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0018-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Statutory purpose limits authorities' use of their powers.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "får en myndighet bara använda sina befogenheter för godtagbara syften som står i lagen.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0023-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0018-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Proportionality is a core constraint on administrative measures.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "ska myndigheternas åtgärder också stå i rätt proportion till den eftersträvade nyttan.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0024-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free advice within competence is a practical administrative entitlement requiring scope retention.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Utöver dessa grundprinciper föreskriver lagen bland annat att en myndighet inom ramen för sin behörighet ska ge avgiftsfri rådgivning och svara på frågor och förfrågningar som gäller uträttandet av ärenden.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0024-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0024-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Referral to the competent body is qualified by practical possibility.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Om ett ärende inte hör till den aktuella myndighetens behörighet ska den i mån av möjlighet hänvisa personen till rätt myndighet.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0025-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Bribes cannot legitimately buy special treatment; overlaps corruption and criminal-law content.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Till god förvaltning hör också att man inte kan köpa sig specialbehandling av myndigheter genom mutor.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0025-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0025-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Criminality of bribery is central practical civic knowledge.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "I Finland är det ett brott att muta myndigheter.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0026-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0026-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Administrative discretion means legally allowed choice rather than unrestricted personal preference.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "Prövningsrätt innebär att det i lag inte entydigt föreskrivs om hur ett beslut ska fattas, utan tjänstemän kan i viss utsträckning utöva prövning.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0026-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0026-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Law determines when and how much discretion exists; contextualizes the definition.",
+      "section_id": "hb-c06-god-forvaltning",
+      "text": "I lagen föreskrivs när prövning kan utövas och hur stor frihet en myndighet har att välja mellan olika beslutsalternativ.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0028-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0028-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Written decisions are a practical safeguard but statutory exceptions require careful wording.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Kunden har till exempel rätt att få information om myndighetens beslut skriftligt.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0028-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0028-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reasoning in decisions enables understanding and review; avoid implying no exceptions.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "I beslutsbrevet motiverar myndigheten varför beslutet ser ut som det gör och vilka faktorer myndigheten har beaktat när den fattade beslutet.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0029-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A requested processing-time estimate is a concrete administrative entitlement.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Kunden har rätt att få en uppskattning av hur länge det kommer att ta att behandla hens ärende.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0029-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0029-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Progress inquiries are part of administrative service and can be covered with time estimates.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Myndigheten ska också svara på frågor om hur behandlingen framskrider.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0030-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The deciding authority is the appropriate first contact to clarify an unclear decision.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Om man inte förstår ett beslut som man har fått ska man alltid kontakta den myndighet som fattat beslutet.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0031-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Rectification and appeal provide central remedies against erroneous decisions.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Man kan i allmänhet kräva rättelse av eller överklaga ett felaktigt beslut.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0031-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0031-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Written appeal or rectification instructions are practically important; retain applicable-route context.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "I anslutning till beslutet måste myndigheten ge kunden skriftliga anvisningar för hur hen kan söka rättelse eller göra en överklagan.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0031-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0031-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Time limits and written form are key requirements when challenging a decision.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Kunden måste göra ett skriftligt krav på rättelse eller en skriftlig överklagan inom en viss tid efter att hen fått beslutet.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0032-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "An administrative complaint is a distinct accountability mechanism.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Man kan också anföra klagomål över en myndighets verksamhet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0032-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0032-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Unlawful administrative conduct is a reason to make a complaint.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Man kan anföra klagomål om man upplever att myndigheten har handlat i strid mot lagen.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0032-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0032-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A complaint does not itself overturn a decision; distinguish it from appeal.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Det är inte möjligt att söka ändring i ett myndighetsbeslut genom klagomål.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0033-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Authorities' duty to obey law repeats the rule-of-law foundation.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Också myndigheterna måste följa lagen.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0033-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0033-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Parliamentary Ombudsman and Chancellor of Justice are key oversight routes.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Människorna kan anföra klagomål om myndigheters verksamhet hos justitieombudsmannen eller justitiekanslern.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0034-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Legality oversight covers public institutions and officials; current competence details need care.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Justitieombudsmannen och justitiekanslern övervakar att regeringen, ministerierna, presidenten, domstolarna, åklagarna, myndigheterna och övriga tjänstemän agerar i enlighet med lagen och fullgör sina skyldigheter.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0034-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0034-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Fundamental-rights oversight is a key Ombudsman function.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Justitieombudsmannen säkerställer att de grundläggande och mänskliga rättigheterna uppfylls i rätten och att rätten följer principerna för god förvaltning.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0035-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Complaints are not restricted to Finnish citizens or personally affected people.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Vem som helst kan klaga hos justitieombudsmannen eller justitiekanslern om en myndighet har förfarit felaktigt.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0035-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0035-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Written complaint submission is a practical procedural requirement.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Ett klagomål görs alltid skriftligt.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0036-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0036-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free complaint submission makes the oversight remedy accessible.",
+      "section_id": "hb-c06-rattsskydd",
+      "text": "Det kostar inget att anföra klagomål.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0037-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Parliament's legislative role is foundational and already covered in chapter four.",
+      "section_id": "hb-c06-polis",
+      "text": "I det finländska rättssystemet stiftar riksdagen lagarna.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0037-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0037-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Police enforce legal compliance, distinguishing enforcement from legislation.",
+      "section_id": "hb-c06-polis",
+      "text": "Polisen och övriga myndigheter övervakar att människorna följer lagen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0037-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0037-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Courts determine legal disputes and criminal liability, a core separation of functions.",
+      "section_id": "hb-c06-polis",
+      "text": "Domstolarna utövar sin domsrätt, det vill säga bedömer om någon har agerat i strid med lagen.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0037-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0037-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Judicial sentencing authority is foundational and overlaps the preceding institutional description.",
+      "section_id": "hb-c06-polis",
+      "text": "Domstolarna har också makt att utdöma straff om någon har brutit mot lagen.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0037-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0037-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Political independence is important but the broad claim needs distinguishing adjudication from lawful policy direction.",
+      "section_id": "hb-c06-polis",
+      "text": "Domstolarna, polisen och övriga myndigheter utför sitt arbete fria från politiskt inflytande.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0038-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0038-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Military defence is the Defence Forces' defining task and overlaps chapter-five material.",
+      "section_id": "hb-c06-polis",
+      "text": "Försvarsmakten har som uppgift att försvara Finland militärt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0038-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0038-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Public order and security are central police responsibilities.",
+      "section_id": "hb-c06-polis",
+      "text": "Polisen upprätthåller den allmänna säkerheten och ordningen i landet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0039-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Prevention and investigation distinguish core policing functions.",
+      "section_id": "hb-c06-polis",
+      "text": "Polisen utreder också brott och försöker förebygga brottslighet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0039-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0039-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Anyone may report a suspected offence; establishes an accessible practical route.",
+      "section_id": "hb-c06-polis",
+      "text": "Var och en kan meddela till polisen om man misstänker att ett brott har begåtts.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0040-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0040-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A benefit intended to procure preferential official treatment illustrates bribery.",
+      "section_id": "hb-c06-polis",
+      "text": "En muta är en gåva eller en förmån som ges till en myndighet för att denna ska hjälpa den som ger gåvan på ett annat sätt än andra människor.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0040-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0040-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Both giving and receiving bribes are offences; important distinction from recipient-only responsibility.",
+      "section_id": "hb-c06-polis",
+      "text": "I Finland är det ett brott både att ge och att ta emot mutor.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0041-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reporting a suspected offence repeats the earlier police-report route.",
+      "section_id": "hb-c06-polis",
+      "text": "Om man vet eller misstänker att ett brott har begåtts, kan man göra en brottsanmälan till polisen.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0041-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0041-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Anyone may report through several routes; the phone qualification corrects an earlier broad statement.",
+      "section_id": "hb-c06-polis",
+      "text": "Vem som helst kan göra en brottsanmälan på en polisstation, på internet, genom att berätta för en polispatrull om det eller ibland också per telefon.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0041-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0041-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Police duty to register crime reports is a practical protection requiring official confirmation.",
+      "section_id": "hb-c06-polis",
+      "text": "Polisen är skyldig att ta emot brottsanmälningar.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0043-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A legally prescribed punishment distinguishes crime from merely disapproved conduct.",
+      "section_id": "hb-c06-brott",
+      "text": "Ett brott är en förbjuden handling som man enligt lagen får ett straff för.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0043-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0043-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Omissions and incitement may incur criminal liability; the applicable offence matters.",
+      "section_id": "hb-c06-brott",
+      "text": "Också försummelse, det vill säga att låta bli att göra något, kan vara ett brott, likaså att uppvigla någon annan till ett brott.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0043-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0043-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Attempt is punishable in specified cases, not universally.",
+      "section_id": "hb-c06-brott",
+      "text": "Ibland är redan ett försök till brott ett brott, som kan ge ett straff.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0044-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0044-s003",
+        "hb-c06-u0044-s004"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Overbroad reporting obligation requires the serious-offence list and family exception below.",
+      "section_id": "hb-c06-brott",
+      "text": "I Finland är alla skyldiga att meddela till polisen om man vet att någon planerar ett brott.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0044-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0044-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "The duty concerns specified serious offences; ordinary assault must not be treated as universally covered.",
+      "section_id": "hb-c06-brott",
+      "text": "Anmälningsskyldigheten gäller allvarliga brott, till exempel brott mot liv, våldtäkt, misshandel och rån.",
+      "score": 43,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0044-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0044-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Close-family exemption is legally consequential and requires exact statutory scope.",
+      "section_id": "hb-c06-brott",
+      "text": "Närstående familjemedlemmar till en person som planerar ett brott har inte anmälningsskyldighet.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0046-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0045-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Taking another person's property without permission explains theft.",
+      "section_id": "hb-c06-brott",
+      "text": "Stöld: Stöld betyder att en människa tar någon annans egendom utan lov.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0048-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0045-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Traffic rules must be followed, a basic safety duty.",
+      "section_id": "hb-c06-brott",
+      "text": "Trafikbrott: Trafikreglerna, till exempel fartbegränsningarna, måste följas.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0048-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0048-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Impaired driving is a major public-safety prohibition; avoid treating any alcohol intake as the legal threshold.",
+      "section_id": "hb-c06-brott",
+      "text": "Man får inte köra bil, motorcykel eller moped när man är berusad eller påverkad av droger.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0049-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0045-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Damaging another person's property is prohibited; useful practical duty.",
+      "section_id": "hb-c06-brott",
+      "text": "Skadegörelse: Man får inte skada eller förstöra någon annans egendom.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0049-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0049-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Compensation liability needs culpability and applicable damage-law conditions.",
+      "section_id": "hb-c06-brott",
+      "text": "Om en människa orsakar skada på någon annans egendom, är hen ersättningsskyldig.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0050-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0045-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Violence as a broad category requires distinguishing specific criminal offences.",
+      "section_id": "hb-c06-brott",
+      "text": "Våldsbrott och brott mot liv: Våld är ett brott i Finland.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0051-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": "hb-c06-u0043-s001",
+      "assessment_confidence": "medium",
+      "rationale": "Repeats the earlier legal definition of crime.",
+      "section_id": "hb-c06-brott",
+      "text": "Ett brott är en handling som det i Finlands lag föreskrivs ett straff för.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0051-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0051-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The age of criminal responsibility is a central concrete legal threshold.",
+      "section_id": "hb-c06-brott",
+      "text": "I Finland är alla som fyllt 15 år straffrättsligt ansvariga för sina handlingar.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0051-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0051-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Prosecution from age fifteen explains the threshold and should be consolidated with it.",
+      "section_id": "hb-c06-brott",
+      "text": "Det betyder att alla som är minst 15 år kan åtalas och få en dom om de begår ett brott.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0052-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Violence violates personal rights; broad foundation for concrete protections.",
+      "section_id": "hb-c06-vald",
+      "text": "Våld kränker de mänskliga rättigheterna.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0053-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0052-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Examples help recognize physical violence, a practical protection concept.",
+      "section_id": "hb-c06-vald",
+      "text": "Fysiskt våld är till exempel att slå, knuffa, dra i håret, strypa, sparka eller förhindra någon att röra sig.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0053-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0053-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Assault and attempted assault need correct legal scope rather than equating all threatening conduct.",
+      "section_id": "hb-c06-vald",
+      "text": "Misshandel betyder att en människa riktar eller försöker rikta våld mot en annan människa.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0053-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0053-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Visible injuries are not required for assault; corrects an important misconception.",
+      "section_id": "hb-c06-vald",
+      "text": "Misshandel är ett brott även om den inte skulle lämna spår på kroppen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0055-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0052-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Psychological abuse examples identify harmful behavior without making every example a distinct offence.",
+      "section_id": "hb-c06-vald",
+      "text": "Psykiskt våld är att hota, utöva utpressning mot någon, kalla någon vid öknamn, isolera någon från andra och behandla någon illa eller till exempel undersöka någons telefon eller e-post.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0057-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Public prosecution of assault has qualifications for petty assault that must be retained.",
+      "section_id": "hb-c06-vald",
+      "text": "I Finland är misshandel ett brott som hör under allmänt åtal.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0057-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0057-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Victim opposition need not prevent prosecution for a public-prosecution offence.",
+      "section_id": "hb-c06-vald",
+      "text": "Det betyder att gärningsmannen kan åtalas för sina gärningar, även om offret, det vill säga den som utsatts för våldet, inte skulle vilja det.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0058-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Sexual self-determination is the right protected by sexual-offence law.",
+      "section_id": "hb-c06-vald",
+      "text": "Sexualbrott är brott som kränker en annan människas sexuella självbestämmanderätt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0059-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Intercourse without voluntary participation is a core consent rule already treated in chapter five.",
+      "section_id": "hb-c06-vald",
+      "text": "Könsumgänge utan den andra partens samtycke är alltid våldtäkt.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0059-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0059-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Consent means voluntary participation, central to sexual autonomy.",
+      "section_id": "hb-c06-vald",
+      "text": "Samtycke innebär att en människa deltar i handlingen frivilligt av sin egen vilja.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0059-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0059-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Participation out of fear does not establish voluntary consent.",
+      "section_id": "hb-c06-vald",
+      "text": "Om man deltar endast för att man är rädd för att säga nej, är det inte fråga om samtycke.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0059-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0059-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Sleep or unconsciousness prevents voluntary participation; consolidate with consent safeguards.",
+      "section_id": "hb-c06-vald",
+      "text": "En människa som till exempel sover eller är medvetslös på grund av alkohol, droger eller läkemedel kan inte samtycka till sex.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0060-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Not every unwanted sexual act meets the same offence; statutory seriousness conditions matter.",
+      "section_id": "hb-c06-vald",
+      "text": "Också andra sexuella handlingar än könsumgänge är brott om den andra parten inte har samtyckt till dem.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0061-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Unwanted sexual touching may constitute harassment; statutory elements need verification.",
+      "section_id": "hb-c06-vald",
+      "text": "Sexuellt ofredande är till exempel att röra någon annan sexuellt utan hens samtycke.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0062-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Clothing, intoxication and earlier consent do not justify violating sexual autonomy.",
+      "section_id": "hb-c06-vald",
+      "text": "En sexuell handling utan den andras samtycke eller sexuellt ofredande berättigas inte av att offret till exempel bar avslöjande kläder, var berusat, gick hem till gärningsmannens bostad tillsammans med hen eller tidigare har samtyckt till sex med gärningsmannen eller någon annan.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0062-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0062-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Marriage or a relationship does not supply automatic consent; important independent misconception.",
+      "section_id": "hb-c06-vald",
+      "text": "Ett parförhållande eller äktenskap innebär inte automatiskt samtycke till sexuella handlingar, utan man måste fråga om samtycke separat varje gång.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0063-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Consent to one act is not blanket consent to another; supports consent specificity.",
+      "section_id": "hb-c06-vald",
+      "text": "Inte heller samtycke till en typ av sexuell handling, till exempel samlag med kondom, innebär automatiskt samtycke till andra sexuella handlingar, till exempel samlag utan kondom.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0064-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0064-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Absolute child-sex prohibition requires the close-age exception and other statutory qualifications below.",
+      "section_id": "hb-c06-vald",
+      "text": "När offret är ett barn under 16 år är könsumgänge eller någon annan sexuell handling alltid ett brott.",
+      "score": 43,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0064-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0064-s001",
+        "hb-c06-u0064-s003"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Categorical inability-to-consent framing needs the following close-age exception.",
+      "section_id": "hb-c06-vald",
+      "text": "Ett barn under 16 år kan alltså inte samtycka till sex.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0064-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0064-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Close-age exception is legally material; age, maturity and autonomy conditions must be checked.",
+      "section_id": "hb-c06-vald",
+      "text": "Undantaget är om båda parterna är i samma ålder och den sexuella självbestämmanderätten inte har kränkts.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0064-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0064-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Protection of sixteen- and seventeen-year-olds in authority relationships requires precise statutory scope.",
+      "section_id": "hb-c06-vald",
+      "text": "Om det handlar om en ung person i åldern 16–17 år, är det fråga om ett brott om den andra parten har en dominerande ställning över den unga.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0065-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0065-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Responsibility belongs to the perpetrator; useful victim-support principle.",
+      "section_id": "hb-c06-vald",
+      "text": "Ett sexualbrott är dock aldrig offrets fel.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0066-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Support without a crime report is an important access condition needing service verification.",
+      "section_id": "hb-c06-vald",
+      "text": "Offer för sexualbrott kan få stöd också utan att göra en brottsanmälan.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0066-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0066-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Service age eligibility is changeable and the wording may differ from official thresholds.",
+      "section_id": "hb-c06-vald",
+      "text": "Alla över 16 år oavsett kön kan kontakta ett stödcenter.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0066-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0066-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Child victims' support involves child protection; avoid suggesting it is the sole route.",
+      "section_id": "hb-c06-vald",
+      "text": "Om ett sexualbrott riktar sig mot ett barn, får barnet och familjen stöd hos barnskyddet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0067-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Criminality of trafficking is important practical protection knowledge.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "Människohandel är ett brott i Finland.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0068-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0067-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Forced underpaid work can constitute trafficking; coercion and exploitation distinguish it from an ordinary pay dispute.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "att tvinga någon till arbete, för vilket man betalar för lite eller ingen lön alls",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0070-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0067-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Forced sexual exploitation is a key trafficking example.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "att tvinga någon att sälja sex",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0072-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0067-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Forced marriage may constitute trafficking; overlaps chapter-five protection material.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "att tvinga någon till äktenskap.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0080-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Trafficking can affect people of any gender and age, correcting a common restriction misconception.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "Såväl män som kvinnor och barn kan vara offer till människohandel.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0081-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0081-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The national assistance system is a concrete route for suspected trafficking victims.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "Om du misstänker att du är offer för människohandel, kontakta Hjälpsystemet för offer för människohandel.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0082-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Victim Support Finland provides assistance and advice, overlapping the following victim-support section.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "Om du har blivit utsatt för ett brott, kan du få hjälp och råd vid Brottsofferjouren.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0082-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0082-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free legal advice through Victim Support Finland is a concrete access claim needing verification.",
+      "section_id": "hb-c06-manniskohandel",
+      "text": "Brottsofferjouren (Rikosuhripäivystys) erbjuder även kostnadsfri rådgivning av en jurist.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0083-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "number",
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "112 is the essential emergency number, likely already covered by existing practical-help cards.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "När det är fråga om en nödsituation och hjälp behövs till platsen genast ska man ringa nödnumret 112.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0083-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0083-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Immediate danger to life, health, property or the environment defines an emergency context.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "En nödsituation är när någons liv, hälsa, egendom eller omgivning är i fara.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0085-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution",
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Free RIKU services cover victims, relatives and witnesses; preserve all target groups.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "Brottsofferjouren: Brottsofferjouren RIKU är en avgiftsfri tjänst som kan användas av brottsoffer, närstående till offer och vittnen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0085-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0085-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Advice and support persons assist throughout criminal proceedings.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "Hos brottsofferjouren kan man få rådgivning eller en stödperson för olika faser av straffprocessen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0086-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0086-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Domestic violence or its threat is a reason to seek shelter, alone or with children.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "Man kan komma till ett sådant ensam eller tillsammans med sina barn om det förekommer våld eller hot om våld hemma.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0086-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0086-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Temporary accommodation and help escaping violence explain the shelter's function.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "På ett skyddshem kan man bo tillfälligt, och där får man hjälp för att ta sig ur våldet.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0087-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Repeats the assistance system's role for trafficking victims.",
+      "section_id": "hb-c06-brottsoffer",
+      "text": "Hjälpsystemet för offer för människohandel: Hjälpsystemet för offer för människohandel hjälper människor som har utsatts för människohandel.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0091-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Courts resolve legal disputes and criminal liability, repeating earlier role definitions.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "I Finland bedömer en domstol vad den lagenliga lösningen är i konfliktsituationer eller om ett brott har begåtts.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0091-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0091-s001"
+      ],
+      "duplicate_of": "hb-c06-u0037-s004",
+      "assessment_confidence": "medium",
+      "rationale": "Courts can sentence offenders; consolidate with judicial function.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Den kan också utdöma straff.",
+      "score": 59,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0091-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0091-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Criminal Code defines punishable acts and penalties, a central legal framework.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Strafflagen fastställer vilka handlingar man får straff för och vad straffet kan vara.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0092-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Reason to suspect an offence triggers a preliminary investigation; distinguish suspicion from proven guilt.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Om polisen har skäl att misstänka att ett brott har begåtts inleds en förundersökning.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0092-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0092-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Police establish what happened during investigation rather than decide guilt.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Under förundersökningen utreder polisen närmare vad som har hänt.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0092-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0092-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Transfer for prosecutorial consideration describes the normal path with statutory exceptions.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Om det i förundersökningen konstateras att ett brott har begåtts, överför polisen ärendet till en åklagare.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0093-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Public-prosecution offences can be investigated without a victim's request.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Om det är fråga om ett brott som hör under allmänt åtal, utreder polisen brottet även om offret för brottet inte kräver det.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0094-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Complainant offences generally require the injured party's prosecution request; exceptions must be retained.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Om det är fråga om ett målsägandebrott, utreder polisen brottet endast om målsäganden själv vill det.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0095-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Mediation can accompany criminal proceedings, so the source's court-exclusion implication needs correction.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Medling betyder att man löser ett ärende och till exempel kommer överens om betalning av ersättning mellan parterna utan att ärendet behandlas i en domstol.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0095-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0095-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Voluntariness is a fundamental safeguard in mediation.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Medling är alltid frivillig.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0095-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0095-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A mediation office assesses suitability; current restrictions on eligible cases must be checked.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Dessutom bedömer medlingsbyrån om ärendet är lämpligt att lösa genom medling.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0095-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0095-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Binding effect requires distinguishing the agreement from the criminal case's continuation.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "Resultatet av medlingen är rättsligt bindande för parterna.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0096-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Prosecutors decide whether to bring charges, a central step distinct from police investigation.",
+      "section_id": "hb-c06-forundersokning",
+      "text": "När polisen har överfört ett ärende till en åklagare, utreder hen fallet och bestämmer om ärendet ska föras vidare till domstol.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0097-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Three levels describe general courts; avoid implying the same hierarchy for administrative justice.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Finland har ett domstolssystem i tre steg: tingsrätter, hovrätter och högsta domstolen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0097-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0097-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Administrative courts primarily review administrative decisions; the singular wording is imprecise.",
+      "section_id": "hb-c06-domstolar",
+      "text": "I Finland finns det också en förvaltningsdomstol, som behandlar främst ärenden som gäller myndigheter och deras verksamhet.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0097-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0097-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The Supreme Administrative Court heads the administrative judicial branch.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Som högsta förvaltningsdomstol verkar högsta förvaltningsdomstolen.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0097-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0097-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Special-court examples are supporting structural knowledge rather than general-court appeal stages.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Utöver dessa finns det också specialdomstolar, till exempel en arbetsdomstol, en försäkringsdomstol och en marknadsdomstol.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0098-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Judges assess evidence, an important judicial responsibility.",
+      "section_id": "hb-c06-domstolar",
+      "text": "I rätten bedömer domarna om bevisen i fallen är tillförlitliga.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0098-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0098-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Lay judges participate in certain criminal cases, subject to current composition rules.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Också i Finland kan det ibland finnas nämndemän, det vill säga lekmannadomare, vid domstolsförhandlingar, om det är fråga om ett grovt eller allvarligt brottmål.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0099-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Prosecution leads to judicial consideration; links the investigation sequence.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Om åklagaren väcker åtal, behandlas ärendet i en domstol, det vill säga i rätten.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0099-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0099-s001"
+      ],
+      "duplicate_of": "hb-c06-u0091-s001",
+      "assessment_confidence": "medium",
+      "rationale": "Courts resolve disputes and legal violations, repeating the earlier role.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Domstolen löser meningsskiljaktigheter och avgör om lagen har brutits.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0100-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "District court is the usual first general-court instance, not a universal first court for every matter.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Den första rättsinstansen är tingsrätten, som fäller en dom i ärendet.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0101-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0101-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Legal assistance in court is a practical procedural protection.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Parterna kan anlita ett biträde för domstolsförhandlingen.",
+      "score": 50,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0102-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Protective hearing arrangements may help fearful witnesses; not an unconditional entitlement to a chosen method.",
+      "section_id": "hb-c06-domstolar",
+      "text": "Om ett vittne är rädd, kan rätten höra hen vid en annan tidpunkt än den åtalade eller bakom en skärmvägg.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0103-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Appeal from district court goes to court of appeal, subject to applicable leave and timing rules.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Om en person är missnöjd med tingsrättens beslut, kan hen överklaga till följande rättsinstans, som är hovrätten.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0103-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0103-s001"
+      ],
+      "duplicate_of": "hb-c06-u0103-s001",
+      "assessment_confidence": "medium",
+      "rationale": "Court-of-appeal function repeats the preceding appeal route.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Hovrätten behandlar överklaganden av tingsrättens beslut.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0104-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Ordinary appeal from court of appeal requires applying for Supreme Court leave.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Om parterna inte är nöjda med hovrättens beslut, kan de ansöka om besvärstillstånd till högsta domstolen.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0104-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0104-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Highest general court must be distinguished from the administrative branch and exceptional international remedies.",
+      "section_id": "hb-c06-overklagande",
+      "text": "I Finland är högsta domstolen den sista och högsta rättsinstansen.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0104-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0104-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Leave is the normal appeal requirement but the absolute wording omits special procedural categories.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Högsta domstolen behandlar bara ärenden som har fått besvärstillstånd till högsta domstolen.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0105-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0105-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Precedent-setting is a key Supreme Court function, but absence of a previous judgment alone is insufficient.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Sådana är bland annat ärenden som det tidigare inte har utfärdats något domstolsbeslut i och som senare kan bli prejudikatfall.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0105-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0105-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Precedents guide lower courts in similar cases, explaining consistency in legal interpretation.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Tingsrätterna och hovrätterna följer i allmänhet prejudikatfall när de beslutar om domar i framtida liknande fall.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0106-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0106-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "An ECHR application is not an ordinary further appeal; Convention scope and admissibility matter.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Om man upplever att man inte har blivit behandlad på det sätt som de mänskliga rättigheterna förutsätter i en rättegångsförhandling i Finland, kan man vidare överklaga till Europadomstolen.",
+      "score": 43,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0106-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0106-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Exhaustion of effective domestic remedies is a fundamental ECHR admissibility condition.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Man kan anföra klagomål om alla rättsliga medel i Finland har använts.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0108-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The losing civil party often pays reasonable opposing costs, subject to exceptions.",
+      "section_id": "hb-c06-overklagande",
+      "text": "I tvistemål, det vill säga meningsskiljaktigheter mellan privatpersoner eller till exempel företag, är den part som förlorat tvisten ofta tvungen att betala också den andra partens rättegångskostnader.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0109-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0109-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Acquitted defendants may seek cost compensation subject to statutory conditions.",
+      "section_id": "hb-c06-overklagande",
+      "text": "Om den åtalade konstateras vara oskyldig, kan hen ansöka om ersättning för sina rättegångskostnader.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0110-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Several authorities have specified sanction powers; avoid treating their powers as interchangeable.",
+      "section_id": "hb-c06-straff",
+      "text": "Olika myndigheter, polisen, åklagaren och domstolarna kan utdöma straff åt dem som gjort sig skyldiga till brott.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0110-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0110-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Criminal punishment is personal and does not extend to the offender's family.",
+      "section_id": "hb-c06-straff",
+      "text": "I Finland får bara den som begått brottet ett straff, inte förbrytarens familj.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0111-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Fines are paid to the state, distinguishing them from compensation to victims.",
+      "section_id": "hb-c06-straff",
+      "text": "Om brottet inte är särskilt allvarligt, kan straffet vara böter, som betalas till staten.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0111-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0111-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Common sanctions include imprisonment, community service and monitoring penalties.",
+      "section_id": "hb-c06-straff",
+      "text": "Andra vanliga straff i Finland är fängelse, samhällstjänst och övervakningsstraff.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0111-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0111-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Conditional and unconditional imprisonment have different consequences for custody.",
+      "section_id": "hb-c06-straff",
+      "text": "Ett fängelsestraff kan vara ovillkorligt, varvid straffet avtjänas i fängelse, eller villkorligt.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0111-s004",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "definition"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0111-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Conditional imprisonment involves a probation period rather than immediate imprisonment.",
+      "section_id": "hb-c06-straff",
+      "text": "Villkorligt fängelsestraff betyder att den dömde inte hamnar direkt i fängelse, utan får en prövotid.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0111-s005",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0111-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Avoiding further offences is relevant to enforcement, but revocation rules need precise qualification.",
+      "section_id": "hb-c06-straff",
+      "text": "Om hen inte gör sig skyldig till nya brott under prövotiden, behöver hen inte avtjäna straffet i fängelse.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0112-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Compensation can be payable in addition to criminal punishment.",
+      "section_id": "hb-c06-straff",
+      "text": "Utöver straffet kan man bli tvungen att betala skadestånd till offren.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0112-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0112-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Crime can affect a foreign citizen's residence, but removal is conditional and never automatic.",
+      "section_id": "hb-c06-straff",
+      "text": "En utländsk medborgare som dömts för ett brott kan i vissa fall förvisas från Finland.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0113-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "right",
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "The death penalty is prohibited, a fundamental constitutional protection.",
+      "section_id": "hb-c06-straff",
+      "text": "I Finland tillämpas inte dödsstraff.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0114-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0114-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Broad all-other-penalties claim needs verification, particularly offence and fine-record exceptions.",
+      "section_id": "hb-c06-straff",
+      "text": "Böter ger i allmänhet ingen anteckning i straffregistret, medan alla andra straff gör det.",
+      "score": 43,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0115-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Criminal records may affect permits and specified employment, with case-specific conditions.",
+      "section_id": "hb-c06-straff",
+      "text": "En anteckning i straffregistret kan hindra eller göra det svårare för en person att få uppehållstillstånd och vissa arbeten.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0116-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0116-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Consent conditions for fine procedure are concrete but need current legal checking.",
+      "section_id": "hb-c06-straff",
+      "text": "Både den som böterna utdöms till och det eventuella offret för brottet ska gå med på att ärendet behandlas i ett bötesförfarande.",
+      "score": 47,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0117-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Total day-fine liability reflects offence seriousness and ability to pay.",
+      "section_id": "hb-c06-straff",
+      "text": "Beloppet av en dagsbot beror både på hur allvarligt brottet är och på personens inkomster.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0117-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0117-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Seriousness determines the number of day-fines, distinct from the daily monetary amount.",
+      "section_id": "hb-c06-straff",
+      "text": "På basis av brottets allvarlighetsgrad bestämmer myndigheten för hur många dagar man måste betala böter.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0117-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0117-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Income determines the daily monetary amount; consolidate with the preceding calculation distinction.",
+      "section_id": "hb-c06-straff",
+      "text": "Dagsbotens belopp beräknas utifrån inkomsterna.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0118-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Under-fifteens lack criminal responsibility; complements the age threshold already introduced.",
+      "section_id": "hb-c06-unga",
+      "text": "Barn under 15 år är inte straffrättsligt ansvariga i Finland.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0118-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "exception"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0118-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "No criminal prosecution below the threshold must not be confused with absence of investigation or civil proceedings.",
+      "section_id": "hb-c06-unga",
+      "text": "Om de begår ett brott, ställs de inte inför rätta.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0118-s003",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "obligation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0118-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Children can owe damages despite lacking criminal responsibility; age and circumstances affect liability.",
+      "section_id": "hb-c06-unga",
+      "text": "De har ändå ersättningsansvar, det vill säga de måste ersätta skadorna de orsakat.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0119-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Child-welfare notification following suspected child offending is a practical protection route requiring qualification.",
+      "section_id": "hb-c06-unga",
+      "text": "Om ett barn under 15 år begår ett brott, görs en barnskyddsanmälan om hen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0119-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 1
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0119-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Assessment aims to establish the child's support needs rather than impose criminal punishment.",
+      "section_id": "hb-c06-unga",
+      "text": "De sociala myndigheterna utreder barnets situation och tar reda på hur de kan hjälpa hen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0120-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "rule"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Youth punishment can apply to offences committed at fifteen to seventeen, subject to sentencing criteria.",
+      "section_id": "hb-c06-unga",
+      "text": "Om en gärningsman är en ung person i åldern 15–17 år kan rätten utdöma ett ungdomsstraff till hen.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0120-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 0
+      },
+      "fact_types": [
+        "explanation"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0120-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Rehabilitation and preventing further crime are central purposes of youth punishment.",
+      "section_id": "hb-c06-unga",
+      "text": "Syftet med det är att hindra den unga från att begå nya brott eller bli socialt utslagen.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": []
+    },
+    {
+      "sentence_id": "hb-c06-u0121-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 1,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0121-s002"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "low",
+      "rationale": "Universal legal-aid entitlement is overstated; financial, residence and case criteria must be preserved.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "I Finland har alla rätt till rättshjälp om de har juridiska problem.",
+      "score": 42,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact",
+        "low_assessment_confidence",
+        "question_needs_reworking"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0121-s002",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0121-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Public legal aid supports people unable to meet legal costs, subject to means and other conditions.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Staten hjälper mindre bemedlade vars inkomster inte räcker till för att betala till exempel advokatarvoden.",
+      "score": 60,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0121-s004",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 3,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0121-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "A legal-aid office is the application route; current online options may supplement it.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Om en person behöver offentlig rättshjälp, ska hen ansöka om det hos en rättshjälpsbyrå.",
+      "score": 51,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0122-s001",
+      "scores": {
+        "exam_relevance": 3,
+        "knowledge_value": 3,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Accused people have a right to legal assistance, not an unconditional right to free appointed counsel.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Den som är åtalad för ett brott har rätt att få en försvarsadvokat.",
+      "score": 56,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0122-s002",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0122-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Court-appointed defence may be required for minors or vulnerable accused people under statutory conditions.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Ibland förordnar domstolen på eget initiativ en försvarare åt den åtalade, om den åtalade är minderårig eller av någon annan orsak inte kan försvara sig själv.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0122-s003",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "right"
+      ],
+      "context_sentence_ids": [
+        "hb-c06-u0122-s001"
+      ],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Victims may obtain counsel or support persons, subject to the applicable scheme.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Brottsoffret kan få ett biträde eller en stödperson för rättegången.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0123-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 2,
+        "factual_specificity": 3,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "institution"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Refugee Advice Centre assists with asylum and residence matters; current service scope needs verification.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Flyktingrådgivningen bistår med juridisk hjälp i asylprocesser och även i andra processer gällande uppehållstillstånd.",
+      "score": 41,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    },
+    {
+      "sentence_id": "hb-c06-u0124-s001",
+      "scores": {
+        "exam_relevance": 2,
+        "knowledge_value": 3,
+        "factual_specificity": 2,
+        "question_suitability": 2,
+        "change_risk": 2
+      },
+      "fact_types": [
+        "procedure"
+      ],
+      "context_sentence_ids": [],
+      "duplicate_of": null,
+      "assessment_confidence": "medium",
+      "rationale": "Legal-aid offices can advise on residence matters, subject to aid eligibility conditions.",
+      "section_id": "hb-c06-rattshjalp",
+      "text": "Du kan även vända dig till en rättshjälpsbyrå om du behöver rådgivning eller rättshjälp i ett uppehållstillståndsärende.",
+      "score": 46,
+      "priority": "CORE",
+      "review_flags": [
+        "verify_changeable_fact"
+      ]
+    }
+  ]
+}

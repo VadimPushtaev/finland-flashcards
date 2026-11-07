@@ -749,3 +749,7 @@ Create cards based on the scraped website materials, organized by topic/category
   4. Split into per-subchapter files: `poetry run python card_creator/orientation_guide/split_cards.py`.
   5. Review `cards/orientation_guide/*.txt` (formatting, double pipes, one correct flag).
   6. Commit the updated files under `cards/orientation_guide/`.
+
+## Homebrew Chapter 6 — 2026-11-07
+
+Assessed all 342 sentences in 14 subchapters. Fixed thresholds: CORE >=41, SUPPORTING =40, SKIP <40; 189 CORE, 64 SUPPORTING, 89 SKIP. Created 89 Swedish cards across all 14 subchapters and reused 10 existing equivalent cards. Consolidated related claims and retained legal qualifications; no blocked CORE candidates remain. Selection, provenance, reuse hashes and dated primary-source review are saved under `card_creator/homebrew/`.
