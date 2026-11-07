@@ -753,3 +753,7 @@ Create cards based on the scraped website materials, organized by topic/category
 ## Homebrew Chapter 6 — 2026-11-07
 
 Assessed all 342 sentences in 14 subchapters. Fixed thresholds: CORE >=41, SUPPORTING =40, SKIP <40; 189 CORE, 64 SUPPORTING, 89 SKIP. Created 89 Swedish cards across all 14 subchapters and reused 10 existing equivalent cards. Consolidated related claims and retained legal qualifications; no blocked CORE candidates remain. Selection, provenance, reuse hashes and dated primary-source review are saved under `card_creator/homebrew/`.
+
+## Homebrew Chapter 7 — 2026-11-07
+
+Assessed all 804 sentences in 13 subchapters using permanent thresholds (CORE >=41, SUPPORTING =40, SKIP <40): 454 CORE, 125 SUPPORTING, 225 SKIP. Created 176 cards across all 13 subchapters and reused 6 earlier cards. The selected learning points from 444 CORE sentences are covered through consolidation and reuse; 10 CORE candidates remain blocked by outdated or overbroad source claims, with one additional non-CORE source issue documented. These include obsolete Valvira/benefit details, changed employment-law thresholds and retention periods, and categorical denial of uninsured workers’ rights. Source text and prior decks were preserved. See `card_creator/homebrew/reviews/hb-c07-2026-11-07-core.json` for exact IDs, reasons and dated primary-source checks.
