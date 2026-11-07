@@ -761,3 +761,7 @@ Assessed all 804 sentences in 13 subchapters using permanent thresholds (CORE >=
 ## Homebrew Chapter 8 — 2026-11-07
 
 Assessed all 593 sentences in 11 subchapters with the permanent thresholds: 289 CORE, 75 SUPPORTING, 229 SKIP. Created 133 cards across all 11 subchapters and reused 6 earlier cards. Consolidation and reuse cover selected learning points from 275 CORE sentences; 14 candidates remain blocked by outdated terminology or overbroad source claims. These include the replaced learning-support framework, the former regional oversight authority, vocational grading, admission eligibility and unconditional financing claims. Source text remains unchanged. Exact blocked IDs, qualifications and dated checks are in `card_creator/homebrew/reviews/hb-c08-2026-11-07-core.json`.
+
+## Homebrew Chapter 9 — 2026-11-07
+
+Assessed all 1083 sentences in 25 subchapters using the permanent thresholds: 661 CORE, 83 SUPPORTING, 339 SKIP. Created 216 cards across all 25 subchapters and reused 22 existing cards. Consolidation and reuse cover selected learning points from 642 CORE sentences; 19 candidates remain blocked by overbroad, obsolete or insufficiently established source claims. These include parenthood-law terminology, benefit eligibility, loan liability, death investigations and legal-aid exceptions. Source text is unchanged. Dated primary-source checks, qualifications and exact blocked IDs are recorded in `card_creator/homebrew/reviews/hb-c09-2026-11-07-core.json`. All decks passed exact-category, format, length and source-hash validation.
