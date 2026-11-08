@@ -14,6 +14,27 @@ type Extra = { cards: Card[]; fallback: Card[]; count: number; fallback_count: n
 const grades = ['Again', 'Hard', 'Good', 'Easy'];
 const noTranslation: TranslationData = { available: false, language: 'ru', records: {} };
 
+function ChapterCard({ chapter }: { chapter: Chapter }) {
+  const status = chapter.due > 0 ? 'due' : chapter.new > 0 ? 'new' :
+    chapter.total > 0 ? 'clear' : 'empty';
+  const label = { due: 'Repetera först', new: 'Nya kort', clear: 'Klart för nu', empty: 'Inga kort' }[status];
+  return <a href={'#/practice/' + chapter.id} className={'card practice-chapter h-100 practice-chapter-' + status}>
+    <div className="card-body">
+      <div className="practice-chapter-heading">
+        <span className="eyebrow">KAPITEL {chapter.order}</span>
+        <span className="practice-chapter-state">{label}</span>
+      </div>
+      <h2>{chapter.title}</h2>
+      <strong className="practice-chapter-total">{chapter.new + chapter.due} kort att öva</strong>
+      <p className="practice-chapter-counts small mb-0">
+        <span className={chapter.new > 0 ? 'practice-count-new' : undefined}><b>{chapter.new}</b> nya</span>
+        <span className={chapter.due > 0 ? 'practice-count-due' : undefined}><b>{chapter.due}</b> att repetera</span>
+        <span>{chapter.total} totalt</span>
+      </p>
+    </div>
+  </a>;
+}
+
 async function call<T>(path: string, method = 'GET', body?: object, username?: string): Promise<T> {
   const headers: Record<string, string> = method === 'GET' ? {} :
     { 'Content-Type': 'application/json', 'X-Study-Request': '1' };
@@ -195,12 +216,10 @@ export function Practice({ chapterId, username, openLogin }: {
           retention === overview?.desired_retention} onClick={() => void saveRetention()}>
           Spara inställning</button>
       </div></section>
-      <div className="row g-3 mt-3">{overview?.chapters.map(c => <div className="col-sm-6 col-xl-4" key={c.id}>
-        <a href={'#/practice/' + c.id} className="card practice-chapter h-100">
-          <div className="card-body"><span className="eyebrow">KAPITEL {c.order}</span>
-            <h2>{c.title}</h2><strong>{c.new + c.due} kort att öva</strong>
-            <p className="small text-muted mb-0">{c.new} nya · {c.due} att repetera · {c.total} totalt</p>
-          </div></a></div>)}</div>
+      <p className="practice-priority-hint small mt-4 mb-0">Börja med kapitel märkta ”Repetera först”,
+        fortsätt sedan med nya kort. ”Klart för nu” betyder att inga kort väntar just nu.</p>
+      <div className="row g-3 mt-1">{overview?.chapters.map(c => <div className="col-sm-6 col-xl-4" key={c.id}>
+        <ChapterCard chapter={c} /></div>)}</div>
     </> : !started ? <div className="card practice-start"><div className="card-body">
       <p>{chapter ? chapter.new + chapter.due : ''} kort att öva.</p>
       <button className="btn btn-primary" disabled={busy} onClick={() => void start()}>Starta övningen</button>
