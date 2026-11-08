@@ -33,9 +33,12 @@ Scripts, data, and workflows to generate Anki multiple‑choice decks from Finni
 - Show Homebrew progress by chapter:
   - `poetry run python homebrew_status.py` prints a color-coded table with emoji
     markers, one sentence total per chapter, and coverage totals for Russian
-    text, cards, videos and Russian video audio. Sentence totals count source
+    text, cards, card translations, videos and Russian video audio. Sentence totals count source
     sentence segments, including list items and questions, but exclude headings.
-  - Each resource count is subchapters with that resource / total subchapters. Russian
+  - Resource counts are subchapters with that resource / total subchapters,
+    except `Cards RU`: translated individual cards / all canonical YAML cards.
+    A card counts only when its question and all four answers have nonempty,
+    reviewed Russian translations matching the current Swedish text. Russian
     text must pass the study reader's current review checks, including the chapter
     heading. Cards require a nonempty subchapter deck; combined `ALL.txt` files
     are excluded. A subchapter with cards need not cover every sentence.

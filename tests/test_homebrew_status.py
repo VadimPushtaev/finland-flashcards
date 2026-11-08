@@ -54,7 +54,7 @@ class HomebrewStatusTests(unittest.TestCase):
     def put_yaml(self, name, document):
         return self.put(name, yaml.safe_dump(document, allow_unicode=True))
 
-    def translation(self, identity, source, *, heading=False):
+    def translation(self, identity, source, *, heading=False, kind=None):
         document = {
             "schema_version": 1, "language": "ru", "source_id": identity,
             "source_sha256": fingerprint(list(source.items())),
@@ -69,7 +69,7 @@ class HomebrewStatusTests(unittest.TestCase):
                 "fidelity", "one_to_one", "natural_russian", "vocabulary", "terminology", "headings",
             )},
         }
-        kind = "headings" if heading else "sections"
+        kind = kind or ("headings" if heading else "sections")
         self.put_yaml(f"data/homebrew/ru/{kind}/{identity}.yaml", document)
         self.put_yaml(f"data/homebrew/ru/reviews/{identity}.yaml", review)
 
@@ -122,6 +122,45 @@ class HomebrewStatusTests(unittest.TestCase):
                 self.assertEqual(status.collect_status(self.root)[0].translations, 0)
                 path.write_bytes(original)
 
+    def test_card_translations_require_all_current_reviewed_surfaces(self):
+        cards = [{"id": f"hb-c01-one-{i:04d}", "question": f"Question {i}?",
+                  "options": [{"id": f"a{j}", "text": f"Answer {j}"} for j in range(4)]}
+                 for i in range(1, 7)]
+        self.put_yaml("data/homebrew/cards/hb-c01.yaml", {"cards": cards})
+        for card in cards:
+            source = {card["id"] + ":q": card["question"]}
+            source.update({card["id"] + ":" + o["id"]: o["text"] for o in card["options"]})
+            self.translation(card["id"], source, kind="cards")
+        row = status.collect_status(self.root)[0]
+        self.assertEqual((row.russian_cards, row.total_cards), (6, 6))
+        # A stale question, stale answer, incomplete record set, draft review,
+        # and blank Russian answer must each exclude the whole card.
+        cards[1]["question"] = "Changed question"
+        cards[2]["options"][0]["text"] = "Changed answer"
+        self.put_yaml("data/homebrew/cards/hb-c01.yaml", {"cards": cards})
+        for index, change in ((3, "partial"), (4, "draft"), (5, "blank")):
+            identity = cards[index]["id"]
+            path = f"data/homebrew/ru/cards/{identity}.yaml"
+            review_path = f"data/homebrew/ru/reviews/{identity}.yaml"
+            doc, review = status.read_yaml(self.root / path), status.read_yaml(self.root / review_path)
+            if change == "partial":
+                doc["records"].pop()
+            elif change == "draft":
+                review["status"] = "draft"
+            else:
+                doc["records"][-1]["ru"] = " "
+            review["result_sha256"] = fingerprint(doc, sort_keys=True)
+            self.put_yaml(path, doc)
+            self.put_yaml(review_path, review)
+        row = status.collect_status(self.root)[0]
+        self.assertEqual((row.russian_cards, row.total_cards), (1, 6))
+        output = status.render_report([row, status.ChapterStatus("Other", total_cards=4)], plain=True)
+        self.assertIn("Cards RU", output)
+        self.assertIn("1/6", output)
+        self.assertIn("1/10", next(line for line in output.splitlines() if "Total" in line))
+        (self.root / "data/homebrew/ru/glossary.yaml").unlink()
+        self.assertEqual(status.collect_status(self.root)[0].russian_cards, 0)
+
     def test_packaged_media_requires_video_and_russian_audio_files(self):
         folder = "videos/homebrew/hb-c01-01-one"
         for name in ("master.m3u8", "video.m3u8", "video.m4s", "master-ru.m3u8", "ru.m3u8"):
@@ -138,13 +177,13 @@ class HomebrewStatusTests(unittest.TestCase):
         rows = [status.ChapterStatus("1. A chapter title that needs wrapping " * 2,
                                     8, 8, 4, 0, 0, sentences=123),
                 status.ChapterStatus("2. Another chapter", 2, 2, 1, 2, 0, sentences=45)]
-        output = status.render_report(rows, color=True, width=80)
+        output = status.render_report(rows, color=True, width=120)
         self.assertIn("\033[32m", output)
         self.assertIn("\033[33m", output)
         self.assertIn("\033[90m", output)
         clean = re.sub(r"\x1b\[[0-9;]*m", "", output)
         table_lines = [line for line in clean.splitlines() if line.startswith(("\u2502", "\u256d", "\u251c", "\u2570"))]
-        self.assertTrue(all(status.display_width(line) == 80 for line in table_lines))
+        self.assertTrue(all(status.display_width(line) == 120 for line in table_lines))
         totals = next(line for line in table_lines if "Total" in line)
         self.assertIn("Sentences", output)
         self.assertIn("168", totals)

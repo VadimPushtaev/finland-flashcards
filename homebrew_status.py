@@ -34,6 +34,8 @@ class ChapterStatus:
     russian_audio: int = 0
     card_counts: list[int] = field(default_factory=list)
     sentences: int = 0
+    russian_cards: int = 0
+    total_cards: int = 0
 
 
 def read_yaml(path: Path):
@@ -80,6 +82,16 @@ def collect_status(root: Path) -> list[ChapterStatus]:
     for entry in sorted(manifest["chapters"], key=lambda item: item["order"]):
         chapter = read_yaml(data / entry["path"])
         row = ChapterStatus(f'{entry["order"]}. {chapter["title"]}', len(chapter["sections"]))
+        canonical = data / "cards" / f'{chapter["id"]}.yaml'
+        if canonical.is_file():
+            for card in read_yaml(canonical)["cards"]:
+                row.total_cards += 1
+                source = {card["id"] + ":q": card["question"]}
+                source.update({card["id"] + ":" + option["id"]: option["text"]
+                               for option in card["options"]})
+                row.russian_cards += terms is not None and translation_available(
+                    russian, card["id"], "cards", source, terms,
+                )
         heading_available = terms is not None and translation_available(
             russian, chapter["id"], "headings", {chapter["id"]: chapter["title"]}, terms,
         )
@@ -129,18 +141,21 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
         return symbols[state], ("32", "33", "90")[state]
 
     total = ChapterStatus("Total", sentences=sum(row.sentences for row in rows),
+                          russian_cards=sum(row.russian_cards for row in rows),
+                          total_cards=sum(row.total_cards for row in rows),
                           **{key: sum(getattr(row, key) for row in rows) for key in COUNTS})
-    headers = ["Chapter", "Parts", "Sentences", "RU text", "Cards", "Videos", "RU audio"]
+    headers = ["Chapter", "Parts", "Sentences", "RU text", "Cards", "Cards RU", "Videos", "RU audio"]
     if card_counts:
         headers.append("Card counts")
     cells = []
     styles = []
     for row in [*rows, total]:
         values, codes = [row.title, str(row.parts), str(row.sentences)], ["", "", ""]
-        for key in COUNTS[1:]:
+        for key in ("translations", "cards", "russian_cards", "videos", "russian_audio"):
             count = getattr(row, key)
-            symbol, code = marker(count, row.parts)
-            values.append(f"{symbol} {count}/{row.parts}")
+            denominator = row.total_cards if key == "russian_cards" else row.parts
+            symbol, code = marker(count, denominator)
+            values.append(f"{symbol} {count}/{denominator}")
             codes.append(code)
         if card_counts:
             counts = row.card_counts
@@ -182,7 +197,7 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
         return edge + " " + (" " + edge + " ").join(columns) + " " + edge
 
     title = "Homebrew progress" if plain else "\U0001f4da Homebrew progress"
-    output = ["", paint(title, "1;36"), "Subchapters with each resource / all subchapters", "", border("top"),
+    output = ["", paint(title, "1;36"), "Subchapter coverage; Cards RU counts individual cards", "", border("top"),
               table_row(headers, [""] * len(headers), bold=True), border("middle")]
     for index, (values, codes) in enumerate(zip(cells, styles)):
         is_total = index == len(rows)
@@ -210,6 +225,7 @@ def render_report(rows: list[ChapterStatus], *, color: bool = False,
     output.extend([
         "Sentences: chapter total of source sentence segments, excluding headings.",
         "RU text: reviewed and current. Cards: at least one card in the subchapter deck.",
+        "Cards RU: fully translated, reviewed, current cards / all canonical cards (question + four answers).",
         "Videos and RU audio: local files; RU audio requires a matching video.",
         "",
     ])
