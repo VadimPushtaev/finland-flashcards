@@ -57,3 +57,20 @@ commit and push authorization remain governed by repository policy.
 
 The fixture under `tests/fixtures/` is invented demonstration text, not a
 production translation. Tests exercise both its format and failure cases.
+
+## Card translations
+
+Use `$translate-homebrew-cards-russian` for questions and all four answer options,
+following the same language/vocabulary rules with the schema's card adaptation.
+The helper accepts chapter, section, or permanent card IDs:
+
+```sh
+poetry run python translation/homebrew/tools/cards.py prepare hb-c01-lage --output /tmp/lage-cards-context.yaml
+poetry run python translation/homebrew/tools/cards.py validate hb-c01-lage --require-complete
+poetry run python translation/homebrew/tools/cards.py validate
+```
+
+Preparation includes the existing full lesson context and exact canonical card
+surfaces; it never translates or edits cards. Explicit validation scopes require
+every selected card file. Unscoped validation checks existing card outputs only.
+Use per-card review files for progress and `homebrew_status.py` for Cards RU totals.

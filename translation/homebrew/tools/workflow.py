@@ -109,11 +109,11 @@ def glossary_entries(document):
     return entries
 
 
-def validate_document(document, records, terms, review):
+def validate_document(document, records, terms, review, *, target_id=None):
     """Validate a result against exact source records and a separate review record."""
     fields(document, ['schema_version', 'language', 'source_id', 'source_sha256', 'records'])
     require(document['schema_version'] == 1 and document['language'] == 'ru', 'Invalid version/language')
-    require(document['source_id'] == next(iter(records)), 'Wrong source target')
+    require(document['source_id'] == (target_id or next(iter(records))), 'Wrong source target')
     require(document['source_sha256'] == fingerprint(records), 'Stale source fingerprint')
     require(isinstance(document['records'], list), 'Records must be a list')
     require([r.get('source_id') for r in document['records'] if isinstance(r, dict)] == list(records),
@@ -220,7 +220,9 @@ def validate_output(root, identity=None, require_complete=False):
             require(heading_meta['status'] == 'complete', 'Chapter heading is not complete')
         summaries.append({'source_id': path.stem, 'status': review['status']})
     if identity is None:
-        require({p.stem for p in (base / 'reviews').glob('*.yaml')} == identities, 'Orphan/missing review metadata')
+        card_targets = {p.stem for p in (base / 'cards').glob('*.yaml')}
+        require({p.stem for p in (base / 'reviews').glob('*.yaml')} - card_targets == identities,
+                'Orphan/missing review metadata')
     total = sum(len(c['sections']) + 1 for c in chapters)
     return {'validated': summaries, 'available': len(summaries), 'total_targets': total,
             'note': 'Validates available output only; absent translations are not complete.'}

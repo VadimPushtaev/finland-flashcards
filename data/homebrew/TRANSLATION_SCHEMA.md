@@ -13,13 +13,31 @@ Under `data/homebrew/ru/`:
 - `sections/<section-id>.yaml`: one section heading followed by its sentences in
   source order, including every list item fragment.
 - `headings/<chapter-id>.yaml`: one chapter-heading record, shared by its sections.
-- `reviews/<source-id>.yaml`: review metadata for either target type.
+- `cards/<card-id>.yaml`: one question and four answer-option records.
+- `reviews/<source-id>.yaml`: review metadata for each target type.
 - `glossary.yaml`: approved shared terminology, initially empty.
 
 A section cannot be complete before its chapter heading is complete. Absent files
 mean not started. Structurally valid results can be draft or complete; partial
 working drafts belong outside final data. Do not create an empty production
 translation to represent a job that has not started.
+
+### Card targets
+
+Card sources are the canonical Swedish YAML in `data/homebrew/cards/`.
+The result and review `source_id` is the permanent card ID. There are exactly
+five records in order: `<card-id>:q`, `<card-id>:a0`, `:a1`, `:a2`, `:a3`.
+Each covers the entire question/option text. There is no extra heading, category,
+answer-key or explanation record. Omit `sv` in stored YAML: the app adds it from
+current Swedish text. Source fingerprints hash the five ordered ID/text pairs.
+All other result/review/glossary fields and vocabulary rules remain unchanged.
+
+Card completion does not depend on translated chapter or section headings.
+The legacy `headings` check attests review of the prompt and all option texts.
+Wrong options are translated faithfully, not corrected or explained.
+Use `translation/homebrew/tools/cards.py` for card preparation and validation;
+the lesson tool checks sections/headings separately. Shared-glossary edits require
+checking both collections. Per-card reviews also live in `ru/reviews/`.
 
 ## Result
 
