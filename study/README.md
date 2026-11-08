@@ -338,7 +338,7 @@ The reader discovers exports in `videos/homebrew/` (override with
 for example `hb-c01-01-lage.mp4`, and keep its matching `.CREDITS.md` alongside it.
 Sections without an MP4 or packaged HLS export show no player. Playback is manual
 and supports seeking. Video data is loaded on play; switching language after
-playback starts can buffer the selected track. Rebuild the image after adding exports.
+playback starts can buffer the selected track. Run `docker compose up --build -d` after syncing exports to prepare any new bilingual tracks.
 
 ### Swedish and Russian audio without duplicate video
 
@@ -349,12 +349,25 @@ the total duration. Packaging rejects a total duration difference over one secon
 this check does not replace listening and scene alignment review. Include Russian
 narration credits in the matching `.CREDITS.md`.
 
-The Docker build automatically packages bilingual exports as HLS: one unchanged
-H.264 video stream, separate Swedish/Russian AAC streams, and small playlists.
-It copies compressed streams without re-encoding. The runtime image contains
-only the HLS version for bilingual exports, so it does not duplicate the original
-MP4 or store a second video for Russian. Swedish-only exports remain MP4s. Original
-source files in `videos/homebrew/` are never modified.
+Compose mounts the host `./videos` directory at `/data/videos` read-only in the
+study service. No media is included in the image or Docker build context.
+Swedish-only MP4s are served directly from `videos/homebrew/` without copying.
+
+Before the study service starts, the one-shot `media` service uses FFmpeg and a
+writable mount of the same `./videos` directory to prepare bilingual HLS: one
+unchanged video stream, separate Swedish/Russian audio streams, and playlists.
+It copies compressed streams without re-encoding. Content fingerprints let
+unchanged packages be reused on subsequent deployments. Generated files live in
+`videos/.hls/`; relative symlinks in `videos/homebrew/` expose them to the player.
+Both are ignored by Git and regenerated on the host, not uploaded by media sync.
+Original MP4/audio files remain unchanged. Bilingual exports therefore retain
+their source MP4 plus one HLS video on the host, but neither enters the image.
+
+Packages are completed before their symlinks are switched. A failed conversion
+blocks startup and leaves the previous package intact. Old cache versions are
+retained; removing Russian audio removes its managed HLS link on the next run.
+The existing `deploy_over_ssh.py` command needs no extra step: Compose performs
+preparation automatically. Logs: `docker compose logs media`.
 
 The player shows **Ljudspråk → Svenska / Русский** only for bilingual exports.
 Switching languages retains playback position, pause state and playback speed.

@@ -8,8 +8,7 @@ RUN npm run build
 FROM python:3.12-slim AS media
 RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*
 COPY study/app/package_videos.py /package_videos.py
-COPY videos/homebrew/ /source/
-RUN python /package_videos.py /source /videos
+CMD ["python", "/package_videos.py", "--mounted", "/videos/homebrew"]
 
 FROM python:3.12-slim AS runtime
 ENV PYTHONUNBUFFERED=1 \
@@ -26,9 +25,8 @@ RUN poetry install --only main --no-root --no-interaction \
     && pip install --no-cache-dir fsrs==6.3.2
 COPY study/app/ ./app/
 COPY data/homebrew/ /data/homebrew/
-COPY --from=media /videos/ /data/videos/homebrew/
 COPY --from=frontend /frontend/dist/ ./static/
-RUN chmod -R a+rX /app/app /app/static /data/homebrew /data/videos \
+RUN chmod -R a+rX /app/app /app/static /data/homebrew \
     && useradd --create-home --uid 10001 reader \
     && mkdir -p /var/lib/homebrew-study \
     && chown reader:reader /var/lib/homebrew-study

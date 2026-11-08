@@ -60,8 +60,12 @@ publish a success receipt, and a failed checksum check exits nonzero. Sync is no
 a versioned backup: replacing a file on both machines replaces both copies.
 Run one sync at a time, with generation/editing paused for the selected files.
 
-On a fresh checkout, pull media before building the study Docker image. The
-Docker build still includes local exports and packages alternate audio normally.
+On a fresh checkout, pull media before starting the study service. Compose mounts
+`./videos` read-only into the app; media is excluded from the image build.
+A one-shot preparation service packages changed bilingual exports into the
+host's `videos/.hls/` cache before the app starts. Cached packages and their
+symlinks are regenerated locally rather than synced. Ordinary MP4s are served
+directly. Preparation grants read/traverse permissions for the app's reader user.
 Sync does not build, restart, deploy, or change `.env` or application databases.
 To upload assets and deploy the local Git commit in one command, use
 `poetry run python deploy_over_ssh.py --host hetzner`; see
