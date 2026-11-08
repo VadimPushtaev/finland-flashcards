@@ -16,12 +16,14 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     POETRY_VIRTUALENVS_CREATE=false \
     HOMEBREW_DATA_DIR=/data/homebrew \
+    HOMEBREW_CARDS_DIR=/data/homebrew/cards \
     HOMEBREW_VIDEO_DIR=/data/videos/homebrew \
     HOMEBREW_STATIC_DIR=/app/static
 WORKDIR /app
 RUN pip install --no-cache-dir poetry==2.2.1
 COPY study/pyproject.toml study/poetry.lock ./
-RUN poetry install --only main --no-root --no-interaction
+RUN poetry install --only main --no-root --no-interaction \
+    && pip install --no-cache-dir fsrs==6.3.2
 COPY study/app/ ./app/
 COPY data/homebrew/ /data/homebrew/
 COPY --from=media /videos/ /data/videos/homebrew/

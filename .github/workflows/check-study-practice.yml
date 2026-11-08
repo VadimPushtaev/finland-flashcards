@@ -1,0 +1,44 @@
+name: Validate Homebrew study practice
+
+on:
+  pull_request:
+    paths:
+      - "study/**"
+      - "cards/homebrew/**"
+      - ".github/workflows/check-study-practice.yml"
+  workflow_dispatch:
+
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: study/frontend/package-lock.json
+      - name: Install Poetry
+        run: pip install poetry==2.2.1
+      - name: Install study dependencies and Py-FSRS
+        working-directory: study
+        run: |
+          poetry install --only main --no-root --no-interaction
+          poetry run python -m pip install fsrs==6.3.2
+          poetry run python -m pip install httpx==0.28.1
+      - name: Run backend tests
+        working-directory: study
+        run: poetry run python -m unittest discover -s tests -v
+      - name: Build frontend
+        working-directory: study/frontend
+        run: |
+          npm ci
+          npm run build
+      - name: Install Chromium and run practice browser test
+        working-directory: study/frontend
+        run: |
+          npx playwright install chromium --with-deps
+          npx playwright test tests/practice.spec.ts --project=desktop

@@ -1,4 +1,5 @@
 import { ReaderBreadcrumbs } from './ReaderBreadcrumbs';
+import { Practice } from './Practice';
 import { ReaderChrome } from './ReaderChrome';
 import { VideoPlayer, type VideoSource } from './VideoPlayer';
 import { Fragment, useEffect, useRef, useState, type ReactNode } from 'react';
@@ -98,6 +99,7 @@ export default function App() {
     <aside ref={sidebarRef} className={`sidebar ${menu ? 'is-open' : ''}`} aria-label="Huvudmeny" onClick={e => { if ((e.target as HTMLElement).closest('a')) setMenu(false); }}>
       <a href="#/" className="brand"><span className="brand-mark"><Icon name="book" /></span><span>Homebrew<small>SAMHÄLLSKUNSKAP</small></span></a>
       <nav className="main-nav">
+        <a href="#/practice" className={route.page === 'practice' ? 'active' : ''}><Icon name="collection" />Öva med kort</a>
         <a href="#/" className={route.page === 'home' ? 'active' : ''}><Icon name="grid" />Översikt</a>
         <a href="#/saved" className={route.page === 'saved' ? 'active' : ''}><Icon name="bookmark" />Sparade texter{progress.bookmarks.length > 0 && <span className="nav-count">{progress.bookmarks.length}</span>}</a>
       </nav>
@@ -116,6 +118,7 @@ export default function App() {
         {account.saveError && <div className="alert alert-warning m-3" role="alert">{account.saveError}</div>}
         {error ? <div className="page"><ErrorMessage message={error} /></div> : !library || !account.ready ? <Loading /> : route.page === 'chapter' ?
           <Reader key={route.chapter} topbar={topbar} library={library} route={route} progress={progress} changeProgress={changeProgress} toggleCompleted={toggleCompleted} toggleBookmark={toggleBookmark} /> :
+          route.page === 'practice' ? <Practice key={(account.username || '') + ':' + (route.chapter || '')} chapterId={route.chapter} username={account.username} openLogin={account.openLogin} /> :
           route.page === 'search' ? <Search key={route.query} query={route.query || ''} /> : route.page === 'saved' ? <Saved ids={progress.bookmarks} toggleBookmark={toggleBookmark} /> : route.page === 'about' ? <About /> :
           <div className="page overview">
             <div className="eyebrow"><span className="status-dot" /> DIN STUDIEPLATS</div>

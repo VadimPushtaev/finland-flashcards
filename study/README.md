@@ -39,6 +39,47 @@ The image uses Node.js 24 for the frontend build and Python 3.12 for runtime.
 Both dependency lockfiles pin the build inputs. The application reads a copy
 of `data/homebrew/`; rebuild the image after updating that collection.
 
+## Practice card API (catalog only)
+
+The flashcard catalog is loaded from canonical YAML at
+`data/homebrew/cards/hb-c01.yaml` through `hb-c12.yaml` (1,034 cards total).
+Each card has a permanent ID. Derived TXT files remain Anki/Kahoot exports;
+the web backend reads YAML directly. See `data/homebrew/cards/README.md`.
+
+- `GET /api/practice/chapters` lists the 12 chapters and card counts.
+- `GET /api/practice/chapters/{chapter_id}/cards` gives card IDs, questions,
+  topics and four options, **without** correct-answer indices.
+- `POST /api/practice/chapters/{chapter_id}/cards/{card_id}/check` accepts
+  `{"option": 0}` (zero-based) and returns correctness and the correct index.
+
+These endpoints are stateless: FSRS scheduling, accounts, review history and
+the practice UI will be added in subsequent commits. Card IDs come from YAML, so edits no longer reset FSRS history. The old
+hash-based IDs are not migrated: the feature has no production review history.
+
+## FSRS practice API (implementation)
+
+Practice data is isolated by the existing login cookie and saved in the named
+SQLite volume, never in browser storage. Existing v1 databases receive an
+**additive** v2 schema update on startup: the new `practice_preferences`,
+`practice_cards` and `practice_events` tables do not modify legacy users,
+sessions, bookmarks, completed sections or reader settings. Back up the volume
+before upgrading a production deployment.
+
+- `GET /api/practice/overview`: twelve chapter totals, due/new counts, retention.
+- `GET /api/practice/chapters/{chapter}/queue`: currently new and due cards.
+- `GET /api/practice/settings`, `PATCH /api/practice/settings`: user retention
+  (0.70–0.99, default 0.90; future scheduling only).
+- `POST /api/practice/chapters/{chapter}/review`: atomically commit an answer,
+  final FSRS grade and append-only statistics with an idempotent `event_id`.
+- `POST /api/practice/chapters/{chapter}/extra`: preview early reviews using a
+  temporary retrievability cutoff, plus up to 10 nearest-due fallback cards.
+- `GET /api/practice/cards/{card_id}/stats`: personal attempt history, grades
+  and translation-versus-correctness totals.
+
+Install pinned Py-FSRS 6.3.2 for local development via
+`python -m pip install fsrs==6.3.2`; the Docker image installs the same
+version separately after Poetry's existing locked dependencies.
+
 ## Deploy over SSH
 
 From the local repository root:
