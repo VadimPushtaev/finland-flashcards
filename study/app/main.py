@@ -12,6 +12,7 @@ import yaml
 from app.translations import reviewed_records
 from app.database import database
 from app.auth import install_routes
+from app.flashcards import install_practice_catalog
 
 DATA_DIR = Path(os.environ.get("HOMEBREW_DATA_DIR", Path(__file__).resolve().parents[2] / "data/homebrew"))
 STATIC_DIR = Path(os.environ.get("HOMEBREW_STATIC_DIR", Path(__file__).resolve().parents[1] / "frontend/dist"))
@@ -192,6 +193,7 @@ def chapter_sources(chapter_id: str):
 
 
 install_routes(app, get_chapter, get_passage)
+install_practice_catalog(app, library)
 
 if (STATIC_DIR / "assets").is_dir():
     app.mount("/assets", StaticFiles(directory=STATIC_DIR / "assets"), name="assets")

@@ -16,6 +16,7 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     POETRY_VIRTUALENVS_CREATE=false \
     HOMEBREW_DATA_DIR=/data/homebrew \
+    HOMEBREW_CARDS_DIR=/data/cards/homebrew \
     HOMEBREW_VIDEO_DIR=/data/videos/homebrew \
     HOMEBREW_STATIC_DIR=/app/static
 WORKDIR /app
@@ -24,9 +25,10 @@ COPY study/pyproject.toml study/poetry.lock ./
 RUN poetry install --only main --no-root --no-interaction
 COPY study/app/ ./app/
 COPY data/homebrew/ /data/homebrew/
+COPY cards/homebrew/ /data/cards/homebrew/
 COPY --from=media /videos/ /data/videos/homebrew/
 COPY --from=frontend /frontend/dist/ ./static/
-RUN chmod -R a+rX /app/app /app/static /data/homebrew /data/videos \
+RUN chmod -R a+rX /app/app /app/static /data/homebrew /data/cards/homebrew /data/videos \
     && useradd --create-home --uid 10001 reader \
     && mkdir -p /var/lib/homebrew-study \
     && chown reader:reader /var/lib/homebrew-study
