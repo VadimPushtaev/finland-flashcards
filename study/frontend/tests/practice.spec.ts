@@ -107,11 +107,9 @@ test('card translations sit beside desktop cards or overlay the mobile bottom', 
     expect(box.x).toBeGreaterThanOrEqual(card.x + card.width);
     expect(box.y).toBeLessThan(card.y + 50);
   } else {
-    await expect(panel).toHaveCSS('position', 'fixed');
-    expect(box.y + box.height).toBeCloseTo(viewport.height, 0);
-    expect(box.height).toBeLessThan(viewport.height / 2);
-    const selected = (await word.boundingBox())!;
-    expect(selected.y + selected.height).toBeLessThan(box.y);
+    await expect(page.getByRole('button', { name: '← Tillbaka till kortet' })).toBeVisible();
+    expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
+    expect(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight)).toBe(true);
   }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('card-translation.png') });
@@ -122,6 +120,10 @@ test('card translations sit beside desktop cards or overlay the mobile bottom', 
   await choose.click();
   await expect(page.locator('.practice-feedback')).toHaveText('Rätt svar!');
   await expect(choose.locator('.bi-check-lg')).toHaveCount(1);
+  if (viewport.width <= 1000) {
+    const next = (await page.getByRole('button', { name: 'Nästa →' }).boundingBox())!;
+    expect(next.y + next.height).toBeLessThanOrEqual(viewport.height);
+  }
   await word.click();
   await expect(panel).toBeVisible();
 });

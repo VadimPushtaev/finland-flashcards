@@ -11,6 +11,31 @@ type Stats = { total: number; correct: number; incorrect: number; with_translati
 type Check = { correct: boolean; correct_option: number };
 type Extra = { cards: Card[]; fallback: Card[]; count: number; fallback_count: number };
 
+function PageControls({ target, reset }: { target: string; reset: unknown }) {
+  const [page, setPage] = useState(0);
+  const [count, setCount] = useState(1);
+  useEffect(() => {
+    const element = document.querySelector<HTMLElement>(target);
+    if (!element) return;
+    const update = () => { setCount(Math.max(1, Math.ceil((element.scrollHeight - 24) / Math.max(1, element.clientHeight - 24)))); setPage(0); element.scrollTop = 0; };
+    const observer = new ResizeObserver(update);
+    observer.observe(element);
+    for (const child of element.children) observer.observe(child);
+    update();
+    return () => observer.disconnect();
+  }, [target, reset]);
+  const move = (value: number) => {
+    const element = document.querySelector<HTMLElement>(target);
+    if (element) element.scrollTop = value * Math.max(1, element.clientHeight - 24);
+    setPage(value);
+  };
+  return <div className="practice-pages" hidden={count <= 1}>
+    <button className="btn" disabled={!page} onClick={() => move(page - 1)} aria-label="Föregående textsida">←</button>
+    <span>{page + 1} / {count}</span>
+    <button className="btn" disabled={page >= count - 1} onClick={() => move(page + 1)} aria-label="Nästa textsida">→</button>
+  </div>;
+}
+
 const grades = ['Again', 'Hard', 'Good', 'Easy'];
 const noTranslation: TranslationData = { available: false, language: 'ru', records: {} };
 
@@ -180,15 +205,10 @@ export function Practice({ chapterId, username, openLogin }: {
     if (sorted[0]) show(sorted[0], 'extra');
   };
   useEffect(() => {
-    if (!selection) return;
-    const panel = document.getElementById('translation-panel');
-    panel?.scrollTo(0, 0);
-    if (window.matchMedia('(max-width: 1000px)').matches && panel && lastWord.current) {
-      const word = lastWord.current.getBoundingClientRect();
-      const visibleBottom = panel.getBoundingClientRect().top - 16;
-      if (word.bottom > visibleBottom) window.scrollBy(0, word.bottom - visibleBottom);
-    }
-  }, [selection]);
+    if (!current) return;
+    document.body.classList.add('practice-active');
+    return () => document.body.classList.remove('practice-active');
+  }, [current]);
 
   const chooseWord = (value: Selection, button: HTMLButtonElement) => {
     lastWord.current = button; setSelection(value);
@@ -205,11 +225,11 @@ export function Practice({ chapterId, username, openLogin }: {
       catch (e) { setError((e as Error).message); }
     }
   };
-  if (!username) return <div className="page practice-page"><h1>Öva med kort</h1>
+  if (!username) return <div className={"page practice-page" + (current ? " is-active" : "")}><h1>Öva med kort</h1>
     <p>Logga in för att spara dina svar och följa dina framsteg.</p>
     <button className="btn btn-primary" onClick={openLogin}>Logga in</button></div>;
   const chapter = overview?.chapters.find(c => c.id === chapterId);
-  return <div className="page practice-page">
+  return <div className={"page practice-page" + (current ? " is-active" : "")}>
     <div className="eyebrow">HOME­BREW · ÖVNING</div>
     {chapterId && <a className="practice-back" href="#/practice">← Alla kapitel</a>}
     <h1>{chapter?.title || 'Öva med kort'}</h1>
@@ -235,16 +255,17 @@ export function Practice({ chapterId, username, openLogin }: {
       <p>{chapter ? chapter.new + chapter.due : ''} kort att öva.</p>
       <button className="btn btn-primary" disabled={busy} onClick={() => void start()}>Starta övningen</button>
     </div></div> : current ? <div className={'practice-workspace' + (selection ? ' has-translation' : '')}>
-      <div className="practice-main">
+      <div className={'practice-main' + (selection ? ' showing-translation' : '') + (statsOpen ? ' showing-stats' : '')}>
+      <header className="practice-mobile-header"><a href="#/practice" aria-label="Till alla kapitel">←</a><span>Kapitel {chapter?.order}</span><span>{completed.length} klara · {queue.length + 1} kvar</span></header>
       <div className="practice-status"><span>{completed.length} sparade svar</span>
         <span>{queue.length + 1} kort kvar</span></div>
       <article className="card practice-question"><div className="card-body">
-        <div className="eyebrow">{current.topic}</div>
+        <div className="practice-card-viewport"><div className="practice-card-content"><div className="eyebrow">{current.topic}</div>
         <h2 lang="sv">{translated(current.id + ':q', current.question)}</h2>
         <div className="practice-options">{current.options.map((option, i) => {
           const cls = feedback && i === feedback.correct_option ? 'is-correct' :
             feedback && choice === i ? 'is-wrong' : '';
-          return <div key={i} className={'practice-option ' + cls}>
+          return <div key={i} className={'practice-option ' + cls + (feedback && choice !== i && feedback.correct_option !== i ? ' result-hidden' : '')}>
             <span className="practice-option-letter" aria-hidden="true">{String.fromCharCode(65 + i)}</span>
             <div className="practice-option-text" id={`answer-${i}`} lang="sv">
               {translated(current.id + ':a' + i, option)}</div>
@@ -259,13 +280,15 @@ export function Practice({ chapterId, username, openLogin }: {
         {feedback && <div className={'practice-feedback ' +
           (feedback.correct ? 'is-correct' : 'is-wrong')} role="status">
           {feedback.correct ? 'Rätt svar!' :
-            'Inte riktigt. Rätt svar: ' + current.options[feedback.correct_option]}
+            'Inte riktigt. Rätt svar: ' + String.fromCharCode(65 + feedback.correct_option)}
         </div>}
+        </div></div>
+        <PageControls target=".practice-card-viewport" reset={current.id + String(!!feedback)} />
         {feedback && <section className="practice-grading">
           <p>Bedömning (du kan ändra den)</p>
           <div className="practice-grades" role="group" aria-label="FSRS-bedömning">
             {grades.map((name, i) => <button key={name}
-              className={'btn ' + (grade === i + 1 ? 'btn-primary' : 'btn-outline-secondary')}
+              className={'btn practice-grade grade-' + i + (grade === i + 1 ? ' is-selected' : '')}
               aria-pressed={grade === i + 1} onClick={() => setGrade(i + 1)}>{name}</button>)}
           </div>
           <div className="practice-actions">
@@ -296,7 +319,11 @@ export function Practice({ chapterId, username, openLogin }: {
         </>}
       </div></section>}
       </div>
-      {selection && <TranslationPanel selection={selection} onClose={closeTranslation} />}
+      {selection && <div className="practice-translation-view">
+        <button className="btn practice-translation-back" onClick={closeTranslation}>← Tillbaka till kortet</button>
+        <TranslationPanel selection={selection} onClose={closeTranslation} />
+        <PageControls target=".practice-translation-view .translation-panel" reset={selection} />
+      </div>}
     </div> : <section className="card practice-finished"><div className="card-body">
       <h2>Klart för den här gången!</h2>
       <p>Du har gått igenom korten som var redo att övas.</p>

@@ -434,3 +434,58 @@ mark { background: #eddeb3; color: #303622; padding: 1px 2px; border-radius: 2px
   .practice-grades { gap: 7px; }
   .practice-option { grid-template-columns: 18px minmax(0, 1fr) 44px; gap: 8px; padding: 10px 8px; }
 }
+
+.practice-mobile-header, .practice-pages, .practice-translation-back { display: none; }
+.practice-translation-view { min-width: 0; position: sticky; top: 16px; }
+.practice-translation-view .translation-panel { max-height: calc(100dvh - 32px); border: 1px solid var(--study-border); border-radius: 10px; }
+.practice-grade { --grade-color: #a02732; --grade-soft: #fcebee; color: var(--grade-color); border: 2px solid var(--grade-color); background: var(--grade-soft); }
+.grade-1 { --grade-color: #805500; --grade-soft: #fff2d0; }
+.grade-2 { --grade-color: #23643c; --grade-soft: #e5f4e9; }
+.grade-3 { --grade-color: #205da0; --grade-soft: #e7f0fc; }
+.practice-grade.is-selected { background: var(--grade-color); color: white; box-shadow: inset 0 0 0 2px var(--study-surface); }
+[data-bs-theme="dark"] .practice-grade { --grade-color: #ffabb5; --grade-soft: #482a30; }
+[data-bs-theme="dark"] .grade-1 { --grade-color: #efca78; --grade-soft: #403721; }
+[data-bs-theme="dark"] .grade-2 { --grade-color: #a0d9b2; --grade-soft: #263e2e; }
+[data-bs-theme="dark"] .grade-3 { --grade-color: #a6caff; --grade-soft: #25394e; }
+[data-bs-theme="dark"] .practice-grade.is-selected { color: #171e1b; }
+@media (max-width: 1000px) {
+  body.practice-active { overflow: hidden; }
+  .practice-active .topbar, .practice-active .sidebar, .practice-active .sidebar-backdrop { display: none; }
+  .practice-active .workspace { margin: 0; }
+  .practice-page.is-active { position: fixed; inset: 0; height: 100dvh; padding: env(safe-area-inset-top) 12px env(safe-area-inset-bottom); max-width: none; }
+  .practice-page.is-active > .eyebrow, .practice-page.is-active > .practice-back, .practice-page.is-active > h1 { display: none; }
+  .practice-page.is-active > .alert { position: absolute; bottom: 150px; left: 12px; right: 12px; z-index: 5; }
+  .practice-workspace, .practice-workspace.has-translation { height: 100%; max-width: none; display: block; padding: 0; position: relative; }
+  .practice-main { height: 100%; display: flex; flex-direction: column; }
+  .practice-mobile-header { display: flex; align-items: center; justify-content: space-between; height: 44px; flex-shrink: 0; font-size: .8rem; gap: 12px; }
+  .practice-mobile-header a { display: grid; place-items: center; width: 44px; height: 44px; }
+  .practice-status { display: none; }
+  .practice-question { flex: 1; min-height: 0; border: 0; background: transparent; }
+  .practice-question .card-body { padding: 0; display: flex; flex-direction: column; height: 100%; min-height: 0; }
+  .practice-card-viewport { flex: 1; min-height: 0; overflow: hidden; }
+  .practice-question h2 { font-size: 18px; line-height: 1.35; margin: 8px 0 12px; }
+  .practice-options { gap: 6px; }
+  .practice-option { padding: 6px; gap: 6px; grid-template-columns: 18px minmax(0, 1fr) 44px; }
+  .practice-option-text { font-size: 16px; line-height: 1.35; }
+  .practice-option.result-hidden { display: none; }
+  .practice-feedback { margin: 8px 0; padding: 6px 8px; }
+  .practice-grading { flex-shrink: 0; padding: 8px 0; margin: 0; background: var(--study-bg); }
+  .practice-grading > p { display: none; }
+  .practice-grades { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .practice-grades .btn { padding: 6px 2px; min-height: 44px; }
+  .practice-actions { margin: 8px 0 0; }
+  .practice-actions .btn { min-height: 44px; }
+  .practice-pages:not([hidden]) { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; height: 44px; }
+  .practice-pages .btn { min-width: 44px; height: 44px; }
+  .practice-translation-view { position: absolute; inset: 44px 0 0; display: flex; flex-direction: column; background: var(--study-bg); }
+  .practice-workspace:has(.practice-grading) .practice-translation-view { bottom: 113px; }
+  .practice-translation-back { display: block; min-height: 44px; flex-shrink: 0; }
+  .practice-translation-view .translation-panel { position: static; flex: 1; min-height: 0; max-height: none; overflow: hidden; border-radius: 0; }
+  .showing-stats .practice-card-viewport, .showing-stats .practice-question .practice-pages { visibility: hidden; }
+  .practice-stats { position: absolute; inset: 44px 0 113px; overflow: auto; margin: 0; }
+  .practice-history { max-height: none; overflow: visible; }
+}
+@media (max-width: 1000px) {
+  /* The separate Back control stays available while translation text is paged. */
+  .practice-translation-view .translation-panel-header { position: static; }
+}
