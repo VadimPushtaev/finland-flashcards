@@ -71,6 +71,21 @@ class PracticeTests(unittest.TestCase):
         self.assertEqual(self.client.get(f"/api/practice/cards/{question['id']}/stats").json()['total'], 0)
         self.assertEqual(len(self.client.get('/api/practice/chapters/hb-c01/queue').json()['cards']), 44)
 
+    def test_absent_card_translation_never_breaks_practice(self):
+        card = load_chapter('hb-c01')[0]
+        with self.client as client:
+            response = client.get('/api/practice/chapters/hb-c01/cards/' +
+                                  card['id'] + '/translation')
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json(), {'available': False, 'language': 'ru', 'records': {}})
+            self.assertEqual(client.get('/api/practice/chapters/hb-c01/cards/missing/translation').status_code, 404)
+
+    def test_invalid_retention_and_bad_review_do_not_write(self):
+        self.assertEqual(self.client.patch('/api/practice/settings', headers=HEADERS,
+                                           json={'desired_retention': 1.5}).status_code, 422)
+        with database() as db:
+            self.assertEqual(db.execute('SELECT count(*) FROM practice_events').fetchone()[0], 0)
+
     def test_existing_v1_database_upgrades_without_losing_users(self):
         self.client.close()
         with sqlite3.connect(self.path) as conn:

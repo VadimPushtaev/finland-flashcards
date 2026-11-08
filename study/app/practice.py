@@ -1,6 +1,8 @@
 """Authenticated FSRS scheduling and personal review history for Homebrew cards."""
 from datetime import datetime, timezone
-from functools import lru_cache
+import os
+from pathlib import Path
+import yaml
 
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
@@ -9,6 +11,7 @@ from fsrs import Card, Rating, Scheduler
 from app.auth import current_user, same_origin
 from app.database import database
 from app.flashcards import CHAPTER_IDS, load_chapter
+from app.translations import reviewed_records
 
 router = APIRouter()
 GRADE_NAMES = {1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy'}
@@ -160,6 +163,29 @@ def install_practice_routes(app, library):
             return {'cards': [exposed(card) for card in candidates],
                     'fallback': [exposed(card) for card in fallback],
                     'count': len(candidates), 'fallback_count': len(fallback)}
+
+    @router.get('/api/practice/chapters/{chapter_id}/cards/{card_id}/translation')
+    def card_translation(chapter_id: str, card_id: str):
+        """Serve only reviewed, source-matched card translations when present."""
+        card = next((item for item in deck(chapter_id) if item['id'] == card_id), None)
+        if card is None:
+            raise HTTPException(404, 'Frågan finns inte.')
+        unavailable = {'available': False, 'language': 'ru', 'records': {}}
+        source = {card_id + ':q': card['question']}
+        source.update({card_id + ':a' + str(index): answer
+                       for index, answer in enumerate(card['options'])})
+        data = Path(os.environ.get('HOMEBREW_DATA_DIR',
+                    Path(__file__).resolve().parents[2] / 'data/homebrew'))
+        base = data / 'ru'
+        def read(path):
+            return yaml.safe_load(path.read_text(encoding='utf-8'))
+        try:
+            terms = {entry['id']: entry for entry in read(base / 'glossary.yaml')['entries']}
+            records = reviewed_records(base, card_id, 'cards', source, terms, read)
+        except (OSError, ValueError, KeyError, TypeError, yaml.YAMLError):
+            return unavailable
+        return ({'available': True, 'language': 'ru', 'records': records}
+                if records is not None else unavailable)
 
     @router.get('/api/practice/cards/{card_id}/stats')
     def stats(card_id: str, user=Depends(current_user)):

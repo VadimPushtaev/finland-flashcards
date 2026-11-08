@@ -133,7 +133,8 @@ export function Practice({ chapterId, username, openLogin }: {
           translation_used: hint, kind }, username);
       setCompleted(previous => [...previous, current.id]);
       const remaining = [...queue];
-      if (grade === 1) remaining.splice(Math.min(3, remaining.length), 0, current);
+      if (grade === 1 && completed.filter(id => id === current.id).length < 2)
+        remaining.splice(Math.min(3, remaining.length), 0, current);
       const following = remaining.shift();
       setQueue(remaining);
       if (following) show(following, following.id === current.id ||
