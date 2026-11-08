@@ -73,7 +73,11 @@ class PracticeTests(unittest.TestCase):
 
     def test_absent_card_translation_never_breaks_practice(self):
         card = load_chapter('hb-c01')[0]
-        with self.client as client:
+        data = Path(self.temp.name) / 'homebrew'
+        (data / 'ru').mkdir(parents=True)
+        # Supply a valid glossary but no card translations, independent of real data.
+        (data / 'ru' / 'glossary.yaml').write_text('entries: []\n', encoding='utf-8')
+        with patch.dict(os.environ, {'HOMEBREW_DATA_DIR': str(data)}), self.client as client:
             response = client.get('/api/practice/chapters/hb-c01/cards/' +
                                   card['id'] + '/translation')
             self.assertEqual(response.status_code, 200)
