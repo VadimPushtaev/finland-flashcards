@@ -33,6 +33,35 @@ PRAGMA user_version = 1;
 """
 
 
+PRACTICE_SCHEMA = """
+CREATE TABLE IF NOT EXISTS practice_preferences (
+ user_id INTEGER PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE,
+ desired_retention REAL NOT NULL DEFAULT 0.90
+ CHECK (desired_retention >= 0.70 AND desired_retention <= 0.99)
+);
+CREATE TABLE IF NOT EXISTS practice_cards (
+ user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+ card_id TEXT NOT NULL, chapter_id TEXT NOT NULL,
+ fsrs_json TEXT NOT NULL, due_at TEXT NOT NULL,
+ PRIMARY KEY (user_id, card_id)
+);
+CREATE INDEX IF NOT EXISTS practice_cards_chapter
+ ON practice_cards(user_id, chapter_id, due_at);
+CREATE TABLE IF NOT EXISTS practice_events (
+ event_id TEXT PRIMARY KEY,
+ user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+ card_id TEXT NOT NULL, chapter_id TEXT NOT NULL,
+ reviewed_at TEXT NOT NULL, option INTEGER NOT NULL,
+ correct_option INTEGER NOT NULL, correct INTEGER NOT NULL,
+ translation_used INTEGER NOT NULL, suggested_grade INTEGER NOT NULL,
+ final_grade INTEGER NOT NULL, kind TEXT NOT NULL,
+ due_at TEXT NOT NULL, fsrs_log TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS practice_events_card
+ ON practice_events(user_id, card_id, reviewed_at);
+PRAGMA user_version = 2;
+"""
+
 @contextmanager
 def database():
     """Open a transactional connection; never substitute ephemeral storage."""
@@ -49,8 +78,10 @@ def database():
         connection.execute('PRAGMA journal_mode = WAL')
         version = connection.execute('PRAGMA user_version').fetchone()[0]
         if version == 0:
-            connection.executescript('BEGIN IMMEDIATE;\n' + SCHEMA + '\nCOMMIT;')
-        elif version != 1:
+            connection.executescript('BEGIN IMMEDIATE;\n' + SCHEMA + '\n' + PRACTICE_SCHEMA + '\nCOMMIT;')
+        elif version == 1:
+            connection.executescript('BEGIN IMMEDIATE;\n' + PRACTICE_SCHEMA + '\nCOMMIT;')
+        elif version != 2:
             raise RuntimeError(f'Unsupported study database version: {version}')
         with connection:
             yield connection
