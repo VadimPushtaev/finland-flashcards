@@ -179,6 +179,17 @@ export function Practice({ chapterId, username, openLogin }: {
     setQueue(sorted.slice(1)); setExtraOpen(false); setExtra(null);
     if (sorted[0]) show(sorted[0], 'extra');
   };
+  useEffect(() => {
+    if (!selection) return;
+    const panel = document.getElementById('translation-panel');
+    panel?.scrollTo(0, 0);
+    if (window.matchMedia('(max-width: 1000px)').matches && panel && lastWord.current) {
+      const word = lastWord.current.getBoundingClientRect();
+      const visibleBottom = panel.getBoundingClientRect().top - 16;
+      if (word.bottom > visibleBottom) window.scrollBy(0, word.bottom - visibleBottom);
+    }
+  }, [selection]);
+
   const chooseWord = (value: Selection, button: HTMLButtonElement) => {
     lastWord.current = button; setSelection(value);
     if (choice === null) setHint(true);
@@ -223,24 +234,26 @@ export function Practice({ chapterId, username, openLogin }: {
     </> : !started ? <div className="card practice-start"><div className="card-body">
       <p>{chapter ? chapter.new + chapter.due : ''} kort att öva.</p>
       <button className="btn btn-primary" disabled={busy} onClick={() => void start()}>Starta övningen</button>
-    </div></div> : current ? <div className="practice-workspace">
+    </div></div> : current ? <div className={'practice-workspace' + (selection ? ' has-translation' : '')}>
+      <div className="practice-main">
       <div className="practice-status"><span>{completed.length} sparade svar</span>
         <span>{queue.length + 1} kort kvar</span></div>
       <article className="card practice-question"><div className="card-body">
         <div className="eyebrow">{current.topic}</div>
         <h2 lang="sv">{translated(current.id + ':q', current.question)}</h2>
         <div className="practice-options">{current.options.map((option, i) => {
-          const record = translations.records[current.id + ':a' + i];
           const cls = feedback && i === feedback.correct_option ? 'is-correct' :
             feedback && choice === i ? 'is-wrong' : '';
           return <div key={i} className={'practice-option ' + cls}>
+            <span className="practice-option-letter" aria-hidden="true">{String.fromCharCode(65 + i)}</span>
+            <div className="practice-option-text" id={`answer-${i}`} lang="sv">
+              {translated(current.id + ':a' + i, option)}</div>
             <button className="btn practice-answer" disabled={choice !== null} aria-pressed={choice === i}
-              onClick={() => void answer(i)}>
-              <span className="practice-option-letter">{String.fromCharCode(65 + i)}</span>
-              <span lang="sv">{record ? 'Välj det här svaret' : option}</span>
+              aria-label={`Välj svar ${String.fromCharCode(65 + i)}`} aria-describedby={`answer-${i}`}
+              title={`Välj svar ${String.fromCharCode(65 + i)}`} onClick={() => void answer(i)}>
+              <i className={'bi ' + (feedback && i === feedback.correct_option ? 'bi-check-lg' :
+                feedback && choice === i ? 'bi-x-lg' : 'bi-arrow-right')} aria-hidden="true" />
             </button>
-            {record && <div className="practice-option-translation" lang="sv">
-              {translated(current.id + ':a' + i, option)}</div>}
           </div>;
         })}</div>
         {feedback && <div className={'practice-feedback ' +
@@ -282,6 +295,7 @@ export function Practice({ chapterId, username, openLogin }: {
           </li>)}</ol>
         </>}
       </div></section>}
+      </div>
       {selection && <TranslationPanel selection={selection} onClose={closeTranslation} />}
     </div> : <section className="card practice-finished"><div className="card-body">
       <h2>Klart för den här gången!</h2>

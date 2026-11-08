@@ -82,3 +82,46 @@ for (const theme of ['light', 'dark']) {
     await expect(page.getByRole('button', { name: 'Starta övningen' })).toBeVisible();
   });
 }
+
+test('card translations sit beside desktop cards or overlay the mobile bottom', async ({ page, context, account }, testInfo) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token,
+    url: 'http://127.0.0.1:18745' }]);
+  await page.route('**/api/practice/chapters/hb-c01/queue', async route => {
+    const response = await route.fetch();
+    const data = await response.json();
+    data.cards = data.cards.filter((card: { id: string }) => card.id === 'hb-c01-arstider-0002');
+    await route.fulfill({ response, json: data });
+  });
+  await page.goto('/#/practice/hb-c01');
+  await page.getByRole('button', { name: 'Starta övningen' }).click();
+  const word = page.locator('.practice-option').first().getByRole('button', { name: 'solen', exact: true });
+  await word.click();
+  const panel = page.locator('.translation-panel');
+  await expect(panel).toContainText('солнце');
+  await expect(page.locator('.practice-feedback')).toHaveCount(0);
+  await expect(page.getByText('Välj det här svaret')).toHaveCount(0);
+  const viewport = page.viewportSize()!;
+  const box = (await panel.boundingBox())!;
+  if (viewport.width > 1000) {
+    const card = (await page.locator('.practice-question').boundingBox())!;
+    expect(box.x).toBeGreaterThanOrEqual(card.x + card.width);
+    expect(box.y).toBeLessThan(card.y + 50);
+  } else {
+    await expect(panel).toHaveCSS('position', 'fixed');
+    expect(box.y + box.height).toBeCloseTo(viewport.height, 0);
+    expect(box.height).toBeLessThan(viewport.height / 2);
+    const selected = (await word.boundingBox())!;
+    expect(selected.y + selected.height).toBeLessThan(box.y);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath('card-translation.png') });
+  await page.getByRole('button', { name: 'Stäng översättningen' }).click();
+  await expect(word).toBeFocused();
+  const choose = page.getByRole('button', { name: 'Välj svar A', exact: true });
+  expect((await choose.boundingBox())!.width).toBeGreaterThanOrEqual(44);
+  await choose.click();
+  await expect(page.locator('.practice-feedback')).toHaveText('Rätt svar!');
+  await expect(choose.locator('.bi-check-lg')).toHaveCount(1);
+  await word.click();
+  await expect(panel).toBeVisible();
+});
