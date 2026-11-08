@@ -118,7 +118,7 @@ export default function App() {
         {account.saveError && <div className="alert alert-warning m-3" role="alert">{account.saveError}</div>}
         {error ? <div className="page"><ErrorMessage message={error} /></div> : !library || !account.ready ? <Loading /> : route.page === 'chapter' ?
           <Reader key={route.chapter} topbar={topbar} library={library} route={route} progress={progress} changeProgress={changeProgress} toggleCompleted={toggleCompleted} toggleBookmark={toggleBookmark} /> :
-          route.page === 'practice' ? <Practice key={account.username + ':' + (route.chapter || '')} chapterId={route.chapter} username={account.username} openLogin={account.openLogin} /> :
+          route.page === 'practice' ? <Practice key={(account.username || '') + ':' + (route.chapter || '')} chapterId={route.chapter} username={account.username} openLogin={account.openLogin} /> :
           route.page === 'search' ? <Search key={route.query} query={route.query || ''} /> : route.page === 'saved' ? <Saved ids={progress.bookmarks} toggleBookmark={toggleBookmark} /> : route.page === 'about' ? <About /> :
           <div className="page overview">
             <div className="eyebrow"><span className="status-dot" /> DIN STUDIEPLATS</div>

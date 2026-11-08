@@ -68,7 +68,7 @@ class CardApiTests(unittest.TestCase):
             self.assertEqual(correct.json(), {'correct': True, 'correct_option': card['correct_option']})
             self.assertEqual(wrong.json()['correct'], False)
             self.assertEqual(client.post(url, json={'option': 4}).status_code, 422)
-            self.assertEqual(client.post(url + 'missing', json={'option': 0}).status_code, 404)
+            self.assertEqual(client.post(url.replace(card['id'], 'missing'), json={'option': 0}).status_code, 404)
             self.assertEqual(client.get('/api/practice/chapters/missing/cards').status_code, 404)
 
     def test_missing_assets_give_service_error(self):

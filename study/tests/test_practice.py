@@ -80,6 +80,22 @@ class PracticeTests(unittest.TestCase):
             self.assertEqual(response.json(), {'available': False, 'language': 'ru', 'records': {}})
             self.assertEqual(client.get('/api/practice/chapters/hb-c01/cards/missing/translation').status_code, 404)
 
+    def test_extra_practice_does_not_change_saved_retention(self):
+        question = load_chapter('hb-c01')[0]
+        url = '/api/practice/chapters/hb-c01/review'
+        response = self.client.post(url, headers=HEADERS,
+            json={'event_id': 'practice-extra-test-0001', 'card_id': question['id'],
+                  'option': question['correct_option'], 'grade': 4})
+        self.assertEqual(response.status_code, 200, response.text)
+        candidates = self.client.post('/api/practice/chapters/hb-c01/extra', headers=HEADERS,
+            json={'threshold': 0.99, 'excluded_ids': []})
+        self.assertEqual(candidates.status_code, 200, candidates.text)
+        result = candidates.json()
+        self.assertIn('count', result)
+        self.assertIn('fallback_count', result)
+        self.assertEqual(self.client.get('/api/practice/settings').json()['desired_retention'], 0.9)
+        self.assertEqual(self.client.get('/api/practice/cards/' + question['id'] + '/stats').json()['total'], 1)
+
     def test_invalid_retention_and_bad_review_do_not_write(self):
         self.assertEqual(self.client.patch('/api/practice/settings', headers=HEADERS,
                                            json={'desired_retention': 1.5}).status_code, 422)
