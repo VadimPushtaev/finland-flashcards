@@ -16,8 +16,11 @@ ROOT = Path(__file__).resolve().parents[2] if '__file__' in globals() else None
 RECEIPT = '.media-sync.json'
 MANAGED = re.compile(
     r'(?:videos/homebrew/hb-c\d+-\d+-[a-z0-9-]+(?:\.mp4|\.[a-z]+\.m4a)'
-    r'|studio/media/hb-c\d+-[a-z0-9-]+/narration(?:-[a-z]{2,3})?/'
-    r'(?:raw/)?hb-[a-z0-9-]+\.wav)\Z'
+    r'|studio/media/hb-c\d+-[a-z0-9-]+/'
+    # Metrics-selected takes may remain in narration, retake or run directories.
+    # Accept only WAV assets, never the Git-owned metadata. Each directory
+    # must start with an alphanumeric character, excluding '.' and '..'.
+    r'(?:[A-Za-z0-9][A-Za-z0-9_.+-]*/)*hb-[a-z0-9-]+\.wav)\Z'
 )
 # Git owns these files. Read them for selection and old-receipt migration only.
 METADATA = re.compile(

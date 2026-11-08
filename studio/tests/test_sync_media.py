@@ -132,6 +132,31 @@ sys.exit(subprocess.call(' '.join(args), shell=True))
         with self.assertRaisesRegex(ValueError, 'incomplete'):
             media.select_files(self.source)
 
+    def test_selected_nested_take_upload_and_restore(self):
+        run = 'studio/media/hb-c01-lage/narration/range-comparison-2026-11-03T055221292986+0000'
+        selected = run + '/hb-c01-u0001-s001.wav'
+        raw = run + '/raw/hb-c01-u0001-s001.wav'
+        resumed = 'studio/media/hb-c01-lage/narration-resume-1/hb-c01-u0002-s001.wav'
+        retake = 'studio/media/hb-c01-lage/retake-repeated-phrase/hb-c01-u0003-s001.wav'
+        unused = run + '/hb-c01-u0001-s002.wav'
+        put(self.source, selected, b'approved replacement')
+        put(self.source, raw, b'raw replacement')
+        put(self.source, resumed, b'approved resumed take')
+        put(self.source, retake, b'approved retake')
+        put(self.source, unused, b'unselected comparison')
+        put(self.source, METRICS,
+            json.dumps([{'path': selected, 'raw_path': raw}, {'path': resumed},
+                        {'path': retake}]).encode())
+        self.sync()
+        self.assertEqual(set(media.read_receipt(self.target)['files']),
+                         {VIDEO, selected, raw, resumed, retake})
+        self.assertFalse((self.target / unused).exists())
+        self.assertFalse((self.target / WAV).exists())
+        self.assertFalse((self.target / METRICS).exists())
+        (self.source / selected).unlink()
+        self.sync(pull=True)
+        self.assertEqual((self.source / selected).read_bytes(), b'approved replacement')
+
     def test_transfer_rejects_metadata_even_in_supplied_manifest(self):
         for name in (CREDITS, METRICS):
             for version in (1, 2):
@@ -191,7 +216,10 @@ sys.exit(subprocess.call(' '.join(args), shell=True))
 
     def test_paths_symlinks_and_manifests_cannot_escape(self):
         manifest = media.select_files(self.source)
-        for name in ('../escape.wav', '/tmp/escape.wav', 'videos/homebrew/../../escape.mp4'):
+        for name in ('../escape.wav', '/tmp/escape.wav', 'videos/homebrew/../../escape.mp4',
+                     'studio/media/hb-c01-lage/narration/../hb-c01-u0001-s001.wav',
+                     'studio/media/hb-c01-lage/narration/run/../../hb-c01-u0001-s001.wav',
+                     'studio/media/hb-c01-lage/narration/run/metrics.json'):
             with self.assertRaises(ValueError):
                 media.safe_path(self.source, name)
         self.target.mkdir()
