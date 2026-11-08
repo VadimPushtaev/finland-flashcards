@@ -157,8 +157,14 @@ def install_practice_routes(app, library):
             candidates = [card for card, row in future
                           if fsrs.get_card_retrievability(Card.from_json(row['fsrs_json']),
                                                          current_datetime=now) <= body.threshold]
+            # Prefer cards not used this session; when all were just studied,
+            # still offer the nearest scheduled reviews as an explicit fallback.
             nearest = sorted(future, key=lambda pair: pair[1]['due_at'])
-            # A fallback is a transparent, separate choice, not a change to retention.
+            if not nearest and not candidates:
+                nearest = sorted(
+                    ((card, saved[card['id']]) for card in deck(chapter_id)
+                     if card['id'] in saved and datetime.fromisoformat(saved[card['id']]['due_at']) > now),
+                    key=lambda pair: pair[1]['due_at'])
             fallback = [card for card, _ in nearest[:10]] if not candidates else []
             return {'cards': [exposed(card) for card in candidates],
                     'fallback': [exposed(card) for card in fallback],

@@ -37,3 +37,8 @@ jobs:
         run: |
           npm ci
           npm run build
+      - name: Install Chromium and run practice browser test
+        working-directory: study/frontend
+        run: |
+          npx playwright install chromium --with-deps
+          npx playwright test tests/practice.spec.ts --project=desktop

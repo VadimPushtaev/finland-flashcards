@@ -95,6 +95,10 @@ class PracticeTests(unittest.TestCase):
         self.assertIn('fallback_count', result)
         self.assertEqual(self.client.get('/api/practice/settings').json()['desired_retention'], 0.9)
         self.assertEqual(self.client.get('/api/practice/cards/' + question['id'] + '/stats').json()['total'], 1)
+        excluded = self.client.post('/api/practice/chapters/hb-c01/extra', headers=HEADERS,
+            json={'threshold': 0.99, 'excluded_ids': [question['id']]})
+        self.assertEqual(excluded.status_code, 200)
+        self.assertGreaterEqual(excluded.json()['fallback_count'], 1)
 
     def test_invalid_retention_and_bad_review_do_not_write(self):
         self.assertEqual(self.client.patch('/api/practice/settings', headers=HEADERS,
