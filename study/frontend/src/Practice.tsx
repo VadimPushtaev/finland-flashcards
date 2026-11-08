@@ -90,6 +90,7 @@ export function Practice({ chapterId, username, openLogin }: {
   const [started, setStarted] = useState(false);
   const [completed, setCompleted] = useState<string[]>([]);
   const [choice, setChoice] = useState<number | null>(null);
+  const [showAllAnswers, setShowAllAnswers] = useState(false);
   const [feedback, setFeedback] = useState<Check | null>(null);
   const [grade, setGrade] = useState(3);
   const [hint, setHint] = useState(false);
@@ -144,7 +145,7 @@ export function Practice({ chapterId, username, openLogin }: {
   }, [extraOpen, chapterId, extraThreshold, username, completed.length]);
 
   const show = (card: Card, reason: string) => {
-    setCurrent(card); setKind(reason); setFeedback(null); setChoice(null);
+    setShowAllAnswers(false); setCurrent(card); setKind(reason); setFeedback(null); setChoice(null);
     setHint(false); setGrade(3); setEventId(crypto.randomUUID().replaceAll('-', ''));
   };
   const start = async () => {
@@ -260,12 +261,12 @@ export function Practice({ chapterId, username, openLogin }: {
       <div className="practice-status"><span>{completed.length} sparade svar</span>
         <span>{queue.length + 1} kort kvar</span></div>
       <article className="card practice-question"><div className="card-body">
-        <div className="practice-card-viewport"><div className="practice-card-content"><div className="eyebrow">{current.topic}</div>
+        <div className={"practice-card-viewport" + (showAllAnswers ? " show-all-answers" : "")}><div className="practice-card-content"><div className="eyebrow">{current.topic}</div>
         <h2 lang="sv">{translated(current.id + ':q', current.question)}</h2>
-        <div className="practice-options">{current.options.map((option, i) => {
+        <div className="practice-options" id="practice-answer-options">{current.options.map((option, i) => {
           const cls = feedback && i === feedback.correct_option ? 'is-correct' :
             feedback && choice === i ? 'is-wrong' : '';
-          return <div key={i} className={'practice-option ' + cls + (feedback && choice !== i && feedback.correct_option !== i ? ' result-hidden' : '')}>
+          return <div key={i} className={'practice-option ' + cls + (feedback && !showAllAnswers && choice !== i && feedback.correct_option !== i ? ' result-hidden' : '')}>
             <span className="practice-option-letter" aria-hidden="true">{String.fromCharCode(65 + i)}</span>
             <div className="practice-option-text" id={`answer-${i}`} lang="sv">
               {translated(current.id + ':a' + i, option)}</div>
@@ -281,9 +282,13 @@ export function Practice({ chapterId, username, openLogin }: {
           (feedback.correct ? 'is-correct' : 'is-wrong')} role="status">
           {feedback.correct ? 'Rätt svar!' :
             'Inte riktigt. Rätt svar: ' + String.fromCharCode(65 + feedback.correct_option)}
+          <button className="btn practice-show-answers" aria-expanded={showAllAnswers}
+            aria-controls="practice-answer-options" onClick={() => setShowAllAnswers(value => !value)}>
+            {showAllAnswers ? 'Visa färre svar' : 'Visa alla svar'}</button>
         </div>}
         </div></div>
-        <PageControls target=".practice-card-viewport" reset={current.id + String(!!feedback)} />
+        {!showAllAnswers && <PageControls target=".practice-card-viewport" reset={current.id + String(!!feedback)} />}
+        {selection && <div className="practice-translation-space" aria-hidden="true" />}
         {feedback && <section className="practice-grading">
           <p>Bedömning (du kan ändra den)</p>
           <div className="practice-grades" role="group" aria-label="FSRS-bedömning">

@@ -107,7 +107,9 @@ test('card translations sit beside desktop cards or overlay the mobile bottom', 
     expect(box.x).toBeGreaterThanOrEqual(card.x + card.width);
     expect(box.y).toBeLessThan(card.y + 50);
   } else {
-    await expect(page.getByRole('button', { name: '← Tillbaka till kortet' })).toBeVisible();
+    const sheet = (await page.locator('.practice-translation-view').boundingBox())!;
+    expect(sheet.height).toBeCloseTo((viewport.height - 44) / 2, 0);
+    expect(sheet.y).toBeGreaterThan(viewport.height / 2 - 1);
     expect(box.y + box.height).toBeLessThanOrEqual(viewport.height);
     expect(await page.evaluate(() => document.documentElement.scrollHeight <= innerHeight)).toBe(true);
   }
@@ -118,12 +120,27 @@ test('card translations sit beside desktop cards or overlay the mobile bottom', 
   const choose = page.getByRole('button', { name: 'Välj svar A', exact: true });
   expect((await choose.boundingBox())!.width).toBeGreaterThanOrEqual(44);
   await choose.click();
-  await expect(page.locator('.practice-feedback')).toHaveText('Rätt svar!');
+  await expect(page.locator('.practice-feedback')).toContainText('Rätt svar!');
   await expect(choose.locator('.bi-check-lg')).toHaveCount(1);
   if (viewport.width <= 1000) {
     const next = (await page.getByRole('button', { name: 'Nästa →' }).boundingBox())!;
     expect(next.y + next.height).toBeLessThanOrEqual(viewport.height);
+    await expect(page.locator('.practice-option:visible')).toHaveCount(1);
+    await page.getByRole('button', { name: 'Visa alla svar', exact: true }).click();
+    await expect(page.locator('.practice-option:visible')).toHaveCount(4);
+    await expect(page.locator('.practice-card-viewport')).toHaveCSS('overflow-y', 'auto');
+    const expandedNext = (await page.getByRole('button', { name: 'Nästa →' }).boundingBox())!;
+    expect(expandedNext.y + expandedNext.height).toBeLessThanOrEqual(viewport.height);
+    await page.getByRole('button', { name: 'Visa färre svar', exact: true }).click();
+    await expect(page.locator('.practice-option:visible')).toHaveCount(1);
   }
   await word.click();
   await expect(panel).toBeVisible();
+  if (viewport.width <= 1000) {
+    const sheet = (await page.locator('.practice-translation-view').boundingBox())!;
+    const grading = (await page.locator('.practice-grading').boundingBox())!;
+    expect(sheet.y + sheet.height).toBeLessThanOrEqual(grading.y + 1);
+    await page.getByRole('button', { name: 'Nästa →' }).click();
+    await expect(page.locator('.practice-finished')).toBeVisible();
+  }
 });
