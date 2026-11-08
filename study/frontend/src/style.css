@@ -349,15 +349,45 @@ mark { background: #eddeb3; color: #303622; padding: 1px 2px; border-radius: 2px
 
 
 /* Homebrew flashcard practice */
-.practice-page { max-width: 1150px; }
+.practice-page {
+  max-width: 1150px;
+  --practice-due: #a63c30;
+  --practice-due-soft: #fff0ec;
+  --practice-new: #245fa6;
+  --practice-new-soft: #edf4ff;
+  --practice-clear: #287247;
+  --practice-clear-soft: #eaf5ee;
+  --practice-muted: #606e65;
+}
+[data-bs-theme="dark"] .practice-page {
+  --practice-due: #ffb4a6;
+  --practice-due-soft: #492e29;
+  --practice-new: #a6caff;
+  --practice-new-soft: #25394e;
+  --practice-clear: #a0d9b2;
+  --practice-clear-soft: #263e2e;
+  --practice-muted: #a3b1a5;
+}
 .practice-back { display: inline-block; margin: 8px 0 14px; color: var(--study-green); }
 .practice-page h1 { margin-top: .5rem; }
 .practice-settings { max-width: 520px; background: var(--study-surface); }
 .practice-settings h2 { font-size: 1.1rem; }
 .practice-settings input[type="range"], .practice-extra input[type="range"] { display: block; width: 100%; margin: 16px 0; accent-color: var(--study-green); }
-.practice-chapter { text-decoration: none; color: var(--study-ink); background: var(--study-surface); border-color: var(--study-border); }
-.practice-chapter:hover, .practice-chapter:focus-visible { border-color: var(--study-green); color: var(--study-ink); }
+.practice-priority-hint { color: var(--practice-muted); }
+.practice-chapter { --practice-accent: var(--practice-muted); --practice-accent-soft: var(--study-bg); text-decoration: none; color: var(--study-ink); background: var(--study-surface); border-color: var(--study-border); border-inline-start: 4px solid var(--practice-accent); }
+.practice-chapter-due { --practice-accent: var(--practice-due); --practice-accent-soft: var(--practice-due-soft); }
+.practice-chapter-new { --practice-accent: var(--practice-new); --practice-accent-soft: var(--practice-new-soft); }
+.practice-chapter-clear { --practice-accent: var(--practice-clear); --practice-accent-soft: var(--practice-clear-soft); }
+.practice-chapter:hover, .practice-chapter:focus-visible { border-color: var(--practice-accent); color: var(--study-ink); }
+.practice-chapter .card-body { display: flex; flex-direction: column; }
+.practice-chapter-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.practice-chapter-state { border-radius: 6px; padding: 3px 7px; color: var(--practice-accent); background: var(--practice-accent-soft); font-size: .7rem; font-weight: 650; }
 .practice-chapter h2 { margin: 10px 0 20px; font-size: 1.1rem; }
+.practice-chapter-total { margin-top: auto; font-variant-numeric: tabular-nums; }
+.practice-chapter-counts { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-top: 6px; color: var(--practice-muted); font-variant-numeric: tabular-nums; }
+.practice-chapter-counts > span { white-space: nowrap; }
+.practice-count-new { color: var(--practice-new); }
+.practice-count-due { color: var(--practice-due); }
 .practice-start { max-width: 650px; }
 .practice-workspace { max-width: 820px; }
 .practice-status { display: flex; gap: 20px; justify-content: space-between; margin: 0 0 12px; color: var(--study-muted); font-size: .85rem; }
