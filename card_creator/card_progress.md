@@ -777,3 +777,21 @@ Assessed all 766 sentences in 19 subchapters with permanent thresholds: 516 CORE
 ## Homebrew Chapter 12 — 2026-11-07
 
 Assessed all 603 sentences in 20 subchapters with permanent thresholds: 511 CORE, 33 SUPPORTING, 59 SKIP. Created 159 cards across all 20 subchapters and reused 13 existing cards. Consolidation and reuse cover selected learning points from 488 CORE sentences; 23 source claims remain blocked. These include incomplete residence and citizenship rules, ambiguous temporary-protection eligibility, automatic home-municipality claims, qualification recognition, blanket YKI fees and incorrect allocation of refugee-quota decisions. Source text remains unchanged. Exact blockers, qualifications and dated primary-source checks are recorded in `card_creator/homebrew/reviews/hb-c12-2026-11-07-core.json`. All decks passed category, format, length and provenance-hash validation.
+
+### Homebrew chapters 6–12: cards revised after reassessment (2026-11-07)
+
+Reused the completed sentence assessments without modifying them. Fixed selection: CORE >=41, SUPPORTING =40, SKIP <40. New selection: `card_creator/homebrew/selections/hb-c06-c12-2026-11-07-reassessed-core.json`. Cards now test the current CORE learning points; suitable questions were retained, incidental-detail questions narrowed, and unselected questions removed. Historical selections and reviews remain available.
+
+| Chapter | Cards before | Cards now | New | Rewritten | Retained | Reused references | Blocked CORE sentences |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 6 | 89 | 56 | 0 | 2 | 54 | 9 | 0 |
+| 7 | 176 | 109 | 4 | 2 | 103 | 6 | 2 |
+| 8 | 133 | 73 | 0 | 4 | 69 | 5 | 1 |
+| 9 | 216 | 112 | 0 | 7 | 105 | 19 | 1 |
+| 10 | 136 | 86 | 1 | 19 | 66 | 17 | 1 |
+| 11 | 184 | 128 | 2 | 17 | 109 | 1 | 2 |
+| 12 | 159 | 103 | 0 | 8 | 95 | 11 | 5 |
+
+Per-chapter `*-2026-11-07-reassessed-core.json` reviews record coverage, reused card hashes, unresolved source claims, and prior dated primary-source checks. Blocked means the source claim needs correction or verification, not a lower selection score. Assessments remain unchanged by this card revision.
+
+Validation: all 667 cards in 115 decks passed exact Swedish categories, four-option/single-answer format, 120/70-character limits, provenance/hash/CORE checks, and reused-target checks. All chapter aggregates passed `combine_chapters.py --check`; `cards/ALL.txt` was rebuilt. Homebrew Kahoot export passed using the existing submodule checkout. The full `make` setup step could not write the read-only submodule Git configuration; `make combine` and direct exporter completed successfully. Chapters 1–5 decks and exports were unchanged.

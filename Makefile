@@ -11,12 +11,15 @@ init-submodules:
 
 combine:
 	$(PY) card_creator/combine_all_cards.py
+	$(PY) card_creator/homebrew/render_decks.py
 	$(PY) card_creator/homebrew/combine_chapters.py
 
 combine-homebrew:
+	$(PY) card_creator/homebrew/render_decks.py
 	$(PY) card_creator/homebrew/combine_chapters.py
 
 check-homebrew:
+	$(PY) card_creator/homebrew/render_decks.py --check
 	$(PY) card_creator/homebrew/combine_chapters.py --check
 
 kahoot: init-submodules

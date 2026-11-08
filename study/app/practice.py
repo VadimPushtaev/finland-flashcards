@@ -96,7 +96,7 @@ def install_practice_routes(app, library):
 
     class Review(BaseModel):
         event_id: str = Field(min_length=8, max_length=128, pattern=r'^[a-zA-Z0-9_-]+$')
-        card_id: str = Field(min_length=64, max_length=64)
+        card_id: str = Field(min_length=8, max_length=128)
         option: int = Field(ge=0, le=3)
         grade: int = Field(ge=1, le=4)
         translation_used: bool = False

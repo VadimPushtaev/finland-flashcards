@@ -41,9 +41,10 @@ of `data/homebrew/`; rebuild the image after updating that collection.
 
 ## Practice card API (catalog only)
 
-The flashcard catalog is loaded from `cards/homebrew/hb-c01/ALL.txt` through
-`hb-c12/ALL.txt` (1,460 cards total) and included read-only in the Docker
-image. Subchapter files are not loaded again.
+The flashcard catalog is loaded from canonical YAML at
+`data/homebrew/cards/hb-c01.yaml` through `hb-c12.yaml` (1,034 cards total).
+Each card has a permanent ID. Derived TXT files remain Anki/Kahoot exports;
+the web backend reads YAML directly. See `data/homebrew/cards/README.md`.
 
 - `GET /api/practice/chapters` lists the 12 chapters and card counts.
 - `GET /api/practice/chapters/{chapter_id}/cards` gives card IDs, questions,
@@ -52,8 +53,8 @@ image. Subchapter files are not loaded again.
   `{"option": 0}` (zero-based) and returns correctness and the correct index.
 
 These endpoints are stateless: FSRS scheduling, accounts, review history and
-the practice UI will be added in subsequent commits. Cards use content-hash
-identities; edited questions or answers intentionally become new cards.
+the practice UI will be added in subsequent commits. Card IDs come from YAML, so edits no longer reset FSRS history. The old
+hash-based IDs are not migrated: the feature has no production review history.
 
 ## FSRS practice API (implementation)
 
