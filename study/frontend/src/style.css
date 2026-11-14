@@ -498,3 +498,47 @@ mark { background: #eddeb3; color: #303622; padding: 1px 2px; border-radius: 2px
   .practice-show-answers { display: inline-flex; align-items: center; min-height: 44px; padding: 4px 6px; font-size: .75rem; color: var(--study-green); text-decoration: underline; }
   .practice-card-viewport.show-all-answers { overflow-y: auto; overscroll-behavior: contain; }
 }
+
+/* Desktop practice reserves space for feedback and navigation at any card length.
+   Keep the existing phone/tablet layout and paging rules above unchanged. */
+@media screen and (min-width: 1001px) {
+  body.practice-active { overflow: hidden; }
+  .practice-active .workspace { height: 100dvh; display: flex; flex-direction: column; }
+  .practice-active .workspace > main { flex: 1; min-height: 0; }
+  .practice-active .topbar { height: 56px; flex-shrink: 0; padding: 0 28px; }
+  .practice-page.is-active { width: 100%; height: 100%; max-width: 1280px; padding: 16px 28px 20px; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr); column-gap: 16px; }
+  .practice-page.is-active > .eyebrow { display: none; }
+  .practice-page.is-active > h1 { grid-area: 1 / 1; align-self: center; font-size: 1.15rem; line-height: 1.4; margin: 0; }
+  .practice-page.is-active > .practice-back { grid-area: 1 / 2; align-self: center; margin: 0; padding: 6px 0; font-size: .85rem; }
+  .practice-page.is-active > .alert { grid-area: 2 / 1 / auto / -1; margin: 12px 0 0; }
+  .practice-page.is-active .practice-workspace { grid-area: 3 / 1 / auto / -1; min-height: 0; max-width: none; margin-top: 12px; }
+  .practice-workspace.has-translation { grid-template-columns: minmax(0, 1fr) minmax(280px, 32%); align-items: stretch; gap: 16px; }
+  .practice-main { height: 100%; min-height: 0; display: flex; flex-direction: column; }
+  .practice-status { flex-shrink: 0; margin-bottom: 8px; font-size: .8rem; }
+  .practice-question { flex: 1; min-height: 0; }
+  .practice-question .card-body { display: flex; flex-direction: column; height: 100%; min-height: 0; padding: 16px; }
+  .practice-card-viewport { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 4px; }
+  .practice-question h2 { margin: 8px 0 16px; font-size: 1.5rem; line-height: 1.4; }
+  .practice-options { gap: 8px; }
+  .practice-option { grid-template-columns: 22px minmax(0, 1fr) 44px; gap: 10px; padding: 6px 10px; }
+  .practice-option-text { font-size: 1.375rem; line-height: 1.45; }
+  .practice-option.result-hidden { display: none; }
+  /* A smaller visual arrow keeps its 44px click target. */
+  .practice-answer { border: 0; padding: 6px; background-clip: content-box; font-size: 1.1rem; }
+  .practice-grading { flex-shrink: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 12px; padding-top: 12px; }
+  .practice-grading > p { display: none; }
+  .practice-feedback { flex: 1 0 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 8px; margin: 0; padding: 6px 10px; font-size: .95rem; }
+  .practice-show-answers { display: inline-flex; align-items: center; min-height: 32px; padding: 4px 6px; font-size: .8rem; color: var(--study-green); text-decoration: underline; }
+  .practice-grades { flex: 1 1 260px; gap: 6px; }
+  .practice-grades .btn { flex: 1 1 0; min-width: 56px; min-height: 40px; padding: 6px 8px; }
+  .practice-actions { flex: 1 1 220px; gap: 8px; margin: 0; }
+  .practice-actions .btn { min-height: 40px; }
+  .practice-actions .btn-primary { min-width: 100px; }
+  .practice-translation-view { position: static; height: 100%; min-height: 0; padding-top: 28px; display: flex; flex-direction: column; }
+  .practice-translation-view .translation-panel { flex: 1; max-height: none; }
+  .practice-main.showing-stats .practice-card-viewport { display: none; }
+  .practice-main.showing-stats .practice-question { flex: 0 0 auto; order: 1; }
+  .practice-main.showing-stats .practice-grading { margin: 0; padding: 0; border: 0; }
+  .practice-stats { flex: 1; min-height: 0; margin: 0 0 12px; overflow-y: auto; }
+  .practice-history { max-height: none; overflow: visible; }
+}
