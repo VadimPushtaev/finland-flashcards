@@ -19,9 +19,9 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Citizenship Act amendments 2027 and citizenship-test guidance (FI): https://migri.fi/kansalaisuuslain-muutos-2027
 - Citizenship Act amendments 2027 and citizenship-test guidance (SV): https://migri.fi/sv/andringar-i-medborgarskapslagen-2027
 - Citizenship Act amendments 2027 and citizenship-test guidance (EN): https://migri.fi/en/amendments-to-the-citizenship-act-2027
-- Finnish citizenship FAQ (FI; citizenship-test section; page last modified 2026-08-24): https://migri.fi/ukk-suomen-kansalaisuus
-- Finnish citizenship FAQ (SV; citizenship-test section; page last modified 2026-08-24): https://migri.fi/sv/fos-finskt-medborgarskap
-- Finnish citizenship FAQ (EN; citizenship-test section; page last modified 2026-08-24): https://migri.fi/en/faq-finnish-citizenship
+- Finnish citizenship FAQ (FI; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/ukk-suomen-kansalaisuus
+- Finnish citizenship FAQ (SV; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/sv/fos-finskt-medborgarskap
+- Finnish citizenship FAQ (EN; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/en/faq-finnish-citizenship
 - Citizenship-test FAQ content direct page (FI; discovered via Migri site search 2026-08-27): https://migri.fi/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-
 - Citizenship-test FAQ content direct page (SV; discovered via Migri site search 2026-08-27): https://migri.fi/sv/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-sv
 - Citizenship-test FAQ content direct page (EN; discovered via Migri site search 2026-08-27): https://migri.fi/en/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-en
@@ -463,3 +463,8 @@ These are historical publications or current URLs for files already archived; th
 - Parliament plenary protocol main page (FI, PTK 59/2026 vp) — current direct URL: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-32721
 - Parliament plenary protocol main page (FI, PTK 62/2026 vp) — current direct URL: https://www.eduskunta.fi/asiat-ja-aanestykset/valtiopaivaasiat/asiakirjat/edktunnus/EDK-2026-AK-34462
 - Press releases (FI; discovered through Migri site search): https://migri.fi/lehdistotiedotteet
+
+## Additional official source files (discovered 2026-11-14)
+
+- Citizenship Act English translation record (completed 2026-10-12; amendments through 552/2026): https://www.finlex.fi/en/legislation/translations/2003/eng/359
+- Citizenship Act English translation PDF (Ministry of the Interior; legally binding only in Finnish and Swedish): https://www.finlex.fi/api/media/statute-foreign-language-translation/1097847/mainPdf/main.pdf?timestamp=2026-10-13T06%3A30%3A33.000Z

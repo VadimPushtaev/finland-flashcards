@@ -2,12 +2,19 @@
 
 All files listed here are stored under `news/files/` as local snapshots/archives of key sources.
 
-Download date: 2026-11-06 (unless noted otherwise in filename).
+Download date: 2026-11-14 (unless noted otherwise in filename).
 
 ## HTML snapshots (official pages)
 
 | File | Description | Source | SHA256 |
 | --- | --- | --- | --- |
+| `news/files/snapshot_2026-11-14_migri_faq_finnish_citizenship_fi.html` | Migri citizenship-test FAQ (FI; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13) | https://migri.fi/ukk-suomen-kansalaisuus | `02af41ea739c521bd5ba2a17b4452f671d6aab3085c04f29bf7e798dda5e7aed` |
+| `news/files/snapshot_2026-11-14_migri_faq_finnish_citizenship_sv.html` | Migri citizenship-test FAQ (SV; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13); newly added questions 7-13 appear in Finnish on this language page | https://migri.fi/sv/fos-finskt-medborgarskap | `657953c871470a4208fcf77d605099914d4b9b8695c1f8ed44654d0833b10b99` |
+| `news/files/snapshot_2026-11-14_migri_faq_finnish_citizenship_en.html` | Migri citizenship-test FAQ (EN; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13); newly added questions 7-13 appear in Finnish on this language page | https://migri.fi/en/faq-finnish-citizenship | `6ee9e492bf698c84f9d13570a300c1186fbda1ec05c88a51cb5955efe9e8c49b` |
+| `news/files/snapshot_2026-11-14_migri_citizenship_test_faq_direct_fi.html` | Migri citizenship-test FAQ (FI; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13) | https://migri.fi/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari- | `c694b7973d3bfd0a7a5edc77b7daaad4e420269449d87067dee77e3363165d1b` |
+| `news/files/snapshot_2026-11-14_migri_citizenship_test_faq_direct_sv.html` | Migri citizenship-test FAQ (SV; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13); newly added questions 7-13 appear in Finnish on this language page | https://migri.fi/sv/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-sv | `d620814ee40a6626a07ef653be056034bb0f180f8ea2a582eef410eb4dfc1526` |
+| `news/files/snapshot_2026-11-14_migri_citizenship_test_faq_direct_en.html` | Migri citizenship-test FAQ (EN; expanded guidance on registration, audio material, co-applicants, retakes and exemptions; Finnish direct content modified 2026-11-13); newly added questions 7-13 appear in Finnish on this language page | https://migri.fi/en/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-en | `fb823179152b748191e733978fedf74d35b099bdc0d64965215a679f03c1178c` |
+| `news/files/snapshot_2026-11-14_finlex_citizenship_act_translation_en.html` | Finlex English translation record: completed 2026-10-12, amendments through 552/2026 | https://www.finlex.fi/en/legislation/translations/2003/eng/359 | `5d70eaf87502415976b4a7aae6ff82009924fbc3ec745212eab887c663dc7b36` |
 | `news/files/snapshot_2026-11-04_finlex_he_54_2026_fi.html` | FI: HE 54/2026 proposal page; current linked PDF uses media ID 1072435 and matches the already archived proposal byte for byte. | https://www.finlex.fi/fi/hallituksen-esitykset/2026/54 | `3ae655d3e435c55661ade82987ebc12e0c86ba47bed2aa0f12d571e558d1c2a3` |
 | `news/files/snapshot_2026-11-04_finlex_rp_54_2026_sv.html` | SV: RP 54/2026 proposal page; current linked PDF uses media ID 1072434 and matches the already archived proposal byte for byte. | https://www.finlex.fi/sv/regeringspropositioner/2026/54 | `792c7c24d1ab011ed59e80a435aab0d2c305ab5bff040d7be781cf86fe8978dd` |
 | `news/files/snapshot_2026-11-04_finlex_gp_54_2026_en.html` | EN navigation for proposal 54/2026; links the existing FI/SV proposal PDFs under current media IDs 1072435/1072434. | https://www.finlex.fi/en/government-proposals/2026/54 | `3f76b48596dc12ae12e9656a06d591f6e98cc0325688888127952bc8636bc25a` |
@@ -570,3 +577,9 @@ These previously unarchived reports were discovered through Migri site search. T
 | `news/files/2026-09-06_migri_maahanmuutto_suomeen_1_2024_fi.pdf` | Migri report Maahanmuutto Suomeen 1/2024 (PDF created 2024-01-31); p. 27 links the proposed citizenship test to 2023 application growth. Cover title used; embedded PDF title incorrectly says 2/2023. | https://migri.fi/documents/5202425/166014458/Maahanmuutto+Suomeen_1_2024.pdf/0a03233b-7b9b-654c-6773-65324cd63db7?t=1706674494969 | `79005290c7cf824209cd4e6eb2aec311f9eabe63b75b8e153aa6edc63d1432cd` |
 | `news/files/2026-09-06_migri_maahanmuutto_suomeen_2_2023_fi.pdf` | Migri report Maahanmuutto Suomeen 2/2023 (PDF created 2023-11-28); p. 27 discusses application growth following the proposed citizenship reforms, including the test. | https://migri.fi/documents/5202425/166014458/Maahanmuutto+Suomeen_2_2023.pdf/a83c4613-98fd-1622-979e-0fb4a0f9845e?t=1701259255208 | `2c3c791ca4b11e7d69668f0b0691b9d93ac559f317d88596f72221f0c7e5ea56` |
 | `news/files/2026-09-06_migri_financial_statements_2023_fi.pdf` | Migri financial statements 2023 (PDF created 2024-03-20); p. 9 discusses application growth following proposed citizenship reforms, including the test. | https://migri.fi/documents/5202425/5915665/Maahanmuuttoviraston+tilinpäätös+2023.pdf/d2bf66a8-846e-5430-ac13-faaef18235ea?t=1711528679468 | `18b51cace54a392a2e461d1e1b8a41de4aae46b7de1786130e775b5989056051` |
+
+## PDFs (Citizenship Act English translation)
+
+| File | Description | Source | SHA256 |
+| --- | --- | --- | --- |
+| `news/files/2026-11-14_finlex_citizenship_act_359_2003_translation_en.pdf` | Ministry of the Interior English translation of Citizenship Act 359/2003 through 552/2026; legally binding only in Finnish and Swedish | https://www.finlex.fi/api/media/statute-foreign-language-translation/1097847/mainPdf/main.pdf?timestamp=2026-10-13T06%3A30%3A33.000Z | `103385b37d3acc69c5f02da64c286559773e2d0e9af25392ee641d255e0f83d6` |
