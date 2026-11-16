@@ -253,6 +253,27 @@ export function Practice({ chapterId, username, openLogin }: {
     <p>Logga in för att spara dina svar och följa dina framsteg.</p>
     <button className="btn btn-primary" onClick={openLogin}>Logga in</button></div>;
   const chapter = overview?.chapters.find(c => c.id === chapterId);
+  const pendingIds = new Set([...queue.map(card => card.id), ...(current ? [current.id] : [])]);
+  const done = [...new Set(completed)].filter(id => !pendingIds.has(id)).length;
+  const todo = pendingIds.size;
+  const total = Math.max(chapter?.total ?? 0, done + todo);
+  const outside = total - done - todo;
+  const zones = [
+    { key: 'done', count: done, label: 'Klara' },
+    { key: 'todo', count: todo, label: 'Kvar i omgången' },
+    { key: 'outside', count: outside, label: 'Utanför omgången' },
+  ];
+  const progress = <div className="practice-status">
+    <div className="practice-progress-labels">{zones.map(zone =>
+      <div key={zone.key}><i className={'practice-progress-' + zone.key} aria-hidden="true" />
+        <strong>{zone.count}</strong><span>{zone.label}</span></div>)}</div>
+    <div className="practice-progress-track" role="progressbar" aria-label="Kort i kapitlet"
+      aria-valuemin={0} aria-valuemax={total || 1} aria-valuenow={done}
+      aria-valuetext={done + ' klara, ' + todo + ' kvar i omgången, ' + outside + ' utanför omgången'}>
+      {zones.map(zone => <span key={zone.key} className={'practice-progress-' + zone.key}
+        style={{ width: (total ? zone.count / total * 100 : 0) + '%' }} />)}
+    </div>
+  </div>;
   return <div className={"page practice-page" + (current ? " is-active" : "")}>
     <div className="eyebrow">HOME­BREW · ÖVNING</div>
     {chapterId && <a className="practice-back" href="#/practice">← Alla kapitel</a>}
@@ -280,9 +301,8 @@ export function Practice({ chapterId, username, openLogin }: {
       <button className="btn btn-primary" disabled={busy} onClick={() => void start()}>Starta övningen</button>
     </div></div> : current ? <div className={'practice-workspace' + (selection ? ' has-translation' : '')}>
       <div className={'practice-main' + (selection ? ' showing-translation' : '') + (statsOpen ? ' showing-stats' : '')}>
-      <header className="practice-mobile-header"><a href="#/practice" aria-label="Till alla kapitel">←</a><span>Kapitel {chapter?.order}</span><span>{completed.length} klara · {queue.length + 1} kvar</span></header>
-      <div className="practice-status"><span>{completed.length} sparade svar</span>
-        <span>{queue.length + 1} kort kvar</span></div>
+      <header className="practice-mobile-header"><a href="#/practice" aria-label="Till alla kapitel">←</a><span>Kapitel {chapter?.order}</span></header>
+      {progress}
       <article className="card practice-question"><div className="card-body">
         <div ref={cardViewport} className={"practice-card-viewport" + (showAllAnswers ? " show-all-answers" : "")}><div className="practice-card-content"><div className="eyebrow">{current.topic}</div>
         <h2 lang="sv">{translated(current.id + ':q', current.question)}</h2>
@@ -347,6 +367,7 @@ export function Practice({ chapterId, username, openLogin }: {
         {!desktop && <PageControls target=".practice-translation-view .translation-panel" reset={selection} />}
       </div>}
     </div> : <section className="card practice-finished"><div className="card-body">
+      {progress}
       <h2>Klart för den här gången!</h2>
       <p>Du har gått igenom korten som var redo att övas.</p>
       <button className="btn btn-outline-primary"

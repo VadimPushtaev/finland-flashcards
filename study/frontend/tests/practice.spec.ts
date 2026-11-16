@@ -17,7 +17,8 @@ test('practice chapter, automatic feedback and persisted FSRS review', async ({ 
   await page.getByRole('button', { name: 'Hard' }).click();
   await expect(page.getByRole('button', { name: 'Hard' })).toHaveAttribute('aria-pressed', 'true');
   await page.getByRole('button', { name: 'Nästa →' }).click();
-  await expect(page.locator('.practice-status')).toContainText('1 sparade svar');
+  await expect(page.getByRole('progressbar', { name: 'Kort i kapitlet' })).toHaveAttribute('aria-valuetext',
+    '1 klara, 43 kvar i omgången, 0 utanför omgången');
   const overview = await context.request.get('/api/practice/overview');
   expect(overview.status()).toBe(200);
   expect((await overview.json()).chapters[0].new).toBe(43);
@@ -143,4 +144,37 @@ test('card translations sit beside desktop cards or overlay the mobile bottom', 
     await page.getByRole('button', { name: 'Nästa →' }).click();
     await expect(page.locator('.practice-finished')).toBeVisible();
   }
+});
+
+test('progress partitions chapter cards and keeps tiny-zone labels separate', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token,
+    url: 'http://127.0.0.1:18745' }]);
+  await page.route('**/api/practice/chapters/hb-c01/queue', async route => {
+    const response = await route.fetch();
+    const data = await response.json();
+    data.cards = data.cards.slice(0, 1);
+    await route.fulfill({ response, json: data });
+  });
+  await page.goto('/#/practice/hb-c01');
+  await page.getByRole('button', { name: 'Starta övningen' }).click();
+  const progress = page.getByRole('progressbar', { name: 'Kort i kapitlet' });
+  await expect(progress).toHaveAttribute('aria-valuetext', '0 klara, 1 kvar i omgången, 43 utanför omgången');
+  for (const grade of ['Again', 'Hard']) {
+    await page.locator('.practice-answer').first().click();
+    await expect(page.locator('.practice-feedback')).toBeVisible();
+    await page.getByRole('button', { name: grade, exact: true }).click();
+    await page.getByRole('button', { name: 'Nästa →' }).click();
+    await expect(progress).toHaveAttribute('aria-valuetext', grade === 'Again'
+      ? '0 klara, 1 kvar i omgången, 43 utanför omgången'
+      : '1 klara, 0 kvar i omgången, 43 utanför omgången');
+  }
+  await expect(page.locator('.practice-finished')).toBeVisible();
+  const labels = await page.locator('.practice-progress-labels > div').evaluateAll(elements =>
+    elements.map(element => {
+      const box = element.getBoundingClientRect();
+      return { left: box.left, right: box.right, width: element.clientWidth, scroll: element.scrollWidth };
+    }));
+  expect(labels[0].right).toBeLessThan(labels[1].left);
+  expect(labels[1].right).toBeLessThan(labels[2].left);
+  for (const label of labels) expect(label.scroll).toBeLessThanOrEqual(label.width);
 });
