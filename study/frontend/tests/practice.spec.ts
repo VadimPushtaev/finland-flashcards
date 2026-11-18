@@ -1,5 +1,84 @@
 import { test, expect } from './account.fixture';
 
+test('practice keyboard shortcuts choose answers, grades and save with Enter', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token,
+    url: 'http://127.0.0.1:18745' }]);
+  await page.goto('/#/practice/hb-c01');
+  await page.getByRole('button', { name: 'Starta övningen' }).click();
+  const grades = ['Again', 'Hard', 'Good', 'Easy'];
+  for (let i = 0; i < 4; i++) {
+    await expect(page.locator('.practice-answer').first()).toBeEnabled();
+    const checked = page.waitForRequest(request => request.url().endsWith('/check'));
+    await page.keyboard.press(String(i + 1));
+    expect((await checked).postDataJSON()).toEqual({ option: i });
+    await expect(page.locator('.practice-feedback')).toBeVisible();
+    // Every number now changes the grade, without submitting another answer.
+    for (let grade = 0; grade < 4; grade++) {
+      await page.keyboard.press(String(grade + 1));
+      await expect(page.getByRole('button', { name: grades[grade], exact: true }))
+        .toHaveAttribute('aria-pressed', 'true');
+    }
+    await page.keyboard.press(String(i + 1));
+    // Enter must advance even when a different grade button has keyboard focus.
+    await page.getByRole('button', { name: 'Hard', exact: true }).focus();
+    const reviewed = page.waitForRequest(request => request.url().endsWith('/review'));
+    await page.keyboard.press('Enter');
+    expect((await reviewed).postDataJSON()).toMatchObject({ option: i, grade: i + 1 });
+    await expect(page.locator('.practice-feedback')).toHaveCount(0);
+  }
+});
+
+test('practice shortcuts ignore editing, modifiers, held keys and pending answers', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token,
+    url: 'http://127.0.0.1:18745' }]);
+  let releaseCheck!: () => void;
+  const checkGate = new Promise<void>(resolve => { releaseCheck = resolve; });
+  let checks = 0;
+  let reviews = 0;
+  await page.route('**/check', async route => {
+    checks++;
+    await checkGate;
+    await route.fulfill({ json: { correct: true, correct_option: 0 } });
+  });
+  page.on('request', request => { if (request.url().endsWith('/review')) reviews++; });
+  await page.goto('/#/practice/hb-c01');
+  await page.getByRole('button', { name: 'Starta övningen' }).click();
+  await expect(page.locator('.practice-answer').first()).toBeEnabled();
+  await page.evaluate(() => {
+    const input = document.createElement('input');
+    document.body.append(input);
+    input.focus();
+    input.dispatchEvent(new KeyboardEvent('keydown', { key: '1', bubbles: true }));
+    input.remove();
+    const editor = document.createElement('div');
+    editor.contentEditable = 'true';
+    document.body.append(editor);
+    editor.focus();
+    editor.dispatchEvent(new KeyboardEvent('keydown', { key: '2', bubbles: true }));
+    editor.remove();
+    for (const modifiers of [{ ctrlKey: true }, { metaKey: true }, { altKey: true },
+      { shiftKey: true }, { repeat: true }, { isComposing: true }]) {
+      document.dispatchEvent(new KeyboardEvent('keydown', { key: '1', bubbles: true, ...modifiers }));
+    }
+  });
+  await expect(page.locator('.practice-answer').first()).toBeEnabled();
+  expect(checks).toBe(0);
+  await page.keyboard.press('1');
+  await expect.poll(() => checks).toBe(1);
+  await page.keyboard.press('2');
+  await page.keyboard.press('Enter');
+  expect(checks).toBe(1);
+  expect(reviews).toBe(0);
+  releaseCheck();
+  await expect(page.getByRole('button', { name: 'Good', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  await page.evaluate(() => {
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: '1', repeat: true, bubbles: true }));
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', repeat: true, bubbles: true }));
+  });
+  await expect(page.getByRole('button', { name: 'Good', exact: true })).toHaveAttribute('aria-pressed', 'true');
+  expect(reviews).toBe(0);
+});
+
 test('practice chapter, automatic feedback and persisted FSRS review', async ({ page, context, account }) => {
   await context.addCookies([{ name: 'homebrew_session', value: account.token,
     url: 'http://127.0.0.1:18745' }]);

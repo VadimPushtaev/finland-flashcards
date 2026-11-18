@@ -205,6 +205,27 @@ export function Practice({ chapterId, username, openLogin }: {
     } catch (e) { setError((e as Error).message); }
     finally { setBusy(false); }
   };
+  useEffect(() => {
+    if (!current || !username) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.defaultPrevented || event.isComposing || event.altKey || event.ctrlKey ||
+          event.metaKey || event.shiftKey) return;
+      const target = event.target;
+      if (target instanceof HTMLElement && (target.isContentEditable ||
+          target.closest('input, textarea, select, [role="textbox"], [role="dialog"], dialog'))) return;
+      const number = /^[1-4]$/.test(event.key) ? Number(event.key) : null;
+      if (number === null && (event.key !== 'Enter' || !feedback)) return;
+      // Consume repeats as well, so a held key cannot grade or advance another card.
+      event.preventDefault();
+      if (event.repeat || busy) return;
+      if (number !== null) {
+        if (feedback) setGrade(number);
+        else if (choice === null) void answer(number - 1);
+      } else void next();
+    };
+    document.addEventListener('keydown', onKeyDown);
+    return () => document.removeEventListener('keydown', onKeyDown);
+  });
   const saveRetention = async () => {
     if (!username || busy) return;
     setBusy(true); setError('');
@@ -315,7 +336,8 @@ export function Practice({ chapterId, username, openLogin }: {
               {translated(current.id + ':a' + i, option)}</div>
             <button className="btn practice-answer" disabled={choice !== null} aria-pressed={choice === i}
               aria-label={`Välj svar ${String.fromCharCode(65 + i)}`} aria-describedby={`answer-${i}`}
-              title={`Välj svar ${String.fromCharCode(65 + i)}`} onClick={() => void answer(i)}>
+              aria-keyshortcuts={String(i + 1)}
+              title={`Välj svar ${String.fromCharCode(65 + i)} (${i + 1})`} onClick={() => void answer(i)}>
               <i className={'bi ' + (feedback && i === feedback.correct_option ? 'bi-check-lg' :
                 feedback && choice === i ? 'bi-x-lg' : 'bi-arrow-right')} aria-hidden="true" />
             </button>
@@ -331,12 +353,14 @@ export function Practice({ chapterId, username, openLogin }: {
           <div className="practice-grades" role="group" aria-label="FSRS-bedömning">
             {grades.map((name, i) => <button key={name}
               className={'btn practice-grade grade-' + i + (grade === i + 1 ? ' is-selected' : '')}
+              aria-keyshortcuts={String(i + 1)} title={`${name} (${i + 1})`} disabled={busy}
               aria-pressed={grade === i + 1} onClick={() => setGrade(i + 1)}>{name}</button>)}
           </div>
           <div className="practice-actions">
             <button className="btn btn-link" onClick={() => void showStats()}>
               {statsOpen ? 'Dölj statistik' : 'Visa statistik'}</button>
-            <button className="btn btn-primary" disabled={busy} onClick={() => void next()}>
+            <button className="btn btn-primary" disabled={busy} aria-keyshortcuts="Enter"
+              title="Nästa (Enter)" onClick={() => void next()}>
               {busy ? 'Sparar…' : 'Nästa →'}</button>
           </div>
         </section>}
