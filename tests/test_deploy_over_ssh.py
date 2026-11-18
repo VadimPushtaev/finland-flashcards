@@ -126,6 +126,16 @@ sys.exit(int(os.environ.get('DEPLOY_TEST_DOCKER_EXIT', '0')))
                 self.deploy()
         ssh.assert_not_called()
 
+    def test_skip_media_deploys_code_and_preserves_remote_assets(self):
+        (self.remote / VIDEO).write_text('existing remote video')
+        (self.local / VIDEO).unlink()
+        deployment.deploy(self.local, 'testhost', str(self.remote), skip_media=True)
+        result = json.loads(self.log.read_text())
+        self.assertEqual(result['head'], self.requested)
+        self.assertEqual(result['code'], 'requested code')
+        self.assertEqual(result['video'], 'existing remote video')
+        self.assertFalse((self.remote / '.media-sync.json').exists())
+
     def test_new_chapter_metadata_arrives_only_through_git(self):
         video = 'videos/homebrew/hb-c05-09-barn.mp4'
         credits = 'videos/homebrew/hb-c05-09-barn.CREDITS.md'
@@ -197,6 +207,25 @@ sys.exit(int(os.environ.get('DEPLOY_TEST_DOCKER_EXIT', '0')))
             with self.assertRaises(subprocess.CalledProcessError) as error:
                 self.deploy()
         self.assertEqual(error.exception.returncode, 7)
+
+
+class DeploymentCliTests(unittest.TestCase):
+    def test_media_is_enabled_by_default_and_rsync_is_optional_when_skipped(self):
+        for skip_media in (False, True):
+            with self.subTest(skip_media=skip_media):
+                argv = ['deploy_over_ssh.py', '--host', 'testhost']
+                if skip_media:
+                    argv.append('--skip-media')
+                with patch.object(deployment.sys, 'argv', argv), \
+                        patch.object(deployment.shutil, 'which',
+                                     side_effect=lambda name: None if skip_media and name == 'rsync' else '/bin/' + name) as which, \
+                        patch.object(deployment, 'deploy') as deploy:
+                    deployment.main()
+                deploy.assert_called_once_with(deployment.ROOT, 'testhost',
+                                               deployment.DEFAULT_REMOTE_DIR,
+                                               skip_media=skip_media)
+                self.assertEqual([call.args[0] for call in which.call_args_list],
+                                 ['git', 'ssh'] if skip_media else ['git', 'ssh', 'rsync'])
 
 
 if __name__ == '__main__':

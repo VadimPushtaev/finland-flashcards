@@ -87,6 +87,9 @@ From the local repository root:
 ```bash
 poetry run python deploy_over_ssh.py --host hetzner
 
+# Deploy code using media already on the server:
+poetry run python deploy_over_ssh.py --host hetzner --skip-media
+
 # Another SSH host or checkout directory:
 poetry run python deploy_over_ssh.py --host user@example.com \
   --remote-dir /srv/finland-flashcards
@@ -103,7 +106,9 @@ The script captures the local `HEAD`, checks that both checkouts have no tracked
 changes, then:
 
 1. Runs the existing [media sync](../studio/MEDIA_SYNC.md) uploader, including
-   its SHA-256 verification. Only video/audio binaries are uploaded.
+   its SHA-256 verification. Only video/audio binaries are uploaded. Media upload
+   is enabled by default; `--skip-media` skips upload and verification, preserves
+   existing remote media, and removes the local rsync requirement.
 2. Connects over SSH, changes to the remote directory, and fetches that exact
    commit from `origin`.
 3. Checks out the commit with a detached HEAD and verifies tracked files match.

@@ -18,8 +18,8 @@ def ssh(host, script):
                    input=script, text=True, check=True)
 
 
-def deploy(root, host, directory):
-    """Sync assets, fetch the captured commit, then rebuild the remote service."""
+def deploy(root, host, directory, *, skip_media=False):
+    """Optionally sync assets, then deploy the captured commit and rebuild."""
     commit = subprocess.check_output(
         ['git', '-C', str(root), 'rev-parse', '--verify', 'HEAD^{commit}'], text=True,
     ).strip()
@@ -43,11 +43,14 @@ test -z "$(git status --porcelain --untracked-files=no)" || {
 command -v docker >/dev/null
 docker compose version >/dev/null
 ''')
-    print(f'Uploading assets to {host}:{directory} for commit {commit}', flush=True)
-    subprocess.run([
-        sys.executable, str(root / 'studio/tools/sync_media.py'),
-        '--host', host, '--remote-dir', directory,
-    ], check=True)
+    if skip_media:
+        print('Skipping media upload; using existing remote media.', flush=True)
+    else:
+        print(f'Uploading assets to {host}:{directory} for commit {commit}', flush=True)
+        subprocess.run([
+            sys.executable, str(root / 'studio/tools/sync_media.py'),
+            '--host', host, '--remote-dir', directory,
+        ], check=True)
     print(f'Deploying {commit}', flush=True)
     ssh(host, cd + f'''
 export GIT_TERMINAL_PROMPT=0
@@ -68,6 +71,8 @@ def main():
     parser.add_argument('--host', required=True, help='SSH alias or user@host')
     parser.add_argument('--remote-dir', default=DEFAULT_REMOTE_DIR,
                         help='absolute remote Git checkout directory (default: %(default)s)')
+    parser.add_argument('--skip-media', action='store_true',
+                        help='skip media upload and verification; use existing remote media')
     args = parser.parse_args()
     if not re.fullmatch(r'(?:[a-zA-Z0-9_.-]+@)?[a-zA-Z0-9_][a-zA-Z0-9_.-]*', args.host):
         parser.error('--host must be an SSH alias or user@host; configure ports/IPv6 in SSH config')
@@ -75,10 +80,10 @@ def main():
             or '..' in PurePosixPath(args.remote_dir).parts
             or any(ord(c) < 32 for c in args.remote_dir)):
         parser.error('--remote-dir must be an absolute repository directory, without ..')
-    for executable in ('git', 'ssh', 'rsync'):
+    for executable in (('git', 'ssh') if args.skip_media else ('git', 'ssh', 'rsync')):
         if not shutil.which(executable):
             parser.error(f'{executable} is required locally')
-    deploy(ROOT, args.host, args.remote_dir)
+    deploy(ROOT, args.host, args.remote_dir, skip_media=args.skip_media)
 
 
 if __name__ == '__main__':
