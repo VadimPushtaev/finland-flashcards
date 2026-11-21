@@ -11,7 +11,7 @@ import yaml
 from app.flashcards import CHAPTER_IDS, load_chapter, parse_chapter
 from app.main import app
 
-COUNTS = (44, 57, 112, 75, 79, 56, 109, 73, 112, 86, 128, 103)
+COUNTS = (44, 57, 112, 75, 59, 45, 49, 40, 39, 43, 42, 72)
 SAMPLE = {
     'schema_version': 1, 'chapter_id': 'hb-c01', 'language': 'sv',
     'cards': [{'id': 'hb-c01-lage-0001', 'section_id': 'hb-c01-lage',
@@ -52,7 +52,7 @@ class CardParserTests(unittest.TestCase):
             item[field] = value
             bad.append(item)
         for field, value in (('id', 'bad'), ('correct_option_id', 'a9'),
-                             ('question', '')):
+                             ('question', ''), ('study_priority', 'NOT_A_TIER')):
             item = copy.deepcopy(SAMPLE)
             item['cards'][0][field] = value
             bad.append(item)
@@ -75,7 +75,23 @@ class CardParserTests(unittest.TestCase):
                 self.assertTrue(all(c['id'].startswith(chapter + '-') for c in cards))
                 self.assertTrue(all(len(c['options']) == 4 and
                                     0 <= c['correct_option'] < 4 for c in cards))
-        self.assertEqual(sum(COUNTS), 1034)
+                self.assertTrue(all(c['study_priority'] == 'CORE' for c in cards))
+        self.assertEqual(sum(COUNTS), 677)
+
+    def test_extended_data_is_retained_but_not_loaded_for_practice(self):
+        from app.flashcards import CARDS_DIR
+        content = (CARDS_DIR / 'hb-c12.yaml').read_text(encoding='utf-8')
+        all_cards = parse_chapter('hb-c12', content)
+        self.assertEqual(len(all_cards), 103)
+        self.assertEqual(sum(c['study_priority'] == 'EXTENDED' for c in all_cards), 31)
+        self.assertEqual(len(load_chapter('hb-c12')), 72)
+
+    def test_missing_priority_after_chapter_four_fails_closed(self):
+        sample = copy.deepcopy(SAMPLE)
+        sample['chapter_id'] = 'hb-c05'
+        sample['cards'][0].update(id='hb-c05-test-0001', section_id='hb-c05-test')
+        with self.assertRaisesRegex(ValueError, 'missing study priority'):
+            parse_chapter('hb-c05', encode(sample))
 
 
 class CardApiTests(unittest.TestCase):

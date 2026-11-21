@@ -1,5 +1,24 @@
 import { test, expect } from './account.fixture';
 
+test('practice shows only the reduced CORE set without optional-card controls', async ({ page, context, account }) => {
+  await context.addCookies([{ name: 'homebrew_session', value: account.token,
+    url: 'http://127.0.0.1:18745' }]);
+  await page.goto('/#/practice');
+  await expect(page.locator('.page-intro')).toContainText('CORE');
+  const chapters = page.locator('.practice-chapter');
+  await expect(chapters).toHaveCount(12);
+  await expect(chapters.nth(4)).toContainText('59 kort att öva');
+  await expect(chapters.nth(11)).toContainText('72 kort att öva');
+  await expect(page.getByText(/EXTENDED|valfria kort/)).toHaveCount(0);
+  await chapters.nth(11).click();
+  const response = page.waitForResponse('/api/practice/chapters/hb-c12/queue');
+  await page.getByRole('button', { name: 'Starta övningen' }).click();
+  const data = await (await response).json();
+  expect(data.cards).toHaveLength(72);
+  expect(data.cards.every((card: { study_priority: string }) => card.study_priority === 'CORE')).toBe(true);
+  await expect(page.getByRole('progressbar', { name: 'Kort i kapitlet' })).toHaveAttribute('aria-valuemax', '72');
+});
+
 test('practice keyboard shortcuts choose answers, grades and save with Enter', async ({ page, context, account }) => {
   await context.addCookies([{ name: 'homebrew_session', value: account.token,
     url: 'http://127.0.0.1:18745' }]);

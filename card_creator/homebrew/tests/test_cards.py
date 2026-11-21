@@ -34,12 +34,22 @@ class ScoringTests(unittest.TestCase):
                          ['SKIP', 'SKIP', 'SUPPORTING', 'CORE', 'CORE'])
         values = [39] * 136 + [40] * 29 + [41] * 48
         self.assertEqual(scoring.distribution(values, (41, 40)),
-                         {'CORE': 48, 'SUPPORTING': 29, 'SKIP': 136})
+                         {'CORE': 48, 'EXTENDED': 0, 'SUPPORTING': 29, 'SKIP': 136})
         self.assertEqual(scoring.distribution([45] * 10, scoring.DEFAULT_CUTOFFS),
-                         {'CORE': 10, 'SUPPORTING': 0, 'SKIP': 0})
+                         {'CORE': 10, 'EXTENDED': 0, 'SUPPORTING': 0, 'SKIP': 0})
         for cutoffs in ((40, 41), (41, 41), (62, 40), (41, -1)):
             with self.subTest(cutoffs=cutoffs), self.assertRaises(ValueError):
                 scoring.classify(45, *cutoffs)
+
+    def test_extended_boundaries_and_legacy_reproduction(self):
+        self.assertEqual([scoring.classify(v, 50, 40, extended_min=41)
+                          for v in (39, 40, 41, 49, 50, 60)],
+                         ['SKIP', 'SUPPORTING', 'EXTENDED', 'EXTENDED', 'CORE', 'CORE'])
+        self.assertEqual(scoring.classify(41, 41, 40, extended_min=41), 'CORE')
+        self.assertEqual(scoring.classify(45, 41, 40), 'CORE')
+        for boundary in (40, 51, True):
+            with self.subTest(boundary=boundary), self.assertRaises(ValueError):
+                scoring.classify(45, 50, 40, extended_min=boundary)
 
 
 class AssessmentIntegrationTests(unittest.TestCase):
@@ -83,7 +93,7 @@ class AssessmentIntegrationTests(unittest.TestCase):
         self.assertEqual(report['sentences'][0]['priority'], 'CORE')
         self.assertEqual(report['sentences'][0]['score'], 45)
         self.assertTrue(report['sentences'][0]['review_flags'])
-        self.assertEqual(report['requested_counts'], {'CORE': 1, 'SUPPORTING': 1, 'SKIP': 1})
+        self.assertEqual(report['requested_counts'], {'CORE': 1, 'EXTENDED': 0, 'SUPPORTING': 1, 'SKIP': 1})
         expanded = self.report(self.ids, cutoffs=(41, 40), tiers=('CORE', 'SUPPORTING'))
         self.assertEqual(expanded['selected_count'], 2)
         self.assertEqual(self.path.read_bytes(), before)
@@ -92,10 +102,10 @@ class AssessmentIntegrationTests(unittest.TestCase):
         one = self.report(self.ids[:1])
         three = self.report(self.ids)
         self.assertEqual(one['sentences'], three['sentences'])
-        self.assertEqual(one['calibration']['mode'], 'fixed_cutoffs')
+        self.assertEqual(one['calibration']['mode'], 'chapter_cutoffs')
         self.assertEqual(one['calibration']['assessed_sentences'], 1)
         self.assertEqual(three['calibration']['assessed_sentences'], 3)
-        self.assertEqual(one['requested_counts'], {'CORE': 1, 'SUPPORTING': 0, 'SKIP': 0})
+        self.assertEqual(one['requested_counts'], {'CORE': 1, 'EXTENDED': 0, 'SUPPORTING': 0, 'SKIP': 0})
 
     def test_unrelated_assessments_cannot_change_selection(self):
         before = self.report(self.ids)
@@ -109,10 +119,30 @@ class AssessmentIntegrationTests(unittest.TestCase):
         (self.data_dir / f'{section_id}.yaml').write_text(yaml.safe_dump(document))
         self.assertEqual(self.report(self.ids), before)
         all_assessed = self.report([], all_assessed=True)
-        self.assertEqual(all_assessed['calibration']['mode'], 'fixed_cutoffs')
+        self.assertEqual(all_assessed['calibration']['mode'], 'chapter_cutoffs')
         self.assertEqual(all_assessed['calibration']['assessed_sentences'], 4)
         self.assertEqual(all_assessed['calibration']['counts'],
-                         {'CORE': 2, 'SUPPORTING': 1, 'SKIP': 1})
+                         {'CORE': 2, 'EXTENDED': 0, 'SUPPORTING': 1, 'SKIP': 1})
+
+    def test_mixed_chapter_thresholds_are_stable_and_legacy_is_explicit(self):
+        section_id = 'hb-c07-ledighet'
+        section = self.index[0][section_id]
+        other_id = next(iter(section['sentences']))
+        # The same score 45 remains CORE in chapter 1, but EXTENDED in chapter 7.
+        record = {**self.document['assessments'][0], 'sentence_id': other_id}
+        document = {'schema_version': 1, 'section_id': section_id,
+                    'source_sha256': section['source_sha256'], 'assessments': [record]}
+        (self.data_dir / f'{section_id}.yaml').write_text(yaml.safe_dump(document))
+        targets = [self.ids[0], other_id]
+        default = self.report(targets)
+        self.assertEqual([r['sentence_id'] for r in default['sentences']], self.ids[:1])
+        expanded = self.report(targets, tiers=('CORE', 'EXTENDED'))
+        self.assertEqual([r['priority'] for r in expanded['sentences']], ['CORE', 'EXTENDED'])
+        self.assertIsNone(expanded['calibration']['core_min'])
+        self.assertEqual(expanded['calibration']['chapter_cutoffs']['hb-c07']['core_min'], 60)
+        legacy = self.report(targets, cutoffs=(41, 40))
+        self.assertEqual(legacy['selected_count'], 2)
+        self.assertEqual(legacy['calibration']['mode'], 'explicit_cutoffs')
 
     def test_missing_and_stale_assessments_fail(self):
         with self.assertRaisesRegex(ValueError, 'assess-homebrew-sentences'):

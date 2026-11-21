@@ -14,7 +14,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 WEIGHTS = {'exam_relevance': 9, 'knowledge_value': 6,
            'question_suitability': 4, 'factual_specificity': 1}
-TIERS = ('CORE', 'SUPPORTING', 'SKIP')
+TIERS = ('CORE', 'EXTENDED', 'SUPPORTING', 'SKIP')
 DEFAULT_CUTOFFS = (41, 40)
 
 
@@ -36,12 +36,32 @@ def validate_cutoffs(core_min, supporting_min):
         raise ValueError('Cutoffs require 0 <= SUPPORTING_MIN < CORE_MIN <= 61')
 
 
-def classify(value, core_min=41, supporting_min=40):
+def classify(value, core_min=41, supporting_min=40, *, extended_min=None):
     """Classify a score with inclusive lower boundaries."""
     validate_cutoffs(core_min, supporting_min)
+    if extended_min is not None and not (
+            type(extended_min) is int and supporting_min < extended_min <= core_min):
+        raise ValueError('EXTENDED_MIN must satisfy SUPPORTING_MIN < EXTENDED_MIN <= CORE_MIN')
     if type(value) is not int or not 0 <= value <= 60:
         raise ValueError('Score must be an integer from 0 through 60')
-    return 'CORE' if value >= core_min else 'SUPPORTING' if value >= supporting_min else 'SKIP'
+    if value >= core_min:
+        return 'CORE'
+    if extended_min is not None and value >= extended_min:
+        return 'EXTENDED'
+    return 'SUPPORTING' if value >= supporting_min else 'SKIP'
+
+
+def load_policy(root):
+    """Read explicit chapter cutoffs; never infer them from score distributions."""
+    path = root / 'data/homebrew/study-priorities.yaml'
+    raw = path.read_bytes()
+    policy = yaml.safe_load(raw)
+    if (not isinstance(policy, dict) or policy.get('schema_version') != 1
+            or set(policy.get('chapter_core_min', {})) != {f'hb-c{i:02d}' for i in range(1, 13)}):
+        raise ValueError('Invalid Homebrew study-priority policy')
+    for boundary in policy['chapter_core_min'].values():
+        classify(0, boundary, policy['supporting_min'], extended_min=policy['extended_min'])
+    return policy, hashlib.sha256(raw).hexdigest()
 
 
 def assessment_helper(root):
@@ -117,12 +137,24 @@ def make_report(root, requested, *, all_assessed=False, tiers=('CORE',),
     values = {s: score(r['scores']) for s, r in records.items()}
     if not values:
         raise ValueError('No current assessments; use $assess-homebrew-sentences first')
-    effective = DEFAULT_CUTOFFS if cutoffs is None else cutoffs
-    validate_cutoffs(*effective)
+    policy, policy_hash = load_policy(root) if cutoffs is None else (None, None)
+    if cutoffs is not None:
+        validate_cutoffs(*cutoffs)
+    chapter_for = {s: sections[sentences[s]['section_id']]['chapter_id'] for s in selected}
+    chapters = sorted(set(chapter_for.values()))
+    per_chapter = {chapter: {
+        'core_min': policy['chapter_core_min'][chapter] if policy else cutoffs[0],
+        'supporting_min': policy['supporting_min'] if policy else cutoffs[1],
+        'extended_min': policy['extended_min'] if policy else None,
+    } for chapter in chapters}
+    priorities = {s: classify(values[s], **per_chapter[chapter_for[s]]) for s in selected}
+    counts = Counter(priorities.values())
+    tier_counts = {tier: counts[tier] for tier in TIERS}
+    core_boundaries = {v['core_min'] for v in per_chapter.values()}
     output = []
     for identity in selected:
         value = values[identity]
-        tier = classify(value, *effective)
+        tier = priorities[identity]
         if tier in tiers:
             record = records[identity]
             output.append({
@@ -135,16 +167,19 @@ def make_report(root, requested, *, all_assessed=False, tiers=('CORE',),
         'formula': '9*exam_relevance + 6*knowledge_value + 4*question_suitability + factual_specificity',
         'score_range': [0, 60],
         'calibration': {
-            'mode': 'explicit_cutoffs' if cutoffs is not None else 'fixed_cutoffs',
+            'mode': 'explicit_cutoffs' if cutoffs is not None else 'chapter_cutoffs',
             'scope': 'all_assessed' if all_assessed else 'requested',
-            'core_min': effective[0], 'supporting_min': effective[1],
+            'core_min': next(iter(core_boundaries)) if len(core_boundaries) == 1 else None,
+            'supporting_min': policy['supporting_min'] if policy else cutoffs[1],
+            'extended_min': policy['extended_min'] if policy else None,
+            'chapter_cutoffs': per_chapter, 'policy_sha256': policy_hash,
             'assessed_sentences': len(records), 'assessed_sections': len(inputs),
-            'counts': distribution(values.values(), effective),
+            'counts': tier_counts,
         },
         'assessment_inputs': inputs,
         'excluded_invalid_files': excluded,
         'requested_sentence_ids': selected,
-        'requested_counts': distribution((values[s] for s in selected), effective),
+        'requested_counts': tier_counts,
         'included_tiers': list(tiers),
         'selected_count': len(output),
         'sentences': output,
@@ -158,7 +193,7 @@ def main():
     parser.add_argument('--all-assessed', action='store_true', help='Report all current assessed sentences')
     parser.add_argument('--tiers', choices=TIERS, nargs='+', default=['CORE'])
     parser.add_argument('--cutoffs', type=int, nargs=2, metavar=('CORE_MIN', 'SUPPORTING_MIN'),
-                        help='Explicit cutoffs for reproduction; default is permanently 41/40')
+                        help='Legacy three-tier cutoffs for reproduction; default uses study-priorities.yaml')
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--data-dir', type=Path, help='Alternative assessment directory')
     args = parser.parse_args()

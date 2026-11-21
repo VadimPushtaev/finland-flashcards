@@ -42,7 +42,14 @@ of `data/homebrew/`; rebuild the image after updating that collection.
 ## Practice card API (catalog only)
 
 The flashcard catalog is loaded from canonical YAML at
-`data/homebrew/cards/hb-c01.yaml` through `hb-c12.yaml` (1,034 cards total).
+`data/homebrew/cards/hb-c01.yaml` through `hb-c12.yaml` (1,034 stored cards).
+The app exposes only the **677 CORE cards**. The 357 EXTENDED cards are retained
+in the source for future use, with no app option to study them yet. Counts,
+catalogs, new/due queues and extra-practice candidates all use the same CORE-only
+loader; direct answer checks, translations and reviews also require a CORE card.
+Existing FSRS state and events for hidden cards are preserved without migration.
+Chapter cutoffs and the applied Chapter 12 reassessment are documented in
+`data/homebrew/cards/README.md` and `data/homebrew/study-priorities.yaml`.
 Each card has a permanent ID. Derived TXT files remain Anki/Kahoot exports;
 the web backend reads YAML directly. See `data/homebrew/cards/README.md`.
 
@@ -52,9 +59,9 @@ the web backend reads YAML directly. See `data/homebrew/cards/README.md`.
 - `POST /api/practice/chapters/{chapter_id}/cards/{card_id}/check` accepts
   `{"option": 0}` (zero-based) and returns correctness and the correct index.
 
-These endpoints are stateless: FSRS scheduling, accounts, review history and
-the practice UI will be added in subsequent commits. Card IDs come from YAML, so edits no longer reset FSRS history. The old
-hash-based IDs are not migrated: the feature has no production review history.
+These catalog endpoints are stateless; authenticated scheduling and personal
+history use the FSRS endpoints below. Card IDs come from YAML, so priority or
+wording changes do not reset FSRS history.
 
 ## FSRS practice API (implementation)
 

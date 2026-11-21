@@ -739,6 +739,24 @@ Create cards based on the scraped website materials, organized by topic/category
 
 ## Tools and Workflow
 
+### Homebrew study priorities — 2026-11-21
+
+Applied the reviewed Chapter 12 conservative proposal: all 603 sentences in
+20 sections. Chapters 1-11 sentence assessments were unchanged. Split the prior
+CORE study collection using the user's per-chapter thresholds: chapters 1-4 at
+41, chapter 5 at 45, chapter 6 at 50, chapter 7 at 60, chapters 8-10 at 50,
+chapter 11 at 60, and chapter 12 at 45.
+
+All 1,034 cards are retained with their existing IDs, questions, options and
+provenance. CORE counts by chapter are 44, 57, 112, 75, 59, 45, 49, 40, 39, 43,
+42 and 72 (677 total); the remaining 357 are EXTENDED for future optional study.
+The app exposes CORE only, including normal and extra-practice queues, without
+an option to enable other cards. Prior FSRS records remain intact. The 11
+Chapter 12 existing cards now below the old score-41 floor are retained as
+EXTENDED study cards; sentence generation tiers still keep SUPPORTING and SKIP.
+No new questions were generated. Policy: `data/homebrew/study-priorities.yaml`.
+Audit: `card_creator/homebrew/reviews/hb-c01-c12-2026-11-21-study-priorities.json`.
+
 ### Orientation Guide Workflow
 
 **Created files:**

@@ -3,6 +3,7 @@ import os
 import sqlite3
 import tempfile
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
 
@@ -10,7 +11,7 @@ from fastapi.testclient import TestClient
 
 from app.main import app
 from app.database import SCHEMA, database
-from app.flashcards import load_chapter
+from app.flashcards import CARDS_DIR, load_chapter, parse_chapter
 from app.accounts import create_user
 
 HEADERS = {'X-Study-Request': '1'}
@@ -46,6 +47,49 @@ class PracticeTests(unittest.TestCase):
         self.client.post('/api/auth/login', headers=HEADERS,
                          json={'username': 'bob', 'password': 'test-password-bob'})
         self.assertEqual(self.client.get('/api/practice/settings').json()['desired_retention'], 0.9)
+
+    def test_only_core_cards_are_available_and_extended_history_is_preserved(self):
+        counts = (44, 57, 112, 75, 59, 45, 49, 40, 39, 43, 42, 72)
+        overview = self.client.get('/api/practice/overview').json()['chapters']
+        self.assertEqual([c['total'] for c in overview], list(counts))
+        for number, count in enumerate(counts, 1):
+            cards = self.client.get(f'/api/practice/chapters/hb-c{number:02d}/queue').json()['cards']
+            self.assertEqual(len(cards), count)
+            self.assertTrue(all(c['study_priority'] == 'CORE' for c in cards))
+
+        original = parse_chapter('hb-c12', (CARDS_DIR / 'hb-c12.yaml').read_text())
+        optional = [c for c in original if c['study_priority'] == 'EXTENDED'][:2]
+        now = datetime.now(timezone.utc)
+        # Simulate reviews saved while these cards were still part of the old CORE.
+        for index, card in enumerate(optional):
+            when = now - timedelta(days=90) if index == 0 else now
+            with patch('app.practice.deck', return_value=(card,)), \
+                    patch('app.practice.utc_now', return_value=when):
+                response = self.client.post('/api/practice/chapters/hb-c12/review', headers=HEADERS,
+                    json={'event_id': f'former-core-review-{index}', 'card_id': card['id'],
+                          'option': card['correct_option'], 'grade': 4})
+                self.assertEqual(response.status_code, 200, response.text)
+        with database() as db:
+            before = [tuple(r) for r in db.execute('SELECT * FROM practice_cards ORDER BY card_id')]
+        chapter = self.client.get('/api/practice/overview').json()['chapters'][11]
+        self.assertEqual((chapter['total'], chapter['new'], chapter['due']), (72, 72, 0))
+        for endpoint in ('queue', 'cards'):
+            cards = self.client.get('/api/practice/chapters/hb-c12/' + endpoint).json()['cards']
+            self.assertEqual(len(cards), 72)
+            self.assertTrue(all(c['study_priority'] == 'CORE' for c in cards))
+        extra = self.client.post('/api/practice/chapters/hb-c12/extra', headers=HEADERS,
+                                 json={'threshold': 0.99, 'excluded_ids': []}).json()
+        self.assertEqual((extra['count'], extra['fallback_count']), (0, 0))
+        for card in optional:
+            base = '/api/practice/chapters/hb-c12/cards/' + card['id']
+            self.assertEqual(self.client.post(base + '/check', json={'option': 0}).status_code, 404)
+            self.assertEqual(self.client.get(base + '/translation').status_code, 404)
+            self.assertEqual(self.client.post('/api/practice/chapters/hb-c12/review', headers=HEADERS,
+                json={'event_id': 'blocked-extended-review', 'card_id': card['id'],
+                      'option': 0, 'grade': 3}).status_code, 404)
+        with database() as db:
+            self.assertEqual([tuple(r) for r in db.execute('SELECT * FROM practice_cards ORDER BY card_id')], before)
+            self.assertEqual(db.execute('SELECT count(*) FROM practice_events').fetchone()[0], 2)
 
     def test_review_history_and_idempotency(self):
         question = load_chapter('hb-c01')[0]

@@ -29,6 +29,9 @@ def parse_chapter(chapter_id: str, content: str) -> tuple[dict, ...]:
         if not isinstance(record, dict):
             raise ValueError(f'{chapter_id}:{number}: invalid card record')
         identity, section = record.get('id'), record.get('section_id')
+        priority = record.get('study_priority', 'CORE' if chapter_id in CHAPTER_IDS[:4] else None)
+        if priority not in ('CORE', 'EXTENDED'):
+            raise ValueError(f'{chapter_id}:{number}: invalid or missing study priority')
         if (not isinstance(identity, str) or not ID_PATTERN.fullmatch(identity)
                 or not identity.startswith(chapter_id + '-')
                 or not isinstance(section, str) or not identity.startswith(section + '-')):
@@ -54,7 +57,7 @@ def parse_chapter(chapter_id: str, content: str) -> tuple[dict, ...]:
         cards[identity] = {
             'id': identity, 'chapter_id': chapter_id, 'section_id': section,
             'question': question, 'topic': category, 'options': options,
-            'correct_option': ids.index(record['correct_option_id'])
+            'correct_option': ids.index(record['correct_option_id']), 'study_priority': priority,
         }
     if not cards:
         raise ValueError(f'{chapter_id}: empty deck')
@@ -63,9 +66,11 @@ def parse_chapter(chapter_id: str, content: str) -> tuple[dict, ...]:
 
 @lru_cache(maxsize=12)
 def load_chapter(chapter_id: str) -> tuple[dict, ...]:
+    """Expose only CORE cards to every catalog, check and FSRS practice route."""
     if chapter_id not in CHAPTER_IDS:
         raise ValueError(f'Unknown chapter: {chapter_id}')
-    return parse_chapter(chapter_id, (CARDS_DIR / f'{chapter_id}.yaml').read_text(encoding='utf-8'))
+    cards = parse_chapter(chapter_id, (CARDS_DIR / f'{chapter_id}.yaml').read_text(encoding='utf-8'))
+    return tuple(card for card in cards if card['study_priority'] == 'CORE')
 
 
 def install_practice_catalog(app, library):

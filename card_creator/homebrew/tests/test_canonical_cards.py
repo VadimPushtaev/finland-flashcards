@@ -4,9 +4,18 @@ import unittest
 from pathlib import Path
 
 from card_creator.homebrew.render_decks import rendered_decks, render, ROOT
+from card_creator.homebrew.sync_priorities import priority_plan
 
 
 class CanonicalCardTests(unittest.TestCase):
+    def test_study_priorities_match_primary_assessments_and_user_cutoffs(self):
+        report, updates = priority_plan(ROOT)
+        self.assertEqual([c['CORE'] for c in report['chapters'].values()],
+                         [44, 57, 112, 75, 59, 45, 49, 40, 39, 43, 42, 72])
+        self.assertEqual(sum(c['EXTENDED'] for c in report['chapters'].values()), 357)
+        for path, expected in updates.items():
+            self.assertEqual(path.read_text(encoding='utf-8'), expected, path.name)
+
     def test_every_existing_section_deck_matches_generated_yaml(self):
         generated = rendered_decks(ROOT)
         self.assertEqual(len(generated), 184)

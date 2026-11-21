@@ -35,7 +35,7 @@ report genuinely blocked targets and continue unaffected ones.
 ## Select study priorities
 
 Read [references/selection-and-output.md](references/selection-and-output.md)
-for the formula, permanent cutoffs, and source-record format. Assess only the
+for the formula, chapter cutoffs, and source-record format. Assess only the
 requested material needed for generation, reusing current assessments. Score the
 requested scope once after its assessments are ready:
 
@@ -43,26 +43,28 @@ requested scope once after its assessments are ready:
 poetry run python card_creator/homebrew/score_sentences.py hb-c01 > /tmp/hb-c01-card-selection.json
 ```
 
-Use the permanent thresholds **CORE >=41, SUPPORTING =40, SKIP <40**.
-The scoring formula and thresholds stay the same for every chapter and run.
-Never recalibrate cutoffs or expand assessment scope to fit target percentages.
-The former 21% CORE / 14% SUPPORTING proportions are historical reference values,
-not quotas. Change the thresholds only on explicit user instruction.
+Use the explicit policy in `data/homebrew/study-priorities.yaml`: CORE starts
+at the chapter cutoff, EXTENDED starts at 41 below CORE, SUPPORTING is 40, and
+SKIP is below 40. Chapter cutoffs are 41 for 1-4, 45 for 5 and 12, 50 for 6 and
+8-10, and 60 for 7 and 11. The weighted formula is unchanged. Never recalibrate
+cutoffs or expand assessment scope to fit percentages; change policy only on
+explicit user instruction. CORE denotes the essential study set, EXTENDED
+optional material. The web app currently exposes CORE only.
 
 The default report includes requested CORE candidates only, plus requested-scope
-counts for all three tiers. It reads assessments for the requested sections;
+counts for all four tiers. It reads assessments for the requested sections;
 missing requested assessments are errors. Use that one report throughout the run.
 Read related passages and existing cards for context and duplicate checks without
 assessing or reclassifying unrelated material. Use `--all-assessed` only when the
-user asks for a collection-wide report, with the same permanent cutoffs.
+user asks for a collection-wide report, with the same chapter policy.
 
 Only when explicitly requested, include additional tiers, for example:
 
 ```sh
-poetry run python card_creator/homebrew/score_sentences.py hb-c01 --tiers CORE SUPPORTING > /tmp/hb-c01-expanded-selection.json
+poetry run python card_creator/homebrew/score_sentences.py hb-c01 --tiers CORE EXTENDED > /tmp/hb-c01-expanded-selection.json
 ```
 
-Do not add SUPPORTING/SKIP questions to fill a quota or compensate for an empty
+Do not add EXTENDED/SUPPORTING/SKIP questions to fill a quota or compensate for an empty
 CORE selection. Supporting sentences may supply context for a CORE question
 without becoming independent questions. Review flags do not reduce priority.
 
@@ -97,10 +99,14 @@ outside the scope does not authorize creating independent cards for it.
 
 ## Save and verify
 
-Save decks under `cards/homebrew/CHAPTER_ID/SECTION_ID.txt`, one row per card,
-without headings or commentary. Use the exact Swedish section title as Category.
+Edit canonical `data/homebrew/cards/CHAPTER_ID.yaml`, preserving permanent card
+and option IDs; do not edit generated TXT directly. Set `study_priority` explicitly
+to CORE (or EXTENDED only when authorized). Use the exact Swedish section title as
+Category. Run `make combine-homebrew` to render section TXT and chapter aggregates.
 Maintain source records in `card_creator/homebrew/card_sources/SECTION_ID.yaml`
-and a saved selection report as described in the output reference. Keep unrelated
+and a saved selection report as described in the output reference. After updating
+provenance, run `poetry run python card_creator/homebrew/sync_priorities.py --check`
+to verify study tiers against current primary-sentence scores and policy. Keep unrelated
 cards/records intact; replace a card only when revising that same learning point.
 If no cards qualify, report that result and do not create an empty placeholder.
 

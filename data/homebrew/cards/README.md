@@ -8,11 +8,54 @@ Each card has an explicit, permanent ID, independent of its wording or position.
 Changing text does **not** change its FSRS identity. Do not reuse an existing ID
 for a completely different question.
 
+## Study priorities
+
+The web app exposes **CORE only: 677 cards**. Another **357 EXTENDED cards**
+remain in these YAML files for future optional study; there is currently no
+app control to include them. Their IDs, wording, translations and any saved
+FSRS history are preserved. Normal queues, counts and extra practice all use
+the same CORE filter. Anki/Kahoot compatibility exports still contain all cards.
+
+Each card in chapters 5-12 has `study_priority: CORE` or `EXTENDED`. Chapters
+1-4 retain their original files and implicitly default to CORE. New cards should
+record the field explicitly. The primary-sentence score and the user-selected
+cutoffs in `../study-priorities.yaml` determine the study priority:
+
+| Chapter | CORE minimum | CORE cards | EXTENDED cards |
+| --- | ---: | ---: | ---: |
+| 1 | 41 | 44 | 0 |
+| 2 | 41 | 57 | 0 |
+| 3 | 41 | 112 | 0 |
+| 4 | 41 | 75 | 0 |
+| 5 | 45 | 59 | 20 |
+| 6 | 50 | 45 | 11 |
+| 7 | 60 | 49 | 60 |
+| 8 | 50 | 40 | 33 |
+| 9 | 50 | 39 | 73 |
+| 10 | 50 | 43 | 43 |
+| 11 | 60 | 42 | 86 |
+| 12 | 45 | 72 | 31 |
+
+Chapter 12 uses the conservative 2026-11-21 reassessment. Sentence selection has
+four tiers: CORE at the chapter's cutoff, EXTENDED from 41 up to that cutoff,
+SUPPORTING at 40, and SKIP below 40. Existing cards below CORE are all retained
+as EXTENDED study cards, including 11 Chapter 12 cards whose new primary-sentence
+scores fall below 41. This retention rule does not promote those sentences for
+future card generation.
+
+After an authorized assessment or threshold update, run
+`poetry run python card_creator/homebrew/sync_priorities.py` from the repository
+root. It verifies exact card-to-source hashes before changing only the priority
+fields. `make check-homebrew` checks these fields against current assessments
+and cutoffs. Historical source sidecars and generation reports retain their
+original scores and priorities; the new application audit is
+`card_creator/homebrew/reviews/hb-c01-c12-2026-11-21-study-priorities.json`.
+
 ## Export workflow
 
 - `make combine-homebrew` renders section-level Anki TXT from these YAML files,
   then builds each chapter's `ALL.txt`. `make` additionally rebuilds Kahoot XLSX.
-- `make check-homebrew` checks TXT freshness without changing any output.
+- `make check-homebrew` checks study priorities and TXT freshness without changing any output.
 - The site reads YAML **directly** and no longer hashes TXT content to identify
   cards. The TXT files are compatibility outputs for Anki and Kahoot, not editable
   sources of truth.
@@ -32,6 +75,7 @@ chapter_id: hb-c01
 language: sv
 cards:
   - id: hb-c01-lage-0001
+    study_priority: CORE
     section_id: hb-c01-lage
     category: Finland i Norden
     question: Vilka fem länder hör till Norden?

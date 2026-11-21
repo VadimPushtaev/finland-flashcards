@@ -50,6 +50,10 @@ def rendered_decks(repo_root: Path) -> dict[Path, bytes]:
             if not isinstance(card, dict):
                 raise ValueError(f"{chapter_id}: invalid card")
             identity, section = card.get("id"), card.get("section_id")
+            priority = card.get("study_priority", "CORE" if chapter_id in
+                                {"hb-c01", "hb-c02", "hb-c03", "hb-c04"} else None)
+            if priority not in ("CORE", "EXTENDED"):
+                raise ValueError(f"{identity}: invalid or missing study priority")
             if (not isinstance(identity, str) or not CARD_ID.fullmatch(identity)
                     or section not in sections or not identity.startswith(section + "-")
                     or identity in all_ids):

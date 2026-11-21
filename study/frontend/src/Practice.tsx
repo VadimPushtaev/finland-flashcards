@@ -301,7 +301,8 @@ export function Practice({ chapterId, username, openLogin }: {
     <h1>{chapter?.title || 'Öva med kort'}</h1>
     {error && <div className="alert alert-danger" role="alert">{error}</div>}
     {loading ? <div role="status">Hämtar kort…</div> : !chapterId ? <>
-      <p className="page-intro">Välj ett kapitel. Alla nya och aktuella kort ingår, utan dagliga gränser.</p>
+      <p className="page-intro">Öva CORE-korten: det viktigaste materialet i varje kapitel.
+        Alla nya CORE-kort och CORE-kort som är redo att repeteras ingår, utan dagliga gränser.</p>
       <section className="card practice-settings"><div className="card-body">
         <h2>Önskad minnesnivå</h2>
         <label htmlFor="retention">FSRS: {Math.round(retention * 100)}%</label>

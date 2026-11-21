@@ -17,13 +17,19 @@ Change risk and assessment confidence never subtract points or change tiers.
 Question suitability already has its explicit formula weight; there is no second
 penalty for it. Flags request review, not automatic exclusion from CORE.
 
-The permanent thresholds are **CORE >=41, SUPPORTING =40, SKIP <40**.
-Use the same formula and cutoffs for every chapter and generation run, regardless
-of how much material has been assessed. Change these thresholds only when the
-user explicitly requests a policy change. Never fit percentages or quotas.
-The earlier approximate targets of 21% CORE and 14% SUPPORTING are historical
-reference proportions, not constraints on selection. Equal scores keep the same
-priority wherever and whenever they are assessed.
+The explicit user policy is `data/homebrew/study-priorities.yaml`:
+
+| Chapters | CORE minimum |
+| --- | ---: |
+| 1-4 | 41 |
+| 5, 12 | 45 |
+| 6, 8-10 | 50 |
+| 7, 11 | 60 |
+
+EXTENDED covers scores >=41 below the chapter CORE cutoff; SUPPORTING remains
+40 and SKIP remains <40. Use the same policy on every run. Equal scores within
+a chapter have equal tiers. Change cutoffs only on explicit user instruction,
+never to fit quotas. The default study/generation tier is CORE.
 
 Assess only requested sentences needed for the generation task. Reuse current
 assessments and complete missing or stale requested assessments under the
@@ -32,15 +38,16 @@ interpretation and duplicate checks without assessing unrelated sentences.
 
 The default script reads assessments for requested sections and scores only
 requested sentence IDs. `--all-assessed` explicitly requests a collection-wide
-report using the same fixed thresholds; it never initiates additional assessment.
+report using the same chapter policy; it never initiates additional assessment.
 `--cutoffs CORE_MIN SUPPORTING_MIN` exists for reproducing older reports or an
-explicitly requested policy change, not for adjusting a particular chapter's
-card count. Do not use it during normal generation.
+explicitly requested legacy comparison; it bypasses EXTENDED and the current
+chapter policy. Do not use it during normal generation. Change chapter cutoffs
+through the policy file only when the user requests it.
 
-The JSON report includes the formula, fixed cutoffs, requested counts,
+The JSON report includes the formula, chapter cutoffs, requested counts,
 assessment/source hashes, selected sentences, their original assessment fields,
 and derived review flags. Its legacy `calibration` object uses mode
-`fixed_cutoffs` and scope `requested` by default; the counts describe that scope,
+`chapter_cutoffs` and scope `requested` by default; the counts describe that scope,
 not all chapters. Only `--all-assessed` loads the full assessed collection and
 reports invalid files excluded from that explicit report. Counts are sentence
 counts, not card counts. Save one report for the requested run and use it
@@ -48,7 +55,9 @@ throughout generation.
 
 ## File layout and provenance
 
-- Deck: `cards/homebrew/CHAPTER_ID/SECTION_ID.txt`.
+- Canonical cards: `data/homebrew/cards/CHAPTER_ID.yaml`, with permanent IDs and
+  `study_priority: CORE` or `EXTENDED`.
+- Derived deck: `cards/homebrew/CHAPTER_ID/SECTION_ID.txt`; render with `make combine-homebrew`.
 - Source records: `card_creator/homebrew/card_sources/SECTION_ID.yaml`.
 - Selection report: `card_creator/homebrew/selections/RUN_NAME.json`.
 
@@ -98,3 +107,16 @@ Revise existing cards only within a requested generation or revision scope. Chec
 across the current Homebrew collection and record reused cards in the completion
 summary. Report blocked selected candidates with reasons so a smaller card count
 does not silently hide unresolved material.
+
+## Updating study priority without regenerating questions
+
+Use `card_creator/homebrew/sync_priorities.py` after an authorized assessment or
+cutoff change. It matches canonical cards to primary sources via exact exported
+row hashes and updates only `study_priority`; `--check` is read-only. Keep card
+IDs, questions, answers, translations and historical generation records intact.
+Existing cards below current CORE remain EXTENDED study cards, including cards
+whose reassessed primary is now SUPPORTING or SKIP. That retention rule does not
+change sentence eligibility for new generation. Current study metadata and old
+source-record generation priorities may therefore differ intentionally. The
+2026-11-21 policy application audit is in
+`card_creator/homebrew/reviews/hb-c01-c12-2026-11-21-study-priorities.json`.
