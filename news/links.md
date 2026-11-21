@@ -20,17 +20,25 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Citizenship Act amendments 2027 and citizenship-test guidance (SV): https://migri.fi/sv/andringar-i-medborgarskapslagen-2027
 - Citizenship Act amendments 2027 and citizenship-test guidance (EN): https://migri.fi/en/amendments-to-the-citizenship-act-2027
 - Finnish citizenship FAQ (FI; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/ukk-suomen-kansalaisuus
-- Finnish citizenship FAQ (SV; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/sv/fos-finskt-medborgarskap
-- Finnish citizenship FAQ (EN; citizenship-test section; expanded test FAQ checked 2026-11-14): https://migri.fi/en/faq-finnish-citizenship
+- Finnish citizenship FAQ (SV; expanded test FAQ translated into Swedish, direct content modified 2026-11-20; checked 2026-11-21): https://migri.fi/sv/fos-finskt-medborgarskap
+- Finnish citizenship FAQ (EN; expanded test FAQ translated into English, direct content modified 2026-11-20; checked 2026-11-21): https://migri.fi/en/faq-finnish-citizenship
 - Citizenship-test FAQ content direct page (FI; discovered via Migri site search 2026-08-27): https://migri.fi/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-
-- Citizenship-test FAQ content direct page (SV; discovered via Migri site search 2026-08-27): https://migri.fi/sv/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-sv
-- Citizenship-test FAQ content direct page (EN; discovered via Migri site search 2026-08-27): https://migri.fi/en/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-en
+- Citizenship-test FAQ content direct page (SV; expanded FAQ translated into Swedish; modified 2026-11-20): https://migri.fi/sv/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-sv
+- Citizenship-test FAQ content direct page (EN; expanded FAQ translated into English; modified 2026-11-20): https://migri.fi/en/-/kansalaisuus-ukk-lakimuutoksen-3.-vaihe-haitari-en
 - Customer bulletins (FI): https://migri.fi/asiakastiedotteet
 - Customer bulletins (SV): https://migri.fi/sv/kundmeddelanden
 - Customer bulletins (EN): https://migri.fi/en/customer-bulletins
 - Newsroom (FI): https://migri.fi/uutishuone
 - Newsroom (SV): https://migri.fi/sv/nyhetsrummet
 - Newsroom (EN): https://migri.fi/en/newsroom
+- Newsroom press-release listing (FI; discovered 2026-11-21): https://migri.fi/uutishuone/tiedotteet
+- Newsroom press-release listing (SV; discovered 2026-11-21): https://migri.fi/sv/nyhetsrummet/pressmeddelanden
+- Newsroom press-release listing (EN; discovered 2026-11-21): https://migri.fi/en/newsroom/press-releases
+- Partners and stakeholders, including citizenship-test bulletins (FI; discovered 2026-11-21): https://migri.fi/kumppanit
+- Partners and stakeholders, including citizenship-test bulletins (SV; discovered 2026-11-21): https://migri.fi/sv/samarbetspartner
+- Partners and stakeholders, including citizenship-test bulletins (EN; discovered 2026-11-21): https://migri.fi/en/partners-and-stakeholders
+- Newsroom press-release display route (SV; discovered 2026-11-21): https://migri.fi/sv/pressmeddelande
+- Newsroom press-release display route (EN; discovered 2026-11-21): https://migri.fi/en/press-release
 - Site search for `kansalaisuuskoe` (FI): https://migri.fi/haku?q=kansalaisuuskoe
 - Site search for `medborgarskapsprov` (SV): https://migri.fi/sv/sok?q=medborgarskapsprov
 - Site search for `citizenship test` (EN): https://migri.fi/en/search?q=citizenship%20test
