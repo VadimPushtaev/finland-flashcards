@@ -2,6 +2,13 @@
 
 This document tracks which data sources have been converted into flashcards.
 
+Norway source archive (2026-11-19): saved the English Samfunnskunnskap course,
+including its index, 13 topic overviews and 57 lessons, under
+[`data/norway/`](../data/norway/README.md). Raw HTML, source URLs, retrieval dates,
+checksums, separated text extracts and a resumable downloader are available.
+Linked PDF supplements and external media are inventoried rather than mirrored.
+No flashcards have been generated from this source.
+
 <!-- remaining-video-progress -->
 Homebrew videos (2026-11-03): all **88 remaining subchapters in chapters 8–12** now have verified local previews, covering **3,730 exact Swedish/Russian body pairs** and **11:45:12** of video. Foreground pictures cover every narrated body pair; conservative within-episode visual diversity is **93.4%**. All five chapter audits and exported-card visual reviews passed. Whole-video listening, physical-device playback and user acceptance remain pending. See the [video index](../videos/homebrew/README.md) and [production completion record](../studio/production/remaining/completion.json). Flashcard selection and deck counts are unchanged by video production.
 
