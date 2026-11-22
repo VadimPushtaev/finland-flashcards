@@ -26,7 +26,7 @@ Integration i Finland kräver att den nyanlända anpassar sig och tar till sig n
 
 Invandringen till Finland var länge liten, och fortfarande bor det i Finland färre människor som flyttat hit från andra länder än i många andra länder i Västeuropa. Tyvärr är alla i Finland inte alltid lika positiva till nyanlända, utan en del kan ha fördomar mot invandringen.
 
-Att främja mottaglighet innebär till exempel att man identifierar de strukturer i samhället som skapar ojämlikhet och aktivt strävar efter att avveckla dem. På så sätt bidrar man till att alla faktiskt har lika möjligheter att delta i samhället. Därför är till exempel att identifiera och bekämpa rasism en viktig del av att främja dubbelriktad integration
+Att främja mottaglighet innebär till exempel att man identifierar de strukturer i samhället som skapar ojämlikhet och aktivt strävar efter att avveckla dem. På så sätt bidrar man till att alla faktiskt har lika möjligheter att delta i samhället. Därför är till exempel att identifiera och bekämpa rasism en viktig del av att främja dubbelriktad integration.
 
 Finska statens målsättning är att den som flyttat till Finland känner sig som en del av det finska samhället och är med och utvecklar det. Samtidigt kan personen bevara sitt eget språk och sin kultur och banden till fosterlandet.
 

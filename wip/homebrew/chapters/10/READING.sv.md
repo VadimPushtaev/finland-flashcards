@@ -159,7 +159,7 @@ Om ditt barn har hemkommun i Finland har han eller hon rätt att utnyttja de off
 När en människa blir sjuk och vårdas på en hälsostation eller ett sjukhus, blir hen patient. I Finland föreskriver lagen vilka minimirättigheter en patient har. Patientens rättigheter inkluderar till exempel:
 
 - rätt till god vård och ett människovärdigt, gott bemötande inom offentliga hälsovårdstjänster
-- rätt att samtycka till vård. Samtycket ska säkerställas med patienten innan vården inleds
+- rätt att samtycka till vård. Samtycket ska säkerställas med patienten innan vården inleds.
 - rätt att vägra vård
 - rätt att kontrollera sina uppgifter i patientjournalerna och rätt att få felaktiga uppgifter korrigerade.
 

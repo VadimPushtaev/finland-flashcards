@@ -144,7 +144,7 @@ I skolorna i Finland, liksom i arbetslivet i Finland, är hierarkin låg. Lärar
 
 I Finland har ett skolår 190 skoldagar. Skolåret, det vill säga läsåret, är indelat i två delar, en hösttermin och en vårtermin. Höstterminen börjar omkring mitten av augusti och slutar med en julfest före jul. Efter det har eleverna jullov. Vårterminen börjar i början av januari och slutar i början av juni. Vårterminen avslutas med skolavslutning, där eleverna och lärarna firar att läsåret är slut och sommaren börjar.
 
-Utöver jullovet och sommarlovet har eleverna under läsåret höstlov på hösten och vinterlov i februari–mars. Om en finsk högtidsdag infaller på en vardag, till exempel påsk, valborg, Kristi himmelsfärdsdag eller självständighetsdagen, är den en ledig dag från skolan
+Utöver jullovet och sommarlovet har eleverna under läsåret höstlov på hösten och vinterlov i februari–mars. Om en finsk högtidsdag infaller på en vardag, till exempel påsk, valborg, Kristi himmelsfärdsdag eller självständighetsdagen, är den en ledig dag från skolan.
 
 I de lägre årskurserna är skoldagarna kortare än i de högre. I årskurserna 1–6 får eleverna 20–25 timmar undervisning i veckan. I årskurserna 7–9 är timantalet per vecka i genomsnitt 29–30 timmar. Mellan lektionerna tar man pauser, det vill säga raster. En lektion är i allmänhet 45 minuter lång. Mellan lektionerna har man 15–30 minuter långa raster, som eleverna tillbringar på skolan.
 

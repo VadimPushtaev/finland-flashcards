@@ -74,6 +74,18 @@ def load_sources():
     return documents
 
 
+def apply_repairs(text, repairs):
+    """Apply only explicitly reviewed missing-final-period repairs."""
+    assert isinstance(repairs, list) and len(repairs) <= 1, "Invalid repair log"
+    for repair in repairs:
+        assert isinstance(repair, dict) and set(repair) == {"type", "reason"}, "Invalid repair fields"
+        assert repair["type"] == "append_terminal_period", "Unsupported source repair"
+        assert isinstance(repair["reason"], str) and repair["reason"].strip(), "Missing repair reason"
+        assert text and text[-1].isalnum(), "Expected an unpunctuated text unit"
+        text += "."
+    return text
+
+
 def selected_text(selection, documents):
     """Resolve a source passage and explicit source range without paraphrasing."""
     source = documents[selection["source_path"]]
@@ -97,11 +109,13 @@ def selected_text(selection, documents):
     text = normalize(excerpt)
     if "expected_text" in selection:
         assert text == selection["expected_text"], selection["id"]
+    repairs = selection.get("repairs", [])
+    text = apply_repairs(text, repairs)
     return text, {"source_path": selection["source_path"], "sha256": source["sha256"],
                   **location, "source_range": {"start": start, "end": end},
                   "range_basis": "normalized_html_block" if "source_block" in selection else "raw_pdf_page",
                   "extracted_passage": excerpt, "normalization": "whitespace_only",
-                  "repairs": [], "selection": selection.get("selection_reason", "Complete source paragraph or list item.")}
+                  "repairs": repairs, "selection": selection.get("selection_reason", "Complete source paragraph or list item.")}
 
 
 def build(selection, registry, documents, initialize=False):

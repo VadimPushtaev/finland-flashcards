@@ -40,9 +40,9 @@ Eftersom myndigheternas verksamhet i Finland är strängt reglerad av lagar kan 
 
 Myndigheternas verksamhet styrs av principerna för god förvaltning. Dessa principer är fastställda i lag. Enligt principerna
 
-- ska myndigheternas verksamhet vara rättvis, det vill säga en myndighet ska behandla alla människor jämlikt, konsekvent och utan att diskriminera någon. Till exempel får en anställd på skattebyrån inte ge sina släktingar en lägre skatteprocent än någon annan i en exakt likadan situation
-- ska verksamheten vara objektiv. En kommun får till exempel inte ge alla nya byggprojekt till samma byggföretag bara för att företagets direktör hör till samma parti som kommundirektören
-- får en myndighet bara använda sina befogenheter för godtagbara syften som står i lagen. Till exempel får en polis inte utöva sin makt för att få personliga fördelar
+- ska myndigheternas verksamhet vara rättvis, det vill säga en myndighet ska behandla alla människor jämlikt, konsekvent och utan att diskriminera någon. Till exempel får en anställd på skattebyrån inte ge sina släktingar en lägre skatteprocent än någon annan i en exakt likadan situation.
+- ska verksamheten vara objektiv. En kommun får till exempel inte ge alla nya byggprojekt till samma byggföretag bara för att företagets direktör hör till samma parti som kommundirektören.
+- får en myndighet bara använda sina befogenheter för godtagbara syften som står i lagen. Till exempel får en polis inte utöva sin makt för att få personliga fördelar.
 - ska myndigheternas åtgärder också stå i rätt proportion till den eftersträvade nyttan. Det skulle till exempel vara orimligt om om ett litet överskridande av hastighetsgränsen gav lika höga böter som ett stort överskridande.
 
 Utöver dessa grundprinciper föreskriver lagen bland annat att en myndighet inom ramen för sin behörighet ska ge avgiftsfri rådgivning och svara på frågor och förfrågningar som gäller uträttandet av ärenden. Om ett ärende inte hör till den aktuella myndighetens behörighet ska den i mån av möjlighet hänvisa personen till rätt myndighet.

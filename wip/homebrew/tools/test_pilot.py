@@ -130,6 +130,43 @@ class PilotTests(unittest.TestCase):
             with self.assertRaises(AssertionError):
                 validate_chapter(chapter, root)
 
+    def test_period_repair_preserves_archive_and_rejects_other_changes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            path = root / "data/infofinland/content/example.html"
+            path.parent.mkdir(parents=True)
+            text = "Alla har rätt"
+            path.write_text(f"<p>{text}</p>", encoding="utf-8")
+            digest = hashlib.sha256(path.read_bytes()).hexdigest()
+            unit = leaf("hb-test-unit", text + ".")
+            source = {"path": path.relative_to(root).as_posix(), "sha256": digest}
+            origin = {"source_path": source["path"], "sha256": digest,
+                      "normalization": "whitespace_only", "repairs": [],
+                      "range_basis": "normalized_html_block", "source_role": "content",
+                      "locator": "p", "source_range": {"start": 0, "end": len(text)},
+                      "extracted_passage": text}
+            provenance = {"units": {unit["id"]: origin}}
+            sources = {"sources": [source]}
+
+            def verify():
+                verify_provenance({unit["id"]: unit}, provenance, sources, root)
+
+            with self.assertRaisesRegex(AssertionError, "Source mismatch"):
+                verify()
+            origin["repairs"] = [{"type": "append_terminal_period",
+                                  "reason": "Complete sentence lacks its final period."}]
+            verify()
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), digest)
+            self.assertEqual(origin["extracted_passage"], text)
+            for replacement in [text, text + "!", "Några har rätt."]:
+                unit["text"] = replacement
+                with self.subTest(text=replacement), self.assertRaisesRegex(AssertionError, "Source mismatch"):
+                    verify()
+            unit["text"] = text + "."
+            origin["repairs"][0]["type"] = "rewrite_words"
+            with self.assertRaisesRegex(AssertionError, "Unsupported source repair"):
+                verify()
+
 
 if __name__ == "__main__":
     unittest.main()

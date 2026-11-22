@@ -8,7 +8,7 @@ import re
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
 
-from build_pilot import CHAPTER_FILE, DEST, ROOT, WORK, load_sources, read_yaml, render
+from build_pilot import CHAPTER_FILE, DEST, ROOT, WORK, apply_repairs, load_sources, read_yaml, render
 from extract_sources import normalize
 
 
@@ -112,7 +112,7 @@ def verify_provenance(units, provenance, sources, root=ROOT):
         origin = provenance["units"][identity]
         path = origin["source_path"]
         assert origin["sha256"] == source_records[path]["sha256"]
-        assert origin["normalization"] == "whitespace_only" and origin["repairs"] == []
+        assert origin["normalization"] == "whitespace_only"
         if origin["range_basis"] == "normalized_html_block":
             assert origin["source_role"] not in {"activity", "learning_objectives"}
             matches = parsed[path].select(origin["locator"])
@@ -124,7 +124,8 @@ def verify_provenance(units, provenance, sources, root=ROOT):
         start, end = origin["source_range"]["start"], origin["source_range"]["end"]
         assert 0 <= start < end <= len(raw)
         assert raw[start:end] == origin["extracted_passage"], identity
-        assert normalize(raw[start:end]) == unit["text"], f"Source mismatch: {identity}"
+        expected = apply_repairs(normalize(raw[start:end]), origin["repairs"])
+        assert expected == unit["text"], f"Source mismatch: {identity}"
 
 
 def main():

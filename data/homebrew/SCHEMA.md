@@ -76,7 +76,14 @@ normalization, repairs and selection reason. HTML ranges index the
 whitespace-normalized source block; PDF ranges index raw pypdf page text. These
 source ranges are separate from learner sentence ranges.
 
-The pilot permits only whitespace normalization, with an empty word-repair log.
+Source extraction permits only whitespace normalization. An explicitly reviewed
+missing final period may be restored with a `repairs` entry containing
+`type: append_terminal_period` and a nonempty `reason`. Store it in both the
+selection input and generated provenance. The original `extracted_passage`,
+source range and archive hash remain unchanged; the builder and validator apply
+the repair after normalization. Update the sentence registry, editorial review,
+and affected assessment/translation fingerprints after checking that only the
+period changed. Other punctuation edits and word repairs are not supported.
 Two selections retain a complete sentence from a longer source block. A third
 keeps the entry/non-expulsion clauses of a list item while excluding its separate
 extradition clause. The final review also removes the guardian paragraph's first

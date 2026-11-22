@@ -179,7 +179,7 @@ En anställd har många skyldigheter. Om hen inte iakttar dem kan anställningsf
 Den anställda är bland annat skyldig att
 
 - utföra arbetet väl
-- följa arbetsgivarens anvisningar och reglerna på arbetsplatsen. Man får till exempel inte komma berusad till jobbet och inte stjäla eller avsiktligen förstöra arbetsgivarens egendom
+- följa arbetsgivarens anvisningar och reglerna på arbetsplatsen. Man får till exempel inte komma berusad till jobbet och inte stjäla eller avsiktligen förstöra arbetsgivarens egendom.
 - bevara affärs- och yrkeshemligheter för arbetsgivarens räkning
 - beakta arbetsgivarens intressen
 - vägra att delta i verksamhet som konkurrerar med arbetsgivaren.

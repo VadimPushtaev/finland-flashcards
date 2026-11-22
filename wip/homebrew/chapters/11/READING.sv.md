@@ -521,8 +521,8 @@ Man får inte ringa nödnumret i onödan.
 
 Ring inte nödnumret
 
-- när det är fråga om ett vanligt sjukdomsfall, till exempel influensa. Då kan man ringa till exempel hälsovårdscentralen
-- när du vill fråga någonting allmänt om sjukvården, trafiken eller brandsäkerheten. Då är det inte fråga om något nödfall och man får inte ringa nödnumret
+- när det är fråga om ett vanligt sjukdomsfall, till exempel influensa. Då kan man ringa till exempel hälsovårdscentralen.
+- när du vill fråga någonting allmänt om sjukvården, trafiken eller brandsäkerheten. Då är det inte fråga om något nödfall och man får inte ringa nödnumret.
 - på grund av ett elavbrott eller en trafikstockning, om ingen är i fara. Nödcentralen ansvarar inte för sådana ärenden.
 
 Ring inte nödnumret om ärendet inte är brådskande. Du ska inte ringa nödnumret vid vanliga sjukdomsfall. Du ska inte heller ringa nödnumret om du vill fråga polisen (poliisi) till exempel om ett tillståndsärende. Onödiga samtal kan orsaka att hjälpen kommer för sent i verkliga nödsituationer. Du kan straffas för att ha missbrukat nödnumret.

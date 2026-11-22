@@ -10,9 +10,9 @@ De mänskliga rättigheterna fastställs i internationella avtal. Den allmänna 
 
 Definitionen av de mänskliga rättigheterna fastställer att:
 
-- de mänskliga rättigheterna är universella. Det betyder att de mänskliga rättigheterna gäller alla världens människor och att de är desamma överallt i världen
-- de mänskliga rättigheterna är oförytterliga. Det betyder att man inte kan ta de mänskliga rättigheterna från någon. Inte ens människan själv kan ge bort sina mänskliga rättigheter
-- de mänskliga rättigheterna är odelbara. Det betyder att de mänskliga rättigheterna inte uppfylls om inte samtliga av dem uppfylls. Alla mänskliga rättigheter är lika viktiga och beroende av varandra
+- de mänskliga rättigheterna är universella. Det betyder att de mänskliga rättigheterna gäller alla världens människor och att de är desamma överallt i världen.
+- de mänskliga rättigheterna är oförytterliga. Det betyder att man inte kan ta de mänskliga rättigheterna från någon. Inte ens människan själv kan ge bort sina mänskliga rättigheter.
+- de mänskliga rättigheterna är odelbara. Det betyder att de mänskliga rättigheterna inte uppfylls om inte samtliga av dem uppfylls. Alla mänskliga rättigheter är lika viktiga och beroende av varandra.
 - de mänskliga rättigheterna är fundamentala. Det betyder att de mänskliga rättigheterna är särskilt viktiga rättigheter. Om man kräver en rättighet för sig själv, måste man vara beredd att också ge den till andra.
 
 ## Grundläggande friheter och rättigheter
@@ -337,7 +337,7 @@ Finska medborgare har vissa rättigheter och skyldigheter som utlänningar bosat
 Rättigheter
 
 - rätt att få finskt pass
-- En finsk medborgare kan inte hindras från att komma till Finland, hen kan inte förvisas från Finland
+- En finsk medborgare kan inte hindras från att komma till Finland, hen kan inte förvisas från Finland.
 - rätt att rösta i presidentval, riksdagsval och folkomröstningar då man fyllt 18 år.
 - rätt att ställa upp som kandidat i riksdagsval då man fyllt 18 år.
 - möjlighet att bli utnämnd till sådana statliga ämbeten för vilka det krävs finskt medborgarskap
