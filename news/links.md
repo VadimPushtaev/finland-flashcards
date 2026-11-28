@@ -63,6 +63,10 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - University of Helsinki announcement on producing the citizenship-test content (FI, 2026-08-07): https://www.helsinki.fi/fi/uutiset/yliopisto/helsingin-yliopisto-toteuttaa-ensi-vuonna-kaynnistyvan-kansalaisuuskokeen-sisallot
 - University of Helsinki announcement on producing the citizenship-test content (SV, 2026-08-07): https://www.helsinki.fi/sv/nyheter/universitetet/helsingfors-universitet-utarbetar-innehallet-i-medborgarskapsprovet-som-infors-nasta-ar
 - University of Helsinki announcement on producing the citizenship-test content (EN, 2026-08-07): https://www.helsinki.fi/en/news/university/university-helsinki-draw-citizenship-test-launching-next-year
+- University of Helsinki Yliopisto-lehti interview with test-development co-lead Lari Kotilainen (FI, published online 2026-11-02): https://www.helsinki.fi/fi/uutiset/yliopisto/kansalaisuuskoe-otetaan-suomessa-kayttoon-maaliskuussa-2027-sen-valmistelu-kaynnissa-helsingin-yliopistossa
+- University of Helsinki research portal record for the interview (FI; print publication dated 2026-11-03): https://researchportal.helsinki.fi/fi/clippings/haastattelu-yliopisto-lehteen-9/
+- University of Helsinki research portal record for the interview (SV interface): https://researchportal.helsinki.fi/sv/clippings/haastattelu-yliopisto-lehteen-9/
+- University of Helsinki research portal record for the interview (EN interface): https://researchportal.helsinki.fi/en/clippings/haastattelu-yliopisto-lehteen-9/
 
 ## Official press releases
 
@@ -101,6 +105,7 @@ Simple link list with minimal descriptions. Update this as new official pages an
 
 - Citizenship-test draft impact assessment press release (FI, Legislation Assessment Council, 2026-03-26): https://valtioneuvosto.fi/-/kansalaisuuskoetta-koskeva-vaikutusarviointi-on-paaosin-onnistunut-mutta-joitakin-tasmennyksia-tarvitaan
 - Legislation Assessment Council opinion PDF on the citizenship-test draft (FI, 2026-03-26): https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston%2Blausunto%2Bkansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
+- Legislation Assessment Council opinion PDF linked by the Finnish press release (same archived PDF): https://valtioneuvosto.fi/documents/194055633/209910739/Arviointineuvoston+lausunto+kansalaisuuskokeesta.pdf/3d4f3ee2-64dc-0c94-13da-29b47dd36d0a?t=1774526127950
 
 - Legislation Assessment Council press release (SV; dated 2026-03-26, translation published 2026-05-08; discovered 2026-10-20): https://valtioneuvosto.fi/sv/-/konsekvensbedomningen-av-medborgarskapsprovet-ar-i-huvudsak-val-utford-men-vissa-preciseringar-behovs
 - Legislation Assessment Council opinion summary PDF (SV, dated 2026-03-26; discovered 2026-10-20): https://valtioneuvosto.fi/documents/194055633/209910742/Sammanfattning+av+utlåtandet+av+rådet+för+bedömning+av+lagstiftningen+om+ändringar+i+medborgarskapslagen.pdf/a84e5a3d-62f4-3deb-489c-6dead7cd8018?t=1778236827991
@@ -281,6 +286,10 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation (lausuntopalvelu.fi, SV): https://www.lausuntopalvelu.fi/SV/Proposal/Participation?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 - Consultation published responses report (lausuntopalvelu, FI, 36 respondents): https://www.lausuntopalvelu.fi/FI/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
 - Consultation published responses report (lausuntopalvelu, SV, 36 respondents): https://www.lausuntopalvelu.fi/SV/Proposal/ParticipationNonJsShowReport?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation all-answers view (lausuntopalvelu, FI, same 36 respondents): https://www.lausuntopalvelu.fi/FI/Proposal/ShowAllProposalAnswers?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Consultation all-answers view (lausuntopalvelu, SV, same 36 respondents): https://www.lausuntopalvelu.fi/SV/Proposal/ShowAllProposalAnswers?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e
+- Swedish-language consultation questions in the Finnish all-answers interface (same 36 respondents): https://www.lausuntopalvelu.fi/FI/Proposal/ShowAllProposalAnswers?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&proposalLanguage=9ff64fe9-04da-4471-9f0c-3f2016e71b4f
+- Finnish-language consultation questions in the Swedish all-answers interface (same 36 respondents): https://www.lausuntopalvelu.fi/SV/Proposal/ShowAllProposalAnswers?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&proposalLanguage=da4408c3-39e4-4f5a-84db-84481bafc744
 - Consultation attachment download (lausuntopalvelu, FI draft HE PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26566
 - Consultation attachment download (lausuntopalvelu, SV draft main content + draft provisions PDF, 2025-12-19): https://www.lausuntopalvelu.fi/FI/Proposal/DownloadProposalAttachment?proposalId=282f4b07-3602-47e7-8b4a-8f5212960e8e&attachmentId=26567
 
@@ -342,6 +351,49 @@ Simple link list with minimal descriptions. Update this as new official pages an
 - Consultation statement — Vapaa-ajattelijain Liitto ry (2026-02-26 09:40): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/e9d72be9-f2fd-4292-8cdf-407f18e00988/LAUSUNTO_20260226094001.PDF
 - Consultation statement — Ylioppilastutkintolautakunta YTL (2026-03-11 07:57): https://api.hankeikkuna.fi/asiakirjat/1e6ba95e-e303-4947-858a-626d1b18235f/2194fc74-3e86-4d32-b39c-9ef412d82175/LAUSUNTO_20260311075731.PDF
 
+## Phase 3 consultation statements published by respondents
+
+- Ombudsman for Children’s statement LAPS/200/2025 (FI, 2026-02-03): https://www.lapsiasia.fi/ajankohtaista/arkisto/laps_lausunto_sm_kansalaisuuslaki-kansalaisuuskoe/
+- EK’s statement (FI, 2026-02-06): https://ek.fi/lausunnot/ekn-lausunto-luonnoksesta-hallituksen-esitykseksi-eduskunnalle-laiksi-kansalaisuuslain-muuttamisesta-ja-siihen-liittyviksi-laeiksi/
+- Moniheli’s statement (FI, posted 2026-02-23): https://moniheli.fi/uutinen/lausunto-kansalaisuuskoe/
+- Moniheli’s statement (EN, dated 2026-02-23): https://moniheli.fi/en/uutinen/lausunto-kansalaisuuskoe/
+- Pakolaisneuvonta’s own statement PDF (FI, dated 2026-02-05): https://www.pakolaisneuvonta.fi/wp-content/uploads/Hallituksen-esitys-eduskunnalle-laiksi-kansalaisuuslain-muuttamisesta-kolmas-vaihe-.pdf
+
+## Municipal records for Phase 3 consultation statements
+
+- City of Espoo employment and integration subcommittee item §17 (FI, 2026-02-23, case 602/03.00.00/2026): https://espoo.oncloudos.com/cgi/DREQUEST.PHP?page=meetingitem&id=20261608-10
+- City of Espoo employment and integration subcommittee item §17 (SV interface, FI text): https://espoo-sv.oncloudos.com/cgi/DREQUEST.PHP?id=20261608-10&page=meetingitem
+- Espoo subcommittee meeting minutes index (FI, 2026-02-23): https://espoo.oncloudos.com/cgi/DREQUEST.PHP?id=20261608&page=meeting
+- Espoo subcommittee meeting minutes index (SV interface, FI text): https://espoo-sv.oncloudos.com/cgi/DREQUEST.PHP?id=20261608&page=meeting
+- Espoo subcommittee minutes PDF including §17 (FI, 2026-02-23): https://espoo.oncloudos.com/kokous/20261608.PDF
+- Espoo subcommittee minutes PDF (SV interface, same FI text): https://espoo-sv.oncloudos.com/kokous/20261608.PDF
+- Espoo subcommittee item §17 PDF (FI): https://espoo.oncloudos.com/kokous/20261608-10.PDF
+- Espoo subcommittee item §17 PDF (SV interface, same FI text): https://espoo-sv.oncloudos.com/kokous/20261608-10.PDF
+- Espoo subcommittee item §17 municipal appeal notice PDF (FI): https://espoo.oncloudos.com/kokous/20261608-10-0.PDF
+- Espoo subcommittee item §17 municipal appeal notice PDF (SV interface, same FI text): https://espoo-sv.oncloudos.com/kokous/20261608-10-0.PDF
+- City of Espoo statement attachment, dated 2026-02-06 (FI, byte-identical to the Hankeikkuna PDF): https://espoo.oncloudos.com/kokous/20261608-10-338841.PDF
+- City of Espoo statement attachment (SV interface, same FI PDF): https://espoo-sv.oncloudos.com/kokous/20261608-10-338841.PDF
+- Interior Ministry consultation request attached to the Espoo record (FI, byte-identical to the Hankeikkuna request PDF): https://espoo.oncloudos.com/kokous/20261608-10-338844.PDF
+- Interior Ministry consultation request attached to the Espoo record (SV interface, same FI PDF): https://espoo-sv.oncloudos.com/kokous/20261608-10-338844.PDF
+
+- City of Helsinki consultation case and decision history (FI): https://paatokset.hel.fi/fi/asia/hel-2026-000129
+- City of Helsinki consultation case and decision history (SV interface): https://paatokset.hel.fi/sv/arende/hel-2026-000129
+- City of Helsinki consultation case and decision history (EN interface): https://paatokset.hel.fi/en/case/hel-2026-000129
+- Helsinki City Board adopted statement and decision history (FI, 2026-02-02, §84): https://paatokset.hel.fi/fi/asia/hel-2026-000129/d368e635-0991-4a19-af4e-827e8d6e375f
+- Helsinki City Board adopted statement and decision history (SV interface): https://paatokset.hel.fi/sv/arende/hel-2026-000129/d368e635-0991-4a19-af4e-827e8d6e375f
+- Helsinki City Board adopted statement and decision history (EN interface): https://paatokset.hel.fi/en/case/hel-2026-000129/d368e635-0991-4a19-af4e-827e8d6e375f
+- Helsinki City Board minutes PDF including the adopted statement and preparatory opinions (FI, 2026-02-02, §84): https://ahjojulkaisu.hel.fi/2F3CE647-9497-C740-84B4-9C427ED00005.pdf
+- Vantaa City Board decision PDF approving the consultation statement (FI, 2026-01-26, §8): https://besluten.vantaa.fi/ktwebscr/fileshow?docid=3304078&doctype=3
+- Turku City Board decision approving the consultation statement (FI, 2026-02-02, §30, case 947-2026): https://paatokset.turku.fi/kaupunginhallitus/5344577/5344204
+- Turku City Board decision approving the consultation statement (SV interface, FI text): https://paatokset.turku.fi/sv/stadsstyrelsen/5344577/5344204
+- Turku City Board meeting minutes (FI, 2026-02-02): https://paatokset.turku.fi/kaupunginhallitus/5344577
+- Turku City Board meeting minutes (SV interface, FI text): https://paatokset.turku.fi/sv/stadsstyrelsen/5344577
+- Turku City Board meeting minutes API response including §30 (FI): https://paatokset.turku.fi/api/poytakirja/5344577
+- Turku City Board 2026 decisions index (FI, linked from the city's announcement): https://paatokset.turku.fi/kaupunginhallitus?vuosi=2026
+- Turku's City Board announcement summarizing the adopted consultation statement (FI, 2026-02-02): https://www.turku.fi/ajankohtaista/kaupunginhallitus-22-tyokeskus-toiminta-siirtyy-yhteiskunnalliseen-yritykseen
+- Turku's City Board announcement (SV interface, FI text): https://www.turku.fi/sv/node/69959
+- Turku's City Board announcement (EN interface, FI text): https://www.turku.fi/en/node/69959
+
 ## Official background reports and earlier announcements (discovered 2026-09-06)
 
 Publication dates below are historical; these sources do not replace the current Migri guidance.
@@ -370,8 +422,11 @@ Publication dates below are historical; these sources do not replace the current
 
 ## Learning materials (basis for questions)
 
+- Yhteiskuntaorientaatio learning materials (FI): https://yhteiskuntaorientaatio.fi/oppimateriaali
+- Yhteiskuntaorientaatio learning materials (SV): https://yhteiskuntaorientaatio.fi/sv/laromedel
 - Yhteiskuntaorientaatio learning materials (EN): https://yhteiskuntaorientaatio.fi/en/learning-materials
-- (Exam itself is planned in Finnish/Swedish; use the FI/SV versions of the material for real prep.)
+
+The Citizenship Act specifies that the separate test learning material will be based on the society-orientation material. https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2026/552
 
 ## Laws and parliamentary documents (background)
 
@@ -414,8 +469,10 @@ These are direct or alternate URLs for documents and pages already monitored abo
 - Parliament letter for second supplementary budget PDF (FI, EK 30/2026 vp) — current direct URL: https://api.eduskunta.fi/documents/fi/4C86D888-8DC4-C83D-8417-9EF32E200000.pdf
 - Parliament letter for second supplementary budget PDF (SV, RSk 30/2026 rd) — current direct URL: https://api.eduskunta.fi/documents/sv/37F1F449-D806-C7C9-848F-9EF2F9500000.pdf
 - “Selvitys kansalaisuuskokeen käyttöönotosta” (URN landing) — current direct URL: https://julkaisut.valtioneuvosto.fi/items/1482c90b-16cb-418c-b0ed-4561011fe7d4
+- Government Publications Archive subject index for `kansalaisuuskoe`: https://julkaisut.valtioneuvosto.fi/browse/subject?value=kansalaisuuskoe
 - Citizenship Act (Kansalaisuuslaki 359/2003, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/2003/359
 - Citizenship Act (Medborgarskapslag 359/2003, SV) — current direct URL: https://www.finlex.fi/sv/lagstiftning/2003/359
+- Citizenship Act 359/2003 on Finlex (EN interface, SV statute text): https://www.finlex.fi/en/legislation/2003/359
 - Phase 1 act (474/2024, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2024/474
 - Phase 1 act (474/2024, SV) — current direct URL: https://www.finlex.fi/sv/lagstiftning/forfattningssamling/2024/474
 - Phase 2 act (929/2025, FI) — current direct URL: https://www.finlex.fi/fi/lainsaadanto/saadoskokoelma/2025/929
@@ -476,3 +533,25 @@ These are historical publications or current URLs for files already archived; th
 
 - Citizenship Act English translation record (completed 2026-10-12; amendments through 552/2026): https://www.finlex.fi/en/legislation/translations/2003/eng/359
 - Citizenship Act English translation PDF (Ministry of the Interior; legally binding only in Finnish and Swedish): https://www.finlex.fi/api/media/statute-foreign-language-translation/1097847/mainPdf/main.pdf?timestamp=2026-10-13T06%3A30%3A33.000Z
+
+## Additional official background sources (discovered 2026-11-23)
+
+These February 2026 publications are historical preparation records, not new test rules or preparation instructions.
+
+- Government legislative plan for spring and preliminary autumn 2026 (FI; dated 2026-02-03; citizenship-test proposal SM056:00/2023 on p. 12): https://valtioneuvosto.fi/documents/194055633/200124139/Hallituksen%20lains%C3%A4%C3%A4d%C3%A4nt%C3%B6suunnitelma%20kev%C3%A4tistuntokaudelle%202026%20ja%20alustavat%20tiedot%20syysistuntokaudelle.pdf/d340707d-3aa3-c346-6620-28e7a9c176de/Hallituksen%20lains%C3%A4%C3%A4d%C3%A4nt%C3%B6suunnitelma%20kev%C3%A4tistuntokaudelle%202026%20ja%20alustavat%20tiedot%20syysistuntokaudelle.pdf?t=1770124180399
+- Interior Ministry accounting-unit financial statements 2025 (FI; published 2026-02-27, Sisäministeriön julkaisuja 2026:11; citizenship-test preparation on printed p. 18 / PDF p. 19): https://julkaisut.valtioneuvosto.fi/server/api/core/bitstreams/f38db9b6-1c8b-40b5-80f3-323c48f3e413/content
+- Financial-statements publication record: https://julkaisut.valtioneuvosto.fi/items/7f380e69-a027-467d-8334-acc0c1588dd7
+- Financial-statements permanent publication address: https://urn.fi/URN:ISBN:978-952-324-828-1
+- Financial-statements download route linked by the publication record (same PDF): https://julkaisut.valtioneuvosto.fi/bitstreams/f38db9b6-1c8b-40b5-80f3-323c48f3e413/download
+
+## Council of Europe and EMN Finland reports
+
+- Council of Europe Division on Migration and Refugees announcement of the Finland mission report (EN, 2026-11-24): https://www.coe.int/en/web/migration-and-refugees/-/report-on-visit-to-finland-takes-stock-of-progress-made-in-migrant-integration-and-international-protection
+- Council of Europe report on the mission to Finland on 7–8 October 2026 (EN PDF, published 2026-11-24, citizenship-test reference on p. 11): https://rm.coe.int/report-mission-fin-dmr-24112026/48802edf6a
+- EMN Finland's 2025 asylum and migration overview cited by the Council of Europe (FI PDF, draft legislation on pp. 51–52): https://emn.fi/wp-content/uploads/EMN_Maahanmuutto-ja-turvapaikkakatsaus_Suomi_2025_fi.pdf
+- EMN Finland's 2025 asylum and migration overview (EN PDF, draft legislation on pp. 51–52): https://emn.fi/wp-content/uploads/EMN_Asylum-and-Migration-Overview_Finland-2025.pdf
+- EMN Finland annual publications announcement (FI, 2026-06-09): https://emn.fi/emn-suomen-vuosijulkaisut-nyt-saatavilla/
+- EMN Finland annual publications announcement (EN, 2026-06-09): https://emn.fi/en/emn-finlands-annual-publications-out-now/
+- Migri's announcement of the 2025 EMN Finland report (FI, 2026-05-29): https://migri.fi/-/euroopan-muuttoliikeverkoston-vuosiraportti-2025-maahanmuutto-suomeen-laski-kansalaisuuden-saaneita-ennatysmaara
+- Migri's announcement of the 2025 EMN Finland report (SV, 2026-05-29): https://migri.fi/sv/-/europeiska-migrationsnatverkets-arliga-rapport-2025-invandringen-till-finland-minskade-fler-personer-an-nagonsin-blev-finska-medborgare
+- Migri's announcement of the 2025 EMN Finland report (EN, 2026-05-29): https://migri.fi/en/-/the-european-migration-network-s-annual-report-2025-immigration-to-finland-declined-citizenship-granted-to-a-record-number-of-applicants
