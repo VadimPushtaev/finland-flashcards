@@ -186,10 +186,7 @@ function Reader({ topbar, library, route, progress, changeProgress, toggleComple
     selectedButton.current = button;
     setSelection(value);
     requestAnimationFrame(() => {
-      if (!selection && window.matchMedia('(max-width: 700px) and (orientation: portrait)').matches) {
-        button.closest('[data-sentence-id]')?.scrollIntoView({ block: 'start', inline: 'nearest' });
-      }
-      button.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+      button.scrollIntoView({ behavior: 'instant', block: 'nearest', inline: 'nearest' });
       document.querySelector('.translation-panel')?.scrollTo(0, 0);
     });
   };

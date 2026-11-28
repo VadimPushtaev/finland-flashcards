@@ -220,14 +220,21 @@ mark { background: #eddeb3; color: #303622; padding: 1px 2px; border-radius: 2px
 .reader-mode .sidebar { transform: translateX(-100%); visibility: hidden; width: 248px; }
 .reader-mode .sidebar.is-open { transform: translateX(0); visibility: visible; }
 .reader-mode .sidebar-backdrop { position: fixed; inset: 0; z-index: 39; border: 0; background: #0b161980; }
-.reader-mode .reader-page { max-width: none; height: 100%; padding: 0; display: flex; flex-direction: column; }
-.reader-header { flex-shrink: 0; position: relative; z-index: 2; margin-top: 0; transition: margin-top .18s ease; }
-.reader-header.is-hidden { margin-top: calc(-1 * var(--reader-header-height)); pointer-events: none; }
+.reader-mode .reader-page { position: relative; max-width: none; height: 100%; padding: 0; display: flex; flex-direction: column; }
+.reader-header { position: absolute; inset: 0 0 auto; z-index: 2; transition: transform .18s ease; }
+.reader-header.is-hidden { transform: translateY(-100%); pointer-events: none; }
 .reader-toolbar { flex-shrink: 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; padding: 8px 22px; border-bottom: 1px solid var(--study-border); background: var(--study-surface); }
 .reader-toolbar .reading-tools .btn { min-height: 40px; min-width: 40px; }
 .reader-mode .reader-layout { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); gap: 0; }
 .reader-mode .reader-layout.has-translation { grid-template-columns: minmax(0, 1fr) minmax(300px, 36%); }
 .reader-mode .reading-column { min-height: 0; overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; padding: 24px max(44px, calc((100% - 760px) / 2)) 40px; }
+@media screen {
+  .reader-layout { --visible-header: var(--reader-header-height, 0px); padding-top: var(--visible-header); }
+  .reader-header.is-hidden + .reader-layout { --visible-header: 0px; }
+  /* The dictionary fits below the header. The text always scrolls from the same origin. */
+  .reader-mode .reading-column { margin-top: calc(-1 * var(--visible-header)); scroll-padding-top: var(--visible-header); }
+  .reader-mode .reading-column::before { content: ""; display: block; height: var(--reader-header-height); }
+}
 .reader-mode .reader-chapter-title { font-size: .75rem; margin-bottom: 8px; }
 .reader-mode .reading-column h1 { font-size: clamp(25px, 3vw, 36px); margin-bottom: 10px; }
 .reader-mode .reading-time { margin-bottom: 10px; }

@@ -3,6 +3,31 @@ import { test, expect } from './account.fixture';
 const first = '/#/chapter/hb-c01/hb-c01-lage';
 const wordSelector = '#hb-c01-u0001 button.translation-word';
 
+test('opening the mobile dictionary moves the tapped word only as far as needed', async ({ page }) => {
+  const viewport = page.viewportSize()!;
+  test.skip(viewport.width > 700 || viewport.width > viewport.height);
+  await page.goto(first);
+  const word = page.locator('#hb-c01-u0002 .translation-word').first();
+  const pane = page.locator('.reading-column');
+  const header = page.locator('.reader-header');
+  const panel = page.locator('.translation-panel');
+  await expect(word).toBeAttached();
+  for (const fraction of [0.25, 0.8]) {
+    const visibleTop = (await header.boundingBox())!.height;
+    const availableHeight = (await pane.boundingBox())!.height - visibleTop;
+    const desiredY = visibleTop + fraction * availableHeight;
+    await pane.evaluate((el, delta) => el.scrollTop += delta, (await word.boundingBox())!.y - desiredY);
+    const before = (await word.boundingBox())!;
+    await word.tap();
+    await expect(panel).toBeVisible();
+    const panelTop = (await panel.boundingBox())!.y;
+    const expectedY = Math.min(before.y, panelTop - before.height);
+    await expect.poll(async () => (await word.boundingBox())!.y).toBeCloseTo(expectedY, 0);
+    await panel.getByRole('button', { name: 'Stäng översättningen' }).tap();
+    await expect(panel).toHaveCount(0);
+  }
+});
+
 test('word and sentence translations share the screen without covering the reader', async ({ page }, info) => {
   await page.goto(first);
   const word = page.locator(wordSelector).filter({ hasText: /^skogar$/ });

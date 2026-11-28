@@ -5,16 +5,18 @@ test('reader navigation collapses downwards and returns on an upward scroll', as
   const pane = page.locator('.reading-column');
   const header = page.locator('.reader-header');
   await expect(page.locator('.reader-text')).toBeVisible();
-  const initial = (await pane.boundingBox())!;
-  const headerHeight = (await header.boundingBox())!.height;
+  const text = page.locator('.reader-text');
+  const initialTextY = (await text.boundingBox())!.y;
   await pane.hover();
   await page.mouse.wheel(0, 350);
   await expect(header).toHaveClass(/is-hidden/);
-  await expect.poll(async () => (await pane.boundingBox())!.y).toBeLessThan(1);
-  expect((await pane.boundingBox())!.height).toBeGreaterThan(initial.height + headerHeight - 2);
+  await expect.poll(() => header.evaluate(el => el.getBoundingClientRect().bottom)).toBeLessThan(1);
+  const hiddenTextY = (await text.boundingBox())!.y;
+  expect(hiddenTextY).toBeCloseTo(initialTextY - 350, 0);
   await page.mouse.wheel(0, -40);
   await expect(header).not.toHaveClass(/is-hidden/);
-  await expect.poll(async () => (await pane.boundingBox())!.y).toBeCloseTo(initial.y, 0);
+  await expect.poll(async () => (await header.boundingBox())!.y).toBeCloseTo(0, 0);
+  expect((await text.boundingBox())!.y).toBeCloseTo(hiddenTextY + 40, 0);
   await page.getByRole('button', { name: 'Välj avsnitt' }).click();
   await expect(page.locator('.breadcrumb-dropdown')).toBeVisible();
   // An open destination menu must remain available while the article moves.
@@ -35,12 +37,11 @@ test('collapsed navigation gives translations more room and remains keyboard acc
   const panel = page.locator('.translation-panel');
   await expect(panel).toBeVisible();
   await expect(header).not.toHaveClass(/is-hidden/);
-  const initial = (await pane.boundingBox())!.height + (await panel.boundingBox())!.height;
+  const initialPanelHeight = (await panel.boundingBox())!.height;
   await pane.hover();
   await page.mouse.wheel(0, 400);
   await expect(header).toHaveClass(/is-hidden/);
-  await expect.poll(async () => (await pane.boundingBox())!.y).toBeLessThan(1);
-  expect((await pane.boundingBox())!.height + (await panel.boundingBox())!.height).toBeGreaterThan(initial);
+  await expect.poll(async () => (await panel.boundingBox())!.height).toBeGreaterThan(initialPanelHeight);
   await expect(panel).toContainText('леса и озёра');
   // Scrolling the independent translation pane does not change navigation.
   await panel.evaluate(el => { el.scrollTop = 100; });
